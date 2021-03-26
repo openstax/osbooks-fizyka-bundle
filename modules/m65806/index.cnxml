@@ -1,0 +1,3695 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" id="new" cnxml-version="0.8" module-id="new">
+  <title>Przykłady równowagi statycznej</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65806</md:content-id>
+  <md:title>Przykłady równowagi statycznej</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>analizować sytuacje równowagi statycznej;</item>
+<item>wykonywać rozkład sił dla rozciągłego obiektu w równowadze statycznej;</item>
+<item>ustalać i rozwiązywać warunki równowagi statycznej dla obiektów w równowadze, w różnych sytuacjach fizycznych.</item>
+</list></md:abstract>
+  <md:uuid>cd044e5b-8462-4ec2-8321-f020cd26490c</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1163709709073">Wszystkie przykłady w tym rozdziale są problemami dwuwymiarowymi (na płaszczyźnie). W związku z tym stosujemy warunki równowagi dla składowych w formie równań od <link target-id="fs-id1163713538824" document="m65805" cmlnle:case="genitive"/> do <link target-id="fs-id1163709827419" document="m65805" cmlnle:case="genitive"/>. Metodę rozwiązywania problemów statyki wprowadziliśmy w <link target-id="fs-id1163713531710" document="m65805" cmlnle:case="locative"/> w celu zilustrowania fizycznego znaczenia warunków równowagi. Teraz uogólniamy tę strategię na listę kroków, które należy wykonać przy rozwiązywaniu problemów równowagi statycznej dla rozciągłych ciał sztywnych. Jest to pięć praktycznych kroków.</para><note id="fs-id1163713411376" class="problem-solving"><title>Strategia rozwiązywania zadań: równowaga statyczna</title><list id="fs-id1163709744692" list-type="enumerated" number-style="arabic"><item>Określ obiekt do analizy. W niektórych układach równowagi może być konieczne rozważenie więcej niż jednego obiektu. Określ wszystkie siły działające na obiekt. Określ pytania, na które trzeba odpowiedzieć. Określ informacje podane w danym problemie. W realnych problemach, niektóre kluczowe informacje mogą być podane w sposób pośredni, a nie wprost.</item>
+      <item>Wykonaj rysunek rozkładu sił działających na obiekt. (a) Wybierz układ odniesienia xy dla zagadnienia. Narysuj rozkład sił zawierający tylko te działające na obiekt. Jeśli trzeba, przedstaw siły rozłożone na składowe w wybranym układzie odniesienia. Jeśli to robisz dla każdej siły, usuń pierwotną, aby nie uwzględnić tej samej siły dwukrotnie w równaniach. Oznacz wszystkie siły – potrzebujesz tego do poprawnego obliczania sił wypadkowych w kierunkach <m:math>
+        <m:mi>x</m:mi>
+      </m:math> i <m:math>
+      <m:mi>y</m:mi>
+    </m:math>. Dla nieznanej siły kierunek musi być przypisany arbitralnie – traktuj go jako kierunek roboczy lub spodziewany kierunek. Prawidłowy kierunek zależy od znaku, który otrzymasz w ostatecznym rozwiązaniu. Znak plus <m:math>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mo>+</m:mo>
+      <m:mo>)</m:mo>
+    </m:mrow>
+  </m:math> oznacza, że kierunek roboczy jest rzeczywistym kierunkiem. Znak minus <m:math>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mo>−</m:mo>
+    <m:mo>)</m:mo>
+  </m:mrow>
+  </m:math> oznacza, że rzeczywisty kierunek jest przeciwny do zakładanego. (b) Wybierz położenie osi obrotu, w odniesieniu do której będziesz obliczać momenty działających sił. Na rysunku z rozkładem sił wskaż oś obrotu i ramiona działających sił – będą potrzebne do prawidłowego obliczenia wartości momentów sił. Przy wyborze osi obrotu należy pamiętać, że można ją umieścić w dowolnym miejscu, ale zasada przewodnia mówi, że najlepszym wyborem będzie uproszczenie jak największej liczby obliczeń wypadkowego momentu sił względem osi obrotu.</item>
+  <item>Ustal równania równowagi dla obiektu. (a) Wykorzystaj rysunek rozkładu sił, aby prawidłowo zapisać warunek równowagi dla składowych sił w kierunku <m:math>
+    <m:mi>x</m:mi>
+  </m:math> (<link target-id="fs-id1163713538824" document="m65805"/>). (b) Wykorzystaj rysunek rozkładu sił, aby zapisać prawidłowo warunek równowagi dla składowych sił w kierunku <m:math>
+  <m:mi>y</m:mi>
+  </m:math> (<link target-id="fs-id1163709754155" document="m65805"/>). (c) Wykorzystaj rysunek rozkładu sił, aby prawidłowo zapisać warunek równowagi dla momentów sił względem osi obrotu (<link target-id="fs-id1163709827419" document="m65805"/>). Użyj <link target-id="fs-id1163713071798" document="m65805" cmlnle:case="genitive"/> do wyznaczenia wartości i zwrotu momentów sił.</item>
+  <item>Uprość i rozwiąż układ równań dla równowagi w celu uzyskania nieznanych wielkości (zmiennych). W tym punkcie praca polega tylko na przekształceniach algebraicznych Należy pamiętać, że liczba równań musi być taka sama, jak liczba niewiadomych. Jeśli niewiadomych jest więcej niż równań, nie można rozwiązać problemu.</item>
+  <item>Oblicz wyrażenia na nieznane wielkości, które otrzymałeś w swoim rozwiązaniu. Ostateczna odpowiedź powinna mieć odpowiednią wartość liczbową i prawidłowe jednostki fizyczne. Jeśli jest inaczej, wróć do poprzednich kroków, aby wykryć źródło błędu i poprawić go. Możesz również samodzielnie sprawdzić numeryczne odpowiedzi, przesuwając oś obrotu w inne miejsce i rozwiązując problem ponownie, jak to zrobiliśmy w <link target-id="fs-id1163713531710" document="m65805" cmlnle:case="locative"/>.</item>
+</list></note><para id="fs-id1163713121040">Zauważmy, że wykonanie rysunku rozkładu sił dla zagadnienia równowagi ciała sztywnego jest najważniejszym elementem w procesie rozwiązywania problemu. Bez prawidłowego rozkładu sił, nie będziemy w stanie napisać odpowiednich warunków równowagi. Musimy również zauważyć, że rysunek rozkładu sił dla rozciągłego ciała sztywnego, które może być poddane ruchowi obrotowemu, różni się od rysunku rozkładu sił, których doświadcza ciało będące tylko w ruchu postępowym (co omówiono w rozdziale o prawach ruchu Newtona). W ruchu postępowym ciało reprezentuje ŚM, do którego przyłożono wszystkie siły i nie występują żadne momenty sił. Nie obowiązuje to w dynamice obrotowej, gdzie ciało sztywne nie może być reprezentowane przez jeden punkt. Powodem tego jest fakt, że przy analizie ruchu obrotowego musimy określić moment siły działający na ciało, a zależy on zarówno od siły działającej, jak i od ramienia tej siły. Tutaj, rysunek rozkładu sił dla rozciągłego ciała sztywnego pomaga nam określić momenty sił zewnętrznych.</para><example id="fs-id1163713417779">
+  <para id="fs-id1168327934371">
+    <title>Bilans momentu sił</title>Trzy masy są przymocowane do jednolitej metrowej belki, jak pokazano na <link target-id="CNX_UPhysics_12_02_torquebal" cmlnle:case="locative"/>. Masa belki wynosi 150 g, a masy na lewo od punktu podparcia to <m:math>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>50</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>g</m:mtext>
+    </m:math> i <m:math>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>75</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>g</m:mtext>
+    <m:mo>.</m:mo>
+  </m:math> Znajdź masę <m:math>
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+</m:math>, która równoważy układ, gdy jest przymocowana na prawym końcu belki, oraz normalną sił reakcji w punkcie podparcia <m:math>
+<m:mi>S</m:mi>
+</m:math>, gdy układ jest zrównoważony.</para>
+<figure id="CNX_UPhysics_12_02_torquebal"><media id="fs-id1163713085171" alt="Rysunek przedstawia schemat równoważenia momentu sił. Do poziomej belki podpartej w punkcie podparcia oznaczonym symbolem S przymocowane są trzy masy. Masa3 jest 30 cm na prawo od S. Masa2 jest 40 cm na lewo od S. Masa1 jest 30 cm na lewo od Masy2. ">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_02_torquebal.jpg"/>
+  </media>
+  
+  <caption>W warunkach równowagi sił belka pozioma jest podparta w punkcie podparcia (oznaczonym symbolem <m:math>
+    <m:mi>S</m:mi>
+    </m:math> ), a masy są przymocowane po obu stronach punktu podparcia. Układ znajduje się w stanie równowagi statycznej, gdy belka się nie obraca. Jest zrównoważony, jeśli belka leży poziomo.</caption></figure><para id="fs-id1168327944170">
+    <title>Strategia rozwiązania</title>Dla układu przedstawionego na rysunku, określamy następujące pięć sił działających na metrową belkę:</para>
+    <para id="fs-id1163713136037">
+      <m:math>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mi>g</m:mi>
+      </m:math> jest ciężarem masy <m:math>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:math>;<m:math>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mi>g</m:mi>
+  </m:math> jest ciężarem masy <m:math>
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>;</m:mo>
+</m:math>
+</para>
+<para id="fs-id1163713123686">
+  <m:math>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mi>g</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mi>m</m:mi>
+    <m:mi>g</m:mi>
+  </m:math> jest ciężarem całej belki; <m:math>
+  <m:msub>
+    <m:mi>F</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+  <m:mi>g</m:mi>
+</m:math> jest ciężarem nieznanej masy <m:math>
+<m:msub>
+  <m:mi>m</m:mi>
+  <m:mn>3</m:mn>
+</m:msub>
+<m:mo>;</m:mo>
+</m:math>
+</para>
+<para id="fs-id1163713101763">
+  <m:math>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mi>S</m:mi>
+    </m:msub>
+  </m:math> jest normalną siłą reakcji w punkcie podparcia <m:math>
+  <m:mi>S</m:mi>
+  </m:math>.</para>
+  <para id="fs-id1163709829348">Wybieramy układ odniesienia, w którym kierunek osi <m:math>
+    <m:mi>y</m:mi>
+  </m:math> jest zgodny z kierunkiem siły ciężkości, kierunek osi <m:math>
+  <m:mi>x</m:mi>
+</m:math> jest wzdłuż belki, a oś obrotu (oś <m:math>
+<m:mi>z</m:mi>
+</m:math>) jest prostopadła do osi <m:math>
+<m:mi>x</m:mi>
+</m:math> i przechodzi przez punkt podparcia <m:math>
+<m:mi>S</m:mi>
+</m:math>. Innymi słowy wybieramy oś obrotu w punkcie, w którym belka dotyka podpory. Jest to naturalny wybór osi obrotu, ponieważ ten punkt nie przemieszcza się, gdy belka się obraca. Teraz jesteśmy gotowi do przygotowania rysunku rozkładu sił dla belki. Zaznaczamy oś obrotu i przykładamy pięć wektorów sił, przyłożonych odpowiednio względem punktu podparcia, wzdłuż linii reprezentujących belkę (<link target-id="CNX_UPhysics_12_02_FBDtorque"/>). Na tym etapie możemy określić ramiona pięciu sił, wziąwszy pod uwagę informacje zawarte w problemie. W przypadku trzech mas wiszących, ich odległości od punktu podparcia zostały podane na rysunku, natomiast informację o punkcie przyłożenia ciężaru belki podano w sposób pośredni. Tutaj kluczowym słowem jest „jednolitej". Wiemy z naszych wcześniejszych rozważań, że ŚM jednolitej belki znajduje się w jej środku geometrycznym, więc przykładamy jej ciężar w połowie długości belki, tj. na znaku 50 cm.</para><figure id="CNX_UPhysics_12_02_FBDtorque">
+  <media id="fs-id1163713007715" alt=" Rysunek jest schematem rozkładu sił dla bilansu momentów sił. Pozioma belka podparta jest w punkcie oznaczonym symbolem S. Trzy masy są przymocowane do belki. Siła Fs przyłożona w punkcie S skierowana jest do góry. Siła F3 skierowana w dół przyłożona jest na prawo od punktu S w odległości r3. Siły Fg, F2 i F1 są przyłożone na lewo od punktu S i skierowane w dół. Znajdują się odpowiednio w odległościach rg, r2 i r1 od S. ">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_02_FBDtorque.jpg"/>
+  </media>
+  <caption>Rozkład sił dla metrowej belki. Jako punkt obrotu wybrano punkt podparcia <m:math>
+    <m:mi>S</m:mi>
+    </m:math>.</caption>
+  </figure>
+  <para id="fs-id1168328227121">
+    <title>Rozwiązanie</title>Na podstawie <link target-id="CNX_UPhysics_12_02_torquebal" cmlnle:case="genitive"/> i <link target-id="CNX_UPhysics_12_02_FBDtorque" cmlnle:case="genitive"/> zaczynamy od znalezienia ramion pięciu sił działających na belkę:</para>
+    <equation id="fs-id1163713146433" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:mtable>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msub>
+                  <m:mi>r</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>30</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>cm</m:mtext>
+                <m:mo>+</m:mo>
+                <m:mn>40</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>cm</m:mtext>
+                <m:mo>=</m:mo>
+                <m:mn>70</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>cm</m:mtext>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msub>
+                  <m:mi>r</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>40</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>cm</m:mtext>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msub>
+                  <m:mi>r</m:mi>
+                  <m:mn>g</m:mn>
+                </m:msub>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>50</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>cm</m:mtext>
+                <m:mo>−</m:mo>
+                <m:mn>30</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>cm</m:mtext>
+                <m:mo>=</m:mo>
+                <m:mn>20</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>cm</m:mtext>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msub>
+                  <m:mi>r</m:mi>
+                  <m:mi>S</m:mi>
+                </m:msub>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>cm</m:mtext>
+                <m:mspace width="0.2em"/>
+                <m:mtext>(ponieważ siła</m:mtext>
+                <m:mspace width="0.2em"/>
+                <m:msub>
+                  <m:mi>F</m:mi>
+                  <m:mi>S</m:mi>
+                </m:msub>
+                <m:mspace width="0.2em"/>
+                <m:mtext>jest przyłożona na osi obrotu)</m:mtext>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:msub>
+                  <m:mi>r</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msub>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mn>30</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>cm.</m:mtext>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="fs-id1163713051835">Teraz możemy znaleźć pięć momentów sił w odniesieniu do wybranej osi obrotu:</para>
+    <equation id="fs-id1163713051527" class="unnumbered"><m:math>
+        <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+          <m:mtr>
+            <m:mtd>
+              <m:msub>
+                <m:mi>M</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:mtd>
+            <m:mtd>
+              <m:mi/>
+              <m:mo>=</m:mo>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>F</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mi>sin</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:msup>
+                <m:mn>90</m:mn>
+                <m:mo>∘</m:mo>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mi>g</m:mi>
+            </m:mtd>
+            <m:mtd>
+              <m:mtext>(obrót przeciwny do ruchu wskazówek zegara, zwrot dodatni)</m:mtext>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:msub>
+                <m:mi>M</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mtd>
+            <m:mtd>
+              <m:mi/>
+              <m:mo>=</m:mo>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>F</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mi>sin</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:msup>
+                <m:mn>90</m:mn>
+                <m:mrow>
+                  <m:mo>∘</m:mo>
+                </m:mrow>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mi>g</m:mi>
+            </m:mtd>
+            <m:mtd>
+              <m:mtext>(obrót przeciwny do ruchu wskazówek zegara, zwrot dodatni)</m:mtext>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:msub>
+                <m:mi>M</m:mi>
+                <m:mi>g</m:mi>
+              </m:msub>
+            </m:mtd>
+            <m:mtd>
+              <m:mi/>
+              <m:mo>=</m:mo>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mi>g</m:mi>
+              </m:msub>
+              <m:msub>
+                <m:mi>F</m:mi>
+                <m:mi>g</m:mi>
+              </m:msub>
+              <m:mi>sin</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:msup>
+                <m:mn>90</m:mn>
+                <m:mrow>
+                  <m:mo>∘</m:mo>
+                </m:mrow>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mi>g</m:mi>
+              </m:msub>
+              <m:mi>m</m:mi>
+              <m:mi>g</m:mi>
+            </m:mtd>
+            <m:mtd>
+              <m:mtext>(moment siły ciężkości)</m:mtext>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:msub>
+                <m:mi>M</m:mi>
+                <m:mi>S</m:mi>
+              </m:msub>
+            </m:mtd>
+            <m:mtd>
+              <m:mi/>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mi>S</m:mi>
+              </m:msub>
+              <m:msub>
+                <m:mi>F</m:mi>
+                <m:mi>S</m:mi>
+              </m:msub>
+              <m:mi>sin</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:msub>
+                <m:mi>θ</m:mi>
+                <m:mi>S</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+            </m:mtd>
+            <m:mtd>
+              <m:mtext>(ponieważ</m:mtext>
+              <m:mspace width="0.2em"/>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mi>S</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">c</m:mi>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo stretchy="false">)</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:msub>
+                <m:mi>M</m:mi>
+                <m:mn>3</m:mn>
+              </m:msub>
+            </m:mtd>
+            <m:mtd>
+              <m:mi/>
+              <m:mo>=</m:mo>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mn>3</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>F</m:mi>
+                <m:mn>3</m:mn>
+              </m:msub>
+              <m:mi>sin</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:msup>
+                <m:mn>90</m:mn>
+                <m:mrow>
+                  <m:mo>∘</m:mo>
+                </m:mrow>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mn>3</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mn>3</m:mn>
+              </m:msub>
+              <m:mi>g</m:mi>
+            </m:mtd>
+            <m:mtd>
+              <m:mtext>(obrót zgodny z ruchem wskazówek zegara, zwrot dodatni)</m:mtext>
+              <m:mo>.</m:mo>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+      </m:math>
+    </equation><para id="fs-id1163713017764">Warunek równowagi momentów sił dla belki to:</para>
+    <equation id="fs-id1163713148302" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:msub>
+          <m:mi>M</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>M</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>M</m:mi>
+          <m:mi>g</m:mi>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>M</m:mi>
+          <m:mi>S</m:mi>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>M</m:mi>
+          <m:mn>3</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mn>0.</m:mn>
+      </m:math>
+    </equation>
+    <para id="fs-id1163713164547">Przy podstawianiu wartości momentów sił do tego równania możemy pominąć te dające zerowy wkład. W ten sposób warunek równowagi dla momentów sił to:</para>
+    <equation id="fs-id1163713072017"><m:math>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>r</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mi>g</m:mi>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>r</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:mi>g</m:mi>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>r</m:mi>
+          <m:mi>g</m:mi>
+        </m:msub>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mi>g</m:mi>
+        </m:msub>
+<m:mi>g</m:mi>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>r</m:mi>
+          <m:mn>3</m:mn>
+        </m:msub>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mn>3</m:mn>
+        </m:msub>
+        <m:mi>g</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0.</m:mn>
+      </m:math>
+    </equation><para id="fs-id1163713086945">Wybieramy kierunek <m:math>
+      <m:mo>+</m:mo>
+      <m:mi>y</m:mi>
+    </m:math> jako równoległy do <m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>F</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mi>S</m:mi>
+    </m:msub>
+    </m:math> i wtedy warunek równowagi sił dla belki to:</para>
+    <equation id="fs-id1163713007451" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mi>g</m:mi>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mi>S</m:mi>
+        </m:msub>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mn>3</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mn>0.</m:mn>
+      </m:math>
+    </equation>
+    <para id="fs-id1163713187782">Po podstawieniu sił otrzymujemy:</para>
+    <equation id="fs-id1163709714372">
+      <m:math>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mi>g</m:mi>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:mi>g</m:mi>
+        <m:mo>−</m:mo>
+        <m:mi>m</m:mi>
+        <m:mi>g</m:mi>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mi>S</m:mi>
+        </m:msub>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mn>3</m:mn>
+        </m:msub>
+        <m:mi>g</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0.</m:mn>
+      </m:math>
+    </equation>
+    <para id="fs-id1163713191182">Rozwiązujemy te równania jednocześnie dla nieznanych wartości <m:math>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mn>3</m:mn>
+      </m:msub>
+    </m:math> i <m:math>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mi>S</m:mi>
+    </m:msub>
+    <m:mo>.</m:mo>
+  </m:math> W <link target-id="fs-id1163713072017" cmlnle:case="locative"/> upraszczamy czynnik <m:math>
+  <m:mi>g</m:mi>
+  </m:math> i przekształcamy, żeby uzyskać</para>
+  <equation id="fs-id1163713017883" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:msub>
+        <m:mi>r</m:mi>
+        <m:mn>3</m:mn>
+      </m:msub>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mn>3</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>r</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>r</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>r</m:mi>
+        <m:mi>g</m:mi>
+      </m:msub>
+      <m:mi>m</m:mi>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para id="fs-id1163713149634">Aby wyznaczyć <m:math>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mn>3</m:mn>
+    </m:msub>
+  </m:math>, dzielimy obustronnie przez <m:math>
+  <m:msub>
+    <m:mi>r</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+  </m:math>, mamy więc</para>
+  <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1163709828310"><m:math display="block"><m:semantics><m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:msub><m:mi>m</m:mi><m:mn>3</m:mn></m:msub><m:mo id="U76ff6af0-5961-491c-ab5c-2d2246dfc6a0">=</m:mo><m:mrow><m:mrow><m:mfrac><m:msub><m:mi>r</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>r</m:mi><m:mn>3</m:mn></m:msub></m:mfrac><m:mo>⋅</m:mo><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>r</m:mi><m:mn>3</m:mn></m:msub></m:mfrac><m:mo>⋅</m:mo><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:msub><m:mi>r</m:mi><m:mtext>g</m:mtext></m:msub><m:msub><m:mi>r</m:mi><m:mn>3</m:mn></m:msub></m:mfrac><m:mo>⋅</m:mo><m:mi>m</m:mi></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:msub><m:mi>m</m:mi><m:mn>3</m:mn></m:msub></m:mphantom><m:mo>=</m:mo><m:mrow><m:mrow><m:mfrac><m:mn>70</m:mn><m:mn>30</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>50</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">g</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:mn>40</m:mn><m:mn>30</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>75</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">g</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:mn>20</m:mn><m:mn>30</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>150</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">g</m:mi></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:msub><m:mi>m</m:mi><m:mn>3</m:mn></m:msub></m:mphantom><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>317</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">g</m:mi></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{multiline} m_3 &amp;= \frac{r_1}{r_3} \cdot m_1 + \frac{r_2}{r_3} \cdot m_2 + \frac{r_{\text{g}}}{r_3} \cdot m \\ &amp;= \frac{70}{30} \cdot \SI{50}{\gram} + \frac{40}{30} \cdot \SI{75}{\gram} + \frac{20}{30} \cdot \SI{150}{\gram} \\ &amp;= \SI{317}{\gram} \text{.} \end{multiline}</m:annotation><m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:msub><m:mi>m</m:mi><m:mn>3</m:mn></m:msub><m:mo id="U76ff6af0-5961-491c-ab5c-2d2246dfc6a0-copy">=</m:mo><m:mrow><m:mrow><m:mfrac><m:msub><m:mi>r</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>r</m:mi><m:mn>3</m:mn></m:msub></m:mfrac><m:mo>⋅</m:mo><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>r</m:mi><m:mn>3</m:mn></m:msub></m:mfrac><m:mo>⋅</m:mo><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:msub><m:mi>r</m:mi><m:mtext>g</m:mtext></m:msub><m:msub><m:mi>r</m:mi><m:mn>3</m:mn></m:msub></m:mfrac><m:mo>⋅</m:mo><m:mi>m</m:mi></m:mrow></m:mrow><m:mo indenttarget="U76ff6af0-5961-491c-ab5c-2d2246dfc6a0" linebreak="newline" indentalign="id">=</m:mo><m:mrow><m:mrow><m:mfrac><m:mn>70</m:mn><m:mn>30</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>50</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">g</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:mn>40</m:mn><m:mn>30</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>75</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">g</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:mn>20</m:mn><m:mn>30</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>150</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">g</m:mi></m:mrow></m:mrow></m:mrow><m:mo indenttarget="U76ff6af0-5961-491c-ab5c-2d2246dfc6a0" linebreak="newline" indentalign="id">=</m:mo><m:mrow><m:mrow><m:mn>317</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">g</m:mi></m:mrow><m:mtext>.</m:mtext></m:mrow></m:annotation-xml></m:semantics></m:math></equation><para id="fs-id1163713128656">Aby znaleźć normalną siłę reakcji przekształcamy <link target-id="fs-id1163709714372"/> i po zamianie gramów na kilogramy otrzymujemy:</para>
+  <equation id="ked-1bqcesiaf_avg" class="unnumbered"><m:math>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mtext>S</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:mi>m</m:mi>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mn>3</m:mn>
+          </m:msub>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mi>g</m:mi>
+      <m:mo>=</m:mo>
+      <m:mo stretchy="false">[</m:mo>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mn>50</m:mn>
+          <m:mo>+</m:mo>
+          <m:mn>75</m:mn>
+          <m:mo>+</m:mo>
+          <m:mn>150</m:mn>
+          <m:mo>+</m:mo>
+          <m:mn>317</m:mn>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mn>3</m:mn>
+        </m:mrow>
+      </m:msup>
+      <m:mo stretchy="false">]</m:mo>
+      <m:mspace width="0.2em"/>
+      <m:mtext>kg</m:mtext>
+      <m:mo>⋅</m:mo>
+      <m:mn>9,81</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mfrac>
+        <m:mtext>m</m:mtext>
+        <m:msup>
+          <m:mtext>s</m:mtext>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mn>5,8</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>N</m:mtext>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation><para id="fs-id1168328241653">
+    <title>Znaczenie</title>Należy zauważyć, że <link target-id="fs-id1163713072017"/> jest niezależne od <m:math>
+      <m:mi>g</m:mi>
+    </m:math> (przyspieszenie ziemskie). Równowagi momentów sił można zatem użyć do pomiaru masy, ponieważ wahania wartości <m:math>
+    <m:mi>g</m:mi>
+    </m:math> na powierzchni Ziemi nie wpływają na nie. Inaczej dzieje się w przypadku wagi sprężynowej, ponieważ mierzy ona siłę ciężkości.</para>
+  </example>
+  <note id="fs-id1163713185120" class="check-understanding">
+    <exercise id="fs-id1163713485797">
+      <problem id="fs-id1163709701716">
+        <para id="fs-id1163713187839">
+          <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Powtórz <link target-id="fs-id1163713417779"/> użyj lewego końca belki do obliczania momentów sił; to znaczy umieść oś obrotu na jej lewym końcu.</para>
+        </problem>
+        <solution id="fs-id1163713490954">
+          <para id="fs-id1163713101781">316,7 g; 5,8 N</para>
+        </solution>
+      </exercise>
+    </note>
+    <para id="fs-id1163713552365">W następnym przykładzie pokażemy, jak stosować warunek równowagi dla sił w postaci danej przez <link target-id="fs-id1163713538824" document="m65805"/> i <link target-id="fs-id1163709754155" document="m65805"/>. Przedstawimy to rozwiązanie jako przykład znaczenia wyboru odpowiedniego układu odniesienia. Chociaż wszystkie inercjalne układy odniesienia są równoważne, a rozwiązania liczbowe uzyskane w jednym układzie są takie same jak w innych, to wybór nieodpowiedniego układu odniesienia może sprawić, że dojście do nich będzie dość długie i skomplikowane, podczas gdy przemyślany wybór układu odniesienia sprawi, że okaże się bardzo proste. Pokazujemy to w równoważnych rozwiązaniach tego samego zadania.Ten przykład ilustruje zastosowanie równowagi statycznej do biomechaniki.</para>
+    <example id="fs-id1163709679321">
+      <para id="fs-id1168328247043">
+        <title>Siły w przedramieniu</title>Sztangista podtrzymuje 21-kilogramowy ciężarek (równoważne 206 N) swoim przedramieniem, jak pokazano na <link target-id="CNX_UPhysics_12_02_forearm" cmlnle:case="locative"/>. Jest ono ustawione pod kątem <m:math>
+          <m:mi>β</m:mi>
+          <m:mo>=</m:mo>
+          <m:msup>
+            <m:mn>60</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+          </m:math> względem ramienia. Przedramię podtrzymuje skurcz mięśnia bicepsa, powodując moment sił wokół łokcia. Zakładając, że naprężenie w bicepsie działa wzdłuż kierunku pionowego zgodnego z kierunkiem siły ciężkości, oblicz, jakie naprężenie mięśni musi wytrzymać przedramię w przedstawionym położeniu? Jaka jest siła na stawie łokciowym? Załóżmy, że masę przedramienia można pominąć.</para>
+          <figure id="CNX_UPhysics_12_02_forearm">
+            <media id="fs-id1163713196314" alt="Rysunek przedstawia schematycznie przedramię obracające się wokół łokcia. W dłoni podtrzymywane jest 21 kg. Odległość pomiędzy łokciem a ciężarem wynosi 32 cm. Odległość między łokciem a mięśniami bicepsa powodującymi moment siły wokół łokcia wynosi 3.2 cm. Przedramię tworzy kąt 60 stopni z ramieniem.">
+              <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_02_forearm.jpg"/>
+            </media>
+            <caption>Przedramię obraca się wokół łokcia <m:math>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mtext>Ł</m:mtext>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:math> przez skurcze mięśnia bicepsa, co powoduje naprężenie <m:math>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>N</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            </m:math>.</caption>
+          </figure>
+          <para id="fs-id1168327876017">
+            <title>Strategia rozwiązania</title>Określamy trzy siły działające na przedramię: nieznaną siłę <m:math>
+              <m:mrow>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>F</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+            </m:math> na łokciu, nieznane naprężenie <m:math>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>N</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:math> w mięśniach i ciężar <m:math>
+          <m:msub>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>F</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mi>g</m:mi>
+          </m:msub>
+        </m:math> o wartości 206 N. Możemy przyjąć układ odniesienia z osią <m:math>
+        <m:mi>x</m:mi>
+      </m:math>, wzdłuż przedramienia i osią obrotu w łokciu. Kierunek pionowy jest kierunkiem siły ciężkości, jest on taki sam jak kierunek górnej części ramienia. Oś <m:math>
+      <m:mi>x</m:mi>
+    </m:math> tworzy kąt <m:math>
+    <m:mi>β</m:mi>
+    <m:mo>=</m:mo>
+    <m:msup>
+      <m:mn>60</m:mn>
+      <m:mrow>
+        <m:mo>∘</m:mo>
+      </m:mrow>
+    </m:msup>
+  </m:math> z pionem. Oś <m:math>
+  <m:mi>y</m:mi>
+</m:math> jest prostopadła do osi <m:math>
+<m:mi>x</m:mi>
+</m:math>. Teraz rysujemy rozkład sił dla przedramienia. Najpierw osie układu, oś obrotu i trzy wektory reprezentujące trzy zidentyfikowane siły. Następnie zaznaczamy kąt <m:math>
+<m:mi>β</m:mi>
+</m:math> i przedstawiamy każdą siłę przez jej składowe <m:math>
+<m:mi>x</m:mi>
+</m:math> i <m:math>
+<m:mi>y</m:mi>
+</m:math>, pamiętamy o usunięciu wektorów pierwotnych sił, aby uniknąć podwójnego uwzględnienia sił. Na koniec oznaczamy siły i ich ramiona. Rozkład sił dla przedramienia pokazano na <link target-id="CNX_UPhysics_12_02_FBDforearm" cmlnle:case="locative"/>. W tym momencie jesteśmy gotowi do ustalenia warunków równowagi przedramienia. Każda siła ma składowe <m:math>
+<m:mi>x</m:mi>
+</m:math> i <m:math>
+<m:mi>y</m:mi>
+</m:math>, dlatego mamy dwa równania dla warunku równowagi sił - jedno równanie dla każdej składowej wypadkowej siły działającej na przedramię.</para>
+<figure id="CNX_UPhysics_12_02_FBDforearm">
+  <media id="fs-id1163713090480" alt="Rysunek rozkładu sił dla przedramienia. Siła F jest przyłożona w punkcie Ł. Siła N jest przyłożona w odległości rN od punktu E. Siła Fg jest przyłożona w odległości rg od punktu E przeciwnie do kierunku F i N. Składowe x i y sił są pokazane. Siła F i N tworzą kąt beta z osią x. Siła Fg tworzy kąt beta z linią łączącą ją z jej składową y.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_02_FBDforearm.jpg"/>
+  </media>
+  <caption>Rozkład sił dla przedramienia. Oś obrotu jest w punkcie <m:math>
+    <m:mrow>
+      <m:mo>Ł</m:mo>
+    </m:mrow>
+    </m:math> (łokieć).</caption>
+  </figure>
+  <para id="fs-id1163709680653">Zauważmy, że w naszym układzie odniesienia wkłady do warunku równowagi dla momentów sił pochodzą tylko z elementów składowych <m:math>
+    <m:mi>y</m:mi>
+  </m:math> sił, ponieważ składowe <m:math>
+  <m:mi>x</m:mi>
+</m:math> sił są równoległe do ich ramion, zatem dla każdej z tych składowych mamy <m:math>
+<m:mi>sin</m:mi>
+<m:mspace width="0.2em"/>
+<m:mi>θ</m:mi>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math> w <link target-id="fs-id1163713071798" document="m65805" cmlnle:case="locative"/>. Dla składowych <m:math>
+<m:mi>y</m:mi>
+</m:math> mamy <m:math>
+<m:mi>θ</m:mi>
+<m:mo>=</m:mo>
+<m:mo>±</m:mo>
+<m:msup>
+  <m:mn>90</m:mn>
+  <m:mrow>
+    <m:mo>∘</m:mo>
+  </m:mrow>
+</m:msup>
+</m:math> w równaniu <link target-id="fs-id1163713071798" document="m65805"/>. Należy również zauważyć, że moment siły na łokciu wynosi zero, ponieważ ta siła jest przyłożona na osi obrotu. Więc wkład do wypadkowego momentu sił pochodzi tylko z momentów sił <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>N</m:mi>
+    <m:mi>y</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> i <m:math>
+<m:msub>
+  <m:mi>F</m:mi>
+  <m:mrow>
+    <m:mi>g</m:mi>
+    <m:mi>y</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>.</para>
+<para id="fs-id1168328289412">
+  <title>Rozwiązanie</title>Z rozkładu sił widać, że składowa <m:math>
+    <m:mi>x</m:mi>
+    </m:math> siły wypadkowej równanie</para>
+    <equation id="fs-id1163709688796">
+      <m:math>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mi>x</m:mi>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>N</m:mi>
+          <m:mi>x</m:mi>
+        </m:msub>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mrow>
+            <m:mi>g</m:mi>
+            <m:mi>x</m:mi>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mn>0</m:mn>
+        <m:mo>,</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1163713294338">a składowa <m:math>
+      <m:mi>y</m:mi>
+      </m:math> siły wypadkowej spełnia równanie:</para>
+      <equation id="fs-id1163713181828">
+        <m:math>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mi>y</m:mi>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>N</m:mi>
+            <m:mi>y</m:mi>
+          </m:msub>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mrow>
+              <m:mi>g</m:mi>
+              <m:mi>y</m:mi>
+            </m:mrow>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>0.</m:mn>
+        </m:math>
+      </equation>
+      <para id="fs-id1163713357842">
+        <link target-id="fs-id1163709688796"/> i <link target-id="fs-id1163713181828"/> są dwoma równaniami warunku równowagi sił. Następnie z rozkładu sił odczytujemy, że wypadkowy moment siły wzdłuż osi obrotu to:</para>
+        <equation id="fs-id1163713010196">
+          <m:math>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mi>N</m:mi>
+            </m:msub>
+            <m:msub>
+              <m:mi>N</m:mi>
+              <m:mi>y</m:mi>
+            </m:msub>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mi>g</m:mi>
+            </m:msub>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mrow>
+                <m:mi>g</m:mi>
+                <m:mi>y</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>0.</m:mn>
+          </m:math>
+        </equation>
+        <para id="fs-id1163713246244">
+          <link target-id="fs-id1163713010196"/> jest warunkiem równowagi momentów sił dla przedramienia. Rysunek rozkładu sił pokazuje, że ramiona sił to <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mi>N</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>3,2</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>cm</m:mtext>
+          </m:mrow>
+        </m:math> oraz <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>32</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>cm</m:mtext>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+        </m:math> Korzystając z rysunku rozkładu sił, znajdujemy wartości ich składowych:</para>
+        <equation id="fs-id1163713135648" class="unnumbered"><m:math display="block">
+              <m:mtable>
+                <m:mtr>
+                  <m:mtd>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>F</m:mi>
+                        <m:mi>x</m:mi>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mo>cos</m:mo>
+                          <m:mrow>
+                            <m:mi>β</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mrow>
+                              <m:mi>F</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mrow>
+                                <m:mo>cos</m:mo>
+                                <m:mrow>
+                                                <m:msup>
+                <m:mn>60</m:mn>
+                <m:mo>∘</m:mo>
+              </m:msup>
+                                  <m:mo>=</m:mo>
+                                  <m:mrow>
+                                    <m:mfrac>
+                                      <m:mn>1</m:mn>
+                                      <m:mn>2</m:mn>
+                                    </m:mfrac>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi>F</m:mi>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mtext>,</m:mtext>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>N</m:mi>
+                        <m:mi>x</m:mi>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mi>N</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mo>cos</m:mo>
+                          <m:mrow>
+                            <m:mi>β</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mrow>
+                              <m:mi>N</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mrow>
+                                <m:mo>cos</m:mo>
+                                <m:mrow>
+                                                <m:msup>
+                <m:mn>60</m:mn>
+                <m:mo>∘</m:mo>
+              </m:msup>
+                                  <m:mo>=</m:mo>
+                                  <m:mrow>
+                                    <m:mfrac>
+                                      <m:mn>1</m:mn>
+                                      <m:mn>2</m:mn>
+                                    </m:mfrac>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi>N</m:mi>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mtext>,</m:mtext>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>F</m:mi>
+                        <m:mrow>
+                          <m:mi>g</m:mi>
+                          <m:mo>⁣</m:mo>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>F</m:mi>
+                          <m:mi>g</m:mi>
+                        </m:msub>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mo>cos</m:mo>
+                          <m:mrow>
+                            <m:mi>β</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>F</m:mi>
+                                <m:mi>g</m:mi>
+                              </m:msub>
+                              <m:mo>⁢</m:mo>
+                              <m:mrow>
+                                <m:mo>cos</m:mo>
+                                <m:mrow>
+                                  <m:msup>
+                <m:mn>60</m:mn>
+                <m:mo>∘</m:mo>
+              </m:msup>
+                                  <m:mo>=</m:mo>
+                                  <m:mrow>
+                                    <m:mfrac>
+                                      <m:mn>1</m:mn>
+                                      <m:mn>2</m:mn>
+                                    </m:mfrac>
+                                    <m:mo>⁢</m:mo>
+                                    <m:msub>
+                                      <m:mi>F</m:mi>
+                                      <m:mi>g</m:mi>
+                                    </m:msub>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mtext>,</m:mtext>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>F</m:mi>
+                        <m:mi>y</m:mi>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mi>F</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mo>sin</m:mo>
+                          <m:mrow>
+                            <m:mi>β</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mrow>
+                              <m:mi>F</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mrow>
+                                <m:mo>sin</m:mo>
+                                <m:mrow>
+                                  <m:msup>
+                <m:mn>60</m:mn>
+                <m:mo>∘</m:mo>
+              </m:msup>
+                                  <m:mo>=</m:mo>
+                                  <m:mrow>
+                                    <m:mfrac>
+                                      <m:mroot>
+                                        <m:mn>3</m:mn>
+                                        <m:mn/>
+                                      </m:mroot>
+                                      <m:mn>2</m:mn>
+                                    </m:mfrac>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi>F</m:mi>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mtext>,</m:mtext>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>N</m:mi>
+                        <m:mi>y</m:mi>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mi>N</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mo>sin</m:mo>
+                          <m:mrow>
+                            <m:mi>β</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mrow>
+                              <m:mi>N</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mrow>
+                                <m:mo>sin</m:mo>
+                                <m:mrow>
+                                  <m:msup>
+                <m:mn>60</m:mn>
+                <m:mo>∘</m:mo>
+              </m:msup>
+                                  <m:mo>=</m:mo>
+                                  <m:mrow>
+                                    <m:mfrac>
+                                      <m:mroot>
+                                        <m:mn>3</m:mn>
+                                        <m:mn/>
+                                      </m:mroot>
+                                      <m:mn>2</m:mn>
+                                    </m:mfrac>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi>N</m:mi>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mtext>,</m:mtext>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>F</m:mi>
+                        <m:mrow>
+                          <m:mi>g</m:mi>
+                          <m:mo>⁣</m:mo>
+                          <m:mi>y</m:mi>
+                        </m:mrow>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>F</m:mi>
+                          <m:mi>g</m:mi>
+                        </m:msub>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mo>sin</m:mo>
+                          <m:mrow>
+                            <m:mi>β</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>F</m:mi>
+                                <m:mi>g</m:mi>
+                              </m:msub>
+                              <m:mo>⁢</m:mo>
+                              <m:mrow>
+                                <m:mo>sin</m:mo>
+                                <m:mrow>
+                                  <m:msup>
+                <m:mn>60</m:mn>
+                <m:mo>∘</m:mo>
+              </m:msup>
+                                  <m:mo>=</m:mo>
+                                  <m:mrow>
+                                    <m:mfrac>
+                                      <m:mroot>
+                                        <m:mn>3</m:mn>
+                                        <m:mn/>
+                                      </m:mroot>
+                                      <m:mn>2</m:mn>
+                                    </m:mfrac>
+                                    <m:mo>⁢</m:mo>
+                                    <m:msub>
+                                      <m:mi>F</m:mi>
+                                      <m:mi>g</m:mi>
+                                    </m:msub>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mtext>.</m:mtext>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+        </equation><para id="fs-id1163713424877">Podstawiamy te wartości do <link target-id="fs-id1163709688796" cmlnle:case="genitive"/>, <link target-id="fs-id1163713181828" cmlnle:case="genitive"/> i <link target-id="fs-id1163713010196" cmlnle:case="genitive"/>, aby otrzymać odpowiednio:</para>
+        <para id="ked-1bqcesia7_318"><m:math display="block">
+            <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+              <m:mtr>
+                <m:mtd>
+                  <m:mfrac>
+                    <m:mi>F</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>+</m:mo>
+                  <m:mfrac>
+                    <m:mi>N</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>−</m:mo>
+                  <m:mfrac>
+                    <m:msub>
+                      <m:mi>F</m:mi>
+                      <m:mi>g</m:mi>
+                    </m:msub>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mtd>
+                <m:mtd>
+                  <m:mi/>
+                  <m:mo>=</m:mo>
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>F</m:mi>
+                      <m:msqrt>
+                        <m:mn>3</m:mn>
+                      </m:msqrt>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>+</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>N</m:mi>
+                      <m:msqrt>
+                        <m:mn>3</m:mn>
+                      </m:msqrt>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>−</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>F</m:mi>
+                        <m:mi>g</m:mi>
+                      </m:msub>
+                      <m:msqrt>
+                        <m:mn>3</m:mn>
+                      </m:msqrt>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mtd>
+                <m:mtd>
+                  <m:mi/>
+                  <m:mo>=</m:mo>
+                  <m:mn>0</m:mn>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>r</m:mi>
+                        <m:mi>N</m:mi>
+                      </m:msub>
+                      <m:mi>N</m:mi>
+                      <m:msqrt>
+                        <m:mn>3</m:mn>
+                      </m:msqrt>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>−</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>r</m:mi>
+                        <m:mi>g</m:mi>
+                      </m:msub>
+                      <m:msub>
+                        <m:mi>F</m:mi>
+                        <m:mi>g</m:mi>
+                      </m:msub>
+                      <m:msqrt>
+                        <m:mn>3</m:mn>
+                      </m:msqrt>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mtd>
+                <m:mtd>
+                  <m:mi/>
+                  <m:mo>=</m:mo>
+                  <m:mn>0.</m:mn>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </para><para id="fs-id1163713171024">Gdy zredukujemy te równania, pozostaną tylko dwa niezależne równania dla dwóch nieznanych wielkości sił <m:math>
+          <m:mi>F</m:mi>
+        </m:math> i <m:math>
+        <m:mi>N</m:mi>
+      </m:math>, ponieważ <link target-id="fs-id1163709688796"/> dla składowych <m:math>
+      <m:mi>x</m:mi>
+    </m:math> jest równoważne <link target-id="fs-id1163713181828"/> dla składowych <m:math>
+    <m:mi>y</m:mi>
+    </m:math>. W ten sposób otrzymujemy warunek równowagi sił:</para>
+    <equation id="fs-id1163713269544">
+      <m:math>
+        <m:mrow>
+          <m:mi>F</m:mi>
+          <m:mo>+</m:mo>
+          <m:mi>N</m:mi>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="fs-id1163709704993">i warunek równowagi momentów sił:</para>
+    <equation id="fs-id1163709733310">
+      <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>N</m:mi>
+          </m:msub>
+          <m:mi>N</m:mi>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="fs-id1163713099942">Wartość naprężenia w mięśniach uzyskamy rozwiązując <link target-id="fs-id1163709733310"/>:</para>
+    <equation id="fs-id1163709751976" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mi>N</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>N</m:mi>
+          </m:msub>
+        </m:mfrac>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mi>g</m:mi>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mn>32</m:mn>
+          <m:mrow>
+            <m:mn>3,2</m:mn>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>⋅</m:mo>
+        <m:mn>206</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">N</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mn>2060</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">N</m:mi>
+        </m:mrow>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1163713292006">Siłę na łokciu otrzymamy po rozwiązaniu <link target-id="fs-id1163713269544" cmlnle:case="genitive"/>:</para>
+    <equation id="fs-id1163713556578" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:mi>F</m:mi>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:mo>−</m:mo>
+          <m:mi>N</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>206</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>N</m:mtext>
+          <m:mo>−</m:mo>
+          <m:mn>2060</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>N</m:mtext>
+          <m:mo>=</m:mo>
+          <m:mn>−1854</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>N.</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="fs-id1163713483207">Ujemny znak w równaniu mówi nam, że rzeczywista siła w łokciu jest przeciwna do kierunku przyjętego roboczo przy rysowaniu rozkładu sił. Odpowiedź zatem brzmi:</para>
+    <equation id="fs-id1163713172536" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mtable>
+          <m:mtr>
+            <m:mtd>
+              <m:mi>F</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>1854</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>N</m:mtext>
+              <m:mspace width="0.8em"/>
+              <m:mtext>w dół</m:mtext>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:mi>N</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>2060</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>N</m:mtext>
+              <m:mspace width="0.8em"/>
+              <m:mtext>do góry.</m:mtext>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+      </m:math>
+    </equation>
+    <para id="fs-id1168327893642">
+      <title>Znaczenie</title>Warto zwrócić uwagę na ważną kwestię dotyczącą połączeń przegubowych, takich jak łokieć. W początkowej analizie problemu należy zawsze zakładać, że siły działają w dowolnym, wybranym arbitralnie kierunku, a następnie rozwiązać układ niezależnie dla wszystkich składowych sił. W tym przykładzie siła na łokciu jest pionowa, ponieważ problem zakłada również pionowe naprężenie bicepsa. Takie uproszczenie nie stanowi jednak zasady ogólnej.</para>
+      <para id="fs-id1168325635688">
+        <title>Rozwiązanie</title>Załóżmy, że możemy przyjąć układ odniesienia w kierunku <m:math>
+          <m:mi>y</m:mi>
+        </m:math> zgodny z kierunkiem siły ciężkości i oś obrotu umieszczoną w łokciu. Wszystkie trzy siły mają w nim tylko składowe <m:math>
+        <m:mi>y</m:mi>
+      </m:math>, więc mamy tylko jedno równanie na warunek równowagi sił. Rysujemy rozkład sił dla przedramienia, jak pokazano na <link target-id="CNX_UPhysics_12_02_FBD2forarm" cmlnle:case="locative"/>, zaznaczając oś obrotu, siły działające i ich ramiona w odniesieniu do osi obrotu i kąty <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>θ</m:mi>
+          <m:mi>N</m:mi>
+        </m:msub>
+      </m:mrow>
+    </m:math> oraz <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>θ</m:mi>
+        <m:mi>g</m:mi>
+      </m:msub>
+    </m:mrow>
+  </m:math>, które siły odpowiednio <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>N</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math> oraz <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>g</m:mi>
+</m:msub>
+</m:math> tworzą ze swoimi ramionami sił. W definicji momentu siły podanym przez <link target-id="fs-id1163713071798" document="m65805"/>, kąt <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>θ</m:mi>
+    <m:mi>N</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> jest kątem kierunkowym wektora, mierzonym przeciwnie do kierunku ruchu wskazówek zegara od kierunku ramienia siły, które zawsze wskazuje od osi obrotu. W ten sam sposób kąt <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>θ</m:mi>
+    <m:mi>g</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> jest mierzony przeciwnie do kierunku ruchu wskazówek zegara od kierunku ramienia siły do wektora. W ten sposób z łatwością można obliczyć niezerowe momenty, bezpośrednio wstawiając do <link target-id="fs-id1163713071798" document="m65805" cmlnle:case="genitive"/> w następujący sposób:</para>
+<equation id="fs-id1163713489479" class="unnumbered">
+  <m:math>
+    <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>M</m:mi>
+            <m:mi>N</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>n</m:mi>
+          </m:msub>
+          <m:mi>N</m:mi>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msub>
+            <m:mi>θ</m:mi>
+            <m:mi>N</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>N</m:mi>
+          </m:msub>
+          <m:mi>N</m:mi>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mi>β</m:mi>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>N</m:mi>
+          </m:msub>
+          <m:mi>N</m:mi>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msup>
+            <m:mn>60</m:mn>
+            <m:mrow>
+              <m:mo>∘</m:mo>
+            </m:mrow>
+          </m:msup>
+          <m:mo>=</m:mo>
+          <m:mo>+</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mi>N</m:mi>
+              </m:msub>
+              <m:mi>N</m:mi>
+              <m:msqrt>
+                <m:mn>3</m:mn>
+              </m:msqrt>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>M</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msub>
+            <m:mi>θ</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>β</m:mi>
+              <m:mo>+</m:mo>
+              <m:msup>
+                <m:mn>180</m:mn>
+                <m:mrow>
+                  <m:mo>∘</m:mo>
+                </m:mrow>
+              </m:msup>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mi>β</m:mi>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>r</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msup>
+            <m:mn>60</m:mn>
+            <m:mrow>
+              <m:mo>∘</m:mo>
+            </m:mrow>
+          </m:msup>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mi>g</m:mi>
+              </m:msub>
+              <m:msub>
+                <m:mi>F</m:mi>
+                <m:mi>g</m:mi>
+              </m:msub>
+              <m:msqrt>
+                <m:mn>3</m:mn>
+              </m:msqrt>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:mo>.</m:mo>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation>
+<figure id="CNX_UPhysics_12_02_FBD2forarm">
+  <media id="fs-id1163713269830" alt="Rysunek rozkładu sił dla przedramienia. Siła F jest przyłożona w punkcie Ł. Siła N jest przyłożona w odległości rN od punktu E. Siła Fg jest przyłożona w odległości rg od punktu E przeciwnie do kierunku F i N. Składowe x i y sił są pokazane. Siła N tworzy kąt tetaN równy beta z kierunkiem przedramienia. Siła Fg tworzy kąt tetag równy beta plus pi z kierunkiem przedramienia.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_02_FBD2forarm.jpg"/>
+  </media>
+  <caption>Rozkład sił dla przedramienia w równoważnym rozwiązaniu. Oś obrotu znajduje się w punkcie <m:math>
+    <m:mrow>
+      <m:mo>Ł</m:mo>
+    </m:mrow>
+    </m:math> (łokieć).</caption>
+  </figure>
+  <para id="fs-id1163713090799">Warunek równowagi momentów sił <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>M</m:mi>
+        <m:mi>N</m:mi>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>M</m:mi>
+        <m:mi>g</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:mrow>
+    </m:math> może być teraz zapisany jako:</para>
+    <equation id="fs-id1163713033125">
+      <m:math>
+        <m:mfrac>
+          <m:mrow>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mi>N</m:mi>
+            </m:msub>
+            <m:mi>N</m:mi>
+            <m:msqrt>
+              <m:mn>3</m:mn>
+            </m:msqrt>
+          </m:mrow>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>−</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mi>g</m:mi>
+            </m:msub>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mi>g</m:mi>
+            </m:msub>
+            <m:msqrt>
+              <m:mn>3</m:mn>
+            </m:msqrt>
+          </m:mrow>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mn>0.</m:mn>
+      </m:math>
+    </equation>
+    <para id="fs-id1163709773554">Z rysunku z rozkładem sił warunek równowagi sił to:</para>
+    <equation id="fs-id1163713552718">
+      <m:math>
+        <m:mrow>
+          <m:mtext>−</m:mtext>
+          <m:mi>F</m:mi>
+          <m:mo>+</m:mo>
+          <m:mi>N</m:mi>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="fs-id1163709663120">
+      <link target-id="fs-id1163713033125"/> jest identyczne z <link target-id="fs-id1163709733310" cmlnle:case="instrumental"/> i daje wynik <m:math>
+      <m:mi>N</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>2060</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>N</m:mtext>
+      </m:math>. Równanie <link target-id="fs-id1163713552718"/> daje:</para>
+      <equation id="fs-id1163713363674" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:mi>F</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>N</m:mi>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mi>g</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>2060</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>N</m:mtext>
+            <m:mo>−</m:mo>
+            <m:mn>206</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>N</m:mtext>
+            <m:mo>=</m:mo>
+            <m:mn>1854</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>N.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1163709788018">Widzimy, że te odpowiedzi są identyczne z poprzednimi, ale drugi układ odniesienia pozwala na równoważne rozwiązanie, które jest prostsze i szybsze, ponieważ nie wymaga, aby siły zostały rozdzielone na ich prostokątne składowe.</para>
+    </example>
+    <note id="fs-id1163709757756" class="check-understanding">
+      <exercise id="fs-id1163713170945">
+        <problem id="fs-id1163713536752">
+          <para id="fs-id1163713552411">
+            <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Powtórz <link target-id="fs-id1163709679321"/> przy założeniu, że przedramię jest obiektem o jednolitej gęstości o ciężarze 10 N.</para>
+          </problem>
+          <solution id="fs-id1163709773449">
+            <para id="fs-id1163713128308">
+              <m:math>
+                <m:mrow>
+                  <m:mi>N</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mtext>2110 N</m:mtext>
+                  <m:mo>;</m:mo>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>F</m:mtext>
+                  <m:mo>=</m:mo>
+                  <m:mn>1894</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>N</m:mtext>
+                </m:mrow>
+              </m:math>
+            </para>
+          </solution>
+        </exercise>
+      </note>
+      <example id="fs-id1163713171369">
+        <para id="fs-id1168328064672">
+          <title>Drabina oparta o ścianę</title>Jednolita drabina od długości <m:math>
+            <m:mrow>
+              <m:mi>l</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>5</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>m</m:mtext>
+            </m:mrow>
+          </m:math> i ciężarze 400 N opiera się o pionową śliską ścianę, jak pokazano na <link target-id="CNX_UPhysics_12_02_ladder" cmlnle:case="locative"/>. Kąt nachylenia między drabiną a szorstką podłogą wynosi <m:math>
+          <m:mi>β</m:mi>
+          <m:mo>=</m:mo>
+          <m:msup>
+            <m:mn>53</m:mn>
+            <m:mrow>
+              <m:mo>∘</m:mo>
+            </m:mrow>
+          </m:msup>
+        </m:math>. Znajdź siły reakcji podłogi i ściany na drabinę oraz współczynnik tarcia statycznego <m:math>
+        <m:msub>
+          <m:mi>μ</m:mi>
+          <m:mi>s</m:mi>
+        </m:msub>
+        </m:math> na styku drabiny z podłogą, uniemożliwiający poślizg drabiny.</para>
+        <figure id="CNX_UPhysics_12_02_ladder">
+          <media id="fs-id1163709709001" alt="Rysunek pokazuje schematycznie pięciometrową drabinę opierającą się o ścianę bez tarcia. Kąt nachylenia drabiny do podłożem wynosi 53 stopnie">
+            <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_02_ladder.jpg"/>
+          </media>
+          <caption>Pięciometrowa drabina opiera się o ścianę bez tarcia.</caption>
+        </figure>
+        <para id="fs-id1168328293895"><title>Strategia rozwiązania</title>Wyróżniamy cztery siły działające na drabinę. Pierwsza jest normalną siłą reakcji <m:math>
+            <m:mi>N</m:mi>
+          </m:math> od podłogi w kierunku pionowym do góry. Drugą jest statyczna siła tarcia <m:math>
+          <m:mi>f</m:mi>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>μ</m:mi>
+            <m:mi>s</m:mi>
+          </m:msub>
+          <m:mi>N</m:mi>
+        </m:math> skierowana poziomo wzdłuż podłogi ku ścianie – uniemożliwia ona zsuwanie się drabiny. Te dwie siły działają na drabinę w punkcie styku z podłogą. Trzecia siła to ciężar <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+        </m:mrow>
+      </m:math> drabiny, przyłożony do ŚM umieszczonego w jej połowie. Czwarta siła to normalna siła reakcji <m:math>
+      <m:mi>F</m:mi>
+    </m:math> ściany w kierunku poziomym odchodzącym od ściany, przyłożona w punkcie styku ze ścianą. Nie ma innych sił, ponieważ ściana jest śliska, co oznacza, że nie ma tarcia między ścianą a drabiną. Na podstawie tej analizy, możemy przyjąć układ odniesienia z osią <m:math>
+    <m:mi>y</m:mi>
+  </m:math> w kierunku pionowym (równolegle do ściany) i osi <m:math>
+  <m:mi>x</m:mi>
+</m:math> w kierunku poziomym (równolegle do podłogi). W tym układzie odniesienia, każda siła ma składową poziomą lub pionową, ale nie obie na raz, co ułatwia rozwiązanie. Wybieramy oś obrotu w punkcie styku z podłogą. Zaznaczmy ją na rysunku z rozkładem sił dla drabiny, wszystkie cztery siły i ich ramiona oraz kąty pomiędzy ramionami sił i siłami, jak pokazano na <link target-id="CNX_UPhysics_12_02_FBDladder" cmlnle:case="locative"/>. Przy takim wyborze położenia osi obrotu, nie ma momentu siły ani z normalnej siły reakcji <m:math>
+<m:mi>N</m:mi>
+</m:math>, ani ze statycznego tarcia <m:math>
+<m:mi>f</m:mi>
+</m:math>, ponieważ obie siły są przyłożone na osi obrotu.</para><figure id="CNX_UPhysics_12_02_FBDladder">
+  <media id="fs-id1163709661195" alt="Rysunek przedstawia rozkład sił dla drabiny opartej o ścianę. Drabina tworzy z podłożem kąt beta. Siła N jest przyłożona w punkcie styku drabiny z podłogą i jest prostopadła do podłoża. Siła Fg jest przyłożona w środku drabiny. Siła F jest przyłożona w punkcie styku drabiny ze ścianą i jest prostopadła do ściany. Siła Fg tworzy kąt tetag z kierunkiem ramienia siły. Kąt tetag jest równe półtora Pi odjąć beta. Siła F tworzy kąt tetaF z kierunkiem ramienia siły. Kąt tetaF jest równy Pi minus beta.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_02_FBDladder.jpg"/>
+  </media>
+  <caption>Rozkład sił dla drabiny opartej o ścianę bez tarcia.</caption>
+</figure>
+<para id="fs-id1168327908204">
+  <title>Rozwiązanie</title>Z rysunku rozkładu sił wypadkowa siła w kierunku osi <m:math>
+    <m:mi>x</m:mi>
+    </m:math> to:</para>
+    <equation id="fs-id1163713204264">
+      <m:math>
+        <m:mrow>
+          <m:mo>+</m:mo>
+          <m:mi>f</m:mi>
+          <m:mo>−</m:mo>
+          <m:mi>F</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="fs-id1163713010140">siła wypadkowa w kierunku osi <m:math>
+      <m:mi>y</m:mi>
+      </m:math> to:</para>
+      <equation id="fs-id1163713411525">
+        <m:math>
+          <m:mrow>
+            <m:mo>+</m:mo>
+            <m:mi>N</m:mi>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mi>g</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1163713201879">oraz wypadkowy moment sił względem osi obrotu to:</para>
+      <equation id="fs-id1163709786055">
+        <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>M</m:mi>
+              <m:mi>g</m:mi>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>M</m:mi>
+              <m:mi>F</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1163709758448">gdzie <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>M</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+        </m:mrow>
+      </m:math> jest momentem siły ciężkości <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mi>g</m:mi>
+        </m:msub>
+      </m:mrow>
+    </m:math>, a<m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>M</m:mi>
+        <m:mi>F</m:mi>
+      </m:msub>
+    </m:mrow>
+  </m:math> momentem siły reakcji <m:math>
+  <m:mi>F</m:mi>
+</m:math>. Na podstawie rysunku rozkładu sił, możemy określić, że ramię siły reakcji na ścianie to <m:math>
+<m:msub>
+  <m:mi>r</m:mi>
+  <m:mi>F</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mi>l</m:mi>
+<m:mo>=</m:mo>
+<m:mn>5,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mtext>m</m:mtext>
+</m:math> oraz ramię siły ciężkości to <m:math>
+<m:msub>
+  <m:mi>r</m:mi>
+  <m:mi>g</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mi>l</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mn>2</m:mn>
+<m:mo>=</m:mo>
+<m:mn>2,5</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+</m:math>, natomiast kąty do <link target-id="fs-id1163713071798" document="m65805" cmlnle:case="genitive"/> dla momentów sił to <m:math>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mi>F</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msup>
+  <m:mn>180</m:mn>
+  <m:mrow>
+    <m:mo>∘</m:mo>
+  </m:mrow>
+</m:msup>
+<m:mo>−</m:mo>
+<m:mi>β</m:mi>
+</m:math> dla momentu siły reakcji ściany oraz <m:math>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mi>g</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msup>
+  <m:mn>180</m:mn>
+  <m:mrow>
+    <m:mo>∘</m:mo>
+  </m:mrow>
+</m:msup>
+<m:mo>+</m:mo>
+<m:mrow>
+  <m:mo>(</m:mo>
+  <m:mrow>
+    <m:msup>
+      <m:mn>90</m:mn>
+      <m:mrow>
+        <m:mo>∘</m:mo>
+      </m:mrow>
+    </m:msup>
+    <m:mo>−</m:mo>
+    <m:mi>β</m:mi>
+  </m:mrow>
+  <m:mo>)</m:mo>
+</m:mrow>
+</m:math> dla momentu siły ciężkości. Teraz możemy zastosować <link target-id="fs-id1163713071798" document="m65805"/> do obliczenia momentów sił:</para><para id="ked-1bqcesia2_vqo"><m:math display="block">
+      <m:mtable>
+        <m:mtr>
+          <m:mtd>
+            <m:mrow>
+              <m:msub>
+                <m:mi>M</m:mi>
+                <m:mi>g</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>r</m:mi>
+                  <m:mi>g</m:mi>
+                </m:msub>
+                <m:mo>⁢</m:mo>
+                <m:msub>
+                  <m:mi>F</m:mi>
+                  <m:mi>g</m:mi>
+                </m:msub>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:mo>sin</m:mo>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mi>g</m:mi>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>r</m:mi>
+                        <m:mi>g</m:mi>
+                      </m:msub>
+                      <m:mo>⁢</m:mo>
+                      <m:msub>
+                        <m:mi>F</m:mi>
+                        <m:mi>g</m:mi>
+                      </m:msub>
+                      <m:mo>⁢</m:mo>
+                      <m:mrow>
+                        <m:mo>sin</m:mo>
+                        <m:mrow>
+                          <m:mfenced separators="">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:msup>
+                <m:mn>180</m:mn>
+                <m:mo>∘</m:mo>
+              </m:msup>
+                                <m:mo>+</m:mo>
+                                <m:msup>
+                <m:mn>90</m:mn>
+                <m:mo>∘</m:mo>
+              </m:msup>
+                              </m:mrow>
+                              <m:mo>-</m:mo>
+                              <m:mi>β</m:mi>
+                            </m:mrow>
+                          </m:mfenced>
+                          <m:mo>=</m:mo>
+                          <m:mrow>
+                            <m:mo>-</m:mo>
+                            <m:mrow>
+                              <m:mfrac>
+                                <m:mi>l</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:mfrac>
+                              <m:mo>⁢</m:mo>
+                              <m:msub>
+                                <m:mi>F</m:mi>
+                                <m:mi>g</m:mi>
+                              </m:msub>
+                              <m:mo>⁢</m:mo>
+                              <m:mrow>
+                                <m:mo>sin</m:mo>
+                                <m:mrow>
+                                  <m:mfenced separators="">
+                                    <m:mrow>
+                                      <m:msup>
+                <m:mn>90</m:mn>
+                <m:mo>∘</m:mo>
+              </m:msup>
+                                      <m:mo>-</m:mo>
+                                      <m:mi>β</m:mi>
+                                    </m:mrow>
+                                  </m:mfenced>
+                                  <m:mo>=</m:mo>
+                                  <m:mrow>
+                                    <m:mo>-</m:mo>
+                                    <m:mrow>
+                                      <m:mfrac>
+                                        <m:mi>l</m:mi>
+                                        <m:mn>2</m:mn>
+                                      </m:mfrac>
+                                      <m:mo>⁢</m:mo>
+                                      <m:msub>
+                                        <m:mi>F</m:mi>
+                                        <m:mi>g</m:mi>
+                                      </m:msub>
+                                      <m:mo>⁢</m:mo>
+                                      <m:mrow>
+                                        <m:mo>cos</m:mo>
+                                        <m:mrow>
+                                          <m:mi>β</m:mi>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mtext>,</m:mtext>
+                                        </m:mrow>
+                                      </m:mrow>
+                                    </m:mrow>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mrow>
+              <m:msub>
+                <m:mi>M</m:mi>
+                <m:mi>F</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>r</m:mi>
+                  <m:mi>F</m:mi>
+                </m:msub>
+                <m:mo>⁢</m:mo>
+                <m:mi>F</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:mo>sin</m:mo>
+                  <m:mrow>
+                    <m:mfenced separators="">
+                      <m:mrow>
+                        <m:msup>
+                <m:mn>180</m:mn>
+                <m:mo>∘</m:mo>
+              </m:msup>
+                        <m:mo>-</m:mo>
+                        <m:mi>β</m:mi>
+                      </m:mrow>
+                    </m:mfenced>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mi>l</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>F</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mrow>
+                        <m:mo>sin</m:mo>
+                        <m:mrow>
+                          <m:mi>β</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:mtext>.</m:mtext>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+    </m:math>
+</para><para id="fs-id1163713246019">Wstawiamy momenty sił do <link target-id="fs-id1163709786055" cmlnle:case="genitive"/> i rozwiązujemy dla <m:math>
+  <m:mi>F</m:mi>
+  </m:math>:</para>
+  <equation id="fs-id1163713203300"><m:math display="block"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mo>-</m:mo><m:mrow><m:mfrac><m:mi>l</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>⁢</m:mo><m:msub><m:mi>F</m:mi><m:mi>g</m:mi></m:msub><m:mo>⁢</m:mo><m:mrow><m:mo>cos</m:mo><m:mi>β</m:mi></m:mrow></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>l</m:mi><m:mo>⁢</m:mo><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:mi>β</m:mi></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mn>0</m:mn><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>F</m:mi><m:mo>=</m:mo><m:mrow><m:mfrac><m:msub><m:mi>F</m:mi><m:mi>g</m:mi></m:msub><m:mn>2</m:mn></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mo>ctg</m:mo><m:mi>β</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>400</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mo>ctg</m:mo><m:mrow><m:mn>53</m:mn><m:mo>°</m:mo></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>150,7</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:math></equation><para id="fs-id1163709773345">Normalną siłę reakcji z podłogą otrzymujemy rozwiązawszy <link target-id="fs-id1163713411525"/>: <m:math>
+    <m:mrow>
+      <m:mi>N</m:mi>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mi>g</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>400</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>N</m:mtext>
+      <m:mo>.</m:mo>
+    </m:mrow>
+  </m:math> Wielkość siły tarcia uzyskuje się z <link target-id="fs-id1163713204264" cmlnle:case="genitive"/>: <m:math>
+  <m:mrow>
+    <m:mi>f</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>F</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>150,7</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>N</m:mtext>
+    <m:mo>.</m:mo>
+  </m:mrow>
+</m:math> Współczynnik tarcia statycznego <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>μ</m:mi>
+    <m:mtext>s</m:mtext>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mi>f</m:mi>
+  <m:mspace width="0.1em"/>
+  <m:mtext>/</m:mtext>
+  <m:mspace width="0.1em"/>
+  <m:mi>N</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>150,7</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">N</m:mi>
+  </m:mrow>
+  <m:mspace width="0.1em"/>
+  <m:mtext>/</m:mtext>
+  <m:mspace width="0.1em"/>
+  <m:mn>400</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">N</m:mi>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mn>0,377</m:mn>
+  <m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para>
+<para id="fs-id1163713270113">Siła wypadkowa działająca na drabinę w punkcie styku z podłogą jest sumą wektorową normalnej siły reakcji podłogi i siły tarcia statycznego:</para>
+<equation id="fs-id1163713203800" class="unnumbered"><m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>F</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mtext>wyp</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mover>
+          <m:mi>f</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mover>
+          <m:mi>N</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mn>150,7</m:mn>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mn>400</m:mn>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mspace width="0.2em"/>
+    <m:mtext>N</m:mtext>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation><para id="fs-id1163713434492">Jej wartość to:</para>
+<equation id="fs-id1163713275492" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>F</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mtext>wyp</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msqrt>
+      <m:msup>
+        <m:mi>f</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo>
+      <m:msup>
+        <m:mi>N</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:msqrt>
+    <m:mo>=</m:mo>
+    <m:msqrt>
+      <m:msup>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>150,7</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>N</m:mtext>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo>
+      <m:msup>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>400</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>N</m:mtext>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:msqrt>
+    <m:mo>=</m:mo>
+    <m:mn>427,4</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>N</m:mtext>
+    <m:mo>,</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1163713526138">a jej kierunek to</para>
+<equation id="ked-1bqcesib7_mso" class="unnumbered">
+  <m:math>
+    <m:mi>φ</m:mi>
+    <m:mo>=</m:mo>
+    <m:mtext>arctg</m:mtext>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mfrac>
+        <m:mi>N</m:mi>
+        <m:mi>f</m:mi>
+      </m:mfrac>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mtext>arctg</m:mtext>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mn>400</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>N</m:mtext>
+        </m:mrow>
+        <m:mrow>
+          <m:mn>150,7</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>N</m:mtext>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mn>69</m:mn>
+    <m:mo>,</m:mo>
+    <m:msup>
+      <m:mn>3</m:mn>
+      <m:mo>∘</m:mo>
+    </m:msup>
+    <m:mtext/>
+    <m:mtext>nad podłogę</m:mtext>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1163709868903">Powinniśmy tu podkreślić dwie ogólne praktyczne obserwacje. Kiedy wybieramy oś obrotu, nie oczekujemy, że układ faktycznie obraca się wokół wybranej osi. Drabina w tym przykładzie nie obraca się w ogóle, ale mocno stoi na podłodze. Niemniej jednak jej punkt styku z podłogą jest dobrym wyborem dla osi obrotu. Zauważmy też, że kiedy stosujemy <link target-id="fs-id1163713071798" document="m65805"/> do obliczania indywidualnych momentów sił, nie musimy rozdzielać sił na ich składowe normalne i poprzeczne w odniesieniu do kierunku ramienia sił, ani rozważać zwrotu momentu sił. Jeżeli kąt w <link target-id="fs-id1163713071798" document="m65805" cmlnle:case="locative"/> jest prawidłowo określony za pomocą rysunku z rozkładem sił — jako kąt mierzony przeciwnie do kierunku ruchu wskazówek zegara od kierunku ramienia siły do wektora siły — <link target-id="fs-id1163713071798" document="m65805"/> daje zarówno wartość, jak i zwrot momentu sił. Dzieje się tak, dlatego że moment siły jest iloczynem wektorowym wektora ramienia siły z wektorem siły i <link target-id="fs-id1163713071798" document="m65805"/> wyraża składową tego iloczynu wektorowego wzdłuż osi obrotu.</para>
+<para id="fs-id1168328175500">
+  <title>Znaczenie</title>Otrzymany wynik jest niezależny od długości drabiny, ponieważ <m:math>
+    <m:mi>L</m:mi>
+  </m:math> ulega uproszczeniu w warunku równowagi momentów sił (<link target-id="fs-id1163713203300"/>). Niezależnie od długości drabiny, o ile jej ciężar wynosi 400 N, a kąt z podłogą wynosi <m:math>
+  <m:msup>
+    <m:mn>53</m:mn>
+    <m:mrow>
+      <m:mo>∘</m:mo>
+    </m:mrow>
+  </m:msup>
+  </m:math>, nasze wyniki są prawidłowe. Ale drabina będzie się ślizgać, jeśli wypadkowy moment siły będzie ujemny w <link target-id="fs-id1163713203300" cmlnle:case="locative"/>. Dzieje się tak dla pewnych kątów, gdy współczynnik tarcia statycznego nie jest wystarczająco duży, aby zapobiec temu zjawisku.</para>
+</example>
+<note id="fs-id1163709646648" class="check-understanding">
+  <exercise id="fs-id1163709774672">
+    <problem id="fs-id1163709774674">
+      <para id="fs-id1163713548140">
+        <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Dla sytuacji opisanej w <link target-id="fs-id1163713171369"/>, określ wartość współczynnika tarcia statycznego <m:math>
+          <m:msub>
+            <m:mi>μ</m:mi>
+            <m:mi>S</m:mi>
+          </m:msub>
+        </m:math>, dla którego drabina zaczyna się ślizgać, biorąc pod uwagę, że <m:math>
+        <m:mi>β</m:mi>
+        </m:math> jest kątem, jaki drabina tworzy z podłogą.</para>
+      </problem>
+      <solution id="fs-id1163713423927">
+        <para id="fs-id1163713275403">
+          <m:math>
+            <m:msub>
+              <m:mi>μ</m:mi>
+              <m:mi>s</m:mi>
+            </m:msub>
+            <m:mo>&lt;</m:mo>
+            <m:mn>0,5</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mi>ctg</m:mi>
+            <m:mspace width="0.2em"/>
+            <m:mi>β</m:mi>
+          </m:math>
+        </para>
+      </solution>
+    </exercise>
+  </note>
+  <example id="fs-id1163713198591">
+    <para id="fs-id1168325859699">
+      <title>Siły na zawiasach drzwi</title>Drzwi o ciężarze <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mi>g</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>400</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>N</m:mtext>
+        </m:mrow>
+      </m:math> są zawieszone na zawiasach <m:math>
+      <m:mi>A</m:mi>
+    </m:math> i <m:math>
+    <m:mi>B</m:mi>
+  </m:math>, dzięki czemu mogą się obracać wokół pionowej osi przechodzącej przez zawiasy (<link target-id="CNX_UPhysics_12_02_door"/>). Mają one szerokość <m:math>
+  <m:mrow>
+    <m:mi>b</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>1</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>m</m:mtext>
+    <m:mo>,</m:mo>
+  </m:mrow>
+</m:math> i jednolitą gęstość. Zawiasy umieszczono symetrycznie w odległości <m:math>
+<m:mi>a</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+<m:mspace width="0.2em"/>
+<m:mtext>m</m:mtext>
+</m:math> od siebie na ich krawędzi, aby ciężar równomiernie rozkładał się pomiędzy nimi. Oblicz siły na zawiasach, gdy drzwi są otwarte do połowy.</para>
+<figure id="CNX_UPhysics_12_02_door">
+  <media id="fs-id1163709750496" alt="Rysunek przedstawia drzwi zawieszone na dwóch zawiasach przymocowanych w punktach A i B. Odległość pomiędzy punktami A i B wynosi 2 metry. Drzwi mają szerokość jednego metra.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_02_door.jpg"/>
+  </media>
+  <caption>Drzwi o ciężarze 400 N zawieszone na zawiasach umieszczonych w punktach <m:math>
+    <m:mi>A</m:mi>
+  </m:math> i <m:math>
+  <m:mi>B</m:mi>
+  </m:math>. </caption>
+</figure>
+<para id="fs-id1168328279844">
+  <title>Strategia rozwiązania</title>Siły wywierane przez drzwi na zawiasach łatwo można znaleźć, odwracając kierunki sił, które zawiasy wywierają na drzwi. W związku z tym naszym zadaniem jest znaleźć siły wywierane na drzwi przez zawiasy. Trzy siły działają na płytę drzwiową: nieznana siła <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math> z zawiasu <m:math>
+  <m:mi>A</m:mi>
+  <m:mo>,</m:mo>
+</m:math> nieznana siła <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> z zawiasu <m:math>
+<m:mi>B</m:mi>
+<m:mo>,</m:mo>
+</m:math> i znany ciężar <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>g</m:mi>
+</m:msub>
+</m:math> przyłożony w środku masy płyty drzwiowej. ŚM znajduje się w centrum geometrycznym drzwi, bo ich płyta ma jednolitą gęstość. Przyjmujemy układ odniesienia z osią <m:math>
+<m:mi>y</m:mi>
+</m:math> wzdłuż kierunku siły ciężkości oraz osią <m:math>
+<m:mi>x</m:mi>
+</m:math> w płaszczyźnie płyty, jak pokazano w części (a) <link target-id="CNX_UPhysics_12_02_FBDdoor" cmlnle:case="genitive"/>. Rozkładamy wszystkie siły na ich składowe. W ten sposób mamy cztery nieznane składowe sił: dwie składowe siły <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mo stretchy="false">[</m:mo>
+<m:msub>
+  <m:mi>A</m:mi>
+  <m:mi>x</m:mi>
+</m:msub>
+<m:mo>,</m:mo>
+<m:msub>
+  <m:mi>A</m:mi>
+  <m:mi>y</m:mi>
+</m:msub>
+<m:mo stretchy="false">]</m:mo>
+</m:math> oraz dwie składowe siły <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mo stretchy="false">[</m:mo>
+<m:msub>
+  <m:mi>B</m:mi>
+  <m:mi>x</m:mi>
+</m:msub>
+<m:mo>,</m:mo>
+<m:msub>
+  <m:mi>B</m:mi>
+  <m:mi>y</m:mi>
+</m:msub>
+<m:mo stretchy="false">]</m:mo>
+</m:math>. Na rysunku z rozkładem sił na zawiasach, prezentujemy dwie siły przez ich składowe, których kierunki wybraliśmy arbitralnie. Ponieważ istnieją cztery niewiadome <m:math>
+<m:mo stretchy="false">(</m:mo>
+<m:msub>
+  <m:mi>A</m:mi>
+  <m:mi>x</m:mi>
+</m:msub>
+<m:mo>,</m:mo>
+<m:msub>
+  <m:mi>B</m:mi>
+  <m:mi>x</m:mi>
+</m:msub>
+<m:mo>,</m:mo>
+<m:msub>
+  <m:mi>A</m:mi>
+  <m:mi>y</m:mi>
+</m:msub>
+<m:mo>,</m:mo>
+<m:msub>
+  <m:mi>B</m:mi>
+  <m:mi>y</m:mi>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+</m:math>, musimy utworzyć cztery niezależne równania. Jedno jest warunkiem równowagi sił w kierunku <m:math>
+<m:mi>x</m:mi>
+</m:math>. Drugie - warunkiem równowagi sił w kierunku <m:math>
+<m:mi>y</m:mi>
+</m:math>. Trzecie - warunkiem równowagi momentów sił względem osi obrotu (na zawiasie). Ponieważ masa jest równomiernie rozłożona między zawiasami, czwarte równanie ma postać <m:math>
+<m:msub>
+  <m:mi>A</m:mi>
+  <m:mi>y</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msub>
+  <m:mi>B</m:mi>
+  <m:mi>y</m:mi>
+</m:msub>
+</m:math>. Aby ustalić warunki równowagi, rysujemy rozkład sił i wybieramy punkt obrotu na górnym zawiasie, jak pokazano w części (b) <link target-id="CNX_UPhysics_12_02_FBDdoor" cmlnle:case="genitive"/>. Na koniec rozwiązujemy równania dla nieznanych składowych sił i znajdujemy siły.</para>
+<figure id="CNX_UPhysics_12_02_FBDdoor">
+  <media id="fs-id1163713537087" alt="Rysunek A jest geometryczną reprezentacją drzwi zawieszonych na dwóch zawiasach zamocowanych w punktach A i B. Siły A i B są przyłożone w punktach A i B. Przedstawione są składowe x i y tych sił. Siła Fg przyłożona jest w ŚM. ŚM jest poniżej punktu A o a/2 i na prawo od punktu A o b/2. Linia od punktu A do ŚM tworzy kąt beta z krawędzią ściany. Rysunek B przedstawia rozkład sił dla drzwi zawieszonych na zawiasach zamocowanych w punktach A i B. Siła Ay tworzy kąt beta z linią łączącą punkty P i ŚM. Siła By tworzy kąt beta z linią łączącą punkty B i ŚM. Siła Fg tworzy kąt beta z linią, która jest przedłużeniem linii łączącej punkty P i ŚM. Odległość pomiędzy punktami P i ŚM wynosi d.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_02_FBDdoor.jpg"/>
+  </media>
+  <caption>(a) Geometria i (b) rozkład sił dla drzwi.</caption>
+</figure>
+<para id="fs-id1168325664684">
+  <title>Rozwiązanie</title>Z rysunku rozkładu sił dla drzwi otrzymujemy warunek równowagi sił:</para>
+  <equation id="fs-id1163713190872" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mtable>
+          <m:mtr/>
+          <m:mtr>
+            <m:mtd columnalign="left">
+              <m:mtext>w kierunku</m:mtext>
+              <m:mspace width="0.2em"/>
+              <m:mi>x</m:mi>
+              <m:mtext>:</m:mtext>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mspace width="0.2em"/>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>A</m:mi>
+                <m:mi>x</m:mi>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>B</m:mi>
+                <m:mi>x</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.5em"/>
+              <m:mo stretchy="false">⇒</m:mo>
+              <m:mspace width="0.5em"/>
+              <m:msub>
+                <m:mi>A</m:mi>
+                <m:mi>x</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>B</m:mi>
+                <m:mi>x</m:mi>
+              </m:msub>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd columnalign="left">
+              <m:mtext>w kierunku</m:mtext>
+              <m:mspace width="0.2em"/>
+              <m:mi>y</m:mi>
+              <m:mtext>:</m:mtext>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>A</m:mi>
+                <m:mi>y</m:mi>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>B</m:mi>
+                <m:mi>y</m:mi>
+              </m:msub>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>F</m:mi>
+                <m:mi>g</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.5em"/>
+              <m:mo stretchy="false">⇒</m:mo>
+              <m:mspace width="0.5em"/>
+              <m:msub>
+                <m:mi>A</m:mi>
+                <m:mi>y</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>B</m:mi>
+                <m:mi>y</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:msub>
+                  <m:mi>F</m:mi>
+                  <m:mi>g</m:mi>
+                </m:msub>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mn>400</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>N</m:mtext>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mn>200</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>N.</m:mtext>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1163709774911">Wybieramy oś obrotu w punkcie <m:math>
+    <m:mi>P</m:mi>
+  </m:math> (górny zawias na rysunku z rozkładem sił) i zapisujemy warunek równowagi dla momentów sił względem punktu <m:math>
+  <m:mi>P</m:mi>
+  </m:math>:</para>
+  <equation id="fs-id1163713198520">
+    <m:math>
+      <m:mrow>
+        <m:mtext>obrót względem</m:mtext>
+        <m:mspace width="0.2em"/>
+        <m:mi>P</m:mi>
+        <m:mtext>:</m:mtext>
+        <m:mspace width="0.2em"/>
+        <m:msub>
+          <m:mi>M</m:mi>
+          <m:mrow>
+            <m:mi>F</m:mi>
+            <m:mi>g</m:mi>
+          </m:mrow>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>M</m:mi>
+          <m:mrow>
+            <m:mi>B</m:mi>
+            <m:mi>x</m:mi>
+          </m:mrow>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>M</m:mi>
+          <m:mrow>
+            <m:mi>B</m:mi>
+            <m:mi>y</m:mi>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mn>0</m:mn>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1163713543933">Wykorzystujemy schemat rozkładu sił, aby znaleźć wszystkie wyrażenia w tym równaniu:</para>
+  <equation id="fs-id1163709668282" class="unnumbered"><m:math>
+      <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+        <m:mtr>
+          <m:mtd>
+            <m:msub>
+              <m:mi>M</m:mi>
+              <m:mrow>
+                <m:mi>F</m:mi>
+                <m:mi>g</m:mi>
+              </m:mrow>
+            </m:msub>
+          </m:mtd>
+          <m:mtd>
+            <m:mi/>
+            <m:mo>=</m:mo>
+            <m:mi>d</m:mi>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mi>G</m:mi>
+            </m:msub>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mo>−</m:mo>
+            <m:mi>β</m:mi>
+            <m:mo stretchy="false">)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mi>d</m:mi>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mi>g</m:mi>
+            </m:msub>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mi>β</m:mi>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mi>d</m:mi>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mi>g</m:mi>
+            </m:msub>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>b</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mn>2</m:mn>
+              </m:mrow>
+              <m:mi>d</m:mi>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mi>g</m:mi>
+            </m:msub>
+            <m:mfrac>
+              <m:mi>b</m:mi>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:msub>
+              <m:mi>M</m:mi>
+              <m:mrow>
+                <m:mi>B</m:mi>
+                <m:mi>x</m:mi>
+              </m:mrow>
+            </m:msub>
+          </m:mtd>
+          <m:mtd>
+            <m:mi/>
+            <m:mo>=</m:mo>
+            <m:mi>a</m:mi>
+            <m:msub>
+              <m:mi>B</m:mi>
+              <m:mi>x</m:mi>
+            </m:msub>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:msup>
+              <m:mn>90</m:mn>
+              <m:mrow>
+                <m:mo>∘</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mo>+</m:mo>
+            <m:mi>a</m:mi>
+            <m:msub>
+              <m:mi>B</m:mi>
+              <m:mi>x</m:mi>
+            </m:msub>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:msub>
+              <m:mi>M</m:mi>
+              <m:mrow>
+                <m:mi>B</m:mi>
+                <m:mi>y</m:mi>
+              </m:mrow>
+            </m:msub>
+          </m:mtd>
+          <m:mtd>
+            <m:mi/>
+            <m:mo>=</m:mo>
+            <m:mi>a</m:mi>
+            <m:msub>
+              <m:mi>B</m:mi>
+              <m:mi>y</m:mi>
+            </m:msub>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:msup>
+              <m:mn>180</m:mn>
+              <m:mrow>
+                <m:mo>∘</m:mo>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mn>0.</m:mn>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+    </m:math>
+  </equation><para id="fs-id1163709650316">Przy wyznaczaniu <m:math>
+    <m:mi>sin</m:mi>
+    <m:mspace width="0.2em"/>
+    <m:mi>β</m:mi>
+  </m:math> używamy geometrii trójkąta pokazanego w części (a) rysunku. Teraz wstawiamy te momenty sił do <link target-id="fs-id1163713198520" cmlnle:case="genitive"/> i obliczamy <m:math>
+  <m:msub>
+    <m:mi>B</m:mi>
+    <m:mi>x</m:mi>
+  </m:msub>
+  </m:math>:</para>
+  <equation id="fs-id1163713253923" class="unnumbered"><label/>
+    <m:math>
+      <m:mtext>obrót wokół P</m:mtext>
+      <m:mo>:</m:mo>
+      <m:mspace width="1em"/>
+      <m:mo>−</m:mo>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mi>g</m:mi>
+      </m:msub>
+      <m:mfrac>
+        <m:mi>b</m:mi>
+        <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>+</m:mo>
+      <m:mi>a</m:mi>
+      <m:msub>
+        <m:mi>B</m:mi>
+        <m:mi>x</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+      <m:mo stretchy="false">⇒</m:mo>
+      <m:msub>
+        <m:mi>B</m:mi>
+        <m:mi>x</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mi>g</m:mi>
+      </m:msub>
+      <m:mfrac>
+        <m:mi>b</m:mi>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mi>a</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mn>400</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>N</m:mtext>
+      <m:mo>⋅</m:mo>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:mn>2</m:mn>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mn>100</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>N</m:mtext>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation><para id="fs-id1163713256793">Tak więc wartości poziomych składowych sił wynoszą <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>A</m:mi>
+        <m:mi>x</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>B</m:mi>
+        <m:mi>x</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>100</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>N</m:mtext>
+      <m:mo>.</m:mo>
+    </m:mrow>
+    </m:math> Siły na drzwiach to:</para>
+    <equation id="fs-id1163713120892" class="unnumbered"><m:math display="block"><m:mtable><m:mtr><m:mtd><m:mtext>na górnym zawiasie:</m:mtext>
+        <m:mspace width="1em"/>
+        <m:msub>
+          <m:mrow>
+            <m:mrow>
+              <m:mover>
+                <m:mi>F</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+          <m:mrow>
+            <m:mtext>A na drzwi</m:mtext>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>100</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>200</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:mtext>N</m:mtext><m:mi>,</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>na dolnym zawiasie:</m:mtext>
+        <m:mspace width="1em"/>
+        <m:msub>
+          <m:mrow>
+            <m:mrow>
+              <m:mover>
+                <m:mi>F</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+          <m:mrow>
+            <m:mtext>B na drzwi</m:mtext>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>100</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>200</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:mtext>N</m:mtext><m:mi>.</m:mi></m:mtd></m:mtr></m:mtable></m:math></equation><para id="fs-id1165169208489">Siły na zawiasach wyznaczamy na podstawie trzeciego prawa Newtona jako:</para>
+    <equation id="fs-id11637131208921" class="unnumbered"><m:math display="block"><m:mtable><m:mtr><m:mtd><m:mtext>na górnym zawiasie:</m:mtext>
+        <m:mspace width="1em"/>
+        <m:msub>
+          <m:mrow>
+            <m:mrow>
+              <m:mover>
+                <m:mi>F</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+          <m:mrow>
+            <m:mtext>drzwi na A</m:mtext>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>100</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>200</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:mtext>N</m:mtext><m:mi>,</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>na dolnym zawiasie:</m:mtext>
+        <m:mspace width="1em"/>
+        <m:msub>
+          <m:mrow>
+            <m:mrow>
+              <m:mover>
+                <m:mi>F</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+          <m:mrow>
+            <m:mtext>drzwi na B</m:mtext>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>100</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>200</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:mtext>N</m:mtext><m:mi>.</m:mi></m:mtd></m:mtr></m:mtable></m:math></equation><para id="fs-id1168327892794">
+      <title>Znaczenie</title>Zauważmy, że jeśli problem zostałby sformułowany bez założenia, że ciężar jest równomiernie rozłożony między dwoma zawiasami, to nie dałoby się go rozwiązać, ponieważ liczba niewiadomych byłaby większa niż liczba równań wyrażających warunki równowagi.</para>
+    </example>
+    <note id="fs-id1163709693059" class="check-understanding">
+      <exercise id="fs-id1163709693063">
+        <problem id="fs-id1163713434570">
+          <para id="fs-id1163713434572">
+            <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Rozwiąż zadanie z <link target-id="fs-id1163713198591" cmlnle:case="genitive"/>, przyjąwszy oś obrotu w środku masy.</para>
+          </problem>
+          <solution id="fs-id1163713175857">
+            <para id="fs-id1163713175859">
+              <m:math>
+                <m:msub>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>F</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mtext>drzwi na</m:mtext>
+                    <m:mi>A</m:mi>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>100</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">N</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>i</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>200</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">N</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>j</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+                <m:mo>,</m:mo>
+                <m:mspace width="1em"/>
+                <m:msub>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>F</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mtext>drzwi na</m:mtext>
+                    <m:mi>B</m:mi>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mo>−</m:mo>
+                <m:mn>100</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">N</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>i</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>200</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">N</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>j</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:math>
+            </para>
+          </solution>
+        </exercise>
+      </note>
+      <note id="fs-id1163713294328" class="check-understanding">
+        <exercise id="fs-id1163709650498">
+          <problem id="fs-id1163709650501">
+            <para id="fs-id1163713428612">
+              <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> 50-kilogramowa osoba stoi 1,5 m od jednego końca jednolitego rusztowania o masie 70 kg oraz długości 6 m. Oblicz naprężenia w dwóch pionowych linach podtrzymujących rusztowanie.</para>
+              <media id="fs-id1163713155870" alt="Rysunek przedstawia kobietę stojącą 1,5 m od jednego końca i 4,5 m od drugiego końca rusztowania.">
+                <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_02_woman_img.jpg"/>
+              </media>
+            </problem>
+            <solution id="fs-id1163713161635">
+              <para id="fs-id1163713161637">711 N; 466 N</para>
+            </solution>
+          </exercise>
+        </note>
+        <note id="fs-id1163713170936" class="check-understanding">
+          <exercise id="fs-id1163709749614">
+            <problem id="fs-id1163709749616">
+              <para id="fs-id1163709750042">
+                <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Znak o ciężarze 400 N wisi na końcu jednorodnego wspornika o długości 4 m i ciężarze 600 N. Wspornik podtrzymuje zawias na ścianie i kabel, którego drugi koniec przywiązany jest do ściany 3 m nad lewym końcem wspornika. Oblicz naprężenie kabla podtrzymującego i siłę zawiasu wywieraną na wspornik.</para>
+                <media id="fs-id1163713204008" alt="Rysunek przedstawia znak, który wisi na końcu jednolitego wspornika. Wspornik ma długość 4 m i jest podtrzymywany liną o długości 5 m przywiązaną do ściany 3 m nad lewym końcem wspornika.">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_02_sign_img.jpg"/>
+                </media>
+              </problem>
+              <solution id="fs-id1163713198443">
+                <para id="fs-id1163713198445">1167 N; 980 N skierowane ku górze <m:math>
+                  <m:msup>
+                    <m:mn>18</m:mn>
+                    <m:mrow>
+                      <m:mo>∘</m:mo>
+                    </m:mrow>
+                  </m:msup>
+                  </m:math> ponad poziom.</para>
+                </solution>
+              </exercise>
+            </note>
+            <section id="fs-id1163713278067" class="key-concepts">
+              <title>Podsumowanie</title>
+              <list id="fs-id1163713174610" list-type="bulleted" bullet-style="bullet">
+                <item>Różne problemy inżynieryjne można rozwiązać, stosując warunki równowagi ciał sztywnych.</item>
+                <item>W praktyce należy określić wszystkie siły działające na ciało sztywne i ich ramiona w obrotach wokół wybranej osi obrotu, a następnie wykonać rysunek rozkładu sił dla ciała. Na jego podstawie można określić wypadkową siłę zewnętrzną i wypadkowy moment sił. Dzięki temu da się ustalić warunek równowagi sił i warunek równowagi momentów sił.</item>
+                <item>Przy ustalaniu warunków równowagi możemy przyjąć dowolny inercjalny układ odniesienia i dowolne położenie osi obrotu. Każdy wybór prowadzi do tego samego rozwiązania. Jednak niektóre mogą sprawić, że jego znalezienie będzie bardzo skomplikowane. Osiągamy ten sam rezultat bez względu na podjęte decyzje.</item>
+              </list>
+            </section>
+            <section id="fs-id1163713432873" class="review-conceptual-questions">
+              <title> Pytania</title>
+              <exercise id="fs-id1163713202388">
+                <problem id="fs-id1163713202391">
+                  <para id="fs-id1163713202393">Czy można oprzeć drabinę o szorstką ścianę, gdy podłoże pozbawione jest tarcia?</para>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1163713541637">
+                <problem id="fs-id1163713265865">
+                  <para id="fs-id1163713265868">Powiedz, jak waga sprężynowa i punkt podparcia mogą być użyte do zważenia obiektu, którego masa przekracza maksymalną wartość na skali wagi.</para>
+                </problem>
+                <solution id="fs-id1163709751583">
+                  <para id="fs-id1163709751586">(Udowodnij)</para>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1163713101861">
+                <problem id="fs-id1163713101863">
+                  <para id="fs-id1163713164550">Malarz wspina się po drabinie. Czy jest ona bardziej podatna na poślizg, gdy malarz znajduje się w pobliżu jej dołu, czy góry?</para>
+                </problem>
+              </exercise>
+            </section>
+            <section id="fs-id1163713270370" class="review-problems">
+              <title>Zadania</title>
+              <exercise id="fs-id1163713262854">
+                <problem id="fs-id1163713262857">
+                  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1163709650460">Jednolita deska o masie 30 kg i długości 6 m spoczywa na płaskiej powierzchni, jak pokazano poniżej. Jaką maksymalną masę można umieścić na jej prawym końcu, żeby się nie przewróciła? (Wskazówka: gdy deska ma się przewrócić, styka się z powierzchnią tylko wzdłuż krawędzi, która staje się chwilową osią obrotu).</para><media id="fs-id1163713081498" alt="Rysunek przedstawia jednolitą deskę spoczywającą na płaskiej powierzchni stolika. Część deski, która ma długość 4,2 metra, jest podparta. Część deski, która ma długość 1,8 metra, wisi nad podłogą.">
+                    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_01_SM11-3_img.jpg"/>
+                  </media>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1163709789579">
+                <problem id="fs-id1163709789581">
+                  <para id="fs-id1163709734130">Jednolita huśtawka pokazana poniżej jest zrównoważona na podparciu znajdującym się 3 m od lewego końca. Mniejszy chłopiec po prawej waży 40 kg, a większy chłopiec po lewej stronie waży 80 kg. Jaka jest masa deski?</para>
+                  <media id="fs-id1163709734135" alt="Rysunek przedstawia dwóch chłopców na huśtawce. Jeden siedzi na skraju huśtawki trzy metry od jej punktu podparcia. Drugi chłopiec siedzi na przeciwnej krawędzi huśtawki, pięć metrów od jej punktu podparcia.">
+                    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_01_SM11-2_img.jpg"/>
+                  </media>
+                </problem>
+                <solution id="fs-id1163713256799">
+                  <para id="fs-id1163713256801">40 kg</para>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1163709714861">
+                <problem id="fs-id1163709714863">
+                  <para id="fs-id1163713261440">Aby wyciągnąć samochód z błota, mężczyzna łączy jeden koniec liny z przednim zderzakiem, a drugi przywiązuje do drzewa oddalonego o 15 m, jak pokazano poniżej. Następnie ciągnie za środek liny siłą 400 N, co powoduje przesunięcie jej środka o 0,3 m (zaznaczone na rysunku). Z jaką siłą lina oddziałuje na samochód?</para>
+                  <media id="fs-id1163713146952" alt="Na rysunku przedstawiono linę przywiązaną do przedniego zderzaka, a jej drugi koniec przywiązany jest do drzewa oddalonego o 15 m. Do środka liny przyłożona jest siła 400 N, która powoduje przesunięcie liny o 0,3 m.">
+                    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_01_SM11-4_img.jpg"/>
+                  </media>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1163709693045">
+                <problem id="fs-id1163709882547">
+                  <para id="fs-id1163709882549">Jednolite rusztowanie o masie 40 kg i długości 6 m podtrzymują dwie lekkie liny, jak pokazano poniżej. 80-kilogramowy malarz stoi 1 m od lewego końca rusztowania, a jego wyposażenie malarskie znajduje się 1,5 m od prawego końca. Naprężenie lewej liny jest dwukrotnie większe niż prawej. Oblicz naprężenia lin i masę sprzętu.</para>
+                  <media id="fs-id1163709769045" alt="Rysunek mężczyzny stojącego po lewej stronie i wiadro usytuowane po prawej stronie rusztowania.">
+                    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_01_SM11-6_img.jpg"/>
+                  </media>
+                </problem>
+                <solution id="fs-id1163713290978">
+                  <para id="fs-id1163713290980">prawa lina 444,72 N; lewa lina 889,44 N; ciężar sprzętu 156,96 N; 16 kg</para>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1163709657344">
+                <problem id="fs-id1163713009985">
+                  <para id="fs-id1163713009987">Gdy układ przedstawiony poniżej jest podparty w punkcie <m:math>
+                    <m:mi>P</m:mi>
+                  </m:math>, pozostaje w stanie równowagi. Oblicz siłę <m:math>
+                  <m:mi>F</m:mi>
+                </m:math> i siłę przyłożoną w punkcie <m:math>
+                <m:mi>P</m:mi>
+                </m:math>. Ciężar konstrukcji możesz pominąć.</para>
+                <media id="fs-id1163713253962" alt="Rysunek przedstawia rozkład sił przyłożonych do punktu P. Siła 2000 N, przyłożona dwa metry na lewo od punktu P, porusza go w górę. Siła F, przyłożona dwa metry w lewo i e metry powyżej punktu P, porusza go w prawo. Siła 1000 N, dwa metry w prawo i trzy metry poniżej punktu P, porusza go w lewo.">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_01_SM11-14_img.jpg"/>
+                </media>
+              </problem>
+            </exercise>
+            <exercise id="fs-id1163709758086">
+              <problem id="fs-id1163709758088">
+                <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1163713204706">Osoba o masie 70 kg chce wejść na dach, w tym celu ustawia sobie na betonowym podłożu 6-metrową aluminiową drabinę o masie 10 kg, jej podstawa oddalona jest 2,0 m od domu. Drabina opiera się o plastikową rynnę, przy czym można założyć, że odbywa się to bez tarcia. Środek masy drabiny znajduje się 2 m od punktu styku drabiny z podłożem (ponieważ jej masa nie jest rozłożona równomiernie). Osoba stoi 3 m od punktu, w którym drabina styka się z podłożem. Oblicz normalną siłę reakcji i siły tarcia u podstawy drabiny.</para></problem>
+              <solution id="fs-id1163713204708">
+                <para id="fs-id1163713204711">784,8 N; 132,95 N</para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1163713166376">
+              <problem id="fs-id1163709685765">
+                <para id="fs-id1163709685767">Jednolity poziomy wspornik o ciężarze 400 N ma jeden koniec zamocowany do ściany na zawiasach, a do drugiego przymocowano znak o ciężarze 200 N. Wspornik podtrzymuje także linka zamocowana pomiędzy końcem wspornika a ścianą. Przy założeniu, że cały ciężar znaku jest przyłożony na samym końcu słupka, oblicz naprężenie linki i siłę na zawiasie wspornika.</para>
+                <media id="fs-id1163713244719" alt="Rysunek znaku, który wisi na końcu jednolitego wspornika. Wspornik tworzy kąt 30 stopni z linką przywiązaną do ściany nad lewym końcem wspornika.">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_01_SM11-17_img.jpg"/>
+                </media>
+              </problem>
+            </exercise>
+            <exercise id="fs-id1163709693209">
+              <problem id="fs-id1163709693211">
+                <para id="fs-id1163709693213">Przedramię pokazane poniżej tworzy kąt <m:math>
+                  <m:mi>θ</m:mi>
+                </m:math> względem ramienia, a w dłoni trzymana jest masa 5 kg. Całkowita masa przedramienia i dłoni wynosi 3 kg, a ich środek masy znajduje się 15 cm od łokcia. <list xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-idm1161806416" list-type="enumerated" number-style="lower-alpha"><item>(Jaka jest wartość siły, którą mięśnie bicepsa wywierają na przedramię dla <m:math>
+                  <m:mi>θ</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:msup>
+                    <m:mn>60</m:mn>
+                    <m:mrow>
+                      <m:mo>∘</m:mo>
+                    </m:mrow>
+                  </m:msup>
+                  </m:math>?</item>
+                  <item>Jaka jest wartość siły na stawie łokciowym przy tym samym kącie? </item>
+                  <item>Jak te siły zależą od kąta <m:math>
+                    <m:mi>θ</m:mi>
+                    </m:math>?</item>
+                  </list></para>
+                <media id="fs-id1163709694255" alt="Rysunek przedramienia obracającego się wokół łokcia. W dłoni podtrzymywane jest 5 kilogramów. Odległość pomiędzy łokciem a ciężarem wynosi 35 centymetrów. Odległość między łokciem a mięśniem bicepsa powodującego moment wokół łokci wynosi 4 centymetry. Przedramię tworzy kąt theta z ramieniem.">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_01_SM11-20_img.jpg"/>
+                </media>
+              </problem>
+              <solution id="fs-id1163713173464">
+                <para id="fs-id1163713173466">
+                  <list id="eip-idm847149248">
+                    <item>a. 539,55 N; </item>
+                    <item>b. 461,07 N; </item>
+                    <item>c. nie zależą od kąta</item>
+                  </list>
+                </para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1163709698344">
+              <problem id="fs-id1163709698346">
+                <para id="fs-id1163709698348">Jednolity wysięgnik, pokazany poniżej, o ciężarze 2000 N podtrzymywany jest przez poziomy odciąg i zawias w punkcie <m:math>
+                  <m:mi>A</m:mi>
+                </m:math>. Jakie siły na wysięgniku są wywołane liną odciągu i ze względu na podparcie w punkcie <m:math>
+                <m:mi>A</m:mi>
+              </m:math>? Czy siła w <m:math>
+              <m:mi>A</m:mi>
+              </m:math> działa wzdłuż wysięgnika?</para>
+              <media id="fs-id1163709657178" alt="Rysunek ciężaru 2000 N, który jest podtrzymywany przez poziomy odciąg i przez wspornik z zawiasem w punkcie A. Wspornik zawiasowy tworzy kąt 45 stopni względem podłoża.">
+                <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_01_SM11-22_img.jpg"/>
+              </media>
+            </problem>
+          </exercise>
+          <exercise id="fs-id1163713017578">
+            <problem id="fs-id1163713017580">
+              <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1163713017582">Jednolity wysięgnik pokazany poniżej waży 71,35 kg, a z jego prawego końca zwisa obiekt o ciężarze 400 N. Wysięgnik podtrzymują linka i zawias na ścianie. Oblicz naprężenie linki i siłę wywieraną na zawias przez wysięgnik. Czy siła na zawiasie działa wzdłuż wysięgnika?</para><media id="fs-id1163713328566" alt="Rysunek ciężaru 400 N, który jest podtrzymywany przez linę i wspornik na zawiasie przy ścianie. Wspornik zawiasowy tworzy kąt 20 stopni z linią prostopadłą do ściany. Lina tworzy kąt 45 stopni z linią prostopadłą do ściany.">
+                <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_01_SM11-23_img.jpg"/>
+              </media>
+            </problem>
+            <solution id="fs-id1163713469354">
+              <para id="fs-id1163713469356">naprężenie 777 N; na zawiasie 777 N pod kątem <m:math>
+                <m:msup>
+                  <m:mn>45</m:mn>
+                  <m:mrow>
+                    <m:mo>∘</m:mo>
+                  </m:mrow>
+                </m:msup>
+                </m:math> względem poziomu; nie</para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1163709668129">
+              <problem id="fs-id1163709668131">
+                <para id="fs-id1163713365379">Wysięgnik <m:math>
+                  <m:mi>A</m:mi>
+                  <m:mi>B</m:mi>
+                </m:math> dźwigu, podnoszącego ładunek 3000 kg ma długość 12 m. Środek masy wysięgnika znajduje się w jego geometrycznym środku, a jego masa wynosi 1000 kg. Dla przedstawionej sytuacji oblicz naprężenie <m:math>
+                <m:mi>N</m:mi>
+              </m:math> w linie i siłę na osi obrotu <m:math>
+              <m:mi>A</m:mi>
+              </m:math>. </para><media id="fs-id1163709656053" alt="Rysunek wysięgnika podnoszącego obciążenie 3000 kg. Ramię wysięgnika tworzy kąt 30 stopni z linią równoległą do podłoża. Lina nośna tworzy kąt ramienia 10 stopni z ramieniem wysięgnika.">
+                <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_01_SM11-24_img.jpg"/>
+              </media>
+            </problem>
+          </exercise>
+          <exercise id="fs-id1163713161847">
+            <problem id="fs-id1163709650274">
+              <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1163709650276">Jednolita klapa, pokazana poniżej, o wymiarach 1 m na 1,5 m i ciężarze 300 N przymocowana jest pojedynczym zawiasem (H) oraz podtrzymywana przez linę zawiązaną pomiędzy jej środkiem a podłogą. Podłoga z klapą tworzy kąt <m:math>
+                <m:msup>
+                  <m:mn>30</m:mn>
+                  <m:mrow>
+                    <m:mo>∘</m:mo>
+                  </m:mrow>
+                </m:msup>
+              </m:math>, natomiast z linią kąt <m:math>
+              <m:msup>
+                <m:mn>20</m:mn>
+                <m:mrow>
+                  <m:mo>∘</m:mo>
+                </m:mrow>
+              </m:msup>
+              </m:math>. Oblicz naprężenie w linie i siłę na zawiasie.</para><media id="fs-id1163713516326" alt="Rysunek klapy o wymiarach 1 m na 1,5 m. Klapa zamocowana jest pojedynczym zawiasem oznaczonym literą Z i podtrzymywana liną przywiązaną do środka klapy i podłogi. Klapa tworzy kąt 30 stopni z podłogą, a lina tworzy kąt 20 stopni z podłogą.">
+                <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_01_SM11-25_img.jpg"/>
+              </media>
+            </problem>
+            <solution id="fs-id1163713082740">
+              <para id="fs-id1163713082742">1500 N; 1620 N pod kątem <m:math>
+                <m:msup>
+                  <m:mn>30</m:mn>
+                  <m:mrow>
+                    <m:mo>∘</m:mo>
+                  </m:mrow>
+                </m:msup>
+                </m:math> do podłogi</para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1163709877592">
+              <problem id="fs-id1163709877594">
+                <para id="fs-id1163709877596">Człowiek o wadze 90 kg idzie po równoważni o długości 2 m, wysokości 1 m i masie 25 kg, jak pokazano poniżej. Oblicz normalną siłę reakcji na każdej nodze w punkcie styku z podłogą, gdy mężczyzna znajduje się w odległości 0,5 m od końca równoważni. (Wskazówka: Najpierw określ całkowitą siłę reakcji na każdym końcu. Jest ona sumą wektorową dwóch sił reakcji, z których każda działa wzdłuż jednej nogi. Normalna siła reakcji, w odniesieniu do podłogi, w punkcie styku z nią jest normalną składową tej siły.)</para>
+                <media id="fs-id1163709743012" alt="Rysunek człowieka idącego po równoważni. Każda strona równoważni podparta jest dwiema połączonymi nogami. Kąt między nimi to 60 stopni.">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_12_01_SM11-27_img.jpg"/>
+                </media>
+              </problem>
+            </exercise>
+          </section>
+        </content>
+      </document>

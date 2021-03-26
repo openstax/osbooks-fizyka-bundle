@@ -1,0 +1,3564 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:m="http://www.w3.org/1998/Math/MathML" id="new" cnxml-version="0.7" module-id="new">
+  <title>Rzuty</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m63777</md:content-id>
+  <md:title>Rzuty</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>stosować do opisu rzutów jednowymiarowe równania ruchu w kierunkach prostopadłych; </item>
+<item>obliczać zasięg, czas lotu oraz maksymalną wysokość ciała, które zostało rzucone i upada na płaską, poziomą powierzchnię; </item>
+<item>znajdować czas lotu i prędkość upadku pocisku, który trafia w punkt na innej wysokości niż początkowa; </item>
+<item>znajdować kształt toru ruchu ciała w rzucie. </item>
+</list></md:abstract>
+  <md:uuid>4d85eb93-c2f7-4c58-b336-485d1ec1f012</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165167706339"><term cmlnle:reference="rzut" class="no-emphasis">Rzutem</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">projectile motion</term></foreign>) nazywamy ruch ciała wystrzelonego lub upuszczonego w powietrzu, który zachodzi jedynie z przyspieszeniem grawitacyjnym. W zagadnieniach fizycznych i inżynierskich bardzo często mamy do czynienia z rzutami. Przykładem takiego ruchu może być ruch meteoroidu wpadającego w atmosferę ziemską, fajerwerku wystrzelonego w powietrze, czy lot piłki w dowolnej dyscyplinie sportu. Takie obiekty nazywamy często <emphasis effect="italics">pociskami</emphasis> a ich tor lotu <term cmlnle:reference="trajektoria" class="no-emphasis">trajektorią</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">trajectory</term></foreign>). Ruch obiektów spadających pionowo, który omówiliśmy w rozdziale <link class="target-chapter" document="m65746">Ruch prostoliniowy</link> jest prostym rodzajem rzutu w jednym wymiarze, gdzie ruch w poziomie nie występował. W tym rozdziale zajmiemy się rzutami w płaszczyźnie pionowej – przypadek dwuwymiarowy – tj. rzutami poziomymi i ukośnymi, przy czym będziemy zawsze pomijać wpływ oporu powietrza.</para><para id="fs-id1165166649792">Najważniejszym faktem do zapamiętania jest to, że <emphasis effect="italics">ruchy w kierunkach prostopadłych są niezależne</emphasis> i dlatego mogą być rozpatrywane oddzielnie. Mówiliśmy o tym w sekcji <link class="target-chapter" document="m63763">Przemieszczenie i prędkość</link>, gdzie pokazaliśmy, że ruch pionowy jest niezależny od ruchu w poziomie. Kluczem do rozwiązania problemu rzutów jest rozłożenie ruchu na ruch wzdłuż osi poziomej i niezależny ruch wzdłuż osi pionowej. Taki wybór osi jest najbardziej sensowny i praktyczny, ponieważ przyspieszenie grawitacyjne występuje wzdłuż kierunku pionowego, a więc w kierunku poziomym nie mamy żadnego przyspieszenia, jeśli pominiemy wpływ oporu powietrza. Dla ułatwienia nazwiemy oś poziomą osią <m:math>
+        <m:mi>x</m:mi>
+      </m:math>, natomiast oś pionową - osią <m:math>
+      <m:mi>y</m:mi>
+    </m:math>. Pamiętajmy, że taki wybór układu współrzędnych nie jest jedynym możliwym. Jest on po prostu wygodny w problemach z przyspieszeniem grawitacyjnym. W pozostałych przypadkach możemy oczywiście dokonać innego wyboru osi. <link target-id="CNX_UPhysics_04_03_Soccer"/> ilustruje wybór osi oraz oznaczenia przyjęte w dalszych fragmentach rozdziału. Całkowite przemieszczenie nazwiemy <m:math>
+  <m:mrow>
+    <m:mrow>
+      <m:mover>
+        <m:mi>s</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:mrow>
+</m:math>, a jego składowe wzdłuż osi poziomej i pionowej <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mover>
+      <m:mi>x</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:mrow>
+</m:math> oraz <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mover>
+      <m:mi>y</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:mrow>
+</m:math>. Długości wektorów przemieszczenia i jego składowych oznaczymy przez <m:math>
+  <m:mi>s</m:mi>
+</m:math>, <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ i <m:math>
+  <m:mi>y</m:mi>
+</m:math>. </para><figure id="CNX_UPhysics_04_03_Soccer"><media id="fs-id1165167627054" alt="Rysunek piłkarza kopiącego piłkę. But piłkarza jest w początku układu współrzędnych xy. Pokazano trajektorię lotu piłki i zaznaczono sześć przykładowych pozycji piłki w czasie lotu. Tor ruchu jest parabolą. Wektor s jest całkowitym przemieszczeniem piłki od początku układu do położenia końcowego. Wektor s i jego prostopadłe składowe x i y tworzą trójkąt z wektorem s na przeciwprostokątnej. Kąt między osią x a wektorem s wynosi theta.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_04_03_Soccer.jpg"/>
+  </media>
+  
+<caption>Całkowite przemieszczenie <m:math>
+    <m:mrow>
+      <m:mrow>
+        <m:mover>
+          <m:mi>s</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:mrow>
+  </m:math> piłki do pewnego punktu na jej trajektorii. Wektor <m:math>
+  <m:mrow>
+    <m:mrow>
+      <m:mover>
+        <m:mi>s</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:mrow>
+</m:math> ma dwa wektory składowe <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mover>
+      <m:mi>x</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:mrow>
+</m:math> i <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mover>
+      <m:mi>y</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:mrow>
+</m:math> wzdłuż poziomej i pionowej osi. Jego długość wynosi <m:math>
+  <m:mi>s</m:mi>
+</m:math>, a kąt jaki tworzy z poziomem to <m:math>
+  <m:mrow>
+    <m:mi>φ</m:mi>
+  </m:mrow>
+</m:math>. </caption></figure><para id="fs-id1165166626629">Aby nasz opis <term cmlnle:reference="rzut" class="no-emphasis">rzutów</term> był kompletny, powinniśmy uwzględnić wektor prędkości, przyspieszenia i przemieszczenia. Co więcej, musimy znaleźć ich składowe <m:math>
+    <m:mi>x</m:mi>
+  </m:math>
+ oraz <m:math>
+  <m:mi>y</m:mi>
+</m:math>. Załóżmy, że pomijamy wszystkie siły (z wyjątkiem siły grawitacji) takie jak opór powietrza czy tarcie. Jeśli przyjmiemy dodatni kierunek osi pionowej do góry, składowe wektora przyspieszenia mają bardzo prostą postać:</para><equation id="fs-id1165167995317" class="unnumbered"><label/>
+  <m:math>
+    <m:msub>
+      <m:mi>a</m:mi>
+      <m:mi>y</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mo>-</m:mo>
+    <m:mi>g</m:mi>
+    <m:mo>=</m:mo>
+    <m:mo>-</m:mo>
+    <m:mn>9,8</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:msup>
+      <m:mtext>m/s</m:mtext>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mn>,</m:mn>
+    <m:mspace width="1em"/>
+    <m:msub>
+      <m:mi>a</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>0.</m:mn>
+  </m:math>
+</equation><para id="fs-id1165167703724">Ponieważ grawitacja działa tylko w pionie, <m:math>
+  <m:msub>
+    <m:mi>a</m:mi>
+    <m:mi>x</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mn>0.</m:mn>
+</m:math> Jeżeli <m:math>
+<m:msub>
+  <m:mi>a</m:mi>
+  <m:mi>x</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+<m:mn>,</m:mn>
+</m:math> to prędkość <m:math>
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mi>x</m:mi>
+</m:msub>
+</m:math> w kierunku <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ w dowolnej chwili czasu nie zmienia się i jest równa prędkości początkowej <m:math>
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mrow>
+    <m:mn>0</m:mn>
+    <m:mi>x</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>. Z takimi warunkami na prędkość i przyspieszenie możemy zapisać kinematyczne równania (<link target-id="fs-id1165038294260" document="m63772"/>-<link target-id="fs-id1165038323452" document="m63772"/>) dla ruchu w jednorodnym polu grawitacyjnym, przyjmując postać równań odpowiednią dla ruchu ze stałym przyspieszeniem (z sekcji <link class="target-chapter" document="m65750">Ruch ze stałym przyspieszeniem</link>). Jeśli przyjmiemy <m:math>
+<m:msub>
+  <m:mi>a</m:mi>
+  <m:mi>y</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mo>-</m:mo>
+<m:mi>g</m:mi>
+<m:mn>,</m:mn>
+<m:mspace width="1em"/>
+<m:msub>
+  <m:mi>a</m:mi>
+  <m:mi>x</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>, nasze równania ruchu mają postać:<newline/>Ruch w poziomie</para>
+<equation id="fs-id1165166634626">
+  <m:math>
+    <m:mi>x</m:mi>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>x</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mi>t</m:mi>
+  </m:math>
+</equation>
+<equation id="eip-320">
+  <m:math>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mi>x</m:mi>
+      </m:mrow>
+    </m:msub>
+  </m:math>
+</equation>
+<para id="fs-id1165167648473">Ruch w pionie</para>
+<equation id="fs-id1165167669254">
+  <m:math>
+    <m:mi>y</m:mi>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>y</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mrow>
+            <m:mn>0</m:mn>
+            <m:mi>y</m:mi>
+          </m:mrow>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mi>y</m:mi>
+        </m:msub>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mi>t</m:mi>
+  </m:math>
+</equation>
+<equation id="fs-id1165167637616">
+  <m:math>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mi>y</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mi>y</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>-</m:mo>
+    <m:mi>g</m:mi>
+    <m:mi>t</m:mi>
+  </m:math>
+</equation>
+<equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165166483236"><m:math display="block"><m:semantics><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:mrow><m:msub><m:mi>v</m:mi><m:mfenced separators="⁣" close="" open=""><m:mn>0</m:mn><m:mi>y</m:mi></m:mfenced></m:msub><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow></m:mrow><m:mo>−</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⁢</m:mo><m:mi>g</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            y = y_0 + v_{0\sep y} t - \frac12 g t^2</m:annotation></m:semantics></m:math></equation><equation id="fs-id1165168097667">
+  <m:math>
+    <m:msubsup>
+      <m:mi>v</m:mi>
+      <m:mi>y</m:mi>
+      <m:mn>2</m:mn>
+    </m:msubsup>
+    <m:mo>=</m:mo>
+    <m:msubsup>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mi>y</m:mi>
+      </m:mrow>
+      <m:mn>2</m:mn>
+    </m:msubsup>
+    <m:mo>-</m:mo>
+    <m:mn>2</m:mn>
+    <m:mi>g</m:mi>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>y</m:mi>
+        <m:mo>-</m:mo>
+        <m:msub>
+          <m:mi>y</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1165167907374">Używając tego zestawu równań, możemy dokonać analizy dowolnego rzutu. Musimy jednak pamiętać o kilku ważnych kwestiach.</para>
+<note id="fs-id1165168078964" class="problem-solving">
+  <title>Strategia rozwiązywania zadań: rzuty</title>
+  <list xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165167645994" list-type="enumerated" number-style="arabic"><item> Rozdziel ruch pocisku na składową poziomą i pionową wzdłuż osi <m:math>
+        <m:mi>x</m:mi>
+      </m:math>
+     oraz <m:math>
+      <m:mi>y</m:mi>
+    </m:math>. Wartości składowych wektora przemieszczenia <m:math>
+  <m:mrow>
+    <m:mrow>
+      <m:mover>
+        <m:mi>s</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:mrow>
+</m:math> wzdłuż tych osi to <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ i <m:math>
+  <m:mi>y</m:mi>
+</m:math>. Wartości składowych wektora prędkości <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mover>
+      <m:mi>v</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:mrow>
+</m:math> są równe <m:math>
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mi>x</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mi>v</m:mi>
+<m:mi>cos</m:mi>
+<m:mo>⁡</m:mo>
+<m:mi>φ</m:mi>
+</m:math> oraz <m:math>
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mi>y</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mi>v</m:mi>
+<m:mi>sin</m:mi>
+<m:mo>⁡</m:mo>
+<m:mi>φ</m:mi>
+</m:math>, gdzie <m:math>
+<m:mi>v</m:mi>
+</m:math> jest długością wektora prędkości, a <m:math>
+<m:mi>φ</m:mi>
+</m:math> jest kątem nachylenia wektora prędkości do osi poziomej (w dowolnej chwili czasu), jak pokazano na <link target-id="CNX_UPhysics_04_03_2DMotion" cmlnle:case="genitive"/>.</item>
+<item> Prędkość początkową <m:math>
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:math> również rozkładamy na składowe <m:math>
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mrow>
+    <m:mn>0</m:mn>
+    <m:mi>x</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+<m:mi>cos</m:mi>
+<m:mo>⁡</m:mo>
+<m:msub>
+  <m:mi>φ</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+</m:math> oraz <m:math>
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mrow>
+    <m:mn>0</m:mn>
+    <m:mi>y</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+<m:mi>sin</m:mi>
+<m:mo>⁡</m:mo>
+<m:msub>
+  <m:mi>φ</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+</m:math>, gdzie <m:math>
+<m:msub>
+  <m:mi>φ</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+</m:math> jest kątem początkowym, pod którym pocisk jest wystrzeliwany. </item>
+<item> Traktuj rzut jako złożenie dwóch niezależnych ruchów w jednym kierunku: wzdłuż osi poziomej i pionowej. Używaj równań ruchu dla kierunku poziomego i pionowego w formie zapisanej powyżej. </item>
+<item> Rozwiąż równania ze względu na niewiadome. Zauważ, że jedyną wspólną zmienną w równaniach dla kierunku poziomego i pionowego jest czas <m:math>
+    <m:mi>t</m:mi>
+  </m:math>. Metody rozwiązywania równań ruchu są takie same jak w przypadku jednowymiarowym. Szczegółowo omówiliśmy je podczas analizy przykładów poniżej. </item>
+  <item> Następnie użyj wielkości służących do opisu ruchu poziomego i pionowego, aby uzyskać informację o całkowitym przemieszczeniu <m:math>
+    <m:mrow>
+      <m:mrow>
+        <m:mover>
+          <m:mi>s</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:mrow>
+  </m:math> i prędkości <m:math>
+  <m:mrow>
+    <m:mrow>
+      <m:mover>
+        <m:mi>v</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:mrow>
+</m:math>. Oblicz wartość oraz kierunek wektorów przemieszczenia i prędkości używając wzorów <newline/>
+<equation id="fs-id1165166617426" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mi>s</m:mi>
+    <m:mo>=</m:mo>
+    <m:msqrt>
+      <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo>
+      <m:msup>
+        <m:mi>y</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:msqrt>
+    <m:mn>,</m:mn>
+    <m:mspace width="1em"/>
+    <m:mi>φ</m:mi>
+    <m:mo>=</m:mo>
+    <m:mtext>arctg</m:mtext>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>y</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mi>x</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mn>,</m:mn>
+    <m:mspace width="1em"/>
+    <m:mi>v</m:mi>
+    <m:mo>=</m:mo>
+    <m:msqrt>
+      <m:msubsup>
+        <m:mi>v</m:mi>
+        <m:mi>x</m:mi>
+        <m:mn>2</m:mn>
+      </m:msubsup>
+      <m:mo>+</m:mo>
+      <m:msubsup>
+        <m:mi>v</m:mi>
+        <m:mi>y</m:mi>
+        <m:mn>2</m:mn>
+      </m:msubsup>
+    </m:msqrt>
+    <m:mn>,</m:mn>
+  </m:math>
+</equation>
+<newline/>gdzie kąt<m:math>
+  <m:mi>φ</m:mi>
+</m:math>
+ określa kierunek wektora przemieszczenia <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mover>
+      <m:mi>s</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:math>
+</item>
+</list></note>
+<figure id="CNX_UPhysics_04_03_2DMotion"><media id="fs-id1165166623611" alt="Rysunek a pokazuje położenia i prędkości ciała w rzucie ukośnym w układzie współrzędnych xy w 10 kolejnych chwilach czasu. W początku układu ciało ma prędkość v z indeksem dolnym 0 pod kątem theta z indeksem dolnym zero do poziomu. Wektor prędkości zaznaczono granatowo-niebieskimi strzałkami, a jego składowe x i y jasnoniebieskimi. Ciało porusza się po paraboli skierowanej ramionami w dół do wysokości maksymalnej, potem opada do y=0 i dalej w dół poniżej osi x. Prędkość v w dowolnej chwili czasu tworzy z poziomem kąt theta, który zmienia się w czasie, i ma składowe v z indeksem x i v z indeksem y. Składowa x prędkości nie zmienia się. Składowa y skierowana jest początkowo do góry, ale maleje aż na wysokości maksymalnej spada do zera. Potem rośnie, ale skierowana w dół. Gdy ciało osiąga początkową wysokość, jego wektor prędkości ma tę samą wartość, ale tworzy z poziomem kąt - theta zero. Składowa y prędkości końcowej jest równa – v z indeksem 0y. Ostatnie zaznaczone położenie ciała jest poniżej osi x ze współrzędną y ujemną. Z rysunku wyraźnie wynika, że położenie ciała w kierunku poziomym zmienia się jednostajnie w czasie, podczas gdy w kierunku pionowym najpierw przyrasta coraz wolniej w locie w górę, a potem coraz szybciej w locie w dół. Rysunek b pokazuje składową poziomą ruchu ze stałą prędkością. Składową x położenia i prędkości pokazano wzdłuż poziomej osi. Położenie przyrasta w kolejnych chwilach czasu o tyle samo, a składowa x prędkości ma stałą wartość i jest skierowana w zawsze w prawo. Rysunek c pokazuje wkładową pionową ruchu ze stałym przyspieszeniem. Składową y położenia i prędkości pokazano wzdłuż pionowej osi. Położenia w kolejnych chwilach zagęszczają się w locie w górę i rozrzedzają w locie dół. Składowe y prędkości maleją do wartości 0 w wysokości maksymalnej i potem rosną w kierunku w dół. Rysunek d pokazuje, że dodając składową x i y prędkości w dowolnym punkcie, dostajemy całkowity wektor prędkości. Prędkość ma składowy v z indeksem x i v z indeksem y oraz tworzy kąt theta z osią poziomą. Wybrano przykładowy punkt, w którym składowa y prędkości jest skierowana w dół.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_04_03_2DMotion.jpg"/>
+  </media>
+  
+<caption>(a) Problem rzutu w dwóch wymiarach analizujemy, rozpatrując niezależne ruchy w jednym wymiarze: w kierunku poziomym i pionowym. (b) Ruch w poziomie jest bardzo prosty, ponieważ <m:math>
+    <m:msub>
+      <m:mi>a</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>0</m:mn>
+  </m:math> oraz <m:math>
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mi>x</m:mi>
+  </m:msub>
+</m:math> jest stałe. (c) W trakcie wznoszenia się ciała prędkość w kierunku pionowym maleje i spada do zera, gdy ciało osiąga wysokość maksymalną. Gdy ciało z powrotem spada w kierunku Ziemi, prędkość pionowa rośnie, ale jej kierunek jest teraz przeciwny do kierunku składowej pionowej prędkości początkowej. (d) Złożenie niezależnych ruchów wzdłuż osi <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ i <m:math>
+  <m:mi>y</m:mi>
+</m:math>
+ daje całkowitą prędkość w dowolnym punkcie toru ruchu.</caption></figure><note id="eip-110">Rzut, w którym początkowy kąt <m:math>
+  <m:msub>
+    <m:mi>θ</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  </m:math> między wektorem prędkości początkowej a kierunkiem poziomym jest różny od zera stopni, nazywamy <term cmlnle:reference="rzut ukośny" class="no-emphasis">rzutem ukośnym</term>. Gdy natomiast kąt ten jest równy zero stopni, to rzut taki nazywać będziemy <term cmlnle:reference="rzut poziomy" class="no-emphasis">rzutem poziomym</term>. Możemy mieć do czynienia z rzutem ukośnym do góry, jak i w dół (np. rzucając kamieniem w dół klifu). Gdy z kolei kąt jest równy zeru stopni, to rzut nazywamy <term cmlnle:reference="rzut pionowy" class="no-emphasis">rzutem pionowym</term>.</note><example id="fs-id1165167708608">
+    <para id="fs-id1165166613677"><title>Wybuch fajerwerku na dużej wysokości</title>Podczas pokazu sztucznych ogni rakietę z ładunkiem wybuchowym wystrzeliwuje się w powietrze z początkową prędkością o wartości 70,00 m/s pod kątem 75° nad horyzontem, jak pokazano na <link target-id="CNX_UPhysics_04_03_Fireworks" cmlnle:case="genitive"/>. Lont ma taką długość, aby ładunek został odpalony w najwyższym punkcie toru lotu rakiety. <list id="eip-idm498579744" list-type="enumerated" number-style="lower-alpha">
+        <item> Oblicz wysokość, na jakiej ładunek wybuchnie.</item>
+        <item> Po jakim czasie od wystrzelenia rakiety dojdzie do wybuchu? </item>
+        <item> W jakiej odległości liczonej w poziomie od miejsca wystrzelenia dojdzie do wybuchu fajerwerku? </item>
+        <item> Jakie jest całkowite przemieszczenie rakiety od startu do momentu wybuchu ładunku? </item>
+      </list>
+    </para><figure id="CNX_UPhysics_04_03_Fireworks">
+      <media id="fs-id1165167692325" alt="Trajektoria rakiety z fajerwerkami od startu do najwyższego punktu, w którym następuje wybuch. Tor ruchu na płaszczyźnie xy jest połową paraboli o ramionach w dół. Wysokość maksymalna wynosi 233 metry, a przemieszczenie w kierunku x to 125 metrów. Wektor prędkości początkowej v z indeksem dolnym 0 skierowany jest do góry, nieco w prawo pod kątem do poziomu theta z indeksem 0 równym 75 stopni i jest styczny do toru w punkcie początkowym.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_04_03_Fireworks.jpg"/>
+      </media>
+      <caption>Tor ruchu rakiety z fajerwerkami. Odpowiednia długość lontu pozwala na wybuch ładunku w najwyższym punkcie toru, czyli na wysokości 233 m i w odległości 125 m w poziomie od miejsca wystrzału.</caption>
+    </figure>
+    <para id="fs-id1165168071753"><title>Strategia rozwiązania</title>Ruch rakiety możemy rozłożyć na ruch poziomy i pionowy z przyspieszeniami <m:math>
+        <m:msub>
+          <m:mi>a</m:mi>
+          <m:mi>x</m:mi>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mn>0</m:mn>
+      </m:math> oraz <m:math>
+      <m:msub>
+        <m:mi>a</m:mi>
+        <m:mi>y</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mo>-</m:mo>
+      <m:mi>g</m:mi>
+      <m:mo>.</m:mo>
+    </m:math> Przyjmijmy położenie początkowe <m:math>
+    <m:msub>
+      <m:mi>x</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+  </m:math> i <m:math>
+  <m:msub>
+    <m:mi>y</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  </m:math> równe zero i przystąpmy do obliczania poszukiwanych niewiadomych.</para><para id="fs-id1165168035740"><title>Rozwiązanie</title>(a) Przez “wysokość” rozumiemy to, jak wysoko nad poziomem podłoża wzniesie się rakieta, czyli współrzędną <m:math>
+        <m:mi>y</m:mi>
+      </m:math>
+     położenia względem punktu początkowego. Najwyższy punkt toru, zwany <emphasis effect="italics">wysokością maksymalną</emphasis> albo <emphasis effect="italics">wierzchołkiem</emphasis>, zostaje osiągnięty, gdy <m:math>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mi>y</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>0</m:mn>
+  </m:math>. Skoro znamy początkową i końcową prędkość oraz początkowe położenie rakiety, możemy skorzystać z następującego równania do znalezienia wysokości maksymalnej <m:math>
+  <m:mi>y</m:mi>
+  </m:math>:</para><equation id="fs-id1165167698060" class="unnumbered"><label/>
+    <m:math>
+      <m:msubsup>
+        <m:mi>v</m:mi>
+        <m:mi>y</m:mi>
+        <m:mn>2</m:mn>
+      </m:msubsup>
+      <m:mo>=</m:mo>
+      <m:msubsup>
+        <m:mi>v</m:mi>
+        <m:mrow>
+          <m:mn>0</m:mn>
+          <m:mi>y</m:mi>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msubsup>
+      <m:mo>-</m:mo>
+      <m:mn>2</m:mn>
+      <m:mi>g</m:mi>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mi>y</m:mi>
+          <m:mo>-</m:mo>
+          <m:msub>
+            <m:mi>y</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para id="fs-id1165167615441">Ponieważ i <m:math>
+    <m:msub>
+      <m:mi>y</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+  </m:math>, i <m:math>
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mi>y</m:mi>
+  </m:msub>
+  </m:math> są równe zero, równanie upraszcza się do postaci:</para>
+  <equation id="fs-id1165167724193" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mn>0</m:mn>
+      <m:mo>=</m:mo>
+      <m:msubsup>
+        <m:mi>v</m:mi>
+        <m:mrow>
+          <m:mn>0</m:mn>
+          <m:mi>y</m:mi>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msubsup>
+      <m:mo>-</m:mo>
+      <m:mn>2</m:mn>
+      <m:mi>g</m:mi>
+      <m:mi>y</m:mi>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para id="fs-id1165166478248">Obliczamy <m:math>
+    <m:mi>y</m:mi>
+    </m:math>:</para>
+    <equation id="fs-id1165168072368" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mi>y</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:msubsup>
+            <m:mi>v</m:mi>
+            <m:mrow>
+              <m:mn>0</m:mn>
+              <m:mi>y</m:mi>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mi>g</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1165167778184">Potrzebujemy jeszcze wyznaczyć <m:math>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mrow>
+          <m:mn>0</m:mn>
+          <m:mi>y</m:mi>
+        </m:mrow>
+      </m:msub>
+    </m:math> – składową <m:math>
+      <m:mi>y</m:mi>
+    </m:math>
+   wektora prędkości początkowej. Jest ona równa <m:math>
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mrow>
+      <m:mn>0</m:mn>
+      <m:mi>y</m:mi>
+    </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mi>sin</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:msub>
+    <m:mi>θ</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:math>, gdzie <m:math>
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+</m:math> jest wartością prędkości początkowej równą 70,0 m/s, a <m:math>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msup>
+  <m:mn>75</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math> jest kątem początkowym, pod którym wystrzelono rakietę. Zatem</para><equation id="fs-id1165167828358" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mi>y</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mi>sin</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:msub>
+      <m:mi>θ</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mn>70,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>m/s</m:mtext>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mi>sin</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:msup>
+      <m:mn>75</m:mn>
+      <m:mo>∘</m:mo>
+    </m:msup>
+    <m:mo>=</m:mo>
+    <m:mn>67,6</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>m/s</m:mtext>
+    <m:mn>,</m:mn>
+  </m:math>
+</equation>
+<para id="fs-id1165167993656">natomiast <m:math>
+  <m:mi>y</m:mi>
+  </m:math> wynosi:</para>
+  <equation id="fs-id1165166479250" class="unnumbered"><label/>
+    <m:math>
+      <m:mi>y</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:msup>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mn>67,6</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>m/s</m:mtext>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mn>9,81</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:msup>
+                <m:mtext>m/s</m:mtext>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para id="fs-id1165167694740">Ostatecznie otrzymujemy</para>
+  <equation id="fs-id1165167993388" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mi>y</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>233</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>m</m:mtext>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para id="fs-id1165167908566">Zauważmy, że ponieważ jako dodatni przyjęliśmy kierunek w górę, to zarówno składowa pionowa prędkości początkowej, jak i maksymalna wysokość są dodatnie, mimo że przyspieszenie grawitacyjne jest ujemne. Zwróćmy także uwagę, że wysokość maksymalna zależy wyłącznie od pionowej składowej prędkości początkowej. Wobec tego każdy pocisk wystrzelony ukośnie z prędkością o składowej pionowej 67,6 m/s osiągnąłby dokładnie taką samą wysokość maksymalną równą 233 m (pomijając opory powietrza). Wynik otrzymany w tym przykładzie jest rozsądny w przypadku naprawdę dużych rakiet, które są w stanie wynieść ładunek na tak dużą wysokość. W rzeczywistości opory powietrza nie są całkowicie zaniedbywalne i do wyniesienia ładunku na tę samą wysokość potrzebna byłaby zapewne większa prędkość początkowa.</para><para id="fs-id1165167823335">(b) Jak często bywa w problemach fizycznych, jest wiele sposobów obliczenia czasu lotu pocisku do wysokości maksymalnej. W tym przypadku najprościej będzie skorzystać z równania <m:math>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mi>y</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mi>y</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>-</m:mo>
+    <m:mi>g</m:mi>
+    <m:mi>t</m:mi>
+    <m:mo>.</m:mo>
+  </m:math> Ponieważ w wierzchołku <m:math>
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mi>y</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+  </m:math>, dlatego równanie upraszcza się do równości:</para><equation id="fs-id1165167675952" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mn>0</m:mn>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mrow>
+          <m:mn>0</m:mn>
+          <m:mi>y</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>-</m:mo>
+      <m:mi>g</m:mi>
+      <m:mi>t</m:mi>
+      <m:mn>,</m:mn>
+    </m:math>
+  </equation>
+  <para id="fs-id1165167854348">z której łatwo obliczymy czas:</para><equation id="fs-id1165167717969" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mrow>
+            <m:mn>0</m:mn>
+            <m:mi>y</m:mi>
+          </m:mrow>
+        </m:msub>
+        <m:mi>g</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mn>67,6</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>m/s</m:mtext>
+        </m:mrow>
+        <m:mrow>
+          <m:mn>9,81</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:msup>
+            <m:mtext>m/s</m:mtext>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mn>6,9</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>s</m:mtext>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para id="fs-id1165166591132">Znaleziony czas jest również prawdopodobny w przypadku dużych fajerwerków. Gdybyś miał okazję obserwować pokaz sztucznych ogni, zwróć uwagę, że zazwyczaj mija kilkanaście sekund zanim ładunek wybucha. Inną metodą wyznaczenia czasu wznoszenia pocisku jest użycie równania <m:math>
+    <m:mi>y</m:mi>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>y</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mrow>
+            <m:mn>0</m:mn>
+            <m:mi>y</m:mi>
+          </m:mrow>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mi>y</m:mi>
+        </m:msub>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mi>t</m:mi>
+    <m:mo>.</m:mo>
+    </m:math> Obliczenie czasu przy pomocy tego równania zostawiamy ci jako ćwiczenie.</para><para id="fs-id1165168102575">(c) Ze względu na to, że pomijamy opór powietrza, <m:math>
+      <m:msub>
+        <m:mi>a</m:mi>
+        <m:mi>x</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:math> oraz składowa pozioma prędkości jest stała. Przemieszczenie w poziomie obliczymy, mnożąc prędkość poziomą przez czas zgodnie ze wzorem <m:math>
+    <m:mi>x</m:mi>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>x</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mi>t</m:mi>
+    <m:mn>,</m:mn>
+  </m:math> gdzie <m:math>
+  <m:msub>
+    <m:mi>x</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  </m:math> jest zero. Zatem</para><equation id="fs-id1165168075359" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mi>x</m:mi>
+      </m:msub>
+      <m:mi>t</m:mi>
+      <m:mn>,</m:mn>
+    </m:math>
+  </equation>
+  <para id="fs-id1165166656884">przy czym <m:math>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+  </m:math> jest składową <m:math>
+    <m:mi>x</m:mi>
+  </m:math>
+   wektora prędkości, która wynosi</para>
+  <equation id="fs-id1165166603899" class="unnumbered"><m:math display="block"><m:msub><m:mi>v</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mrow><m:msub><m:mi>v</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mrow><m:mo>cos</m:mo><m:msub><m:mi>θ</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>70,0</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>cos</m:mo><m:mrow><m:mn>75</m:mn><m:mo>°</m:mo></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>18,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:math></equation><para id="fs-id1165168096202">Zauważmy, że pominięto tutaj indeks dolny '0', bo prędkość w kierunku poziomym się nie zmienia i jest zawsze równa składowej prędkości początkowej. Czas <m:math>
+      <m:mi>t</m:mi>
+    </m:math>
+   jest dla ruchu w obu kierunkach taki sam, więc <m:math>
+  <m:mi>x</m:mi>
+  </m:math> jest równe</para><equation id="fs-id1165168030507" class="unnumbered"><m:math display="block"><m:mi>x</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>18,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mn>6,9</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>125</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:math></equation><para id="fs-id1165166565123">Ruch poziomy przy braku oporów powietrza zachodzi ze stałą prędkością. Tak duże obliczone przez nas poziome przemieszczenie może być użyteczne, aby utrzymać odłamki powstałe w wyniku wybuchu jak najdalej od widzów. Na ruch odłamków po wybuchu duży wpływ ma opór powietrza, dzięki czemu upadają one prawie dokładnie poniżej miejsca wybuchu i nie docierają do widzów.</para>
+  <para id="fs-id1165167704598">(d) W podpunktach (a) i (c) obliczyliśmy składowe wektora położenia w najwyższym punkcie toru lotu rakiety, które są w tym przypadku także składowymi przemieszczenia. Pozostaje nam więc obliczenie długości i kierunku przemieszczenia do wierzchołka.</para>
+  <equation id="fs-id1165167653769" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>s</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+	  <m:mo stretchy="true">(</m:mo>
+      <m:mn>125</m:mn>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>i</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mn>233</m:mn>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>j</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+	   <m:mo stretchy="true">)</m:mo>
+	       <m:mspace width="0.2em"/>
+      <m:mtext>m</m:mtext>
+    </m:math>
+  </equation>
+  <equation id="fs-id1165167703012" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mo stretchy="false">|</m:mo>
+      </m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>s</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mrow>
+        <m:mo stretchy="false">|</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:msqrt>
+        <m:msup>
+          <m:mn>125</m:mn>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo>
+        <m:msup>
+          <m:mn>233</m:mn>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:msqrt>
+      <m:mo>=</m:mo>
+      <m:mn>264</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>m</m:mtext>
+    </m:math>
+  </equation>
+  <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bpnspoh7_7gg" class="unnumbered"><m:math>
+      <m:mi>θ</m:mi>
+      <m:mo>=</m:mo>
+      <m:mtext>arctg</m:mtext>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mfrac>
+          <m:mn>233</m:mn>
+          <m:mn>125</m:mn>
+        </m:mfrac>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mn>61</m:mn>
+      <m:mn>,</m:mn>
+      <m:msup>
+        <m:mn>8</m:mn>
+        <m:mo>∘</m:mo>
+      </m:msup>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation><para id="fs-id1165166485879">Zauważmy, że kąt między przemieszczeniem a osią poziomą jest mniejszy niż początkowy kąt wystrzału rakiety. Aby zrozumieć dlaczego tak jest, spójrzmy jeszcze raz na <link target-id="CNX_UPhysics_04_03_Soccer"/>, który pokazuje krzywiznę trajektorii z perspektywy podłoża.</para></example>
+<para id="fs-id1165166743938">Rozwiązując <link target-id="fs-id1165167708608"/>(a), wyprowadziliśmy wyrażenie na <m:math>
+    <m:mi>y</m:mi>
+  </m:math>
+ słuszne w przypadku, gdy pomijamy opór powietrza. Nazwijmy teraz wysokość maksymalną <m:math>
+  <m:mi>y</m:mi>
+</m:math>
+ = <m:math>
+  <m:mi>h</m:mi>
+</m:math>. W takim razie</para>
+<equation id="fs-id1165168032368" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mi>h</m:mi>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:msubsup>
+        <m:mi>v</m:mi>
+        <m:mrow>
+          <m:mn>0</m:mn>
+          <m:mi>y</m:mi>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msubsup>
+      <m:mrow>
+        <m:mn>2</m:mn>
+        <m:mi>g</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1165167927494">Powyższe równanie podaje ogólny wzór na <emphasis effect="italics">wysokość maksymalną nad punktem początkowym ciała w rzucie ukośnym</emphasis>, która zależy tylko od składowej pionowej prędkości początkowej.</para><equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-203" class="unnumbered"><m:math/></equation>
+<note id="fs-id1165167588600" class="check-understanding">
+  <exercise id="fs-id1165167599002">
+    <problem id="fs-id1165167720109">
+      <para id="fs-id1165168063192"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Kamień rzucono poziomo z klifu o wysokości 100,0 m z prędkością o wartości 15,0 m/s. <list id="eip-idm2336972944" list-type="enumerated" number-style="lower-alpha">
+          <item> Przedyskutuj możliwy wybór początku układu współrzędnych. </item>
+          <item> Jakie równanie opisuje ruch w kierunku poziomym? </item>
+          <item> Które równania zastosujesz do opisu ruchu w pionie? </item>
+          <item> Jaki jest wektor prędkości i jego wartość w punkcie upadku kamienia na ziemię? </item>
+        </list>
+      </para></problem>
+    <solution id="fs-id1165168031779">
+      <list id="fs-id1165167690300" list-type="enumerated" number-style="lower-alpha"><item> Jako początek układu współrzędnych wybierz szczyt klifu. Jest to najwygodniejszy wybór, mimo że zupełnie arbitralny. Zwyczajowo wybieramy położenie w <m:math>
+            <m:mi>t</m:mi>
+          </m:math>
+           = 0 jako początek układu. </item>
+          <item> Poprawnym równaniem jest <m:math>
+            <m:mi>x</m:mi>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>x</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mi>x</m:mi>
+            </m:msub>
+            <m:mi>t</m:mi>
+            <m:mo>.</m:mo>
+          </m:math> Przyjmując <m:math>
+          <m:msub>
+            <m:mi>x</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+          <m:mn>,</m:mn>
+        </m:math> równanie sprowadza się do <m:math>
+        <m:mi>x</m:mi>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mi>x</m:mi>
+        </m:msub>
+        <m:mi>t</m:mi>
+        </m:math>.</item>
+        <item> Zestaw równań od <link target-id="fs-id1165038300036" document="m63772" cmlnle:case="genitive"/> do <link target-id="fs-id1165038323452" document="m63772" cmlnle:case="genitive"/> oraz <link target-id="fs-id1165166634626"/> poprawnie opisuje ruch w pionie, ale przy <m:math>
+          <m:msub>
+            <m:mi>y</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+        </m:math> oraz <m:math>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mrow>
+            <m:mn>0</m:mn>
+            <m:mi>y</m:mi>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mn>0</m:mn>
+        </m:math> równania te znacznie się upraszczają i przyjmują postać: <newline/>
+          <m:math>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mrow>
+                    <m:mn>0</m:mn>
+                    <m:mi>y</m:mi>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mi>y</m:mi>
+                </m:msub>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mi>t</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mi>y</m:mi>
+            </m:msub>
+            <m:mi>t</m:mi>
+            <m:mn>,</m:mn>
+            <m:mspace width="1em"/>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mi>y</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mo>-</m:mo>
+            <m:mi>g</m:mi>
+            <m:mi>t</m:mi>
+            <m:mn>,</m:mn>
+            <m:mspace width="1em"/>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:mo>-</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mi>g</m:mi>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mspace width="1em"/>
+            <m:mtext>oraz</m:mtext>
+            <m:mspace width="1em"/>
+            <m:msubsup>
+              <m:mi>v</m:mi>
+              <m:mi>y</m:mi>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mo>=</m:mo>
+            <m:mo>-</m:mo>
+            <m:mn>2</m:mn>
+            <m:mi>g</m:mi>
+            <m:mi>y</m:mi>
+            <m:mo>.</m:mo>
+          </m:math>
+        </item>
+        <item> Znajdziemy składowe wektora prędkości w momencie upadku, korzystając z poznanych równań kinematycznych. Podstawiając do równania <m:math>
+          <m:msubsup>
+            <m:mi>v</m:mi>
+            <m:mi>y</m:mi>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+          <m:mo>=</m:mo>
+          <m:mo>-</m:mo>
+          <m:mn>2</m:mn>
+          <m:mi>g</m:mi>
+          <m:mi>y</m:mi>
+        </m:math> wartość -100,0 m w miejsce <m:math>
+        <m:mi>y</m:mi>
+      </m:math>, znajdziemy składową <m:math>
+        <m:mi>y</m:mi>
+      </m:math>
+     wektora prędkości końcowej <m:math>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mi>y</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>–44,3</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>m/s</m:mtext>
+    <m:mo>.</m:mo>
+  </m:math> Składowa <m:math>
+    <m:mi>x</m:mi>
+  </m:math>
+ jest niezmiennie równa <m:math>
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mi>x</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>15,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mtext>m/s</m:mtext>
+<m:mn>,</m:mn>
+</m:math> zatem całkowita prędkość w chwili upadku ma wartość: <m:math>
+  <m:mi>v</m:mi>
+</m:math>
+ = 46,8 m/s i kierunek <m:math>
+  <m:mi>θ</m:mi>
+</m:math>
+ = 71,3° w dół względem poziomu.</item>
+</list></solution>
+</exercise>
+</note>
+<example id="fs-id1165168106210">
+  <para id="fs-id1165166620327">
+    <title>Rzut ukośny: Tenisistka</title>Tenisistka po zwycięstwie w rozgrywanym na Arthur Ashe Stadium finale US Open uderza piłkę rakietą skierowaną 45° do poziomu, posyłając ją w trybuny z szybkością 30 m/s (<link target-id="CNX_UPhysics_04_03_Tenplay"/>). Gdy piłka opadała złapał ją widz siedzący 10 m ponad poziomem, z którego piłka została wyrzucona. <list id="eip-idm1248084048" list-type="enumerated" number-style="lower-alpha">
+      <item> Oblicz czas, po jakim piłka dociera do widza. </item>
+      <item> Jaka jest wartość i kierunek prędkości piłki w chwili upadku? </item>
+    </list>
+  </para>
+  <figure id="CNX_UPhysics_04_03_Tenplay">
+    <media id="fs-id1165168102280" alt="Ilustracja uderzenia piłki przez tenisistę w kierunku trybun. Gracz stoi na lewo od trybun i uderza piłkę pod kątem theta równym 45 stopni od poziomu w górę z prędkością początkową v z indeksem 0 równą 30 metrów na sekundę. Piłka dociera do kibica, który siedzi 10 metrów ponad poziomem, z którego wyrzucono piłkę.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_04_03_Tenplay.jpg"/>
+    </media>
+    <caption>Tor lotu piłki tenisowej uderzonej w trybuny.</caption>
+  </figure>
+  <para id="fs-id1165167855140"><title>Strategia rozwiązania</title>Podobnie jak wcześniej, dzięki rozłożeniu ruchu w dwóch wymiarach na dwie niezależne składowe w jednym wymiarze, łatwo obliczymy poszukiwane wielkości. Czas przebywania piłki w powietrzu zależy jedynie od jej ruchu w pionie. Zaczniemy więc od wyznaczenia niewiadomej <m:math>
+        <m:mi>t</m:mi>
+      </m:math>. Podczas gdy w pionie piłka wznosi się i opada, w poziomie porusza się stale z jednakową prędkością. W tym przykładzie jesteśmy pytani o prędkość końcową w momencie upadku piłki. Żeby ją znaleźć, połączymy z powrotem informacje o ruchu poziomym i pionowym. Wyznaczymy wtedy wektor <m:math>
+    <m:mrow>
+      <m:mrow>
+        <m:mover>
+          <m:mi>v</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:mrow>
+  </m:math> po czasie <m:math>
+    <m:mi>t</m:mi>
+  </m:math>, który będziemy znali z rozwiązania pierwszej części zadania.</para><para id="fs-id1165167842426"><title>Rozwiązanie</title>(a) Podczas lotu w powietrzu piłka wznosi się, a następnie opada do wysokości końcowej 10,0 m ponad poziomem, z którego została wyrzucona. Czas lotu znajdziemy, korzystając z <link target-id="fs-id1165166483236" cmlnle:case="genitive"/>:</para><equation id="fs-id1165168069917" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mi>y</m:mi>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>y</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mrow>
+            <m:mn>0</m:mn>
+            <m:mi>y</m:mi>
+          </m:mrow>
+        </m:msub>
+        <m:mi>t</m:mi>
+        <m:mo>-</m:mo>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>g</m:mi>
+        <m:msup>
+          <m:mi>t</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1165166476281">Jeśli przyjmiemy położenie początkowe <m:math>
+      <m:msub>
+        <m:mi>y</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+    </m:math> równe zero metrów, to w powyższym równaniu zmienna <m:math>
+      <m:mi>y</m:mi>
+    </m:math>
+     będzie równa 10 m. Początkowa prędkość w pionie jest składową pionową wektora prędkości początkowej:</para><equation id="fs-id1165167993630" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mrow>
+            <m:mn>0</m:mn>
+            <m:mi>y</m:mi>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mi>sin</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:msub>
+          <m:mi>θ</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>30,0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>m/s</m:mtext>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mi>sin</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:msup>
+          <m:mn>45</m:mn>
+          <m:mo>∘</m:mo>
+        </m:msup>
+        <m:mo>=</m:mo>
+        <m:mn>21,2</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>m/s</m:mtext>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1165168047514">Jeśli w miejsce <m:math>
+      <m:mi>y</m:mi>
+    </m:math> i <m:math>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mi>y</m:mi>
+      </m:mrow>
+    </m:msub>
+    </m:math> w <link target-id="fs-id1165166483236" cmlnle:case="locative"/> podstawimy obliczone wcześniej wartości, otrzymamy:</para>
+	<equation id="fs-id1165166548661" class="unnumbered"><label/>
+      <m:math>
+        <m:mn>10,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>m</m:mtext>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>21,2</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>m/s</m:mtext>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mi>t</m:mi>
+        <m:mo>-</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>4,90</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:msup>
+              <m:mtext>m/s</m:mtext>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:msup>
+          <m:mi>t</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1165168034008">Otrzymaliśmy równanie kwadratowe z niewiadomą <m:math>
+        <m:mi>t</m:mi>
+      </m:math>, które po uporządkowaniu ma postać:</para>
+      <equation id="fs-id1165166616977" class="unnumbered"><label/>
+        <m:math>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mn>4,90</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:msup>
+                <m:mtext>m/s</m:mtext>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>-</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mn>21,2</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>m/s</m:mtext>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mn>10,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>m</m:mtext>
+          <m:mo>=</m:mo>
+          <m:mn>0.</m:mn>
+        </m:math>
+      </equation>
+      <para id="fs-id1165167972049">Jeśli rozwiążemy równanie kwadratowe, otrzymamy dwa wyniki <m:math>
+          <m:mi>t</m:mi>
+        </m:math>
+       = 3,79 s oraz <m:math>
+        <m:mi>t</m:mi>
+      </m:math>
+       = 0,54 s. Wiemy, że piłka znajduje się na wysokości 10 m dwukrotnie - raz w jej locie do góry, a raz podczas opadania. Dlatego jako czas lotu piłki do widza wybierzemy rozwiązanie pierwsze, gdzie czas ten jest dłuższy:</para><equation id="fs-id1165166602370" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mi>t</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>3,79</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>s</m:mtext>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="fs-id1165166621662">Czas ruchu pocisku jest determinowany jedynie jego ruchem w kierunku pionowym. Dlatego każdy pocisk wystrzelony ze składową pionową prędkości 21,2 m/s, który dociera do wysokości 10,0 m ponad poziomem początkowym, spędzi w powietrzu dokładnie 3,79 s.</para>
+      <para id="fs-id1165166801158">(b) Składowe prędkości <m:math>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mi>x</m:mi>
+        </m:msub>
+      </m:math> i <m:math>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mi>y</m:mi>
+      </m:msub>
+    </m:math> w momencie upadku piłki na trybuny znajdziemy dzięki wynikom z punktu (a). Następnie wykorzystamy je do obliczenia wartości wektora prędkości <m:math>
+    <m:mrow>
+      <m:mrow>
+        <m:mover>
+          <m:mi>v</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:mrow>
+  </m:math> oraz kąta nachylenia wektora prędkości do poziomu <m:math>
+  <m:mi>θ</m:mi>
+</m:math>. Oznaczymy go dodatkowo przez <m:math>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mi>k</m:mi>
+</m:msub>
+</m:math>, aby podkreślić, że jest to kąt końcowy. Ze względu na to, że składowa <m:math>
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mi>x</m:mi>
+</m:msub>
+</m:math> jest stała w czasie, możemy wyznaczyć jej wartość dla dowolnej chwili i dowolnego położenia piłki w trakcie lotu. Wybieramy punkt początkowy, bo znamy początkową prędkość i kąt wyrzucenia piłki. Dlatego</para><equation id="fs-id1165167741417" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mi>cos</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:msub>
+      <m:mi>θ</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mn>30</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>m/s</m:mtext>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mi>cos</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:msup>
+      <m:mn>45</m:mn>
+      <m:mo>∘</m:mo>
+    </m:msup>
+    <m:mo>=</m:mo>
+    <m:mn>21,2</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>m/s</m:mtext>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1165166484829">Składową pionową prędkości końcowej obliczymy dzięki <link target-id="fs-id1165167637616" cmlnle:case="dative"/>:</para>
+<equation id="fs-id1165166630158" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mi>y</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mi>y</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>-</m:mo>
+    <m:mi>g</m:mi>
+    <m:mi>t</m:mi>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1165168069856">W części (a) obliczyliśmy już wartość <m:math>
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mrow>
+      <m:mn>0</m:mn>
+      <m:mi>y</m:mi>
+    </m:mrow>
+  </m:msub>
+  </m:math>, równą 21,2 m/s, zatem</para>
+  <equation id="fs-id1165167945874" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mi>y</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>21,2</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>m/s</m:mtext>
+      <m:mo>-</m:mo>
+      <m:mn>9,81</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:msup>
+        <m:mtext>m/s</m:mtext>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mn>3,79</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>s</m:mtext>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mo>-</m:mo>
+      <m:mn>15,9</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>m/s</m:mtext>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para id="fs-id1165167922902">Wartość prędkości <m:math>
+    <m:mrow>
+      <m:mrow>
+        <m:mover>
+          <m:mi>v</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:mrow>
+    </m:math> wynosi</para>
+    <equation id="fs-id1165167945910" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mi>v</m:mi>
+        <m:mo>=</m:mo>
+        <m:msqrt>
+          <m:msubsup>
+            <m:mi>v</m:mi>
+            <m:mi>x</m:mi>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+          <m:mo>+</m:mo>
+          <m:msubsup>
+            <m:mi>v</m:mi>
+            <m:mi>y</m:mi>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+        </m:msqrt>
+        <m:mo>=</m:mo>
+        <m:msqrt>
+          <m:msup>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mn>21,2</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>m/s</m:mtext>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>+</m:mo>
+          <m:msup>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mn>15,9</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>m/s</m:mtext>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:msqrt>
+        <m:mo>=</m:mo>
+        <m:mn>26,5</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>m/s</m:mtext>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1165167812862">Kąt upadku <m:math>
+      <m:msub>
+        <m:mi>θ</m:mi>
+        <m:mi>k</m:mi>
+      </m:msub>
+      </m:math> wyznaczymy jako arcus tangens stosunku składowych prędkości:</para>
+      <equation id="fs-id1165167860599" class="unnumbered"><label/>
+        <m:math>
+          <m:msub>
+            <m:mi>θ</m:mi>
+            <m:mi>k</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mtext>arctg</m:mtext>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mfrac>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mi>y</m:mi>
+              </m:msub>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mi>x</m:mi>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mtext>arctg</m:mtext>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mfrac>
+			<m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>15,9</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>21,2</m:mn>
+              </m:mrow></m:mfrac>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>36</m:mn>
+          <m:mn>,</m:mn>
+          <m:msup>
+            <m:mn>9</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <list id="fs-id1165167906703" list-type="enumerated" number-style="lower-alpha">
+        <title>Znaczenie</title>
+        <item> Jak już mówiliśmy, czas ruchu w rzucie ukośnym zależy jedynie od składowej pionowej ruchu. Dlatego czas ruchu każdego pocisku, który startuje z pionową prędkością początkową 21,2 m/s i ląduje na wysokości 10,0 m ponad punktem początkowym, wynosi 3,79 s. </item>
+        <item> Ujemny kąt oznacza, że wektor prędkości w momencie upadku jest skierowany 36,9° poniżej horyzontu. Ten wynik jest spójny z obserwacją, że piłka upada na trybuny po drugiej stronie wierzchołka jej trajektorii i stąd ujemna składowa <m:math>
+            <m:mi>y</m:mi>
+          </m:math>
+           prędkości. Zgodnie z naszymi oczekiwaniami, prędkość upadku piłki na wysokości 10,0 m jest mniejsza niż wartość prędkości początkowej, a kąt upadku jest co do wartości bezwzględnej mniejszy niż kąt początkowy.</item>
+        </list>
+      </example>
+      <section id="fs-id1165166482229">
+        <title>Czas lotu, tor i zasięg</title>
+        <para id="fs-id1165166482235">W tej sekcji chcemy wyprowadzić ogólne wzory na czas lotu, tor i zasięg w rzucie ukośnym, w którym miejsce wystrzelenia i upadku pocisku są na tej samej wysokości. Wykorzystamy poznane już równania kinematyczne, aby w kolejnych punktach otrzymać interesujące nas wzory.</para>
+        <section id="fs-id1165166478511">
+          <title>Czas lotu</title>
+          <para id="fs-id1165167724473">Przekształcając kinematyczne równania ruchu, możemy wyprowadzić wzór na czas lotu obiektu w rzucie ukośnym od miejsca wystrzelenia do miejsca upadku, które znajdują się na tym samym poziomie. Zauważmy, że składowa <m:math>
+              <m:mi>y</m:mi>
+            </m:math>
+             położenia musi być równa zeru zarówno na początku, jak i na końcu ruchu. W takim razie przemieszczenie w kierunku pionowym musi być równe zeru, zatem</para><equation id="fs-id1165167617277" class="unnumbered"><label/> 
+			
+              <m:math>
+                <m:mi>y</m:mi>
+                <m:mo>-</m:mo>
+                <m:msub>
+                  <m:mi>y</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mrow>
+                    <m:mn>0</m:mn>
+                    <m:mi>y</m:mi>
+                  </m:mrow>
+                </m:msub>
+                <m:mi>t</m:mi>
+                <m:mo>-</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mi>g</m:mi>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mi>sin</m:mi>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mi>t</m:mi>
+                <m:mo>-</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mi>g</m:mi>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:mn>0.</m:mn>
+              </m:math>
+           </equation>
+
+            <para id="fs-id1165167688439">Po przekształceniu do postaci iloczynowej mamy:</para>
+			<equation id="fs-id1165167586654" class="unnumbered"><label/>
+              <m:math>
+                <m:mi>t</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mi>sin</m:mi>
+                    <m:mo>⁡</m:mo>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>−</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>g</m:mi>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mn>0.</m:mn>
+              </m:math>
+           </equation>
+
+            <para id="fs-id1165168075421">Rozwiązując to równanie ze względu na <m:math>
+                <m:mi>t</m:mi>
+              </m:math>, otrzymujemy:</para>
+              <note id="fs-id1165167842228" class="equation-callout">
+<equation id="fs-id1165167842231"><label/>
+                <m:math>
+                  <m:mi>T</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mn>0</m:mn>
+                          </m:msub>
+                          <m:mi>sin</m:mi>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mi>g</m:mi>
+                  </m:mfrac>
+                  <m:mo>.</m:mo>
+                </m:math>
+				
+				</equation>
+				</note>
+              <para id="fs-id1165166614276">Powyższe równanie daje nam wzór na <term cmlnle:reference="czas lotu" class="no-emphasis">całkowity czas lotu</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">time of flight</term></foreign>) w rzucie ukośnym, gdy pocisk jest wystrzelony i wraca na tę samą wysokość. <link target-id="fs-id1165167842231"/> nie obowiązuje w przypadku, gdy poziom wystrzelenia jest inny niż poziom upadku pocisku, jak widzieliśmy w rozwiązanym wyżej <link target-id="fs-id1165168106210" cmlnle:case="locative"/> tenisisty uderzającego piłkę w kierunku trybun. <link target-id="fs-id1165167586654"/> ma, dwa rozwiązania. Drugie rozwiązanie, <m:math>
+                  <m:mi>t</m:mi>
+                </m:math>
+               = 0, daje nam czas wystrzelenia pocisku. Czas lotu w rzucie ukośnym wzrasta wraz z prędkością początkową w kierunku pionowym i maleje ze wzrostem przyspieszenia grawitacyjnego <m:math>
+                <m:mi>g</m:mi>
+              </m:math>. Wobec tego na Księżycu, gdzie panuje 6 razy mniejsze przyspieszenie grawitacyjne niż na Ziemi, pocisk wystrzelony z taką samą prędkością będzie w locie przez 6 razy dłuższy czas. Zwróćmy też uwagę, że czas wznoszenia się pocisku (równy czasowi opadania pocisku) wynosi połowę czasu danego powyższym wzorem (bez dwójki w liczniku).</para></section>
+            <section id="fs-id1165166480509">
+              <title>Tor lotu</title>
+              <para id="fs-id1165167823315"><term cmlnle:reference="równanie toru lotu" class="no-emphasis">Równanie toru lotu</term> pocisku w rzucie ukośnym wyznaczymy, eliminując zmienną <m:math>
+                    <m:mi>t</m:mi>
+                  </m:math> z równań kinematycznych dla dowolnej chwili i wyprowadzając zależność 
+                   <m:math>
+				  <m:mi>y</m:mi>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo stretchy="false">)</m:mo>
+				  </m:math>. Przyjmijmy, że pocisk jest wystrzelony z początku układu współrzędnych, zatem <m:math>
+            <m:msub>
+              <m:mi>x</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>y</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:math>. Z równania na zależność  <m:math>
+				  <m:mi>x</m:mi>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>t</m:mi>
+                      <m:mo stretchy="false">)</m:mo>
+				  </m:math> wyznaczamy czas</para><equation id="fs-id1165167648123" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mi>x</m:mi>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mrow>
+                <m:mn>0</m:mn>
+                <m:mi>x</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mi>t</m:mi>
+            <m:mo stretchy="false">⇒</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>x</m:mi>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mrow>
+                  <m:mn>0</m:mn>
+                  <m:mi>x</m:mi>
+                </m:mrow>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>x</m:mi>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mi>cos</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:msub>
+                  <m:mi>θ</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="fs-id1165167941811">Podstawiając za <m:math>
+            <m:mi>t</m:mi>
+          </m:math>
+         w równaniu na składową pionową położenia <m:math>
+        <m:mi>y</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:msub>
+              <m:mi>θ</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mi>t</m:mi>
+        <m:mo>−</m:mo>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>g</m:mi>
+        <m:msup>
+          <m:mi>t</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        </m:math>, otrzymujemy:</para><equation id="fs-id1165166564066" class="unnumbered"><label/>
+          <m:math>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mi>sin</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:msub>
+                  <m:mi>θ</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mfrac>
+                <m:mi>x</m:mi>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mi>cos</m:mi>
+                  <m:mo>⁡</m:mo>
+                  <m:msub>
+                    <m:mi>θ</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mi>g</m:mi>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mfrac>
+                  <m:mi>x</m:mi>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mi>cos</m:mi>
+                    <m:mo>⁡</m:mo>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="fs-id1165166487170">Upraszczając powyższe wyrażenie, otrzymujemy wzór na równanie toru</para>
+        <note id="fs-id1165166487173" class="equation-callout">
+<equation id="fs-id1165167710464"><label/>
+          <m:math>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mtext>tg</m:mtext>
+                <m:msub>
+                  <m:mi>θ</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>−</m:mo>
+            <m:mo stretchy="true">[</m:mo>
+            <m:mfrac>
+              <m:mi>g</m:mi>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mn>0</m:mn>
+                      </m:msub>
+                      <m:mi>cos</m:mi>
+                      <m:mo>⁡</m:mo>
+                      <m:msub>
+                        <m:mi>θ</m:mi>
+                        <m:mn>0</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo stretchy="true">]</m:mo>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+		</note>
+        <para id="fs-id1165167702518">Równanie toru w rzucie ukośnym ma ogólną postać <m:math>
+          <m:mi>y</m:mi>
+          <m:mo>=</m:mo>
+          <m:mi>a</m:mi>
+          <m:mi>x</m:mi>
+          <m:mo>+</m:mo>
+          <m:mi>b</m:mi>
+          <m:msup>
+            <m:mi>x</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          </m:math>, co jest równaniem paraboli o współczynnikach</para>
+         <equation id="fs-id1165167937557" class="unnumbered"><label/>
+            <m:math>
+              <m:mi>a</m:mi>
+              <m:mo>=</m:mo>
+              <m:mtext>tg</m:mtext>
+              <m:msub>
+                <m:mi>θ</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mn>,</m:mn>
+              <m:mspace width="1em"/>
+              <m:mi>b</m:mi>
+              <m:mo>=</m:mo>
+              <m:mo>−</m:mo>
+              <m:mfrac>
+                <m:mi>g</m:mi>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mi>cos</m:mi>
+                        <m:mo>⁡</m:mo>
+                        <m:msub>
+                          <m:mi>θ</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>;</m:mo>
+            </m:math>
+          </equation>
+        </section>
+        <section id="fs-id1165168009417">
+          <title>Zasięg</title>
+          <para id="fs-id1165168055091">Wzór na <term class="no-emphasis">zasięg</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">range</term></foreign>), czyli odległość w poziomie, jaką w rzucie ukośnym pokonuje pocisk, znajdziemy na podstawie równania toru ruchu. <link target-id="fs-id1165167710464"/> w postaci iloczynowej ma postać:</para><equation id="fs-id1165167709188" class="unnumbered"><label/>
+            <m:math>
+              <m:mi>y</m:mi>
+              <m:mo>=</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo stretchy="true">[</m:mo>
+              <m:mtext>tg</m:mtext>
+              <m:msub>
+                <m:mi>θ</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>−</m:mo>
+              <m:mfrac>
+                <m:mi>g</m:mi>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mi>cos</m:mi>
+                        <m:mo>⁡</m:mo>
+                        <m:msub>
+                          <m:mi>θ</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mi>x</m:mi>
+              <m:mo stretchy="true">]</m:mo>
+              <m:mo>.</m:mo>
+            </m:math>
+          </equation>
+          <para id="fs-id1165168102299">Położenie w pionie <m:math>
+              <m:mi>y</m:mi>
+            </m:math>
+           jest równe zeru i dla punktu wystrzelenia, i dla miejsca upadku pocisku, bo nadal zakładamy start i metę pocisku na tej samej wysokości. Podstawiając <m:math>
+            <m:mi>y</m:mi>
+          </m:math>
+         = 0 do równania, otrzymujemy dwa rozwiązania: <m:math>
+          <m:mi>x</m:mi>
+		  <m:mo>=</m:mo>
+		  <m:mn>0</m:mn>
+        </m:math>, co odpowiada punktowi wystrzelenia pocisku, oraz</para><equation id="fs-id1165167821861" class="unnumbered"><m:math display="block"><m:mi>x</m:mi><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:msubsup><m:mi>v</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:mrow><m:msub><m:mi>θ</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mrow><m:mo>cos</m:mo><m:msub><m:mi>θ</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mrow></m:mrow></m:mrow><m:mi>g</m:mi></m:mfrac><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:math></equation><para id="fs-id1165167855080">co odpowiada miejscu upadku. Korzystając z tożsamości trygonometrycznej <m:math>
+          <m:mn>2</m:mn>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mi>θ</m:mi>
+          <m:mi>cos</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mi>θ</m:mi>
+          <m:mo>=</m:mo>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mn>2</m:mn>
+          <m:mi>θ</m:mi>
+        </m:math> oraz wprowadzając oznaczenie zasięgu <m:math>
+          <m:mi>x</m:mi>
+        </m:math>
+       = <m:math>
+        <m:mi>R</m:mi>
+      </m:math>, otrzymujemy wzór końcowy na zasięg:</para>
+      <note id="fs-id1165167681999" class="equation-callout">
+        <equation id="fs-id1165167682002"><label/>
+          <m:math>
+            <m:mi>R</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msubsup>
+                  <m:mi>v</m:mi>
+                  <m:mn>0</m:mn>
+                  <m:mn>2</m:mn>
+                </m:msubsup>
+                <m:mi>sin</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mn>2</m:mn>
+                <m:msub>
+                  <m:mi>θ</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mi>g</m:mi>
+            </m:mfrac>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation></note>
+      <para id="fs-id1165167717705">Oczywiście powyższy wzór na zasięg jest poprawny jedynie w przypadku rzutu ukośnego względem poziomej powierzchni. Możemy zauważyć, że zasięg wzrasta wraz z kwadratem prędkości początkowej <m:math>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+      </m:math> oraz proporcjonalnie do <m:math>
+      <m:mi>sin</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mn>2</m:mn>
+      <m:msub>
+        <m:mi>θ</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+    </m:math>, a maleje ze wzrostem przyspieszenia grawitacyjnego. W takim razie na Księżycu zasięg będzie 6 razy większy przy tej samej prędkości początkowej i przy tym samym kącie wystrzelenia. Co więcej, dzięki analizie czynnika <m:math>
+    <m:mi>sin</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mn>2</m:mn>
+    <m:msub>
+      <m:mi>θ</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+  </m:math> we wzorze możemy zauważyć, że zasięg ma maksimum dla kąta <m:math>
+  <m:msup>
+    <m:mn>45</m:mn>
+    <m:mo>°</m:mo>
+  </m:msup>
+</m:math>. Wszystkie te wnioski ilustrujemy na <link target-id="CNX_UPhysics_04_03_Trajproj" cmlnle:case="locative"/>. Na rysunku (a) widzimy, że –
+ przy ustalonym kącie – im większa prędkość początkowa, tym większy zasięg. Z kolei rysunek (b) dowodzi, że zasięg rzutu ukośnego z ustaloną prędkością jest największy dla kąta <m:math>
+<m:msup>
+  <m:mn>45</m:mn>
+  <m:mo>°</m:mo>
+</m:msup>
+</m:math>. Jest to prawdą jedynie wtedy, gdy pomijamy opór powietrza. Gdybyśmy nie zaniedbali wpływu oporu powietrza, to zasięg maksymalny byłby dla kąta nieco mniejszego. Co ciekawe, z rysunku (b) wynika też, że ten sam zasięg mają dwa rzuty, których kąty początkowe dodają się do <m:math>
+<m:msup>
+  <m:mn>90</m:mn>
+  <m:mo>°</m:mo>
+</m:msup>
+</m:math>. Co prawda wysokości maksymalne się różnią – mniejszemu kątowi odpowiada mniejsza wysokość maksymalna niż dla kąta większego – jednak zasięg jest ten sam.</para><figure id="CNX_UPhysics_04_03_Trajproj"><media id="fs-id1165167934963" alt="Rysunek a przedstawia trajektorie pocisków wystrzelonych pod tym samym kątem początkowym 45 stopni do poziomu z różnymi prędkościami początkowymi. Tory przedstawiono od startu do punktu upadku na tej samej wysokości. Linią pomarańczową zaznaczono tor ruchu z prędkością początkową 30 metrów na sekundę o zasięgu R 91,8 metra. Linią fioletową: prędkość 40 metrów na sekundę i zasięg R 163 metry. Linią niebieską: prędkość 50 metrów na sekundę i zasięg R 255 metrów. Wysokość maksymalna rzutów rośnie wraz ze wzrostem prędkości początkowej. Na rysunku b pokazano trajektorie pocisków wystrzelonych z tą samą prędkością początkową 50 metrów na sekundę po różnymi kątami względem poziomu. Linia pomarańczowa: kąt 15 stopni i zasięg R 128 metrów. Linia fioletowa: kąt 45 stopni i zasięg R 255 metrów. Linia niebieska: kąt 75 stopni i zasięg R 128 metrów, taki sam jak dla linii pomarańczowej. Wysokość maksymalna maleje wraz ze wzrostem kąta.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_04_03_Trajproj.jpg"/>
+  </media>
+  
+<caption>Trajektorie pocisków wystrzelonych z tego samego poziomu. (a) Im większa prędkość początkowa <m:math>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+  </m:math> tym większy zasięg przy danym kącie początkowym. (b) Wpływ kąta początkowego <m:math>
+  <m:msub>
+    <m:mi>θ</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:math> na zasięg pocisku w rzucie ukośnym z ustaloną wartością prędkości początkowej. Zwróćmy uwagę, że zasięg jest taki sam dla kątów <m:math>
+<m:msup>
+  <m:mn>15</m:mn>
+  <m:mo>°</m:mo>
+</m:msup>
+</m:math> i <m:math>
+<m:msup>
+  <m:mn>75</m:mn>
+  <m:mo>°</m:mo>
+</m:msup>
+<m:mn>,</m:mn>
+</m:math> mimo że wysokości maksymalne są inne.</caption></figure><example xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165167912961"><para id="fs-id1165167912964"><title>Golfista</title>Golfista musi zmierzyć się z dwiema innymi sytuacjami przy różnych dołkach. Na pierwszym dołku ma do pokonania dystans 120 m, ale chce uderzyć piłkę na odległość tylko 90 m tak, aby dalej potoczyła się jak najbliżej dołka. Uderza piłkę nisko nad podłożem pod kątem 30° i umożliwia jej po upadku dalsze toczenie się po trawie. Na drugim dołku jest 90 m od celu i chce, aby piłka prawie wcale nie toczyła się po upadku na trawę, dlatego uderza ją pod kątem 70° do podłoża. W obu przypadkach punkt startowy piłki i miejsce upadku na trawę znajdują się na tej samej wysokości.<list id="eip-idm448326400" list-type="enumerated" number-style="lower-alpha">
+      <item>Jaka jest szybkość początkowa piłki na pierwszym dołku?</item>
+      <item>Jaka jest szybkość początkowa piłki na drugim dołku?</item>
+      <item>Jakie jest równanie toru piłki w obu przypadkach?</item>
+      <item>Narysuj tor w obu przypadkach.</item>
+    </list>
+  </para><para id="fs-id1165167691779"><title>Strategia rozwiązania</title>Wiemy, że wzór na zasięg wiąże i prędkość początkową, i kąt początkowy. Zatem, znając kąt i zasięg, możemy przy jego pomocy wyznaczyć prędkość dla obu przypadków (a) i (b). Następnie, mając prędkości początkowe w obu przypadkach, napiszemy równania toru.</para><para id="fs-idm1196248608">
+      <title>Rozwiązanie</title></para>
+      <list id="fs-idm182599824" list-type="enumerated" number-style="lower-alpha"><item><equation id="eip-idm395984480" class="unnumbered"><m:math display="block"><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msubsup><m:mi>v</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:msub><m:mi>θ</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfenced></m:mrow></m:mrow><m:mi>g</m:mi></m:mfrac></m:mrow><m:mo>⇒</m:mo><m:mrow><m:msub><m:mi>v</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>R</m:mi><m:mo>⁢</m:mo><m:mi>g</m:mi></m:mrow><m:mrow><m:mo>sin</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:msub><m:mi>θ</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfenced></m:mrow></m:mfrac></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mrow><m:mn>90,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mn>9,81</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mrow><m:mrow><m:mo>sin</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⋅</m:mo><m:mrow><m:mn>30</m:mn><m:mo>°</m:mo></m:mrow></m:mrow></m:mfenced></m:mrow></m:mfrac></m:msqrt><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>31,9</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:math></equation></item>
+            <item><equation id="eip-idm446024880" class="unnumbered"><m:math display="block"><m:mrow><m:mi>R</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msubsup><m:mi>v</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:msub><m:mi>θ</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfenced></m:mrow></m:mrow><m:mi>g</m:mi></m:mfrac></m:mrow><m:mo>⇒</m:mo><m:mrow><m:msub><m:mi>v</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>R</m:mi><m:mo>⁢</m:mo><m:mi>g</m:mi></m:mrow><m:mrow><m:mo>sin</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:msub><m:mi>θ</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfenced></m:mrow></m:mfrac></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mrow><m:mn>90,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mn>9,81</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mrow><m:mrow><m:mo>sin</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⋅</m:mo><m:mrow><m:mn>70</m:mn><m:mo>°</m:mo></m:mrow></m:mrow></m:mfenced></m:mrow></m:mfrac></m:msqrt><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>37,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:math></equation></item>
+                <item><equation id="eip-idm446828816" class="unnumbered"><m:math display="block"><m:mi>y</m:mi><m:mo>=</m:mo><m:mrow><m:mi>x</m:mi><m:mo>⁢</m:mo><m:mfenced open="[" close="]"><m:mrow><m:mrow><m:mo>tg</m:mo><m:msub><m:mi>θ</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>-</m:mo><m:mfrac><m:mi>g</m:mi><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:msup><m:mfenced><m:mrow><m:msub><m:mi>v</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mrow><m:mo>cos</m:mo><m:msub><m:mi>θ</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:math></equation><para id="eip-639"><title>Pierwszy dołek</title></para><equation id="eip-563" class="unnumbered"><m:math display="block"><m:mi>y</m:mi><m:mo>=</m:mo><m:mrow><m:mi>x</m:mi><m:mo>⁢</m:mo><m:mfenced open="[" close="]"><m:mrow><m:mrow><m:mo>tg</m:mo><m:mrow><m:mn>70</m:mn><m:mo>°</m:mo></m:mrow></m:mrow><m:mo>-</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>9,81</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:msup><m:mfenced><m:mrow><m:mrow><m:mn>37,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>cos</m:mo><m:mrow><m:mn>70</m:mn><m:mo>°</m:mo></m:mrow></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:mrow></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mfenced><m:mrow><m:mrow><m:mn>2,75</m:mn><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow><m:mo>-</m:mo><m:mrow><m:mn>0,0305</m:mn><m:mo>⁢</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math></equation><para id="eip-918"><title>Drugi dołek</title></para><equation id="eip-963" class="unnumbered"><m:math display="inline"><m:mi>y</m:mi><m:mo>=</m:mo><m:mrow><m:mi>x</m:mi><m:mo>⁢</m:mo><m:mfenced open="[" close="]"><m:mrow><m:mrow><m:mo>tg</m:mo><m:mrow><m:mn>30</m:mn><m:mo>°</m:mo></m:mrow></m:mrow><m:mo>-</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>9,81</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:msup><m:mfenced><m:mrow><m:mrow><m:mn>31,9</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>cos</m:mo><m:mrow><m:mn>30</m:mn><m:mo>°</m:mo></m:mrow></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:mrow></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mfenced><m:mn>0</m:mn><m:mrow><m:mrow><m:mn>58</m:mn><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow><m:mo>-</m:mo><m:mn>0</m:mn></m:mrow><m:mrow><m:mn>0064</m:mn><m:mo>⁢</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math></equation></item>
+                <item> Rysując wykres zależności <m:math>
+                    <m:mi>y</m:mi>
+                  </m:math>
+                (<m:math>
+                  <m:mi>x</m:mi>
+                </m:math>
+              ) na podstawie powyższych równań, możemy graficznie porównać tory piłki w obu przypadkach. Spójrz na <link target-id="CNX_UPhysics_04_03_GolfShot"/>.<figure id="CNX_UPhysics_04_03_GolfShot">
+              <media id="fs-id1165167694633" alt="Na rysunku pokazano dwie parabole – tory piłki w dwóch rzutach. W obu przypadkach zasięg jest równy 90 metrów. Przy pierwszym uderzeniu piłka szybuje znacznie wyżej niż przy drugim. Piłka o wyższej paraboli lotu ma prędkość początkową 37 metrów na sekundę i kąt początkowy 70 stopni. Piłka o niższej paraboli: 31,9 metra na sekundę i 30 stopni.">
+                <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_04_03_GolfShot.jpg"/>
+              </media>
+              <caption>Tory lotu piłki golfowej uderzonej pod różnymi kątami, ale o takim samym zasięgu, równym 90 m. W obu przypadkach miejsce upadku i wystrzelenia znajdują się na tej samej wysokości.</caption>
+            </figure>
+          </item>
+        </list>
+      <para id="fs-id1165166546828"><title>Znaczenie</title>Prędkość początkowa w rzucie pod kątem 70° jest większa niż prędkość początkowa dla kąta 30°. Dwa pociski wystrzelone z takimi samymi prędkościami osiągają ten sam zasięg, gdy kąty początkowe sumują się do 90°. W naszym przykładzie na <link target-id="CNX_UPhysics_04_03_GolfShot" cmlnle:case="locative"/> suma kątów jest większa niż 90°, dlatego też piłka w rzucie pod kątem 70° musi mieć większą prędkość, aby osiągnąć zasięg 90 m. Inaczej upadłaby po przebyciu mniejszej odległości.</para></example><note id="fs-id1165166688322" class="check-understanding">
+        <exercise id="fs-id1165166558484">
+          <problem id="fs-id1165166558486">
+            <para id="fs-id1165166620874"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Jeżeli piłki golfowe z powyższego <link target-id="fs-id1165167912961" cmlnle:case="genitive"/> miałyby te same wartości prędkości początkowej, to zasięg lotu której z nich byłby większy?</para></problem>
+            <solution id="fs-id1165166636799">
+              <para id="fs-id1165167614327">Piłka uderzona pod kątem 30°.</para>
+            </solution>
+          </exercise>
+        </note>
+        <para id="fs-id1165168033184">W naszych rozważaniach o zasięgu rzutu względem płaskiej powierzchni zakładamy, że <m:math>
+            <m:mi>R</m:mi>
+          </m:math>
+           jest bardzo małe w porównaniu z obwodem kuli ziemskiej. Jeżeli jednak zasięg jest duży, krzywizna Ziemi zaczyna być istotna. Powierzchnia Ziemi obniża się w trakcie lotu pocisku i przyspieszenie grawitacyjne zmienia wartość wzdłuż toru lotu. Zasięg rzutu jest w efekcie większy niż przewidziany wyprowadzonym przez nas wzorem, bo miejsce upadku pocisku jest dalej niż w przypadku płaskiej powierzchni odniesienia. Obrazuje to <link target-id="CNX_UPhysics_04_03_Satellite"/>, inspirowany szkicem Newtona z jego dzieła <emphasis effect="italics">Philosophiae naturalis principia mathematica</emphasis>. Jeżeli prędkość początkowa jest odpowiednio duża, pocisk może wejść na orbitę Ziemi. Powierzchnia Ziemi obniża się o 5 m co każde 8000 m w poziomie. W spadku swobodnym (bez oporów powietrza) ciało spada o 5 m w ciągu 1 s. W takim razie, jeśli ciału nadamy prędkość poziomą o wartości 8000 m/s (czyli 28 800 km/h) tuż przy powierzchni Ziemi, to takie ciało zacznie ruch orbitalny wokół Ziemi – stanie się satelitą. Możemy to rozumieć w ten sposób, że w ruchu orbitalnym powierzchnia Ziemi stale opada względem toru satelity. Wymieniona wartość prędkości jest w przybliżeniu wartością typową dla statku kosmicznego lub satelitów na niskiej orbicie okołoziemskiej. Te i inne zagadnienia ruchu orbitalnego, jak np. ruch Ziemi w przestrzeni kosmicznej, omawiamy szczegółowo w rozdziale <link class="target-chapter" document="m65809">Grawitacja</link>.</para><figure id="CNX_UPhysics_04_03_Satellite">
+            <media id="fs-id1165166634885" alt="Rysunek przedstawia kulę ziemską z wysoką wieżą ustawioną na biegunie północnym oraz poziomym wektorem prędkości początkowej v z indeksem dolnym 0 zaczepionym w wierzchołku wieży. Pokazano 5 trajektorii zaczynających się w czubku wieży. Pierwsza kończy się na powierzchni ziemi blisko podstawy wieży. Druga trochę dalej, a trzecia jeszcze dalej. Czwarta trajektoria kończy się na równiku i jest styczna do powierzchni Ziemi na równiku. Piąta trajektoria jest okręgiem współśrodkowym z Ziemią.">
+              <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_04_03_Satellite.jpg"/>
+            </media>
+            <caption>Wystrzelenie pocisku na orbitę ziemską. Pocisk wystrzeliwany jest z wysokiej wieży, dzięki czemu opór powietrza jest pomijalny. Wraz ze wzrostem prędkości początkowej zasięg rzutu jest większy niż względem płaskiej powierzchni, ponieważ powierzchnia Ziemi zakrzywia się w dół względem toru lotu pocisku. Przy prędkości początkowej 8000 m/s pocisk osiąga orbitę.</caption>
+          </figure>
+          <note id="fs-id1165168113144" class="media-2">
+            <para id="fs-id1165168095976">Na stronie <link url="https://openstaxcollege.org/l/21phetpromot">PhET Explorations: Projectile Motion</link> możesz zapoznać się z parametrami rzutu ukośnego w zależności od kąta wyrzutu i prędkości początkowej.</para>
+          </note>
+        </section>
+      </section>
+      <section id="fs-id1165166487358" class="key-concepts">
+        <title>Podsumowanie</title>
+        <list xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165168107822" list-type="bulleted" bullet-style="bullet"><item> Rzuty są przykładem ruchu w pobliżu powierzchni Ziemi, na który wpływ ma tylko przyspieszenie grawitacyjne. </item>
+          <item> Do rozwiązania problemu rzutów używamy jednowymiarowych kinematycznych równań ruchu zapisanych osobno dla kierunku poziomego <m:math>
+              <m:mi>x</m:mi>
+            </m:math>
+           i pionowego <m:math>
+            <m:mi>y</m:mi>
+          </m:math>. </item>
+          <item> Czas lotu pocisku w rzucie ukośnym z prędkością początkową <m:math>
+            <m:msub>
+              <m:mi>v</m:mi>
+                <m:mn>0</m:mn>
+            </m:msub>
+            </m:math> względem powierzchni płaskiej możemy opisać wzorem
+<equation id="fs-id1165166626297" class="unnumbered"><label/>
+              <m:math>
+                <m:mi>T</m:mi>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mi>sin</m:mi>
+                        <m:mo>⁡</m:mo>
+                        <m:msub>
+                          <m:mi>θ</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mi>g</m:mi>
+                </m:mfrac>
+                <m:mo>.</m:mo>
+              </m:math>
+			  </equation>
+			  Ten wzór jest poprawny tylko w przypadku, gdy pocisk upada na tej samej wysokości, z jakiej został wystrzelony. </item>
+            <item> Największa odległość w poziomie, jaką pokonuje pocisk w rzucie ukośnym, nazywa się zasięgiem i wynosi:<equation id="fs-id1165166626298" class="unnumbered">
+              <label/>
+              <m:math>
+                <m:mi>R</m:mi>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:msubsup>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                    <m:mi>sin</m:mi>
+                    <m:mo>⁡</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mi>g</m:mi>
+                </m:mfrac>
+                <m:mo>.</m:mo>
+              </m:math>
+            </equation>Wzór na zasięg obowiązuje tylko w sytuacji, gdy pocisk upada na tej samej wysokości, z jakiej był wystrzelony. </item>
+            
+          </list></section>
+        <section id="fs-id1165167857619" class="review-conceptual-questions">
+          <title>Pytania </title>
+          <exercise id="fs-id1165166616749">
+            <problem id="fs-id1165168017860">
+              <para id="fs-id1165168017862">Odpowiedz na następujące pytania dotyczące rzutu ukośnego przy założeniu braku oporów powietrza oraz kącie początkowym większym od 0°, a mniejszym niż 90°: <list id="eip-idm360749456" list-type="enumerated" number-style="lower-alpha">
+                <item> Czy prędkość kiedykolwiek spada do zera? </item>
+                <item> Kiedy całkowita prędkość ma najmniejszą wartość? Kiedy największą? </item>
+                <item> Czy wektor prędkości w jakiejkolwiek innej chwili niż <m:math>
+                    <m:mi>t</m:mi>
+                  </m:math>
+                   = 0 ma szansę być równy prędkości początkowej? </item>
+                  <item> Czy szybkość może być taka jak szybkość początkowa w chwili innej niż <m:math>
+                      <m:mi>t</m:mi>
+                    </m:math>
+                     = 0? </item>
+                  </list>
+                </para></problem>
+              <solution id="fs-id1165167780957">
+                <list id="fs-id1165167780959" list-type="enumerated" number-style="lower-alpha"><item> Nie; </item>
+                  <item> najmniejsza w wierzchołku, a największa na początku oraz w momencie upadku; </item>
+                  <item> nie, prędkość jest wektorem, który w trakcie ruchu zmienia kierunek i zwrot; </item>
+                  <item> tak, w chwili upadku.</item>
+                </list></solution>
+            </exercise>
+            <exercise id="fs-id1165167690280">
+              <problem id="fs-id1165167690282">
+                <para id="fs-id1165167705828">Odpowiedz na następujące pytania dotyczące rzutu ukośnego, przy założeniu braku oporów powietrza oraz kącie początkowym większym od 0°, a mniejszym niż 90°: <list id="eip-idm1202115520" list-type="enumerated" number-style="lower-alpha">
+                  <item> Czy przyspieszenie jest kiedykolwiek równe zero? </item>
+                  <item> Czy wektor przyspieszenia ma kiedykolwiek zwrot i kierunek którejkolwiek składowej wektora prędkości? </item>
+                  <item> Czy przyspieszenie jest kiedykolwiek zwrócone przeciwnie do którejś ze składowych prędkości? </item>
+                </list>
+              </para>
+            </problem>
+          </exercise>
+          <exercise id="fs-id1165166632169">
+            <problem id="fs-id1165166631340">
+              <para id="fs-id1165166631342">Dwuzłotówkę kładziemy płasko na krawędzi stołu tak, że wystaje nieco poza stół. Uderzamy w nią centralnie pięciozłotówką prostopadle do krawędzi stołu tak, że obie monety spadają. Która z nich pierwsza upadnie na podłogę?</para>
+            </problem>
+            <solution id="fs-id1165166623383">
+              <para id="fs-id1165166623385">Obie monety upadną na podłogę w tym samym czasie.</para>
+            </solution>
+          </exercise>
+        </section>
+        <section id="fs-id1165166597666" class="review-problems">
+          <title>Zadania</title>
+          <exercise id="fs-id1165168143712">
+            <problem id="fs-id1165166622969">
+              <para id="fs-id1165166622971">Pocisk karabinowy jest wystrzelony poziomo z wysokości ramienia strzelca (1,5 m) z szybkością 200 m/s. <list id="eip-idm1516237424" list-type="enumerated" number-style="lower-alpha">
+                <item> Ile czasu upłynie zanim pocisk upadnie na ziemię? </item>
+                <item> Jaki dystans w poziomie pocisk pokona? </item>
+              </list>
+            </para>
+          </problem>
+          <solution id="fs-id1165168072758">
+            <list id="fs-id1165166622974" list-type="enumerated" number-style="lower-alpha">
+              <item>
+                <m:math>
+                  <m:mi>t</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>0,55</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>s</m:mtext>
+                  </m:math>, </item>
+                  <item>
+                    <m:math>
+                      <m:mi>x</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>110</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mtext>m</m:mtext>
+                      </m:math>.</item>
+                    </list>
+                  </solution>
+                </exercise>
+                <exercise id="fs-id1165168039120">
+                  <problem id="fs-id1165168064016">
+                    <para id="fs-id1165168064018">Szklana kuleczka stacza się ze stołu o wysokości 1,0 m i upada na podłogę w odległości 3,0 m w poziomie od krawędzi stołu. <list id="eip-idm345356304" list-type="enumerated" number-style="lower-alpha">
+                      <item> Jak długo kulka przebywała w powietrzu? </item>
+                      <item> Jaką prędkość miała kulka, gdy minęła krawędź stołu? </item>
+                      <item> Jaką szybkość uzyskała kulka w momencie upadku na podłogę? </item>
+                    </list>
+                  </para>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1165167611654">
+                <problem id="fs-id1165167611657">
+                  <para id="fs-id1165167611659">Lotka jest rzucona poziomo z szybkością 10 m/s dokładnie w kierunku środka tarczy odległej o 2,4 m, co pokazuje poniższy rysunek. <newline/> <media id="fs-id1165166797498" alt="Ilustracja człowieka rzucającego lotką do tarczy. Lotka jest wypuszczona poziomo w odległości 2,4 metra od tarczy, z wysokości środka tarczy, z szybkością 10 metrów na sekundę.">
+                          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_04_03_Ex6_img.jpg"/>
+                        </media> <list id="eip-idm1204417504" list-type="enumerated" number-style="lower-alpha"><item> O ile poniżej zamierzonego celu lotka trafia w tarczę? </item>
+                    <item> Co twoja odpowiedź mówi ci o technice stosowanej przez profesjonalnych zawodników tej gry? </item>
+                  </list></para></problem>
+              <solution id="fs-id1165168078466">
+                <list id="fs-id1165168078468" list-type="enumerated" number-style="lower-alpha"><item>
+                    <m:math>
+                      <m:mi>t</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>0,24</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mtext>s</m:mtext>
+                      <m:mn>,</m:mn>
+                      <m:mspace width="1em"/>
+                      <m:mi>d</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>0,28</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mtext>m</m:mtext>
+                      </m:math>, </item>
+                      <item> Celują wyżej.
+                      </item>
+                    </list></solution>
+                </exercise>
+                <exercise id="fs-id1165167867745">
+                  <problem id="fs-id1165167867747">
+                    <para id="fs-id1165166481944">Samolot lecący poziomo z prędkością 500 km/h na wysokości 800 m zrzuca paczkę z zaopatrzeniem (spójrz na rysunek). Jeśli spadochron nie otworzy się, to jak daleko od miejsca zrzutu paczka upadnie na ziemię?</para>
+                    <media id="fs-id1165167682447" alt="Samolot wypuszcza ładunek. Jego prędkość jest pozioma i ma wartość 500 kilometrów na godzinę. Trajektoria ładunku jest połową paraboli o ramionach w dół, styczną w wierzchołku do samolotu.">
+                      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_04_03_Ex8_img.jpg"/>
+                    </media>
+                  </problem>
+                </exercise>
+                <exercise id="fs-id1165166622226">
+                  <problem id="fs-id1165166622228">
+                    <para id="fs-id1165166622230">Załóżmy, że samolot z poprzedniego zadania wystrzeliwuje rakietę z poziomą prędkością o wartości <m:math display="inline"><m:mn>300</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math> i kierunku zgodnym z kierunkiem lotu. <list id="eip-idm343834592" list-type="enumerated" number-style="lower-alpha">
+                      <item> Po jakim czasie i w jakiej odległości poziomej od miejsca wystrzelenia upadnie rakieta? </item>
+                      <item> Jaka jest szybkość rakiety w chwili upadku? </item>
+                    </list>
+                  </para></problem>
+                <solution id="fs-id1165167989106">
+                  <list id="fs-id1165167777766" list-type="enumerated" number-style="lower-alpha"><item>
+                      <m:math>
+                        <m:mi>t</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>12,8</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mtext>s</m:mtext>
+                        <m:mn>,</m:mn>
+                        <m:mspace width="1em"/>
+                        <m:mi>x</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>5</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mn>618</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mtext>m</m:mtext>
+                        </m:math>; </item>
+                        <item>
+                          <m:math>
+                            <m:msub>
+                              <m:mi>v</m:mi>
+                              <m:mi>y</m:mi>
+                            </m:msub>
+                            <m:mo>=</m:mo>
+                            <m:mn>125,6</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mtext>m/s</m:mtext>
+                            <m:mn>,</m:mn>
+                            <m:mspace width="1em"/>
+                            <m:msub>
+                              <m:mi>v</m:mi>
+                              <m:mi>x</m:mi>
+                            </m:msub>
+                            <m:mo>=</m:mo>
+                            <m:mn>438,9</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mtext>m/s</m:mtext>
+                            <m:mn>,</m:mn>
+                            <m:mspace width="1em"/>
+                            <m:mrow>
+                              <m:mo stretchy="false">|</m:mo>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mover>
+                                  <m:mi>v</m:mi>
+                                  <m:mtext>→</m:mtext>
+                                </m:mover>
+                              </m:mrow>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mo stretchy="false">|</m:mo>
+                            </m:mrow>
+                            <m:mo>=</m:mo>
+                            <m:mn>456,5</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mtext>m/s</m:mtext>
+                            </m:math>.</item>
+                          </list></solution>
+                      </exercise>
+                      <exercise id="fs-id1165167851744">
+                        <problem id="fs-id1165168034974">
+                          <para id="fs-id1165168034976">Miotacz drużyny baseballowej rzuca piłkę z prędkością 40 m/s (144 km/h). <list id="eip-idm990641488" list-type="enumerated" number-style="lower-alpha">
+                            <item> Zakładając, że miotacz rzuca piłkę poziomo w kierunku odległej o 18,4 m bazy, oblicz czas lotu piłki do bazy. </item>
+                            <item> W jakiej odległości od bazy upadnie piłka wyrzucona przez miotacza z wysokości 1,5 m, jeśli pałkarz nie trafi? </item>
+                          </list>
+                        </para>
+                      </problem>
+                    </exercise>
+                    <exercise id="fs-id1165167946074">
+                      <problem id="fs-id1165166619151">
+                        <para id="fs-id1165166619153">Pocisk, wystrzelony pod kątem 30°, upada po 20 s na ten sam poziom, z którego go wystrzelono. <list id="eip-idm1115074944" list-type="enumerated" number-style="lower-alpha">
+                          <item> Jaką miał prędkość początkową? </item>
+                          <item> Na jaką największą wysokość wzniósł się pocisk? </item>
+                          <item> Jaki jest zasięg pocisku? </item>
+                          <item> Oblicz przemieszczenie pocisku od miejsca wystrzelenia do punktu na trajektorii po 15 s. </item>
+                        </list>
+                      </para>
+                    </problem>
+                    <solution id="fs-id1165166793284">
+                      <list id="fs-id1165166793287" list-type="enumerated" number-style="lower-alpha"><item>
+                          <m:math>
+                            <m:msub>
+                              <m:mi>v</m:mi>
+                              <m:mi>y</m:mi>
+                            </m:msub>
+                            <m:mo>=</m:mo>
+                            <m:msub>
+                              <m:mi>v</m:mi>
+                              <m:mrow>
+                                <m:mn>0</m:mn>
+                                <m:mi>y</m:mi>
+                              </m:mrow>
+                            </m:msub>
+                            <m:mo>-</m:mo>
+                            <m:mi>g</m:mi>
+                            <m:mi>t</m:mi>
+                            <m:mn>,</m:mn>
+                            <m:mspace width="1em"/>
+                            <m:mi>t</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mn>10</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mtext>s</m:mtext>
+                            <m:mn>,</m:mn>
+                            <m:mspace width="1em"/>
+                            <m:msub>
+                              <m:mi>v</m:mi>
+                              <m:mi>y</m:mi>
+                            </m:msub>
+                            <m:mo>=</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mn>,</m:mn>
+                            <m:mspace width="1em"/>
+                            <m:msub>
+                              <m:mi>v</m:mi>
+                              <m:mrow>
+                                <m:mn>0</m:mn>
+                                <m:mi>y</m:mi>
+                              </m:mrow>
+                            </m:msub>
+                            <m:mo>=</m:mo>
+                            <m:mn>98,1</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mtext>m/s</m:mtext>
+                            <m:mn>,</m:mn>
+                            <m:mspace width="1em"/>
+                            <m:msub>
+                              <m:mi>v</m:mi>
+                              <m:mn>0</m:mn>
+                            </m:msub>
+                            <m:mo>=</m:mo>
+                            <m:mn>196,2</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mtext>m/s</m:mtext>
+                            </m:math>; </item>
+                            <item>
+                              <m:math>
+                                <m:mi>h</m:mi>
+                                <m:mo>=</m:mo>
+                                <m:mn>490,5</m:mn>
+                                <m:mspace width="0.2em"/>
+                                <m:mtext>m</m:mtext>
+                                </m:math>; </item>
+                                <item>
+                                  <m:math>
+                                    <m:msub>
+                                      <m:mi>v</m:mi>
+                                      <m:mrow>
+                                        <m:mn>0</m:mn>
+                                        <m:mi>x</m:mi>
+                                      </m:mrow>
+                                    </m:msub>
+                                    <m:mo>=</m:mo>
+                                    <m:mn>169,9</m:mn>
+                                    <m:mspace width="0.2em"/>
+                                    <m:mtext>m/s</m:mtext>
+                                    <m:mn>,</m:mn>
+                                    <m:mspace width="1em"/>
+                                    <m:mi>x</m:mi>
+                                    <m:mo>=</m:mo>
+                                    <m:mn>3</m:mn>
+                                    <m:mspace width="0.2em"/>
+                                    <m:mn>398,0</m:mn>
+                                    <m:mspace width="0.2em"/>
+                                    <m:mtext>m</m:mtext>
+                                    </m:math>; </item>
+                                    <item>
+                                      <m:math>
+                                        <m:mi>x</m:mi>
+                                        <m:mo>=</m:mo>
+                                        <m:mn>2</m:mn>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mn>548,5</m:mn>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mtext>m</m:mtext>
+                                        <m:mn>,</m:mn>
+                                        <m:mspace width="1em"/>
+                                        <m:mi>y</m:mi>
+                                        <m:mo>=</m:mo>
+                                        <m:mn>367,9</m:mn>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mtext>m</m:mtext>
+                                        <m:mn>,</m:mn>
+                                        <m:mspace width="1em"/>
+                                        <m:mrow>
+                                          <m:mrow>
+                                            <m:mover>
+                                              <m:mi>s</m:mi>
+                                              <m:mtext>→</m:mtext>
+                                            </m:mover>
+                                          </m:mrow>
+                                        </m:mrow>
+                                        <m:mo>=</m:mo>
+                                        <m:mrow>
+                                          <m:mo>(</m:mo>
+                                          <m:mrow>
+                                            <m:mn>2</m:mn>
+                                            <m:mspace width="0.2em"/>
+                                            <m:mn>549</m:mn>
+                                            <m:mrow>
+                                              <m:mrow>
+                                                <m:mover>
+                                                  <m:mi>i</m:mi>
+                                                  <m:mo stretchy="false">^</m:mo>
+                                                </m:mover>
+                                              </m:mrow>
+                                            </m:mrow>
+                                            <m:mo>+</m:mo>
+                                            <m:mn>367,9</m:mn>
+                                            <m:mrow>
+                                              <m:mrow>
+                                                <m:mover>
+                                                  <m:mi>j</m:mi>
+                                                  <m:mo stretchy="false">^</m:mo>
+                                                </m:mover>
+                                              </m:mrow>
+                                            </m:mrow>
+                                          </m:mrow>
+                                          <m:mo>)</m:mo>
+                                        </m:mrow>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mtext>m</m:mtext>
+                                        </m:math>.</item>
+                                      </list></solution>
+                                  </exercise>
+                                  <exercise id="fs-id1165166546858">
+                                    <problem id="fs-id1165166546860">
+                                      <para id="fs-id1165166631958">Koszykarz rzuca piłką w kierunku kosza odległego o 6,1 m i zawieszonego 3,0 m nad parkietem. Jeżeli piłka jest rzucona z wysokości 1,8 m nad parkietem pod kątem 60°, to jaka musi być jej początkowa szybkość, aby doleciała do kosza?</para>
+                                    </problem>
+                                  </exercise>
+                                  <exercise id="fs-id1165166625989">
+                                    <problem id="fs-id1165166625991">
+                                      <para id="fs-id1165166625994">W pewnym momencie balon wypełniony gorącym powietrzem znajduje się na wysokości 100 m i zaczyna opadać ze stałą szybkością 2,0 m/s. W tym samym momencie z kosza balonu dziewczynka rzuca poziomo piłkę z szybkością 20 m/s. Gdzie będzie piłka po wylądowaniu balonu? Zaniedbaj opory powietrza.</para></problem>
+                                    <solution id="fs-id1165166591102">
+                                      <para id="fs-id1165166591104">
+                                        <m:math>
+                                          <m:mo>-</m:mo>
+                                          <m:mn>100</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mtext>m</m:mtext>
+                                          <m:mo>=</m:mo>
+                                          <m:mrow>
+                                            <m:mo>(</m:mo>
+                                            <m:mrow>
+                                              <m:mo>-</m:mo>
+                                              <m:mn>2,0</m:mn>
+                                              <m:mspace width="0.2em"/>
+                                              <m:mtext>m/s</m:mtext>
+                                            </m:mrow>
+                                            <m:mo>)</m:mo>
+                                          </m:mrow>
+                                          <m:mi>t</m:mi>
+                                          <m:mo>-</m:mo>
+                                          <m:mrow>
+                                            <m:mo>(</m:mo>
+                                            <m:mrow>
+                                              <m:mn>4,9</m:mn>
+                                              <m:mspace width="0.2em"/>
+                                              <m:msup>
+                                                <m:mtext>m/s</m:mtext>
+                                                <m:mn>2</m:mn>
+                                              </m:msup>
+                                            </m:mrow>
+                                            <m:mo>)</m:mo>
+                                          </m:mrow>
+                                          <m:msup>
+                                            <m:mi>t</m:mi>
+                                            <m:mn>2</m:mn>
+                                          </m:msup>
+                                          <m:mn>,</m:mn>
+                                          <m:mspace width="1em"/>
+                                          <m:mi>t</m:mi>
+                                          <m:mo>=</m:mo>
+                                          <m:mn>4,3</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mtext>s</m:mtext>
+                                          <m:mn>,</m:mn>
+                                          <m:mspace width="1em"/>
+                                          <m:mi>x</m:mi>
+                                          <m:mo>=</m:mo>
+                                          <m:mn>86,0</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mtext>m</m:mtext>
+                                          <m:mo>.</m:mo>
+                                        </m:math>
+                                      </para>
+                                    </solution>
+                                  </exercise>
+                                  <exercise id="fs-id1165167850935">
+                                    <problem id="fs-id1165166610351">
+                                      <para id="fs-id1165166610353">Mężczyzna poruszający się motocyklem ruchem jednostajnym z prędkością 10 m/s wyrzuca puszkę po coli pionowo do góry z szybkością 3,0 m/s. Wyznacz równanie toru lotu puszki, jaki widzi z pobocza policjant obserwujący zdarzenie. Przyjmij za położenie początkowe punkt wyrzutu puszki. Zaniedbaj opory powietrza.</para>
+                                    </problem>
+                                  </exercise>
+                                  <exercise id="fs-id1165166634991">
+                                    <problem id="fs-id1165167777693">
+                                      <para id="fs-id1165167777695">Lekkoatleta potrafi skoczyć w dal na odległość 8,0 m. Jak daleko byłby w stanie skoczyć na Księżycu, gdzie przyspieszenie grawitacyjne jest 6 razy mniejsze niż na Ziemi?</para>
+                                    </problem>
+                                    <solution id="fs-id1165167996165">
+                                      <para id="fs-id1165167996167">
+                                        <m:math>
+                                          <m:msub>
+                                            <m:mi>R</m:mi>
+                                            <m:mi>K</m:mi>
+                                          </m:msub>
+                                          <m:mo>=</m:mo>
+                                          <m:mn>48</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mtext>m</m:mtext>
+                                        </m:math>
+                                      </para>
+                                    </solution>
+                                  </exercise>
+                                  <exercise id="fs-id1165167996129">
+                                    <problem id="fs-id1165167996131">
+                                      <para id="fs-id1165167996134">Największa odległość na jaką chłopiec potrafi rzucić piłkę wynosi 50 m. Załóżmy, że chłopiec z tą prędkością może rzucać pod dowolnym kątem, także w pionie. Jak wysoko wzniesie się piłka, jeśli chłopiec wyrzuci ją pionowo do góry?</para>
+                                    </problem>
+                                  </exercise>
+                                  <exercise id="fs-id1165168033133">
+                                    <problem id="fs-id1165166633732">
+                                      <para id="fs-id1165166633734">Kamień wyrzucono z krawędzi klifu po kątem 53° do poziomu. Wysokość klifu to 100 m. Prędkość początkowa kamienia ma wartość 30 m/s. <list id="eip-idm1010106512" list-type="enumerated" number-style="lower-alpha"><item> Jak wysoko ponad klif wzniesie się kamień? </item>
+                                        <item> Jak daleko w poziomie przemieści się kamień, gdy znajdzie się na wysokości maksymalnej swojego lotu? </item>
+                                        <item> Po jakim czasie od wyrzucenia kamień upadnie na ziemię? </item>
+                                        <item> Jaki jest zasięg kamienia? </item>
+                                        <item> Jakie są współrzędne położenia kamienia względem krawędzi klifu w chwilach <m:math display="inline"><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>2,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>, <m:math display="inline"><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>4,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math> oraz <m:math display="inline"><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>6,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>? </item>
+                                    </list></para>
+                                </problem>
+                                <solution id="fs-id1165167746378">
+                                  <list id="fs-id1165167746380" list-type="enumerated" number-style="lower-alpha"><item>
+                                      <m:math>
+                                        <m:msub>
+                                          <m:mi>v</m:mi>
+                                          <m:mrow>
+                                            <m:mn>0</m:mn>
+                                            <m:mi>y</m:mi>
+                                          </m:mrow>
+                                        </m:msub>
+                                        <m:mo>=</m:mo>
+                                        <m:mn>24</m:mn>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mtext>m/s</m:mtext>
+                                        <m:mn>,</m:mn>
+                                        <m:mspace width="1em"/>
+                                        <m:msubsup>
+                                          <m:mi>v</m:mi>
+                                          <m:mi>y</m:mi>
+                                          <m:mn>2</m:mn>
+                                        </m:msubsup>
+                                        <m:mo>=</m:mo>
+                                        <m:msubsup>
+                                          <m:mi>v</m:mi>
+                                          <m:mrow>
+                                            <m:mn>0</m:mn>
+                                            <m:mi>y</m:mi>
+                                          </m:mrow>
+                                          <m:mn>2</m:mn>
+                                        </m:msubsup>
+                                        <m:mo>-</m:mo>
+                                        <m:mn>2</m:mn>
+                                        <m:mi>g</m:mi>
+                                        <m:mi>y</m:mi>
+<m:mspace width="1em"/>
+                                        <m:mo stretchy="false">⇒</m:mo>
+                                        <m:mi>h</m:mi>
+                                        <m:mo>=</m:mo>
+                                        <m:mn>29,4</m:mn>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mtext>m</m:mtext>
+                                        </m:math>; </item>
+                                        <item>
+                                          <m:math>
+                                            <m:mi>t</m:mi>
+                                            <m:mo>=</m:mo>
+                                            <m:mn>2,45</m:mn>
+                                            <m:mspace width="0.2em"/>
+                                            <m:mtext>s</m:mtext>
+                                            <m:mn>,</m:mn>
+                                            <m:mspace width="1em"/>
+                                            <m:msub>
+                                              <m:mi>v</m:mi>
+                                              <m:mrow>
+                                                <m:mn>0</m:mn>
+                                                <m:mi>x</m:mi>
+                                              </m:mrow>
+                                            </m:msub>
+                                            <m:mo>=</m:mo>
+                                            <m:mn>18</m:mn>
+                                            <m:mspace width="0.2em"/>
+                                            <m:mtext>m/s</m:mtext>
+                                            <m:mn>,</m:mn>
+                                            <m:mspace width="1em"/>
+                                            <m:mi>x</m:mi>
+                                            <m:mo>=</m:mo>
+                                            <m:mn>44,1</m:mn>
+                                            <m:mspace width="0.2em"/>
+                                            <m:mtext>m</m:mtext>
+                                            </m:math>; </item>
+                                            <item>
+                                              <m:math>
+                                                <m:mi>y</m:mi>
+                                                <m:mo>=</m:mo>
+                                                <m:mo>−</m:mo>
+                                                <m:mn>100</m:mn>
+                                                <m:mspace width="0.2em"/>
+                                                <m:mtext>m</m:mtext>
+                                                <m:mn>,</m:mn>
+                                                <m:mspace width="1em"/>
+                                                <m:msub>
+                                                  <m:mi>y</m:mi>
+                                                  <m:mn>0</m:mn>
+                                                </m:msub>
+                                                <m:mo>=</m:mo>
+                                                <m:mn>0</m:mn>
+                                                <m:mn>,</m:mn>
+                                                <m:mspace width="1em"/>
+                                                <m:mi>y</m:mi>
+                                                <m:mo>−</m:mo>
+                                                <m:msub>
+                                                  <m:mi>y</m:mi>
+                                                  <m:mn>0</m:mn>
+                                                </m:msub>
+                                                <m:mo>=</m:mo>
+                                                <m:msub>
+                                                  <m:mi>v</m:mi>
+                                                  <m:mn>0</m:mn>
+                                                </m:msub>
+                                                <m:mi>t</m:mi>
+                                                <m:mo>−</m:mo>
+                                                <m:mfrac>
+                                                  <m:mn>1</m:mn>
+                                                  <m:mn>2</m:mn>
+                                                </m:mfrac>
+                                                <m:mi>g</m:mi>
+                                                <m:msup>
+                                                  <m:mi>t</m:mi>
+                                                  <m:mn>2</m:mn>
+                                                </m:msup>
+                                                <m:mn>,</m:mn>
+                                                <m:mspace width="1em"/>
+                                                <m:mo>−</m:mo>
+                                                <m:mn>100</m:mn>
+                                                <m:mo>=</m:mo>
+                                                <m:mn>24</m:mn>
+                                                <m:mi>t</m:mi>
+                                                <m:mo>−</m:mo>
+                                                <m:mn>4,9</m:mn>
+                                                <m:msup>
+                                                  <m:mi>t</m:mi>
+                                                  <m:mn>2</m:mn>
+                                                </m:msup>
+                                                <m:mo stretchy="false">⇒</m:mo>
+                                                <m:mi>t</m:mi>
+                                                <m:mo>=</m:mo>
+                                                <m:mn>7,58</m:mn>
+                                                <m:mspace width="0.2em"/>
+                                                <m:mtext>s</m:mtext>
+                                                </m:math>; </item>
+                                                <item>
+                                                  <m:math>
+                                                    <m:mi>x</m:mi>
+                                                    <m:mo>=</m:mo>
+                                                    <m:mn>136,44</m:mn>
+                                                    <m:mspace width="0.2em"/>
+                                                    <m:mtext>m</m:mtext>
+                                                    </m:math>; </item>
+                                                    <item>
+                                                      <m:math>
+                                                        <m:mi>t</m:mi>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mn>2,0</m:mn>
+                                                        <m:mspace width="0.2em"/>
+                                                        <m:mtext>s</m:mtext>
+                                                        <m:mo>:</m:mo>
+                                                        <m:mspace width="1em"/>
+                                                        <m:mi>y</m:mi>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mn>28,4</m:mn>
+                                                        <m:mspace width="0.2em"/>
+                                                        <m:mtext>m</m:mtext>
+                                                        <m:mn>,</m:mn>
+                                                        <m:mspace width="1em"/>
+                                                        <m:mi>x</m:mi>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mn>36</m:mn>
+                                                        <m:mspace width="0.2em"/>
+                                                        <m:mtext>m</m:mtext>
+                                                        <m:mn>,</m:mn>
+                                                      </m:math>
+                                                      <newline/>
+                                                      <m:math>
+                                                        <m:mi>t</m:mi>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mn>4,0</m:mn>
+                                                        <m:mspace width="0.2em"/>
+                                                        <m:mtext>s</m:mtext>
+                                                        <m:mo>:</m:mo>
+                                                        <m:mspace width="1em"/>
+                                                        <m:mi>y</m:mi>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mn>17,6</m:mn>
+                                                        <m:mspace width="0.2em"/>
+                                                        <m:mtext>m</m:mtext>
+                                                        <m:mn>,</m:mn>
+                                                        <m:mspace width="1em"/>
+                                                        <m:mi>x</m:mi>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mn>72</m:mn>
+                                                        <m:mspace width="0.2em"/>
+                                                        <m:mtext>m</m:mtext>
+                                                        <m:mn>,</m:mn>
+                                                      </m:math>
+                                                      <newline/>
+                                                      <m:math>
+                                                        <m:mi>t</m:mi>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mn>6,0</m:mn>
+                                                        <m:mspace width="0.2em"/>
+                                                        <m:mtext>s</m:mtext>
+                                                        <m:mo>:</m:mo>
+                                                        <m:mspace width="1em"/>
+                                                        <m:mi>y</m:mi>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mo>-</m:mo>
+                                                        <m:mn>32,4</m:mn>
+                                                        <m:mspace width="0.2em"/>
+                                                        <m:mtext>m</m:mtext>
+                                                        <m:mn>,</m:mn>
+                                                        <m:mspace width="1em"/>
+                                                        <m:mi>x</m:mi>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mn>108</m:mn>
+                                                        <m:mspace width="0.2em"/>
+                                                        <m:mtext>m</m:mtext>
+                                                        </m:math>.</item>
+                                                      </list></solution>
+                                                  </exercise>
+                                                  <exercise id="fs-id1165168063949">
+                                                    <problem id="fs-id1165167851002">
+                                                      <para id="fs-id1165167851004">Agent 007, uciekając przed napastnikami, zjeżdża na nartach w dół stoku o nachyleniu 30° z szybkością 60 km/h. Gdy dociera do przepaści, przeskakuje na drugą stronę głębokiego wąwozu o szerokości 60 m i upada 100 m poniżej krawędzi przepaści (rysunek) Jak tego dokonał? Zaniedbaj opory powietrza.</para>
+                                                      <media id="fs-id1165168102188" alt="Narciarz zjeżdża ze zbocza o nachyleniu 30 stopni z prędkością v indeks dolny 0. Narciarz dociera do przepaści o szerokości 60 metrów i drugim brzegu położonym 100 metrów niżej.">
+                                                        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_04_03_Ex21_img.jpg"/>
+                                                      </media>
+                                                    </problem>
+                                                  </exercise>
+                                                  <exercise id="fs-id1165168068850">
+                                                    <problem id="fs-id1165168068853">
+                                                      <para id="fs-id1165168068855">Dołek jest w odległości 70 m od golfisty i 20 m poniżej poziomu, na którym stoi mężczyzna. Jeśli uderzy piłkę pod kątem 40° z początkową szybkością 20 m/s, to jak blisko dołka upadnie piłka?</para>
+                                                    </problem>
+                                                    <solution id="fs-id1165168065281">
+                                                      <para id="fs-id1165168065283">
+                                                        <m:math>
+                                                          <m:msub>
+                                                            <m:mi>v</m:mi>
+                                                            <m:mrow>
+                                                              <m:mn>0</m:mn>
+                                                              <m:mi>y</m:mi>
+                                                            </m:mrow>
+                                                          </m:msub>
+                                                          <m:mo>=</m:mo>
+                                                          <m:mn>12,9</m:mn>
+                                                          <m:mspace width="0.2em"/>
+                                                          <m:mtext>m/s</m:mtext>
+                                                          <m:mn>,</m:mn>
+                                                          <m:mspace width="1em"/>
+                                                          <m:mi>y</m:mi>
+                                                          <m:mo>−</m:mo>
+                                                          <m:msub>
+                                                            <m:mi>y</m:mi>
+                                                            <m:mn>0</m:mn>
+                                                          </m:msub>
+                                                          <m:mo>=</m:mo>
+                                                          <m:msub>
+                                                            <m:mi>v</m:mi>
+                                                            <m:mn>0</m:mn>
+                                                          </m:msub>
+                                                          <m:mi>t</m:mi>
+                                                          <m:mo>−</m:mo>
+                                                          <m:mfrac>
+                                                            <m:mn>1</m:mn>
+                                                            <m:mn>2</m:mn>
+                                                          </m:mfrac>
+                                                          <m:mi>g</m:mi>
+                                                          <m:msup>
+                                                            <m:mi>t</m:mi>
+                                                            <m:mn>2</m:mn>
+                                                          </m:msup>
+                                                          <m:mn>,</m:mn>
+                                                          <m:mspace width="1em"/>
+                                                          <m:mo>−</m:mo>
+                                                          <m:mn>20</m:mn>
+                                                          <m:mo>=</m:mo>
+                                                          <m:mn>12,9</m:mn>
+                                                          <m:mi>t</m:mi>
+                                                          <m:mo>−</m:mo>
+                                                          <m:mn>4,9</m:mn>
+                                                          <m:msup>
+                                                            <m:mi>t</m:mi>
+                                                            <m:mn>2</m:mn>
+                                                          </m:msup>
+                                                          <m:mo stretchy="false">⇒</m:mo>
+                                                          <m:mi>t</m:mi>
+                                                          <m:mo>=</m:mo>
+                                                          <m:mn>3,7</m:mn>
+                                                          <m:mspace width="0.2em"/>
+                                                          <m:mtext>s</m:mtext>
+                                                        </m:math>
+                                                        <newline/>
+                                                        <m:math>
+                                                          <m:msub>
+                                                            <m:mi>v</m:mi>
+                                                            <m:mrow>
+                                                              <m:mn>0</m:mn>
+                                                              <m:mi>x</m:mi>
+                                                            </m:mrow>
+                                                          </m:msub>
+                                                          <m:mo>=</m:mo>
+                                                          <m:mn>15,3</m:mn>
+                                                          <m:mspace width="0.2em"/>
+                                                          <m:mtext>m/s</m:mtext>
+                                                          <m:mo stretchy="false">⇒</m:mo>
+                                                          <m:mi>x</m:mi>
+                                                          <m:mo>=</m:mo>
+                                                          <m:mn>56,7</m:mn>
+                                                          <m:mspace width="0.2em"/>
+                                                          <m:mtext>m</m:mtext>
+                                                          <m:mo>.</m:mo>
+                                                        </m:math>
+                                                        <newline/>Piłka wyląduje 13,3 m za blisko.</para>
+                                                      </solution>
+                                                    </exercise>
+                                                    <exercise id="fs-id1165168071581">
+                                                      <problem id="fs-id1165168071583">
+                                                        <para id="fs-id1165168071585">Kula armatnia jest wystrzelona w kierunku zbocza nachylonego do poziomu pod kątem 20° i oddalonego od armaty o 300 m. Prędkość początkowa pocisku ma wartość 75 m/s i kierunek 60° do poziomu. W układzie współrzędnych przyjętym jak na rysunku, równanie prostej, jaką zbocze tworzy względem poziomu, jest następujące <m:math>
+                                                          <m:mi>y</m:mi>
+                                                          <m:mo>=</m:mo>
+                                                          <m:mrow>
+                                                            <m:mo>(</m:mo>
+                                                            <m:mrow>
+                                                              <m:mtext>tg</m:mtext>
+                                                              <m:msup>
+                                                                <m:mn>20</m:mn>
+                                                                <m:mo>°</m:mo>
+                                                              </m:msup>
+                                                            </m:mrow>
+                                                            <m:mo>)</m:mo>
+                                                          </m:mrow>
+                                                          <m:mi>x</m:mi>
+                                                          <m:mo>-</m:mo>
+                                                          <m:mn>109.</m:mn>
+                                                          </m:math> W którym miejscu zbocza upadnie kula?</para>
+                                                          <media id="fs-id1165167613217" alt="Kula jest wystrzelona pod kątem 60 stopni z prędkością 75 metrów na sekundę z początku układu w kierunku zbocza o nachyleniu 20 stopni i odległego od armaty o 300 metrów. Linia zbocza ma równanie y równe (tangens 20 stopni) razy x minus 109.">
+                                                            <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_04_03_Ex22_img.jpg"/>
+                                                          </media>
+                                                        </problem>
+                                                      </exercise>
+                                                      <exercise id="fs-id1165166487901">
+                                                        <problem id="fs-id1165166487904">
+                                                          <para id="fs-id1165166487906">Astronauta na Marsie kopie piłkę futbolową pod kątem <m:math>
+                                                            <m:msup>
+                                                              <m:mn>45</m:mn>
+                                                              <m:mo>°</m:mo>
+                                                            </m:msup>
+                                                          </m:math> z prędkością <m:math>
+                                                          <m:mn>15</m:mn>
+                                                          <m:mspace width="0.2em"/>
+                                                          <m:mtext>m/s</m:mtext>
+                                                          <m:mo>.</m:mo>
+                                                        </m:math> Przyjmując, że przyspieszenie grawitacyjne na Marsie jest równe <m:math>
+                                                        <m:mn>3,7</m:mn>
+                                                        <m:mspace width="0.2em"/>
+                                                        <m:msup>
+                                                          <m:mtext>m/s</m:mtext>
+                                                          <m:mn>2</m:mn>
+                                                        </m:msup>
+                                                      </m:math> <list id="eip-idm1605504912" list-type="enumerated" number-style="lower-alpha">
+                                                      <item> jaki jest zasięg piłki względem płaskiej powierzchni? </item>
+                                                      <item> Jaki byłby zasięg tego samego kopnięcia na Księżycu, gdzie przyspieszenie grawitacyjne jest 6 razy mniejsze niż na Ziemi? </item>
+                                                    </list>
+                                                  </para></problem>
+                                                <solution id="fs-id1165166572087">
+                                                  <para id="fs-id1165166572089">a. <m:math>
+                                                    <m:msub>
+                                                      <m:mi>R</m:mi>
+                                                      <m:mi>M</m:mi>
+                                                    </m:msub>
+                                                    <m:mo>=</m:mo>
+                                                    <m:mn>60,8</m:mn>
+                                                    <m:mspace width="0.2em"/>
+                                                    <m:mtext>m</m:mtext>
+                                                  </m:math>,<newline/>b. <m:math>
+                                                  <m:msub>
+                                                    <m:mi>R</m:mi>
+                                                    <m:mi>K</m:mi>
+                                                  </m:msub>
+                                                  <m:mo>=</m:mo>
+                                                  <m:mn>137,8</m:mn>
+                                                  <m:mspace width="0.2em"/>
+                                                  <m:mtext>m</m:mtext>
+                                                </m:math>
+                                              </para>
+                                            </solution>
+                                          </exercise>
+                                          <exercise id="fs-id1165166778792">
+                                            <problem id="fs-id1165166778794">
+                                              <para id="fs-id1165166778796">Rekord Mike'a Powella z 1991 roku w skoku w dal wynosi 8,95 m i do dzisiaj nikt go nie pobił. Jeżeli podczas tego skoku Powell wybił się pod kątem 15°, to jaką musiał mieć początkową prędkość?</para>
+                                            </problem>
+                                          </exercise>
+                                          <exercise id="fs-id1165166779111">
+                                            <problem id="fs-id1165166779113">
+                                              <para id="fs-id1165166779115">Robot skonstruowany na MIT w Bostonie potrafi przeskakiwać przeszkody o wysokości 46 cm z szybkością 12 km/h. <list id="eip-idm1203547808" list-type="enumerated" number-style="lower-alpha">
+                                                <item> Jeśli robot potrafi wybić się przy tej prędkości pod kątem 60°, to jaka jest jego wysokość maksymalna? </item>
+                                                <item> Pod jakim kątem musiałby się wybić ten robot, aby osiągnąć wysokość 46 cm? </item>
+                                              </list>
+                                            </para>
+                                          </problem>
+                                          <solution id="fs-id1165167842253">
+                                            <list id="fs-id1165167842256" list-type="enumerated" number-style="lower-alpha"><item>
+                                                <m:math>
+                                                  <m:msubsup>
+                                                    <m:mi>v</m:mi>
+                                                    <m:mi>y</m:mi>
+                                                    <m:mn>2</m:mn>
+                                                  </m:msubsup>
+                                                  <m:mo>=</m:mo>
+                                                  <m:msubsup>
+                                                    <m:mi>v</m:mi>
+                                                    <m:mn>0y</m:mn>
+                                                    <m:mn>2</m:mn>
+                                                  </m:msubsup>
+                                                  <m:mo>−</m:mo>
+                                                  <m:mn>2</m:mn>
+                                                  <m:mi>g</m:mi>
+                                                  <m:mi>y</m:mi>
+                                                  <m:mo stretchy="false">⇒</m:mo>
+                                                  <m:mi>y</m:mi>
+                                                  <m:mo>=</m:mo>
+                                                  <m:mn>42</m:mn>
+                                                  <m:mspace width="0.2em"/>
+                                                  <m:mtext>cm</m:mtext>
+                                                  </m:math>; </item>
+                                                  <item>
+                                                    <m:math>
+                                                      <m:mi>y</m:mi>
+                                                      <m:mo>=</m:mo>
+                                                      <m:mfrac>
+                                                        <m:msubsup>
+                                                          <m:mi>v</m:mi>
+<m:mrow>
+                                                          <m:mn>0</m:mn>
+<m:mi>y</m:mi>
+</m:mrow>
+                                                          <m:mn>2</m:mn>
+                                                        </m:msubsup>
+                                                        <m:mrow>
+                                                          <m:mn>2</m:mn>
+                                                          <m:mi>g</m:mi>
+                                                        </m:mrow>
+                                                      </m:mfrac>
+                                                      <m:mo>=</m:mo>
+                                                      <m:mfrac>
+                                                        <m:msup>
+                                                          <m:mrow>
+                                                            <m:mo>(</m:mo>
+                                                            <m:mrow>
+                                                              <m:msub>
+                                                                <m:mi>v</m:mi>
+                                                                <m:mn>0</m:mn>
+                                                              </m:msub>
+                                                              <m:mi>sin</m:mi>
+                                                              <m:mo>⁡</m:mo>
+                                                              <m:mi>θ</m:mi>
+                                                            </m:mrow>
+                                                            <m:mo>)</m:mo>
+                                                          </m:mrow>
+                                                          <m:mn>2</m:mn>
+                                                        </m:msup>
+                                                        <m:mrow>
+                                                          <m:mn>2</m:mn>
+                                                          <m:mi>g</m:mi>
+                                                        </m:mrow>
+                                                      </m:mfrac>
+                                                      <m:mo stretchy="false">⇒</m:mo>
+                                                      <m:mi>sin</m:mi>
+                                                      <m:mo>⁡</m:mo>
+                                                      <m:mi>θ</m:mi>
+                                                      <m:mo>=</m:mo>
+                                                      <m:mn>0,91</m:mn>
+                                                      <m:mo stretchy="false">⇒</m:mo>
+                                                      <m:mi>θ</m:mi>
+                                                      <m:mo>=</m:mo>
+                                                      <m:mn>65</m:mn>
+                                                      <m:mn>,</m:mn>
+                                                      <m:msup>
+                                                        <m:mn>5</m:mn>
+                                                        <m:mo>∘</m:mo>
+                                                      </m:msup>
+                                                      </m:math>.</item>
+                                                    </list></solution>
+                                                </exercise>
+                                                <exercise id="fs-id1165167907721">
+                                                  <problem id="fs-id1165167907723">
+                                                    <para id="fs-id1165167907725">Góra Asama w Japonii jest czynnym wulkanem. Podczas erupcji w 2009 roku wulkan wyrzucał duże bloki skalne na odległość 1 km od krateru (liczoną w poziomie). Jeżeli kąt wyrzucania skał z wulkanu wynosił 40°, a wysokość względna wulkanu to 900 m, to (a) jaka była prędkość początkowa i (b) czas lotu bloków skalnych?</para>
+                                                  </problem>
+                                                </exercise>
+                                                <exercise id="fs-id1165166798737">
+                                                  <problem id="fs-id1165166798739">
+                                                    <para id="fs-id1165166798741">Zawodnik słynnych „Świętych” z Nowego Orleanu, Drew Brees, może kopnąć piłkę do futbolu amerykańskiego z szybkością 23,0 m/s (82,8 km/h). Na jaką odległość poleci piłka, jeśli zawodnik kopnie ją pod kątem 10° do poziomu?</para>
+                                                  </problem>
+                                                  <solution id="fs-id1165168098591">
+                                                    <para id="fs-id1165168098593">
+                                                      <m:math>
+                                                        <m:mi>R</m:mi>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mn>18,5</m:mn>
+                                                        <m:mspace width="0.2em"/>
+                                                        <m:mtext>m</m:mtext>
+                                                      </m:math>
+                                                    </para>
+                                                  </solution>
+                                                </exercise>
+                                                <exercise id="fs-id1165167697338">
+                                                  <problem id="fs-id1165167697340">
+                                                    <para id="fs-id1165167697342">Pojazd kołowy LRV (Lunar Roving Vehicle) używany podczas ostatniej misji <emphasis effect="italics">Apollo</emphasis> do transportu sprzętu i załogi na powierzchni Księżyca, nieoficjalnie osiągnął szybkość 5,0 m/s. Gdyby wpadł z tą szybkością na niewielką fałdę na powierzchni Księżyca, która zadziałałaby jak katapulta wystrzeliwująca pojazd pod kątem 20°, to przez jaki czas unosiłby się „w powietrzu”?</para>
+                                                  </problem>
+                                                </exercise>
+                                                <exercise id="fs-id1165168119293">
+                                                  <problem id="fs-id1165167854309">
+                                                    <para id="fs-id1165167854311">Bramka na stadionie piłki nożnej ma wysokość <m:math display="inline"><m:mn>2,44</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:math>. Piłkarz wykonuje rzut karny z odległości 11 m od bramki, nadając piłce kierunek 25° względem poziomu. Jaka musiała być szybkość piłki w momencie kopnięcia, skoro ta trafiła dokładnie w poprzeczkę bramki?</para></problem>
+                                                  <solution id="fs-id1165167854326">
+                                                    <para id="fs-id1165167854328">
+                                                      <m:math>
+                                                        <m:mi>y</m:mi>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mrow>
+                                                          <m:mo>(</m:mo>
+                                                          <m:mrow>
+                                                            <m:mtext>tg</m:mtext>
+                                                            <m:msub>
+                                                              <m:mi>θ</m:mi>
+                                                              <m:mn>0</m:mn>
+                                                            </m:msub>
+                                                          </m:mrow>
+                                                          <m:mo>)</m:mo>
+                                                        </m:mrow>
+                                                        <m:mi>x</m:mi>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mo stretchy="true">[</m:mo>
+                                                        <m:mfrac>
+                                                          <m:mi>g</m:mi>
+                                                          <m:mrow>
+                                                            <m:mn>2</m:mn>
+                                                            <m:msup>
+                                                              <m:mrow>
+                                                                <m:mo>(</m:mo>
+                                                                <m:mrow>
+                                                                  <m:msub>
+                                                                    <m:mi>v</m:mi>
+                                                                    <m:mn>0</m:mn>
+                                                                  </m:msub>
+                                                                  <m:mi>cos</m:mi>
+                                                                  <m:mo>⁡</m:mo>
+                                                                  <m:msub>
+                                                                    <m:mi>θ</m:mi>
+                                                                    <m:mn>0</m:mn>
+                                                                  </m:msub>
+                                                                </m:mrow>
+                                                                <m:mo>)</m:mo>
+                                                              </m:mrow>
+                                                              <m:mn>2</m:mn>
+                                                            </m:msup>
+                                                          </m:mrow>
+                                                        </m:mfrac>
+                                                        <m:mo stretchy="true">]</m:mo>
+                                                        <m:msup>
+                                                          <m:mi>x</m:mi>
+                                                          <m:mn>2</m:mn>
+                                                        </m:msup>
+                                                        <m:mo stretchy="false">⇒</m:mo>
+                                                        <m:msub>
+                                                          <m:mi>v</m:mi>
+                                                          <m:mn>0</m:mn>
+                                                        </m:msub>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mn>16,4</m:mn>
+                                                        <m:mspace width="0.2em"/>
+                                                        <m:mtext>m/s</m:mtext>
+                                                      </m:math>
+                                                    </para>
+                                                  </solution>
+                                                </exercise>
+                                                <exercise id="fs-id1165168029945">
+                                                  <problem id="fs-id1165168029947">
+                                                    <para id="fs-id1165168029949">Olympus Mons na Marsie ma wysokość ok. 25 km i promień w obwodzie u podstawy ok. 312 km, co czyni ją najwyższą znaną górą w Układzie Słonecznym. Wyobraź sobie, że stoisz na szczycie tej góry i strzelasz z armaty ustawionej dokładnie w poziomie. Jaka musiałaby być szybkość wystrzeliwanych pocisków armatnich, aby upadały tuż przy podstawie góry na powierzchnię planety. Przyjmij, że przyspieszenie grawitacyjne na Marsie ma wartość 3,7 m/s<sup>2</sup>.</para>
+                                                  </problem>
+                                                </exercise>
+                                                <exercise id="fs-id1165168009629">
+                                                  <problem id="fs-id1165168009631">
+                                                    <para id="fs-id1165168009633">Robbie Knievel jest pierwszym człowiekiem, który przeskoczył Wielki Kanion na motocyklu. Dokonał tego w 1991 roku. Na skraju wąskiej części kanionu o szerokości 69,0 m ustawił rampę, na którą wjeżdżał rozpędzonym do prędkości 35,8 m/s motocyklem. Pod jakim kątem musiał wybijać się w górę, aby dotrzeć na drugą stronę kanionu?</para>
+                                                  </problem>
+                                                  <solution id="fs-id1165168009639">
+                                                    <para id="fs-id1165168009642"><m:math>
+                                                        <m:mi>R</m:mi>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mfrac>
+                                                          <m:mrow>
+                                                            <m:msubsup>
+                                                              <m:mi>v</m:mi>
+                                                              <m:mn>0</m:mn>
+                                                              <m:mn>2</m:mn>
+                                                            </m:msubsup>
+                                                            <m:mi>sin</m:mi>
+                                                            <m:mo>⁡</m:mo>
+                                                            <m:mn>2</m:mn>
+                                                            <m:msub>
+                                                              <m:mi>θ</m:mi>
+                                                              <m:mn>0</m:mn>
+                                                            </m:msub>
+                                                          </m:mrow>
+                                                          <m:mi>g</m:mi>
+                                                        </m:mfrac>
+                                                        <m:mo stretchy="false">⇒</m:mo>
+                                                        <m:msub>
+                                                          <m:mi>θ</m:mi>
+                                                          <m:mn>0</m:mn>
+                                                        </m:msub>
+                                                        <m:mo>=</m:mo>
+                                                        <m:mn>15</m:mn>
+                                                        <m:mn>,</m:mn>
+                                                        <m:msup>
+                                                          <m:mn>9</m:mn>
+                                                          <m:mo>∘</m:mo>
+                                                        </m:msup>
+                                                      </m:math>
+                                                    </para></solution>
+                                                </exercise>
+                                                <exercise id="fs-id1165166778493">
+                                                  <problem id="fs-id1165166778495">
+                                                    <para id="fs-id1165166778497">Gra w palanta uznawana jest czasem za pierwowzór gry w baseball. Zawodnik drużyny palantowej uderza piłkę z szybkością 15,0 m/s, kierując ją do góry pod kątem 30° względem poziomu. Jaka musiałaby być prędkość początkowa piłki uderzonej także pod kątem 30°, ale w kosmicznym meczu palanta – na planecie o przyspieszeniu grawitacyjnym dwukrotnie większym niż na Ziemi, tak aby zasięg uderzenia był taki sam jak na Ziemi? Załóż, że wyrzut i upadek piłki mają miejsce na tej samej wysokości.</para>
+                                                  </problem>
+                                                </exercise>
+                                                <exercise id="fs-id1165166481497"><problem id="fs-id1165166481499">
+                                                    <para id="fs-id1165166777482">Bramkarz wykopuje piłkę od bramki w kierunku środka boiska z szybkością 25,0 m/s. Ląduje ona dokładnie na linii środkowej (50,0 m od bramkarza). 
+
+<list id="eip-idm716230000" list-type="enumerated" number-style="lower-alpha"><item>Pod jakimi kątami bramkarz mógł kopnąć piłkę?</item>
+<item>Z odległości 30,0 m od środka boiska pomocnik ruszył do podania z szybkością 7 m/s. Dla którego z powyższych kątów pomocnik ma szansę odebrać piłkę i o ile wcześniej dobiegnie on do piłki przed jej wylądowaniem?</item>
+
+</list></para>
+                                                  </problem>
+                                                  <solution id="fs-id1165166777489">
+                                                    <list id="eip-idm520766528" list-type="enumerated" number-style="lower-alpha"><item><m:math display="inline"><m:mrow><m:mi>T</m:mi><m:mo>=</m:mo><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:msub><m:mi>v</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:mrow><m:mi>θ</m:mi><m:mo>/</m:mo><m:mi>g</m:mi></m:mrow></m:mrow></m:mrow></m:mrow><m:mo>⇒</m:mo><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mrow><m:mo>arc sin</m:mo><m:mfenced open="[" close="]"><m:mrow><m:mrow><m:mi>T</m:mi><m:mo>⁢</m:mo><m:mi>g</m:mi></m:mrow><m:mo>/</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:msub><m:mi>v</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfenced></m:mrow></m:mfenced></m:mrow></m:mrow></m:math>, wynika z tego, że kąt równy jest <m:math display="inline"><m:msub><m:mi>θ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mrow><m:mn>25,8</m:mn><m:mo>°</m:mo></m:mrow></m:math> lub <m:math display="inline"><m:msub><m:mi>θ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mrow><m:mn>64,2</m:mn><m:mo>°</m:mo></m:mrow></m:math>.</item>
+<item>Czas lotu piłki zależy od kąta początkowego <m:math display="inline"><m:mi>T</m:mi><m:mo>=</m:mo><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:msub><m:mi>v</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:mrow><m:mi>θ</m:mi><m:mo>/</m:mo><m:mi>g</m:mi></m:mrow></m:mrow></m:mrow></m:math>. Dla kąta <m:math display="inline"><m:msub><m:mi>θ</m:mi><m:mn>1</m:mn></m:msub></m:math> czas lotu piłki wynosi <m:math display="inline"><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mrow><m:mn>2,22</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>, a dla kąta <m:math display="inline"><m:msub><m:mi>θ</m:mi><m:mn>2</m:mn></m:msub></m:math> wynosi on <m:math display="inline"><m:msub><m:mi>T</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mrow><m:mn>4,59</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>. Bramkarz musi kopnąć piłkę pod kątem <m:math display="inline"><m:mn>64,2</m:mn><m:mo>°</m:mo></m:math>. Pomocnik pokonuje 30 m w czasie 4,29 s i dobiegnie 0,3 s przed wylądowaniem piłki na ziemię.</item></list></solution>
+                                                </exercise></section>
+                                            </content>
+                                            <glossary>
+                                              <definition id="fs-id1165166779026">
+                                                <term cmlnle:reference="rzut" class="no-emphasis">rzut (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">projectile motion</term></foreign>)</term>
+                                                <meaning id="fs-id1165166779031">ruch ciała pod wpływem jedynie przyspieszenia grawitacyjnego</meaning>
+                                              </definition>
+                                              <definition id="fs-id1165166779036">
+                                                <term cmlnle:reference="zasięg" class="no-emphasis">zasięg (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">range</term></foreign>)</term>
+                                                <meaning id="fs-id1165166779041">największa odległość w poziomie, jaką ciało (pocisk) pokonuje w rzucie </meaning>
+                                              </definition>
+                                              <definition id="fs-id1165166779045">
+                                                <term cmlnle:reference="czas lotu" class="no-emphasis">czas lotu (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">time of flight</term></foreign>)</term>
+                                                <meaning id="fs-id1165166779050">całkowity czas przebywania pocisku w powietrzu</meaning>
+                                              </definition>
+                                              <definition id="fs-id1165166779055">
+                                                <term cmlnle:reference="trajektoria" class="no-emphasis">tor, trajektoria (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">trajectory</term></foreign>)</term>
+                                                <meaning id="fs-id1165166779060">krzywa po której pocisk porusza się w powietrzu</meaning>
+                                              </definition>
+                                            </glossary>
+                                          </document>

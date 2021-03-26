@@ -1,0 +1,2241 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.8" module-id="new">
+  <title>Moc w obwodzie prądu zmiennego</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67234</md:content-id>
+  <md:title>Moc w obwodzie prądu zmiennego</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>opisywać średnią moc w obwodzie prądu zmiennego, zarówno za pomocą szczytowych wartości napięcia i natężenia prądu elektrycznego, jak i za pomocą wartości skutecznych tych wielkości;</item>
+<item>znajdować zależność kąta fazowego pomiędzy wskazem napięcia i natężenia prądu elektrycznego, a średnią mocą wydzielaną w układzie co jest znane jako współczynnik mocy.</item></list></md:abstract>
+  <md:uuid>9bda891d-ede5-4036-baad-af9f06a631e6</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102029913">Rozważamy tutaj obwody zawierające tylko pasywne elementy elektroniczne, takie jak opornik, cewka i kondensator, a niezawierające wzmacniacza operacyjnego (będącego aktywnym elementem elektronicznym). Elementy obwodu pasywnego rozpraszają moc zgodnie ze wzorem <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>P</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>U</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>I</m:mi>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> P=UI</m:annotation>
+    </m:semantics>
+  </m:math>, gdzie <m:math display="inline">
+  <m:mi>I</m:mi>
+</m:math> jest natężeniem prądu elektrycznego płynącego przez element, a napięciem <m:math display="inline">
+<m:semantics>
+  <m:mi>U</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> U</m:annotation>
+</m:semantics>
+</m:math> odłożonym na tym elemencie. Istotnie, w oporniku moc <m:math display="inline">
+<m:semantics>
+  <m:mi>P</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> P</m:annotation>
+</m:semantics>
+</m:math> ⁠jest wydzielana w postaci ciepła, gdyż przepływ nośników ładunków czyli prąd elektryczny jest stowarzyszony z oddziaływaniem z centrami rozpraszania tego ładunku (obecny zawsze, gdy do opornika przyłożone jest niezerowe napięcie <m:math display="inline">
+<m:mi>P</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msup>
+    <m:mi>I</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>⁢</m:mo>
+  <m:mi>R</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msup>
+    <m:mi>U</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>∕</m:mo>
+  <m:mi>R</m:mi>
+</m:mrow>
+</m:math>). Ponieważ zarówno natężenie prądu, jak i napięcie w obwodzie prądu zmiennego zależy od czasu, chwilowa moc <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mrow>
+      <m:mi>p</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mi>u</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mrow>
+        <m:mi>i</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+      </m:mrow>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> p\apply(t)=u\apply(t)\cdot i\apply(t)</m:annotation>
+</m:semantics>
+</m:math> również jest zależna od czasu. W tym sensie możemy mówić o rozpraszaniu lub „generowaniu” mocy na oporniku, kondensatorze i cewce. Wykresy <m:math display="inline">
+<m:mi>p</m:mi>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>t</m:mi>
+</m:mfenced>
+</m:math> dla różnych elementów obwodu przedstawione zostały na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_04_acpower" cmlnle:case="genitive"/>. Dla opornika <m:math display="inline">
+<m:mi>i</m:mi>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>t</m:mi>
+</m:mfenced>
+</m:math> i <m:math display="inline">
+<m:mi>u</m:mi>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>t</m:mi>
+</m:mfenced>
+</m:math> są zgodne w fazie, przez co zawsze mają ten sam znak (patrz <link target-id="CNX_UPhysics_32_02_acresistor" document="m67232"/>). Dla kondensatora albo cewki znak <m:math display="inline">
+<m:mrow>
+  <m:mi>u</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+</m:mrow>
+<m:mo>∕</m:mo>
+<m:mrow>
+  <m:mi>i</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+</m:mrow>
+</m:math> może zmieniać się w czasie z powodu niezerowej różnicy w fazie (patrz <link target-id="CNX_UPhysics_32_02_accap" document="m67232"/> i <link target-id="CNX_UPhysics_32_02_acinduct" document="m67232"/>). W wyniku tego <m:math display="inline">
+<m:mi>p</m:mi>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>t</m:mi>
+</m:mfenced>
+</m:math> w pewnych chwilach jest dodatnie, a w pewnych ujemne. Oznacza to, że elementy pojemnościowe i indukcyjne w niektórych warunkach wydzielają moc, a w innych ją pochłaniają.</para>
+<figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_32_04_acpower">
+  <media id="fs-id1172101949168" alt="Rysunki od a do d pokazują sinusoidalne wykresy P względem t. Wszystkie mają tę samą amplitudę i częstotliwość. Na rysunku a oznaczony jet opornik. Linia P przecina oś y w połowie maksymalnej wartości P. Krzywa na rysunku b jest podpisana kondensator. Krzywa na rysunku c jest opisana cewka. Krzywa na rysunku d jest opisana źródło AC.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_32_04_acpower.jpg"/>
+  </media>
+  <caption>Wykresy mocy chwilowej dla różnych elementów obwodu. (a) Dla opornika <m:math display="inline">
+    <m:msub>
+      <m:mi>P</m:mi>
+      <m:mtext>śr</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:msub>
+          <m:mi>U</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+      </m:mrow>
+      <m:mo>∕</m:mo>
+      <m:mn>2</m:mn>
+    </m:mrow>
+  </m:math>. Dla (b) kondensatora i dla (c) cewki <m:math display="inline">
+  <m:msub>
+    <m:mi>P</m:mi>
+    <m:mtext>śr</m:mtext>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+</m:math>. (d) Dla źródła napięcia <m:math display="inline">
+<m:msub>
+  <m:mi>P</m:mi>
+  <m:mtext>śr</m:mtext>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+  </m:mrow>
+  <m:mo>⋅</m:mo>
+  <m:mrow>
+    <m:mo>cos</m:mo>
+    <m:mrow>
+      <m:mi>ϕ</m:mi>
+      <m:mo>∕</m:mo>
+      <m:mn>2</m:mn>
+    </m:mrow>
+  </m:mrow>
+</m:mrow>
+</m:math> i może być większa od zera, mniejsza od zera lub równa zero, w zależności od wartości <m:math display="inline">
+<m:mi>ϕ</m:mi>
+</m:math>.</caption>
+</figure>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101643952">Ponieważ moc chwilowa zmienia w czasie zarówno swoją wartość, jak i znak, rzadko kiedy ma ona znaczenie praktyczne. Prawie zawsze zainteresowani jesteśmy mocą uśrednioną w czasie, nazywaną mocą średnią. Jest ona zdefiniowana jako średnia po czasie mocy chwilowej dla pojedynczego cyklu</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101627320" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>P</m:mi>
+      <m:mtext>śr</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mi>T</m:mi>
+      </m:mfrac>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:munderover>
+          <m:mo>∫</m:mo>
+          <m:mn>0</m:mn>
+          <m:mi>T</m:mi>
+        </m:munderover>
+        <m:mrow>
+          <m:mrow>
+            <m:mi>p</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mrow>
+              <m:mi>t</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mtext>,</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101634360">gdzie <m:math display="inline">
+  <m:mi>T</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>2</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mi>π</m:mi>
+    </m:mrow>
+    <m:mo>∕</m:mo>
+    <m:mi>ω</m:mi>
+  </m:mrow>
+</m:math> jest okresem oscylacji. Po podstawieniu <m:math display="inline">
+<m:mrow>
+  <m:mi>u</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msub>
+    <m:mi>U</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>⁢</m:mo>
+  <m:mrow>
+    <m:mo>sin</m:mo>
+    <m:mfenced>
+      <m:mrow>
+        <m:mi>ω</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfenced>
+  </m:mrow>
+</m:mrow>
+</m:math> i <m:math display="inline">
+<m:mrow>
+  <m:mi>i</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>⁢</m:mo>
+  <m:mrow>
+    <m:mo>sin</m:mo>
+    <m:mfenced>
+      <m:mrow>
+        <m:mrow>
+          <m:mi>ω</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mi>ϕ</m:mi>
+      </m:mrow>
+    </m:mfenced>
+  </m:mrow>
+</m:mrow>
+</m:math> powyższa całka przyjmuje postać</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101611267" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>P</m:mi>
+      <m:mtext>śr</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:mrow>
+          <m:msub>
+            <m:mi>I</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+        </m:mrow>
+        <m:mi>T</m:mi>
+      </m:mfrac>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:munderover>
+          <m:mo>∫</m:mo>
+          <m:mn>0</m:mn>
+          <m:mi>T</m:mi>
+        </m:munderover>
+        <m:mrow>
+          <m:mo>sin</m:mo>
+          <m:mrow>
+            <m:mfenced>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>ω</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>−</m:mo>
+                <m:mi>ϕ</m:mi>
+              </m:mrow>
+            </m:mfenced>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mrow>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mi>ω</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mfenced>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                  <m:mrow>
+                    <m:mi>t</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mtext>.</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102002090">Używając zależności trygonometrycznej <m:math display="inline">
+  <m:mrow>
+    <m:mo>sin</m:mo>
+    <m:mfenced>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mo>−</m:mo>
+        <m:mi>B</m:mi>
+      </m:mrow>
+    </m:mfenced>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mo>sin</m:mo>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>cos</m:mo>
+          <m:mi>B</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>−</m:mo>
+    <m:mrow>
+      <m:mo>sin</m:mo>
+      <m:mrow>
+        <m:mi>B</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>cos</m:mo>
+          <m:mi>A</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:mrow>
+  </m:math>, otrzymujemy</para>
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101989892" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:msub>
+        <m:mi>P</m:mi>
+        <m:mtext>śr</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>U</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo>cos</m:mo>
+                <m:mi>ϕ</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:mi>T</m:mi>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:munderover>
+              <m:mo>∫</m:mo>
+              <m:mn>0</m:mn>
+              <m:mi>T</m:mi>
+            </m:munderover>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mrow>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mi>ω</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mfenced>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>U</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo>sin</m:mo>
+                <m:mi>ϕ</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:mi>T</m:mi>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:munderover>
+              <m:mo>∫</m:mo>
+              <m:mn>0</m:mn>
+              <m:mi>T</m:mi>
+            </m:munderover>
+            <m:mrow>
+              <m:msup>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mo>sin</m:mo>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mi>ω</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                    </m:mfenced>
+                  </m:mrow>
+                </m:mfenced>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo>cos</m:mo>
+                <m:mrow>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mi>ω</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mfenced>
+                  <m:mo>⁢</m:mo>
+                  <m:mrow>
+                    <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                    <m:mrow>
+                      <m:mi>t</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mtext>.</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101738417">Powyższe całki równe są</para>
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101662157" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:mrow>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mi>T</m:mi>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:munderover>
+            <m:mo>∫</m:mo>
+            <m:mn>0</m:mn>
+            <m:mi>T</m:mi>
+          </m:munderover>
+          <m:mrow>
+            <m:msup>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mo>sin</m:mo>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mi>ω</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mfenced>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102028016">i</para>
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101758038" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:mrow>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mi>T</m:mi>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:munderover>
+            <m:mo>∫</m:mo>
+            <m:mn>0</m:mn>
+            <m:mi>T</m:mi>
+          </m:munderover>
+          <m:mrow>
+            <m:mo>sin</m:mo>
+            <m:mrow>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mi>ω</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfenced>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo>cos</m:mo>
+                <m:mrow>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mi>ω</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mfenced>
+                  <m:mo>⁢</m:mo>
+                  <m:mrow>
+                    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102103970">Tym samym średnia moc wydzielana w obwodzie jest równa</para>
+  <note id="fs-id1172102013714" class="equation-callout">
+    <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101736047">
+      <label/>
+      <m:math display="block">
+        <m:msub>
+          <m:mi>P</m:mi>
+          <m:mtext>śr</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:msub>
+            <m:mi>I</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>cos</m:mo>
+            <m:mrow>
+              <m:mi>ϕ</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+  </note>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102031785">W zastosowaniach inżynierskich czynnik <m:math display="inline">
+    <m:mo>cos</m:mo>
+    <m:mi>ϕ</m:mi>
+  </m:math> bywa często nazywany <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="współczynnik mocy">współczynnikiem mocy</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">power factor</term></foreign>) i jest mnożnikiem określającym, o ile moc dostarczana do układu różni się od teoretycznego maksimum z powodu różnicy w fazie pomiędzy napięciem i natężeniem prądu. Dla opornika <m:math display="inline">
+<m:mi>ϕ</m:mi>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math> średnia moc wydzielana w obwodzie wynosi zatem</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101995857" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>P</m:mi>
+      <m:mtext>śr</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>⁢</m:mo>
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101988662">Porównanie <m:math display="inline">
+  <m:mi>p</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>P</m:mi>
+  <m:mtext>śr</m:mtext>
+</m:msub>
+</m:math> pokazano na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_04_acpower" cmlnle:case="genitive"/> (d). Aby móc porównywać <m:math display="inline">
+<m:msub>
+  <m:mi>P</m:mi>
+  <m:mtext>śr</m:mtext>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+  </m:mrow>
+  <m:mo>∕</m:mo>
+  <m:mn>2</m:mn>
+</m:mrow>
+</m:math> z odpowiednikiem dla prądu stałego, używamy wartości skutecznych natężenia i napięcia prądu. Z definicji są one równe</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101763044" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mtext>sk</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:msqrt>
+          <m:mo>⟨</m:mo>
+          <m:msup>
+            <m:mi>i</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+          <m:mo>⟩</m:mo>
+        </m:msqrt>
+        <m:mtext> i </m:mtext>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mtext>sk</m:mtext>
+      </m:msub>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msqrt>
+        <m:mo>⟨</m:mo>
+        <m:msup>
+          <m:mi>u</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+        <m:mo>⟩</m:mo>
+      </m:msqrt>
+      <m:mo>⁢</m:mo>
+      <m:mtext>,</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101774278">gdzie</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101692897" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:mo>⟨</m:mo>
+      <m:msup>
+        <m:mi>i</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+      <m:mo>⟩</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mi>T</m:mi>
+      </m:mfrac>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:munderover>
+          <m:mo>∫</m:mo>
+          <m:mn>0</m:mn>
+          <m:mi>T</m:mi>
+        </m:munderover>
+        <m:mrow>
+          <m:mrow>
+            <m:msup>
+              <m:mi>i</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mrow>
+              <m:mi>t</m:mi>
+              <m:mtext> i </m:mtext>
+              <m:mrow>
+                <m:mo>⟨</m:mo>
+                <m:msup>
+                  <m:mi>u</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+                <m:mo>⟩</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mi>T</m:mi>
+      </m:mfrac>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:munderover>
+          <m:mo>∫</m:mo>
+          <m:mn>0</m:mn>
+          <m:mi>T</m:mi>
+        </m:munderover>
+        <m:mrow>
+          <m:mrow>
+            <m:msup>
+              <m:mi>u</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mrow>
+              <m:mi>t</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101733403">Podstawiając <m:math display="inline">
+  <m:mrow>
+    <m:mi>i</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>t</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:mrow>
+      <m:mo>sin</m:mo>
+      <m:mfenced>
+        <m:mrow>
+          <m:mrow>
+            <m:mi>ω</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>−</m:mo>
+          <m:mi>ϕ</m:mi>
+        </m:mrow>
+      </m:mfenced>
+    </m:mrow>
+  </m:mrow>
+</m:math> oraz <m:math display="inline">
+<m:mrow>
+  <m:mi>u</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msub>
+    <m:mi>U</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>⁢</m:mo>
+  <m:mrow>
+    <m:mo>sin</m:mo>
+    <m:mfenced>
+      <m:mrow>
+        <m:mi>ω</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfenced>
+  </m:mrow>
+</m:mrow>
+</m:math> do powyższych wzorów, otrzymamy</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102051367" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mtext>sk</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:msqrt>
+          <m:mn>2</m:mn>
+        </m:msqrt>
+      </m:mfrac>
+      <m:mo>⁢</m:mo>
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mtext> i </m:mtext>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mtext>sk</m:mtext>
+      </m:msub>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:msqrt>
+          <m:mn>2</m:mn>
+        </m:msqrt>
+      </m:mfrac>
+      <m:mo>⁢</m:mo>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102027110">Możemy tym samym zapisać ostateczny wzór na średnią moc wydzielaną na rezystorze</para>
+<note id="fs-id1172102001599" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102049240">
+    <label/>
+    <m:math display="block">
+      <m:msub>
+        <m:mi>P</m:mi>
+        <m:mtext>śr</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:msub>
+          <m:mi>U</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mtext>sk</m:mtext>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:msub>
+          <m:mi>U</m:mi>
+          <m:mtext>sk</m:mtext>
+        </m:msub>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msubsup>
+          <m:mi>I</m:mi>
+          <m:mtext>sk</m:mtext>
+          <m:mn>2</m:mn>
+        </m:msubsup>
+        <m:mo>⁢</m:mo>
+        <m:mi>R</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102030507">Powyższe równanie dodatkowo wskazuje powód używania wartości skutecznych (napięcia AC czy natężenia prądu AC) zamiast amplitud napięcia i natężenia. Oba wyrażenia na średnią moc z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172102049240" cmlnle:case="genitive"/> są poprawne, ale to wyrażone z wykorzystaniem wartości skutecznych nie potrzebuje dodatkowego czynnika <m:math display="inline">
+  <m:mn>1</m:mn>
+  <m:mo>∕</m:mo>
+  <m:mn>2</m:mn>
+  </m:math>.</para>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102050274">Zmienne napięcia i natężenia są zazwyczaj opisywane za pomocą ich wartości skutecznych. Na przykład napięcie <m:math display="inline">
+    <m:mn>230</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">V</m:mi>
+  </m:math> w gniazdku to wartość skuteczna. Amplituda takiego źródła wynosi <m:math display="inline">
+  <m:mrow>
+    <m:mn>230</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:msqrt>
+      <m:mn>2</m:mn>
+    </m:msqrt>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">V</m:mi>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>325</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">V</m:mi>
+  </m:mrow>
+</m:math>. Ponieważ większość mierników prądu zmiennego jest wyskalowana tak, by pokazywać wartości skuteczne, typowy miernik pokaże napięcie <m:math display="inline">
+<m:mn>230</m:mn>
+<m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+<m:mi mathvariant="normal">V</m:mi>
+</m:math>, gdy zmierzymy nim napięcie w gniazdku.</para>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101912598">Dla kondensatora i dla cewki kolejno <m:math display="inline">
+  <m:mi>ϕ</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>π</m:mi>
+    <m:mo>∕</m:mo>
+    <m:mn>2</m:mn>
+  </m:mrow>
+</m:math> i <m:math display="inline">
+<m:mi>ϕ</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mo>−</m:mo>
+  <m:mrow>
+    <m:mi>π</m:mi>
+    <m:mo>∕</m:mo>
+    <m:mn>2</m:mn>
+  </m:mrow>
+</m:mrow>
+</m:math>. Ponieważ <m:math display="inline">
+<m:mrow>
+  <m:mo>cos</m:mo>
+  <m:mfenced>
+    <m:mrow>
+      <m:mi>π</m:mi>
+      <m:mo>∕</m:mo>
+      <m:mn>2</m:mn>
+    </m:mrow>
+  </m:mfenced>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mo>cos</m:mo>
+  <m:mfenced>
+    <m:mrow>
+      <m:mo>−</m:mo>
+      <m:mrow>
+        <m:mi>π</m:mi>
+        <m:mo>∕</m:mo>
+        <m:mn>2</m:mn>
+      </m:mrow>
+    </m:mrow>
+  </m:mfenced>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>, z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172101736047" cmlnle:case="genitive"/> wynika, że średnia moc wydzielana na tych elementach wynosi <m:math display="inline">
+<m:msub>
+  <m:mi>P</m:mi>
+  <m:mtext>śr</m:mtext>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>. Kondensatory i cewki pochłaniają energię z obwodu w trakcie połowy cyklu i w trakcie drugiej połowy oddają ją do obwodu. To zjawisko widoczne jest na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_04_acpower" cmlnle:case="genitive"/> (b) i (c), który pokazuje moc chwilową <m:math display="inline">
+<m:mi>p</m:mi>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>t</m:mi>
+</m:mfenced>
+</m:math> oscylującą sinusoidalnie wokół zera.</para>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101929388">Kąt fazowy generatora napięcia zmiennego może mieć dowolną wartość. Jeśli <m:math display="inline">
+  <m:mrow>
+    <m:mo>cos</m:mo>
+    <m:mi>ϕ</m:mi>
+  </m:mrow>
+  <m:mo>&gt;</m:mo>
+  <m:mn>0</m:mn>
+</m:math>, generator produkuje energię. Jeśli <m:math display="inline">
+<m:mrow>
+  <m:mo>cos</m:mo>
+  <m:mi>ϕ</m:mi>
+</m:mrow>
+<m:mo>&lt;</m:mo>
+<m:mn>0</m:mn>
+</m:math>, źródło pochłania ją. Moc średnia wyrażona za pomocą wartości skutecznych równa będzie</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102050441" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>P</m:mi>
+      <m:mtext>śr</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mtext>sk</m:mtext>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mtext>sk</m:mtext>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>cos</m:mo>
+        <m:mrow>
+          <m:mi>ϕ</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101949588">Dla źródła napięcia w obwodzie RLC</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101998891" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:mo>tg</m:mo>
+      <m:mi>ϕ</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:msub>
+          <m:mi>X</m:mi>
+          <m:mi>L</m:mi>
+        </m:msub>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>X</m:mi>
+          <m:mi>C</m:mi>
+        </m:msub>
+      </m:mrow>
+      <m:mi>R</m:mi>
+    </m:mfrac>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102078510">oraz</para>
+<equation id="fs-id1172102078590" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:mo>cos</m:mo>
+      <m:mi>ϕ</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mi>R</m:mi>
+      <m:msqrt>
+        <m:msup>
+          <m:mi>R</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo>
+        <m:msup>
+          <m:mfenced>
+            <m:mrow>
+              <m:msub>
+                <m:mi>X</m:mi>
+                <m:mi>L</m:mi>
+              </m:msub>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>X</m:mi>
+                <m:mi>C</m:mi>
+              </m:msub>
+            </m:mrow>
+          </m:mfenced>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:msqrt>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:mi>R</m:mi>
+        <m:mi>Z</m:mi>
+      </m:mfrac>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102134028">Oznacza to, że średnia moc źródła napięcia zmiennego wynosi</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102033252">
+  <m:math display="block">
+    <m:msub>
+      <m:mi>P</m:mi>
+      <m:mtext>śr</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mtext>sk</m:mtext>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mtext>sk</m:mtext>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>cos</m:mo>
+        <m:mi>ϕ</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:msub>
+          <m:mi>U</m:mi>
+          <m:mtext>sk</m:mtext>
+        </m:msub>
+        <m:mi>Z</m:mi>
+      </m:mfrac>
+      <m:mo>⁢</m:mo>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mtext>sk</m:mtext>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mfrac>
+        <m:mi>R</m:mi>
+        <m:mi>Z</m:mi>
+      </m:mfrac>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:mrow>
+          <m:msubsup>
+            <m:mi>U</m:mi>
+            <m:mtext>sk</m:mtext>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+          <m:mo>⁢</m:mo>
+          <m:mi>R</m:mi>
+        </m:mrow>
+        <m:msup>
+          <m:mi>Z</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mfrac>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102067677">Można to również zapisać jako</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102133782" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>P</m:mi>
+      <m:mtext>śr</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msubsup>
+        <m:mi>I</m:mi>
+        <m:mtext>sk</m:mtext>
+        <m:mn>2</m:mn>
+      </m:msubsup>
+      <m:mo>⁢</m:mo>
+      <m:mi>R</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mtext>,</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102104464">co oznacza, że moc wytwarzana przez źródło rozpraszana jest na oporniku. Prawo Ohma dla wartości skutecznych prądu zmiennego powstaje przez podzielenie napięcia skutecznego przez moduł impedancji obwodu.</para>
+<example id="fs-id1172102104328">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102104305">
+    <title>Moc wytwarzana przez generator</title>Generator napięcia zmiennego wytwarzający SEM opisaną równaniem</para>
+    <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102104195" class="unnumbered">
+      <label/>
+      <m:math display="block">
+        <m:mrow>
+          <m:mi>u</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>4</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">V</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mo>sin</m:mo>
+            <m:mfenced>
+              <m:mrow>
+                <m:mrow>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>4</m:mn>
+                  </m:msup>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">rad</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfenced>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101918508">podłączony jest do obwodu RLC, w którym <m:math display="inline">
+      <m:mi>L</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>3</m:mn>
+            </m:mrow>
+          </m:msup>
+        </m:mrow>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">H</m:mi>
+      </m:mrow>
+    </m:math>, <m:math display="inline">
+    <m:mi>C</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>4</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>6</m:mn>
+          </m:mrow>
+        </m:msup>
+      </m:mrow>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mi mathvariant="normal">F</m:mi>
+    </m:mrow>
+  </m:math>, a <m:math display="inline">
+  <m:mi>R</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>5</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">Ω</m:mi>
+  </m:mrow>
+</m:math>. <list id="eip-idm543784784" list-type="enumerated" number-style="lower-alpha">
+<item>Ile wynosi wartość skuteczna napięcia na generatorze?</item>
+<item>Ile wynosi impedancja obwodu?</item>
+<item>Ile wynosi średnia moc wydzielana w obwodzie?</item>
+</list>
+</para>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101982165">
+  <title>Strategia rozwiązania</title>Wartość skuteczna napięcia równa jest amplitudzie napięcia podzielonej przez czynnik <m:math display="inline">
+    <m:msqrt>
+      <m:mn>2</m:mn>
+    </m:msqrt>
+  </m:math>. Induktancja obwodu zależy od oporu i reaktancji kondensatora i cewki. Średnia moc wydzielana w obwodzie może zostać wyliczona z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172102033252" cmlnle:case="genitive"/>, dokładniej z ostatniej jego postaci, ponieważ znamy impedancję obwodu <m:math display="inline">
+  <m:mi>Z</m:mi>
+</m:math>, napięcie skuteczne <m:math display="inline">
+<m:msub>
+  <m:mi>U</m:mi>
+  <m:mtext>sk</m:mtext>
+</m:msub>
+</m:math> i opór <m:math display="inline">
+<m:mi>R</m:mi>
+</m:math>.</para>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101986185">
+  <title>Rozwiązanie</title>
+</para>
+<list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101989178" list-type="enumerated" number-style="lower-alpha">
+  <item>	Ponieważ <m:math display="inline">
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>4</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:mrow>
+  </m:math>, napięcie skuteczne na generatorze jest równe <equation id="fs-id1172101913052" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mtext>sk</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mn>4</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+      </m:mrow>
+      <m:msqrt>
+        <m:mn>2</m:mn>
+      </m:msqrt>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>2,83</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+</item>
+<item>Impedancja obwodu wynosi <equation id="fs-id1172102015772" class="unnumbered"><m:math display="block">
+    <m:semantics>
+      <m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:mi>Z</m:mi>
+        <m:mo id="Ud4f1a906-9c57-4e8d-a7a0-df76a602a0af">=</m:mo>
+        <m:msqrt><m:msup><m:mi>R</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup><m:mo>+</m:mo>
+          <m:msup><m:mfenced><m:mrow><m:msub><m:mi>X</m:mi>
+                  <m:mi>L</m:mi>
+                </m:msub><m:mo>−</m:mo>
+                <m:msub><m:mi>X</m:mi>
+                  <m:mi>C</m:mi>
+                </m:msub></m:mrow></m:mfenced><m:mn>2</m:mn>
+          </m:msup></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mi>Z</m:mi>
+        </m:mphantom><m:mo>=</m:mo>
+        <m:msup><m:mfenced close="]" open="["><m:mrow><m:msup><m:mfenced><m:mrow><m:mn>5</m:mn>
+                    <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                    <m:mi mathvariant="normal">Ω</m:mi>
+                  </m:mrow></m:mfenced><m:mn>2</m:mn>
+              </m:msup><m:mo>+</m:mo>
+              <m:msup><m:mfenced><m:mrow><m:mrow><m:mrow><m:msup><m:mn>10</m:mn>
+                          <m:mn>4</m:mn>
+                        </m:msup><m:mo>⁢</m:mo>
+                        <m:mrow><m:mi mathvariant="normal">rad</m:mi>
+                          <m:mo>∕</m:mo>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow></m:mrow><m:mo>⋅</m:mo>
+                      <m:mrow><m:mrow><m:mn>2</m:mn>
+                          <m:mo>⋅</m:mo>
+                          <m:msup><m:mn>10</m:mn>
+                            <m:mn>-3</m:mn>
+                          </m:msup></m:mrow><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                        <m:mi mathvariant="normal">H</m:mi>
+                      </m:mrow></m:mrow><m:mo>−</m:mo>
+                    <m:mfrac><m:mn>1</m:mn>
+                      <m:mrow><m:mrow><m:msup><m:mn>10</m:mn>
+                            <m:mn>4</m:mn>
+                          </m:msup><m:mo>⁢</m:mo>
+                          <m:mrow><m:mi mathvariant="normal">rad</m:mi>
+                            <m:mo>∕</m:mo>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow></m:mrow><m:mo>⋅</m:mo>
+                        <m:mrow><m:mrow><m:mn>4</m:mn>
+                            <m:mo>⋅</m:mo>
+                            <m:msup><m:mn>10</m:mn>
+                              <m:mn>-6</m:mn>
+                            </m:msup></m:mrow><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                          <m:mi mathvariant="normal">F</m:mi>
+                        </m:mrow></m:mrow></m:mfrac></m:mrow></m:mfenced><m:mn>2</m:mn>
+              </m:msup></m:mrow></m:mfenced><m:mrow><m:mn>1</m:mn>
+            <m:mo>∕</m:mo>
+            <m:mn>2</m:mn>
+          </m:mrow></m:msup></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mi>Z</m:mi>
+        </m:mphantom><m:mo>=</m:mo>
+        <m:mrow><m:mrow><m:mn>7,07</m:mn>
+            <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow><m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex"> \begin{multiline} Z &amp;= \sqrt{R^2 + (X_L - X_C)^2} \\ &amp;= [(\SI{5}{\ohm})^2 + (10^4 \si{\radian\per\second} \cdot \SI{2e-3}{\henry} - \frac{1}{10^4 \si{\radian\per\second} \cdot \SI{4e-6}{\farad}})^2]^{1/2} \\ &amp;= \SI{7,07}{\ohm} \text{.} \end{multiline}</m:annotation>
+    <m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mi>Z</m:mi>
+        <m:mo id="Ud4f1a906-9c57-4e8d-a7a0-df76a602a0af-copy">=</m:mo>
+        <m:msqrt>
+          <m:msup>
+            <m:mi>R</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>+</m:mo>
+          <m:msup>
+            <m:mfenced>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>X</m:mi>
+                  <m:mi>L</m:mi>
+                </m:msub>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>X</m:mi>
+                  <m:mi>C</m:mi>
+                </m:msub>
+              </m:mrow>
+            </m:mfenced>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:msqrt>
+        <m:mo indenttarget="Ud4f1a906-9c57-4e8d-a7a0-df76a602a0af" linebreak="newline" indentalign="id">=</m:mo>
+        <m:msup>
+          <m:mfenced close="]" open="[">
+            <m:mrow>
+              <m:msup>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mn>5</m:mn>
+                    <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                    <m:mi mathvariant="normal">Ω</m:mi>
+                  </m:mrow>
+                </m:mfenced>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:msup>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mn>4</m:mn>
+                        </m:msup>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">rad</m:mi>
+                          <m:mo>∕</m:mo>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>⋅</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mn>10</m:mn>
+                            <m:mn>-3</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                        <m:mi mathvariant="normal">H</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msup>
+                            <m:mn>10</m:mn>
+                            <m:mn>4</m:mn>
+                          </m:msup>
+                          <m:mo>⁢</m:mo>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">rad</m:mi>
+                            <m:mo>∕</m:mo>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo>⋅</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>4</m:mn>
+                            <m:mo>⋅</m:mo>
+                            <m:msup>
+                              <m:mn>10</m:mn>
+                              <m:mn>-6</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                          <m:mi mathvariant="normal">F</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mfenced>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:mfenced>
+          <m:mrow>
+            <m:mn>1</m:mn>
+            <m:mo>∕</m:mo>
+            <m:mn>2</m:mn>
+          </m:mrow>
+        </m:msup>
+        <m:mo indenttarget="Ud4f1a906-9c57-4e8d-a7a0-df76a602a0af" linebreak="newline" indentalign="id">=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>7,07</m:mn>
+            <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:annotation-xml></m:semantics>
+  </m:math></equation></item>
+<item>Z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172102033252" cmlnle:case="genitive"/> średnia moc wydzielana w obwodzie wynosi <equation id="fs-id1172101949217" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>P</m:mi>
+      <m:mtext>śr</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:msubsup>
+          <m:mi>U</m:mi>
+          <m:mtext>sk</m:mtext>
+          <m:mn>2</m:mn>
+        </m:msubsup>
+        <m:mo>⁢</m:mo>
+        <m:mi>R</m:mi>
+      </m:mrow>
+      <m:msup>
+        <m:mi>Z</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:msup>
+          <m:mfenced>
+            <m:mrow>
+              <m:mn>2,83</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">V</m:mi>
+            </m:mrow>
+          </m:mfenced>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mn>5</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">Ω</m:mi>
+        </m:mrow>
+      </m:mrow>
+      <m:msup>
+        <m:mfenced>
+          <m:mrow>
+            <m:mn>7,07</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+        </m:mfenced>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>0,8</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">W</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+</item>
+</list>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101995786">
+  <title>Znaczenie</title>Jeśli opór jest znacząco większy od reaktancji kondensatora lub cewki, średnia moc wydzielana w obwodzie jest opisana wzorem dla obwodu prądu stałego <m:math display="inline">
+    <m:mi>P</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msup>
+        <m:mi>U</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>∕</m:mo>
+      <m:mi>R</m:mi>
+    </m:mrow>
+  </m:math>, gdzie zamiast <m:math display="inline">
+  <m:mi>U</m:mi>
+  </m:math> występuje wartość skuteczna.</para>
+</example>
+<note id="fs-id1172102019731" class="check-understanding">
+  <exercise id="fs-id1172102019827">
+    <problem id="fs-id1172102019830">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102019832">
+        <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Miernik prądu zmiennego, podłączony do wyjścia 45-hercowego generatora napięcia zmiennego, wyświetla wartość <m:math display="inline">
+          <m:mn>7,07</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">V</m:mi>
+          </m:math>. Zapisz wyrażenie na SEM tego generatora.</para>
+        </problem>
+        <solution id="fs-id1172102019851">
+          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102019853">
+            <m:math display="inline">
+              <m:mrow>
+                <m:mi>u</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>10</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">V</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mo>sin</m:mo>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mn>90</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>π</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+              </m:math>.</para>
+            </solution>
+          </exercise>
+        </note>
+        <note id="fs-id1172102020245" class="check-understanding">
+          <exercise id="fs-id1172102044545">
+            <problem id="fs-id1172102044547">
+              <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102078096">
+                <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Pokaż, że napięcia skuteczne na oporniku, kondensatorze i cewce w obwodzie prądu zmiennego, gdzie natężenie prądu ma wartość <m:math display="inline">
+                  <m:msub>
+                    <m:mi>I</m:mi>
+                    <m:mtext>sk</m:mtext>
+                  </m:msub>
+                </m:math>, wynoszą kolejno <m:math display="inline">
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mtext>sk</m:mtext>
+                </m:msub>
+                <m:mo>⁢</m:mo>
+                <m:mi>R</m:mi>
+              </m:math>, <m:math display="inline">
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mtext>sk</m:mtext>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>X</m:mi>
+                <m:mi>C</m:mi>
+              </m:msub>
+            </m:math> i <m:math display="inline">
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mtext>sk</m:mtext>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>X</m:mi>
+              <m:mi>L</m:mi>
+            </m:msub>
+            </m:math>. Ustal wartości tych napięć dla elementów obwodu RLC z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172101736047" cmlnle:case="genitive"/>.</para>
+          </problem>
+          <solution id="fs-id1172101922738">
+            <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101922740">
+              <m:math display="inline">
+                <m:mn>2</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">V</m:mi>
+              </m:math>, <m:math display="inline">
+              <m:mn>10</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">V</m:mi>
+            </m:math>, <m:math display="inline">
+            <m:mn>8</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">V</m:mi>
+            </m:math>.</para>
+          </solution>
+        </exercise>
+      </note>
+      <section id="fs-id1172102067176" class="key-concepts">
+        <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Podsumowanie</title>
+        <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101969635" list-type="bulleted" bullet-style="bullet">
+          <item>Średnią moc wydzielaną w obwodzie znajduje się poprzez pomnożenie wartości skutecznych napięcia i natężenia prądu.</item>
+          <item>Prawo Ohma dla wartości skutecznych jest wyrażane przez podzielenie wartości skutecznej napięcia przez impedancję.</item>
+          <item>W obwodzie prądu zmiennego (AC) definiuje się kąt fazowy pomiędzy natężeniem i napięciem prądu elektrycznego (które są dwuwymiarowymi wektorami, znanymi jako wskazy). Kąt fazowy jest liczbą rzeczywistą i parametryzuje liczbę zespoloną o module <m:math display="inline">
+            <m:mn>1</m:mn>
+            </m:math>. Jest ona równa ilorazowi impedancji (czyli uogólnionego oporu elektrycznego będącego liczbą zespoloną) i modułu impedancji (będącego liczbą rzeczywistą).</item>
+            <item>Kąt fazowy wpływa na wartość średniej mocy dostarczanej do obwodu RLC.</item>
+            <item>Współczynnik mocy ma wartości w zakresie <m:math display="inline">
+              <m:mo>⟨</m:mo>
+              <m:mfenced close="" open="">
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+                <m:mn>1</m:mn>
+              </m:mfenced>
+              <m:mo>⟩</m:mo>
+              </m:math>.</item>
+            </list>
+          </section>
+          <section id="fs-id1172102078704" class="review-conceptual-questions">
+            <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Pytania</title>
+            <exercise id="fs-id1172102066675">
+              <problem id="fs-id1172102066677">
+                <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102066679">Dla jakiej wartości kąta fazowego <m:math display="inline">
+                  <m:mi>ϕ</m:mi>
+                  </m:math> pomiędzy napięciem podawanym przez źródło a natężeniem prądu w obwodzie średnia moc dostarczana do obwodu osiąga maksymalną wartość?</para>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1172101969734">
+                <problem id="fs-id1172101969737">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101969739">Wyjaśnij różnicę pomiędzy średnią mocą a mocą chwilową.</para>
+                </problem>
+                <solution id="fs-id1172102013757">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102013759">Moc chwilowa jest wartością mocy w danej chwili czasu. Średnia moc jest natomiast uśrednioną wartością mocy po jednym lub po kilku cyklach.</para>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1172101963555">
+                <problem id="fs-id1172102066571">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102066573">Średnia moc dostarczona do obwodu wynosi zero. Mimo to obwód rozprasza dostarczoną moc. Wyjaśnij, jak to możliwe?</para>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1172102066655">
+                <problem id="fs-id1172102066657">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102021389">Czy moc chwilowa dostarczana przez źródło napięcia zmiennego może być kiedykolwiek ujemna? Czy moc średnia może być ujemna?</para>
+                </problem>
+                <solution id="fs-id1172102049074">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102049076">Moc chwilowa może być ujemna, ale średnia moc zawsze ma wartość nieujemną.</para>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1172102067280">
+                <problem id="fs-id1172102067283">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101983990">Moc znamionowa opornika używanego w obwodzie prądu zmiennego odnosi się do maksymalnej średniej mocy rozpraszanej na tym oporniku bez uszkodzenia go. Jak odnosi się to do maksymalnej mocy chwilowej rozpraszanej przez ten opornik?</para>
+                </problem>
+              </exercise>
+            </section>
+            <section id="fs-id1172102067489" class="review-problems">
+              <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Zadania</title>
+              <exercise id="fs-id1172101766965">
+                <problem id="fs-id1172101766967">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102066758">SEM źródła napięcia zmiennego dana jest wyrażeniem <m:math display="inline">
+                    <m:mrow>
+                      <m:mi>u</m:mi>
+                      <m:mo>⁡</m:mo>
+                      <m:mfenced>
+                        <m:mi>t</m:mi>
+                      </m:mfenced>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>U</m:mi>
+                        <m:mn>0</m:mn>
+                      </m:msub>
+                      <m:mo>⁢</m:mo>
+                      <m:mrow>
+                        <m:mo>sin</m:mo>
+                        <m:mfenced>
+                          <m:mrow>
+                            <m:mi>ω</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>t</m:mi>
+                          </m:mrow>
+                        </m:mfenced>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:math>, gdzie <m:math display="inline">
+                  <m:msub>
+                    <m:mi>U</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mn>100</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                    <m:mi mathvariant="normal">V</m:mi>
+                  </m:mrow>
+                </m:math>, a <m:math display="inline">
+                <m:mi>ω</m:mi>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mn>200</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">rad</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:math>. Oblicz średnią moc wytwarzaną przez źródło podłączone do<list id="eip-idm1627545200" list-type="enumerated" number-style="lower-alpha">
+              <item>kondensatora o pojemności <m:math display="inline">
+                <m:mn>20</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">µF</m:mi>
+                </m:math>;</item>
+                <item>cewki o indukcyjności <m:math display="inline">
+                  <m:mn>20</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi mathvariant="normal">mH</m:mi>
+                  </m:math>;</item>
+                  <item>opornika o oporze <m:math display="inline">
+                    <m:mn>50</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                    <m:mi mathvariant="normal">Ω</m:mi>
+                    </m:math>.</item>
+                  </list>
+                </para>
+              </problem>
+            </exercise>
+            <exercise id="fs-id1172102068004">
+              <problem id="fs-id1172102103567">
+                <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102103569">Oblicz wartość skuteczną natężenia prądu wypływającego ze źródła prądu zmiennego danego wyrażeniem <m:math display="inline">
+                  <m:mrow>
+                    <m:mi>u</m:mi>
+                    <m:mo>⁡</m:mo>
+                    <m:mfenced>
+                      <m:mi>t</m:mi>
+                    </m:mfenced>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>U</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>⁢</m:mo>
+                    <m:mrow>
+                      <m:mo>sin</m:mo>
+                      <m:mfenced>
+                        <m:mrow>
+                          <m:mi>ω</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:mi>t</m:mi>
+                        </m:mrow>
+                      </m:mfenced>
+                    </m:mrow>
+                  </m:mrow>
+                </m:math>, gdzie <m:math display="inline">
+                <m:msub>
+                  <m:mi>U</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mn>100</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">V</m:mi>
+                </m:mrow>
+              </m:math>, a <m:math display="inline">
+              <m:mi>ω</m:mi>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mn>200</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>π</m:mi>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mrow>
+                  <m:mi mathvariant="normal">rad</m:mi>
+                  <m:mo>∕</m:mo>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:math>, podłączonego do<list id="eip-idm153190256" list-type="enumerated" number-style="lower-alpha">
+            <item>kondensatora o pojemności <m:math display="inline">
+              <m:mn>20</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">µF</m:mi>
+              </m:math>;</item>
+              <item>cewki o indukcyjności <m:math display="inline">
+                <m:mn>20</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi mathvariant="normal">mH</m:mi>
+                </m:math>;</item>
+                <item>opornika o oporze <m:math display="inline">
+                  <m:mn>50</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">Ω</m:mi>
+                  </m:math>.</item>
+                </list>
+              </para>
+            </problem>
+            <solution id="fs-id1172102020062">
+              <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102020064">a. <m:math display="inline">
+                <m:mn>0,89</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">A</m:mi>
+              </m:math>; b. <m:math display="inline">
+              <m:mn>5,6</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">A</m:mi>
+            </m:math>; c. <m:math display="inline">
+            <m:mn>1,4</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">A</m:mi>
+            </m:math>.</para>
+          </solution>
+        </exercise>
+        <exercise id="fs-id1172102025770">
+          <problem id="fs-id1172102025772">
+            <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102031379">Cewka o indukcji <m:math display="inline">
+              <m:mn>40</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi mathvariant="normal">mH</m:mi>
+            </m:math> podłączona jest do źródła napięcia zmiennego o częstotliwości <m:math display="inline">
+            <m:mn>60</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi mathvariant="normal">Hz</m:mi>
+          </m:math> wytwarzającego napięcie o amplitudzie <m:math display="inline">
+          <m:mn>50</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">V</m:mi>
+          </m:math>. Jeśli podłączymy woltomierz zmiennoprądowy do cewki, jakie napięcie wskaże?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1172102019626">
+        <problem id="fs-id1172102019628">
+          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102023899">W szeregowym obwodzie RLC amplituda napięcia wynosi <m:math display="inline">
+            <m:mn>100</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">V</m:mi>
+          </m:math>, a jego częstotliwość jest równa <m:math display="inline">
+          <m:mn>500</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi mathvariant="normal">Hz</m:mi>
+        </m:math>, kiedy <m:math display="inline">
+        <m:mi>R</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>500</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">Ω</m:mi>
+        </m:mrow>
+      </m:math>, a <m:math display="inline">
+      <m:mi>L</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>0,2</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">H</m:mi>
+      </m:mrow>
+    </m:math>. Wylicz średnią moc wydzielaną na oporniku dla następujących pojemności kondensatora:<list id="eip-idm678732048" list-type="enumerated" number-style="lower-alpha">
+    <item>
+      <m:math display="inline">
+        <m:mi>C</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">µF</m:mi>
+        </m:mrow>
+        </m:math>;</item>
+        <item>
+          <m:math display="inline">
+            <m:mi>C</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>0,2</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">µF</m:mi>
+            </m:mrow>
+            </m:math>.</item>
+          </list>
+        </para>
+      </problem>
+      <solution id="fs-id1172102103675">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102103677">a. <m:math display="inline">
+          <m:mn>7,3</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">W</m:mi>
+        </m:math>; b. <m:math display="inline">
+        <m:mn>6,3</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">W</m:mi>
+        </m:math>.</para>
+      </solution>
+    </exercise>
+    <exercise id="fs-id1172102103699">
+      <problem id="fs-id1172102104721">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102104723">Źródło napięcia zmiennego o amplitudzie <m:math display="inline">
+          <m:mn>10</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">V</m:mi>
+        </m:math> dostarcza <m:math display="inline">
+        <m:mn>0,8</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">W</m:mi>
+      </m:math> mocy przy natężeniu prądu równym <m:math display="inline">
+      <m:mn>2,5</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+    </m:math>. Ile wynosi wartość kąta fazowego <m:math display="inline">
+    <m:mi>ϕ</m:mi>
+    </m:math> pomiędzy SEM a natężeniem prądu?</para>
+  </problem>
+</exercise>
+<exercise id="fs-id1172102104614">
+  <problem id="fs-id1172102104616">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102104618">W szeregowym obwodzie RLC impedancja wynosi <m:math display="inline">
+      <m:mn>60</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:math>, a współczynnik mocy równy jest <m:math display="inline">
+    <m:mn>0,5</m:mn>
+  </m:math>, z napięciem opóźnionym względem natężenia prądu.<list id="eip-idm340218720" list-type="enumerated" number-style="lower-alpha">
+  <item>Czy aby zwiększyć wartość współczynnika mocy, do obwodu powinno się dołączyć kondensator czy cewkę?</item>
+  <item>Jaka wartość pojemności lub indukcyjności podniesie współczynnik mocy do jedności?</item>
+</list>
+</para>
+</problem>
+<solution id="fs-id1172102103465">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102078825">a. Cewkę; b. <m:math display="inline">
+    <m:msub>
+      <m:mi>X</m:mi>
+      <m:mi>L</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>52</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+    </m:math>.</para>
+  </solution>
+</exercise>
+</section>
+</content>
+<glossary>
+  <definition id="fs-id1172102117038">
+    <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="moc średnia">moc średnia (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">average power</term></foreign>)</term>
+      <meaning id="fs-id1172102116368">uśredniona po czasie moc wydzielana w trakcie pojedynczego cyklu AC</meaning>
+    </definition>
+    <definition id="fs-id1172102116902">
+      <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="współczynnik mocy">współczynnik mocy (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">power factor</term></foreign>)</term>
+        <meaning id="fs-id1172102117434">wielkość mówiąca, ile razy dostarczana do układu moc jest mniejsza od maksymalnej możliwej mocy, w związku z różnicą faz pomiędzy napięciem i natężeniem prądu</meaning>
+      </definition>
+    </glossary>
+  </document>

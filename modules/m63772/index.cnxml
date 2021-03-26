@@ -1,0 +1,2998 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:m="http://www.w3.org/1998/Math/MathML" id="new" cnxml-version="0.7" module-id="new">
+  <title>Przyspieszenie</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m63772</md:content-id>
+  <md:title>Przyspieszenie</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>obliczać wektor przyspieszenia, znając zależność prędkości od czasu; </item>
+<item>opisywać ruch cząstki poruszającej się w trzech wymiarach ze stałym przyspieszeniem; </item>
+<item>wykorzystywać jednowymiarowe równania ruchu wzdłuż kierunków prostopadłych do opisu problemu dwu- lub trójwymiarowego ze stałym przyspieszeniem; </item>
+<item>opisywać wektor przyspieszenia za pomocą wersorów osi w wybranym układzie odniesienia. </item>
+</list></md:abstract>
+  <md:uuid>f43ad211-9b46-4f0a-802a-579b94b502cd</md:uuid>
+</metadata>
+
+<content>
+  <section id="fs-id1165038009582">
+    <title>Przyspieszenie chwilowe</title><para id="fs-id1165038191216">Oprócz znajomości przemieszczenia i prędkości ciała w ruchu często chcemy także wiedzieć, jaki jest <term class="no-emphasis">wektor przyspieszenia</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">acceleration vector</term></foreign>) w dowolnym punkcie jego toru w danej chwili czasu. Taki wektor przyspieszenia nazwiemy przyspieszeniem chwilowym i obliczymy, co wiemy już z poprzedniego rozdziału, różniczkując po czasie. Jedyna różnica w przypadku ruchu na płaszczyźnie lub w przestrzeni jest taka, że mamy teraz do czynienia z wielkościami wektorowymi. Różniczkując po czasie <m:math>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>v</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mn>,</m:mn>
+      </m:math> otrzymujemy:</para><note id="fs-id1165038336872" class="equation-callout">
+        <equation id="fs-id1165038205022">
+          <m:math>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>a</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:munder>
+              <m:mo form="prefix">lim</m:mo>
+              <m:mrow>
+                <m:mi mathvariant="normal">Δ</m:mi>
+                <m:mi>t</m:mi>
+                <m:mtext>→</m:mtext>
+                <m:mn>0</m:mn>
+              </m:mrow>
+            </m:munder>
+            <m:mfrac>
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>v</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mi>t</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mi mathvariant="normal">Δ</m:mi>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>−</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>v</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">Δ</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mtext>d</m:mtext>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>v</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mtext>d</m:mtext>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+      </note>
+      <para id="fs-id1165037972587">Wektor przyspieszenia w rozkładzie na składowe ma postać:</para>
+      <note id="fs-id1165038033117" class="equation-callout">
+        <equation id="fs-id1165038201498">
+          <m:math>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>a</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mtext>d</m:mtext>
+                <m:msub>
+ <m:mi>v</m:mi>
+                  <m:mi>x</m:mi>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mtext>d</m:mtext>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mtext>d</m:mtext>
+                <m:msub>
+ <m:mi>v</m:mi>
+                  <m:mi>y</m:mi>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mtext>d</m:mtext>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mtext>d</m:mtext>
+                <m:msub>
+ <m:mi>v</m:mi>
+                  <m:mi>z</m:mi>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mtext>d</m:mtext>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>k</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+      </note>
+      <para id="fs-id1165038238473">Ponieważ prędkość jest pochodną położenia po czasie, możemy przyspieszenie zdefiniować jako drugą pochodną funkcji położenia od czasu:</para>
+      <note id="fs-id1165038229327" class="equation-callout">
+        <equation id="fs-id1165038156158">
+          <m:math>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>a</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msup>
+                  <m:mtext>d</m:mtext>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mi>x</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mtext>d</m:mtext>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msup>
+                  <m:mtext>d</m:mtext>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mi>y</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mtext>d</m:mtext>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msup>
+                  <m:mtext>d</m:mtext>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mi>z</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mtext>d</m:mtext>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>k</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+      </note>
+      <example id="fs-id1165038224411">
+        <para id="fs-id1165038010925">
+          <title>Obliczanie wektora przyspieszenia</title>Cząstka ma prędkość <m:math>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>v</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mn>5,0</m:mn>
+                <m:mi>t</m:mi>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>i</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>j</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>2,0</m:mn>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msup>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>k</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="0.2em"/>
+            <m:mtext>m/s</m:mtext>
+            <m:mo>.</m:mo>
+          </m:math>
+        </para>
+        <para id="ked-1bptqdk3j_5lo"><list id="eip-idm844866656" list-type="enumerated" number-style="lower-alpha">
+<item>Jaka jest zależność wektora przyspieszenia od czasu?</item>
+            <item> Jaki jest wektor przyspieszenia w chwili <m:math>
+                <m:mi>t</m:mi>
+              </m:math>
+               = 2,0 s? Znajdź jego długość i kierunek w przestrzeni. </item>
+            </list>
+          </para><para id="fs-id1165037968275">
+            <title>Rozwiązanie</title>(a) Aby znaleźć wektor przyspieszenia, obliczamy pierwszą pochodną prędkości po czasie. Różniczkujemy każdą składową wektora prędkości osobno:</para>
+            <equation id="ked-1bptqdk1v_ao" class="unnumbered"><m:math>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>a</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>5,0</m:mn>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>i</m:mi>
+                          <m:mo stretchy="false">^</m:mo>
+                        </m:mover>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mn>2,0</m:mn>
+                    <m:mi>t</m:mi>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>j</m:mi>
+                          <m:mo stretchy="false">^</m:mo>
+                        </m:mover>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>6,0</m:mn>
+                    <m:msup>
+                      <m:mi>t</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>k</m:mi>
+                          <m:mo stretchy="false">^</m:mo>
+                        </m:mover>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mspace width="0.2em"/>
+                <m:msup>
+                  <m:mtext>m/s</m:mtext>
+                  <m:mn>2</m:mn>
+                </m:msup><m:mtext>.</m:mtext>
+              </m:math>
+            </equation><para id="fs-id1165038335199">(b) Podstawiając do powyższego wzoru za czas, otrzymujemy <m:math>
+              <m:mrow>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>a</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>2,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>s</m:mtext>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>5,0</m:mn>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>i</m:mi>
+                        <m:mo stretchy="false">^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mn>4,0</m:mn>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>j</m:mi>
+                        <m:mo stretchy="false">^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mn>24,0</m:mn>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>k</m:mi>
+                        <m:mo stretchy="false">^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mspace width="0.2em"/>
+              <m:msup>
+                <m:mtext>m/s</m:mtext>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:math>, co daje nam orientację wektora w układzie wersorów osi. Wartość przyspieszenia w tej chwili wynosi <m:math>
+            <m:mrow>
+              <m:mo stretchy="false">|</m:mo>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>a</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mn>2,0</m:mn>
+                <m:mtext>s</m:mtext>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mrow>
+              <m:mo stretchy="false">|</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:msqrt>
+              <m:mn>5</m:mn>
+              <m:mn>,</m:mn>
+              <m:msup>
+                <m:mn>0</m:mn>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:mn>4</m:mn>
+              <m:mn>,</m:mn>
+              <m:msup>
+                <m:mn>0</m:mn>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:msup>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>24,0</m:mn>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:msqrt>
+            <m:mo>=</m:mo>
+            <m:mn>24,8</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:msup>
+              <m:mtext>m/s</m:mtext>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:math>
+        </para><para id="fs-id1165038056405">
+          <title>Znaczenie</title>Jak pokazaliśmy, wektor przyspieszenia w tym przykładzie zależy od czasu, czyli przyspieszenie zmienia się w trakcie ruchu. Rozważmy teraz przypadek ruchu z innym wektorem prędkości.</para>
+        </example>
+        <example id="fs-id1165038019265">
+          <para id="fs-id1165037861901"><title>Obliczanie przyspieszenia cząstki</title>Ruch cząstki opisano wektorem położenia zależnym od czasu <m:math>
+              <m:mrow>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>r</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mo>[</m:mo>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>10</m:mn>
+                  <m:mi>t</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>i</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>5</m:mn>
+              <m:mi>t</m:mi>
+              <m:mrow>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>j</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>5</m:mn>
+              <m:mi>t</m:mi>
+              <m:mrow>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>k</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>]</m:mo>
+              <m:mspace width="0.2em"/>
+              <m:mtext>m</m:mtext>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para><para id="ked-1bptqdk2m_rdg">
+            
+            <list id="eip-idm198294880" list-type="enumerated" number-style="lower-alpha">
+			<item>Jaki jest wektor prędkości cząstki?</item>
+              <item> Jaki jest jej wektor przyspieszenia? </item>
+              <item> Opisz ruch cząstki od chwili początkowej <m:math>
+                  <m:mi>t</m:mi>
+                </m:math>
+                 = 0 s. </item>
+              </list>
+            </para>
+            <para id="fs-id1165038249234"><title>Strategia rozwiązania</title>Już na podstawie analizy samej tylko zależności położenia od czasu możemy wyciągnąć interesujące wnioski o ruchu cząstki. Składowe <m:math>
+                  <m:mi>y</m:mi>
+                </m:math>
+               i <m:math>
+                <m:mi>z</m:mi>
+              </m:math>
+             są liniowo zależne od czasu, zatem przyspieszenie w tych kierunkach będzie zero, gdy weźmiemy drugą pochodną po czasie. Zauważmy też, że składowa <m:math>
+              <m:mi>x</m:mi>
+            </m:math>
+           położenia zeruje się dla <m:math>
+            <m:mi>t</m:mi>
+          </m:math>
+         = 0 s i <m:math>
+          <m:mi>t</m:mi>
+        </m:math>
+         = 10 s.</para><para id="fs-id1165038223870">
+          <title>Rozwiązanie</title>(a) Obliczając pierwszą pochodną położenia po czasie, otrzymujemy prędkość</para>
+          <equation id="fs-id1165038040414" class="unnumbered"><label/>
+            <m:math>
+              <m:mrow>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>v</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mo>[</m:mo>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>10</m:mn>
+                  <m:mo>−</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>i</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>5</m:mn>
+              <m:mrow>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>j</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>5</m:mn>
+              <m:mrow>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>k</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>]</m:mo>
+              <m:mspace width="0.2em"/>
+              <m:mtext>m/s</m:mtext>
+              <m:mo>.</m:mo>
+            </m:math>
+          </equation><para id="fs-id1165038303772">Wektor prędkości jest liniową funkcją czasu w kierunku <m:math>
+              <m:mi>x</m:mi>
+            </m:math>
+           oraz jest stały wzdłuż kierunków <m:math>
+            <m:mi>y</m:mi>
+          </m:math>
+         i <m:math>
+          <m:mi>z</m:mi>
+        </m:math>. </para>
+        <para id="fs-id1165038201315">(b) Różniczkując prędkość, znajdujemy przyspieszenie</para>
+        <equation id="fs-id1165037855561" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>a</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mn>2</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mspace width="0.2em"/>
+            <m:msup>
+              <m:mtext>m/s</m:mtext>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="fs-id1165038223396">Wektor przyspieszenia ma tylko składową <m:math>
+            <m:mi>x</m:mi>
+          </m:math>, jest stały w czasie i skierowany przeciwnie do osi.</para>
+          <para id="fs-id1165038202149">(c) <link target-id="CNX_UPhysics_04_02_Trajectory"/> prezentuje tor cząstki w kolejnych sekundach ruchu. Rozważmy najpierw ruch w płaszczyźnie <m:math>
+              <m:mi>y</m:mi>
+              <m:mi>z</m:mi>
+            </m:math>. Położenie cząstki w tej płaszczyźnie zwiększa się w czasie jednostajnie ze stałą prędkością w kierunkach <m:math>
+            <m:mi>y</m:mi>
+          </m:math>
+         i <m:math>
+          <m:mi>z</m:mi>
+        </m:math>. Inaczej jest w przypadku składowej <m:math>
+        <m:mi>x</m:mi>
+      </m:math>
+     położenia. W tym kierunku cząstka przemieszcza się w dodatnim kierunku osi <m:math>
+      <m:mi>x</m:mi>
+    </m:math>
+   aż do chwili <m:math>
+    <m:mi>t</m:mi>
+  </m:math>
+ = 5 s, kiedy zmienia kierunek ruchu na przeciwny do osi <m:math>
+  <m:mi>x</m:mi>
+</m:math>. Możemy to zauważyć, patrząc na wektor prędkości, którego składowa <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ zmienia znak w tej chwili. Widzimy to również na podstawie postaci wektora przyspieszenia. Przyspieszenie jest ujemne, co oznacza, że cząstka jest opóźniana w kierunku dodatnim osi <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ lub, równoważnie, przyspieszana w kierunku przeciwnym. Cząstka osiąga położenie 25 m, a następnie zawraca i zaczyna przyspieszać w kierunku przeciwnym do osi <m:math>
+  <m:mi>x</m:mi>
+</m:math>. Wraca do położenia 0 po czasie <m:math>
+  <m:mi>t</m:mi>
+</m:math>
+ = 10 s.</para><figure id="CNX_UPhysics_04_02_Trajectory"><media id="fs-id1165038033628" alt="Na rysunku widzimy układ współrzędnych xy. Zakres obu osi to -50 do 50 metrów. Dziesięć położeń cząstki zaznaczono czerwonymi kropkami, które zaczynają się w początku układu i układają na krzywej w górę (składowe y i z się zwiększają). Punkty: szósty i dziesiąty oznaczono jako t=6 s oraz t=10 s. Punkty czerwone są połączone przerywanymi liniami z punktami niebieskimi leżącymi na płaszczyźnie xy. Wszystkie punkty niebieskie leżą w pierwszej ćwiartce układu. Punkty niebieskie mają równe odległości wzdłuż osi y. Współrzędne x rosną od 0 do maksimum x-25 w t=5 s i potem maleją do x=0 w t=10 s.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_04_02_Trajectory.jpg"/>
+  </media>
+  
+<caption>Cząstka startuje z początku układu odniesienia <m:math display="inline"><m:mfenced><m:mi>x</m:mi><m:mi>y</m:mi><m:mi>z</m:mi></m:mfenced><m:mo>=</m:mo><m:mfenced><m:mn>0</m:mn><m:mn>0</m:mn><m:mn>0</m:mn></m:mfenced></m:math>, gdzie jej wektor położenia to <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mover>
+      <m:mi>r</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>0.</m:mn>
+</m:math> Czerwonymi kropkami zaznaczono położenia w przestrzeni w kolejnych sekundach. Niebieskimi kropkami zaznaczono rzut toru na płaszczyznę <m:math>
+  <m:mi>x</m:mi>
+  <m:mi>y</m:mi>
+</m:math>. Wartości <m:math>
+  <m:mi>y</m:mi>
+</m:math>
+ i <m:math>
+  <m:mi>z</m:mi>
+</m:math>
+ rosną liniowo w czasie, natomiast <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ osiąga maksimum równe 25 m w chwili <m:math>
+  <m:mi>t</m:mi>
+</m:math>
+ = 5 s, po czym zaczyna maleć. W tym punkcie składowa <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ wektora prędkości zmienia znak na ujemny. Po czasie <m:math>
+  <m:mi>t</m:mi>
+</m:math>
+ = 10 s cząstka wraca do położenia <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ = 0 m.</caption></figure><para id="fs-id1165038006348">
+  <title>Znaczenie</title>Rysując tor cząstki na podstawie wartości liczbowych wynikających z równań kinematycznych w kolejnych chwilach czasu, możemy lepiej zrozumieć jej ruch w przestrzeni. </para>
+</example>
+<note id="fs-id1165038201672" class="check-understanding">
+  <exercise id="fs-id1165038300360">
+    <problem id="fs-id1165037987960">
+      <para id="fs-id1165037885508"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Załóżmy, że znamy następującą postać wektora przyspieszenia <m:math>
+          <m:mrow>
+            <m:mrow>
+              <m:mover>
+                <m:mi>a</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>a</m:mi>
+              <m:mrow>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>i</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mi>b</m:mi>
+              <m:mrow>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>j</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mi>c</m:mi>
+              <m:mrow>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>k</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="0.2em"/>
+          <m:msup>
+            <m:mtext>m/s</m:mtext>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mn>,</m:mn>
+        </m:math> gdzie <m:math>
+          <m:mi>a</m:mi>
+        </m:math>, <m:math>
+        <m:mi>b</m:mi>
+      </m:math>
+     i <m:math>
+      <m:mi>c</m:mi>
+    </m:math>
+     są pewnymi stałymi. Co możemy powiedzieć o zależności wektora prędkości od czasu?</para></problem>
+  <solution id="fs-id1165038330863">
+    <para id="fs-id1165038330865">Wektor przyspieszenia jest stały i nie zmienia się w czasie. Jeśli <m:math>
+        <m:mi>a</m:mi>
+      </m:math>, <m:math>
+      <m:mi>b</m:mi>
+    </m:math>
+   i <m:math>
+    <m:mi>c</m:mi>
+  </m:math>
+ są różne od zera, to wektor prędkości musi być funkcją liniową czasu. Znajdziemy go, całkując przyspieszenie <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mover>
+      <m:mi>v</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:mrow>
+<m:mrow>
+  <m:mo>(</m:mo>
+  <m:mi>t</m:mi>
+  <m:mo>)</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mo stretchy="true">∫</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:mover>
+      <m:mi>a</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:mrow>
+<m:mtext>dt</m:mtext>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:mo stretchy="true">∫</m:mo>
+    <m:mrow>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mrow>
+        <m:mi>a</m:mi>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mi>b</m:mi>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mi>c</m:mi>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>k</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo stretchy="false">)</m:mo>
+    </m:mrow>
+    <m:mtext>d</m:mtext>
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mrow>
+        <m:mi>a</m:mi>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mi>b</m:mi>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mi>c</m:mi>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>k</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo stretchy="false">)</m:mo>
+    </m:mrow>
+    <m:mi>t</m:mi>
+  </m:mrow>
+</m:mrow>
+<m:mspace width="0.2em"/>
+<m:mtext>m/s</m:mtext>
+</m:math>, ponieważ różniczkując prędkość, z powrotem otrzymamy <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mover>
+      <m:mi>a</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:mrow>
+<m:mrow>
+  <m:mo>(</m:mo>
+  <m:mi>t</m:mi>
+  <m:mo>)</m:mo>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:math> Powinniśmy jeszcze uwzględnić stałą całkowania, która jednak nie wpływa na zależność od czasu. Gdyby któraś ze składowych wektora przyspieszenia była równa zero, odpowiednia składowa prędkości musiałaby być stała w czasie.</para></solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1165038334001"><title>Stałe przyspieszenie</title><para id="fs-id1165038334006">Ruch w wielu wymiarach ze stałym przyspieszeniem może być traktowany tak jak w poprzednim rozdziale o ruchu po linii prostej. Taki ruch nazwiemy jednostajnie zmiennym (przyspieszonym lub opóźnionym), gdyż przyspieszenie jest stałe. Pokazaliśmy już, że ruch w przestrzeni jest złożeniem trzech niezależnych ruchów w jednym wymiarze wzdłuż kierunków prostopadłych. Chcemy teraz otrzymać kinematyczne równania ruchu wzdłuż niezależnych kierunków. Dla uproszczenia rozważmy przypadek dwuwymiarowy – cząstki poruszającej się na płaszczyźnie <m:math>
+      <m:mi>x</m:mi>
+      <m:mi>y</m:mi>
+    </m:math>
+   (pomińmy składową <m:math>
+    <m:mi>z</m:mi>
+  </m:math>). Wektor przyspieszenia jest więc równy</para><equation id="fs-id1168586458258" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>a</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>a</m:mi>
+        <m:mi>x</m:mi>
+      </m:msub>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>i</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>a</m:mi>
+        <m:mi>y</m:mi>
+      </m:msub>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>j</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mn>,</m:mn>
+    </m:math>
+  </equation>
+  <para id="fs-id1165038294237">gdzie <m:math>
+    <m:msub>
+      <m:mi>a</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+  </m:math> i <m:math>
+  <m:msub>
+    <m:mi>a</m:mi>
+    <m:mi>y</m:mi>
+  </m:msub>
+</m:math> są stałymi. Ruch wzdłuż każdej składowej może być opisany zestawem równań podobnych do <link target-id="fs-id1168326903625" document="m65750" cmlnle:case="genitive"/> – <link target-id="fs-id1168326834410" document="m65750" cmlnle:case="genitive"/> z poprzedniego rozdziału o ruchu po linii prostej. Zapiszmy tutaj tylko równania ruchu (na położenie i prędkość) w kierunku <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ oraz <m:math>
+  <m:mi>y</m:mi>
+</m:math>. Podobny zestaw równań można zapisać dla ruchu wzdłuż kierunku <m:math>
+  <m:mi>z</m:mi>
+</m:math>:</para><equation id="fs-id1165038294260"><m:math display="block"><m:mrow><m:mi>x</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:mrow><m:msub><m:mover><m:mi>v</m:mi><m:mo>‾</m:mo></m:mover><m:mi>x</m:mi></m:msub><m:mo>⁢</m:mo><m:mi>t</m:mi><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:math></equation><equation id="fs-id1165038294304">
+  <m:math>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mi>x</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>a</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mi>t</m:mi>
+  </m:math>
+</equation>
+<equation id="fs-id1165038294342">
+  <m:math>
+    <m:mi>x</m:mi>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>x</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mi>x</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mi>t</m:mi>
+    <m:mo>+</m:mo>
+    <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:msub>
+      <m:mi>a</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:msup>
+      <m:mi>t</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+  </m:math>
+</equation>
+<equation id="fs-id1165038299934">
+  <m:math>
+    <m:msubsup>
+      <m:mi>v</m:mi>
+      <m:mi>x</m:mi>
+      <m:mn>2</m:mn>
+    </m:msubsup>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:msubsup>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mi>x</m:mi>
+      </m:mrow>
+      <m:mn>2</m:mn>
+    </m:msubsup>
+    <m:mo>+</m:mo>
+    <m:mn>2</m:mn>
+    <m:msub>
+      <m:mi>a</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mo>-</m:mo>
+        <m:msub>
+          <m:mi>x</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+<equation id="eip-596"><m:math display="block"><m:mrow><m:mi>y</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:mrow><m:msub><m:mover><m:mi>v</m:mi><m:mo>‾</m:mo></m:mover><m:mi>y</m:mi></m:msub><m:mo>⁢</m:mo><m:mi>t</m:mi><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:math></equation><equation id="fs-id1165038300036">
+  <m:math>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mi>y</m:mi>
+    </m:msub>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mi>y</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>a</m:mi>
+      <m:mi>y</m:mi>
+    </m:msub>
+    <m:mi>t</m:mi>
+  </m:math>
+</equation>
+<equation id="fs-id1165038300075">
+  <m:math>
+    <m:mi>y</m:mi>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>y</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mi>y</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mi>t</m:mi>
+    <m:mo>+</m:mo>
+    <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:msub>
+      <m:mi>a</m:mi>
+      <m:mi>y</m:mi>
+    </m:msub>
+    <m:msup>
+      <m:mi>t</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+  </m:math>
+</equation>
+<equation id="fs-id1165038323452">
+  <m:math>
+    <m:msubsup>
+      <m:mi>v</m:mi>
+      <m:mi>y</m:mi>
+      <m:mn>2</m:mn>
+    </m:msubsup>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:msubsup>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mi>y</m:mi>
+      </m:mrow>
+      <m:mn>2</m:mn>
+    </m:msubsup>
+    <m:mo>+</m:mo>
+    <m:mn>2</m:mn>
+    <m:msub>
+      <m:mi>a</m:mi>
+      <m:mi>y</m:mi>
+    </m:msub>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>y</m:mi>
+        <m:mo>-</m:mo>
+        <m:msub>
+          <m:mi>y</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1165038323513">Oznaczyliśmy tutaj przez indeks dolny 0 początkowe położenie lub prędkość. Zestaw równań (od <link target-id="fs-id1165038294260" cmlnle:case="genitive"/> do <link target-id="fs-id1165038323452" cmlnle:case="genitive"/> można zastąpić równaniami wektorowymi (<link target-id="fs-id1165037862253" document="m63763"/> i <link target-id="fs-id1165037862045" document="m63763"/>), aby otrzymać wektor położenia i wektor prędkości jako funkcje czasu (znowu pomijamy składową <m:math>
+    <m:mi>z</m:mi>
+  </m:math>):</para><equation id="fs-id1168586740350" class="unnumbered"><label/>
+    <m:math>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>r</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mi>x</m:mi>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>i</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mi>y</m:mi>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>j</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mspace width="1em"/>
+      <m:mtext>oraz</m:mtext>
+      <m:mspace width="1em"/>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>v</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mi>x</m:mi>
+      </m:msub>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>i</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mi>y</m:mi>
+      </m:msub>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>j</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation><para id="fs-id1165038323673">Omówiony przykład ilustruje praktyczne wykorzystanie kinematycznych równań ruchu w dwóch wymiarach.</para></section><example id="fs-id1165038323678">
+  <para id="fs-id1165038323680"><title>Narciarka</title><link target-id="CNX_UPhysics_04_02_Skier"/> prezentuje narciarkę, która w chwili <m:math>
+      <m:mi>t</m:mi>
+    </m:math>
+   = 0 rusza z przyspieszeniem 
+<m:math>
+<m:mn>2,1</m:mn>
+<m:mspace width="0.2em"/>
+<m:msup>
+  <m:mtext>m/s</m:mtext>
+  <m:mn>2</m:mn>
+</m:msup>
+</m:math> w dół stoku, którego nachylenie wynosi <m:math>
+  <m:msup>
+    <m:mn>15</m:mn>
+    <m:mo>°</m:mo>
+  </m:msup>
+</m:math>. Względem początku układu współrzędnych ustalonego przy górnej stacji wyciągu początkowe położenie i prędkość kobiety wynoszą</para><equation id="ked-1bpla6var_gq8" class="unnumbered">
+  <m:math>
+    <m:mrow>
+      <m:mrow>
+        <m:mover>
+          <m:mi>r</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:mrow>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mn>0</m:mn>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mn>75,0</m:mn>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>50,0</m:mn>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mspace width="0.2em"/>
+    <m:mtext>m</m:mtext>
+  </m:math>
+</equation>
+<para id="fs-id1165038298987">oraz</para>
+<equation id="ked-1bpla6v9v_fj8" class="unnumbered">
+  <m:math>
+    <m:mrow>
+      <m:mrow>
+        <m:mover>
+          <m:mi>v</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:mrow>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mn>0</m:mn>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mn>4,1</m:mn>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>1,1</m:mn>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mspace width="0.2em"/>
+    <m:mtext>m/s</m:mtext>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<list id="fs-id1165038299082" list-type="enumerated" number-style="lower-alpha">
+  <item> Podaj zależność od czasu składowych <m:math>
+      <m:mi>x</m:mi>
+    </m:math>
+   i <m:math>
+    <m:mi>y</m:mi>
+  </m:math>
+   położenia i prędkości narciarki. </item>
+  <item> Jakie są jej położenie i prędkość w chwili <m:math>
+      <m:mi>t</m:mi>
+    </m:math>
+     = 10,0 s? </item>
+  </list>
+  <figure id="CNX_UPhysics_04_02_Skier">
+    <media id="fs-id1165038299107" alt="Ilustracja narciarza wrysowanego w układ współrzędnych x,y. Narciarz jedzie po prostej o nachyleniu 15 stopni w dół względem osi x i ma przyspieszenie a = 2,1 metra na sekundę do kwadratu, w kierunku zgodnym z jego ruchem. przyspieszenie zaznaczono na rysunku fioletowym wektorem i podpisano.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_04_02_Skier.jpg"/>
+    </media>
+    <caption>Narciarka rusza z przyspieszeniem <m:math>
+      <m:mn>2,1</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:msup>
+        <m:mtext>m/s</m:mtext>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:math> w dół stoku o nachyleniu <m:math>
+    <m:msup>
+      <m:mn>15</m:mn>
+      <m:mo>°</m:mo>
+    </m:msup>
+    </m:math>. Początek układu współrzędnych przyjmujemy przy górnej stacji wyciągu narciarskiego.</caption>
+  </figure>
+  <para id="fs-id1165038299150"><title>Strategia rozwiązania</title>Będziemy chcieli zapisać równania ruchu w kierunkach <m:math>
+        <m:mi>x</m:mi>
+      </m:math>
+     oraz <m:math>
+      <m:mi>y</m:mi>
+    </m:math>, dlatego potrzebujemy znaleźć składowe wektora przyspieszenia, które wykorzystamy w równaniach ruchu. W tym celu rozłożymy wektor przyspieszenia na składowe w przyjętym na <link target-id="CNX_UPhysics_04_02_Skier" cmlnle:case="genitive"/> układzie współrzędnych. Następnie wstawimy składowe przyspieszenia do równań ruchu dla dowolnej chwili <m:math>
+    <m:mi>t</m:mi>
+  </m:math>. </para><para id="fs-id1165038230236"><title>Rozwiązanie</title>(a) Przyjmijmy układ odniesienia z początkiem na szczycie wzniesienia oraz osią <m:math>
+        <m:mi>y</m:mi>
+      </m:math>
+     skierowaną do góry i osią <m:math>
+      <m:mi>x</m:mi>
+    </m:math>
+   skierowaną poziomo. Obserwując tor ruchu narciarki zauważamy, że składowa <m:math>
+    <m:mi>x</m:mi>
+  </m:math>
+ przyspieszenia jest dodatnia, natomiast składowa <m:math>
+  <m:mi>y</m:mi>
+</m:math>
+ jest ujemna. Znając kąt nachylenia stoku, który wynosi <m:math>
+<m:msup>
+  <m:mn>15</m:mn>
+  <m:mo>°</m:mo>
+</m:msup>
+</m:math>, obliczamy</para><equation id="ked-1bpla6vb5_eug" class="unnumbered"><m:math display="inline"><m:msub><m:mi>a</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>2,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>cos</m:mo><m:mrow><m:mn>15</m:mn><m:mo>°</m:mo></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>2,0</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:math></equation><equation id="ked-1bpla6v90_kvo" class="unnumbered"><m:math display="inline"><m:msub><m:mi>a</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>-2,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>sin</m:mo><m:mrow><m:mn>15</m:mn><m:mo>°</m:mo></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>-0,54</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:math></equation><para id="fs-id1165038330062">Jeśli wstawimy położenie początkowe i prędkość początkową do <link target-id="fs-id1165038294304" cmlnle:case="genitive"/> i <link target-id="fs-id1165038294342" cmlnle:case="genitive"/> dla ruchu wzdłuż osi <m:math>
+    <m:mi>x</m:mi>
+  </m:math>, otrzymamy</para><equation id="ked-1bpla6v9v_an" class="unnumbered"><m:math display="inline"><m:mrow><m:mi>x</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>75,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mrow><m:mn>4,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mi>t</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>2,0</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:math></equation><equation id="ked-1bpla6vav_a1" class="unnumbered"><m:math display="inline"><m:mrow><m:msub><m:mi>v</m:mi><m:mi>x</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>4,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mrow><m:mrow><m:mn>2,0</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mi>t</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:math></equation><para id="fs-id1165038248905">Dla kierunku <m:math>
+      <m:mi>y</m:mi>
+    </m:math>
+     mamy</para>
+    <equation id="ked-1bpla6vbp_8fg" class="unnumbered"><m:math display="inline"><m:mrow><m:mi>y</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>-50,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>-</m:mo><m:mrow><m:mrow><m:mn>1,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mi>t</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mfenced><m:mrow><m:mn>-0,54</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mfenced><m:mo>⋅</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:math></equation><equation id="ked-1bpla6vad_k" class="unnumbered"><m:math display="inline"><m:mrow><m:msub><m:mi>v</m:mi><m:mi>y</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mo>-</m:mo><m:mrow><m:mn>1,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mrow><m:mfenced><m:mrow><m:mo>-</m:mo><m:mrow><m:mn>0,54</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mrow></m:mfenced><m:mo>⋅</m:mo><m:mi>t</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:math></equation><para id="fs-id1165038249060">(b) Skoro mamy ogólne równania ruchu dla dowolnej chwili czasu, możemy znaleźć wartości składowych <m:math>
+        <m:mi>x</m:mi>
+      </m:math>
+     i <m:math>
+      <m:mi>y</m:mi>
+    </m:math>
+   położenia i prędkości po czasie <m:math display="inline"><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>10,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>:</para><equation id="ked-1bpla6vb1_qe8" class="unnumbered"><m:math display="inline"><m:mrow><m:mi>x</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mn>10,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>75,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mrow><m:mn>4,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mn>10,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>2,0</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:msup><m:mfenced><m:mrow><m:mn>10,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>216,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:math></equation><equation id="ked-1bpla6v9o_la" class="unnumbered"><m:math display="inline"><m:mrow><m:msub><m:mi>v</m:mi><m:mi>x</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mn>10,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>4,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mrow><m:mn>2,0</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mn>10,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>24,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:math></equation><equation id="ked-1bpla6vae_nfo" class="unnumbered"><m:math display="inline"><m:mrow><m:mi>y</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mn>10,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mo>-</m:mo><m:mrow><m:mn>50,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:mo>-</m:mo><m:mrow><m:mrow><m:mn>1,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mn>10,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mfenced><m:mrow><m:mo>-</m:mo><m:mrow><m:mn>0,54</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mrow></m:mfenced><m:mo>⋅</m:mo><m:msup><m:mfenced><m:mrow><m:mn>10,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>-</m:mo><m:mrow><m:mrow><m:mn>88,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:math></equation><equation id="ked-1bpla6v9a_g2o" class="unnumbered"><m:math display="inline"><m:mrow><m:msub><m:mi>v</m:mi><m:mi>y</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mn>10,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mo>-</m:mo><m:mrow><m:mn>1,1</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mrow><m:mo>-</m:mo><m:mrow><m:mrow><m:mn>0,54</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mn>10,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>-</m:mo><m:mrow><m:mrow><m:mn>6,5</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:math></equation><para id="fs-id1165038341035">Podsumowując, wektory położenia i prędkości narciarki po czasie <m:math display="inline"><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>10,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math> są następujące:</para><equation id="ked-1bpla6val_m6g" class="unnumbered">
+      <m:math>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>10,0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>s</m:mtext>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>216,0</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>88,0</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:mtext>m</m:mtext>
+      </m:math>
+    </equation>
+    <equation id="ked-1bpla6van_rpo" class="unnumbered">
+      <m:math>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>v</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>10,0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>s</m:mtext>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>24,1</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>6,5</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:mtext>m/s</m:mtext>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1165038298334">Wartość prędkości narciarki po 10,0 s ruchu wynosi 25 m/s, czyli 90 km/h.</para>
+    <para id="fs-id1165038298337"><title>Znaczenie</title>Dzięki równaniom kinematyki i znajomości warunków początkowych (położenie i prędkość początkową) oraz przyspieszenia ciała potrafimy znaleźć położenie, prędkość i przyspieszenie ciała w dowolnej chwili czasu. Jest to bardzo przydatna umiejętność.</para></example>
+    <para id="fs-id1165038298345">W postaci równań od <link target-id="fs-id1165038205022" cmlnle:case="genitive"/> do <link target-id="fs-id1165038156158" cmlnle:case="genitive"/> otrzymaliśmy pełen zestaw wyrażeń na położenie, prędkość i przyspieszenie ciała w ruchu w dwóch lub trzech wymiarach. Jeżeli tory ruchu ciał wyglądałyby podobnie do torów samolotów „Orlika” z rysunku na początku rozdziału, to równania te byłyby dość skomplikowane. W następnych sekcjach omówimy dwa szczególne przypadki ruchów na płaszczyźnie i w przestrzeni, tzn. rzuty w ziemskim polu grawitacyjnym oraz ruch po okręgu.</para>
+    <note id="fs-id1165038298368" class="media-2">
+      <para id="fs-id1165038298375">Na tej stronie internetowej <link url="https://openstaxcollege.org/l/21phetmotladyb">Uniwersytetu Kolorado</link> dzięki aplikacji internetowej możesz obserwować jak zmienia się ruch biedronki w zależności od zadanych parametrów położenia i prędkości początkowej oraz przyspieszenia.</para>
+    </note>
+    <section id="fs-id1165038298386" class="key-concepts">
+      <title>Podsumowanie</title>
+      <list id="fs-id1165038298393" list-type="bulleted" bullet-style="bullet"><item> W dwóch i trzech wymiarach wektor przyspieszenia może mieć dowolny kierunek i nie musi być skierowany wzdłuż którejkolwiek składowej wektora prędkości. </item>
+        <item> Przyspieszenie chwilowe jest zdefiniowane jako zmiana prędkości zachodząca w bardzo krótkim (inifinitezymalnym) przedziale czasu. Jest to wielkość wektorowa o dwóch lub trzech składowych. W praktyce obliczamy przyspieszenie jako pochodną prędkości po czasie. </item>
+        <item> W przypadku trójwymiarowym przyspieszenie <m:math>
+          <m:mrow>
+            <m:mrow>
+              <m:mover>
+                <m:mi>a</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:math> może być zapisane jako wektorowa suma składowych <m:math>
+        <m:msub>
+          <m:mrow>
+            <m:mrow>
+              <m:mover>
+                <m:mi>a</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+          <m:mi>x</m:mi>
+        </m:msub>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        </m:math>,<m:math>
+        <m:msub>
+          <m:mrow>
+            <m:mrow>
+              <m:mover>
+                <m:mi>a</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+          <m:mi>y</m:mi>
+        </m:msub>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>)</m:mo>
+        </m:mrow>
+      </m:math> oraz <m:math>
+      <m:msub>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>a</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mi>z</m:mi>
+      </m:msub>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo>
+      </m:mrow>
+    </m:math> wzdłuż trzech kierunków <m:math>
+      <m:mi>x</m:mi>
+    </m:math>, <m:math>
+    <m:mi>y</m:mi>
+  </m:math>
+ i <m:math>
+  <m:mi>z</m:mi>
+</m:math>. </item>
+<item> Kinematyczne równania ruchu jednostajnie zmiennego (ze stałym przyspieszeniem) możemy zapisać jako wektorową sumę równań jednowymiarowych dla kierunków <m:math>
+    <m:mi>x</m:mi>
+  </m:math>, <m:math>
+  <m:mi>y</m:mi>
+</m:math>
+ i <m:math>
+  <m:mi>z</m:mi>
+</m:math>. </item>
+</list></section>
+<section id="fs-id1165038328836" class="review-conceptual-questions">
+  <title>Pytania </title>
+  <exercise id="fs-id1165038328843">
+    <problem id="fs-id1165038328845">
+      <para id="fs-id1165038328848">Jeżeli położenie cząstki dane jest liniową funkcją czasu, to co możemy powiedzieć o jej przyspieszeniu?</para>
+    </problem>
+  </exercise>
+  <exercise id="fs-id1165038328860">
+    <problem id="fs-id1165038328862">
+      <para id="fs-id1165038328865">Jeżeli ciało porusza się z prędkością o stałej wartości składowej <m:math>
+          <m:mi>x</m:mi>
+        </m:math>
+       i nagle doznaje przyspieszenia w kierunku <m:math>
+        <m:mi>y</m:mi>
+      </m:math>, to czy składowa <m:math>
+      <m:mi>x</m:mi>
+    </m:math>
+     prędkości się zmienia?</para>
+  </problem>
+  <solution id="fs-id1165038328884">
+    <para id="fs-id1165038328887">Nie. Ruchy w kierunkach prostopadłych są od siebie niezależne.</para>
+  </solution>
+</exercise>
+<exercise id="fs-id1165038328892">
+  <problem id="fs-id1165038328894">
+    <para id="fs-id1165038328896">Jeżeli ciało ma stałą wartość składowej <m:math>
+        <m:mi>x</m:mi>
+      </m:math>
+     prędkości i nagle doznaje przyspieszenia pod kątem 70° do kierunku <m:math>
+      <m:mi>x</m:mi>
+    </m:math>, to czy składowa <m:math>
+    <m:mi>x</m:mi>
+  </m:math>
+   prędkości ulegnie zmianie?</para>
+</problem>
+</exercise>
+</section>
+<section id="fs-id1165038328937" class="review-problems">
+  <title>Zadania</title>
+  <exercise id="fs-id1165038328945">
+    <problem id="fs-id1165038328947">
+      <para id="fs-id1165038328949">Położenie cząstki dane jest funkcją czasu <m:math>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>3,0</m:mn>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>5,0</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>6,0</m:mn>
+            <m:mi>t</m:mi>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>k</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:mtext>m</m:mtext>
+        <m:mo>.</m:mo>
+      </m:math>
+      <list id="eip-idm424728912" list-type="enumerated" number-style="lower-alpha">
+	   <item>Określ jaką funkcją czasu są prędkość i położenie cząstki.</item>
+        <item> Jakie są prędkość i przyspieszenie początkowe cząstki (w chwili <m:math>
+            <m:mi>t</m:mi>
+			<m:mo>=</m:mo>
+			<m:mn>0</m:mn>
+          </m:math>?</item>
+        </list>
+      </para>
+    </problem>
+  </exercise>
+  <exercise id="fs-id1165038340004">
+    <problem id="fs-id1165038340006">
+      <para id="fs-id1165038340008">Wektor przyspieszenia cząstki jest następujący <m:math>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>4,0</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>3,0</m:mn>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:msup>
+          <m:mtext>m/s</m:mtext>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>.</m:mo>
+      </m:math> W chwili <m:math>
+        <m:mi>t</m:mi>
+      </m:math>
+     = 0 jej położenie i prędkość są równe zeru. <list id="eip-idm2350243552" list-type="enumerated" number-style="lower-alpha">
+    <item> Jaką funkcją czasu są położenie i prędkość cząstki? </item>
+    <item> Znajdź równanie toru cząstki w ruchu na płaszczyźnie. Naszkicuj trajektorię cząstki na płaszczyźnie <m:math>
+        <m:mi>x</m:mi>
+        <m:mi>y</m:mi>
+      </m:math>. </item>
+    </list>
+  </para>
+</problem>
+<solution id="fs-id1165038340090">
+  <list id="fs-id1165038340092" list-type="enumerated" number-style="lower-alpha"><item>
+      <m:math>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>v</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>4,0</m:mn>
+            <m:mi>t</m:mi>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>3,0</m:mn>
+            <m:mi>t</m:mi>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:mtext>m/s</m:mtext>
+        <m:mn>,</m:mn>
+        <m:mspace width="1em"/>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>2,0</m:mn>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mn>3</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:mtext>m</m:mtext>
+        <m:mo>;</m:mo>
+      </m:math>
+    </item>
+    <item>
+      <m:math>
+        <m:mi>x</m:mi>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:msup>
+<m:mn>2,00</m:mn>
+          <m:mi>t</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+<m:mspace width="0.2em"/>
+        <m:mtext>m</m:mtext>
+        <m:mn>,</m:mn>
+        <m:mspace width="1em"/>
+        <m:mi>y</m:mi>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mn>3</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:msup>
+          <m:mi>t</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+<m:mspace width="0.2em"/>
+        <m:mtext>m</m:mtext>
+        <m:mn>,</m:mn>
+        <m:mspace width="1em"/>
+        <m:msup>
+          <m:mi>t</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mi>x</m:mi>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+<m:mspace width="0.2em"/>
+        <m:mo stretchy="false">⇒</m:mo>
+<m:mspace width="0.2em"/>
+<m:mi>y</m:mi>
+<m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mn>3</m:mn>
+          <m:mn>4</m:mn>
+        </m:mfrac>
+        <m:mi>x</m:mi>
+        <m:mo>.</m:mo>
+      </m:math>
+      <newline/>
+      <media id="fs-id1165038298639" alt="Wykres funkcji liniowej y równa się trzy czwarte x jest linią prostą o dodatnim nachyleniu, przechodzącą przez początek układu.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_04_02_Ex5_img.jpg"/>
+      </media>
+    </item>
+  </list></solution>
+</exercise>
+<exercise id="fs-id1165038298654">
+  <problem id="fs-id1165038298657">
+    <para id="fs-id1165038298659">Łódka opuszcza przystań w momencie <m:math>
+        <m:mi>t</m:mi>
+      </m:math>
+     = 0 i kieruje się na otwarte jezioro z przyspieszeniem <m:math>
+    <m:mn>2,0</m:mn>
+    <m:mrow>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+    </m:mrow>
+    <m:mspace width="0.2em"/>
+    <m:msup>
+      <m:mtext>m/s</m:mtext>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>.</m:mo>
+  </m:math> Silny wiatr spycha łódkę z kursu, nadając jej dodatkową prędkość <m:math>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mn>2,0</m:mn>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>i</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mn>1,0</m:mn>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>j</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+  <m:mspace width="0.2em"/>
+  <m:mtext>m/s</m:mtext>
+  <m:mo>.</m:mo>
+</m:math>
+</para>
+<para id="ked-1bpla6vb8_s2o">
+  <list id="eip-idm437645120" list-type="enumerated" number-style="lower-alpha"><item>Jaką prędkość wypadkowo uzyska łódka po czasie <m:math>
+    <m:mi>t</m:mi>
+  </m:math> = 10 s?</item>
+    <item> Jakie jest położenie łódki po czasie <m:math>
+        <m:mi>t</m:mi>
+      </m:math>
+     = 10 s? Naszkicuj wykres zależności <m:math>
+      <m:mi>y</m:mi>
+    </m:math>
+   od <m:math>
+    <m:mi>x</m:mi>
+  </m:math>, na którym przedstawisz tor ruchu łódki od startu do <m:math display="inline"><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>10</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>, oraz wykres składowych <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ i <m:math>
+  <m:mi>y</m:mi>
+</m:math>
+ położenia w funkcji czasu przez pierwsze 10 s ruchu. </item>
+</list></para>
+</problem>
+</exercise>
+<exercise id="fs-id1165038303902">
+  <problem id="fs-id1165038303904">
+    <para id="fs-id1165038303906">Położenie cząstki dla <m:math>
+        <m:mi>t</m:mi>
+      </m:math>
+     &gt; 0 jest dane wektorem <m:math>
+    <m:mrow>
+      <m:mrow>
+        <m:mover>
+          <m:mi>r</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:mrow>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mn>3,0</m:mn>
+        <m:msup>
+          <m:mi>t</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>7,0</m:mn>
+        <m:msup>
+          <m:mi>t</m:mi>
+          <m:mn>3</m:mn>
+        </m:msup>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>5,0</m:mn>
+        <m:msup>
+          <m:mi>t</m:mi>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>2</m:mn>
+          </m:mrow>
+        </m:msup>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>k</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mspace width="0.2em"/>
+    <m:mtext>m</m:mtext>
+    <m:mo>.</m:mo>
+  </m:math>
+</para>
+
+<para id="ked-1bpla6vau_svg">
+  <list id="eip-idm1584620912" list-type="enumerated" number-style="lower-alpha"><item>Podaj zależność prędkości cząstki od czasu.</item>
+    <item> Jaką zależnością od czasu dane jest przyspieszenie? </item>
+    <item> Jaka jest prędkość cząstki w chwili <m:math display="inline"><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>2,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>? </item>
+      <item> Oblicz szybkość cząstki w momentach <m:math display="inline"><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>1,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math> oraz <m:math display="inline"><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>3,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>. </item>
+      <item> Z jaką średnią prędkością poruszała się cząstka między <m:math display="inline"><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>1,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math> oraz <m:math display="inline"><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>2,0</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>? </item>
+    </list></para>
+</problem>
+<solution id="fs-id1165038304047">
+  <list id="fs-id1165038304049" list-type="enumerated" number-style="lower-alpha"><item>
+      <m:math>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>v</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>6,0</m:mn>
+            <m:mi>t</m:mi>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>21,0</m:mn>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>10,0</m:mn>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>3</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>k</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:mtext>m/s</m:mtext>
+        </m:math>, </item>
+        <item>
+          <m:math>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>a</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mn>6,0</m:mn>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>i</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>42,0</m:mn>
+                <m:mi>t</m:mi>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>j</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>–</m:mo>
+                <m:mn>30,0</m:mn>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:msup>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>k</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="0.2em"/>
+            <m:msup>
+              <m:mtext>m/s</m:mtext>
+              <m:mn>2</m:mn>
+            </m:msup>
+            </m:math>, </item>
+            <item>
+              <m:math>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>v</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>2,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>s</m:mtext>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>12,0</m:mn>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>i</m:mi>
+                          <m:mo stretchy="false">^</m:mo>
+                        </m:mover>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>84,0</m:mn>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>j</m:mi>
+                          <m:mo stretchy="false">^</m:mo>
+                        </m:mover>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mn>1,25</m:mn>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>k</m:mi>
+                          <m:mo stretchy="false">^</m:mo>
+                        </m:mover>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mspace width="0.2em"/>
+                <m:mtext>m/s</m:mtext>
+                </m:math>,</item>
+                <item>
+                  <m:math>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>v</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mn>1,0</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mtext>s</m:mtext>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mn>6,0</m:mn>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mover>
+                              <m:mi>i</m:mi>
+                              <m:mo stretchy="false">^</m:mo>
+                            </m:mover>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>21,0</m:mn>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mover>
+                              <m:mi>j</m:mi>
+                              <m:mo stretchy="false">^</m:mo>
+                            </m:mover>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo>+</m:mo>
+                        <m:mn>10,0</m:mn>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mover>
+                              <m:mi>k</m:mi>
+                              <m:mo stretchy="false">^</m:mo>
+                            </m:mover>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>m/s</m:mtext>
+                    <m:mn>,</m:mn>
+                    <m:mspace width="1em"/>
+                    <m:mrow>
+                      <m:mo stretchy="false">|</m:mo>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>v</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mn>1,0</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mtext>s</m:mtext>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo stretchy="false">|</m:mo>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mn>24,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>m/s</m:mtext>
+                    </m:math>,
+                    <newline/>
+<m:math>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>v</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mn>3,0</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mtext>s</m:mtext>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mn>18,0</m:mn>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mover>
+                              <m:mi>i</m:mi>
+                              <m:mo stretchy="false">^</m:mo>
+                            </m:mover>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>189,0</m:mn>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mover>
+                              <m:mi>j</m:mi>
+                              <m:mo stretchy="false">^</m:mo>
+                            </m:mover>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo>+</m:mo>
+                        <m:mn>0,4</m:mn>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mover>
+                              <m:mi>k</m:mi>
+                              <m:mo stretchy="false">^</m:mo>
+                            </m:mover>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>m/s</m:mtext>
+                    <m:mn>,</m:mn>
+                    <m:mspace width="1em"/>
+                    <m:mrow>
+                      <m:mo stretchy="false">|</m:mo>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>v</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mn>3,0</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mtext>s</m:mtext>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo stretchy="false">|</m:mo>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mn>189,9</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>m/s</m:mtext>
+                    </m:math>,
+</item>
+                    <item>
+                      <m:math>
+                        <m:msub>
+<m:mrow>
+<m:mover>
+
+                          <m:mi>v</m:mi>
+<m:mtext>→</m:mtext>
+</m:mover>
+</m:mrow>
+                          <m:mtext>śr</m:mtext>
+
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mrow>
+                            <m:mn>9,0</m:mn>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mover>
+                                  <m:mi>i</m:mi>
+                                  <m:mo stretchy="false">^</m:mo>
+                                </m:mover>
+                              </m:mrow>
+                            </m:mrow>
+                            <m:mo>−</m:mo>
+                            <m:mn>49,0</m:mn>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mover>
+                                  <m:mi>j</m:mi>
+                                  <m:mo stretchy="false">^</m:mo>
+                                </m:mover>
+                              </m:mrow>
+                            </m:mrow>
+                            <m:mo>+</m:mo>
+                            <m:mn>3,8</m:mn>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mover>
+                                  <m:mi>k</m:mi>
+                                  <m:mo stretchy="false">^</m:mo>
+                                </m:mover>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mspace width="0.2em"/>
+                        <m:mtext>m/s</m:mtext>
+                        <m:mo>.</m:mo>
+                      </m:math>
+                    </item>
+                  </list></solution>
+              </exercise>
+              <exercise id="fs-id1165038334612">
+                <problem id="fs-id1165038334614">
+                  <para id="fs-id1165038334616">
+                    <span>Cząstka porusza się ze stałym przyspieszeniem. W czasie </span>
+                    <m:math>
+                        <m:mi>t</m:mi>
+                      </m:math>
+                    
+                    <span> = 0 cząstka ma prędkość <m:math>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mn>10</m:mn>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mover>
+                                <m:mi>i</m:mi>
+                                <m:mo stretchy="false">^</m:mo>
+                              </m:mover>
+                            </m:mrow>
+                          </m:mrow>
+                          <m:mo>+</m:mo>
+                          <m:mn>20</m:mn>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mover>
+                                <m:mi>j</m:mi>
+                                <m:mo stretchy="false">^</m:mo>
+                              </m:mover>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mspace width="0.2em"/>
+                      <m:mtext>m/s</m:mtext>
+                      <m:mo>.</m:mo>
+                    </m:math>
+                  </span>
+                  <span> W chwili </span>
+                  <m:math>
+                      <m:mi>t</m:mi>
+                    </m:math>
+                  
+                  <span> = 4 s cząstka ma już prędkość <m:math>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>j</m:mi>
+                          <m:mo stretchy="false">^</m:mo>
+                        </m:mover>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>m/s</m:mtext>
+                    <m:mo>.</m:mo>
+                  </m:math>
+                </span>
+                <list id="eip-idm2071821952" list-type="enumerated" number-style="lower-alpha">
+                  <item>Z jakim przyspieszeniem porusza się cząstka?</item>
+                  <item>Jak zmieniają się w czasie położenie i prędkość? Załóż, że początkowo cząstka znajdowała się w początku układu współrzędnych.</item>
+                </list>
+              </para>
+			  </problem>
+			  </exercise>
+			  <exercise id="fs-id1165038303652">
+<problem id="fs-id1165038303654">
+<para id="fs-id1165038303656">
+			  Zależność położenia cząstki od czasu jest następująca <m:math>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>r</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mi>cos</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>1,0</m:mn>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>i</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mi>sin</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>1,0</m:mn>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>j</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mi>t</m:mi>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>k</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mn>,</m:mn>
+                </m:math> gdzie argumenty funkcji sinus i cosinus podano w radianach. (a) Podaj postać wektora prędkości. (b) Jaki jest wektor przyspieszenia cząstki?</para>
+              </problem>
+              <solution id="fs-id1165038303762">
+                <list id="fs-id1165038303764" list-type="enumerated" number-style="lower-alpha">
+                  <item>
+                    <m:math>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>v</m:mi>
+                            <m:mtext>→</m:mtext>
+                          </m:mover>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>t</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mo>−</m:mo>
+                      <m:mi>sin</m:mi>
+                      <m:mo>⁡</m:mo>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mn>1,0</m:mn>
+                          <m:mi>t</m:mi>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>i</m:mi>
+                            <m:mo stretchy="false">^</m:mo>
+                          </m:mover>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>+</m:mo>
+                      <m:mi>cos</m:mi>
+                      <m:mo>⁡</m:mo>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mn>1,0</m:mn>
+                          <m:mi>t</m:mi>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>j</m:mi>
+                            <m:mo stretchy="false">^</m:mo>
+                          </m:mover>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>+</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>k</m:mi>
+                            <m:mo stretchy="false">^</m:mo>
+                          </m:mover>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mn>,</m:mn>
+                    </m:math>
+                  </item>
+                  <item>
+                    <m:math>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>a</m:mi>
+                            <m:mtext>→</m:mtext>
+                          </m:mover>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mi>t</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mo>−</m:mo>
+                      <m:mi>cos</m:mi>
+                      <m:mo>⁡</m:mo>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mn>1,0</m:mn>
+                          <m:mi>t</m:mi>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>i</m:mi>
+                            <m:mo stretchy="false">^</m:mo>
+                          </m:mover>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mi>sin</m:mi>
+                      <m:mo>⁡</m:mo>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mn>1,0</m:mn>
+                          <m:mi>t</m:mi>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>j</m:mi>
+                            <m:mo stretchy="false">^</m:mo>
+                          </m:mover>
+                        </m:mrow>
+                      </m:mrow>
+                      </m:math>.</item>
+                    </list>
+                  </solution>
+                </exercise>
+                <exercise id="fs-id1165038305798">
+                  <problem id="fs-id1165038305800">
+                    <para id="fs-id1165038305802">Myśliwiec F-35 Lightning II musi osiągnąć szybkość 70 m/s, by wystartować z krótkiego pasa lotniskowca o długości 90 m. Aby to się udało, odrzutowiec jest wystrzeliwany w powietrze przy pomocy dwóch napędów: siły odrzutu silnika samolotu oraz katapulty, dzięki czemu może uzyskać ogromne przyspieszenie. W końcowej fazie startu przyspieszenie F-35 spada do ustalonej wartości 5,0 m/s<sup>2</sup> i jest skierowane pod kątem 30° względem pokładu lotniskowca. <list id="eip-idm293045072" list-type="enumerated" number-style="lower-alpha">
+                      <item> Jaka musi być początkowa wartość przyspieszenia F-35 na pokładzie lotniskowca, aby ten wzniósł się w powietrze? </item>
+                      <item> Napisz wektorowe równania ruchu odrzutowca, przyjmując za punkt odniesienia moment oderwania się od pasa startowego (zapisz składowe wektorów położenia i prędkości w tak wybranym układzie współrzędnych). </item>
+                      <item> Na jaką wysokość wzniesie się myśliwiec w ciągu 5,0 s od momentu oderwania się od pokładu lotniskowca? </item>
+                      <item> Jaka jest wówczas jego prędkość i szybkość? </item>
+                      <item> Jak daleko w poziomie oddali się wtedy od lotniskowca? </item>
+                    </list>
+                  </para>
+                </problem>
+              </exercise>
+            </section>
+          </content>
+          <glossary>
+            <definition id="fs-id1165038340465">
+              <term cmlnle:reference="wektor przyspieszenia" class="no-emphasis">wektor przyspieszenia (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">acceleration vector</term></foreign>)</term>
+              <meaning id="fs-id1165038340471"> przyspieszenie chwilowe obliczone jako pochodna wektora prędkości po czasie w zapisie wektorowym z użyciem wersorów osi układu współrzędnych</meaning>
+            </definition>
+          </glossary>
+        </document>

@@ -1,0 +1,2103 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Spadek swobodny i rzut pionowy</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65752</md:content-id>
+  <md:title>Spadek swobodny i rzut pionowy</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item> używać kinematycznych równań ruchu ze stałym przyspieszeniem ziemskim do analizy spadku swobodnego i rzutu pionowego; </item>
+<item> opisywać zmiany położenia, prędkości i przyspieszania w czasie dla spadku swobodnego i rzutu pionowego; </item>
+<item> obliczać położenie, wysokość, prędkość i przyspieszenie w dowolnej chwili spadku swobodnego i rzutu pionowego. </item>
+</list></md:abstract>
+  <md:uuid>23d1adc0-5cd7-4746-b08b-44bba6b950d4</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1168328059538">W tej sekcji zajmiemy się zastosowaniem równań <link target-id="fs-id1168329153584" document="m65748"/>–<link target-id="fs-id1168326834410" document="m65750"/> do opisu ruchu zwanego <emphasis effect="italics">spadkiem swobodnym</emphasis>, w którym ciało porusza się w polu grawitacyjnym wytwarzanym w pobliżu powierzchni Ziemi albo innego ciała niebieskiego o rozmiarze planet. Zakładamy, że ciało porusza się po linii prostej, zatem jego ruch jest jednowymiarowy. Jako przykład spadku swobodnego możemy rozważyć ruch kamienia upuszczonego do głębokiego szybu kopalnianego, gdy nasłuchujemy odgłosu upadku kamienia na dno. W tej sekcji zajmiemy się nie tylko spadaniem, kiedy ciało przemieszcza się od większej wysokości do mniejszej, ale też <emphasis effect="italics">rzutami pionowymi</emphasis>, np. ruchem piłki rzuconej w górę. Mianem spadku swobodnego czasem określa się każdy ruch pionowy w polu grawitacyjnym, czyli zarówno ruch bez prędkości początkowej (spadek), jak i z prędkością początkową (rzut pionowy). My jednak będziemy rozdzielać te dwa przypadki i spadkiem swobodnym nazywać tylko ruch w polu grawitacyjnym bez prędkości początkowej. Ogólne równania ruchu w spadku są niemal takie same jak w rzucie pionowym w dół, różnią się jedynie wartością prędkości początkowej. W rzucie pionowym do góry dodatkowo zwrot prędkości początkowej jest przeciwny do zwrotu wektora przyspieszenia grawitacyjnego.</para><section id="fs-id1168327990156">
+    <title>Przyspieszenie grawitacyjne</title>
+    <para id="fs-id1168325667499">Charakterystycznym i nieoczywistym faktem dotyczącym spadających obiektów, przy pominięciu oporu powietrza i tarcia, jest to, że wszystkie spadają z danej wysokości w kierunku środka Ziemi z <emphasis effect="italics">jednakowym stałym przyspieszeniem, niezależnie od masy i rozmiarów</emphasis>. Ten doświadczalny fakt jest na pierwszy rzut oka dla nas nieoczywisty, bo na co dzień doświadczamy oporów powietrza nieuchronnie, przez co wydaje się nam, że lekkie ciała muszą spadać wolniej niż ciężkie. Aż do czasów <term class="no-emphasis" cxlxt:name="Galileusz" cxlxt:born="+01564" cxlxt:died="+01642" cxlxt:index="name" cmlnle:reference="Galileusz (1564–1642)">Galileusza</term> (1564–1642) ludzie wierzyli, że ciała o większej masie mają większe przyspieszenie w spadku swobodnym. Dziś wiemy, że nie jest to prawdą. W warunkach próżni (bez oporu powietrza) wszystkie ciała spadają z tej samej wysokości na powierzchnię dokładnie w tym samym czasie – spójrz na <link target-id="CNX_UPhysics_03_05_Gravity" cmlnle:case="nominative"/>.</para><figure id="CNX_UPhysics_03_05_Gravity"><media id="fs-id1168328222641" alt="Lewy obrazek pokazuje młotek i piórko opadające w powietrzu. Młotek jest niżej niż piórko. Środkowy obrazek pokazuje młotek i piórko opadające w próżni. Młotek i piórko są na tej samej wysokości. Prawy obrazek pokazuje astronautę na powierzchni Księżyca w młotkiem i piórkiem leżącymi na podłożu.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_05_Gravity.jpg"/>
+      </media>
+      
+    <caption>Młotek i piórko rzucone w próżni (bez oporu powietrza) doznają tego samego przyspieszenia. Jest to cecha spadku swobodnego nie tylko na Ziemi, czego astronauta David Scott dowiódł w 1971 roku na Księżycu, gdzie przyspieszenie grawitacyjne wynosi tylko <m:math display="inline"><m:mn>1,67</m:mn><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>/</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> i nie ma atmosfery.</caption></figure><para id="fs-id1168328332010">W rzeczywistym świecie <term cmlnle:reference="opór powietrza" class="no-emphasis">opory powietrza</term> powodują, że lżejsze obiekty spadają wolniej niż obiekty o tych samych rozmiarach, ale cięższe. Siła oporu zależy m. in. od przekroju poprzecznego danego ciała. Na przykład futbolówka upadnie pierwsza przed piłką gumową o tym samym rozmiarze, ale mniejszym ciężarze, mimo że zostały upuszczone z tej samej wysokości (to może być trudne do dostrzeżenia, jeśli wysokość jest niewielka). Opory powietrza zawsze przeciwdziałają ruchowi ciała w powietrzu. Podobnie tarcie między powierzchniami styku dwóch ciał – np. kamienia i wody w jeziorze czy opony i asfaltu – przeciwdziała ruchowi ciał.</para><para id="fs-id1168328066720">W wyidealizowanych przypadkach rozpatrywanych w początkowych rozdziałach podręcznika, gdy pomijamy opory i tarcie, <emphasis effect="italics">spadek ciała w polu grawitacyjnym</emphasis> nazywamy <term class="no-emphasis" cmlnle:reference="spadek swobodny">spadkiem swobodnym</term>. Przyczyną ruchu ciał spadających w kierunku środka Ziemi jest siła grawitacji. Przyspieszenie, które jest rezultatem występowania tej siły, nazywamy <term class="no-emphasis" cmlnle:reference="przyspieszenie grawitacyjne">przyspieszeniem grawitacyjnym</term>. Przyspieszenie grawitacyjne jest zawsze stałe i równe dla wszystkich ciał, o ile spadek odbywa się w pobliżu powierzchni Ziemi, dlatego możemy go użyć w kinematycznych równaniach ruchu wszystkich ciał poruszających się w polu grawitacyjnym Ziemi. Dzięki tej własności potrafimy analizować całą gamę ciekawych przypadków ruchu.</para>
+    <para id="fs-id1168328327109">Przyspieszenie grawitacyjne jest na tyle ważną wielkością fizyczną, że przypisujemy jej własny symbol <m:math>
+      <m:mi>g</m:mi>
+      </m:math>. Jego wartość jest stała (niezmienna w czasie) w każdym punkcie na Ziemi i dla całej kuli ziemskiej wynosi średnio</para>
+      <equation id="fs-id1168325737439" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mi>g</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>9,81</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:msup>
+              <m:mi mathvariant="normal">s</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="fs-id1168325674483">Tak naprawdę <m:math>
+        <m:mi>g</m:mi>
+      </m:math> zmienia się od <m:math>
+      <m:mn>9,78</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:msup>
+          <m:mi mathvariant="normal">s</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+    </m:math> do <m:math>
+    <m:mn>9,83</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:msup>
+        <m:mi mathvariant="normal">s</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+  </m:math> w zależności od szerokości geograficznej, wysokości nad powierzchnią Ziemi, struktury geologicznej Ziemi w danym obszarze, lokalnej topografii terenu itp. Mimo to, dla potrzeb tego podręcznika przyjmiemy średnią wartość typową dla obszaru Polski równą <m:math>
+  <m:mn>9,81</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">m</m:mi>
+    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+    <m:msup>
+      <m:mi mathvariant="normal">s</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+  </m:mrow>
+</m:math>, której będziemy używać we wszystkich zadaniach, o ile nie zasygnalizujemy, że jest inaczej. Jeśli pominiemy wszystkie te wymienione powyżej efekty, a także wpływ ruchu obrotowego Ziemi na wielkość przyspieszenia ciał, możemy dodatkowo przyjąć za kierunek wektora przyspieszenia grawitacyjnego – kierunek „w dół” (czyli do środka Ziemi). W istocie, sformułowanie <emphasis effect="italics">kierunek pionowy</emphasis> jest zdefiniowane przez kierunek <m:math>
+<m:mi>g</m:mi>
+</m:math>. Pamiętaj, że przyspieszenie <m:math>
+<m:mi>a</m:mi>
+</m:math>, które będziemy wstawiać do równań ruchu, może mieć wartość <m:math>
+<m:mo>+</m:mo>
+<m:mi>g</m:mi>
+</m:math> lub <m:math>
+<m:mo>−</m:mo>
+<m:mi>g</m:mi>
+</m:math>, w zależności od przyjętego układu współrzędnych. Jeśli przyjmiemy kierunek „do góry” jako dodatni, to <m:math>
+<m:mi>a</m:mi>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:mi>g</m:mi>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:mn>9,81</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">m</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:msup>
+    <m:mi mathvariant="normal">s</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math>, natomiast jeśli dodatni będzie kierunek „w dół”, to <m:math>
+<m:mi>a</m:mi>
+<m:mo>=</m:mo>
+<m:mi>g</m:mi>
+<m:mo>=</m:mo>
+<m:mn>9,81</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">m</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:msup>
+    <m:mi mathvariant="normal">s</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math>.</para></section>
+<section id="fs-id1168328201399">
+  <title>Ruch jednowymiarowy w polu grawitacyjnym</title>
+  <para id="fs-id1168328298217">W ruchu pionowym ciał pod wpływem przyspieszenia grawitacyjnego będziemy konsekwentnie pomijać wpływ oporu powietrza i tarcia. Oznacza to, że wektor prędkości będzie zawsze skierowany pionowo (do góry lub w dół). Jeżeli ciało zostało upuszczone z pewnej wysokości, to jego prędkość początkowa wynosi zero (dotyczy spadku swobodnego). Jeśli ciało zostało rzucone (w górę lub w dół), to ma prędkość początkową, której wartość i kierunek musimy uwzględnić w równaniach ruchu. Zakładamy, że prędkość początkowa, jaką nadano rzuconemu ciału, jest taka sama w momencie tuż po wyrzuceniu ciała w powietrze (np. tuż po opuszczeniu ręki rzucającego lub lufy karabinu). Innymi słowy, jest to ta sama prędkość, jaką ma ciało już w ruchu, bez kontaktu z jakimkolwiek innym ciałem. Położenie ciała jest tym razem mierzone w pionie, a nie tak jak zazwyczaj dotąd – w poziomie, dlatego oznaczymy je przez <m:math>
+    <m:mi>y</m:mi>
+    </m:math>.</para><note id="fs-id1168328198469">
+      <title>Równania ruchu w spadku swobodnym i rzucie pionowym</title>
+      <para id="fs-id1168328323260"> Przyjmujemy, że przyspieszenie wynosi <m:math>
+        <m:mo>−</m:mo>
+        <m:mi>g</m:mi>
+        </m:math> (dodatni kierunek jest zdefiniowany w górę).</para>
+        <equation id="fs-id1168328328571">
+          <m:math>
+            <m:mi>v</m:mi>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>−</m:mo>
+            <m:mi>g</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>,</m:mo>
+          </m:math>
+        </equation>
+        <equation id="fs-id1168327858521">
+          <m:math>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>y</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mi>t</m:mi>
+            <m:mo>−</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mi>g</m:mi>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>,</m:mo>
+          </m:math>
+        </equation>
+        <equation id="fs-id1168328282779">
+          <m:math>
+            <m:msup>
+              <m:mi>v</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:msubsup>
+              <m:mi>v</m:mi>
+              <m:mn>0</m:mn>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mo>−</m:mo>
+            <m:mn>2</m:mn>
+            <m:mi>g</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>y</m:mi>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>y</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+      </note>
+      <note id="fs-id1168327878077" class="problem-solving"><title>Strategia rozwiązywania zadań: spadek swobodny i rzut pionowy</title><list id="fs-id1168328364214" list-type="enumerated" number-style="arabic">
+          <item> Wybierz znak przyspieszenia grawitacyjnego. W równaniach <link target-id="fs-id1168328328571"/> - <link target-id="fs-id1168328282779"/> znak <m:math>
+            <m:mi>g</m:mi>
+          </m:math> jest ujemny, co oznacza, że dodatni kierunek wybrano do góry, podczas gdy grawitacja działa w dół. W niektórych przypadkach warto jednak zdefiniować kierunek w dół jako dodatni, wtedy <m:math>
+          <m:mi>g</m:mi>
+          </m:math> ma znak +. </item>
+          <item> Naszkicuj sytuację fizyczną. </item>
+          <item> Z treści zadania wynotuj dane i szukane. To może pomóc w wyborze równania ruchu odpowiedniego do obliczenia konkretnej niewiadomej. </item>
+          <item> Wybierz prawidłowe równanie spośród <link target-id="fs-id1168328328571"/> - <link target-id="fs-id1168328282779"/> do wyliczenia niewiadomych. </item>
+        </list>
+      </note><example id="fs-id1168328199305">
+        <para id="fs-id1168328070696">
+          <title>Rzut pionowy piłki</title>
+          <link target-id="CNX_UPhysics_03_05_Building"/> pokazuje położenia piłki w 1-sekundowych odstępach czasu, rzuconej z prędkością początkową 4,9 m/s pionowo w dół z dachu budynku o wysokości 98 m. <list id="eip-idm451045264" list-type="enumerated" number-style="lower-alpha">
+          <item> Po jakim czasie piłka dotrze do ziemi? </item>
+          <item> Z jaką prędkością upadnie na ziemię? </item>
+        </list>
+      </para>
+      <figure id="CNX_UPhysics_03_05_Building">
+        <media id="fs-id1168328180500" alt="Rysunek pokazuje piłkę rzuconą w dół z wysokiego budynku z prędkością -4,9 metra na sekundę. Po jednej sekundzie piłka jest niżej o 9,8 metra i ma prędkość -14,7. Po dwóch sekundach piłka jest niżej o 29,4 metra od dachu i ma prędkość -24,5. Po trzech sekundach piłka jest 58,8 metra poniżej i ma prędkość -34,5. Po czterech sekundach piłka jest 98 metrów niżej i ma prędkość -44,1.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_05_Building.jpg"/>
+        </media>
+        <caption>Położenia i prędkości piłki rzuconej pionowo w dół z szybkością 4,9 m/s, mierzone w odstępach 1-sekundowych.</caption>
+      </figure>
+      <para id="fs-id1168327893349"><title>Strategia rozwiązania</title>Obieramy układ współrzędnych, w taki sposób, że jego początek znajduje się w dowolnym punkcie dachu, natomiast dodatnia półoś <m:math><m:mi>y</m:mi></m:math> skierowana jest w górę, a ujemna – w dół. Do obliczenia czasu, po którym położenie piłki wyniesie –98 m, użyjemy <link target-id="fs-id1168327858521" cmlnle:case="genitive"/>, kładąc <m:math>
+          <m:msub>
+            <m:mi>y</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+        </m:math>, <m:math>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mo>−</m:mo>
+        <m:mn>4,9</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+      </m:math> oraz <m:math>
+      <m:mi>g</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>9,81</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:msup>
+          <m:mi mathvariant="normal">s</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      </m:math>.</para><para id="fs-id1168328290350">
+        <title>Rozwiązanie</title>
+      </para>
+      <list id="fs-id1168328318327" list-type="enumerated" number-style="lower-alpha"><item>Wstawiamy dane do równania:<equation id="fs-id1168328064579" class="unnumbered">
+          <m:math>
+            <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+              <m:mtr>
+                <m:mtd>
+                  <m:mi>y</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mi/>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mi>t</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mi>g</m:mi>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>,</m:mo>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd>
+                  <m:mo>−</m:mo>
+                  <m:mn>98,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mi/>
+                  <m:mo>=</m:mo>
+                  <m:mn>0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mn>4,9</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>⋅</m:mo>
+                  <m:mn>9,81</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:msup>
+                      <m:mi mathvariant="normal">s</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>.</m:mo>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <newline/>Po uproszczeniach otrzymujemy:<newline/>
+        <equation id="fs-id1168325660674" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mrow>
+              <m:msup>
+                <m:mi>t</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>−</m:mo>
+              <m:mn>20</m:mn>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <newline/>To równanie kwadratowe ma dwa pierwiastki: <m:math>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mo>−</m:mo>
+        <m:mn>5,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+      </m:math> oraz <m:math>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>4,0</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+    </m:math>. Interesuje nas tylko dodatnie rozwiązanie, bo przyjęliśmy <m:math>
+    <m:mrow>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:mrow>
+  </m:math> jako czas, gdy piłka została rzucona z dachu. (Rozwiązanie <m:math>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mo>−</m:mo>
+  <m:mn>5,0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">s</m:mi>
+  </m:mrow>
+  </m:math> jest w istocie czasem, po którym piłka rzucona z ziemi pionowo do góry z odpowiednią prędkością przeleci na wysokości dachu z szybkością 4,9 m/s już w swoim locie w dół – po osiągnięciu wysokości maksymalnej i zawróceniu).</item>
+  <item> Korzystając z <link target-id="fs-id1168328328571" cmlnle:case="genitive"/>, łatwo znajdziemy prędkość końcową<newline/>
+    <equation id="fs-id1168328307683" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mi>v</m:mi>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>−</m:mo>
+        <m:mi>g</m:mi>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mo>−</m:mo>
+        <m:mn>4,9</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>9,81</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:msup>
+            <m:mi mathvariant="normal">s</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mn>4,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mo>−</m:mo>
+        <m:mn>44,1</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+  </item>
+</list><para id="fs-id1168327872094"><title>Znaczenie</title>W przypadkach, gdy równanie kwadratowe ma dwa rozwiązania, aby wybrać poprawne, musimy zastanowić się nad fizycznym sensem każdego z nich. Skoro wybraliśmy <m:math>
+    <m:mrow>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:mrow>
+  </m:math> jako czas, w którym piłka rozpoczęła swój ruch, rozwiązanie ujemne oznacza czas przed wyrzuceniem piłki, który nie ma dla nas fizycznego znaczenia. Zwróć uwagę, że w rzeczywistości gdy piłka uderza w ziemię, jej prędkość nie spada natychmiastowo do zera. Od momentu kontaktu piłki z podłożem przez chwilę do całkowitego zatrzymania piłki działa na nią przyspieszenie inne niż <m:math>
+  <m:mi>g</m:mi>
+</m:math>. Zauważ też, jak ważny jest prawidłowy wybór początku i kierunku osi układu współrzędnych oraz konsekwentny wybór znaków <m:math>
+<m:mi>g</m:mi>
+</m:math> w równaniach ruchu.</para></example>
+<example id="fs-id1168328253686">
+  <para id="fs-id1168327961362">
+    <title>Ruch piłki baseballowej w pionie</title>Pałkarz uderza piłkę tak, że leci ona pionowo w górę i po 5,0 s zostaje złapana przez łapacza, który szybko zastąpił na stanowisku pałkarza (<link target-id="CNX_UPhysics_03_05_Batter"/>). <list id="eip-idm855710144" list-type="enumerated" number-style="lower-alpha"><item> Jaką prędkość początkową pałkarz nadał piłce? </item>
+      <item> Na jaką maksymalną wysokość wzniosła się piłka? </item>
+      <item> Jak długo piłka wznosiła się do momentu osiągnięcia wysokości maksymalnej? </item>
+      <item> Jakie przyspieszenie miała piłka na wysokości maksymalnej? </item>
+      <item> Jaką prędkość miała piłka w momencie złapania jej przez drugiego zawodnika? Załóż, że wysokość, na jakiej złapano piłkę, jest równa wysokości wyrzucenia jej do góry. </item>
+    </list></para>
+  <figure id="CNX_UPhysics_03_05_Batter">
+    <media id="fs-id1168327943024" alt="Lewy obrazek pokazuje gracza baseballa uderzającego piłkę w czasie 0 sekund. Prawy obrazek pokazuje zawodnika łapiącego piłkę w czasie 5 sekund.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_05_Batter.jpg"/>
+    </media>
+    <caption>Piłka baseballowa uderzona pionowo do góry zostaje złapana przez łapacza po 5,0 s.</caption>
+  </figure>
+  <para id="fs-id1168327911565">
+    <title>Strategia rozwiązania</title>Wybierz układ współrzędnych z osią <m:math>
+      <m:mi>y</m:mi>
+      </m:math> skierowaną do góry i początkiem w punkcie wyrzutu i złapania piłki.</para>
+      <para id="fs-id1168325720924">
+        <title>Rozwiązanie</title>
+      </para>
+      <list id="fs-id1168328332423" list-type="enumerated" number-style="lower-alpha"><item> Wykorzystujemy <link target-id="fs-id1168327858521" cmlnle:case="nominative"/>: <newline/>
+          <equation id="fs-id1168327964735" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mi>y</m:mi>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mi>t</m:mi>
+              <m:mo>−</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mi>g</m:mi>
+              <m:msup>
+                <m:mi>t</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>,</m:mo>
+            </m:math>
+          </equation>
+          <newline/>
+          <equation id="fs-id1168327890725" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>⋅</m:mo>
+              <m:mn>5,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mo>⋅</m:mo>
+              <m:mn>9,81</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:msup>
+                  <m:mi mathvariant="normal">s</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>5,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>,</m:mo>
+            </m:math>
+          </equation>
+          <newline/>co pozwala obliczyć prędkość początkową <m:math>
+          <m:msub>
+            <m:mi>v</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>24,5</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+          </m:math>.</item>
+          <item> Na wysokości maksymalnej <m:math>
+            <m:mrow>
+              <m:mi>v</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+            </m:mrow>
+          </m:math>, po podstawieniu <m:math>
+          <m:msub>
+            <m:mi>v</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>24,5</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:math> do <link target-id="fs-id1168328282779" cmlnle:case="genitive"/> otrzymujemy<equation id="fs-id1168328308152" class="unnumbered">
+        <m:math>
+          <m:msup>
+            <m:mi>v</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>=</m:mo>
+          <m:msubsup>
+            <m:mi>v</m:mi>
+            <m:mn>0</m:mn>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+          <m:mo>−</m:mo>
+          <m:mn>2</m:mn>
+          <m:mi>g</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>y</m:mi>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>,</m:mo>
+        </m:math>
+      </equation>
+      <newline/>
+      <equation id="fs-id1168327935061" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mn>0</m:mn>
+          <m:mo>=</m:mo>
+          <m:msup>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mn>24,5</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>−</m:mo>
+          <m:mn>2</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:mn>9,81</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:msup>
+              <m:mi mathvariant="normal">s</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>y</m:mi>
+              <m:mo>−</m:mo>
+              <m:mn>0</m:mn>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>,</m:mo>
+        </m:math>
+      </equation>
+      <newline/>oraz<newline/>
+      <equation id="fs-id1168327924285" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mi>y</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>30,6</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+    </item>
+    <item> Do obliczenia czasu, po którym <m:math>
+      <m:mrow>
+        <m:mi>v</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0</m:mn>
+      </m:mrow>
+    </m:math>, użyjemy <link target-id="fs-id1168328328571" cmlnle:case="genitive"/>:<newline/>
+    <equation id="fs-id1168328257195" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mi>v</m:mi>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>−</m:mo>
+        <m:mi>g</m:mi>
+        <m:mi>t</m:mi>
+        <m:mo>,</m:mo>
+      </m:math>
+    </equation>
+    <newline/>
+    <equation id="fs-id1168328170901" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mn>0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mn>24,5</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>9,81</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:msup>
+            <m:mi mathvariant="normal">s</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+    <newline/>To daje nam <m:math>
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>2,5</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+    </m:math>. Skoro piłka wznosi się do góry przez 2,5 s, także czas jej spadku na ziemię wynosi 2,5 s.</item>
+    <item> Przyspieszenie wynosi <m:math>
+      <m:mn>9,81</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:msup>
+          <m:mi mathvariant="normal">s</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+    </m:math> w każdym punkcie toru lotu piłki, także na wysokości maksymalnej. W momencie osiągnięcia wysokości maksymalnej wartość prędkości wynosi co prawda zero, ale następuje zmiana zwrotu prędkości na przeciwny. Po osiągnięciu wysokości maksymalnej, kierunek i zwrot wektora prędkości jest zgodny z kierunkiem i zwrotem przyspieszenia.</item>
+    <item> Prędkość po czasie <m:math>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>5,0</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+    </m:math> w ruchu w dół może być wyznaczona dzięki <link target-id="fs-id1168328328571" cmlnle:case="dative "/>:<equation id="fs-id1168328327661" class="unnumbered">
+    <m:math>
+      <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>v</m:mi>
+          </m:mtd>
+          <m:mtd>
+            <m:mi/>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>−</m:mo>
+            <m:mi>g</m:mi>
+            <m:mi>t</m:mi>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd/>
+          <m:mtd>
+            <m:mi/>
+            <m:mo>=</m:mo>
+            <m:mn>24,5</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>9,81</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:msup>
+                <m:mi mathvariant="normal">s</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mn>5,0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd/>
+          <m:mtd>
+            <m:mi/>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mn>24,5</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+    </m:math>
+  </equation>
+</item>
+</list><para id="fs-id1168328319759"><title>Znaczenie</title>Piłka powraca z prędkością o takiej samej wartości, z jaką została wyrzucona do góry. Jest to ogólna cecha każdego rzutu pionowego do góry z dowolną prędkością początkową. Zauważ, że mimo iż ruch piłki ma dwa etapy (wznoszenie i opadanie), to w kontekście równań ruchu potraktowaliśmy go w jednolity sposób. Użyliśmy tylko jednego ogólnego równania ruchu, bez dzielenia ruchu na etap w górę i etap w dół. Ponieważ tak zrobiliśmy, prędkość w ruchu w dół jest ujemna, co jest zgodne z założonym kierunkiem osi. Pamiętaj, że ruch ciała w górę (oddalanie od powierzchni) możemy traktować tak samo jak spadek swobodny (ruch w stronę powierzchni) w kontekście równań ruchu.</para></example>
+<note id="fs-id1168328183645" class="check-understanding">
+  <exercise id="fs-id1168327914860">
+    <problem id="fs-id1168328246337">
+      <para id="fs-id1168327960691"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Bryła lodu odrywa się od lodowca w Arktyce i spada pionowo w dół, pokonując dystans 30,0 m, zanim uderzy w taflę wody. Zakładając, że spadek jest swobodny (pomijamy opory), odpowiedz, po jakim czasie bryła wpadnie do wody? W jaki sposób szybkość i droga rosną z czasem?</para></problem>
+      <solution id="fs-id1168327925554">
+        <para id="fs-id1168328358520">Bryła wpadnie do wody po czasie 2,47 s. Droga pokonana przez bryłę jest opisana zależnością kwadratową, a szybkość zależnością liniową.</para>
+      </solution>
+    </exercise>
+  </note>
+  <example id="fs-id1168327878457">
+    <para id="fs-id1168328302155"><title>Rakieta z boosterem</title>Mała rakieta do celów eksperymentalnych wyposażona jest w dodatkową rakietę wzmacniającą (ang. <emphasis effect="italics">booster</emphasis>). Na wysokości 5,0 km i po osiągnięciu prędkości 200,0 m/s booster zostaje odrzucony i rakieta w dalszym locie już nie przyspiesza. <list id="eip-idm1304191552" list-type="enumerated" number-style="lower-alpha">
+        <item> Na jaką maksymalną wysokość wzniesie się odrzucony booster? </item>
+        <item> Jaką prędkość ma booster na wysokości 6,0 km? Pomiń opory powietrza. </item>
+      </list>
+    </para><figure id="CNX_UPhysics_03_05_Rocket"><media id="fs-id1168327915590" alt="Rysunek pokazuje rakietę odrzucającą dodatkowy człon przyspieszający.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_05_Rocket.jpg"/>
+      </media>
+      
+    <caption>Po osiągnięciu pewnej wysokości i prędkości rakieta odrzuca dodatkowy człon przyspieszający. Jaką wysokość i prędkość on osiągnie?</caption></figure><para id="fs-id1168325735735"><title>Strategia rozwiązania</title>Wybieramy układ współrzędnych tak, aby przyspieszenie grawitacyjne skierowane w dół było ujemne. Znamy początkowe położenie i prędkość boostera, odpowiednio 5,0 km i 200,0 m/s w górę (booster porusza się ruchem jednostajnie opóźnionym z prędkością początkową). W punkcie odpalenia boostera zaczepiamy początek układu. Wiemy, że po osiągnięciu maksymalnej wysokości prędkość boostera spada do zera. Wykorzystując te dane, decydujemy się na wybór <link target-id="fs-id1168328282779" cmlnle:case="genitive"/>, które pozwoli nam bezpośrednio obliczyć wysokość maksymalną. Z kolei <link target-id="fs-id1168328282779"/> pozwoli nam znaleźć prędkość na wysokości 6,0 km.</para><para id="fs-id1168327931304">
+        <title>Rozwiązanie</title>
+      </para>
+      <list id="fs-id1168328317292" list-type="enumerated" number-style="lower-alpha"><item> Do równania <m:math>
+          <m:mrow>
+            <m:msup>
+              <m:mi>v</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:msubsup>
+              <m:mi>v</m:mi>
+              <m:mn>0</m:mn>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mo>−</m:mo>
+            <m:mn>2</m:mn>
+            <m:mi>g</m:mi>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mi>y</m:mi>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>y</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo stretchy="false">)</m:mo>
+          </m:mrow>
+        </m:math> w <link target-id="fs-id1168328282779" cmlnle:case="dative "/> podstawiamy <m:math>
+        <m:mi>v</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0</m:mn>
+      </m:math>, <m:math>
+      <m:msub>
+        <m:mi>y</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:math> i obliczamy <m:math>
+    <m:mi>y</m:mi>
+  </m:math>:<newline/>
+  <equation id="fs-id1168325703973" class="unnumbered"><label/>
+    <m:math>
+      <m:mi>y</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:msubsup>
+          <m:mi>v</m:mi>
+          <m:mn>0</m:mn>
+          <m:mn>2</m:mn>
+        </m:msubsup>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mi>g</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:msup>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mn>200,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:mn>9,81</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:msup>
+              <m:mi mathvariant="normal">s</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mn>2</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mn>038,7</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation><newline/>Ten wynik to wysokosć maksymalna boostera w wybranym przez nas układzie współrzędnych, którego początek przyjęliśmy w punkcie odrzucenia boostera. Całkowita wysokość maksymalna (liczona względem ziemi) wynosi ok. 7,0 km.</item>
+  <item> Wysokość całkowita 6,0 km nad ziemią oznacza <m:math>
+    <m:mi>y</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>1000</m:mn>
+    
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+  </m:math> w naszym układzie współrzędnych. Ponadto wiemy, że <m:math>
+  <m:msub>
+    <m:mi>y</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+</m:math>, <m:math>
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>200,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">m</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>.<newline/>Na podstawie <link target-id="fs-id1168328282779" cmlnle:case="genitive"/> mamy <newline/>
+<equation id="fs-id1168328242196" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:msup>
+      <m:mi>v</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>=</m:mo>
+    <m:msup>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mn>200,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo>
+    <m:mn>2</m:mn>
+    <m:mo>⋅</m:mo>
+    <m:mn>9,81</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:msup>
+        <m:mi mathvariant="normal">s</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mn>1000</m:mn>
+    
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mspace width="thickmathspace"/>
+    <m:mo stretchy="false">⟹</m:mo>
+    <m:mspace width="thickmathspace"/>
+    <m:mi>v</m:mi>
+    <m:mo>=</m:mo>
+    <m:mo>±</m:mo>
+    <m:mn>142,8</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+</item>
+</list><para id="fs-id1168328051167">
+  <title>Znaczenie</title>Otrzymaliśmy dodatnie i ujemne rozwiązanie części (b). Ponieważ przyjęliśmy kierunek w górę jako dodatni kierunek osi układu współrzędnych, to wynik +142,8 m/s odpowiada prędkości boostera na wysokości 6 000 m w ruchu w górę, natomiast wynik ujemny dotyczy sytuacji, gdy booster już spada po osiągnięciu wysokości maksymalnej. Oczywiście znajduje się on na wysokości 6 000 m dwukrotnie. Ten przykład jest ważny, bo pokazuje, że początek naszego układu współrzędnych możemy umieścić na dowolnej wysokości nad Ziemią, niekoniecznie na jej powierzchni. Musimy jednak być ostrożni i uwzględniać tę dodatkową wysokość w naszych obliczeniach. Moglibyśmy postąpić inaczej i przyjąć początek układu na powierzchni Ziemi (standardowo), ale wtedy do równań musielibyśmy dopisać wysokość początkową równą 5 000 m.</para>
+</example>
+</section>
+<section id="fs-id1168327963423" class="key-concepts">
+  <title>Podsumowanie</title>
+  <list id="fs-id1168328063182" list-type="bulleted" bullet-style="bullet">
+    <item> Ciało w spadku swobodnym i rzucie pionowym doznaje przyspieszenia o stałej wartości i pionowym kierunku, jeśli pomijamy opory powietrza. </item>
+    <item> Na Ziemi ciała doznają przyspieszenia grawitacyjnego <m:math>
+      <m:mi>g</m:mi>
+    </m:math> o uśrednionej wartości <m:math>
+    <m:mi>g</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>9,81</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:msup>
+        <m:mi mathvariant="normal">s</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+    </m:math>.</item>
+    <item> Zazwyczaj przyjmujemy kierunek pionowy jako dodatni dla położenia, przemieszczenia, prędkości i przyspieszenia ciała w ruchu w polu grawitacyjnym. </item>
+  </list>
+</section>
+<section id="fs-id1168328221898" class="review-conceptual-questions">
+  <title>Pytania </title>
+  <exercise id="fs-id1168328293440">
+    <problem id="fs-id1168328246197">
+      <para id="fs-id1168327872873">Jakiego przyspieszenia doznaje kamień rzucony pionowo do góry podczas wznoszenia się? Jakiego po osiągnięciu maksymalnej wysokości? Załóż brak oporów powietrza.</para>
+    </problem>
+  </exercise>
+  <exercise id="fs-id1168328260222">
+    <problem id="fs-id1168327909273">
+      <para id="fs-id1168327863610">Ciało rzucone pionowo do góry spada z powrotem na ziemię. <list id="eip-idm225547008" list-type="enumerated" number-style="lower-alpha">
+        <item> Kiedy jego prędkość wynosi zero? </item>
+        <item> Czy prędkość zmienia kierunek? </item>
+        <item> Czy przyspieszenie ciała ma ten sam kierunek w jego ruchu do góry i w dół? </item>
+      </list>
+    </para></problem>
+  <solution id="fs-id1168327958884">
+    <list id="eip-idm1141265632" list-type="enumerated" number-style="lower-alpha">
+      <item> na wysokości maksymalnej; </item>
+      <item> tak, na wysokości maksymalnej; </item>
+      <item> tak. </item>
+    </list>
+  </solution>
+</exercise>
+<exercise id="fs-id1168327925204">
+  <problem id="fs-id1168327984165">
+    <para id="fs-id1168325632078">Załóżmy, że próbujesz strącić kamieniem owoc palmy kokosowej. Rzucasz niemal pionowo do góry tak, że kamień w locie wznoszącym tylko ociera się o kokos, ale trafia w niego podczas opadania. Pomiń opór powietrza i małe odchylenie od pionu kierunku lotu kamienia. Jak porównasz wartości prędkości kamienia w locie w dół, gdy trafia on kokos, oraz w locie wznoszącym, gdy tylko mija owoc? Wyjaśnij, czy łatwiej strącić owoc z palmy kamieniem wznoszącym się czy opadającym?</para>
+  </problem>
+</exercise>
+<exercise id="fs-id1168328296713">
+  <problem id="fs-id1168327939517">
+    <para id="fs-id1168328200254">Dotkliwość skutków spadku swobodnego zależy od tego, z jaką prędkością końcową ciało upada na ziemię. Z o ile większej wysokości można upuścić ciało na Księżycu niż na Ziemi, aby było tak samo bezpieczne podczas upadku? Załóż, że tylko przyspieszenie grawitacyjne na Księżycu jest inne niż na Ziemi (jest sześciokrotnie mniejsze).</para></problem>
+  <solution id="fs-id1168325788809">
+    <para id="fs-id1168328070568">Ziemia <m:math>
+      <m:mrow>
+        <m:mi>v</m:mi>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>−</m:mo>
+        <m:mi>g</m:mi>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mtext>−</m:mtext>
+        <m:mi>g</m:mi>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:math>; Księżyc <m:math>
+    <m:mrow>
+      <m:msup>
+        <m:mi>v</m:mi>
+        <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>=</m:mo>
+	  <m:mo>−</m:mo>
+      <m:mfrac>
+        <m:mi>g</m:mi>
+        <m:mn>6</m:mn>
+      </m:mfrac>
+      <m:msup>
+        <m:mi>t</m:mi>
+        <m:mo>′</m:mo>
+      </m:msup>
+    </m:mrow>
+  </m:math>; <newline/>Porównujemy prędkości: <m:math>
+  <m:mrow>
+    <m:mi>v</m:mi>
+    <m:mo>=</m:mo>
+    <m:msup>
+      <m:mi>v</m:mi>
+      <m:mo>′</m:mo>
+    </m:msup>
+    <m:mspace width="0.5em"/>
+    <m:mtext>→</m:mtext>
+    <m:mspace width="0.5em"/>
+    <m:mo>−</m:mo>
+    <m:mi>g</m:mi>
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:mo>−</m:mo>
+    <m:mfrac>
+      <m:mi>g</m:mi>
+      <m:mn>6</m:mn>
+    </m:mfrac>
+    <m:msup>
+      <m:mi>t</m:mi>
+      <m:mo>′</m:mo>
+    </m:msup>
+    <m:mspace width="0.5em"/>
+    <m:mtext>→</m:mtext>
+    <m:mspace width="0.5em"/>
+    <m:msup>
+      <m:mi>t</m:mi>
+      <m:mo>′</m:mo>
+    </m:msup>
+    <m:mo>=</m:mo>
+    <m:mn>6</m:mn>
+    <m:mi>t</m:mi>
+  </m:mrow>
+</m:math>; <newline/>Ziemia <m:math>
+<m:mrow>
+  <m:mi>y</m:mi>
+  <m:mo>=</m:mo>
+  <m:mo>−</m:mo>
+  <m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>g</m:mi>
+  <m:msup>
+    <m:mi>t</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math>; Księżyc <m:math>
+<m:msup>
+  <m:mi>y</m:mi>
+  <m:mrow>
+    <m:msup>
+      <m:mi/>
+      <m:mo>′</m:mo>
+    </m:msup>
+  </m:mrow>
+</m:msup>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:mfrac>
+  <m:mn>1</m:mn>
+  <m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>⋅</m:mo>
+<m:mfrac>
+  <m:mi>g</m:mi>
+  <m:mn>6</m:mn>
+</m:mfrac>
+<m:mo>⋅</m:mo>
+<m:msup>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mn>6</m:mn>
+      <m:mi>t</m:mi>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+  <m:mn>2</m:mn>
+</m:msup>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:mfrac>
+  <m:mn>1</m:mn>
+  <m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>⋅</m:mo>
+<m:mi>g</m:mi>
+<m:mo>⋅</m:mo>
+<m:mn>6</m:mn>
+<m:msup>
+  <m:mi>t</m:mi>
+  <m:mn>2</m:mn>
+</m:msup>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:mn>6</m:mn>
+<m:mo>⋅</m:mo>
+<m:mrow>
+  <m:mo>(</m:mo>
+  <m:mrow>
+    <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mo>⋅</m:mo>
+    <m:mi>g</m:mi>
+    <m:msup>
+      <m:mi>t</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+  </m:mrow>
+  <m:mo>)</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:mn>6</m:mn>
+<m:mi>y</m:mi>
+</m:math>.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1168327871044">
+  <problem id="fs-id1168328246033">
+    <para id="fs-id1168328066760">Ile razy wyżej może skoczyć astronauta na Księżycu, gdzie panuje 6 razy mniejsze przyspieszenie grawitacyjne niż na Ziemi, przy tej samej prędkości początkowej?</para></problem>
+</exercise>
+</section>
+<section id="fs-id1168328228344" class="review-problems">
+  <title>Zadania</title>
+  <exercise id="fs-id1168325735578">
+    <problem id="fs-id1168328279441">
+      <para id="fs-id1168328279443">Oblicz położenia i prędkości piłki rzuconej pionowo z prędkością 15,0 m/s w chwilach <list id="eip-idm593872336" list-type="enumerated" number-style="lower-alpha">
+        <item> 0,500 s, </item>
+        <item> 1,00 s, </item>
+        <item> 1,50 s, </item>
+        <item> oraz 2,00 s. </item>
+      </list>Za wysokość początkową przyjmij <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>y</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mn>0</m:mn>
+      </m:mrow>
+      </m:math>.</para>
+    </problem>
+  </exercise>
+  <exercise id="fs-id1168328277363">
+    <problem id="fs-id1168328277365">
+      <para id="fs-id1168328178839">Most Verrazano-Narrows w Nowym Jorku jest jednym z największych mostów drogowych na świecie. Wysokość pasa drogowego nad lustrem wód zatoki Hudsona wynosi 70 m. Oblicz położenia i prędkości kamienia rzuconego pionowo w dół z mostu z prędkością 14,0 m/s, liczone od miejsca wyrzutu, po <list id="eip-idm1005284576" list-type="enumerated" number-style="lower-alpha">
+        <item> 0,500 s, </item>
+        <item> 1,00 s, </item>
+        <item> 1,50 s, </item>
+        <item> 2,00 s, </item>
+        <item> i 2,50 s. </item>
+      </list>
+    </para>
+  </problem>
+  <solution id="fs-id1168327932118">
+    <list id="eip-idm259387056" list-type="enumerated" number-style="lower-alpha">
+      <item>
+        <m:math>
+          <m:mi>y</m:mi>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>8,23</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>,</m:mo>
+          <m:mspace width="0.2em"/>
+          <m:msub>
+            <m:mi>v</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>18,9</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+          </m:math>; </item>
+          <item>
+            <m:math>
+              <m:mi>y</m:mi>
+              <m:mo>=</m:mo>
+              <m:mo>−</m:mo>
+              <m:mn>18,9</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>,</m:mo>
+              <m:mspace width="0.2em"/>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mo>−</m:mo>
+              <m:mn>23,8</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              </m:math>; </item>
+              <item>
+                <m:math>
+                  <m:mi>y</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mo>−</m:mo>
+                  <m:mn>32,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>,</m:mo>
+                  <m:mspace width="0.2em"/>
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mo>−</m:mo>
+                  <m:mn>28,7</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  </m:math>; </item>
+                  <item>
+                    <m:math>
+                      <m:mi>y</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mo>−</m:mo>
+                      <m:mn>47,6</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="0.2em"/>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mn>4</m:mn>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mo>−</m:mo>
+                      <m:mn>33,6</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                      </m:math>; </item>
+                      <item>
+                        <m:math>
+                          <m:mi>y</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mo>−</m:mo>
+                          <m:mn>65,6</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                          </m:mrow>
+                          <m:mo>,</m:mo>
+                          <m:mspace width="0.2em"/>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mn>5</m:mn>
+                          </m:msub>
+                          <m:mo>=</m:mo>
+                          <m:mo>−</m:mo>
+                          <m:mn>38,5</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                        </m:math>
+                      </item>
+                    </list>
+                  </solution>
+                </exercise>
+                <exercise id="fs-id1168327876168">
+                  <problem id="fs-id1168327876170">
+                    <para id="fs-id1168325860502">Sędzia meczu koszykówki rozpoczyna akcję po faulu rzutem sędziowskim. Z jaką szybkością koszykarz musi wybić się z parkietu, jeśli chce złapać piłkę, będąc na wysokości 1,25 m nad parkietem?</para>
+                  </problem>
+                </exercise>
+                <exercise id="fs-id1168328204005">
+                  <problem id="fs-id1168325630369">
+                    <para id="fs-id1168325630371">Śmigłowiec ratunkowy wisi nad wywróconym na morzu jachtem. Jeden z ratowników zrzuca w kierunku ofiary pływającej w wodzie kosz ratowniczy, nadając mu prędkość 1,40 m/s, i zauważa, że dociera on do powierzchni wody po 1,8 s. <list id="eip-idm323263600" list-type="enumerated" number-style="lower-alpha">
+                      <item> Wypisz wszystkie znane wielkości. </item>
+                      <item> Na jakiej wysokości nad wodą wisi śmigłowiec? </item>
+                    </list>
+                  </para></problem>
+                <solution id="fs-id1168327876420">
+                  <list id="eip-idm919460480" list-type="enumerated" number-style="lower-alpha">
+                    <item> Dane: <m:math>
+                      <m:mi>a</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mo>−</m:mo>
+                      <m:mn>9,81</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:msup>
+                          <m:mi mathvariant="normal">s</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:math>, <m:math>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mo>−</m:mo>
+                    <m:mn>1,4</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:math>, <m:math>
+                  <m:mi>t</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>1,8</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:math>, <m:math>
+                <m:msub>
+                  <m:mi>y</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:math>;<newline/>
+            </item>
+            <item>
+              <m:math>
+                <m:mi>y</m:mi>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>y</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mi>t</m:mi>
+                <m:mo>−</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mi>g</m:mi>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:math>, <m:math>
+              <m:mi>y</m:mi>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mi>t</m:mi>
+              <m:mo>−</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mi>g</m:mi>
+              <m:msup>
+                <m:mi>t</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:mo>−</m:mo>
+              <m:mn>1,4</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mn>1,8</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mo>⋅</m:mo>
+              <m:mn>9,81</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:msup>
+                  <m:mi mathvariant="normal">s</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>1,8</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:mo>−</m:mo>
+              <m:mn>18,4</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              </m:math>, przy czym początek układu współrzędnych przyjmujemy w położeniu śmigłowca; znajduje się on więc na wysokości 18,4 m nad wodą.</item>
+            </list>
+          </solution>
+        </exercise>
+        <exercise id="fs-id1168328379493">
+          <problem id="fs-id1168328379495">
+            <para id="fs-id1168328165219"><emphasis effect="bold">Niefizyczny wynik</emphasis> Podczas pokazu w oceanarium delfin wyskakuje z wody z szybkością 15,0 m/s. <list id="eip-idm1566813392" list-type="enumerated" number-style="lower-alpha"><item> Jak wysoko nad powierzchnię wody uniesie się delfin? </item>
+                <item> Jak długo delfin przebywa w powietrzu? Zaniedbaj opór powietrza. Na każdym etapie rozwiązywania zadania określ dane i szukane, wybierz odpowiednie równanie ruchu, a po obliczeniu wartości niewiadomych dokonaj analizy wymiarowej i oceń sensowność wyniku. </item>
+              </list></para></problem>
+        </exercise>
+        <exercise id="fs-id1168327942440">
+          <problem id="fs-id1168327942442">
+            <para id="fs-id1168327943751">Zawodnik skoków do wody wybija się z rampy pionowo do góry i w pozycji pionowej nogami w dół wpada do basenu. Rampa znajduje się 1,80 m nad wodą, a prędkość wybicia skoczka to 4,00 m/s. <list id="eip-idm1446080048" list-type="enumerated" number-style="lower-alpha">
+              <item> Jaka jest maksymalna wysokość w locie skoczka (jego stóp) do góry? </item>
+              <item> Przez jaki całkowity czas jego stopy znajdują się w powietrzu? </item>
+              <item> Z jaką prędkością jego stopy przebijają lustro wody?</item>
+            </list>
+          </para></problem>
+        <solution id="fs-id1168328246433">
+          <list xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-idm1343634752" list-type="enumerated" number-style="lower-alpha"><item>
+              <m:math>
+                <m:msup>
+                  <m:mi>v</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:msubsup>
+                  <m:mi>v</m:mi>
+                  <m:mn>0</m:mn>
+                  <m:mn>2</m:mn>
+                </m:msubsup>
+                <m:mo>−</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>g</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mi>y</m:mi>
+                    <m:mo>−</m:mo>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>,</m:mo>
+                <m:mspace width="0.2em"/>
+                <m:msub>
+                  <m:mi>y</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+                <m:mo>,</m:mo>
+                <m:mspace width="0.2em"/>
+                <m:mi>v</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mo stretchy="false">⟶</m:mo>
+                <m:mi>y</m:mi>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:msubsup>
+                    <m:mi>v</m:mi>
+                    <m:mn>0</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:msubsup>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>g</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mn>4,0</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:mn>9,81</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:msup>
+                        <m:mi mathvariant="normal">s</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mn>0,82</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+                </m:math>; </item>
+                <item> czas do wysokości maksymalnej <m:math>
+                  <m:mi>t</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>0,41</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:math> pomnożony przez 2 z powrotem do wysokości rampy <m:math>
+                <m:mi>t</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0,82</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+              </m:math>, a dalej od rampy do lustra wody: <m:math display="inline"><m:semantics><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:mrow><m:msub><m:mi>v</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow></m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:mi>g</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            y = y_0 + v_0t - gt^2/2</m:annotation></m:semantics></m:math>, <m:math display="inline"><m:semantics><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mrow><m:mo>−</m:mo><m:mrow><m:mn>1,80</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            y = -\SI{1,80}{\metre}</m:annotation></m:semantics></m:math>,  <m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            y_0 = 0</m:annotation></m:semantics></m:math>,<m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>v</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mrow><m:mn>4,0</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            v_0 = \SI{4,0}{\metre\per\second}</m:annotation></m:semantics></m:math>, zatem <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mrow><m:mo>−</m:mo><m:mn>1,8</m:mn></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>4,0</m:mn><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow><m:mo>−</m:mo><m:mrow><m:mn>4,9</m:mn><m:mo>⁢</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mrow><m:mo>⇒</m:mo><m:mrow><m:mrow><m:mrow><m:mn>4,9</m:mn><m:mo>⁢</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>−</m:mo><m:mrow><m:mn>4,0</m:mn><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow><m:mo>−</m:mo><m:mn>1,8</m:mn></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            -\num{1,8} = \num{4,0}t - \num{4,9}t^2 \implies \num{4,9} t^2 - \num{4,0} t - \num{1,8} = 0</m:annotation></m:semantics></m:math>, rozwiązanie równania kwadratowego daje 1,13 s;</item>
+              <item>
+                <m:math>
+                  <m:msup>
+                    <m:mi>v</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>=</m:mo>
+                  <m:msubsup>
+                    <m:mi>v</m:mi>
+                    <m:mn>0</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:msubsup>
+                  <m:mo>−</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>g</m:mi>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>y</m:mi>
+                      <m:mo>−</m:mo>
+                      <m:msub>
+                        <m:mi>y</m:mi>
+                        <m:mn>0</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>,</m:mo>
+                  <m:mspace width="0.2em"/>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mn>0</m:mn>
+                  <m:mo>,</m:mo>
+                  <m:mspace width="0.2em"/>
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mn>4,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo>,</m:mo>
+                  <m:mspace width="0.2em"/>
+                  <m:mi>y</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mo>−</m:mo>
+                  <m:mn>1,80</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo stretchy="false">⟶</m:mo>
+                  <m:mi>v</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>7,16</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  </m:math>.</item>
+                </list></solution>
+            </exercise>
+            <exercise id="fs-id1168327917021">
+              <problem id="fs-id1168327917023">
+                <list id="eip-idm1419121344" list-type="enumerated" number-style="lower-alpha"><item> Oblicz wysokość klifu, z którego kamień rzucony pionowo w górę z prędkością 8,00 m/s osiąga dno klifu po 2,35 s. </item>
+                  <item> Po jakim czasie kamień by spadł, gdyby był rzucony w dół z tą samą prędkością? </item>
+                </list></problem>
+            </exercise>
+            <exercise id="fs-id1168325702557">
+              <problem id="fs-id1168325702559">
+                <para id="fs-id1168325702562">Silny, ale dość nierozważny kulomiot rzuca kulą pionowo do góry z szybkością 11,0 m/s. Ile czasu ma kulomiot na ucieczkę z koła, jeśli punkt wyrzutu kuli znajduje się na wysokości 2,20 m, a sam zawodnik ma 1,80 m wysokości?</para></problem>
+              <solution id="fs-id1168328325887">
+                <para id="fs-id1168328317596">Czas do wysokości maksymalnej: <m:math>
+                  <m:mi>t</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>1,12</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:math>, razy 2 daje 2,24 s do momentu osiągnięcia z powrotem wysokości 2,20 m. Dodatkowe przemieszczenie do wysokości 1,80 m wynosi 0,40 m. <newline/>
+                <m:math>
+                  <m:mi>y</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mi>t</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mi>g</m:mi>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>,</m:mo>
+                  <m:mspace width="0.2em"/>
+                  <m:mi>y</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mo>−</m:mo>
+                  <m:mn>0,40</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>,</m:mo>
+                  <m:mspace width="0.2em"/>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mn>0</m:mn>
+                  <m:mo>,</m:mo>
+                  <m:mspace width="0.2em"/>
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mo>−</m:mo>
+                  <m:mn>11,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo stretchy="false">⟶</m:mo>
+                  <m:mo>−</m:mo>
+                  <m:mn>0,40</m:mn>
+                  <m:mo>=</m:mo>
+                  <m:mo>−</m:mo>
+                  <m:mn>11,0</m:mn>
+                  <m:mi>t</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mn>4,9</m:mn>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo stretchy="false">⟶</m:mo>
+                  <m:mn>4,9</m:mn>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>11,0</m:mn>
+                  <m:mi>t</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mn>0,40</m:mn>
+                  <m:mo>=</m:mo>
+                  <m:mn>0</m:mn>
+                </m:math><newline/>Wybieramy dodatni pierwiastek równania kwadratowego, który ma wartość 0,04 s – jest to czas potrzebny do pokonania dodatkowych 0,40 m. Zatem całkowity czas wynosi <m:math>
+                <m:mn>2,24</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mn>0,04</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mn>2,28</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                </m:math>.</para></solution>
+            </exercise>
+            <exercise id="fs-id1168328242029">
+              <problem id="fs-id1168328242031">
+                <para id="fs-id1168328242034">Rzucasz piłką pionowo do góry z prędkością 15,0 m/s. Piłka w locie w górę mija gałąź na wysokości 7,0 m. Ile czasu upłynie, zanim piłka kolejny raz minie tę samą gałąź w locie w dół?</para></problem>
+            </exercise>
+            <exercise id="fs-id1168325736839">
+              <problem id="fs-id1168325736841">
+                <para id="fs-id1168325736843">Kangur potrafi przeskoczyć przeszkodę o wysokości nawet 2,50 m. <list id="eip-idm443165440" list-type="enumerated" number-style="lower-alpha"><item> Zakładając tylko ruch w pionie kangura, oblicz jego prędkość początkową w chwili odbicia od ziemi. </item>
+                  <item> Jak długo kangur przebywa w powietrzu?</item>
+                </list></para>
+            </problem>
+            <solution id="fs-id1168328168679">
+              <list id="eip-idm1176249024" list-type="enumerated" number-style="lower-alpha">
+                <item>
+                  <m:math>
+                    <m:msup>
+                      <m:mi>v</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:msubsup>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                    <m:mo>−</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mi>g</m:mi>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mi>y</m:mi>
+                        <m:mo>−</m:mo>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mo>,</m:mo>
+                    <m:mspace width="0.2em"/>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mspace width="0.2em"/>
+                    <m:mi>v</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mspace width="0.2em"/>
+                    <m:mi>y</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>2,50</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                    <m:mo>,</m:mo>
+                    <m:mspace linebreak="newline"/>
+                    <m:msubsup>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                    <m:mo>=</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mi>g</m:mi>
+                    <m:mi>y</m:mi>
+                    <m:mspace width="thickmathspace"/>
+                    <m:mo stretchy="false">⟹</m:mo>
+                    <m:mspace width="thickmathspace"/>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msqrt>
+                      <m:mn>2</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:mn>9,81</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:msup>
+                          <m:mi mathvariant="normal">s</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo>⋅</m:mo>
+                      <m:mn>2,50</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:msqrt>
+                    <m:mo>=</m:mo>
+                    <m:mn>7,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    <m:mo>.</m:mo>
+                  </m:math>
+                </item>
+                <item>
+                  <m:math>
+                    <m:mi>t</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>0,72</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    </m:math>, razy 2 daje czas 1,44 s w powietrzu.</item>
+                  </list>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1168325878341">
+                <problem id="fs-id1168325878343">
+                  <para id="fs-id1168325878345">W drodze od Czarnego Stawu na Rysy turysta słyszy, że z grani położonej 105,0 m powyżej odrywa się kamień. Dostrzega go jednak dopiero 1,50 s później. <list id="eip-idm251812208" list-type="enumerated" number-style="lower-alpha">
+                    <item> Na jakiej wysokości nad turystą jest jeszcze kamień w chwili, gdy turysta go dostrzega? </item>
+                    <item> Ile czasu zostaje jeszcze turyście, aby się uchylić od uderzenia kamieniem w głowę? </item>
+                  </list>
+                </para>
+              </problem>
+            </exercise>
+            <exercise id="fs-id1168325780878">
+              <problem id="fs-id1168327989882">
+                <para id="fs-id1168327989884">Ze ściany skalnej w dolinie Dunajca na wysokości 250,0 m odrywa się kamień. <list id="eip-idm1472055536" list-type="enumerated" number-style="lower-alpha"><item> Z jaką szybkością kamień przetnie wody Dunajca? </item>
+                  <item> Przyjmując czas reakcji turystów uczestniczących w spływie tratwą równy 0,300 s, oblicz, ile czasu turyści mają na uniknięcie uderzenia od momentu, gdy usłyszą trzask odrywanego kamienia. Szybkość dźwięku tego dnia wynosiła 335,0 m/s. Zaniedbaj różnicę wysokości wynikającą ze wzrostu turystów, która jednak z powodzeniem i tak mogłaby być pominięta. </item>
+                </list></para>
+            </problem>
+            <solution id="fs-id1168327989886">
+              <list id="eip-idm1311376480" list-type="enumerated" number-style="lower-alpha">
+                <item>
+                  <m:math>
+                    <m:mi>v</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>70,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    </m:math>; </item>
+                    <item>Czas lotu kamienia od chwili oderwania do momentu usłyszenia tego zdarzenia przez turystów: 0,75 s; czas do momentu osiągnięcia tratwy: 6,09 s.</item>
+                  </list>
+                </solution>
+              </exercise>
+            </section>
+          </content>
+          <glossary>
+            <definition id="fs-id1168328179405">
+              <term cmlnle:reference="przyspieszenie grawitacyjne" class="no-emphasis">przyspieszenie grawitacyjne (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">acceleration due to gravity</term></foreign>)</term>
+              <meaning id="fs-id1168328179411">przyspieszenie ciała w wyniku oddziaływania grawitacyjnego</meaning>
+            </definition>
+            <definition id="fs-id1168328329319">
+              <term cmlnle:reference="spadek swobodny i rzut pionowy" class="no-emphasis">spadek swobodny i rzut pionowy (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">free fall</term></foreign>)</term>
+              <meaning id="fs-id1168328319810">ruch ciała w powietrzu pod wpływem tylko przyspieszenia grawitacyjnego, z pominięciem oporu powietrza</meaning>
+            </definition>
+          </glossary>
+        </document>

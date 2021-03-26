@@ -1,0 +1,2649 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Praca i energia kinetyczna w ruchu obrotowym</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65798</md:content-id>
+  <md:title>Praca i energia kinetyczna w ruchu obrotowym</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+    <item>stosować twierdzenie o równoważności pracy i energii do analizy ruchu obrotowego i obliczania, jaką pracę należy wykonać nad układem, aby obrócić go o określony kąt wokół stałej osi;</item>
+    <item>wyznaczać, wykorzystując twierdzenie o równoważności pracy i energii, prędkość kątową obracającej się bryły sztywnej;</item>
+    <item>wyznaczać moc dostarczaną obracającej się bryle sztywnej, biorąc pod uwagę moment obrotowy siły i prędkość kątową;</item>
+    <item>weryfikować uzyskane wartości zmiennych kątowych i zastosowane równania;</item>
+    <item>wskazywać związek otrzymanych wyników i użytych praw z odpowiednimi zmiennymi i prawami w ruchu postępowym.</item>
+  </list></md:abstract>
+  <md:uuid>8e720585-3a5d-4616-94bf-885aa911d596</md:uuid>
+</metadata>
+
+<content>
+    <para id="ked-1bl81dnmj_d58">Do tej pory szeroko omówiliśmy zagadnienia kinematyki i dynamiki ruchu obrotowego brył sztywnych wokół stałej osi. W tym ostatnim podrozdziale zdefiniujemy pracę i moc w ruchu obrotowym wokół stałej osi, co ma istotne znaczenie zarówno w fizyce jak i w technice. Wprowadzenie pracy i mocy sprawia, że nasz opis ruchu obrotowego staje się prawie kompletny, z wyjątkiem toczenia się ciał i momentu pędu, które zostaną omówione w podrozdziale <link document="m65799" class="target-chapter">Moment pędu</link>. Zaczynamy tę część od wprowadzenia twierdzenia o pracy i energii w ruchu obrotowym.</para><section id="ked-1bl81eoht_grg">
+      <title>Praca w ruchu obrotowym </title>
+      <para id="ked-1bl81g3k3_du">Teraz, gdy wiemy już, jak wyznaczać energię ruchu obrotowego bryły sztywnej, możemy przejść do wyznaczenia pracy wykonanej nad ciałem sztywnym obracającym się wokół stałej osi. Rysunek poniżej przedstawia bryłę sztywną, która została obrócona o kąt <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>θ</m:mi></m:math> od <m:math><m:mi>A</m:mi></m:math> do <m:math><m:mi>B</m:mi></m:math> w wyniku działania siły <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. Siła zewnętrzna <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest przyłożona w punkcie P, określonym przez wektor położenia <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. Przedstawiona bryła sztywna obraca się wokół stałej osi prostopadłej do płaszczyzny rysunku i przechodzącej przez punkt <m:math><m:mi>O</m:mi></m:math>. Ponieważ oś obrotu nie zmienia swojego położenia, koniec wektora <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> zakreśla okrąg o promieniu <m:math><m:mi>r</m:mi></m:math>, stąd wektor <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mrow><m:mover><m:mi>s</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest prostopadły do wektora <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>.</para>
+      <figure id="CNX_UPhysics_10_08_RigBody"><media id="ked-1bl81iftv_hlg" alt="Rysunek przedstawia ciało sztywne z rotacją wokół stałej osi prostopadłej do strony, przechodzącej przez punkt oznaczony jako O. Obracająca się oś jest sztywna, tak więc wektor r przemieszcza się po okręgu o promieniu r, a wektor ds jest prostopadły do wektora r. Siła zewnętrzna F działa w punkcie P i tworzy z obracającym się ciałem sztywnym kąt dtheta.">
+          <image src="../../media/CNX_UPhysics_10_08_RigBody.jpg" mime-type="image/jpeg"/>
+        </media>
+        
+      <caption>Obrót ciała sztywnego o kąt <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>θ</m:mi></m:math> od punktu <m:math><m:mi>A</m:mi></m:math> do <m:math><m:mi>B</m:mi></m:math> w wyniku działania siły zewnętrznej <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>, przyłożonej w punkcie <m:math><m:mi>P</m:mi></m:math>. </caption></figure><para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl81jn4s_kv">Z definicji miary łukowej kąta (patrz rozdział <link document="m65791">Zmienne opisujące ruch obrotowy</link>) mamy:</para><equation id="ked-1bl81mphc_omo" class="unnumbered">
+        <m:math>
+          <m:mrow>
+            <m:mover>
+              <m:mi>s</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>θ</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="ked-1bl81o8bi_ig8">Stąd stosując pochodną iloczynu dwóch wektorów (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">chain rule</term></foreign>)</para><equation id="ked-1bl81oabo_bp8" class="unnumbered">
+        <m:math>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>s</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>θ</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>×</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>r</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>θ</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>+</m:mo>
+		  <m:mrow>
+            <m:mover>
+              <m:mi>θ</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+		  <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>θ</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="ked-1bl81pkf7_gtg">Zauważmy, że <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mrow><m:mi>r</m:mi></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:math>, bo długość wektora <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> nie zmienia się, zatem <m:math><m:mrow>
+            <m:mover>
+              <m:mi>θ</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+		  <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:math>. Stosując definicję pracy otrzymujemy:</para>
+      <equation id="ked-1bl81qmnm_ki8" class="unnumbered">
+        <m:math>
+          <m:mi>W</m:mi>
+          <m:mo>=</m:mo>
+          <m:mo>∫</m:mo>
+          <m:mo>∑</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>F</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>s</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mo>∫</m:mo>
+          <m:mo>∑</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>F</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>θ</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>×</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>r</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mo>∫</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>r</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>×</m:mo>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>F</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>θ</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mn>,</m:mn>
+        </m:math>
+      </equation>
+      <para id="ked-1bl81quvn_kg8">gdzie skorzystaliśmy z tożsamości <m:math><m:mrow><m:mover><m:mi>a</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mover><m:mi>b</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>c</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mover><m:mi>b</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mover><m:mi>c</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>a</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow></m:math>. Ponieważ <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mo>∑</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mo>∑</m:mo><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>, otrzymujemy wyrażenie na <term cmlnle:reference="praca w ruchu obrotowym" class="no-emphasis">pracę w ruchu obrotowym (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">rotational work</term></foreign>)</term>: </para>
+      <equation id="ked-1bl81suhm_2h">
+        <m:math>
+          <m:mi>W</m:mi>
+          <m:mo>=</m:mo>
+          <m:mo>∫</m:mo>
+          <m:mo>∑</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>M</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>θ</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="ked-1bl81t5p7_4t">Całkowita praca wykonana nad ciałem sztywnym jest całką z sumy momentów pędu obliczonej po kącie obrotu ciała sztywnego. Różniczka pracy (praca wykonana, aby obrócić ciało o kąt <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>θ</m:mi></m:math>) wyraża się zależnością: </para><note id="ked-1bl81u7gb_t68" class="equation-callout">
+        <equation id="ked-1bl81u9dt_ja8">
+          <m:math>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>W</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:munder>
+                  <m:mo movablelimits="false">∑</m:mo>
+                  <m:mi>i</m:mi>
+                </m:munder>
+                <m:msub>
+                  <m:mi>M</m:mi>
+                  <m:mi>i</m:mi>
+                </m:msub>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>θ</m:mi>
+            <m:mn>,</m:mn>
+          </m:math>
+        </equation>
+      </note>
+      <para id="ked-1bl81uj2l_foo">gdzie w sumowaniu występują jedynie składowe momentu siły wzdłuż osi obrotu. W przypadku bryły sztywnej wszystkie jej punkty obracają się wokół tej samej osi, tak więc praca siły zewnętrznej jest równa momentowi siły pomnożonemu przez wspólny kąt <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>θ</m:mi></m:math>. Wielkość <m:math><m:munder><m:mo>∑</m:mo><m:mi>i</m:mi></m:munder><m:msub><m:mi>M</m:mi><m:mi>i</m:mi></m:msub></m:math> jest wypadkowym momentem sił zewnętrznych działających na bryłę. </para>
+      <para id="ked-1bl82abis_u7o">Podobnie, poprzez sumowanie energii kinetycznej każdej cząstki tworzącej bryłę sztywną, wyznaczyliśmy energię kinetyczną bryły sztywnej obracającej się wokół ustalonej osi. Ponieważ twierdzenie o pracy i energii <m:math><m:msub><m:mi>W</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:msub><m:mi>E</m:mi><m:mi>ki</m:mi></m:msub></m:math> jest ważne dla każdej cząstki, jest słuszne również dla sumy cząstek, a w konsekwencji dla całej bryły.</para><note id="ked-1bl824e1d_jb8">
+        <title>Twierdzenie o pracy i energii</title>
+        <para id="ked-1bl824mhd_guo"><term cmlnle:reference="twierdzenie o pracy i energii w ruchu obrotowym" class="no-emphasis">Twierdzenie o pracy i energii w ruchu obrotowym (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">work-energy theorem for rotation</term></foreign>)</term> wokół stałej osi ma postać:</para>
+        <equation id="ked-1bl824u6u_c08">
+          <m:math>
+            <m:msub>
+              <m:mi>W</m:mi>
+              <m:mrow>
+                <m:mi>A</m:mi>
+                <m:mi>B</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mtext>kB</m:mtext>
+            </m:msub>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mtext>kA</m:mtext>
+            </m:msub>
+            <m:mn>,</m:mn>
+          </m:math>
+        </equation>
+        <para id="ked-1bl825521_1c8">gdzie</para>
+        <equation id="ked-1bl825h9i_1l" class="unnumbered">
+          <m:math>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mtext>k</m:mtext>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mi>I</m:mi>
+            <m:msup>
+              <m:mi>ω</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mn>,</m:mn>
+          </m:math>
+        </equation>
+        <para id="ked-1bl825u3b_b9g">a praca wykonana przez wypadkową siłę nad ciałem sztywnym obracającym się od punktu A do punktu B wyraża się zależnością:</para>
+        <equation id="ked-1bl82616b_up8"><m:math>
+            <m:msub>
+              <m:mi>W</m:mi>
+              <m:mrow>
+                <m:mi>A</m:mi>
+                <m:mi>B</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:munderover>
+              <m:mo>∫</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>θ</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:msub>
+                <m:mi>θ</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:munderover>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:munder>
+                  <m:mo movablelimits="false">∑</m:mo>
+                  <m:mi>i</m:mi>
+                </m:munder>
+                <m:msub>
+                  <m:mi>M</m:mi>
+                  <m:mi>i</m:mi>
+                </m:msub>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mover>
+                <m:mi>θ</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation></note>
+      <para id="ked-1bl826cs5_9k8">Pokażemy teraz, w jaki sposób wykorzystać powyższe zależności w analizie ruchu obrotowego.</para>
+      <note id="ked-1bl826uej_s88">
+        <title>Strategia rozwiązywania zadań: twierdzenie o pracy i energii w ruchu obrotowym</title>
+        <list id="ked-1bl82821t_o8g" list-type="enumerated" number-style="arabic">
+          <item>Określ siły działające na bryłę i narysuj diagram sił. Wyznacz moment siły dla każdej z nich.</item>
+          <item>Wyznacz pracę wykonaną przez każdy z momentów siły w czasie obrotu bryły. </item>
+          <item>Zastosuj twierdzenia o równoważności pracy i energii, przyrównując pracę wykonaną nad ciałem do zmiany jego energii kinetycznej ruchu obrotowego. </item>
+        </list>
+      </note>
+      <para id="ked-1bl829ifv_09">Spójrzmy na dwa przykłady, w których zastosujemy twierdzenie o energii i pracy do analizy ruchu obrotowego. </para>
+      <example id="ked-1bl82ja9m_978">
+        <para id="ked-1bl82jaao_soo"><title>Praca i energia w ruchu obrotowym</title> Do koła zamachowego o momencie bezwładności <m:math><m:mn>30</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, obracającego się wokół nieruchomej osi, przyłożono moment siły o wartości <m:math><m:mn>12</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>. Jeżeli w chwili początkowej koło nie obracało się, to jaka jest wartość jego prędkości kątowej po 8 obrotach? </para>
+        <para id="ked-1bl84hpee_3a8"><title>Strategia rozwiązania</title> Stosujemy twierdzenie o pracy i energii. Z opisu problemu wiemy, jaka jest wartość momentu siły i przemieszczenie kątowe koła zamachowego. Zatem możemy wyznaczyć końcową prędkość kątową. </para>
+        <para id="ked-1bl83s3s5_9eg"><title>Rozwiązanie</title> Koło zamachowe wykonało 8 obrotów, co stanowi <m:math><m:mrow><m:mn>16</m:mn><m:mi>π</m:mi></m:mrow></m:math> radianów. Praca została wykonana przez stały moment siły i jej wartość wynika z informacji w zadaniu. Stąd możemy wyznaczyć końcową prędkość kątową. Praca wyniosła:</para>
+        <equation id="ked-1bl83usq5_ajo" class="unnumbered">
+          <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>W</m:mi>
+                <m:mrow>
+                  <m:mi>A</m:mi>
+                  <m:mi>B</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mi>M</m:mi>
+              <m:mo stretchy="false">(</m:mo>
+              <m:msub>
+                <m:mi>θ</m:mi>
+                <m:mi>B</m:mi>
+              </m:msub>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>θ</m:mi>
+                <m:mi>A</m:mi>
+              </m:msub>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="ked-1bl841q38_2h">Zastosujmy teraz twierdzenie o pracy i energii:</para>
+        <equation id="ked-1bl84213n_ra8" class="unnumbered">
+          <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>W</m:mi>
+                <m:mrow>
+                  <m:mi>A</m:mi>
+                  <m:mi>B</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mi>M</m:mi>
+              <m:mo stretchy="false">(</m:mo>
+              <m:msub>
+                <m:mi>θ</m:mi>
+                <m:mi>B</m:mi>
+              </m:msub>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>θ</m:mi>
+                <m:mi>A</m:mi>
+              </m:msub>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mi>I</m:mi>
+              <m:msubsup>
+                <m:mi>ω</m:mi>
+                <m:mi>B</m:mi>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mo>−</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mi>I</m:mi>
+              <m:msubsup>
+                <m:mi>ω</m:mi>
+                <m:mi>A</m:mi>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="ked-1bl8429ss_8dg">Podstawiając wartości <m:math><m:mi>M</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>θ</m:mi><m:mi>B</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>θ</m:mi><m:mi>A</m:mi></m:msub><m:mo>=</m:mo><m:mn>16</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mi>π</m:mi><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi></m:mrow></m:math>, <m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> oraz <m:math><m:msub><m:mi>ω</m:mi><m:mi>A</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:math> otrzymujemy:</para>
+        <equation id="ked-1bl843lko_2gg" class="unnumbered">
+          <m:math>
+            <m:mn>12</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+              <m:mo>⋅</m:mo>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mn>16</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>0</m:mn>
+            <m:mi>π</m:mi>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">r</m:mi>
+              <m:mi mathvariant="normal">a</m:mi>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mo>⋅</m:mo>
+            <m:mn>30</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">k</m:mi>
+              <m:mi mathvariant="normal">g</m:mi>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:msubsup>
+              <m:mi>ω</m:mi>
+              <m:mi>B</m:mi>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mo>−</m:mo>
+            <m:mn>0</m:mn>
+            <m:mtext>,</m:mtext>
+          </m:math>
+        </equation>
+        <para id="ked-1bl84455t_r6g">stąd wartość prędkości kątowej koła zamachowego po 8 obrotach wynosi:</para>
+        <equation id="ked-1bl8448ej_hdo" class="unnumbered">
+          <m:math>
+            <m:msub>
+              <m:mi>ω</m:mi>
+              <m:mi>B</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>6</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>3</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">r</m:mi>
+              <m:mi mathvariant="normal">a</m:mi>
+              <m:mi mathvariant="normal">d</m:mi>
+              <m:mrow>
+                <m:mtext>/</m:mtext>
+              </m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1bl844lu9_dn8"><title>Znaczenie</title>Twierdzenie o pracy i energii stanowi skuteczny sposób analizy ruchu obrotowego, ponieważ łączy moment siły z energią kinetyczną ruchu obrotowego.</para>
+      </example>
+      <example id="ked-1bl845qje_ceg">
+        <para id="ked-1bl845qlg_n6o"><title>Praca w ruchu obrotowym: Krążek</title>Nawinięty wokół krążka sznurek (<link target-id="CNX_UPhysics_10_08_Pulley"/>) jest ciągnięty pionowo w dół z siłą <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> o wartości 50 N. Promień krążka <m:math><m:mi>R</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>10</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>, a jego moment bezwładności <m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>5</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>. Jeżeli sznurek nie ślizga się po krążku, to jaka jest prędkość kątowa krążka po odwinięciu się 10 m sznurka? Załóż, że początkowo krążek się nie obracał.</para><figure id="CNX_UPhysics_10_08_Pulley">
+          <media id="ked-1bl8472mi_4mg" alt="RysunekA przedstawia sznurek nawinięty na krążek o promieniu R. Krążek jest ściągany w dół siła F. RysunekB pokazuje ciało swobodne ściągane w dół siłą F oraz Mg i pchane w górę siłą B. ">
+            <image src="../../media/CNX_UPhysics_10_08_Pulley.jpg" mime-type="image/jpeg"/>
+          </media>
+          <caption>(a) Sznurek nawinięty na krążek o promieniu <m:math><m:mi>R</m:mi></m:math>. (b) Diagram sił. </caption>
+        </figure>
+        <para id="ked-1bl847sgq_s6g"><title>Strategia rozwiązania</title> Patrząc na rysunek widzimy, że zarówno moment siły ciążenia <m:math><m:mi>m</m:mi><m:mrow><m:mover><m:mi>g</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jak i moment siły <m:math><m:msub><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mtext>R</m:mtext></m:msub></m:math> związanej z reakcją łożysk są równe zero, ponieważ przyłożone są one w punkcie, przez który przechodzi oś obrotu, czyli ich odległość od osi obrotu wynosi zero. W czasie obrotów krążka siła <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> działa w stałej odległości <m:math><m:mi>R</m:mi></m:math> od osi obrotu, zatem działa ona na drodze <m:math><m:mi>s</m:mi><m:mo>=</m:mo><m:mi>R</m:mi><m:mi>θ</m:mi></m:math>.</para>
+        <para id="ked-1bl84e37d_vpo"><title>Rozwiązanie</title> Ponieważ moment siły ma wartość <m:math><m:mrow><m:mi>M</m:mi><m:mo>=</m:mo><m:mi>R</m:mi><m:mi>F</m:mi></m:mrow></m:math>, możemy napisać:</para>
+        <equation id="ked-1bl84fog7_t2o" class="unnumbered">
+          <m:math>
+            <m:mrow>
+              <m:mi>W</m:mi>
+              <m:mo>=</m:mo>
+              <m:mi>M</m:mi>
+              <m:mi>θ</m:mi>
+              <m:mo>=</m:mo>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mi>F</m:mi>
+              <m:mi>R</m:mi>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mi>θ</m:mi>
+              <m:mo>=</m:mo>
+              <m:mi>F</m:mi>
+              <m:mi>s</m:mi>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="ked-1bl84fqr7_pmg">Jako że siła działa w stałej odległości 1,0 m, na podstawie twierdzenia o pracy i energii otrzymujemy:</para>
+        <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl84gd42_ra8" class="unnumbered"><m:math display="block"><m:semantics><m:mtable><m:mtr><m:mtd><m:msub><m:mi>W</m:mi><m:mfenced separators="⁣" close="" open=""><m:mi>A</m:mi><m:mi>B</m:mi></m:mfenced></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:msub><m:mi>E</m:mi><m:mtext>kB</m:mtext></m:msub><m:mo>−</m:mo><m:mrow><m:msub><m:mi>E</m:mi><m:mtext>kA</m:mtext></m:msub><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>s</m:mi><m:maligngroup/></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⁢</m:mo><m:mi>I</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>−</m:mo><m:mrow><m:mn>0</m:mn><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>50,0</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mn>1,0</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:maligngroup/></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mrow><m:mn>2,5</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>-3</m:mn></m:msup></m:mrow><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">kg</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{align} W_{A\sep B} &amp;= K_B - K_A \text{,} \\ F s &amp;= \frac12 I \omega^2 - 0 \text{,}  \\ \SI{50,0}{\newton} \cdot \SI{1,0}{\metre} &amp;= \frac12 \cdot \SI[inter-unit-product = ⋅]{2,5e-3}{\kilo\gram\metre\squared} \cdot \omega^2 \text{.}  \end{align}</m:annotation></m:semantics></m:math></equation><para id="ked-1bl84gied_6r8">Rozwiązując to równanie otrzymujemy:</para>
+        <equation id="ked-1bl84h63n_3mo" class="unnumbered"><m:math>
+            <m:mi>ω</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>200</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">r</m:mi>
+              <m:mi mathvariant="normal">a</m:mi>
+              <m:mi mathvariant="normal">d</m:mi>
+              <m:mrow>
+                <m:mtext>/</m:mtext>
+              </m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:math>
+        </equation></example>
+    </section>
+    <section id="ked-1bl85i9kl_9uo">
+      <title>Moc w ruchu obrotowym </title>
+      <para id="ked-1bl85ig8j_m3g">Moc pojawia się w każdej dyskusji na temat praktycznych zastosowań ruchu obrotowego w inżynierii i fizyce. Moc w ruchu obrotowym jest równie ważna jak moc w ruchu postępowym i można ją opisać w podobny sposób jak w ruchu postępowym, gdy działa stała siła. Moc stałej siły w ruchu postępowym wyraża się wzorem <m:math><m:mi>P</m:mi><m:mo>=</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mover><m:mi>v</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. Jeżeli wypadkowy moment siły jest stały w czasie całego przesunięcia kątowego, to równanie na pracę upraszcza się i wartość momentu siły może być wyłączona przed całkę. W dalszych rozważaniach będziemy zakładać, że moment siły jest stały. Możemy zatem zastosować definicję mocy wyprowadzoną w rozdziale <link document="m65770" class="target-chapter">Praca i energia kinetyczna</link>. Tamże, moc chwilowa (lub po prostu moc) definiowana była jako szybkość wykonywania pracy:</para><equation id="ked-1bl85n9f3_tt8" class="unnumbered">
+        <m:math>
+          <m:mi>P</m:mi>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>W</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="ked-1bl85ok99_pj8">Jeżeli działa stały moment siły, to równanie na pracę przybiera postać <m:math><m:mrow><m:mi>W</m:mi><m:mo>=</m:mo><m:mi>M</m:mi><m:mi>θ</m:mi></m:mrow></m:math>, a równanie na moc:</para><equation id="ked-1bl85olok_h28" class="unnumbered">
+        <m:math>
+          <m:mi>P</m:mi>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>W</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>M</m:mi>
+              <m:mi>θ</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mi>M</m:mi>
+          <m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>θ</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mn>,</m:mn>
+        </m:math>
+      </equation>
+      <para id="ked-1bl85sket_h4">czyli</para>
+      <note id="ked-1bl85t2e1_gu8" class="equation-callout">
+        <equation id="ked-1bl85tcat_ld">
+          <m:math>
+            <m:mrow>
+              <m:mi>P</m:mi>
+              <m:mo>=</m:mo>
+              <m:mi>M</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+      </note>
+      <example id="ked-1bl85uicp_098">
+        <para id="ked-1bl85uibi_v4g"><title>Moment obrotowy śruby łodzi</title> Silnik łodzi pracujący z mocą <m:math><m:mn>9</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>4</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math> obraca się wykonując 300 obr/min. Jaki moment siły działa na wał śruby napędowej? </para>
+        <para id="ked-1bl861c8p_rvg"><title>Strategia rozwiązania</title> Mamy podaną liczbę obrotów na minutę i zużycie energii. Dzięki tym danym możemy łatwo obliczyć moment siły. </para>
+        <para id="ked-1bl861nil_9g8">
+          <title>Rozwiązanie</title>
+        </para>
+        <equation id="ked-1bl862dev_f7g" class="unnumbered">
+          <m:math>
+            <m:mn>300</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">b</m:mi>
+              <m:mi mathvariant="normal">r</m:mi>
+              <m:mrow>
+                <m:mtext>/</m:mtext>
+              </m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mi mathvariant="normal">i</m:mi>
+              <m:mi mathvariant="normal">n</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>31</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>4</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">r</m:mi>
+              <m:mi mathvariant="normal">a</m:mi>
+              <m:mi mathvariant="normal">d</m:mi>
+              <m:mrow>
+                <m:mtext>/</m:mtext>
+              </m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            <m:mn>,</m:mn>
+          </m:math>
+        </equation>
+        <equation id="ked-1bl862rqk_kc" class="unnumbered">
+          <m:math>
+            <m:mi>M</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>P</m:mi>
+              <m:mi>ω</m:mi>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mn>9</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>0</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>4</m:mn>
+                </m:msup>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">N</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:mspace width="0.2em"/>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>31</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>4</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">r</m:mi>
+                  <m:mi mathvariant="normal">a</m:mi>
+                  <m:mi mathvariant="normal">d</m:mi>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mn>2864</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>8</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+              <m:mo>⋅</m:mo>
+              <m:mspace width="0.2em"/>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1bl8634fj_k58"><title>Znaczenie</title>Warto zauważyć, że radian jest jednostką bezwymiarową, ponieważ zgodnie z definicją jest to iloraz dwóch długości. Dlatego też nie pojawia się w odpowiedzi. </para>
+      </example>
+      <note id="ked-1bl8642oj_i88" class="check-understanding">
+        <exercise id="ked-1bl864dvt_v2o">
+          <problem id="ked-1bl8654md_0so">
+            <para id="ked-1bl8656qi_bj8"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Moment siły o wartości <m:math><m:mn>500</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math> działający na turbinę wiatrową utrzymuje ją w ruchu obrotowym z prędkością 6 rad/s. Jaka jest wartość mocy potrzebna do podtrzymania obrotów turbiny?</para>
+          </problem>
+          <solution id="ked-1bl8673ot_kd">
+            <para id="ked-1bl8673oc_v7">3 MW.</para>
+          </solution>
+        </exercise>
+      </note>
+    </section>
+    <section id="ked-1bl86krps_ftg">
+      <title>Wielkości opisujące ruch obrotowy i postępowy.</title>
+      <table id="ked-1bl86m523_28o" summary="Tabela składa się z trzech kolumn i pięciu rzędów. Pierwszy rząd zawiera następujące nagłówki: ‘Ruch obrotowy’; ‘Ruch postępowy’, ‘Związki między wielkościami obrotowymi postępowymi ’. W kolumnie pod ‘Ruch obrotowy’: theta; omega; epsilon. W kolumnie nad ‘Ruch postępowy’: x, vt, at, ac. W kolumnie pod ‘Związki’: Omega równe vt podzielone przez r; epsilon równe at podzielone przez r; ac równe vt kwadrat dzielone prze r."><title>Zmienne obrotowe i postępowe – podsumowanie</title>
+<tgroup cols="3"><thead>
+            <row>
+              <entry> Ruch obrotowy</entry>
+              <entry>Ruch postępowy </entry>
+              <entry>Zależności między wielkościami obrotowymi <newline/>i postępowymi (<m:math><m:mi>r</m:mi></m:math> – promień okręgu)</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mi>θ</m:mi>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mi>x</m:mi>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mi>θ</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mi>s</m:mi>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:mi>r</m:mi>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mi>ω</m:mi>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                      <m:mi>v</m:mi>
+                  </m:mrow>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mi>ω</m:mi>
+                  <m:mo>=</m:mo>
+                    <m:mi>v</m:mi>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:mi>r</m:mi>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mi>ε</m:mi>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mtext>s</m:mtext>
+                    </m:msub>
+                  </m:mrow>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mi>ε</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mtext>s</m:mtext>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:mi>r</m:mi>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry/>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mtext>d</m:mtext>
+                    </m:msub>
+                  </m:mrow>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mi>d</m:mi>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:msup>
+                    <m:mi>v</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:mi>r</m:mi>
+                </m:math>
+              </entry>
+            </row>
+          </tbody>
+        
+
+
+</tgroup>
+</table><table id="ked-1bl86qoef_75o" summary="Pokazana jest tabela z dwóch kolumn i 5 rzędów. Kolumna pierwsza ma nagłówek “Ruch obrotowy” a rzędy dwa pięć wpisów “theta ze znakiem f równe theta ze znakiem 0 plus omega t,” “omega ze znakiem f równe omega ze znakiem 0 plus alfa t,” “theta z znakiem f równe theta ze znakiem 0 plus omega ze znakiem 0 razy t plus połowa alfa t kwadrat,” i “omega ze znakiem f ze znakiem 2 równe omega ze znakiem 0 ze znakiem 2 plus 2 alfa razy delta theta.” Kolumna druga z nagłówkiem “Postępowy” i rzędami dwa pięć zawiera “x równe x ze znakiem 0 plus v z kreską r t,” “v ze znakiem f równe v ze znakiem 0 plus a t,” “x ze znakiem f równe x ze znakiem 0 plus v ze znakiem zero t plus połowa t kwadrat,” i “v ze znakiem f ze znakiem 2 równe v ze znakiem t zero ze znakiem 2 plus 2 a razy delta x.”">
+        <title>Równania kinematyki dla ruchu obrotowego i postępowego </title>
+        <tgroup cols="2">
+          <thead>
+            <row>
+              <entry>Ruch obrotowy </entry>
+              <entry>Ruch postępowy</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mtext>k</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mover accent="true">
+                      <m:mi>ω</m:mi>
+                      <m:mo>–</m:mo>
+                    </m:mover>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>x</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mover accent="true">
+                      <m:mi>v</m:mi>
+                      <m:mo>–</m:mo>
+                    </m:mover>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>ω</m:mi>
+                      <m:mtext>k</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>ω</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mi>ε</m:mi>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mtext>k</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mi>a</m:mi>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mtext>k</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>ω</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mi>t</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mi>ε</m:mi>
+                    <m:msup>
+                      <m:mi>t</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>x</m:mi>
+                      <m:mtext>k</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>x</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mi>t</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mi>a</m:mi>
+                    <m:msup>
+                      <m:mi>t</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msubsup>
+                      <m:mi>ω</m:mi>
+                      <m:mtext>k</m:mtext>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                    <m:mo>=</m:mo>
+                    <m:msup>
+                      <m:mi>ω</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:msub>
+                      <m:mrow/>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mi>ε</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mtext>Δ</m:mtext>
+                    <m:mi>θ</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                  </m:mrow>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msubsup>
+                      <m:mi>v</m:mi>
+                      <m:mtext>k</m:mtext>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                    <m:mo>=</m:mo>
+                    <m:msup>
+                      <m:mi>v</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:msub>
+                      <m:mrow/>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mi>a</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mtext>Δ</m:mtext>
+                    <m:mi>x</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table id="ked-1bl86tnob_2rg" summary="Tabela składa się z dwóch kolumn i pięciu rzędów. Kolumny mają nagłówki z lewej do prawej Ruch obrotowy i Ruch postępowy. W kolumnie dla ruchu obrotowego znajdują się jeden pod drugim wzory dla wartości I, K, sumy Mi, W ze znakiem AB i P, a dla kolumny Postępowy są wzory dla wartości odpowiednio jedna pod drugą (m bez wzoru), K, sumy F ze znakiem i, W oraz P."><title>Równania dynamiki w ruchu obrotowym i postępowym</title>
+<tgroup cols="2"><thead>
+            <row>
+              <entry>Ruch obrotowy </entry>
+              <entry>Ruch postępowy</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:mi>I</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mstyle displaystyle="true">
+                      <m:munder>
+                        <m:mo>∑</m:mo>
+                        <m:mi>i</m:mi>
+                      </m:munder>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>m</m:mi>
+                          <m:mi>i</m:mi>
+                        </m:msub>
+                        <m:msubsup>
+                          <m:mi>r</m:mi>
+                          <m:mi>i</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:mrow>
+                </m:math>
+              </entry>
+              <entry>
+                  <m:math>
+                    <m:mi>m</m:mi>
+                  </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mi>I</m:mi>
+                    <m:msup>
+                      <m:mi>ω</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mi>m</m:mi>
+                    <m:msup>
+                      <m:mi>v</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:mstyle displaystyle="true">
+                      <m:munder>
+                        <m:mo>∑</m:mo>
+                        <m:mi>i</m:mi>
+                      </m:munder>
+                      <m:msub>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>M</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mi>i</m:mi>
+                  </m:msub>
+                    </m:mstyle>
+                    <m:mo>=</m:mo>
+                    <m:mi>I</m:mi>
+                    <m:mrow>
+                    <m:mover>
+                      <m:mi>ε</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                  </m:mrow>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:munder>
+                    <m:mo movablelimits="false">∑</m:mo>
+                    <m:mi>i</m:mi>
+                  </m:munder>
+                  <m:msub>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>F</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mi>i</m:mi>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mi>m</m:mi>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>a</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <m:math>
+                  <m:msub>
+                    <m:mi>W</m:mi>
+                    <m:mrow>
+                      <m:mi>A</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:mrow>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:munderover>
+                    <m:mo>∫</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>θ</m:mi>
+                        <m:mi>A</m:mi>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>θ</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:msub>
+                    </m:mrow>
+                  </m:munderover>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:munder>
+                        <m:mo movablelimits="false">∑</m:mo>
+                        <m:mi>i</m:mi>
+                      </m:munder>
+                      <m:msub>
+                        <m:mi>M</m:mi>
+                        <m:mi>i</m:mi>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>θ</m:mi>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mi>W</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mo>∫</m:mo>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>F</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>s</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:mi>P</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mi>M</m:mi>
+                    <m:mi>ω</m:mi>
+                  </m:mrow>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mi>P</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>F</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>v</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+          </tbody>
+        
+</tgroup>
+</table></section>
+    <section id="ked-1bl872vaa_uog" class="key-concepts">
+      <title>Posumowanie </title>
+      <list xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl873h36_bfo"><item>Elementarna praca <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>W</m:mi></m:math> wykonana nad obracającą się wokół stałej osi bryłą sztywną jest sumą iloczynu momentu siły, liczonego względem osi obrotu, i elementarnego przemieszczenia kątowego <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>θ</m:mi></m:math>.</item>
+        <item>Całkowita praca wykonana przy obróceniu bryły sztywnej o kąt <m:math><m:mi>θ</m:mi></m:math> wokół ustalonej (nieruchomej) osi jest całką, liczoną względem przesunięcia kątowego, z sumy momentów siły. Jeżeli moment siły nie zależy od <m:math><m:mi>θ</m:mi></m:math>, wówczas <m:math><m:mrow><m:msub><m:mi>W</m:mi><m:mrow><m:mi>A</m:mi><m:mi>B</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mi>B</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>θ</m:mi><m:mi>A</m:mi></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. </item>
+        <item>Twierdzenie o pracy i energii wiąże pracę wykonaną w ruchu obrotowym z energią kinetyczną ruchu obrotowego: <m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>W</m:mi><m:mfenced separators="⁣" close="" open=""><m:mi>A</m:mi><m:mi>B</m:mi></m:mfenced></m:msub><m:mo>=</m:mo><m:mrow><m:msub><m:mi>E</m:mi><m:mfenced separators="⁣" close="" open=""><m:mtext>k</m:mtext><m:mi>B</m:mi></m:mfenced></m:msub><m:mo>−</m:mo><m:msub><m:mi>E</m:mi><m:mfenced separators="⁣" close="" open=""><m:mtext>k</m:mtext><m:mi>A</m:mi></m:mfenced></m:msub></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            W_{A\sep B} = E_{\text{k}\sep B} - E_{\text{k}\sep A}</m:annotation></m:semantics></m:math>, gdzie <m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>E</m:mi><m:mtext>k</m:mtext></m:msub><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>I</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            E_{\text{k}} = I \omega^2 / 2</m:annotation></m:semantics></m:math>.</item>
+        <item>Moc w przypadku bryły sztywnej obracającej się wokół ustalonej osi jest równa iloczynowi momentu siły i prędkości kątowej: <m:math><m:mrow><m:mi>P</m:mi><m:mo>=</m:mo><m:mi>M</m:mi><m:mi>ω</m:mi></m:mrow></m:math>.</item>
+      </list></section>
+    <section id="ked-1bl8btpfq_g5g" class="key-equations">
+      <title>Najważniejsze wzory</title>
+      <table id="ked-1bl8bv8o9_ff8" class="unnumbered unstyled" summary="Tabela o nazwie Podstawowe równania. Składa się z dwóch kolumn i 25 rzędów. W kolumnie są nazwy równań, twierdzeń lub wartości,poczynając od Drogi kątowej w rzędzie pierwszym do Mocy w ruchu obrotowym w rzędzie ostatnim. W kolumnie prawej wpisano odpowiadające im w tej samej kolejności równania.">
+<tgroup cols="2"><tbody>
+            <row>
+              <entry>Droga kątowa</entry>
+              <entry>
+                <m:math>
+                  <m:mi>θ</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mi>s</m:mi>
+                    <m:mi>r</m:mi>
+                  </m:mfrac>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Prędkość kątowa</entry>
+              <entry>
+                <m:math>
+                  <m:mi>ω</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:munder>
+                    <m:mo form="prefix">lim</m:mo>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">Δ</m:mi>
+                      </m:mrow>
+                      <m:mi>t</m:mi>
+                      <m:mtext>→</m:mtext>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:munder>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">Δ</m:mi>
+                      </m:mrow>
+                      <m:mi>θ</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">Δ</m:mi>
+                      </m:mrow>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">d</m:mi>
+                      </m:mrow>
+                      <m:mi>θ</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">d</m:mi>
+                      </m:mrow>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Prędkość liniowa w ruchu po okręgu</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                      <m:mi>v</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mi>r</m:mi>
+                    <m:mi>ω</m:mi>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Przyspieszenie kątowe</entry>
+              <entry>
+                <m:math>
+                  <m:mi>ε</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:munder>
+                    <m:mo form="prefix">lim</m:mo>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">Δ</m:mi>
+                      </m:mrow>
+                      <m:mi>t</m:mi>
+                      <m:mtext>→</m:mtext>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:munder>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">Δ</m:mi>
+                      </m:mrow>
+                      <m:mi>ω</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">Δ</m:mi>
+                      </m:mrow>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">d</m:mi>
+                      </m:mrow>
+                      <m:mi>ω</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">d</m:mi>
+                      </m:mrow>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">d</m:mi>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mi>θ</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">d</m:mi>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mi>t</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Przyspieszenie styczne</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mtext>s</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mi>r</m:mi>
+                    <m:mi>ε</m:mi>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Średnia prędkość kątowa</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:mover accent="true">
+                      <m:mi>ω</m:mi>
+                      <m:mo>–</m:mo>
+                    </m:mover>
+                    <m:mo>=</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>ω</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mo>+</m:mo>
+                        <m:msub>
+                          <m:mi>ω</m:mi>
+                          <m:mtext>k</m:mtext>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Przesunięcie kątowe w ruchu ze stałym przyspieszeniem kątowym</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mtext>k</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mover accent="true">
+                      <m:mi>ω</m:mi>
+                      <m:mo>–</m:mo>
+                    </m:mover>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Prędkość końcowa w ruchu ze stałym przyspieszeniem kątowym</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>ω</m:mi>
+                      <m:mtext>k</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>ω</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mi>ε</m:mi>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Końcowe położenie kątowe dla ruchu ze stałym przyspieszeniem kątowym</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mtext>k</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>ω</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mi>t</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mi>ε</m:mi>
+                    <m:msup>
+                      <m:mi>t</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Zmiana prędkości kątowej</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msubsup>
+                      <m:mi>ω</m:mi>
+                      <m:mtext>k</m:mtext>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                    <m:mo>=</m:mo>
+                    <m:msubsup>
+                      <m:mi>ω</m:mi>
+                      <m:mn>0</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                    <m:mo>+</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mi>ε</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mtext>Δ</m:mtext>
+                    <m:mi>θ</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Przyspieszenie całkowite</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>a</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>a</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mtext>d</m:mtext>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>a</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mtext>s</m:mtext>
+                  </m:msub>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Energia kinetyczna ruchu obrotowego</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mstyle displaystyle="true">
+                          <m:munder>
+                            <m:mo>∑</m:mo>
+                            <m:mi>j</m:mi>
+                          </m:munder>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>m</m:mi>
+                              <m:mi>j</m:mi>
+                            </m:msub>
+                            <m:msubsup>
+                              <m:mi>r</m:mi>
+                              <m:mi>j</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msubsup>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:msup>
+                      <m:mi>ω</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Moment bezwładności</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:mi>I</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mstyle displaystyle="true">
+                      <m:munder>
+                        <m:mo>∑</m:mo>
+                        <m:mi>j</m:mi>
+                      </m:munder>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>m</m:mi>
+                          <m:mi>j</m:mi>
+                        </m:msub>
+                        <m:msubsup>
+                          <m:mi>r</m:mi>
+                          <m:mi>j</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Energia kinetyczna ciała sztywnego w ruchu obrotowym</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mi>I</m:mi>
+                    <m:msup>
+                      <m:mi>ω</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Moment bezwładności ciała sztywnego</entry>
+              <entry>
+                <m:math>
+                  <m:mi>I</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mo>∫</m:mo>
+                  <m:msup>
+                    <m:mi>r</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>m</m:mi>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Twierdzenie Steinera</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>I</m:mi>
+                      <m:mrow>
+                        <m:mtext>oś równoległa</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>I</m:mi>
+                      <m:mrow>
+                        <m:mtext>środek masy</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mi>m</m:mi>
+                    <m:msup>
+                      <m:mi>d</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Moment bezwładności ciał złożonych</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>I</m:mi>
+                      <m:mrow>
+                        <m:mtext>całkowite</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mstyle displaystyle="true">
+                      <m:munder>
+                        <m:mo>∑</m:mo>
+                        <m:mi>i</m:mi>
+                      </m:munder>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mi>i</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Moment siły</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>M</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>r</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mo>×</m:mo>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>F</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Wartość wektora momentu siły</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:mo>|</m:mo>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>M</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mo>|</m:mo>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mi>r</m:mi>
+                    <m:mrow>
+                      <m:mo>⊥</m:mo>
+                    </m:mrow>
+                  </m:msub>
+                  <m:mi>F</m:mi>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Wypadkowy moment sił</entry>
+              <entry>
+                <m:math>
+                  <m:msub>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>M</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mtext>wyp</m:mtext>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:munder>
+                    <m:mo movablelimits="false">∑</m:mo>
+                    <m:mi>i</m:mi>
+                  </m:munder>
+				  <m:msub>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>M</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mi>i</m:mi>
+                  </m:msub>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Druga zasada dynamiki dla ruchu obrotowego</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:mstyle displaystyle="true">
+                      <m:munder>
+                        <m:mo>∑</m:mo>
+                        <m:mi>i</m:mi>
+                      </m:munder>
+                      <m:msub>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>M</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mi>i</m:mi>
+                  </m:msub>
+                    </m:mstyle>
+                    <m:mo>=</m:mo>
+                    <m:mi>I</m:mi>
+					<m:mover>
+                    <m:mi>ε</m:mi>
+					<m:mtext>→</m:mtext>
+                      </m:mover>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Elementarna praca momentu sił</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>W</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:munder>
+                        <m:mo movablelimits="false">∑</m:mo>
+                        <m:mi>i</m:mi>
+                      </m:munder>
+                      <m:msub>
+                        <m:mi>M</m:mi>
+                        <m:mi>i</m:mi>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>θ</m:mi>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Twierdzenie praca-energia</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>W</m:mi>
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>E</m:mi>
+                      <m:mi>kB</m:mi>
+                    </m:msub>
+                    <m:mo>−</m:mo>
+                    <m:msub>
+                      <m:mi>E</m:mi>
+                      <m:mi>kA</m:mi>
+                    </m:msub>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Praca wypadkowego momentu sił przy obrotach wokół stałej osi</entry>
+              <entry>
+                <m:math>
+                  <m:msub>
+                    <m:mi>W</m:mi>
+                    <m:mrow>
+                      <m:mi>A</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:mrow>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:munderover>
+                    <m:mo>∫</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>θ</m:mi>
+                        <m:mi>A</m:mi>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>θ</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:msub>
+                    </m:mrow>
+                  </m:munderover>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:munder>
+                        <m:mo movablelimits="false">∑</m:mo>
+                        <m:mi>i</m:mi>
+                      </m:munder>
+                      <m:msub>
+                        <m:mi>M</m:mi>
+                        <m:mi>i</m:mi>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>θ</m:mi>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Moc w ruchu obrotowym</entry>
+              <entry>
+                <m:math>
+                  <m:mrow>
+                    <m:mi>P</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mi>M</m:mi>
+                    <m:mi>ω</m:mi>
+                  </m:mrow>
+                </m:math>
+              </entry>
+            </row>
+          </tbody>
+        
+
+
+
+</tgroup>
+</table></section>
+    <section id="ked-1bl8d6ufh_6lo" class="review-problems">
+      <title>Zadania</title>
+      <exercise id="ked-1bl8d74r4_2i">
+        <problem id="ked-1bl8d804d_c4">
+          <para id="ked-1bl8d835l_ajg">Turbina wiatrowa obraca się z częstotliwością 20 obr/min. Jeśli jej moc wynosi 2,0 MW, to jaki jest generowany przez wiatr moment siły działający na turbinę?</para>
+        </problem>
+        <solution id="ked-1bl8d8gi8_jlo" class="section-exercises">
+          <para id="ked-1bl8d8gib_648">
+            <m:math>
+              <m:mi>M</m:mi>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mi>P</m:mi>
+                <m:mi>ω</m:mi>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mn>,</m:mn>
+                  <m:mn>0</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>6</m:mn>
+                  </m:msup>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">W</m:mi>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mn>,</m:mn>
+                  <m:mn>1</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">r</m:mi>
+                    <m:mi mathvariant="normal">a</m:mi>
+                    <m:mi mathvariant="normal">d</m:mi>
+                    <m:mrow>
+                      <m:mtext>/</m:mtext>
+                    </m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mn>9</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>5</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>5</m:mn>
+              </m:msup>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl8dakoh_s4">
+        <problem id="ked-1bl8dakog_k68">
+          <para id="ked-1bl8dakot_kn8">Gliniany walec o promieniu 20 cm znajdujący się na kole garncarskim obraca się ze stałą częstotliwością wynoszącą 10 obr/s. Garncarz przykłada rękami siłę 10 N do gliny. Współczynnik tarcia między jego dłonią a gliną wynosi 0,1. Jaką moc garncarz musi przyłożyć do koła, aby utrzymać jego stałą częstotliwość obrotów?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl8daj0b_u38">
+        <problem id="ked-1bl8daivt_emo">
+          <para id="ked-1bl8daiv3_7q8">Jednorodna, cylindryczna tarcza szlifierska ma masę 10 kg i promień 12 cm. <list id="eip-idm505703792" list-type="enumerated" number-style="lower-alpha"><item>Jaka jest jej energia kinetyczna podczas szlifowania, gdy obraca się ona z częstotliwością <m:math><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>5</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>3</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">m</m:mi><m:mi mathvariant="normal">i</m:mi><m:mi mathvariant="normal">n</m:mi></m:mrow></m:math>?</item><item>Po wyłączeniu silnika napędzającego tarczę, do zewnętrznej krawędzi tarczy dociśnięto, prostopadle do kamienia, ostrze noża. Siła nacisku wynosiła 5,0 N, a współczynnik tarcia kinetycznego między tarczą a ostrzem wynosił 0,80. Stosując twierdzenie o pracy i energii wyznacz, ile obrotów wykona tarcza do zatrzymania się.</item></list></para>
+        </problem>
+        <solution id="ked-1bl8daj0q_b7g" class="section-exercises">
+          <list id="ked-1bl8daiv2_jc" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub><m:mo>=</m:mo><m:mn>888</m:mn><m:mn>,</m:mn><m:mn>50</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow></m:math>; </item>
+            <item><m:math><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>294</m:mn><m:mn>,</m:mn><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi></m:mrow></m:math>.</item>
+          </list></solution>
+      </exercise>
+      <exercise id="ked-1bl8dah6p_0hg">
+        <problem id="ked-1bl8dah67_1o">
+          <para id="ked-1bl8dah80_tm8">Jednorodny krążek o masie 500 kg i promieniu 0,25 m jest zamontowany na łożysku mogącym obracać się bez tarcia, dzięki czemu może on obracać się swobodnie wokół pionowej osi przechodzącej przez jego środek (patrz rysunek). Sznurek owinięty wokół obręczy krążka jest ciągnięty z siłą 10 N. <list id="eip-idm536364976" list-type="enumerated" number-style="lower-alpha"><item>Jaką pracę wykonała ta siła do chwili wykonania przez krążek 3 obrotów, jeśli zaczynał od spoczynku? </item><item>Wyznacz moment tej siły, a następnie oblicz pracę wykonaną przez ten moment siły do zakończenia 3 obrotów.</item><item>Jaka jest wartość prędkości kątowej w momencie zakończenia trzeciego obrotu?</item><item>Jak jest moc tej siły w tym momencie?</item></list></para>
+          <media id="ked-1bl8decbi_39o" alt="Rysunek pokazuje jednorodny dysk obracający się wokół pionowej osi przechodzącej przez jej środek. Jest też przewód owinięty na obręczy dysku popychany z siłą 10 N.">
+            <image src="../../media/CNX_UPhysics_10_08_UniDis_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl8dafi8_7k8">
+        <problem id="ked-1bl8dafi7_a8o">
+          <para id="ked-1bl8dafig_avo">W wyniku działania stałego momentu sił o wartości <m:math><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>3</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>, śmigło przyspiesza od spoczynku do prędkości obrotowej 1000 obr/min w czasie 6 s. <list id="eip-idm449809792" list-type="enumerated" number-style="lower-alpha"><item>Jaki jest moment bezwładności śmigła?</item><item>Jaka moc jest dostarczana do śmigła po upływie 3,0 s od rozpoczęcia obrotów?</item></list></para>
+        </problem>
+        <solution id="ked-1bl8dafjp_ph" class="section-exercises">
+          <list id="ked-1bl8dafko_mr" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mn>114</m:mn><m:mn>,</m:mn><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>; </item>
+            <item><m:math><m:mi>P</m:mi><m:mo>=</m:mo><m:mn>104</m:mn><m:mn>,</m:mn><m:mn>700</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">W</m:mi></m:mrow></m:math>.</item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl8dadvq_7a8">
+        <problem id="ked-1bl8dae03_g3g">
+          <para id="ked-1bl8dae22_bd8">Kulę o masie 1,0 kg i promieniu 0,5 m przymocowano do jednego z końców pręta o znikomo małej masie i długości 3 m (patrz rysunek poniżej). Układ obraca się w próżni w płaszczyźnie poziomej, dookoła pionowej osi, z częstotliwością 400 obrotów na minutę. Następnie, po włączeniu nadmuchu powietrza, na wirujący początkowo z taką prędkością kątową układ zaczyna działać siła oporu powietrza o wartości 0,15 N. Siła działa na kulę w kierunku przeciwnym do kierunku jej ruchu. Jaka jest moc siły oporu powietrza po upływie 100,0 s licząc od momentu, w którym zaczęła ona działać?</para>
+          <media id="ked-1bl8dh3c4_jig" alt="Rysunek pokazuje kulę z doczepionym na końcu prętem. Pręt obraca się wokół osi, która znajduje się po przeciwnej stronie końca kuli.">
+            <image src="../../media/CNX_UPhysics_10_08_SpRotate_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl8dacbq_pkg">
+        <problem id="ked-1bl8dacbi_9fg">
+          <para id="ked-1bl8dacat_k9">Jednorodny pręt o długości <m:math><m:mi>L</m:mi></m:math> i masie <m:math><m:mi>M</m:mi></m:math> jest trzymany pionowo, z jednym końcem spoczywającym na podłodze, jak pokazano poniżej. Kiedy pręt zostaje puszczony, obraca się wokół swojego dolnego końca, aż do uderzenia w podłogę. Zakładając, że dolny koniec pręta nie ślizga się, wyznacz liniową prędkość górnego końca, gdy uderza on w podłogę.</para>
+          <media id="ked-1bl8din5v_rb8" alt="Na rysunku jednorodny pręt o długości L i masie M jest trzymany pionowo z końcem spoczywającym na podłodze. Gdy pręt jest uwolniony obraca wokół dolnego końca aż do uderzenia o podłogę.">
+            <image src="../../media/CNX_UPhysics_10_08_Prob3_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bl8dacbo_o48" class="section-exercises">
+          <para id="ked-1bl8dacae_7pg">
+            <m:math>
+              <m:mrow>
+                <m:mi>v</m:mi>
+                <m:mo>=</m:mo>
+                <m:mi>L</m:mi>
+                <m:mi>ω</m:mi>
+                <m:mo>=</m:mo>
+                <m:msqrt>
+                  <m:mrow>
+                    <m:mn>3</m:mn>
+                    <m:mi>L</m:mi>
+                    <m:mi>g</m:mi>
+                  </m:mrow>
+                </m:msqrt>
+              </m:mrow>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl8daahr_ppo">
+        <problem id="ked-1bl8daaji_1rg">
+          <para id="ked-1bl8daahr_au">Sportowiec na siłowni działa na pedały roweru ze stałą siłą 50 N, aby utrzymać stałą częstotliwość obrotów koła równą 10 obr/s. Ramiona pedałów mają długość 30 cm. Jaką moc dostarcza rowerowi sportowiec?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl8da8h6_amo">
+        <problem id="ked-1bl8da8g4_u68">
+          <para id="ked-1bl8da8ee_0eg">Klocek o masie 2 kg umieszczono na doskonale gładkiej powierzchni, nachylonej pod kątem <m:math><m:msup><m:mn>40</m:mn><m:mo>∘</m:mo></m:msup></m:math> do poziomu. Za pośrednictwem sznurka klocek połączony jest z krążkiem o masie 1 kg i promieniu 20 cm (patrz rysunek). <list id="eip-idm439152112" list-type="enumerated" number-style="lower-alpha"><item>Wyznacz przyspieszenie klocka.</item><item>Wyznacz pracę wykonaną przez siłę ciążenia, aby przesunąć klocek o 50 cm.</item></list></para>
+          <media id="ked-1bl8dlmqc_0m" alt="Rysunek pokazuje 2 kg klocek na gładkiej powierzchni ustawionej pod kątem 40 stopni, który jest połączony za pomocą sznurka z krążkiem o masie 1 kg i promieniu 20 cm.">
+            <image src="../../media/CNX_UPhysics_10_08_BlocWin_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bl8da8go_huo" class="section-exercises">
+          <list id="ked-1bl8da8gq_m8g" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>; </item>
+            <item><m:math><m:mi>W</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>25</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>.</item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl8da6kk_tt8">
+        <problem id="ked-1bl8da6lc_g1g">
+          <para id="ked-1bl8da6m6_e2g">Dwa małe ciała o masach <m:math><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub></m:math> i <m:math><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub></m:math> przymocowane są na przeciwległych końcach cienkiego, sztywnego pręta o długości <m:math><m:mi>L</m:mi></m:math> i masie <m:math><m:mi>M</m:mi></m:math>. Pręt jest zamontowany tak, że może swobodnie obracać się w płaszczyźnie poziomej wokół osi pionowej (patrz rysunek poniżej). Jaka powinna być odległość <m:math><m:mi>d</m:mi></m:math> osi obrotu od masy <m:math><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub></m:math>, aby praca potrzebna na wprowadzenie pręta w ruch obrotowy z prędkością kątową <m:math><m:mi>ω</m:mi></m:math> była najmniejsza?</para>
+          <media id="ked-1bl8dujof_ep8" alt="Rysunek przedstawia cienki pręt o długości L z masami m1 i m2 odpowiednio na swych przeciwległych końcach. Pręt obraca się wokół przechodzącej przez niego osi w odległości d od m1 i L-d od m2.">
+            <image src="../../media/CNX_UPhysics_10_08_Prob6_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+      </exercise>
+    </section>
+    <section id="ked-1bl8fa4mn_l98" class="review-additional-problems">
+      <title>Zadania dodatkowe</title>
+      <exercise id="ked-1bl8faf8i_6a">
+        <problem id="ked-1bl8faf9e_mug">
+          <para id="ked-1bl8faf8n_keg">Rowerzysta nadaje kołom roweru częstotliwość obrotów równą 3,0 obr/s. Jeśli zacznie hamować, zmniejszając prędkość kątową z opóźnieniem <m:math><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, to po jakim czasie rower się zatrzyma?</para>
+        </problem>
+        <solution id="ked-1bl8faf7j_vo8" class="section-exercises">
+          <para id="ked-1bl8faf9o_rj">
+            <m:math>
+              <m:mrow>
+                <m:mi mathvariant="normal">Δ</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>10</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mn>,</m:mn>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl8fd7vh_2io">
+        <problem id="ked-1bl8fd7th_d8">
+          <para id="ked-1bl8fd7ts_ev">Oblicz prędkość kątową ruchu orbitalnego Ziemi wokół Słońca.</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl8fdej3_4j8">
+        <problem id="ked-1bl8fdejb_9f">
+          <para id="ked-1bl8fdei2_mig">Talerz gramofonu początkowo obracający się z prędkością obrotową <m:math><m:mn>100</m:mn><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">m</m:mi><m:mi mathvariant="normal">i</m:mi><m:mi mathvariant="normal">n</m:mi></m:mrow></m:math> zwolnił i zatrzymał się po 1,0 min. <list id="eip-idm713137408" list-type="enumerated" number-style="lower-alpha"><item>Wyznacz przyspieszenie talerza gramofonu zakładając, że było ono stałe.</item><item>Ile obrotów wykonał talerz, zanim się zatrzymał?</item></list></para>
+        </problem>
+        <solution id="ked-1bl8fdehl_i5g" class="section-exercises">
+          <list id="ked-1bl8fdehv_tn" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>06</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>;</item>
+            <item><m:math><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>105</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi></m:mrow></m:math>.</item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl8fdibu_u1">
+        <problem id="ked-1bl8fdicp_de">
+          <para id="ked-1bl8fdibn_ato">W ciągu 0,40 s żyroskop został rozpędzony za pomocą sznurka od spoczynku do prędkości kątowej 32 rad/s. Przyspieszenie kątowe żyroskopu jest stałe.<list id="eip-idm1187789456" list-type="enumerated" number-style="lower-alpha"><item>Jakie jest jego przyspieszenie kątowe w <m:math><m:mrow><m:msup><m:mrow><m:mtext>rad/s</m:mtext></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math>?</item><item>Ile obrotów wykonał on w czasie tego przyspieszania?</item></list></para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl8fdklq_s88">
+        <problem id="ked-1bl8fdknl_ef8">
+          <para id="ked-1bl8fdkol_ivo">Załóżmy, że mały pyłek kurzu spadł na płytę CD. Jeśli szybkość wirowania płyty CD wynosi 500 obr/min, a pyłek upadł w odległości 4,3 cm od środka płyty, to jaką całkowitą drogę pokonał pyłek w ciągu 3 minut? (Załóż, że pyłek leży cały czas w tej samej odległości od środka płyty). </para>
+        </problem>
+        <solution id="ked-1bl8fdkm4_e08" class="section-exercises">
+          <para id="ked-1bl8fdkob_4i"><m:math><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>405</m:mn><m:mn>,</m:mn><m:mn>26</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>.</para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl8fdn77_m6o">
+        <problem id="ked-1bl8fdn7j_7a8">
+          <para id="ked-1bl8fdn5i_ing">Układ cząstek punktowych obraca się wokół stałej osi z częstotliwością 4 obr/s. Wzajemne odległości cząstek i ich odległość od osi obrotu są stałe. Masy cząstek i ich odległości od osi obrotu to <m:math><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>r</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>05</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>m</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>5</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>r</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>01</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>. (a) Ile wynosi moment bezwładności tego układu względem osi obrotu? (b) Jaka jest energia kinetyczna ruchu obrotowego tego układu?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl8fdpp3_te">
+        <problem id="ked-1bl8fdpp6_u1g">
+          <para id="ked-1bl8fdpo8_rfo">Oblicz moment bezwładności łyżwiarza mając następujące informacje: <list id="eip-idm277045456" list-type="enumerated" number-style="lower-alpha"><item>Łyżwiarza o masie 60,0 kg można w przybliżeniu uznać za walec o promieniu 0,110 m.</item><item>Łyżwiarza z wysuniętymi rękami można uznać za walec o masie 52,5 kg i promieniu 0,110 m, z którego wystają dwa pręty o długości 0,900 m i masie 3,75 kg każdy.</item></list></para>
+        </problem>
+        <solution id="ked-1bl8fdpo2_apg" class="section-exercises">
+          <list id="ked-1bl8fdpoh_8t" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>363</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>; </item>
+            <item>
+              <m:math>
+                <m:mi>I</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>2</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>34</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:math>
+            </item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl8feg3v_ono">
+        <problem id="ked-1bl8feg3c_o38">
+          <para id="ked-1bl8feg5b_7d">Kij o długości 1,0 m oraz masie 6,0 kg może swobodnie obracać się wokół poziomej osi przechodzącej przez jego środek. Małe ciała o masach 4,0 i 2,0 kg przymocowano do dwóch jego końców (patrz poniższy rysunek). Kij zostaje zwolniony z pozycji poziomej. Jaka jest prędkość kątowa kija, gdy przechodzi on przez położenie pionowe?</para>
+          <media id="ked-1bl8fluf8_86o" alt="RysunekA pokazuje kij o długości 1 m w pozycji poziomej. Ma on przyczepione na obu swych końcach masy 2,0 kg i 4, 0 kg. RysunekB pokazuje ten sam kij uwolniony do pozycji pionowej. ">
+            <image src="../../media/CNX_UPhysics_10_05_Stick_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl8fei3a_f2o">
+        <problem id="ked-1bl8fei2l_5gg">
+          <para id="ked-1bl8fei3j_nvo">Wahadło składa się z pręta o długości 2 m i masie 3 kg oraz kuli o masie 1 kg i promieniu 0,3 m, przymocowanej do jednego jego końców. Oś obrotu jest taka, jak pokazano poniżej. Ile wynosi prędkość kątowa wahadła w najniższej pozycji, jeśli pręt został puszczony swobodnie z pozycji pod kątem <m:math><m:msup><m:mn>30</m:mn><m:mo>∘</m:mo></m:msup></m:math>? </para>
+          <media id="ked-1bl8fpsj7_shg" alt="Rysunek pokazuje wahadło w postaci pręta o długości 2 m z przyczepioną do niego masą na jednym z końców.">
+            <image src="../../media/CNX_UPhysics_10_05_SphPend_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bl8fei45_m5" class="section-exercises">
+          <para id="ked-1bl8fei3i_4fg">
+            <m:math>
+              <m:mi>ω</m:mi>
+              <m:mo>=</m:mo>
+              <m:msqrt>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>5</m:mn>
+                    <m:mn>,</m:mn>
+                    <m:mn>36</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">J</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>4</m:mn>
+                    <m:mn>,</m:mn>
+                    <m:mn>4</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">k</m:mi>
+                      <m:mi mathvariant="normal">g</m:mi>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mfrac>
+              </m:msqrt>
+              <m:mo>=</m:mo>
+              <m:mn>1</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>10</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">r</m:mi>
+                <m:mi mathvariant="normal">a</m:mi>
+                <m:mi mathvariant="normal">d</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl8fel6u_beo">
+        <problem id="ked-1bl8fel8t_r3g">
+          <para id="ked-1bl8fel8l_8v">Oblicz moment siły o wartości 40 N względem osi przechodzącej przez punkt <m:math><m:mi>O</m:mi></m:math> i prostopadłej do płaszczyzny rysunku, jak pokazano poniżej.</para>
+          <media id="ked-1bl8fr2nm_si" alt="Rysunek pokazuje pręt długi na 4 m. Siła 40 N działa na jeden z jego końców tworząc kąt 37 stopni.">
+            <image src="../../media/CNX_UPhysics_10_06_Prob10_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl8fengu_1i8">
+        <problem id="ked-1bl8feng0_7r">
+          <para id="ked-1bl8fenh0_iho">Dwoje dzieci naciska na drzwi po przeciwnych stronach. Oba naciski są skierowane poziomo i prostopadle do drzwi. Jedno dziecko popycha z siłą 17,5 N w odległości 0,600 m od zawiasów, a drugie w odległości 0,450 m. Z jaką siłą musi działać drugie dziecko, aby drzwi się nie poruszyły? Załóż, że tarcie jest nieistotne.</para>
+        </problem>
+        <solution id="ked-1bl8fenh9_ia8" class="section-exercises">
+          <para id="ked-1bl8fengc_nhg">
+            <m:math>
+              <m:mi>F</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>23</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>3</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl8feqe3_uo">
+        <problem id="ked-1bl8feqde_fu">
+          <para id="ked-1bl8feqdv_32o">Siła <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mn>20</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mover><m:mi>j</m:mi><m:mo stretchy="false">^</m:mo></m:mover></m:mrow></m:math> jest przyłożona w punkcie <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mover><m:mi>i</m:mi><m:mo stretchy="false">^</m:mo></m:mover></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mover><m:mi>j</m:mi><m:mo stretchy="false">^</m:mo></m:mover></m:mrow></m:math>. Wyznacz moment tej siły względem początku układu współrzędnych.</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl8fevu1_918">
+        <problem id="ked-1bl8fevso_3jo">
+          <para id="ked-1bl8fevsc_1pg">Silnik samochodowy może wytworzyć moment obrotowy <m:math><m:mn>200</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>. Oblicz przyspieszenie kątowe, jeśli 95,0% momentu obrotowego zostanie przyłożone do wału napędowego, osi i tylnych kół samochodu, biorąc pod uwagę następujące informacje: samochód jest zawieszony tak, że koła mogą obracać się swobodnie; obręcz każdego koła można uznać za tarczę o masie 15,0 kg i promieniu 0,180 m; każdą oponę można uznać za pierścień o masie 2,00 kg, którego wewnętrzny promień jest równy 0,180 m a zewnętrzny 0,320 m; bieżnik każdej opony można uznać za 10,0 kg obręcz o promieniu 0,330 m; oś można uznać za pręt o masie 14,0 kg i promieniu 2,00 cm; wał napędowy można uznać za pręt o masie 30,0 kg i promieniu 3,20 cm.</para>
+        </problem>
+        <solution id="ked-1bl8fevrd_iqg" class="section-exercises">
+          <para id="ked-1bl8fevu3_jgo">
+            <m:math>
+              <m:mi>ε</m:mi>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mn>190</m:mn>
+                  <m:mn>,</m:mn>
+                  <m:mn>0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">N</m:mi>
+                    <m:mo>⋅</m:mo>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mn>,</m:mn>
+                  <m:mn>94</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">k</m:mi>
+                    <m:mi mathvariant="normal">g</m:mi>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mn>64</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>4</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">r</m:mi>
+                <m:mi mathvariant="normal">a</m:mi>
+                <m:mi mathvariant="normal">d</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:msup>
+                  <m:mi mathvariant="normal">s</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl8ff2k0_hfo">
+        <problem id="ked-1bl8ff2lv_hmo">
+          <para id="ked-1bl8ff2j9_qk">Tarcza szlifierki o masie 50 kg i promieniu 0,8 m dzięki pracy silnika utrzymuje stałą częstotliwość obrotów wynoszącą 4,0 obr/s, podczas gdy do jej krawędzi dociskany jest nóż. Nóż dociskany jest z siłą 5,0 N, a współczynnik tarcia kinetycznego między tarczą a ostrzem wynosi 0,8. Jaką moc dostarcza silnik, jeśli tarcza szlifierki utrzymuje stałą prędkość kątową?</para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="ked-1bl91bvvi_0i" class="review-challenge">
+      <title>Zadania trudniejsze</title>
+      <exercise id="ked-1bl91cngg_qso">
+        <problem id="ked-1bl91cnhq_2i">
+          <para id="ked-1bl91cng7_ilo">Zależność przyspieszenia kątowego wirującej bryły sztywnej od czasu ilustruje równanie <m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>. Jeżeli bryła rozpoczyna ruch obrotowy w chwili <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>, to: <list id="eip-idm1157595824" list-type="enumerated" number-style="lower-alpha"><item>Jaka jest zależność jej prędkości kątowej od czasu?</item><item>Jaka jest zależność jej położenia kątowego od czasu?</item><item>O jaki kąt obróciła się w ciągu pierwszych 10 s?</item><item>Jeżeli wektor wodzący pewnej cząstki tej bryły w chwili <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> wskazywał kąt <m:math><m:msup><m:mn>0</m:mn><m:mo>∘</m:mo></m:msup></m:math>, to jaki kąt wskazuje on w chwili <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>? </item></list></para>
+        </problem>
+        <solution id="ked-1bl91cnj4_ooo" class="section-exercises">
+          <list id="ked-1bl91cnic_oi" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mi>ω</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>5</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>;</item>
+            <item><m:math><m:mi>θ</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>5</m:mn><m:msup><m:mi>t</m:mi><m:mn>3</m:mn></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi></m:mrow></m:math>;</item>
+            <item><m:math><m:mi>θ</m:mi><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>400</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi></m:mrow></m:math>;</item>
+            <item>wektor wskazuje kąt <m:math><m:mo>−</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>66</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>360</m:mn><m:mo>∘</m:mo></m:msup><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>237</m:mn><m:mn>,</m:mn><m:msup><m:mn>6</m:mn><m:mo>∘</m:mo></m:msup></m:math>.</item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl91d3gs_iuo">
+        <problem id="ked-1bl91d3fb_c3o">
+          <para id="ked-1bl91d3g3_nt8">Przez ostatnie 100 lat długość ziemskiego dnia wzrosła o 0,002 s. Jeśli ten wzrost będzie trwał, to po jakim czasie Ziemia się zatrzyma?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl91d5ku_2m">
+        <problem id="ked-1bl91d5i2_alo">
+          <para id="ked-1bl91d5ie_91o">Gęstość powierzchniowa krążka o masie <m:math><m:mi>m</m:mi></m:math>, promieniu <m:math><m:mi>R</m:mi></m:math> i powierzchni <m:math><m:mi>A</m:mi></m:math> zmienia się wraz z odległością osi obrotu, zgodnie ze wzorem <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>r</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi>A</m:mi><m:mi>R</m:mi></m:math>, gdzie <m:math><m:mi>r</m:mi></m:math> jest odległością od środka krążka (patrz poniższy rysunek). Wyznacz wartość momentu bezwładności krążka liczonego względem osi przechodzącej przez jego środek.</para>
+          <media id="ked-1bl91hgru_2fg" alt="Rysunek przedstawia dysk o promieniu r obracający się wokół osi przechodzącej przez jego środek.">
+            <image src="../../media/CNX_UPhysics_10_05_Prob10_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bl91d5ir_mvo" class="section-exercises">
+          <para id="ked-1bl91d5hv_o38">
+            <m:math>
+              <m:mrow>
+                <m:mi>I</m:mi>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>2</m:mn>
+                  <m:mn>5</m:mn>
+                </m:mfrac>
+                <m:mi>m</m:mi>
+                <m:msup>
+                  <m:mi>R</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl91d7jn_48o">
+        <problem id="ked-1bl91d7ho_ujo">
+          <para id="ked-1bl91d7i7_rio">Wyobraź sobie, że chciałbyś wydłużyć ziemski dzień do 28,0 h. Możesz tego dokonać przykładając na równiku siłę równoległą do jego płaszczyzny i skierowaną przeciwnie do kierunku obrotu Ziemi. Niestety, dysponujesz jedynie siłą <m:math><m:mn>4</m:mn><m:mn>,</m:mn><m:mn>00</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>7</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow></m:math>. Ile czasu zajęłoby ci wydłużenie dnia do takiej wartości?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl91d9hp_4h">
+        <problem id="ked-1bl91d9i8_0t8">
+          <para id="ked-1bl91d9iq_k1o">Sznurek nawinięty na walcu o promieniu 0,25 m jest ciągnięty z siłą 40 N (jak pokazano na poniższym rysunku). Walec jest zamontowany na łożyskach, których tarcie można pominąć, a jego moment bezwładności wynosi <m:math><m:mn>6</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>. <list id="eip-idm606745360" list-type="enumerated" number-style="lower-alpha"><item>Użyj twierdzenia o pracy i energii do obliczenia prędkości kątowej walca po rozwinięciu się sznurka o 5,0 m.</item><item>Jeśli siła 40 N zostanie zastąpiona ciężarkiem o wadze 40 N, to jaka będzie prędkość kątowa walca po odwinięciu się sznurka o 5,0 m?</item></list></para>
+          <media id="ked-1bl91mc9a_9lg" alt="Rysunek pokazuje sznurek nawinięty na obręczy walca. Stała siła 40 N wywiera nacisk na sznurek i utrzymuje go w powietrzu.">
+            <image src="../../media/CNX_UPhysics_10_08_Prob2_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bl91d9k0_oe8" class="section-exercises">
+          <list id="ked-1bl91d9hp_ig" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mi>ω</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mn>,</m:mn><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>; </item>
+            <item><m:math><m:mi>ω</m:mi><m:mo>=</m:mo><m:mn>8</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>.</item>
+          </list>
+        </solution>
+      </exercise>
+    </section>
+  </content>
+  <glossary>
+    <definition id="ked-1bl91vjkv_si8">
+      <term cmlnle:reference="praca w ruchu obrotowym" class="no-emphasis">praca w ruchu obrotowym (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">rotational work</term></foreign>)</term>
+      <meaning id="ked-1bl91vjlc_bso"> praca wykonywana nad bryłą sztywną w wyniku działania momentów sił, dana przez całkę z momentów sił liczoną po kącie, o jaki została obrócona bryła sztywna</meaning>
+    </definition>
+    <definition id="ked-1bl92081f_0lo">
+      <term cmlnle:reference="twierdzenie o pracy i energii w ruchu obrotowym" class="no-emphasis">twierdzenie o pracy i energii w ruchu obrotowym (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">work-energy theorem for rotation</term></foreign>)</term>
+      <meaning id="ked-1bl920821_38g">całkowita praca wykonana nad zmianą prędkości kątowej ciała sztywnego, równa zmianie jego energii kinetycznej ruchu obrotowego</meaning>
+    </definition>
+  </glossary>
+</document>

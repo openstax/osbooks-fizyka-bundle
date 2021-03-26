@@ -1,0 +1,2821 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Nadprzewodnictwo</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m68286</md:content-id>
+  <md:title>Nadprzewodnictwo</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>opisywać główne cechy nadprzewodnika; </item>
+<item>opisywać teorię BCS nadprzewodnictwa;</item>
+<item>wyznaczać krytyczne pole magnetyczne dla <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><mn>0</mn><mo rspace="verythinmathspace" lspace="">⁢</mo><mi mathvariant="normal">K</mi></mrow></mrow><annotation encoding="application/vnd.katalysteducation.mathtex">            T=\SI{0}{\kelvin}</annotation></semantics></math>, korzystając z danych dla pola magnetycznego; </item>
+<item>obliczać maksymalną siłę elektromotoryczną (SEM) lub prąd dla przewodu, przy których pozostaje on jeszcze nadprzewodzący.</item></list></md:abstract>
+  <md:uuid>ff803d2d-b85f-4d90-86c4-a9784f1370de</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1172099576856">Opór elektryczny można uznać za miarę siły tarcia towarzyszącej przepływowi prądu elektrycznego. Stąd opór elektryczny jest głównym źródłem rozpraszania energii w układach elektrycznych, jak elektromagnesy, silniki elektryczne czy linie transmisyjne. Miedź jest powszechnie używana do wytwarzania przewodów elektrycznych, ponieważ w temperaturze pokojowej ma jedną z najmniejszych wartości oporności właściwej spośród znanych przewodników. (Co prawda srebro ma mniejszą oporność od miedzi, ale jego wysoka cena i mała dostępność przeważają nad potencjalnymi oszczędnościami energii). </para><para id="fs-id1172101788444">Mimo iż powyższe stwierdzenie sugeruje, że opór elektryczny jest właściwością wszystkich materiałów, wiemy, że tak nie jest. Gdy temperatura spada poniżej pewnej krytycznej wartości, w wielu materiałach opór właściwy spada do zera i stają się one nadprzewodnikami (patrz <link class="target-chapter" document="m67191">Nadprzewodniki</link>). </para><note id="fs-id1172099418397" class="media-2">
+    <para id="fs-id1172099500386">Popatrz na fragment <link url="https://openstaxcollege.org/l/21NOVA">
+      <emphasis effect="italics">NOVA</emphasis> video</link>, ochładzanie ciał jako wprowadzenie do tematu nadprzewodnictwa i jego licznych zastosowań.</para></note>
+    <section id="fs-id1172102011254">
+      <title>Właściwości nadprzewodnika </title>
+      <para id="fs-id1172101758770">Oprócz zerowej rezystywności nadprzewodniki charakteryzują się idealnym diamagnetyzmem. To znaczy, że w obecności pola magnetycznego wypadkowe pole magnetyczne wewnątrz nadprzewodnika jest zawsze zerowe (<link target-id="CNX_UPhysics_42_08_Meissner"/>). Tak więc linie pola magnetycznego przechodzące przez próbkę nadprzewodnika, kiedy znajduje się jeszcze w stanie normalnym, są wypchnięte na zewnątrz, gdy próbka staje się nadprzewodząca. W ten sposób manifestuje się efekt Meissnera, który omówiliśmy w rozdziale dotyczącym zagadnienia prądu elektrycznego i oporu elektrycznego. </para><figure id="CNX_UPhysics_42_08_Meissner">
+        <media id="fs-id1172099750145" alt="Na rysunku pokazane są dwie podobne prostokątne płytki. Przed pierwszą płytką widnieją pionowe strzałki skierowane w górę. Strzałki te zakrzywiają się wokół drugiej płytki. Rysunek b jest fotografią, na której widać małą kostkę zawieszoną w powietrzu ponad metalową płytką.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_42_08_Meissner.jpg"/>
+        </media>
+        <caption>(a) W efekcie Meissnera pole magnetyczne jest wypychane z materiału, w momencie gdy staje się on nadprzewodnikiem. (b) Magnes lewituje nad płytką nadprzewodnika, podtrzymywany siłą towarzyszącą wypychaniu pola magnetycznego.</caption>
+      </figure>
+      <para id="fs-id1172099559884">Co ciekawe, efekt Meissnera nie jest konsekwencją zerowej oporności. Aby to wyjaśnić, przypuśćmy, że w wyniku przemiany w próbce umieszczonej w polu magnetycznym opór spada do zera. Zgodnie z prawem Ohma gęstość prądu <m:math display="inline">
+        <m:semantics>
+          <m:mi>j</m:mi>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> j</m:annotation>
+        </m:semantics>
+      </m:math> w próbce związana jest z wypadkowym wewnętrznym polem elektrycznym <m:math display="inline">
+      <m:semantics>
+        <m:mi>E</m:mi>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E</m:annotation>
+      </m:semantics>
+    </m:math> i z opornością właściwą <m:math display="inline">
+    <m:semantics>
+      <m:mi>ρ</m:mi>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \rho</m:annotation>
+    </m:semantics>
+  </m:math> przez <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>j</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>E</m:mi>
+        <m:mo>∕</m:mo>
+        <m:mi>ρ</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> j=E/\rho</m:annotation>
+  </m:semantics>
+</m:math>. Jeśli <m:math display="inline">
+<m:semantics>
+  <m:mi>ρ</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \rho</m:annotation>
+</m:semantics>
+</m:math> jest zerowa, <m:math display="inline">
+<m:semantics>
+  <m:mi>E</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E</m:annotation>
+</m:semantics>
+</m:math> musi mieć również wartość zero, aby <m:math display="inline">
+<m:semantics>
+  <m:mi>j</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> j</m:annotation>
+</m:semantics>
+</m:math> miała wartość skończoną. Pole elektryczne <m:math display="inline">
+<m:semantics>
+  <m:mi>E</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E</m:annotation>
+</m:semantics>
+</m:math> i strumień magnetyczny <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi mathvariant="normal">Φ</m:mi>
+    <m:mi>B</m:mi>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \Phi_B</m:annotation>
+</m:semantics>
+</m:math> przez próbkę związane są prawem Faradaya </para><equation id="fs-id1172097228876"><m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:mo>∮</m:mo>
+          <m:mrow>
+            <m:mi>E</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+              <m:mi>l</m:mi>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                <m:msub>
+                  <m:mi mathvariant="normal">Φ</m:mi>
+                  <m:mi>B</m:mi>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \oint E\d l =-\frac{\d \Phi_B}{\d t}\text{.}</m:annotation>
+    </m:semantics>
+  </m:math></equation><para id="fs-id1172102116006">Jeśli <m:math display="inline">
+  <m:semantics>
+    <m:mi>E</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E</m:annotation>
+  </m:semantics>
+</m:math> ma wartość zero, <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi mathvariant="normal">Φ</m:mi>
+        <m:mi>B</m:mi>
+      </m:msub>
+      <m:mo>∕</m:mo>
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \d \Phi_B/ \d t</m:annotation>
+</m:semantics>
+</m:math> również wynosi zero, czyli strumień magnetyczny przechodzący przez próbkę nie może się zmieniać. Z tego punktu widzenia linie magnetyczne nie mogłyby być wypchnięte z próbki, gdy następuje przemiana. Nie można więc stwierdzić, że w materiale, w którym rezystancja spada do zera, musi wystąpić efekt Meissnera. Efekt Meissnera jest raczej specjalną właściwością nadprzewodników. </para><para id="fs-id1172102022222">Inną ważną cechą nadprzewodnika jest jego <term class="no-emphasis" cmlnle:reference="temperatura krytyczna">temperatura krytyczna</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">critical temperature</term></foreign>) <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi>T</m:mi>
+    <m:mtext>c</m:mtext>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T_{\text{c}}</m:annotation>
+</m:semantics>
+</m:math>, temperatura, poniżej której materiał jest nadprzewodzący. Zakres temperatur krytycznych (znany do tej pory) zaczyna się od ułamków <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mn>1</m:mn>
+   <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">K</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{1}{\kelvin}</m:annotation>
+</m:semantics>
+</m:math>, a kończy niewiele powyżej <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mn>100</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">K</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{100}{\kelvin}</m:annotation>
+</m:semantics>
+</m:math>. Nadprzewodniki o wyższych temperaturach krytycznych znane są jako „wysokotemperaturowe”. Z praktycznego punktu widzenia ważne są nadprzewodniki, dla których <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>T</m:mi>
+      <m:mtext>c</m:mtext>
+    </m:msub>
+    <m:mo>≫</m:mo>
+    <m:mrow>
+      <m:mn>77</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mi mathvariant="normal">K</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T_{\text{c}}\gg \SI{77}{\kelvin}</m:annotation>
+</m:semantics>
+</m:math>. Obecnie w zastosowaniach często nadal wymaga się, aby materiał nadprzewodzący był zanurzony w ciekłym helu (<m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mn>4,2</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">K</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{4,2}{\kelvin}</m:annotation>
+</m:semantics>
+</m:math>) w celu utrzymania temperatury niższej od krytycznej. Ciekły hel musi być ciągle uzupełniany z powodu parowania i koszty chłodzenia łatwo przekraczają oszczędności wynikające z zastosowania nadprzewodnika. Jednak <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mn>77</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">K</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{77}{\kelvin}</m:annotation>
+</m:semantics>
+</m:math> to temperatura ciekłego azotu, który jest o wiele bardziej dostępny i tańszy od helu. Z ekonomicznego punktu widzenia byłoby więc znacznie korzystniej, gdybyśmy mogli łatwo wytwarzać nadprzewodniki wysokotemperaturowe, które chłodzone ciekłym azotem zachowywałyby swoje właściwości nadprzewodzące. </para><para id="fs-id1172101780226">Nadprzewodniki wysokotemperaturowe mają obecnie rozmaite zastosowania. Przykładem jest wytwarzanie pól magnetycznych w akceleratorach cząstek. Ostatecznym celem jest odkrycie materiałów nadprzewodzących w temperaturze pokojowej. Brak wymogu chłodzenia spowodowałby, że liczne elementy elektroniczne i linie transmisyjne mogłyby być nadprzewodzące, co zaowocowałoby bezprecedensowym zwiększeniem ich funkcjonalności i wzrostem efektywności. </para>
+<para id="fs-id1172101781020">Inną ważną właściwością materiału nadprzewodzącego jest <term class="no-emphasis" cmlnle:reference="krytyczne pole magnetyczne">krytyczne pole magnetyczne</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">critical magnetic field</term></foreign>) <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>B</m:mi>
+      <m:mtext>c</m:mtext>
+    </m:msub>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>T</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B_{\text{c}}\apply(T)</m:annotation>
+</m:semantics>
+</m:math>, które w danej temperaturze jest maksymalną wartością zewnętrznego pola magnetycznego, przy której materiał pozostaje w stanie nadprzewodzącym. Przekroczenie tej wartości pola magnetycznego skutkuje zniszczeniem stanu nadprzewodzącego. Pole krytyczne wynosi zero w temperaturze krytycznej i rośnie w miarę obniżania temperatury. Wykresy zależności pola krytycznego od temperatury dla kilku materiałów nadprzewodzących pokazano na <link target-id="CNX_UPhysics_42_08_TempDep" cmlnle:case="locative"/>. Zależność temperaturową pola krytycznego opisuje przybliżona formuła</para><note id="fs-id1172102067644" class="equation-callout">
+  <equation id="fs-id1172099716615">
+<m:math display="block"><m:semantics><m:mrow><m:mrow><m:msub><m:mi>B</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>T</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:msub><m:mi>B</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mn>0</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">K</m:mi></m:mrow></m:mfenced></m:mrow><m:mo>⋅</m:mo><m:mfenced close="]" open="["><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mfenced><m:mfrac><m:mi>T</m:mi><m:msub><m:mi>T</m:mi><m:mtext>c</m:mtext></m:msub></m:mfrac></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced></m:mrow><m:mtext>,</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            B_{\text{c}}\apply(T)=B_{\text{c}}\apply(\SI{0}{\kelvin})\cdot[1-(\frac{T}{T_{\text{c}}})^2]\text{,}</m:annotation></m:semantics></m:math>
+  </equation>
+</note>
+<para id="fs-id1172102131914">gdzie <m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>B</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mn>0</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">K</m:mi></m:mrow></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            B_{\text{c}}\apply(\SI{0}{\kelvin})</m:annotation></m:semantics></m:math> jest polem krytycznym w temperaturze zera bezwzględnego. <link target-id="fs-id1172101922736"/> zawiera krytyczne temperatury i pola dla dwóch klas nadprzewodników: <term class="no-emphasis" cmlnle:reference="nadprzewodnik typu I">nadprzewodników typu I</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">type I superconductor</term></foreign>) i <term class="no-emphasis" cmlnle:reference="nadprzewodnik typu II">nadprzewodników typu II</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">type II superconductor</term></foreign>). Ogólnie nadprzewodniki typu I to materiały takie jak aluminium czy rtęć. Są doskonałymi diamagnetykami dla pól niższych od krytycznego pola <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>B</m:mi>
+      <m:mtext>c</m:mtext>
+    </m:msub>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>T</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B_{\text{c}}\apply(T)</m:annotation>
+</m:semantics>
+</m:math> i przechodzą w stan normalny, gdy wartość ta jest przekroczona. Krytyczne pola nadprzewodników typu I są zwykle małe (sporo poniżej <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mn>1</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">T</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{1}{\tesla}</m:annotation>
+</m:semantics>
+</m:math>). Z tego powodu nie mogą być stosowane w sytuacjach, w których wytwarza się duże pole magnetyczne, ponieważ duże pole zniszczyłoby stan nadprzewodzący. </para><figure id="CNX_UPhysics_42_08_TempDep">
+  <media id="fs-id1172102146633" alt="Wykres zależności B z indeksem c w teslach od T w Kelvinach. Jest 6 krzywych. Krzywa Ti zaczyna się (od prawej) tuż powyżej 2 na osi x i kończy tuż poniżej wartości 0.02 na osi y. Krzywe In i Sn zaczynają się (od prawej) tuż powyżej 3 na osi x i kończą ok. wartości 0,03 na osi y. Krzywa Hg zaczyna się (od prawej) nieco powyżej 4 na osi x i kończy tuż powyżej wartości 0,04 na osi y. Krzywa Ta zaczyna się (od prawej) tuż powyżej 4 na osi x i kończy nieco poniżej wartości 0,1 na osi y. Krzywa Pb zaczyna się (od prawej) nieco powyżej 7 na osi x i kończy na wartości 0,08 na osi y.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_42_08_TempDep.jpg"/>
+  </media>
+  <caption>Zależność temperaturowa pola krytycznego dla kilku nadprzewodników. Nadprzewodnictwo występuje przy polach magnetycznych i temperaturach poniżej tych krzywych. </caption>
+</figure>
+<table id="fs-id1172101922736" summary="Tabela ma 3 kolumny, 14 wierszy i wiersz nagłówkowy. Pierwsze 9 wierszy oznaczonych jest jako typ 1. Ostatnie 5 wierszy oznaczonych jest jako typ 2. Wiersz nagłówkowy zawiera opisy kolumn: Material, Krytyczna temperatura w K, i Krytyczne pole magnetyczne w T. Pierwsza kolumna zawiera nazwy: Al, Ga, Hg w nawiasach alpha, In, Nb, Pb, Sn, Th, Zn, Nb3Al, Nb3Ge, Nb3Sn, NbTi, YBa2Cu3O7. Druga kolumna zawiera wartości: 1.2, 1.1, 4.2, 3.4, 9.3, 7.2, 3.7, 1.4, 0.87, 18, 23, 18, 9.3, 92. Ostatnia kolumna zawiera watości: 0.011, 0.0051, 0.041, 0.029, 0.2, 0.08, 0.031, 0.00016, 0.0053, 32, 38, 25, 15, większe niż 100."><title>Temperatura krytyczna i krytyczne pole magnetyczne w <m:math display="inline">     <m:semantics>       <m:mrow>         <m:mi>T</m:mi>         <m:mo>=</m:mo>         <m:mrow>           <m:mn>0</m:mn>         <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>          <m:mi mathvariant="normal">K</m:mi>         </m:mrow>       </m:mrow>       <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T=\SI{0}{\kelvin}</m:annotation>     </m:semantics>     </m:math> dla różnych nadprzewodników.</title><tgroup cols="3">
+      <colspec colnum="1" colname="c1"/>
+      <colspec colnum="2" colname="c2"/>
+      <colspec colnum="3" colname="c3"/>
+      <thead>
+        <row valign="top">
+          <entry valign="top" align="center">Materiał</entry>
+          <entry valign="top" align="center">Temperatura krytyczna (<m:math display="inline">
+            <m:semantics>
+                <m:mi mathvariant="normal">K</m:mi>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \si{\kelvin}</m:annotation>
+            </m:semantics>
+          </m:math>)
+        </entry>
+        <entry valign="top" align="center">Krytyczne pole magnetyczne (<m:math display="inline">
+          <m:semantics>
+              <m:mi mathvariant="normal">T</m:mi>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \si{\tesla}</m:annotation>
+          </m:semantics>
+        </m:math>)
+      </entry>
+    </row>
+  </thead>
+  <tbody>
+    <row valign="top">
+      <entry valign="top" align="left" namest="c1" nameend="c3">Typ I</entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="center">
+Al
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>1,2</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{1,2}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>11</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>-3</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,011}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="center">
+Ga
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>1,1</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{1,1}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>5,1</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>-3</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,0051}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="center">
+Hg (<m:math display="inline"><m:semantics><m:mi>α</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \alpha</m:annotation></m:semantics></m:math>)
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>4,2</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{4,2}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>41</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>-3</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,041}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="center">
+In
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>3,4</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{3,4}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>29</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>-3</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,029}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="center">
+Nb
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>9,3</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{9,3}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>0,2</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,2}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="center">
+Pb
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>7,2</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{7,2}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>0,08</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,08}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="center">
+Sn
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>3,7</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{3,7}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>0,31</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,31}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="center">
+Th
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>1,4</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{1,4}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>0,16</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>-3</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,00016}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="center">
+Zn
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>0,87</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,87}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>5,3</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>-3</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,0053}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="left" namest="c1" nameend="c3">Typ II</entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="center">
+Nb<sub>3</sub>Al        
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>18</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{18}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>32</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 32</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="center">
+Nb<sub>3</sub>Ge
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>23</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{23}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>38</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 38</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="center">
+Nb<sub>3</sub>Sn
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>18</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{18}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>25</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 25</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="center">
+NbTi
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>9,3</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{9,3}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>15</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 15</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="center">
+YBa<sub>2</sub>Cu<sub>3</sub>O<sub>7</sub>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mn>92</m:mn>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{92}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+      <entry valign="top" align="center">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mo>&gt;</m:mo>
+              <m:mn>100</m:mn>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{&gt;}100</m:annotation>
+          </m:semantics>
+        </m:math>
+      </entry>
+    </row>
+  </tbody>
+</tgroup>
+</table><para id="fs-id1172102078852">Nadprzewodniki typu II są zwykle związkami lub stopami zawierającymi metale przejściowe lub aktynowce. Prawie wszystkie nadprzewodniki o stosunkowo wysokiej krytycznej temperaturze są typu II. Charakteryzują się dwoma polami krytycznymi, oznaczanymi przez <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:msub>
+        <m:mi>B</m:mi>
+        <m:mrow>
+          <m:mtext>c</m:mtext>
+          <m:mo>⁢</m:mo>
+          <m:mn>1</m:mn>
+        </m:mrow>
+      </m:msub>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>T</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B_{\text{c}1}\apply(T)</m:annotation>
+  </m:semantics>
+</m:math> i <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>B</m:mi>
+      <m:mrow>
+        <m:mtext>c</m:mtext>
+        <m:mo>⁢</m:mo>
+        <m:mn>2</m:mn>
+      </m:mrow>
+    </m:msub>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>T</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B_{\text{c}2}\apply(T)</m:annotation>
+</m:semantics>
+</m:math>. Gdy pole ma mniejszą wartość niż <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>B</m:mi>
+      <m:mrow>
+        <m:mtext>c</m:mtext>
+        <m:mo>⁢</m:mo>
+        <m:mn>1</m:mn>
+      </m:mrow>
+    </m:msub>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>T</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B_{\text{c}1}\apply(T)</m:annotation>
+</m:semantics>
+</m:math>, nadprzewodniki typu II są doskonałymi dielektrykami, a strumień magnetyczny nie wnika do materiału. Gdy pole przekracza wartość <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>B</m:mi>
+      <m:mrow>
+        <m:mtext>c</m:mtext>
+        <m:mo>⁢</m:mo>
+        <m:mn>2</m:mn>
+      </m:mrow>
+    </m:msub>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>T</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B_{\text{c}2}\apply(T)</m:annotation>
+</m:semantics>
+</m:math>, przechodzą w stan normalny. Gdy pole jest większe niż <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>B</m:mi>
+      <m:mrow>
+        <m:mtext>c</m:mtext>
+        <m:mo>⁢</m:mo>
+        <m:mn>1</m:mn>
+      </m:mrow>
+    </m:msub>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>T</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B_{\text{c}1}\apply(T)</m:annotation>
+</m:semantics>
+</m:math>, lecz mniejsze niż <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>B</m:mi>
+      <m:mrow>
+        <m:mtext>c</m:mtext>
+        <m:mo>⁢</m:mo>
+        <m:mn>2</m:mn>
+      </m:mrow>
+    </m:msub>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>T</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B_{\text{c}2}\apply(T)</m:annotation>
+</m:semantics>
+</m:math>, mówimy, że nadprzewodniki typu II znajdują się w stanie mieszanym. Mimo że strumień magnetyczny wnika częściowo do materiału, rezystancja materiału ciągle jest równa zero. W stanie tym wewnątrz nadprzewodnika znajdują się „włókna” o normalnych właściwościach elektrycznych i magnetycznych splecione między obszarami, które są nadprzewodzące i doskonale diamagnetyczne. Taki stan pokazany jest schematycznie na <link target-id="CNX_UPhysics_42_08_TypeII" cmlnle:case="locative"/>. Pole magnetyczne jest wypchnięte z obszarów nadprzewodzących, ale istnieje w obszarach normalnych. Ogólnie <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>B</m:mi>
+      <m:mrow>
+        <m:mtext>c</m:mtext>
+        <m:mo>⁢</m:mo>
+        <m:mn>2</m:mn>
+      </m:mrow>
+    </m:msub>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>T</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B_{\text{c}2}\apply(T)</m:annotation>
+</m:semantics>
+</m:math> jest bardzo duże w porównaniu z krytycznymi polami nadprzewodników typu I, dlatego przewód wykonany z nadprzewodnika typu II może być użyty w uzwojeniach elektromagnesów wytwarzających silne pola. </para><figure id="CNX_UPhysics_42_08_TypeII">
+  <media id="fs-id1172102116142" alt="Na rysunku znajduje się pionowy prostokąt (sztabka) ze zmieniającymi się na przemian niebieskimi i szarymi obszarami (w kształcie kwadratów), jeden nad drugim. Niebieskie obszary opisane są jako normalne a szare jako nadprzewodzące. Równoległe poziome i równo oddalone od siebie linie (oznaczone strzałkami) wchodzą do sztabki od lewej strony i grupują się (zbiegają) w taki sposób, że przechodzą tylko przez obszary normalne. Po prawej stronie, po wyjściu ze sztabki znowu stają się równoległe i równo oddalone od siebie.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_42_08_TypeII.jpg"/>
+  </media>
+  <caption>Schematyczna reprezentacja stanu mieszanego nadprzewodnika typu II. Obszary nadprzewodzące (szare kwadraty) wypychają pole magnetyczne do sąsiednich obszarów (niebieskie kwadraty). </caption>
+</figure>
+<example id="fs-id1172101783852">
+  <para id="fs-id1172102095353"><title>Przewód niobowy</title>W pewnym eksperymencie przewód niobowy (Nb) o promieniu <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mn>0,25</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">mm</m:mi>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,25}{\milli\metre}</m:annotation>
+    </m:semantics>
+  </m:math> zanurzono w ciekłym helu (<m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>T</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>4,2</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">K</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T=\SI{4,2}{\kelvin}</m:annotation>
+  </m:semantics>
+</m:math>). Jeśli przez ten przewód miałby popłynąć prąd <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mn>300</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">A</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{300}{\ampere}</m:annotation>
+</m:semantics>
+</m:math>, czy pozostałby on nadal nadprzewodzący? </para><para id="fs-id1172099410485"><title>Strategia rozwiązania</title>Powstałe pole magnetyczne można wyznaczyć z promienia przewodu i prądu. Pole magnetyczne krytyczne dla Nb można znaleźć w <link target-id="fs-id1172100937336" document="m68258" cmlnle:case="locative"/>, właściwości nadprzewodnika zależne są od temperatury. Jeśli powstałe pole magnetyczne jest większe od krytycznego, wówczas stan nadprzewodzący Nb jest zniszczony. </para><para id="fs-id1172101633678"><title>Rozwiązanie </title>W <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mi>T</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>4,2</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">K</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T=\SI{4,2}{\kelvin}</m:annotation>
+      </m:semantics>
+    </m:math> krytyczne pole magnetyczne dla Nb wynosi, na podstawie <link target-id="fs-id1172100937336" document="m68258" cmlnle:case="genitive"/> i <link target-id="fs-id1172101922736" cmlnle:case="genitive"/>,</para><equation id="fs-id1172098762636" class="unnumbered"><label/>
+      <m:math display="block">
+        <m:semantics>
+          <m:mrow>
+            <m:mrow>
+              <m:msub>
+                <m:mi>B</m:mi>
+                <m:mtext>c</m:mtext>
+              </m:msub>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mn>4,2</m:mn>
+                 <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">K</m:mi>
+                </m:mrow>
+              </m:mfenced>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>B</m:mi>
+                  <m:mtext>c</m:mtext>
+                </m:msub>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mn>0</m:mn>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mfenced open="[" close="]">
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo>−</m:mo>
+                  <m:msup>
+                    <m:mfenced>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>4,2</m:mn>
+                          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                          <m:mi mathvariant="normal">K</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>9,3</m:mn>
+                          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                          <m:mi mathvariant="normal">K</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mfenced>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfenced>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>0,2</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">T</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mn>0,8</m:mn>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>0,16</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">T</m:mi>
+              </m:mrow>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B_{\text{c}}\apply(\SI{4,2}{\kelvin})=B_{\text{c}}\apply(0)\cdot[1-(\frac{\SI{4,2}{\kelvin}}{\SI{9,3}{\kelvin}})^2]=\SI{0,2}{\tesla}\cdot\num{0,8}=\SI{0,16}{\tesla}\text{.}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </equation><para id="fs-id1172102054647">W jednym z poprzednich rozdziałów dowiedzieliśmy się, że pole magnetyczne na zewnątrz przewodnika, w którym płynie prąd elektryczny, jest dane przez </para><equation id="fs-id1172102051425" class="unnumbered">
+      <label/>
+      <m:math display="block">
+        <m:semantics>
+          <m:mrow>
+            <m:mi>B</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>μ</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>I</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>r</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mtext>,</m:mtext>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B=\frac{\mu_0 I}{2\pi r}\text{,}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </equation>
+    <para id="fs-id1172102138790">gdzie <m:math display="inline">
+      <m:semantics>
+        <m:mi>r</m:mi>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> r</m:annotation>
+      </m:semantics>
+    </m:math> jest odległością od osi środkowej przewodu. Tak więc pole na powierzchni przewodu wynosi <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mi>I</m:mi></m:mrow><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>r</m:mi></m:mrow></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \mu_0 I/(2\pi r)</m:annotation></m:semantics></m:math>. Dla naszego przewodu niobowego</para><equation id="fs-id1172101896501" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:mi>B</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mrow><m:mrow><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>-7</m:mn></m:msup></m:mrow><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mrow><m:mrow><m:mi mathvariant="normal">T</m:mi><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>∕</m:mo><m:mi mathvariant="normal">A</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mn>300</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">A</m:mi></m:mrow></m:mrow><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mrow><m:mn>2,5</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>-4</m:mn></m:msup></m:mrow><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>0,24</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">T</m:mi></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            B=\frac{4\pi\cdot10^{-7}\si[inter-unit-product = ⋅]{\tesla\metre\per\ampere}\cdot\SI{300}{\ampere}}{2\pi\cdot\SI{2,5e-4}{\metre}}=\SI{0,24}{\tesla}\text{.}</m:annotation></m:semantics></m:math></equation><para id="fs-id1172101775757">Ponieważ przekracza ono krytyczne pole <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mn>0,16</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">T</m:mi>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,16}{\tesla}</m:annotation>
+      </m:semantics>
+      </m:math>, przewód przestanie być nadprzewodzący. </para><para id="fs-id1172101748558"><title>Znaczenie</title>Nadprzewodnictwo występuje przy niskich temperaturach i małych polach magnetycznych. Jednoczesne spełnienie obu tych warunków w przypadku Nb jest łatwiejsze niż w wielu innych metalach. Na przykład aluminium nadprzewodzi w temperaturze <m:math display="inline">
+        <m:semantics>
+          <m:mn>7</m:mn>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 7</m:annotation>
+        </m:semantics>
+      </m:math>-krotnie niższej i polu magnetycznym <m:math display="inline">
+      <m:semantics>
+        <m:mn>18</m:mn>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 18</m:annotation>
+      </m:semantics>
+      </m:math>-krotnie mniejszym. </para></example>
+    <note id="fs-id1172101698098" class="check-understanding">
+      <exercise id="fs-id1172101918493">
+        <problem id="fs-id1172102078517">
+          <para id="fs-id1172099386880">
+            <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Jakie warunki są konieczne, by wystąpiło nadprzewodnictwo?</para>
+          </problem>
+          <solution id="fs-id1172099744318">
+            <para id="fs-id1172099494400">Niska temperatura i małe pole magnetyczne.</para>
+          </solution>
+        </exercise>
+      </note>
+    </section>
+    <section id="fs-id1172102033895">
+      <title>Teoria nadprzewodnictwa</title>
+      <para id="fs-id1172099598252">Teoria nadprzewodnictwa, która odniosła sukces, została rozwinięta w roku 1950 przez <term class="no-emphasis" cxlxt:index="name" cxlxt:name="Bardeen, John" cxlxt:born="1908" cxlxt:died="1991" cmlnle:reference="Bardeen, John (1908–1991)">Johna Bardeena (1908–1991)</term>, <term class="no-emphasis" cxlxt:index="name" cxlxt:name="Cooper, Leon" cxlxt:born="1930" cmlnle:reference="Cooper, Leon (ur. 1930)">Leona Coopera (ur. 1930)</term> i <term class="no-emphasis" cxlxt:index="name" cxlxt:name="Schrieffer, John Robert" cxlxt:born="1931" cmlnle:reference="Schrieffer, John Robert (ur. 1931)">J. Roberta Schrieffera (ur. 1931)</term>. Otrzymali oni za to osiągnięcie Nagrodę Nobla w 1972 roku. Znana jest jako <term class="no-emphasis" cmlnle:reference="teoria BCS">teoria BCS</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">BCS theory</term></foreign>; od nazwisk twórców). Jest to teoria złożona, dlatego poniżej przedstawimy tylko jej zarys. </para><para id="fs-id1172101968416">W zwykłym przewodniku właściowości elektryczne materiału zdeterminowane są przez najbardziej energetyczne elektrony, o energii zbliżonej do energii Fermiego. W roku 1956 Cooper pokazał, że jeśli istnieje jakieś przyciągające oddziaływanie między dwoma elektronami na poziomie Fermiego, wówczas elektrony te mogą tworzyć stan związany, w którym ich całkowita energia jest mniejsza niż <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mtext>F</m:mtext>
+            </m:msub>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 2E_{\text{F}}</m:annotation>
+        </m:semantics>
+        </m:math>. Takie dwa elektrony znane są jako <term class="no-emphasis" cmlnle:reference="para Coopera">para Coopera</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Cooper pair</term></foreign>).</para><para id="fs-id1172101716256">Trudno wyobrazić sobie dwa elektrony przyciągające się. Skoro mają one taki sam ładunek, powinny się odpychać. Jednakże zaproponowane przyciąganie może się pojawić, jeśli uwzględnimy wpływ sieci atomów otoczenia. Mechanizm takiego przyciągania zilustrowany jest na <link target-id="CNX_UPhysics_42_08_CooperPair" cmlnle:case="locative"/>. Elektron 1, przemierzając sieć, powoduje, że w danej chwili otaczające go atomy przemieszczają się lekko ku sobie z powodu przyciągania elektrostatycznego. Elektron 2 „widzi” rejon o zwiększonej gęstości ładunku dodatniego w porównaniu z otoczeniem i w związku z tym jest przyciągany w tym kierunku, czyli pośrednio przez elektron 1. Z powodu zakazu Pauliego te dwa elektrony muszą mieć przeciwne spiny. </para><figure id="CNX_UPhysics_42_08_CooperPair"><media id="fs-id1172099415012" alt="Pokazana jest sieć zawierająca z 25 czerwonych kropek, w pięciu kolumnach i pięciu rzędach. Kropki połączone są w tle liniami tworzącymi regularną kwadratową siatkę. Pomiędzy czterema czerwonymi kropkami znajduje się punkt opisany jako elektron 1. Od każdej otaczającej go kropki skierowana jest ku niemu strzałka, a inna strzałka skierowana jest ku górze. Czerwone kropki otaczające elektron 1 są lekko przemieszczone w stronę tego elektronu. Dwa rzędy poniżej inny punkty nazwany jest elektronem 2 i prowadzi od niego strzałka również skierowana ku górze. (elektron 1 'ciągnie za sobą elektron 2')">
+            <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_42_08_CooperPair.jpg"/>
+          </media>
+          
+        <caption>Para Coopera może się uformować na skutek przemieszczeń dodatnich jonów metalu. Elektron 1, przemierzając sieć, powoduje, że w danej chwili otaczające go atomy przemieszczają się lekko ku sobie z powodu przyciągania elektrostatycznego. Elektron 2 „widzi” rejon o zwiększonej gęstości ładunku dodatniego w porównaniu z otoczeniem i w związku z tym jest przyciągany w tym kierunku, czyli pośrednio przez elektron 1.</caption></figure><para id="fs-id1172099716424">Teoria BCS rozszerza ideę Coopera (która dotyczy pojedynczej pary elektronów) na cały gaz elektronowy. Gdy następuje przejście do stanu nadprzewodzącego, wszystkie elektrony zaczynają tworzyć pary Coopera. W skali atomowej odległość między dwoma elektronami tworzącymi parę Coopera jest całkiem duża. Pomiędzy tymi elektronami znajduje się zwykle około <m:math display="inline">
+          <m:semantics>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mn>6</m:mn>
+            </m:msup>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 10^6</m:annotation>
+          </m:semantics>
+        </m:math> innych elektronów, każdy z nich sparowany z jakimś odległym elektronem. Stąd mamy do czynienia z silnym nakładaniem się funkcji falowych par Coopera, co z kolei skutkuje silną korelacją ruchu par. Wszystkie one poruszają się „równym krokiem”, jak członkowie maszerującej orkiestry. Przy przejściu do nadprzewodnictwa gęstość stanów w okolicy poziomu Fermiego drastycznie się zmienia. Jak pokazano na <link target-id="CNX_UPhysics_42_08_EnergyGap" cmlnle:case="locative"/>, pojawia się przerwa energetyczna wokół <m:math display="inline">
+        <m:semantics>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mtext>F</m:mtext>
+          </m:msub>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{F}}</m:annotation>
+        </m:semantics>
+        </m:math>, ponieważ zbiór par Coopera ma niższą energię niż gaz Fermiego nieoddziałujących elektronów. Pojawienie się tej przerwy jest charakterystyczne dla stanu nadprzewodzącego. Jeśli stan ten jest zniszczony, wówczas przerwa znika i gęstość stanów staje się taka jak dla gazu swobodnych elektronów. </para><figure id="CNX_UPhysics_42_08_EnergyGap"><media id="fs-id1172102067632" alt="Wykres g w nawiasach E, w zależności od E. Wykres zaczyna się w początku układu i krzywa biegnie w prawo i w górę. Na wykresie znajdują się dwie pionowe linie. Odległość między nimi oznaczona jest jako przerwa energetyczna. Wartość y na krzywej znajduje się bardzo wysoko tuż przed przerwą i tuż za nią. Wartość x w środku przerwy oznaczona jest jako E z indeksem F. Obszar znajdujący się pod krzywą z lewej strony przerwy jest zacieniowany. ">
+            <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_42_08_EnergyGap.jpg"/>
+          </media>
+          
+        <caption>Kiedy materiał przechodzi w stan nadprzewodący, wokół energii Fermiego tworzy się stosunkowo duża przerwa energetyczna. Gdy stan nadprzewodzący jest zniszczony, przerwa znika i gęstość stanów wraca do postaci charakterystycznej dla gazu swobodnych elektronów. </caption></figure><para id="fs-id1172102098693">Teoria BCS jest w stanie przewidzieć wiele właściwości obserwowanych w nadprzewodnikach. Przykłady to: efekt Meissnera, temperatura krytyczna, krytyczne pole magnetyczne i, co być może jest najważniejsze, oporność dążąca do zera w temperaturze krytycznej. O tym ostatnim zjawisku możemy myśleć w sposób jakościowy. W normalnym przewodniku oporność bierze się między innymi z oddziaływania elektronów przewodnictwa z siecią. W oddziaływaniu tym wymieniana energia jest rzędu energii termicznej <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:msub>
+                <m:mi>k</m:mi>
+                <m:mtext>B</m:mtext>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:mi>T</m:mi>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k_{\text{B}}T</m:annotation>
+          </m:semantics>
+        </m:math>. W nadprzewodniku prąd przewodzony jest przez pary Coopera i jedynym sposobem rozproszenia energii pary przez sieć jest jej rozbicie. Rozbicie jednej pary skutkuje przerwaniem kolektywnego ruchu wszystkich par. Wymagana do tego energia ma wartość rzędu <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mn>-3</m:mn>
+            </m:msup>
+           <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">eV</m:mi>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 10^{-3}\si{\electronvolt}</m:annotation>
+        </m:semantics>
+        </m:math>, czyli rzędu przerwy energetycznej. Poniżej temperatury krytycznej energia termiczna jest zbyt mała, aby taki proces nastąpił, i pary Coopera przemierzają sieć bez przeszkód. </para><para id="fs-id1172099451627">Na koniec warto zwrócić uwagę na fakt, że nie wykryto nadprzewodnictwa w najlepszych normalnych przewodnikach, takich jak miedź czy srebro. W świetle teorii BCS ma to jednak uzasadnienie. Podstawą tworzenia stanu nadprzewodzącego jest oddziaływanie między elektronami i siecią. W najlepszych przewodnikach oddziaływanie to jest najsłabsze i dlatego przewodnictwo właściwe jest duże. Można zatem przypuszczać, że w tych materiałach oddziaływanie elektron–sieć jest zbyt małe, aby mogły uformować się pary Coopera, co wyklucza możliwość zaistnienia stanu nadprzewodzącego. </para>
+      </section>
+      <section id="fs-id1172101736906" class="key-concepts">
+        <title>Podsumowanie</title>
+        <list id="fs-id1172101911455" list-type="bulleted" bullet-style="bullet">
+          <item>Nadprzewodnictwo charakteryzuje się dwiema cechami: przewodzeniem elektronów przy zerowej oporności i wypychaniem pola magnetycznego.</item>
+          <item>Aby pojawiło się nadprzewodnictwo, potrzebna jest niska temperatura.</item>
+          <item>Silne pole magnetyczne niszczy nadprzewodnictwo.</item>
+          <item>Nadprzewodnictwo w nadprzewodnikach można wyjaśnić, używając koncepcji par Coopera.</item>
+        </list>
+      </section>
+      <section id="fs-id1172099721442" class="key-equations">
+        <title>Najważniejsze wzory</title>
+        <table id="fs-id1172102022699" summary="Kluczowe równania: Energia elektrostatyczna przy równowagowej odległości między atomami: U z indeksem coul, równe minus ke do kwadratu podzielone przez r z indeksem 0. Zmiana energii towarzysząca formowaniu wiązania jonowego: U z indeksem form plus U z indeksem coul plus U z indeksem ex. Krytyczne pole magnetyczne nadprzewodnika: B z indeksem C, w nawiasach T, równe B z indeksem C, w nawiasach 0, razy otwarty nawias kwadratowy, 1 minus otwarty nawias, T dzielone przez T z indeksem C, zamknięty nawias, do kwadratu, zamknięty nawias kwadratowy. Energia rotacyjna dwuatomowej cząsteczki: E z indeksem gamma, równe l, otwarty nawias, l plus 1, zamknięty nawias, h kreślone podzielone przez 2 I. Charakterystyczna energia rotacyjna cząsteczki: E z indeksem 0r, równe h kreślone do kwadratu podzielone przez 2l. Energia potencjalna będąca skutkiem zakazu Pauliego: U z indeksem ex równe A podzielone przez r do potęgi n. Energia dysocjacji kryształu: U z indeksem diss równe alfa razy w liczniku k, e do kwadratu, w mianowniku r z indeksem 0, koniec mianownika, razy otwarty nawias, 1 minus 1 podzielone przez n, nawias zamknięty. Moment bezwładności cząsteczki dwuatomowej o masie zredukowanej mu: I równe mu z indeksem r z indeksem 0. Energia elektronu w metalu: E równe pi do kwadratu, h kreślone do kwadratu, podzielone przez 2 m L do kwadratu, razy otwarty nawias, n1 do kwadratu plus n2 do kwadratu plus n3 do kwadratu, nawias zamknięty. Gęstość stanów elektronów w metalu: g w nawiasach E jest równe pi V podzielone przez 2, razy otwarty nawias, 8 m z indeksem e, podzielone przez h do kwadratu, nawias zamknięty, do potęgi 3 przez 2, razy E do potęgi 1 przez 2. Energia Fermiego: h do kwadratu podzielone przez 8 m z indeksem e, razy otwarty nawias, 3 N podzielone przez pi V, zamknięty nawias, do potęgi 2 przez 3. Temperatura Fermiego: T z indeksem F równe E z indeksem F podzielone przez k z indeksem B. Efekt Halla: V z indeksem H równe u B w. Prąd zależny od napięcia w złączu p-n: I z indeksem net równe I z indeksem 0, otwarty nawias, e do potęgi otwarty nawias, e V z indeksem b podzielone przez k z indeksem B, nawias zamknięty, minus 1, nawias zamknięty. Zysk prądowy: I z indeksem C równe beta I z indeksem B. Reguła wyboru dla rotacyjnych przejść energetycznych: delta l równe plus lub minus 1. Reguła wyboru dla oscylacyjnych przejść energetycznych: delta n równe plus lub minus 1." class="unnumbered unstyled">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+            <colspec colnum="2" colname="c2"/>
+            <tbody>
+              <row valign="top">
+                <entry valign="top" align="left">Energia elektrostatyczna przy równowagowej odległości między atomami</entry>
+                <entry valign="top" align="left">
+                  <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>E</m:mi>
+                          <m:mtext>Coul</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mo>−</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mi>k</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:msup>
+                                <m:mi>e</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                            </m:mrow>
+                            <m:msub>
+                              <m:mi>r</m:mi>
+                              <m:mn>0</m:mn>
+                            </m:msub>
+                          </m:mfrac>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{Coul}}=-\frac{ke^2}{r_0}</m:annotation>
+                    </m:semantics>
+                  </m:math>
+                </entry>
+              </row>
+              <row valign="top">
+                <entry valign="top" align="left">Zmiana energii towarzysząca formowaniu wiązania jonowego</entry>
+                <entry valign="top" align="left">
+                  <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>E</m:mi>
+                          <m:mtext>tworzenia</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>E</m:mi>
+                            <m:mtext>przejścia</m:mtext>
+                          </m:msub>
+                          <m:mo>+</m:mo>
+                          <m:msub>
+                            <m:mi>E</m:mi>
+                            <m:mtext>Coul</m:mtext>
+                          </m:msub>
+                          <m:mo>+</m:mo>
+                          <m:msub>
+                            <m:mi>E</m:mi>
+                            <m:mtext>odpychania</m:mtext>
+                          </m:msub>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{tworzenia}}=E_{\text{przejścia}}+E_{\text{Coul}}+E_{\text{odpychania}}</m:annotation>
+                    </m:semantics>
+                  </m:math>
+                </entry>
+              </row>
+              <row valign="top">
+                <entry valign="top" align="left">Krytyczne pole magnetyczne nadprzewodnika</entry>
+                <entry valign="top" align="left">
+<m:math display="inline"><m:semantics><m:mrow><m:mrow><m:msub><m:mi>B</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>T</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:msub><m:mi>B</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mn>0</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">K</m:mi></m:mrow></m:mfenced></m:mrow><m:mo>⋅</m:mo><m:mfenced close="]" open="["><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mfenced><m:mfrac><m:mi>T</m:mi><m:msub><m:mi>T</m:mi><m:mtext>c</m:mtext></m:msub></m:mfrac></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced></m:mrow><m:mtext>,</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            B_{\text{c}}\apply(T)=B_{\text{c}}\apply(\SI{0}{\kelvin})\cdot[1-(\frac{T}{T_{\text{c}}})^2]\text{,}</m:annotation></m:semantics></m:math>
+                </entry>
+              </row>
+              <row valign="top">
+                <entry valign="top" align="left">Energia rotacyjna dwuatomowej cząsteczki</entry>
+                <entry valign="top" align="left">
+                  <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>E</m:mi>
+                          <m:mtext>r</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mi>l</m:mi>
+<m:mo>⁢</m:mo>
+                          <m:mfenced>
+                            <m:mrow>
+                              <m:mi>l</m:mi>
+                              <m:mo>+</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mfenced>
+                          <m:mo>⋅</m:mo>
+                          <m:mfrac>
+                            <m:msup>
+                              <m:mi>ℏ</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                              <m:mo>⁢</m:mo>
+                              <m:mi>l</m:mi>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{r}}=l(l+1)\cdot \frac{\hbar^2}{2l}</m:annotation>
+                    </m:semantics>
+                  </m:math>
+                </entry>
+              </row>
+              <row valign="top">
+                <entry valign="top" align="left">Charakterystyczna energia rotacyjna cząsteczki</entry>
+                <entry valign="top" align="left">
+                  <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>E</m:mi>
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                            <m:mo>⁢</m:mo>
+                            <m:mtext>r</m:mtext>
+                          </m:mrow>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:msup>
+                            <m:mi>ℏ</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>l</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{0\text{r}}=\frac{\hbar^2}{2l}</m:annotation>
+                    </m:semantics>
+                  </m:math>
+                </entry>
+              </row>
+              <row valign="top">
+                <entry valign="top" align="left">Energia potencjalna będąca skutkiem zakazu Pauliego</entry>
+                <entry valign="top" align="left">
+                  <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>E</m:mi>
+                          <m:mtext>odpychania</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mi>A</m:mi>
+                          <m:msup>
+                            <m:mi>r</m:mi>
+                            <m:mi>n</m:mi>
+                          </m:msup>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{odpychania}}=\frac{A}{r^n}</m:annotation>
+                    </m:semantics>
+                  </m:math>
+                </entry>
+              </row>
+              <row valign="top">
+                <entry valign="top" align="left">Energia dysocjacji kryształu</entry>
+                <entry valign="top" align="left">
+                  <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>E</m:mi>
+                          <m:mtext>dysocjacji</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mi>α</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mi>k</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:msup>
+                                  <m:mi>e</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                              </m:mrow>
+                              <m:msub>
+                                <m:mi>r</m:mi>
+                                <m:mn>0</m:mn>
+                              </m:msub>
+                            </m:mfrac>
+                          </m:mrow>
+                    <m:mo>⁢</m:mo>
+                          <m:mfenced>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mo>−</m:mo>
+                              <m:mfrac>
+                                <m:mn>1</m:mn>
+                                <m:mi>n</m:mi>
+                              </m:mfrac>
+                            </m:mrow>
+                          </m:mfenced>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{dysocjacji}}=\alpha\frac{ke^2}{r_0}(1-\frac{1}{n})</m:annotation>
+                    </m:semantics>
+                  </m:math>
+                </entry>
+              </row>
+              <row valign="top">
+                <entry valign="top" align="left">Moment bezwładności cząsteczki dwuatomowej o masie zredukowanej <m:math display="inline">
+                  <m:semantics>
+                    <m:mi>μ</m:mi>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mu</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+              <entry valign="top" align="left">
+                <m:math display="inline">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mi>I</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mi>μ</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:msubsup>
+                          <m:mi>r</m:mi>
+                          <m:mn>0</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> I=\mu r_0^2</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Energia elektronu w metalu</entry>
+              <entry valign="top" align="left">
+                <m:math display="inline">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mi>E</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:msup>
+                              <m:mi>π</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                            <m:mo>⁢</m:mo>
+                            <m:msup>
+                              <m:mi>ℏ</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>m</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:msup>
+                              <m:mi>L</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>⋅</m:mo>
+                        <m:mfenced>
+                          <m:mrow>
+                            <m:msubsup>
+                              <m:mi>n</m:mi>
+                              <m:mn>1</m:mn>
+                              <m:mn>2</m:mn>
+                            </m:msubsup>
+                            <m:mo>+</m:mo>
+                            <m:msubsup>
+                              <m:mi>n</m:mi>
+                              <m:mn>2</m:mn>
+                              <m:mn>2</m:mn>
+                            </m:msubsup>
+                            <m:mo>+</m:mo>
+                            <m:msubsup>
+                              <m:mi>n</m:mi>
+                              <m:mn>3</m:mn>
+                              <m:mn>2</m:mn>
+                            </m:msubsup>
+                          </m:mrow>
+                        </m:mfenced>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E=\frac{\pi^2\hbar^2}{2mL^2}\cdot(n_1^2+n_2^2+n_3^2)</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Gęstość stanów elektronów w metalu</entry>
+              <entry valign="top" align="left">
+    <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mrow>
+            <m:mi>g</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>E</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>π</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>V</m:mi>
+              </m:mrow>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+<m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mfenced>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>8</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mtext>e</m:mtext>
+                    </m:msub>
+                  </m:mrow>
+                  <m:msup>
+                    <m:mi>h</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mfrac>
+              </m:mfenced>
+              <m:mrow>
+                <m:mn>3</m:mn>
+                <m:mo>∕</m:mo>
+                <m:mn>2</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mo>⁢</m:mo>
+            <m:msup>
+              <m:mi>E</m:mi>
+              <m:mrow>
+                <m:mn>1</m:mn>
+                <m:mo>∕</m:mo>
+                <m:mn>2</m:mn>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> g\apply(E)=\frac{\pi V}{2}\cdot(\frac{8m_{\text{e}}}{h^2})^{3/2}E^{1/2}</m:annotation>
+      </m:semantics>
+    </m:math>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Energia Fermiego</entry>
+              <entry valign="top" align="left">
+                <m:math display="inline">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>E</m:mi>
+                        <m:mtext>F</m:mtext>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:msup>
+                            <m:mi>ℏ</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          <m:mrow>
+                            <m:mn>8</m:mn>
+                            <m:mo>⁢</m:mo>
+                            <m:msub>
+                              <m:mi>m</m:mi>
+                              <m:mtext>e</m:mtext>
+                            </m:msub>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mfenced>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mn>3</m:mn>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>N</m:mi>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:mi>π</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>V</m:mi>
+                              </m:mrow>
+                            </m:mfrac>
+                          </m:mfenced>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mo>∕</m:mo>
+                            <m:mn>3</m:mn>
+                          </m:mrow>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{F}}=\frac{\hbar^2}{8m_{\text{e}}}\cdot(\frac{3N}{\pi V})^{2/3}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Temperatura Fermiego </entry>
+              <entry valign="top" align="left">
+                <m:math display="inline">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>T</m:mi>
+                        <m:mtext>F</m:mtext>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:msub>
+                          <m:mi>E</m:mi>
+                          <m:mtext>F</m:mtext>
+                        </m:msub>
+                        <m:msub>
+                          <m:mi>k</m:mi>
+                          <m:mtext>B</m:mtext>
+                        </m:msub>
+                      </m:mfrac>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T_{\text{F}}=\frac{E_{\text{F}}}{k_{\text{B}}}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Efekt Halla</entry>
+              <entry valign="top" align="left">
+    <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mtext>H</m:mtext>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mi>v</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>B</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>w</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> U_{\text{H}}=vBw</m:annotation>
+      </m:semantics>
+    </m:math>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Prąd zależny od napięcia w złączu p–n
+            </entry>
+            <entry valign="top" align="left">
+<m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>I</m:mi><m:mtext>wyp</m:mtext></m:msub><m:mo>=</m:mo><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mn>0</m:mn></m:msub><m:mo>⋅</m:mo><m:mfenced><m:mrow><m:msup><m:mi>e</m:mi><m:mrow><m:mrow><m:mi>e</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>U</m:mi><m:mtext>b</m:mtext></m:msub></m:mrow><m:mo>∕</m:mo><m:mfenced><m:mrow><m:msub><m:mi>k</m:mi><m:mtext>B</m:mtext></m:msub><m:mo>⁢</m:mo><m:mi>T</m:mi></m:mrow></m:mfenced></m:mrow></m:msup><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            I_{\text{wyp}}=I_0\cdot(e^{eU_{\text{b}}/(k_{\text{B}}T)}-1)</m:annotation></m:semantics></m:math>
+            </entry>
+          </row>
+          <row valign="top">
+            <entry valign="top" align="left">Zysk prądowy</entry>
+            <entry valign="top" align="left">
+              <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>I</m:mi>
+                      <m:mtext>C</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mi>β</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:msub>
+                        <m:mi>I</m:mi>
+                        <m:mtext>B</m:mtext>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> I_{\text{C}}=\beta I_{\text{B}}</m:annotation>
+                </m:semantics>
+              </m:math>
+            </entry>
+          </row>
+          <row valign="top">
+            <entry valign="top" align="left">Reguła wyboru dla rotacyjnych przejść energetycznych</entry>
+            <entry valign="top" align="left">
+              <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mo>Δ</m:mo>
+                      <m:mi>l</m:mi>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mo>±</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\Delta}l=+-1</m:annotation>
+                </m:semantics>
+              </m:math>
+            </entry>
+          </row>
+          <row valign="top">
+            <entry valign="top" align="left">Reguła wyboru dla oscylacyjnych przejść energetycznych</entry>
+            <entry valign="top" align="left">
+              <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mo>Δ</m:mo>
+                      <m:mi>n</m:mi>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mo>±</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\Delta}n=+-1</m:annotation>
+                </m:semantics>
+              </m:math>
+            </entry>
+          </row>
+        </tbody>
+      
+
+
+
+
+
+
+
+
+
+
+</tgroup>
+</table></section>
+  <section id="fs-id1172101778346" class="review-conceptual-questions">
+    <title>Pytania </title>
+    <exercise id="fs-id1172101995463">
+      <problem id="fs-id1172101995465">
+        <para id="fs-id1172101995467">Opisz dwie główne cechy nadprzewodników. </para>
+      </problem>
+    </exercise>
+    <exercise id="fs-id1172099377258">
+      <problem id="fs-id1172101738553">
+        <para id="fs-id1172101738555">W jaki sposób teoria BCS wyjaśnia nadprzewodnictwo? </para>
+      </problem>
+      <solution id="fs-id1172101731675">
+        <para id="fs-id1172101731677">Teoria BCS wyjaśnia nadprzewodnictwo na podstawie elektronów w parach Coopera. Jeden z elektronów oddziałuje z siecią, która z kolei oddziałuje z drugim elektronem. To złożone oddziaływanie elektron–sieć–elektron wiąże elektrony w pary mimo odpychającego oddziaływania samych elektronów. </para></solution>
+    </exercise>
+    <exercise id="fs-id1172101731679">
+      <problem id="fs-id1172102014583">
+        <para id="fs-id1172102014585">Co to jest efekt Meissnera? </para>
+      </problem>
+    </exercise>
+    <exercise id="fs-id1172101736600">
+      <problem id="fs-id1172101736602">
+        <para id="fs-id1172101736604">Jaki wpływ na temperaturę krytyczną nadprzewodnika ma rosnące pole magnetyczne? </para></problem>
+      <solution id="fs-id1172101802055">
+        <para id="fs-id1172102048863">Gdy wartość pola magnetycznego rośnie, temperatura krytyczna obniża się. </para>
+      </solution>
+    </exercise>
+  </section>
+  <section id="fs-id1172101889557" class="review-problems">
+    <title>Zadania</title>
+    <exercise id="fs-id1172102020824">
+      <problem id="fs-id1172102020827">
+        <para id="fs-id1172101798710">W jakiej temperaturze względem <m:math display="inline">
+          <m:semantics>
+            <m:msub>
+              <m:mi>T</m:mi>
+              <m:mtext>c</m:mtext>
+            </m:msub>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T_{\text{c}}</m:annotation>
+          </m:semantics>
+        </m:math> krytyczne pole magnetyczne nadprzewodnika równe jest połowie krytycznego pola w <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mi>T</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>0</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">K</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T=\SI{0}{\kelvin}</m:annotation>
+        </m:semantics>
+        </m:math>? </para></problem>
+      <solution id="fs-id1172102053869">
+        <para id="fs-id1172102053871"><m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mi>T</m:mi>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mn>0,707</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi>T</m:mi>
+                    <m:mtext>c</m:mtext>
+                  </m:msub>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T=\num{0,707}T_{\text{c}}</m:annotation>
+            </m:semantics>
+            </m:math>.</para></solution>
+        </exercise>
+        <exercise id="fs-id1172102095111">
+          <problem id="fs-id1172102095113">
+            <para id="fs-id1172102095115">Ile wynosi krytyczne pole magnetyczne dla ołowiu w <m:math display="inline">
+              <m:semantics>
+                <m:mrow>
+                  <m:mi>T</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mn>2,8</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                    <m:mi mathvariant="normal">K</m:mi>
+                  </m:mrow>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T=\SI{2,8}{\kelvin}</m:annotation>
+              </m:semantics>
+              </m:math>?</para></problem>
+          </exercise>
+          <exercise id="fs-id1172099492335"><problem id="fs-id1172099492337">
+              <para id="fs-id1172099750930">Przewód wykonany z ołowiu został ciasno zwinięty w solenoid o średnicy <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mn>4</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                    <m:mi mathvariant="normal">mm</m:mi>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{4}{\milli\metre}</m:annotation>
+                </m:semantics>
+              </m:math> i schłodzony do temperatury <m:math display="inline">
+              <m:semantics>
+                <m:mrow>
+                  <m:mn>5</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">K</m:mi>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{5}{\kelvin}</m:annotation>
+              </m:semantics>
+            </m:math>. Przewód połączono szeregowo z opornikiem <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mn>50</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">Ω</m:mi>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{50}{\ohm}</m:annotation>
+            </m:semantics>
+            </m:math> i z regulowanym źródłem siły elektromotorycznej. Jeśli będziemy zwiększali siłę elektromotoryczną, to przy jakiej wartości nastąpi zniszczenie stanu nadprzewodzącego? </para>
+          </problem>
+          <solution id="fs-id1172099769176">
+            <para id="fs-id1172099879207">
+              <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mn>61</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                    <m:mi mathvariant="normal">kV</m:mi>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{61}{\kilo\volt}</m:annotation>
+                </m:semantics>
+                </m:math>.</para>
+              </solution>
+            </exercise><exercise id="fs-id1172099879212">
+              <problem id="fs-id1172102096627">
+                <para id="fs-id1172102096630">Temperatura ciasno nawiniętego solenoidu o długości <m:math display="inline">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mn>50</m:mn>
+                     <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                      <m:mi mathvariant="normal">cm</m:mi>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{50}{\centi\metre}</m:annotation>
+                  </m:semantics>
+                </m:math> wynosi <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mn>4</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                    <m:mi mathvariant="normal">K</m:mi>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{4}{\kelvin}</m:annotation>
+                </m:semantics>
+              </m:math>. Solenoid został wykonany z przewodu Nb o promieniu <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mn>1,5</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">mm</m:mi>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{1,5}{\milli\metre}</m:annotation>
+            </m:semantics>
+            </m:math>. Jaki maksymalny prąd może popłynąć przez przewód, aby pozostał on jeszcze nadprzewodzący? </para></problem>
+        </exercise>
+      </section>
+      <section id="fs-id1172101681157" class="review-additional-problems">
+        <title>Zadania dodatkowe </title>
+        <exercise id="fs-id1172099551125"><problem id="fs-id1172101752433">
+            <para id="fs-id1172101752436">Fluorek potasu (KF) jest cząsteczką uformowaną przez wiązanie jonowe. W położeniu równowagowym atomy są oddalone od siebie o <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>r</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mn>0,255</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">nm</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> r_0=\SI{0,255}{\nano\metre}</m:annotation>
+            </m:semantics>
+          </m:math>. Wyznacz elektrostatyczną energię potencjalną atomów. Powinowactwo elektronowe F wynosi <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mn>3,4</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">eV</m:mi>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{3,4}{\electronvolt}</m:annotation>
+        </m:semantics>
+      </m:math>, a energia jonizacji K
+    <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mn>4,34</m:mn>
+         <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">eV</m:mi>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{4,34}{\electronvolt}</m:annotation>
+      </m:semantics>
+      </m:math>. Wyznacz energię dysocjacji (pomiń energię odpychania).</para></problem>
+    <solution id="fs-id1172101903605">
+      <para id="fs-id1172102125111"><m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>E</m:mi><m:mtext>Coul</m:mtext></m:msub><m:mo>=</m:mo><m:mrow><m:mo>−</m:mo><m:mrow><m:mn>5,65</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">eV</m:mi></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            E_{\text{Coul}}=-\SI{5,65}{\electronvolt}</m:annotation></m:semantics></m:math>, 
+
+<m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>E</m:mi><m:mtext>tworzenia</m:mtext></m:msub><m:mo>=</m:mo><m:mrow><m:mo>−</m:mo><m:mrow><m:mn>4,71</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">eV</m:mi></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            E_{\text{tworzenia}}=-\SI{4,71}{\electronvolt}</m:annotation></m:semantics></m:math>, 
+
+<m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>E</m:mi><m:mtext>dysocjacji</m:mtext></m:msub><m:mo>=</m:mo><m:mrow><m:mn>4,71</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">eV</m:mi></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            E_{\text{dysocjacji}}=\SI{4,71}{\electronvolt}</m:annotation></m:semantics></m:math>.</para></solution>
+  </exercise><exercise id="fs-id1172102047427">
+    <problem id="fs-id1172102047429">
+      <para id="fs-id1172102024299">Do poprzedniego zadania naszkicuj wykres energii potencjalnej w zależności od odległości dla wiązania jonów K<sup>+</sup> i K<sup>–</sup>.
+<list id="eip-idm758703376" list-type="enumerated" number-style="lower-alpha"><item>Zaznacz na wykresie energię potrzebną do przeniesienia elektronu z K do F.</item>
+    <item>Zaznacz na wykresie energię dysocjacji.</item>
+  </list></para></problem>
+</exercise>
+<exercise id="fs-id1172099693261"><problem id="fs-id1172099693263">
+    <para id="fs-id1172102060529">Odległość między atomami wodoru w cząsteczce H<sub>2</sub> wynosi ok. <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mn>0,075</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">nm</m:mi>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,075}{\nano\metre}</m:annotation>
+    </m:semantics>
+  </m:math>. Wyznacz charakterystyczną energię rotacji w <m:math display="inline">
+  <m:semantics>
+    <m:mi mathvariant="normal">eV</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \si{\electronvolt}</m:annotation>
+  </m:semantics>
+  </m:math>. </para></problem>
+<solution id="fs-id1172101853849">
+  <para id="fs-id1172101853851">
+    <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mrow>
+              <m:mn>0</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mtext>r</m:mtext>
+            </m:mrow>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>7,43</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>-3</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">eV</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{0\text{r}}=\SI{7,43e-3}{\electronvolt}</m:annotation>
+      </m:semantics>
+      </m:math>.</para>
+    </solution>
+  </exercise><exercise id="fs-id1172102016707">
+    <problem id="fs-id1172099415894">
+      <para id="fs-id1172099415896">Charakterytyczna energia rotacji cząsteczki Cl<sub>2</sub> wynosi <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>2,95</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mn>-5</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">eV</m:mi>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{2,95e-5}{\electronvolt}</m:annotation>
+      </m:semantics>
+      </m:math>. Wyznacz odległość między atomami chloru. </para></problem>
+  </exercise>
+  <exercise id="fs-id1172101945612">
+    <problem id="fs-id1172101945614">
+      <para id="fs-id1172099725301">Wyznacz trzy najniższe rotacyjne poziomy energetyczne cząsteczki H<sub>2</sub>.</para></problem>
+      <solution id="fs-id1172101781614">
+        <para id="fs-id1172101781616"><m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mrow>
+                    <m:mn>0</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mtext>r</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>7,43</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mn>-3</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                 <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">eV</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{0\text{r}}=\SI{7,43e-3}{\electronvolt}</m:annotation>
+            </m:semantics>
+          </m:math>; <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mi>l</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> l=0</m:annotation>
+          </m:semantics>
+        </m:math>, <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mtext>r</m:mtext>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>0</m:mn>
+             <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">eV</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{r}}=\SI{0}{\electronvolt}</m:annotation>
+        </m:semantics>
+      </m:math> (brak rotacji);
+      <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mi>l</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> l=1</m:annotation>
+        </m:semantics>
+      </m:math>, <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mtext>r</m:mtext>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>1,49</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>-2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">eV</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{r}}=\SI{1,49e-2}{\electronvolt}</m:annotation>
+      </m:semantics>
+    </m:math>; <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>l</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>2</m:mn>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> l=2</m:annotation>
+    </m:semantics>
+  </m:math>, <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:msub>
+        <m:mi>E</m:mi>
+        <m:mtext>r</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mn>4,46</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mn>-2</m:mn>
+          </m:msup>
+        </m:mrow>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">eV</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{r}}=\SI{4,46e-2}{\electronvolt}</m:annotation>
+  </m:semantics>
+  </m:math>.</para></solution>
+</exercise>
+<exercise id="fs-id1172102006934">
+  <problem id="fs-id1172102006936">
+    <para id="fs-id1172099884435">Atom węgla może hybrydyzować w konfiguracji <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mi>s</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:msup>
+            <m:mi>p</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> sp^2</m:annotation>
+      </m:semantics>
+      </m:math>. Jaki jest kąt między takimi orbitalami? </para>
+    </problem>
+  </exercise>
+  <exercise id="fs-id1172101786055"><problem id="fs-id1172099499264">
+      <para id="fs-id1172099499267">Wymień pięć cech kryształów jonowych, które wynikają z dużej energii dysocjacji. </para>
+    </problem>
+    <solution id="fs-id1172099745954">
+<para id="eip-idm420939568">(1) Są dość twarde i stabilne. (2) Parują w stosunkowo wysokich temperaturach (<m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>1000</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">K</m:mi>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{1000}{\kelvin}</m:annotation>
+          </m:semantics>
+        </m:math> do <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mn>2000</m:mn>
+           <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">K</m:mi>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{2000}{\kelvin}</m:annotation>
+        </m:semantics>
+        </m:math>). (3) Są przezroczyste dla światła, ponieważ fotony z widzialnego zakresu nie mają wystarczającej energii, aby przenieść elektron ze stanu podstawowego do wzbudzonego. (4) Są słabymi przewodnikami prądu elektrycznego, ponieważ efektywnie nie ma w nich swobodnych elektronów. (5) Zwykle rozpuszczają się w wodzie, gdyż cząsteczki wody mają duży moment dipolowy, którego pole elektryczne jest wystarczająco silne, by rozerwać elektrostatyczne wiązanie między jonami.
+</para></solution>
+  </exercise><exercise id="fs-id1172099723741">
+    <problem id="fs-id1172101759899">
+      <para id="fs-id1172101759901">Dlaczego wiązanie w <m:math display="inline">
+        <m:semantics>
+          <m:msubsup>
+            <m:mtext>H</m:mtext>
+            <m:mn>2</m:mn>
+            <m:mtext>+</m:mtext>
+          </m:msubsup>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \text{H}_2^{\text{+}}</m:annotation>
+        </m:semantics>
+        </m:math> jest preferowane? W odpowiedzi użyj argumentu związanego z symetrią elektronowej funkcji falowej. </para>
+      </problem>
+    </exercise>
+    <exercise id="fs-id1172101762372">
+      <problem id="fs-id1172101762374">
+        <para id="fs-id1172101762377">Astronomowie twierdzą, że zmierzone widma światła pewnej odległej gwiazdy stanowią dowód istnienia He<sub>2</sub>. Czy wierzysz im? </para></problem>
+        <solution id="fs-id1172099558484">
+          <para id="fs-id1172099558486">Nie, atom He nie zawiera elektronów walencyjnych, które mogłyby być uwspólnione przy tworzeniu wiązań chemicznych. </para></solution>
+        </exercise>
+        <exercise id="fs-id1172099680537">
+          <problem id="fs-id1172099680539">
+            <para id="fs-id1172099504758">Pokaż, że moment bezwładności cząsteczki dwuatomowej dany jest formułą <m:math display="inline">
+              <m:semantics>
+                <m:mrow>
+                  <m:mi>I</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mi>μ</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:msubsup>
+                      <m:mi>r</m:mi>
+                      <m:mn>0</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                  </m:mrow>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> I=\mu r_0^2</m:annotation>
+              </m:semantics>
+            </m:math>, gdzie <m:math display="inline">
+            <m:semantics>
+              <m:mi>μ</m:mi>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mu</m:annotation>
+            </m:semantics>
+          </m:math> jest masą zredukowaną, a <m:math display="inline">
+          <m:semantics>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> r_0</m:annotation>
+          </m:semantics>
+          </m:math> odległością między masami. </para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1172101896880">
+        <problem id="fs-id1172101896882">
+          <para id="fs-id1172101896884">Pokaż, że średnia energia elektronu w jednowymiarowym metalu jest związana z energią Fermiego równaniem <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>E</m:mi>
+                  <m:mo>¯</m:mo>
+                </m:mover>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>E</m:mi>
+                    <m:mtext>F</m:mtext>
+                  </m:msub>
+                  <m:mo>∕</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \bar{E}=E_{\text{F}}/2</m:annotation>
+            </m:semantics>
+            </m:math>.</para>
+          </problem>
+          <solution id="fs-id1172102149413">
+            <para id="fs-id1172102095582">
+              <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:munderover>
+                        <m:mo>∑</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mrow>
+                          <m:mi>N</m:mi>
+                          <m:mo>∕</m:mo>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      </m:munderover>
+                      <m:msup>
+                        <m:mi>n</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mfenced>
+                          <m:mrow>
+                            <m:mi>N</m:mi>
+                            <m:mo>∕</m:mo>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mfenced>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                      <m:mo>∕</m:mo>
+                      <m:mn>3</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \sum_1^{N/2}n^2=(N/2)^3/3</m:annotation>
+                </m:semantics>
+              </m:math>, więc <m:math display="inline">
+              <m:semantics>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>E</m:mi>
+                    <m:mo>¯</m:mo>
+                  </m:mover>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>E</m:mi>
+                      <m:mtext>F</m:mtext>
+                    </m:msub>
+                    <m:mo>∕</m:mo>
+                    <m:mn>3</m:mn>
+                  </m:mrow>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \bar{E}=E_{\text{F}}/3</m:annotation>
+              </m:semantics>
+              </m:math>.</para>
+            </solution>
+          </exercise>
+          <exercise id="fs-id1172099383798">
+            <problem id="fs-id1172099383801">
+              <para id="fs-id1172101912088">Wyniki pomiarów krytycznego pola magnetycznego (w <m:math display="inline">
+                <m:semantics>
+                  <m:mi mathvariant="normal">T</m:mi>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \si{\tesla}</m:annotation>
+                </m:semantics>
+              </m:math>) w pewnym nadprzewodniku w różnych temperaturach (w <m:math display="inline">
+              <m:semantics>
+                <m:mi mathvariant="normal">K</m:mi>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \si{\kelvin}</m:annotation>
+              </m:semantics>
+            </m:math>) podane są poniżej. Użyj linii najlepszego dopasaowania, aby wyznaczyć <m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>B</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mn>0</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">K</m:mi></m:mrow></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            B_{\text{c}}\apply(\SI{0}{\kelvin})</m:annotation></m:semantics></m:math>. Załóż <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:msub>
+                <m:mi>T</m:mi>
+                <m:mtext>c</m:mtext>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mn>9,3</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">K</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T_{\text{c}}=\SI{9,3}{\kelvin}</m:annotation>
+          </m:semantics>
+          </m:math>.</para><table id="fs-id1172099566998" summary="Tabela ta ma 2 kolumny oznaczone jako T w K i B z indeksem C w T. W pierwszej kolumnie znajdują się następujące wartości: 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0. W drugiej kolumnie zawarte są wartości: 0.18, 0.16, 0.14, 0.12, 0.09, 0.05, 0.01.">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+              <colspec colnum="2" colname="c2"/>
+              <thead>
+                <row valign="top">
+                  <entry valign="top" align="center">
+<m:math display="inline"><m:semantics><m:mi>T</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            T</m:annotation></m:semantics></m:math> (<m:math display="inline"><m:semantics><m:mi mathvariant="normal">K</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \si{\kelvin}</m:annotation></m:semantics></m:math>)
+                  </entry>
+                  <entry valign="top" align="center">
+<m:math display="inline"><m:semantics><m:msub><m:mi>B</m:mi><m:mtext>c</m:mtext></m:msub><m:annotation encoding="application/vnd.katalysteducation.mathtex">            B_{\text{c}}</m:annotation></m:semantics></m:math> (<m:math display="inline"><m:semantics><m:mi mathvariant="normal">T</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \si{\tesla}</m:annotation></m:semantics></m:math>)
+                  </entry>
+                </row>
+              </thead>
+              <tbody>
+                <row valign="top">
+                  <entry valign="top" align="center">
+                    <m:math display="inline">
+                      <m:semantics>
+                        <m:mn>3</m:mn>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 3</m:annotation>
+                      </m:semantics>
+                    </m:math>
+                  </entry>
+                  <entry valign="top" align="center">
+                    <m:math display="inline">
+                      <m:semantics>
+                        <m:mn>0,18</m:mn>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,18}</m:annotation>
+                      </m:semantics>
+                    </m:math>
+                  </entry>
+                </row>
+                <row valign="top">
+                  <entry valign="top" align="center">
+                    <m:math display="inline">
+                      <m:semantics>
+                        <m:mn>4</m:mn>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 4</m:annotation>
+                      </m:semantics>
+                    </m:math>
+                  </entry>
+                  <entry valign="top" align="center">
+                    <m:math display="inline">
+                      <m:semantics>
+                        <m:mn>0,16</m:mn>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,16}</m:annotation>
+                      </m:semantics>
+                    </m:math>
+                  </entry>
+                </row>
+                <row valign="top">
+                  <entry valign="top" align="center">
+                    <m:math display="inline">
+                      <m:semantics>
+                        <m:mn>5</m:mn>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 5</m:annotation>
+                      </m:semantics>
+                    </m:math>
+                  </entry>
+                  <entry valign="top" align="center">
+                    <m:math display="inline">
+                      <m:semantics>
+                        <m:mn>0,14</m:mn>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,14}</m:annotation>
+                      </m:semantics>
+                    </m:math>
+                  </entry>
+                </row>
+                <row valign="top">
+                  <entry valign="top" align="center">
+                    <m:math display="inline">
+                      <m:semantics>
+                        <m:mn>6</m:mn>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 6</m:annotation>
+                      </m:semantics>
+                    </m:math>
+                  </entry>
+                  <entry valign="top" align="center">
+                    <m:math display="inline">
+                      <m:semantics>
+                        <m:mn>0,12</m:mn>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,12}</m:annotation>
+                      </m:semantics>
+                    </m:math>
+                  </entry>
+                </row>
+                <row valign="top">
+                  <entry valign="top" align="center">
+                    <m:math display="inline">
+                      <m:semantics>
+                        <m:mn>7</m:mn>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 7</m:annotation>
+                      </m:semantics>
+                    </m:math>
+                  </entry>
+                  <entry valign="top" align="center">
+                    <m:math display="inline">
+                      <m:semantics>
+                        <m:mn>0,09</m:mn>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,09}</m:annotation>
+                      </m:semantics>
+                    </m:math>
+                  </entry>
+                </row>
+                <row valign="top">
+                  <entry valign="top" align="center">
+                    <m:math display="inline">
+                      <m:semantics>
+                        <m:mn>8</m:mn>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 8</m:annotation>
+                      </m:semantics>
+                    </m:math>
+                  </entry>
+                  <entry valign="top" align="center">
+                    <m:math display="inline">
+                      <m:semantics>
+                        <m:mn>0,05</m:mn>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,05}</m:annotation>
+                      </m:semantics>
+                    </m:math>
+                  </entry>
+                </row>
+                <row valign="top">
+                  <entry valign="top" align="center">
+                    <m:math display="inline">
+                      <m:semantics>
+                        <m:mn>9</m:mn>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 9</m:annotation>
+                      </m:semantics>
+                    </m:math>
+                  </entry>
+                  <entry valign="top" align="center">
+                    <m:math display="inline">
+                      <m:semantics>
+                        <m:mn>0,01</m:mn>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,01}</m:annotation>
+                      </m:semantics>
+                    </m:math>
+                  </entry>
+                </row>
+              </tbody>
+            
+
+
+
+</tgroup>
+</table></problem>
+      </exercise>
+      <exercise id="fs-id1172102007626">
+        <problem id="fs-id1172102007628">
+          <para id="fs-id1172102007631">Oszacuj, jaka część atomów Si musi być zastąpiona atomami As, aby uformował się poziom domieszkowy. </para></problem>
+        <solution id="fs-id1172101898189">
+          <para id="fs-id1172101898191">Poziom domieszkowy powstanie, jeśli koncentracja donorów jest na tyle duża, by orbity dodatkowych elektronów nakładały się. Dowiedzieliśmy się wcześniej, że promień takiej orbity wynosi ok. <m:math display="inline"><m:semantics><m:mrow><m:mn>50</m:mn><m:mo lspace="0px" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">Å</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{50}{\angstrom}</m:annotation></m:semantics></m:math>, czyli maksymalna odległość między atomami domieszki, przy której uformuje się poziom, to <m:math display="inline"><m:semantics><m:mrow><m:mn>100</m:mn><m:mo lspace="0px" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">Å</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{100}{\angstrom}</m:annotation></m:semantics></m:math>. Tak więc jeśli przyjmiemy <m:math display="inline"><m:semantics><m:mrow><m:mn>1</m:mn><m:mo lspace="0px" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">Å</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{1}{\angstrom}</m:annotation></m:semantics></m:math> jako odległość między sąsiadującymi atomami Si, to <m:math display="inline">
+    <m:semantics>
+      <m:mn>1</m:mn>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 1</m:annotation>
+    </m:semantics>
+  </m:math> na <m:math display="inline">
+  <m:semantics>
+    <m:mn>100</m:mn>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 100</m:annotation>
+  </m:semantics>
+</m:math> atomów Si musi być atomem donoru, a w krysztale trójwymiarowym <m:math display="inline">
+<m:semantics>
+  <m:mn>1</m:mn>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 1</m:annotation>
+</m:semantics>
+</m:math> na <m:math>
+<m:mrow>
+  <m:msup>
+    <m:mrow>
+      <m:mn>10</m:mn>
+    </m:mrow>
+    <m:mn>6</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math> atomów Si musi być zamieniony na donor. Powstanie wtedy poziom domieszkowy. </para></solution>
+</exercise>
+<exercise id="fs-id1172099725367">
+  <problem id="fs-id1172101784654">
+    <para id="fs-id1172101784656">W widmie rotacyjnym zmierzonym w temperaturze pokojowej (<m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mi>T</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>300</m:mn>
+           <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">K</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T=\SI{300}{\kelvin}</m:annotation>
+      </m:semantics>
+    </m:math>) zaobserwowano przejście. Twój partner w laboratorium twierdzi, że pik w widmie odpowiada przejściu ze stanu <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>l</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>4</m:mn>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> l=4</m:annotation>
+    </m:semantics>
+  </m:math> do stanu <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>l</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>1</m:mn>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> l=1</m:annotation>
+  </m:semantics>
+  </m:math>. Czy to jest możliwe? Jeśli tak, wyznacz moment bezwładności cząsteczki. </para></problem>
+</exercise>
+<exercise id="fs-id1172099680966">
+  <problem id="fs-id1172099680968">
+    <para id="fs-id1172099680970">Wyznacz energie Fermiego dla<list id="eip-idm1198804576" list-type="enumerated" number-style="lower-alpha"><item>
+Mg;</item>
+          <item>
+Na;</item>
+              <item>
+Zn.</item>
+                </list></para>
+            </problem>
+            <solution id="fs-id1172099762559">
+              <para id="fs-id1172099762561">a. <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>E</m:mi>
+                      <m:mtext>F</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mn>7,11</m:mn>
+                      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                      <m:mi mathvariant="normal">eV</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{F}}=\SI{7,11}{\electronvolt}</m:annotation>
+                </m:semantics>
+              </m:math>; b. <m:math display="inline">
+              <m:semantics>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>E</m:mi>
+                    <m:mtext>F</m:mtext>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mn>3,24</m:mn>
+                   <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                    <m:mi mathvariant="normal">eV</m:mi>
+                  </m:mrow>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{F}}=\SI{3,24}{\electronvolt}</m:annotation>
+              </m:semantics>
+            </m:math>; c. <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>F</m:mtext>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mn>9,46</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">eV</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{F}}=\SI{9,46}{\electronvolt}</m:annotation>
+            </m:semantics>
+            </m:math>.</para></solution>
+        </exercise>
+        <exercise id="fs-id1172102150849">
+          <problem id="fs-id1172102150851">
+            <para id="fs-id1172102134218">Znajdź średnią energię elektronu w przewodzie Zn. </para></problem>
+          </exercise>
+          <exercise id="fs-id1172099613012">
+            <problem id="fs-id1172099613015">
+              <para id="fs-id1172099613017">Jaka wartość stałej odpychania <m:math display="inline">
+                <m:semantics>
+                  <m:mi>n</m:mi>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+                </m:semantics>
+              </m:math> w CsCl daje energię dysocjacji równą wartości zmierzonej: <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mn>158</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mrow>
+                  <m:mi mathvariant="normal">kcal</m:mi>
+                  <m:mo>∕</m:mo>
+                  <m:mi mathvariant="normal">mol</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{158}{\kilo\kaloria\per\mol}</m:annotation>
+            </m:semantics>
+            </m:math>? </para></problem>
+          <solution id="fs-id1172099626915">
+            <para id="fs-id1172102150161">
+              <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mn>9,15</m:mn>
+                    <m:mo>≈</m:mo>
+                    <m:mn>9</m:mn>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{9,15}\approx 9</m:annotation>
+                </m:semantics>
+                </m:math>.</para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1172101717382">
+              <problem id="fs-id1172101717384">
+                <para id="fs-id1172099563865">Pewien model fizyczny diamentu sugeruje strukturę upakowania BCC. Dlaczego to nie jest możliwe? </para>
+              </problem>
+            </exercise>
+          </section>
+          <section id="fs-id1172101891399" class="review-challenge">
+            <title>Zadania trudniejsze</title>
+            <exercise id="fs-id1172101939285"><problem id="fs-id1172101939288">
+                <para id="fs-id1172101778273">Pokaż, że średnia energia elektronu w trójwymiarowym metalu dana jest formułą 
+</para><equation id="eip-idm467162672" class="unnumbered">
+<m:math display="block">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>E</m:mi>
+                        <m:mo>¯</m:mo>
+                      </m:mover>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mo>∕</m:mo>
+                          <m:mi>N</m:mi>
+                        </m:mrow>
+                        <m:mo>⋅</m:mo>
+                        <m:mrow>
+                          <m:munderover>
+                            <m:mo>∫</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:msub>
+                              <m:mi>E</m:mi>
+                              <m:mtext>F</m:mtext>
+                            </m:msub>
+                          </m:munderover>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mi>E</m:mi>
+                              <m:mo>⋅</m:mo>
+                              <m:mrow>
+                                <m:mi>g</m:mi>
+                                <m:mo>⁡</m:mo>
+                                <m:mfenced>
+                                  <m:mi>E</m:mi>
+                                </m:mfenced>
+                              </m:mrow>
+                            </m:mrow>
+                            <m:mo>⁢</m:mo>
+                            <m:mrow>
+                              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                              <m:mi>E</m:mi>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mn>3</m:mn>
+                          <m:mo>⁢</m:mo>
+                          <m:msub>
+                            <m:mi>E</m:mi>
+                            <m:mtext>F</m:mtext>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mo>∕</m:mo>
+                        <m:mn>5</m:mn>
+<m:mtext>,</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \bar{E}=1/N\cdot\int_0^{E_{\text{F}}}E\cdot g\apply(E)\d E=3E_{\text{F}}/5\text{,}</m:annotation>
+                  </m:semantics>
+                </m:math>
+</equation>
+<para id="eip-idm876902464">
+gdzie <m:math display="inline">
+                <m:semantics>
+                  <m:mi>N</m:mi>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> N</m:annotation>
+                </m:semantics>
+                </m:math> jest całkowitą liczbą elektronów w metalu.</para></problem>
+              <solution id="fs-id1172099527417">
+                <para id="fs-id1172099527419">W trzech wymiarach energia elektronu dana jest przez: <m:math display="inline">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mi>E</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mi>R</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>⁢</m:mo>
+                        <m:msub>
+                          <m:mi>E</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E=R^2E_1</m:annotation>
+                  </m:semantics>
+                </m:math>, gdzie <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>R</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:msubsup>
+                        <m:mi>n</m:mi>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:msubsup>
+                      <m:mo>+</m:mo>
+                      <m:msubsup>
+                        <m:mi>n</m:mi>
+                        <m:mn>2</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:msubsup>
+                      <m:mo>+</m:mo>
+                      <m:msubsup>
+                        <m:mi>n</m:mi>
+                        <m:mn>3</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:msubsup>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> R^2=n_1^2+n_2^2+n_3^2</m:annotation>
+                </m:semantics>
+              </m:math>. Każdy dozwolony stan energetyczny odpowiada węzłowi w przestrzeni <m:math display="inline">
+              <m:semantics>
+                <m:mrow>
+                  <m:mi>N</m:mi>
+                  <m:mo>⁡</m:mo>
+                  <m:mfenced>
+                    <m:msub>
+                      <m:mi>n</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:msub>
+                      <m:mi>n</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:msub>
+                      <m:mi>n</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msub>
+                  </m:mfenced>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> N\apply(n_1,n_2,n_3)</m:annotation>
+              </m:semantics>
+            </m:math>. Liczba cząstek odpowiada liczbie stanów (węzłów) w pierwszej ósmej części przestrzeni, wewnątrz sfery o promieniu <m:math display="inline">
+            <m:semantics>
+              <m:mi>R</m:mi>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> R</m:annotation>
+            </m:semantics>
+          </m:math>. Liczba ta dana jest przez: <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mi>N</m:mi>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo>∕</m:mo>
+                      <m:mn>8</m:mn>
+                    </m:mrow>
+                  </m:mfenced>
+                  <m:mo>⋅</m:mo>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mn>4</m:mn>
+                      <m:mo>∕</m:mo>
+                      <m:mn>3</m:mn>
+                    </m:mrow>
+                  </m:mfenced>
+                  <m:mo>⋅</m:mo>
+                  <m:mi>π</m:mi>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mi>R</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> N=2\cdot (1/8) \cdot(4/3)\cdot\pi R^3</m:annotation>
+          </m:semantics>
+        </m:math>, gdzie czynnik 2 bierze się z konieczności uwzględnienia dwóch stanów spinowych. Gęstość stanów uzyskamy przez obliczenie pochodnej tego wyrażenia po energii: <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mrow>
+              <m:mi>g</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>E</m:mi>
+              </m:mfenced>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>V</m:mi>
+                </m:mrow>
+                <m:mo>∕</m:mo>
+                <m:mn>2</m:mn>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>8</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:msub>
+                        <m:mi>m</m:mi>
+                        <m:mtext>e</m:mtext>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mo>∕</m:mo>
+                    <m:msup>
+                      <m:mi>h</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mfenced>
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:mo>∕</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+              </m:msup>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mi>E</m:mi>
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo>∕</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+              </m:msup>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> g\apply(E)=\pi V/2 \cdot (8m_{\text{e}}/h^2)^{3/2}\cdot E^{1/2}</m:annotation>
+        </m:semantics>
+      </m:math>. Wycałkowanie prowadzi do: <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mover>
+            <m:mi>E</m:mi>
+            <m:mo>¯</m:mo>
+          </m:mover>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>3</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>E</m:mi>
+                <m:mtext>F</m:mtext>
+              </m:msub>
+            </m:mrow>
+            <m:mo>∕</m:mo>
+            <m:mn>5</m:mn>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \bar{E}=3E_{\text{F}}/5</m:annotation>
+      </m:semantics>
+      </m:math>.</para></solution>
+  </exercise></section>
+</content>
+<glossary>
+  <definition id="fs-id1172099569433">
+    <term class="no-emphasis" cmlnle:reference="teoria BCS">teoria BCS (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">BCS theory</term></foreign>)</term>
+      <meaning id="fs-id1172099569438">teoria nadprzewodnictwa oparta na koncepcji oddziaływania elektron–sieć–elektron</meaning>
+    </definition>
+    <definition id="fs-id1172099501303">
+      <term class="no-emphasis" cmlnle:reference="para Coopera">para Coopera (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Cooper pair</term></foreign>)</term>
+        <meaning id="fs-id1172099501309">para związanych elektronów w nadprzewodniku </meaning>
+      </definition>
+      <definition id="fs-id1172102108624">
+        <term class="no-emphasis" cmlnle:reference="krytyczne pole magnetyczne">krytyczne pole magnetyczne (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">critical magnetic field</term></foreign>)</term>
+          <meaning id="fs-id1172102108629">maksymalne pole magnetyczne, przy którym występuje jeszcze nadprzewodnictwo</meaning>
+        </definition>
+        <definition id="fs-id1172099545829">
+          <term class="no-emphasis" cmlnle:reference="temperatura krytyczna">temperatura krytyczna (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">critical temperature</term></foreign>)</term>
+            <meaning id="fs-id1172099545834">maksymalna temperatura, przy której występuje jeszcze nadprzewodnictwo</meaning>
+          </definition>
+          <definition id="fs-id1172099545838">
+            <term class="no-emphasis" cmlnle:reference="nadprzewodnik typu I">nadprzewodnik typu I (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">type I superconductor</term></foreign>)</term>
+              <meaning id="fs-id1172097235769">materiał nadprzewodzący, taki jak aluminium czy rtęć</meaning>
+            </definition>
+            <definition id="fs-id1172097235773">
+              <term class="no-emphasis" cmlnle:reference="nadprzewodnik typu II">nadprzewodnik typu II (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">type II superconductor</term></foreign>)</term>
+                <meaning id="fs-id1172102133052">nadprzewodzący związek lub stop zawierający takie pierwiastki jak metale przejściowe czy aktynowce</meaning>
+              </definition>
+            </glossary>
+          </document>

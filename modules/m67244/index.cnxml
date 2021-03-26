@@ -1,0 +1,368 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Układy termodynamiczne</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67244</md:content-id>
+  <md:title>Układy termodynamiczne</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>definiować układ termodynamiczny, jego granice i otoczenie;</item>
+<item>wyjaśniać znaczenie różnych elementów, tworzących układy termodynamiczne;</item>
+<item>definiować równowagę termiczną i temperaturę termodynamiczną;</item>
+<item>łączyć równanie stanu z układem.</item>
+</list></md:abstract>
+  <md:uuid>92ad54f7-b23e-4a85-8bff-ca2f551fb95c</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172099475189"><term class="no-emphasis" cmlnle:reference="układ termodynamiczny">Układ termodynamiczny</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">thermodynamic system</term></foreign>) obejmuje wszystko, co posiada interesujące właściwości termodynamiczne. Jest on osadzony w swoim <term class="no-emphasis" cmlnle:reference="otoczenie">otoczeniu</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">surroundings</term></foreign>), czy inaczej <term class="no-emphasis" cmlnle:reference="środowisko">środowisku</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">environment</term></foreign>), może wymieniać z nim ciepło i wykonywać na nim pracę przez <term class="no-emphasis" cmlnle:reference="granica">granicę</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">boundary</term></foreign>), która jest hipotetyczną ścianą oddzielającą układ od środowiska (<link target-id="CNX_UPhysics_20_01_System"/>). W rzeczywistości najbliższe otoczenie układu bezpośrednio z nim oddziałuje, a więc ma silny wpływ na jego zachowanie i własności. Na przykład, jeśli badamy silnik samochodu, spalana benzyna wewnątrz cylindra silnika jest układem termodynamicznym: tłok, układ wydechowy, chłodnica i powietrze na zewnątrz tworzą otoczenie układu. Natomiast granica składa się z wewnętrznych powierzchni cylindra i tłoka.</para><figure xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_20_01_System"><media id="fs-id1172102005957" alt="Rysunek a przedstawia ideę układu. Granica oddziela układ od otoczenia. Rysunek b jest schematyczną ilustracją cylindra silnika, będącego przykładem konkretnego układu. Układem jest gaz wewnątrz tłoku. Granica składa się z cylindra oraz tłoka przykrywającego cylinder od góry. Otoczenie to wszystko na zewnątrz cylindra i nad tłokiem.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_20_01_System.jpg"/>
+  </media>
+  
+<caption>(a) Układ, w którym może zachodzić istotny proces lub w którym są zawarte istotne dane, jest ograniczony do pewnego obszaru. Otoczenie również może zawierać pewne informacje; jednak włączamy je do rozważań tylko wtedy, gdy mamy do czynienia z układem otwartym. (b) Paliwo spalane w silniku samochodowym jest przykładem układu termodynamicznego. </caption></figure><para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172097147928">Zwykle układ wchodzi w interakcje z otoczeniem. Układ nazywany jest <term class="no-emphasis" cmlnle:reference="układ zamknięty">zamkniętym</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">closed system</term></foreign>), jeśli jest całkowicie oddzielony od swojego środowiska, jak na przykład gaz, który jest otoczony przez nieruchome oraz termicznie izolowane ściany. W prawdziwym świecie układ zamknięty nie występuje, chyba że uznamy za niego cały wszechświat albo potraktujemy jako model pewnego rzeczywistego układu, wchodzącego w minimalne interakcje z otoczeniem. Większość układów to <term class="no-emphasis" cmlnle:reference="układ otwarty">układy otwarte</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">open system</term></foreign>), mogące wymieniać energię i/lub materię z otoczeniem (<link target-id="CNX_UPhysics_20_01_Kettle"/>).</para><figure xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_20_01_Kettle"><media id="fs-id1172099507018" alt="Zdjęcie a przedstawia czajnik na kuchence. Para wydobywa się poprzez jego otwór. Zdjęcie b przedstawia szybkowar na kuchence.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_20_01_Kettle.jpg"/>
+  </media>
+  
+<caption>(a) Ten czajnik z wrzącą wodą jest otwartym układem termodynamicznym. Przekazuje ciepło i materię (parę wodną) do swojego otoczenia. (b) Szybkowar to dobre przybliżenie układu zamkniętego. Mała ilość pary wodnej ucieka przez górny zawór, aby zapobiec eksplozji. Źródło: modyfikacja pracy Giny Hamilton</caption></figure><para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172099762620">Kiedy badamy układ termodynamiczny, nie bierzemy pod uwagę różnic zachowań w poszczególnych miejscach wewnątrz układu w danym momencie. Innymi słowy, skupiamy się na makroskopowych właściwościach układu, które są średnimi mikroskopowych właściwości wszystkich cząsteczek lub jednostek układu. Dlatego każdy układ termodynamiczny jest traktowany jako kontinuum, w którym ruchy cząsteczek/jednostek układu są wszędzie takie same. Zakładamy, że układ pozostaje w <term class="no-emphasis" cmlnle:reference="równowaga">równowadze</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">equilibrium</term></foreign>). W rzeczywistych układach mogą występować gradienty temperatury. W tym rozdziale jednak omawiamy układy termodynamiczne wykazujące w każdym punkcie jednakowe właściwości. </para><para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172099758592">Zanim będziemy mogli przeprowadzić jakąkolwiek analizę układu termodynamicznego, potrzebujemy podstawowej charakterystyki tego układu. Kiedy omawialiśmy układy mechaniczne, skupialiśmy się na siłach i momentach obrotowych oddziałujących na układ, a także na ich równowadze, która decydowała o mechanicznej równowadze układu. W podobny sposób powinniśmy zbadać wymianę ciepła między układem termodynamicznym a jego otoczeniem lub pomiędzy różnymi elementami układu, których równowaga powinna z kolei decydować o termodynamicznej równowadze całego układu. Intuicja nam podpowiada, że taka równowaga jest osiągana, gdy różne ciała lub elementy układu mogące wymieniać między sobą ciepło mają tę samą temperaturę, a wymiana ciepła zanika.</para><para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102143279">Dlatego kiedy mówimy, że dwa ciała (na przykład układ termodynamiczny i jego otoczenie) są w <term class="no-emphasis" cmlnle:reference="równowaga termiczna">równowadze termicznej</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">thermal equilibrium</term></foreign>), mamy na myśli, że mają tę samą temperaturę, tak jak to omówiliśmy w rozdziale <link class="target-chapter" document="m67140">Temperatura i ciepło</link>. Rozważmy przypadek trzech ciał o temperaturach odpowiednio <m:math display="inline">
+  <m:msub>
+    <m:mi>T</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:math>, <m:math display="inline">
+<m:msub>
+  <m:mi>T</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>T</m:mi>
+  <m:mn>3</m:mn>
+</m:msub>
+</m:math>. Skąd mamy wiedzieć, że znajdują się one w równowadze termicznej? Obowiązuje tutaj <term class="no-emphasis" cmlnle:reference="zerowa zasada termodynamiki">zerowa zasada termodynamiki</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">zeroth law of thermodynamics</term></foreign>), opisana w rozdziale <link class="target-chapter" document="m67140">Temperatura i ciepło</link>:</para><note xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-848"><para id="eip-idm219886976"><emphasis effect="italics">Jeśli ciało 1 jest w równowadze termicznej z każdym z ciał 2 i 3, to ciała 2 i 3 także muszą być ze sobą w równowadze termicznej.</emphasis></para></note><para id="fs-id1172102115502">Możemy też zapisać zerową zasadę termodynamiki jako</para>
+<equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172099674434"><m:math display="block"><m:mrow><m:mtext>Jeśli </m:mtext><m:mo>⁢</m:mo><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mn>2</m:mn></m:msub><m:mo>⁢</m:mo><m:mtext> i </m:mtext><m:mo>⁢</m:mo><m:msub><m:mi>T</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mn>3</m:mn></m:msub><m:mo>⁢</m:mo><m:mtext>, to </m:mtext><m:mo>⁢</m:mo><m:msub><m:mi>T</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mn>3</m:mn></m:msub><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:math></equation><para id="fs-id1172097225444">Podstawą definiowania temperatury jest stwierdzenie, że dwa ciała będące w kontakcie mają taką samą temperaturę, gdy osiągnęły równowagę termodynamiczną i wypadkowy transfer ciepła pomiędzy nimi wynosi zero.</para>
+<para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101984195">Zerowa zasada termodynamiki jest jednakowo stosowana dla wszystkich elementów układu zamkniętego i wymaga, by temperatura wszędzie wewnątrz układu była taka sama, jeśli osiągnął on równowagę termiczną. W celu uproszczenia naszych rozważań przyjmijmy, że układ składa się z jednego rodzaju substancji, np. jest to woda w zbiorniku. Mierzalne właściwości tego układu obejmują przynajmniej objętość, ciśnienie i temperaturę. Zakres istotnych dla nas zmiennych zależy jednak od układu. Przykładowo, gdyby chodziło o naciągniętą gumkę recepturkę, ważne byłyby długość, jej napięcie oraz temperatura. Związek między tymi podstawowymi właściwościami układu nazywamy <term class="no-emphasis" cmlnle:reference="równanie stanu">równaniem stanu</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">equation of state</term></foreign>) układu i dla układu zamkniętego zapisujemy go symbolicznie jako</para><note id="fs-id1172099392828" class="equation-callout">
+    <equation id="fs-id1172099499787">
+      <label/>
+      <m:math display="block">
+        <m:mrow>
+          <m:mi>f</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mfenced>
+            <m:mi>p</m:mi>
+            <m:mi>V</m:mi>
+            <m:mi>T</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>0</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation>
+  </note>
+  <para id="fs-id1172099387507">gdzie <m:math display="inline">
+    <m:mi>p</m:mi>
+  </m:math>, <m:math display="inline">
+  <m:mi>V</m:mi>
+</m:math>, i <m:math display="inline">
+<m:mi>T</m:mi>
+</m:math> to ciśnienie, objętość i temperatura układu w ustalonym stanie.</para>
+<para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102125532">W zasadzie równanie stanu istnieje dla każdego układu termodynamicznego, ale nie zawsze jest łatwe do otrzymania. Postać funkcji <m:math display="inline">
+  <m:mrow>
+    <m:mi>f</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mfenced>
+      <m:mi>p</m:mi>
+      <m:mi>V</m:mi>
+      <m:mi>T</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+</m:math> dla wielu substancji została wyznaczona eksperymentalnie lub teoretycznie. W poprzednim rozdziale mieliśmy do czynienia z przykładem równania stanu dla gazu doskonałego, <m:math display="inline">
+<m:mrow>
+  <m:mi>f</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mfenced>
+    <m:mi>p</m:mi>
+    <m:mi>V</m:mi>
+    <m:mi>T</m:mi>
+  </m:mfenced>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:mi>p</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>V</m:mi>
+  </m:mrow>
+  <m:mo>-</m:mo>
+  <m:mrow>
+    <m:mi>n</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>R</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>T</m:mi>
+  </m:mrow>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>0</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">J</m:mi>
+</m:mrow>
+</m:math>.</para><para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172097407125">Do tej pory wprowadziliśmy kilka wielkości fizycznych istotnych dla układów termodynamicznych – takich jak objętość, ciśnienie i temperatura układu. Możemy podzielić te wielkości na dwie dość ogólne kategorie. Wielkości zależne od ilości materii to <term class="no-emphasis" cmlnle:reference="wielkość ekstensywna">wielkości ekstensywne</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">extensive variable</term></foreign>), takie jak objętość czy liczba moli. Wielkości, które nie zależą od ilości materii, np. temperatura lub ciśnienie, są <term class="no-emphasis" cmlnle:reference="wielkość intensywna">wielkościami intensywnymi</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">intensive variable</term></foreign>). Wartość wielkości ekstensywnej wzrasta dwukrotnie wraz z podwojeniem ilości materii w układzie, pod warunkiem że wszystkie wielkości intensywne pozostaną niezmienione. Przykładowo objętość lub całkowita energia układu wzrastają dwukrotnie, jeśli zwiększymy dwukrotnie ilość materii w układzie, nie zmieniając przy tym temperatury i ciśnienia układu.</para><section id="fs-id1172101903950" class="key-concepts">
+  <title>Podsumowanie</title>
+  <list xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102006679" list-type="bulleted" bullet-style="bullet"><item>Układ termodynamiczny, jego granica i otoczenie muszą być zdefiniowane, a rola wszystkich jego komponentów musi być zrozumiała, zanim będziemy mogli zbadać daną sytuację.</item>
+    <item>Równowaga termiczna między dwoma ciałami jest osiągnięta, gdy trzecie ciało jest w równowadze termicznej z każdym z tych ciał z osobna.</item>
+    <item>Ogólne równanie stanu dla układu zamkniętego ma postać <m:math display="inline">
+      <m:mrow>
+        <m:mi>f</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mfenced>
+          <m:mi>p</m:mi>
+          <m:mi>V</m:mi>
+          <m:mi>T</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+      </m:math>, czego przykładem jest równanie stanu gazu doskonałego.</item>
+    </list></section>
+  <section id="fs-id1172099809964" class="review-conceptual-questions">
+    <title>Pytania</title>
+    <exercise id="fs-id1172099515427">
+      <problem id="fs-id1172099719015">
+        <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172099668060">Rozważ następujące przypadki i ustal, czy praca jest wykonywana przez układ nad środowiskiem (UŚ), czy przez środowisko na układzie (ŚU):
+<list id="fs-idm420470624" list-type="enumerated" number-style="lower-alpha">
+<item>otwieranie gazowanego napoju;</item>
+<item>pompowanie opony;</item>
+<item>naciskanie na pedał hamulca (hydraulicznego).</item>
+</list> </para></problem>
+      <solution id="fs-id1172099505906">
+        <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172099923886">a. UŚ; b. ŚU; c. ŚU.</para></solution>
+    </exercise>
+  </section>
+  <section id="fs-id1172099493239" class="review-problems">
+    <title>Zadania</title>
+    <exercise id="fs-id1172097515926">
+      <problem id="fs-id1172099902294">
+        <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172102146250">Dany jest gaz o krzywej izotermicznej wyrażonej wzorem: <m:math display="inline">
+          <m:mrow>
+            <m:mi>p</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>V</m:mi>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mi>b</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>p</m:mi>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>c</m:mi>
+              <m:mi>T</m:mi>
+            </m:msub>
+          </m:mrow>
+        </m:math>, gdzie <m:math display="inline">
+        <m:mi>p</m:mi>
+      </m:math> to ciśnienie, <m:math display="inline">
+      <m:mi>V</m:mi>
+    </m:math> to objętość, <m:math display="inline">
+    <m:mi>b</m:mi>
+  </m:math> to stała, a <m:math display="inline">
+  <m:msub>
+    <m:mi>c</m:mi>
+    <m:mi>T</m:mi>
+  </m:msub>
+  </m:math> jest funkcją temperatury. Wykaż, że skala temperaturowa w procesie izochorycznym może być wyprowadzona z powyższego wzoru oraz że jest taka sama jak ta dla gazu doskonałego. </para></problem>
+<solution id="fs-id1172097272400">
+  <para id="fs-id1172101665108">
+    <m:math display="inline">
+      <m:mrow>
+        <m:mi>p</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mfenced>
+          <m:mrow>
+            <m:mi>V</m:mi>
+            <m:mo>−</m:mo>
+            <m:mi>b</m:mi>
+          </m:mrow>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>c</m:mi>
+        <m:mi>T</m:mi>
+      </m:msub>
+      </m:math> to szukana funkcja temperatury i odzwierciedla ona funkcję temperatury dla gazu doskonałego przy stałej objętości.</para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1172101846930">
+    <problem id="fs-id1172101795910">
+      <para id="fs-id1172099870894">Mol pewnego gazu ma izobaryczny współczynnik rozszerzalności <m:math display="inline">
+        <m:mrow>
+          <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+          <m:mrow>
+            <m:mi>V</m:mi>
+            <m:mo>∕</m:mo>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mi>T</m:mi>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>R</m:mi>
+          <m:mo>∕</m:mo>
+          <m:mi>p</m:mi>
+        </m:mrow>
+      </m:math> i izochoryczny współczynnik ciśnieniowo-temperaturowy <m:math display="inline">
+      <m:mrow>
+        <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+        <m:mrow>
+          <m:mi>p</m:mi>
+          <m:mo>∕</m:mo>
+          <m:mrow>
+            <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+            <m:mi>T</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>p</m:mi>
+        <m:mo>∕</m:mo>
+        <m:mi>T</m:mi>
+      </m:mrow>
+      </m:math>. Znajdź równanie stanu tego gazu.</para>
+    </problem>
+  </exercise>
+  <exercise id="fs-id1172099486343">
+    <problem id="fs-id1172102074345">
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172099531653">Znajdź równanie stanu ciała stałego, którego izobaryczny współczynnik rozszerzalności dany jest wzorem <m:math display="inline">
+        <m:mrow>
+          <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+          <m:mrow>
+            <m:mi>V</m:mi>
+            <m:mo>∕</m:mo>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mi>T</m:mi>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>c</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>T</m:mi>
+          </m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mi>b</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>p</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:math>, a izotermiczny współczynnik ciśnieniowo-objętościowy: <m:math display="inline">
+      <m:mrow>
+        <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+        <m:mrow>
+          <m:mi>V</m:mi>
+          <m:mo>∕</m:mo>
+          <m:mrow>
+            <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+            <m:mi>p</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mi>b</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>T</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </para></problem>
+<solution id="fs-id1172099479868">
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101786939"><m:math display="inline">
+      <m:mrow>
+        <m:mrow>
+          <m:mi>V</m:mi>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mi>b</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>p</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>T</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mrow>
+          <m:mi>c</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:msup>
+            <m:mi>T</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:math>.</para></solution>
+</exercise>
+</section>
+</content>
+<glossary>
+  <definition id="fs-idm361565808">
+    <term cmlnle:reference="granica" class="no-emphasis">granica (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">boundary</term></foreign>)</term>
+      <meaning id="fs-idm361411680">hipotetyczne ściany oddzielające układ od otoczenia</meaning>
+    </definition>
+    <definition id="fs-idm896841120">
+      <term cmlnle:reference="układ zamknięty" class="no-emphasis">układ zamknięty (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">closed system</term></foreign>)</term>
+        <meaning id="fs-idm332241520">układ, który jest mechanicznie odizolowany od środowiska</meaning>
+      </definition>
+      <definition id="fs-idm688047088">
+        <term cmlnle:reference="środowisko" class="no-emphasis">środowisko (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">environment</term></foreign>)</term>
+          <meaning id="fs-idm361450992">to, co jest na zewnątrz badanego układu</meaning>
+        </definition>
+        <definition id="fs-idm361230112">
+          <term cmlnle:reference="równanie stanu" class="no-emphasis">równanie stanu (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">equation of state</term></foreign>)</term>
+            <meaning id="fs-idm887658080">opisuje własności materii dla zadanych warunków fizycznych</meaning>
+          </definition>
+          <definition id="fs-idm695561504">
+            <term cmlnle:reference="wielkość ekstensywna" class="no-emphasis">wielkość ekstensywna (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">extensive variable</term></foreign>)</term>
+              <meaning id="fs-idm729840224">wielkość proporcjonalna do ilości materii w układzie</meaning>
+            </definition>
+            <definition id="fs-idm739765296">
+              <term cmlnle:reference="wielkość intensywna" class="no-emphasis">wielkość intensywna (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">intensive variable</term></foreign>)</term>
+                <meaning id="fs-idm334385968">wielkość niezależna od ilości materii w układzie</meaning>
+              </definition>
+              <definition id="fs-idm686728688">
+                <term cmlnle:reference="układ otwarty" class="no-emphasis">układ otwarty (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">open system</term></foreign>)</term>
+                  <meaning id="fs-idm868899472">układ, który wymienia energię i/lub materię z otoczeniem</meaning>
+                </definition>
+                <definition id="fs-idm686498192">
+                  <term cmlnle:reference="otoczenie" class="no-emphasis">otoczenie (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">surroundings</term></foreign>)</term>
+                    <meaning id="fs-idm369615232">środowisko, które wchodzi w interakcję z układem otwartym</meaning>
+                  </definition>
+                  <definition id="fs-idm863807632">
+                    <term cmlnle:reference="układ termodynamiczny" class="no-emphasis">układ termodynamiczny (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">thermodynamic system</term></foreign>)</term>
+                      <meaning id="fs-idm901798720">przedmiot badań termodynamiki</meaning>
+                    </definition>
+                  </glossary>
+                </document>

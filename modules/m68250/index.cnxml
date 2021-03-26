@@ -1,0 +1,4677 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Cząstka kwantowa w pudełku</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m68250</md:content-id>
+  <md:title>Cząstka kwantowa w pudełku</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się: 
+<list>
+<item>w jaki sposób opisywać zagadnienie z wartościami granicznymi stacjonarnego równania Schrödingera;</item> 
+<item>dlaczego energia cząstki kwantowej w pudełku przyjmuje dyskretne wartości;</item>
+<item>rozumieć znaczenie fizyczne stacjonarnego rozwiązania równania Schrödingera i jego powiązanie z zależnymi od czasu stanami kwantowymi;</item>
+<item>wyjaśniać fizyczne znaczenie zasady korespondencji Bohra.</item>
+</list></md:abstract>
+  <md:uuid>912fa4df-3e3a-46a8-b754-1e408418597d</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1170901985445">W tym podrozdziale wykorzystamy równanie Schrödingera do opisu cząstki zamkniętej w jednowymiarowym pudełku. Ten szczególny przypadek uwzględnia stany związane i pozwala na zrozumienie bardziej skomplikowanych zagadnień. Energia cząstki jest skwantowana ze względu na pojawienie się stanu fali stojącej w rozwiązaniu równania Schrödingera dla cząstki w pudełku przy określonych warunkach brzegowych (ściany pudełka). Przypomina to sytuację fali stojącej dla pola elektromagnetycznego we wnęce rezonansowej (metalowym pudełku). W obydwu przypadkach wartość funkcji falowej równania Schrödingera pozwoli określić, czy pole elektryczne we wnęce musi znikać poza pudełkiem oraz wynosić zero na ściankach (pudełka lub wnęki) i czy jest niezerowe w pudełku.</para>
+  <para id="fs-id1170902686031">Rozważmy cząstkę o masie <m:math display="inline">
+    <m:semantics>
+      <m:mi>m</m:mi>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> m</m:annotation>
+    </m:semantics>
+  </m:math> (np. elektron), która może się poruszać jedynie wzdłuż osi <m:math display="inline">
+  <m:semantics>
+    <m:mi>x</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+  </m:semantics>
+</m:math>, a jej ruch jest ograniczony do obszaru między ścianami znajdującymi się w <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>x</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>0</m:mn>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x = 0</m:annotation>
+</m:semantics>
+</m:math> i <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>x</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>L</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x = L</m:annotation>
+</m:semantics>
+</m:math> (<link target-id="CNX_UPhysics_40_04_box"/>). Pomiędzy ścianami cząstka porusza się swobodnie. Taki układ nazwiemy <term cmlnle:reference="nieskończona prostokątna studnia potencjału" class="no-emphasis">nieskończoną studnią kwantową</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">infinite square well</term></foreign>), opisaną przez funkcję potencjału</para>
+<equation id="fs-id1170901637362">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:mi>V</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>x</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mfenced close=" " open="{">
+          <m:mtable columnalign="left">
+            <m:mtr>
+              <m:mtd>
+                <m:mn>0</m:mn>
+                <m:mtext>,</m:mtext>
+              </m:mtd>
+              <m:mtd>
+                <m:mrow>
+                  <m:mtext/>
+                  <m:mo>⁢</m:mo>
+                  <m:mn>0</m:mn>
+                </m:mrow>
+                <m:mo>≤</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>≤</m:mo>
+                <m:mrow>
+                  <m:mi>L</m:mi>
+                  <m:mtext>,</m:mtext>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd>
+                <m:mi>∞</m:mi>
+                <m:mtext>,</m:mtext>
+              </m:mtd>
+              <m:mtd>
+                <m:mtext>w pozostałych przypadkach.</m:mtext>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:mfenced>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> V\apply(x) = \left{ \begin{matrix*}[l] 0\text{,} &amp;\text{ } 0\leq x\leq L \text{,} \\ \infty\text{,} &amp;\text{ w pozostałych przypadkach.} \end{matrix*} \right\</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170902017008">Układ jest izolowany, a energia cząstki stała i niezmienna w czasie, a więc hamiltonian (suma energii kinetycznej i potencjalnej) jest stały w czasie. Łącząc tę zależność <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>V</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>x</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> V\apply(x)</m:annotation>
+  </m:semantics>
+  </m:math> z niezależnym od czasu równaniem Schrödingera, otrzymujemy</para>
+  <note id="fs-id1170901785956" class="equation-callout">
+    <equation id="fs-id1170901486921">
+      <m:math display="block">
+        <m:semantics>
+          <m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:msup>
+                      <m:mi>ℏ</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>m</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>⋅</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mrow>
+                        <m:mi>ψ</m:mi>
+                        <m:mo>⁡</m:mo>
+                        <m:mfenced>
+                          <m:mi>x</m:mi>
+                        </m:mfenced>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                      <m:msup>
+                        <m:mi>x</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mi>E</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:mi>ψ</m:mi>
+                  <m:mo>⁡</m:mo>
+                  <m:mfenced>
+                    <m:mi>x</m:mi>
+                  </m:mfenced>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:mtext>, dla </m:mtext>
+                <m:mo>⁢</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>≤</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>≤</m:mo>
+            <m:mrow>
+              <m:mi>L</m:mi>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> -\frac{\hbar^2}{2m} \cdot \frac{\d^2 \psi\apply(x)}{\d x^2} = E \psi\apply(x) \text{, dla } 0 \leq x \leq L \text{.}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </equation>
+  </note>
+  <para id="fs-id1170902924182">Jakich rozwiązań się spodziewamy? Zasadniczo funkcja falowa może być zespolona. Dostrzegamy, że części rzeczywiste i urojone funkcji falowej spełniają powyższe równanie. Jest to równanie liniowego oscylatora harmonicznego i po lekturze poprzednich rozdziałów umiemy takie równania rozwiązywać. Będzie nim liniowa kombinacja funkcji sinus i cosinus z argumentem <m:math display="inline">
+    <m:semantics>
+      <m:mi>x</m:mi>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+    </m:semantics>
+    </m:math> mnożonym przez pewną stałą. Energia cząstki jest dodatnia, a więc jeżeli wartość funkcji falowej jest dodatnia (prawa strona równania), to jej druga pochodna jest ujemna (lewa strona równania).</para>
+    <para id="eip-227">Podobnie, jeżeli wartość funkcji jest ujemna, krzywizna będzie wówczas dodatnia, czyli funkcja będzie wypukła. Takie warunki spełnia oscylująca funkcja falowa, jak sinus czy cosinus. Ponieważ fale te są ograniczone przez rozmiary pudełka, spodziewamy się fal stojących, z końcami zamocowanymi w punktach <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x=0</m:annotation>
+      </m:semantics>
+    </m:math> i <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mo>=</m:mo>
+        <m:mi>L</m:mi>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x=L</m:annotation>
+    </m:semantics>
+    </m:math>.</para>
+    <figure id="CNX_UPhysics_40_04_box">
+      <media id="fs-id1170901559506" alt="Wykres potencjału U funkcji x. U jest równe nieskończoności x równe lub niż zero na x równe lub większe niż L. U jest równe zero pomiędzy x = 0 i x = L.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_40_04_box.jpg"/>
+      </media>
+      <caption>Funkcja potencjału, który zamyka cząstkę w jednowymiarowym pudełku.</caption>
+    </figure>
+    <para id="fs-id1170903007984">Rozwiązania <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mi>ψ</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>x</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi\apply(x)</m:annotation>
+      </m:semantics>
+    </m:math> tego równania można interpretować statystycznie. Kwadrat <m:math display="inline">
+    <m:semantics>
+      <m:msup>
+        <m:mfenced open="|" close="|">
+          <m:mrow>
+            <m:mi>ψ</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>x</m:mi>
+            </m:mfenced>
+          </m:mrow>
+        </m:mfenced>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \abs {\psi\apply(x)}^2</m:annotation>
+    </m:semantics>
+  </m:math> odpowiada gęstości prawdopodobieństwa znalezienia cząstki w pewnym miejscu <m:math display="inline">
+  <m:semantics>
+    <m:mi>x</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+  </m:semantics>
+  </m:math>. Funkcja ta musi zostać scałkowana w celu obliczenia prawdopodobieństwa znalezienia cząstki w pewnym przedziale przestrzennym (obszarze w dwóch i trzech wymiarach). Szukamy więc rozwiązania, które spełnia warunek normalizacji</para>
+  <equation id="fs-id1170901744554">
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:mrow>
+            <m:munderover>
+              <m:mo>∫</m:mo>
+              <m:mn>0</m:mn>
+              <m:mi>L</m:mi>
+            </m:munderover>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mrow>
+                <m:mi>x</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mfenced open="|" close="|">
+                    <m:mrow>
+                      <m:mi>ψ</m:mi>
+                      <m:mo>⁡</m:mo>
+                      <m:mfenced>
+                        <m:mi>x</m:mi>
+                      </m:mfenced>
+                    </m:mrow>
+                  </m:mfenced>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>1</m:mn>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \int_0^L \d x \abs {\psi\apply(x)}^2 = 1 \text{.}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+  <para id="fs-id1170902771714">Ściany są sztywne i nieprzepuszczalne, co oznacza, że cząstka nigdy nie znajdzie się poza nimi. Matematycznie oznacza to, że rozwiązanie musi zanikać na ścianach</para>
+  <equation id="fs-id1170901928042">
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:mrow>
+            <m:mi>ψ</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mn>0</m:mn>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mi>ψ</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>L</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>0</m:mn>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi\apply(0) = \psi\apply(L) = 0 \text{.}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+  <para id="fs-id1170903033357">Spodziewamy się rozwiązania w postaci oscylującej funkcji, tak więc najbardziej ogólnym rozwiązaniem tego równania harmonicznego jest</para>
+  <equation id="fs-id1170901748146">
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:mrow>
+            <m:msub>
+              <m:mi>ψ</m:mi>
+              <m:mi>k</m:mi>
+            </m:msub>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>x</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:msub>
+                <m:mi>A</m:mi>
+                <m:mi>k</m:mi>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo>cos</m:mo>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mi>k</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:mfenced>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:msub>
+                <m:mi>B</m:mi>
+                <m:mi>k</m:mi>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo>sin</m:mo>
+                <m:mrow>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mi>k</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>x</m:mi>
+                    </m:mrow>
+                  </m:mfenced>
+                  <m:mtext>,</m:mtext>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_k \apply(x) = A_k \cos (kx) + B_k \sin (kx) \text{,}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+  <para id="fs-id1170901861855">gdzie <m:math display="inline">
+    <m:semantics>
+      <m:mi>k</m:mi>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k</m:annotation>
+    </m:semantics>
+  </m:math> jest stałą i niezależną od <m:math display="inline">
+  <m:semantics>
+    <m:mi>x</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+  </m:semantics>
+</m:math> liczbą rzeczywistą (wektorem falowym), a <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mi>k</m:mi>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> A_k</m:annotation>
+</m:semantics>
+</m:math> i <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi>B</m:mi>
+    <m:mi>k</m:mi>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B_k</m:annotation>
+</m:semantics>
+</m:math> są również stałe. Możemy to sprawdzić, obliczając</para>
+<equation id="eip-829">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:msup>
+                <m:mi>ℏ</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>m</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>E</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>⋅</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msup>
+                  <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mrow>
+                  <m:mi>ψ</m:mi>
+                  <m:mo>⁡</m:mo>
+                  <m:mfenced>
+                    <m:mi>x</m:mi>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:msup>
+                  <m:mi>x</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:msup>
+                <m:mi>ℏ</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>⁢</m:mo>
+              <m:msup>
+                <m:mi>k</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>m</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>E</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mi>ψ</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>x</m:mi>
+            </m:mfenced>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mi>ψ</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>x</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> -\frac{\hbar^2}{2m E} \cdot \frac{\d ^2 \psi\apply(x)}{\d x^2} = \frac{\hbar^2 k^2}{2mE} \psi\apply (x) = \psi\apply (x) \text{,}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="eip-242">co wyznacza relację</para>
+<equation id="eip-194">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mfrac>
+          <m:mrow>
+            <m:msup>
+              <m:mi>ℏ</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⁢</m:mo>
+            <m:msup>
+              <m:mi>k</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>m</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>E</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>1</m:mn>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \frac{\hbar^2 k^2}{2mE} = 1\text{,}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="eip-210">a zatem</para>
+<equation id="eip-849">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>E</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:msup>
+                <m:mi>ℏ</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>⁢</m:mo>
+              <m:msup>
+                <m:mi>k</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>m</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E = \frac{\hbar^2 k^2}{2m} \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="eip-219">Stosując warunek brzegowy przedstawiony w <link target-id="fs-id1170901928042" cmlnle:case="locative"/>, otrzymamy</para>
+<equation id="fs-id1170901783794">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:msub>
+            <m:mi>ψ</m:mi>
+            <m:mi>k</m:mi>
+          </m:msub>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mn>0</m:mn>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:msub>
+              <m:mi>A</m:mi>
+              <m:mi>k</m:mi>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>cos</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:mn>0</m:mn>
+                </m:mrow>
+              </m:mfenced>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>B</m:mi>
+              <m:mi>k</m:mi>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:mn>0</m:mn>
+                </m:mrow>
+              </m:mfenced>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>A</m:mi>
+          <m:mi>k</m:mi>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>0</m:mn>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_k \apply(0) = A_k \cos (k \cdot 0) + B_k \sin (k \cdot 0) = A_k = 0 \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170902851365">Ponieważ dowiedliśmy, że <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:msub>
+        <m:mi>A</m:mi>
+        <m:mi>k</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> A_k = 0</m:annotation>
+  </m:semantics>
+  </m:math>, rozwiązanie ma postać</para>
+  <equation id="fs-id1170901804187">
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:mrow>
+            <m:msub>
+              <m:mi>ψ</m:mi>
+              <m:mi>k</m:mi>
+            </m:msub>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>x</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>B</m:mi>
+              <m:mi>k</m:mi>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mrow>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mi>k</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:mfenced>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_k \apply(x) = B_k \sin (kx) \text{.}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+  <para id="fs-id1170901635238">Jeżeli <m:math display="inline">
+    <m:semantics>
+      <m:msub>
+        <m:mi>B</m:mi>
+        <m:mi>k</m:mi>
+      </m:msub>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B_k</m:annotation>
+    </m:semantics>
+  </m:math> równe jest zero, to <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mrow>
+        <m:msub>
+          <m:mi>ψ</m:mi>
+          <m:mi>k</m:mi>
+        </m:msub>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>x</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_k\apply(x) = 0</m:annotation>
+  </m:semantics>
+</m:math> dla wszystkich wartości <m:math display="inline">
+<m:semantics>
+  <m:mi>x</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+</m:semantics>
+</m:math>, a przez to warunek normalizacji (<link target-id="fs-id1170901744554"/>) nie jest spełniony. Założywszy, że <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>B</m:mi>
+      <m:mi>k</m:mi>
+    </m:msub>
+    <m:mo>≠</m:mo>
+    <m:mn>0</m:mn>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B_k \neq 0</m:annotation>
+</m:semantics>
+</m:math>, i po podstawieniu <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>x</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>L</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x=L</m:annotation>
+</m:semantics>
+</m:math> (z <link target-id="fs-id1170901928042" cmlnle:case="genitive"/>), uzyskamy</para>
+<equation id="fs-id1170901706149">
+  <m:math display="block">
+    <m:semantics>
+      <m:mfenced open="" close="">
+        <m:mrow>
+          <m:mrow>
+            <m:mn>0</m:mn>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:msub>
+                <m:mi>B</m:mi>
+                <m:mi>k</m:mi>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo>sin</m:mo>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mi>k</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>L</m:mi>
+                  </m:mrow>
+                </m:mfenced>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>⇒</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>L</m:mi>
+                </m:mrow>
+              </m:mfenced>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:mrow>
+          <m:mo>⇒</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mi>k</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>L</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mi>n</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>π</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mtext>, </m:mtext>
+              <m:mo>⁢</m:mo>
+              <m:mi>n</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+          </m:mrow>
+        </m:mrow>
+        <m:mn>2</m:mn>
+        <m:mn>3</m:mn>
+        <m:mi>…</m:mi>
+      </m:mfenced>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 0 = B_k \sin (kL) \implies \sin (kL) = 0\implies kL = n \pi \text{, } n=1,2,3, \dots</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170901577925">Odrzucamy <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>n</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=0</m:annotation>
+  </m:semantics>
+</m:math>, ponieważ <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>ψ</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>x</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi\apply(x)</m:annotation>
+</m:semantics>
+</m:math> dla tej liczby kwantowej (liczby naturalnej parametryzującej <m:math display="inline">
+<m:semantics>
+  <m:mi>k</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k</m:annotation>
+</m:semantics>
+</m:math> i energię cząstki) wynosiłoby zero dla każdego <m:math display="inline">
+<m:semantics>
+  <m:mi>x</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+</m:semantics>
+</m:math> i znów otrzymalibyśmy wynik, którego nie można znormalizować. Zatem otrzymujemy kwantyzację energii (w rzeczywistości dla energii kinetycznej, bo potencjalna wynosi <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mn>0</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">J</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0}{\joule}</m:annotation>
+</m:semantics>
+</m:math>) cząstki w pudle potencjału</para>
+<equation id="fs-id1170901778980">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>E</m:mi>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>E</m:mi>
+          <m:mtext>k</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:msup>
+                <m:mi>ℏ</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>⁢</m:mo>
+              <m:msup>
+                <m:mi>k</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>m</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E = E_{\text{k}} = \frac{\hbar^2 k^2}{2m} \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="eip-173">Ta kwantyzacja wektora falowego <m:math display="inline">
+  <m:semantics>
+    <m:msub>
+      <m:mi>k</m:mi>
+      <m:mi>n</m:mi>
+    </m:msub>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k_n</m:annotation>
+  </m:semantics>
+</m:math> czy energii <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi>E</m:mi>
+    <m:mi>n</m:mi>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_n</m:annotation>
+</m:semantics>
+</m:math> wynika z warunków brzegowych!</para>
+<para id="fs-id1170901574971">Według de Broglie’a <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>p</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>ℏ</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>k</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> p = \hbar k</m:annotation>
+  </m:semantics>
+  </m:math>, a więc</para>
+  <equation id="eip-828">
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:mrow>
+            <m:mfrac>
+              <m:msup>
+                <m:mi>ℏ</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>m</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:msubsup>
+              <m:mi>p</m:mi>
+              <m:mi>n</m:mi>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \frac{\hbar^2}{2m} p_n^2 = E_n \text{,}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+  <para id="eip-831">czyli pęd cząstki w pudełku też jest skwantowany.</para>
+  <para id="eip-218">To wyrażenie implikuje wniosek, że energia całkowita jest równa energii kinetycznej, co zgadza się z założeniem, że cząstka może się swobodnie poruszać. Łącząc rozwiązania <link target-id="fs-id1170901706149" cmlnle:case="genitive"/> i <link target-id="eip-828" cmlnle:case="genitive"/>, otrzymamy</para>
+  <note id="fs-id1170902766610" class="equation-callout">
+    <equation id="fs-id1170902745126">
+      <label/>
+      <m:math display="block">
+        <m:semantics>
+          <m:mfenced open="" close="">
+            <m:mrow>
+              <m:msub>
+                <m:mi>E</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msup>
+                  <m:mi>n</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>⁢</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>π</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>⁢</m:mo>
+                    <m:msup>
+                      <m:mi>ℏ</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>m</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:msup>
+                      <m:mi>L</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>⁢</m:mo>
+                <m:mtext>, </m:mtext>
+                <m:mo>⁢</m:mo>
+                <m:mi>n</m:mi>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+            <m:mn>2</m:mn>
+            <m:mn>3</m:mn>
+            <m:mi>…</m:mi>
+          </m:mfenced>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_n = n^2 \frac{\pi^2 \hbar^2}{2m L^2} \text{, } n = 1,2,3,\dots</m:annotation>
+        </m:semantics>
+      </m:math>
+    </equation>
+  </note>
+  <para id="fs-id1170902694907">Co ciekawe, cząstka zamknięta w jednowymiarowym pudełku może przyjmować jedynie dyskretne (skwantowane) wartości. Co więcej, cząstka nie może mieć zerowej energii kinetycznej; oznacza to, że niemożliwe jest, żeby zamknięta w pudełku była w spoczynku. Stan związany zawsze posiada niezerową energię, czego nie musimy spotykać w fizyce klasycznej.</para>
+  <para id="fs-id1170901904236">Aby oszacować dozwolone funkcje falowe, które odpowiadają tym energiom, należy określić stałą normalizacyjną <m:math display="inline">
+    <m:semantics>
+      <m:msub>
+        <m:mi>B</m:mi>
+        <m:mi>n</m:mi>
+      </m:msub>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B_n</m:annotation>
+    </m:semantics>
+    </m:math>. Nakładamy warunek normalizacji na funkcję falową</para>
+    <equation id="fs-id1170901948330">
+      <m:math display="block">
+        <m:semantics>
+          <m:mrow>
+            <m:mrow>
+              <m:msub>
+                <m:mi>ψ</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>x</m:mi>
+              </m:mfenced>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:msub>
+                <m:mi>B</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo>sin</m:mo>
+                <m:mrow>
+                  <m:mfenced>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>n</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>π</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>x</m:mi>
+                      </m:mrow>
+                      <m:mi>L</m:mi>
+                    </m:mfrac>
+                  </m:mfenced>
+                  <m:mtext>,</m:mtext>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_n \apply(x) = B_n \sin (\frac {n \pi x} {L}) \text{,}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </equation>
+    <equation id="fs-id1170902915367" class="unnumbered">
+      <m:math display="block">
+        <m:semantics>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:munderover>
+                  <m:mo>∫</m:mo>
+                  <m:mn>0</m:mn>
+                  <m:mi>L</m:mi>
+                </m:munderover>
+                <m:mrow>
+                  <m:msup>
+                    <m:mfenced close="|" open="|">
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>ψ</m:mi>
+                          <m:mi>n</m:mi>
+                        </m:msub>
+                        <m:mo>⁡</m:mo>
+                        <m:mfenced>
+                          <m:mi>x</m:mi>
+                        </m:mfenced>
+                      </m:mrow>
+                    </m:mfenced>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>⁢</m:mo>
+                  <m:mrow>
+                    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:munderover>
+                  <m:mo>∫</m:mo>
+                  <m:mn>0</m:mn>
+                  <m:mi>L</m:mi>
+                </m:munderover>
+                <m:mrow>
+                  <m:msubsup>
+                    <m:mi>B</m:mi>
+                    <m:mi>n</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msubsup>
+                  <m:mo>⁢</m:mo>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mo>sin</m:mo>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mrow>
+                      <m:mfenced>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mi>n</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>π</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>x</m:mi>
+                          </m:mrow>
+                          <m:mi>L</m:mi>
+                        </m:mfrac>
+                      </m:mfenced>
+                      <m:mo>⁢</m:mo>
+                      <m:mrow>
+                        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                        <m:mi>x</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msubsup>
+                  <m:mi>B</m:mi>
+                  <m:mi>n</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msubsup>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:munderover>
+                    <m:mo>∫</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mi>L</m:mi>
+                  </m:munderover>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mo>sin</m:mo>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mrow>
+                      <m:mfenced>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mi>n</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>π</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>x</m:mi>
+                          </m:mrow>
+                          <m:mi>L</m:mi>
+                        </m:mfrac>
+                      </m:mfenced>
+                      <m:mo>⁢</m:mo>
+                      <m:mrow>
+                        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                        <m:mi>x</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msubsup>
+                  <m:mi>B</m:mi>
+                  <m:mi>n</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msubsup>
+                <m:mo>⁢</m:mo>
+                <m:mfrac>
+                  <m:mi>L</m:mi>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>⇒</m:mo>
+            <m:mrow>
+              <m:msub>
+                <m:mi>B</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msqrt>
+                  <m:mfrac>
+                    <m:mn>2</m:mn>
+                    <m:mi>L</m:mi>
+                  </m:mfrac>
+                </m:msqrt>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 1 = \int_0^L \abs {\psi_n \apply(x)}^2 \d x = \int_0^L B_n^2 \sin^2 (\frac{n \pi x}{L}) \d x = B_n^2 \int_0^L \sin^2 (\frac{n \pi x}{L}) \d x = B_n^2 \frac{L}{2} \implies B_n = \sqrt{\frac{2}{L}} \text{.}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </equation>
+    <para id="fs-id1170903087479">Tak więc szukane funkcje falowe można zapisać jako</para>
+    <note id="fs-id1170902666652" class="equation-callout">
+      <equation id="fs-id1170901570846">
+        <m:math display="block">
+          <m:semantics>
+            <m:mfenced open="" close="">
+              <m:mrow>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>ψ</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                  <m:mo>⁡</m:mo>
+                  <m:mfenced>
+                    <m:mi>x</m:mi>
+                  </m:mfenced>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:msqrt>
+                    <m:mfrac>
+                      <m:mn>2</m:mn>
+                      <m:mi>L</m:mi>
+                    </m:mfrac>
+                  </m:msqrt>
+                  <m:mo>⁢</m:mo>
+                  <m:mrow>
+                    <m:mo>sin</m:mo>
+                    <m:mrow>
+                      <m:mfenced>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mi>n</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>π</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>x</m:mi>
+                          </m:mrow>
+                          <m:mi>L</m:mi>
+                        </m:mfrac>
+                      </m:mfenced>
+                      <m:mo>⁢</m:mo>
+                      <m:mtext>, </m:mtext>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>n</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mn>2</m:mn>
+              <m:mn>3</m:mn>
+              <m:mi>…</m:mi>
+            </m:mfenced>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_n \apply(x) = \sqrt{\frac{2}{L}} \sin (\frac{n \pi x}{L}) \text{, } n=1,2,3, \dots</m:annotation>
+          </m:semantics>
+        </m:math>
+      </equation>
+    </note>
+    <para id="fs-id1170903028643">Dla najmniejszej energii, czyli <term cmlnle:reference="energia stanu podstawowego" class="no-emphasis">energii stanu podstawowego</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">ground state energy</term></foreign>), mamy</para>
+      <equation id="fs-id1170903125519">
+        <m:math display="block">
+          <m:semantics>
+            <m:mrow>
+              <m:msub>
+                <m:mi>E</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>π</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>⁢</m:mo>
+                    <m:msup>
+                      <m:mi>ℏ</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>m</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:msup>
+                      <m:mi>L</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>⁢</m:mo>
+                <m:mtext>, </m:mtext>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>ψ</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>⁡</m:mo>
+                  <m:mfenced>
+                    <m:mi>x</m:mi>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msqrt>
+                  <m:mfrac>
+                    <m:mn>2</m:mn>
+                    <m:mi>L</m:mi>
+                  </m:mfrac>
+                </m:msqrt>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:mo>sin</m:mo>
+                  <m:mrow>
+                    <m:mfenced>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>π</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                        <m:mi>L</m:mi>
+                      </m:mfrac>
+                    </m:mfenced>
+                    <m:mtext>.</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_1 = \frac{\pi^2 \hbar^2}{2mL^2} \text{, } \psi_1 \apply(x) = \sqrt{\frac{2}{L}} \sin (\frac{\pi x}{L}) \text{.}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </equation>
+      <para id="fs-id1170903023881">Każdy inny stan energii może być zapisany jako</para>
+      <equation id="fs-id1170901793948">
+        <m:math display="block">
+          <m:semantics>
+            <m:mrow>
+              <m:msub>
+                <m:mi>E</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msup>
+                  <m:mi>n</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>⁢</m:mo>
+                <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mo>⁢</m:mo>
+                <m:mtext>, </m:mtext>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>ψ</m:mi>
+                    <m:mi>n</m:mi>
+                  </m:msub>
+                  <m:mo>⁡</m:mo>
+                  <m:mfenced>
+                    <m:mi>x</m:mi>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msqrt>
+                  <m:mfrac>
+                    <m:mn>2</m:mn>
+                    <m:mi>L</m:mi>
+                  </m:mfrac>
+                </m:msqrt>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:mo>sin</m:mo>
+                  <m:mrow>
+                    <m:mfenced>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>n</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:mi>π</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                        <m:mi>L</m:mi>
+                      </m:mfrac>
+                    </m:mfenced>
+                    <m:mtext>.</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_n = n^2 E_1 \text{, } \psi_n \apply(x) = \sqrt{\frac{2}{L}} \sin (\frac{n\pi x}{L}) \text{.}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </equation>
+      <para id="fs-id1170901839391">Indeks <m:math display="inline">
+        <m:semantics>
+          <m:mi>n</m:mi>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+        </m:semantics>
+      </m:math> nazywany jest <term class="no-emphasis" cmlnle:reference="energetyczna liczba kwantowa">energetyczną</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">energy quantum number</term></foreign>) lub <term cmlnle:reference="główna liczba kwantowa" class="no-emphasis">główną liczbą kwantową</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">principal quantum number</term></foreign>). Stan o <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>n</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>2</m:mn>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=2</m:annotation>
+  </m:semantics>
+</m:math> nazwiemy pierwszym stanem wzbudzonym, stan o <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>n</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>3</m:mn>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=3</m:annotation>
+</m:semantics>
+</m:math> to drugi stan wzbudzony itd. Pierwsze trzy stany kwantowe (<m:math display="inline">
+<m:semantics>
+  <m:mfenced open="" close="">
+    <m:mrow>
+      <m:mi>n</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>1</m:mn>
+    </m:mrow>
+    <m:mn>2</m:mn>
+    <m:mn>3</m:mn>
+  </m:mfenced>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=1,2,3</m:annotation>
+</m:semantics>
+</m:math>) cząstki w pudełku przedstawione są na <link target-id="CNX_UPhysics_40_04_boxstates" cmlnle:case="locative"/>.</para>
+<para id="fs-id1170902690099">Funkcje falowe przedstawione w <link target-id="fs-id1170901793948" cmlnle:case="locative"/> są czasami nazywane „stanami o określonej energii”. O cząstkach znajdujących się w takich stanach kwantowych mówimy, że zajmują pewne <term cmlnle:reference="poziomy energetyczne" class="no-emphasis">poziomy energetyczne</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">energy levels</term></foreign>), które przedstawione są w formie poziomych linii na <link target-id="CNX_UPhysics_40_04_boxstates" cmlnle:case="locative"/>. Poziomy energetyczne można opisać jako szczeble w drabinie, po której cząstki mogą się wspinać lub z której mogą spadać, zyskując lub tracąc energię w pewnych dyskretnych (skwantowanych) ilościach.</para>
+  <para id="fs-id1170902689148">Funkcje falowe przedstawione w <link target-id="fs-id1170901793948" cmlnle:case="locative"/> mogą być też nazywane <term cmlnle:reference="stan fali stojącej" class="no-emphasis">falami stojącymi</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">standing wave state</term></foreign>). W sytuacji stałego w czasie efektywnego potencjału i efektywnego hamiltonianu w równaniu Schrödingera (sytuacji stacjonarnej) ich gęstość prawdopodobieństwa <m:math display="inline">
+  <m:semantics>
+    <m:msup>
+      <m:mfenced open="|" close="|">
+        <m:mrow>
+          <m:mi mathvariant="normal">ψ</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>x</m:mi>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+        </m:mrow>
+      </m:mfenced>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \abs{\Psi\apply(x,t)}^2</m:annotation>
+  </m:semantics>
+</m:math> również nie zmienia się w czasie. Wówczas wartość funkcji falowej oscyluje pomiędzy wartościami rzeczywistymi a urojonymi i jest opisana operatorem ewolucji w czasie. <term cmlnle:reference="stan stacjonarny" class="no-emphasis">Stany stacjonarne</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">stationary state</term></foreign>) są stanami o określonej średniej energii i mogą powstawać jako liniowa superpozycja stanów o różnych energiach. Wówczas</para>
+<equation id="eip-250">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:msub>
+          <m:mi>E</m:mi>
+          <m:mi>n</m:mi>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msup>
+            <m:mi>n</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>⁢</m:mo>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mtext>, </m:mtext>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mi>ψ</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>x</m:mi>
+            </m:mfenced>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mi>a</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mn>1</m:mn>
+              </m:mfenced>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:msub>
+                <m:mi>ψ</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>x</m:mi>
+              </m:mfenced>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mi>a</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mn>2</m:mn>
+              </m:mfenced>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:msub>
+                <m:mi>ψ</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>x</m:mi>
+              </m:mfenced>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mi>…</m:mi>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mi>a</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>n</m:mi>
+              </m:mfenced>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:msub>
+                <m:mi>ψ</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>x</m:mi>
+              </m:mfenced>
+            </m:mrow>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_n = n^2 E_1 \text{, } \psi\apply(x) = a\apply(1)\psi_1\apply(x) + a\apply(2)\psi_2\apply(x) + \dots + a\apply(n)\psi_n\apply(x) \text{,}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="eip-976">gdzie <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:msub>
+        <m:mi>ψ</m:mi>
+        <m:mi>k</m:mi>
+      </m:msub>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>x</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_k \apply(x)</m:annotation>
+  </m:semantics>
+</m:math> to funkcja falowa w <m:math display="inline">
+<m:semantics>
+  <m:mi>k</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k</m:annotation>
+</m:semantics>
+</m:math>-tym stanie energetycznym (<m:math display="inline">
+<m:semantics>
+  <m:mi>k</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k</m:annotation>
+</m:semantics>
+</m:math> wynosi od <m:math display="inline">
+<m:semantics>
+  <m:mn>1</m:mn>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{1}</m:annotation>
+</m:semantics>
+</m:math> do <m:math display="inline">
+<m:semantics>
+  <m:mi>n</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+</m:semantics>
+</m:math>) w przestrzeni położeń <m:math display="inline">
+<m:semantics>
+  <m:mi>x</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+</m:semantics>
+</m:math> i <m:math display="inline">
+<m:semantics>
+  <m:msup>
+    <m:mfenced open="|" close="|">
+      <m:mrow>
+        <m:mi>a</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>k</m:mi>
+        </m:mfenced>
+      </m:mrow>
+    </m:mfenced>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \abs{a\apply(k)}^2</m:annotation>
+</m:semantics>
+</m:math> to prawdopodobieństwo występowania stanu <m:math display="inline">
+<m:semantics>
+  <m:mi>k</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k</m:annotation>
+</m:semantics>
+</m:math>-tego. Warunek normalizacji funkcji falowej <m:math display="inline">
+<m:semantics>
+  <m:mi>ψ</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi</m:annotation>
+</m:semantics>
+</m:math> narzuca: <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mrow>
+      <m:msup>
+        <m:mfenced open="|" close="|">
+          <m:mrow>
+            <m:mi>a</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mn>1</m:mn>
+            </m:mfenced>
+          </m:mrow>
+        </m:mfenced>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo>
+      <m:msup>
+        <m:mfenced open="|" close="|">
+          <m:mrow>
+            <m:mi>a</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mn>2</m:mn>
+            </m:mfenced>
+          </m:mrow>
+        </m:mfenced>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo>
+      <m:mi>…</m:mi>
+      <m:mo>+</m:mo>
+      <m:msup>
+        <m:mfenced open="|" close="|">
+          <m:mrow>
+            <m:mi>a</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>n</m:mi>
+            </m:mfenced>
+          </m:mrow>
+        </m:mfenced>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mn>1</m:mn>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \abs {a\apply(1)}^2 + \abs{a\apply(2)}^2 + \dots + \abs{a\apply(n)}^2 = 1</m:annotation>
+</m:semantics>
+</m:math>. Funkcje falowe <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>ψ</m:mi>
+      <m:mi>k</m:mi>
+    </m:msub>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>x</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_k \apply(x)</m:annotation>
+</m:semantics>
+</m:math> są ortonormalne, co oznacza, że <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mn>1</m:mn>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:munderover>
+        <m:mo>∫</m:mo>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mi>∞</m:mi>
+        </m:mrow>
+        <m:mi>∞</m:mi>
+      </m:munderover>
+      <m:mrow>
+        <m:mrow>
+          <m:msubsup>
+            <m:mi>ψ</m:mi>
+            <m:mi>k</m:mi>
+            <m:mtext>*</m:mtext>
+          </m:msubsup>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>x</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>ψ</m:mi>
+            <m:mi>k</m:mi>
+          </m:msub>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>x</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mi>x</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 1 = \int_{-\infty}^{\infty} \psi_k^{\text{*}}\apply (x) \psi_k\apply (x) \d x</m:annotation>
+</m:semantics>
+</m:math> oraz iż w sytuacji <m:math display="inline">
+<m:semantics>
+  <m:mi>k</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k</m:annotation>
+</m:semantics>
+</m:math> różnego od <m:math display="inline">
+<m:semantics>
+  <m:mi>l</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> l</m:annotation>
+</m:semantics>
+</m:math> zachodzi: <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mn>0</m:mn>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:munderover>
+        <m:mo>∫</m:mo>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mi>∞</m:mi>
+        </m:mrow>
+        <m:mi>∞</m:mi>
+      </m:munderover>
+      <m:mrow>
+        <m:mrow>
+          <m:msubsup>
+            <m:mi>ψ</m:mi>
+            <m:mi>l</m:mi>
+            <m:mtext>*</m:mtext>
+          </m:msubsup>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>x</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>ψ</m:mi>
+            <m:mi>k</m:mi>
+          </m:msub>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>x</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mi>x</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 0 = \int_{-\infty}^{\infty} \psi_l^{\text{*}}\apply(x) \psi_k \apply(x) \d x</m:annotation>
+</m:semantics>
+</m:math>.</para>
+<figure id="CNX_UPhysics_40_04_boxstates">
+  <media id="fs-id1170902853637" alt="Na wykresie pokazane są pierwsze trzy stany kwantowe cząstki w pudełku dla głównych liczb kwantowych stanów n=1, n=2, and n=3. Rysunek (a) pokazuje wykres rozwiązania dla fali stojącej. Osie pionowe są funkcjami falowymi, z oddzielonymi środkami układu dla każdego ze stanów, który jest wyrównany ze skalą energii wykresu (b). Oś pozioma x biegnie od leżącego najniżej zera do L. Rysunek b) pokazuje energię każdego ze stanów na osi pionowej E ze znakiem n. Wszystkie funkcje falowe wynoszą zero dla x mniejszego niż 0 i x większego niż L. W stanie n=1 funkcja jest w pierwszej połowie falą o długości 2 L sinus funkcja jej energii pi kwadrat razy h kwadrat podzielone przez liczbę 2 m L kwadrat. Dla n=2 funkcja jest najpierw funkcją całkowitą o długości 2 L sinus funkcji i jej energii 4 pi kwadrat razy h kwadrat podzielone przez liczbę 2 m L kwadrat. Dla n=3 funkcja jest najpierw całkowita i pół fali o długości 2 L sinus funkcja i jej energii 9 pi kwadrat razy h kwadrat podzielone przez liczbę 2 m L kwadrat.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_40_04_boxstates.jpg"/>
+  </media>
+  <caption>Pierwsze trzy stany kwantowe cząstki w pudełku dla głównych liczb kwantowych <m:math display="inline">
+    <m:semantics>
+      <m:mfenced open="" close="">
+        <m:mrow>
+          <m:mi>n</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>1</m:mn>
+        </m:mrow>
+        <m:mn>2</m:mn>
+        <m:mn>3</m:mn>
+      </m:mfenced>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=1,2,3</m:annotation>
+    </m:semantics>
+    </m:math>: (a) fale stojące i (b) dozwolone stany energetyczne.</caption>
+  </figure>
+  <para id="fs-id1170902615585">Kwantyzacja energii jest konsekwencją warunków brzegowych i to samo dotyczy wnęk rezonansowych w problemach elektromagnetycznych. Jeżeli mielibyśmy do czynienia z cząstką swobodną (nieograniczoną pudełkiem), dozwolone stany energetyczne miałyby charakter ciągły. Zatem funkcja falowa widzi ścianki pudełka i jest inna w momencie, gdy nie ma ścianek. Mówimy, że widmo energetyczne wartości własnych hamiltonianu cząstki swobodnej przyjmuje dyskretne wartości dodatnie w przypadku cząstki zamkniętej w pudle potencjału i wartości ciągłe dodatnie w przypadku cząstki swobodnej. Jednak w tym przypadku z pudełkiem mamy dostępne jedynie pewne energie (<m:math display="inline">
+    <m:semantics>
+      <m:msub>
+        <m:mi>E</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_1</m:annotation>
+    </m:semantics>
+  </m:math>, <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mn>4</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:msub>
+        <m:mi>E</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 4E_1</m:annotation>
+  </m:semantics>
+</m:math>, <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mn>9</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:msub>
+      <m:mi>E</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 9E_1</m:annotation>
+</m:semantics>
+</m:math>, <m:math display="inline">
+<m:semantics>
+  <m:mi>…</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \dots</m:annotation>
+</m:semantics>
+</m:math>). Różnica energii sąsiednich poziomów energetycznych jest dana wzorem</para>
+<equation id="fs-id1170899367800">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:mo>Δ</m:mo>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mfenced open="" close="">
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>+</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mi>n</m:mi>
+            </m:mfenced>
+          </m:msub>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mrow>
+              <m:mi>n</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+          </m:msub>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mi>n</m:mi>
+          </m:msub>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:msup>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mi>n</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mfenced>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:msup>
+              <m:mi>n</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfenced>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>n</m:mi>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+          </m:mfenced>
+          <m:mo>⁢</m:mo>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\Delta} E_{n+1,n} = E_{n+1} - E_n = (n+1)^2 E_1 - n^2 E_1 = (2n+1) E_1 \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170902942057">Zasada zachowania energii wymaga, aby w momencie, gdy zmienia się energia układu, różnica energii została przemieniona w inną jej formę. W szczególnym przypadku cząstki ograniczonej do pewnej małej objętości (jak atom) zmiany energii są często uwalniane w formie fotonów. Częstotliwości emitowanych fotonów dają nam informacje o różnicach energii (między poziomami) w układzie, a także o objętości (wymiarach) pudełka (patrz <link target-id="fs-id1170903125519"/>). Takim pudełkiem w ciele stałym bywają np. kropki kwantowe, które odgrywają dużą rolę w nanotechnologii.</para>
+<example id="fs-id1170902752497">
+  <para id="fs-id1170901642167">
+    <title>Prosty model jądra atomowego</title>Załóżmy, że proton zamknięty jest w pudełku o szerokości <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mi>L</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mn>-14</m:mn>
+            </m:msup>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> L = 10^{-14} \si{\metre}</m:annotation>
+      </m:semantics>
+      </m:math> (typowy promień jądra atomowego). Jakie są poziomy energetyczne stanu podstawowego i pierwszego stanu wzbudzonego? Jaką energię będzie miał foton emitowany podczas przejścia protonu z pierwszego poziomu wzbudzonego na poziom podstawowy?</para>
+      <para id="fs-id1170902617012">
+        <title>Strategia rozwiązania</title>Jeżeli założymy, że proton zamknięty w jądrze atomowym może być modelowany jako cząstka kwantowa w pudełku, to jedyne, czego potrzebujemy do rozwiązania tego zagadnienia, to wykorzystać <link target-id="fs-id1170902745126"/> do obliczenia energii <m:math display="inline">
+          <m:semantics>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_1</m:annotation>
+          </m:semantics>
+        </m:math> i <m:math display="inline">
+        <m:semantics>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_2</m:annotation>
+        </m:semantics>
+      </m:math>. Masa protonu wynosi <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mi>m</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>1,76</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>-27</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mi mathvariant="normal">kg</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> m = \SI{1,76e-27}{\kilo\gram}</m:annotation>
+      </m:semantics>
+    </m:math>. Emitowany foton będzie miał energię równą różnicy <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:mo>Δ</m:mo>
+          <m:mi>E</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\Delta} E = E_2 - E_1</m:annotation>
+    </m:semantics>
+  </m:math>. Do obliczenia jego częstotliwości możemy wykorzystać wzór <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:msub>
+        <m:mi>E</m:mi>
+        <m:mtext>f</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>h</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>f</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{f}} = hf</m:annotation>
+  </m:semantics>
+  </m:math>. </para>
+  <para id="fs-id1170902901193">
+    <title>Rozwiązanie</title>Energia stanu podstawowego wynosi</para>
+    <equation id="fs-id1170903134970" class="unnumbered">
+      <label/>
+      <m:math display="block">
+        <m:semantics>
+          <m:mrow>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msup>
+                  <m:mi>π</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mi>ℏ</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>m</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mi>L</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msup>
+                  <m:mi>π</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>1,05</m:mn>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mn>-34</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">J</m:mi>
+                        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mfenced>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>1,67</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mn>-27</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">kg</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mn>-14</m:mn>
+                      </m:msup>
+                      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                  </m:mfenced>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>3,28</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>-13</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">J</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>2,05</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">MeV</m:mi>
+              </m:mrow>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_1 = \frac{\pi ^2 \hbar^2}{2mL^2} = \frac{\pi^2 (\SI{1,05e-34}{\joule\second})^2 }{2 \cdot \SI{1,67e-27}{\kilo\gram} \cdot (10^{-14} \si{\metre})^2} = \SI{3,28e-13}{\joule} = \SI{2,05}{\mega\electronvolt}\text{.}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </equation>
+    <para id="fs-id1170902767765">Energia pierwszego stanu wzbudzonego: <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msup>
+              <m:mn>2</m:mn>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>4</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mn>2,05</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">MeV</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>8,2</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">MeV</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_2 = 2^2 E_1 = 4 \cdot \SI{2,05}{\mega\electronvolt} = \SI{8,2}{\mega\electronvolt}</m:annotation>
+      </m:semantics>
+      </m:math>.</para>
+      <para id="fs-id1170902739559">Energia emitowanego fotonu: <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mtext>f</m:mtext>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>Δ</m:mo>
+              <m:mi>E</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:msub>
+                <m:mi>E</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>E</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>8,2</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">MeV</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mrow>
+                <m:mn>2,05</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">MeV</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>6,15</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">MeV</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{f}} = \prefop{\Delta} E = E_2 - E_1 = \SI{8,2}{\mega\electronvolt} - \SI{2,05}{\mega\electronvolt} = \SI{6,15}{\mega\electronvolt}</m:annotation>
+        </m:semantics>
+        </m:math>.</para>
+        <para id="fs-id1170901850551">Częstotliwość emitowanego fotonu</para>
+        <equation id="fs-id1170901699706" class="unnumbered">
+          <label/>
+          <m:math display="block">
+            <m:semantics>
+              <m:mrow>
+                <m:mi>ν</m:mi>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:msub>
+                    <m:mi>E</m:mi>
+                    <m:mtext>f</m:mtext>
+                  </m:msub>
+                  <m:mi>h</m:mi>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>6,15</m:mn>
+                    <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                    <m:mi mathvariant="normal">MeV</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>4,14</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mn>-21</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">MeV</m:mi>
+                      <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>1,49</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mn>21</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                    <m:mi mathvariant="normal">Hz</m:mi>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \nu = \frac{E_{\text{f}}}{h} = \frac{\SI{6,15}{\mega\electronvolt}}{\SI{4,14e-21}{\mega\electronvolt\second}} = \SI{1,49e21}{\hertz} \text{.}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="fs-id1170902691496">
+          <title>Znaczenie</title>Otrzymana częstotliwość jest charakterystyczna dla promieniowania gamma emitowanego przez jądro atomowe. Energia tego fotonu jest 10 milionów razy większa od energii fotonu światła widzialnego.</para>
+        </example>
+        <para id="fs-id1170902682890">Wartość oczekiwana położenia cząstki w pudełku jest dana wzorem</para>
+        <equation id="fs-id1170899294633">
+          <m:math display="block">
+            <m:semantics>
+              <m:mrow>
+                <m:mfenced close="⟩" open="⟨">
+                  <m:mi>x</m:mi>
+                </m:mfenced>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:munderover>
+                    <m:mo>∫</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mi>L</m:mi>
+                  </m:munderover>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msubsup>
+                        <m:mi>ψ</m:mi>
+                        <m:mi>n</m:mi>
+                        <m:mtext>*</m:mtext>
+                      </m:msubsup>
+                      <m:mo>⁡</m:mo>
+                      <m:mfenced>
+                        <m:mi>x</m:mi>
+                      </m:mfenced>
+                    </m:mrow>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>x</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>ψ</m:mi>
+                        <m:mi>n</m:mi>
+                      </m:msub>
+                      <m:mo>⁡</m:mo>
+                      <m:mfenced>
+                        <m:mi>x</m:mi>
+                      </m:mfenced>
+                    </m:mrow>
+                    <m:mo>⁢</m:mo>
+                    <m:mrow>
+                      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                      <m:mi>x</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:munderover>
+                    <m:mo>∫</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mi>L</m:mi>
+                  </m:munderover>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:msup>
+                      <m:mfenced close="|" open="|">
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>ψ</m:mi>
+                            <m:mi>n</m:mi>
+                          </m:msub>
+                          <m:mo>⁡</m:mo>
+                          <m:mfenced>
+                            <m:mi>x</m:mi>
+                          </m:mfenced>
+                        </m:mrow>
+                      </m:mfenced>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>⁢</m:mo>
+                    <m:mrow>
+                      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                      <m:mi>x</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:munderover>
+                    <m:mo>∫</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mi>L</m:mi>
+                  </m:munderover>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mfrac>
+                      <m:mn>2</m:mn>
+                      <m:mi>L</m:mi>
+                    </m:mfrac>
+                    <m:mo>⁢</m:mo>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mo>sin</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mrow>
+                        <m:mfenced>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mi>n</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mi>π</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mi>x</m:mi>
+                            </m:mrow>
+                            <m:mi>L</m:mi>
+                          </m:mfrac>
+                        </m:mfenced>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mi>L</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mtext>.</m:mtext>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \langle x \rangle = \int_0^L \psi_n^{\text{*}} \apply(x) x \psi_n \apply(x) \d x = \int_0^L x \abs{\psi_n\apply (x)}^2 \d x = \int_0^L x \frac{2}{L} \sin^2 (\frac{n \pi x}{L}) \d x = \frac{L}{2} \text{.}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="fs-id1170901539368">Największe prawdopodobieństwo znalezienia cząstki istnieje w środku pudełka. Jest to przykład stanu zlokalizowanego.</para>
+        <para id="eip-489">Możemy też obliczyć wartość oczekiwaną pędu cząstki lub średni pęd dużej liczby cząstek w danym stanie (zauważmy, że w naszym przypadku <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mrow>
+                <m:msubsup>
+                  <m:mi>ψ</m:mi>
+                  <m:mi>n</m:mi>
+                  <m:mtext>*</m:mtext>
+                </m:msubsup>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>x</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>ψ</m:mi>
+                  <m:mi>n</m:mi>
+                </m:msub>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>x</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>∕</m:mo>
+                  <m:mi>L</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mo>sin</m:mo>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>n</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>π</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>x</m:mi>
+                      </m:mrow>
+                      <m:mo>∕</m:mo>
+                      <m:mi>L</m:mi>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_n^{\text{*}} \apply(x) = \psi_n \apply(x) = 2/L \cdot \sin(n \pi x / L)</m:annotation>
+          </m:semantics>
+          </m:math>) i przy zastosowaniu całkowania przez części</para>
+          <equation id="eip-663">
+            <m:math display="block">
+              <m:semantics>
+                <m:mrow>
+                  <m:mrow>
+                    <m:munderover>
+                      <m:mo>∫</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mi>L</m:mi>
+                    </m:munderover>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>f</m:mi>
+                        <m:mo>⁡</m:mo>
+                        <m:mfenced>
+                          <m:mi>x</m:mi>
+                        </m:mfenced>
+                      </m:mrow>
+                      <m:mo>⁢</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                          <m:mtext/>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>⁢</m:mo>
+                      <m:mrow>
+                        <m:mi>g</m:mi>
+                        <m:mo>⁡</m:mo>
+                        <m:mfenced>
+                          <m:mi>x</m:mi>
+                        </m:mfenced>
+                      </m:mrow>
+                      <m:mo>⁢</m:mo>
+                      <m:mrow>
+                        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                        <m:mi>x</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>f</m:mi>
+                          <m:mo>⁡</m:mo>
+                          <m:mfenced>
+                            <m:mi>x</m:mi>
+                          </m:mfenced>
+                        </m:mrow>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mi>g</m:mi>
+                          <m:mo>⁡</m:mo>
+                          <m:mfenced>
+                            <m:mi>x</m:mi>
+                          </m:mfenced>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:msubsup>
+                        <m:mo>|</m:mo>
+                        <m:mn>0</m:mn>
+                        <m:mi>L</m:mi>
+                      </m:msubsup>
+                    </m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mrow>
+                      <m:munderover>
+                        <m:mo>∫</m:mo>
+                        <m:mn>0</m:mn>
+                        <m:mi>L</m:mi>
+                      </m:munderover>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>g</m:mi>
+                          <m:mo>⁡</m:mo>
+                          <m:mfenced>
+                            <m:mi>x</m:mi>
+                          </m:mfenced>
+                        </m:mrow>
+                        <m:mo>⁢</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                            <m:mtext/>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                            <m:mi>x</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mi>f</m:mi>
+                          <m:mo>⁡</m:mo>
+                          <m:mfenced>
+                            <m:mi>x</m:mi>
+                          </m:mfenced>
+                        </m:mrow>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                          <m:mrow>
+                            <m:mi>x</m:mi>
+                            <m:mtext>,</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \int_0^L f\apply(x) \frac{\d \text{}}{\d x} g\apply(x) \d x = f\apply(x) g\apply(x) \mid_0^L - \int_0^L g\apply(x) \frac{\d \text{}}{\d x} f\apply(x) \d x \text{,}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </equation>
+          <para id="eip-253">otrzymać wyrażenie na średni pęd <m:math display="inline">
+            <m:semantics>
+              <m:mfenced open="⟨" close="⟩">
+                <m:mi>p</m:mi>
+              </m:mfenced>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \langle p \rangle</m:annotation>
+            </m:semantics>
+            </m:math> w postaci</para>
+            <equation id="fs-id1170902703530">
+              <m:math display="block">
+                <m:semantics>
+                  <m:semantics><m:mtable columnalign="right left" columnspacing="0px" displaystyle="true"><m:mtr><m:mtd>
+                        <m:mfenced close="⟩" open="⟨"><m:mi>p</m:mi>
+                        </m:mfenced></m:mtd><m:mtd><m:mo form="infix">=</m:mo>
+                        <m:mrow><m:munderover><m:mo>∫</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mi>L</m:mi>
+                          </m:munderover><m:mrow><m:mrow><m:msubsup><m:mi>ψ</m:mi>
+                                <m:mi>n</m:mi>
+                                <m:mtext>*</m:mtext>
+                              </m:msubsup><m:mo>⁡</m:mo>
+                              <m:mfenced><m:mi>x</m:mi>
+                              </m:mfenced></m:mrow><m:mo>⁢</m:mo>
+                            <m:mfenced close="]" open="["><m:mrow><m:mo>−</m:mo>
+                                <m:mrow><m:mi>i</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>ℏ</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mfrac><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                      <m:mtext/>
+                                    </m:mrow><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                      <m:mi>x</m:mi>
+                                    </m:mrow></m:mfrac><m:mo>⁢</m:mo>
+                                  <m:msub><m:mi>ψ</m:mi>
+                                    <m:mi>n</m:mi>
+                                  </m:msub><m:mo>⁢</m:mo>
+                                  <m:mfenced><m:mi>x</m:mi>
+                                  </m:mfenced></m:mrow></m:mrow></m:mfenced><m:mo>⁢</m:mo>
+                            <m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                              <m:mi>x</m:mi>
+                            </m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd>
+                        <m:mtext/>
+                        </m:mtd><m:mtd><m:mo form="infix">=</m:mo>
+                        <m:mrow><m:mo>−</m:mo>
+                          <m:mrow><m:mi>i</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>ℏ</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mrow><m:munderover><m:mo>∫</m:mo>
+                                <m:mn>0</m:mn>
+                                <m:mi>L</m:mi>
+                              </m:munderover><m:mrow><m:msqrt><m:mfrac><m:mn>2</m:mn>
+                                    <m:mi>L</m:mi>
+                                  </m:mfrac></m:msqrt><m:mo>⁢</m:mo>
+                                <m:mrow><m:mo>sin</m:mo>
+                                  <m:mrow><m:mfenced><m:mfrac><m:mrow><m:mi>n</m:mi>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mi>π</m:mi>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow><m:mi>L</m:mi>
+                                      </m:mfrac></m:mfenced><m:mo>⁢</m:mo>
+                                    <m:mfenced close="]" open="["><m:mrow><m:mfrac><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                            <m:mtext/>
+                                          </m:mrow><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                            <m:mi>x</m:mi>
+                                          </m:mrow></m:mfrac><m:mo>⁢</m:mo>
+                                        <m:msqrt><m:mfrac><m:mn>2</m:mn>
+                                            <m:mi>L</m:mi>
+                                          </m:mfrac></m:msqrt><m:mo>⁢</m:mo>
+                                        <m:mrow><m:mo>sin</m:mo>
+                                          <m:mfenced><m:mfrac><m:mrow><m:mi>n</m:mi>
+                                                <m:mo>⁢</m:mo>
+                                                <m:mi>π</m:mi>
+                                                <m:mo>⁢</m:mo>
+                                                <m:mi>x</m:mi>
+                                              </m:mrow><m:mi>L</m:mi>
+                                            </m:mfrac></m:mfenced></m:mrow></m:mrow></m:mfenced><m:mo>⁢</m:mo>
+                                    <m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                      <m:mi>x</m:mi>
+                                    </m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd>
+                        <m:mtext/>
+                        </m:mtd><m:mtd><m:mo form="infix">=</m:mo>
+                        <m:mrow><m:mo>−</m:mo>
+                          <m:mrow><m:mi>i</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mfrac><m:mrow><m:mn>2</m:mn>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>ℏ</m:mi>
+                              </m:mrow><m:mi>L</m:mi>
+                            </m:mfrac><m:mo>⁢</m:mo>
+                            <m:mrow><m:munderover><m:mo>∫</m:mo>
+                                <m:mn>0</m:mn>
+                                <m:mi>L</m:mi>
+                              </m:munderover><m:mrow><m:mo>sin</m:mo>
+                                <m:mrow><m:mfenced><m:mfrac><m:mrow><m:mi>n</m:mi>
+                                        <m:mo>⁢</m:mo>
+                                        <m:mi>π</m:mi>
+                                        <m:mo>⁢</m:mo>
+                                        <m:mi>x</m:mi>
+                                      </m:mrow><m:mi>L</m:mi>
+                                    </m:mfrac></m:mfenced><m:mo>⁢</m:mo>
+                                  <m:mfenced close="]" open="["><m:mrow><m:mfrac><m:mrow><m:mi>n</m:mi>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mi>π</m:mi>
+                                        </m:mrow><m:mi>L</m:mi>
+                                      </m:mfrac><m:mo>⁢</m:mo>
+                                      <m:mrow><m:mo>cos</m:mo>
+                                        <m:mfenced><m:mfrac><m:mrow><m:mi>n</m:mi>
+                                              <m:mo>⁢</m:mo>
+                                              <m:mi>π</m:mi>
+                                              <m:mo>⁢</m:mo>
+                                              <m:mi>x</m:mi>
+                                            </m:mrow><m:mi>L</m:mi>
+                                          </m:mfrac></m:mfenced></m:mrow></m:mrow></m:mfenced><m:mo>⁢</m:mo>
+                                  <m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                    <m:mi>x</m:mi>
+                                  </m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd>
+                        <m:mtext/>
+                        </m:mtd><m:mtd><m:mo form="infix">=</m:mo>
+                        <m:mrow><m:mo>−</m:mo>
+                          <m:mrow><m:mi>i</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mfrac><m:mrow><m:mn>2</m:mn>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>n</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>π</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>ℏ</m:mi>
+                              </m:mrow><m:msup><m:mi>L</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msup></m:mfrac><m:mo>⁢</m:mo>
+                            <m:mrow><m:munderover><m:mo>∫</m:mo>
+                                <m:mn>0</m:mn>
+                                <m:mi>L</m:mi>
+                              </m:munderover><m:mrow><m:mfrac><m:mn>1</m:mn>
+                                  <m:mn>2</m:mn>
+                                </m:mfrac><m:mo>⁢</m:mo>
+                                <m:mrow><m:mo>sin</m:mo>
+                                  <m:mrow><m:mfenced><m:mfrac><m:mrow><m:mn>2</m:mn>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mi>n</m:mi>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mi>π</m:mi>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow><m:mi>L</m:mi>
+                                      </m:mfrac></m:mfenced><m:mo>⁢</m:mo>
+                                    <m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                      <m:mi>x</m:mi>
+                                    </m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo>
+                        <m:mrow><m:mo>−</m:mo>
+                          <m:mrow><m:mrow><m:mrow><m:mi>i</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mfrac><m:mrow><m:mi>n</m:mi>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi>π</m:mi>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi>ℏ</m:mi>
+                                  </m:mrow><m:msup><m:mi>L</m:mi>
+                                    <m:mn>2</m:mn>
+                                  </m:msup></m:mfrac></m:mrow><m:mo>⋅</m:mo>
+                              <m:mfrac><m:mi>L</m:mi>
+                                <m:mrow><m:mn>2</m:mn>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>n</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>π</m:mi>
+                                </m:mrow></m:mfrac></m:mrow><m:mo>⁢</m:mo>
+                            <m:mrow><m:munderover><m:mo>∫</m:mo>
+                                <m:mn>0</m:mn>
+                                <m:mrow><m:mn>2</m:mn>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>π</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>n</m:mi>
+                                </m:mrow></m:munderover><m:mrow><m:mo>sin</m:mo>
+                                <m:mrow><m:mi>φ</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                    <m:mi>φ</m:mi>
+                                  </m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo>
+                        <m:mrow><m:mo>−</m:mo>
+                          <m:mrow><m:mrow><m:mi>i</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mfrac><m:mi>ℏ</m:mi>
+                                <m:mrow><m:mn>2</m:mn>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>L</m:mi>
+                                </m:mrow></m:mfrac></m:mrow><m:mo>⋅</m:mo>
+                            <m:mn>0</m:mn>
+                          </m:mrow></m:mrow><m:mo>=</m:mo>
+                        <m:mrow><m:mn>0</m:mn>
+                          <m:mtext>.</m:mtext>
+                        </m:mrow></m:mtd></m:mtr></m:mtable><m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mtable>
+                    <m:mtr>
+                      <m:mtd>
+                        <m:mfenced close="⟩" open="⟨">
+                          <m:mi>p</m:mi>
+                        </m:mfenced>
+                        <m:maligngroup/>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:munderover>
+                            <m:mo>∫</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mi>L</m:mi>
+                          </m:munderover>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:msubsup>
+                                <m:mi>ψ</m:mi>
+                                <m:mi>n</m:mi>
+                                <m:mtext>*</m:mtext>
+                              </m:msubsup>
+                              <m:mo>⁡</m:mo>
+                              <m:mfenced>
+                                <m:mi>x</m:mi>
+                              </m:mfenced>
+                            </m:mrow>
+                            <m:mo>⁢</m:mo>
+                            <m:mfenced close="]" open="[">
+                              <m:mrow>
+                                <m:mo>−</m:mo>
+                                <m:mrow>
+                                  <m:mi>i</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>ℏ</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mfrac>
+                                    <m:mrow>
+                                      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                      <m:mtext/>
+                                    </m:mrow>
+                                    <m:mrow>
+                                      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                      <m:mi>x</m:mi>
+                                    </m:mrow>
+                                  </m:mfrac>
+                                  <m:mo>⁢</m:mo>
+                                  <m:msub>
+                                    <m:mi>ψ</m:mi>
+                                    <m:mi>n</m:mi>
+                                  </m:msub>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mfenced>
+                                    <m:mi>x</m:mi>
+                                  </m:mfenced>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mfenced>
+                            <m:mo>⁢</m:mo>
+                            <m:mrow>
+                              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                              <m:mi>x</m:mi>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mtd>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mtd>
+                        <m:mtext/>
+                        <m:maligngroup/>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mo>−</m:mo>
+                          <m:mrow>
+                            <m:mi>i</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>ℏ</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mrow>
+                              <m:munderover>
+                                <m:mo>∫</m:mo>
+                                <m:mn>0</m:mn>
+                                <m:mi>L</m:mi>
+                              </m:munderover>
+                              <m:mrow>
+                                <m:msqrt>
+                                  <m:mfrac>
+                                    <m:mn>2</m:mn>
+                                    <m:mi>L</m:mi>
+                                  </m:mfrac>
+                                </m:msqrt>
+                                <m:mo>⁢</m:mo>
+                                <m:mrow>
+                                  <m:mo>sin</m:mo>
+                                  <m:mrow>
+                                    <m:mfenced>
+                                      <m:mfrac>
+                                        <m:mrow>
+                                          <m:mi>n</m:mi>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mi>π</m:mi>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                        <m:mi>L</m:mi>
+                                      </m:mfrac>
+                                    </m:mfenced>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mfenced close="]" open="[">
+                                      <m:mrow>
+                                        <m:mfrac>
+                                          <m:mrow>
+                                            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                            <m:mtext/>
+                                          </m:mrow>
+                                          <m:mrow>
+                                            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                            <m:mi>x</m:mi>
+                                          </m:mrow>
+                                        </m:mfrac>
+                                        <m:mo>⁢</m:mo>
+                                        <m:msqrt>
+                                          <m:mfrac>
+                                            <m:mn>2</m:mn>
+                                            <m:mi>L</m:mi>
+                                          </m:mfrac>
+                                        </m:msqrt>
+                                        <m:mo>⁢</m:mo>
+                                        <m:mrow>
+                                          <m:mo>sin</m:mo>
+                                          <m:mfenced>
+                                            <m:mfrac>
+                                              <m:mrow>
+                                                <m:mi>n</m:mi>
+                                                <m:mo>⁢</m:mo>
+                                                <m:mi>π</m:mi>
+                                                <m:mo>⁢</m:mo>
+                                                <m:mi>x</m:mi>
+                                              </m:mrow>
+                                              <m:mi>L</m:mi>
+                                            </m:mfrac>
+                                          </m:mfenced>
+                                        </m:mrow>
+                                      </m:mrow>
+                                    </m:mfenced>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mrow>
+                                      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                      <m:mi>x</m:mi>
+                                    </m:mrow>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mtd>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mtd>
+                        <m:mtext/>
+                        <m:maligngroup/>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mo>−</m:mo>
+                          <m:mrow>
+                            <m:mi>i</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>ℏ</m:mi>
+                              </m:mrow>
+                              <m:mi>L</m:mi>
+                            </m:mfrac>
+                            <m:mo>⁢</m:mo>
+                            <m:mrow>
+                              <m:munderover>
+                                <m:mo>∫</m:mo>
+                                <m:mn>0</m:mn>
+                                <m:mi>L</m:mi>
+                              </m:munderover>
+                              <m:mrow>
+                                <m:mo>sin</m:mo>
+                                <m:mrow>
+                                  <m:mfenced>
+                                    <m:mfrac>
+                                      <m:mrow>
+                                        <m:mi>n</m:mi>
+                                        <m:mo>⁢</m:mo>
+                                        <m:mi>π</m:mi>
+                                        <m:mo>⁢</m:mo>
+                                        <m:mi>x</m:mi>
+                                      </m:mrow>
+                                      <m:mi>L</m:mi>
+                                    </m:mfrac>
+                                  </m:mfenced>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mfenced close="]" open="[">
+                                    <m:mrow>
+                                      <m:mfrac>
+                                        <m:mrow>
+                                          <m:mi>n</m:mi>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mi>π</m:mi>
+                                        </m:mrow>
+                                        <m:mi>L</m:mi>
+                                      </m:mfrac>
+                                      <m:mo>⁢</m:mo>
+                                      <m:mrow>
+                                        <m:mo>cos</m:mo>
+                                        <m:mfenced>
+                                          <m:mfrac>
+                                            <m:mrow>
+                                              <m:mi>n</m:mi>
+                                              <m:mo>⁢</m:mo>
+                                              <m:mi>π</m:mi>
+                                              <m:mo>⁢</m:mo>
+                                              <m:mi>x</m:mi>
+                                            </m:mrow>
+                                            <m:mi>L</m:mi>
+                                          </m:mfrac>
+                                        </m:mfenced>
+                                      </m:mrow>
+                                    </m:mrow>
+                                  </m:mfenced>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mrow>
+                                    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                    <m:mi>x</m:mi>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mtd>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mtd>
+                        <m:mtext/>
+                        <m:maligngroup/>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mo>−</m:mo>
+                          <m:mrow>
+                            <m:mi>i</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>n</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>π</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>ℏ</m:mi>
+                              </m:mrow>
+                              <m:msup>
+                                <m:mi>L</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                            </m:mfrac>
+                            <m:mo>⁢</m:mo>
+                            <m:mrow>
+                              <m:munderover>
+                                <m:mo>∫</m:mo>
+                                <m:mn>0</m:mn>
+                                <m:mi>L</m:mi>
+                              </m:munderover>
+                              <m:mrow>
+                                <m:mfrac>
+                                  <m:mn>1</m:mn>
+                                  <m:mn>2</m:mn>
+                                </m:mfrac>
+                                <m:mo>⁢</m:mo>
+                                <m:mrow>
+                                  <m:mo>sin</m:mo>
+                                  <m:mrow>
+                                    <m:mfenced>
+                                      <m:mfrac>
+                                        <m:mrow>
+                                          <m:mn>2</m:mn>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mi>n</m:mi>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mi>π</m:mi>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                        <m:mi>L</m:mi>
+                                      </m:mfrac>
+                                    </m:mfenced>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mrow>
+                                      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                      <m:mi>x</m:mi>
+                                    </m:mrow>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mo>−</m:mo>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mi>i</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mfrac>
+                                  <m:mrow>
+                                    <m:mi>n</m:mi>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi>π</m:mi>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi>ℏ</m:mi>
+                                  </m:mrow>
+                                  <m:msup>
+                                    <m:mi>L</m:mi>
+                                    <m:mn>2</m:mn>
+                                  </m:msup>
+                                </m:mfrac>
+                              </m:mrow>
+                              <m:mo>⋅</m:mo>
+                              <m:mfrac>
+                                <m:mi>L</m:mi>
+                                <m:mrow>
+                                  <m:mn>2</m:mn>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>n</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>π</m:mi>
+                                </m:mrow>
+                              </m:mfrac>
+                            </m:mrow>
+                            <m:mo>⁢</m:mo>
+                            <m:mrow>
+                              <m:munderover>
+                                <m:mo>∫</m:mo>
+                                <m:mn>0</m:mn>
+                                <m:mrow>
+                                  <m:mn>2</m:mn>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>π</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>n</m:mi>
+                                </m:mrow>
+                              </m:munderover>
+                              <m:mrow>
+                                <m:mo>sin</m:mo>
+                                <m:mrow>
+                                  <m:mi>φ</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mrow>
+                                    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                    <m:mi>φ</m:mi>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mo>−</m:mo>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mi>i</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mfrac>
+                                <m:mi>ℏ</m:mi>
+                                <m:mrow>
+                                  <m:mn>2</m:mn>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>L</m:mi>
+                                </m:mrow>
+                              </m:mfrac>
+                            </m:mrow>
+                            <m:mo>⋅</m:mo>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                          <m:mtext>.</m:mtext>
+                        </m:mrow>
+                      </m:mtd>
+                    </m:mtr>
+                  </m:mtable>
+                  </m:annotation-xml></m:semantics><m:annotation encoding="application/vnd.katalysteducation.mathtex"> \begin{align} \langle p \rangle &amp;= \int_0^L \psi_n^{\text{*}} \apply(x) [ -i \hbar \frac{\d \text{}}{\d x} \psi_n (x) ] \d x \\ \text{} &amp;= -i \hbar \int_0^L \sqrt{\frac{2}{L}} \sin (\frac{n \pi x}{L}) [ \frac{\d \text{}}{\d x} \sqrt{\frac{2}{L}} \sin (\frac{n \pi x}{L}) ] \d x \\ \text{} &amp;= -i \frac{2 \hbar}{L} \int_0^L \sin (\frac{n \pi x}{L}) [ \frac{n \pi}{L} \cos (\frac{n \pi x}{L}) ] \d x \\ \text{} &amp;= -i \frac{2n\pi \hbar}{L^2} \int_0^L \frac{1}{2} \sin (\frac{2n \pi x}{L}) \d x = -i \frac{n \pi \hbar}{L^2} \cdot \frac{L}{2n \pi} \int_0^{2\pi n} \sin \varphi \d \varphi = -i \frac{\hbar}{2L} \cdot 0 = 0 \text{.} \end{align}</m:annotation>
+                </m:semantics>
+              </m:math>
+            </equation>
+            <para id="fs-id1170901533922">A zatem w przypadku cząstki o określonej energii średnie położenie wypada pośrodku pudełka, a średni pęd (<m:math display="inline">
+              <m:semantics>
+                <m:mfenced open="⟨" close="⟩">
+                  <m:mi>p</m:mi>
+                </m:mfenced>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \langle p \rangle</m:annotation>
+              </m:semantics>
+            </m:math>) wynosi zero – jak w przypadku cząstki klasycznej. Zauważmy, że chociaż energia minimalna cząstki klasycznej może wynosić zero, to minimum energii cząstki kwantowej jest niezerowe i równe energii stanu podstawowego. Energia cząstki w <m:math display="inline"><m:semantics><m:mi>n</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            n</m:annotation></m:semantics></m:math>–tym stanie kwantowym <m:math display="inline"><m:semantics><m:msub><m:mi>E</m:mi><m:mi>n</m:mi></m:msub><m:annotation encoding="application/vnd.katalysteducation.mathtex">            E_n</m:annotation></m:semantics></m:math> wynosi</para><equation id="fs-id1170902035083"><m:math display="block"><m:semantics><m:mrow><m:msub><m:mi>E</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:mfrac><m:mrow><m:msup><m:mi>π</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:msup><m:mi>ℏ</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>L</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            E_n = n^2 \frac{\pi^2 \hbar^2}{2mL^2} \text{.}</m:annotation></m:semantics></m:math></equation><para id="fs-id1170902639156">Wynik dla <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mi>T</m:mi>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mn>0</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">K</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T = \SI{0}{\kelvin}</m:annotation>
+            </m:semantics>
+          </m:math> nie jest zaskakujący, ponieważ stan fali stojącej to stan o określonej energii i dla zera bezwględnego możliwe jest jedynie <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mi>n</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=1</m:annotation>
+          </m:semantics>
+        </m:math>, a wówczas <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mfenced open="⟨" close="⟩">
+              <m:mi>E</m:mi>
+            </m:mfenced>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \langle E \rangle = E_1</m:annotation>
+        </m:semantics>
+      </m:math>. Pomiar stanu takiego układu zawsze daje ten sam wynik. Jednak w praktyce jest bez znaczenia, jak bardzo się zbliżamy do <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mi>T</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>0</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">K</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T = \SI{0}{\kelvin}</m:annotation>
+      </m:semantics>
+    </m:math>, ponieważ i tak <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>T</m:mi>
+        <m:mo>&gt;</m:mo>
+        <m:mrow>
+          <m:mn>0</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">K</m:mi>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T &gt; \SI{0}{\kelvin}</m:annotation>
+    </m:semantics>
+  </m:math>. Wtedy <m:math display="inline">
+  <m:semantics>
+    <m:mi>n</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+  </m:semantics>
+</m:math> może być dowolnie duże, choć szansa zmierzenia cząstki o bardzo dużym <m:math display="inline">
+<m:semantics>
+  <m:mi>n</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+</m:semantics>
+</m:math> dla małej temperatury <m:math display="inline">
+<m:semantics>
+  <m:mi>T</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> T</m:annotation>
+</m:semantics>
+</m:math> jest niewielka. Jakikolwiek pomiar energii takiego układu musi dać wartość równą jednemu z dozwolonych poziomów energetycznych <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi>E</m:mi>
+    <m:mi>n</m:mi>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_n</m:annotation>
+</m:semantics>
+</m:math>. Ogólnie średnia energia układu wynosi <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mfenced open="⟨" close="⟩">
+      <m:mi>E</m:mi>
+    </m:mfenced>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:munderover>
+        <m:mo>∑</m:mo>
+        <m:mrow>
+          <m:mi>n</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>1</m:mn>
+        </m:mrow>
+        <m:mi>∞</m:mi>
+      </m:munderover>
+      <m:mrow>
+        <m:msub>
+          <m:mi>p</m:mi>
+          <m:mi>n</m:mi>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:msub>
+          <m:mi>E</m:mi>
+          <m:mi>n</m:mi>
+        </m:msub>
+      </m:mrow>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \langle E \rangle = \sum_{n=1}^{\infty} p_n E_n</m:annotation>
+</m:semantics>
+</m:math>, gdzie <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi>p</m:mi>
+    <m:mi>n</m:mi>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> p_n</m:annotation>
+</m:semantics>
+</m:math> to prawdopodobieństwo obsadzenia stanu <m:math display="inline">
+<m:semantics>
+  <m:mi>n</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+</m:semantics>
+</m:math>, zależne od temperatury. W praktyce <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi>p</m:mi>
+    <m:mi>n</m:mi>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> p_n</m:annotation>
+</m:semantics>
+</m:math> szybko zanika wraz z dużymi <m:math display="inline">
+<m:semantics>
+  <m:mi>n</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+</m:semantics>
+</m:math>.</para>
+<para id="fs-id1170901530214">Nasza analiza zagadnienia cząstki w pudełku nie może być pełna bez omówienia zasady korespondencji Bohra. Mówi ona, że dla dużych liczb kwantowych prawa fizyki kwantowej muszą pozwalać na wyciągnięcie takich samych wniosków jak fizyka klasyczna. Aby zobrazować działanie tej zasady dla cząstki kwantowej w pudełku, musimy wykreślić rozkład gęstości prawdopodobieństwa</para>
+<equation id="fs-id1170901556587">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:msup>
+          <m:mfenced open="|" close="|">
+            <m:mrow>
+              <m:msub>
+                <m:mi>ψ</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>x</m:mi>
+              </m:mfenced>
+            </m:mrow>
+          </m:mfenced>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mn>2</m:mn>
+            <m:mi>L</m:mi>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:msup>
+              <m:mo>sin</m:mo>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mfenced>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mi>n</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>x</m:mi>
+                </m:mrow>
+                <m:mi>L</m:mi>
+              </m:mfrac>
+            </m:mfenced>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \abs{\psi_n \apply(x)}^2 = \frac{2}{L} \sin^2 (\frac{n\pi x}{L})</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170901619399">znalezienia cząstki w stanie kwantowym <m:math display="inline">
+  <m:semantics>
+    <m:msub>
+      <m:mi>ψ</m:mi>
+      <m:mi>n</m:mi>
+    </m:msub>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_n</m:annotation>
+  </m:semantics>
+</m:math> w pobliżu położenia <m:math display="inline">
+<m:semantics>
+  <m:mi>x</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+</m:semantics>
+</m:math>, pomiędzy ścianami pudełka. <link target-id="CNX_UPhysics_40_04_boxprob"/> pokazuje te rozkłady dla stanu podstawowego, pierwszego stanu wzbudzonego i wysoce wzbudzonego stanu o bardzo dużej liczbie kwantowej. Możemy łatwo zauważyć, że gdy cząstka znajduje się w stanie podstawowym, najbardziej prawdopodobne jest znalezienie jej pośrodku pudełka, gdzie rozkład gęstości prawdopodobieństwa ma największą wartość. Inaczej dzieje się w przypadku pierwszego stanu wzbudzonego, ponieważ tam pośrodku pudełka gęstość prawdopodobieństwa wynosi zero, a więc nie ma szans na znalezienie cząstki w tym miejscu. Gdy cząstka znajduje się w pierwszym stanie wzbudzonym, rozkład prawdopodobieństwa ma dwa maksima i największe prawdopodobieństwo znalezienia jej istnieje właśnie w położeniach odpowiadających tym maksimom, co odbiega od praw fizyki klasycznej.</para>
+<figure id="CNX_UPhysics_40_04_boxprob">
+  <media id="fs-id1170903089425" alt="Rozkład gęstości prawdopodobieństwa Psi amplituda do kwadratu dla stanu n=1, n=2 i n=20 wykreślone jako funkcje x od x=0 do x=L. Psi sub 1 kwadrat ma maksimum w środku pudełka, spada ku jednej ze stron i na końcu zdąża do zera. Psi sub 2 kwadrat ma wartość zero w środku pudełka i pod koniec posiada dwa równe co do wartości maksima. Psi sub 20 kwadrat ma dwadzieścia maksimów, wszystkie tego samego wymiaru, zmierzające między sobą do zera.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_40_04_boxprob.jpg"/>
+  </media>
+  <caption>Rozkład gęstości prawdopodobieństwa <m:math display="inline">
+    <m:semantics>
+      <m:msup>
+        <m:mfenced open="|" close="|">
+          <m:mrow>
+            <m:msub>
+              <m:mi>ψ</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>x</m:mi>
+            </m:mfenced>
+          </m:mrow>
+        </m:mfenced>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \abs {\psi_n\apply (x)}^2</m:annotation>
+    </m:semantics>
+  </m:math> dla cząstki kwantowej w pudełku. (a) Stan podstawowy <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>n</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>1</m:mn>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=1</m:annotation>
+  </m:semantics>
+</m:math>, (b) pierwszy stan wzbudzony <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>n</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>2</m:mn>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=2</m:annotation>
+</m:semantics>
+</m:math> i (c) dziewiętnasty stan wzbudzony <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>n</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>20</m:mn>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=20</m:annotation>
+</m:semantics>
+</m:math>.</caption>
+</figure>
+<para id="fs-id1170902637938">Gęstość prawdopodobieństwa znalezienia klasycznej cząstki w przedziale od <m:math display="inline">
+  <m:semantics>
+    <m:mi>x</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+  </m:semantics>
+</m:math> do <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>x</m:mi>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mo>Δ</m:mo>
+      <m:mi>x</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x + \prefop{\Delta} x</m:annotation>
+</m:semantics>
+</m:math> zależy od czasu <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mo>Δ</m:mo>
+    <m:mi>t</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\Delta} t</m:annotation>
+</m:semantics>
+</m:math>, jaki cząstka spędzi w tym przedziale. Zakładając, że jej prędkość <m:math display="inline">
+<m:semantics>
+  <m:mi>v</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> v</m:annotation>
+</m:semantics>
+</m:math> jest stała, czas ten wynosi <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mrow>
+      <m:mo>Δ</m:mo>
+      <m:mi>t</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mo>Δ</m:mo>
+        <m:mi>x</m:mi>
+      </m:mrow>
+      <m:mo>∕</m:mo>
+      <m:mi>v</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\Delta} t = \prefop{\Delta} x / v</m:annotation>
+</m:semantics>
+</m:math> i jest stały w całym przedziale. Gęstość prawdopodobieństwa znalezienia takiej cząstki jest więc jednakowa w całym przedziale, co oznacza, że nie istnieje preferowane miejsce znalezienia cząstki. Ten klasyczny punkt widzenia staje się bardzo podobny do przypadku funkcji falowej o wysokiej liczbie kwantowej. Np. gdy cząstka kwantowa znajduje się na wysokim poziomie wzbudzenia, jak na rysunku <link target-id="CNX_UPhysics_40_04_boxprob" cmlnle:case="locative"/> (c), gęstość prawdopodobieństwa reprezentowana jest przez szybkozmienną funkcję, dla której prawdopodobieństwo znalezienia cząstki w odpowiednio dużym przedziale <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mo>Δ</m:mo>
+    <m:mi>x</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\Delta} x</m:annotation>
+</m:semantics>
+</m:math> nie zależy od położenia tego przedziału między ścianami pudełka.</para>
+<example id="fs-id1170902677992">
+  <para id="fs-id1170901554905">
+    <title>Klasyczna cząstka w pudełku</title>Mały wózek o masie <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mn>0,4</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi mathvariant="normal">kg</m:mi>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,4}{\kilo\gram}</m:annotation>
+      </m:semantics>
+    </m:math> odbija się pomiędzy dwoma zderzakami oddalonymi od siebie o <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mn>2</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{2}{\metre}</m:annotation>
+    </m:semantics>
+  </m:math>, poruszając się po torze powietrznym. Zakładamy, że wózek porusza się bez tarcia, a zderzenia są elastyczne. Wózek utrzymuje stałą prędkość <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mn>0,5</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mo>∕</m:mo>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,5}{\metre\per\second}</m:annotation>
+  </m:semantics>
+  </m:math>. Traktując wózek jak cząstkę kwantową, oszacujmy wartość głównej liczby kwantowej, która odpowiada jego energii (w ujęciu klasycznym).</para>
+  <para id="fs-id1170902750455">
+    <title>Strategia rozwiązania</title>Energię kinetyczną i stanu podstawowego obliczamy jak w przypadku cząstki kwantowej. Zakładamy, że energia całkowita wózka jest równa jego energii kinetycznej, a więc <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mtext>k</m:mtext>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msup>
+              <m:mi>n</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{k}} = n^2 E_1</m:annotation>
+      </m:semantics>
+    </m:math>. Przekształcając równanie pod kątem liczby kwantowej, otrzymujemy <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>n</m:mi>
+        <m:mo>=</m:mo>
+        <m:msup>
+          <m:mfenced>
+            <m:mrow>
+              <m:msub>
+                <m:mi>E</m:mi>
+                <m:mtext>k</m:mtext>
+              </m:msub>
+              <m:mo>∕</m:mo>
+              <m:msub>
+                <m:mi>E</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:mrow>
+          </m:mfenced>
+          <m:mrow>
+            <m:mn>1</m:mn>
+            <m:mo>∕</m:mo>
+            <m:mn>2</m:mn>
+          </m:mrow>
+        </m:msup>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n = (E_{\text{k}} / E_1)^{1/2}</m:annotation>
+    </m:semantics>
+    </m:math>.</para>
+    <para id="fs-id1170903085875">
+      <title>Rozwiązanie</title>Energia kinetyczna wózka wynosi</para>
+      <equation id="fs-id1170902907011" class="unnumbered">
+        <m:math display="block">
+          <m:semantics>
+            <m:mrow>
+              <m:msub>
+                <m:mi>E</m:mi>
+                <m:mtext>k</m:mtext>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mo>⁢</m:mo>
+                <m:mi>m</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mi>v</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mn>0,4</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">kg</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mn>0,5</m:mn>
+                      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mo>∕</m:mo>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mfenced>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>0,05</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">J</m:mi>
+                </m:mrow>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{k}} = \frac{1}{2} mv^2 = \frac{1}{2} \cdot \SI{0,4}{\kilo\gram} \cdot (\SI{0,5}{\metre\per\second})^2 = \SI{0,05}{\joule} \text{.}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </equation>
+      <para id="fs-id1170901756653">Energia stanu podstawowego to</para>
+      <equation id="fs-id1170902780698" class="unnumbered">
+        <label/>
+        <m:math display="block">
+          <m:semantics>
+            <m:mrow>
+              <m:msub>
+                <m:mi>E</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>π</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>⁢</m:mo>
+                  <m:msup>
+                    <m:mi>ℏ</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>m</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msup>
+                    <m:mi>L</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>π</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>⁢</m:mo>
+                  <m:msup>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mn>1,05</m:mn>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mn>10</m:mn>
+                            <m:mn>-34</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">J</m:mi>
+                          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mfenced>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:mrow>
+                    <m:mn>0,4</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                    <m:mi mathvariant="normal">kg</m:mi>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:mfenced>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>1,7</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mn>-68</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">J</m:mi>
+                </m:mrow>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_1 = \frac{\pi^2 \hbar^2}{2mL^2} = \frac{\pi^2 (\SI{1,05e-34}{\joule\second})^2}{2\cdot \SI{0,4}{\kilo\gram} \cdot (\SI{2}{\metre})^2} = \SI{1,7e-68}{\joule} \text{.}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </equation>
+      <para id="fs-id1170902956545">A zatem <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mi>n</m:mi>
+            <m:mo>=</m:mo>
+            <m:msup>
+              <m:mfenced>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>E</m:mi>
+                    <m:mtext>k</m:mtext>
+                  </m:msub>
+                  <m:mo>∕</m:mo>
+                  <m:msub>
+                    <m:mi>E</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:mfenced>
+              <m:mrow>
+                <m:mn>1</m:mn>
+                <m:mo>∕</m:mo>
+                <m:mn>2</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:msup>
+              <m:mfenced open="[" close="]">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>0,05</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                    <m:mi mathvariant="normal">J</m:mi>
+                  </m:mrow>
+                  <m:mo>∕</m:mo>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>1,7</m:mn>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mn>-68</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                      <m:mi mathvariant="normal">J</m:mi>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mfenced>
+              <m:mrow>
+                <m:mn>1</m:mn>
+                <m:mo>∕</m:mo>
+                <m:mn>2</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>1,2</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>33</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n = (E_{\text{k}} / E_1)^{1/2} = [\num{0,05}\si{\joule} / (\num{1,7e-68}\si{\joule})]^{1/2} = \num{1,2e33}</m:annotation>
+        </m:semantics>
+        </m:math>.</para>
+        <para id="fs-id1170901865824">
+          <title>Znaczenie</title>Pokazaliśmy, że energii układu klasycznego odpowiada bardzo wysoka liczba kwantowa. Zasada korespondencji Bohra dotyczy właśnie takich zagadnień. Możemy więc zastosować formalizm mechaniki kwantowej do dowolnego układu – kwantowego czy klasycznego – i wyniki będą poprawne w każdym z przypadków. Jest on jednak dużo bardziej skomplikowany niż formalizm klasyczny, który można z dobrym przybliżeniem stosować w przypadku układów o bardzo dużej liczbie kwantowej.</para>
+        </example>
+        <note id="fs-id1170902677214" class="check-understanding">
+          <exercise id="fs-id1170901785761">
+            <problem id="fs-id1170902763295">
+              <para id="fs-id1170903022556">
+                <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis>
+                <list id="eip-idm228931888" list-type="enumerated" number-style="lower-alpha"><item>Rozważ nieskończoną kwadratową studnię o ścianach w <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:mi>x</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x=0</m:annotation>
+                    </m:semantics>
+                  </m:math> i <m:math display="inline">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mi>L</m:mi>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x=L</m:annotation>
+                  </m:semantics>
+                </m:math> (<link target-id="CNX_UPhysics_40_04_box"/>). Jakie jest prawdopodobieństwo znalezienia cząstki kwantowej w stanie podstawowym w przedziale od <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x=0</m:annotation>
+                </m:semantics>
+              </m:math> do <m:math display="inline">
+              <m:semantics>
+                <m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mi>L</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x=L/4</m:annotation>
+              </m:semantics>
+              </m:math>? </item>
+              <item>Powtórz obliczenia dla cząstki klasycznej.</item>
+            </list></para>
+        </problem>
+        <solution id="fs-id1170901588905">
+          <para id="fs-id1170903031194">a. <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mn>9,1</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">%</m:mi>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{9,1}{\percent}</m:annotation>
+            </m:semantics>
+          </m:math>; b. <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>25</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">%</m:mi>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{25}{\percent}</m:annotation>
+          </m:semantics>
+          </m:math>. </para>
+        </solution>
+      </exercise>
+    </note>
+    <para id="fs-id1170902740056">Znając funkcje <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:msub>
+            <m:mi>ψ</m:mi>
+            <m:mi>n</m:mi>
+          </m:msub>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>x</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_n \apply(x)</m:annotation>
+      </m:semantics>
+    </m:math> i energie <m:math display="inline">
+    <m:semantics>
+      <m:msub>
+        <m:mi>E</m:mi>
+        <m:mi>n</m:mi>
+      </m:msub>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_n</m:annotation>
+    </m:semantics>
+  </m:math> po rozwiązaniu równania Schrödingera, możemy je wykorzystać do zapisania funkcji falowych <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:msub>
+        <m:mi mathvariant="normal">Ψ</m:mi>
+        <m:mi>n</m:mi>
+      </m:msub>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>x</m:mi>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}_n \apply(x,t)</m:annotation>
+  </m:semantics>
+  </m:math>, które są rozwiązaniem równania Schrödingera zależnego od czasu. Dla cząstki w pudełku będą one miały postać</para>
+  <equation id="fs-id1170902754240">
+    <m:math display="block">
+      <m:semantics>
+        <m:mfenced close="" open="">
+          <m:mrow>
+            <m:mrow>
+              <m:msub>
+                <m:mi mathvariant="normal">Ψ</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>x</m:mi>
+                <m:mi>t</m:mi>
+              </m:mfenced>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:msup>
+                <m:mi>e</m:mi>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mi>i</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:msub>
+                      <m:mi>ω</m:mi>
+                      <m:mi>n</m:mi>
+                    </m:msub>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:msup>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>ψ</m:mi>
+                  <m:mi>n</m:mi>
+                </m:msub>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>x</m:mi>
+                </m:mfenced>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:msqrt>
+                <m:mfrac>
+                  <m:mn>2</m:mn>
+                  <m:mi>L</m:mi>
+                </m:mfrac>
+              </m:msqrt>
+              <m:mo>⁢</m:mo>
+              <m:msup>
+                <m:mi>e</m:mi>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>i</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:msub>
+                        <m:mi>E</m:mi>
+                        <m:mi>n</m:mi>
+                      </m:msub>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>∕</m:mo>
+                    <m:mi>ℏ</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:msup>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo>sin</m:mo>
+                <m:mrow>
+                  <m:mfenced>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>n</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>π</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>x</m:mi>
+                      </m:mrow>
+                      <m:mi>L</m:mi>
+                    </m:mfrac>
+                  </m:mfenced>
+                  <m:mo>⁢</m:mo>
+                  <m:mtext>, </m:mtext>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>n</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+          </m:mrow>
+          <m:mn>2</m:mn>
+          <m:mn>3</m:mn>
+          <m:mi>…</m:mi>
+        </m:mfenced>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}_n\apply (x,t) = e^{-i \omega_n t} \psi_n\apply (x) = \sqrt{\frac{2}{L}} e^{-iE_n t / \hbar} \sin (\frac{n\pi x}{L}) \text{, } n=1,2,3,\dots</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+  <para id="fs-id1170902600657">Model cząstki kwantowej w pudełku ma praktyczne zastosowanie w stosunkowo nowej dziedzinie optoelektroniki, która zajmuje się przekształcaniem sygnałów elektrycznych na sygnały optyczne. Model ten opisuje też zjawiska fizyczne w skali nano, np. nanocząstkę uwięzioną w niskim potencjale elektrycznym pomiędzy barierami wysokiego potencjału.</para>
+  <section id="fs-id1170901526891" class="key-concepts">
+    <title>Podsumowanie</title>
+    <list id="fs-id1170902721692" list-type="bulleted" bullet-style="bullet">
+      <item>Poziomy energetyczne cząstki kwantowej w pudełku określamy przez rozwiązanie niezależnego od czasu równania Schrödingera.</item>
+      <item>W celu rozwiązania niezależnego od czasu równania Schrödingera dla cząstki w pudełku (w nieskończonej studni potencjału) należy znaleźć rozwiązania funkcji falowej dla cząstki swobodnej, a następnie dopasować funkcję falową tak, by zerowała się na ścianach pudełka (nazywamy to zastosowaniem warunków brzegowych do rozwiązań równania Schrödingera).</item>
+      <item>Stany energetyczne cząstki w pudełku są skwantowane i indeksowane przez główne liczby kwantowe, będące liczbami całkowitymi.</item>
+      <item>Interpretacja kwantowa różni się znacząco od interpretacji klasycznej, kiedy cząstka znajduje się w niskoenergetycznym stanie z niską liczbą kwantową, czyli jest bliska stanu podstawowego.</item>
+      <item>W przypadku dużych liczb kwantowych, kiedy cząstka kwantowa znajduje się w bardzo pobudzonym stanie, kwantowy opis cząstki w pudełku zgadza się z opisem klasycznym w myśl zasady korespondencji Bohra.</item>
+    </list>
+  </section>
+  <section id="fs-id1170902762772" class="review-conceptual-questions">
+    <title>Pytania</title>
+    <exercise id="fs-id1170902762225">
+      <problem id="fs-id1170901626481">
+        <para id="fs-id1170902774798">Używając modelu cząstki kwantowej w pudełku, wyjaśnij, jak dostępne poziomy energetyczne cząstki powiązane są z rozmiarami pudełka.</para>
+      </problem>
+    </exercise>
+    <exercise id="fs-id1170902682246">
+      <problem id="fs-id1170901558808">
+        <para id="fs-id1170903080048">Czy jest możliwe, żeby pomiar energii cząstki kwantowej w pudełku dał wynik niższy niż wartość energii stanu podstawowego? Jaka jest najwyższa wartość energii tej cząstki, jaką można zmierzyć?</para>
+      </problem>
+      <solution id="fs-id1170901748751">
+        <para id="fs-id1170901603987">Nie. W przypadku cząstki w pudełku odległość między kolejnymi poziomami energetycznymi rośnie wraz z liczbą kwantową <m:math display="inline">
+          <m:semantics>
+            <m:mi>n</m:mi>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+          </m:semantics>
+        </m:math>. Najmniejsza mierzalna energia odpowiada przejściu ze stanu <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mi>n</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>2</m:mn>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=2</m:annotation>
+        </m:semantics>
+      </m:math> do <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mi>n</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>1</m:mn>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=1</m:annotation>
+      </m:semantics>
+    </m:math> i jest trzykrotnością energii stanu podstawowego. Największa mierzalna energia odpowiada przejściu ze stanu <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>n</m:mi>
+        <m:mo>⟶</m:mo>
+        <m:mi>∞</m:mi>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n\to\infty</m:annotation>
+    </m:semantics>
+  </m:math> do <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>n</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>1</m:mn>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=1</m:annotation>
+  </m:semantics>
+  </m:math> i jest równa nieskończoności (zauważ, że nawet cząstki o niezwykle dużych energiach są zamknięte w nieskończonej studni potencjału – nie mogą jej opuścić).</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170901587667">
+  <problem id="fs-id1170901769776">
+    <para id="fs-id1170899266429">Dla cząstki kwantowej w pudełku pierwszym stanem wzbudzonym jest stan <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:msub>
+            <m:mi mathvariant="normal">Ψ</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>x</m:mi>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}_2\apply(x,t)</m:annotation>
+      </m:semantics>
+      </m:math>. Ma on wartość zerową dokładnie w środku pudełka, więc prawdopodobieństwo znalezienia w tym miejscu cząstki jest równe zeru. Wyjaśnij, co jest niepoprawnego w następującym rozumowaniu: „Jeśli prawdopodobieństwo znalezienia cząstki w punkcie środkowym pudełka wynosi zero, to cząstka nigdy nie znajduje się w tym punkcie? Jak w takim razie jest możliwe, że cząstka przechodzi przez ten punkt, przemieszczając się z lewej strony pudełka na prawą?”.</para>
+    </problem>
+  </exercise>
+</section>
+<section id="fs-id1170901603341" class="review-problems">
+  <title>Zadania</title>
+  <exercise id="fs-id1170903098142">
+    <problem id="fs-id1170902942035">
+      <para id="fs-id1170901603232">Załóż, że elektron w atomie może być potraktowany tak, jakby był uwięziony w pudle potencjału o szerokości <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">Å</m:mi>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{2}{\angstrom}</m:annotation>
+        </m:semantics>
+        </m:math>. Ile wynosi energia stanu podstawowego tego elektronu? Porównaj swój wynik z energią stanu podstawowego atomu wodoru w modelu Bohra.</para>
+      </problem>
+      <solution id="fs-id1170901606016">
+        <para id="fs-id1170901576842">
+          <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mn>9,4</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">eV</m:mi>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{9,4}{\electronvolt}</m:annotation>
+            </m:semantics>
+          </m:math>, <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>64</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">%</m:mi>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{64}{\percent}</m:annotation>
+          </m:semantics>
+          </m:math>.</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1170902602072">
+        <problem id="fs-id1170903027555">
+          <para id="fs-id1170901589416">Załóż, że proton wewnątrz jądra atomowego może być traktowany tak, jakby był uwięziony wewnątrz pudełka o boku długości <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mn>10</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi mathvariant="normal">pm</m:mi>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{10}{\pico\metre}</m:annotation>
+            </m:semantics>
+          </m:math>. <list id="eip-idm271138096" list-type="enumerated" number-style="lower-alpha">
+          <item>Ile wynoszą energie tego protonu, kiedy jego stan odpowiada <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=1</m:annotation>
+            </m:semantics>
+          </m:math>, <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mi>n</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>2</m:mn>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=2</m:annotation>
+          </m:semantics>
+        </m:math> i <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mi>n</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>3</m:mn>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=3</m:annotation>
+        </m:semantics>
+        </m:math>? </item>
+        <item>Ile wynoszą energie fotonów emitowanych, kiedy proton przechodzi z pierwszego i drugiego stanu wzbudzonego do stanu podstawowego?</item>
+      </list>
+    </para>
+  </problem>
+</exercise>
+<exercise id="fs-id1170902875598">
+  <problem id="fs-id1170901770923">
+    <para id="fs-id1170902002980">Elektron uwięziony w pudełku ma energię stanu podstawowego równą <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mn>2,5</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi mathvariant="normal">eV</m:mi>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{2,5}{\electronvolt}</m:annotation>
+      </m:semantics>
+      </m:math>. Jaka jest szerokość tego pudełka?</para>
+    </problem>
+    <solution id="fs-id1170903016807">
+      <para id="fs-id1170902686656">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>0,38</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi mathvariant="normal">nm</m:mi>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,38}{\nano\metre}</m:annotation>
+          </m:semantics>
+          </m:math>.</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1170901635636">
+        <problem id="fs-id1170903084022">
+          <para id="fs-id1170901594236">Ile wynosi energia stanu podstawowego (wyrażona w <m:math display="inline">
+            <m:semantics>
+              <m:mi mathvariant="normal">eV</m:mi>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \si{\electronvolt}</m:annotation>
+            </m:semantics>
+          </m:math>) protonu uwięzionego w jednowymiarowym pudełku o rozmiarach jądra atomu uranu, którego promień wynosi około <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>15</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi mathvariant="normal">fm</m:mi>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{15}{\femto\metre}</m:annotation>
+          </m:semantics>
+          </m:math>?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1170902681555">
+        <problem id="fs-id1170901494000">
+          <para id="fs-id1170902878873">Jaka jest energia stanu podstawowego (wyrażona w <m:math display="inline">
+            <m:semantics>
+              <m:mi mathvariant="normal">eV</m:mi>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \si{\electronvolt}</m:annotation>
+            </m:semantics>
+          </m:math>) cząstki <m:math display="inline">
+          <m:semantics>
+            <m:mi>α</m:mi>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \alpha</m:annotation>
+          </m:semantics>
+        </m:math> uwięzionej w jednowymiarowym pudełku o rozmiarach jądra atomu uranu, którego promień wynosi około <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mn>15</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi mathvariant="normal">fm</m:mi>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{15}{\femto\metre}</m:annotation>
+        </m:semantics>
+        </m:math>?</para>
+      </problem>
+      <solution id="fs-id1170902032864">
+        <para id="fs-id1170901504158">
+          <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mn>1,82</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi mathvariant="normal">MeV</m:mi>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{1,82}{\mega\electronvolt}</m:annotation>
+            </m:semantics>
+            </m:math>.</para>
+          </solution>
+        </exercise>
+        <exercise id="fs-id1170901630769">
+          <problem id="fs-id1170902680748">
+            <para id="fs-id1170901621607">Aby elektron uwięziony w jednowymiarowym pudełku przeskoczył z pierwszego do trzeciego stanu wzbudzonego niezbędne jest dostarczenie mu energii <m:math display="inline">
+              <m:semantics>
+                <m:mrow>
+                  <m:mn>20</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi mathvariant="normal">eV</m:mi>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{20}{\electronvolt}</m:annotation>
+              </m:semantics>
+              </m:math>. Jaka jest szerokość tego pudełka?</para>
+            </problem>
+          </exercise>
+          <exercise id="fs-id1170901582487">
+            <problem id="fs-id1170902915457">
+              <para id="fs-id1170901584078">Elektron jest uwięziony w pudełku o boku długości <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mn>0,15</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi mathvariant="normal">nm</m:mi>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,15}{\nano\metre}</m:annotation>
+                </m:semantics>
+                </m:math>. Elektron ten emituje foton przy przejściu z pierwszego stanu wzbudzonego do stanu podstawowego. Oblicz długość fali wyemitowanego fotonu.</para>
+              </problem>
+              <solution id="fs-id1170901607456">
+                <para id="fs-id1170902733654">
+                  <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:mn>24,7</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi mathvariant="normal">nm</m:mi>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{24,7}{\nano\metre}</m:annotation>
+                    </m:semantics>
+                    </m:math>.</para>
+                  </solution>
+                </exercise>
+                <exercise id="fs-id1170901487133">
+                  <problem id="fs-id1170901521892">
+                    <para id="fs-id1170902032573">Jeśli energia pierwszego stanu wzbudzonego elektronu w pudełku jest równa <m:math display="inline">
+                      <m:semantics>
+                        <m:mrow>
+                          <m:mn>25</m:mn>
+                          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                          <m:mi mathvariant="normal">eV</m:mi>
+                        </m:mrow>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{25}{\electronvolt}</m:annotation>
+                      </m:semantics>
+                      </m:math>, to ile wynosi szerokość tego pudełka?</para>
+                    </problem>
+                  </exercise>
+                  <exercise id="fs-id1170902008397">
+                    <problem id="fs-id1170901650037">
+                      <para id="fs-id1170902880457">Elektron uwięziony w pudełku emituje fotony, a najdłuższa fala pochodząca od niego, jaka została zarejestrowana, miała długość <m:math display="inline">
+                        <m:semantics>
+                          <m:mrow>
+                            <m:mn>500</m:mn>
+                            <m:mo>⁢</m:mo>
+                            <m:mi mathvariant="normal">nm</m:mi>
+                          </m:mrow>
+                          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{500}{\nano\metre}</m:annotation>
+                        </m:semantics>
+                        </m:math>. Jaka jest szerokość tego pudełka?</para>
+                      </problem>
+                      <solution id="fs-id1170902658894">
+                        <para id="fs-id1170903079898">
+                          <m:math display="inline">
+                            <m:semantics>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mn>6,03</m:mn>
+                                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                                  <m:mi mathvariant="normal">Å</m:mi>
+                                </m:mrow>
+                                <m:mo>⁢</m:mo>
+                              </m:mrow>
+                              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{6,03}{\angstrom} \text{.}</m:annotation>
+                            </m:semantics>
+                            </m:math>. </para>
+                          </solution>
+                        </exercise>
+                        <exercise id="fs-id1170902684744">
+                          <problem id="fs-id1170902891125">
+                            <para id="fs-id1170902666232">Cząsteczkowy wodór H<sub>2</sub> przechowywany jest w temperaturze <m:math display="inline">
+                              <m:semantics>
+                                <m:mrow>
+                                  <m:mn>300</m:mn>
+                                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                                  <m:mi mathvariant="normal">K</m:mi>
+                                </m:mrow>
+                                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{300}{\kelvin}</m:annotation>
+                              </m:semantics>
+                            </m:math> w sześciennym pudełku o krawędzi długości <m:math display="inline">
+                            <m:semantics>
+                              <m:mrow>
+                                <m:mn>25</m:mn>
+                                <m:mo>⁢</m:mo>
+                                <m:mi mathvariant="normal">cm</m:mi>
+                              </m:mrow>
+                              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{25}{\centi\metre}</m:annotation>
+                            </m:semantics>
+                          </m:math>. Załóż, że możesz traktować molekuły, jakby poruszały się w jednowymiarowym pudełku. <list id="eip-idm223537776" list-type="enumerated" number-style="lower-alpha">
+                          <item>Oblicz energię stanu podstawowego cząsteczki wodoru w tym pojemniku; </item>
+                          <item>Załóż, że cząsteczki mają energię termiczną daną równaniem <m:math display="inline">
+                            <m:semantics>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:msub>
+                                    <m:mi>k</m:mi>
+                                    <m:mtext>B</m:mtext>
+                                  </m:msub>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>T</m:mi>
+                                </m:mrow>
+                                <m:mo>∕</m:mo>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k_{\text{B}} T/2</m:annotation>
+                            </m:semantics>
+                          </m:math>, i oblicz liczbę kwantową <m:math display="inline">
+                          <m:semantics>
+                            <m:mi>n</m:mi>
+                            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+                          </m:semantics>
+                          </m:math> odpowiadającą tej energii termicznej.</item>
+                        </list>
+                      </para>
+                    </problem>
+                  </exercise>
+                  <exercise id="fs-id1170903079971">
+                    <problem id="fs-id1170903133085">
+                      <para id="fs-id1170902704651">Elektron uwięziony jest w pudełku o boku <m:math display="inline">
+                        <m:semantics>
+                          <m:mrow>
+                            <m:mn>0,25</m:mn>
+                            <m:mo>⁢</m:mo>
+                            <m:mi mathvariant="normal">nm</m:mi>
+                          </m:mrow>
+                          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,25}{\nano\metre}</m:annotation>
+                        </m:semantics>
+                      </m:math>. <list id="eip-idm209395120" list-type="enumerated" number-style="lower-alpha">
+                      <item>Narysuj diagram poziomów energetycznych tego elektronu dla pierwszych pięciu poziomów energetycznych; </item>
+                      <item>Oblicz długości fal fotonów emitowanych przy przejściu elektronu z czwartego stanu wzbudzonego do drugiego stanu wzbudzonego, z drugiego stanu wzbudzonego do stanu podstawowego i z trzeciego stanu wzbudzonego do pierwszego stanu wzbudzonego.</item>
+                    </list>
+                  </para>
+                </problem>
+                <solution id="fs-id1170902626234">
+                  <para id="fs-id1170901918015">a.<newline/>
+                    <media id="fs-id1170902941104" alt="Pokazane są funkcje falowe dla stanów n=1 do n=5, w których elektron znajduje się w nieskończonym obszarze. Każda z funkcji ma pionowo rozmieszczoną swą energię, mierzoną w m e V. W stanie n=1 pierwsza połowa fali jest funkcją sinus. W stanie n=2 funkcja jest najpierw pełną falą funkcji sinus. W stanie n=3 funkcji jest najpierw jedną falą a na końcu połową fali funkcji sinus. W stanie n=4 funkcja to najpierw dwie fale funkcji sinus. W stanie n=5 funkcja to najpierw są dwie a potem pół fali funkcji sinus.">
+                      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_40_04_P49ans_img.jpg"/>
+                    </media>;<newline/>b. <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>λ</m:mi>
+                          <m:mrow>
+                            <m:mn>5</m:mn>
+                            <m:mo>⟶</m:mo>
+                            <m:mn>3</m:mn>
+                          </m:mrow>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mn>12,9</m:mn>
+                          <m:mo>⁢</m:mo>
+                          <m:mi mathvariant="normal">nm</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \lambda_{5 \to 3} = \SI{12,9}{\nano\metre}</m:annotation>
+                    </m:semantics>
+                  </m:math>, <m:math display="inline">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>λ</m:mi>
+                        <m:mrow>
+                          <m:mn>3</m:mn>
+                          <m:mo>⟶</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mn>25,8</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi mathvariant="normal">nm</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \lambda_{3 \to 1} = \SI{25,8}{\nano\metre}</m:annotation>
+                  </m:semantics>
+                </m:math>, <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>λ</m:mi>
+                      <m:mrow>
+                        <m:mn>4</m:mn>
+                        <m:mo>⟶</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mn>29,4</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mi mathvariant="normal">nm</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \lambda_{4 \to 3} = \SI{29,4}{\nano\metre}</m:annotation>
+                </m:semantics>
+                </m:math>.</para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1170899259849">
+              <problem id="fs-id1170902737781">
+                <para id="fs-id1170903134951">Elektron uwięziony w pudełku ma energię stanu podstawowego równą <m:math display="inline">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mi mathvariant="normal">eV</m:mi>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{2}{\electronvolt}</m:annotation>
+                  </m:semantics>
+                </m:math>.<list id="eip-idm660826832" list-type="enumerated" number-style="lower-alpha">
+                <item>Oblicz szerokość tego pudełka;</item>
+                <item>Ile energii należy dostarczyć do tego elektronu, aby przeszedł on do pierwszego stanu wzbudzonego?</item>
+                <item>Jeśli elektron przejdzie ze stanu wzbudzonego do stanu podstawowego przy jednoczesnej emisji fotonu o energii <m:math display="inline">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mn>30</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mi mathvariant="normal">eV</m:mi>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{30}{\electronvolt}</m:annotation>
+                  </m:semantics>
+                  </m:math>, to jaka jest liczba kwantowa tego stanu wzbudzonego?</item>
+                </list>
+              </para>
+            </problem>
+          </exercise>
+        </section>
+      </content>
+      <glossary>
+        <definition id="fs-id1170903086192">
+          <term cmlnle:reference="poziomy energetyczne" class="no-emphasis">poziomy energetyczne (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">energy levels</term></foreign>)</term>
+            <meaning id="fs-id1170902913284">stany skwantowanej energii (zazwyczaj reprezentowane w postaci poziomych linii na poglądowych diagramach energetycznych)</meaning>
+          </definition>
+          <definition id="fs-id1170901501858">
+            <term cmlnle:reference="energetyczna liczba kwantowa" class="no-emphasis">energetyczna liczba kwantowa (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">energy quantum number</term></foreign>)</term>
+              <meaning id="fs-id1170903038152">indeks, który etykietuje dozwolone stany energetyczne</meaning>
+            </definition>
+            <definition id="fs-id1170901752654">
+              <term cmlnle:reference="energia stanu podstawowego" class="no-emphasis">energia stanu podstawowego (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">ground state energy</term></foreign>)</term>
+                <meaning id="fs-id1170901866093">najniższy stan energetyczny obiektu kwantowego</meaning>
+              </definition>
+              <definition id="fs-id1170901588593">
+                <term cmlnle:reference="nieskończona prostokątna studnia potencjału" class="no-emphasis">nieskończona prostokątna studnia potencjału (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">infinite square well</term></foreign>)</term>
+                  <meaning id="fs-id1170902734352">funkcja potencjału, która jest skończona (może w szczególnej sytuacji być wyzerowana) w określonym obszarze i nieskończona w kierunku dodatnim wszędzie poza nim</meaning>
+                </definition>
+                <definition id="fs-id1170901830751">
+                  <term cmlnle:reference="główna liczba kwantowa" class="no-emphasis">główna liczba kwantowa (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">principal quantum number</term></foreign>)</term>
+                    <meaning id="fs-id1170903047395">energetyczna liczba kwantowa</meaning>
+                  </definition>
+                  <definition id="fs-id1170902936473">
+                    <term cmlnle:reference="stan fali stojącej" class="no-emphasis">stan fali stojącej (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">standing wave state</term></foreign>)</term>
+                      <meaning id="fs-id1170902773054">stan stacjonarny, w którym części rzeczywista i urojona <m:math display="inline">
+                        <m:semantics>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">Ψ</m:mi>
+                            <m:mo>⁡</m:mo>
+                            <m:mfenced>
+                              <m:mi>x</m:mi>
+                              <m:mi>t</m:mi>
+                            </m:mfenced>
+                          </m:mrow>
+                          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}\apply (x,t)</m:annotation>
+                        </m:semantics>
+                        </m:math> oscylują jak fala stojąca (często modelowana przy użyciu sumy funkcji sinus i cosinus z odpowiednimi współczynnikami)</meaning>
+                      </definition>
+                      <definition id="fs-id1170901873020">
+                        <term cmlnle:reference="stan stacjonarny" class="no-emphasis">stan stacjonarny (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">stationary state</term></foreign>)</term>
+                          <meaning id="fs-id1170902923704">stan, w którym funkcja gęstości prawdopodobieństwa <m:math display="inline">
+                            <m:semantics>
+                              <m:msup>
+                                <m:mfenced close="|" open="|">
+                                  <m:mrow>
+                                    <m:mi mathvariant="normal">Ψ</m:mi>
+                                    <m:mo>⁡</m:mo>
+                                    <m:mfenced>
+                                      <m:mi>x</m:mi>
+                                      <m:mi>t</m:mi>
+                                    </m:mfenced>
+                                  </m:mrow>
+                                </m:mfenced>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \abs {\mathrm{Ψ}\apply (x,t)}^2</m:annotation>
+                            </m:semantics>
+                            </m:math> nie zmienia się w czasie </meaning>
+                          </definition>
+                        </glossary>
+                      </document>

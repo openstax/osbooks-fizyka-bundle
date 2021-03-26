@@ -1,0 +1,1826 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.8" module-id="new">
+  <title>Kondensatory i pojemność elektryczna</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67180</md:content-id>
+  <md:title>Kondensatory i pojemność elektryczna</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>wyjaśniać pojęcia kondensatora i jego pojemności elektrycznej;</item>
+<item>obliczać pojemność elektryczną układu przewodników.</item>
+</list></md:abstract>
+  <md:uuid>87236de2-26c9-40e9-87a4-e39e1cd2e37b</md:uuid>
+</metadata>
+
+<content>
+    <para id="fs-id1167134458211"><term class="no-emphasis" cmlnle:reference="kondensator">Kondensator</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">capacitor</term></foreign>) to urządzenie wykorzystywane do magazynowania ładunku elektrycznego i energii elektrycznej. Składa się z przynajmniej dwóch powierzchni przewodzących umieszczonych w pewnej odległości od siebie. Powierzchnie te czasem nazywa się elektrodami lub, precyzyjniej, okładkami kondensatora. Przestrzeń pomiędzy przewodnikami może wypełniać próżnia – wtedy kondensator nazywany jest próżniowym – zazwyczaj jednak znajduje się tam materiał izolujący zwany <term class="no-emphasis" cmlnle:reference="dielektryk">dielektrykiem</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">dielectric</term></foreign>) lub <term class="no-emphasis" cmlnle:reference="izolator">izolatorem</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">insulator</term></foreign>; więcej na temat dielektryków dowiemy się w następnych podrozdziałach). Ilość energii, jaką można zgromadzić w kondensatorze, określa wielkość nazywana <term class="no-emphasis" cmlnle:reference="pojemność elektryczna">pojemnością elektryczną</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">capacitance</term></foreign>), którą omówimy jeszcze w tym podrozdziale.</para>
+    <para id="fs-id1167134947463">Kondensatory mają rozmaite zastosowania: od redukowania szumu w odbiornikach radiowych do magazynowania energii w defibrylatorach. Typowe kondensatory używane komercyjnie składają się z dwóch powierzchni przewodzących umieszczonych w niewielkiej odległości od siebie, tak jak na <link target-id="CNX_UPhysics_25_01_Battery" cmlnle:case="locative"/>. Zazwyczaj między przewodnikami znajduje się dielektryk. Po podłączeniu nienaładowanego kondensatora do akumulatora różnica potencjałów na biegunach akumulatora powoduje przeniesienie  ładunku <m:math display="inline"><m:mi>Q</m:mi></m:math>  z okładki dodatniej na ujemną. Kondensator jako całość pozostaje obojętny elektrycznie, ale na okładkach wytwarzają się ładunki <m:math display="inline"><m:mo>+</m:mo><m:mi>Q</m:mi></m:math> i <m:math display="inline"><m:mo>−</m:mo><m:mi>Q</m:mi></m:math>.</para>
+    <figure id="CNX_UPhysics_25_01_Battery">
+      <media id="fs-id1167131103744" alt="Rysunek a przedstawia dwie równoległe płytki o powierzchni A umieszczone w odległości d. Każda płytka połączona jest z jednym z zacisków akumulatora. Rysunek b pokazuje zwinięte razem dwie płaszczyzny przewodnikowe i dwie płaszczyzny izolatora ułożone naprzemiennie. Każda płaszczyzna przewodnika połączona jest z jednym zaciskiem akumulatora. Na obydwu rysunkach ładunki wynoszą plus Q i minus Q dla płytek połączonych odpowiednio z dodatnimi i ujemnymi zaciskami akumulatora.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_25_01_Battery.jpg"/>
+      </media>
+      <caption>Oba przedstawione kondensatory były nienaładowane, a następnie zostały podłączone do akumulatorów. Teraz mają na okładkach ładunki wynoszące odpowiednio <m:math display="inline"><m:mo>+</m:mo><m:mi>Q</m:mi></m:math> i <m:math display="inline"><m:mo>−</m:mo><m:mi>Q</m:mi></m:math>. (a) Kondensator płaski składa się z dwóch równoległych, przeciwnie naładowanych płytek o powierzchni <m:math display="inline"><m:mi>S</m:mi></m:math> umieszczonych w odległości <m:math display="inline"><m:mi>d</m:mi></m:math> od siebie. (b) W zwiniętym kondensatorze przewodzące okładki rozdziela dielektryk.</caption>
+    </figure>
+    <para id="fs-id1167134951495">Układ złożony z dwóch identycznych, równolegle ustawionych płytek przewodzących nazywa się <term class="no-emphasis" cmlnle:reference="kondensator płaski">kondensatorem płaskim</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">parallel-plate capacitor</term></foreign>), <link target-id="CNX_UPhysics_25_01_Electric"/>. Natężenie pola elektrycznego w przestrzeni między okładkami wynosi <m:math display="inline"><m:mi>E</m:mi><m:mo>=</m:mo><m:mrow><m:mi>σ</m:mi><m:mo>∕</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:math>, gdzie <m:math display="inline"><m:mi>σ</m:mi></m:math> oznacza gęstość powierzchniową ładunku na okładce (a więc <m:math display="inline"><m:mi>σ</m:mi></m:math> to ładunek <m:math display="inline"><m:mi>Q</m:mi></m:math> podzielony przez powierzchnię <m:math display="inline"><m:mi>S</m:mi></m:math> okładki). Natężenie pola elektrycznego jest więc wprost proporcjonalne do <m:math display="inline"><m:mi>Q</m:mi></m:math>.</para>
+    <figure id="CNX_UPhysics_25_01_Electric">
+      <media id="fs-id1167131134807" alt="Dwie równoległe okładki kondensatora połączone z akumulatorem. Na okładce połączonej z biegunem dodatnim zbiera się ładunek dodatni o wartości plus Q symbolizowany przez znaki plus. Na okładce połączonej z biegunem ujemnym zbiera się ładunek ujemny o wartości minus Q symbolizowany przez znaki minus. Pomiędzy okładkami znajdują się równoległe linie pola elektrycznego skierowane od okładki naładowanej dodatnio do okładki naładowanej ujemnie, prostopadłe do powierzchni okładek. W obszarze poniżej okładek kondensatora widnieje wzór E proporcjonalne do Q.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_25_01_Electric.jpg"/>
+      </media>
+      <caption>Ładunki gromadzą się na powierzchni okładek kondensatora. Linie pola elektrycznego w kondensatorze płaskim prowadzą od ładunków dodatnich do ujemnych. Natężenie pola elektrycznego w przestrzeni pomiędzy okładkami jest wprost proporcjonalne do wartości zgromadzonego ładunku.</caption>
+    </figure>
+    <para id="fs-id1167134990056">Kondensatory o różnych właściwościach fizycznych (na przykład kształcie i wielkości okładek) mogą magazynować różne ilości ładunku po przyłożeniu takiego samego napięcia <m:math display="inline"><m:mi>U</m:mi></m:math>. Pojemność elektryczną kondensatora definiuje się jako stosunek maksymalnego ładunku <m:math display="inline"><m:mi>Q</m:mi></m:math>, który może zgromadzić się w kondensatorze, do napięcia <m:math display="inline"><m:mi>U</m:mi></m:math> przyłożonego do okładek. Innymi słowy, pojemność elektryczna jest maksymalnym ładunkiem przypadającym na <m:math display="inline"><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:math> napięcia</para>
+    <note id="fs-id1167131552160" class="equation-callout">
+      <equation id="fs-id1167134569412">
+        <m:math display="block">
+          <m:mi>C</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mi>Q</m:mi>
+              <m:mi>U</m:mi>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+    </note>
+    <para id="fs-id1167131111990">Jednostką pojemności elektrycznej w układzie SI jest <term class="no-emphasis">farad</term> (<m:math display="inline"><m:mi mathvariant="normal">F</m:mi></m:math>), nazwany tak na cześć <term class="no-emphasis" cxlxt:index="name" cxlxt:name="Faraday, Michael" cxlxt:born="1791" cxlxt:died="1867" cmlnle:reference="Faraday, Michael (1791–1867)">Michaela Faradaya (1791–1867)</term>. Jako że pojemność elektryczna wyraża się jako ładunek przypadający na jednostkę napięcia, to jeden farad jest równy jednemu kulombowi podzielonemu przez jeden wolt, czyli</para>
+    <equation id="fs-id1167134510238" class="unnumbered">
+      <m:math display="block">
+        <m:mrow>
+          <m:mn>1</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">F</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">C</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">V</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="fs-id1167134970169">Zgodnie z definicją kondensator o pojemności <m:math display="inline"><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">F</m:mi></m:math> jest w stanie zgromadzić ładunek <m:math display="inline"><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">C</m:mi></m:math> (to bardzo dużo), kiedy różnica potencjałów pomiędzy okładkami wynosi zaledwie <m:math display="inline"><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:math>. Pojemność <m:math display="inline"><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">F</m:mi></m:math> jest zatem wartością znaczną. Typowe pojemności elektryczne wahają się od pikofaradów (<m:math display="inline"><m:mrow><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">pF</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:msup><m:mn>10</m:mn><m:mrow><m:mo>−</m:mo><m:mn>12</m:mn></m:mrow></m:msup><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">F</m:mi></m:mrow></m:math>) przez mikrofarady (<m:math display="inline"><m:mrow><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">µF</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:msup><m:mn>10</m:mn><m:mrow><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow></m:msup><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">F</m:mi></m:mrow></m:math>) do milifaradów (<m:math display="inline"><m:mrow><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">mF</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:msup><m:mn>10</m:mn><m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:msup><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">F</m:mi></m:mrow></m:math>). Kondensatory mogą mieć różne kształty i wielkości (<link target-id="CNX_UPhysics_25_01_Capacitor"/>).</para>
+    <figure id="CNX_UPhysics_25_01_Capacitor">
+      <media id="fs-id1167131150957" alt="Zdjęcie różnego rodzaju kondensatorów. ">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_25_01_Capacitor.jpg"/>
+      </media>
+      <caption>Oto kilka typowych kondensatorów. Ich wielkość nie ma bezpośredniego przełożenia na pojemność elektryczną.</caption>
+    </figure>
+    <section id="fs-id1167131272086">
+      <title>Obliczanie pojemności elektrycznej</title>
+      <para id="fs-id1167134891215">Poniższa standardowa procedura pozwala obliczyć pojemność elektryczną pary zbliżonych do siebie powierzchni przewodzących.</para>
+      <note id="fs-id1167134927912" class="problem-solving">
+        <title>Strategia rozwiązywania zadań: obliczanie pojemności elektrycznej</title>
+        <list id="fs-id1167134491870" list-type="enumerated" number-style="arabic">
+          <item>Załóż, że kondensator ma ładunek <m:math display="inline"><m:mi>Q</m:mi></m:math>.</item>
+          <item>Oblicz natężenie pola elektrycznego <m:math display="inline"><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover></m:math> pomiędzy okładkami. Jeśli została zachowana symetria, rozwiązanie można uzyskać w oparciu o prawo Gaussa.</item>
+          <item>Oblicz różnicę potencjałów między przewodnikami na podstawie równania
+<equation id="fs-id1167134513086"><m:math display="block"><m:mrow><m:msub><m:mi>V</m:mi><m:mi>B</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>V</m:mi><m:mi>A</m:mi></m:msub></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>−</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mi>A</m:mi><m:mi>B</m:mi></m:munderover><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⋅</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mrow><m:mover><m:mi>l</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:math></equation>
+gdzie droga całkowania prowadzi od jednego przewodnika do drugiego. Wartość bezwzględna różnicy potencjałów wynosi więc <m:math display="inline"><m:mi>U</m:mi><m:mo>=</m:mo><m:mfenced open="|" close="|"><m:mrow><m:msub><m:mi>V</m:mi><m:mi>B</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>V</m:mi><m:mi>A</m:mi></m:msub></m:mrow></m:mfenced></m:math>.</item>
+          <item>Znając <m:math display="inline"><m:mi>U</m:mi></m:math>, oblicz pojemność elektryczną bezpośrednio z <link target-id="fs-id1167134569412" cmlnle:case="genitive"/>.</item>
+        </list>
+      </note>
+      <para id="fs-id1167131086015">Aby zaprezentować zastosowanie tej procedury, obliczymy teraz pojemność elektryczną dla kondensatorów: płaskiego, kulistego i walcowego. We wszystkich przypadkach zakładamy, że mamy do czynienia z kondensatorami próżniowymi (pustymi), a więc że między okładkami nie ma żadnego dielektryka.</para>
+    </section>
+    <section id="fs-id1167131131437">
+      <title>Kondensator płaski</title>
+      <para id="fs-id1167134947356">Kondensator płaski (<link target-id="CNX_UPhysics_25_01_Plate"/>) składa się z dwóch identycznych płytek przewodzących, z których każda ma powierzchnię <m:math display="inline"><m:mi>S</m:mi></m:math>, oddalonych od siebie o odległość <m:math display="inline"><m:mi>d</m:mi></m:math>. Po przyłożeniu do nich napięcia <m:math display="inline"><m:semantics><m:mi>U</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            U</m:annotation></m:semantics></m:math> na okładkach gromadzi się ładunek <m:math display="inline"><m:mi>Q</m:mi></m:math>, tak jak to zaprezentowano na rysunku. Zależność pojemności elektrycznej kondensatora od <m:math display="inline"><m:mi>S</m:mi></m:math> i <m:math display="inline"><m:mi>d</m:mi></m:math> możemy oszacować na podstawie analizy własności siły Coulomba. Wiemy, że siła działająca między ładunkami rośnie wraz ze wzrostem ich wartości, a maleje wraz ze wzrostem odległości między nimi. Można się spodziewać, że im płytki są większe, tym więcej mogą zgromadzić ładunku. Zatem <m:math display="inline"><m:mi>C</m:mi></m:math> powinno być większe dla wyższych wartości <m:math display="inline"><m:mi>S</m:mi></m:math>. Analogicznie im bliżej siebie znajdują się płytki, tym silniej przyciągają się ładunki o przeciwnych znakach. <m:math display="inline"><m:mi>C</m:mi></m:math> powinno więc rosnąć wraz z malejącą <m:math display="inline"><m:mi>d</m:mi></m:math>.</para>
+      <figure id="CNX_UPhysics_25_01_Plate">
+        <media id="fs-id1167131128862" alt="Rysunek przedstawia dwie równoległe okładki kondensatora umieszczone w odległości d. Każda z okładek połączona jest z jednym zaciskiem akumulatora o napięciu V. Linie pola elektrycznego pokazane są w postaci strzałek biegnących od okładki naładowanej dodatnio do okładki naładowanej ujemnie. Ładunek zgromadzony na okładkach wynosi odpowiednio plus Q i minus Q. Powierzchnia płytki oznaczona jest symbolem A.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_25_01_Plate.jpg"/>
+        </media>
+        <caption>W kondensatorze płaskim dwie okładki o identycznej powierzchni <m:math display="inline"><m:mi>S</m:mi></m:math> dzieli odległość <m:math display="inline"><m:mi>d</m:mi></m:math>.</caption>
+      </figure>
+      <para id="fs-id1167131145626">Zdefiniujmy gęstość powierzchniową <m:math display="inline"><m:mi>σ</m:mi></m:math> ładunku na okładce jako</para>
+      <equation id="fs-id1167134533701" class="unnumbered">
+        <m:math display="block">
+          <m:mi>σ</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mi>Q</m:mi>
+              <m:mi>A</m:mi>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1167134508478">Z poprzednich rozdziałów wiemy, że dla niewielkich <m:math display="inline"><m:mi>d</m:mi></m:math> pole elektryczne pomiędzy okładkami jest jednorodne (jeśli pominiemy efekty brzegowe na krawędziach okładek), a jego natężenie wynosi</para>
+      <equation id="fs-id1167134536296" class="unnumbered">
+        <m:math display="block">
+          <m:mi>E</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mi>σ</m:mi>
+              <m:msub>
+                <m:mi>ε</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1167134488660">gdzie stała <m:math display="inline"><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:math> to przenikalność elektryczna próżni równa <m:math display="inline"><m:mrow><m:mn>8,85</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mo>−</m:mo><m:mn>12</m:mn></m:mrow></m:msup></m:mrow><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mrow><m:mi mathvariant="normal">F</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>. Jednostka <m:math display="inline"><m:mi mathvariant="normal">F</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">m</m:mi></m:math> jest tożsama z wyrażeniem <m:math display="inline"><m:msup><m:mi mathvariant="normal">C</m:mi><m:mn>2</m:mn></m:msup><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced></m:math>. Ponieważ pole elektryczne <m:math display="inline"><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover></m:math> między okładkami jest jednorodne, różnica potencjałów wynosi</para>
+      <equation id="fs-id1167134642551" class="unnumbered">
+        <m:math display="block">
+          <m:mi>U</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mi>E</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>d</m:mi>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>σ</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>d</m:mi>
+            </m:mrow>
+            <m:msub>
+              <m:mi>ε</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>Q</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>d</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>ε</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>⁢</m:mo>
+                <m:mi>S</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1167131410607">Po podstawieniu powyższego wyniku do <link target-id="fs-id1167134569412" cmlnle:case="genitive"/> otrzymamy wzór na pojemność elektryczną kondensatora płaskiego w postaci</para>
+      <note id="fs-id1167131212119" class="equation-callout">
+        <equation id="fs-id1167131458057">
+          <m:math display="block">
+            <m:mi>C</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>Q</m:mi>
+              <m:mi>U</m:mi>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>Q</m:mi>
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>Q</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>d</m:mi>
+                  </m:mrow>
+                  <m:mo>∕</m:mo>
+                  <m:msub>
+                    <m:mi>ε</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:mi>S</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:msub>
+                <m:mi>ε</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mi>S</m:mi>
+                <m:mi>d</m:mi>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:math>
+        </equation>
+      </note>
+      <para id="fs-id1167134860956">Z powyższego wzoru wynika, że pojemność elektryczna kondensatora próżniowego zależy tylko od jego geometrii. Obowiązuje to w przypadku wszystkich kondensatorów, nie tylko kondensatorów płaskich: pojemność elektryczna nie zależy od <m:math display="inline"><m:mi>Q</m:mi></m:math> ani od <m:math display="inline"><m:mi>U</m:mi></m:math>. Kiedy zmienia się wartość ładunku, potencjał również ulega zmianie, tak aby stosunek <m:math display="inline"><m:mi>Q</m:mi><m:mo>∕</m:mo><m:mi>U</m:mi></m:math> pozostał stały.</para>
+      <example id="fs-id1167131269511">
+        <para id="eip-69">
+          <title>Pojemność elektryczna i ładunek zgromadzony w kondensatorze płaskim</title>
+        </para>
+        <list id="eip-idm432095072" list-type="enumerated" number-style="lower-alpha">
+          <item>Ile wynosi pojemność elektryczna pustego kondensatora płaskiego o metalowych okładkach o powierzchni <m:math display="inline"><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:math> umieszczonych w odległości <m:math display="inline"><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">mm</m:mi></m:math> od siebie?</item>
+          <item>Jaki ładunek zgromadzi się na kondensatorze po przyłożeniu napięcia <m:math display="inline"><m:mrow><m:mn>3</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>3</m:mn></m:msup></m:mrow><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:math>?</item>
+        </list>
+        <para id="fs-id1167134860924"><title>Strategia rozwiązania</title>Aby obliczyć pojemność elektryczną <m:math display="inline"><m:mi>C</m:mi></m:math>, wystarczy zastosować <link target-id="fs-id1167131458057" cmlnle:case="accusative"/>. Następnie można obliczyć ładunek na okładkach przy użyciu <link target-id="fs-id1167134569412" cmlnle:case="genitive"/>.</para>
+        <para id="fs-id1167134656730">
+          <title>Rozwiązanie</title>
+        </para>
+        <list id="fs-id1167131268517" list-type="enumerated" number-style="lower-alpha">
+          <item>Po wstawieniu podanych wartości do <link target-id="fs-id1167131458057" cmlnle:case="genitive"/> otrzymamy
+<equation id="fs-id1167584753120" class="unnumbered"><m:math display="block"><m:mi>C</m:mi><m:mo>=</m:mo><m:mrow><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mfrac><m:mi>S</m:mi><m:mi>d</m:mi></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>8,85</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mo>−</m:mo><m:mn>12</m:mn></m:mrow></m:msup></m:mrow><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mrow><m:mi mathvariant="normal">F</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mn>10</m:mn><m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:msup><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>8,85</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow></m:msup></m:mrow><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">F</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>8,85</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">nF</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:math></equation></item>
+          <item>Po przekształceniu <link target-id="fs-id1167134569412" cmlnle:case="genitive"/> i podstawieniu znanych wielkości otrzymamy
+<equation id="fs-id1167584685915" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:mi>Q</m:mi><m:mo>=</m:mo><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>U</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>8,85</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>-9</m:mn></m:msup></m:mrow><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">F</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mrow><m:mn>3</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>3</m:mn></m:msup></m:mrow><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>26,6</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">µC</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            Q = CU = \SI{8,85e-9}{\farad} \cdot \SI{3e3}{\volt} = \SI{26,6}{\micro\coulomb} \text{.}</m:annotation></m:semantics></m:math></equation> Tak niewielki wynik pokazuje, jak trudno skonstruować urządzenie o dużej pojemności elektrycznej.</item>
+        </list>
+        <para id="fs-id1167131554554"><title>Znaczenie</title>Obliczona wielkość ładunku jedynie nieznacznie przekracza wartości typowe dla zastosowań elektrostatycznych. Ze względu na to, że powietrze traci właściwości dielektryczne w polu elektrycznym o natężeniu około <m:math display="inline"><m:mn>3</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mrow><m:mi mathvariant="normal">MV</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>, w analizowanym kondensatorze nie można zgromadzić większego ładunku przez zwiększenie napięcia.</para>
+      </example>
+      <example id="fs-id1167131515938">
+        <para id="fs-id1167134447588"><title>Kondensator płaski o pojemności <m:math display="inline"><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">F</m:mi></m:math></title>Chcemy zbudować kondensator płaski o pojemności elektrycznej <m:math display="inline"><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">F</m:mi></m:math>. Jaką powierzchnię powinny mieć jego okładki, jeśli odległość między nimi ma wynosić <m:math display="inline"><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">mm</m:mi></m:math>?</para>
+        <para id="fs-id1167134664981"><title>Rozwiązanie</title>W wyniku przekształcenia <link target-id="fs-id1167131458057" cmlnle:case="genitive"/> otrzymujemy</para>
+        <equation id="fs-id1167134443117" class="unnumbered">
+          <m:math display="block">
+            <m:mi>S</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>C</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>d</m:mi>
+              </m:mrow>
+              <m:msub>
+                <m:mi>ε</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>1</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                    <m:mi mathvariant="normal">F</m:mi>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mn>3</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                </m:mrow>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>8,85</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mn>12</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                </m:mrow>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mrow>
+                  <m:mi mathvariant="normal">F</m:mi>
+                  <m:mo>∕</m:mo>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>1,1</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>8</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:msup>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="fs-id1167134442868"><title>Znaczenie</title>Każda z kwadratowych okładek musiałaby mieć przekątną o długości <m:math display="inline"><m:mn>10</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">km</m:mi></m:math>. Wysyłanie studentów do magazynu laboratorium po jednofaradowy kondensator płaski było popularnym dowcipem, dopóki nie zaczęło nudzić jego pracowników.</para>
+      </example>
+      <note id="fs-id1167134451826" class="check-understanding">
+        <exercise id="fs-id1167131226099">
+          <problem id="fs-id1167131509375">
+            <para id="fs-id1167134679676"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Pojemność kondensatora płaskiego wynosi <m:math display="inline"><m:mn>2</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">pF</m:mi></m:math>. Jaka jest odległość między okładkami, jeśli każda z nich ma powierzchnię <m:math display="inline"><m:mn>2,4</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:msup><m:mi mathvariant="normal">cm</m:mi><m:mn>2</m:mn></m:msup></m:math>?</para>
+          </problem>
+          <solution id="fs-id1167134863722">
+            <para id="fs-id1167134586027"><m:math display="inline"><m:mrow><m:mn>1,1</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:msup></m:mrow><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:math>.</para>
+          </solution>
+        </exercise>
+      </note>
+      <note id="fs-id1167134680374" class="check-understanding">
+        <exercise id="fs-id1167134666336">
+          <problem id="fs-id1167134863925">
+            <para id="fs-id1167134681977"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Wykaż, że <m:math display="inline"><m:mi>σ</m:mi><m:mo>∕</m:mo><m:mi>U</m:mi></m:math> i <m:math display="inline"><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub><m:mo>∕</m:mo><m:mi>d</m:mi></m:math> mają te same jednostki.</para>
+          </problem>
+        </exercise>
+      </note>
+    </section>
+    <section id="fs-id1167134514126">
+      <title>Kondensator kulisty</title>
+      <para id="fs-id1167134678000">Kolejnym typem kondensatora, którego pojemność elektryczną można łatwo obliczyć, jest kondensator kulisty (<link target-id="CNX_UPhysics_25_01_Spherical"/>), nazywany również sferycznym. Składa się on z dwóch koncentrycznych, przewodzących sfer o promieniach <m:math display="inline"><m:msub><m:mi>R</m:mi><m:mn>1</m:mn></m:msub></m:math> (powłoka wewnętrzna) oraz <m:math display="inline"><m:msub><m:mi>R</m:mi><m:mn>2</m:mn></m:msub></m:math> (powłoka zewnętrzna). Na nich gromadzi się równy co do wartości ładunek o przeciwnych znakach, odpowiednio <m:math display="inline"><m:mo>+</m:mo><m:mi>Q</m:mi></m:math> i <m:math display="inline"><m:mo>−</m:mo><m:mi>Q</m:mi></m:math>. Z symetrii budowy wynika, że linie pola elektrycznego między okładkami skierowane są radialnie na zewnątrz. Natężenie pola możemy obliczyć przy użyciu prawa Gaussa dla sferycznej powierzchni o promieniu <m:math display="inline"><m:mi>r</m:mi></m:math>, współśrodkowej z okładkami kondensatora. Całkowity ładunek zamknięty w powierzchni Gaussa wynosi <m:math display="inline"><m:mo>+</m:mo><m:mi>Q</m:mi></m:math>, a więc zachodzi równość</para>
+      <equation id="fs-id1167134443642" class="unnumbered">
+        <m:math display="block">
+          <m:semantics>
+            <m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:munder>
+                      <m:mo>∯</m:mo>
+                      <m:mi>S</m:mi>
+                    </m:munder>
+                    <m:mover>
+                      <m:mi>E</m:mi>
+                      <m:mo>→</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mover>
+                    <m:mi>n</m:mi>
+                    <m:mo>̂</m:mo>
+                  </m:mover>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                  <m:mi>S</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>E</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:mn>4</m:mn>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:mi>π</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mi>r</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mi>Q</m:mi>
+                  <m:msub>
+                    <m:mi>ε</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mfrac>
+                <m:mo>⁢</m:mo>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex">            \prefop{\u{222F}}_S \vec{E} \cdot \hat{n} \d S = E \cdot 4\pi r^2 = \frac{Q}{\epsilon_0} \text{.}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </equation>
+      <para id="fs-id1167131500461">Pole elektryczne pomiędzy przewodnikami wynosi więc</para>
+      <equation id="fs-id1167131211655" class="unnumbered">
+        <m:math display="block">
+          <m:mover>
+            <m:mi>E</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:mn>4</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi>ε</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⋅</m:mo>
+              <m:mfrac>
+                <m:mi>Q</m:mi>
+                <m:msup>
+                  <m:mi>r</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mfrac>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mo>̂</m:mo>
+            </m:mover>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1167131413372">Następnie podstawiamy <m:math display="inline"><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover></m:math> do <link target-id="fs-id1167134513086" cmlnle:case="genitive"/> i całkujemy w kierunku radialnym od jednej okładki do drugiej</para>
+      <equation id="fs-id1167134885802" class="unnumbered">
+        <m:math display="block">
+          <m:mi>U</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:munderover>
+              <m:mo>∫</m:mo>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:munderover>
+            <m:mrow>
+              <m:mover>
+                <m:mi>E</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:mover>
+                  <m:mi>l</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:munderover>
+              <m:mo>∫</m:mo>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:munderover>
+            <m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mrow>
+                        <m:mn>4</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>π</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:msub>
+                          <m:mi>ε</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>⋅</m:mo>
+                    <m:mfrac>
+                      <m:mi>Q</m:mi>
+                      <m:msup>
+                        <m:mi>r</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mfrac>
+                  </m:mrow>
+                  <m:mo>⁢</m:mo>
+                  <m:mover>
+                    <m:mi>r</m:mi>
+                    <m:mo>̂</m:mo>
+                  </m:mover>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mover>
+                  <m:mi>r</m:mi>
+                  <m:mo>̂</m:mo>
+                </m:mover>
+              </m:mrow>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:mi>r</m:mi>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mi>Q</m:mi>
+              <m:mrow>
+                <m:mn>4</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>π</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:msub>
+                  <m:mi>ε</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:munderover>
+                <m:mo>∫</m:mo>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:munderover>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                  <m:mi>r</m:mi>
+                </m:mrow>
+                <m:msup>
+                  <m:mi>r</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mfrac>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mfrac>
+                <m:mi>Q</m:mi>
+                <m:mrow>
+                  <m:mn>4</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi>ε</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⋅</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mfrac>
+                  <m:mo>−</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mfenced>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1167134881106">Różnica potencjałów pomiędzy okładkami w tym kondensatorze wynosi <m:math display="inline"><m:mi>U</m:mi><m:mo>=</m:mo><m:mrow><m:mo>−</m:mo><m:mfenced><m:mrow><m:msub><m:mi>V</m:mi><m:mn>2</m:mn></m:msub><m:mo>−</m:mo><m:msub><m:mi>V</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>V</m:mi><m:mn>1</m:mn></m:msub><m:mo>−</m:mo><m:msub><m:mi>V</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math>. Wynik ten podstawiamy do <link target-id="fs-id1167134569412" cmlnle:case="genitive"/>, aby obliczyć pojemność elektryczną kondensatora kulistego</para>
+      <note id="fs-id1167134666147" class="equation-callout">
+        <equation id="fs-id1167134817239">
+          <m:math display="block">
+            <m:mi>C</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>Q</m:mi>
+              <m:mi>U</m:mi>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>4</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi>ε</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>⁢</m:mo>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>−</m:mo>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mrow>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:math>
+        </equation>
+      </note>
+      <figure id="CNX_UPhysics_25_01_Spherical">
+        <media id="fs-id1167131171620" alt="Rysunek przedstawia przekrój kondensatora kulistego w formie dwóch koncentrycznych okręgów. Promień wewnętrznego okręgu wynosi R z indeksem dolnym 1, a promień zewnętrznego okręgu R z indeksem dolnym 2. Wewnętrzny okrąg gromadzi ładunki dodatnie oznaczone znakami plus, a okrąg zewnętrzny ładunki ujemne oznaczone znakami minus1. Ładunek zgromadzony na okładkach wynosi odpowiednio plus Q i minus Q. Linie pola elektrycznego skierowane są radialnie od okręgu wewnętrznego do zewnętrznego. Pośrodku znajduje się trzeci okrąg o promieniu r, zaznaczony linią przerywaną. Jest on podpisany jako powierzchnia Gaussa.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_25_01_spherical.jpg"/>
+        </media>
+        <caption>Kondensator kulisty składa się z dwóch koncentrycznych sfer przewodzących. Warto pamiętać, że w przewodnikach ładunek zawsze gromadzi się na powierzchni.</caption>
+      </figure>
+      <example id="fs-id1167131490652">
+        <para id="fs-id1167134972224"><title>Pojemność elektryczna izolowanej kuli</title>Obliczmy pojemność elektryczną pojedynczej izolowanej kuli przewodzącej o promieniu <m:math display="inline"><m:msub><m:mi>R</m:mi><m:mn>1</m:mn></m:msub></m:math> i porównajmy ją z <link target-id="fs-id1167134817239" cmlnle:case="instrumental"/> dla <m:math display="inline"><m:msub><m:mi>R</m:mi><m:mn>2</m:mn></m:msub><m:mo>⟶</m:mo><m:mi>∞</m:mi></m:math>.</para>
+        <para id="fs-id1167134685978"><title>Strategia rozwiązania</title>Zakładamy, że ładunek zgromadzony na powierzchni kuli wynosi <m:math display="inline"><m:mi>Q</m:mi></m:math>, i wykonujemy trzy działania opisane w strategii rozwiązywania zadań. Zakładamy również, że drugim przewodnikiem jest koncentryczna sfera o nieskończonym promieniu.</para>
+        <para id="fs-id1167131276418"><title>Rozwiązanie</title>Natężenie pola elektrycznego na zewnątrz izolowanej, przewodzącej kuli wyraża <link target-id="fs-id1167134513086"/>. Wartość różnicy potencjałów między powierzchnią izolowanej sfery a nieskończonością wynosi</para>
+        <equation id="fs-id1167131431010" class="unnumbered">
+          <m:math display="block">
+            <m:mi>U</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:munderover>
+                <m:mo>∫</m:mo>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mi>∞</m:mi>
+                </m:mrow>
+              </m:munderover>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>E</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                  <m:mover>
+                    <m:mi>l</m:mi>
+                    <m:mo>→</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mi>Q</m:mi>
+                <m:mrow>
+                  <m:mn>4</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi>ε</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:munderover>
+                  <m:mo>∫</m:mo>
+                  <m:msub>
+                    <m:mi>R</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mi>∞</m:mi>
+                  </m:mrow>
+                </m:munderover>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:msup>
+                          <m:mi>r</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mfrac>
+                      <m:mo>⁢</m:mo>
+                      <m:mover>
+                        <m:mi>r</m:mi>
+                        <m:mo>̂</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mo>⋅</m:mo>
+                    <m:mover>
+                      <m:mi>r</m:mi>
+                      <m:mo>̂</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mo>⁢</m:mo>
+                  <m:mrow>
+                    <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                    <m:mi>r</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mi>Q</m:mi>
+                <m:mrow>
+                  <m:mn>4</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi>ε</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:munderover>
+                  <m:mo>∫</m:mo>
+                  <m:msub>
+                    <m:mi>R</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mi>∞</m:mi>
+                  </m:mrow>
+                </m:munderover>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                    <m:mi>r</m:mi>
+                  </m:mrow>
+                  <m:msup>
+                    <m:mi>r</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mfrac>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mrow>
+                    <m:mn>4</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>π</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:msub>
+                      <m:mi>ε</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>⋅</m:mo>
+                <m:mfrac>
+                  <m:mi>Q</m:mi>
+                  <m:msub>
+                    <m:mi>R</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mfrac>
+              </m:mrow>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="fs-id1167131129082">Pojemność elektryczna izolowanej kuli wynosi więc</para>
+        <equation id="fs-id1167131455121" class="unnumbered">
+          <m:math display="block">
+            <m:mi>C</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>Q</m:mi>
+              <m:mi>U</m:mi>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mi>Q</m:mi>
+              <m:mo>⋅</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mn>4</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi>ε</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi>R</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mrow>
+                <m:mi>Q</m:mi>
+              </m:mfrac>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>π</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>ε</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="fs-id1167134564746"><title>Znaczenie</title>Ten sam wynik można uzyskać, przechodząc z <link target-id="fs-id1167134817239" cmlnle:case="genitive"/> do granicy dla <m:math display="inline"><m:msub><m:mi>R</m:mi><m:mn>2</m:mn></m:msub><m:mo>⟶</m:mo><m:mi>∞</m:mi></m:math>. Pojedyncza izolowana kula jest więc tożsama z kondensatorem kulistym, którego zewnętrzna okładka ma nieskończenie duży promień.</para>
+      </example>
+      <note id="fs-id1167131197454" class="check-understanding">
+        <exercise id="fs-id1167134717572">
+          <problem id="fs-id1167131136680">
+            <para id="fs-id1167131511691"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Promień zewnętrznej okładki kondensatora kulistego jest pięć razy większy od promienia jego wewnętrznej okładki. Jakie są wymiary kondensatora, jeśli jego pojemność elektryczna wynosi <m:math display="inline"><m:mn>5</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">pF</m:mi></m:math>?</para>
+          </problem>
+          <solution id="fs-id1167134664952">
+            <para id="fs-id1167131145368">Promień okładki wewnętrznej: <m:math display="inline"><m:mn>3,59</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">cm</m:mi></m:math>; promień okładki zewnętrznej: <m:math display="inline"><m:mn>17,98</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">cm</m:mi></m:math>.</para>
+          </solution>
+        </exercise>
+      </note>
+    </section>
+    <section id="fs-id1167131328595">
+      <title>Kondensator walcowy</title>
+      <para id="fs-id1167134891527">Kondensator walcowy, nazywany również cylindrycznym, składa się z dwóch współosiowych przewodzących cylindrów (<link target-id="CNX_UPhysics_25_01_Cylind"/>). Wewnętrzny cylinder o promieniu <m:math display="inline"><m:msub><m:mi>R</m:mi><m:mn>1</m:mn></m:msub></m:math> może być w środku pusty lub pełny. Zewnętrzny cylinder to powłoka o promieniu wewnętrznym <m:math display="inline"><m:msub><m:mi>R</m:mi><m:mn>2</m:mn></m:msub></m:math>. Zakładamy, że długość każdego z cylindrów wynosi <m:math display="inline"><m:mi>l</m:mi></m:math>, a na wewnętrznej i zewnętrznej okładce znajdują się ładunki odpowiednio <m:math display="inline"><m:mo>+</m:mo><m:mi>Q</m:mi></m:math> i <m:math display="inline"><m:mo>−</m:mo><m:mi>Q</m:mi></m:math>.</para>
+      <figure id="CNX_UPhysics_25_01_Cylind">
+        <media id="fs-id1167131257290" alt="Rysunek przedstawia fragment kondensatora walcowego w formie dwóch współosiowych cylindrów. Promień wewnętrznego cylindra wynosi R z indeksem dolnym 1, a promień zewnętrznego cylindra R z indeksem dolnym 2. Wewnętrzny cylinder gromadzi ładunki dodatnie oznaczone znakami plus, a zewnętrzny ładunki ujemne oznaczone znakami minus. Ładunek zgromadzony na okładkach wynosi odpowiednio plus Q i minus Q. Linie pola elektrycznego o natężeniu E skierowane są radialnie od cylindra wewnętrznego do zewnętrznego. Pośrodku znajduje się trzeci cylinder o promieniu r, zaznaczony linią przerywaną. Jest on podpisany jako powierzchnia Gaussa.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_25_01_cylind.jpg"/>
+        </media>
+        <caption>Kondensator walcowy składa się z dwóch współosiowych cylindrów z materiału przewodzącego. W tym przypadku zewnętrzna powierzchnia wewnętrznego cylindra jest naładowana dodatnio, a wewnętrzna powierzchnia zewnętrznego cylindra – ujemnie.</caption>
+      </figure>
+      <para id="fs-id1167134640707">Jeśli pominiemy efekty brzegowe, wektor natężenia pola elektrycznego występującego między przewodnikami jest skierowany radialnie na zewnątrz od osi cylindrów. Gdy zastosujemy powierzchnię Gaussa przedstawioną na <link target-id="CNX_UPhysics_25_01_Cylind" cmlnle:case="locative"/>, otrzymamy</para>
+      <equation id="fs-id1167131618621" class="unnumbered">
+        <m:math display="block">
+          <m:semantics>
+            <m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:munder>
+                      <m:mo>∯</m:mo>
+                      <m:mi>S</m:mi>
+                    </m:munder>
+                    <m:mover>
+                      <m:mi>E</m:mi>
+                      <m:mo>→</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mover>
+                    <m:mi>n</m:mi>
+                    <m:mo>̂</m:mo>
+                  </m:mover>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                  <m:mi>S</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>E</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:mi>π</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>r</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>l</m:mi>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mi>Q</m:mi>
+                  <m:msub>
+                    <m:mi>ε</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mfrac>
+                <m:mo>⁢</m:mo>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex">            \prefop{\u{222F}}_S \vec{E} \cdot \hat{n} \d S = E \cdot 2\pi r l = \frac{Q}{\epsilon_0} \text{.}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </equation>
+      <para id="fs-id1167134917262">Natężenie pola elektrycznego między cylindrami wynosi więc</para>
+      <equation id="fs-id1167134611428">
+        <m:math display="block">
+          <m:mover>
+            <m:mi>E</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi>ε</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⋅</m:mo>
+              <m:mfrac>
+                <m:mi>Q</m:mi>
+                <m:mrow>
+                  <m:mi>r</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>l</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mo>̂</m:mo>
+            </m:mover>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1167131183630">Symbol <m:math display="inline"><m:mover><m:mi>r</m:mi><m:mo>̂</m:mo></m:mover></m:math> oznacza wektor jednostkowy w kierunku radialnym dla walców. Po podstawieniu wyrażenia do <link target-id="fs-id1167134513086" cmlnle:case="genitive"/> otrzymamy różnicę potencjałów między cylindrami</para>
+      <equation id="fs-id1167581499439" class="unnumbered">
+        <m:math display="block">
+          <m:semantics>
+            <m:mtable displaystyle="true">
+              <m:mtr>
+                <m:mtd>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mi>U</m:mi>
+                      <m:mo id="Uc06003a6-5b20-49af-bd33-d61a4470cdda">=</m:mo>
+                      <m:mrow>
+                        <m:munderover>
+                          <m:mo>∫</m:mo>
+                          <m:msub>
+                            <m:mi>R</m:mi>
+                            <m:mn>1</m:mn>
+                          </m:msub>
+                          <m:msub>
+                            <m:mi>R</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msub>
+                        </m:munderover>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>E</m:mi>
+                            <m:mo>→</m:mo>
+                          </m:mover>
+                          <m:mo>⋅</m:mo>
+                          <m:mrow>
+                            <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                            <m:mover>
+                              <m:mi>l</m:mi>
+                              <m:mo>→</m:mo>
+                            </m:mover>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mi>Q</m:mi>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>π</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:msub>
+                              <m:mi>ε</m:mi>
+                              <m:mn>0</m:mn>
+                            </m:msub>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>l</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:munderover>
+                            <m:mo>∫</m:mo>
+                            <m:msub>
+                              <m:mi>R</m:mi>
+                              <m:mn>1</m:mn>
+                            </m:msub>
+                            <m:msub>
+                              <m:mi>R</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msub>
+                          </m:munderover>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mfrac>
+                                  <m:mn>1</m:mn>
+                                  <m:mi>r</m:mi>
+                                </m:mfrac>
+                                <m:mo>⁢</m:mo>
+                                <m:mover>
+                                  <m:mi>r</m:mi>
+                                  <m:mo>̂</m:mo>
+                                </m:mover>
+                              </m:mrow>
+                              <m:mo>⋅</m:mo>
+                              <m:mover>
+                                <m:mi>r</m:mi>
+                                <m:mo>̂</m:mo>
+                              </m:mover>
+                            </m:mrow>
+                            <m:mo>⁢</m:mo>
+                            <m:mrow>
+                              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                              <m:mi>r</m:mi>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mi>Q</m:mi>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>π</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:msub>
+                              <m:mi>ε</m:mi>
+                              <m:mn>0</m:mn>
+                            </m:msub>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>l</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:munderover>
+                            <m:mo>∫</m:mo>
+                            <m:msub>
+                              <m:mi>R</m:mi>
+                              <m:mn>1</m:mn>
+                            </m:msub>
+                            <m:msub>
+                              <m:mi>R</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msub>
+                          </m:munderover>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                              <m:mi>r</m:mi>
+                            </m:mrow>
+                            <m:mi>r</m:mi>
+                          </m:mfrac>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:semantics>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd>
+                  <m:mphantom>
+                    <m:semantics>
+                      <m:mrow>
+                        <m:mi>U</m:mi>
+                      </m:mrow>
+                    </m:semantics>
+                  </m:mphantom>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mo id="U9dc45ff3-ed65-43df-a1b1-de054142fd69">=</m:mo>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mi>Q</m:mi>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>π</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:msub>
+                              <m:mi>ε</m:mi>
+                              <m:mn>0</m:mn>
+                            </m:msub>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>l</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>⋅</m:mo>
+                        <m:mrow>
+                          <m:mo>ln</m:mo>
+                          <m:mrow>
+                            <m:mi>r</m:mi>
+                            <m:msubsup>
+                              <m:mo>|</m:mo>
+                              <m:msub>
+                                <m:mi>R</m:mi>
+                                <m:mn>1</m:mn>
+                              </m:msub>
+                              <m:msub>
+                                <m:mi>R</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msub>
+                            </m:msubsup>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mi>Q</m:mi>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>π</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:msub>
+                              <m:mi>ε</m:mi>
+                              <m:mn>0</m:mn>
+                            </m:msub>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>l</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>⋅</m:mo>
+                        <m:mrow>
+                          <m:mo>ln</m:mo>
+                          <m:mrow>
+                            <m:mfenced>
+                              <m:mfrac>
+                                <m:msub>
+                                  <m:mi>R</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msub>
+                                <m:msub>
+                                  <m:mi>R</m:mi>
+                                  <m:mn>1</m:mn>
+                                </m:msub>
+                              </m:mfrac>
+                            </m:mfenced>
+                            <m:mo>⁢</m:mo>
+                            <m:mtext>,</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{multiline} U &amp;= \int_{R_1}^{R_2} \vec{E} \cdot \d \vec{l} = \frac{Q}{2\pi \epsilon_0 l} \int_{R_1}^{R_2} \frac{1}{r}\hat{r} \cdot \hat{r} \d r = \frac{Q}{2\pi \epsilon_0 l} \int_{R_1}^{R_2} \frac{\d r}{r} \\ &amp;= \frac{Q}{2\pi \epsilon_0 l} \cdot \ln r \mid_{R_1}^{R_2} = \frac{Q}{2\pi \epsilon_0 l} \cdot \ln (\frac{R_2}{R_1}) \text{,} \end{multiline}</m:annotation>
+                  </m:semantics>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+            <m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml">
+              <m:semantics>
+                <m:mrow>
+                  <m:mi>U</m:mi>
+                  <m:mo id="prefix_Uc06003a6-5b20-49af-bd33-d61a4470cdda">=</m:mo>
+                  <m:mrow>
+                    <m:munderover>
+                      <m:mo>∫</m:mo>
+                      <m:msub>
+                        <m:mi>R</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:msub>
+                        <m:mi>R</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msub>
+                    </m:munderover>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>E</m:mi>
+                        <m:mo>→</m:mo>
+                      </m:mover>
+                      <m:mo>⋅</m:mo>
+                      <m:mrow>
+                        <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                        <m:mover>
+                          <m:mi>l</m:mi>
+                          <m:mo>→</m:mo>
+                        </m:mover>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mi>Q</m:mi>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>π</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:msub>
+                          <m:mi>ε</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>l</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>⁢</m:mo>
+                    <m:mrow>
+                      <m:munderover>
+                        <m:mo>∫</m:mo>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                      </m:munderover>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mfrac>
+                              <m:mn>1</m:mn>
+                              <m:mi>r</m:mi>
+                            </m:mfrac>
+                            <m:mo>⁢</m:mo>
+                            <m:mover>
+                              <m:mi>r</m:mi>
+                              <m:mo>̂</m:mo>
+                            </m:mover>
+                          </m:mrow>
+                          <m:mo>⋅</m:mo>
+                          <m:mover>
+                            <m:mi>r</m:mi>
+                            <m:mo>̂</m:mo>
+                          </m:mover>
+                        </m:mrow>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                          <m:mi>r</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mi>Q</m:mi>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>π</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:msub>
+                          <m:mi>ε</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>l</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>⁢</m:mo>
+                    <m:mrow>
+                      <m:munderover>
+                        <m:mo>∫</m:mo>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                      </m:munderover>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                          <m:mi>r</m:mi>
+                        </m:mrow>
+                        <m:mi>r</m:mi>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo indentalign="id" id="prefix_U9dc45ff3-ed65-43df-a1b1-de054142fd69" linebreak="newline" indenttarget="prefix_Uc06003a6-5b20-49af-bd33-d61a4470cdda">=</m:mo>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mi>Q</m:mi>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>π</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:msub>
+                          <m:mi>ε</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>l</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>⋅</m:mo>
+                    <m:mrow>
+                      <m:mo>ln</m:mo>
+                      <m:mrow>
+                        <m:mi>r</m:mi>
+                        <m:msubsup>
+                          <m:mo>|</m:mo>
+                          <m:msub>
+                            <m:mi>R</m:mi>
+                            <m:mn>1</m:mn>
+                          </m:msub>
+                          <m:msub>
+                            <m:mi>R</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msub>
+                        </m:msubsup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mi>Q</m:mi>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>π</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:msub>
+                          <m:mi>ε</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>l</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>⋅</m:mo>
+                    <m:mrow>
+                      <m:mo>ln</m:mo>
+                      <m:mrow>
+                        <m:mfenced>
+                          <m:mfrac>
+                            <m:msub>
+                              <m:mi>R</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msub>
+                            <m:msub>
+                              <m:mi>R</m:mi>
+                              <m:mn>1</m:mn>
+                            </m:msub>
+                          </m:mfrac>
+                        </m:mfenced>
+                        <m:mo>⁢</m:mo>
+                        <m:mtext>,</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{multiline} U &amp;= \int_{R_1}^{R_2} \vec{E} \cdot \d \vec{l} = \frac{Q}{2\pi \epsilon_0 l} \int_{R_1}^{R_2} \frac{1}{r}\hat{r} \cdot \hat{r} \d r = \frac{Q}{2\pi \epsilon_0 l} \int_{R_1}^{R_2} \frac{\d r}{r} \\ &amp;= \frac{Q}{2\pi \epsilon_0 l} \cdot \ln r \mid_{R_1}^{R_2} = \frac{Q}{2\pi \epsilon_0 l} \cdot \ln (\frac{R_2}{R_1}) \text{,} \end{multiline}</m:annotation>
+              </m:semantics>
+            </m:annotation-xml>
+          </m:semantics>
+        </m:math>
+      </equation>
+      <para id="fs-id1167131328046">gdzie <m:math display="inline"><m:semantics><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mover><m:mi>l</m:mi><m:mo>→</m:mo></m:mover></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \d \vec{l}</m:annotation></m:semantics></m:math> jest elementem drogi całkowania. Zatem pojemność elektryczna kondensatora walcowego wynosi</para>
+      <note id="fs-id1167131513740" class="equation-callout">
+        <equation id="fs-id1167131232459">
+          <m:math display="block">
+            <m:mi>C</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>Q</m:mi>
+              <m:mi>U</m:mi>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi>ε</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>l</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>ln</m:mo>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>R</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msub>
+                      <m:mo>∕</m:mo>
+                      <m:msub>
+                        <m:mi>R</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:math>
+        </equation>
+      </note>
+      <para id="fs-id1167131117928">Tak jak w pozostałych typach również w kondensatorze walcowym pojemność elektryczna zależy jedynie od jego geometrii. Istotnym zastosowaniem <link target-id="fs-id1167131232459" cmlnle:case="genitive"/> jest wyznaczanie pojemności elektrycznej przypadającej na jednostkę długości w <term class="no-emphasis" cmlnle:reference="kabel koncentryczny">kablu koncentrycznym</term>
+(ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">coaxial cable</term></foreign>), który często stosuje się do przesyłania zmiennych w czasie sygnałów elektrycznych. Składa się on z dwóch współosiowych przewodników cylindrycznych rozdzielonych izolatorem. (W rozważaniach przyjęliśmy, że między przewodnikami jest próżnia, jednak jeśli przestrzeń pomiędzy okładkami kondensatora wypełnia dielektryk, to fizyczna strona zagadnienia pozostaje jakościowo niemal niezmieniona). Taka budowa kabla zabezpiecza sygnał elektryczny powstający wewnątrz przewodnika przed ewentualnym wpływem zewnętrznego pola elektrycznego. W przewodnikach zewnętrznym i wewnętrznym prąd płynie w przeciwnych kierunkach, przy czym zewnętrzny przewodnik jest zazwyczaj uziemiony. Jak wynika z <link target-id="fs-id1167131232459" cmlnle:case="genitive"/>, pojemność kabla koncentrycznego przypadająca na jednostkę długości wynosi</para>
+      <equation id="fs-id1167131400654" class="unnumbered">
+        <m:math display="block">
+          <m:mfrac>
+            <m:mi>C</m:mi>
+            <m:mi>l</m:mi>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>π</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:msub>
+                  <m:mi>ε</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>ln</m:mo>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>∕</m:mo>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mfenced>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1167131274390">W praktycznych zastosowaniach należy pamiętać o tym, aby zawsze używać kabli o właściwym stosunku <m:math display="inline"><m:mi>C</m:mi><m:mo>∕</m:mo><m:mi>l</m:mi></m:math>. Oznacza to wybór odpowiednich promieni przewodników oraz dzielącego je dielektryka.</para><equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-203" class="unnumbered"><m:math/></equation>
+      <note id="fs-id1167134941083" class="check-understanding">
+        <exercise id="fs-id1167131462066">
+          <problem id="fs-id1167129962305">
+            <para id="fs-id1167129962307"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Po dostarczeniu ładunku <m:math display="inline"><m:mn>0,5</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">nC</m:mi></m:math> na okładki kondensatora walcowego zmierzono między nimi różnicę potencjałów i wyniosła ona <m:math display="inline"><m:mn>20</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:math>.
+<list id="eip-idm436503536" list-type="enumerated" number-style="lower-alpha"><item>Jaka jest pojemność elektryczna układu?</item><item>Jeśli cylindry mają długość <m:math display="inline"><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:math>, to jaki jest stosunek ich promieni?</item></list></para>
+          </problem>
+          <solution id="fs-id1167131428774">
+            <para id="fs-id1167134884072">a. <m:math display="inline"><m:mn>25</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">pF</m:mi></m:math>; b. <m:math display="inline"><m:mn>9</m:mn></m:math>:<m:math display="inline"><m:mn>2</m:mn></m:math>.</para>
+          </solution>
+        </exercise>
+      </note>
+      <para id="fs-id1167131223401">Na <link target-id="CNX_UPhysics_25_01_Capacitor" cmlnle:case="locative"/> przedstawiono kilka standardowych rodzajów kondensatorów. Zazwyczaj kondensator składa się z dwóch niewielkich kawałków folii metalowej rozdzielonych izolacją (patrz: część (b) <link target-id="CNX_UPhysics_25_01_Battery" cmlnle:case="locative"/>) i zamkniętych w powłoce ochronnej. Całość podłącza się do obwodów elektrycznych za pomocą dwóch metalowych wyprowadzeń. Izolatorami stosowanymi w kondensatorach są: mika, materiały ceramiczne, papier oraz nieprzywierająca powłoka teflonowa.</para>
+      <para id="fs-id1167131588580">Kolejnym powszechnie stosowanym typem kondensatora jest <term class="no-emphasis" cmlnle:reference="kondensator elektrolityczny">kondensator elektrolityczny</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">electrolytic capacitor</term></foreign>). Składa się on z utlenionego metalu zanurzonego w smarze przewodzącym. Najważniejszą zaletą kondensatorów elektrolitycznych jest ich stosunkowo duża pojemność elektryczna. W niektórych aluminiowych kondensatorach tego typu dochodzi ona nawet do <m:math display="inline"><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">F</m:mi></m:math>. Podczas ich używania należy zachować ostrożność, gdyż funkcjonują poprawnie tylko wtedy, kiedy napięcie na folii metalowej jest wyższe niż na powierzchni smaru przewodzącego. W przeciwnym przypadku warstwa tlenku pokrywająca przewodnik ulega zniszczeniu w reakcji elektrolizy. Tego rodzaju kondensatora nie można także podłączyć do źródła prądu przemiennego, gdyż generuje ono zmienną w czasie polaryzację, a więc do kondensatora przez połowę czasu docierałby prąd o niewłaściwej polaryzacji (patrz: <link class="target-chapter" document="m67230">Obwody prądu zmiennego</link>).</para>
+      <para id="fs-id1167131337304"><term class="no-emphasis" cmlnle:reference="kondensator zmienny">Kondensator zmienny</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">variable air capacitor</term></foreign>) (<link target-id="CNX_UPhysics_25_01_Variable"/>), nazywany też nastawnym lub strojeniowym, składa się z dwóch zespołów równoległych płytek. Jeden z nich jest nieruchomy (nazywa się go „stojanem” bądź „statorem”), drugi zaś (określany „rotorem”) jest przytwierdzony do obrotowego wału. Obracając wał, można zmieniać stopień nachodzenia płytek na siebie i w ten sposób regulować pojemność elektryczną układu. Mechanizm ten wykorzystywany jest w nadajnikach i odbiornikach radiowych. Zawsze kiedy nastawiamy w samochodzie radio na ulubioną stację, powinniśmy pamiętać o pojemności elektrycznej.</para>
+      <figure id="CNX_UPhysics_25_01_Variable">
+        <media id="fs-id1167134588456" alt="Zdjęcie przedstawia wnętrze urządzenia elektronicznego. Jednym z jego elementów jest kondensator zmienny, składający się z dwóch zespołów równoległych płytek. Jeden z zespołów jest nieruchomy i podpisany jest „stator”, zaś drugi może się obracać i podpisany jest „rotor”. Płytki statora i rotora są ułożone naprzemiennie.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_25_01_variable.jpg"/>
+        </media>
+        <caption>W kondensatorze zmiennym pojemność elektryczną można regulować, zmieniając powierzchnię efektywną okładek. Źródło: modyfikacja pracy Robbie’ego Sproule’a</caption>
+      </figure>
+      <para id="fs-id1167134567944">Na <link target-id="CNX_UPhysics_25_01_Circuitrep" cmlnle:case="locative"/> przedstawiono symbole różnych typów kondensatorów stosowane na schematach układów elektrycznych. Zwróćmy uwagę, że przypominają one przekrój przez kondensator płaski. Najczęściej stosowany jest symbol przedstawiony na <link target-id="CNX_UPhysics_25_01_Circuitrep" cmlnle:case="locative"/> (a). W części (b) <link target-id="CNX_UPhysics_25_01_Circuitrep" cmlnle:case="genitive"/> znajduje się symbol kondensatora elektrolitycznego, przy czym zagięta okładka oznacza wyprowadzenie podłączane do bieguna ujemnego akumulatora. Na <link target-id="CNX_UPhysics_25_01_Circuitrep" cmlnle:case="locative"/> (c) przedstawiono symbol kondensatora zmiennego. </para>
+      <figure id="CNX_UPhysics_25_01_Circuitrep">
+        <media id="fs-id1167131443980" alt="Rysunek przedstawia trzy symbole kondensatorów. Rysunek a przedstawia symbol składający się z dwóch leżących na boku liter T skierowanych ku sobie górną stroną. Jest to ogólny symbol kondensatora, przypominający przekrój przez kondensator płaski. Rysunek b przedstawia symbol kondensatora elektrolitycznego. Symbol ten różni się od poprzedniego zagiętą linią symbolizującą jedną z okładek kondensatora. Rysunek c przedstawia symbol kondensatora zmiennego, czyli symbol z Rysunku a przecięty po przekątnej strzałką.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_25_01_circuitrep.jpg"/>
+        </media>
+        <caption>Symbole trzech rodzajów kondensatorów stosowane na schematach układów elektrycznych. (a) Najpowszechniej stosowany symbol. (b) Symbol kondensatora elektrolitycznego. (c) Symbol kondensatora zmiennego.</caption>
+      </figure>
+      <para id="fs-id1167134962375">Ciekawy przykład działania mechanizmu kondensatora zachodzi na poziomie biologii komórkowej, w błonie cytoplazmatycznej żywych komórek (<link target-id="CNX_UPhysics_25_01_Membrane"/>). Odgradza ona komórkę od otoczenia, lecz przepuszcza do środka i na zewnątrz określone jony. Różnica potencjałów po dwóch stronach błony wynosi około <m:math display="inline"><m:mn>70</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">mV</m:mi></m:math>, a jej grubość od <m:math display="inline"><m:mn>7</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">nm</m:mi></m:math> do <m:math display="inline"><m:mn>10</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">nm</m:mi></m:math>. Jeśli potraktujemy błonę komórkową jako mikroskopijny kondensator, będziemy mogli wyliczyć minimalne natężenie pola elektrycznego na jej „okładkach” </para>
+      <equation id="eip-idm188718096" class="unnumbered">
+        <m:math display="block">
+          <m:semantics>
+            <m:mrow>
+              <m:mrow>
+                <m:mi>E</m:mi>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mi>U</m:mi>
+                  <m:mi>d</m:mi>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>70</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mn>-3</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo lspace="0px" rspace="verythinmathspace">⁢</m:mo>
+                    <m:mi mathvariant="normal">V</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>10</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mn>-9</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo lspace="0px" rspace="verythinmathspace">⁢</m:mo>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>7</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mn>6</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo lspace="0px" rspace="verythinmathspace">⁢</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">V</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mn>7</m:mn>
+                  <m:mo lspace="0px" rspace="verythinmathspace">⁢</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">MV</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>&gt;</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:mo lspace="0px" rspace="verythinmathspace">⁢</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">MV</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex">            E = \frac{U}{d} = \frac{\SI{70e-3}{\volt}}{\SI{10e-9}{\metre}} = \SI{7e6}{\volt\per\metre} = \SI{7}{\mega\volt\per\metre} &gt; \SI{3}{\mega\volt\per\metre} \text{.}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </equation>
+      <para id="fs-id1167131120285">Takie pole elektryczne jest na tyle silne, by wytworzyć w powietrzu iskrę.</para>
+      <figure id="CNX_UPhysics_25_01_Membrane">
+        <media id="fs-id1167131358206" alt="Rysunek przedstawia przekrój przez błonę komórkową. Na jej wewnętrznej granicy gromadzą się ładunki ujemne oznaczone znakami minus, zaś na jej zewnętrznej granicy ładunki dodatnie oznaczone znakami plus. Wokół błony znajdują się aniony chlorkowe wnikające do środka. Strzałkami zaznaczono, że siła Coulomba skierowana jest dla nich na zewnątrz komórki, a dyfuzja do wewnątrz. Drugim typem jonów są kationy potasowe wypychane na zewnątrz komórki. Strzałkami zaznaczono, że siła Coulomba skierowana jest do wewnątrz komórki, a dyfuzja – na zewnątrz. Po obu stronach błony znajdują się również kationy sodowe. Strzałkami zaznaczono, że zarówno siła Coulomba, jak i dyfuzja skierowane są dla nich do wewnątrz komórki, jednak błona komórkowa jest dla jonów sodowych nieprzepuszczalna. ">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_25_01_membrane.jpg"/>
+        </media>
+        <caption>Stężenia jonów są różne po obu stronach półprzepuszczalnej błony komórkowej. Dzięki mechanizmowi dyfuzji jony K<sup>+</sup> (potas) i Cl<sup>-</sup> (chlor) przemieszczają się we wskazanych kierunkach, dopóki siła Coulomba nie zatrzyma przepływu. W ten sposób po zewnętrznej stronie błony gromadzi się ładunek dodatni, a po wewnętrznej – ładunek ujemny, co wytwarza różnicę potencjałów na błonie komórkowej. Zazwyczaj nie przepuszcza ona jonów sodu Na<sup>+</sup>.</caption>
+      </figure>
+      <note id="fs-id1167131498119" class="media-2">
+        <para id="fs-id1167134964435">Odwiedź stronę <link url="https://openstaxcollege.org/l/21phetcapacitor">PhET Explorations: Capacitor Lab</link>, aby dowiedzieć się więcej o działaniu kondensatorów. Zbadaj wpływ zmiany rozmiaru okładek oraz umieszczenia między nimi izolatora na pojemność elektryczną. Zmieniaj napięcie i przyglądaj się, jak na okładkach gromadzą się ładunki. Obserwuj pole elektryczne w kondensatorze. Zmierz napięcie i natężenie pola elektrycznego.</para>
+      </note>
+    </section>
+    <section id="fs-id1167131619390" class="key-concepts">
+      <title>Podsumowanie</title>
+      <list id="fs-id1167131201116" list-type="bulleted" bullet-style="bullet">
+        <item>Kondensator to urządzenie zdolne do magazynowania ładunku elektrycznego i energii elektrycznej. Ilość ładunku, którą można zgromadzić na kondensatorze próżniowym, zależy od dwóch czynników: przyłożonego napięcia i właściwości kondensatora, to znaczy jego wymiarów i geometrii.</item>
+        <item>Pojemność elektryczna kondensatora to parametr informujący o tym, jaki ładunek przypada na jednostkę różnicy potencjałów między jego okładkami. Pojemność elektryczna układu przewodników zależy od ich wzajemnego położenia oraz od właściwości fizycznych izolatora wypełniającego przestrzeń pomiędzy przewodnikami. Jednostką pojemności elektrycznej jest farad, przy czym <m:math display="inline"><m:mrow><m:mn>1</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">F</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>1</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">C</m:mi></m:mrow><m:mo>∕</m:mo><m:mn>1</m:mn></m:mrow><m:mo>⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:mrow></m:math>.</item>
+      </list>
+    </section>
+    <section id="fs-id1167131544231" class="review-conceptual-questions">
+      <title>Pytania </title>
+      <exercise id="fs-id1167134951014">
+        <problem id="fs-id1167134951016">
+          <para id="fs-id1167131231579">Czy pojemność elektryczna urządzenia zależy od przyłożonego napięcia? Czy zależy od zgromadzonego ładunku?</para>
+        </problem>
+        <solution id="fs-id1167134713174">
+          <para id="fs-id1167134713176">Nie; nie.</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167134861259">
+        <problem id="fs-id1167134686954">
+          <para id="fs-id1167134686956">Co należy zrobić, aby zwiększyć pojemność elektryczną kondensatora płaskiego: zbliżyć czy oddalić jego okładki?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1167131619977">
+        <problem id="fs-id1167134878329">
+          <para id="fs-id1167131580819">Czy zdanie: dla kondensatora o nienaładowanych okładkach pojemność elektryczna wynosi zero, jest prawdziwe, czy fałszywe?</para>
+        </problem>
+        <solution id="fs-id1167134640643">
+          <para id="fs-id1167134593234">Fałsz.</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167131110835">
+        <problem id="fs-id1167134467414">
+          <para id="fs-id1167131523529">Jeśli okładki kondensatora mają różne powierzchnie, to czy po podłączeniu do akumulatora zbiorą się na nich takie same ładunki?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1167131400513">
+        <problem id="fs-id1167131400516">
+          <para id="fs-id1167131205196">Czy pojemność elektryczna kondensatora sferycznego zależy od tego, która z okładek jest naładowana dodatnio, a która ujemnie?</para>
+        </problem>
+        <solution id="fs-id1167131589202">
+          <para id="fs-id1167131589204">Nie.</para>
+        </solution>
+      </exercise>
+    </section>
+    <section id="fs-id1167131113798" class="review-problems">
+      <title>Zadania</title>
+      <exercise id="fs-id1167131409222">
+        <problem id="fs-id1167134946212">
+          <para id="fs-id1167134922069">Jaki ładunek zgromadzi się na okładkach kondensatora o pojemności <m:math display="inline"><m:mn>180</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">µF</m:mi></m:math> po przyłożeniu napięcia <m:math display="inline"><m:mn>120</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:math>?</para>
+        </problem>
+        <solution id="fs-id1167131204478">
+          <para id="fs-id1167131204480"><m:math display="inline"><m:mn>21,6</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">mC</m:mi></m:math>.</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167134823022">
+        <problem id="fs-id1167134734984">
+          <para id="fs-id1167134734986">Jaki ładunek zgromadzi się na okładkach kondensatora o pojemności <m:math display="inline"><m:mn>8</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">pF</m:mi></m:math> po przyłożeniu napięcia <m:math display="inline"><m:mn>5,5</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:math>?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1167131581152">
+        <problem id="fs-id1167134812768">
+          <para id="fs-id1167134812770">Oblicz napięcie przyłożone do kondensatora o pojemności <m:math display="inline"><m:mn>2</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">µF</m:mi></m:math>, na którego okładkach zgromadził się ładunek <m:math display="inline"><m:mn>3,1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">C</m:mi></m:math>.</para>
+        </problem>
+        <solution id="fs-id1167131259354">
+          <para id="fs-id1167131499293"><m:math display="inline"><m:mn>1,55</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:math>.</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167134700943">
+        <problem id="fs-id1167134700945">
+          <para id="fs-id1167130006724">Jakie napięcie należy przyłożyć do kondensatora o pojemności <m:math display="inline"><m:mn>8</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">nF</m:mi></m:math>, aby na okładkach zgromadził się ładunek <m:math display="inline"><m:mn>0,16</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">mC</m:mi></m:math>?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1167131181095">
+        <problem id="fs-id1167131181097">
+          <para id="fs-id1167134812725">Jaką pojemność elektryczną musi mieć kondensator, aby przy napięciu <m:math display="inline"><m:mn>120</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:math> na jego okładkach zgromadził się ładunek <m:math display="inline"><m:mn>3</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">µC</m:mi></m:math>?</para>
+        </problem>
+        <solution id="fs-id1167134569405">
+          <para id="fs-id1167131141374"><m:math display="inline"><m:mn>25</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">nF</m:mi></m:math>.</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167131232354">
+        <problem id="fs-id1167131232356">
+          <para id="fs-id1167131126966">Jaka jest pojemność elektryczna czaszy generatora Van de Graaffa, jeśli gromadzi się na niej ładunek <m:math display="inline"><m:mn>9</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">mC</m:mi></m:math> przy napięciu <m:math display="inline"><m:mn>12</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">MV</m:mi></m:math>?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1167131183747">
+        <problem id="fs-id1167131183749">
+          <para id="fs-id1167134535829">Okładki pustego kondensatora płaskiego o pojemności <m:math display="inline"><m:mn>5</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">pF</m:mi></m:math> znajdują się w odległości <m:math display="inline"><m:mn>2</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">mm</m:mi></m:math> od siebie. Jaka jest powierzchnia każdej z nich?</para>
+        </problem>
+        <solution id="fs-id1167134758897">
+          <para id="fs-id1167134758899"><m:math display="inline"><m:mrow><m:mn>1,1</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:msup></m:mrow><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:math>.</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167131255736">
+        <problem id="fs-id1167134896007">
+          <para id="fs-id1167134896009">Okładki kondensatora próżniowego o pojemności <m:math display="inline"><m:mn>60</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">pF</m:mi></m:math> mają powierzchnię <m:math display="inline"><m:mn>0,01</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:math>. Ile wynosi odległość między nimi?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1167134512894">
+        <problem id="fs-id1167131238303">
+          <para id="fs-id1167131190760">Układ równoległych płytek przewodzących ma pojemność elektryczną <m:math display="inline"><m:mn>5</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">µF</m:mi></m:math>. Jaki ładunek należy do nich dodać, aby różnica potencjałów między nimi wzrosła o <m:math display="inline"><m:mn>100</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:math>?</para>
+        </problem>
+        <solution id="fs-id1167131218450">
+          <para id="fs-id1167131218452"><m:math display="inline"><m:mn>500</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">µC</m:mi></m:math>.</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167134520392">
+        <problem id="fs-id1167134945357">
+          <para id="fs-id1167131274486">Oblicz pojemność elektryczną Ziemi, zakładając, że jest ona przewodzącą kulą o promieniu <m:math display="inline"><m:mn>6400</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">km</m:mi></m:math>.</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1167134966959">
+        <problem id="fs-id1167131473146">
+          <para id="fs-id1167131457571">Pojemność elektryczna kondensatora walcowego na jednostkę długości wynosi <m:math display="inline"><m:mn>20</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mrow><m:mi mathvariant="normal">pF</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>. Oblicz, jaki jest stosunek promieni cylindrycznych okładek.</para>
+        </problem>
+        <solution id="fs-id1167134567012">
+          <para id="fs-id1167131257090">1:16.</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167134511144">
+        <problem id="fs-id1167134511146">
+          <para id="fs-id1167131211775">Próżniowy kondensator płaski ma pojemność <m:math display="inline"><m:mn>20</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">µF</m:mi></m:math>. Jaki ładunek musi uciec z jego okładek, aby napięcie pomiędzy nimi zmniejszyło się o <m:math display="inline"><m:mn>100</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:math>?</para>
+        </problem>
+      </exercise>
+    </section>
+  </content>
+  <glossary>
+    <definition id="fs-id1167134725627">
+      <term class="no-emphasis" cmlnle:reference="pojemność elektryczna">pojemność elektryczna (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">capacitance</term></foreign>)</term>
+      <meaning id="fs-id1167131151276">ilość ładunku przypadająca na <m:math display="inline"><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:math> napięcia</meaning>
+    </definition>
+    <definition id="fs-id1167134884739">
+      <term class="no-emphasis" cmlnle:reference="kondensator">kondensator (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">capacitor</term></foreign>)</term>
+      <meaning id="fs-id1167134515054">urządzenie magazynujące ładunek i energię elektryczną</meaning>
+    </definition>
+    <definition id="fs-id1167131133162">
+      <term class="no-emphasis" cmlnle:reference="dielektryk">dielektryk (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">dielectric</term></foreign>)</term>
+      <meaning id="fs-id1167134884594">substancja izolująca używana do wypełniania przestrzeni pomiędzy okładkami kondensatora</meaning>
+    </definition>
+    <definition id="fs-id1167134626997">
+      <term class="no-emphasis" cmlnle:reference="kondensator płaski">kondensator płaski (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">parallel-plate capacitor</term></foreign>)</term>
+      <meaning id="fs-id1167134941924">układ dwóch identycznych, równoległych płyt przewodzących ustawionych w pewnej odległości od siebie</meaning>
+    </definition>
+  </glossary>
+</document>

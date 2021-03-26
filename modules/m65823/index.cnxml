@@ -1,0 +1,2203 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Równanie Bernoulliego</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65823</md:content-id>
+  <md:title>Równanie Bernoulliego</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>określać znaczenie składników równania Bernoulliego;</item>
+<item>wiązać równanie Bernoulliego z zasadą zachowania energii;</item>
+<item>wyprowadzać zasadę Bernoulliego z równania Bernoulliego;</item>
+<item>wykonywać obliczenia, posługując się zasadą Bernoulliego;</item>
+<item>opisywać zastosowania zasady Bernoulliego.</item>
+</list></md:abstract>
+  <md:uuid>75017df0-f2c4-41e0-88d1-94b2d54d87a0</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1170960194117">Jak pokazaliśmy na <link document="m65822" target-id="CNX_UPhysics_Figure_14_05_TubeNarrow" cmlnle:case="genitive"/>, gdy płyn wpływa do węższego kanału, jego prędkość rośnie. Oznacza to, że jego energia kinetyczna również wzrasta. Jest to związane z pracą wykonaną nad płynem podczas wtłaczania go do kanału. Pracę wykonuje również siła grawitacji, jeżeli płyn zmienia swoje położenie pionowe.</para><para id="fs-id1170959731449">Gdy kanał się zwęża, pojawia się różnica ciśnień. Powoduje powstanie to siły wypadkowej, ponieważ iloczyn ciśnienia i pola powierzchni równy jest sile, i to właśnie ona wykonuje pracę. Przypomnijmy sobie twierdzenie o pracy i energii:</para><equation id="fs-id1170959784297" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>W</m:mi>
+          <m:mrow>
+            <m:mtext>wyp</m:mtext>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>m</m:mi>
+        <m:msup>
+          <m:mi>v</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>−</m:mo>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>m</m:mi>
+        <m:msubsup>
+          <m:mi>v</m:mi>
+          <m:mn>0</m:mn>
+          <m:mn>2</m:mn>
+        </m:msubsup>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1170957564091">Wykonana praca zwiększa energię kinetyczną płynu. W wyniku tego ciśnienie spada w szybko poruszającym się płynie niezależnie od tego, czy jest on zawarty w rurze, czy w innym przewodzie.</para><para id="fs-id1170959698096">Można wymienić wiele przypadków, gdy ciśnienie spada w szybko poruszającym się płynie. Na przykład zasłony prysznicowe mają ten nieprzyjemny zwyczaj, że wybrzuszają się w kierunku prysznica, gdy jest on włączony. Powodem jest to, że szybki strumień wody i powietrza wytwarza region niskiego ciśnienia wewnątrz osłoniętego zasłonami obszaru, podczas gdy ciśnienie po drugiej stronie nadal równe jest ciśnieniu atmosferycznemu. Ta różnica ciśnień powoduje powstanie siły wypadkowej, wpychającej zasłony do środka. Podobnie, gdy samochód wyprzedza ciężarówkę na autostradzie, kierowcy mają wrażenie, że oba samochody się przyciągają. Powód jest taki sam jak poprzednio: duża prędkość powietrza pomiędzy samochodem a ciężarówką powoduje powstanie obszaru niższego ciśnienia pomiędzy pojazdami, przez co oba są wpychane do środka przez ciśnienie na zewnątrz (<link target-id="CNX_UPhysics_Figure_14_06_TruckCar"/>). Efekt ten zaobserwowano już w połowie XIX w., kiedy to stwierdzono, że wymijające się pociągi, poruszające się w przeciwnych kierunkach, przechylają się niebezpiecznie ku sobie.</para><figure id="CNX_UPhysics_Figure_14_06_TruckCar"><media id="fs-id1170957588874" alt="Ilustracja przedstawia widok z góry samochodu wyprzedzającego ciężarówkę na autostradzie. Powietrze pomiędzy pojazdami porusza się w wąskim kanale, co prowadzi do wzrostu prędkości od v1 do v2, co z kolei pociąga spadek ciśnienia pomiędzy pojazdami od Po do Pi.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_06_TruckCar.jpg"/>
+    </media>
+    
+<caption>Widok z góry samochodu wyprzedzającego ciężarówkę na autostradzie. Powietrze pomiędzy pojazdami porusza się w węższym kanale, więc jego prędkość wzrasta (<m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+      </m:mrow>
+    </m:math> jest większe niż <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:mrow>
+  </m:math>), co sprawia, że ciśnienie pomiędzy nimi spada (<m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mtext>i</m:mtext>
+    </m:msub>
+  </m:mrow>
+</m:math> jest mniejsze niż <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>p</m:mi>
+    <m:mtext>o</m:mtext>
+  </m:msub>
+  <m:mo stretchy="false">)</m:mo>
+  <m:mtext>.</m:mtext>
+</m:mrow>
+</m:math> Większe ciśnienie po zewnętrznych stronach samochodów pcha je ku sobie.</caption></figure><section id="fs-id1170957582509">
+  <title>Zachowanie energii i równanie Bernoulliego</title><para id="fs-id1170959699159">Zastosowanie zasady zachowania energii do przepływu laminarnego bez tarcia doprowadziło do odkrycia bardzo użytecznego związku między ciśnieniem a prędkością przepływu w płynach. Związek ten nazywamy <term cmlnle:reference="równanie Bernoulliego" class="no-emphasis">równaniem Bernoulliego</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Bernoulli’s equation</term></foreign>), od nazwiska  <term cxlxt:index="name" cxlxt:name="Bernoulli, Daniel" cxlxt:born="1700" cxlxt:died="1782" cmlnle:reference="Bernoulli, Daniel (1700–1782)" class="no-emphasis">Daniela Bernoulliego (1700–1782)</term>, który opublikował wyniki swoich badań nad ruchem płynów w książce <emphasis effect="italics">Hydrodynamica</emphasis> (1738).</para><para id="fs-id1170960164239">Rozważmy nieściśliwy płyn przepływający przez rurę o zmiennej średnicy i wysokości, jak pokazano na <link target-id="CNX_UPhysics_Figure_14_06_Bernoullis" cmlnle:case="locative"/>. Indeksy 1 i 2 na rysunku oznaczają dwie lokalizacje w rurze i przedstawiają zależność między polami przekrojów <m:math>
+      <m:mi>A</m:mi>
+    </m:math>, prędkością przepływu <m:math>
+    <m:mi>v</m:mi>
+  </m:math>, wysokością nad ziemią <m:math>
+  <m:mi>y</m:mi>
+</m:math> oraz ciśnieniem <m:math>
+  <m:mi>p</m:mi>
+</m:math> w każdym punkcie. Zakładamy tutaj, że gęstość w obu punktach jest taka sama – z tego powodu oznaczamy ją jako <m:math>
+<m:mi>ρ</m:mi>
+</m:math> bez indeksów i, ponieważ płyn jest nieściśliwy, objętości zacienionych obszarów muszą być równe.</para><figure id="CNX_UPhysics_Figure_14_06_Bernoullis"><media id="fs-id1170960183967" alt="Ilustracja przedstawia schemat płynu przepływającego w S-kształtnej rurze o polu przekroju zmniejszającym się od A1 (lewa, dolna część) do A2 (prawa, górna część). Lewa strona jest na wysokości y1 nad ziemią; prawa strona jest na wysokości y2 nad ziemią. Płyn porusza się z prędkością v1 w dolnej części i z prędkością v2 w górnej. Objętość płynu dv zajmuje dx1 w dolnej części i dx2 w górnej części rury.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_06_Bernoullis.jpg"/>
+  </media>
+  
+<caption>Rozważania geometryczne pomocne w wyprowadzeniu równania Bernoulliego.</caption></figure><para id="fs-id1170959709015">Zakładamy dodatkowo, że w płynie nie działają żadne siły lepkości, dlatego energia każdej jego części będzie zachowana. Aby wyprowadzić równanie Bernoulliego, najpierw obliczymy pracę wykonaną nad płynem:</para><equation id="fs-id1170959658621" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>W</m:mi>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:msub>
+      <m:mi>x</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:msub>
+      <m:mi>x</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:math>
+</equation>
+<equation id="fs-id1170959641396" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>W</m:mi>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:msub>
+      <m:mi>A</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:msub>
+      <m:mi>x</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:msub>
+      <m:mi>A</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:msub>
+      <m:mi>x</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>V</m:mi>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>V</m:mi>
+    <m:mo>=</m:mo>
+    <m:mo stretchy="false">(</m:mo>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>V</m:mi>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1170959709086">Wykonana praca związana jest z zachowawczą siłą grawitacji i zmianą energii kinetycznej płynu. Zmiana energii kinetycznej płynu wynosi:</para><equation id="fs-id1170959675282" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>K</m:mi>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:msubsup>
+      <m:mi>v</m:mi>
+      <m:mn>2</m:mn>
+      <m:mn>2</m:mn>
+    </m:msubsup>
+    <m:mo>−</m:mo>
+    <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:msubsup>
+      <m:mi>v</m:mi>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+    </m:msubsup>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+    </m:mfrac>
+    <m:mi>ρ</m:mi>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>V</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:msubsup>
+      <m:mi>v</m:mi>
+      <m:mn>2</m:mn>
+      <m:mn>2</m:mn>
+    </m:msubsup>
+    <m:mo>−</m:mo>
+    <m:msubsup>
+      <m:mi>v</m:mi>
+      <m:mn>1</m:mn>
+      <m:mn>2</m:mn>
+    </m:msubsup>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1170959756251">Zmiana energii potencjalnej jest następująca:</para>
+<equation id="fs-id1170960174956" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>U</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>m</m:mi>
+    <m:mi>g</m:mi>
+    <m:msub>
+      <m:mi>y</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>−</m:mo>
+    <m:mi>m</m:mi>
+    <m:mi>g</m:mi>
+    <m:msub>
+      <m:mi>y</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mi>ρ</m:mi>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>V</m:mi>
+    <m:mi>g</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:msub>
+      <m:mi>y</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mi>y</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1170959696947">Równanie na energię można więc przekształcić do następującej postaci:</para><equation id="fs-id1170959693064" class="unnumbered"><label/>
+  <m:math>
+    <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+      <m:mtr>
+        <m:mtd>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>W</m:mi>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>K</m:mi>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>U</m:mi>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:mo stretchy="false">(</m:mo>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>V</m:mi>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:mi>ρ</m:mi>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>V</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:msubsup>
+            <m:mi>v</m:mi>
+            <m:mn>2</m:mn>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+          <m:mo>−</m:mo>
+          <m:msubsup>
+            <m:mi>v</m:mi>
+            <m:mn>1</m:mn>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mo>+</m:mo>
+          <m:mi>ρ</m:mi>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>V</m:mi>
+          <m:mi>g</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:msub>
+            <m:mi>y</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>y</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">)</m:mo>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:mo stretchy="false">(</m:mo>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>V</m:mi>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:mi>ρ</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:msubsup>
+            <m:mi>v</m:mi>
+            <m:mn>2</m:mn>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+          <m:mo>−</m:mo>
+          <m:msubsup>
+            <m:mi>v</m:mi>
+            <m:mn>1</m:mn>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mo>+</m:mo>
+          <m:mi>ρ</m:mi>
+          <m:mi>g</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:msub>
+            <m:mi>y</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>y</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mo>.</m:mo>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation>
+<para id="fs-id1170957416473">Po przeniesieniu wyrazów otrzymujemy równanie Bernoulliego:</para><equation id="fs-id1170957441861" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>p</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>ρ</m:mi>
+      <m:msubsup>
+        <m:mi>v</m:mi>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+      </m:msubsup>
+      <m:mo>+</m:mo>
+      <m:mi>ρ</m:mi>
+      <m:mi>g</m:mi>
+      <m:msub>
+        <m:mi>y</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>p</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>ρ</m:mi>
+      <m:msubsup>
+        <m:mi>v</m:mi>
+        <m:mn>2</m:mn>
+        <m:mn>2</m:mn>
+      </m:msubsup>
+      <m:mo>+</m:mo>
+      <m:mi>ρ</m:mi>
+      <m:mi>g</m:mi>
+      <m:msub>
+        <m:mi>y</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1170959649515">Zależność ta oznacza, że energia mechaniczna dowolnego elementu płynu zmienia się w wyniku pracy wykonanej nad tym elementem przez płyn znajdujący się poza nim. Wykonanie tej pracy powodowane jest przez ciśnienie zmieniające się wzdłuż toru przepływu płynu. Ponieważ oba punkty wybraliśmy dowolnie, równanie Bernoulliego możemy zapisać w postaci bardziej ogólnej jako zasadę zachowania wzdłuż toru przepływu płynu.</para><note id="fs-id1170960172355">
+  <title>Równanie Bernoulliego</title>
+  <para id="fs-id1170959713476">Dla nieściśliwego płynu bez tarcia, suma ciśnień statycznego i dynamicznego zachowana jest nie tylko w czasie, ale również wzdłuż linii prądu:</para>
+  <equation id="fs-id1170959793113"><m:math>
+      <m:mrow>
+        <m:mi>p</m:mi>
+        <m:mo>+</m:mo>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>ρ</m:mi>
+        <m:msup>
+          <m:mi>v</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo>
+        <m:mi>ρ</m:mi>
+        <m:mi>g</m:mi>
+        <m:mi>y</m:mi>
+        <m:mo>=</m:mo>
+        <m:mtext>constant.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation></note>
+<para id="fs-id1170959719704">Szczególną uwagę należy tu zwrócić na fakt, że w sytuacji dynamicznej ciśnienia na tej samej wysokości w różnych częściach płynu mogą być różne, jeżeli części te mają różną prędkość przepływu.</para></section>
+<section id="fs-id1170957601293">
+  <title>Analiza równania Bernoulliego</title>
+  <para id="fs-id1170959791726">Zgodnie z równaniem Bernoulliego w małej objętości płynu wzdłuż toru jej ruchu poszczególne wielkości równania mogą się zmieniać, ale ich suma pozostanie stała. Równanie to jest tak naprawdę wygodną formą zapisu prawa zachowania energii w nieściśliwym płynie przy braku oporów ruchu.</para><para id="fs-id1170960162009">W ogólnej postaci równanie Bernoulliego ma trzy elementy, a jego zastosowanie jest bardzo szerokie. Aby lepiej je zrozumieć, rozważmy kilka szczegółowych przypadków ilustrujących i upraszczających jego znaczenie.</para><section id="fs-id1170959792748">
+    <title>Równanie Bernoulliego dla płynów statycznych</title>
+    <para id="fs-id1170959945021">Na początek rozważmy bardzo prostą sytuację, w której płyn jest statyczny, czyli <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mn>0</m:mn>
+        <m:mo>.</m:mo>
+      </m:mrow>
+      </m:math> Równanie Bernoulliego w tym przypadku przyjmuje postać:</para>
+      <equation id="fs-id1170959872309" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:mi>ρ</m:mi>
+            <m:mi>g</m:mi>
+            <m:msub>
+              <m:mi>h</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:mi>ρ</m:mi>
+            <m:mi>g</m:mi>
+            <m:msub>
+              <m:mi>h</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1170959790780">Możemy jeszcze bardziej je uprościć, podstawiając <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>h</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+          <m:mo>.</m:mo>
+        </m:mrow>
+        </m:math> (Możemy wybrać dowolną wysokość jako wysokość referencyjną i przypisać jej wartość zero. Często się tak robi w rozważaniach dotyczących siły grawitacji.) Wówczas otrzymujemy:</para><equation id="fs-id1170959731666" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:mi>ρ</m:mi>
+              <m:mi>g</m:mi>
+              <m:msub>
+                <m:mi>h</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="fs-id1170959688671">Równanie to mówi nam, że w płynach statycznych ciśnienie rośnie z głębokością. Gdy poruszamy się od punktu 1 do punktu 2 w płynie, głębokość rośnie o <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>h</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:math> i w związku z tym <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+        </m:mrow>
+      </m:math> jest większe niż <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>p</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+      </m:mrow>
+    </m:math> o <m:math>
+    <m:mrow>
+      <m:mi>ρ</m:mi>
+      <m:mi>g</m:mi>
+      <m:msub>
+        <m:mi>h</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:mrow>
+  </m:math>. W najprostszym przypadku <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+  </m:mrow>
+</m:math> wynosi zero na szczycie płynu i otrzymujemy znane już wyrażenie <m:math>
+<m:mrow>
+  <m:mi>p</m:mi>
+  <m:mo>=</m:mo>
+  <m:mi>ρ</m:mi>
+  <m:mi>g</m:mi>
+  <m:mi>h</m:mi>
+</m:mrow>
+</m:math>. Przypomnijmy sobie, że <m:math>
+<m:mi>p</m:mi>
+<m:mo>=</m:mo>
+<m:mi>ρ</m:mi>
+<m:mi>g</m:mi>
+<m:mi>h</m:mi>
+</m:math> i <m:math>
+<m:mi mathvariant="normal">Δ</m:mi>
+<m:msub>
+  <m:mi>U</m:mi>
+  <m:mi>g</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:mi>m</m:mi>
+<m:mi>g</m:mi>
+<m:mi>h</m:mi>
+</m:math>. Równanie Bernoulliego potwierdza fakt, że zmiana ciśnienia spowodowana ciężarem płynu wynosi <m:math>
+<m:mrow>
+  <m:mi>ρ</m:mi>
+  <m:mi>g</m:mi>
+  <m:mi>h</m:mi>
+</m:mrow>
+</m:math>. Pomimo tego, że wprowadziliśmy równanie Bernoulliego w celu opisania płynów w ruchu, zawiera ono wiele zasad, którymi zajmowaliśmy się wcześniej, badając płyny statyczne.</para></section>
+<section id="fs-id1170957510826">
+  <title>Poziomy przepływ płynu</title>
+  <para id="fs-id1170959783296">Załóżmy, że płyn porusza się, ale jego głębokość pozostaje stała <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>h</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>h</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+    </m:mrow>
+    </m:math>. W tych warunkach równanie Bernoulliego przyjmuje postać:</para><equation id="fs-id1170959648401" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:mi>ρ</m:mi>
+          <m:msubsup>
+            <m:mi>v</m:mi>
+            <m:mn>1</m:mn>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:mi>ρ</m:mi>
+          <m:msubsup>
+            <m:mi>v</m:mi>
+            <m:mn>2</m:mn>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="fs-id1170959658543">Sytuacje, w których przepływ płynu odbywa się na stałym poziomie są tak częste, że równanie to stanowi przedmiot osobnych rozważań, jest to jednak nadal to samo równanie Bernoulliego. (Zwróćmy ponownie uwagę, że opisuje ono ruch małego elementu płynu wzdłuż toru jego ruchu.) Równanie Bernoulliego w tej postaci podkreśla fakt, że w poruszającym się płynie ciśnienie spada, gdy wzrasta prędkość: jeżeli <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+      </m:mrow>
+    </m:math> jest większe niż <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:mrow>
+  </m:math>, to <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:mrow>
+</m:math> musi być mniejsze niż <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>p</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>, aby równanie było spełnione.</para><example id="fs-id1170960046824">
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170959694055"><title>Obliczanie ciśnienia</title>W <link target-id="fs-id1170959644656" document="m65822" cmlnle:case="locative"/>, obliczyliśmy, że prędkość wody w wężu zwiększyła się z 1,96 m/s do 25,5 m/s podczas przechodzenia z węża do dyszy. Oblicz ciśnienie w wężu, wiedząc, że ciśnienie absolutne w dyszy wynosi <m:math>
+      <m:mn>1,01</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>5</m:mn>
+      </m:msup>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:msup>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      </m:math> (równe ciśnieniu atmosferycznemu, jak być powinno) i zakładając przepływ bez oporów na stałej wysokości.</para><para id="fs-id1170959762852"><title>Strategia rozwiązania</title>Mamy tu do czynienia z przepływem na stałej głębokości, czyli możemy zastosować uproszczone równanie Bernoulliego. Użyjemy indeksu 1 dla wartości wewnątrz węża i 2 dla wartości w dyszy. Naszym zadaniem jest więc wyliczyć <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mrow>
+          </m:math>.</para><para id="fs-id1170959722146">
+            <title>Rozwiązanie</title>Rozwiązanie prawa Bernoulliego dla przepływu poziomego ze względu na <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mrow>
+              </m:math> prowadzi do:</para>
+              <equation id="fs-id1170959753176" class="unnumbered">
+                <label/>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>p</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>p</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mi>ρ</m:mi>
+                    <m:msubsup>
+                      <m:mi>v</m:mi>
+                      <m:mn>2</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                    <m:mo>−</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mi>ρ</m:mi>
+                    <m:msubsup>
+                      <m:mi>v</m:mi>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>p</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mi>ρ</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:msubsup>
+                      <m:mi>v</m:mi>
+                      <m:mn>2</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                    <m:mo>−</m:mo>
+                    <m:msubsup>
+                      <m:mi>v</m:mi>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo>.</m:mo>
+                  </m:mrow>
+                </m:math>
+              </equation>
+              <para id="fs-id1170959699262">Podstawiając wartości, otrzymujemy:</para><equation id="fs-id1170959763545" class="unnumbered"><label/>
+                <m:math>
+                  <m:mtable columnalign="right left" rowspacing="3pt" columnspacing="0em" displaystyle="true">
+                    <m:mtr>
+                      <m:mtd>
+                        <m:msub>
+                          <m:mi>p</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                      </m:mtd>
+                      <m:mtd>
+                        <m:mi/>
+                        <m:mo>=</m:mo>
+                        <m:mn>1,01</m:mn>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mn>5</m:mn>
+                        </m:msup>
+                        <m:mspace width="0.2em"/>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">N</m:mi>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:msup>
+                              <m:mi mathvariant="normal">m</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>+</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mn>3</m:mn>
+                        </m:msup>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">k</m:mi>
+                            <m:mi mathvariant="normal">g</m:mi>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:msup>
+                              <m:mi mathvariant="normal">m</m:mi>
+                              <m:mn>3</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mrow>
+                          <m:mo>[</m:mo>
+                          <m:mrow>
+                            <m:msup>
+                              <m:mrow>
+                                <m:mo>(</m:mo>
+                                <m:mrow>
+                                  <m:mn>25,5</m:mn>
+                                  <m:mfrac>
+                                    <m:mrow>
+                                      <m:mi mathvariant="normal">m</m:mi>
+                                    </m:mrow>
+                                    <m:mrow>
+                                      <m:mi mathvariant="normal">s</m:mi>
+                                    </m:mrow>
+                                  </m:mfrac>
+                                </m:mrow>
+                                <m:mo>)</m:mo>
+                              </m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                            <m:mo>−</m:mo>
+                            <m:msup>
+                              <m:mrow>
+                                <m:mo>(</m:mo>
+                                <m:mrow>
+                                  <m:mn>1,96</m:mn>
+                                  <m:mfrac>
+                                    <m:mrow>
+                                      <m:mi mathvariant="normal">m</m:mi>
+                                    </m:mrow>
+                                    <m:mrow>
+                                      <m:mi mathvariant="normal">s</m:mi>
+                                    </m:mrow>
+                                  </m:mfrac>
+                                </m:mrow>
+                                <m:mo>)</m:mo>
+                              </m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo>]</m:mo>
+                        </m:mrow>
+                      </m:mtd>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mtd/>
+                      <m:mtd>
+                        <m:mi/>
+                        <m:mo>=</m:mo>
+                        <m:mn>4,24</m:mn>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mn>5</m:mn>
+                        </m:msup>
+                        <m:mspace width="0.2em"/>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">N</m:mi>
+                          </m:mrow>
+                          <m:msup>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">m</m:mi>
+                            </m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mfrac>
+                        <m:mo>.</m:mo>
+                      </m:mtd>
+                    </m:mtr>
+                  </m:mtable>
+                </m:math>
+              </equation>
+              <para id="fs-id1170957409114"><title>Znaczenie</title>Tak jak się spodziewaliśmy, ciśnienie absolutne wewnątrz węża jest większe niż przy dyszy, ponieważ <m:math>
+                    <m:mi>v</m:mi>
+                  </m:math>
+                 jest większe niż w dyszy. Ciśnienie <m:math>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>p</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                </m:mrow>
+                </m:math> w dyszy musi być równe atmosferycznemu, ponieważ woda wytryskuje w kierunku atmosfery bez zmiany innych wartości.</para></example>
+            </section>
+          </section>
+          <section id="fs-id1170960050591">
+            <title>Zastosowania prawa Bernoulliego dla przepływu poziomego</title><para id="fs-id1170959822621">W wielu urządzeniach oraz sytuacjach codziennego życia odnajdujemy przypadki, w których płyn przepływa na stałej wysokości i które mogą być analizowane przy pomocy uproszczonego równania.</para>
+            <section id="fs-id1170957589129">
+              <title>Porywanie płynu</title>
+              <para id="fs-id1170957415151">Możliwość wykorzystania spadku ciśnienia w szybko poruszających się płynach do wprawiania materii w ruch zauważono już dawno temu. Większe ciśnienie na zewnątrz szybko poruszającego się płynu wpycha inne płyny w szybki strumień. Proces ten nazywany jest czasem <term cmlnle:reference="porywanie" class="no-emphasis">porywaniem</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">entrainment</term></foreign>) (w polskiej literaturze mówi się o „zasysaniu” lub „ssącym działaniu strugi”, jednak pojęcie „porywanie”, również używane, wydaje się tu zręczniejsze - przyp. tłum.). Urządzenia wykorzystujące porywanie, takie jak pompy do unoszenia wody na niskie wysokości, stosowane na przykład do osuszania bagien i innych nisko położonych obszarów, są w użytku od starożytności. Inne urządzenia wykorzystujące to zjawisko przedstawiono na <link target-id="CNX_UPhysics_Figure_14_06_Entrainmnt" cmlnle:case="locative"/>.</para><figure id="CNX_UPhysics_Figure_14_06_Entrainmnt"><media id="fs-id1170957565217" alt="Ilustracja (a) prezentuje palnik Bunsena: powietrze i gaz ziemny wchodzą na dole naczynia i poruszają się ku górze. Ilustracja (b) przedstawia atomizer: ściśnięcie elastycznej gruszki wywołuje powstanie przepływu poziomego strumienia powietrza, który porywa kropelki perfum ku górze i wypycha na zewnątrz butelki. Ilustracja (c) przedstawia rysunek zwykłego aspiratora, w którym woda porusza się od góry do dołu i porywa powietrze wchodzące z boku. Ilustracja (d) jest rysunkiem komina, w którym przepływ gorącego powietrza w górę porywa zimne powietrze dostające się z boków.">
+                    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_06_Entrainmnt.jpg"/>
+                  </media>
+                  
+                <caption>Urządzenia stosujące porywanie wykorzystują zwiększoną prędkość płynu do wytworzenia niższego ciśnienia, które porywa jeden rodzaj płynu do wnętrza drugiego. (a) Palnik Bunsena używa regulowanej dyszy, która porywa powietrze, aby regulować spalanie. (b) Po ściśnięciu gruszki atomizera, podmuch powietrza porywa kropelki perfum. (c) Powszechnie stosowany aspirator używa szybkiego strumienia wody do wytworzenia obszaru niskiego ciśnienia. Aspiratory mogą być używane jako pompy ssące w zastosowaniach dentystycznych i chirurgicznych lub do osuszania zalanej piwnicy czy wytworzenia niższego ciśnienia w zbiorniku. (d) Komin podgrzewacza wody jest tak zaprojektowany, aby porywał powietrze do wnętrza rury wychodzącej na zewnątrz pomieszczenia. </caption></figure></section>
+              <section id="fs-id1170959977488">
+                <title>Pomiar prędkości</title>
+                <para id="fs-id1170959787786"><link target-id="CNX_UPhysics_Figure_14_06_FluidVelci"/> pokazuje dwa urządzenia, wykorzystujące prawo Bernoulliego do pomiaru prędkości płynu. Manometr w części (a) jest połączony z dwiema rurkami wystarczająco małymi, aby nie zaburzyć znacząco przepływu. Rurka z otworem skierowanym ku nadlatującemu płynowi wytwarza przed sobą martwy punkt, w którym prędkość wynosi zero (<m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                </m:math>), podczas gdy prędkość płynu w pobliżu drugiej rurki, która ma otwór z boku, wynosi <m:math>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                </m:mrow>
+                </m:math>. Oznacza to, że równanie Bernoulliego:</para><equation id="fs-id1170959799857" class="unnumbered">
+                  <label/>
+                  <m:math>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>p</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>+</m:mo>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                      <m:mi>ρ</m:mi>
+                      <m:msubsup>
+                        <m:mi>v</m:mi>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:msubsup>
+                      <m:mo>=</m:mo>
+                      <m:msub>
+                        <m:mi>p</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msub>
+                      <m:mo>+</m:mo>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                      <m:mi>ρ</m:mi>
+                      <m:msubsup>
+                        <m:mi>v</m:mi>
+                        <m:mn>2</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:msubsup>
+                    </m:mrow>
+                  </m:math>
+                </equation>
+                <para id="fs-id1170959868739">możemy zapisać jako:</para>
+                <equation id="fs-id1170959692930" class="unnumbered">
+                  <label/>
+                  <m:math>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>p</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:msub>
+                        <m:mi>p</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msub>
+                      <m:mo>+</m:mo>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                      <m:mi>ρ</m:mi>
+                      <m:msubsup>
+                        <m:mi>v</m:mi>
+                        <m:mn>2</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:msubsup>
+                      <m:mo>.</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </equation>
+                <para id="fs-id1170959799997">Czyli ciśnienie <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>p</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:math> nad drugim otworem jest zmniejszone o <m:math>
+                <m:mi>ρ</m:mi>
+                <m:msup>
+                  <m:mi>v</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mn>2</m:mn>
+              </m:math>, więc płyn w manometrze podnosi się o <m:math>
+                <m:mi>h</m:mi>
+              </m:math>
+               po stronie połączonej z drugim otworem i dodatkowo otrzymujemy:</para><equation id="fs-id1170960142378" class="unnumbered">
+                <label/>
+                <m:math>
+                  <m:mrow>
+                    <m:mi>h</m:mi>
+                    <m:mo>∝</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mi>ρ</m:mi>
+                    <m:msubsup>
+                      <m:mi>v</m:mi>
+                      <m:mn>2</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                    <m:mo>.</m:mo>
+                  </m:mrow>
+                </m:math>
+              </equation>
+              <para id="fs-id1170959791171">(Przypomnijmy, że symbol <m:math>
+                <m:mo>∝</m:mo>
+              </m:math> oznacza „proporcjonalny do”.) Rozwiązując ze względu na <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mrow>
+              </m:math>, zauważamy, że: </para><equation id="fs-id1170959872184" class="unnumbered">
+                <label/>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>∝</m:mo>
+                    <m:msqrt>
+                      <m:mi>h</m:mi>
+                    </m:msqrt>
+                    <m:mo>.</m:mo>
+                  </m:mrow>
+                </m:math>
+              </equation>
+              <para id="fs-id1170960026134">Część (b) prezentuje wersję tego urządzenia powszechnie używaną do pomiaru prędkości płynów. Jest ono często wykorzystywane jako czujnik prędkości powietrza w samolotach.</para><figure id="CNX_UPhysics_Figure_14_06_FluidVelci"><media id="fs-id1170959795803" alt="Ilustracja (a) przedstawia rysunek manometru połączonego z dwiema rurkami, które są wystarczająco blisko siebie i są wystarczająco małe, aby nie zaburzać przepływu. Rurka 1 ma otwór na końcu skierowany do przepływu, podczas gdy rurka 2 ma otwór z boku. Ilustracja (b) przedstawia rysunek manometru, który jest podłączony do dwóch rurek, z których jedna (rurka 2) jest osadzona we wnętrzu drugiej (rurka 1). Rurka 1 jest otwarta od strony nadpływającego płynu, a rurka 2 ma otwór z boku.">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_06_FluidVelci.jpg"/>
+                </media>
+                
+          <caption>Pomiar prędkości oparty na równaniu Bernoulliego. (a) Do dwóch rurek, które są na tyle blisko i są na tyle małe, że nie zaburzają przepływu płynu, podłączono manometr. Rurka 1 ma otwór w kierunku poruszającego się płynu, przez co powstaje przed nim martwy punkt, w którym prędkość płynu wynosi zero. Rurka 2 ma otwór z boku, więc płyn ma tam prędkość <m:math>
+                    <m:mi>v</m:mi>
+                  </m:math>, co powoduje spadek ciśnienia w tym miejscu. Różnica ciśnień na manometrze wynosi <m:math>
+                <m:mi>ρ</m:mi>
+                <m:msubsup>
+                  <m:mi>v</m:mi>
+                  <m:mn>2</m:mn>
+                  <m:mn>2</m:mn>
+                </m:msubsup>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mn>2</m:mn>
+              </m:math>, więc <m:math>
+                <m:mi>h</m:mi>
+              </m:math>
+             jest proporcjonalne do <m:math>
+            <m:mi>ρ</m:mi>
+            <m:msubsup>
+              <m:mi>v</m:mi>
+              <m:mn>2</m:mn>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mn>2</m:mn>
+            </m:math>. (b) Urządzenie tego typu nazywa się <term cmlnle:reference="rurka Prandtla" class="no-emphasis">rurką Prandtla</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Prandtl tube</term></foreign>), określa się je również mianem rurki Pitota (choć w rzeczywistości rurka Prandtla jest udoskonaleniem rurki Pitota - przyp. tłum.).</caption></figure></section>
+        <section id="fs-id1170959813428">
+          <title>Wąż strażacki</title>
+          <para id="fs-id1170960194650">Wszystkie przedstawione dotychczas zastosowania równania Bernoulliego wykorzystywały założenia upraszczające, takie jak stała wysokość czy stałe ciśnienie. Kolejny przykład stanowi bardziej ogólne zastosowanie równania Bernoulliego, w którym zmieniają się zarówno ciśnienie, jak i prędkość oraz wysokość.</para><example id="fs-id1170957513743">
+            <para id="fs-id1170959690398"><title>Obliczanie ciśnienia: dysza węża strażackiego</title>Węże strażackie używane w dużych pożarach mają wewnętrzną średnicę 6,40 cm (<link target-id="CNX_UPhysics_Figure_14_06_FireHoseTr"/>). Załóżmy, że strumień objętościowy w takim wężu ma wartośc 40,0 l/s, pod ciśnieniem manometrycznym równym <m:math>
+                <m:mn>1,62</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>6</m:mn>
+                </m:msup>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">N</m:mi>
+                </m:mrow>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                </m:math>. Wąż sięga do wysokości 10,0 m wzdłuż drabiny i kończy się dyszą o wewnętrznej średnicy 3,00 cm. Jakie jest ciśnienie w dyszy?</para><figure id="CNX_UPhysics_Figure_14_06_FireHoseTr"><media id="fs-id1170960175668" alt="Ilustracja prezentuje wóz strażacki z wysuniętą drabiną. Strażak na szczycie drabiny używa węża do gaszenia pożaru. Przepływ wody jest równoległy do podłoża i odbywa się na wysokości.">
+                    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_06_FireHoseTr.jpg"/>
+                  </media>
+                  
+                <caption>Ciśnienie w dyszy tego węża strażackiego jest mniejsze niż na poziomie Ziemi z dwóch powodów: po pierwsze woda musi zostać wyniesiona na wysokość dyszy, po drugie, przy dyszy zwiększa się jej prędkość. Pomimo tego spadku ciśnienia woda może wywierać znaczną siłę na przedmioty, w które uderza, dzięki swojej energii kinetycznej. Ciśnienie strumienia wody zrównuje się z atmosferycznym w momencie, gdy opuszcza ona dyszę.</caption></figure><para id="fs-id1170959693485">
+                  <title>Strategia rozwiązania</title>Ponieważ wysokość nie jest stała, musimy rozwiązać pełne równanie Bernoulliego ze względu na ciśnienie.</para>
+                  <para id="fs-id1167133561393">
+                    <title>Rozwiązanie</title>Pełne równanie ma następującą postać:</para>
+                    <equation id="fs-id1170957601304" class="unnumbered">
+                      <label/>
+                      <m:math>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>p</m:mi>
+                            <m:mn>1</m:mn>
+                          </m:msub>
+                          <m:mo>+</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:mi>ρ</m:mi>
+                          <m:msubsup>
+                            <m:mi>v</m:mi>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:msubsup>
+                          <m:mo>+</m:mo>
+                          <m:mi>ρ</m:mi>
+                          <m:mi>g</m:mi>
+                          <m:msub>
+                            <m:mi>h</m:mi>
+                            <m:mn>1</m:mn>
+                          </m:msub>
+                          <m:mo>=</m:mo>
+                          <m:msub>
+                            <m:mi>p</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msub>
+                          <m:mo>+</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:mi>ρ</m:mi>
+                          <m:msubsup>
+                            <m:mi>v</m:mi>
+                            <m:mn>2</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:msubsup>
+                          <m:mo>+</m:mo>
+                          <m:mi>ρ</m:mi>
+                          <m:mi>g</m:mi>
+                          <m:msub>
+                            <m:mi>h</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msub>
+                        </m:mrow>
+                      </m:math>
+                    </equation>
+                    <para id="fs-id1170959806043">gdzie indeks 1 odnosi się do warunków na poziomie ziemi, a indeks 2 do warunków przy dyszy. Na początku musimy znaleźć prędkości <m:math>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                    </m:math> i <m:math>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                  </m:math>. Ponieważ <m:math>
+                  <m:mrow>
+                    <m:mi>Q</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>A</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                  </m:math>, uzyskujemy:</para><equation id="fs-id1170959763430" class="unnumbered">
+                    <label/>
+                    <m:math>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mi>Q</m:mi>
+                        <m:msub>
+                          <m:mi>A</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                      </m:mfrac>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>40,0</m:mn>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mn>10</m:mn>
+                            <m:mrow>
+                              <m:mo>−</m:mo>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                          </m:msup>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:msup>
+                              <m:mi mathvariant="normal">m</m:mi>
+                              <m:mn>3</m:mn>
+                            </m:msup>
+                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>π</m:mi>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mn>3,20</m:mn>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mn>10</m:mn>
+                            <m:mrow>
+                              <m:mo>−</m:mo>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:msup>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                          </m:mrow>
+                          <m:msup>
+                            <m:mo stretchy="false">)</m:mo>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>=</m:mo>
+                      <m:mn>12,4</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>.</m:mo>
+                    </m:math>
+                  </equation>
+                  <para id="fs-id1170959808166">Podobnie obliczamy:</para><equation id="fs-id1170960054832" class="unnumbered">
+                    <label/>
+                    <m:math>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mn>56,6</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>.</m:mo>
+                    </m:math>
+                  </equation>
+                  <para id="fs-id1170957579599">Jest to dość duża prędkość, dzięki której woda może dosięgnąć ognia. Podstawimy teraz zero za <m:math>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>h</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                  </m:math> i rozwiążemy równanie Bernoulliego ze względu na <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>p</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                  </m:math>:</para><equation id="fs-id1170959698034" class="unnumbered">
+                    <label/>
+                    <m:math>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>p</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:msub>
+                          <m:mi>p</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>+</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:mi>ρ</m:mi>
+                        <m:mo stretchy="false">(</m:mo>
+                        <m:msubsup>
+                          <m:mi>v</m:mi>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo>−</m:mo>
+                        <m:msubsup>
+                          <m:mi>v</m:mi>
+                          <m:mn>2</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo>−</m:mo>
+                        <m:mi>ρ</m:mi>
+                        <m:mi>g</m:mi>
+                        <m:msub>
+                          <m:mi>h</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                        <m:mo>.</m:mo>
+                      </m:mrow>
+                    </m:math>
+                  </equation>
+                  <para id="fs-id1170959750223">Podstawiamy znane wartości i dochodzimy do:
+                  </para>
+                 <equation id="fs-id1170960181024" class="unnumbered"><label/>
+                    <m:math>
+                      <m:mtable columnalign="right left" rowspacing="3pt" columnspacing="0em" displaystyle="true">
+                        <m:mtr>
+                          <m:mtd>
+                            <m:msub>
+                              <m:mi>p</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msub>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mi/>
+                            <m:mo>=</m:mo>
+                            <m:mn>1,62</m:mn>
+                            <m:mo>⋅</m:mo>
+                            <m:msup>
+                              <m:mn>10</m:mn>
+                              <m:mn>6</m:mn>
+                            </m:msup>
+                            <m:mspace width="0.2em"/>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">N</m:mi>
+                              </m:mrow>
+                              <m:msup>
+                                <m:mrow>
+                                  <m:mi mathvariant="normal">m</m:mi>
+                                </m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                            </m:mfrac>
+                            <m:mo>+</m:mo>
+                            <m:mfrac>
+                              <m:mn>1</m:mn>
+                              <m:mn>2</m:mn>
+                            </m:mfrac>
+<m:mo>⋅</m:mo>
+                            <m:msup>
+                              <m:mn>10</m:mn>
+                              <m:mn>3</m:mn>
+                            </m:msup>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">k</m:mi>
+                                <m:mi mathvariant="normal">g</m:mi>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:msup>
+                                  <m:mi mathvariant="normal">m</m:mi>
+                                  <m:mn>3</m:mn>
+                                </m:msup>
+                              </m:mrow>
+                            </m:mfrac>
+<m:mo>⋅</m:mo>
+                            <m:mrow>
+                              <m:mo>[</m:mo>
+                              <m:mrow>
+                                <m:msup>
+                                  <m:mrow>
+                                    <m:mo>(</m:mo>
+                                    <m:mrow>
+                                      <m:mn>12,4</m:mn>
+                                      <m:mfrac>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">m</m:mi>
+                                        </m:mrow>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">s</m:mi>
+                                        </m:mrow>
+                                      </m:mfrac>
+                                    </m:mrow>
+                                    <m:mo>)</m:mo>
+                                  </m:mrow>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                                <m:mo>−</m:mo>
+                                <m:msup>
+                                  <m:mrow>
+                                    <m:mo>(</m:mo>
+                                    <m:mrow>
+                                      <m:mn>56,6</m:mn>
+                                      <m:mfrac>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">m</m:mi>
+                                        </m:mrow>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">s</m:mi>
+                                        </m:mrow>
+                                      </m:mfrac>
+                                    </m:mrow>
+                                    <m:mo>)</m:mo>
+                                  </m:mrow>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                              </m:mrow>
+                              <m:mo>]</m:mo>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd/>
+                          <m:mtd>
+                            <m:mi/>
+                            <m:mo>−</m:mo>
+                            <m:msup>
+                              <m:mn>10</m:mn>
+                              <m:mn>3</m:mn>
+                            </m:msup>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">k</m:mi>
+                                <m:mi mathvariant="normal">g</m:mi>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:msup>
+                                  <m:mi mathvariant="normal">m</m:mi>
+                                  <m:mn>3</m:mn>
+                                </m:msup>
+                              </m:mrow>
+                            </m:mfrac>
+                            <m:mo>⋅</m:mo>
+                            <m:mn>9,80</m:mn>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">m</m:mi>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:msup>
+                                  <m:mi mathvariant="normal">s</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                              </m:mrow>
+                            </m:mfrac>
+                            <m:mo>⋅</m:mo>
+                            <m:mn>10,0</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">m</m:mi>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd/>
+                          <m:mtd>
+                            <m:mi/>
+                            <m:mo>=</m:mo>
+<m:mo>−</m:mo>
+                            <m:mn>2900</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">N</m:mi>
+                              </m:mrow>
+                              <m:msup>
+                                <m:mrow>
+                                  <m:mi mathvariant="normal">m</m:mi>
+                                </m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                            </m:mfrac>
+                            <m:mo>.</m:mo>
+                          </m:mtd>
+                        </m:mtr>
+                      </m:mtable>
+                    </m:math>
+                  </equation>
+                  <para id="fs-id1170957601201"><title>Znaczenie</title>Uzyskana wartość jest ciśnieniem manometrycznym, ponieważ wyjściowe ciśnienie również było podane względem ciśnienia atmosferycznego. W związku z tym ciśnienie za dyszą równa się ciśnieniu atmosferycznemu, gdyż woda wypływa do atmosfery bez zmiany innych warunków, w których się znajduje.</para></example>
+                </section>
+              </section>
+              <section id="fs-id1170957513914" class="key-concepts">
+                <title>Podsumowanie</title>
+                <list id="fs-id1170957410129" list-type="bulleted" bullet-style="bullet"><item>Równanie Bernoulliego mówi, że sumy po dwóch stronach poniższego równania są takie same w dowolnych dwóch punktach nieściśliwego płynu:<newline/>
+                    <equation id="fs-id1170960047559" class="unnumbered">
+                      <label/>
+                      <m:math>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>p</m:mi>
+                            <m:mn>1</m:mn>
+                          </m:msub>
+                          <m:mo>+</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:mi>ρ</m:mi>
+                          <m:msubsup>
+                            <m:mi>v</m:mi>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:msubsup>
+                          <m:mo>+</m:mo>
+                          <m:mi>ρ</m:mi>
+                          <m:mi>g</m:mi>
+                          <m:msub>
+                            <m:mi>h</m:mi>
+                            <m:mn>1</m:mn>
+                          </m:msub>
+                          <m:mo>=</m:mo>
+                          <m:msub>
+                            <m:mi>p</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msub>
+                          <m:mo>+</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:mi>ρ</m:mi>
+                          <m:msubsup>
+                            <m:mi>v</m:mi>
+                            <m:mn>2</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:msubsup>
+                          <m:mo>+</m:mo>
+                          <m:mi>ρ</m:mi>
+                          <m:mi>g</m:mi>
+                          <m:msub>
+                            <m:mi>h</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msub>
+                          <m:mo>.</m:mo>
+                        </m:mrow>
+                      </m:math>
+                    </equation>
+                  </item>
+                  <item>Wiele zastosowań ma uproszczona wersja równania Bernoulliego, w której wysokość płynu jest stała. Składniki równania zawierające wysokość (lub głębokość <m:math>
+                      <m:mi>h</m:mi>
+                    </m:math>) upraszczają się i w efekcie uzyskujemy<newline/>
+                  <equation id="fs-id1170960045553" class="unnumbered">
+                    <label/>
+                    <m:math>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>p</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>+</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:mi>ρ</m:mi>
+                        <m:msubsup>
+                          <m:mi>v</m:mi>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo>=</m:mo>
+                        <m:msub>
+                          <m:mi>p</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                        <m:mo>+</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:mi>ρ</m:mi>
+                        <m:msubsup>
+                          <m:mi>v</m:mi>
+                          <m:mn>2</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo>.</m:mo>
+                      </m:mrow>
+                    </m:math>
+                  </equation>
+                </item>
+                <item>Powyższa postać równania Bernoulliego ma wiele zastosowań, w tym dotyczące zjawiska porywania oraz pomiaru prędkości.</item>
+              </list></section>
+            <section id="fs-id1170959976112" class="review-conceptual-questions">
+              <title>Pytania</title>
+              <exercise id="fs-id1170960047738">
+                <problem id="fs-id1170959804747">
+                  <para id="fs-id1170960049594">Można sprawić, że woda z węża ogrodowego wytryśnie na znacznie większą odległość, jeśli częściowo zakryjemy jego wylot kciukiem. Wyjaśnij, dlaczego tak jest.</para></problem>
+              </exercise>
+              <exercise id="fs-id1170957564080">
+                <problem id="fs-id1170959730695">
+                  <para id="fs-id1170957554978">W fontannach dekoracyjnych woda wytryskuje prawie pionowo, po czym strumień się poszerza ze wzrostem wysokości. Z drugiej strony, strumień wody wylatującej z kranu pionowo w dół się zwęża. Wyjaśnij, dlaczego tak się dzieje.</para></problem>
+                <solution id="fs-id1170957542619">
+                  <para id="fs-id1170959809569">Masa wody, która wpływa do pewnego elementu objętości, musi się równać masie opuszczającej ten element. Z równania ciągłości wiemy, że iloczyn prędkości i pola powierzchni musi pozostawać stały. ze względu na to, że gęstość wody się nie zmienia, to prędkość pomnożona przez pole przekroju w miejscu, w którym woda wchodzi do rozważanej objętości, musi być równa iloczynowi prędkości i pola przekroju w miejscu, gdzie woda go opuszcza. Ponieważ prędkość strumienia w fontannie maleje wraz z wysokością z powodu działania siły grawitacji, to powierzchnia jego przekroju musi rosnąć. Prędkość strumienia wody opuszczającego kran rośnie z odległością, dlatego powierzchnia jego przekroju musi maleć.</para></solution>
+              </exercise>
+              <exercise id="fs-id1170959786329">
+                <problem id="fs-id1170957605409">
+                  <para id="fs-id1170959788758">Przyjrzyj się ponownie <link target-id="CNX_UPhysics_Figure_14_06_TruckCar" cmlnle:case="dative"/>. Odpowiedz na następujące pytania. Dlaczego ciśnienie <m:math>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>p</m:mi>
+                        <m:mi>o</m:mi>
+                      </m:msub>
+                    </m:mrow>
+                  </m:math> jest mniejsze niż atmosferyczne? Dlaczego <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>p</m:mi>
+                      <m:mi>o</m:mi>
+                    </m:msub>
+                  </m:mrow>
+                </m:math> jest większe niż <m:math>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>p</m:mi>
+                    <m:mi>i</m:mi>
+                  </m:msub>
+                </m:mrow>
+                </m:math>?</para></problem>
+            </exercise>
+            <exercise id="fs-id1170959680556"><problem id="fs-id1170959671933">
+                <para id="fs-id1170957603284">Widoczna poniżej rurka ze zwężeniem, którego celem jest wywołanie porywania, nazywa się <term cmlnle:reference="rurka Venturiego" class="no-emphasis">rurką Venturiego</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Venturi tube</term></foreign>). Są one powszechnie stosowane w gaźnikach i aspiratorach. W jaki sposób urządzenie tego typu wywołuje porywanie?</para>
+                <media id="fs-id1170957588843" alt="Rysunek przedstawia rurę z wąskim odcinkiem nazwaną rurką Venturiego. Dodatkowe połączenie umożliwia napływ płynu do jej wnętrza. ">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_06_Venturitbe_img.jpg"/>
+                </media>
+              </problem>
+              <solution id="fs-id1170957505707">
+                <para id="fs-id1170957613515">Zgodnie z równaniem ciągłości, gdy rurka się zwęża, płyn musi przyspieszyć, a co za tym idzie, nad płynem wykonywana jest praca. W miejscu zwężenia ciśnienie maleje, co pociąga za sobą porywanie płynu poza strumieniem do wewnątrz zwężonej części rurki.</para></solution>
+            </exercise><exercise id="fs-id1170959731340">
+              <problem id="fs-id1170959942125">
+                <para id="fs-id1170957592258">Niektóre przewody kominowe mają kształt litery T, dzięki czemu górna, zakryta część pozwala wyciągać gazy nawet przy najlżejszym podmuchu wiatru. Wyjaśnij działanie takiej konstrukcji przy użyciu równania Bernoulliego dla przepływu poziomego.</para></problem>
+            </exercise>
+            <exercise id="fs-id1170959724108">
+              <problem id="fs-id1170959801004">
+                <para id="fs-id1170957577894">Czy istnieje maksymalna wysokość, na którą urządzenia wykorzystujące porywanie mogą wynieść płyn? Odpowiedź uzasadnij.</para></problem>
+              <solution id="fs-id1170959706039">
+                <para id="fs-id1170957514299">Praca wykonana przez ciśnienie może być wykorzystana do zwiększenia energii kinetycznej oraz energii potencjalnej. Wraz ze wzrostem wysokości energia kinetyczna stanowi coraz mniejszą część całkowitej energii i ostatecznie osiągnie wartość zero. Jest to maksymalna wysokość, na którą można unieść płyn przy wykorzystaniu tej zasady.</para></solution>
+            </exercise>
+            <exercise id="fs-id1170959942064">
+              <problem id="fs-id1170959863653">
+                <para id="fs-id1170957574878">Czy łatwiej jest wystartować samolotem z wiatrem, czy pod wiatr?</para>
+              </problem>
+            </exercise>
+            <exercise id="fs-id1170957600653">
+              <problem id="fs-id1170959788149">
+                <para id="fs-id1170959782824">Zdarza się, że podczas cyklonów tropikalnych dachy wylatują w górę, a budynki eksplodują na zewnątrz po uderzeniu tornada. Użyj równania Bernoulliego dla przepływu poziomego do wyjaśnienia tych zjawisk.</para></problem>
+              <solution id="fs-id1170959863908">
+                <para id="fs-id1170959961025">Ciśnienie na zewnątrz budynków spada, ponieważ powietrze porusza się tam z dużą prędkością. Większe ciśnienie wewnątrz budynku powoduje wyrzucenie dachu w górę lub eksplozję budynku na zewnątrz.</para></solution>
+            </exercise>
+            <exercise id="fs-id1170959960591">
+              <problem id="fs-id1170957603313">
+                <para id="fs-id1170959865718">Niebezpiecznie jest stać blisko torów, gdy przejeżdża po nich szybki pociąg. Wyjaśnij, dlaczego ciśnienie atmosferyczne będzie wpychało osobę stojącą przy torach w kierunku pociągu.</para>
+              </problem>
+            </exercise>
+            <exercise id="fs-id1170959702038">
+              <problem id="fs-id1170957587709">
+                <para id="fs-id1170959817925">Ciśnienie wody wewnątrz dyszy węża może być mniejsze od atmosferycznego z powodu efektu Bernoulliego. Wziąwszy pod uwagę energię wody, wyjaśnij w jaki sposób woda może się wydostać z węża, pokonując ciśnienie atmosferyczne.</para></problem>
+              <solution id="fs-id1170959828008">
+                <para id="fs-id1170957598838">Woda wewnątrz węża się porusza, w związku z czym ma ona niezerową energię kinetyczną. Zostaje ona wykorzystana do wykonania pracy przeciwko różnicy ciśnień.</para></solution>
+            </exercise>
+            <exercise id="fs-id1170957584045">
+              <problem id="fs-id1170959935493">
+                <para id="fs-id1170959939261">Dawid opuścił szybę w oknie swojego samochodu podczas jazdy autostradą. Plastikowa torebka leżąca na podłodze wyleciała wtedy przez okno. Wyjaśnij dlaczego.</para></problem>
+            </exercise>
+            <exercise id="fs-id1170959957064">
+              <problem id="fs-id1170959876697">
+                <para id="fs-id1170957588945">Jakie trzy formy energii poruszającego się płynu są reprezentowane w równaniu Bernoulliego? (Zwróć uwagę, że te formy energii są zachowane, podczas gdy inne, takie jak energia cieplna i inne formy dyssypatywne, nie są obecne w tym równaniu.)</para>
+              </problem>
+              <solution id="fs-id1170959976391">
+                <para id="fs-id1170960047588">Energia potencjalna związana z położeniem, energia kinetyczna związana z prędkością i praca wykonana przez różnicę ciśnień.</para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1170959765791">
+              <problem id="fs-id1170957518670">
+                <para id="fs-id1170957602071">Stary, gumowy kalosz pokazany na poniższym rysunku ma dwie dziury. Do jakiej maksymalnej wysokości może wytrysnąć woda z dziury 1? Jak prędkość wody wytryskującej z dziury 2 różni się od prędkości wody z dziury 1? Wyjaśnij, rozważając energię.</para>
+                <media id="fs-id1170960013555" alt="Na rysunku przedstawiony jest kalosz z dwoma przeciekami na tej samej wysokości. Kierunek przecieku 1 jest ku górze, a przecieku 2 horyzontalnie w prawo.">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_06_RubberBoot_img.jpg"/>
+                </media>
+              </problem>
+            </exercise>
+          </section>
+          <section id="fs-id1170957601272" class="review-problems">
+            <title>Zadania</title>
+            <exercise id="fs-id1170957599506">
+              <problem id="fs-id1170957569802">
+                <para id="fs-id1170959865727">Udowodnij, że ciśnienie można wyrazić w jednostkach energii na jednostkę objętości.</para></problem>
+              <solution id="fs-id1170959751934">
+                <para id="fs-id1170957546968">
+                  <m:math>
+                    <m:mtable>
+                      <m:mtr/>
+                      <m:mtr/>
+                      <m:mtr>
+                        <m:mtd columnalign="right">
+                          <m:mi>F</m:mi>
+                        </m:mtd>
+                        <m:mtd columnalign="left">
+                          <m:mo>=</m:mo>
+                        </m:mtd>
+                        <m:mtd columnalign="left">
+                          <m:mi>p</m:mi>
+                          <m:mi>A</m:mi>
+                          <m:mo stretchy="false">⇒</m:mo>
+                          <m:mi>p</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mfrac>
+                            <m:mi>F</m:mi>
+                            <m:mi>A</m:mi>
+                          </m:mfrac>
+                          <m:mo>,</m:mo>
+                        </m:mtd>
+                      </m:mtr>
+                      <m:mtr>
+                        <m:mtd columnalign="right">
+                          <m:mrow>
+                            <m:mo>[</m:mo>
+                            <m:mi>p</m:mi>
+                            <m:mo>]</m:mo>
+                          </m:mrow>
+                        </m:mtd>
+                        <m:mtd columnalign="left">
+                          <m:mo>=</m:mo>
+                        </m:mtd>
+                        <m:mtd columnalign="left">
+                          <m:msup>
+                            <m:mtext>N/m</m:mtext>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          <m:mo>=</m:mo>
+                          <m:mtext>N</m:mtext>
+                          <m:mo>·</m:mo>
+                          <m:msup>
+                            <m:mtext>m/m</m:mtext>
+                            <m:mn>3</m:mn>
+                          </m:msup>
+                          <m:mo>=</m:mo>
+                          <m:msup>
+                            <m:mtext>J/m</m:mtext>
+                            <m:mn>3</m:mn>
+                          </m:msup>
+                          <m:mo>=</m:mo>
+                          <m:mtext>energia/objętość</m:mtext>
+                        </m:mtd>
+                      </m:mtr>
+                    </m:mtable>
+                  </m:math>
+                </para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1170959724522">
+              <problem id="fs-id1170957531366">
+                <para id="fs-id1170959709421">Masz do dyspozycji przyrząd do pomiaru prędkości płynu, taki jak pokazano na <link target-id="CNX_UPhysics_Figure_14_06_FluidVelci" cmlnle:case="locative"/>. O ile musi wzrosnąć prędkość wiatru, aby wartość <m:math><m:mi>h</m:mi></m:math> na manometrze się podwoiła? Czy wynik jest niezależny od poruszającego się płynu i od płynu w manometrze?</para></problem>
+            </exercise>
+            <exercise id="fs-id1170957588775">
+              <problem id="fs-id1170959751116">
+                <para id="fs-id1170959751118">Jeżeli rurka Pitota pokazuje ciśnienie 15,0 mmHg przy prędkości 200 km/h, to jakie ciśnienie pokaże przy prędkości 700 km/h na tej samej wysokości nad poziomem morza?</para></problem>
+              <solution id="fs-id1170959791712">
+                <para id="fs-id1170959971703">−135 mmHg</para></solution>
+            </exercise>
+            <exercise id="fs-id1170960169478">
+              <problem id="fs-id1170957426971">
+                <para id="fs-id1170957595823">Co kilka lat wiatry w mieście Boulder w stanie Kolorado osiągają prędkości 45,0 m/s, gdy prąd strumieniowy opada w kierunku ziemi wczesną wiosną. Oblicz, posługując się równaniem Bernoulliego, jaka jest w przybliżeniu siła działająca na dach o powierzchni <m:math>
+                  <m:mn>220</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>? Typowa gęstość powietrza dla Boulder wynosi <m:math>
+                <m:mn>1,14</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:math>, a średnie ciśnienie <m:math>
+              <m:mn>8,89</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>4</m:mn>
+              </m:msup>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:msup>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              </m:math>. (Równanie Bernoulliego zakłada laminarność przepływu, więc uzyskany wynik można traktować wyłącznie jako wynik przybliżony, ponieważ w opisanej sytuacji pojawiają się znaczne turbulencje.)</para></problem>
+          </exercise>
+          <exercise id="fs-id1170957418033">
+            <problem id="fs-id1170957418035">
+              <para id="fs-id1170959811865">Jaki jest spadek ciśnienia związany z efektem Bernoulliego podczas przejścia wody z węża strażackiego o średnicy 9,00 cm do dyszy o średnicy 3,00 cm, jeżeli strumień objętościowy niesie 40,0 l/s? (b) Do jakiej maksymalnej wysokości powyżej dyszy może dolecieć woda? (Rzeczywista wysokość będzie znacznie mniejsza z powodu oporu powietrza.)</para></problem>
+            <solution id="fs-id1170960143914">
+              <para id="fs-id1170960143916">a. <m:math>
+                <m:mn>1,58</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>6</m:mn>
+                </m:msup>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">N</m:mi>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                </m:math>; b. 163 m</para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1170960179986">
+              <problem id="fs-id1170960179988">
+                <para id="fs-id1170959698192">(a) Używając równania Bernoulliego, pokaż, że prędkość płynu <m:math>
+                    <m:mi>v</m:mi>
+                  </m:math>
+                 zmierzona w rurce Pitota, takiej jak na <link target-id="CNX_UPhysics_Figure_14_06_FluidVelci" cmlnle:case="locative"/>, dana jest przez <m:math>
+                <m:mi>v</m:mi>
+                <m:mo>=</m:mo>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mn>2</m:mn>
+                <m:msup>
+                  <m:mi>ρ</m:mi>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi/>
+                      <m:mo>′</m:mo>
+                    </m:msup>
+                  </m:mrow>
+                </m:msup>
+                <m:mi>g</m:mi>
+                <m:mi>h</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mi>ρ</m:mi>
+                <m:msup>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mrow>
+                    <m:mn>1</m:mn>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:msup>
+              </m:math>, gdzie <m:math>
+                <m:mi>h</m:mi>
+              </m:math>
+             jest wysokością płynu w manometrze, <m:math>
+            <m:msup>
+              <m:mi>ρ</m:mi>
+              <m:mrow>
+                <m:msup>
+                  <m:mi/>
+                  <m:mo>′</m:mo>
+                </m:msup>
+              </m:mrow>
+            </m:msup>
+          </m:math> gęstością płynu w manometrze, <m:math>
+          <m:mi>ρ</m:mi>
+        </m:math> gęstością poruszającego się płynu, a <m:math>
+          <m:mi>g</m:mi>
+        </m:math>
+       jest przyspieszeniem ziemskim. (Zwróć uwagę, że <m:math>
+        <m:mi>v</m:mi>
+      </m:math> jest faktycznie proporcjonalne do kwadratu <m:math>
+      <m:mi>h</m:mi>
+    </m:math>, jak napisano w rozdziale). (b) Oblicz <m:math>
+    <m:mi>v</m:mi>
+  </m:math>
+ dla poruszającego się powietrza, jeżeli wysokość <m:math>
+  <m:mi>h</m:mi>
+</m:math>
+ na manometrze rtęciowym wynosi 0,200 m.</para></problem>
+</exercise>
+<exercise id="fs-id1170960013224"><problem id="fs-id1170960013226">
+    <para id="fs-id1170959673055">Pojemnik z wodą ma pole przekroju <m:math>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0,1</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:msup>
+          <m:mrow>
+            <m:mtext>m</m:mtext>
+          </m:mrow>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+    </m:math>. Na szczycie wody spoczywa tłok (rysunek poniżej). 0,15 m powyżej podstawy pojemnika znajduje się odpływ, którego pole przekroju wynosi <m:math>
+    <m:msub>
+      <m:mi>A</m:mi>
+      <m:mi>s</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>7,0</m:mn>
+    <m:mo>⋅</m:mo>
+    <m:msup>
+      <m:mn>10</m:mn>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>4</m:mn>
+      </m:mrow>
+    </m:msup>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:msup>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+    </m:math>. (a) Jaka jest prędkość wody wylatującej z odpływu? (b) Jeżeli otwór odpływu znajduje się 1,5 m powyżej powierzchni, jak daleko od wylotu woda spadnie na ziemię? Pomiń wszystkie siły tarcia i inne siły dyssypatywne.</para>
+    <media id="fs-id1170960179956" alt="Na rysunku przedstawiono schematyczny rysunek cylindra wypełnionego płynem, który jest otwarty na atmosferę z jednej strony. Na płynie umieszczono dysk o masie 20 kg i powierzchni A identycznej z powierzchnią płynu. Dysk umieszczony jest pół metra ponad dnem pojemnika. Wylot, który jest otwarty na atmosferę zlokalizowany jest 0,15 m powyżej dna zbiornika.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_06_keg_img.jpg"/>
+    </media>
+  </problem>
+  <solution id="fs-id1170960151423">
+    <para id="fs-id1170959822340">a. <m:math>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>3,28</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:math><newline/>b. <m:math>
+    <m:mrow>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0,55</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>s</m:mtext>
+    </m:mrow>
+  </m:math>  
+<newline/>
+  <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mi>v</m:mi>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>1,81</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>m</m:mtext>
+    </m:mrow>
+  </m:math>
+</para></solution>
+</exercise><exercise id="fs-id1170957440042"><problem id="fs-id1170959939131">
+    <para id="fs-id1170959939133">Płyn o stałej gęstości przepływa przez redukcję (zwężenie) w rurze. Wyznacz równanie wyrażającą zmianę ciśnienia przy pomocy <m:math>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:math>, <m:math>
+    <m:msub>
+      <m:mi>A</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+  </m:math>, <m:math>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  </m:math>, oraz gęstości.</para>
+  <media id="fs-id1170957488024" alt="Ilustracja pokazuje schemat rury zwężającej się od pola przekroju A1 do pola przekroju A2. Płyn przepływa wzdłuż rury. Ciśnienie i prędkość płynu zmieniają się w różnych częściach rury. W szerokiej części mają wartości P1 i v1, a w wąskiej części P2 i v2.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_06_reductionpipe_img.jpg"/>
+  </media>
+</problem>
+</exercise></section>
+</content>
+<glossary>
+  <definition id="fs-id1170959795981">
+<term cmlnle:reference="równanie Bernoulliego" class="no-emphasis">równanie Bernoulliego (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Bernoulli’s equation</term></foreign>)</term>
+    <meaning id="fs-id1170959795986">równanie wynikające z zastosowania prawa zachowania energii do nieściśliwego płynu z pominięciem tarcia: <m:math>
+      <m:mrow>
+        <m:mi>p</m:mi>
+        <m:mo>+</m:mo>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>ρ</m:mi>
+        <m:msup>
+          <m:mi>v</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo>
+        <m:mi>ρ</m:mi>
+        <m:mi>g</m:mi>
+        <m:mi>h</m:mi>
+        <m:mo>=</m:mo>
+        <m:mtext>constant</m:mtext>
+        <m:mo>,</m:mo>
+      </m:mrow>
+      </m:math> w całej objętości płynu</meaning>
+    </definition>
+    <definition id="fs-id1170957574182">
+<term cmlnle:reference="poziomy przepływ płynu" class="no-emphasis">poziomy przepływ płynu (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Bernoulli’s principle</term></foreign>)</term>
+      <meaning id="fs-id1170957574188">przepływ płynu bez zmiany wysokości, zapisywany przez równanie Bernoulliego dla stałej wysokości:<newline/>
+        <equation id="fs-id1170957604376" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mi>ρ</m:mi>
+              <m:msubsup>
+                <m:mi>v</m:mi>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>p</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mi>ρ</m:mi>
+              <m:msubsup>
+                <m:mi>v</m:mi>
+                <m:mn>2</m:mn>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+            </m:mrow>
+          </m:math>
+        </equation>
+      </meaning>
+    </definition>
+  </glossary>
+</document>

@@ -1,0 +1,2259 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Kwantowy oscylator harmoniczny</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m68251</md:content-id>
+  <md:title>Kwantowy oscylator harmoniczny</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>opisywać model kwantowego oscylatora kwantowego;</item>
+<item>określać różnice między klasycznym a kwantowym oscylatorem harmonicznym;</item>
+<item>wyjaśniać zagadnienia fizyczne, które są wspólne dla oscylatora klasycznego i kwantowego. </item>
+</list></md:abstract>
+  <md:uuid>3482196d-eede-427c-bfc0-2231498d7714</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1170903056278">Przykłady oscylatorów możemy znaleźć z łatwością w naturze, będą to choćby fale elektromagnetyczne, drgające cząstki i lekko kołysząca się na wietrze gałąź. W poprzednich rozdziałach wykorzystywaliśmy mechanikę newtonowską do opisu makroskopowych oscylacji, jak klocek na sprężynie czy proste wahadło. W tym rozdziale zajmiemy się oscylacjami z punktu widzenia mechaniki kwantowej, a zaczniemy od przypomnienia klasycznego oscylatora harmonicznego.</para>
+  <section id="fs-id1170901584988">
+    <title>Klasyczny oscylator harmoniczny</title>
+    <para id="fs-id1170902761842">Prostym oscylatorem harmonicznym nazwiemy cząstkę lub układ, oscylujące harmonicznie wokół punktu równowagi, jak ciało na sprężynie. W tym podrozdziale będziemy się zajmować jedynie jednowymiarowymi oscylacjami. Rozważmy więc ciało oscylujące wokół pewnego punktu równowagi <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x=0</m:annotation>
+      </m:semantics>
+    </m:math>. W mechanice klasycznej na cząstkę działa siła sprężystości dana wzorem <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mi>x</m:mi>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mi>k</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>x</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> F_x = -kx</m:annotation>
+    </m:semantics>
+  </m:math>, gdzie <m:math display="inline">
+  <m:semantics>
+    <m:mi>x</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+  </m:semantics>
+</m:math> jest przemieszczeniem cząstki względem punktu równowagi. Ruch odbywa się między dwoma maksymalnymi wychyleniami <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>x</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mtext/>
+      <m:mo>±</m:mo>
+      <m:mi>A</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x = \text{} \pm A</m:annotation>
+</m:semantics>
+</m:math>, gdzie <m:math display="inline">
+<m:semantics>
+  <m:mi>A</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> A</m:annotation>
+</m:semantics>
+</m:math> oznacza amplitudę drgań. Położenie ciała zmienia się okresowo w czasie z prędkością kątową <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>ω</m:mi>
+    <m:mo>=</m:mo>
+    <m:msqrt>
+      <m:mi>k</m:mi>
+      <m:mo>∕</m:mo>
+      <m:mi>m</m:mi>
+    </m:msqrt>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \omega = \sqrt{k / m}</m:annotation>
+</m:semantics>
+</m:math>, która zależy od masy <m:math display="inline">
+<m:semantics>
+  <m:mi>m</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> m</m:annotation>
+</m:semantics>
+</m:math> oscylatora i stałej sprężystości <m:math display="inline">
+<m:semantics>
+  <m:mi>k</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k</m:annotation>
+</m:semantics>
+</m:math>. Zależność opisującą przemieszczenie możemy zapisać jako</para>
+<equation id="fs-id1170901866414">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>cos</m:mo>
+            <m:mrow>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>ω</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mi>ϕ</m:mi>
+                </m:mrow>
+              </m:mfenced>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x\apply(t) = A \cos (\omega t + \phi) \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170901534323">Całkowita energia <m:math display="inline">
+  <m:semantics>
+    <m:mi>E</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E</m:annotation>
+  </m:semantics>
+</m:math> oscylatora jest sumą jego energii kinetycznej <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>E</m:mi>
+      <m:mtext>k</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mi>m</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:msup>
+          <m:mi>v</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      <m:mo>∕</m:mo>
+      <m:mn>2</m:mn>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{k}} = mv^2 / 2</m:annotation>
+</m:semantics>
+</m:math> i energii potencjalnej <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mrow>
+      <m:mi>V</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>x</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mi>k</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:msup>
+          <m:mi>x</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      <m:mo>∕</m:mo>
+      <m:mn>2</m:mn>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{p}}\apply(x) = kx^2 /2</m:annotation>
+</m:semantics>
+</m:math>
+</para>
+<equation id="fs-id1170901980471">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>E</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mi>m</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:msup>
+              <m:mi>v</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mi>k</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E = \frac{1}{2} mv^2 + \frac{1}{2} kx^2 \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170901607656">W punktach maksymalnego wychylenia <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mtext/>
+        <m:mo>±</m:mo>
+        <m:mi>A</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x = \text{} \pm A</m:annotation>
+  </m:semantics>
+</m:math> prędkość oscylatora spada do zera, a więc energia oscylatora jest wtedy równa energii potencjalnej: <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>E</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mi>k</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:msup>
+          <m:mi>A</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      <m:mo>∕</m:mo>
+      <m:mn>2</m:mn>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E = kA^2 / 2</m:annotation>
+</m:semantics>
+</m:math>. Graficzną reprezentacją energii potencjalnej w funkcji położenia jest parabola (<link target-id="CNX_UPhysics_40_05_well"/>). Energia potencjalna jest funkcją kwadratową zależną od <m:math display="inline">
+<m:semantics>
+  <m:mi>x</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+</m:semantics>
+</m:math>, mierzoną w odniesieniu do punktu równowagi, w którym przyjmuje wartość równą zero. Na tym samym rysunku przerywaną linią zaznaczony jest przebieg całkowitej energii oscylatora. Możemy łatwo wydedukować, że energia kinetyczna będzie różnicą energii całkowitej i potencjalnej.</para>
+<figure id="CNX_UPhysics_40_05_well">
+  <media id="fs-id1170901509434" alt="Pokazany jest wykres potencjału U od x i energii E. Oś pionowa jest energią, a oś pozioma to x. Energia E jest dodatnia i stała. Potencjał U od x jest funkcją jedna druga k razy x kwadrat, a wklęsła parabola, ma wartość zero w x=0. Obszar poniżej potencjału U of x krzywej jest zacieniowany. Potencjał U od x jest równy E od x równe minus A i x równe plus A.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_40_05_well.jpg"/>
+  </media>
+  <caption>Studnia potencjału klasycznego oscylatora harmonicznego. Ruch oscylatora jest ograniczony do punktów przecięcia wykresów energii całkowitej i potencjalnej <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mi>A</m:mi>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x=-A</m:annotation>
+    </m:semantics>
+  </m:math> i <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>+</m:mo>
+        <m:mi>A</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x=+A</m:annotation>
+  </m:semantics>
+</m:math>. Energia oscylacji wynosi <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>E</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mi>k</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:msup>
+          <m:mi>A</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      <m:mo>∕</m:mo>
+      <m:mn>2</m:mn>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E = kA^2 /2</m:annotation>
+</m:semantics>
+</m:math>.</caption>
+</figure>
+<para id="fs-id1170901930060">Ruch klasycznego oscylatora harmonicznego jest ograniczony do przedziału, w którym energia kinetyczna przyjmuje wartości dodatnie. Oznacza to, że oscylator harmoniczny nigdy nie wychyli się dalej niż wynosi jego amplituda, od której zależy też jego maksymalna energia. Najmniejsza możliwa energia klasycznego oscylatora harmonicznego wynosi zero i odpowiada sytuacji, gdy ciało spoczywa w punkcie równowagi. Gdy ciało oscyluje, niezależnie od tego, czy są to duże, czy małe oscylacje, najdłużej znajduje się w punktach maksymalnego wychylenia, gdzie jego prędkość spada do zera, a następnie zmienia zwrot. Prawdopodobieństwo znalezienia ciała w tych punktach jest więc największe, a najmniejsze w punkcie równowagi, gdzie ciało ma największą prędkość (zauważmy, że to stwierdzenie nie odnosi się do minimalizacji energii, a do prędkości samego ciała).</para>
+</section>
+<section id="fs-id1170901907297">
+  <title>Kwantowy oscylator harmoniczny</title>
+  <para id="fs-id1170901741117">Model klasycznego oscylatora, choć prosty, nie jest uniwersalny. Nie możemy go wykorzystać np. do opisania drgań cząstek dwuatomowych, gdzie efekty kwantowe mają duże znaczenie. Pierwszym krokiem do formalizmu kwantowego jest wykorzystanie klasycznego wyrażenia <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>k</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>m</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:msup>
+            <m:mi>ω</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k=m\omega^2</m:annotation>
+    </m:semantics>
+    </m:math>, aby uniknąć sformułowania stałej sprężystości między atomami. Dzięki temu energia potencjalna może zostać zapisana jako</para>
+    <note id="fs-id1170901783501" class="equation-callout">
+      <equation id="fs-id1170899246703">
+        <m:math display="block">
+          <m:semantics>
+            <m:mrow>
+              <m:mrow>
+                <m:mi>V</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>x</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mo>⁢</m:mo>
+                <m:mi>m</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mi>ω</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mi>x</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{p}}\apply(x) = \frac{1}{2} m \omega^2 x^2 \text{.}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </equation>
+    </note>
+    <para id="fs-id1170902013502">Łącząc to wyrażenie z zależnym od czasu równaniem Schrödingera, otrzymujemy</para>
+    <note id="fs-id1170902768609" class="equation-callout">
+      <equation id="fs-id1170901952067">
+        <m:math display="block">
+          <m:semantics>
+            <m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mi>ℏ</m:mi>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>m</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>⋅</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mrow>
+                          <m:mi>ψ</m:mi>
+                          <m:mo>⁡</m:mo>
+                          <m:mfenced>
+                            <m:mi>x</m:mi>
+                          </m:mfenced>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                        <m:msup>
+                          <m:mi>x</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>m</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msup>
+                    <m:mi>ω</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>⁢</m:mo>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>⁢</m:mo>
+                  <m:mrow>
+                    <m:mi>ψ</m:mi>
+                    <m:mo>⁡</m:mo>
+                    <m:mfenced>
+                      <m:mi>x</m:mi>
+                    </m:mfenced>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mi>E</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:mi>ψ</m:mi>
+                  <m:mo>⁡</m:mo>
+                  <m:mfenced>
+                    <m:mi>x</m:mi>
+                  </m:mfenced>
+                </m:mrow>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> - \frac{\hbar}{2m} \cdot \frac{\d ^2 \psi\apply(x)}{\d x^2} + \frac{1}{2} m \omega^2 x^2 \psi\apply(x) = E \psi\apply(x) \text{.}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </equation>
+    </note>
+    <para id="fs-id1170899298470">Do rozwiązania tego równania, a więc do znalezienia dozwolonych poziomów energetycznych <m:math display="inline">
+      <m:semantics>
+        <m:mi>E</m:mi>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E</m:annotation>
+      </m:semantics>
+    </m:math> i odpowiadających im funkcji falowych <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>ψ</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>x</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi \apply(x)</m:annotation>
+    </m:semantics>
+  </m:math>, wymagamy symetrii funkcji falowych wokół <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x=0</m:annotation>
+  </m:semantics>
+</m:math> (dno studni potencjału) oraz aby były one możliwe do znormalizowania. Te warunki zapewniają skończoność gęstości prawdopodobieństwa <m:math display="inline">
+<m:semantics>
+  <m:msup>
+    <m:mfenced open="|" close="|">
+      <m:mrow>
+        <m:mi>ψ</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>x</m:mi>
+        </m:mfenced>
+      </m:mrow>
+    </m:mfenced>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \abs{\psi\apply(x)}^2</m:annotation>
+</m:semantics>
+</m:math> po scałkowaniu na przedziale od <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mo>−</m:mo>
+    <m:mi>∞</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> -\infty</m:annotation>
+</m:semantics>
+</m:math> do <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mo>+</m:mo>
+    <m:mi>∞</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> + \infty</m:annotation>
+</m:semantics>
+</m:math>. Rozwiązanie tego równania wykracza poza program niniejszego podręcznika, przejdziemy więc od razu do gotowych rozwiązań</para>
+<note id="fs-id1170901779350" class="equation-callout">
+  <equation id="fs-id1170902648181">
+    <label/>
+    <m:math display="block">
+      <m:semantics>
+        <m:mfenced open="" close="">
+          <m:mrow>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mi>n</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mfenced>
+              <m:mo>⁢</m:mo>
+              <m:mi>ℏ</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>ω</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>n</m:mi>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mi>ℏ</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>ω</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mtext>, </m:mtext>
+              <m:mo>⁢</m:mo>
+              <m:mi>n</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:mrow>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+          <m:mn>3</m:mn>
+          <m:mi>…</m:mi>
+        </m:mfenced>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_n = (n + \frac{1}{2}) \hbar \omega = \frac{2n+1}{2} \hbar \omega \text{, } n=0,1,2,3,\dots</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1170902694388">Funkcje falowe odpowiadające tym energiom (stany stacjonarne lub stany o określonej energii) wynoszą</para>
+<note id="fs-id1170901904031" class="equation-callout">
+  <equation id="fs-id1170901621555">
+    <label/>
+    <m:math display="block">
+      <m:semantics>
+        <m:mfenced open="" close="">
+          <m:mrow>
+            <m:mrow>
+              <m:msub>
+                <m:mi>ψ</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>x</m:mi>
+              </m:mfenced>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:msub>
+                <m:mi>N</m:mi>
+                <m:mi>n</m:mi>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:msup>
+                <m:mi>e</m:mi>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>β</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>⁢</m:mo>
+                      <m:msup>
+                        <m:mi>x</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo>∕</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:mrow>
+              </m:msup>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>H</m:mi>
+                  <m:mi>n</m:mi>
+                </m:msub>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mi>β</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>⁢</m:mo>
+              <m:mtext>, </m:mtext>
+              <m:mo>⁢</m:mo>
+              <m:mi>n</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:mrow>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+          <m:mn>3</m:mn>
+          <m:mrow>
+            <m:mi>…</m:mi>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mfenced>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_n \apply(x) = N_n e^{-\beta^2 x^2 /2} H_n \apply(\beta x) \text{, } n=0,1,2,3,\dots \text{,}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1170902794644">gdzie <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>β</m:mi>
+      <m:mo>=</m:mo>
+      <m:msqrt>
+        <m:mrow>
+          <m:mi>m</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>ω</m:mi>
+        </m:mrow>
+        <m:mo>∕</m:mo>
+        <m:mi>ℏ</m:mi>
+      </m:msqrt>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \beta=\sqrt{m\omega/\hbar}</m:annotation>
+  </m:semantics>
+</m:math>, <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi>N</m:mi>
+    <m:mi>n</m:mi>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> N_n</m:annotation>
+</m:semantics>
+</m:math> jest stałą normalizacji, a <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>H</m:mi>
+      <m:mi>n</m:mi>
+    </m:msub>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>y</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> H_n\apply(y)</m:annotation>
+</m:semantics>
+</m:math> to wielomian stopnia <m:math display="inline">
+<m:semantics>
+  <m:mi>n</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+</m:semantics>
+</m:math>; wielomiany te nazywane są też wielomianami Hermite’a. Pierwsze wielomiany Hermite’a mają postać</para>
+<equation id="fs-id1172098389767" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:semantics>
+      <m:semantics><m:mtable columnalign="right left" columnspacing="0px" displaystyle="true"><m:mtr><m:mtd>
+            <m:mrow>
+              <m:msub><m:mi>H</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub><m:mo>⁡</m:mo>
+              <m:mfenced><m:mi>y</m:mi>
+              </m:mfenced></m:mrow></m:mtd><m:mtd><m:mo form="infix">=</m:mo>
+            <m:mrow><m:mn>1</m:mn>
+              <m:mtext>,</m:mtext>
+            </m:mrow></m:mtd></m:mtr><m:mtr><m:mtd>
+            <m:mrow>
+              <m:msub><m:mi>H</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub><m:mo>⁡</m:mo>
+              <m:mfenced><m:mi>y</m:mi>
+              </m:mfenced></m:mrow></m:mtd><m:mtd><m:mo form="infix">=</m:mo>
+            <m:mrow><m:mn>2</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>y</m:mi>
+              <m:mtext>,</m:mtext>
+            </m:mrow></m:mtd></m:mtr><m:mtr><m:mtd>
+            <m:mrow>
+              <m:msub><m:mi>H</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub><m:mo>⁡</m:mo>
+              <m:mfenced><m:mi>y</m:mi>
+              </m:mfenced></m:mrow></m:mtd><m:mtd><m:mo form="infix">=</m:mo>
+            <m:mrow><m:mrow><m:mn>4</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:msup><m:mi>y</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup></m:mrow><m:mo>−</m:mo>
+              <m:mrow><m:mn>2</m:mn>
+                <m:mtext>,</m:mtext>
+              </m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd>
+            <m:mrow>
+              <m:msub><m:mi>H</m:mi>
+                <m:mn>3</m:mn>
+              </m:msub><m:mo>⁡</m:mo>
+              <m:mfenced><m:mi>y</m:mi>
+              </m:mfenced></m:mrow></m:mtd><m:mtd><m:mo form="infix">=</m:mo>
+            <m:mrow><m:mrow><m:mn>8</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:msup><m:mi>y</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msup></m:mrow><m:mo>−</m:mo>
+              <m:mrow><m:mn>12</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>y</m:mi>
+                <m:mtext>.</m:mtext>
+              </m:mrow></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mtable>
+        <m:mtr>
+          <m:mtd>
+            <m:mrow>
+              <m:msub>
+                <m:mi>H</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>y</m:mi>
+              </m:mfenced>
+              <m:maligngroup/>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mtext>,</m:mtext>
+            </m:mrow>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mrow>
+              <m:msub>
+                <m:mi>H</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>y</m:mi>
+              </m:mfenced>
+              <m:maligngroup/>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>y</m:mi>
+              <m:mtext>,</m:mtext>
+            </m:mrow>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mrow>
+              <m:msub>
+                <m:mi>H</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>y</m:mi>
+              </m:mfenced>
+              <m:maligngroup/>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>4</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mi>y</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mtext>,</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mrow>
+              <m:msub>
+                <m:mi>H</m:mi>
+                <m:mn>3</m:mn>
+              </m:msub>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>y</m:mi>
+              </m:mfenced>
+              <m:maligngroup/>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>8</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mi>y</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mrow>
+                <m:mn>12</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>y</m:mi>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:annotation-xml></m:semantics><m:annotation encoding="application/vnd.katalysteducation.mathtex"> \begin{align} H_0\apply(y) &amp;= 1 \text{,}\\ H_1\apply(y) &amp;= 2y \text{,}\\ H_2\apply(y) &amp;= 4y^2 -2 \text{,}\\ H_3\apply(y) &amp;= 8y^3 - 12 y \text{.} \end{align}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170901706149">Kilka przykładowych funkcji zostało zamieszczonych na <link target-id="CNX_UPhysics_40_05_states" cmlnle:case="locative"/>. Wraz ze wzrostem głównej liczby kwantowej rozwiązania oscylują między parzystymi i nieparzystymi funkcjami wokół <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x=0</m:annotation>
+  </m:semantics>
+  </m:math>.</para>
+  <figure id="CNX_UPhysics_40_05_states">
+    <media id="fs-id1170902887468" alt="Pokazane są harmoniczne potencjały V od x and funkcje falowe dla n=0 aż do n=4 stanu kwantowego potencjału. Każda funkcja falowa jest rozmieszczona pionowo ze swą pionową energią, wynikami pomiarów w jednostkach h nu sub zero. Pionowa skala energii biegnie od zera do 5. Potencjał V od x is otwartą ku górze parabolą, ze środkiem w punkcie równym zero na x = 0. Obszar leżący poniżej krzywej, poza potencjałem jest zacieniowany. Poziomy energetyczne są oznaczone poziomo linią dashed lines i są regularnie przedzielone energiami o zakresach 0.5, 1.2, 2.5, 3.5 and 4.5 h nu sub 0. Jest także zaznaczony stan dla n=0. Jest symetryczny, dodatni, ze szczytem w x=0. Dodany jest stan n = 1. Jest ujemny dla x mniej niż zero, dodatni dla x większych niż zero, oraz w początku układu. Posiada jedno ujemne minimum i jedno dodatnie minimum. W stanie n=2 wykres jest symetryczny z, ujemnym minimum w x=0 dwóch dodatnich maksimach, jednym dodatnim x i drugim na ujemnym. W stanie n = 3 wykres jest zero w środku układu. Posiada od lewej do prawej ujemne minimum di dodatnie maksimum a lewo od środka układu, następnie dodatnie maksimum i ujemne minimum na prawo od środka układu. W stanie n=4 wykres ma maksimum w środku układu, ujemne minimum po drugiej stronie i dodatnie maksimum poza minimami. Wszystkie stany są wyraźnie niezerowe w obszarze zacieniowanym i zdążają asymptotycznie do zera jak x zdąża do plus i minus nieskończoności. Minima i maksima znajdują się wszystkie wewnątrz potencjału w obszarze niezacieniowanym. Pionowa linia kreskowana pokazuje wartości x, gdzie potencjał jest równy energii stanu, to jest gdzie przerywana linia pozioma przecina się z krzywą V od x .">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_40_05_states.jpg"/>
+    </media>
+    <caption>Pierwsze pięć funkcji falowych kwantowego oscylatora harmonicznego. Klasyczne ograniczenia ruchu oscylatora oznaczone są pionowymi liniami odpowiadającymi maksymalnym wychyleniom klasycznego oscylatora <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mtext/>
+            <m:mo>±</m:mo>
+            <m:mi>A</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x = \text{} \pm A</m:annotation>
+      </m:semantics>
+      </m:math> o takiej samej energii jak kwantowy oscylator o stanie oznaczonym na rysunku.</caption>
+    </figure>
+    <example id="fs-id1170902887076">
+      <para id="fs-id1170902659505">
+        <title>Klasyczny przedział oscylacji harmonicznych</title>Obliczmy amplitudę <m:math display="inline">
+          <m:semantics>
+            <m:mi>A</m:mi>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> A</m:annotation>
+          </m:semantics>
+        </m:math> oscylacji klasycznego oscylatora harmonicznego o energii równej energii kwantowego oscylatora o liczbie kwantowej <m:math display="inline">
+        <m:semantics>
+          <m:mi>n</m:mi>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+        </m:semantics>
+        </m:math>.</para>
+        <para id="fs-id1170901762598">
+          <title>Strategia rozwiązania</title>Aby obliczyć amplitudę, musimy przyrównać energię klasyczną <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mi>E</m:mi>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>k</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo>∕</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>m</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:msup>
+                      <m:mi>ω</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>⁢</m:mo>
+                    <m:msup>
+                      <m:mi>A</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo>∕</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E = kx^2 / 2 = m \omega^2 A^2 / 2</m:annotation>
+            </m:semantics>
+          </m:math> do energii kwantowej <m:math display="inline">
+          <m:semantics>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mi>n</m:mi>
+            </m:msub>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_n</m:annotation>
+          </m:semantics>
+          </m:math>.</para>
+          <para id="fs-id1170901808304">
+            <title>Rozwiązanie</title>Otrzymujemy</para>
+            <equation id="fs-id1170902651294" class="unnumbered">
+              <label/>
+              <m:math display="block">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>E</m:mi>
+                        <m:mi>n</m:mi>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>m</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:msup>
+                            <m:mi>ω</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          <m:mo>⁢</m:mo>
+                          <m:msubsup>
+                            <m:mi>A</m:mi>
+                            <m:mi>n</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msubsup>
+                        </m:mrow>
+                        <m:mo>∕</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>⇒</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>A</m:mi>
+                        <m:mi>n</m:mi>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:msqrt>
+                        <m:mfrac>
+                          <m:mn>2</m:mn>
+                          <m:mrow>
+                            <m:mi>m</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:msup>
+                              <m:mi>ω</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>⁢</m:mo>
+                        <m:msub>
+                          <m:mi>E</m:mi>
+                          <m:mi>n</m:mi>
+                        </m:msub>
+                      </m:msqrt>
+                      <m:mo>=</m:mo>
+                      <m:msqrt>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mn>2</m:mn>
+                            <m:mrow>
+                              <m:mi>m</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:msup>
+                                <m:mi>ω</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mfrac>
+                          <m:mo>⋅</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>n</m:mi>
+                              </m:mrow>
+                              <m:mo>+</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>ℏ</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>ω</m:mi>
+                      </m:msqrt>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:msqrt>
+                          <m:mfenced>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>n</m:mi>
+                              </m:mrow>
+                              <m:mo>+</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:mfenced>
+                          <m:mo>⁢</m:mo>
+                          <m:mfrac>
+                            <m:mi>ℏ</m:mi>
+                            <m:mrow>
+                              <m:mi>m</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mi>ω</m:mi>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:msqrt>
+                        <m:mtext>.</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_n = m \omega^2 A_n^2 / 2 \implies A_n = \sqrt{\frac{2}{m \omega^2}E_n} = \sqrt{\frac{2}{m\omega^2} \cdot \frac{2n+1}{2} \hbar \omega} = \sqrt{(2n+1) \frac{\hbar}{m \omega}} \text{.}</m:annotation>
+                </m:semantics>
+              </m:math>
+            </equation>
+            <para id="fs-id1170902865850">
+              <title>Znaczenie</title>Wraz ze wzrostem liczby kwantowej energia oscylatora, a co za tym idzie także amplituda oscylacji rosną o pewną wartość. Dla dużych <m:math display="inline">
+                <m:semantics>
+                  <m:mi>n</m:mi>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+                </m:semantics>
+                </m:math> amplituda staje się w przybliżeniu proporcjonalna do pierwiastka kwadratowego z liczby kwantowej.</para>
+              </example>
+              <para id="fs-id1170902781309">Z tego przykładu możemy wyciągnąć kilka ciekawych wniosków. W przeciwieństwie do klasycznego oscylatora zmierzone wartości energii oscylatora kwantowego mogą przyjmować jedynie określone wartości (<link target-id="fs-id1170902648181"/>). Co więcej, w przeciwieństwie do przypadku cząstki kwantowej w pudełku poziomy energetyczne są jednakowo od siebie oddalone</para>
+              <equation id="fs-id1170901634861">
+                <m:math display="block">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mo>Δ</m:mo>
+                        <m:mi>E</m:mi>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>E</m:mi>
+                          <m:mrow>
+                            <m:mi>n</m:mi>
+                            <m:mo>+</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:msub>
+                        <m:mo>−</m:mo>
+                        <m:msub>
+                          <m:mi>E</m:mi>
+                          <m:mi>n</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                                <m:mo>⁢</m:mo>
+                                <m:mfenced>
+                                  <m:mrow>
+                                    <m:mi>n</m:mi>
+                                    <m:mo>+</m:mo>
+                                    <m:mn>1</m:mn>
+                                  </m:mrow>
+                                </m:mfenced>
+                              </m:mrow>
+                              <m:mo>+</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:mo>⁢</m:mo>
+                          <m:mi>ℏ</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:mi>ω</m:mi>
+                        </m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>n</m:mi>
+                              </m:mrow>
+                              <m:mo>+</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:mo>⁢</m:mo>
+                          <m:mi>ℏ</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:mi>ω</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mi>ℏ</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>ω</m:mi>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mi>h</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>ν</m:mi>
+                        <m:mtext>.</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\Delta}E = E_{n+1} - E_n = \frac{2(n+1) +1}{2} \hbar \omega - \frac{2n+1}{2} \hbar \omega = \hbar\omega = h\nu \text{.}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </equation>
+              <para id="fs-id1170901741659">Gdy cząstka będąca częścią takiego układu przejdzie z wyższego poziomu energetycznego na niższy, najmniejsza porcja energii emitowanego fotonu wynosi <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mi>h</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>ν</m:mi>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> h\nu</m:annotation>
+                </m:semantics>
+              </m:math>. Podobnie gdy cząstka przechodzi z niższego na wyższy poziom energii, najmniejsza możliwa energia, jaką może ona zaabsorbować, jest równa <m:math display="inline">
+              <m:semantics>
+                <m:mrow>
+                  <m:mi>h</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>ν</m:mi>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> h\nu</m:annotation>
+              </m:semantics>
+              </m:math>. Kwantowy oscylator harmoniczny może absorbować i emitować jedynie wielokrotności tego kwantu energii. Jest to zgodne z przewidywaniami Plancka w związku z problemem promieniowania ciała doskonale czarnego. </para>
+              <example id="fs-id1170903077670">
+                <para id="fs-id1170902872043">
+                  <title>Energia drgań cząstki chlorowodoru</title>Dwuatomowa cząsteczka HCl składa się z jednego atomu chloru i jednego atomu wodoru. Ponieważ atom chloru jest 35 razy cięższy od atomu wodoru, drgania cząsteczki HCl można przybliżyć za pomocą modelu, w którym atom Cl jest nieruchomy, a atom H drga wokół niego. Oscylacje te spowodowane są istnieniem oddziaływania międzyatomowego, które podlega prawu Hooka. Na widmie drgań chlorowodoru w podczerwieni linia charakterystyczna o najmniejszej częstotliwości występuje dla <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:mi>ν</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>8,88</m:mn>
+                            <m:mo>⋅</m:mo>
+                            <m:msup>
+                              <m:mn>10</m:mn>
+                              <m:mn>13</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                          <m:mi mathvariant="normal">Hz</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \nu = \SI{8,88e13}{\hertz}</m:annotation>
+                    </m:semantics>
+                  </m:math>. Jakie są odległości pomiędzy poziomami energetycznymi drgań tej cząsteczki? Jaka jest stała sprężystości <m:math display="inline">
+                  <m:semantics>
+                    <m:mi>k</m:mi>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k</m:annotation>
+                  </m:semantics>
+                  </m:math> tego układu?</para>
+                  <para id="fs-id1170902033299">
+                    <title>Strategia rozwiązania</title>Linia charakterystyczna o najmniejszej częstotliwości odpowiada emisji fotonu o najniższej częstotliwości. Fotony te są emitowane, gdy molekuła przechodzi między sąsiednimi poziomami energetycznymi drgań. Zakładając, że poziomy energetyczne są równomiernie rozłożone, możemy wykorzystać <link target-id="fs-id1170901634861"/> do obliczenia odległości między nimi. Przyjmujemy, że atom chloru jest nieskończenie ciężki, a atom wodoru o masie <m:math display="inline">
+                      <m:semantics>
+                        <m:mi>m</m:mi>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> m</m:annotation>
+                      </m:semantics>
+                    </m:math> oscyluje wokół niego. Traktując ten układ jak klasyczny oscylator, otrzymamy stałą sprężystości ze wzoru <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:mi>k</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mi>m</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:msup>
+                            <m:mi>ω</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k = m \omega^2</m:annotation>
+                    </m:semantics>
+                    </m:math>.</para>
+                    <para id="fs-id1170902689148">
+                      <title>Rozwiązanie</title>Odległość między poziomami energetycznymi wynosi</para>
+                      <equation id="fs-id1170901582615" class="unnumbered">
+                        <label/>
+                        <m:math display="block">
+                          <m:semantics>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo>Δ</m:mo>
+                                <m:mi>E</m:mi>
+                              </m:mrow>
+                              <m:mo>=</m:mo>
+                              <m:mrow>
+                                <m:mi>h</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>ν</m:mi>
+                              </m:mrow>
+                              <m:mo>=</m:mo>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mn>4,14</m:mn>
+                                    <m:mo>⋅</m:mo>
+                                    <m:msup>
+                                      <m:mn>10</m:mn>
+                                      <m:mn>-15</m:mn>
+                                    </m:msup>
+                                  </m:mrow>
+                                  <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                                  <m:mrow>
+                                    <m:mi mathvariant="normal">eV</m:mi>
+                                    <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                                    <m:mi mathvariant="normal">s</m:mi>
+                                  </m:mrow>
+                                </m:mrow>
+                                <m:mo>⋅</m:mo>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mn>8,88</m:mn>
+                                    <m:mo>⋅</m:mo>
+                                    <m:msup>
+                                      <m:mn>10</m:mn>
+                                      <m:mn>13</m:mn>
+                                    </m:msup>
+                                  </m:mrow>
+                                  <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                                  <m:mi mathvariant="normal">Hz</m:mi>
+                                </m:mrow>
+                              </m:mrow>
+                              <m:mo>=</m:mo>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mn>0,368</m:mn>
+                                  <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                                  <m:mi mathvariant="normal">eV</m:mi>
+                                </m:mrow>
+                                <m:mtext>.</m:mtext>
+                              </m:mrow>
+                            </m:mrow>
+                            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\Delta} E = h\nu = \SI{4,14e-15}{\electronvolt\second} \cdot \SI{8,88e13}{\hertz} = \SI{0,368}{\electronvolt} \text{.}</m:annotation>
+                          </m:semantics>
+                        </m:math>
+                      </equation>
+                      <para id="fs-id1170899367915">Stała sprężystości jest równa</para>
+                      <equation id="fs-id1170901928550" class="unnumbered">
+<m:math display="block"><m:semantics><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:msup><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>ν</m:mi></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>1,67</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>-27</m:mn></m:msup></m:mrow><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mfenced><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mrow><m:mn>8,88</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>13</m:mn></m:msup></m:mrow><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">Hz</m:mi></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>520</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            k = m \omega^2 = m (2\pi \nu)^2 = \SI{1,67e-27}{\kilo\gram} \cdot (2\pi \cdot \SI{8,88e13}{\hertz} )^2 = \SI{520}{\newton\per\metre} \text{.}</m:annotation></m:semantics></m:math>
+                      </equation>
+                      <para id="fs-id1170902924267">
+                        <title>Znaczenie</title>Oddziaływanie międzyatomowe w cząstce HCl jest niezwykle silne. Wartości energii fotonów uwalnianych podczas przejścia między poziomami odpowiadają energii promieniowania podczerwonego. Jak zobaczymy w dalszej części rozdziału, przejścia między poziomami drgań cząstki dwuatomowej często towarzyszą przejściom rotacyjnym.</para>
+                      </example>
+                      <note id="fs-id1170903035061" class="check-understanding">
+                        <exercise id="fs-id1170902659909">
+                          <problem id="fs-id1170901585139">
+                            <para id="fs-id1170901481467">
+                              <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Częstotliwość drgań dwuatomowej cząstki jodowodoru HI wynosi <m:math display="inline">
+                                <m:semantics>
+                                  <m:mrow>
+                                    <m:mrow>
+                                      <m:mn>6,69</m:mn>
+                                      <m:mo>⋅</m:mo>
+                                      <m:msup>
+                                        <m:mn>10</m:mn>
+                                        <m:mn>13</m:mn>
+                                      </m:msup>
+                                    </m:mrow>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi mathvariant="normal">Hz</m:mi>
+                                  </m:mrow>
+                                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{6,69e13}{\hertz}</m:annotation>
+                                </m:semantics>
+                              </m:math>. <list id="eip-idm241575120" list-type="enumerated" number-style="lower-alpha">
+                              <item>Jaka jest stała sprężystości siły wiążącej atomy jodu i wodoru? </item>
+                              <item>Jaka jest najmniejsza możliwa częstotliwość emitowanego przez tę cząstkę fotonu?</item>
+                            </list>
+                          </para>
+                        </problem>
+                        <solution id="fs-id1170901576181">
+                          <para id="fs-id1170901972140">a. <m:math display="inline">
+                            <m:semantics>
+                              <m:mrow>
+                                <m:mn>295</m:mn>
+                                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                                <m:mrow>
+                                  <m:mi mathvariant="normal">N</m:mi>
+                                  <m:mo>∕</m:mo>
+                                  <m:mi mathvariant="normal">m</m:mi>
+                                </m:mrow>
+                              </m:mrow>
+                              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{295}{\newton\per\metre}</m:annotation>
+                            </m:semantics>
+                          </m:math>; b. <m:math display="inline">
+                          <m:semantics>
+                            <m:mrow>
+                              <m:mn>0,277</m:mn>
+                              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                              <m:mi mathvariant="normal">eV</m:mi>
+                            </m:mrow>
+                            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,277}{\electronvolt}</m:annotation>
+                          </m:semantics>
+                          </m:math>. </para>
+                        </solution>
+                      </exercise>
+                    </note>
+                    <para id="fs-id1170899253161">Kwantowy oscylator różni się od klasycznego pod trzema względami:</para>
+                    <para id="fs-id1170903141920">Po pierwsze, stan podstawowy kwantowego oscylatora wynosi <m:math display="inline">
+                      <m:semantics>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>E</m:mi>
+                            <m:mn>0</m:mn>
+                          </m:msub>
+                          <m:mo>=</m:mo>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mi>ℏ</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mi>ω</m:mi>
+                            </m:mrow>
+                            <m:mo>∕</m:mo>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_0 = \hbar \omega /2</m:annotation>
+                      </m:semantics>
+                    </m:math> (w jednym wymiarze, podczas gdy w dwóch i trzech wymiarach wynosi odpowiednio <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:mi>ℏ</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>ω</m:mi>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \hbar \omega</m:annotation>
+                    </m:semantics>
+                  </m:math> i <m:math display="inline">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>3</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>ℏ</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>ω</m:mi>
+                      </m:mrow>
+                      <m:mo>∕</m:mo>
+                      <m:mn>2</m:mn>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 3\hbar \omega / 2</m:annotation>
+                  </m:semantics>
+                </m:math>), a nie zero, jak w przypadku najniższej możliwej energii układu klasycznego. Energia sprężystości oscylatora dwu- i trójwymiarowego wynosi <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mo>∕</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                      <m:mo>⋅</m:mo>
+                      <m:mi>k</m:mi>
+                    </m:mrow>
+                    <m:mo>⁢</m:mo>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mi>x</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>+</m:mo>
+                        <m:msup>
+                          <m:mi>y</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mfenced>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 1/2 \cdot k(x^2 + y^2)</m:annotation>
+                </m:semantics>
+              </m:math> i <m:math display="inline">
+              <m:semantics>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo>∕</m:mo>
+                      <m:mn>2</m:mn>
+                    </m:mrow>
+                    <m:mo>⋅</m:mo>
+                    <m:mi>k</m:mi>
+                  </m:mrow>
+                  <m:mo>⁢</m:mo>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>x</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>+</m:mo>
+                      <m:msup>
+                        <m:mi>y</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>+</m:mo>
+                      <m:msup>
+                        <m:mi>z</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 1/2 \cdot k(x^2 + y^2+z^2)</m:annotation>
+              </m:semantics>
+            </m:math>. Podobnie energie kinetyczne wynoszą odpowiednio <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>1</m:mn>
+                    <m:mo>∕</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mi>m</m:mi>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:msubsup>
+                      <m:mi>v</m:mi>
+                      <m:mi>x</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                    <m:mo>+</m:mo>
+                    <m:msubsup>
+                      <m:mi>v</m:mi>
+                      <m:mi>y</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msubsup>
+                  </m:mrow>
+                </m:mfenced>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 1/2 \cdot m (v_x^2 +v_y^2)</m:annotation>
+            </m:semantics>
+          </m:math> oraz <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo>∕</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mi>m</m:mi>
+              </m:mrow>
+              <m:mo>⁢</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:msubsup>
+                    <m:mi>v</m:mi>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msubsup>
+                  <m:mo>+</m:mo>
+                  <m:msubsup>
+                    <m:mi>v</m:mi>
+                    <m:mi>y</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msubsup>
+                  <m:mo>+</m:mo>
+                  <m:msubsup>
+                    <m:mi>v</m:mi>
+                    <m:mi>z</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msubsup>
+                </m:mrow>
+              </m:mfenced>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 1/2 \cdot m (v_x^2 +v_y^2+v_z^2)</m:annotation>
+          </m:semantics>
+          </m:math>.</para>
+          <para id="fs-id1170902952467">Po drugie, cząstka w potencjale kwantowego oscylatora harmonicznego może być znaleziona z niezerowym prawdopodobieństwem poza przedziałem <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mi>A</m:mi>
+                </m:mrow>
+                <m:mo>≤</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>≤</m:mo>
+                <m:mi>A</m:mi>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> -A \leq x \leq A</m:annotation>
+            </m:semantics>
+          </m:math>. W klasycznym przypadku jest to niemożliwe energetycznie. Prawdopodobieństwo znalezienia cząstki kwantowej w stanie podstawowym, znajdującej się w przedziale wzbronionym, wynosi około <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>16</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">%</m:mi>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{16}{\percent}</m:annotation>
+          </m:semantics>
+          </m:math>.</para>
+          <para id="fs-id1170901529435">Po trzecie, rozkład gęstości prawdopodobieństwa kwantowego oscylatora w stanie podstawowym jest największy pośrodku studni (<m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mi>x</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x=0</m:annotation>
+            </m:semantics>
+            </m:math>). Oznacza to, że cząstka spędza najwięcej czasu pośrodku studni, co daje odwrotną sytuację niż w przypadku klasycznego oscylatora, dla którego największe prawdopodobieństwo znalezienia cząstki istnieje w punktach maksymalnego wychylenia.</para><equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-203" class="unnumbered"><m:math/></equation>
+            <note id="fs-id1170903029268" class="check-understanding">
+              <exercise id="fs-id1170902634008">
+                <problem id="fs-id1170901771770">
+                  <para id="fs-id1170901680213">
+                    <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Oblicz wartość oczekiwaną położenia cząstki w stanie podstawowym oscylatora harmonicznego, wykorzystując symetrię.</para>
+                  </problem>
+                  <solution id="fs-id1170903117058">
+                    <para id="fs-id1170901634580">
+                      <m:math display="inline">
+                        <m:semantics>
+                          <m:mrow>
+                            <m:mfenced open="⟨" close="⟩">
+                              <m:mi>x</m:mi>
+                            </m:mfenced>
+                            <m:mo>=</m:mo>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \langle x \rangle=0</m:annotation>
+                        </m:semantics>
+                        </m:math>. </para>
+                      </solution>
+                    </exercise>
+                  </note>
+                  <para id="fs-id1170901581799">Charakter rozkładów gęstości prawdopodobieństwa w układach kwantowych zmienia się dla stanów wzbudzonych, upodabniając się do rozkładów klasycznych wraz ze wzrostem liczby kwantowej. Zmiana ta jest widoczna już dla pierwszego stanu wzbudzonego kwantowego oscylatora, ponieważ jego rozkład rośnie w pobliżu punktów granicznych, a zanika w położeniu równowagi, jak widać na <link target-id="CNX_UPhysics_40_05_well" cmlnle:case="locative"/>. Zgodnie z zasadą korespondencji Bohra, przy warunku dużych liczb kwantowych, kwantowy opis oscylatora harmonicznego zgadza się z klasycznym modelem, co zostało przedstawione na <link target-id="CNX_UPhysics_40_05_density" cmlnle:case="locative"/>. Klasyczny rozkład gęstości prawdopodobieństwa odpowiadający energii układu o liczbie kwantowej <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:mi>n</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>12</m:mn>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=12</m:annotation>
+                    </m:semantics>
+                    </m:math> jest dobrym przybliżeniem kwantowego rozkładu gęstości prawdopodobieństwa oscylatora kwantowego w stanie wzbudzonym. Im bardziej wzbudzone stany, tym większa zgodność rozkładów.</para>
+                    <figure id="CNX_UPhysics_40_05_density">
+                      <media id="fs-id1170901639178" alt="Pokazany jest wykres rozkładu gęstości prawdopodobieństwa wyrażonego rozmieszczeniem amplitudy kwadratu Psi sub 12 dla kwantowego oscylatora harmonicznego jako funkcja x i jako krzywa podstawowa. Krzywa posiada 13 pików z 12 zer między nimi, która zdąża asymptotycznie od zera do plus i minus nieskończoności. Amplituda pików jest najniższa w środkowej fazie wzrostu i rośnie wraz odległością od początku układu. Wszystkie piki znajdują się pomiędzy x=-A i x=+A. Zaznaczona linią przerywaną krzywa, która pokazuje rozkład gęstości prawdopodobieństwa w klasycznym oscylatorze z tą samą energią, jest krzywą łagodnie otwartą ku górze.">
+                        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_40_05_density.jpg"/>
+                      </media>
+                      <caption>Rozkład gęstości prawdopodobieństwa znalezienia kwantowego oscylatora harmonicznego w stanie odpowiadającym <m:math display="inline">
+                        <m:semantics>
+                          <m:mrow>
+                            <m:mi>n</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mn>12</m:mn>
+                          </m:mrow>
+                          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=12</m:annotation>
+                        </m:semantics>
+                        </m:math>. Linia przerywana odpowiada rozkładowi gęstości prawdopodobieństwa klasycznego oscylatora harmonicznego o tej samej energii. </caption>
+                      </figure>
+                    </section>
+                    <section id="fs-id1170901568985" class="key-concepts">
+                      <title>Podsumowanie</title>
+                      <list id="fs-id1170902741502" list-type="bulleted" bullet-style="bullet">
+                        <item>Kwantowy oscylator harmoniczny jest modelem zbudowanym na zasadzie podobieństwa do klasycznego oscylatora harmonicznego (stosujemy ten sam hamiltonian, ale wprowadzamy dla położenia i pędu operatory). Pozwala on na modelowanie zachowania wielu procesów fizycznych zachodzących w mikroświecie, takich jak wibracje molekularne.</item>
+                        <item>Dozwolone energie (spektrum energii) kwantowych oscylatorów są dyskretne i równomiernie rozłożone (kolejne poziomy energetyczne są oddalone o tę samą wartość). Odległość pomiędzy kolejnymi poziomami energetycznymi jest stała i równa <m:math display="inline">
+                          <m:semantics>
+                            <m:mrow>
+                              <m:mi>ℏ</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mi>ω</m:mi>
+                            </m:mrow>
+                            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \hbar \omega</m:annotation>
+                          </m:semantics>
+                        </m:math>, czyli wartości stałej Plancka pomnożonej przez <m:math display="inline">
+                        <m:semantics>
+                          <m:mi>ω</m:mi>
+                          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \omega</m:annotation>
+                        </m:semantics>
+                      </m:math> (gdzie <m:math display="inline">
+                      <m:semantics>
+                        <m:mrow>
+                          <m:mi>ω</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:msqrt>
+                            <m:mi>k</m:mi>
+                            <m:mo>∕</m:mo>
+                            <m:mi>m</m:mi>
+                          </m:msqrt>
+                        </m:mrow>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \omega = \sqrt{k/m}</m:annotation>
+                      </m:semantics>
+                    </m:math>, a <m:math display="inline">
+                    <m:semantics>
+                      <m:mi>k</m:mi>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \omega</m:annotation>
+                    </m:semantics>
+                    </m:math> to stała sprężystości).</item>
+                    <item>Wartość energii stanu podstawowego jest większa od zera. Oznacza to, że w przeciwieństwie do oscylatora klasycznego kwantowy oscylator harmoniczny nigdy nie znajduje się w stanie spoczynku. Nawet na dnie studni potencjału cząstka (np. atom czy elektron) poddana jest fluktuacjom kwantowym. Spektakularnym tego przykładem jest ciekły hel, który nie osiąga fazy stałej (występuje ona jedynie w warunkach wysokiego ciśnienia).</item>
+                    <item>Stany stacjonarne to stany o niezależnej w czasie energii. Ich przykładami są rozwiązania niezależnego w czasie równania Schrödingera. </item>
+                    <item>W mechanice kwantowej stacjonarne stany kwantowe posiadające niezerową gęstość prawdopodobieństwa występują również w obszarach poza klasycznymi punktami zwrotnymi (punktami, w których klasyczna cząstka odbija się od bariery potencjału, gdy <m:math display="inline">
+                      <m:semantics>
+                        <m:mrow>
+                          <m:mi>E</m:mi>
+                          <m:mo>≤</m:mo>
+                          <m:mi>V</m:mi>
+                        </m:mrow>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E \leq V</m:annotation>
+                      </m:semantics>
+                      </m:math>). </item>
+                      <item>Gdy kwantowy oscylator harmoniczny znajduje się w stanie podstawowym, można go znaleźć z największym prawdopodobieństwem w obszarze minimum energetycznego studni kwantowej. Jest to obszar o najmniejszym prawdopodobieństwie dla oscylatora klasycznego.</item>
+                      <item>Dla wysokich liczb kwantowych ruch cząstek kwantowych zaczyna się upodabniać do ruchu oscylatorów klasycznych, co zgadza się z zasadą korespondencji Bohra (opis kwantowy odtwarza opis klasyczny na poziomie pewnych energii i dla pewnych rozmiarów geometrycznych, wykraczających poza rozmiary typowe dla mikroświata).</item>
+                    </list>
+                  </section>
+                  <section id="fs-id1170902916136" class="review-conceptual-questions">
+                    <title>Pytania</title>
+                    <exercise id="fs-id1170902865383">
+                      <problem id="fs-id1170901701367">
+                        <para id="fs-id1170902639438">Czy możliwe jest zmierzenie wartości energii kwantowego oscylatora harmonicznego <m:math display="inline">
+                          <m:semantics>
+                            <m:mrow>
+                              <m:mn>0,75</m:mn>
+                              <m:mo>⁢</m:mo>
+                              <m:mi>ℏ</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mi>ω</m:mi>
+                            </m:mrow>
+                            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \num{0,75} \hbar \omega</m:annotation>
+                          </m:semantics>
+                          </m:math>? Dlaczego? Dlaczego nie? Wyjaśnij.</para>
+                        </problem>
+                        <solution id="fs-id1170901952873">
+                          <para id="fs-id1170902647267">Nie. Ta energia odpowiada <m:math display="inline">
+                            <m:semantics>
+                              <m:mrow>
+                                <m:mi>n</m:mi>
+                                <m:mo>=</m:mo>
+                                <m:mn>0,25</m:mn>
+                              </m:mrow>
+                              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n = \num{0,25}</m:annotation>
+                            </m:semantics>
+                          </m:math>, a <m:math display="inline">
+                          <m:semantics>
+                            <m:mi>n</m:mi>
+                            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+                          </m:semantics>
+                          </m:math> jest liczbą całkowitą.</para>
+                        </solution>
+                      </exercise>
+                      <exercise id="fs-id1170901633873">
+                        <problem id="fs-id1170903032933">
+                          <para id="fs-id1170902861220">Wyjaśnij związek między hipotezą Plancka o skwantowaniu energii a energią kwantowego oscylatora harmonicznego.</para>
+                        </problem>
+                      </exercise>
+                      <exercise id="fs-id1170901711722">
+                        <problem id="fs-id1170901538386">
+                          <para id="fs-id1170902745541">Jeśli klasyczny oscylator harmoniczny może znajdować się w stanie spoczynku, to dlaczego kwantowy oscylator harmoniczny nigdy go nie osiąga? Czy ten fakt narusza zasadę korespondencji Bohra?</para>
+                        </problem>
+                        <solution id="fs-id1170901802953">
+                          <para id="fs-id1170901605954">Ponieważ najmniejszą możliwą liczbą kwantową <m:math display="inline">
+                            <m:semantics>
+                              <m:mi>n</m:mi>
+                              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+                            </m:semantics>
+                          </m:math> dla oscylatora harmonicznego jest 0 co odpowiada niezerowej energii stanu podstawowego. Nie narusza to zasady koreskpondencji, ponieważ mechanika kwantowa i mechanika klasyczna zgadzają się jedynie w przypadku dużych <m:math display="inline">
+                          <m:semantics>
+                            <m:mi>n</m:mi>
+                            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+                          </m:semantics>
+                          </m:math>.</para>
+                        </solution>
+                      </exercise>
+                      <exercise id="fs-id1170903110156">
+                        <problem id="fs-id1170902788527">
+                          <para id="fs-id1170901636632">Używając modelu cząstki kwantowej w pudełku lub modelu oscylatora kwantowego, wyjaśnij znaczenie fizyczne zasady korespondencji Bohra.</para>
+                        </problem>
+                      </exercise>
+                      <exercise id="fs-id1170903037648">
+                        <problem id="fs-id1170901866724">
+                          <para id="fs-id1170901670037">Czy możemy jednocześnie zmierzyć położenie i energię oscylatora kwantowego? Dlaczego? Dlaczego nie?</para>
+                        </problem>
+                        <solution id="fs-id1170901570350">
+                          <para id="fs-id1170902957393">Taki pomiar jest możliwy z zachowaniem obostrzeń zasady nieoznaczoności. Jeżeli cząstka oscylująca jest zlokalizowana tzn jej położenie jest dokładniej znane to wówczas jej pęd jest mniej znany.</para>
+                        </solution>
+                      </exercise>
+                    </section>
+                    <section id="fs-id1170902739559" class="review-problems">
+                      <title>Zadania</title>
+                      <exercise id="fs-id1170901523359">
+                        <problem id="fs-id1170901648918">
+                          <para id="fs-id1170903087862">Udowodnij, że stany kwantowego oscylatora o dwóch najniższych energiach <m:math display="inline">
+                            <m:semantics>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>ψ</m:mi>
+                                  <m:mn>0</m:mn>
+                                </m:msub>
+                                <m:mo>⁡</m:mo>
+                                <m:mfenced>
+                                  <m:mi>x</m:mi>
+                                </m:mfenced>
+                              </m:mrow>
+                              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_0\apply(x)</m:annotation>
+                            </m:semantics>
+                          </m:math> i <m:math display="inline">
+                          <m:semantics>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>ψ</m:mi>
+                                <m:mn>1</m:mn>
+                              </m:msub>
+                              <m:mo>⁡</m:mo>
+                              <m:mfenced>
+                                <m:mi>x</m:mi>
+                              </m:mfenced>
+                            </m:mrow>
+                            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_1\apply(x)</m:annotation>
+                          </m:semantics>
+                          </m:math> z <link target-id="fs-id1170901621555" cmlnle:case="genitive"/> spełniają <link target-id="fs-id1170901952067"/>.</para>
+                        </problem>
+                        <solution id="fs-id1170903051510">
+                          <para id="fs-id1170902871755"><link target-id="fs-id1170901952067"/>.</para>
+                          </solution>
+                        </exercise>
+                        <exercise id="fs-id1170903064117">
+                          <problem id="fs-id1170902865916">
+                            <para id="fs-id1170901542835">Jeśli energia stanu podstawowego prostego oscylatora harmonicznego jest równa <m:math display="inline">
+                              <m:semantics>
+                                <m:mrow>
+                                  <m:mn>1,25</m:mn>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi mathvariant="normal">eV</m:mi>
+                                </m:mrow>
+                                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{1,25}{\electronvolt}</m:annotation>
+                              </m:semantics>
+                              </m:math>, to jaka jest częstotliwość ruchu tego oscylatora?</para>
+                            </problem>
+                          </exercise>
+                          <exercise id="fs-id1170902749331">
+                            <problem id="fs-id1170899265082">
+                              <para id="fs-id1170902639336">Jaka jest częstotliwość drgań kwantowego oscylatora harmonicznego, który przy przejściu ze stanu <m:math display="inline">
+                                <m:semantics>
+                                  <m:mfenced>
+                                    <m:mrow>
+                                      <m:mi>n</m:mi>
+                                      <m:mo>+</m:mo>
+                                      <m:mn>1</m:mn>
+                                    </m:mrow>
+                                  </m:mfenced>
+                                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> (n+1)</m:annotation>
+                                </m:semantics>
+                              </m:math> do stanu <m:math display="inline">
+                              <m:semantics>
+                                <m:mi>n</m:mi>
+                                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+                              </m:semantics>
+                            </m:math> emituje foton o długości fali <m:math display="inline">
+                            <m:semantics>
+                              <m:mrow>
+                                <m:mn>450</m:mn>
+                                <m:mo>⁢</m:mo>
+                                <m:mi mathvariant="normal">nm</m:mi>
+                              </m:mrow>
+                              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{450}{\nano\metre}</m:annotation>
+                            </m:semantics>
+                            </m:math>?</para>
+                          </problem>
+                          <solution id="fs-id1170899266254">
+                            <para id="fs-id1170901603056">
+                              <m:math display="inline">
+                                <m:semantics>
+                                  <m:mrow>
+                                    <m:mrow>
+                                      <m:mrow>
+                                        <m:mn>6,62</m:mn>
+                                        <m:mo>⋅</m:mo>
+                                        <m:msup>
+                                          <m:mn>10</m:mn>
+                                          <m:mn>14</m:mn>
+                                        </m:msup>
+                                      </m:mrow>
+                                      <m:mo>⁢</m:mo>
+                                      <m:mi mathvariant="normal">Hz</m:mi>
+                                    </m:mrow>
+                                    <m:mo>⁢</m:mo>
+                                  </m:mrow>
+                                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{6,62e14}{\hertz} \text{.}</m:annotation>
+                                </m:semantics>
+                                </m:math>. </para>
+                              </solution>
+                            </exercise>
+                            <exercise id="fs-id1170901609693">
+                              <problem id="fs-id1170903016980">
+                                <para id="fs-id1170902859002">Wibracje wodoru cząsteczkowego H<sub>2</sub> można modelować przez prosty oscylator harmoniczny o stałej sprężystości <m:math display="inline">
+                                  <m:semantics>
+                                    <m:mrow>
+                                      <m:mi>k</m:mi>
+                                      <m:mo>=</m:mo>
+                                      <m:mrow>
+                                        <m:mrow>
+                                          <m:mn>1,13</m:mn>
+                                          <m:mo>⋅</m:mo>
+                                          <m:msup>
+                                            <m:mn>10</m:mn>
+                                            <m:mn>3</m:mn>
+                                          </m:msup>
+                                        </m:mrow>
+                                        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">N</m:mi>
+                                          <m:mo>∕</m:mo>
+                                          <m:mi mathvariant="normal">m</m:mi>
+                                        </m:mrow>
+                                      </m:mrow>
+                                    </m:mrow>
+                                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k = \SI{1,13e3}{\newton\per\metre}</m:annotation>
+                                  </m:semantics>
+                                </m:math> i masie <m:math display="inline">
+                                <m:semantics>
+                                  <m:mrow>
+                                    <m:mi>m</m:mi>
+                                    <m:mo>=</m:mo>
+                                    <m:mrow>
+                                      <m:mrow>
+                                        <m:mrow>
+                                          <m:mn>1,67</m:mn>
+                                          <m:mo>⋅</m:mo>
+                                          <m:msup>
+                                            <m:mn>10</m:mn>
+                                            <m:mn>-27</m:mn>
+                                          </m:msup>
+                                        </m:mrow>
+                                        <m:mo>⁢</m:mo>
+                                        <m:mi mathvariant="normal">kg</m:mi>
+                                      </m:mrow>
+                                      <m:mtext>.</m:mtext>
+                                    </m:mrow>
+                                  </m:mrow>
+                                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> m = \SI{1,67e-27}{\kilo\gram} \text{.}</m:annotation>
+                                </m:semantics>
+                              </m:math>
+                              <list id="eip-idm278868896" list-type="enumerated" number-style="lower-alpha">
+                                <item>Ile wynosi częstotliwość drgań cząsteczki? </item>
+                                <item>Ile wynosi energia i długość fali fotonu wyemitowanego przy przejściu cząsteczki z trzeciego stanu wzbudzonego do drugiego stanu wzbudzonego?</item>
+                              </list>
+                            </para>
+                          </problem>
+                        </exercise>
+                        <exercise id="fs-id1170902723619">
+                          <problem id="fs-id1170901941659">
+                            <para id="fs-id1170901619399">Cząsteczka o masie <m:math display="inline">
+                              <m:semantics>
+                                <m:mrow>
+                                  <m:mn>0,03</m:mn>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi mathvariant="normal">kg</m:mi>
+                                </m:mrow>
+                                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,03}{\kilo\gram}</m:annotation>
+                              </m:semantics>
+                            </m:math> oscyluje na sprężynie z częstotliwością <m:math display="inline">
+                            <m:semantics>
+                              <m:mrow>
+                                <m:mn>4</m:mn>
+                                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                                <m:mi mathvariant="normal">Hz</m:mi>
+                              </m:mrow>
+                              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{4}{\hertz}</m:annotation>
+                            </m:semantics>
+                          </m:math>. W punkcie równowagowym ma prędkość <m:math display="inline">
+                          <m:semantics>
+                            <m:mrow>
+                              <m:mn>0,6</m:mn>
+                              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">m</m:mi>
+                                <m:mo>∕</m:mo>
+                                <m:mi mathvariant="normal">s</m:mi>
+                              </m:mrow>
+                            </m:mrow>
+                            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,6}{\metre\per\second}</m:annotation>
+                          </m:semantics>
+                          </m:math>. Oblicz główną liczbę kwantową stanu, w którym znajduje się ta cząsteczka, zakładając, że jej stan energetyczny jest stabilny.</para>
+                        </problem>
+                        <solution id="fs-id1170902921866">
+                          <para id="fs-id1170902655231">
+                            <m:math display="inline">
+                              <m:semantics>
+                                <m:mrow>
+                                  <m:mi>n</m:mi>
+                                  <m:mo>≈</m:mo>
+                                  <m:mrow>
+                                    <m:mrow>
+                                      <m:mn>2,037</m:mn>
+                                      <m:mo>⋅</m:mo>
+                                      <m:msup>
+                                        <m:mn>10</m:mn>
+                                        <m:mn>30</m:mn>
+                                      </m:msup>
+                                    </m:mrow>
+                                    <m:mo>⁢</m:mo>
+                                  </m:mrow>
+                                </m:mrow>
+                                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n \approx \num{2,037e30} \text{.}</m:annotation>
+                              </m:semantics>
+                              </m:math>. </para>
+                            </solution>
+                          </exercise>
+                          <exercise id="fs-id1170901485987">
+                            <problem id="fs-id1170901583449">
+                              <para id="fs-id1170902869525">Oblicz wartość oczekiwaną kwadratu położenia dla kwantowego oscylatora harmonicznego w stanie podstawowym. Wskazówka: <m:math display="inline">
+                                <m:semantics>
+                                  <m:mrow>
+                                    <m:mrow>
+                                      <m:munderover>
+                                        <m:mo>∫</m:mo>
+                                        <m:mrow>
+                                          <m:mo>−</m:mo>
+                                          <m:mi>∞</m:mi>
+                                        </m:mrow>
+                                        <m:mrow>
+                                          <m:mo>+</m:mo>
+                                          <m:mi>∞</m:mi>
+                                        </m:mrow>
+                                      </m:munderover>
+                                      <m:mrow>
+                                        <m:msup>
+                                          <m:mi>x</m:mi>
+                                          <m:mn>2</m:mn>
+                                        </m:msup>
+                                        <m:mo>⁢</m:mo>
+                                        <m:msup>
+                                          <m:mi>e</m:mi>
+                                          <m:mrow>
+                                            <m:mo>−</m:mo>
+                                            <m:mrow>
+                                              <m:mi>a</m:mi>
+                                              <m:mo>⁢</m:mo>
+                                              <m:msup>
+                                                <m:mi>x</m:mi>
+                                                <m:mn>2</m:mn>
+                                              </m:msup>
+                                            </m:mrow>
+                                          </m:mrow>
+                                        </m:msup>
+                                        <m:mo>⁢</m:mo>
+                                        <m:mrow>
+                                          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                      </m:mrow>
+                                    </m:mrow>
+                                    <m:mo>=</m:mo>
+                                    <m:mrow>
+                                      <m:msqrt>
+                                        <m:mi>π</m:mi>
+                                      </m:msqrt>
+                                      <m:mo>⁢</m:mo>
+                                      <m:msup>
+                                        <m:mfenced>
+                                          <m:mrow>
+                                            <m:mn>2</m:mn>
+                                            <m:mo>⁢</m:mo>
+                                            <m:msup>
+                                              <m:mi>a</m:mi>
+                                              <m:mrow>
+                                                <m:mn>3</m:mn>
+                                                <m:mo>∕</m:mo>
+                                                <m:mn>2</m:mn>
+                                              </m:mrow>
+                                            </m:msup>
+                                          </m:mrow>
+                                        </m:mfenced>
+                                        <m:mn>-1</m:mn>
+                                      </m:msup>
+                                    </m:mrow>
+                                  </m:mrow>
+                                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \int_{-\infty}^{+\infty} x^2 e^{-ax^2} \d x = \sqrt{\pi} (2a^{3/2})^{-1}</m:annotation>
+                                </m:semantics>
+                                </m:math>. </para>
+                              </problem>
+                            </exercise>
+                            <exercise id="fs-id1170901597571">
+                              <problem id="fs-id1170902909380">
+                                <para id="fs-id1170901874498">Oblicz wartość oczekiwaną energii potencjalnej kwantowego oscylatora harmonicznego w stanie podstawowym. Użyj tych obliczeń do wyliczenia wartości oczekiwanej energii kinetycznej.</para>
+                              </problem>
+                              <solution id="fs-id1170902615166">
+                                <para id="fs-id1170901635311">
+                                  <m:math display="inline">
+                                    <m:semantics>
+                                      <m:mrow>
+                                        <m:mfenced open="⟨" close="⟩">
+                                          <m:mi>x</m:mi>
+                                        </m:mfenced>
+                                        <m:mo>=</m:mo>
+                                        <m:mrow>
+                                          <m:mn>0,5</m:mn>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mi>m</m:mi>
+                                          <m:mo>⁢</m:mo>
+                                          <m:msup>
+                                            <m:mi>ω</m:mi>
+                                            <m:mn>2</m:mn>
+                                          </m:msup>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mfenced open="⟨" close="⟩">
+                                            <m:mi>x</m:mi>
+                                          </m:mfenced>
+                                        </m:mrow>
+                                        <m:mo>=</m:mo>
+                                        <m:mrow>
+                                          <m:mrow>
+                                            <m:mi>ℏ</m:mi>
+                                            <m:mo>⁢</m:mo>
+                                            <m:mi>ω</m:mi>
+                                          </m:mrow>
+                                          <m:mo>∕</m:mo>
+                                          <m:mn>4</m:mn>
+                                        </m:mrow>
+                                      </m:mrow>
+                                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \langle x \rangle = \num{0,5} m \omega^2 \langle x \rangle = \hbar \omega / 4</m:annotation>
+                                    </m:semantics>
+                                  </m:math>, <m:math display="inline">
+                                  <m:semantics>
+                                    <m:mrow>
+                                      <m:mfenced close="⟩" open="⟨">
+                                        <m:msub>
+                                          <m:mi>E</m:mi>
+                                          <m:mtext>k</m:mtext>
+                                        </m:msub>
+                                      </m:mfenced>
+                                      <m:mo>=</m:mo>
+                                      <m:mrow>
+                                        <m:mfenced close="⟩" open="⟨">
+                                          <m:mi>E</m:mi>
+                                        </m:mfenced>
+                                        <m:mo>−</m:mo>
+                                        <m:mfenced close="⟩" open="⟨">
+                                          <m:msub>
+                                            <m:mi>E</m:mi>
+                                            <m:mtext>p</m:mtext>
+                                          </m:msub>
+                                        </m:mfenced>
+                                      </m:mrow>
+                                      <m:mo>=</m:mo>
+                                      <m:mrow>
+                                        <m:mrow>
+                                          <m:mi>ℏ</m:mi>
+                                          <m:mo>⁢</m:mo>
+                                          <m:mi>ω</m:mi>
+                                        </m:mrow>
+                                        <m:mo>∕</m:mo>
+                                        <m:mn>4</m:mn>
+                                      </m:mrow>
+                                    </m:mrow>
+                                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \langle E_{\text{k}} \rangle = \langle E \rangle - \langle E_{\text{p}} \rangle = \hbar \omega / 4</m:annotation>
+                                  </m:semantics>
+                                  </m:math>. </para>
+                                </solution>
+                              </exercise>
+                              <exercise id="fs-id1170901485683">
+                                <problem id="fs-id1170901839866">
+                                  <para id="fs-id1170901615854">Udowodnij, że <m:math display="inline">
+                                    <m:semantics>
+                                      <m:mrow>
+                                        <m:msub>
+                                          <m:mi>ψ</m:mi>
+                                          <m:mn>1</m:mn>
+                                        </m:msub>
+                                        <m:mo>⁡</m:mo>
+                                        <m:mfenced>
+                                          <m:mi>x</m:mi>
+                                        </m:mfenced>
+                                      </m:mrow>
+                                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_1\apply(x)</m:annotation>
+                                    </m:semantics>
+                                    </m:math> dana przez <link target-id="fs-id1170901621555"/> spełnia równanie Schrödingera dla kwantowego oscylatora harmonicznego.</para>
+                                  </problem>
+                                </exercise>
+                                <exercise id="fs-id1170902759714">
+                                  <problem id="fs-id1170903037274">
+                                    <para id="fs-id1170901533922">Oszacuj wartość energii stanu podstawowego oscylatora harmonicznego przy użyciu zasady nieoznaczoności Heisenberga. Zacznij od założenia, że niepewności pomiarowe <m:math display="inline">
+                                      <m:semantics>
+                                        <m:mrow>
+                                          <m:mo>Δ</m:mo>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\Delta}x</m:annotation>
+                                      </m:semantics>
+                                    </m:math> i <m:math display="inline">
+                                    <m:semantics>
+                                      <m:mrow>
+                                        <m:mo>Δ</m:mo>
+                                        <m:mi>p</m:mi>
+                                      </m:mrow>
+                                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\Delta}p</m:annotation>
+                                    </m:semantics>
+                                  </m:math> mają minimalne dopuszczalne wartości. Zapisz <m:math display="inline">
+                                  <m:semantics>
+                                    <m:mrow>
+                                      <m:mo>Δ</m:mo>
+                                      <m:mi>p</m:mi>
+                                    </m:mrow>
+                                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\Delta}p</m:annotation>
+                                  </m:semantics>
+                                </m:math> w funkcji <m:math display="inline">
+                                <m:semantics>
+                                  <m:mrow>
+                                    <m:mo>Δ</m:mo>
+                                    <m:mi>x</m:mi>
+                                  </m:mrow>
+                                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\Delta}x</m:annotation>
+                                </m:semantics>
+                              </m:math> i załóż, że dla stanu podstawowego <m:math display="inline">
+                              <m:semantics>
+                                <m:mrow>
+                                  <m:mi>x</m:mi>
+                                  <m:mo>≈</m:mo>
+                                  <m:mrow>
+                                    <m:mo>Δ</m:mo>
+                                    <m:mi>x</m:mi>
+                                  </m:mrow>
+                                </m:mrow>
+                                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x \approx \prefop{\Delta}x</m:annotation>
+                              </m:semantics>
+                            </m:math> i <m:math display="inline">
+                            <m:semantics>
+                              <m:mrow>
+                                <m:mi>p</m:mi>
+                                <m:mo>≈</m:mo>
+                                <m:mrow>
+                                  <m:mo>Δ</m:mo>
+                                  <m:mi>p</m:mi>
+                                </m:mrow>
+                              </m:mrow>
+                              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> p \approx \prefop{\Delta}p</m:annotation>
+                            </m:semantics>
+                          </m:math>, a następnie zapisz wyrażenie na energię stanu podstawowego w funkcji <m:math display="inline">
+                          <m:semantics>
+                            <m:mi>x</m:mi>
+                            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+                          </m:semantics>
+                          </m:math>. Na końcu znajdź punkt minimum globalnego energii i odpowiadający mu argument.</para>
+                        </problem>
+                        <solution id="fs-id1170902610893">
+                          <para id="fs-id1170902769484">Dowód.</para>
+                        </solution>
+                      </exercise>
+                      <exercise id="fs-id1170902849033">
+                        <problem id="fs-id1170902905561">
+                          <para id="fs-id1170902783468">Masa <m:math display="inline">
+                            <m:semantics>
+                              <m:mrow>
+                                <m:mn>0,25</m:mn>
+                                <m:mo>⁢</m:mo>
+                                <m:mi mathvariant="normal">kg</m:mi>
+                              </m:mrow>
+                              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,25}{\kilo\gram}</m:annotation>
+                            </m:semantics>
+                          </m:math> drga na sprężynie o stałej sprężystości <m:math display="inline">
+                          <m:semantics>
+                            <m:mrow>
+                              <m:mn>110</m:mn>
+                              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">N</m:mi>
+                                <m:mo>∕</m:mo>
+                                <m:mi mathvariant="normal">m</m:mi>
+                              </m:mrow>
+                            </m:mrow>
+                            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{110}{\newton\per\metre}</m:annotation>
+                          </m:semantics>
+                          </m:math>. Oblicz wartość energii stanu podstawowego i separację pomiędzy kolejnymi poziomami energetycznymi. Wyniki przedstaw w dżulach i elektronowoltach. Czy efekty kwantowe są tutaj ważne?</para>
+                        </problem>
+                      </exercise>
+                    </section>
+                  </content>
+                </document>

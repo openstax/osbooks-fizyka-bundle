@@ -1,0 +1,794 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Moment siły</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65796</md:content-id>
+  <md:title>Moment siły</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+    <item>opisywać, jak wartość momentu siły zależy od wartości ramienia siły i kąta, jaki tworzy wektor siły z ramieniem siły;</item>
+    <item>określać znak (dodatni lub ujemny) momentu siły używając reguły prawej dłoni;</item>
+    <item>obliczać poszczególne momenty siły wokół wspólnej osi i sumować je w celu uzyskania wypadkowego momentu siły.</item>
+  </list></md:abstract>
+  <md:uuid>90cb37bc-1e5d-477d-916a-07c408a713f3</md:uuid>
+</metadata>
+
+<content>
+    <para id="ked-1bl2vu9qo_8oo">Ważną wielkością związaną z dynamiką ruchu obrotowego ciała sztywnego jest moment siły, nazywany też momentem obrotowym. Efekty jego działania można obserwować na co dzień w naszym najbliższym otoczeniu. Moment siły odczuwamy używając dużego klucza do wykręcenia trudnej do odkręcenia śruby. Działa on w niewidoczny sposób, gdy naciskamy pedał gazu w samochodzie nadając silnikowi dodatkowy moment obrotowy. Za każdym razem, gdy spacerujemy, czy biegniemy, towarzyszy temu moment siły przyłożony do naszego ciała. W tym podrozdziale zdefiniujemy moment siły i metody jego obliczania dla brył sztywnych obracających się wokół stałej osi.</para>
+    <section id="ked-1bl2vujk5_h6o">
+      <title>Definicja momentu siły </title>
+      <para id="ked-1bl2vv067_ue">Do tej pory zdefiniowaliśmy wiele zmiennych obrotowych będących odpowiednikami zmiennych w ruchu postępowym. Zastanówmy się teraz, co jest odpowiednikiem siły. Ponieważ siły zmieniają ruch postępowy obiektów, odpowiednikiem w ruchu obrotowym musi być wielkość zmieniająca ruch obrotowy obiektu wokół osi. Jest to <term class="no-emphasis">moment siły</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">torque</term></foreign>).</para>
+      <para id="ked-1bl2vvpgf_sq">W codziennym życiu obracamy różne obiekty wokół ich osi, przez co intuicyjnie wiemy już wiele o momencie siły. Zastanówmy się na przykład, jak obracamy drzwi, aby je otworzyć. Po pierwsze, wiemy, że drzwi otwierają się powoli, jeśli naciskamy na nie zbyt blisko zawiasów. Łatwiejsze jest otwieranie drzwi przez naciskanie z dala od zawiasów. Po drugie, wiemy, że powinniśmy naciskać prostopadle do płaszczyzny drzwi. Jeśli naciskamy równolegle do płaszczyzny drzwi, nie jesteśmy w stanie ich otworzyć. Po trzecie, im większa jest siła, tym skuteczniej otwieramy drzwi; im mocniej naciskamy, tym szybciej drzwi ustępują. Pierwszy punkt oznacza, że im dalej od osi obrotu znajduje się punkt przyłożenia siły, tym większe jest przyspieszenie kątowe drzwi. Drugi oznacza, że skuteczność zależy od kąta, pod którym siła jest przyłożona. Trzeci oznacza, że musimy uwzględnić także wartość siły. Zauważmy, że dla obrotów w płaszczyźnie możliwe są dwa kierunki obrotu: zgodny z kierunkiem ruchu wskazówek zegara albo przeciwny, a tym samym dwa kierunki momentu siły. <link target-id="CNX_UPhysics_10_06_Door"/> przedstawia obroty w lewo.</para>
+      <figure id="CNX_UPhysics_10_06_Door">
+        <media id="ked-1bl2vvv7a_kbo" alt="Rysunek A jest schematyczną ilustracją otwierania i zamykania drzwi z siła F zastosowaną w odległości r od zawiasów pod kątem 90 stopni. Rysunek B jest schematycznym wykresem otwierania drzwi z siłą mniejszą niż F z zastosowaniem odległości r od zawiasów pod kątem 90 stopni. Rysunek C jest schematycznym obrazem otwierania drzwi z siłą mniejszą niż F z zastosowaniem mniejszej odległości r od zawiasów pod kątem 90 stopni. Rysunek D jest schematycznym obrazem otwierania drzwi z siłą F zastosowaną w odległości r od zawiasów pod kątem theta, który jest mniejszy od 90 stopni.">
+          <image src="../../media/CNX_UPhysics_10_06_Door.jpg" mime-type="image/jpeg"/>
+        </media>
+        <caption>Od wartości momentu siły zależy skuteczność obrotu lub skrętu. Na rysunku przedstawiono to na przykładzie otwierania drzwi (widok z góry). Moment siły ma zarówno wartość, jak i kierunek. (a) i (b) Obroty w kierunku przeciwnym do ruchu wskazówek zegara są wytwarzane przez siłę <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>, działającą w odległości <m:math><m:mi>r</m:mi></m:math> od zawiasów (punkt obrotu). (b) Zmniejszenie wartości siły zmniejsza wartość momentu siły, trudniej otworzyć drzwi. (c) Ta sama siła jak w (a) i (b) powoduje mniejszy moment sił, gdy jest przyłożona w mniejszej odległości od zawiasów. d) Mniejszy moment siły jest wytwarzany przez tę samą siłę co w (a), przyłożoną w tej samej odległości co w (a), ale pod kątem <m:math><m:mi>θ</m:mi></m:math> mniejszym niż <m:math><m:msup><m:mn>90</m:mn><m:mo>∘</m:mo></m:msup></m:math>. </caption>
+      </figure>
+      <para id="ked-1bl30q0j3_s6g">Rozważmy teraz, jak zdefiniować momenty siły w ogólnym trójwymiarowym przypadku.</para>
+      <note id="ked-1blit3asm_g78">
+        <title>Definicja momentu siły </title>
+        <para id="ked-1blit3e42_fdg">Momentem siły <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> względem punktu <m:math><m:mi>O</m:mi></m:math>, działającym w punkcie <m:math><m:mi>P</m:mi></m:math>, nazywamy wielkość wektorową <m:math><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> zdefiniowaną jako iloczyn wektorowy wektora położenia punktu <m:math><m:mi>P</m:mi></m:math> (wektor <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>) względem punktu <m:math><m:mi>O</m:mi></m:math> i wektora siły <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> (patrz <link target-id="CNX_UPhysics_10_06_3DTorque"/>):</para>
+        <equation id="ked-1blit3el9_uvg">
+          <m:math>
+            <m:mrow>
+              <m:mover>
+                <m:mi>M</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mover>
+                <m:mi>r</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mo>×</m:mo>
+            <m:mrow>
+              <m:mover>
+                <m:mi>F</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+      </note>
+      <figure id="CNX_UPhysics_10_06_3DTorque">
+        <media id="ked-1blit7ten_ut" alt="Rysunek przedstawia układ współrzędnych XYZ. Siła F jest pokazana w płaszczyźnie XY i jest równoległa do osi X. Wektor r leży w płaszczyźnie XY. zaczyna się w początku układu i kończy na początku wektora F. Wektor dla momentu obrotowego znajduje się w przecięciu punktu r i wektora v. Jest prostopadły do płaszczyzny XY i skierowany w stronę osi Z.">
+          <image src="../../media/CNX_UPhysics_10_06_3DTorque.jpg" mime-type="image/jpeg"/>
+        </media>
+        <caption>Moment siły <m:math><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest prostopadły do płaszczyzny wyznaczonej przez wektory <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> i <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. Jego zwrot określić można przy pomocy reguły prawej dłoni. </caption>
+      </figure>
+      <para id="ked-1blitc5hk_oq">Z definicji iloczyn wektorowy <m:math><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest wektorem prostopadłym do wektorów <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> i <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. Jego wartość jest równa:</para>
+      <equation id="ked-1blitjpbp_df8" class="unnumbered">
+        <m:math>
+          <m:mrow>
+            <m:mo>|</m:mo>
+            <m:mrow>
+              <m:mover>
+                <m:mi>M</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mo>|</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>|</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>r</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>×</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>F</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>|</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mi>r</m:mi>
+          <m:mi>F</m:mi>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mi>θ</m:mi>
+          <m:mn>,</m:mn>
+        </m:math>
+      </equation>
+      <para id="ked-1blitkbim_bho">gdzie <m:math><m:mi>θ</m:mi></m:math> jest kątem pomiędzy wektorami <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> i <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. W układzie jednostek SI jednostką momentu siły jest <m:math><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>. Wielkość <m:math><m:msub><m:mi>r</m:mi><m:mrow><m:mo>⊥</m:mo></m:mrow></m:msub><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>sin</m:mi><m:mo>⁡</m:mo><m:mi>θ</m:mi></m:math> jest odległością punktu <m:math><m:mi>O</m:mi></m:math> od prostej, na której leży siła <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. Nazywamy ją <term cmlnle:reference="ramię siły" class="no-emphasis">ramieniem siły</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">arm force</term></foreign>). Im większa wartość ramienia siły, tym większa wartość momentu siły. Tak więc wartość momentu siły można przedstawić jako:</para>
+      <note id="ked-1blits5h5_6hg" class="equation-callout">
+        <equation id="ked-1blits7gf_9qo">
+          <m:math>
+            <m:mrow>
+              <m:mo>|</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>M</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>|</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mo>⊥</m:mo>
+              </m:mrow>
+            </m:msub>
+            <m:mi>F</m:mi>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+      </note>
+      <para id="ked-1bliu5maa_m4o">Iloczyn wektorowy <m:math><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> wskazuje nam także znak momentu siły <m:math><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. Przedstawiony na <link cmlnle:case="locative" target-id="CNX_UPhysics_10_06_3DTorque"/> iloczyn wektorowy <m:math><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> skierowany jest wzdłuż dodatniej części osi <m:math><m:mi>z</m:mi></m:math>; w oparciu o przyjętą konwencję uważamy go za dodatni. Jeśli ma zwrot przeciwny, to mówimy, że ma wartość ujemną. </para><para id="ked-1blitrmnh_6lo">Jeśli weźmiemy pod uwagę krążek, który może swobodnie obracać się wokół osi przechodzącej przez jego środek, jak pokazano na <link cmlnle:case="locative" target-id="CNX_UPhysics_10_06_Disk"/>, to możemy zobaczyć, jak kąt między promieniem <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> a siłą <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> wpływa na wartość momentu siły. Jeśli kąt jest równy zero, moment siły wynosi zero. Jeśli kąt wynosi <m:math><m:msup><m:mn>90</m:mn><m:mo>∘</m:mo></m:msup></m:math>, to moment siły jest maksymalny. Moment siły przedstawiony na <link cmlnle:case="locative" target-id="CNX_UPhysics_10_06_Disk"/> jest dodatni i skierowany przed płaszczyznę rysunku, wzdłuż dodatniego zwrotu osi <m:math><m:mi>z</m:mi></m:math>. W wyniku działania tego momentu siły krążek obraca się przeciwnie do ruchu wskazówek zegara – w tym samym kierunku, co działanie momentu siły nadającej dodatnie przyspieszenie kątowe.</para>
+      <figure id="CNX_UPhysics_10_06_Disk">
+        <media id="ked-1bliu0bfd_3p" alt="Rysunek pokazuje obracający się przeciwnie do ruchu wskazówek zegara krążek, wokół osi przechodzącej przez środek.">
+          <image src="../../media/CNX_UPhysics_10_06_Disk.jpg" mime-type="image/jpeg"/>
+        </media>
+        <caption>Krążek może swobodnie obracać się wokół osi przechodzącej przez jego środek. Wartość momentu siły działającego na krążek wynosi <m:math><m:mi>r</m:mi><m:mi>F</m:mi><m:mi>sin</m:mi><m:mo>⁡</m:mo><m:mi>θ</m:mi></m:math>. Gdy <m:math><m:mi>θ</m:mi><m:mo>=</m:mo><m:msup><m:mn>0</m:mn><m:mo>∘</m:mo></m:msup></m:math>, moment siły wynosi zero, a krążek nie obraca się. Gdy <m:math><m:mi>θ</m:mi><m:mo>=</m:mo><m:msup><m:mn>90</m:mn><m:mo>∘</m:mo></m:msup></m:math>, moment siły jest maksymalny, a krążek obraca się z maksymalnym przyspieszeniem kątowym.</caption>
+      </figure>
+      <para id="ked-1bliu3sff_v3">Jeżeli na ciało sztywne obracające się wokół danej osi działają różne siły i związane z nimi momenty sił, to wypadkowy moment sił będzie sumą wektorową poszczególnych momentów siły.</para>
+      <note id="ked-1bliu3tma_79o" class="equation-callout">
+        <equation id="ked-1bliu43vd_dj">
+          <m:math>
+            <m:mrow>
+              <m:mover>
+                <m:mi>M</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:munder>
+              <m:mo movablelimits="false">∑</m:mo>
+              <m:mi>i</m:mi>
+            </m:munder>
+            <m:msub>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>M</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mi>i</m:mi>
+            </m:msub>
+          </m:math>
+        </equation>
+      </note>
+    </section>
+    <section id="ked-1bliv19dv_cl8">
+      <title>Obliczanie wartości wypadkowego momentu siły w przypadku obrotów ciał sztywnych wokół stałej osi</title>
+      <para id="ked-1bliv1g1r_pl8">W poniższych przykładach obliczamy moment siły zarówno dla przykładów czysto rachunkowych, jak i dla występujących w ruchu obrotowym ciała sztywnego. </para><para id="ked-1bliv1ge1_le">Najpierw przedstawimy strategię rozwiązywania zadań.</para>
+      <note id="ked-1bliv1oqf_g5g">
+        <title>Strategia rozwiązywania zadań: wyznaczanie wypadkowego momentu siły </title>
+        <list id="ked-1bliv256g_bk8" list-type="enumerated" number-style="arabic"><item> Wybierz układ współrzędnych z punktem obrotu lub osią obrotu jako początkiem wybranego układu współrzędnych. </item>
+          <item>Określ kąt między wektorem położenia punktu, w którym przyłożona jest siła, a wektorem siły. </item>
+          <item>Oblicz iloczyn wektorowy <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>, aby określić, czy moment siły względem punktu obrotu lub osi obrotu jest dodatni czy ujemny. </item>
+          <item>Wyznacz wartość momentu siły <m:math><m:mi>M</m:mi></m:math> korzystając z wartości <m:math><m:msub><m:mi>r</m:mi><m:mrow><m:mo>⊥</m:mo></m:mrow></m:msub></m:math> i <m:math><m:mi>F</m:mi></m:math>. </item>
+          <item>Przypisz odpowiedni znak, dodatni lub ujemny, do obliczonej wartości <m:math><m:mi>M</m:mi></m:math>. </item>
+          <item>Dodaj wszystkie momenty sił, aby wyznaczyć wartość wypadkowego momentu siły. Założyliśmy tutaj, że mamy do czynienia z układem liniowym, dlatego wartość wypadkowego momentu siły może być obliczona jako suma wszystkich momentów sił. Jest to przykład popularnej w fizyce zasady superpozycji, którą stosuje się tylko dla układów liniowych. W rzeczywistości jednak większość układów to układy nieliniowe, dla których z tej zasady skorzystać nie możemy. </item>
+        </list></note>
+      <example id="ked-1bliv1qdu_2mo">
+          <para id="ked-1bliv1qdo_3b"><title>Obliczanie momentu siły</title> Na rysunku poniżej pokazano cztery siły o różnych orientacjach w danym układzie współrzędnych <m:math><m:mi>x</m:mi><m:mi>y</m:mi></m:math>, przyłożone w określonych miejscach. Znajdź moment siły dla każdej z nich (względem początku układu współrzędnych), a następnie wyznacz wypadkowy moment siły.</para>
+          <figure id="CNX_UPhysics_10_06_forces">
+            <media id="ked-1bliv7s8b_9v8" alt="Rysunek pokazuje cztery siły tworzące momenty obrotowe wykreślone na układzie współrzędnych XY. Odległości na osi X i Y wyrażone są w metrach. Wektor dla siły o wielkości 40 N rozpoczyna się w punkcie (4,0), jest równoległy do osi Y i skierowany w kierunku dodatnim. Wektor dla siły o wartości 20 N rozpoczyna się w punkcie (0,-3), jest równoległy do osi X i skierowany w kierunku ujemnym. Inny wektor z siłą o wielkości 20 N rozpoczyna się w punkcie (0,1), i jest skierowany w lewo ku górnej części wykresu tworząc kąt 60 stopni z osią X . Wektor dla siły o wielkości 30 N rozpoczyna się w punkcie (-5,0) i jest skierowany w lewo ku dołowi wykresu tworząc kąt 53 stopni z osią X. ">
+              <image src="../../media/CNX_UPhysics_10_06_forces.jpg" mime-type="image/jpeg"/>
+            </media>
+            <caption>Cztery siły przyczyniające się do wypadkowego momentu siły.</caption>
+          </figure>
+      <para id="ked-1blj08dbh_hbo"><title>Strategia rozwiązania</title> W tym zadaniu mamy obliczyć wypadkowy moment sił. Wszystkie znane wielkości – wartości sił z kierunkami ich działania oraz ramionami sił – podano na rysunku. Celem jest wyznaczenie wartości każdego momentu siły i wypadkowego momentu poprzez zsumowanie poszczególnych momentów sił. Uważaj, aby przypisać prawidłowy znak każdemu momentowi, używając iloczynu wektorowego wektora <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> i wektora <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. </para>
+      <para id="ked-1blj08huu_4f8"><title>Rozwiązanie</title> Wartość momentu siły wyznaczymy z zależności <m:math><m:mrow><m:mo>|</m:mo><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>r</m:mi><m:mrow><m:mo>⊥</m:mo></m:mrow></m:msub><m:mi>F</m:mi></m:math>, a znak ustalimy na podstawie iloczynu wektorowego <m:math><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. </para>
+      <list id="ked-1blj0ol0v_2" list-type="enumerated" number-style="arabic"><item>Dla siły o wartości 40 N przyłożonej w pierwszej ćwiartce otrzymujemy: <m:math><m:msub><m:mi>M</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>40</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mo>⋅</m:mo><m:mi>sin</m:mi><m:mo>⁡</m:mo><m:msup><m:mn>90</m:mn><m:mo>∘</m:mo></m:msup><m:mo>=</m:mo><m:mn>160</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>. Iloczyn wektorowy <m:math><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> skierowany jest przed rysunek, jest więc dodatni. </item>
+        <item>Dla siły o wartości 20 N przyłożonej w trzeciej ćwiartce: <m:math><m:msub><m:mi>M</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>20</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mo>⋅</m:mo><m:mi>sin</m:mi><m:mo>⁡</m:mo><m:msup><m:mn>90</m:mn><m:mo>∘</m:mo></m:msup><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>60</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>. Iloczyn wektorowy <m:math><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest skierowany za rysunek, moment ujemny.</item>
+        <item>Dla siły o wartości 30 N przyłożonej w trzeciej ćwiartce otrzymamy: <m:math><m:msub><m:mi>M</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>30</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mo>⋅</m:mo><m:mi>sin</m:mi><m:mo>⁡</m:mo><m:msup><m:mn>53</m:mn><m:mo>∘</m:mo></m:msup><m:mo>=</m:mo><m:mn>120</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>. Iloczyn wektorowy <m:math><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest skierowany przed rysunek, moment dodatni. </item>
+        <item>Dla siły o wartości 20 N przyłożonej w drugiej ćwiartce otrzymamy: <m:math><m:msub><m:mi>M</m:mi><m:mn>4</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>20</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mo>⋅</m:mo><m:mi>sin</m:mi><m:mo>⁡</m:mo><m:msup><m:mn>30</m:mn><m:mo>∘</m:mo></m:msup><m:mo>=</m:mo><m:mn>10</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>. Iloczyn wektorowy <m:math><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest skierowany przed rysunek, moment dodatni. </item>
+        <item>Wartość wypadkowego momentu sił jest równa: <newline/><m:math><m:msub><m:mi>M</m:mi><m:mrow><m:mtext>wyp</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:munderover><m:mo>∑</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mn>4</m:mn></m:munderover><m:msub><m:mi>M</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mn>160</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>−</m:mo><m:mn>60</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>+</m:mo><m:mn>120</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>+</m:mo><m:mn>10</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>=</m:mo><m:mn>230</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>.</item>
+      </list><para id="ked-1blj08iod_9n8"><title>Znaczenie</title>Zauważmy, że moment każdej siły działającej w kierunku przeciwnym do ruchu wskazówek zegara jest dodatni, podczas gdy moment siły działającej w kierunku zgodnym z ruchem wskazówek zegara jest ujemny. Moment obrotowy jest większy, gdy siła lub ramię siły są większe.</para></example><example id="ked-1blj1af3d_2ng">
+        <para id="ked-1blj1basq_7jo"><title>Obliczanie momentu siły działającej na ciało sztywne</title> Na rysunku poniżej przedstawiono trzy siły o różnej wartości i kierunku, działające na koło zamachowe. Dane są: <m:math><m:mrow><m:mo>|</m:mo><m:msub><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mn>1</m:mn></m:msub><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>20</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow></m:math>, <m:math><m:mrow><m:mo>|</m:mo><m:msub><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mn>2</m:mn></m:msub><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>30</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow></m:math>, <m:math><m:mrow><m:mo>|</m:mo><m:msub><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mn>3</m:mn></m:msub><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:mn>30</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow></m:math> oraz <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>5</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>. Wyznacz wypadkowy moment tych sił względem osi prostopadłej do płaszczyzny rysunku i przechodzącej przez środek koła.</para>
+        <figure id="CNX_UPhysics_10_06_ThreeTor">
+          <media id="ked-1blj1co6h_9h8" alt="Rysunek przedstawia koło zamachowe z trzema działającymi siłami różnie zlokalizowanymi w pod różnymi kątami. Siła F3 znajduje się w centrum, jest prostopadła do osi rotacji. Siła F2 działa w lewym narożniku i jest prostopadła do osi obrotu. Siła F1 jest zastosowana w centrum i tworzy kąt 30 stopni z osią obrotu. ">
+            <image src="../../media/CNX_UPhysics_10_06_ThreeTor.jpg" mime-type="image/jpeg"/>
+          </media>
+          <caption>Trzy siły działające na koło zamachowe.</caption>
+        </figure>
+        <para id="ked-1blj2n1mg_dsg"><title>Strategia rozwiązania</title> Korzystając z iloczynu wektorowego wyliczamy momenty sił dla każdej z sił z osobna. Następnie wyznaczamy moment wypadkowy jako sumę momentów siły dla poszczególnych sił. </para>
+        <para id="ked-1blj2nnek_fng"><title>Rozwiązanie</title>Rozwiązanie rozpocznijmy od wyznaczenia momentu siły <m:math><m:msub><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mn>1</m:mn></m:msub></m:math>. Widzimy, że siła <m:math><m:msub><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mn>1</m:mn></m:msub></m:math> tworzy kąt <m:math><m:msup><m:mn>90</m:mn><m:mo>∘</m:mo></m:msup><m:mo>+</m:mo><m:msup><m:mn>60</m:mn><m:mo>∘</m:mo></m:msup></m:math> z wektorem <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. Zatem wartość momentu siły <m:math><m:msub><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mn>1</m:mn></m:msub></m:math> wyraża się zależnością:</para><equation id="ked-1blj2qdh6_8io" class="unnumbered">
+          <m:math>
+            <m:mrow>
+              <m:mo>|</m:mo>
+              <m:msub>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>M</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mrow>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>|</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mi>r</m:mi>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:msup>
+              <m:mn>150</m:mn>
+              <m:mo>∘</m:mo>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>5</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mn>20</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mn>0</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>5</m:mn>
+            <m:mo>=</m:mo>
+            <m:mn>5</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+              <m:mo>⋅</m:mo>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1blj2qe4v_ido">Następnie wyliczamy moment dla siły <m:math><m:msub><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mn>2</m:mn></m:msub></m:math>. Kąt pomiędzy siłą <m:math><m:msub><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mn>2</m:mn></m:msub></m:math> i wektorem <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> wynosi <m:math><m:msup><m:mn>90</m:mn><m:mo>∘</m:mo></m:msup></m:math>, a iloczyn wektorowy skierowany jest w stronę rysunku, więc jest ujemny. Jego wartość wynosi: </para>
+        <equation id="ked-1blj2qets_kmg" class="unnumbered">
+          <m:math>
+            <m:mrow>
+              <m:mo>|</m:mo>
+              <m:msub>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>M</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>|</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mi>r</m:mi>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:msup>
+              <m:mn>90</m:mn>
+              <m:mo>∘</m:mo>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mn>0</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>5</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mn>30</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mn>15</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+              <m:mo>⋅</m:mo>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1blj2qfpq_vvg">W przypadku siły <m:math><m:msub><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mn>3</m:mn></m:msub></m:math> widzimy, że jest prostopadła do wektora <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>, zatem <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:msub><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:math>. Tak więc siła <m:math><m:msub><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mn>3</m:mn></m:msub></m:math> nie przyczynia się do momentu wypadkowego.</para>
+        <para id="ked-1blj2ur0b_4fg">Wartość wypadkowego momentu pędu jest zatem równa: </para>
+        <equation id="ked-1blj2svr1_tvg" class="unnumbered">
+          <m:math>
+            <m:msub>
+              <m:mi>M</m:mi>
+              <m:mrow>
+                <m:mtext>wyp</m:mtext>
+              </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:munderover>
+              <m:mo movablelimits="false">∑</m:mo>
+              <m:mrow>
+                <m:mi>i</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>3</m:mn>
+              </m:mrow>
+            </m:munderover>
+            <m:msub>
+              <m:mi>M</m:mi>
+              <m:mi>i</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>5</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+              <m:mo>⋅</m:mo>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>15</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+              <m:mo>⋅</m:mo>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+              <m:mo>⋅</m:mo>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mn>10</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+              <m:mo>⋅</m:mo>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1blj2t0el_ibo"><title>Znaczenie</title> Oś obrotu koła zamachowego przechodzi przez środek masy. Koło zamachowe umieszczone jest na stałej osi, a więc nie może poruszać się ruchem postępowym. Gdyby koło nie było zamocowane na nieruchomej osi i położono by go na chropowatej powierzchni (występuje tarcie między kołem a powierzchnią) wówczas siły <m:math><m:msub><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mn>1</m:mn></m:msub></m:math>i <m:math><m:msub><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mn>2</m:mn></m:msub></m:math> spowodowałyby ruch koła po tej powierzchni. W takim przypadku każdy punkt koła uczestniczyłby w dwóch ruchach jednocześnie: w ruchu postępowym i w ruchu obrotowym.</para>
+      </example>
+      <note id="ked-1blj34f27_n4o" class="check-understanding">
+        <exercise id="ked-1blj34una_v6o">
+          <problem id="ked-1blj34uon_pp8">
+            <para id="ked-1blj34uo1_r0g"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Duży statek oceaniczny opływając wybrzeże zderza się ze skałą, osiada na mieliźnie i przechyla się, tak jak to pokazano na <link cmlnle:case="locative" target-id="CNX_UPhysics_10_06_Ship"/>. Zespół ratowniczy ma za zadanie obrócić statek w celu ustawienia go pionowo na wodzie. Dlatego w punkcie <m:math><m:mi>A</m:mi></m:math> należy przyłożyć siłę o wartości <m:math><m:mn>5</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>5</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow></m:math>. Oblicz, jaki jest moment tej siły względem podłoża (patrz rysunek).</para>
+            <figure id="CNX_UPhysics_10_06_Ship">
+              <media id="ked-1blj3628i_oto" alt="Rysunek pokazuje statek leżący pod kątem na brzegu morza. Zastosowano siłę 50000 N pod kątem 10 stopni do podłoża w punkcie A na wysokości 100 metrów ponad punktem styku między statkiem a brzegiem. ">
+                <image src="CNX_UPhysics_10_06_Ship.jpg" mime-type="image/jpeg"/>
+              </media>
+              <caption>Statek osiadł na mieliźnie i się przechylił. Przywrócenie go do pozycji pionowej wymaga zastosowania momentu siły przyłożonego do punktu <m:math><m:mi>A</m:mi></m:math>. </caption>
+            </figure>
+          </problem>
+          <solution id="ked-1blj34up6_ebg">
+            <para id="ked-1blj34umi_hso">Kąt pomiędzy wektorem położenia punktu <m:math><m:mi>A</m:mi></m:math> i zastosowaną siłą wynosi <m:math><m:msup><m:mn>80</m:mn><m:mo>∘</m:mo></m:msup></m:math>. Ramię przyłożonej siły: <m:math><m:msub><m:mi>r</m:mi><m:mrow><m:mo>⊥</m:mo></m:mrow></m:msub><m:mo>=</m:mo><m:mn>100</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mi>sin</m:mi><m:mo>⁡</m:mo><m:msup><m:mn>80</m:mn><m:mo>∘</m:mo></m:msup><m:mo>=</m:mo><m:mn>98</m:mn><m:mn>,</m:mn><m:mn>5</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>.</para>
+            <para id="ked-1blj37rcb_q6o">Iloczyn wektorowy <m:math><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest ujemny i powoduje obrót w prawo (zgodnie ze wskazówkami zegara).</para>
+            <para id="ked-1blj37rs7_38g"> Jego wartość wynosi <m:math><m:mi>M</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:msub><m:mi>r</m:mi><m:mrow><m:mo>⊥</m:mo></m:mrow></m:msub><m:mi>F</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>98</m:mn><m:mn>,</m:mn><m:mn>5</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>5</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>5</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mn>,</m:mn><m:mn>9</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>7</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>.</para>
+          </solution>
+        </exercise>
+      </note>
+    </section>
+    <section id="ked-1blji99v0_6jg" class="key-concepts">
+      <title>Podsumowanie </title>
+      <list id="ked-1blji9ktb_np">
+        <item>Wartość momentu siły względem nieruchomej osi oblicza się poprzez wyznaczenie ramienia siły względem osi obrotu i zastosowanie równania <m:math><m:mrow><m:mo>|</m:mo><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msub><m:mi>r</m:mi><m:mrow><m:mo>⊥</m:mo></m:mrow></m:msub><m:mi>F</m:mi></m:math>, gdzie <m:math><m:msub><m:mi>r</m:mi><m:mrow><m:mo>⊥</m:mo></m:mrow></m:msub></m:math> jest ramieniem siły, tj. odległością osi obrotu od prostej, na której leży siła. </item>
+        <item>Znak momentu obrotowego określa się przy pomocy reguły prawej dłoni. Jeśli wektory <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> i <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> leżą w płaszczyźnie rysunku, to wektor <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest prostopadły do płaszczyzny rysunku i skierowany w jego stronę, gdy ma wartość ujemną, a gdy ma wartość dodatnią, wychodzi z płaszczyzny rysunku. </item>
+        <item>Wypadkowy moment siły można obliczyć dodając indywidualne momenty sił wokół danej osi.</item>
+      </list>
+    </section>
+    <section id="ked-1bljiem30_a68" class="review-conceptual-questions">
+      <title>Pytania</title>
+      <exercise id="ked-1bljif7ah_it8">
+        <problem id="ked-1bljif7ad_aj">
+          <para id="ked-1bljif7an_74">Jakie trzy czynniki wpływają na wartość momentu siły? </para>
+        </problem>
+        <solution id="ked-1bljif7af_v7g" class="section-exercises">
+          <para id="ked-1bljif7a5_ri8">Wartość siły, długość ramienia siły oraz kąt pomiędzy wektorem siły, a wektorem położenia punktu przyłożenia siły.</para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bljif8lq_9uo">
+        <problem id="ked-1bljif8lo_hq8">
+          <para id="ked-1bljif8mc_moo">Podaj przykład, w którym moment siły o małej wartości jest duży oraz przykład małego momentu siły mimo dużej wartości. </para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bljif93l_g3g">
+        <problem id="ked-1bljif92r_nn8">
+          <para id="ked-1bljif93d_o5o">Przy zmniejszaniu masy roweru wyścigowego największą korzyść uzyskujemy redukując masę opon i obręczy kół. Dlaczego pozwala to kolarzowi osiągnąć większe przyspieszenia niż identyczne zmniejszenie masy ramy roweru?</para>
+        </problem>
+        <solution id="ked-1bljif90m_8h" class="section-exercises">
+          <para id="ked-1bljif918_3bg">Moment bezwładności kół jest mniejszy, zatem ten sam moment sił daje większe przyspieszenie. </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bljif9d8_epo">
+        <problem id="ked-1bljif9cl_29o">
+          <para id="ked-1bljif9fb_0pg">Czy moment pojedynczej siły może być zerowy?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bljif9lt_k2o">
+        <problem id="ked-1bljif9ne_fd">
+          <para id="ked-1bljif9mn_95g">Czy może wystąpić sytuacja, gdy siła wypadkowa kilku sił jest różna od zera, a wypadkowy moment tych sił jest równy zero?</para>
+        </problem>
+        <solution id="ked-1bljif9m9_tto" class="section-exercises">
+          <para id="ked-1bljif9mt_7q8">Tak.</para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bljifa26_mvo">
+        <problem id="ked-1bljifa19_e4g">
+          <para id="ked-1bljifa00_gr">Czy może wystąpić sytuacja, gdy siła wypadkowa kilku sił jest równa zero, a wypadkowy moment tych sił jest różny od zera?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bljifa9v_fq8">
+        <problem id="ked-1bljifab7_lbg">
+          <para id="ked-1bljifa90_eo">Czy w wyrażeniu <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> wartość <m:math><m:mrow><m:mo>|</m:mo><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>|</m:mo></m:mrow></m:math> może mieć mniejszą wartość niż jej ramię? Czy może być ona równa wartości jej ramienia?</para>
+        </problem>
+        <solution id="ked-1bljifaaa_rf8" class="section-exercises">
+          <para id="ked-1bljifa8m_92o">Wartość <m:math><m:mrow><m:mo>|</m:mo><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>|</m:mo></m:mrow></m:math> może być równa ramieniu siły, ale nigdy nie może być mniejsza niż ramię siły.</para>
+        </solution>
+      </exercise>
+    </section>
+    <section id="ked-1bljij520_u68" class="review-problems">
+      <title>Zadania</title>
+      <exercise id="ked-1bljijpfu_c6o">
+        <problem id="ked-1bljijpe1_8o8">
+          <para id="ked-1bljijpev_j38">Dwa koła zamachowe o zaniedbywalnie małej masie i różnych promieniach są połączone ze sobą i obracają się wokół wspólnej osi (patrz poniżej). Do mniejszego koła zamachowego o promieniu 30 cm doczepiono sznurek, za pośrednictwem którego na koło działa siła 50 N. Jaką siłę naciągu należy przyłożyć do sznurka doczepionego do większego koła zamachowego o promieniu 50 cm, aby układ nie obracał się? </para>
+          <media id="ked-1bljilke2_eao" alt="">
+            <image src="../../media/CNX_UPhysics_10_06_TwoFlyW_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bljijpf3_lfo" class="section-exercises">
+          <para id="ked-1bljijpgs_bu8">
+            <m:math>
+              <m:mi>F</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>30</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bljijps3_jo8">
+        <problem id="ked-1bljijpt3_2h">
+          <para id="ked-1bljijprj_8lg">Śrubę w samochodzie należy dokręcić używając momentu siły o wartości <m:math><m:mn>62</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>. Jeżeli mechanik używa klucza o długości 20 cm, to siłę o jakiej wartości musi on przyłożyć do końca klucza, aby prawidłowo dokręcić śrubę? Siła jest przykładana prostopadle do klucza.</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bljijq79_6rg">
+        <problem id="ked-1bljijq8j_ke8">
+          <list id="ked-1bljijq65_f7" list-type="enumerated" number-style="lower-alpha">
+            <item>Podczas otwierania drzwi naciskasz na nie prostopadle siłą 55,0 N w odległości 0,850 m od zawiasów. Jaki jest moment tej siły liczony względem zawiasów?</item>
+            <item>Czy ma to znaczenie, jeśli naciskasz na tej samej wysokość co zawiasy? Jest tylko jedna para zawiasów.</item>
+          </list>
+        </problem>
+        <solution id="ked-1bljijq8k_q9g" class="section-exercises">
+          <list id="ked-1bljijq73_auo" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>85</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>55</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mo>=</m:mo><m:mn>46</m:mn><m:mn>,</m:mn><m:mn>75</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>; </item>
+            <item>Nie ma znaczenia, na jakiej wysokości naciskasz na drzwi.</item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bljijqf9_t3g">
+        <problem id="ked-1bljijqgc_b7">
+          <para id="ked-1bljijqfh_1m">Podczas dokręcania śruby naciskasz prostopadle na klucz siłą 165 N, w odległości 0,140 m od środka śruby. Z jakim momentem siły, względem środka śruby, działasz na śrubę? Wynik podaj w niutonometrach.</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bljijqpu_0v">
+        <problem id="ked-1bljijqp6_75g">
+          <para id="ked-1bljijqpe_488">Jaka musi być wartość wiszącej masy, aby koło pasowe się nie obracało (patrz poniższy rysunek)? Masa ciała na równi wynosi 5,0 kg, a równia jest doskonale gładka. Promień wewnętrzny koła pasowego wynosi 20 cm, a zewnętrzny 30 cm. </para>
+          <media id="ked-1bljiri9d_5k8" alt="Rysunek pokazuje krążek o masie 5 kg spoczywający na równi pochyłej pod katem 45 stopni, stanowiący przeciwwagę dla obiektu o nieznanej masie wiszącym w powietrzu.">
+            <image src="../../media/CNX_UPhysics_10_06_HangMass_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bljijqrk_32o" class="section-exercises">
+          <para id="ked-1bljijqpj_0uo">
+            <m:math>
+              <m:mi>M</m:mi>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mn>4</m:mn>
+                  <m:mn>,</m:mn>
+                  <m:mn>9</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">N</m:mi>
+                    <m:mo>⋅</m:mo>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mn>9</m:mn>
+                  <m:mn>,</m:mn>
+                  <m:mn>8</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mrow>
+                      <m:mtext>/</m:mtext>
+                    </m:mrow>
+                    <m:msup>
+                      <m:mi mathvariant="normal">s</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mn>0</m:mn>
+                  <m:mn>,</m:mn>
+                  <m:mn>3</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mn>1</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>67</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">k</m:mi>
+                <m:mi mathvariant="normal">g</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bljijr4l_g3o">
+        <problem id="ked-1bljijr35_l0g">
+          <para id="ked-1bljijr3a_uag">Proste wahadło składa się z paska o znikomo małej masie i długości 50 cm, zaczepionego na przegubie, a na drugim końcu doczepiono małe ciało o masie 1,0 kg. Jaki jest moment siły względem przegubu, gdy wahadło znajduje się pod kątem 40° względem pionu?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bljijrft_rt">
+        <problem id="ked-1bljijrgq_rqg">
+          <para id="ked-1bljijrfa_e7g">Obliczyć wypadkowy moment sił przedstawionych na rysunku. Wyznacz go względem osi <m:math><m:mi>z</m:mi></m:math>, która jest prostopadła do rysunku i wychodzi z niego w stronę widza. Wartości sił są następujące: <m:math><m:msub><m:mi>F</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>F</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>F</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>F</m:mi><m:mn>4</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>8</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow></m:math>.</para>
+          <media id="ked-1bljit79a_cjo" alt="Rysunek przedstawia układ współrzędnych XY. Zastosowana jest siła F1 od punktu który jet zlokalizowany na prostej ze środka początku układu skierowana w kierunku prawego górnego rogu. Punkt znajduje się 3 metry o od środka układu i siła F1 jest skierowana w stronę prawego dolnego narożnika. Siła F2 bierze swój początek od punktu położonego na osi Y, 2 metry powyżej środka układu. Siła F2 tworzy kąt 30 stopni z linią równoległa do osi X i jest skierowana w stronę lewego dolnego narożnika. Siła F3 zaczyna się od środka układu i skierowana jest ku lewemu dolnemu narożnikowi. Siła F4 zaczyna się w punkcie zlokalizowanym na osi X, 2 metry w prawo od środka układu. Siła F2 tworzy kąt 20 stopni z linią równoległą do osi Y axis i jest skierowana w stronę lewego dolnego narożnika.">
+            <image src="../../media/CNX_UPhysics_10_06_Prob12_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bljijrfo_428" class="section-exercises">
+          <para id="ked-1bljijrfu_pig">
+            <m:math>
+              <m:msub>
+                <m:mi>M</m:mi>
+                <m:mrow>
+                  <m:mtext>wyp</m:mtext>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mo>−</m:mo>
+              <m:mn>9</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>3</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>46</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>3</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>28</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mo>−</m:mo>
+              <m:mn>8</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>82</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bljijs40_im8">
+        <problem id="ked-1bljijs4d_i28">
+          <para id="ked-1bljijs5m_0l">Huśtawka ma długość 10,0 m i jednorodnie rozłożoną masę 10,0 kg. Spoczywa ona pod kątem <m:math><m:msup><m:mn>30</m:mn><m:mo>∘</m:mo></m:msup></m:math> do podłoża (patrz poniższy rysunek). Trzpień obrotowy znajduje się w odległości 6,0 m. Wyznacz wartość siły, jaką należy przyłożyć prostopadle do huśtawki, do jej podniesionego końca, aby huśtawka zaczęła się obracać.</para>
+          <media id="ked-1bljj72vo_0to" alt="Rysunek przedstawia huśtawkę. Jeden z jej końców spoczywa na ziemi tworząc kąt 30 stopni z nią, drugi koniec wisi w powietrzu. ">
+            <image src="../../media/CNX_UPhysics_10_06_Seesaw_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bljijsel_lcg">
+        <problem id="ked-1bljijsg1_dio">
+          <para id="ked-1bljijsfg_3i8">Wahadło składa się z pręta o masie 1 kg i długości 1 m oraz przymocowanej do niego kuli o masie 0,5 kg i promieniu 30 cm. Jaki jest moment sił działających na wahadło, gdy jest ono odchylone o kąt 30° od pionu?</para>
+        </problem>
+        <solution id="ked-1bljijsgq_c68" class="section-exercises">
+          <para id="ked-1bljijsg2_j48">
+            <m:math>
+              <m:mi>M</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>5</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>66</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bljijsom_b58">
+        <problem id="ked-1bljijsqu_mt">
+          <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bljijso8_sg">Do podniesienia zwodzonego mostu potrzebny jest moment siły o wartości <m:math><m:mn>5</m:mn><m:mn>,</m:mn><m:mn>00</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>3</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math> (patrz poniższy rysunek). Jakie naprężenie liny jest niezbędne do wytworzenia tego momentu? Czy łatwiej byłoby podnieść most, gdyby kąt <m:math><m:mi>θ</m:mi></m:math> był większy czy mniejszy?<newline/></para><media id="ked-1bljjanq2_hh" alt="Rysunek przedstawia most zwodzony o długości 6 metrów. Działająca na niego siła utrzymuje most pod kątem 30 stopni. ">
+            <image src="../../media/CNX_UPhysics_10_06_Prob13_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bljijt2t_5n8">
+        <problem id="ked-1bljijt5f_qs8">
+          <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bljijt4j_228">Na końcu poziomej belki o długości 3 m i masie 2,0 kg umieszczono klocek o masie 1,0 kg i szerokości 0,2 m (patrz poniższy rysunek). Jaki jest wypadkowy moment sił działających na deskę, liczony względem systemu podparcia deski?<newline/></para><media id="ked-1bljjavn9_rj8" alt="Rysunek pokazuje poziomą belkę połączoną z murem. Belka ma długość 3 m i masę 2,0 kg. W dodatku, masa wielkości 1,0 kg i szerokości 0,2 m umiejscowiona została na końcu belki. ">
+            <image src="../../media/CNX_UPhysics_10_06_Beam_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bljijt5j_meo" class="section-exercises">
+          <para id="ked-1bljijt3n_rc">
+            <m:math>
+              <m:mo>∑</m:mo>
+              <m:mi>M</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>57</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>82</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bljijtdq_d2">
+        <problem id="ked-1bljijtfk_36g">
+          <para id="ked-1bljijtfi_o4">Z jaką siłą należy działać na koniec pręta o długości 2,0 m, ułożonego wzdłuż osi <m:math><m:mi>x</m:mi></m:math>, w celu wytworzenia momentu siły <m:math><m:mn>8</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mover><m:mi>k</m:mi><m:mo stretchy="false">^</m:mo></m:mover></m:mrow></m:math>? Moment siły liczymy względem drugiego końca.</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bljjh69n_g0o">
+        <problem id="ked-1bljjh699_8ng">
+          <para id="ked-1bljjh68e_va">Wyznacz moment siły <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mn>5</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mover><m:mi>i</m:mi><m:mo stretchy="false">^</m:mo></m:mover></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mover><m:mi>j</m:mi><m:mo stretchy="false">^</m:mo></m:mover></m:mrow><m:mo>+</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mover><m:mi>k</m:mi><m:mo stretchy="false">^</m:mo></m:mover></m:mrow></m:math> względem początku układu współrzędnych, jeżeli siła działa w punkcie <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mover><m:mi>i</m:mi><m:mo stretchy="false">^</m:mo></m:mover></m:mrow><m:mo>+</m:mo><m:mn>4</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mover><m:mi>j</m:mi><m:mo stretchy="false">^</m:mo></m:mover></m:mrow></m:math>.</para>
+        </problem>
+        <solution id="ked-1bljjh68l_84o" class="section-exercises">
+          <para id="ked-1bljjh68d_g7">
+            <m:math>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>r</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>×</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>F</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>4</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>2</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>16</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>k</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+    </section>
+  </content>
+  <glossary>
+    <definition id="ked-1blkkqt7q_pe">
+      <term cmlnle:reference="ramię siły" class="no-emphasis">ramię siły (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">arm force</term></foreign>)</term>
+      <meaning id="ked-1blkkqta2_7ao">odległość osi obrotu (punktu, względem którego mierzymy moment) od prostej, na której leży siła</meaning>
+    </definition>
+    <definition id="ked-1blkkqu6c_41">
+      <term cmlnle:reference="moment siły" class="no-emphasis">moment siły (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">moment of power</term></foreign>)</term>
+      <meaning id="ked-1blkkqu60_oog">iloczyn siły i jej ramienia liczonego względem danej osi (punktu)</meaning>
+    </definition>
+  </glossary>
+</document>

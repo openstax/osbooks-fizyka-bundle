@@ -1,0 +1,3971 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Skalary i wektory</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65742</md:content-id>
+  <md:title>Skalary i wektory</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>różnic między wielkościami skalarnymi i wektorowymi;</item>
+<item>określać moduł i kierunek wektora;</item>
+<item>mnożyć wielkości wektorowe przez skalar;</item>
+<item>dodawać i odejmować wielkości wektorowe w przestrzeni jednowymiarowej;</item>
+<item>stosować metodę graficzną dodawania i odejmowania wektorów leżących na płaszczyźnie;</item>
+<item>rozpoznawać równanie wektorowe.</item>
+</list></md:abstract>
+  <md:uuid>2de88c28-ac3f-481b-b0d9-fd1caa4d9ce6</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1167132379492">Wiele wielkości fizycznych można opisać, podając liczbę oraz odpowiednią jednostkę. Możemy powiedzieć na przykład „lekcja trwa 45 minut”, „bak w moim samochodzie ma pojemność 65 l” lub „odległość między tymi słupami to 100 m”. Wielkości, które można określić w ten sposób, nazywamy <term class="no-emphasis" cmlnle:reference="wielkość skalarna">wielkościami skalarnymi</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">scalar quantity</term></foreign>). Skalar oznacza liczbę. Czas, masa, droga, długość, objętość, temperatura oraz energia są przykładami wielkości <emphasis effect="italics">skalarnych</emphasis>.</para><para id="fs-id1167133331747">Wielkości skalarne przedstawiane przy pomocy tych samych jednostek mogą być dodawane lub odejmowane tak jak pozostałe liczby. Na przykład lekcja, która skończy się 10 min przed czasem, będzie trwała <m:math>
+    <m:mn>45</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mi mathvariant="normal">i</m:mi>
+      <m:mi mathvariant="normal">n</m:mi>
+    </m:mrow>
+    <m:mo>−</m:mo>
+    <m:mn>10</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mi mathvariant="normal">i</m:mi>
+      <m:mi mathvariant="normal">n</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mn>35</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mi mathvariant="normal">i</m:mi>
+      <m:mi mathvariant="normal">n</m:mi>
+    </m:mrow>
+  </m:math>. Całkowita energia zawarta w bananie, który ma 90 kalorii, oraz w pączku, który ma 200 kalorii, jest równa <m:math>
+  <m:mn>90</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">c</m:mi>
+    <m:mi mathvariant="normal">a</m:mi>
+    <m:mi mathvariant="normal">l</m:mi>
+  </m:mrow>
+  <m:mo>+</m:mo>
+  <m:mn>200</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">c</m:mi>
+    <m:mi mathvariant="normal">a</m:mi>
+    <m:mi mathvariant="normal">l</m:mi>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mn>290</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">c</m:mi>
+    <m:mi mathvariant="normal">a</m:mi>
+    <m:mi mathvariant="normal">l</m:mi>
+  </m:mrow>
+</m:math>. W wyniku mnożenia wielkości skalarnej przez liczbę otrzymamy tę samą liczbę, choć o innej wartości. Przykładowo, jeśli zjedzone przez nas wczoraj śniadanie miało 200 kalorii, a to, które zjedliśmy dziś, było 4 razy bardziej kaloryczne, to energia dzisiejszego śniadania była równa <m:math>
+<m:mn>4</m:mn>
+<m:mo>⋅</m:mo>
+<m:mn>200</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">c</m:mi>
+  <m:mi mathvariant="normal">a</m:mi>
+  <m:mi mathvariant="normal">l</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>800</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">c</m:mi>
+  <m:mi mathvariant="normal">a</m:mi>
+  <m:mi mathvariant="normal">l</m:mi>
+</m:mrow>
+</m:math>. Wielkości skalarne mogą być mnożone lub dzielone przez siebie nawzajem. Wynikiem takich działań są pochodne wielkości skalarne. Jeśli pociąg przebywa drogę 100 km w ciągu 1,0 h, oznacza to, że jedzie ze średnią szybkością <m:math>
+<m:mn>100</m:mn>
+<m:mspace width="0.2em"/>
+
+  <m:mtext>km</m:mtext>
+
+<m:mn>/</m:mn>
+<m:mn>1,0</m:mn>
+<m:mspace width="0.2em"/>
+
+  <m:mtext>h</m:mtext>
+
+<m:mo>=</m:mo>
+<m:mn>100</m:mn>
+<m:mspace width="0.2em"/>
+
+  <m:mtext>km/h</m:mtext>
+
+<m:mo>=</m:mo>
+<m:mn>27,8</m:mn>
+<m:mspace width="0.2em"/>
+
+  <m:mtext>m/s</m:mtext>
+
+</m:math>, gdzie szybkość jest pochodną wielkością skalarną, otrzymaną w wyniku dzielenia drogi przez czas.</para>
+<para id="fs-id1167132683784">Do opisu wielu wielkości fizycznych nie wystarczą jednak liczba i jednostka. Jeśli straż przybrzeżna wysyła jednostkę ratunkową, nie wystarczy, że zna odległość od miejsca, z którego wysłano sygnał SOS, musi również znać kierunek, z którego ten sygnał dochodzi. Wielkości fizyczne, które opisuje się, podając liczbę jednostek (długość) oraz kierunek, nazywamy <term class="no-emphasis" cmlnle:reference="wielkość wektorowa">wielkościami wektorowymi</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">vector quantity</term></foreign>). Należą do nich przemieszczenie, prędkość, siła oraz moment siły. Wielkości wektorowe reprezentowane są przez obiekty matematyczne zwane <term class="no-emphasis" cmlnle:reference="wektor">wektorami</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">vector</term></foreign>) (<link target-id="CNX_UPhysics_02_01_dog"/>). Wektory można dodawać lub odejmować, można je również mnożyć przez skalar lub przez inny wektor, natomiast dzielenie wektora przez skalar to mnożenie przez odwrotność skalara.</para>
+<figure id="CNX_UPhysics_02_01_dog">
+  <media id="fs-id1167133854996" alt="A Zdjęcie jamnika. Pod zdjęciem umieszczono poziomą strzałkę. Jej początek znajduje się poniżej ogona psa, a koniec poniżej jego nosa. Strzałkę oznaczono jako “wektor D“, a jej długość jako “moduł D“. Punkt początkowy strzałki podpisano “od ogona“, a jej punkt końcowy “do głowy wektora“.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_dog.jpg"/>
+  </media>
+  <caption>Wektor rysujemy od punktu zaczepienia (nazywanego też początkiem wektora) do punktu końcowego (nazywanego też końcem wektora) oznaczonego grotem strzałki. Moduł wektora jest równy jego długości – jest to liczba dodatnia. (Źródło: modyfikacja pracy Cate Sevilla)</caption>
+</figure>
+<para id="fs-id1167133527625">Na początku zapoznamy się z metodą graficzną dodawania i odejmowania wektorów – pomoże ci to zrozumieć podstawowe pojęcia i nauczyć się odpowiedniego sposobu myślenia. W rzeczywistości podczas rozwiązywania zadań korzysta się z metod analitycznych, o czym wkrótce się przekonamy. Metody analityczne są dokładniejsze, a wykonywane w ich przypadku obliczenia bardzo proste. Aby odróżnić wielkości skalarne od wektorowych, przyjmiemy, że pochylona litera ze strzałką u góry oznacza wektor. Na przykład drogę równą 2,0 km, a więc wielkość skalarną, zapiszemy jako <m:math>
+  <m:mi>d</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>2,0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">k</m:mi>
+    <m:mi mathvariant="normal">m</m:mi>
+  </m:mrow>
+</m:math>, natomiast przemieszczenie w konkretnym kierunku, równe 2,0 km zapiszemy jako <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>d</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, ponieważ jest to wielkość wektorowa.</para>
+<para id="fs-id1167133333619">Wyobraź sobie, że jesteś z przyjacielem na kempingu i mówisz mu, że odkryłeś fantastyczne miejsce do wędkowania, 6 km od twojego namiotu. Jeśli nie powiesz, w jakim kierunku od obozowiska znajduje się to miejsce, twój przyjaciel najprawdopodobniej go nie znajdzie, ponieważ nie podając kierunku określiłeś jedynie okrąg, na którego obwodzie znajduje się to miejsce. Możesz powiedzieć na przykład „Idź 6 km na północny wschód od mojego namiotu”. Krótko mówiąc, musisz podać <emphasis effect="italics">dwie</emphasis> informacje — odległość (6 km) oraz kierunek (północny wschód).</para>
+<para id="fs-id1167133802941">Przemieszczenie jest to ogólne pojęcie opisujące <emphasis effect="italics">zmianę położenia</emphasis>, jak na przykład podczas wędrówki z namiotu do miejsca wędkowania. Przemieszczenie jest przykładem wielkości wektorowej. Jeśli idziesz od namiotu (położenie <m:math>
+  <m:mi>A</m:mi>
+</m:math>) do jeziora (położenie <m:math>
+<m:mi>B</m:mi>
+</m:math>), jak przedstawiono na <link target-id="CNX_UPhysics_02_01_hole" cmlnle:case="locative"/>, wektor <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, reprezentujący Twoje <term class="no-emphasis">przemieszczenie</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">displacement</term></foreign>), przedstawia się za pomocą strzałki z początkiem w punkcie <m:math>
+<m:mi>A</m:mi>
+</m:math> i końcem w punkcie <m:math>
+<m:mi>B</m:mi>
+</m:math>. Grot strzałki oznacza koniec wektora. Kierunek strzałki jest kierunkiem wektora przemieszczenia <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>. Długość strzałki przedstawia <term class="no-emphasis">moduł</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">magnitude</term></foreign>)
+<m:math>
+  <m:mi>D</m:mi>
+</m:math> wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>. W tym przypadku jest to <m:math>
+<m:mi>D</m:mi>
+<m:mo>=</m:mo>
+<m:mn>6</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">k</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+</m:math>. Ponieważ moduł wektora jest jego długością, a więc liczbą dodatnią, moduł można również zapisać, obejmując symbol wektora wartością bezwzględną: <m:math>
+<m:mi>D</m:mi>
+<m:mo>≡</m:mo>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mo>|</m:mo>
+</m:mrow>
+</m:math>. Aby rozwiązać zadanie dotyczące wektorów graficznie, musimy narysować wektor <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> w odpowiedniej skali. Jeśli przyjmiemy, że jedna jednostka długości (1 km) na rysunku będzie odpowiadała długości <m:math>
+<m:mi>u</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">c</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+</m:math>, wektor przemieszczenia będzie miał całkowitą długość <m:math>
+<m:mi>d</m:mi>
+<m:mo>=</m:mo>
+<m:mn>6</m:mn>
+<m:mi>u</m:mi>
+<m:mo>=</m:mo>
+<m:mn>6</m:mn>
+<m:mo>⋅</m:mo>
+<m:mn>2</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">c</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>12</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">c</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+</m:math>, jak widzimy na <link target-id="CNX_UPhysics_02_01_vector01" cmlnle:case="locative"/>. Zauważ, że użyliśmy różnych symboli, aby oznaczyć moduł wektora (<m:math>
+<m:mi>D</m:mi>
+<m:mo>=</m:mo>
+<m:mn>6</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">k</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+</m:math>) oraz długość jego reprezentacji graficznej (<m:math>
+<m:mi>d</m:mi>
+<m:mo>=</m:mo>
+<m:mn>12</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">c</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+</m:math>).</para>
+<figure id="CNX_UPhysics_02_01_hole">
+  <media id="fs-id1167133464547" alt="Rysunek przedstawia jezioro położone w pewnej odległości na północny wschód od namiotu. Północ znajduje się u góry strony, wschód po prawej. Namiot podpisano jako “położenie A“, zaś jezioro jako “położenie B“. Prosta strzałka zaczyna się w punkcie A i kończy w punkcie B. Trzy kręte ścieżki, narysowane przy pomocy linii przerywanej, również zaczynają się w punkcie A i kończą w punkcie B.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_hole.jpg"/>
+  </media>
+  <caption>Wektor przemieszczenia z początkiem w punkcie <m:math>
+    <m:mi>A</m:mi>
+  </m:math> (w obozowisku) oraz końcem w punkcie <m:math>
+  <m:mi>B</m:mi>
+</m:math> (przy jeziorze) obrazuje strzałka o początku w punkcie <m:math>
+<m:mi>A</m:mi>
+</m:math> oraz końcu w punkcie <m:math>
+<m:mi>B</m:mi>
+</m:math>. Przemieszczenie jest takie samo dla każdej z dróg (reprezentowanych na rysunku przez inne strzałki) łączącej punkty <m:math>
+<m:mi>A</m:mi>
+</m:math> oraz <m:math>
+<m:mi>B</m:mi>
+</m:math>.</caption>
+</figure>
+<figure id="CNX_UPhysics_02_01_vector01">
+  <media id="fs-id1167133318847" alt="Rysunek przedstawia linijkę z podziałką w centymetrach. Równolegle do linijki narysowano wektor D. Wektor ten zaczyna się w punkcie 0 cm i kończy w punkcie 12 cm.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_vector01.jpg"/>
+  </media>
+  <caption>Jeśli przyjmiemy, że 2 cm oznaczają 1 jednostkę przemieszczenia (w tym przypadku 1 km), to przesunięcie <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>D</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    </m:math> o module 6 km należy przedstawić graficznie za pomocą strzałki o długości 12 cm.</caption>
+  </figure>
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167133824259">Przypuśmy, że twój przyjaciel idzie z obozowiska znajdującego się w punkcie <m:math>
+    <m:mi>A</m:mi>
+  </m:math> do jeziora znajdującego się w punkcie <m:math>
+  <m:mi>B</m:mi>
+</m:math>, a następnie z powrotem: z jeziora znajdującego się w <m:math>
+<m:mi>B</m:mi>
+</m:math> do obozowiska znajdującego się w <m:math>
+<m:mi>A</m:mi>
+</m:math>. Moduł wektora przemieszczenia <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> z <m:math>
+<m:mi>A</m:mi>
+</m:math> do <m:math>
+<m:mi>B</m:mi>
+</m:math> jest równy modułowi wektora przemieszczenia <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>B</m:mi>
+    <m:mi>A</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> z <m:math>
+<m:mi>B</m:mi>
+</m:math> do <m:math>
+<m:mi>A</m:mi>
+</m:math> (w obu przypadkach jest równy 6 km), możemy więc zapisać, że <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>D</m:mi>
+    <m:mrow>
+      <m:mi>A</m:mi>
+      <m:mi>B</m:mi>
+    </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:msub>
+    <m:mi>D</m:mi>
+    <m:mrow>
+      <m:mi>B</m:mi>
+      <m:mi>A</m:mi>
+    </m:mrow>
+  </m:msub>
+</m:mrow>
+</m:math>. Jednak wektor <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>
+<emphasis effect="italics"> nie jest</emphasis> równy wektorowi <m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>D</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mrow>
+      <m:mi>B</m:mi>
+      <m:mi>A</m:mi>
+    </m:mrow>
+  </m:msub>
+</m:math>, ponieważ wektory te mają inny zwrot: <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>≠</m:mo>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>B</m:mi>
+    <m:mi>A</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>. Na <link target-id="CNX_UPhysics_02_01_hole" cmlnle:case="locative"/> wektor <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>B</m:mi>
+    <m:mi>A</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> miałby początek w punkcie <m:math>
+<m:mi>B</m:mi>
+</m:math>, a koniec w punkcie <m:math>
+<m:mi>A</m:mi>
+</m:math>, co oznacza, że <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>B</m:mi>
+    <m:mi>A</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> wskazuje na południowy-zachód, zatem kąt między wektorem <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> i <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>B</m:mi>
+    <m:mi>A</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> wynosi <m:math>
+<m:msup>
+  <m:mn>180</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math>. Mówimy, że wektor <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>B</m:mi>
+    <m:mi>A</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> oraz wektor <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> są <term class="no-emphasis" cmlnle:reference="wektory przeciwne">wektorami przeciwnymi</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">antiparallel vectors</term></foreign>). Zależność tę zapisujemy: <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>B</m:mi>
+    <m:mi>A</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>, gdzie minus oznacza kierunek przeciwny.</para><para id="fs-id1167133579247">Wektory zwrócone w tym samym kierunku nazywamy <term class="no-emphasis" cmlnle:reference="wektory zgodne">wektorami zgodnie skierowanymi</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">parallel vectors</term></foreign>), co oznacza, że mają one <emphasis effect="italics">ten sam zwrot</emphasis>. Dwa wektory o tym samym zwrocie <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math> oraz <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> są równe, co zapisujemy <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, wtedy i tylko wtedy, kiedy ich moduły są równe <m:math>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mo>|</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mo>|</m:mo>
+</m:mrow>
+</m:math>. Równe są także wektory o różnych punktach zaczepienia, o ile mają taki sam kierunek, zwrot i moduł. Dwa wektory o zwrotach różniących się o <m:math>
+<m:msup>
+  <m:mn>90</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math> to <term class="no-emphasis">wektory ortogonalne</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">orthogonal vectors</term></foreign>), czyli wektory prostopadłe. Relacje między wektorami pokazano na <link target-id="CNX_UPhysics_02_01_vector02" cmlnle:case="locative"/>.</para>
+<figure id="CNX_UPhysics_02_01_vector02">
+  <media id="fs-id1167132332563" alt="Rysunek a: dwa przykłady wektorów zgodnych. W pierwszym wektor A i wektor B znajdują się w tej samej linii, jeden za drugim. Wektor A jest dłuższy niż wektor B. W drugim punkty początkowe wektora A i B znajdują się obok siebie. Wektor A jest krótszy od wektora B. Rysunek b: Wektory o przeciwnych zwrotach. Wektor A ma zwrot w lewo i jest dłuższy niż wektor B, który ma zwrot w prawo. Kąt między nimi jest równy 180 stopni. Rysunek c: Wektor A o zwrocie przeciwnym do wektora minus A. A ma zwrot w prawo, -A ma zwrot w lewo. Oba wektory maja tę samą długość. Rysunek d: Dwa przykłady wektorów równych. W pierwszym wektory A i B znajdują się w tej samej linii, jeden za drugim i mają tę samą długość. W drugim A i B są równoległe, a ich punkty początkowe znajdują się obok siebie. Wektory te mają tę samą długość. Rysunek e: Dwa przykłady wektorów ortogonalnych. W pierwszym A ma zwrot w dół, a B w prawo. Oba wektory mają tę samą długość, a kąt między nimi jest równy 90 stopni. W drugim wektory narysowane są po skosie. A ma zwrot w dół i w prawo, natomiast B w dół i w lewo. Oba wektory mają tę samą długość, a kąt między nimi jest równy 90 stopni.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_vector02.jpg"/>
+  </media>
+  <caption>Zależności między dwoma wektorami <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math> i <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math>. (a) <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>≠</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, ponieważ <m:math>
+<m:mi>A</m:mi>
+<m:mo>≠</m:mo>
+<m:mi>B</m:mi>
+</m:math>. (b) <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>≠</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, ponieważ mają różne zwroty oraz <m:math>
+<m:mi>A</m:mi>
+<m:mo>≠</m:mo>
+<m:mi>B</m:mi>
+</m:math>. (c) <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>≠</m:mo>
+<m:mo>−</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, ponieważ ich zwroty są różne (mimo tego, że <m:math>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mo>|</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:mrow>
+    <m:mo>−</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:mrow>
+  <m:mo>|</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mi>A</m:mi>
+</m:math>). (d) <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, ponieważ mają takie same zwroty oraz równe moduły. <m:math>
+<m:mi>A</m:mi>
+<m:mo>=</m:mo>
+<m:mi>B</m:mi>
+</m:math> (e) <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>≠</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, ponieważ ich kierunki są różne; ich kierunki różnią się o <m:math>
+<m:msup>
+  <m:mn>90</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math>, czyli są to wektory ortogonalne.</caption>
+</figure><equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-203" class="unnumbered"><m:math/></equation>
+<note id="fs-id1167132576708" class="check-understanding">
+  <exercise id="fs-id1167132485087">
+    <problem id="fs-id1167132240816">
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1167132539326"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Dwie łodzie motorowe o nazwach „Alicja” i „Beata” poruszają się po jeziorze. Na podstawie poniższych informacji określ, czy ich wektory prędkości są równe, czy nie. <list id="eip-idm313083536" list-type="enumerated" number-style="lower-alpha"><item>
+            „Alicja” porusza się na północ z prędkością 6 węzłów, a „Beata” porusza się na zachód z prędkością 6 węzłów. </item>
+            <item>
+              „Alicja” porusza się na zachód z prędkością 6 węzłów, a „Beata” porusza się na zachód z prędkością 3 węzłów. </item>
+              <item>
+                „Alicja” porusza się na północny wschód z prędkością 6 węzłów, a „Beata” porusza się na południe z prędkością 3 węzłów. </item>
+                <item>
+                  „Alicja” porusza się na północny wschód z prędkością 6 węzłów, a „Beata” porusza się na południowy zachód z prędkością 6 węzłów. </item>
+                  <item>
+                    „Alicja” porusza się na północny wschód z prędkością 2 węzłów, a „Beata” znajduje się bliżej brzegu i porusza się na północny wschód z prędkością 2 węzłów. </item>
+                  </list>
+                </para></problem>
+              <solution id="fs-id1167132519498">
+                <list id="fs-id1167132595446" list-type="enumerated" number-style="lower-alpha">
+                  <item> nie są równe, ponieważ są ortogonalne; </item>
+                  <item> nie są równe, ponieważ mają różne moduły; </item>
+                  <item> nie są równe, ponieważ mają różne moduły i kierunki; </item>
+                  <item> nie są równe, ponieważ mają przeciwne zwroty; </item>
+                  <item> równe.</item>
+                </list>
+              </solution>
+            </exercise>
+          </note>
+          <section id="fs-id1167132305565">
+            <title>Rachunek wektorowy w jednym wymiarze</title>
+            <para id="fs-id1167132274736">Wektory mogą być mnożone przez skalar, dodawane lub odejmowane od innych wektorów. Pokażemy te działania na przykładzie wyprawy na ryby, który przedstawiliśmy już na <link target-id="CNX_UPhysics_02_01_FishTrip" cmlnle:case="locative"/>.</para>
+            <figure id="CNX_UPhysics_02_01_FishTrip">
+              <media id="fs-id1167133792347" alt="Trzy rysunki przedstawiające to samo jezioro położone na północny wschód od namiotu. Północ znajduje się u góry strony. Położenie namiotu oznaczono literą A, zaś położenie jeziora literą B. W dwóch trzecich drogi między punktami A i B znajduje się punkt C. Na rysunku a wektor poprowadzony od punktu A do punktu B nazwano wektorem D z indeksem AB i przedstawiono jako niebieską strzałkę. Wektor poprowadzony z punktu A do punktu C nazwano wektorem D z indeksem AC i przedstawiono jako czerwona strzałkę. Trzy kręte ścieżki, oznaczone linia przerywaną, łączą punkty A i B. Na rysunku b, oprócz tego co na rysunku a, znajdują się: punkt D w połowie drogi między punktami A i B,wektor D z indeksem AD łączący punkty A i D, przedstawiony jako fioletowa strzałka, wektor D z indeksem DB, łączący punkty D i B, przedstawiony jako pomarańczowa strzałka. Na rysunku c dodano zieloną strzałkę łączącą punkty C i D, podpisana jako wektor D z indeksem CD. Wektor ten ma inny zwrot niż pozostałe wektory (wskazuje na namiot, a nie na jezioro).">
+                <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_FishTrip.jpg"/>
+              </media>
+              <caption>Wektory przemieszczenia podczas wyprawy na ryby. (a) Postój w punkcie <m:math>
+                <m:mi>C</m:mi>
+              </m:math> podczas wędrówki z obozowiska (punkt <m:math>
+              <m:mi>A</m:mi>
+            </m:math>) nad jezioro (punkt <m:math>
+            <m:mi>B</m:mi>
+          </m:math>). (b) Powrót po zgubioną skrzynkę (punkt <m:math>
+          <m:mi>D</m:mi></m:math>). (c) Zakończenie wędrówki nad jeziorem.</caption>
+        </figure>
+        <para id="fs-id1167133328285">Przypuśćmy, że twój przyjaciel wyrusza z punktu <m:math>
+          <m:mi>A</m:mi>
+        </m:math> (z obozowiska) i idzie w kierunku punktu <m:math>
+        <m:mi>B</m:mi>
+      </m:math> (jeziora), ale w pewnym momencie robi postój w punkcie <m:math>
+      <m:mi>C</m:mi>
+    </m:math>, znajdującym się w trzech czwartych drogi między punktem <m:math>
+    <m:mi>A</m:mi>
+  </m:math> a punktem <m:math>
+  <m:mi>B</m:mi>
+</m:math> (<link target-id="CNX_UPhysics_02_01_FishTrip"/>(a)). Jaki jest jego wektor przemieszczenia <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>C</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>, kiedy znajduje się w punkcie <m:math>
+<m:mi>C</m:mi>
+</m:math>? Wiemy, że jeśli przejdzie całą drogę do punktu <m:math>
+<m:mi>B</m:mi>
+</m:math>, jego wektor przemieszczenia o początku w punkcie <m:math>
+<m:mi>A</m:mi>
+</m:math> jest równy <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>, jego moduł jest równy <m:math>
+<m:msub>
+  <m:mi>D</m:mi>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>6</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">k</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+</m:math>, a kierunek wektora to północny wschód. Jeśli przejdzie 0,75 drogi, utrzymując kierunek północno-wschodni, to będąc w punkcie <m:math>
+<m:mi>C</m:mi>
+</m:math>, musi znajdować się <m:math>
+<m:mn>0,75</m:mn>
+<m:msub>
+  <m:mi>D</m:mi>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>4,5</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">k</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+</m:math> od obozowiska w punkcie <m:math>
+<m:mi>A</m:mi>
+</m:math>. Oznacza to, że wektor przemieszczenia, kiedy znajduje się on w punkcie <m:math>
+<m:mi>C</m:mi>
+</m:math>, ma moduł równy <m:math>
+<m:msub>
+  <m:mi>D</m:mi>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>C</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>4,5</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">k</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>0,75</m:mn>
+<m:msub>
+  <m:mi>D</m:mi>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> i jest równoległy do wektora przemieszczenia <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>. Można to przedstawić za pomocą poniższego <term class="no-emphasis" cmlnle:reference="równanie wektorowe">równania wektorowego</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">vector equation</term></foreign>):</para>
+<equation id="fs-id1167132497239" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mi>C</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>0,75</m:mn>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mi>B</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1167132624842">W równaniu wektorowym po obu stronach znaku równości znajdują się wektory. Powyższe równanie jest przykładem mnożenia wektora przez dodatni skalar (liczbę) <m:math>
+  <m:mrow>
+    <m:mi>α</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>0,75</m:mn>
+  </m:mrow>
+</m:math>. Wynikiem <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>C</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> mnożenia jest nowy wektor o tym samym kierunku i zwrocie co wektor <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>.</para>
+<para id="fs-id1167133675760">Wynikiem mnożenia wektora <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  </m:math> przez liczbę <emphasis effect="italics">dodatnią </emphasis>
+  <m:math>
+    <m:mrow>
+      <m:mi>α</m:mi>
+    </m:mrow>
+  </m:math> jest nowy wektor <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math>
+<emphasis effect="italics"> o tym samym kierunku oraz zwrocie</emphasis> co wektor <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  </m:math>:</para>
+  <note id="fs-id1167132262787" class="equation-callout">
+    <equation id="fs-id1167133686173">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>B</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mi>α</m:mi>
+        <m:mrow>
+          <m:mover>
+            <m:mi>A</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+  </note>
+  <para id="fs-id1167133750753">Moduł <m:math>
+    <m:mo>|</m:mo>
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+    <m:mo>|</m:mo>
+    </m:math> nowego wektora oblicza się uwzględniając moduł <m:math>
+    <m:mo>|</m:mo>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+    <m:mo>|</m:mo>
+    </m:math> oryginalnego wektora. Ukazuje to poniższe <term class="no-emphasis">równanie skalarne</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">scalar equation</term></foreign>):</para>
+    <note id="fs-id1167132320492" class="equation-callout">
+      <equation id="fs-id1167133394048">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:mi>B</m:mi>
+            <m:mo>=</m:mo>
+            <m:mo>|</m:mo>
+            <m:mi>α</m:mi>
+            <m:mo>|</m:mo>
+            <m:mi>A</m:mi>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+    </note>
+    <para id="fs-id1167132413817">W równaniu skalarnym po obu stronach znaku równości znajdują się liczby. <link target-id="fs-id1167133394048"/> jest równaniem skalarnym, ponieważ moduły wektorów są liczbami (dodatnimi). Jeśli skalar <m:math>
+      <m:mi>α</m:mi>
+    </m:math> występujący w wektorowym <link target-id="fs-id1167133686173" cmlnle:case="locative"/> jest <emphasis effect="italics">ujemny</emphasis>, to moduł <m:math>
+    <m:mrow>
+      <m:mo>|</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>B</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>|</m:mo>
+    </m:mrow>
+  </m:math> nowego wektora wciąż obliczamy z <link target-id="fs-id1167133394048" cmlnle:case="genitive"/>, ale zwrot jest <emphasis effect="italics">przeciwny</emphasis> do zwrotu wektora <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math>. Dokładne zasady przedstawione zostały na <link target-id="CNX_UPhysics_02_01_vector03" cmlnle:case="locative"/>(a) na dwóch przykładach, gdzie długość wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> wynosi 1,5 jednostki. Kiedy <m:math>
+<m:mrow>
+  <m:mi>α</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>2</m:mn>
+</m:mrow>
+</m:math>, nowy wektor <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> ma długość <m:math>
+<m:mi>B</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+<m:mi>A</m:mi>
+<m:mo>=</m:mo>
+<m:mn>3,0</m:mn>
+</m:math> jednostki (jest dwa razy dłuższy) i ma taki sam zwrot oraz kierunek, co pierwszy wektor. Kiedy <m:math>
+<m:mrow>
+  <m:mi>α</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>−2</m:mn>
+</m:mrow>
+</m:math>, nowy wektor <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>C</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:mn>2</m:mn>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> ma długość <m:math>
+<m:mi>C</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:mrow>
+    <m:mo>−</m:mo>
+    <m:mn>2</m:mn>
+  </m:mrow>
+  <m:mo>|</m:mo>
+</m:mrow>
+<m:mi>A</m:mi>
+<m:mo>=</m:mo>
+<m:mn>3,0</m:mn>
+</m:math> jednostki (jest dwa razy dłuższy) i ma ten sam kierunek co pierwszy wektor, lecz przeciwny zwrot.</para>
+<figure id="CNX_UPhysics_02_01_vector03">
+  <media id="fs-id1167132221972" alt="Rysunek przedstawia wektor A o zwrocie w prawo. Moduł tego wektora jest równy A = 1,5. Wektor B = 2 razy A również ma zwrot w prawo. Jego moduł jest równy B = 2 A = 3,0. Wektor C = -2 razy wektor A. Jego moduł jest równy C = 2,0. Rysunek b przedstawia wektor A o zwrocie w prawo i module równym A=1,5. Wektor B znajduje się ponizej wektora A, ich punkty początkowe znajdują się obok siebie. Wektor B ma zwrot w prawo, a jego moduł jest równy 2,0. Obok przedstawiono połączone wektory – punkt początkowy wektora B znajduje się w punkcie końcowym wektora A. Poniżej połączonych wektorów znajduje się wektor R 0 wektor A dodać wektor B. Wektor R ma zwrot w prawo. Jego punkt początkowy znajduje się obok punktu początkowego wektora A, a jego punkt końcowy obok punktu końcowego wektora B. Moduł wektora R jest równy sumie modułów A i B = 3,5. Rysunek c przedstawia wektor A o zwrocie w prawo i module A=1,5. Wektor B znajduje się poniżej wektora A, punkty początkowe tych wektorów znajdują się obok siebie. Wektor minus B ma zwrot w prawo. Jego moduł jest równy 3,2. Obok przedstawiono połączone wektory A i minus B. Punkty końcowe tych wektorów są połączone. Poniżej połączonych wektorów znajduje się wektor D = wektor A minus wektor B. Jest krótszy niż wektor minus B i ma zwrot w lewo. Jego punkt końcowy znajduje się obok punktu końcowego wektora minus B. Moduł wektora D jest równy różnicy modułów A i B = 1,7.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_vector03.jpg"/>
+  </media>
+  <caption>Rachunek wektorowy w jednym wymiarze. (a) Mnożenie przez skalar. (b) Dodawanie dwóch wektorów (<m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>R</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math> jest <emphasis effect="italics">sumą</emphasis> wektorów <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math> i <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>). (c) Odejmowanie dwóch wektorów (<m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> jest <emphasis effect="italics">różnicą</emphasis> wektorów <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> i <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>).</caption>
+</figure>
+<para id="fs-id1167133579584">Teraz załóżmy, że twój przyjaciel wędkarz wyrusza z punktu <m:math>
+  <m:mi>A</m:mi>
+</m:math> i idzie w kierunku punktu <m:math>
+<m:mi>B</m:mi>
+</m:math>, ale po drodze zauważa, że zgubił skrzynkę z przyborami wędkarskimi. Wraca więc do punktu <m:math>
+    <m:mi>C</m:mi>
+</m:math> (w trzech czwartych drogi między punktem <m:math>
+    <m:mi>A</m:mi>
+</m:math> a punktem <m:math>
+    <m:mi>B</m:mi>
+</m:math>), gdzie zrobił postój, bo pamięta, że tam na pewno jeszcze miał ją przy sobie. Zawraca więc i idzie w kierunku obozowiska. Znajduje skrzynkę leżącą przy ścieżce 1,2 km od punktu <m:math>
+<m:mi>C</m:mi>
+</m:math>, w punkcie <m:math>
+<m:mi>D</m:mi>
+</m:math> (zobacz <link target-id="CNX_UPhysics_02_01_FishTrip"/>(b)). Jaki jest jego wektor przemieszczenia <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>D</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>, jeśli skrzynka znajdowała się w punkcie <m:math>
+<m:mi>D</m:mi>
+</m:math>? Jaki jest jego wektor przemieszczenia <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>D</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> od punktu <m:math>
+<m:mi>D</m:mi>
+</m:math> do jeziora? Już wcześniej stwierdziliśmy, że w punkcie <m:math>
+<m:mi>C</m:mi>
+</m:math> jego wektor przesunięcia jest równy <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>C</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>0,75</m:mn>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>. Po wznowieniu marszu w punkcie <m:math>
+<m:mi>C</m:mi>
+</m:math> wędkarz idzie na południowy zachód (w kierunku obozowiska), co oznacza, że jego wektor przemieszczenia <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>C</m:mi>
+    <m:mi>D</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> o początku w punkcie <m:math>
+<m:mi>C</m:mi>
+</m:math> i końcu w punkcie <m:math>
+<m:mi>D</m:mi>
+</m:math> ma zwrot przeciwny do wektora <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>. Jego moduł <m:math>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>D</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mrow>
+      <m:mi>C</m:mi>
+      <m:mi>D</m:mi>
+    </m:mrow>
+  </m:msub>
+  <m:mo>|</m:mo>
+</m:mrow>
+</m:math> jest równy <m:math>
+<m:msub>
+  <m:mi>D</m:mi>
+  <m:mrow>
+    <m:mi>C</m:mi>
+    <m:mi>D</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>1,2</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">k</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>0,2</m:mn>
+<m:msub>
+  <m:mi>D</m:mi>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>, a więc jego drugi wektor przemieszczenia jest równy <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>C</m:mi>
+    <m:mi>D</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:mn>0,2</m:mn>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>. Jego całkowite przemieszczenie <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>D</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> względem obozu jest <term cmlnle:reference="suma wektorów" class="no-emphasis">sumą wektorów</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">vector sum</term></foreign>) przemieszczenia: wektora <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>C</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> (od obozu do miejsca postoju) oraz wektora <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>C</m:mi>
+    <m:mi>D</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> (od miejsca postoju do miejsca, w którym znalazł zgubioną skrzynkę):</para>
+<note id="fs-id1167132225666" class="equation-callout">
+  <equation id="fs-id1167132476572">
+    <label/>
+    <m:math>
+      <m:msub>
+        <m:mrow>
+          <m:mover>
+            <m:mi>D</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:mi>D</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mrow>
+          <m:mover>
+            <m:mi>D</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:mi>C</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mrow>
+          <m:mover>
+            <m:mi>D</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>C</m:mi>
+          <m:mi>D</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1167132507760">Jeśli wektory znajdujące się po prawej stronie <link target-id="fs-id1167132476572" cmlnle:case="genitive"/> są znane, możemy znaleźć sumę <m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>D</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mrow>
+      <m:mi>A</m:mi>
+      <m:mi>D</m:mi>
+    </m:mrow>
+  </m:msub>
+  </m:math> w następujący sposób:</para>
+  <equation id="fs-id1167133527385">
+    <m:math>
+      <m:msub>
+        <m:mrow>
+          <m:mover>
+            <m:mi>D</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:mi>D</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mrow>
+          <m:mover>
+            <m:mi>D</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:mi>C</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mrow>
+          <m:mover>
+            <m:mi>D</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>C</m:mi>
+          <m:mi>D</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>0,75</m:mn>
+      <m:msub>
+        <m:mrow>
+          <m:mover>
+            <m:mi>D</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:mi>B</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>−</m:mo>
+      <m:mn>0,2</m:mn>
+      <m:msub>
+        <m:mrow>
+          <m:mover>
+            <m:mi>D</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:mi>B</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mn>0,75</m:mn>
+          <m:mo>−</m:mo>
+          <m:mn>0,2</m:mn>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:msub>
+        <m:mrow>
+          <m:mover>
+            <m:mi>D</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:mi>B</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>0,55</m:mn>
+      <m:msub>
+        <m:mrow>
+          <m:mover>
+            <m:mi>D</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:mi>B</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para id="fs-id1167132416496">Kiedy twój przyjaciel dotrze wreszcie nad jezioro (do punktu <m:math>
+    <m:mi>B</m:mi>
+  </m:math>), wektor jego przemieszczenia <m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>D</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mrow>
+      <m:mi>A</m:mi>
+      <m:mi>B</m:mi>
+    </m:mrow>
+  </m:msub>
+</m:math> z punktu <m:math>
+<m:mi>A</m:mi>
+</m:math> będzie sumą wektorów przemieszczenia <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>D</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> z punktu <m:math>
+<m:mi>A</m:mi>
+</m:math> do punktu <m:math>
+<m:mi>D</m:mi>
+</m:math> oraz wektora przemieszczenia <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>D</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> z punktu <m:math>
+<m:mi>D</m:mi>
+</m:math> do docelowego punktu nad jeziorem <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>D</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>+</m:mo>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>D</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> (zobacz <link target-id="CNX_UPhysics_02_01_FishTrip"/>(c)). Oznacza to, że wektor jego przemieszczenia <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>D</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> będzie <term cmlnle:reference="różnica dwóch wektorów" class="no-emphasis">różnicą wektorów</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">difference of two vectors</term></foreign>):</para>
+<equation id="fs-id1167132441548">
+  <m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>D</m:mi>
+        <m:mi>B</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mi>B</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mi>D</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mi>B</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mrow>
+            <m:mover>
+              <m:mi>D</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mrow>
+            <m:mi>A</m:mi>
+            <m:mi>D</m:mi>
+          </m:mrow>
+        </m:msub>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1167132281683">Zauważ, że różnica dwóch wektorów jest po prostu sumą wektora, który jest pierwszym jej składnikiem, oraz wektora o zwrocie przeciwnym. Drugim składnikiem <link target-id="fs-id1167132441548" cmlnle:case="genitive"/> jest wektor <m:math>
+  <m:mo>−</m:mo>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>D</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mrow>
+      <m:mi>A</m:mi>
+      <m:mi>D</m:mi>
+    </m:mrow>
+  </m:msub>
+</m:math> (który ma zwrot przeciwny niż wektor <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>D</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math>). Jeśli podstawimy <link target-id="fs-id1167133527385"/> do <link target-id="fs-id1167132441548" cmlnle:case="genitive"/>, otrzymamy drugi wektor przemieszczenia:</para>
+<equation id="fs-id1167133768313">
+  <m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>D</m:mi>
+        <m:mi>B</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mi>B</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mi>D</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mi>B</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>−</m:mo>
+    <m:mn>0,55</m:mn>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mi>B</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mn>1,0</m:mn>
+        <m:mo>−</m:mo>
+        <m:mn>0,55</m:mn>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mi>B</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>0,45</m:mn>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mi>B</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1167132499982">Wynik oznacza, że twój przyjaciel przeszedł <m:math>
+  <m:msub>
+    <m:mi>D</m:mi>
+    <m:mrow>
+      <m:mi>D</m:mi>
+      <m:mi>B</m:mi>
+    </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mn>0,45</m:mn>
+  <m:msub>
+    <m:mi>D</m:mi>
+    <m:mrow>
+      <m:mi>A</m:mi>
+      <m:mi>B</m:mi>
+    </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mn>0,45</m:mn>
+  <m:mo>⋅</m:mo>
+  <m:mn>6,0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">k</m:mi>
+    <m:mi mathvariant="normal">m</m:mi>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mn>2,7</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">k</m:mi>
+    <m:mi mathvariant="normal">m</m:mi>
+  </m:mrow>
+  </m:math> od punktu, w którym znalazł zgubioną skrzynkę, do punktu docelowego nad jeziorem.</para>
+  <para id="fs-id1167132237953">Jeśli wektory <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math> i <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math> są do siebie równoległe, tak jak w przykładzie z wyprawą na ryby, to wektory będące ich sumą <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>R</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> i różnicą <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>−</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> również są do nich równoległe – mają ten sam kierunek. Dodawanie i odejmowanie wektorów możemy przedstawić graficznie, rysując je z zachowaniem skali, tak jak przedstawiono na <link target-id="CNX_UPhysics_02_01_vector03" cmlnle:case="locative"/>.</para>
+<para id="fs-id1167132378007">Aby narysować wektor będący sumą wektorów <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math> i <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> o tym samym kierunku i zwrocie, rysujemy je jeden za drugim, łącząc punkt początkowy jednego z nich z punktem końcowym drugiego (zobacz <link target-id="CNX_UPhysics_02_01_vector03"/>(b)). Moduł wektora wynikowego jest sumą modułów wektorów składowych: <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>R</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>. Zwrot wektora wynikowego jest taki sam jak zwrot wektorów składowych. Kiedy wektor <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> ma zwrot przeciwny do wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, rysujemy je, łącząc ze sobą punkty końcowe (<link target-id="CNX_UPhysics_02_01_vector03"/>(c)) lub początkowe. Moduł wektora będącego różnicą wektorów jest <emphasis effect="italics">wartością bezwzględną </emphasis>
+<m:math>
+  <m:mrow>
+    <m:mi>D</m:mi>
+    <m:mo>=</m:mo>
+    <m:mo>|</m:mo>
+    <m:mi>A</m:mi>
+    <m:mo>−</m:mo>
+    <m:mi>B</m:mi>
+    <m:mo>|</m:mo>
+  </m:mrow>
+</m:math> różnicy modułów wektorów składowych. Zwrot wektora wynikowego <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> jest taki sam jak zwrot wektora składowego o większym module.</para>
+<para id="fs-id1167132299184">Ogólnie rzecz biorąc, niezależnie od liczby wymiarów przestrzeni, możemy dodawać dowolną liczbę wektorów w dowolnej kolejności, ponieważ dodawanie wektorów jest <term class="no-emphasis" cmlnle:reference="przemienność">przemienne</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">commutative</term></foreign>),</para>
+<note id="fs-id1167132463322" class="equation-callout">
+  <equation id="fs-id1167132501766">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>A</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>B</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>B</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>A</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>,</m:mo>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1167132569455">oraz <term class="no-emphasis" cmlnle:reference="łączność">łączne</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">associative</term></foreign>),</para>
+<note id="fs-id1167132239544" class="equation-callout">
+  <equation id="fs-id1167133454633">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>A</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>C</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>A</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>C</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+</note>
+<para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1167132342483">Mnożenie przez skalar jest <term class="no-emphasis" cmlnle:reference="rozdzielność">rozdzielne</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">distributive</term></foreign>) względem dodawania:</para><note id="fs-id1167132615617" class="equation-callout">
+  <equation id="fs-id1167132615620">
+    <label/>
+    <m:math>
+      <m:msub>
+        <m:mi>α</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>A</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>α</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>A</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>α</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>α</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mrow>
+        <m:mover>
+          <m:mi>A</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1167132413323">Z cechy rozdzielności mnożenia względem dodawania korzystamy w <link target-id="fs-id1167133527385" cmlnle:case="locative"/> i <link target-id="fs-id1167133768313" cmlnle:case="locative"/>.</para>
+<para id="fs-id1167132397556">Podczas dodawania wielu wektorów w jednym wymiarze przydatne jest pojęcie <term class="no-emphasis" cmlnle:reference="wektor jednostkowy">wektora jednostkowego</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">unit vector</term></foreign>). Wektor jednostkowy oznaczać będziemy przez pochyloną literę z daszkiem, jak na przykład <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>u</m:mi>
+      <m:mo stretchy="false">^</m:mo>
+    </m:mover>
+  </m:mrow>
+</m:math>. Jego moduł jest równy jeden, a sam wektor nie jest opisywany przez żadną jednostkę, więc <m:math>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>u</m:mi>
+      <m:mo stretchy="false">^</m:mo>
+    </m:mover>
+  </m:mrow>
+  <m:mo>|</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mi>u</m:mi>
+<m:mo>=</m:mo>
+<m:mn>1</m:mn>
+</m:math>. Jedyną rolą wektora jednostkowego jest ustalenie kierunku. Na przykład zamiast mówić, że wektor <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+</m:math> ma moduł równy 6,0 km i kierunek północno-wschodni, możemy posłużyć się wektorem jednostkowym <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>u</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math> o kierunku północno-wschodnim i zapisać <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>6,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">k</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+<m:mo>⋅</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>u</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>. Kierunek południowo-zachodni wskazywany jest wtedy przez wektor jednostkowy <m:math>
+<m:mo>−</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>u</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>. Przemieszczenie o 6,0 km w kierunku południowo-zachodnim możemy zapisać w następujący sposób:</para>
+<equation id="fs-id1167132499315" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>B</m:mi>
+        <m:mi>A</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mo>−</m:mo>
+    <m:mn>6,0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">k</m:mi>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>u</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<example id="fs-id1167132203045">
+  <para id="fs-id1167132203047">
+    <title>Wędrująca biedronka</title>Długa drewniana miarka stoi oparta o ścianę w laboratorium fizycznym. Jej koniec, oznaczony wartością 200 cm, dotyka podłogi. Biedronka ląduje na wartości 100 cm i zaczyna się przemieszczać wzdłuż miarki. Najpierw przechodzi 15 cm w stronę podłogi, następnie 56 cm w stronę ściany, a później znowu 3 cm w stronę podłogi. Następnie zatrzymuje się na chwilę, przechodzi 25 cm w stronę podłogi i 19 cm w stronę ściany, po czym zatrzymuje się (<link target-id="CNX_UPhysics_02_01_ladybug"/>). Znajdź wektor przemieszczenia biedronki i ustal jej końcowe położenie na miarce.</para>
+    <para id="fs-id1167132688912">
+      <title>Strategia rozwiązania </title>Jeśli przyjmiemy, że kierunek wektora jednostkowego <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>u</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:math> wskazuje w stronę podłogi, to kierunek ten oznaczymy przez <m:math>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>u</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+    </m:math>, a kierunek od podłogi w górę przez <m:math>
+    <m:mo>−</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>u</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    </m:math>. Możemy wyróżnić pięć wektorów przemieszczenia biedronki:</para>
+    <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167133508498" class="unnumbered"><m:math display="block"><m:semantics><m:mtable><m:mtr><m:mtd><m:msub><m:mover><m:mi>D</m:mi><m:mo>→</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>15</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">cm</m:mi></m:mrow><m:mo>⋅</m:mo><m:mfenced><m:mrow><m:mo>+</m:mo><m:mover><m:mi>u</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mover><m:mi>D</m:mi><m:mo>→</m:mo></m:mover><m:mn>2</m:mn></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>56</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">cm</m:mi></m:mrow><m:mo>⋅</m:mo><m:mfenced><m:mrow><m:mo>−</m:mo><m:mover><m:mi>u</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mover><m:mi>D</m:mi><m:mo>→</m:mo></m:mover><m:mn>3</m:mn></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>3</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">cm</m:mi></m:mrow><m:mo>⋅</m:mo><m:mfenced><m:mrow><m:mo>+</m:mo><m:mover><m:mi>u</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mover><m:mi>D</m:mi><m:mo>→</m:mo></m:mover><m:mn>4</m:mn></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>25</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">cm</m:mi></m:mrow><m:mo>⋅</m:mo><m:mfenced><m:mrow><m:mo>+</m:mo><m:mover><m:mi>u</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mover><m:mi>D</m:mi><m:mo>→</m:mo></m:mover><m:mn>5</m:mn></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>19</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">cm</m:mi></m:mrow><m:mo>⋅</m:mo><m:mfenced><m:mrow><m:mo>−</m:mo><m:mover><m:mi>u</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{align} \vec D_1 &amp;= \SI{15}{\centi\metre} \cdot (+\hat u) \text{,} \\ \vec D_2 &amp;= \SI{56}{\centi\metre} \cdot (-\hat u) \text{,} \\\vec D_3 &amp;= \SI{3}{\centi\metre} \cdot (+\hat u) \text{,} \\\vec D_4 &amp;= \SI{25}{\centi\metre} \cdot (+\hat u) \text{,} \\ \vec D_5 &amp;= \SI{19}{\centi\metre} \cdot (-\hat u) \text{.} \end{align}</m:annotation></m:semantics></m:math></equation><para id="fs-id1167132241640">Całkowity wektor przemieszczenia <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      </m:math> jest sumą wszystkich wektorów przemieszczenia.</para>
+      <figure id="CNX_UPhysics_02_01_ladybug">
+        <media id="fs-id1167133748196" alt="Pięć rysunków przedstawiających biedronkę chodzącą po miarce opartej o ścianę. Wektor +u z daszkiem ma zwrot w kierunku podłogi, wektor – u z daszkiem ma zwrot w kierunku górnej części miarki. Na pierwszym rysunku biedronka znajduje się w pobliżu środka miarki, a wektor D1 zwrócony jest w stronę podłogi. Na drugim rysunku biedronka znajduje się niżej, w miejscu, w którym na pierwszym rysunku znajduje się punkt końcowy wektora D1. Wektor D2 ma zwrot w górę miarki. Na trzecim rysunku biedronka znajduje się wyżej, w miejscu, w którym na drugim rysunku znajduje się punkt końcowy wektora D2. Wektor D3 ma zwrot w dół miarki. Na czwartym rysunku biedronka znajduje się niżej, w miejscu, w którym na trzecim rysunku znajduje się punkt końcowy wektora D2. Wektor D4 ma zwrot w dół miarki. Na piątym rysunku biedronka znajduje się niżej, w miejscu, w którym na czwartym rysunku znajduje się punkt końcowy wektora D4. Wektor D5 ma zwrot w górę miarki.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_ladybug.jpg"/>
+        </media>
+        <caption>Pięć wektorów przemieszczenia biedronki. Zauważ, że na tym schemacie moduły poszczególnych wektorów nie zachowują skali. (Źródło: modyfikacja pracy „Persian Poet Gal”/Wikimedia Commons)</caption>
+      </figure>
+      <para id="fs-id1167133826776">
+        <title>Rozwiązanie</title>Suma wszystkich wektorów przemieszczenia jest następująca:</para>
+        <equation id="fs-id1167133826781" class="unnumbered">
+          <m:math>
+            <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+              <m:mtr>
+                <m:mtd>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>D</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                </m:mtd>
+                <m:mtd>
+                  <m:mi/>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>D</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>D</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>D</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mn>3</m:mn>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>D</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mn>4</m:mn>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>D</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mn>5</m:mn>
+                  </m:msub>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mi/>
+                  <m:mo>=</m:mo>
+                  <m:mn>15</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mo>+</m:mo>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>u</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo>+</m:mo>
+                  <m:mn>56</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>u</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mo>+</m:mo>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>u</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo>+</m:mo>
+                  <m:mn>25</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mo>+</m:mo>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>u</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo>+</m:mo>
+                  <m:mn>19</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>u</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mi/>
+                  <m:mo>=</m:mo>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mn>15</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mn>56</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mn>3</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mn>25</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mn>19</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo>⋅</m:mo>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>u</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd/>
+                <m:mtd>
+                  <m:mi/>
+                  <m:mo>=</m:mo>
+                  <m:mo>−</m:mo>
+                  <m:mn>32</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>u</m:mi>
+                      <m:mo stretchy="false">^</m:mo>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mo>.</m:mo>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="fs-id1167132436133">W powyższych obliczeniach korzystamy z prawa rozdzielności mnożenia względem dodawania przedstawionego w <link target-id="fs-id1167132615620" cmlnle:case="locative"/>. Wynik interpretujemy w następujący sposób: punkt zaczepienia wektora całkowitego przemieszczenia znajduje się w punkcie oznaczonym 100 cm (w miejscu wylądowania biedronki). Wektor skierowany jest w stronę ściany. Na dotykającym ściany końcu miarki znajduje się wartość 0 cm, a więc biedronka po zakończeniu wędrówki znajduje się w punkcie wyznaczonym przez proste odejmowanie <m:math>
+          <m:mn>100</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">c</m:mi>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>−</m:mo>
+          <m:mn>32</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">c</m:mi>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mn>68</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">c</m:mi>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          </m:math>.</para>
+        </example>
+        <note id="fs-id1167133521609" class="check-understanding">
+          <exercise id="fs-id1167132473641">
+            <problem id="fs-id1167132473643">
+              <para id="fs-id1167132473645">
+                <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Nurek jaskiniowy wpływa do długiego podwodnego tunelu. Kiedy jego przemieszczenie względem początku tunelu jest równe 20 m, przypadkowo upuszcza aparat fotograficzny, ale zauważa to dopiero po przepłynięciu kolejnych 6 m. Kiedy zauważa brak aparatu, zawraca i przepływa 10 m, nie może go jednak znaleźć i decyduje się zakończyć nurkowanie. Jak daleko znajduje się od początku tunelu? Przyjmując, że wektor zwrócony na zewnątrz tunelu ma wartość dodatnią, jaki jest jego wektor przemieszczenia?</para>
+              </problem>
+              <solution id="fs-id1167133773324">
+                <para id="fs-id1167133773326">
+                  <m:math>
+                    <m:mn>16</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                  </m:math>; <newline/>
+                  <m:math>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>D</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mo>−</m:mo>
+                    <m:mn>16</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                    <m:mo>⋅</m:mo>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>u</m:mi>
+                        <m:mo stretchy="false">^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                    </m:math>.</para>
+                  </solution>
+                </exercise>
+              </note>
+            </section>
+            <section id="fs-id1167132371115">
+              <title>Rachunek wektorowy w dwóch wymiarach</title>
+              <para id="fs-id1167132342179">Wektory leżące na płaszczyźnie, to znaczy w przestrzeni dwuwymiarowej, mogą być mnożone przez skalar, dodawane oraz odejmowane od innych wektorów, zgodnie z zasadami przedstawionymi w <link target-id="fs-id1167133686173" cmlnle:case="locative"/>, <link target-id="fs-id1167133394048" cmlnle:case="locative"/>, <link target-id="fs-id1167132501766" cmlnle:case="locative"/> oraz <link target-id="fs-id1167133454633" cmlnle:case="locative"/>. Jednak dodawanie wektorów w przestrzeni dwuwymiarowej jest bardziej skomplikowane niż dodawanie w jednym wymiarze. Wektory można dodawać metodą graficzną, korzystając z zasad geometrii, lecz aby obliczyć zwrot, kierunek i moduł wektora wypadkowego, potrzebna będzie trygonometria. Metoda graficzna często wykorzystywana jest w nawigacji (<link target-id="CNX_UPhysics_02_01_navigation"/>). Podczas konstrukcji wektorów z zachowaniem skali potrzebne ci będą dwie linijki, ekierka, kątomierz, ołówek oraz gumka do ścierania.</para>
+              <figure id="CNX_UPhysics_02_01_navigation">
+                <media id="fs-id1167133541239" alt="Zdjęcie przedstawiające dłonie człowieka odmierzającego dystans na mapie przy pomocy cyrkla i linijki.">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_navigation.jpg"/>
+                </media>
+                <caption>Wektory przemieszczenia dodawane są na mapach za pomocą metody graficznej.</caption>
+              </figure>
+              <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1167132594682">Podczas graficznego dodawania wektorów na płaszczyźnie stosujemy <term class="no-emphasis" cmlnle:reference="metoda równoległoboku">metodę równoległoboku</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">parallelogram rule</term></foreign>). Załóżmy, że dwa wektory <m:math>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>A</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mrow>
+              </m:math> i <m:math>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>B</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:math> znajdują się w przypadkowych pozycjach przedstawionych na <link target-id="CNX_UPhysics_02_01_vector04" cmlnle:case="locative"/>. Jeden z wektorów należy przesunąć tak, aby punkt zaczepienia obu wektorów był wspólny. Następnie od punktu końcowego wektora <m:math>
+            <m:mrow>
+              <m:mover>
+                <m:mi>A</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+          </m:math> prowadzimy odcinek równoległy do wektora <m:math>
+          <m:mrow>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:math>, a od punktu końcowego wektora <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>B</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:math> prowadzimy odcinek równoległy do wektora <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>A</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:math> (odcinki te na <link target-id="CNX_UPhysics_02_01_vector04" cmlnle:case="locative"/> oznaczone są liniami przerywanymi). W ten sposób tworzymy równoległobok. Rysujemy przekątną zawierającą punkt zaczepienia wektorów. Przekątna ta jest sumą <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>R</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math> dwóch wektorów: <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>R</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mo>+</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math> (<link target-id="CNX_UPhysics_02_01_vector04"/>(a)). Druga przekątna równoległoboku jest różnicą dwóch wektorów <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>−</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, co przedstawiono na <link target-id="CNX_UPhysics_02_01_vector04" cmlnle:case="locative"/>(b). Zauważ, że punkt końcowy wektora będącego różnicą wektorów jest wspólny z punktem końcowym wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>.</para><figure id="CNX_UPhysics_02_01_vector04">
+  <media id="fs-id1167133635872" alt="Na rysunku przedstawiono metodę równoległoboku dodawania wektorów. Rysunek a przedstawia wektory A i B. Wektor A skierowany jest w prawo i w dół, a wektor B skierowany jest w prawo i w górę. Na rysunku obok wektory A i B są połączone w punktach zaczepienia, ich kierunki i zwroty pozostają takie same. W punkcie końcowym wektora B ma swój początek odcinek równoległy do wektora A, zaznaczony linią przerywaną. W punkcie końcowym wektora A ma swój początek odcinek równoległy do wektora B, zaznaczony linią przerywaną. Wektory A i B oraz dwa odcinki tworzą równoległobok. Przedstawiono również wektor R, R = wektor A dodać wektor B. Punkt początkowy wektora R pokrywa się z punktami początkowymi wektorów A i B, a jego punkt końcowy znajduje się w przeciwległym wierzchołku równoległoboku, gdzie spotykają się zaznaczone przerywaną linią odcinki. Zaznaczono, że moduł R nie jest równy sumie modułów A i B. Rysunek b przedstawia wektory A oraz minus B. Wektor minus B to wektor B z rysunku a, obrócony o 180 stopni. Wektor A skierowany jest w dół i w prawo, a wektor minus B w dół i w lewo. Na rysunku obok wektory A i B są połączone w punktach zaczepienia, ich kierunki i zwroty pozostają takie same. W punkcie końcowym wektora B ma swój początek odcinek równoległy do wektora A, zaznaczony linią przerywaną. W punkcie końcowym wektora A ma swój początek odcinek równoległy do wektora B, zaznaczony linią przerywaną. Wektory A i B oraz dwa odcinki tworzą równoległobok. Na rysunku przedstawiono również trzeci wektor – wektor D. Punkt początkowy wektora D znajduje się w punkcie końcowym wektora minus B, a jego punkt końcowy znajduje się w punkcie końcowym wektora A, w przeciwległym wierzchołku równoległoboku. Zaznaczono, że wektor D jest równy różnicy wektorów A i B, ale jego moduł nie jest równy różnicy modułów tych wektorów.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_vector04.jpg"/>
+  </media>
+  <caption>Metoda równoległoboku dodawania dwóch wektorów. Przesuń jeden z wektorów w taki sposób, aby punkt zaczepienia (oznaczony kropką) obu wektorów był wspólny. Skonstruuj równoległobok, którego dwoma bokami będą wektory, a pozostałymi dwoma odcinki do nich równoległe (oznaczone na rysunku linią przerywaną). (a) Wektor o tym samym punkcie zaczepienia, jaki mają dodawane wektory, pokrywający się z przekątną równoległoboku, to suma wektorów <m:math>
+    <m:mi>R</m:mi>
+  </m:math>. Moduł <m:math>
+  <m:mi>R</m:mi>
+</m:math> sumy wektorów <emphasis effect="italics">nie jest</emphasis> równy sumie modułów dodawanych wektorów. (b) Przekątna łącząca punkty końcowe wektorów tworzy wektor będący różnicą wektorów <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>−</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>. Punkt początkowy wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> powinien być wspólny z punktem końcowym wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, a punkt końcowy wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> powinien być wspólny z punktem końcowym wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>. Moduł <m:math>
+<m:mi>D</m:mi>
+</m:math> różnicy wektorów <emphasis effect="italics">nie jest</emphasis> równy różnicy modułów odejmowanych wektorów.</caption>
+</figure>
+<para id="fs-id1167132362973">Zgodnie z regułą równoległoboku moduł sumy wektorów ani moduł różnicy wektorów nie mogą być obliczone poprzez dodawanie, ani odejmowanie modułów wektorów <m:math>
+  <m:mi>A</m:mi>
+</m:math> i <m:math>
+<m:mi>B</m:mi>
+</m:math>, ponieważ długość przekątnej równoległoboku nie jest równa sumie ani różnicy długości boków. Jeśli chcemy znaleźć wartość modułów <m:math>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>R</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mo>|</m:mo>
+</m:mrow>
+</m:math> i <m:math>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mo>|</m:mo>
+</m:mrow>
+</m:math>, musimy posłużyć się trygonometrią, co może prowadzić do skomplikowanych obliczeń. Istnieją dwa sposoby na ich obejście. Jednym z nich jest wykorzystanie współrzędnych wektorów, co zaprezentujemy w następnym podrozdziale. Drugi sposób, którym zajmiemy się teraz, polega na narysowaniu wektorów z zachowaniem skali, tak jak robią to nawigatorzy, i zmierzeniu długości i kierunku uzyskanego wektora.</para>
+<para id="fs-id1167132501642">Jeśli musimy dodać do siebie trzy lub więcej wektorów, postępujemy zgodnie z metodą równoległoboku, dodając do siebie pary wektorów, aż otrzymamy wektor będący sumą wszystkich sum. Na przykład jeśli chcemy dodać trzy wektory, najpierw znajdujemy sumę wektorów numer 1 i numer 2, a następnie tę sumę dodajemy do wektora numer 3. Kolejność dodawania poszczególnych wektorów jest bez znaczenia, ponieważ dodawanie wektorów jest przemienne i łączne (zobacz <link target-id="fs-id1167132501766"/> i <link target-id="fs-id1167133454633"/>). Zanim sformułujemy zasadę wynikającą z metody równoległoboku, spójrzmy na przykład przedstawiony poniżej.</para>
+<para id="fs-id1167132267118">Wyobraź sobie, że planujesz podróż do Ameryki, aby odwiedzić swoją rodzinę mieszkającą na Florydzie. Wyruszasz ze stolicy stanu Tallahassee. Najpierw zamierzasz odwiedzić wujka w Jacksonville, złożyć wizytę kuzynce w Daytona Beach, wspólnie zwiedzić Orlando, zobaczyć cyrk w Tampie, a na końcu odwiedzić University of Florida w Gainesville. Przebytą przez ciebie trasę można przedstawić przy pomocy pięciu wektorów przemieszczenia <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math>, <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>C</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> i <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>E</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, na <link target-id="CNX_UPhysics_02_01_vector05" cmlnle:case="locative"/> zaznaczonych kolorem czerwonym. Jaki będzie wektor twojego przemieszczenia w chwili, kiedy dotrzesz do Gainesville? Całkowite przemieszczenie jest sumą wszystkich pięciu wektorów przemieszczenia i można je znaleźć, cztery razy stosując metodę równoległoboku. Wiemy jednak, że wektor przemieszczenia ma swój punkt początkowy (Tallahassee) oraz punkt końcowy (Gainesville), a więc wektor całkowitego przemieszczenia można narysować od razu, łącząc Tallahassee z Gainesville (zielony wektor na <link target-id="CNX_UPhysics_02_01_vector05" cmlnle:case="locative"/>). Jeśli cztery razy zastosujemy metodę równoległoboku, uzyskany przez nas wektor sumy <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>R</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> będzie pokrywał się z zielonym wektorem: <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>R</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>C</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>E</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>.</para>
+<figure id="CNX_UPhysics_02_01_vector05">
+  <media id="fs-id1167132322121" alt="Mapa Florydy z następującymi wektorami zaznaczonymi na czerwono: wektor A z Tallahassee do Jacksonville, prawie dokładnie na zachód, wektor B z Jacksonville do Daytona Beach, na południowy wschód, wektor C z Daytona Beach do Orlando, na południowy zachód, wektor D z Orlando do Tampy, na południowy zachód (mniej pionowo niż wektor C), wektor E z Tampy do Gainesville, nieco na wschód od kierunku północnego. Wektor R z Tallahassee do Gainsville zaznaczono zieloną strzałką.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_vector05.jpg"/>
+  </media>
+  <caption>Przez czterokrotne zastosowanie metody równoległoboku otrzymujemy wektor sumy <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>R</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>B</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>C</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>D</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>E</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    </m:math>, zaznaczony na rysunku kolorem zielonym.</caption>
+  </figure>
+  <para id="fs-id1167132444404">Rysowanie wektora będącego sumą wielu wektorów można uprościć poprzez <term class="no-emphasis">łączenie punktów końcowych i początkowych wektorów</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">tail-to-head geometric construction</term></foreign>). Załóżmy, że chcemy narysować wektor sumy <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>R</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math> czterech wektorów <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math>, <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>C</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> (<link target-id="CNX_UPhysics_02_01_vector06"/>(a)). Wybieramy którykolwiek z czterech wektorów i zaczepiamy inny wektor w punkcie końcowym wektora pierwszego. Następnie wybieramy kolejny wektor i zaczepiamy go w punkcie końcowym wektora drugiego. W ten sposób łączymy wszystkie wektory (<link target-id="CNX_UPhysics_02_01_vector06"/>). Wektor sumy <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>R</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> rysujemy, łącząc punkt początkowy pierwszego wektora z punktem końcowym ostatniego wektora. Punkt końcowy wektora sumy pokrywa się z punktem końcowym ostatniego wektora. Kolejność łączenia wektorów jest dowolna, ponieważ dodawanie jest przemienne i łączne.</para>
+<figure id="CNX_UPhysics_02_01_vector06">
+  <media id="fs-id1167132205226" alt="Rysunek a przedstawia cztery niepołączone ze sobą wektory: A, B, C oraz D. Rysunek b przedstawia te same wektory połączone punktami końcowymi i początkowymi: punkt początkowy wektora A znajduje się w punkcie końcowym wektora D, punkt początkowy wektora C znajduje się w punkcie końcowym wektora A, punkt początkowy wektora B znajduje się w punkcie końcowym wektora C. Piąty wektor, wektor R, ma punkt początkowy w punkcie początkowym wektora D i punkt końcowy w punkcie końcowym wektora B.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_vector06.jpg"/>
+  </media>
+  <caption>Metoda łączenia punktów końcowych i początkowych wektorów pozwala na znalezienie sumy wektorów <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>R</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>B</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>C</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>D</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    </m:math>. (a) Cztery wektory o różnych modułach i kierunkach. (b) Połączenie punktów końcowych i początkowych wektorów; wektor sumy rysujemy, łącząc punkt początkowy pierwszego wektora z punktem końcowym ostatniego wektora.</caption>
+  </figure>
+  <example id="fs-id1167132310249">
+    <para id="fs-id1167132546290">
+      <title>Konstrukcja sumy wektorów</title>Moduły wektorów przemieszczenia <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>A</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:math>, <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>B</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:math> i <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>C</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math> na <link target-id="CNX_UPhysics_02_01_vector07" cmlnle:case="locative"/> są równe <m:math>
+  <m:mi>A</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>10,0</m:mn>
+</m:math>, <m:math>
+<m:mi>B</m:mi>
+<m:mo>=</m:mo>
+<m:mn>7,0</m:mn>
+</m:math> i <m:math>
+<m:mi>C</m:mi>
+<m:mo>=</m:mo>
+<m:mn>8,0</m:mn>
+</m:math>, a ich kąty nachylenia do poziomu są równe <m:math>
+<m:mi>α</m:mi>
+<m:mo>=</m:mo>
+<m:msup>
+  <m:mn>35</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math>, <m:math>
+<m:mi>β</m:mi>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:msup>
+  <m:mn>110</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math> i <m:math>
+<m:mi>γ</m:mi>
+<m:mo>=</m:mo>
+<m:msup>
+  <m:mn>30</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math>. Wartości modułów podane są w centymetrach. Zastosuj odpowiednią skalę i użyj linijki oraz kątomierza, aby znaleźć sumy następujących wektorów:<list id="eip-idm1229609744" list-type="enumerated" number-style="lower-alpha">
+<item>
+  <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>R</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>B</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    </m:math>, </item>
+    <item>
+      <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>D</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>A</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>B</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        </m:math>, </item>
+        <item>
+          <m:math>
+            <m:mrow>
+              <m:mover>
+                <m:mi>S</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mover>
+                <m:mi>A</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>3</m:mn>
+            <m:mrow>
+              <m:mover>
+                <m:mi>B</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mover>
+                <m:mi>C</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            </m:math>. </item>
+          </list>
+        </para>
+        <figure id="CNX_UPhysics_02_01_vector07">
+          <media id="fs-id1167132361887" alt="Moduł wektora A jest równy 10,0, wektor ten znajduje się pod kątem alfa mierzonym przeciwnie do ruchu wskazówek zegara od poziomu jest równy 35 stopni. Wektor ten ma zwrot w górę i w prawo. Moduł wektora B jest równy 7,0, wektor ten znajduje się pod kątem beta mierzonym zgodnie z ruchem wskazówek zegara od poziomu jest równy -110 stopni. Wektor ten ma zwrot w dół i w lewo. Moduł wektora C jest równy 8,0, wektor ten znajduje się pod kątem gamma mierzonym przeciwnie do ruchu wskazówek zegara od poziomu jest równy 30 stopni. Wektor ten ma zwrot w górę i w prawo. Moduł wektora F jest równy 20,0, wektor ten znajduje się pod kątem fi 110 mierzonym przeciwnie do ruchu wskazówek zegara od poziomu jest równy 35 stopni. Wektor ten ma zwrot w górę i w lewo.">
+            <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_vector07.jpg"/>
+          </media>
+          <caption>Wektory użyte w <link target-id="fs-id1167132310249" cmlnle:case="locative"/> oraz w zadaniu „Sprawdź, czy rozumiesz”.</caption>
+        </figure>
+        <para id="fs-id1167132688124">
+          <title>Strategia rozwiązania zadania</title>„Znalezienie wektora” oznacza znalezienie jego modułu oraz kąta nachylenia do poziomu. Należy narysować, z zachowaniem skali, wektory znajdujące się po prawej stronie znaku równości, po czym dokonać konstrukcji szukanego wektora. Wartość modułu i kąta nachylenia należy odczytać przy pomocy linijki i kątomierza. Dla podpunktów (a) i (b) stosujemy metodę równoległoboku, w podpunkcie (c) łączymy punkty końcowe i początkowe wektorów.</para>
+          <para id="fs-id1167132688134">
+            <title>Rozwiązanie</title>W podpunktach (a) i (b) łączymy punkty początkowe wektorów <m:math>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>B</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:math> i <m:math>
+            <m:mrow>
+              <m:mover>
+                <m:mi>A</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+          </m:math>, jak na <link target-id="CNX_UPhysics_02_01_vector08" cmlnle:case="locative"/>, i tworzymy równoległobok. Krótsza przekątna tego równoległoboku jest sumą <m:math>
+          <m:mrow>
+            <m:mover>
+              <m:mi>A</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:math>. Dłuższa przekątna równoległoboku to różnica <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>A</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>B</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:math>. Za pomocą linijki mierzymy długości przekątnych, a za pomocą kątomierza mierzymy kąty nachylenia. Moduł wektora <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>R</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:math> jest równy <m:math>
+    <m:mi>R</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>5,8</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">c</m:mi>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+  </m:math>, a kąt <m:math>
+  <m:msub>
+    <m:mi>θ</m:mi>
+    <m:mi>R</m:mi>
+  </m:msub>
+  <m:mo>≈</m:mo>
+  <m:msup>
+    <m:mn>0</m:mn>
+    <m:mo>∘</m:mo>
+  </m:msup>
+</m:math>. Moduł wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> jest równy <m:math>
+<m:mi>D</m:mi>
+<m:mo>=</m:mo>
+<m:mn>16,2</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">c</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+</m:math>, a kąt nachylenia <m:math>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mi>D</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>49</m:mn>
+<m:mo>,</m:mo>
+<m:msup>
+  <m:mn>3</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math>, jak pokazano na <link target-id="CNX_UPhysics_02_01_vector08" cmlnle:case="locative"/>.</para>
+<figure id="CNX_UPhysics_02_01_vector08">
+  <media id="fs-id1167132685555" alt="Trzy diagramy przedstawiające wektory A i B. Na pierwszym diagramie wektory A i B mają ten sam punkt zaczepienia. Wektor A skierowany jest w górę i w prawo, a jego moduł jest równy 10,0. Wektor B skierowany jest w dół i w lewo, a jego moduł jest równy 7,0. Kąt między wektorami A i B jest równy 145 stopni. Na drugim diagramie wektory A i B przedstawione są w ten sam sposób, ale znajdują się na nim również równoległe do nich odcinki, zaznaczone linią przerywaną. Wektory i odcinki tworzą równoległobok. Wektor R równy sumie wektorów A i B ma punkt początkowy wspólny z punktem początkowym wektorów A i B i punkt końcowy w przeciwległym wierzchołki równoległoboku. Moduł wektora R jest równy 5,8. Na trzecim diagramie znajduje się ten sam równoległobok. Nie ma na nim wektora R. Przedstawiony jest wektor D będący różnicą wektorów A i B. Jego punkt początkowy znajduje się w punkcie końcowym wektora B, a jego punkt końcowy w punkcie końcowym wektora A. Moduł wektora D jest równy 16,2, a kąt między tym wektorem a poziomem jest równy 49,3. Wektor R z drugiego diagramu jest znacznie krótszy niż wektor D z trzeciego diagramu.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_vector08.jpg"/>
+  </media>
+  <caption>Zastosowanie metody równoległoboku w celu znalezienia (a) sumy wektorów (wektor czerwony) (b) różnicy wektorów (wektor niebieski).</caption>
+</figure>
+<para id="fs-id1167132451912">Aby rozwiązać zadanie z podpunktu (c), do wektora <m:math>
+  <m:mo>−</m:mo>
+  <m:mn>3</m:mn>
+  <m:mrow>
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math> przyłączamy kolejne wektory (punkty początkowe łącząc z punktami końcowymi, tak jak na <link target-id="CNX_UPhysics_02_01_vector09" cmlnle:case="locative"/>. Kolejność, w jakiej połączymy wektory, jest bez znaczenia, ale zachowanie skali jest niezwykle ważne. Następnie rysujemy wektor <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>S</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, łącząc punkt początkowy pierwszego wektora z punktem końcowym ostatniego wektora. Przy pomocy linijki mierzymy długość wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>S</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> – jego moduł jest równy <m:math>
+<m:mi>S</m:mi>
+<m:mo>=</m:mo>
+<m:mn>36,9</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">c</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+</m:math>. Przy pomocy kątomierza mierzymy kąt nachylenia <m:math>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mi>S</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msup>
+<m:mn>52,9</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math>. Rozwiązanie przedstawiono na <link target-id="CNX_UPhysics_02_01_vector09" cmlnle:case="locative"/>.</para>
+<figure id="CNX_UPhysics_02_01_vector09">
+  <media id="fs-id1167132499445" alt="Trzy niebieskie wektory połączone są punktami końcowymi i początkowymi. Wektor minus 3B skierowany jest w górę i w prawo, a jego moduł jest równy 3B = 21,0. Wektor A ma punkt początkowy w punkcie końcowym wektora minus 3B, jest skierowany w górę i w prawo, a jego moduł jest równy A = 10,0. Kąt między wektorem A i wektorem minus 3B jest równy 145 stopni. Wektor C ma punkt początkowy w punkcie końcowym wektora A, a jego moduł jest równy C = 8,0. Wektor S jest zielony i łączy punkt początkowy wektora minus 3B z punktem końcowym wektora C. Wektor S równa się wektora A minus wektor 3B dodać wektor C. Moduł wektora S jest równy 36,9, a jego kąt nachylenia do poziomu jest równy 52,9 stopnia.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_vector09.jpg"/>
+  </media>
+  <caption>Rozwiązanie podpunktu (c) przez łączenie punktów końcowych i początkowych wektorów (znalezienie zielonego wektora <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>S</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    </m:math>).</caption>
+  </figure>
+</example>
+<note id="fs-id1167132487190" class="check-understanding">
+  <exercise id="fs-id1167132487194">
+    <problem id="fs-id1167132487196">
+      <para id="fs-id1167133787376">
+        <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Wybierz odpowiednią skalę oraz użyj linijki i kątomierza w celu znalezienia wektora <m:math>
+          <m:mrow>
+            <m:mover>
+              <m:mi>G</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>A</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mn>2</m:mn>
+          <m:mrow>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>F</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:math> (wektory <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>A</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:math>, <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>B</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:math> i <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>F</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    </m:math> przedstawiono na <link target-id="CNX_UPhysics_02_01_vector07" cmlnle:case="locative"/>).</para>
+  </problem>
+  <solution id="fs-id1167132326222">
+    <para id="fs-id1167132576679">
+      <m:math>
+        <m:mi>G</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>28,2</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">c</m:mi>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+      </m:math>,<m:math>
+      <m:msub>
+        <m:mi>θ</m:mi>
+        <m:mi>G</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msup>
+        <m:mn>291</m:mn>
+        <m:mo>∘</m:mo>
+      </m:msup>
+      </m:math>.</para>
+    </solution>
+  </exercise>
+</note>
+<note id="fs-id1167133568457" class="media-2">
+  <para id="fs-id1167133568461">Powtórz wiadomości o dodawaniu wektorów i zobacz <link url="https://openstaxcollege.org/l/21compveccalc">kalkulator wektorów</link> oraz tę <link url="https://openstaxcollege.org/l/21phetvecaddsim">symulację</link>.</para>
+</note>
+</section>
+<section id="fs-id1167133772309" class="key-concepts">
+  <title>Podsumowanie</title>
+  <list id="fs-id1167132451699">
+    <item>Wielkość wektorowa to wielkość, która ma moduł, zwrot oraz kierunek, jak na przykład przemieszczenie lub prędkość. Wielkości wektorowe reprezentowane są przez wektory.</item>
+    <item>Graficzną reprezentacją wektora jest strzałka. Długość strzałki odpowiada modułowi wektora, który jest liczbą dodatnią. Kierunek wektora na płaszczyźnie określony jest przez kąt, jaki wektor tworzy z pewnym kierunkiem odniesienia. Kierunek wektora jest wielkością skalarną.</item>
+    <item>Dwa wektory są równe wtedy i tylko wtedy, kiedy ich moduły, kierunki oraz zwroty są równe. Wektory zgodne mają ten sam kierunek i zwrot, ale mogą mieć różne moduły. Wektory przeciwne mają ten sam kierunek, lecz przeciwny zwrot. Kierunki wektorów ortogonalnych różnią się od siebie o <m:math>
+      <m:msup>
+        <m:mn>90</m:mn>
+        <m:mo>∘</m:mo>
+      </m:msup>
+      </m:math>.</item>
+      <item>W wyniku mnożenia wektora przez skalar (różny od jedności) uzyskujemy wektor o innej długości. Mnożenie przez skalar będący liczbą dodatnią nie zmienia zwrotu wektora. Mnożenie przez liczbę ujemną zmienia zwrot wektora – wynikiem tego jest wektor przeciwny do wektora początkowego. Mnożenie przez wektor jest rozdzielne względem dodawania. Wektory można dzielić przez skalary, ale nie można ich dzielić przez wektory.</item>
+      <item>Wektory mogą być dodawane do innych wektorów, nie mogą jednak być dodawane do skalarów. Dodawanie wektorów jest przemienne i łączne.</item>
+      <item>Graficzne dodawanie dwóch wektorów realizujemy, stosując metodę równoległoboku. Graficzne dodawanie większej liczby wektorów realizujemy, łącząc kolejno punkty końcowe i początkowe wektorów. </item>
+    </list>
+  </section>
+  <section id="fs-id1167132744637" class="review-conceptual-questions">
+    <title>Pytania </title>
+    <exercise id="fs-id1167132744645">
+      <problem id="fs-id1167132744647">
+        <para id="fs-id1167133708383">Według prognozy pogody temperatura ma spaść do <m:math>
+          <m:mo>−</m:mo>
+          <m:msup>
+            <m:mn>5</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+          </m:math>. Czy temperatura jest wielkością wektorową czy skalarną? Wytłumacz.</para>
+        </problem>
+        <solution id="fs-id1167133766192">
+          <para id="fs-id1167133766194">skalarną</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167133578427">
+        <problem id="fs-id1167133578429">
+          <para id="fs-id1167133578431">Wzrost człowieka, wysokość Mt. Everestu, prędkość muchy, wiek Ziemi, temperatura wrzenia wody, cena książki, populacja światowa, przyspieszenie grawitacyjne – które z wymienionych wielkości to wektory?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1167132458328">
+        <problem id="fs-id1167132458330">
+          <para id="fs-id1167132458332">Podaj przykład wektora wraz z jego modułem, jednostką i zwrotem.</para>
+        </problem>
+        <solution id="fs-id1167132483960">
+          <para id="fs-id1167132483962">możliwe różne odpowiedzi</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167132483967">
+        <problem id="fs-id1167132483969">
+          <para id="fs-id1167132230862">Jakie są cechy wspólne wektorów i skalarów? Jakie są między nimi różnice?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1167132352997">
+        <problem id="fs-id1167132352999">
+          <para id="fs-id1167132353001">Przypuśmy, że chcesz dodać do siebie dwa wektory <m:math>
+            <m:mrow>
+              <m:mover>
+                <m:mi>A</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+          </m:math> i <m:math>
+          <m:mrow>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          </m:math>. Jaki powinien być kąt między nimi, aby moduł wektora sumy był jak największy? Jaka jest maksymalna możliwa wartość modułu wektora sumy? Jaki powinien być kąt między nimi, aby moduł wektora sumy był jak najmniejszy? Jaka jest najmniejsza możliwa wartość modułu wektora sumy?</para>
+        </problem>
+        <solution id="fs-id1167133640324">
+          <para id="fs-id1167133640326">powinny być równoległe; suma modułów; powinny być przeciwnie skierowane; zero</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167133640332">
+        <problem id="fs-id1167133640334">
+          <para id="fs-id1167133640336">Czy wielkość skalarną można dodać do wielkości wektorowej?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1167132315789">
+        <problem id="fs-id1167132315791">
+          <para id="fs-id1167132415644">Czy suma dwóch wektorów o różnych modułach może być równa zero? Czy suma trzech wektorów o różnych modułach może być równa zero? Wyjaśnij dlaczego.</para>
+        </problem>
+        <solution id="fs-id1167132415650">
+          <para id="fs-id1167132415652">tak; tak</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167133635856">
+        <problem id="fs-id1167133635858">
+          <para id="fs-id1167133635860">Czy drogomierz wskazuje wielkość skalarną czy wektorową?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1167128860536">
+        <problem id="fs-id1167128860538">
+          <para id="fs-id1167128860540">Biegacz bierze udział w wyścigu na 10 000 m na bieżni o długości 400 m. Jakie jest jego przemieszczenie? Czy to przemieszczenie może być równe zero? Wyjaśnij dlaczego.</para>
+        </problem>
+        <solution id="fs-id1167128860546">
+          <para id="fs-id1167132744080">zero, tak</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167132744085">
+        <problem id="fs-id1167132744087">
+          <para id="fs-id1167132744089">Moduł wektora jest równy zero. Czy należy określić jego zwrot? Wyjaśnij dlaczego.</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1167132437699">
+        <problem id="fs-id1167132437701">
+          <para id="fs-id1167132437703">Czy moduł wektora może być liczbą ujemną?</para>
+        </problem>
+        <solution id="fs-id1167132375593">
+          <para id="fs-id1167132375595">nie</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167132375600">
+        <problem id="fs-id1167132375603">
+          <para id="fs-id1167132341572">Czy moduł wektora przemieszczenia cząstki może być większy niż przebyty przez nią dystans?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1167132318730">
+        <problem id="fs-id1167132318732">
+          <para id="fs-id1167132318734">Jeśli dwa wektory są równe, co możesz powiedzieć o ich składowych? Co możesz powiedzieć o ich modułach? A o ich zwrotach i kierunkach?</para>
+        </problem>
+        <solution id="fs-id1167132318740">
+          <para id="fs-id1167132318742">są równe; są równe; są takie same</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1167132266747">
+        <problem id="fs-id1167132266749">
+          <para id="fs-id1167132266751">Jeśli suma trzech wektorów jest równa zero, w jaki sposób są one rozmieszczone na płaszczyźnie?</para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="fs-id1167132689349" class="review-problems">
+      <title>Zadania</title>
+      <exercise id="fs-id1167132689356">
+        <problem id="fs-id1167132255334">
+          <para id="fs-id1167132255336">Nurek powoli zanurza się w głąb oceanu. Jego pozycja w pionie względem znajdującej się na powierzchni wody łódki zmienia się kilkakrotnie. Po raz pierwszy zatrzymuje się 9,0 m od łódki. Ma problem z wyrównaniem ciśnienia, więc wynurza się o 3,0 m, a następnie zanurza się 12,0 m głębiej, gdzie zatrzymuje się po raz drugi. Wynurza się o 4,0 m, następnie zanurza o 18,0 m, wynurza o 7,0 m i znów zanurza, tym razem o 24,0 m. Tam zatrzymuje się i czeka na kolegę. Zakładając, że wektor zwrócony w kierunku powierzchni jest wektorem dodatnim, wyraź wektor przemieszczenia nurka w kierunku pionowym przy pomocy wektora jednostkowego. Jaka jest odległość nurka od łódki?</para>
+        </problem>
+        <solution id="fs-id1167132255346">
+          <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167133773306"><m:math>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>h</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mo>−</m:mo>
+              <m:mn>49</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>u</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:math>, <m:math>
+            <m:mn>49</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            </m:math>.</para></solution>
+        </exercise>
+        <exercise id="fs-id1167132471146">
+          <problem id="fs-id1167132471148">
+            <para id="fs-id1167132471150">Na obozie szkolnym urządzono zawody w przeciąganiu liny. 15 uczniów jednocześnie ciągnie linę, próbując przeciągnąć znajdujący się na jej środku węzeł na jedną ze stron. Dwóch uczniów ciągnie w prawo z siłą 196 N, czterech uczniów ciągnie w lewo z siłą 98 N, pięciu uczniów ciągnie w lewo z siłą 62 N, trzech uczniów ciągnie w prawo z siłą 150 N, a jeden uczeń ciągnie w lewo z siłą 250 N. Zakładając dodatni zwrot w prawo, wyraź przemieszczenie węzła przy pomocy wektora jednostkowego. Jaka siła działa na węzeł? Jaki jest jej kierunek?</para>
+          </problem>
+        </exercise>
+        <exercise id="fs-id1167132559167">
+          <problem id="fs-id1167132559169">
+            <para id="fs-id1167132559171">Przypuśćmy, że idziesz 18,0 m na zachód, a następnie 25,0 m na północ. Jak daleko jesteś od punktu początkowego i jaki jest kierunek wektora twojego przemieszczenia? Rozwiąż za pomocą metody graficznej.</para>
+          </problem>
+          <solution id="fs-id1167132559177">
+            <para id="fs-id1167132559180">30,8 m, <m:math>
+              <m:mn>35</m:mn>
+              <m:mo>,</m:mo>
+              <m:msup>
+                <m:mn>7</m:mn>
+                <m:mo>∘</m:mo>
+              </m:msup>
+              </m:math> na zachód od igły wskazującej kierunek północny</para>
+            </solution>
+          </exercise>
+          <exercise id="fs-id1167132309641">
+            <problem id="fs-id1167132296118">
+              <para id="fs-id1167132296120">Użyj metody graficznej, aby znaleźć następujące wektory: <list id="eip-idm911638848" list-type="enumerated" number-style="lower-alpha">
+                <item>
+                  <m:math>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>A</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>B</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    </m:math>, </item>
+                    <item>
+                      <m:math>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>C</m:mi>
+                            <m:mtext>→</m:mtext>
+                          </m:mover>
+                        </m:mrow>
+                        <m:mo>+</m:mo>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>B</m:mi>
+                            <m:mtext>→</m:mtext>
+                          </m:mover>
+                        </m:mrow>
+                        </m:math>, </item>
+                        <item>
+                          <m:math>
+                            <m:mrow>
+                              <m:mover>
+                                <m:mi>D</m:mi>
+                                <m:mtext>→</m:mtext>
+                              </m:mover>
+                            </m:mrow>
+                            <m:mo>+</m:mo>
+                            <m:mrow>
+                              <m:mover>
+                                <m:mi>F</m:mi>
+                                <m:mtext>→</m:mtext>
+                              </m:mover>
+                            </m:mrow>
+                            </m:math>, </item>
+                            <item>
+                              <m:math>
+                                <m:mrow>
+                                  <m:mover>
+                                    <m:mi>A</m:mi>
+                                    <m:mtext>→</m:mtext>
+                                  </m:mover>
+                                </m:mrow>
+                                <m:mo>−</m:mo>
+                                <m:mrow>
+                                  <m:mover>
+                                    <m:mi>B</m:mi>
+                                    <m:mtext>→</m:mtext>
+                                  </m:mover>
+                                </m:mrow>
+                                </m:math>, </item>
+                                <item>
+                                  <m:math>
+                                    <m:mrow>
+                                      <m:mover>
+                                        <m:mi>D</m:mi>
+                                        <m:mtext>→</m:mtext>
+                                      </m:mover>
+                                    </m:mrow>
+                                    <m:mo>−</m:mo>
+                                    <m:mrow>
+                                      <m:mover>
+                                        <m:mi>F</m:mi>
+                                        <m:mtext>→</m:mtext>
+                                      </m:mover>
+                                    </m:mrow>
+                                    </m:math>, </item>
+                                    <item>
+                                      <m:math>
+                                        <m:mrow>
+                                          <m:mover>
+                                            <m:mi>A</m:mi>
+                                            <m:mtext>→</m:mtext>
+                                          </m:mover>
+                                        </m:mrow>
+                                        <m:mo>+</m:mo>
+                                        <m:mn>2</m:mn>
+                                        <m:mrow>
+                                          <m:mover>
+                                            <m:mi>F</m:mi>
+                                            <m:mtext>→</m:mtext>
+                                          </m:mover>
+                                        </m:mrow>
+                                        </m:math>, </item>
+                                        <item>
+                                          <m:math>
+                                            <m:mrow>
+                                              <m:mover>
+                                                <m:mi>A</m:mi>
+                                                <m:mtext>→</m:mtext>
+                                              </m:mover>
+                                            </m:mrow>
+                                            <m:mo>−</m:mo>
+                                            <m:mn>4</m:mn>
+                                            <m:mrow>
+                                              <m:mover>
+                                                <m:mi>D</m:mi>
+                                                <m:mtext>→</m:mtext>
+                                              </m:mover>
+                                            </m:mrow>
+                                            <m:mo>+</m:mo>
+                                            <m:mn>2</m:mn>
+                                            <m:mrow>
+                                              <m:mover>
+                                                <m:mi>F</m:mi>
+                                                <m:mtext>→</m:mtext>
+                                              </m:mover>
+                                            </m:mrow>
+                                            </m:math>. </item>
+                                          </list>
+                                        </para>
+                                        <media id="fs-id1167132294810" alt="Rysunek przedstawia wektory znajdujące się w dwuwymiarowym układzie współrzędnych kartezjańskich. Oś x jest pozioma i ma zwrot w prawo, oś y jest pionowa i ma zwrot w górę. Moduł wektora A jest równy 10,0. Wektor ten tworzy z rosnącym kierunkiem osi x kąt 30 stopni. Moduł wektora B jest równy 5,0. Wektor ten tworzy z rosnącym kierunkiem osi x kąt 53 stopnie. Moduł wektora C jest równy 12,0. Wektor ten tworzy z rosnącym kierunkiem osi x kąt 60 stopni. Moduł wektora D jest równy 20,0. Wektor ten tworzy z malejącym kierunkiem osi x kąt 37 stopni. Moduł wektora F jest równy 20,0. Wektor ten tworzy z malejącym kierunkiem osi x kąt 30 stopni.">
+                                          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_problems_img-26f6.jpg"/>
+                                        </media>
+                                      </problem>
+                                    </exercise>
+                                    <exercise id="fs-id1167133740645">
+                                      <problem id="fs-id1167133740647">
+                                        <para id="fs-id1167133740649">Kurier zabiera przesyłki z poczty, jedzie 40 km na północ, następnie 20 km na zachód, 60 km na północny wschód i 50 km na północ, po czym zatrzymuje się na obiad. Przy pomocy metody graficznej znajdź wektor jego przemieszczenia.</para>
+                                      </problem>
+                                      <solution id="fs-id1167133740656">
+                                        <para id="fs-id1167133740658">134 km, <m:math>
+                                          <m:msup>
+                                            <m:mn>80</m:mn>
+                                            <m:mo>∘</m:mo>
+                                          </m:msup>
+                                          </m:math>.</para>
+                                        </solution>
+                                      </exercise>
+                                      <exercise id="fs-id1167132741855">
+                                        <problem id="fs-id1167132741858">
+                                          <para id="fs-id1167132741860">Pies podróżnik ucieka z domu, biegnie 3 przecznice na wschód, 2 przecznice na północ, 1 przecznicę na wschód i 2 przecznice na zachód. Przyjmując, że przecznica to około 100 m, jak daleko od domu i w jakim kierunku znajduje się pies? Użyj metody graficznej.</para>
+                                        </problem>
+                                      </exercise>
+                                      <exercise id="fs-id1167132674455">
+                                        <problem id="fs-id1167132674457">
+                                          <para id="fs-id1167132674459">Rozbitek planuje uciec z bezludnej wyspy, buduje więc tratwę i wypływa na morze. Wiatr jest bardzo zmienny, więc tratwa znoszona jest w różnych kierunkach: najpierw 2,50 km <m:math>
+                                            <m:mn>45</m:mn>
+                                            <m:mo>,</m:mo>
+                                            <m:msup>
+                                              <m:mn>0</m:mn>
+                                              <m:mo>∘</m:mo>
+                                            </m:msup>
+                                          </m:math> na północ od kierunku zachodniego, następnie 4,70 km <m:math>
+                                          <m:mn>60</m:mn>
+                                          <m:mo>,</m:mo>
+                                          <m:msup>
+                                            <m:mn>0</m:mn>
+                                            <m:mo>∘</m:mo>
+                                          </m:msup>
+                                        </m:math> na południe od kierunku wschodniego, 1,30 km <m:math>
+                                        <m:mn>25</m:mn>
+                                        <m:mo>,</m:mo>
+                                        <m:msup>
+                                          <m:mn>0</m:mn>
+                                          <m:mo>∘</m:mo>
+                                        </m:msup>
+                                      </m:math> na południe od kierunku zachodniego, 5,10 km na wschód, 1,70 km <m:math>
+                                      <m:mn>5</m:mn>
+                                      <m:mo>,</m:mo>
+                                      <m:msup>
+                                        <m:mn>0</m:mn>
+                                        <m:mo>∘</m:mo>
+                                      </m:msup>
+                                    </m:math> na wschód od kierunku północnego, 7,20 km <m:math>
+                                    <m:mn>55</m:mn>
+                                    <m:mo>,</m:mo>
+                                    <m:msup>
+                                      <m:mn>0</m:mn>
+                                      <m:mo>∘</m:mo>
+                                    </m:msup>
+                                  </m:math> na południe od kierunku zachodniego i 2,80 km <m:math>
+                                  <m:mn>10</m:mn>
+                                  <m:mo>,</m:mo>
+                                  <m:msup>
+                                    <m:mn>0</m:mn>
+                                    <m:mo>∘</m:mo>
+                                  </m:msup>
+                                  </m:math> na północ od kierunku wschodniego. Metodą graficzną określ końcowe położenie rozbitka względem wyspy.</para>
+                                </problem>
+                                <solution id="fs-id1167133722463">
+                                  <para id="fs-id1167133722465">7,34 km, <m:math>
+                                    <m:mn>63</m:mn>
+                                    <m:mo>,</m:mo>
+                                    <m:msup>
+                                      <m:mn>5</m:mn>
+                                      <m:mo>∘</m:mo>
+                                    </m:msup>
+                                    </m:math> na południe od kierunku wschodniego</para>
+                                  </solution>
+                                </exercise>
+                                <exercise id="fs-id1167133766074">
+                                  <problem id="fs-id1167133766076">
+                                    <para id="fs-id1167133766078">Mały samolot leci 40,0 km pod kątem <m:math>
+                                      <m:msup>
+                                        <m:mn>60</m:mn>
+                                        <m:mo>∘</m:mo>
+                                      </m:msup>
+                                    </m:math> na północ od kierunku wschodniego, a następnie 30,0 km pod kątem <m:math>
+                                    <m:msup>
+                                      <m:mn>15</m:mn>
+                                      <m:mo>∘</m:mo>
+                                    </m:msup>
+                                    </m:math> na północ od kierunku wschodniego. Użyj metody graficznej, aby określić odległość samolotu od punktu startowego oraz kierunek jego przemieszczenia.</para>
+                                  </problem>
+                                </exercise>
+                                <exercise id="fs-id1167132546070">
+                                  <problem id="fs-id1167132546072">
+                                    <para id="fs-id1167132546074">Turysta idzie ze schroniska nad jezioro oddalone od niego w linii prostej o 5,0 km. Użyj metody równoległoboku, aby określić przemieszczenie turysty w kierunku północnym i przemieszczenie w kierunku wschodnim, których suma jest całkowitym przemieszczeniem. Gdyby turysta szedł zygzakiem, tylko na północ i tylko na wschód, to ile kilometrów musiałby przejść, aby dotrzeć nad jezioro?</para>
+                                    <media id="fs-id1167132546077" alt="Północ znajduje się u góry rysunku, wschód po jego prawej stronie. Na rysunku przedstawione jest schronisko i jezioro. Początek dwuwymiarowego układu współrzędnych kartezjańskich znajduje się w pobliżu schroniska. Oś x ma zwrot na wschód, oś y na północ. Czerwony wektor S prowadzi od schroniska do jeziora. Jego moduł jest równy S = 5,0 kilometrów. Wektor ten nachylony jest do dodatniego kierunku osi x pod kątem 40 stopni. Dwie kręte ścieżki, ścieżka 1 oraz ścieżka 2, narysowane za pomocą linii przerywanej, prowadzą od schroniska do jeziora.">
+                                      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_problem3_img.jpg"/>
+                                    </media>
+                                  </problem>
+                                  <solution id="fs-id1167132395714">
+                                    <para id="fs-id1167132395716">3,8 km w kierunku wschodnim; 3,2 km w kierunku północnym; 7,0 km</para>
+                                  </solution>
+                                </exercise>
+                                <exercise id="fs-id1167132395721">
+                                  <problem id="fs-id1167132395723">
+                                    <para id="fs-id1167132395725">Geodeta mierzy szerokość rzeki płynącej prosto na północ w następujący sposób: rozpoczyna w punkcie leżącym naprzeciwko rosnącego po drugiej stronie rzeki drzewa i przechodzi 100 m wzdłuż rzeki, tworząc w ten sposób podstawę trójkąta. Następnie mierzy kąt między podstawą trójkąta a odcinkiem łączącym drzewo z punktem, w którym obecnie się znajduje, i stwierdza, że kąt ten jest równy <m:math>
+                                      <m:msup>
+                                        <m:mn>35</m:mn>
+                                        <m:mo>∘</m:mo>
+                                      </m:msup>
+                                      </m:math>. Jak szeroka jest rzeka?</para>
+                                    </problem>
+                                  </exercise>
+                                  <exercise id="fs-id1167132526027">
+                                    <problem id="fs-id1167132526029">
+                                      <para id="fs-id1167132526031">Pewien człowiek przeszedł 6,0 km w kierunku wschodnim, a następnie 13,0 km w kierunku północnym. Znajdź przemieszczenie oraz kierunek przemieszczenia tego człowieka przy pomocy metody graficznej.</para>
+                                    </problem>
+                                    <solution id="fs-id1167132526037">
+                                      <para id="fs-id1167133862600">14,3 km, <m:math>
+                                        <m:msup>
+                                          <m:mn>65</m:mn>
+                                          <m:mo>∘</m:mo>
+                                        </m:msup>
+                                        </m:math>.</para>
+                                      </solution>
+                                    </exercise>
+                                    <exercise id="fs-id1167133862614">
+                                      <problem id="fs-id1167133862616">
+                                        <para id="fs-id1167133839798">Moduły dwóch wektorów przemieszczenia są równe <m:math>
+                                          <m:mi>A</m:mi>
+                                          <m:mo>=</m:mo>
+                                          <m:mn>20</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mrow>
+                                            <m:mi mathvariant="normal">m</m:mi>
+                                          </m:mrow>
+                                        </m:math> i <m:math>
+                                        <m:mi>B</m:mi>
+                                        <m:mo>=</m:mo>
+                                        <m:mn>6</m:mn>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">m</m:mi>
+                                        </m:mrow>
+                                      </m:math>. Jaka jest najmniejsza i największa możliwa wartość sumy wektorów <m:math>
+                                      <m:mrow>
+                                        <m:mover>
+                                          <m:mi>R</m:mi>
+                                          <m:mtext>→</m:mtext>
+                                        </m:mover>
+                                      </m:mrow>
+                                      <m:mo>=</m:mo>
+                                      <m:mrow>
+                                        <m:mover>
+                                          <m:mi>A</m:mi>
+                                          <m:mtext>→</m:mtext>
+                                        </m:mover>
+                                      </m:mrow>
+                                      <m:mo>+</m:mo>
+                                      <m:mrow>
+                                        <m:mover>
+                                          <m:mi>B</m:mi>
+                                          <m:mtext>→</m:mtext>
+                                        </m:mover>
+                                      </m:mrow>
+                                      </m:math>?</para>
+                                    </problem>
+                                  </exercise>
+                                </section>
+                              </content>
+                              <glossary>
+                                <definition id="fs-id1167132688517">
+                                  <term class="no-emphasis" cmlnle:reference="wektory przeciwne">wektory przeciwne (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">antiparallel vectors</term></foreign>)</term>
+                                  <meaning id="fs-id1167132688522">dwa wektory, których zwroty różnią się o <m:math>
+                                    <m:mrow>
+                                      <m:mn>180</m:mn>
+                                      <m:mtext>°</m:mtext>
+                                    </m:mrow>
+                                  </m:math>
+                                </meaning>
+                              </definition>
+                              <definition id="fs-id1167132579123">
+                                <term class="no-emphasis" cmlnle:reference="łączność">łączność (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">associative</term></foreign>)</term>
+                                <meaning id="fs-id1167132579129">kolejność wyrazów w działaniu może być dowolna</meaning>
+                              </definition>
+                              <definition id="fs-id1167132579133">
+                                <term class="no-emphasis" cmlnle:reference="przemienność">przemienność (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">commutative</term></foreign>)</term>
+                                <meaning id="fs-id1167132581795">wyrazy mogą podlegać działaniu w dowolnej kolejności</meaning>
+                              </definition>
+                              <definition id="fs-id1167132581799">
+                                <term class="no-emphasis" cmlnle:reference="różnica dwóch wektorów">różnica dwóch wektorów (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">difference of two vectors</term></foreign>)</term>
+                                <meaning id="fs-id1167132581804">suma wektora pierwszego i wektora o zwrocie przeciwnym do wektora pierwszego</meaning>
+                              </definition>
+                              <definition id="fs-id1167132581808">
+                                <term class="no-emphasis" cmlnle:reference="przemieszczenie">przemieszczenie (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">displacement</term></foreign>)</term>
+                                <meaning id="fs-id1167133770991">zmiana położenia</meaning>
+                              </definition>
+                              <definition id="fs-id1167133770995">
+                                <term class="no-emphasis" cmlnle:reference="rozdzielność">rozdzielność (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">distributive</term></foreign>)</term>
+                                <meaning id="fs-id1167133771000">iloczyn pewnej liczby przez sumę składników jest równy sumie składników pomnożonych przez tę liczbę</meaning>
+                              </definition>
+                              <definition id="fs-id1167133771004">
+                                <term class="no-emphasis" cmlnle:reference="moduł">moduł (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">magnitude</term></foreign>)</term>
+                                <meaning id="fs-id1167132504147">długość wektora</meaning>
+                              </definition>
+                              <definition id="fs-id1167132504151">
+                                <term class="no-emphasis" cmlnle:reference="wektory ortogonalne">wektory ortogonalne (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">orthogonal vectors</term></foreign>)</term>
+                                <meaning id="fs-id1167132504156">wektory, których kąty skierowane różnią się o <m:math>
+                                  <m:msup>
+                                    <m:mn>90</m:mn>
+                                    <m:mo>∘</m:mo>
+                                  </m:msup>
+                                  </m:math>, inaczej wektory prostopadłe</meaning>
+                                </definition>
+                                <definition id="fs-id1167132707485">
+                                  <term class="no-emphasis" cmlnle:reference="reguła równoległoboku">reguła równoległoboku (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">parallelogram rule</term></foreign>)</term>
+                                  <meaning id="fs-id1167132707491">reguła, według której dokonuje się konstrukcji sumy wektorów na płaszczyźnie</meaning>
+                                </definition>
+                                <definition id="fs-id1167132520196">
+                                  <term class="no-emphasis" cmlnle:reference="wektory zgodne">wektory zgodne (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">parallel vectors</term></foreign>)</term>
+                                  <meaning id="fs-id1167132520201">wektory o tych samych kątach skierowanych</meaning>
+                                </definition>
+                                <definition id="fs-id1167128844182">
+                                  <term class="no-emphasis" cmlnle:reference="skalar">skalar (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">scalar</term></foreign>)</term>
+                                  <meaning id="fs-id1167128844188">liczba; w fizyce jednoznaczne z wielkością skalarną</meaning>
+                                </definition>
+                                <definition id="fs-id1167128844192">
+                                  <term class="no-emphasis" cmlnle:reference="równanie skalarne">równanie skalarne (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">scalar equation</term></foreign>)</term>
+                                  <meaning id="fs-id1167128844197">równanie, w którym po obu stronach znaku równości znajdują się liczby</meaning>
+                                </definition>
+                                <definition id="fs-id1167132586350">
+                                  <term class="no-emphasis" cmlnle:reference="wielkość skalarna">wielkość skalarna (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">scalar quantity</term></foreign>)</term>
+                                  <meaning id="fs-id1167132586355">wielkość fizyczna, którą można określić jedynie za pomocą liczby i odpowiedniej jednostki</meaning>
+                                </definition>
+                                <definition id="fs-id1167132586360">
+                                  <term class="no-emphasis" cmlnle:reference="konstrukcja wektora sumy">konstrukcja wektora sumy (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">tail-to-head geometric construction</term></foreign>)</term>
+                                  <meaning id="fs-id1167132586366">sposób graficzny dodawania wektorów polegający na łączeniu punktów końcowych i początkowych kolejnych wektorów</meaning>
+                                </definition>
+                                <definition id="fs-id1167132550483">
+                                  <term class="no-emphasis" cmlnle:reference="wektor jednostkowy">wektor jednostkowy (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">unit vector</term></foreign>)</term>
+                                  <meaning id="fs-id1167132550488">wektor o module równym jeden, nie posiada on jednostki, służy jedynie do określenia kierunku</meaning>
+                                </definition>
+                                <definition id="fs-id1167132550493">
+                                  <term class="no-emphasis" cmlnle:reference="wektor">wektor (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">vector</term></foreign>)</term>
+                                  <meaning id="fs-id1167132550498">obiekt matematyczny o określonym module, kierunku i zwrocie</meaning>
+                                </definition>
+                                <definition id="fs-id1167132579716">
+                                  <term class="no-emphasis" cmlnle:reference="równanie wektorowe">równanie wektorowe (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">vector equation</term></foreign>)</term>
+                                  <meaning id="fs-id1167132579722">równanie, w którym po obu stronach znaku równości znajdują się wektory</meaning>
+                                </definition>
+                                <definition id="fs-id1167132579726">
+                                  <term class="no-emphasis" cmlnle:reference="wielkość wektorowa">wielkość wektorowa (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">vector quantity</term></foreign>)</term>
+                                  <meaning id="fs-id1167132579731">wielkość fizyczna reprezentowana przez wektor (moduł, kierunek i zwrot) w fizyce jednoznaczna z wektorem</meaning>
+                                </definition>
+                                <definition id="fs-id1167132445065">
+                                  <term class="no-emphasis" cmlnle:reference="suma wektorów">suma wektorów (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">vector sum</term></foreign>)</term>
+                                  <meaning id="fs-id1167132445070">wektor powstały w wyniku dodawania dwóch lub więcej wektorów</meaning>
+                                </definition>
+                              </glossary>
+                            </document>

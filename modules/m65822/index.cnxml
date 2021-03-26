@@ -1,0 +1,1204 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Dynamika płynów</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65822</md:content-id>
+  <md:title>Dynamika płynów</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>opisywać cechy przepływu;</item>
+<item>obliczać strumień objętościowy;</item>
+<item>opisywać relację pomiędzy strumieniem a prędkością;</item>
+<item>rozumieć konsekwencje równania ciągłości w kontekście zachowania masy.</item>
+</list></md:abstract>
+  <md:uuid>cf98bd8e-40f2-434e-ad57-693ea5e41eb4</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1170959732663">W pierwszej części tego rozdziału zajmowaliśmy się statyką płynów, czyli płynami w spoczynku. Pozostała część rozdziału dotyczy dynamiki płynów, czyli badania ich w ruchu. Nawet najbardziej podstawowy ruch płynu może się okazać bardzo skomplikowany. Z tego powodu w wielu przykładach ograniczymy nasze rozważania do <term cmlnle:reference="płyn idealny" class="no-emphasis">płynów idealnych</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">ideal fluid</term></foreign>). Płyn idealny jest to płyn o pomijalnej <term cmlnle:reference="lepkość" class="no-emphasis">lepkości</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">viscosity</term></foreign>). Lepkość to miara wewnętrznego tarcia w płynie – omówimy ją bardziej szczegółowo w rozdziale <link class="target-chapter" document="m65824">Lepkość i turbulencja</link>. W oparciu o kilka przykładów przeanalizujemy płyn nieściśliwy, to znaczy taki, w którym zmiana objętości wymaga ogromnej siły, czyli jego gęstość w całej objętości pozostaje stała.</para><section id="fs-id1170957418035">
+    <title>Cechy przepływu</title>
+    <para id="fs-id1170960194762">W dziedzinach takich jak meteorologia do zilustrowania przepływu płynu często używamy wektorów prędkości. Na przykład ruch powietrza w atmosferze podczas wiatru może być przedstawiony przez wektory wskazujące wartość i kierunek prędkości w dowolnym punkcie na mapie. <link target-id="CNX_UPhysics_Figure_14_05_WindVecAut"/> prezentuje wektory prędkości opisujące wiatry podczas huraganu Artur w 2014 r.</para><figure id="CNX_UPhysics_Figure_14_05_WindVecAut"><media id="fs-id1170959938953" alt="Ilustracja przedstawia mapę ciśnień huraganu Artur przemieszczającego się wzdłuż Wschodniego Wybrzeża. Centrum niskiego ciśnienia oznaczono niebieską kropką. Prędkość wiatru jest najwyższa w pobliżu centrum niskiego ciśnienia, a wiatry poruszają się w kierunku przeciwnym do ruchu wskazówek zegara wokół tego punktu.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_05_WindVecAut.jpg"/>
+      </media>
+      
+<caption>Naniesione wektory prędkości ilustrują kierunki i wartości prędkości wiatrów w huraganie Artur. Zwróćmy uwagę na cyrkulację wiatru wokół oka huraganu. Wartości prędkości są największe w jego pobliżu. Kolory przedstawiają względne wirowości, czyli miarę wirowania wiatru.</caption></figure><para id="fs-id1170959787823">Inną metodą przedstawiania przepływu płynu jest linia prądu. Linia prądu oddaje drogę przebytą przez małą objętość płynu podczas przepływu. Prędkość jest zawsze styczna do linii prądu. Diagramy na <link target-id="CNX_UPhysics_Figure_14_05_TurLamFlow" cmlnle:case="locative"/> używają linii prądu do zilustrowania dwóch przykładów płynu poruszającego się w rurze. Pierwszy wykazuje cechy <term cmlnle:reference="przepływ laminarny" class="no-emphasis">przepływu laminarnego</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">laminar flow</term></foreign>), reprezentowanego przez gładkie, równoległe linie prądu. Zwróćmy uwagę, że w przykładzie pokazanym w części (a) prędkość płynu jest największa w centrum i maleje w pobliżu ścian rury z powodu lepkości płynu i tarcia między ścianami a płynem. Jest to szczególny przypadek przepływu laminarnego, gdzie tarcie między płynem a rurą jest wysokie, nazywany przypadkiem warunków brzegowych bez poślizgu. Drugi diagram prezentuje <term cmlnle:reference="przepływ turbulentny" class="no-emphasis">przepływ turbulentny</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">turbulent flow</term></foreign>), w którym linie prądu są nieregularne i zmienne w czasie. W przepływie turbulentnym trajektorie płynu są nieregularne, gdyż różne jego części mieszają się i tworzą małe, kołowe regiony przypominające wiry. Może się tak zdarzyć, gdy prędkość płynu osiągnie pewną prędkość krytyczną.</para><figure id="CNX_UPhysics_Figure_14_05_TurLamFlow"><media id="fs-id1170960044682" alt="Ilustracja (a) prezentuje schemat przepływu laminarnego pokazanego jako warstwy płynu poruszające się w równoległych trajektoriach. Ilustracja (b) jest schematyczną prezentacją przepływu turbulentnego, pokazanego jako warstwy płynu poruszającego się po nieregularnych, przecinających się trajektoriach.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_14_05_TurLamFlow.jpg"/>
+      </media>
+      
+    <caption>(a) Przepływ laminarny można przedstawić jako warstwy płynu poruszające się po równoległych, regularnych trajektoriach. (b) W przepływie turbulentnym różne obszary płynu poruszają się wzdłuż nieregularnych, przecinających się trajektorii, co skutkuje występowaniem obszarów mieszania i wirami.</caption></figure></section>
+  <section id="fs-id1170957555027">
+    <title>Strumień i jego związek z prędkością</title>
+    <para id="fs-id1170959782778">Objętość płynu przepływającego w pewnym miejscu przez powierzchnię w jednostce czasu zwana jest <term cmlnle:reference="strumień objętościowy" class="no-emphasis">strumieniem</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">flow rate</term></foreign>) <m:math>
+        <m:mi>Q</m:mi>
+      </m:math> lub bardziej precyzyjnie, strumieniem objętościowym. Może być on zapisany jako:</para><note id="fs-id1170959667116" class="equation-callout">
+        <equation id="fs-id1170959719559">
+          <label/>
+          <m:math>
+            <m:mi>Q</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">d</m:mi>
+                </m:mrow>
+                <m:mi>V</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">d</m:mi>
+                </m:mrow>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>,</m:mo>
+          </m:math>
+        </equation>
+      </note>
+      <para id="fs-id1170957579883">gdzie <m:math>
+          <m:mi>V</m:mi>
+        </m:math>
+       jest objętością, a <m:math>
+        <m:mi>t</m:mi>
+      </m:math>
+     upływem czasu. Na <link target-id="CNX_UPhysics_Figure_14_05_FlowRateDi" cmlnle:case="locative"/> objętość cylindra wynosi <m:math>
+      <m:mi>A</m:mi>
+      <m:mi>x</m:mi>
+    </m:math>, więc strumień objętościowy równy jest:</para><equation id="fs-id1170959785752" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mi>Q</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>V</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mi>A</m:mi>
+        <m:mi>x</m:mi>
+        <m:mo stretchy="false">)</m:mo>
+        <m:mo>=</m:mo>
+        <m:mi>A</m:mi>
+        <m:mfrac>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>x</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mi>A</m:mi>
+        <m:mi>v</m:mi>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+    <figure id="CNX_UPhysics_Figure_14_05_FlowRateDi"><media id="fs-id1170959817958" alt="Ilustracja przedstawia schemat jednorodnej rury o polu przekroju A. Płyn przepływa przez rurę. Objętość płynu równa V przepływa na wysokości punktu P w czasie.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_14_05_FlowRateDi.jpg"/>
+      </media>
+      
+  <caption>Strumień objętości to objętość płynu przepływająca w pewnym punkcie przez powierzchnię <m:math>
+          <m:mi>A</m:mi>
+        </m:math> w jednostce czasu. Tutaj zacieniony cylinder płynu przepływa przez powierzchnię w punkcie <m:math>
+        <m:mi>P</m:mi>
+      </m:math> w jednorodnej rurze w czasie <m:math>
+      <m:mi>t</m:mi>
+    </m:math>.</caption></figure><para id="fs-id1170957416892">Jednostką SI strumienia objętościowego jest <m:math>
+    <m:mrow>
+      <m:msup>
+        <m:mtext>m</m:mtext>
+        <m:mn>3</m:mn>
+      </m:msup>
+      <m:mtext>/s</m:mtext>
+    </m:mrow>
+  </m:math>, ale w powszechnym użyciu jest kilka innych jednostek, takich jak na litry na minutę (l/min). Zwróć uwagę, że litr (l) to 1/1000 <m:math><m:mrow>
+  <m:msup>
+    <m:mi mathvariant="normal">m</m:mi>
+    <m:mn>3</m:mn>
+  </m:msup>
+</m:mrow></m:math> lub 1000 <m:math><m:mrow>
+  <m:mi mathvariant="normal">c</m:mi>
+  <m:msup>
+    <m:mi mathvariant="normal">m</m:mi>
+    <m:mn>3</m:mn>
+  </m:msup>
+</m:mrow></m:math><m:math>
+<m:mo stretchy="false">(</m:mo>
+<m:msup>
+  <m:mn>10</m:mn>
+  <m:mrow>
+    <m:mo>−</m:mo>
+    <m:mn>3</m:mn>
+  </m:mrow>
+</m:msup>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:msup>
+    <m:mi mathvariant="normal">m</m:mi>
+    <m:mn>3</m:mn>
+  </m:msup>
+</m:mrow>
+<m:mtext> lub </m:mtext>
+<m:msup>
+  <m:mn>10</m:mn>
+  <m:mrow>
+    <m:mn>3</m:mn>
+  </m:mrow>
+</m:msup>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">c</m:mi>
+  <m:msup>
+    <m:mi mathvariant="normal">m</m:mi>
+    <m:mn>3</m:mn>
+  </m:msup>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+</m:math>.
+</para><para id="fs-id1170957415857">Strumień objętościowy i prędkość są powiązanymi, lecz różnymi od siebie wielkościami fizycznymi. Aby precyzyjnie odróżnić je od siebie, rozważmy strumień objętościowy w rzece. Im większa prędkość wody, tym większy strumień objętościowy rzeki, ale strumień zależy również od wymiarów i kształtu rzeki. Na przykład bystry strumień górski niesie znacznie mniej wody niż Amazonka w Brazylii. <link target-id="CNX_UPhysics_Figure_14_05_FlowRateDi"/> przedstawia strumień objętościowy. Wynosi on <m:math>
+  <m:mi>Q</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:mi>V</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mi>A</m:mi>
+  <m:mi>v</m:mi>
+</m:math>, gdzie <m:math>
+<m:mi>A</m:mi>
+</m:math> jest polem przekroju rury, a <m:math>
+  <m:mi>v</m:mi>
+</m:math>
+ wartością prędkości.</para><para id="fs-id1170959863720">Szczegółowa relacja między strumieniem <m:math>
+    <m:mi>Q</m:mi>
+  </m:math>, a średnią prędkością <m:math>
+  <m:mi>v</m:mi>
+</m:math> jest następująca:</para><equation id="fs-id1170960184112" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:mi>Q</m:mi>
+      <m:mo>=</m:mo>
+      <m:mi>A</m:mi>
+      <m:mi>v</m:mi>
+      <m:mo>,</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1170959745302">gdzie <m:math>
+    <m:mi>A</m:mi>
+  </m:math>
+ jest polem przekroju, a <m:math>
+<m:mi>v</m:mi>
+</m:math> średnią prędkością. Mówi nam ona, że strumień jest wprost proporcjonalny zarówno do średniej prędkości płynu, jak i do pola przekroju rzeki, rury czy innego przewodu. Im grubszy przewód, tym większe pole jego przekroju. <link target-id="CNX_UPhysics_Figure_14_05_FlowRateDi"/> ilustruje sposób uzyskania powyższej relacji. Zacieniony cylinder ma objętość <m:math>
+<m:mrow>
+  <m:mi>V</m:mi>
+  <m:mo>=</m:mo>
+  <m:mi>A</m:mi>
+  <m:mi>d</m:mi>
+</m:mrow>
+</m:math>, która przepływa przez powierzchnię <m:math>
+<m:mi>A</m:mi>
+</m:math> w punkcie <m:math>
+  <m:mi>P</m:mi>
+</m:math> w czasie <m:math>
+  <m:mi>t</m:mi>
+</m:math>. kiedy podzielimy obie strony tej zależności przez <m:math>
+  <m:mi>t</m:mi>
+</m:math>, otrzymujemy:</para><equation id="fs-id1170957412837" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:mfrac>
+        <m:mi>V</m:mi>
+        <m:mi>t</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:mi>d</m:mi>
+        </m:mrow>
+        <m:mi>t</m:mi>
+      </m:mfrac>
+      <m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1170959797575">Zauważmy, że <m:math>
+  <m:mrow>
+    <m:mi>Q</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>V</m:mi>
+    <m:mtext>/</m:mtext>
+    <m:mi>t</m:mi>
+  </m:mrow>
+</m:math>, a średnia prędkość wynosi <m:math>
+<m:mrow>
+  <m:mi>v</m:mi>
+  <m:mtext/>
+  <m:mo>=</m:mo>
+  <m:mi>d</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi>t</m:mi>
+</m:mrow>
+</m:math>. Równanie upraszcza się do <m:math>
+<m:mrow>
+  <m:mi>Q</m:mi>
+  <m:mo>=</m:mo>
+  <m:mi>A</m:mi>
+  <m:mi>v</m:mi>
+</m:mrow>
+</m:math>.</para><para id="fs-id1170959779200"><link target-id="CNX_UPhysics_Figure_14_05_TubeNarrow"/> przedstawia płyn nieściśliwy płynący przez rurę o malejącym promieniu. Ponieważ jest on nieściśliwy, to ta sama jego ilość musi przepływać przez każdy przekrój rury w danym czasie, aby utrzymać ciągłość przepływu. Przepływ jest ciągły, ponieważ nie ma w nim żadnych źródeł ani odpływów, które dodają lub usuwają masę, więc masa wpływająca do rury musi być równa masie z niej wypływającej. W tym przypadku, ponieważ pole przekroju rury się zmniejsza, prędkość musi rosnąć. Ten sposób rozumowania można rozszerzyć i powiedzieć, że strumień musi być taki sam w każdym punkcie rury. W szczególności w dowolnych punktach 1 i 2:</para><note id="fs-id1170959649366" class="equation-callout">
+    <equation id="fs-id1170959788783">
+      <label/>
+      <m:math>
+        <m:mtable>
+          <m:mtr>
+            <m:mtd columnalign="right">
+              <m:msub>
+                <m:mi>Q</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mo>=</m:mo>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:msub>
+                <m:mi>Q</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd columnalign="right">
+              <m:msub>
+                <m:mi>A</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mo>=</m:mo>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:msub>
+                <m:mi>A</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>.</m:mo>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+      </m:math>
+    </equation>
+  </note>
+  <para id="fs-id1170959718938">Wynik ten nosi nazwę <term cmlnle:reference="równanie ciągłości" class="no-emphasis">równania ciągłości</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">equation of continuity</term></foreign>) i obowiązuje w każdym nieściśliwym płynie (o stałej gęstości). Konsekwencje tego równania można zaobserwować, gdy woda wypływa z węża przez wąski otwór przy dyszy: za dyszą prędkość wody jest bardzo duża, co tak naprawdę jest powodem, dla którego taka właśnie jest budowa końcówki węża. Z drugiej strony, gdy rzeka wpływa do jednej strony rezerwuaru (np. jeziora), woda znacząco zwalnia. Prędkość ta wzrośnie, gdy woda będzie wypływała po drugiej stronie rezerwuaru. Innymi słowy, prędkość rośnie, gdy pole przekroju maleje, a maleje, gdy pole przekroju rośnie.</para><figure id="CNX_UPhysics_Figure_14_05_TubeNarrow"><media id="fs-id1170959723040" alt="Rysunek przedstawia schemat rury, która zwęża się od pola przekroju A1 do pola przekroju A2. Płyn przepływa przez rurę. Objętość V1 mija punkt 1, zlokalizowany od strony szerokiego pola przekroju w czasie t. Objętość płynu V2 mija punkt 2 zlokalizowany od strony małego pola przekroju w czasie t.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_05_TubeNarrow.jpg"/>
+      </media>
+      
+    <caption>Gdy rura się zwęża, ta sama objętość rozkłada się na większej długości. Aby ta sama objętość minęła powierzchnie w punktach 1 i 2 w tym samym czasie, prędkość musi być większa w punkcie 2. Proces ten jest odwracalny: jeżeli płyn porusza się w przeciwnym kierunku, jego prędkość maleje ze wzrostem szerokości rury. (Zwróć uwagę, że względne objętości obu cylindrów oraz odpowiadające im prędkości nie są narysowane w odpowiedniej skali.)</caption></figure><para id="fs-id1170959695445">Ponieważ ciecze są praktycznie nieściśliwe, równanie ciągłości obowiązuje dla nich wszystkich. Gazy można ścisnąć, więc równanie ciągłości należy stosować do nich ostrożnie, jeżeli pojawia się zjawisko sprężenia lub rozprężenia.</para>
+    <example id="fs-id1170959644656">
+      <para id="fs-id1170959645158"><title>Obliczenie prędkości płynu przy wylocie węża</title>Dysza węża o średnicy 0,500 cm doczepiona jest do węża ogrodowego o promieniu 0,900 cm. Strumień objętościowy przez wąż i dyszę wynosi 0,500 l/s. Oblicz prędkość wody (a) w wężu i (b) przy wylocie.</para><para id="fs-id1170957416619"><title>Strategia rozwiązania</title>Aby obliczyć obie prędkości, możemy wykorzystać wyprowadzone zależności między strumieniem a prędkością. Do opisania węża użyjemy indeksu 1, a dla dyszy indeksu 2.</para><para id="fs-id1170957589103">
+            <title>Rozwiązanie</title>
+          </para>
+          <list id="fs-id1170959652069" list-type="enumerated" number-style="lower-alpha"><item>Rozwiązujemy równanie na strumień ze względu na prędkość i używamy <m:math>
+              <m:mrow>
+                <m:mi>π</m:mi>
+                <m:msub>
+                  <m:mi>r</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:msup>
+                  <m:mrow/>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:math>, aby obliczyć pole przekroju węża. Otrzymujemy:<newline/>
+            <equation id="fs-id1170959658630" class="unnumbered">
+              <label/>
+              <m:math>
+                <m:mrow>
+                  <m:mi>v</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mi>Q</m:mi>
+                    <m:mi>A</m:mi>
+                  </m:mfrac>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mi>Q</m:mi>
+                    <m:mrow>
+                      <m:mi>π</m:mi>
+                      <m:msubsup>
+                        <m:mi>r</m:mi>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:msubsup>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>.</m:mo>
+                </m:mrow>
+              </m:math>
+            </equation>
+            <newline/>Podstawiając wartości i dokonawszy odpowiednich konwersji jednostek, uzyskujemy:<newline/>
+            <equation id="fs-id1170959697597" class="unnumbered">
+              <label/>
+              <m:math>
+                <m:mi>v</m:mi>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>0,500</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">l</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">l</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>3,14</m:mn>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>9,00</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                    <m:msup>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mn>1,96</m:mn>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>.</m:mo>
+              </m:math>
+            </equation>
+          </item>
+          <item>Moglibyśmy powtórzyć te obliczenia, aby uzyskać prędkość przy wylocie <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mrow>
+          </m:math>, ale zamiast tego użyjemy równania ciągłości, aby spojrzeć na problem z innej perspektywy. Zgodnie z tym równaniem: <newline/>
+          <equation id="fs-id1170960187399" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>A</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>A</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation>
+          <newline/>Jeśli rozwiążemy ze względu <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:math> i podstawimy <m:math>
+        <m:mrow>
+          <m:mi>π</m:mi>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+      </m:math> jako pole przekroju, uzyskamy:<newline/>
+      <equation id="fs-id1170959724654" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>A</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>A</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:mfrac>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>π</m:mi>
+                <m:msubsup>
+                  <m:mi>r</m:mi>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:msubsup>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>π</m:mi>
+                <m:msubsup>
+                  <m:mi>r</m:mi>
+                  <m:mn>2</m:mn>
+                  <m:mn>2</m:mn>
+                </m:msubsup>
+              </m:mrow>
+            </m:mfrac>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msubsup>
+                  <m:mi>r</m:mi>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:msubsup>
+              </m:mrow>
+              <m:mrow>
+                <m:msubsup>
+                  <m:mi>r</m:mi>
+                  <m:mn>2</m:mn>
+                  <m:mn>2</m:mn>
+                </m:msubsup>
+              </m:mrow>
+            </m:mfrac>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <newline/>Po podstawieniu wartości dochodzimy do:<newline/>
+      <equation id="fs-id1170959758957" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:msub>
+            <m:mi>v</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mn>0,900</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">c</m:mi>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:msup>
+                <m:mo stretchy="false">)</m:mo>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mrow>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mn>0,250</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">c</m:mi>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:msup>
+                <m:mo stretchy="false">)</m:mo>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:mfrac>
+          <m:mn>1,96</m:mn>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mn>25,5</m:mn>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+    </item>
+  </list><para id="fs-id1170959735131">
+    <title>Znaczenie</title>Prędkość 1,96 m/s wydaje się prawidłowa dla wody wylatującej z węża bez wąskiej dyszy na końcu. Dysza powoduje przyspieszenie strumienia, kierując wodę przez otwór o mniejszej powierzchni.</para>
+    <para id="fs-id1170959820866">Rozwiązanie ostatniej części przykładu pokazuje, że prędkość jest odwrotnie proporcjonalna do kwadratu promienia rury, co sprawia, że pojawiają się znaczące efekty, gdy promień się zmienia. Możemy na przykład zdmuchnąć świeczkę z dość dużej odległości układając usta w rurkę, podczas gdy dmuchając z otwartymi ustami, raczej się nam to nie uda.</para></example>
+</section>
+<section id="fs-id1170957514468">
+  <title>Zachowanie masy</title>
+  <para id="fs-id1170959693693">Szybkość przepływu płynu może być również opisana przez <term class="no-emphasis">strumień masy</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">mass flow rate</term></foreign>) lub inaczej masowe natężenie przepływu. Jest to szybkość, z jaką masa płynu przepływa przez powierzchnię w danym punkcie. Spójrzmy jeszcze raz na <link target-id="CNX_UPhysics_Figure_14_05_FlowRateDi" cmlnle:case="accusative"/>, lecz tym razem przyjrzyjmy się masie zawartej w zacienionej objętości. Masę tę można obliczyć z gęstości i objętości:</para><equation id="fs-id1170959819384" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:mi>m</m:mi>
+          <m:mo>=</m:mo>
+          <m:mi>ρ</m:mi>
+          <m:mi>V</m:mi>
+          <m:mo>=</m:mo>
+          <m:mi>ρ</m:mi>
+          <m:mi>A</m:mi>
+          <m:mi>x</m:mi>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="fs-id1170959869262">Strumień masy wynosi więc:</para>
+    <equation id="fs-id1170957409681" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mfrac>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>m</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mi>ρ</m:mi>
+        <m:mi>A</m:mi>
+        <m:mi>x</m:mi>
+        <m:mo stretchy="false">)</m:mo>
+        <m:mo>=</m:mo>
+        <m:mi>ρ</m:mi>
+        <m:mi>A</m:mi>
+        <m:mfrac>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>x</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mi>ρ</m:mi>
+        <m:mi>A</m:mi>
+        <m:mi>v</m:mi>
+        <m:mo>,</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1170959698285">gdzie <m:math>
+      <m:mi>ρ</m:mi>
+    </m:math> jest gęstością, <m:math>
+      <m:mi>A</m:mi>
+    </m:math>
+   polem przekroju, a <m:math>
+    <m:mi>v</m:mi>
+  </m:math>
+ wartością prędkości. Pojęcie strumienia masy jest ważne w dynamice płynów i używane w rozwiązywaniu wielu problemów. Rozważmy na przykład <link target-id="CNX_UPhysics_Figure_14_05_MassFlowTb" cmlnle:case="accusative"/>. Rura na nim zaczyna się wlotem o polu powierzchni <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math> i zwęża się do wylotu o mniejszej powierzchni przekroju <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>. Masa płynu wchodzącego do rury musi być równa masie płynu opuszczającego rurę. Z tego powodu prędkość przy wylocie <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+</m:mrow>
+</m:math> jest większa niż prędkość przy wlocie <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+</m:mrow>
+</m:math>. Wiedząc, że masa płynu wchodzącego do rury musi być równa masie płynu opuszczającego ją, możemy wyliczyć zależność między prędkością a polem powierzchni przekroju, zrównując szybkość zmiany masy wpływającej i wypływającej:</para><note id="fs-id1170959641429" class="equation-callout">
+<equation id="fs-id1170959718383"><label/><m:math>
+    <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>m</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mn>1</m:mn>
+          </m:msub>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>m</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:msub>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>ρ</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:msub>
+            <m:mi>A</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:msub>
+            <m:mi>v</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>ρ</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:msub>
+            <m:mi>A</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:msub>
+            <m:mi>v</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>.</m:mo>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+  </equation>
+</note><para id="fs-id1170959702716"><link target-id="fs-id1170959718383"/> jest znane również jako równanie ciągłości w postaci ogólnej. Jeżeli gęstość płynu pozostaje stała w obszarze zmniejszającego się pola przekroju, innymi słowy jeżeli płyn jest nieściśliwy, to w równaniu ciągłości gęstości się skracają:</para><equation id="fs-id1170959645768" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>A</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>A</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1170957575300">Równanie ciągłości zzredukowaliśmy do postaci opisującej równość strumieni objętościowych: wchodzącego do rury oraz opuszczającego ją.</para><figure id="CNX_UPhysics_Figure_14_05_MassFlowTb"><media id="fs-id1170959670383" alt="Ilustracja pokazuje schematycznie przepływ płynu przez jednorodną rurę o polu przekroju A. Objętość płynu równa v razy delta t przechodzi przez pole przekroju rury w czasie delta t.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_14_05_MassFlowTb.jpg"/>
+    </media>
+    
+  <caption>Rozważania geometryczne pomocne w wyprowadzeniu równania ciągłości. Masa płynu wchodzącego do zacienionego obszaru musi być w każdej chwili taka sama jak masa płynu opuszczającego ten obszar, jeżeli płyn jest nieściśliwy.</caption></figure></section>
+<section id="fs-id1170959806435" class="key-concepts">
+  <title>Podsumowanie</title>
+  <list id="fs-id1170959698777" list-type="bulleted" bullet-style="bullet"><item>Strumień objętościowy <m:math>
+        <m:mi>Q</m:mi>
+      </m:math>
+     jest definiuje się jako objętość <m:math>
+      <m:mi>V</m:mi>
+    </m:math>
+   przepływającą przez pole powierzchni w pewnym punkcie w czasie <m:math>
+    <m:mi>t</m:mi>
+  </m:math>
+ lub <m:math>
+<m:mi>Q</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:mi>V</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:mi>t</m:mi>
+</m:math>, gdzie <m:math>
+  <m:mi>V</m:mi>
+</m:math>
+ jest objętością, a <m:math>
+  <m:mi>t</m:mi>
+</m:math>
+ czasem. Jednostką SI strumienia objętościowego jest <m:math>
+<m:mrow>
+  <m:msup>
+    <m:mtext>m</m:mtext>
+    <m:mn>3</m:mn>
+  </m:msup>
+  <m:mtext>/s,</m:mtext>
+</m:mrow>
+</m:math> ale w powszechnym użyciu są również inne jednostki, takie jak l/min.</item>
+<item>Strumień objętościowy oraz prędkość są związane relacją <m:math>
+  <m:mrow>
+    <m:mi>Q</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>A</m:mi>
+    <m:mi>v</m:mi>
+  </m:mrow>
+</m:math>, gdzie <m:math>
+  <m:mi>A</m:mi>
+</m:math>
+ jest polem przekroju strumienia płynu, a <m:math>
+  <m:mi>v</m:mi>
+</m:math>
+ jego średnią prędkością.</item>
+<item>Równanie ciągłości mówi, że dla płynów nieściśliwych masa wpływająca do rury musi się równać masie wypływającej z niej.</item>
+</list></section>
+<section id="fs-id1170959764155" class="review-conceptual-questions">
+  <title>Pytania</title>
+  <exercise id="fs-id1170957506632">
+    <problem id="fs-id1170959824969">
+      <para id="fs-id1170959939296">Wiele ilustracji w tekście prezentuje linie prądu. Wyjaśnij, dlaczego prędkość płynu jest największa tam, gdzie linie prądu są najbliżej siebie. (Podpowiedź: Rozważ zależność między prędkością płynu a polem przekroju, przez który przepływa płyn.)</para></problem>
+    <solution id="fs-id1170959940734">
+      <para id="fs-id1170959818992">Rozważ dwie różne rury połączone z pojedynczą rurą o mniejszej średnicy. Płyn przepływa z szerszych rur do rury o mniejszej średnicy. Ponieważ płyn przepływa przez mniejszy przekrój, musi poruszać się szybciej – w tym samym miejscu linie prądu zbliżają się do siebie.</para>
+    </solution>
+  </exercise>
+</section>
+<section id="fs-id1170960169471" class="review-problems">
+  <title>Zadania</title>
+  <exercise id="fs-id1170960044494">
+    <problem id="fs-id1170959690323">
+      <para id="fs-id1170959753250">Jaki jest średni strumień objętościowy wyrażony w <m:math>
+        <m:mrow>
+          <m:msup>
+            <m:mrow>
+              <m:mtext>cm</m:mtext>
+            </m:mrow>
+            <m:mn>3</m:mn>
+          </m:msup>
+          <m:mtext>/s</m:mtext>
+        </m:mrow>
+      </m:math> benzyny wpływającej do silnika samochodu, poruszającego się z prędkością 100 km/h, jeżeli średnie zużycie paliwa wynosi 10,0 km/l?</para></problem>
+      <solution id="fs-id1170957599093">
+        <para id="fs-id1170959820939">2,77 <m:math>
+          <m:mrow>
+            <m:msup>
+              <m:mrow>
+                <m:mtext>cm</m:mtext>
+              </m:mrow>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mtext>/s</m:mtext>
+          </m:mrow>
+        </m:math>
+      </para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1170960061712">
+    <problem id="fs-id1170959795783">
+      <para id="fs-id1170959971460">Serce dorosłej osoby w spoczynku pompuje krew z wydajnością 5,00 l/min. (a) Przekształć tę liczbę na <m:math>
+        <m:mrow>
+          <m:msup>
+            <m:mrow>
+              <m:mtext>cm</m:mtext>
+            </m:mrow>
+            <m:mn>3</m:mn>
+          </m:msup>
+          <m:mtext>/s</m:mtext>
+        </m:mrow>
+      </m:math>. (b) Jaki jest strumień objętościowy wyrażony w <m:math>
+      <m:mrow>
+        <m:msup>
+          <m:mtext>m</m:mtext>
+          <m:mn>3</m:mn>
+        </m:msup>
+        <m:mtext>/s</m:mtext>
+      </m:mrow>
+      </m:math>?</para></problem>
+  </exercise>
+  <exercise id="fs-id1170959796628">
+    <problem id="fs-id1170959802788">
+      <para id="fs-id1170959869312">Wodospady Huka na rzece Waikato są jedną z najczęściej odwiedzanych atrakcji turystycznych Nowej Zelandii. Średni strumień objętościowy rzeki wynosi około 300 000 l/s. W przełomie wodospadu rzeka zwęża się do szerokości 20 m i ma głębokość 20 m. (a) Jaka jest średnia prędkość rzeki w przełomie? (b) Jaka jest średnia prędkość rzeki za wodospadem, gdzie szerokość rzeki zwiększa się do 60 m, a średnia głębokość do 40 m?</para></problem>
+    <solution id="fs-id1170960142461">
+      <para id="fs-id1170959977488">a. 0,75 m/s; b. 0,13 m/s</para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1170959708314">
+    <problem id="fs-id1170959753194">
+      <para id="fs-id1170959707712">(a) Oszacuj czas potrzebny do wypełnienia przydomowego basenu pływackiego o pojemności 80 000 l przy użyciu węża ogrodowego, dostarczającego 60 l/min. Ile czasu zajęłoby to zadanie, gdyby do basenu przekierować średniej wielkości rzekę o strumieniu <m:math>
+        <m:mrow>
+          <m:msup>
+            <m:mrow>
+              <m:mn>5000</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>m</m:mtext>
+            </m:mrow>
+            <m:mn>3</m:mn>
+          </m:msup>
+          <m:mtext>/s</m:mtext>
+        </m:mrow>
+        </m:math>?</para></problem>
+    </exercise>
+    <exercise id="fs-id1170957422368">
+      <problem id="fs-id1170959680121">
+        <para id="fs-id1170957407178">Jaka jest prędkość wody w wężu strażackim o średnicy 9,00, cm dostarczającego 80,0 l/s? (b) Jaki strumień w metrach sześciennych na sekundę odpowiada tej sytuacji? (c) Czy odpowiedź byłaby inna, gdyby wodę słoną w wężu zastąpić wodą słodką?</para></problem>
+      <solution id="fs-id1170960089546">
+        <para id="fs-id1170959791171">a. 12,6 m/s; b. <m:math>
+          <m:mrow>
+            <m:mn>0,0800</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:msup>
+              <m:mrow>
+                <m:mtext>m</m:mtext>
+              </m:mrow>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mtext>/s</m:mtext>
+          </m:mrow>
+          </m:math>; c. nie, strumień objętościowy i prędkość nie zależą od gęstości płynu</para></solution>
+      </exercise>
+      <exercise id="fs-id1170960183803">
+        <problem id="fs-id1170957416303">
+          <para id="fs-id1170960142378">Woda przepływa z prędkością 2,00 m/s przez wąż o wewnętrznej średnicy 1,60 cm. (a) Jaki jest strumień objętościowy w litrach na sekundę? (b) Prędkość płynu przy dyszy tego samego węża wynosi 15,0 m/s. Jaka jest średnica dyszy?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1170959787786">
+        <problem id="fs-id1170959731337">
+          <para id="fs-id1170959789079">Udowodnij, że prędkość nieściśliwego płynu przez zwężenie, takie jak w rurce Venturiego, wzrasta o czynnik równy kwadratowi czynnika, o który wzrasta średnica. (Można również udowodnić twierdzenie odwrotne, dotyczące sytuacji, gdy płyn wpływa do rejonu o większej średnicy.)</para></problem>
+        <solution id="fs-id1170959803647">
+          <para id="fs-id1170959941792">Jeżeli płyn jest nieściśliwy, to strumienie objętościowe po obu stronach będą takie same:</para><para id="fs-id1170957441786"><m:math>
+              <m:mi>Q</m:mi>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>A</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>A</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:math> lub <m:math>
+            <m:mi>π</m:mi>
+            <m:mfrac>
+              <m:msubsup>
+                <m:mi>d</m:mi>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mn>4</m:mn>
+            </m:mfrac>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mi>π</m:mi>
+            <m:mfrac>
+              <m:msubsup>
+                <m:mi>d</m:mi>
+                <m:mn>2</m:mn>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mn>4</m:mn>
+            </m:mfrac>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo stretchy="false">⇒</m:mo>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mfrac>
+              <m:msubsup>
+                <m:mi>d</m:mi>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:msubsup>
+                <m:mi>d</m:mi>
+                <m:mn>2</m:mn>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mfrac>
+                  <m:msub>
+                    <m:mi>d</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:msub>
+                    <m:mi>d</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                </m:mfrac>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:math>
+        </para></solution>
+    </exercise>
+    <exercise id="fs-id1170957512340">
+      <problem id="fs-id1170957603693">
+        <para id="fs-id1170959783481">Woda wypływa pionowo w dół z kranu o średnicy 1,80 cm z prędkością 0,500 m/s. (Z powodu konstrukcji kranu, nie ma różnic w prędkości na przekroju strumienia.) (a) Jaki jest strumień objętościowy wyrażony w <m:math>
+          <m:mrow>
+            <m:msup>
+              <m:mrow>
+                <m:mtext>cm</m:mtext>
+              </m:mrow>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mtext>/s</m:mtext>
+          </m:mrow>
+          </m:math>? (b) Jaka jest średnica strumienia 0,200 m poniżej kranu? Pomiń efekty związane z napięciem powierzchniowym.</para></problem>
+      </exercise>
+    </section>
+  </content>
+  <glossary>
+    <definition id="fs-id1170959957010">
+<term cmlnle:reference="strumień objętościowy" class="no-emphasis">strumień objętościowy (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">flow rate</term></foreign>)</term>
+      <meaning id="fs-id1170959826329"> o symbolu <m:math>
+          <m:mi>Q</m:mi>
+        </m:math>, to stosunek objętości <m:math>
+        <m:mi>V</m:mi>
+      </m:math>, która przepływa przez powierzchnię w pewnym punkcie, w czasie <m:math>
+      <m:mi>t</m:mi>
+    </m:math>, w jakim płyn przepływa, lub <m:math>
+  <m:mi>Q</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:mi>V</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:mi>t</m:mi>
+</m:math>
+</meaning>
+</definition>
+<definition id="fs-id1170959804757">
+<term cmlnle:reference="płyn idealny" class="no-emphasis">płyn idealny (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">ideal fluid</term></foreign>)</term>
+  <meaning id="fs-id1170959828866">płyn o pomijalnej lepkości</meaning>
+</definition>
+<definition id="fs-id1170959641798">
+<term cmlnle:reference="przepływ laminarny" class="no-emphasis">przepływ laminarny (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">laminar flow</term></foreign>)</term>
+  <meaning id="fs-id1170959977787">typ przepływu płynu, podczas którego warstwy płynu się nie mieszają</meaning>
+</definition>
+<definition id="fs-id1170957600347">
+<term cmlnle:reference="przepływ turbulentny" class="no-emphasis">przepływ turbulentny (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">turbulent flow</term></foreign>)</term>
+  <meaning id="fs-id1170957422020">typ przepływu płynów, podczas którego warstwy płynu mieszają się zawracając i tworząc wiry</meaning>
+</definition>
+<definition id="fs-id1170960187837">
+<term cmlnle:reference="lepkość" class="no-emphasis">lepkość (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">viscosity</term></foreign>)</term>
+  <meaning id="fs-id1170959873521">miara wewnętrznego tarcia w płynie</meaning>
+</definition>
+</glossary>
+</document>

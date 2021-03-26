@@ -1,0 +1,2013 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" id="new" cnxml-version="0.8" module-id="new">
+  <title>Zderzenia w wielu wymiarach</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65787</md:content-id>
+  <md:title>Zderzenia w wielu wymiarach</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>wyrażać pęd na płaszczyźnie;</item>
+<item>zapisywać zasadę zachowania pędu z uwzględnieniem składowych pędu;</item>
+<item>obliczać pęd jako wektor na płaszczyźnie.</item>
+</list></md:abstract>
+  <md:uuid>b2533476-62d9-40b9-ad75-0015c2b1b5ad</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1167133703767">Zderzenia ciał w dwóch wymiarach występują w przyrodzie znacznie częściej niż jednowymiarowe. W zderzeniach na płaszczyźnie kąty między prędkościami początkowymi ciał nie wynoszą <m:math>
+    <m:msup>
+      <m:mn>0</m:mn>
+      <m:mo>∘</m:mo>
+    </m:msup>
+  </m:math> lub <m:math>
+  <m:msup>
+    <m:mn>180</m:mn>
+    <m:mo>∘</m:mo>
+  </m:msup>
+  </m:math> i możliwa jest każda konfiguracja wektorów. Jeżeli natomiast zderzają się więcej niż dwa ciała lub wskutek eksplozji powstają więcej niż dwa fragmenty – sytuacja może wymagać opisu w trzech wymiarach, czyli w przestrzeni. Przyjrzyjmy się, jakie komplikacje to rodzi (dla uproszczenia na początek wystarczy nam zderzenie na płaszczyźnie).</para>
+  <para id="fs-id1167133655961">Po pierwsze, należy zawsze pamiętać, że pęd jest wektorem. Jak wszystkie wektory, można go przedstawić przy pomocy składowych wzajemnie do siebie prostopadłych. Najczęściej są to składowe kartezjańskie <m:math>
+    <m:mi>x</m:mi>
+  </m:math>, <m:math>
+  <m:mi>y</m:mi>
+</m:math> i <m:math>
+<m:mi>z</m:mi>
+</m:math> (oznaczone odpowiednio wersorami osi: <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>i</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>, <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>j</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>, <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>k</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>). Stosując później zasadę zachowania pędu, będziemy rozpisywać równania dla poszczególnych składowych.</para>
+<para id="fs-id1167132332770">Druga, niezwykle istotna informacja dotyczy relacji siły i pędu, wyrażającej się w II zasadzie dynamiki:</para>
+<equation id="fs-id1167133521521" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>F</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>p</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>,</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1167133519051">gdzie siła również jest wektorem o trzech składowych, zatem:</para>
+<equation id="fs-id1167132518609" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:msub>
+          <m:mi>p</m:mi>
+          <m:mi>x</m:mi>
+        </m:msub>
+      </m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>,</m:mo>
+    <m:mspace width="0.4em"/>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mi>y</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:msub>
+          <m:mi>p</m:mi>
+          <m:mi>y</m:mi>
+        </m:msub>
+      </m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>,</m:mo>
+    <m:mspace width="0.4em"/>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mi>z</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:msub>
+          <m:mi>p</m:mi>
+          <m:mi>z</m:mi>
+        </m:msub>
+      </m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1167133851717">Wiemy, że druga zasada dynamiki jest słuszna dla każdego kierunku ruchu, niezależnie od pozostałych składowych. Skoro tak, to na mocy III zasady Newtona, również zasada zachowania pędu będzie słuszna niezależnie od kierunku.</para>
+<para id="fs-id1167132384423">Powyższe informacje pozwalają na analizę każdego problemu wielowymiarowego za pomocą równań rozpisanych dla dwóch (w przypadku opisu w 2D) lub trzech (przy opisie w 3D) składowych wektorów siły, pędu czy prędkości, a także wyrażenie pędu całkowitego jako sumy pędów elementów układu:</para>
+<note id="fs-id1167132423342" class="equation-callout">
+  <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167132361143"><m:math display="block"><m:semantics><m:mtable><m:mtr><m:mtd><m:msub><m:mi>p</m:mi><m:mfenced separators="⁣" close="" open=""><m:mi>x</m:mi><m:mtext> suma po</m:mtext></m:mfenced></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:msub><m:mi>p</m:mi><m:mrow><m:mi>x</m:mi><m:mo>⁢</m:mo><m:mn>1</m:mn><m:mo>⁢</m:mo><m:mtext> przed</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:mrow><m:msub><m:mi>p</m:mi><m:mfenced separators="⁣" close="" open=""><m:mrow><m:mi>x</m:mi><m:mo>⁢</m:mo><m:mn>2</m:mn></m:mrow><m:mtext> przed</m:mtext></m:mfenced></m:msub><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>p</m:mi><m:mfenced separators="⁣" close="" open=""><m:mi>y</m:mi><m:mtext> suma po</m:mtext></m:mfenced></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:msub><m:mi>p</m:mi><m:mrow><m:mi>y</m:mi><m:mo>⁢</m:mo><m:mn>1</m:mn><m:mo>⁢</m:mo><m:mtext> przed</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:mrow><m:msub><m:mi>p</m:mi><m:mfenced separators="⁣" close="" open=""><m:mrow><m:mi>y</m:mi><m:mo>⁢</m:mo><m:mn>2</m:mn></m:mrow><m:mtext> przed</m:mtext></m:mfenced></m:msub><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{align} p_{x\sep \text{ suma po}} &amp;= p_{x1 \text{ przed}} + p_{x2 \sep \text{ przed}} \text{,} \\ p_{y\sep \text{ suma po}} &amp;= p_{y1 \text{ przed}} + p_{y2 \sep \text{ przed}} \text{.} \end{align}</m:annotation></m:semantics></m:math></equation></note>
+<para id="fs-id1167132375941">Procedurę tę ilustruje <link target-id="CNX_UPhysics_09_05_Vector_add"/>.</para>
+<figure id="CNX_UPhysics_09_05_Vector_add">
+  <media id="fs-id1167132212160" alt="Rysunek podzielony na 3 części. Pierwsza (a) zatytułowana: „rozłóż wektory pędów na składowe x i y” pokazuje wektor „p1przed” jako strzałkę narysowaną linią ciągłą skierowaną w prawo-w dół. Składową wektora „p1y przed” narysowano linią przerywaną z początku wektora p1 pionowo w dół, a składową „p1x przed” poprowadzono z końca wektora „p1y przed” poziomo w prawo do zakończenia wektora „p1przed”. Wektor „p2przed” narysowano linią ciągłą zaczynając ze strzałki wektora „p1przed” i jest on krótszy niż wektor „p1przed”. Wektor „p2przed” skierowany jest ukośnie w prawo i w górę. Jego składowe narysowano liniami przerywanymi: „p2xprzed” poprowadzony jest w prawo z początku wektora „p2przed”, a „p2yprzed” poprowadzono w górę z końca wektora „p2xprzed” do strzałki wektora „p2przed”. Wektor „ppo” rozpoczyna się w początku wektora „p1przed” a kończy w strzałce wektora „p2przed”, skierowany jest on w prawo, nieznacznie w dół. Rysunek (b) zatytułowany: dodaj do siebie liczbowo składowe dla odpowiednich osi, aby otrzymać składowe x i y pędu końcowego pokazuje sumy poszczególnych składowych. Wektor „p1yprzed” skierowany jest pionowo w dół, wektor „p1yprzed” skierowany jest pionowo w górę, jest jednak krótszy. Wektor „pypo” będący ich sumą jest więc krótki i skierowany pionowo w dół. Wektor „p1xprzed” skierowany jest w prawo, wektor „p2xprzed” również, więc wektor „p2ypo” będący ich sumą skierowany jest również w prawo i równy łącznej długości obu wektorów, rozpoczyna się w początku wektora „p1xprzed” a kończy w końcu wektora „p2xprzed”. Rysunek c, zatytułowany: dodaj do siebie wektorowo otrzymane składowe pędu końcowego pokazuje trójkąt prostokątny utworzony z przyprostokątnych „pxpo” i „pypo” oraz przeciwprostokątnej „ppo”. Styl graficzny i orientacja wektorów są takie same jak na rysunkach a i b.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_09_05_Vector_add.jpg"/>
+  </media>
+  <caption>(a) W analizie zagadnienia dwuwymiarowego rozkładamy wektory pędów przed zderzeniem na składowe <m:math>
+    <m:mi>x</m:mi>
+  </m:math> i <m:math>
+  <m:mi>y</m:mi>
+</m:math>. (b) Dodajemy do siebie wszystkie składowe pędów dla danego kierunku osi i otrzymujemy składową <m:math>
+<m:msub>
+  <m:mi>p</m:mi>
+  <m:mrow>
+    <m:mi>x</m:mi>
+    <m:mtext>po</m:mtext>
+  </m:mrow>
+</m:msub>
+</m:math> i <m:math>
+<m:msub>
+  <m:mi>p</m:mi>
+  <m:mrow>
+    <m:mi>y</m:mi>
+    <m:mtext>po</m:mtext>
+  </m:mrow>
+</m:msub>
+</m:math> odpowiednio pokazane czerwoną linią przerywaną. (c) Dodajemy do siebie składowe <m:math>
+<m:msub>
+  <m:mi>p</m:mi>
+  <m:mrow>
+    <m:mi>x</m:mi>
+    <m:mtext>po</m:mtext>
+  </m:mrow>
+</m:msub>
+</m:math> i <m:math>
+<m:msub>
+  <m:mi>p</m:mi>
+  <m:mrow>
+    <m:mi>y</m:mi>
+    <m:mtext>po</m:mtext>
+  </m:mrow>
+</m:msub>
+</m:math> i otrzymujemy wektor pędu po zderzeniu <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>p</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mtext>po</m:mtext>
+</m:msub>
+</m:math>.</caption>
+</figure>
+<para id="fs-id1167133464133">Z równań dla każdej składowej niezależnie wyprowadzamy składową poszukiwanej prędkości:</para>
+<equation id="fs-id1167133826382" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mtable>
+      <m:mtr>
+        <m:mtd columnalign="right">
+          <m:msub>
+            <m:mi>v</m:mi>
+            <m:mrow>
+              <m:mtext>x po</m:mtext>
+            </m:mrow>
+          </m:msub>
+        </m:mtd>
+        <m:mtd columnalign="left">
+          <m:mo>=</m:mo>
+        </m:mtd>
+        <m:mtd columnalign="left">
+          <m:mfrac>
+            <m:mrow>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mrow>
+                  <m:mtext>1x przed</m:mtext>
+                </m:mrow>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mrow>
+                  <m:mtext>2x przed</m:mtext>
+                </m:mrow>
+              </m:msub>
+            </m:mrow>
+            <m:mi>m</m:mi>
+          </m:mfrac>
+          <m:mo>,</m:mo>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd columnalign="right">
+          <m:msub>
+            <m:mi>v</m:mi>
+            <m:mrow>
+              <m:mtext>y po</m:mtext>
+            </m:mrow>
+          </m:msub>
+        </m:mtd>
+        <m:mtd columnalign="left">
+          <m:mo>=</m:mo>
+        </m:mtd>
+        <m:mtd columnalign="left">
+          <m:mfrac>
+            <m:mrow>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mrow>
+                  <m:mtext>1y przed</m:mtext>
+                </m:mrow>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mrow>
+                  <m:mtext>2y przed</m:mtext>
+                </m:mrow>
+              </m:msub>
+            </m:mrow>
+            <m:mi>m</m:mi>
+          </m:mfrac>
+          <m:mo>,</m:mo>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation>
+<para id="fs-id1167132267537">gdzie <m:math>
+  <m:mi>m</m:mi>
+</m:math> jest całkowitą masą układu. Długość wektora prędkości <m:math>
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mtext>po</m:mtext>
+</m:msub>
+</m:math> obliczymy z pomocą twierdzenia Pitagorasa:</para>
+<equation id="fs-id1167132371962" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mtext>po</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>|</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mstyle mathsize="normal">
+              <m:mover accent="true">
+                <m:mi>v</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mstyle>
+            <m:mstyle mathsize="normal">
+              <m:mi>po</m:mi>
+            </m:mstyle>
+          </m:msub>
+        </m:mrow>
+        <m:mo>|</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:msqrt>
+        <m:mrow>
+          <m:msubsup>
+            <m:mi>v</m:mi>
+            <m:mrow>
+              <m:mtext>x po</m:mtext>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+          <m:mo>+</m:mo>
+          <m:msubsup>
+            <m:mi>v</m:mi>
+            <m:mrow>
+              <m:mtext>y po</m:mtext>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:msubsup>
+        </m:mrow>
+      </m:msqrt>
+      <m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+<note xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1167132332826" class="problem-solving"><title>Strategia rozwiązywania zadań: zasada zachowania pędu w dwóch wymiarach</title><para id="fs-id1167133485713">Metoda postępowania w przypadku zagadnień dwu- lub trójwymiarowych z wykorzystaniem zasady zachowania pędu jest w gruncie rzeczy jednakowa, jak w przypadku problemu jednowymiarowego. Różnica polega na tym, że należy ułożyć i rozwiązać równanie dla każdej składowej:</para>
+  <list id="fs-id1167133346621" list-type="enumerated" number-style="arabic">
+    <item>Zidentyfikuj układ zamknięty.</item>
+    <item>Zapisz równania reprezentujące zasadę zachowania pędu dla poszczególnych składowych.</item>
+    <item>Jeżeli masz za zadanie wyznaczyć prędkość lub pęd – pamiętaj o wektorowym (graficznym) dodaniu składowych i wyznaczeniu długości wektora sumarycznego za pomocą twierdzenia Pitagorasa.</item>
+  </list>
+</note><example id="fs-id1167132466327">
+  <para id="fs-id1167133536659">
+    <title>Zderzenie samochodów</title>Samochód osobowy o masie 1200 kg jadący na wschód z prędkością 60 km/h zderzył się na skrzyżowaniu z ciężarówką o masie 3 ton jadącą na północ z prędkością 40 km/h (<link target-id="CNX_UPhysics_09_05_CarTruck"/>). Oba pojazdy poruszają się dalej razem. Jaka jest ich prędkość po zderzeniu?</para>
+    <figure id="CNX_UPhysics_09_05_CarTruck">
+      <media id="fs-id1167133779548" alt="Na rysunku pokazano układ współrzędnych x,y. Ciężarówka o masie mc równej 3 tony porusza się w kierunku północnym. Samochód osobowy o masie ms = 1200 kg porusza się na wschód z prędkością vs większą od prędkości ciężarówki. Trajektorie obu pojazdów przecinają się w środku układu współrzędnych.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_09_05_CarTruck.jpg"/>
+      </media>
+      <caption>Sytuacja tuż przed zderzeniem się ciężarówki jadącej na północ z samochodem osobowym jadącym na wschód. Sumaryczny pęd posiadać będzie składowe zarówno wzdłuż osi <m:math>
+        <m:mi>x</m:mi>
+      </m:math>, jak i <m:math>
+      <m:mi>y</m:mi>
+      </m:math>. </caption>
+    </figure>
+    <para id="fs-id1167132245274">
+      <title>Strategia rozwiązania</title>Przede wszystkim należy wyodrębnić układ zamknięty. Naturalnym wyborem jest układ <emphasis effect="italics">„ciężarówka plus samochód”</emphasis>: nie jest to jednak układ zamknięty ze względu na obecność siły tarcia między drogą a zdeformowanymi pojazdami po zderzeniu. Problem ten przestanie istnieć, jeśli zawęzimy zagadnienie do wyznaczenia prędkości masy pojazdów w chwili tuż po zderzeniu. Przy takim zastrzeżeniu układ będzie zamknięty, a zasada zachowania pędu spełniona.</para>
+      <para id="fs-id1167133535267">Ponieważ rozważamy ruch na płaszczyźnie, analizujemy pęd w ujęciu składowych <m:math>
+        <m:mi>x</m:mi>
+      </m:math>, <m:math>
+      <m:mi>y</m:mi>
+      </m:math> i względem tychże osi zapisujemy zasadę zachowania pędu.</para>
+      <para id="fs-id1167132243441">
+        <title>Rozwiązanie</title>
+        <emphasis effect="italics">Przed</emphasis> zderzeniem całkowity pęd układu wynosi:</para>
+        <equation id="fs-id1167133536112" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mrow>
+              <m:mstyle mathsize="normal">
+                <m:mover accent="true">
+                  <m:mi>p</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mstyle>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mtext>s</m:mtext>
+              </m:msub>
+              <m:msub>
+                <m:mstyle mathsize="normal">
+                  <m:mover accent="true">
+                    <m:mi>v</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mstyle>
+                <m:mtext>s</m:mtext>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mtext>c</m:mtext>
+              </m:msub>
+              <m:msub>
+                <m:mstyle mathsize="normal">
+                  <m:mover accent="true">
+                    <m:mi>v</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mstyle>
+                <m:mtext>c</m:mtext>
+              </m:msub>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="fs-id1167132310091">
+          <emphasis effect="italics">Po</emphasis> zderzeniu pęd całkowity wynosi:</para>
+          <equation id="fs-id1167133331988" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mrow>
+                <m:mstyle mathsize="normal">
+                  <m:mover accent="true">
+                    <m:mi>p</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mstyle>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mtext>s</m:mtext>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mtext>c</m:mtext>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>v</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mi>sc</m:mi>
+                </m:msub>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation>
+          <para id="fs-id1167133677117">Ponieważ mamy do czynienia z układem zamkniętym, pęd zostaje zachowany:</para>
+          <equation id="fs-id1167132231036" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mtext>s</m:mtext>
+                </m:msub>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>v</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mstyle mathsize="normal">
+                    <m:mi>s</m:mi>
+                  </m:mstyle>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mtext>c</m:mtext>
+                </m:msub>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>v</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mtext>c</m:mtext>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mtext>s</m:mtext>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mtext>c</m:mtext>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>v</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mi>sc</m:mi>
+                </m:msub>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation>
+          <para id="fs-id1167133346883">Istotne jest wciąż zachowanie zapisu wektorowego, ponieważ zagadnienie nie jest jednowymiarowe, tzn. wektory nie są do siebie równoległe. Należy je dodać wektorowo (<link target-id="CNX_UPhysics_09_05_Ex1"/>).</para>
+          <figure id="CNX_UPhysics_09_05_Ex1">
+            <media id="fs-id1167132289512" alt="Na rysunku pokazano trójkąt prostokątny utworzony z wektorów ps i pc. Wektor pc skierowany jest pionowo w górę, do jego końca doczepiono wektor ps skierowany poziomo w prawo. Linia przerywana tworzy przeciwprostokątną i zarazem wektor sumy, czyli całkowitego pędu. Zaczyna się on w początku wektora pc a kończy w końcu wektora ps. Kąt między kierunkiem wektora pc i wektora wypadkowego oznaczono jako teta.">
+              <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_09_05_Ex1.jpg"/>
+            </media>
+            <caption>Graficzna ilustracja dodawania wektorów pędu. Zwróćmy uwagę, że chociaż prędkość samochodu osobowego jest większa od prędkości ciężarówki, to pęd samochodu jest mniejszy.</caption>
+          </figure>
+          <para id="fs-id1167133358033">Oznaczmy osie układu współrzędnych jako <m:math>
+            <m:mi>x</m:mi>
+          </m:math> –skierowaną w prawo i <m:math>
+          <m:mi>y</m:mi>
+          </m:math> –skierowaną w górę, zgodnie z prędkościami pojazdów na rysunku. Wówczas pędy pojazdów:</para>
+          <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167133540873" class="unnumbered"><m:math display="block"><m:semantics><m:mtable><m:mtr><m:mtd><m:msub><m:mover><m:mi>p</m:mi><m:mo>→</m:mo></m:mover><m:mtext>s</m:mtext></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>s</m:mtext></m:msub><m:mo>⁢</m:mo><m:msub><m:mover><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mtext>s</m:mtext></m:msub></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>s</m:mtext></m:msub><m:mo>⁢</m:mo><m:msub><m:mi>v</m:mi><m:mtext>s</m:mtext></m:msub><m:mo>⁢</m:mo><m:mover><m:mi>i</m:mi><m:mo>̂</m:mo></m:mover><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mover><m:mi>p</m:mi><m:mo>→</m:mo></m:mover><m:mtext>c</m:mtext></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>⁢</m:mo><m:msub><m:mover><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mtext>c</m:mtext></m:msub></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>⁢</m:mo><m:msub><m:mi>v</m:mi><m:mtext>c</m:mtext></m:msub><m:mo>⁢</m:mo><m:mover><m:mi>j</m:mi><m:mo>̂</m:mo></m:mover><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{align} \vec p_{\text{s}} &amp;= m_{\text{s}} \vec v_{\text{s}} = m_{\text{s}} v_{\text{s}} \hat i \text{,} \\ \vec p_{\text{c}} &amp;= m_{\text{c}} \vec v_{\text{c}} = m_{\text{c}} v_{\text{c}} \hat j \text{.} \end{align}</m:annotation></m:semantics></m:math></equation><para id="fs-id1167133664933">Zasada zachowania pędu wzdłuż osi <m:math>
+            <m:mi>x</m:mi>
+            </m:math> ma wówczas postać:</para>
+            <equation id="fs-id1167133320173" class="unnumbered">
+              <m:math>
+                <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+                  <m:mtr>
+                    <m:mtd>
+                      <m:msub>
+                        <m:mi>m</m:mi>
+                        <m:mtext>s</m:mtext>
+                      </m:msub>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mtext>s</m:mtext>
+                      </m:msub>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mi/>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>m</m:mi>
+                            <m:mtext>s</m:mtext>
+                          </m:msub>
+                          <m:mo>+</m:mo>
+                          <m:msub>
+                            <m:mi>m</m:mi>
+                            <m:mtext>c</m:mtext>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mtext>scx</m:mtext>
+                      </m:msub>
+                      <m:mo>,</m:mo>
+                    </m:mtd>
+                  </m:mtr>
+                  <m:mtr>
+                    <m:mtd>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mtext>scx</m:mtext>
+                      </m:msub>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mi/>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:msub>
+                          <m:mi>m</m:mi>
+                          <m:mtext>s</m:mtext>
+                        </m:msub>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>m</m:mi>
+                            <m:mtext>s</m:mtext>
+                          </m:msub>
+                          <m:mo>+</m:mo>
+                          <m:msub>
+                            <m:mi>m</m:mi>
+                            <m:mtext>c</m:mtext>
+                          </m:msub>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mtext>s</m:mtext>
+                      </m:msub>
+                      <m:mo>.</m:mo>
+                    </m:mtd>
+                  </m:mtr>
+                </m:mtable>
+              </m:math>
+            </equation>
+            <para id="fs-id1167133440663">Wzdłuż osi <m:math>
+              <m:mi>y</m:mi>
+              </m:math>: </para>
+              <equation id="fs-id1167133344273" class="unnumbered">
+                <m:math>
+                  <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+                    <m:mtr>
+                      <m:mtd>
+                        <m:msub>
+                          <m:mi>m</m:mi>
+                          <m:mtext>c</m:mtext>
+                        </m:msub>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mtext>c</m:mtext>
+                        </m:msub>
+                      </m:mtd>
+                      <m:mtd>
+                        <m:mi/>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>m</m:mi>
+                              <m:mtext>s</m:mtext>
+                            </m:msub>
+                            <m:mo>+</m:mo>
+                            <m:msub>
+                              <m:mi>m</m:mi>
+                              <m:mtext>c</m:mtext>
+                            </m:msub>
+                          </m:mrow>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mtext>scy</m:mtext>
+                        </m:msub>
+                        <m:mo>,</m:mo>
+                      </m:mtd>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mtd>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mtext>scy</m:mtext>
+                        </m:msub>
+                      </m:mtd>
+                      <m:mtd>
+                        <m:mi/>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:msub>
+                            <m:mi>m</m:mi>
+                            <m:mtext>c</m:mtext>
+                          </m:msub>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>m</m:mi>
+                              <m:mtext>s</m:mtext>
+                            </m:msub>
+                            <m:mo>+</m:mo>
+                            <m:msub>
+                              <m:mi>m</m:mi>
+                              <m:mtext>c</m:mtext>
+                            </m:msub>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mtext>c</m:mtext>
+                        </m:msub>
+                        <m:mo>.</m:mo>
+                      </m:mtd>
+                    </m:mtr>
+                  </m:mtable>
+                </m:math>
+              </equation>
+              <para id="fs-id1167133685958">Stosujemy twierdzenie Pitagorasa:</para>
+              <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167133545800" class="unnumbered"><m:math display="block"><m:semantics><m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:mfenced close="|" open="|"><m:msub><m:mover><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mtext>sc</m:mtext></m:msub></m:mfenced><m:mo id="U7b3c549f-5d8c-48db-8d2f-ee2906f919ce">=</m:mo><m:msqrt><m:msup><m:mfenced><m:mrow><m:mfrac><m:msub><m:mi>m</m:mi><m:mtext>s</m:mtext></m:msub><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>s</m:mtext></m:msub><m:mo>+</m:mo><m:msub><m:mi>m</m:mi><m:mtext>c</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:msub><m:mi>v</m:mi><m:mtext>s</m:mtext></m:msub></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mfenced><m:mrow><m:mfrac><m:msub><m:mi>m</m:mi><m:mtext>c</m:mtext></m:msub><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>s</m:mtext></m:msub><m:mo>+</m:mo><m:msub><m:mi>m</m:mi><m:mtext>c</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:msub><m:mi>v</m:mi><m:mtext>c</m:mtext></m:msub></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mfenced close="|" open="|"><m:msub><m:mover><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mtext>sc</m:mtext></m:msub></m:mfenced></m:mphantom><m:mo>=</m:mo><m:msqrt><m:msup><m:mfenced><m:mrow><m:mfrac><m:mrow><m:mn>1200</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow><m:mrow><m:mn>4200</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>16,67</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mfenced><m:mrow><m:mfrac><m:mrow><m:mn>3000</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow><m:mrow><m:mn>4200</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>11,1</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:msqrt></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mfenced close="|" open="|"><m:msub><m:mover><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mtext>sc</m:mtext></m:msub></m:mfenced></m:mphantom><m:mo>=</m:mo><m:msqrt><m:msup><m:mfenced><m:mrow><m:mn>4,79</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mfenced><m:mrow><m:mn>7,93</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:msqrt><m:mo>=</m:mo><m:mrow><m:mn>9,25</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>33,3</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">km</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">h</m:mi></m:mrow></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{multiline} \abs{\vec v_{\text{sc}}} &amp;= \sqrt{ ( \frac{ m_{\text{s}} }{ m_{\text{s}} + m_{\text{c}} } v_{\text{s}} )^2 + (\frac{m_{\text{c}}}{m_{\text{s}} + m_{\text{c}}} v_{\text{c}})^2 } \\ &amp;= \sqrt{(\frac{ \SI{1200}{\kilo\gram} }{ \SI{4200}{\kilo\gram} } \cdot \SI{16,67}{\metre\per\second})^2 + (\frac{\SI{3000}{\kilo\gram}}{\SI{4200}{\kilo\gram}} \cdot \SI{11,1}{\metre\per\second})^2} \\ &amp;= \sqrt{(\SI{4,79}{\metre\per\second})^2 + (\SI{7,93}{\metre\per\second})^2} = \SI{9,25}{\metre\per\second} = \SI{33,3}{\kilo\metre\per\hour} \text{.} \end{multiline}</m:annotation><m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mfenced close="|" open="|"><m:msub><m:mover><m:mi>v</m:mi><m:mo>→</m:mo></m:mover><m:mtext>sc</m:mtext></m:msub></m:mfenced><m:mo id="U7b3c549f-5d8c-48db-8d2f-ee2906f919ce-copy">=</m:mo><m:msqrt><m:msup><m:mfenced><m:mrow><m:mfrac><m:msub><m:mi>m</m:mi><m:mtext>s</m:mtext></m:msub><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>s</m:mtext></m:msub><m:mo>+</m:mo><m:msub><m:mi>m</m:mi><m:mtext>c</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:msub><m:mi>v</m:mi><m:mtext>s</m:mtext></m:msub></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mfenced><m:mrow><m:mfrac><m:msub><m:mi>m</m:mi><m:mtext>c</m:mtext></m:msub><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>s</m:mtext></m:msub><m:mo>+</m:mo><m:msub><m:mi>m</m:mi><m:mtext>c</m:mtext></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:msub><m:mi>v</m:mi><m:mtext>c</m:mtext></m:msub></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:msqrt><m:mo indenttarget="U7b3c549f-5d8c-48db-8d2f-ee2906f919ce" linebreak="newline" indentalign="id">=</m:mo><m:msqrt><m:msup><m:mfenced><m:mrow><m:mfrac><m:mrow><m:mn>1200</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow><m:mrow><m:mn>4200</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>16,67</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mfenced><m:mrow><m:mfrac><m:mrow><m:mn>3000</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow><m:mrow><m:mn>4200</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>11,1</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:msqrt><m:mo indenttarget="U7b3c549f-5d8c-48db-8d2f-ee2906f919ce" linebreak="newline" indentalign="id">=</m:mo><m:msqrt><m:msup><m:mfenced><m:mrow><m:mn>4,79</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mfenced><m:mrow><m:mn>7,93</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:msqrt><m:mo>=</m:mo><m:mrow><m:mn>9,25</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>33,3</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">km</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">h</m:mi></m:mrow></m:mrow><m:mtext>.</m:mtext></m:mrow></m:annotation-xml></m:semantics></m:math></equation><para id="fs-id1167133343784">Kąt wskazany na rysunku wynosi:</para>
+              <equation id="fs-id1167133316005" class="unnumbered">
+                <label/>
+                <m:math>
+                  <m:mi>θ</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mi>arctg</m:mi>
+                  <m:mo>⁡</m:mo>
+                  <m:mfrac>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mtext>scx</m:mtext>
+                    </m:msub>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mtext>scy</m:mtext>
+                    </m:msub>
+                  </m:mfrac>
+                  <m:mo>=</m:mo>
+                  <m:mi>artg</m:mi>
+                  <m:mo>⁡</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>7,93</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>4,79</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>=</m:mo>
+                  <m:msup>
+                    <m:mn>59</m:mn>
+                    <m:mo>∘</m:mo>
+                  </m:msup>
+                  <m:mo>.</m:mo>
+                </m:math>
+              </equation>
+              <para id="fs-id1167132586782">
+                <title>Znaczenie</title>W praktyce, aby określić prędkości pojazdów przed zderzeniem, policjanci lub ekipa dochodzeniowa czynności omówione we wcześniejszym przykładzie wykonują w odwrotnej kolejności: mierzą długość śladów hamowania na drodze (drogę hamowania) i korzystają z twierdzenia o równoważności pracy i energii oraz z zasady zachowania pędu.</para>
+              </example>
+              <note id="fs-id1167132362163" class="check-understanding">
+                <exercise id="fs-id1167133324899">
+                  <problem id="fs-id1167132289477">
+                    <para id="fs-id1167132376642">
+                      <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Załóżmy, że prędkości przed zderzeniem pojazdów nie są do siebie prostopadłe. Jak zmieniłoby to efekt fizyczny i matematyczną analizę zderzenia?</para>
+                    </problem>
+                    <solution id="fs-id1167133455456">
+                      <para id="fs-id1167133353150">Gdy prędkości początkowe nie są do siebie prostopadłe, zależy rozłożyć wektory na składowe, z użyciem funkcji trygonometrycznych kąta lub kątów podanych w zadaniu, bądź też – zamiast twierdzenia Pitagorasa – skorzystać z twierdzenia cosinusów. Analiza matematyczna byłaby więc nieco bardziej złożona, matematycznie wynik zawierałby zależność od kąta, natomiast skutek fizyczny zderzenia praktycznie by się nie zmienił – uszkodzenia pojazdów i być może pasażerów byłby niewątpliwe.</para>
+                    </solution>
+                  </exercise>
+                </note>
+                <example id="fs-id1167133717858">
+                  <para id="fs-id1167132377210">
+                    <title>Eksplozja butli nurkowej</title>Typowa butla nurkowa jest aluminiowym cylindrem o masie własnej ok. 14,4 kg (<link target-id="CNX_UPhysics_09_05_Scubatank"/>). Po napełnieniu jej sprężonym powietrzem ciśnienie wewnątrz butli wynosi 170–200 atm. Załóżmy, że w pewnym momencie taka spoczywająca butla eksploduje, rozrywając się na trzy fragmenty. Pierwszy z nich, o masie ok. 4,5 kg odlatuje w płaszczyźnie poziomej z prędkością 105 m/s, drugi – o masie 3,2 kg również odlatuje w płaszczyźnie poziomej z prędkością 77 m/s, pod kątem <m:math>
+                      <m:msup>
+                        <m:mn>19</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      </m:math> do kierunku ruchu pierwszego fragmentu. Jaką masę i prędkość początkową po wybuchu będzie miał trzeci fragment?</para>
+                      <figure id="CNX_UPhysics_09_05_Scubatank"><media id="fs-id1167132411485" alt="Rysunek butli nurkowej przed wybuchem oraz trzech fragmentów różnej wielkości, po wybuchu.">
+                          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_09_05_scubatank.jpg"/>
+                        </media>
+                        
+                      <caption>Butla nurkowa rozpadająca się w wyniku eksplozji na trzy fragmenty.</caption></figure><para id="fs-id1167133345636">
+                        <title>Strategia rozwiązania</title>Aby skorzystać z zasady zachowania pędu, niezbędne jest określenie układu zamkniętego. Jeśli weźmiemy pod uwagę samą butlę bezpośrednio po wybuchu, możemy pominąć wpływ siły grawitacji na butlę i jej fragmenty. Uznajemy zatem, że jest to układ zamknięty o początkowym pędzie równym zeru.</para>
+                        <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1167133555347">Ponieważ wiemy, że dwa fragmenty poruszają się w płaszczyźnie poziomej, zatem i trzeci fragment będzie poruszał się w tejże płaszczyźnie (w przeciwnym razie jakakolwiek pionowa składowa wektora pędu nie mogłaby zrównoważyć się, a wiemy, że na początku wszystkie składowe wynosiły zero). Zatem, patrząc „z góry” na odlatujące elementy wybieramy początek dwuwymiarowego układu współrzędnych <m:math>
+                          <m:mi>x</m:mi>
+                          <m:mi>y</m:mi>
+                        </m:math> w środku butli, zaś oś <m:math>
+                        <m:mi>x</m:mi>
+                        </m:math> w taki sposób, by była skierowana zgodnie z skierowaną zgodnie z prędkością pierwszego fragmentu. Zapisujemy równania wyrażające zasadę zachowania pędu dla obu składowych, aby otrzymać składowe nieznanego pędu trzeciego fragmentu, z których (przy zastosowaniu twierdzenia Pitagorasa) obliczymy jego wartość. Następnie, dzieląc wynik przez masę trzeciego fragmentu, otrzymamy prędkość tegoż fragmentu.</para><para id="fs-id1167133465356">
+                          <title>Rozwiązanie</title>Zacznijmy od wyliczenia masy trzeciego fragmentu butli:</para>
+                          <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167133415932" class="unnumbered"><m:math display="block"><m:semantics><m:mtable><m:mtr><m:mtd><m:msub><m:mi>m</m:mi><m:mn>3</m:mn></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>b</m:mtext></m:msub><m:mo>−</m:mo><m:mrow><m:mfenced><m:mrow><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>m</m:mi><m:mn>3</m:mn></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>14,4</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow><m:mo>−</m:mo><m:mfenced><m:mrow><m:mrow><m:mn>4,5</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mn>3,2</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow></m:mrow></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>6,7</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{align} m_3 &amp;= m_{\text{b}} - (m_1 + m_2) \text{,} \\ m_3 &amp;= \SI{14,4}{\kilo\gram} - (\SI{4,5}{\kilo\gram} + \SI{3,2}{\kilo\gram}) = \SI{6,7}{\kilo\gram} \text{.} \end{align}</m:annotation></m:semantics></m:math></equation><para id="fs-id1167132240665">Zapiszemy teraz zasadę zachowania pędu dla składowych <m:math>
+                            <m:mi>x</m:mi>
+                          </m:math> i <m:math>
+                          <m:mi>y</m:mi>
+                          </m:math>: </para>
+                          <media id="fs-id1167132583541" alt="Trzy fragmenty butli nurkowej pokazane w układzie współrzędnych xy. Fragment o średniej masie porusza się wzdłuż osi x i posiada pęd p1. Najmniejszy fragment posiada pęd p2 i porusza się po prostej o kącie nachylenia teta względem dodatniej półosi x. Największy fragment o pędzie p3 porusza się w lewo, nieznacznie w dół, pod kątem fi względem ujemnej półosi x.">
+                            <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_09_05_Ex2_img.jpg"/>
+                          </media>
+                          <para id="fs-id1167132202841">Kierunek osi <m:math>
+                            <m:mi>x</m:mi>
+                            </m:math>: </para>
+                            <equation id="fs-id1167133797100" class="unnumbered">
+                              <m:math>
+                                <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+                                  <m:mtr>
+                                    <m:mtd>
+                                      <m:msub>
+                                        <m:mi>p</m:mi>
+                                        <m:mrow>
+                                          <m:mi>x</m:mi>
+                                          <m:mtext>po</m:mtext>
+                                        </m:mrow>
+                                      </m:msub>
+                                    </m:mtd>
+                                    <m:mtd>
+                                      <m:mi/>
+                                      <m:mo>=</m:mo>
+                                      <m:msub>
+                                        <m:mi>p</m:mi>
+                                        <m:mrow>
+                                          <m:mi>x</m:mi>
+                                          <m:mtext>przed</m:mtext>
+                                        </m:mrow>
+                                      </m:msub>
+                                      <m:mo>,</m:mo>
+                                    </m:mtd>
+                                  </m:mtr>
+                                  <m:mtr>
+                                    <m:mtd>
+                                      <m:msub>
+                                        <m:mi>p</m:mi>
+                                        <m:mrow>
+                                          <m:mn>1</m:mn>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                      </m:msub>
+                                      <m:mo>+</m:mo>
+                                      <m:msub>
+                                        <m:mi>p</m:mi>
+                                        <m:mrow>
+                                          <m:mn>2</m:mn>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                      </m:msub>
+                                      <m:mo>+</m:mo>
+                                      <m:msub>
+                                        <m:mi>p</m:mi>
+                                        <m:mrow>
+                                          <m:mn>3</m:mn>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                      </m:msub>
+                                    </m:mtd>
+                                    <m:mtd>
+                                      <m:mi/>
+                                      <m:mo>=</m:mo>
+                                      <m:mn>0</m:mn>
+                                      <m:mo>,</m:mo>
+                                    </m:mtd>
+                                  </m:mtr>
+                                  <m:mtr>
+                                    <m:mtd>
+                                      <m:msub>
+                                        <m:mi>m</m:mi>
+                                        <m:mn>1</m:mn>
+                                      </m:msub>
+                                      <m:msub>
+                                        <m:mi>v</m:mi>
+                                        <m:mrow>
+                                          <m:mn>1</m:mn>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                      </m:msub>
+                                      <m:mo>+</m:mo>
+                                      <m:msub>
+                                        <m:mi>m</m:mi>
+                                        <m:mn>2</m:mn>
+                                      </m:msub>
+                                      <m:msub>
+                                        <m:mi>v</m:mi>
+                                        <m:mrow>
+                                          <m:mn>2</m:mn>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                      </m:msub>
+                                      <m:mo>+</m:mo>
+                                      <m:msub>
+                                        <m:mi>p</m:mi>
+                                        <m:mrow>
+                                          <m:mn>3</m:mn>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                      </m:msub>
+                                    </m:mtd>
+                                    <m:mtd>
+                                      <m:mi/>
+                                      <m:mo>=</m:mo>
+                                      <m:mn>0</m:mn>
+                                      <m:mo>,</m:mo>
+                                    </m:mtd>
+                                  </m:mtr>
+                                  <m:mtr>
+                                    <m:mtd>
+                                      <m:msub>
+                                        <m:mi>p</m:mi>
+                                        <m:mrow>
+                                          <m:mn>3</m:mn>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                      </m:msub>
+                                    </m:mtd>
+                                    <m:mtd>
+                                      <m:mi/>
+                                      <m:mo>=</m:mo>
+                                      <m:mo>−</m:mo>
+                                      <m:msub>
+                                        <m:mi>m</m:mi>
+                                        <m:mn>1</m:mn>
+                                      </m:msub>
+                                      <m:msub>
+                                        <m:mi>v</m:mi>
+                                        <m:mrow>
+                                          <m:mn>1</m:mn>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                      </m:msub>
+                                      <m:mo>−</m:mo>
+                                      <m:msub>
+                                        <m:mi>m</m:mi>
+                                        <m:mn>2</m:mn>
+                                      </m:msub>
+                                      <m:msub>
+                                        <m:mi>v</m:mi>
+                                        <m:mrow>
+                                          <m:mn>2</m:mn>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                      </m:msub>
+                                      <m:mo>.</m:mo>
+                                    </m:mtd>
+                                  </m:mtr>
+                                </m:mtable>
+                              </m:math>
+                            </equation>
+                            <para id="fs-id1167133775365">Kierunek osi <m:math>
+                              <m:mi>y</m:mi>
+                              </m:math>: </para>
+                              <equation id="fs-id1167133651369" class="unnumbered">
+                                <m:math>
+                                  <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+                                    <m:mtr>
+                                      <m:mtd>
+                                        <m:msub>
+                                          <m:mi>p</m:mi>
+                                          <m:mrow>
+                                            <m:mi>y</m:mi>
+                                            <m:mtext>po</m:mtext>
+                                          </m:mrow>
+                                        </m:msub>
+                                      </m:mtd>
+                                      <m:mtd>
+                                        <m:mi/>
+                                        <m:mo>=</m:mo>
+                                        <m:msub>
+                                          <m:mi>p</m:mi>
+                                          <m:mrow>
+                                            <m:mi>y</m:mi>
+                                            <m:mtext>przed</m:mtext>
+                                          </m:mrow>
+                                        </m:msub>
+                                        <m:mo>,</m:mo>
+                                      </m:mtd>
+                                    </m:mtr>
+                                    <m:mtr>
+                                      <m:mtd>
+                                        <m:msub>
+                                          <m:mi>p</m:mi>
+                                          <m:mrow>
+                                            <m:mn>1</m:mn>
+                                            <m:mi>y</m:mi>
+                                          </m:mrow>
+                                        </m:msub>
+                                        <m:mo>+</m:mo>
+                                        <m:msub>
+                                          <m:mi>p</m:mi>
+                                          <m:mrow>
+                                            <m:mn>2</m:mn>
+                                            <m:mi>y</m:mi>
+                                          </m:mrow>
+                                        </m:msub>
+                                        <m:mo>+</m:mo>
+                                        <m:msub>
+                                          <m:mi>p</m:mi>
+                                          <m:mrow>
+                                            <m:mn>3</m:mn>
+                                            <m:mi>y</m:mi>
+                                          </m:mrow>
+                                        </m:msub>
+                                      </m:mtd>
+                                      <m:mtd>
+                                        <m:mi/>
+                                        <m:mo>=</m:mo>
+                                        <m:mn>0</m:mn>
+                                        <m:mo>,</m:mo>
+                                      </m:mtd>
+                                    </m:mtr>
+                                    <m:mtr>
+                                      <m:mtd>
+                                        <m:msub>
+                                          <m:mi>m</m:mi>
+                                          <m:mn>1</m:mn>
+                                        </m:msub>
+                                        <m:msub>
+                                          <m:mi>v</m:mi>
+                                          <m:mrow>
+                                            <m:mn>1</m:mn>
+                                            <m:mi>y</m:mi>
+                                          </m:mrow>
+                                        </m:msub>
+                                        <m:mo>+</m:mo>
+                                        <m:msub>
+                                          <m:mi>m</m:mi>
+                                          <m:mn>2</m:mn>
+                                        </m:msub>
+                                        <m:msub>
+                                          <m:mi>v</m:mi>
+                                          <m:mrow>
+                                            <m:mn>2</m:mn>
+                                            <m:mi>y</m:mi>
+                                          </m:mrow>
+                                        </m:msub>
+                                        <m:mo>+</m:mo>
+                                        <m:msub>
+                                          <m:mi>p</m:mi>
+                                          <m:mrow>
+                                            <m:mn>3</m:mn>
+                                            <m:mi>y</m:mi>
+                                          </m:mrow>
+                                        </m:msub>
+                                      </m:mtd>
+                                      <m:mtd>
+                                        <m:mi/>
+                                        <m:mo>=</m:mo>
+                                        <m:mn>0</m:mn>
+                                        <m:mo>,</m:mo>
+                                      </m:mtd>
+                                    </m:mtr>
+                                    <m:mtr>
+                                      <m:mtd>
+                                        <m:msub>
+                                          <m:mi>p</m:mi>
+                                          <m:mrow>
+                                            <m:mn>3</m:mn>
+                                            <m:mi>y</m:mi>
+                                          </m:mrow>
+                                        </m:msub>
+                                      </m:mtd>
+                                      <m:mtd>
+                                        <m:mi/>
+                                        <m:mo>=</m:mo>
+                                        <m:mo>−</m:mo>
+                                        <m:msub>
+                                          <m:mi>m</m:mi>
+                                          <m:mn>1</m:mn>
+                                        </m:msub>
+                                        <m:msub>
+                                          <m:mi>v</m:mi>
+                                          <m:mrow>
+                                            <m:mn>1</m:mn>
+                                            <m:mi>y</m:mi>
+                                          </m:mrow>
+                                        </m:msub>
+                                        <m:mo>−</m:mo>
+                                        <m:msub>
+                                          <m:mi>m</m:mi>
+                                          <m:mn>2</m:mn>
+                                        </m:msub>
+                                        <m:msub>
+                                          <m:mi>v</m:mi>
+                                          <m:mrow>
+                                            <m:mn>2</m:mn>
+                                            <m:mi>y</m:mi>
+                                          </m:mrow>
+                                        </m:msub>
+                                        <m:mo>.</m:mo>
+                                      </m:mtd>
+                                    </m:mtr>
+                                  </m:mtable>
+                                </m:math>
+                              </equation>
+                              <para id="fs-id1167133325102">Korzystając z funkcji trygonometrycznych kąta <m:math>
+                                <m:mstyle displaystyle="true" scriptlevel="0">
+                                  <m:mrow>
+                                    <m:mi>θ</m:mi>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:math> obliczamy składową <m:math>
+                              <m:mi>x</m:mi>
+                              </m:math>: </para>
+                              <equation id="fs-id1167132277693" class="unnumbered"><label/>
+                                <m:math>
+                                  <m:msub>
+                                    <m:mi>p</m:mi>
+                                    <m:mrow>
+                                      <m:mn>3</m:mn>
+                                      <m:mi>x</m:mi>
+                                    </m:mrow>
+                                  </m:msub>
+                                  <m:mo>=</m:mo>
+                                  <m:mo>−</m:mo>
+                                  <m:msub>
+                                    <m:mi>m</m:mi>
+                                    <m:mn>1</m:mn>
+                                  </m:msub>
+                                  <m:msub>
+                                    <m:mi>v</m:mi>
+                                    <m:mn>1</m:mn>
+                                  </m:msub>
+                                  <m:mo>−</m:mo>
+                                  <m:msub>
+                                    <m:mi>m</m:mi>
+                                    <m:mn>2</m:mn>
+                                  </m:msub>
+                                  <m:msub>
+                                    <m:mi>v</m:mi>
+                                    <m:mn>2</m:mn>
+                                  </m:msub>
+                                  <m:mi>cos</m:mi>
+                                  <m:mo>⁡</m:mo>
+                                  <m:mi>θ</m:mi>
+                                  <m:mo>=</m:mo>
+<m:mo>−</m:mo>
+                                  <m:mn>4,5</m:mn>
+                                  <m:mspace width="0.2em"/>
+                                  <m:mrow>
+                                    <m:mi mathvariant="normal">k</m:mi>
+                                    <m:mi mathvariant="normal">g</m:mi>
+                                  </m:mrow>
+                                  <m:mo>⋅</m:mo>
+                                  <m:mn>105</m:mn>
+                                  <m:mspace width="0.2em"/>
+                                  <m:mrow>
+                                    <m:mi mathvariant="normal">m</m:mi>
+                                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                    <m:mi mathvariant="normal">s</m:mi>
+                                  </m:mrow>
+                                  <m:mo>−</m:mo>
+                                  <m:mn>3,2</m:mn>
+                                  <m:mspace width="0.2em"/>
+                                  <m:mrow>
+                                    <m:mi mathvariant="normal">k</m:mi>
+                                    <m:mi mathvariant="normal">g</m:mi>
+                                  </m:mrow>
+                                  <m:mo>⋅</m:mo>
+                                  <m:mn>77</m:mn>
+                                  <m:mspace width="0.2em"/>
+                                  <m:mrow>
+                                    <m:mi mathvariant="normal">m</m:mi>
+                                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                    <m:mi mathvariant="normal">s</m:mi>
+                                  </m:mrow>
+                                  <m:mo>⋅</m:mo>
+                                  <m:mi>cos</m:mi>
+                                  <m:mo>⁡</m:mo>
+                                  <m:msup>
+                                    <m:mn>19</m:mn>
+                                    <m:mo>∘</m:mo>
+                                  </m:msup>
+                                  <m:mo>=</m:mo>
+                                  <m:mo>−</m:mo>
+                                  <m:mn>705</m:mn>
+                                  <m:mspace width="0.2em"/>
+                                  <m:mrow>
+                                    <m:mi mathvariant="normal">k</m:mi>
+                                    <m:mi mathvariant="normal">g</m:mi>
+                                    <m:mo>⋅</m:mo>
+                                    <m:mi mathvariant="normal">m</m:mi>
+                                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                    <m:mi mathvariant="normal">s</m:mi>
+                                  </m:mrow>
+                                  <m:mo>.</m:mo>
+                                </m:math>
+                              </equation><para id="fs-id1167133711894">Następnie wyznaczamy składową <m:math>
+                                <m:mi>y</m:mi>
+                                </m:math>: </para>
+                                <equation id="fs-id1167133550320" class="unnumbered">
+                                  <label/>
+                                  <m:math>
+                                    <m:msub>
+                                      <m:mi>p</m:mi>
+                                      <m:mrow>
+                                        <m:mn>3</m:mn>
+                                        <m:mi>y</m:mi>
+                                      </m:mrow>
+                                    </m:msub>
+                                    <m:mo>=</m:mo>
+                                    <m:mn>0</m:mn>
+                                    <m:mo>−</m:mo>
+                                    <m:msub>
+                                      <m:mi>m</m:mi>
+                                      <m:mn>2</m:mn>
+                                    </m:msub>
+                                    <m:msub>
+                                      <m:mi>v</m:mi>
+                                      <m:mn>2</m:mn>
+                                    </m:msub>
+                                    <m:mi>sin</m:mi>
+                                    <m:mo>⁡</m:mo>
+                                    <m:mi>θ</m:mi>
+                                    <m:mo>=</m:mo>
+                                    <m:mo>−</m:mo>
+                                    <m:mn>3,2</m:mn>
+                                    <m:mspace width="0.2em"/>
+                                    <m:mrow>
+                                      <m:mi mathvariant="normal">k</m:mi>
+                                      <m:mi mathvariant="normal">g</m:mi>
+                                    </m:mrow>
+                                    <m:mo>⋅</m:mo>
+                                    <m:mn>77</m:mn>
+                                    <m:mspace width="0.2em"/>
+                                    <m:mrow>
+                                      <m:mi mathvariant="normal">m</m:mi>
+                                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                      <m:mi mathvariant="normal">s</m:mi>
+                                    </m:mrow>
+                                    <m:mo>⋅</m:mo>
+                                    <m:mi>sin</m:mi>
+                                    <m:mo>⁡</m:mo>
+                                    <m:msup>
+                                      <m:mn>19</m:mn>
+                                      <m:mo>∘</m:mo>
+                                    </m:msup>
+                                    <m:mo>=</m:mo>
+                                    <m:mo>−</m:mo>
+                                    <m:mn>80</m:mn>
+                                    <m:mspace width="0.2em"/>
+                                    <m:mrow>
+                                      <m:mi mathvariant="normal">k</m:mi>
+                                      <m:mi mathvariant="normal">g</m:mi>
+                                      <m:mo>⋅</m:mo>
+                                      <m:mi mathvariant="normal">m</m:mi>
+                                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                      <m:mi mathvariant="normal">s</m:mi>
+                                    </m:mrow>
+                                    <m:mo>.</m:mo>
+                                  </m:math>
+                                </equation>
+                                <para id="fs-id1167132275472">Z obu składowych wyznaczamy wartość pędu:</para>
+                                <equation id="fs-id1167133334749" class="unnumbered"><m:math>
+                                    <m:mrow>
+                                      <m:mo>|</m:mo>
+                                      <m:msub>
+                                        <m:mrow>
+                                          <m:mover>
+                                            <m:mi>p</m:mi>
+                                            <m:mtext>→</m:mtext>
+                                          </m:mover>
+                                        </m:mrow>
+                                        <m:mn>3</m:mn>
+                                      </m:msub>
+                                      <m:mo>|</m:mo>
+                                    </m:mrow>
+                                    <m:mo>=</m:mo>
+                                    <m:msqrt>
+                                      <m:msubsup>
+                                        <m:mi>p</m:mi>
+                                        <m:mrow>
+                                          <m:mn>3</m:mn>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                        <m:mn>2</m:mn>
+                                      </m:msubsup>
+                                      <m:mo>+</m:mo>
+                                      <m:msubsup>
+                                        <m:mi>p</m:mi>
+                                        <m:mrow>
+                                          <m:mn>3</m:mn>
+                                          <m:mi>y</m:mi>
+                                        </m:mrow>
+                                        <m:mn>2</m:mn>
+                                      </m:msubsup>
+                                    </m:msqrt>
+                                    <m:mo>=</m:mo>
+                                    <m:msqrt>
+                                      <m:msup>
+                                        <m:mrow>
+                                          <m:mo>(</m:mo>
+                                          <m:mrow>
+                                            <m:mo>−</m:mo>
+                                            <m:mn>705</m:mn>
+                                            <m:mspace width="0.2em"/>
+                                            <m:mrow>
+                                              <m:mi mathvariant="normal">k</m:mi>
+                                              <m:mi mathvariant="normal">g</m:mi>
+                                              <m:mo>⋅</m:mo>
+                                              <m:mi mathvariant="normal">m</m:mi>
+                                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                              <m:mi mathvariant="normal">s</m:mi>
+                                            </m:mrow>
+                                          </m:mrow>
+                                          <m:mo>)</m:mo>
+                                        </m:mrow>
+                                        <m:mn>2</m:mn>
+                                      </m:msup>
+                                      <m:mo>+</m:mo>
+                                      <m:msup>
+                                        <m:mrow>
+                                          <m:mo>(</m:mo>
+                                          <m:mrow>
+                                            <m:mo>−</m:mo>
+                                            <m:mn>80</m:mn>
+                                            <m:mspace width="0.2em"/>
+                                            <m:mrow>
+                                              <m:mi mathvariant="normal">k</m:mi>
+                                              <m:mi mathvariant="normal">g</m:mi>
+                                              <m:mo>⋅</m:mo>
+                                              <m:mi mathvariant="normal">m</m:mi>
+                                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                              <m:mi mathvariant="normal">s</m:mi>
+                                            </m:mrow>
+                                          </m:mrow>
+                                          <m:mo>)</m:mo>
+                                        </m:mrow>
+                                        <m:mn>2</m:mn>
+                                      </m:msup>
+                                    </m:msqrt>
+                                    <m:mo>=</m:mo>
+                                    <m:mn>710</m:mn>
+                                    <m:mspace width="0.2em"/>
+                                    <m:mrow>
+                                      <m:mi mathvariant="normal">k</m:mi>
+                                      <m:mi mathvariant="normal">g</m:mi>
+                                      <m:mo>⋅</m:mo>
+                                      <m:mi mathvariant="normal">m</m:mi>
+                                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                      <m:mi mathvariant="normal">s</m:mi>
+                                    </m:mrow>
+                                    <m:mo>.</m:mo>
+                                  </m:math>
+                                </equation><para id="fs-id1167132332288">Prędkość trzeciego fragmentu butli wynosi więc:</para>
+                                <equation id="fs-id1167133871993" class="unnumbered">
+                                  <label/>
+                                  <m:math>
+                                    <m:msub>
+                                      <m:mi>v</m:mi>
+                                      <m:mn>3</m:mn>
+                                    </m:msub>
+                                    <m:mo>=</m:mo>
+                                    <m:mfrac>
+                                      <m:msub>
+                                        <m:mi>p</m:mi>
+                                        <m:mn>3</m:mn>
+                                      </m:msub>
+                                      <m:msub>
+                                        <m:mi>m</m:mi>
+                                        <m:mn>3</m:mn>
+                                      </m:msub>
+                                    </m:mfrac>
+                                    <m:mo>=</m:mo>
+                                    <m:mfrac>
+                                      <m:mrow>
+                                        <m:mn>710</m:mn>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">k</m:mi>
+                                          <m:mi mathvariant="normal">g</m:mi>
+                                          <m:mo>⋅</m:mo>
+                                          <m:mi mathvariant="normal">m</m:mi>
+                                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                          <m:mi mathvariant="normal">s</m:mi>
+                                        </m:mrow>
+                                      </m:mrow>
+                                      <m:mrow>
+                                        <m:mn>6,7</m:mn>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">k</m:mi>
+                                          <m:mi mathvariant="normal">g</m:mi>
+                                        </m:mrow>
+                                      </m:mrow>
+                                    </m:mfrac>
+                                    <m:mo>=</m:mo>
+                                    <m:mn>106</m:mn>
+                                    <m:mspace width="0.2em"/>
+                                    <m:mrow>
+                                      <m:mi mathvariant="normal">m</m:mi>
+                                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                      <m:mi mathvariant="normal">s</m:mi>
+                                    </m:mrow>
+                                    <m:mo>.</m:mo>
+                                  </m:math>
+                                </equation>
+                                <para id="fs-id1167133571752">Kierunek tej prędkości jest taki, jak kierunek wektora pędu:</para>
+                                <equation id="fs-id1167133317808" class="unnumbered"><m:math>
+                                    <m:mi>ϕ</m:mi>
+                                    <m:mo>=</m:mo>
+                                    <m:mi>arctg</m:mi>
+                                    <m:mo>⁡</m:mo>
+                                    <m:mfrac>
+                                      <m:msub>
+                                        <m:mi>p</m:mi>
+                                        <m:mrow>
+                                          <m:mn>3</m:mn>
+                                          <m:mi>y</m:mi>
+                                        </m:mrow>
+                                      </m:msub>
+                                      <m:msub>
+                                        <m:mi>p</m:mi>
+                                        <m:mrow>
+                                          <m:mn>3</m:mn>
+                                          <m:mi>x</m:mi>
+                                        </m:mrow>
+                                      </m:msub>
+                                    </m:mfrac>
+                                    <m:mo>=</m:mo>
+                                    <m:mi>arctg</m:mi>
+                                    <m:mo>⁡</m:mo>
+                                    <m:mrow>
+                                      <m:mo>(</m:mo>
+                                      <m:mfrac>
+                                        <m:mrow>
+                                          <m:mo>−</m:mo>
+                                          <m:mn>80</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mrow>
+                                            <m:mi mathvariant="normal">k</m:mi>
+                                            <m:mi mathvariant="normal">g</m:mi>
+                                            <m:mo>⋅</m:mo>
+                                            <m:mi mathvariant="normal">m</m:mi>
+                                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                            <m:mi mathvariant="normal">s</m:mi>
+                                          </m:mrow>
+                                        </m:mrow>
+                                        <m:mrow>
+                                          <m:mo>−</m:mo>
+                                          <m:mn>705</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mrow>
+                                            <m:mi mathvariant="normal">k</m:mi>
+                                            <m:mi mathvariant="normal">g</m:mi>
+                                            <m:mo>⋅</m:mo>
+                                            <m:mi mathvariant="normal">m</m:mi>
+                                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                            <m:mi mathvariant="normal">s</m:mi>
+                                          </m:mrow>
+                                        </m:mrow>
+                                      </m:mfrac>
+                                      <m:mo>)</m:mo>
+                                    </m:mrow>
+                                    <m:mo>=</m:mo>
+<m:msup>
+                                    <m:mn>6,5</m:mn>
+                                      <m:mo>∘</m:mo>
+                                    </m:msup>
+                                    <m:mo>.</m:mo>
+                                  </m:math>
+                                </equation><para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1167132499632">Ponieważ kąt <m:math>
+                                  <m:mi>ϕ</m:mi>
+                                </m:math> mierzony jest od ujemnej półosi <m:math>
+                                <m:mrow>
+                                  <m:mi>x</m:mi>
+                                </m:mrow>
+                              </m:math> jego właściwa wartość to <m:math>
+                              <m:msup>
+                                <m:mn>186,5</m:mn>
+                                <m:mo>∘</m:mo>
+                              </m:msup>
+                            </m:math> względem kierunku <m:math>
+                            <m:mo>+</m:mo>
+                            <m:mi>x</m:mi>
+                            </m:math>.</para><para id="fs-id1167132423196"><title>Znaczenie</title>Ogromne wartości prędkości są typowe i odzwierciedlają siłę wybuchu sprężonego gazu. Rozpędzone fragmenty mogą z łatwością przebić ścianę, spowodować poważne obrażenia, a nawet śmierć. Na szczęście statystyki pokazują, że tego typu zdarzenia występują niezwykle rzadko.</para></example>
+                            <note id="fs-id1167133356778" class="check-understanding">
+                              <exercise id="fs-id1167132239513">
+                                <problem id="fs-id1167133781303">
+                                  <para id="fs-id1167133794935"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Zauważ, że masa samego powietrza sprężonego w butli została w powyższej analizie pominięta. Jak zmieniłaby się metoda rozwiązania zadania, gdyby uwzględnić masę powietrza? Jak bardzo wpłynęłoby to na wynik liczbowy?</para></problem>
+                                  <solution id="fs-id1167133523735">
+                                    <para id="fs-id1167133811322">Obliczmy masę sprężonego powietrza. Objętość butli to ok. 11 litrów. Traktując powietrze jako gaz doskonały, liczbę moli gazu w butli wyliczymy jako:</para>
+                                    <equation id="my-id1167133317808" class="unnumbered">
+                                      <m:math>
+                                        <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+                                          <m:mtr>
+                                            <m:mtd>
+                                              <m:mi>P</m:mi>
+                                              <m:mi>V</m:mi>
+                                            </m:mtd>
+                                            <m:mtd>
+                                              <m:mi/>
+                                              <m:mo>=</m:mo>
+                                              <m:mi>n</m:mi>
+                                              <m:mi>R</m:mi>
+                                              <m:mi>T</m:mi>
+                                              <m:mo>,</m:mo>
+                                            </m:mtd>
+                                          </m:mtr>
+                                          <m:mtr>
+                                            <m:mtd>
+                                              <m:mi>n</m:mi>
+                                            </m:mtd>
+                                            <m:mtd>
+                                              <m:mi/>
+                                              <m:mo>=</m:mo>
+                                              <m:mfrac>
+                                                <m:mrow>
+                                                  <m:mi>P</m:mi>
+                                                  <m:mi>V</m:mi>
+                                                </m:mrow>
+                                                <m:mrow>
+                                                  <m:mi>R</m:mi>
+                                                  <m:mi>T</m:mi>
+                                                </m:mrow>
+                                              </m:mfrac>
+                                              <m:mo>=</m:mo>
+                                              <m:mfrac>
+                                                <m:mrow>
+                                                  <m:mn>170</m:mn>
+                                                  <m:mspace width="0.2em"/>
+                                                  <m:mrow>
+                                                    <m:mi mathvariant="normal">a</m:mi>
+                                                    <m:mi mathvariant="normal">t</m:mi>
+                                                    <m:mi mathvariant="normal">m</m:mi>
+                                                  </m:mrow>
+                                                  <m:mo>⋅</m:mo>
+                                                  <m:mn>0,011</m:mn>
+                                                  <m:mspace width="0.2em"/>
+                                                  <m:mrow>
+                                                    <m:msup>
+                                                      <m:mi mathvariant="normal">m</m:mi>
+                                                      <m:mn>3</m:mn>
+                                                    </m:msup>
+                                                  </m:mrow>
+                                                </m:mrow>
+                                                <m:mrow>
+                                                  <m:mn>8,31</m:mn>
+                                                  <m:mspace width="0.2em"/>
+                                                  <m:mrow>
+                                                    <m:mi mathvariant="normal">J</m:mi>
+                                                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                                    <m:mrow>
+                                                      <m:mo>(</m:mo>
+                                                      <m:mrow>
+                                                        <m:mi mathvariant="normal">m</m:mi>
+                                                        <m:mi mathvariant="normal">o</m:mi>
+                                                        <m:mi mathvariant="normal">l</m:mi>
+                                                        <m:mo>⋅</m:mo>
+                                                        <m:mi mathvariant="normal">K</m:mi>
+                                                      </m:mrow>
+                                                      <m:mo>)</m:mo>
+                                                    </m:mrow>
+                                                  </m:mrow>
+                                                  <m:mo>⋅</m:mo>
+                                                  <m:mn>300</m:mn>
+                                                  <m:mspace width="0.2em"/>
+                                                  <m:mrow>
+                                                    <m:mi mathvariant="normal">K</m:mi>
+                                                  </m:mrow>
+                                                </m:mrow>
+                                              </m:mfrac>
+                                              <m:mo>⋅</m:mo>
+                                              <m:mn>101325</m:mn>
+                                              <m:mspace width="0.2em"/>
+                                              <m:mrow>
+                                                <m:mi mathvariant="normal">P</m:mi>
+                                                <m:mi mathvariant="normal">a</m:mi>
+                                                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                                <m:mi mathvariant="normal">a</m:mi>
+                                                <m:mi mathvariant="normal">t</m:mi>
+                                                <m:mi mathvariant="normal">m</m:mi>
+                                              </m:mrow>
+                                              <m:mo>=</m:mo>
+                                              <m:mn>75,9</m:mn>
+                                              <m:mspace width="0.2em"/>
+                                              <m:mrow>
+                                                <m:mi mathvariant="normal">m</m:mi>
+                                                <m:mi mathvariant="normal">o</m:mi>
+                                                <m:mi mathvariant="normal">l</m:mi>
+                                              </m:mrow>
+                                              <m:mo>.</m:mo>
+                                            </m:mtd>
+                                          </m:mtr>
+                                        </m:mtable>
+                                      </m:math>
+                                    </equation>
+                                    <para id="my-id1167133811322">Średnia masa molekularna powietrza wynosi 29 g/mol, więc masa powietrza zawartego w butli wynosi około 2,2 kg. Stanowi to w przybliżeniu 15% masy butli, więc można ją uznać za zaniedbywalną. Ponadto, początkową siłę działającą na każdy fragment można uznać za proporcjonalną do powierzchni fragmentów, która z kolei jest proporcjonalna do masy każdego z nich (zakładamy stałą grubość ścianki butli). Zatem, gdyby dokładnie uwzględnić masę powietrza – początkowe przyspieszenia każdego z fragmentów zmieniłyby się bardzo niewiele.</para>
+                                  </solution>
+                                </exercise>
+                              </note>
+                              <section id="fs-id1167133617973" class="key-concepts">
+                                <title>Podsumowanie</title>
+                                <list id="fs-id1167133456947" list-type="bulleted" bullet-style="bullet">
+                                  <item>Do przeprowadzenia analizy zderzeń w dwóch wymiarach należy odpowiednio obrać układ współrzędnych i przedstawić ruch ciał za pomocą składowych wzdłuż obranych osi tegoż układu.</item>
+                                  <item>Jeżeli pęd jest zachowany, to zachowany jest wzdłuż każdej osi, równocześnie i niezależnie.</item>
+                                  <item>Twierdzenie Pitagorasa umożliwia wyznaczenie wartości wektora pędu dla każdej osi z jego składowych, wyznaczonych na podstawie zasady zachowania pędu.</item>
+                                </list>
+                              </section>
+                              <section id="fs-id1167132607850" class="review-conceptual-questions">
+                                <title>Pytania</title>
+                                <exercise id="fs-id1167132302338">
+                                  <problem id="fs-id1167133334235">
+                                    <para id="fs-id1167133334237">Pęd jest zachowany wzdłuż jednego kierunku, ale nie jest zachowany dla innego. Co możesz powiedzieć o kącie między tymi kierunkami? Podaj przykład.</para>
+                                  </problem>
+                                  <solution id="fs-id1167132326318">
+                                    <para id="fs-id1167132326321">Kąt między tymi kierunkami musi wynosić 90°. Przykładem jest każdy układ, w którym siły zewnętrzne dla jednego kierunku znoszą się, a dla innego nie.</para>
+                                  </solution>
+                                </exercise>
+                              </section>
+                              <section id="fs-id1167133550547" class="review-problems">
+                                <title>Zadania</title>
+                                <exercise xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167132503069"><problem id="fs-id1167132477036">
+                                    <para id="fs-id1167132477038">Jastrząb o masie 1,80 kg nurkuje w powietrzu pod kątem <m:math>
+                                      <m:msup>
+                                        <m:mn>35</m:mn>
+                                        <m:mo>∘</m:mo>
+                                      </m:msup>
+                                      </m:math> do poziomu w kierunku lecącego poziomo gołębia o masie 0,65 kg i chwyta go w locie. Jaka będzie wartość i kierunek ich wspólnej prędkości, jeżeli prędkość gołębia wynosiła 7 m/s, a prędkość jastrzębia 28 m/s? Źródło ilustracji: “hawk”: zmodyfikowano przez: “USFWS Mountain-Prairie”/Flickr; Źródło:“dove”: zmodyfikowano przez: Jacob Spinks.</para>
+                                      <figure id="CNX_UPhysics_09_05_hawk_dove" class="unnumbered"><media id="fs-id1167133826890" alt="Na rysunku pokazano jastrzębia lecącego w kierunku gołębia. Prędkość lotu jastrzębia w prawo i w dół, tworzy kąt 350 z poziomem i opisana jest jako: wektor v1 i = 28m/s v1 i z daszkiem. Gołąb porusza się w prawo z prędkością: wektor v2 i = 7m/s i z daszkiem.">
+                                          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_09_05_hawk_dove_img.jpg"/>
+                                        </media>
+                                        
+                                      </figure>
+                                    </problem>
+                                    <solution id="fs-id1167132511547">
+                                      <para id="fs-id1167132511549">22,1 m/s, pod kątem <m:math>
+                                        <m:mn>32</m:mn>
+                                        <m:mo>,</m:mo>
+                                        <m:msup>
+                                          <m:mn>2</m:mn>
+                                          <m:mo>∘</m:mo>
+                                        </m:msup>
+                                      </m:math> zgodnie z ruchem wskazówek zegara od osi <m:math>
+                                      <m:mo>+</m:mo>
+                                      <m:mi>x</m:mi>
+                                      </m:math>. </para>
+                                    </solution>
+                                  </exercise><exercise id="fs-id1167133829421">
+                                    <problem id="fs-id1167132221948">
+                                      <para id="fs-id1167132221950">Kula bilardowa oznaczona numerem 1, poruszająca się w kierunku poziomym uderza w kulę o takiej samej masie, oznaczoną numerem 2, pozostającą w stanie spoczynku. Prędkość kuli 1 przed zderzeniem wynosi 3,00 m/s, a po zderzeniu 0,50 m/s i skierowana jest pod kątem 50° względem pierwotnego kierunku ruchu. Przyjmując, że każda z kul ma masę równą 300 g, ustal jaka będzie prędkość kuli 2 po zderzeniu.</para>
+                                    </problem>
+                                  </exercise>
+                                  <exercise id="fs-id1167132418514">
+                                    <problem id="fs-id1167132418516">
+                                      <para id="fs-id1167133822108">Pocisk o masie 2 kg wystrzelono w powietrze pod kątem <m:math>
+                                        <m:msup>
+                                          <m:mn>40</m:mn>
+                                          <m:mo>∘</m:mo>
+                                        </m:msup>
+                                        </m:math> do poziomu z prędkością 50 m/s. W najwyższym punkcie lotu pocisk rozrywa się na trzy części o masach 1 kg, 0,7 kg i 0,3 kg. Odłamek o masie 1 kg bezpośrednio po rozpadzie spada pionowo w dół z prędkością 10 m/s, fragment o masie 0,7 kg kontynuuje lot poziomy, natomiast fragment o masie 0,3 kg odskakuje w górę.</para><media id="fs-id1167132467095" alt="Wystrzelony pocisk posiada prędkość v0 = 50 m/s skierowaną pod kątem 400 do poziomu. W najwyższym punkcie lotu pocisk skierowany jest w prawo i jego prędkość wynosi v0x „i” z daszkiem. Na skutek wybuchu pocisk rozpada się na 3 fragmenty. Fragment M1 = 1kg ma prędkość minus 10m/s „j” z daszkiem, skierowaną pionowo w dół. Fragment M2 = 0,7kg ma prędkość v2 „i” z daszkiem, skierowaną poziomo w prawo. Fragment M3 = 0,3kg posiada prędkość v3 „j” z daszkiem skierowaną pionowo w górę.">
+                                          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_09_05_Proj_img.jpg"/>
+                                        </media>
+                                        <list id="fs-id1167133858635" list-type="enumerated" number-style="lower-alpha">
+                                          <item>Wyznacz prędkości odłamków o masach 0,3 kg i 0,7 kg bezpośrednio po rozpadzie.</item>
+                                          <item>Jak wysoko od miejsca rozpadu doleci najlżejszy odłamek?</item>
+                                          <item>Jak daleko od miejsca wystrzału doleci odłamek o masie 0,7 kg?</item>
+                                        </list>
+                                      </problem>
+                                      <solution id="fs-id1167133447167">
+                                        <list id="fs-id1167133447170" list-type="enumerated" number-style="lower-alpha">
+                                          <item>33 m/s i 110 m/s; </item>
+                                          <item>57 m; </item>
+                                          <item>480 m</item>
+                                        </list>
+                                      </solution>
+                                    </exercise>
+                                    <exercise id="fs-id1167133639173">
+                                      <problem id="fs-id1167133847033">
+                                        <para id="fs-id1167133847035">Dwie asteroidy zderzają się i spajają na skutek zderzenia. Pierwsza miała masę 15 ton i prędkość 770 m/s, a druga – 20 ton i 1020 m/s. Kierunki ich prędkości tworzyły kąt 20°. Jaka będzie ich wspólna prędkość po zderzeniu względem prędkości początkowej pierwszej asteroidy?</para></problem>
+                                    </exercise>
+                                    <exercise id="fs-id1167133871112">
+                                      <problem id="fs-id1167133871114">
+                                        <para id="fs-id1167132222376">Rakieta kosmiczna o masie 200 kg leci z prędkością <m:math>
+                                          <m:mn>121</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mrow>
+                                            <m:mi mathvariant="normal">m</m:mi>
+                                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                            <m:mi mathvariant="normal">s</m:mi>
+                                          </m:mrow>
+                                          <m:mo>⋅</m:mo>
+                                          <m:mrow>
+                                            <m:mover>
+                                              <m:mi>i</m:mi>
+                                              <m:mo stretchy="false">^</m:mo>
+                                            </m:mover>
+                                          </m:mrow>
+                                          <m:mo>+</m:mo>
+                                          <m:mn>38,0</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mrow>
+                                            <m:mi mathvariant="normal">m</m:mi>
+                                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                            <m:mi mathvariant="normal">s</m:mi>
+                                          </m:mrow>
+                                          <m:mo>⋅</m:mo>
+                                          <m:mrow>
+                                            <m:mover>
+                                              <m:mi>j</m:mi>
+                                              <m:mo stretchy="false">^</m:mo>
+                                            </m:mover>
+                                          </m:mrow>
+                                        </m:math>. Nagle rozpada się na trzy elementy, z których pierwszy (78 kg) leci z prędkością <m:math>
+                                        <m:mo>−</m:mo>
+                                        <m:mn>321</m:mn>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">m</m:mi>
+                                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                          <m:mi mathvariant="normal">s</m:mi>
+                                        </m:mrow>
+                                        <m:mo>⋅</m:mo>
+                                        <m:mrow>
+                                          <m:mover>
+                                            <m:mi>i</m:mi>
+                                            <m:mo stretchy="false">^</m:mo>
+                                          </m:mover>
+                                        </m:mrow>
+                                        <m:mo>+</m:mo>
+                                        <m:mn>228</m:mn>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">m</m:mi>
+                                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                          <m:mi mathvariant="normal">s</m:mi>
+                                        </m:mrow>
+                                        <m:mo>⋅</m:mo>
+                                        <m:mrow>
+                                          <m:mover>
+                                            <m:mi>j</m:mi>
+                                            <m:mo stretchy="false">^</m:mo>
+                                          </m:mover>
+                                        </m:mrow>
+                                      </m:math>, a drugi (56 kg) z prędkością <m:math>
+                                      <m:mn>16,0</m:mn>
+                                      <m:mspace width="0.2em"/>
+                                      <m:mrow>
+                                        <m:mi mathvariant="normal">m</m:mi>
+                                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                        <m:mi mathvariant="normal">s</m:mi>
+                                      </m:mrow>
+                                      <m:mo>⋅</m:mo>
+                                      <m:mrow>
+                                        <m:mover>
+                                          <m:mi>i</m:mi>
+                                          <m:mo stretchy="false">^</m:mo>
+                                        </m:mover>
+                                      </m:mrow>
+                                      <m:mo>−</m:mo>
+                                      <m:mn>88,0</m:mn>
+                                      <m:mspace width="0.2em"/>
+                                      <m:mrow>
+                                        <m:mi mathvariant="normal">m</m:mi>
+                                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                        <m:mi mathvariant="normal">s</m:mi>
+                                      </m:mrow>
+                                      <m:mo>⋅</m:mo>
+                                      <m:mrow>
+                                        <m:mover>
+                                          <m:mi>j</m:mi>
+                                          <m:mo stretchy="false">^</m:mo>
+                                        </m:mover>
+                                      </m:mrow>
+                                      </m:math>. Oblicz prędkość trzeciego elementu.</para>
+                                    </problem>
+                                    <solution id="fs-id1167132464579">
+                                      <para id="fs-id1167132464581">
+                                        <m:math>
+                                          <m:mn>732</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mrow>
+                                            <m:mi mathvariant="normal">m</m:mi>
+                                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                            <m:mi mathvariant="normal">s</m:mi>
+                                          </m:mrow>
+                                          <m:mo>⋅</m:mo>
+                                          <m:mrow>
+                                            <m:mover>
+                                              <m:mi>i</m:mi>
+                                              <m:mo stretchy="false">^</m:mo>
+                                            </m:mover>
+                                          </m:mrow>
+                                          <m:mo>−</m:mo>
+                                          <m:mn>80,6</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mrow>
+                                            <m:mi mathvariant="normal">m</m:mi>
+                                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                            <m:mi mathvariant="normal">s</m:mi>
+                                          </m:mrow>
+                                          <m:mo>⋅</m:mo>
+                                          <m:mrow>
+                                            <m:mover>
+                                              <m:mi>j</m:mi>
+                                              <m:mo stretchy="false">^</m:mo>
+                                            </m:mover>
+                                          </m:mrow>
+                                          <m:mo>.</m:mo>
+                                        </m:math>
+                                      </para>
+                                    </solution>
+                                  </exercise>
+                                  <exercise id="fs-id1167132629269">
+                                    <problem id="fs-id1167133871985">
+                                      <para id="fs-id1167133871987">Proton lecący z prędkością <m:math>
+                                        <m:mn>3</m:mn>
+                                        <m:mo>⋅</m:mo>
+                                        <m:msup>
+                                          <m:mn>10</m:mn>
+                                          <m:mn>6</m:mn>
+                                        </m:msup>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">m</m:mi>
+                                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                          <m:mi mathvariant="normal">s</m:mi>
+                                        </m:mrow>
+                                        </m:math> rozprasza się sprężyście na spoczywającej cząstce alfa, tak że tor jego ruchu ulega odchyleniu o 85° względem pierwotnego biegu. Przyjmując, że masa cząstki alfa jest 4 razy większa od masy protonu, oblicz, jaki procent energii kinetycznej zachowa proton po zderzeniu.</para>
+                                      </problem>
+                                    </exercise>
+                                    <exercise id="fs-id1167132416254">
+                                      <problem id="fs-id1167132416256">
+                                        <para id="fs-id1167132416259">Trzy renifery o masie 70 kg każdy stoją na wielkiej krze unoszącej się na powierzchni spokojnego jeziora. Pod wpływem huku wystrzału rozbiegają się z prędkościami:<newline/>A: <m:math>
+                                          <m:mn>15</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mrow>
+                                            <m:mi mathvariant="normal">m</m:mi>
+                                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                            <m:mi mathvariant="normal">s</m:mi>
+                                          </m:mrow>
+                                          <m:mo>⋅</m:mo>
+                                          <m:mrow>
+                                            <m:mover>
+                                              <m:mi>i</m:mi>
+                                              <m:mo stretchy="false">^</m:mo>
+                                            </m:mover>
+                                          </m:mrow>
+                                          <m:mo>+</m:mo>
+                                          <m:mn>5</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mrow>
+                                            <m:mi mathvariant="normal">m</m:mi>
+                                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                            <m:mi mathvariant="normal">s</m:mi>
+                                          </m:mrow>
+                                          <m:mo>⋅</m:mo>
+                                          <m:mrow>
+                                            <m:mover>
+                                              <m:mi>j</m:mi>
+                                              <m:mo stretchy="false">^</m:mo>
+                                            </m:mover>
+                                          </m:mrow>
+                                        </m:math>;<newline/>B: <m:math>
+                                        <m:mo>−</m:mo>
+                                        <m:mn>12</m:mn>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">m</m:mi>
+                                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                          <m:mi mathvariant="normal">s</m:mi>
+                                        </m:mrow>
+                                        <m:mo>⋅</m:mo>
+                                        <m:mrow>
+                                          <m:mover>
+                                            <m:mi>i</m:mi>
+                                            <m:mo stretchy="false">^</m:mo>
+                                          </m:mover>
+                                        </m:mrow>
+                                        <m:mo>+</m:mo>
+                                        <m:mn>8</m:mn>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">m</m:mi>
+                                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                          <m:mi mathvariant="normal">s</m:mi>
+                                        </m:mrow>
+                                        <m:mo>⋅</m:mo>
+                                        <m:mrow>
+                                          <m:mover>
+                                            <m:mi>j</m:mi>
+                                            <m:mo stretchy="false">^</m:mo>
+                                          </m:mover>
+                                        </m:mrow>
+                                      </m:math>;<newline/>C: <m:math>
+                                      <m:mn>1,2</m:mn>
+                                      <m:mspace width="0.2em"/>
+                                      <m:mrow>
+                                        <m:mi mathvariant="normal">m</m:mi>
+                                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                        <m:mi mathvariant="normal">s</m:mi>
+                                      </m:mrow>
+                                      <m:mo>⋅</m:mo>
+                                      <m:mrow>
+                                        <m:mover>
+                                          <m:mi>i</m:mi>
+                                          <m:mo stretchy="false">^</m:mo>
+                                        </m:mover>
+                                      </m:mrow>
+                                      <m:mo>−</m:mo>
+                                      <m:mn>18</m:mn>
+                                      <m:mspace width="0.2em"/>
+                                      <m:mrow>
+                                        <m:mi mathvariant="normal">m</m:mi>
+                                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                        <m:mi mathvariant="normal">s</m:mi>
+                                      </m:mrow>
+                                      <m:mo>⋅</m:mo>
+                                      <m:mrow>
+                                        <m:mover>
+                                          <m:mi>j</m:mi>
+                                          <m:mo stretchy="false">^</m:mo>
+                                        </m:mover>
+                                      </m:mrow>
+                                      </m:math>. <newline/>Z jaką prędkością porusza się kra?</para></problem>
+                                    <solution id="fs-id1167132215564">
+                                      <para id="fs-id1167132215566">
+                                        <m:math>
+                                          <m:mo>−</m:mo>
+                                          <m:mn>0,21</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mrow>
+                                            <m:mi mathvariant="normal">m</m:mi>
+                                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                            <m:mi mathvariant="normal">s</m:mi>
+                                          </m:mrow>
+                                          <m:mo>⋅</m:mo>
+                                          <m:mrow>
+                                            <m:mover>
+                                              <m:mi>i</m:mi>
+                                              <m:mo stretchy="false">^</m:mo>
+                                            </m:mover>
+                                          </m:mrow>
+                                          <m:mo>+</m:mo>
+                                          <m:mn>0,25</m:mn>
+                                          <m:mspace width="0.2em"/>
+                                          <m:mrow>
+                                            <m:mi mathvariant="normal">m</m:mi>
+                                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                            <m:mi mathvariant="normal">s</m:mi>
+                                          </m:mrow>
+                                          <m:mo>⋅</m:mo>
+                                          <m:mrow>
+                                            <m:mover>
+                                              <m:mi>j</m:mi>
+                                              <m:mo stretchy="false">^</m:mo>
+                                            </m:mover>
+                                          </m:mrow>
+                                          <m:mo>.</m:mo>
+                                        </m:math>
+                                      </para>
+                                    </solution>
+                                  </exercise>
+                                  <exercise id="fs-id1167133855091">
+                                    <problem id="fs-id1167133855093">
+                                      <para id="fs-id1167133855096">Rodzina wybrała się na lodowisko. Tata (o masie 75 kg) jedzie z prędkością 8,2 m/s, dogania i chwyta mamę o masie 50 kg, jadącą początkowo z prędkością 3,3 m/s pod kątem <m:math>
+                                        <m:msup>
+                                          <m:mn>45</m:mn>
+                                          <m:mo>∘</m:mo>
+                                        </m:msup>
+                                        </m:math> względem prędkości taty. Następnie oboje chwytają stojącą spokojnie córkę o masie 30 kg i poruszają się razem. Jaka jest ich wspólna prędkość?</para>
+                                      </problem>
+                                    </exercise>
+                                    <exercise id="fs-id1167132275670">
+                                      <problem id="fs-id1167132238050">
+                                        <para id="fs-id1167132238052">Atom tlenu o masie 16 u porusza się z prędkością 733 m/s pod kątem <m:math>
+                                          <m:msup>
+                                            <m:mn>15</m:mn>
+                                            <m:mo>∘</m:mo>
+                                          </m:msup>
+                                        </m:math> względem osi <m:math>
+                                        <m:mi>x</m:mi>
+                                      </m:math> i zderza się niesprężyście z cząsteczką tlenu o masie 32 u, poruszającą się z prędkością 528 m/s pod kątem <m:math>
+                                      <m:msup>
+                                        <m:mn>128</m:mn>
+                                        <m:mo>∘</m:mo>
+                                      </m:msup>
+                                    </m:math> do osi <m:math>
+                                    <m:mi>x</m:mi>
+                                    </m:math>. Po ich złączeniu się powstaje cząsteczka ozonu. Jaka będzie jej prędkość?</para></problem>
+                                  <solution id="fs-id1167132276387">
+                                    <para id="fs-id1167132276389">341 m/s dla <m:math>
+                                      <m:mn>86</m:mn>
+                                      <m:mo>,</m:mo>
+                                      <m:msup>
+                                        <m:mn>6</m:mn>
+                                        <m:mo>∘</m:mo>
+                                      </m:msup>
+                                    </m:math> względem osi <m:math>
+                                    <m:mi>x</m:mi>
+                                    <m:mi>.</m:mi>
+                                  </m:math>
+                                </para>
+                              </solution>
+                            </exercise>
+                            <exercise id="fs-id1167133525821">
+                              <problem id="fs-id1167133525823">
+                                <para id="fs-id1167133318497">Dwa samochody dojeżdżają do oblodzonego skrzyżowania dwóch prostopadłych ulic. Samochód A jedzie na północ z prędkością 30 m/s, a samochód B na wschód. Na skrzyżowaniu dochodzi do ich zderzenia i złączenia, wskutek czego poruszają się one razem wzdłuż azymutu <m:math>
+                                  <m:msup>
+                                    <m:mn>28</m:mn>
+                                    <m:mo>∘</m:mo>
+                                  </m:msup>
+                                  </m:math>. Jaka była prędkość samochodu B?</para></problem>
+                              </exercise>
+                            </section>
+                          </content>
+                        </document>

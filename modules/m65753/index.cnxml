@@ -1,0 +1,4648 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" id="new" cnxml-version="0.8" module-id="new">
+  <title>Wyznaczanie równań ruchu metodą całkowania</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65753</md:content-id>
+  <md:title>Wyznaczanie równań ruchu metodą całkowania</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item> wyprowadzać równania ruchu na podstawie stałego przyspieszenia z użyciem rachunku całkowego; </item>
+<item> używać całkowych równań ruchu w analizie ruchu ciał w jednym wymiarze; </item>
+<item> obliczać zależność prędkości od czasu na podstawie funkcji przyspieszenia od czasu; </item>
+<item> obliczać zależność położenia od czasu na podstawie funkcji prędkości od czasu. </item>
+</list></md:abstract>
+  <md:uuid>add51163-0dee-44ed-8f3b-b21095875de2</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1168055394881">Materiał zawarty w tej sekcji wymaga od ciebie znajomości podstaw rachunku całkowego. Przed przystąpieniem do lektury powinieneś nadrobić ewentualne braki. W rozdziałach <link class="target-chapter" document="m65748">Prędkość chwilowa i szybkość średnia</link> oraz <link class="target-chapter" document="m65749">Przyspieszenie średnie i chwilowe</link> wprowadziliśmy definicje prędkości i przyspieszenia, używając rachunku różniczkowego. Różniczkując funkcję położenia od czasu, otrzymaliśmy zależność prędkości od czasu. Podobnie, obliczając pochodną prędkości po czasie, dostaliśmy funkcję przyspieszenia od czasu. W tej sekcji, dzięki całkowaniu, przejdziemy drogę odwrotną. Znając przyspieszenie, obliczymy prędkość, a całkując po czasie jeszcze raz – położenie w funkcji czasu.</para><section id="fs-id1168057186040">
+    <title>Obliczanie prędkości i położenia na podstawie przyspieszenia</title>
+    <para id="fs-id1168057329054">Załóżmy, że znamy funkcję przyspieszenia od czasu <m:math>
+      <m:mi>a</m:mi>
+      <m:mo>(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo>)</m:mo>
+      </m:math>. Wiemy, że przyspieszenie jest pochodną prędkości po czasie</para>
+      <equation id="fs-id1168055470877" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mfrac>
+            <m:mtext>d</m:mtext>
+            <m:mrow>
+              <m:mtext>d</m:mtext>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mi>v</m:mi>
+          <m:mfenced>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+          <m:mo>=</m:mo>
+          <m:mi>a</m:mi>
+          <m:mfenced>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="fs-id1168055388282">Tę równość scałkujmy obustronnie po czasie. Otrzymujemy</para>
+      <equation id="fs-id1168055392656" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mo>∫</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mtext>d</m:mtext>
+              <m:mrow>
+                <m:mtext>d</m:mtext>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mi>v</m:mi>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+            <m:mtext>d</m:mtext>
+            <m:mi>t</m:mi>
+            <m:mo>=</m:mo>
+            <m:mo>∫</m:mo>
+            <m:mrow>
+              <m:mi>a</m:mi>
+              <m:mfenced>
+                <m:mi>t</m:mi>
+              </m:mfenced>
+              <m:mtext>d</m:mtext>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>C</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>,</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1168057480928">gdzie <m:math>
+        <m:msub>
+          <m:mi>C</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+      </m:math> jest stałą całkowania (obliczamy całkę nieoznaczoną!). Ponieważ <m:math>
+      <m:mo>∫</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:mtext>d</m:mtext>
+          <m:mrow>
+            <m:mtext>d</m:mtext>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mi>v</m:mi>
+        <m:mfenced>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+        <m:mtext>d</m:mtext>
+        <m:mi>t</m:mi>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mi>v</m:mi>
+      <m:mfenced>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+      </m:math>, na podstawie definicji całki, to prędkość jako funkcja czasu może być zdefiniowana przez</para>
+      <note id="fs-id1168055147157" class="equation-callout">
+        <equation id="fs-id1168055299938">
+          <label/>
+          <m:math>
+            <m:mi>v</m:mi>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+            <m:mo>=</m:mo>
+            <m:mo>∫</m:mo>
+            <m:mrow>
+              <m:mi>a</m:mi>
+              <m:mfenced>
+                <m:mi>t</m:mi>
+              </m:mfenced>
+              <m:mtext>d</m:mtext>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>C</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+      </note>
+      <para id="fs-id1168057482455">Podobnie prędkość jest pochodną położenia po czasie</para><equation id="fs-id1168057253562" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mfrac>
+            <m:mtext>d</m:mtext>
+            <m:mrow>
+              <m:mtext>d</m:mtext>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mi>x</m:mi>
+          <m:mfenced>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+          <m:mo>=</m:mo>
+          <m:mi>v</m:mi>
+          <m:mfenced>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="fs-id1168057485601">Zatem, całkując to równanie, znajdziemy położenie w funkcji czasu</para>
+      <note id="fs-id1168057485578" class="equation-callout">
+        <equation id="fs-id1168057309665">
+          <label/>
+          <m:math>
+            <m:mi>x</m:mi>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+            <m:mo>=</m:mo>
+            <m:mo>∫</m:mo>
+            <m:mrow>
+              <m:mi>v</m:mi>
+              <m:mfenced>
+                <m:mi>t</m:mi>
+              </m:mfenced>
+              <m:mtext>d</m:mtext>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>C</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mo>,</m:mo>
+          </m:math>
+        </equation>
+      </note>
+      <para id="fs-id1168057485504">gdzie <m:math>
+        <m:msub>
+          <m:mi>C</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        </m:math> jest kolejną stałą całkowania.</para>
+        <para id="fs-id1168057485919">Wykorzystamy teraz dwie powyższe całki do otrzymania kinematycznych równań ruchu ze stałym przyspieszeniem, które poznaliśmy w poprzednich sekcjach. Przyjmując, że <m:math>
+          <m:mi>a</m:mi>
+          <m:mo>(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mi>a</m:mi>
+          </m:math> ma stałą w czasie wartość i obliczając całkę z <link target-id="fs-id1168055299938" cmlnle:case="genitive"/>, otrzymujemy</para><equation id="fs-id1168057259118" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mi>v</m:mi>
+              <m:mfenced>
+                <m:mi>t</m:mi>
+              </m:mfenced>
+              <m:mo>=</m:mo>
+              <m:mo>∫</m:mo>
+              <m:mi>a</m:mi>
+              <m:mtext>d</m:mtext>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>C</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mi>a</m:mi>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>C</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>.</m:mo>
+            </m:math>
+          </equation>
+          <para id="fs-id1168057295657">Wartość stałej całkowania znajdziemy z tzw. warunków początkowych. Przyjmijmy, że prędkość początkowa <m:math>
+            <m:mi>v</m:mi>
+            <m:mo>(</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>)</m:mo>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            </m:math>. Wówczas</para>
+            <equation id="fs-id1168057270495" class="unnumbered">
+              <label/>
+              <m:math>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mn>0</m:mn>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mi>C</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>.</m:mo>
+                </m:mrow>
+              </m:math>
+            </equation>
+            <para id="fs-id1168057460849">Zatem <m:math>
+              <m:msub>
+                <m:mi>C</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              </m:math>, a równanie prędkości jest następujące</para>
+              <equation id="fs-id1168057419730" class="unnumbered">
+                <label/>
+                <m:math>
+                  <m:mrow>
+                    <m:mi>v</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mi>t</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mi>a</m:mi>
+                    <m:mi>t</m:mi>
+                    <m:mo>,</m:mo>
+                  </m:mrow>
+                </m:math>
+              </equation>
+              <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168055376614">co odpowiada <link target-id="fs-id1168329196739" document="m65750" cmlnle:case="locative"/>. Podstawiając to wyrażenie do całki z <link target-id="fs-id1168057309665" cmlnle:case="genitive"/>, otrzymujemy</para><equation id="fs-id1168055091893" class="unnumbered">
+                <label/>
+                <m:math>
+                  <m:mi>x</m:mi>
+                  <m:mfenced>
+                    <m:mi>t</m:mi>
+                  </m:mfenced>
+                  <m:mo>=</m:mo>
+                  <m:mo>∫</m:mo>
+                  <m:mrow>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mo>+</m:mo>
+                        <m:mi>a</m:mi>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                    </m:mfenced>
+                    <m:mtext>d</m:mtext>
+                    <m:mi>t</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>C</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mo>.</m:mo>
+                </m:math>
+              </equation>
+              <para id="fs-id1168057342016">Całka ta jest łatwa do obliczenia. Po obliczeniu całki otrzymujemy:</para><equation id="fs-id1168057270580" class="unnumbered">
+                <label/>
+                <m:math>
+                  <m:mi>x</m:mi>
+                  <m:mfenced>
+                    <m:mi>t</m:mi>
+                  </m:mfenced>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mi>t</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mi>a</m:mi>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mi>C</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mo>.</m:mo>
+                </m:math>
+              </equation>
+              <para id="fs-id1168057447837">Stałą całkowania znów znajdziemy dzięki warunkowi początkowemu <m:math>
+                <m:mi>x</m:mi>
+                <m:mo>(</m:mo>
+                <m:mn>0</m:mn>
+                <m:mo>)</m:mo>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>x</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                </m:math>:</para>
+                <equation id="fs-id1168057479623" class="unnumbered">
+                  <label/>
+                  <m:math>
+                    <m:msub>
+                      <m:mi>x</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>C</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>,</m:mo>
+                  </m:math>
+                </equation>
+                <para id="fs-id1168057232222">a więc <m:math>
+                  <m:msub>
+                    <m:mi>C</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mi>x</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:math>. Podsumowując, kinematyczne równanie położenia <m:math>
+                <m:mi>x</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo>)</m:mo>
+                </m:math> ma następującą postać</para>
+                <equation id="fs-id1168054944928" class="unnumbered">
+                  <label/>
+                  <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>t</m:mi>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo>=</m:mo>
+                      <m:msub>
+                        <m:mi>x</m:mi>
+                        <m:mn>0</m:mn>
+                      </m:msub>
+                      <m:mo>+</m:mo>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mn>0</m:mn>
+                      </m:msub>
+                      <m:mi>t</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                      <m:mi>a</m:mi>
+                      <m:msup>
+                        <m:mi>t</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>,</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </equation>
+                <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168054945679">co jest z kolei zgodne z <link target-id="fs-id1168326833119" document="m65750" cmlnle:case="instrumental"/>.</para><example id="fs-id1168057541743">
+                  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168055392642"><title>Ruch motorówki</title>Motorówka płynie ze stałą prędkością 5,0 m/s, kiedy zaczyna hamować, doznając przyspieszenia zależnego od czasu <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mi>t</m:mi></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            a \apply (t) = - \frac14 \si{\metre\per\second\cubed} \cdot t</m:annotation></m:semantics></m:math>. <list id="eip-idm1640772560" list-type="enumerated" number-style="lower-alpha">
+                    <item> Jaką funkcją czasu jest prędkość motorówki? </item>
+                    <item> W jakim momencie prędkość motorówki spada do zera? </item>
+                    <item> Jaką funkcją czasu jest położenie motorówki? </item>
+                    <item> O ile przemieszcza się motorówka od momentu rozpoczęcia hamowania (chwila początkowa równa 0) do chwili, w której prędkość motorówki spada do zera? </item>
+                    <item> Narysuj zależności prędkości i położenia motorówki od czasu. </item>
+                  </list>
+                </para><para id="fs-id1168055309859">
+                  <title>Strategia rozwiązania</title>
+                  <list id="eip-idm664050544" list-type="enumerated" number-style="lower-alpha">
+                    <item> Aby dostać funkcję prędkości, musimy scałkować przyspieszenie i wykorzystać warunki początkowe do znalezienia stałej. </item>
+                    <item> Podstawimy prędkość końcową równą zero i obliczymy czas. </item>
+                    <item> Podobnie do (a), scałkujemy prędkość po czasie i ustalimy stałą całkowania. </item>
+                    <item> Ponieważ położenie początkowe przyjmujemy jako równe zero, wystarczy znaleźć położenie po czasie, po którym prędkość spada do zera.</item>
+                  </list>
+                </para>
+                <para id="fs-id1168057384404">
+                  <title>Rozwiązanie</title>Przyjmujemy czas <m:math>
+                    <m:mi>t</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>0</m:mn>
+                    </m:math> jako chwilę początkową, w której motorówka zaczyna hamować.</para>
+                    <list xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168055376582" list-type="enumerated" number-style="lower-alpha"><item> Znaną zależność przyspieszenia od czasu wstawiamy do całki w <link target-id="fs-id1168055299938" cmlnle:case="dative"/> i otrzymujemy <m:math>
+                        <m:mi>v</m:mi>
+                        <m:mo>(</m:mo>
+                        <m:mi>t</m:mi>
+                        <m:mo>)</m:mo>
+                      </m:math>:<newline/>
+                      <equation id="fs-id1168057455742" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mi>v</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>∫</m:mo><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>t</m:mi></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>∫</m:mo><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mi>t</m:mi></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>t</m:mi></m:mrow></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:msub><m:mi>C</m:mi><m:mn>1</m:mn></m:msub><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            v \apply (t) = \int a \apply (t) \d t = \int -\frac14 \si{\metre\per\second\cubed} \cdot t \d t = -\frac18 \si{\metre\per\second\cubed} \cdot t^2 + C_1 \text{.}</m:annotation></m:semantics></m:math></equation>
+                      <newline/>Dla <m:math>
+                      <m:mi>t</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:math> mamy <m:math>
+                    <m:mi>v</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo>=</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>C</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:math>, więc <m:math>
+                  <m:msub>
+                    <m:mi>C</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mn>5</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:math> oraz <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mi>v</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mn>5,0</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            v \apply (t) = -\frac18 \si{\metre\per\second\cubed} \cdot t^2 + \SI{5,0}{\metre\per\second}</m:annotation></m:semantics></m:math>.</item>
+                <item>
+                  <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mrow><m:mi>v</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mn>5,0</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mo>⇒</m:mo><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>6,3</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            v \apply (t) = - \frac18 \si{\metre\per\second\cubed} \cdot t^2 + \SI{5,0}{\metre\per\second} = 0 \implies t= \SI{6,3}{\second}</m:annotation></m:semantics></m:math>.
+                </item>
+                <item> Rozwiązujemy <link target-id="fs-id1168057309665"/>:<newline/>
+                  <equation id="fs-id1168057200669" class="unnumbered"><m:math display="block">
+  <m:semantics>
+    <m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:mrow><m:mi>x</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced><m:mi>t</m:mi>
+        </m:mfenced></m:mrow><m:mo id="Ueaf3f68a-c0f1-42c5-858e-bae1c6e867ce">=</m:mo>
+      <m:mrow><m:mo>∫</m:mo>
+        <m:mrow><m:mrow><m:mi>v</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced><m:mi>t</m:mi>
+            </m:mfenced></m:mrow><m:mo>⁢</m:mo>
+          <m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mrow><m:mi>x</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced><m:mi>t</m:mi>
+        </m:mfenced></m:mrow></m:mphantom><m:mo>=</m:mo>
+      <m:mrow><m:mo>∫</m:mo>
+        <m:mrow><m:mfenced><m:mrow><m:mrow><m:mo>−</m:mo>
+                <m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn>
+                      <m:mn>8</m:mn>
+                    </m:mfrac><m:mo>⁢</m:mo>
+                    <m:mrow><m:mi mathvariant="normal">m</m:mi>
+                      <m:mo>∕</m:mo>
+                      <m:msup><m:mi mathvariant="normal">s</m:mi>
+                        <m:mn>3</m:mn>
+                      </m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo>
+                  <m:msup><m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup></m:mrow></m:mrow><m:mo>+</m:mo>
+              <m:mrow><m:mn>5,0</m:mn>
+                <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                <m:mrow><m:mi mathvariant="normal">m</m:mi>
+                  <m:mo>∕</m:mo>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow></m:mrow></m:mrow></m:mfenced><m:mo>⁢</m:mo>
+          <m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mrow><m:mi>x</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced><m:mi>t</m:mi>
+        </m:mfenced></m:mrow></m:mphantom><m:mo>=</m:mo>
+      <m:mrow><m:mrow><m:mo>−</m:mo>
+          <m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn>
+                <m:mn>24</m:mn>
+              </m:mfrac><m:mo>⁢</m:mo>
+              <m:mrow><m:mi mathvariant="normal">m</m:mi>
+                <m:mo>∕</m:mo>
+                <m:msup><m:mi mathvariant="normal">s</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo>
+            <m:msup><m:mi>t</m:mi>
+              <m:mn>3</m:mn>
+            </m:msup></m:mrow></m:mrow><m:mo>+</m:mo>
+        <m:mrow><m:mrow><m:mn>5,0</m:mn>
+            <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+            <m:mrow><m:mi mathvariant="normal">m</m:mi>
+              <m:mo>∕</m:mo>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow></m:mrow><m:mo>⋅</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow><m:mo>+</m:mo>
+        <m:mrow><m:msub><m:mi>C</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub><m:mtext>.</m:mtext>
+        </m:mrow></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{multiline} x \apply (t) &amp;= \int v \apply (t) \d t \\ &amp;= \int (-\frac18 \si{\metre\per\second\cubed} \cdot t^2 + \SI{5,0}{\metre\per\second}) \d t \\ &amp;= -\frac{1}{24} \si{\metre\per\second\cubed} \cdot t^3 + \SI{5,0}{\metre\per\second} \cdot t + C_2 \text{.} \end{multiline}</m:annotation>
+  <m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mrow>
+        <m:mi>x</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo id="Ueaf3f68a-c0f1-42c5-858e-bae1c6e867ce-copy">=</m:mo>
+      <m:mrow>
+        <m:mo>∫</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mi>v</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo indenttarget="Ueaf3f68a-c0f1-42c5-858e-bae1c6e867ce" linebreak="newline" indentalign="id">=</m:mo>
+      <m:mrow>
+        <m:mo>∫</m:mo>
+        <m:mrow>
+          <m:mfenced>
+            <m:mrow>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>8</m:mn>
+                    </m:mfrac>
+                    <m:mo>⁢</m:mo>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mo>∕</m:mo>
+                      <m:msup>
+                        <m:mi mathvariant="normal">s</m:mi>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mrow>
+                <m:mn>5,0</m:mn>
+                <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mo>∕</m:mo>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:mfenced>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo indenttarget="Ueaf3f68a-c0f1-42c5-858e-bae1c6e867ce" linebreak="newline" indentalign="id">=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>24</m:mn>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mo>∕</m:mo>
+                <m:msup>
+                  <m:mi mathvariant="normal">s</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mn>3</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>5,0</m:mn>
+            <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mo>∕</m:mo>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>C</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:annotation-xml></m:semantics>
+</m:math></equation><newline/>Dla <m:math>
+                  <m:mi>t</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>0</m:mn>
+                </m:math> możemy przyjąć <m:math>
+                <m:mi>x</m:mi>
+                <m:mo>(</m:mo>
+                <m:mn>0</m:mn>
+                <m:mo>)</m:mo>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>x</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:math>, bo interesuje nas tylko przemieszczenie od miejsca, gdzie łódka zaczyna zwalniać. Mamy <newline/>
+              <equation id="fs-id1168057733056" class="unnumbered">
+                <label/>
+                <m:math>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo>=</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>C</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>.</m:mo>
+                  </m:mrow>
+                </m:math>
+              </equation>
+              <newline/>Dlatego równanie położenia jest następujące<equation id="fs-id1168057234823" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mi>x</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>24</m:mn></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:msup><m:mi>t</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mrow><m:mrow><m:mn>5,0</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mi>t</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            x \apply (t) = -\frac{1}{24} \si{\metre\per\second\cubed} \cdot t^3 + \SI{5,0}{\metre\per\second} \cdot t \text{.}</m:annotation></m:semantics></m:math></equation></item>
+          <item> Ponieważ położenie początkowe jest zero, musimy tylko obliczyć wartość <m:math>
+            <m:mi>x</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:math> dla czasu, gdy prędkość motorówki spada do zera. Ten czas wynosi <m:math>
+          <m:mi>t</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>6,3</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:math>. Zatem całkowite przemieszczenie motorówki do zatrzymania wynosi <newline/>
+        <equation id="fs-id1168055146576" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mi>x</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mn>6,3</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>24</m:mn></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>3</m:mn></m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo><m:msup><m:mfenced><m:mrow><m:mn>6,3</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mfenced><m:mn>3</m:mn></m:msup></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mrow><m:mn>5,0</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mn>6,3</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>21,1</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            x \apply (\SI{6,3}{\second}) = -\frac{1}{24} \si{\metre\per\second\cubed} \cdot (\SI{6,3}{\second})^3 + \SI{5,0}{\metre\per\second} \cdot \SI{6,3}{\second} = \SI{21,1}{\metre} \text{.}</m:annotation></m:semantics></m:math></equation></item>
+    </list><figure id="CNX_UPhysics_03_06_Ex1"><media id="fs-id1168057460469" alt="Rysunek A pokazuje wykres prędkości w metrach na sekundę od czasu w sekundach. Prędkość maleje do zera od wartości 5 metrów na sekundę w czasie 0 sekund, zgodnie z równaniem podanym na wykresie. Rysunek B to wykres położenia w metrach od czasu w sekundach. Położenie jest zerowe w punkcie zero i rośnie do wartości maksymalnej między piątą a szóstą sekundą, po czym maleje.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_06_Ex1.jpg"/>
+      </media>
+      
+      <caption>(a) Prędkość motorówki jako funkcja czasu. Motorówka traci prędkość aż do zera po upływie 6,3 s. Po tym czasie prędkość motorówki zaczęłaby być ujemna, co oznacza, że motorówka zmieniłaby kierunek ruchu. (b) Położenie motorówki jako funkcja czasu. W <m:math>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>6,3</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        </m:math> prędkość spada do zera i motorówka zatrzymuje się. Po tym czasie położenie zaczyna maleć w czasie, co oznacza, że motorówka cofałaby się w kierunku, z którego nadpłynęła.</caption></figure><para id="fs-id1168057469320"><title>Znaczenie</title>Przyspieszenie w tym przykładzie jest liniową funkcją czasu, dlatego całkowanie było proste. Na wykresach przedstawionych na <link target-id="CNX_UPhysics_03_06_Ex1" cmlnle:case="genitive"/> widzimy, że po czasie, w którym motorówka zatrzymuje się, jej prędkość stałaby się ujemna, a położenie zaczęłoby maleć. To rozwiązanie jest poza naszym zainteresowaniem, ale matematycznie jest poprawne. Pamiętaj, aby zwracać uwagę na poprawną interpretację fizyczną wyników.</para></example>
+      <note id="fs-id1168057553337" class="check-understanding">
+        <exercise id="fs-id1168057460348">
+          <problem id="fs-id1168052793113">
+            <para id="fs-id1168057347714">
+              <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Cząstka rusza z miejsca z przyspieszeniem zależnym od czasu jak <m:math>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>5</m:mn>
+                    <m:mo>−</m:mo>
+                    <m:mn>10</m:mn>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:msup>
+                    <m:mi mathvariant="normal">s</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:math>. <list id="eip-idm606767056" list-type="enumerated" number-style="lower-alpha"><item> Jaka jest funkcja prędkości cząstki? </item>
+              <item> Jaka jest jej funkcja położenia? </item>
+              <item> Kiedy prędkość cząstki jest równa zeru? </item>
+            </list></para>
+        </problem>
+        <solution id="fs-id1168057352922">
+          <list id="fs-id1168057264066" list-type="enumerated" number-style="lower-alpha"><item> Prędkość jest całką nieoznaczoną przyspieszenia po czasie. Na podstawie <link target-id="fs-id1168055299938" cmlnle:case="genitive"/>
+              <newline/>
+              <m:math>
+                <m:mi>v</m:mi>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+                <m:mo>=</m:mo>
+                <m:mo>∫</m:mo>
+                <m:mrow>
+                  <m:mi>a</m:mi>
+                  <m:mfenced>
+                    <m:mi>t</m:mi>
+                  </m:mfenced>
+                  <m:mtext>d</m:mtext>
+                  <m:mi>t</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:msub>
+                    <m:mi>C</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mo>∫</m:mo>
+                  <m:mrow>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:mo>−</m:mo>
+                        <m:mn>10</m:mn>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                    </m:mfenced>
+                    <m:mtext>d</m:mtext>
+                    <m:mi>t</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>C</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mi>t</m:mi>
+                    <m:mo>−</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:msup>
+                      <m:mi>t</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>C</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>.</m:mo>
+              </m:math>
+              <newline/>Ponieważ <m:math>
+              <m:mi>v</m:mi>
+              <m:mo>(</m:mo>
+              <m:mn>0</m:mn>
+              <m:mo>)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+            </m:math>, mamy <m:math>
+            <m:msub>
+              <m:mi>C</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:math>; zatem<newline/>
+          <m:math>
+            <m:mi>v</m:mi>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo stretchy="false">)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mn>5</m:mn>
+                <m:mi>t</m:mi>
+                <m:mo>−</m:mo>
+                <m:mn>5</m:mn>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </item>
+        <item> Na podstawie <link target-id="fs-id1168057309665" cmlnle:case="genitive"/>
+          <newline/>
+          <m:math>
+            <m:mi>x</m:mi>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+            <m:mo>=</m:mo>
+            <m:mo>∫</m:mo>
+            <m:mrow>
+              <m:mi>v</m:mi>
+              <m:mfenced>
+                <m:mi>t</m:mi>
+              </m:mfenced>
+              <m:mtext>d</m:mtext>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>C</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mo>∫</m:mo>
+            <m:mrow>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mn>5</m:mn>
+                  <m:mi>t</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mn>5</m:mn>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfenced>
+              <m:mtext>d</m:mtext>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>C</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mn>5</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:msup>
+                <m:mi>t</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>−</m:mo>
+              <m:mfrac>
+                <m:mn>5</m:mn>
+                <m:mn>3</m:mn>
+              </m:mfrac>
+              <m:msup>
+                <m:mi>t</m:mi>
+                <m:mn>3</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>C</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mrow>
+          </m:math>.<newline/>Ponieważ <m:math>
+          <m:mi>x</m:mi>
+          <m:mo>(</m:mo>
+          <m:mn>0</m:mn>
+          <m:mo>)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+        </m:math>, otrzymujemy <m:math>
+        <m:msub>
+          <m:mi>C</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mn>0</m:mn>
+      </m:math> i <newline/>
+      <m:math>
+        <m:mi>x</m:mi>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo stretchy="false">)</m:mo>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mn>5</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>−</m:mo>
+            <m:mfrac>
+              <m:mn>5</m:mn>
+              <m:mn>3</m:mn>
+            </m:mfrac>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mn>3</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>.</m:mo>
+      </m:math>
+    </item>
+    <item> Funkcję prędkości możemy zapisać w postaci <m:math>
+      <m:mi>v</m:mi>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mo>=</m:mo>
+      <m:mn>5</m:mn>
+      <m:mi>t</m:mi>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mn>1</m:mn>
+          <m:mo>−</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+    </m:math>, dla której łatwo zidentyfikujemy miejsca zerowe: <m:math>
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>0</m:mn>
+  </m:math> i <m:math>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>1</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">s</m:mi>
+  </m:mrow>
+  </m:math>.</item>
+</list></solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1168057456464" class="key-concepts">
+  <title>Podsumowanie</title>
+  <list id="fs-id1168055180169" list-type="bulleted" bullet-style="bullet">
+    <item> Dzięki rachunkowi całkowemu otrzymujemy bardziej uniwersalne sformułowanie kinematyki. </item>
+    <item> Jeśli funkcja przyspieszenia <m:math>
+      <m:mi>a</m:mi>
+      <m:mo>(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo>)</m:mo>
+    </m:math> jest znana, poprzez całkowanie możemy znaleźć także funkcje prędkości <m:math>
+    <m:mi>v</m:mi>
+    <m:mo>(</m:mo>
+    <m:mi>t</m:mi>
+    <m:mo>)</m:mo>
+  </m:math> i położenia <m:math>
+  <m:mi>x</m:mi>
+  <m:mo>(</m:mo>
+  <m:mi>t</m:mi>
+  <m:mo>)</m:mo>
+  </m:math>.</item>
+  <item> Jeśli przyspieszenie jest stałe w czasie, otrzymujemy <link target-id="fs-id1168329196739" document="m65750"/> i <link target-id="fs-id1168326833119" document="m65750"/> znane dla ruchu ze stałym przyspieszeniem. </item>
+</list>
+</section>
+<section id="fs-id1168057474798" class="key-equations">
+  <title>Najważniejsze wzory </title>
+  <table id="fs-id1170904098526" class="unnumbered unstyled" summary="Tabela podaje następujące zależności: Przemieszczenie, Delta x równa się xf minus xi; Całkowite przemeszczenie, delta x subscript całk równa się znak sumy z delta xi, Prędkość średnia, v z kreską równa się delta x przez delta t równa się x2 minus x1 przez t2 minus t1; Prędkość chwilowa, v od t równa się dx t przez dt; Szybkość średnia równa się s z kreską równa się całkowita droga przez całkowity czas; Szybkość w nawiasie wartość prędkości chwilowej równa się moduł v od t; Przyspieszenie średnie, a z kreską równa się delta v przez delta t równa się vf minus v0 przez tf minus t0; Przyspieszenie chwilowe, a od t równa się dv t przez dt; Równanie położenia, x równa się x0 plus v z kreską t; Prędkość średnia, v z kreską równa się v0 plus v przez 2; Równanie prędkości, v kwadrat równa się v 0 plus a t, gdzie a równa się const; Równaie położenia, x równa się x0 plus v0t plus połowa a t kwadrat gdzie a jest const; Prędkość w rzucie pionowym, v kwadrat równa się v0 kwadrat plus 2 nawias x minus x0 zamknąć nawias gdzie a jest const; Prędkość w spadku swobodnym, v równa się v0 minus gt; Wysokość w spadku swobodnym, y równa się y0 plus v0 t minus połowa g t do kwadratu; Zależność prędkości w spadku swobodnym od wysokości, v kwadra równa się v0 kwadrat – 2g nawias y minus y0 zamknąć nawias; Zależność prędkości od przyspieszenia, v od t równa się całka z a od t dt plus C1; Zależność położenia od prędkości, x od t równa się całka z v od t dt plus C2.">
+    <label/>
+    <tgroup cols="2">
+      <colspec colnum="1" colname="c1"/>
+      <colspec colnum="2" colname="c2"/>
+      <tbody>
+        <row>
+          <entry align="left">Przemieszczenie</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:mtext>Δ</m:mtext>
+                <m:mi>x</m:mi>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>x</m:mi>
+                  <m:mtext>k</m:mtext>
+                </m:msub>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>x</m:mi>
+                  <m:mtext>0</m:mtext>
+                </m:msub>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Całkowite przemieszczenie</entry>
+          <entry align="left">
+            <m:math>
+              <m:mi mathvariant="normal">Δ</m:mi>
+              <m:msub>
+                <m:mi>x</m:mi>
+                <m:mtext>całk</m:mtext>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:munder>
+                <m:mo movablelimits="false">∑</m:mo>
+                <m:mi>i</m:mi>
+              </m:munder>
+              <m:mi mathvariant="normal">Δ</m:mi>
+              <m:msub>
+                <m:mi>x</m:mi>
+                <m:mi>i</m:mi>
+              </m:msub>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Prędkość średnia</entry>
+          <entry align="left">
+            <m:math>
+              <m:mover>
+                <m:mi>v</m:mi>
+                <m:mo>¯</m:mo>
+              </m:mover>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mtext>Δ</m:mtext>
+                  <m:mi>x</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mtext>Δ</m:mtext>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mo>−</m:mo>
+                  <m:msub>
+                    <m:mi>x</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mrow>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mo>−</m:mo>
+                  <m:msub>
+                    <m:mi>t</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:mfrac>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Prędkość chwilowa</entry>
+          <entry align="left">
+            <m:math>
+              <m:mi>v</m:mi>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo stretchy="false">)</m:mo>
+                </m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Szybkość średnia</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mn>śr</m:mn>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mtext>Całkowita droga</m:mtext>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mtext>Całkowity czas</m:mtext>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Szybkość (wartość prędkości chwilowej)</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:mrow>
+                  <m:mo>|</m:mo>
+                  <m:mrow>
+                    <m:mi>v</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mi>t</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                  </m:mrow>
+                  <m:mo>|</m:mo>
+                </m:mrow>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Przyspieszenie średnie</entry>
+          <entry align="left">
+            <m:math>
+              <m:mover>
+                <m:mi>a</m:mi>
+                <m:mo>¯</m:mo>
+              </m:mover>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mtext>Δ</m:mtext>
+                  <m:mi>v</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mtext>Δ</m:mtext>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mn>k</m:mn>
+                  </m:msub>
+                  <m:mo>−</m:mo>
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>t</m:mi>
+                    <m:mn>k</m:mn>
+                  </m:msub>
+                  <m:mo>−</m:mo>
+                  <m:msub>
+                    <m:mi>t</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:mfrac>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Przyspieszenie chwilowe</entry>
+          <entry align="left">
+            <m:math>
+              <m:mi>a</m:mi>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>v</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo stretchy="false">)</m:mo>
+                </m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Równanie położenia</entry>
+          <entry align="left">
+            <m:math>
+              <m:mi>x</m:mi>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>x</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:mover>
+                <m:mi>v</m:mi>
+                <m:mo>¯</m:mo>
+              </m:mover>
+              <m:mi>t</m:mi>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Prędkość średnia</entry>
+          <entry align="left">
+            <m:math>
+              <m:mover>
+                <m:mi>v</m:mi>
+                <m:mo>¯</m:mo>
+              </m:mover>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>+</m:mo>
+                  <m:mi>v</m:mi>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+			  <m:mspace width="0.5em"/>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>a</m:mi>
+                <m:mspace width="0.2em"/>
+                <m:mi>=</m:mi>
+                <m:mspace width="0.2em"/>
+                <m:mtext>const</m:mtext>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Równanie prędkości</entry>
+          <entry align="left">
+            <m:math>
+              <m:mi>v</m:mi>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:mi>a</m:mi>
+              <m:mi>t</m:mi>
+              <m:mspace width="0.5em"/>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>a</m:mi>
+                <m:mspace width="0.2em"/>
+                <m:mi>=</m:mi>
+                <m:mspace width="0.2em"/>
+                <m:mtext>const</m:mtext>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Równanie położenia</entry>
+          <entry align="left">
+            <m:math>
+              <m:mi>x</m:mi>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>x</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mi>a</m:mi>
+              <m:msup>
+                <m:mi>t</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mspace width="0.5em"/>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>a</m:mi>
+                <m:mspace width="0.2em"/>
+                <m:mi>=</m:mi>
+                <m:mspace width="0.2em"/>
+                <m:mtext>const</m:mtext>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Zależność prędkości od położenia</entry>
+          <entry align="left">
+            <m:math>
+              <m:msup>
+                <m:mi>v</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:msubsup>
+                <m:mi>v</m:mi>
+                <m:mn>0</m:mn>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mo>+</m:mo>
+              <m:mn>2</m:mn>
+              <m:mi>a</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>x</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mspace width="0.5em"/>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>a</m:mi>
+                <m:mspace width="0.2em"/>
+                <m:mi>=</m:mi>
+                <m:mspace width="0.2em"/>
+                <m:mtext>const</m:mtext>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Prędkość w rzucie pionowym</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:mi>v</m:mi>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>−</m:mo>
+                <m:mi>g</m:mi>
+                <m:mi>t</m:mi>
+                <m:mspace width="0.2em"/>
+                <m:mtext>(oś do góry)</m:mtext>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Wysokość w rzucie pionowym</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:mi>y</m:mi>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>y</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mi>t</m:mi>
+                <m:mo>−</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mi>g</m:mi>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Zależność prędkości od wysokości w rzucie pionowym</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:msup>
+                  <m:mi>v</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:msubsup>
+                  <m:mi>v</m:mi>
+                  <m:mn>0</m:mn>
+                  <m:mn>2</m:mn>
+                </m:msubsup>
+                <m:mo>−</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>g</m:mi>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mi>y</m:mi>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>y</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo stretchy="false">)</m:mo>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Równanie całkowe prędkości</entry>
+          <entry align="left">
+            <m:math>
+              <m:mi>v</m:mi>
+              <m:mfenced>
+                <m:mi>t</m:mi>
+              </m:mfenced>
+              <m:mo>=</m:mo>
+              <m:mo>∫</m:mo>
+              <m:mrow>
+                <m:mi>a</m:mi>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+                <m:mtext>d</m:mtext>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>C</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Równanie całkowe położenia</entry>
+          <entry align="left">
+            <m:math>
+              <m:mi>x</m:mi>
+              <m:mfenced>
+                <m:mi>t</m:mi>
+              </m:mfenced>
+              <m:mo>=</m:mo>
+              <m:mo>∫</m:mo>
+              <m:mrow>
+                <m:mi>v</m:mi>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+                <m:mtext>d</m:mtext>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>C</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+</section>
+<section id="fs-id1168055383615" class="review-conceptual-questions">
+  <title>Pytania </title>
+  <exercise id="fs-id1168057332320">
+    <problem id="fs-id1168057426599">
+      <para id="fs-id1168057426601">Gdy znasz zależność przyspieszenia od czasu i chcesz obliczyć funkcję prędkości i położenia w czasie to jakich dodatkowych informacji potrzebujesz?</para></problem>
+  </exercise>
+</section>
+<section id="fs-id1168055470292" class="review-problems">
+  <title>Zadania</title>
+  <exercise id="fs-id1168052793712">
+    <problem id="fs-id1168055372576">
+      <para id="fs-id1168055372578">Przyspieszenie cząstki zmienia się w czasie jak funkcja <m:math>
+        <m:mrow>
+          <m:mi>a</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mi>p</m:mi>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>−</m:mo>
+          <m:mi>q</m:mi>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>3</m:mn>
+          </m:msup>
+        </m:mrow>
+      </m:math>, gdzie <m:math>
+      <m:mi>p</m:mi>
+    </m:math> i <m:math>
+    <m:mi>q</m:mi>
+  </m:math> są stałymi. W chwili początkowej położenie i prędkość są równe zero. <list id="eip-idm1245123488" list-type="enumerated" number-style="lower-alpha">
+  <item> Jaką funkcją czasu jest prędkość? </item>
+  <item> Jaką funkcją czasu jest położenie? </item>
+</list>
+</para></problem>
+</exercise>
+<exercise id="fs-id1168057715927">
+  <problem id="fs-id1168057453804">
+    <para id="fs-id1168057453806">W przedziale czasu między <m:math>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:math> i <m:math>
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>t</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+  </m:math> rakieta wznosi się do góry z przyspieszeniem <m:math>
+  <m:mrow>
+    <m:mi>a</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>t</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>=</m:mo>
+    <m:mi>A</m:mi>
+    <m:mo>−</m:mo>
+    <m:mi>B</m:mi>
+    <m:msup>
+      <m:mi>t</m:mi>
+      <m:mrow>
+        <m:mn>1</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>/</m:mtext>
+        <m:mn>2</m:mn>
+      </m:mrow>
+    </m:msup>
+  </m:mrow>
+</m:math>, gdzie <m:math>
+  <m:mi>A</m:mi>
+</m:math>
+ i <m:math>
+  <m:mi>B</m:mi>
+</m:math>
+ są stałymi. <list id="eip-idm927861568" list-type="enumerated" number-style="lower-alpha"><item> Jeżeli <m:math>
+    <m:mi>x</m:mi>
+  </m:math>
+ mierzymy w metrach, a <m:math>
+  <m:mi>t</m:mi>
+</m:math>
+ w sekundach, jakie jednostki mają <m:math>
+  <m:mi>A</m:mi>
+</m:math>
+ i <m:math>
+  <m:mi>B</m:mi>
+</m:math>
+? </item>
+<item> Jeśli prędkość początkowa rakiety była zerowa, to jak zmienia się ona pomiędzy <m:math>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+</m:math> i <m:math>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:msub>
+  <m:mi>t</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math>? </item>
+<item> Jeśli początkowe położenie rakiety wynosi zero, to jaką funkcją jest w tym samym przedziale czasu położenie? </item>
+</list></para>
+</problem>
+<solution id="fs-id1168055134758">
+  <list id="eip-idm478941968" list-type="enumerated" number-style="lower-alpha">
+    <item>
+      <m:math>
+	  <m:mo stretchy="false">[</m:mo>
+        <m:mi>A</m:mi>
+		<m:mo stretchy="false">]</m:mo>
+        <m:mo>=</m:mo>
+        <m:msup>
+          <m:mtext>m/s</m:mtext>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:math>, <m:math>
+	  <m:mo stretchy="false">[</m:mo>
+      <m:mi>B</m:mi>
+	  <m:mo stretchy="false">]</m:mo>
+      <m:mo>=</m:mo>
+      <m:msup>
+        <m:mtext>m/s</m:mtext>
+        <m:mrow>
+          <m:mn>5</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>/</m:mtext>
+          <m:mn>2</m:mn>
+        </m:mrow>
+      </m:msup>
+      </m:math>;</item>
+      <item>
+        <m:math>
+          <m:mi>v</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mo>∫</m:mo>
+          <m:mi>a</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>C</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mo>∫</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>A</m:mi>
+              <m:mo>−</m:mo>
+              <m:mi>B</m:mi>
+              <m:msup>
+                <m:mi>t</m:mi>
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+              </m:msup>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>C</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mi>A</m:mi>
+          <m:mi>t</m:mi>
+          <m:mo>−</m:mo>
+          <m:mfrac>
+            <m:mn>2</m:mn>
+            <m:mn>3</m:mn>
+          </m:mfrac>
+          <m:mi>B</m:mi>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mrow>
+              <m:mn>3</m:mn>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mn>2</m:mn>
+            </m:mrow>
+          </m:msup>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>C</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+        </m:math>,<m:math>
+        <m:mi>v</m:mi>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>0</m:mn>
+        <m:mo stretchy="false">)</m:mo>
+        <m:mo>=</m:mo>
+        <m:mn>0</m:mn>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>C</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+      </m:math>, więc <m:math>
+      <m:mi>v</m:mi>
+      <m:mo stretchy="false">(</m:mo>
+      <m:msub>
+        <m:mi>t</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mo>=</m:mo>
+      <m:mi>A</m:mi>
+      <m:msub>
+        <m:mi>t</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>−</m:mo>
+      <m:mfrac>
+        <m:mn>2</m:mn>
+        <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>B</m:mi>
+      <m:msubsup>
+        <m:mi>t</m:mi>
+        <m:mn>0</m:mn>
+        <m:mrow>
+          <m:mn>3</m:mn>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mn>2</m:mn>
+        </m:mrow>
+      </m:msubsup>
+      </m:math>;</item>
+      <item>
+        <m:math>
+          <m:mi>x</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mo>∫</m:mo>
+          <m:mi>v</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>C</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mo>∫</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>A</m:mi>
+              <m:mi>t</m:mi>
+              <m:mo>−</m:mo>
+              <m:mfrac>
+                <m:mn>2</m:mn>
+                <m:mn>3</m:mn>
+              </m:mfrac>
+              <m:mi>B</m:mi>
+              <m:msup>
+                <m:mi>t</m:mi>
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+              </m:msup>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>C</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:mi>A</m:mi>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>−</m:mo>
+          <m:mfrac>
+            <m:mn>4</m:mn>
+            <m:mn>15</m:mn>
+          </m:mfrac>
+          <m:mi>B</m:mi>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mrow>
+              <m:mn>5</m:mn>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mn>2</m:mn>
+            </m:mrow>
+          </m:msup>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>C</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+        </m:math>,<m:math>
+        <m:mi>x</m:mi>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>0</m:mn>
+        <m:mo stretchy="false">)</m:mo>
+        <m:mo>=</m:mo>
+        <m:mn>0</m:mn>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>C</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+      </m:math>, więc <m:math>
+      <m:mi>x</m:mi>
+      <m:mo stretchy="false">(</m:mo>
+      <m:msub>
+        <m:mi>t</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>A</m:mi>
+      <m:msubsup>
+        <m:mi>t</m:mi>
+        <m:mn>0</m:mn>
+        <m:mn>2</m:mn>
+      </m:msubsup>
+      <m:mo>−</m:mo>
+      <m:mfrac>
+        <m:mn>4</m:mn>
+        <m:mn>15</m:mn>
+      </m:mfrac>
+      <m:mi>B</m:mi>
+      <m:msubsup>
+        <m:mi>t</m:mi>
+        <m:mn>0</m:mn>
+        <m:mrow>
+          <m:mn>5</m:mn>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mn>2</m:mn>
+        </m:mrow>
+      </m:msubsup>
+      </m:math>.</item>
+    </list>
+  </solution>
+</exercise>
+<exercise id="fs-id1168054976898">
+  <problem id="fs-id1168055340227">
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168055340229">Prędkość cząstki poruszającej się wzdłuż osi <m:math>
+        <m:mi>x</m:mi>
+      </m:math>
+     zmienia się w przedziale czasu <m:math>
+    <m:mn>1,0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+    <m:mo>⩽</m:mo>
+    <m:mi>t</m:mi>
+    <m:mo>⩽</m:mo>
+    <m:mn>8,0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+  </m:math> jak <m:math>
+  <m:mrow>
+    <m:mi>v</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>t</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>=</m:mo>
+    <m:mi>A</m:mi>
+    <m:mo>+</m:mo>
+    <m:mi>B</m:mi>
+    <m:msup>
+      <m:mi>t</m:mi>
+      <m:mrow>
+        <m:mn>−1</m:mn>
+      </m:mrow>
+    </m:msup>
+  </m:mrow>
+</m:math>, gdzie <m:math>
+<m:mi>A</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">m</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>, <m:math display="inline"><m:semantics><m:mrow><m:mi>B</m:mi><m:mo>=</m:mo><m:mrow><m:mn>0,25</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            B = \SI{0,25}{\metre}</m:annotation></m:semantics></m:math>. Znajdź przyspieszenie i położenie cząstki w chwilach <m:math>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math> i <m:math>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mn>5,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>. Załóż, że <m:math>
+<m:mi>x</m:mi>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mn>1</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>.</para></problem>
+</exercise>
+<exercise id="fs-id1168054988599">
+  <problem id="fs-id1168054988602">
+    <para id="fs-id1168057418955">Cząstka, która w chwili początkowej spoczywa w początku układu współrzędnych, nagle rusza z prędkością zależną od czasu jak <m:math>
+      <m:mi>v</m:mi>
+      <m:mo>(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo>)</m:mo>
+      <m:mo>=</m:mo>
+      <m:mn>3,2</m:mn>
+      <m:mi>t</m:mi>
+    </m:math>. W piątej sekundzie ruchu zależność prędkości cząstki od czasu zmienia się na funkcję <m:math>
+    <m:mi>v</m:mi>
+    <m:mo>(</m:mo>
+    <m:mi>t</m:mi>
+    <m:mo>)</m:mo>
+    <m:mo>=</m:mo>
+    <m:mn>16,0</m:mn>
+    <m:mo>-</m:mo>
+    <m:mn>1,5</m:mn>
+    <m:mfenced>
+      <m:mrow>
+        <m:mi>t</m:mi>
+        <m:mo>-</m:mo>
+        <m:mn>5,0</m:mn>
+      </m:mrow>
+    </m:mfenced>
+  </m:math>. Ten spadek prędkości zachodzi aż do jedenastej sekundy ruchu, od której prędkość ustala się na poziomie 7,0 m/s. <list id="eip-idm1143057024" list-type="enumerated" number-style="lower-alpha"><item> Jak przyspieszenie cząstki zależy od czasu? </item>
+  <item> Jakie jest położenie cząstki w chwilach <m:math>
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>2,0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+  </m:math>, <m:math>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>7,0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">s</m:mi>
+  </m:mrow>
+</m:math> i <m:math>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mn>12,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>? </item>
+</list></para>
+</problem>
+<solution id="fs-id1168055121296">
+  <list id="fs-id1168055121299" list-type="enumerated" number-style="lower-alpha"><item> Przyspieszenie:<m:math>
+      <m:mi>a</m:mi>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>{</m:mo>
+        <m:mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+          <m:mtr>
+            <m:mtd>
+              <m:mn>3,2</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:msup>
+                  <m:mi mathvariant="normal">s</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>,</m:mo>
+              <m:mspace width="0.4em"/>
+            </m:mtd>
+            <m:mtd>
+              <m:mi>t</m:mi>
+              <m:mo>⩽</m:mo>
+              <m:mn>5,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:mn>1,5</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:msup>
+                  <m:mi mathvariant="normal">s</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>,</m:mo>
+            </m:mtd>
+            <m:mtd>
+              <m:mn>5,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>&lt;</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>⩽</m:mo>
+              <m:mn>11,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:msup>
+                  <m:mi mathvariant="normal">s</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>,</m:mo>
+            </m:mtd>
+            <m:mtd>
+              <m:mi>t</m:mi>
+              <m:mo>&gt;</m:mo>
+              <m:mn>11,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+        <m:mo fence="true" stretchy="true" symmetric="true"/>
+      </m:mrow>
+    </m:math>
+  </item>
+  <item> Położenie: Kiedy <m:math>
+    <m:mi>t</m:mi>
+    <m:mo>⩽</m:mo>
+    <m:mn>5,0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+  </m:math>,<newline/><m:math>
+  <m:mi>x</m:mi>
+  <m:mo stretchy="false">(</m:mo>
+  <m:mi>t</m:mi>
+  <m:mo stretchy="false">)</m:mo>
+  <m:mo>=</m:mo>
+  <m:mo>∫</m:mo>
+  <m:mi>v</m:mi>
+  <m:mo stretchy="false">(</m:mo>
+  <m:mi>t</m:mi>
+  <m:mo stretchy="false">)</m:mo>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:mi>t</m:mi>
+  <m:mo>+</m:mo>
+  <m:msub>
+    <m:mi>C</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mo>∫</m:mo>
+  <m:mn>3,2</m:mn>
+  <m:mi>t</m:mi>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:mi>t</m:mi>
+  <m:mo>+</m:mo>
+  <m:msub>
+    <m:mi>C</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mn>1,6</m:mn>
+  <m:msup>
+    <m:mi>t</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>+</m:mo>
+  <m:msub>
+    <m:mi>C</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:math>,<newline/><m:math>
+<m:mi>x</m:mi>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>0</m:mn>
+<m:mo stretchy="false">)</m:mo>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+<m:mspace width="thickmathspace"/>
+<m:mo stretchy="false">⟹</m:mo>
+<m:mspace width="thickmathspace"/>
+<m:msub>
+  <m:mi>C</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>,<newline/>zatem <m:math>
+  <m:mi>x</m:mi>
+  <m:mo stretchy="false">(</m:mo>
+  <m:mn>2,0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">s</m:mi>
+  </m:mrow>
+  <m:mo stretchy="false">)</m:mo>
+  <m:mo>=</m:mo>
+  <m:mn>6,4</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">m</m:mi>
+  </m:mrow>
+</m:math>.<newline/>Kiedy <m:math>
+<m:mn>5,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+<m:mo>&lt;</m:mo>
+<m:mi>t</m:mi>
+<m:mo>⩽</m:mo>
+<m:mn>11,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>,<newline/>
+  <m:math>
+    <m:mi>x</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>t</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>=</m:mo>
+    <m:mo>∫</m:mo>
+    <m:mi>v</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>t</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>t</m:mi>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>C</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mo>∫</m:mo>
+    <m:mrow>
+      <m:mo>[</m:mo>
+      <m:mrow>
+        <m:mn>16,0</m:mn>
+        <m:mo>−</m:mo>
+        <m:mn>1,5</m:mn>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>t</m:mi>
+            <m:mo>−</m:mo>
+            <m:mn>5,0</m:mn>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>]</m:mo>
+    </m:mrow>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>t</m:mi>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>C</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>16</m:mn>
+    <m:mi>t</m:mi>
+    <m:mo>−</m:mo>
+    <m:mn>1,5</m:mn>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>−</m:mo>
+        <m:mn>5,0</m:mn>
+        <m:mi>t</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>C</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    </m:math>,<newline/>
+      <m:math>
+        <m:mi>x</m:mi>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>5</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:mo stretchy="false">)</m:mo>
+        <m:mo>=</m:mo>
+        <m:mn>1,6</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>5,0</m:mn>
+        <m:msup>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mn>40</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mn>16</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:mn>5,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>1,5</m:mn>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:msup>
+                <m:mn>5</m:mn>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mo>−</m:mo>
+            <m:mn>5,0</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:mn>5,0</m:mn>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>C</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        </m:math>,<newline/>
+        <m:math>
+          <m:mn>40</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mn>98,75</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>C</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mspace width="thickmathspace"/>
+          <m:mo stretchy="false">⟹</m:mo>
+          <m:mspace width="thickmathspace"/>
+          <m:msub>
+            <m:mi>C</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>58,75</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+        </m:math>,<newline/>zatem <m:math>
+        <m:mi>x</m:mi>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>7,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:mo stretchy="false">)</m:mo>
+        <m:mo>=</m:mo>
+        <m:mn>16</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:mn>7,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>1,5</m:mn>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:msup>
+                <m:mn>7</m:mn>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mo>−</m:mo>
+            <m:mn>5,0</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:mn>7,0</m:mn>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>58,75</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mn>69</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        </m:math>.<newline/>
+        Kiedy <m:math>
+          <m:mi>t</m:mi>
+          <m:mo>&gt;</m:mo>
+          <m:mn>11,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:math>, <newline/>
+        <m:math>
+          <m:mi>x</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mo>∫</m:mo>
+          <m:mn>7,0</m:mn>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>C</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>7</m:mn>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>C</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          </m:math>,<newline/>
+            <m:math>
+              <m:mi>x</m:mi>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mn>11,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mn>16</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:mn>11,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>1,5</m:mn>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>11</m:mn>
+                      <m:mo>,</m:mo>
+                      <m:msup>
+                        <m:mn>0</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>−</m:mo>
+                  <m:mn>5,0</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:mn>11,0</m:mn>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>58,75</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>109</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>7</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:mn>11,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>C</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mspace width="thickmathspace"/>
+              <m:mo stretchy="false">⟹</m:mo>
+              <m:mspace width="thickmathspace"/>
+              <m:msub>
+                <m:mi>C</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>32</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              </m:math>, <newline/>zatem <m:math>
+                <m:mi>x</m:mi>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mn>12,0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                <m:mo stretchy="false">)</m:mo>
+                <m:mo>=</m:mo>
+                <m:mn>7</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:mn>12,0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mn>32</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mn>116</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+                </m:math>.
+              </item>
+            </list></solution>
+        </exercise>
+      </section>
+      <section id="fs-id1168055137769" class="review-additional-problems">
+        <title>Zadania dodatkowe</title>
+        <exercise id="fs-id1168057389393">
+          <problem id="fs-id1168057389395">
+            <para id="fs-id1168057389397">Zawodowy łapacz drużyny baseballowej może przyjąć piłkę pędzącą z prędkością 160,0 km/h. Jak długo leci piłka rzucona z taką prędkością z bazy odległej o 18,4 m? Porównaj ten czas ze średnim czasem reakcji człowieka na bodziec wzrokowy, który wynosi ok. 0,25 s. Załóż, że ruch piłki jest prostoliniowy.</para>
+          </problem>
+        </exercise>
+        <exercise id="fs-id1168057491154">
+          <problem id="fs-id1168057460178">
+            <para id="fs-id1168057460180">Pierwszy samolot pokonuje dystans 3000 km z Chicago do Los Angeles w 5,0 h. O pół godziny krócej trwa lot drugiego samolotu. Porównaj szybkości średnie obu samolotów. Zaniedbaj ew. wpływ krzywizny Ziemi i różnice w szerokości geograficznej miast.</para></problem>
+          <solution id="fs-id1168055151090">
+            <para id="fs-id1168057460183">Kierunek zachodni będzie kierunkiem dodatnim.<newline/>samolot 1: <m:math>
+              <m:mover>
+                <m:mi>v</m:mi>
+                <m:mtext>–</m:mtext>
+              </m:mover>
+              <m:mo>=</m:mo>
+              <m:mn>600</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">k</m:mi>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mi mathvariant="normal">h</m:mi>
+              </m:mrow>
+            </m:math>
+            <newline/>samolot 2: <m:math>
+            <m:mover>
+              <m:mi>v</m:mi>
+              <m:mtext>–</m:mtext>
+            </m:mover>
+            <m:mo>=</m:mo>
+            <m:mn>667</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">k</m:mi>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mi mathvariant="normal">h</m:mi>
+            </m:mrow>
+          </m:math>
+        </para>
+      </solution>
+    </exercise>
+    <exercise id="fs-id1168055309763">
+      <problem id="fs-id1168055269127">
+        <para id="fs-id1168055269129"><emphasis effect="bold">Niefizyczny wynik</emphasis> Rowerzysta jedzie 16 km na wschód, potem 8 km na zachód, 8 km znowu na wschód, po czym 32 km na zachód i w końcu 11,2 km na wschód. Jego wektor prędkości średniej ma wartość 24 km/h. Po jakim czasie pokonał całą drogę? Czy ten wynik ma sens?</para></problem>
+      </exercise>
+      <exercise id="fs-id1168057455309">
+        <problem id="fs-id1168057455311">
+          <para id="fs-id1168057455313">Ciało ma przyspieszenie <m:math>
+            <m:mo>+</m:mo>
+            <m:mn>1,2</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">c</m:mi>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:msup>
+                <m:mi mathvariant="normal">s</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>. W chwili <m:math>
+          <m:mi>t</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>4,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:math> jego prędkość wynosi <m:math>
+        <m:mo>−</m:mo>
+        <m:mn>3,4</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">c</m:mi>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+      </m:math>. Znajdź prędkości ciała w chwilach <m:math>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>1,0</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+    </m:math> i <m:math>
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>6,0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+    </m:math>.</para>
+  </problem>
+  <solution id="fs-id1168055302745">
+    <para id="fs-id1168055302748">
+      <m:math>
+        <m:mrow>
+          <m:mi>a</m:mi>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>v</m:mi>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mrow>
+              <m:mi>t</m:mi>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>t</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+            </m:mrow>
+          </m:mfrac>
+        </m:mrow>
+      </m:math>, <m:math>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:math>, <m:math>
+    <m:mi>a</m:mi>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>3,4</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">c</m:mi>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+      </m:mrow>
+      <m:mrow>
+        <m:mn>4</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mn>1,2</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">c</m:mi>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:msup>
+        <m:mi mathvariant="normal">s</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+    <m:mspace width="thickmathspace"/>
+    <m:mo stretchy="false">⟹</m:mo>
+    <m:mspace width="thickmathspace"/>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mo>−</m:mo>
+    <m:mn>8,2</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">c</m:mi>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+  </m:math>; <m:math>
+  <m:mi>v</m:mi>
+  <m:mo>=</m:mo>
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo>
+  <m:mi>a</m:mi>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mo>−</m:mo>
+      <m:mn>8,2</m:mn>
+      <m:mo>+</m:mo>
+      <m:mn>1,2</m:mn>
+      <m:mi>t</m:mi>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">c</m:mi>
+    <m:mi mathvariant="normal">m</m:mi>
+    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+    <m:mi mathvariant="normal">s</m:mi>
+  </m:mrow>
+</m:math>; <m:math>
+<m:mi>v</m:mi>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>1,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:mn>7,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">c</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>, <m:math>
+<m:mi>v</m:mi>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>6,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:mn>1,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">c</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1168055120900">
+  <problem id="fs-id1168055120902">
+    <para id="fs-id1168055120904">Cząstka porusza się wzdłuż osi 
+      <m:math>
+        <m:mi>x</m:mi>
+      </m:math>
+     zgodnie z równaniem położenia <m:math>
+    <m:mi>x</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>t</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mn>2,0</m:mn>
+        <m:mo>−</m:mo>
+        <m:mn>4,0</m:mn>
+        <m:msup>
+          <m:mi>t</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+  </m:math>. Jakie są prędkości i położenia cząstki w chwilach <m:math>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>2,0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">s</m:mi>
+  </m:mrow>
+</m:math> i <m:math>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mn>5,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1168055308636">
+  <problem id="fs-id1168055308638">
+    <para id="fs-id1168055175652">Wiemy, że cząstka poruszająca się ze stałym przyspieszeniem, ma prędkości <m:math>
+      <m:mn>2,0</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+    </m:math> w chwili <m:math>
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>2,0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+  </m:math> oraz <m:math>
+  <m:mrow>
+    <m:mo>−</m:mo>
+    <m:mn>7,6</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>m/s</m:mtext>
+  </m:mrow>
+</m:math> w chwili <m:math>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mn>5,2</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>. Jakie jest przyspieszenie cząstki?</para>
+</problem>
+<solution id="fs-id1168055307822">
+  <para id="fs-id1168055307824">
+    <m:math>
+      <m:mi>a</m:mi>
+      <m:mo>=</m:mo>
+      <m:mo>−</m:mo>
+      <m:mn>3</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:msup>
+          <m:mi mathvariant="normal">s</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:math>
+  </para>
+</solution>
+</exercise>
+<exercise id="fs-id1168055390931">
+  <problem id="fs-id1168055390933">
+    <para id="fs-id1168057323571">Pociąg wjeżdża na strome wzniesienie ze stałą prędkością (zobacz rysunek poniżej). W pewnej chwili ostatni wagon odpina się i zaczyna staczać się w dół. Po 5,0 s pokonuje drogę 30 m. Jakie jest przyspieszenie odczepionego wagonu?</para>
+    <media id="fs-id1168057244126" alt="Rysunek pokazuje pociąg (lokomotywę i wagon) wjeżdżający pod górę.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_04_Prob8_img.jpg"/>
+    </media>
+  </problem>
+</exercise>
+<exercise id="fs-id1168055478200">
+  <problem id="fs-id1168055478202">
+    <para id="fs-id1168055120320">Elektron pędzi ruchem prostoliniowym z szybkością <m:math>
+      <m:mn>4,0</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>5</m:mn>
+      </m:msup>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+    </m:math>. Nagle wpada w obszar o długości 5,0 cm, w którym doznaje przyspieszenia o tym samym kierunku oraz wartości równej <m:math>
+    <m:mn>6,0</m:mn>
+    <m:mo>⋅</m:mo>
+    <m:msup>
+      <m:mn>10</m:mn>
+      <m:mrow>
+        <m:mn>12</m:mn>
+      </m:mrow>
+    </m:msup>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:msup>
+        <m:mi mathvariant="normal">s</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+  </m:math>. <list id="eip-idm448961264" list-type="enumerated" number-style="lower-alpha">
+  <item> Z jaką prędkością elektron opuści ten obszar? </item>
+  <item> Ile czasu elektron spędzi w tym obszarze? </item>
+</list>
+</para>
+</problem>
+<solution id="fs-id1168055302554">
+  <list id="eip-idm985021552" list-type="enumerated" number-style="lower-alpha">
+    <item>
+      <m:math>
+        <m:mi>v</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>8,7</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mn>5</m:mn>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        </m:math>; </item>
+        <item>
+          <m:math>
+            <m:mi>t</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>7,8</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>8</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            </m:math>.</item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1168055124622">
+        <problem id="fs-id1168055124624">
+          <para id="fs-id1168055022035">Kierowca ambulansu musi jak najszybciej dowieźć pacjenta do szpitala. Jadąc z szybkością 72 km/h zauważa, że światła na najbliższym skrzyżowaniu zmieniają się na żółte. Aby zdążyć przejechać przed światłem czerwonym, musi pokonać 50 m w 2,0 s. <list id="eip-idm291216304" list-type="enumerated" number-style="lower-alpha">
+            <item> Jakim co najmniej przyspieszeniem musi dysponować ambulans, aby kierowca zdołał przejechać skrzyżowanie, zanim zapali się czerwone światło? </item>
+            <item> Z jaką szybkością ambulans opuści wtedy skrzyżowanie? </item>
+          </list>
+        </para>
+      </problem>
+    </exercise>
+    <exercise id="fs-id1168055146907">
+      <problem id="fs-id1168055146909">
+        <para id="fs-id1168055146911">Dojeżdżający do bramek autostradowych motocykl hamuje jednostajnie, pokonując pierwszy kilometr w czasie 80 s, a drugi kilometr w czasie 120 s. Oblicz <list id="eip-idm251151840" list-type="enumerated" number-style="lower-alpha">
+          <item> przyspieszenie </item>
+          <item> i prędkość początkową motocykla.</item>
+        </list>
+      </para></problem>
+    <solution id="fs-id1168057524743">
+      <para id="fs-id1168055283058">
+        <m:math>
+          <m:mn>1</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">k</m:mi>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>v</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⋅</m:mo>
+          <m:mn>80,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+          <m:mi>a</m:mi>
+          <m:mo>⋅</m:mo>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mn>80,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+          <m:msup>
+            <m:mo stretchy="false">)</m:mo>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:math>; <m:math>
+        <m:mn>2</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">k</m:mi>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⋅</m:mo>
+        <m:mn>200,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mi>a</m:mi>
+        <m:mo>⋅</m:mo>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>200,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:msup>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:math> - rozwiązujemy układ równań, aby jednocześnie otrzymać <m:math>
+      <m:mi>a</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mn>0,1</m:mn>
+        </m:mrow>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mn>400,0</m:mn>
+        </m:mrow>
+      </m:mfrac>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">k</m:mi>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:msup>
+          <m:mi mathvariant="normal">s</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+    </m:math> i <m:math>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>0,014</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mn>167</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">k</m:mi>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+  </m:math>, czyli <m:math>
+  <m:mn>51,0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">k</m:mi>
+    <m:mi mathvariant="normal">m</m:mi>
+    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+    <m:mi mathvariant="normal">h</m:mi>
+  </m:mrow>
+</m:math>. Prędkość na końcu 2-kilometrowego odcinka wynosi <m:math>
+<m:mi>v</m:mi>
+<m:mo>=</m:mo>
+<m:mn>21,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">k</m:mi>
+  <m:mi mathvariant="normal">m</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi mathvariant="normal">h</m:mi>
+</m:mrow>
+</m:math>.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1168055392099">
+  <problem id="fs-id1168055392101">
+    <para id="fs-id1168055315002">Rowerzystka pokonuje dystans między punktem <m:math>
+      <m:mi>A</m:mi>
+    </m:math> i punktem <m:math>
+    <m:mi>B</m:mi>
+  </m:math> w 10 min. Przez pierwsze 2 min jedzie ze stałym przyspieszeniem <m:math>
+  <m:mn>0,090</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">m</m:mi>
+    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+    <m:msup>
+      <m:mi mathvariant="normal">s</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+  </m:mrow>
+</m:math>. Przez kolejne 5 min jedzie ze stałą prędkością. Następnie, przez ostatnie 3 min jej podróży zwalnia ze stałym przyspieszeniem tak, że w punkcie <m:math>
+<m:mi>B</m:mi>
+</m:math> zatrzymuje się. <list id="eip-idm1291546320" list-type="enumerated" number-style="lower-alpha">
+<item> Naszkicuj zależność jej prędkości od czasu w trakcie całej podróży. </item>
+<item> Z jakim przyspieszeniem porusza się rowerzystka przez ostanie 3 min? </item>
+<item> Jaką całkowitą drogę pokonała rowerzystka? </item>
+</list>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1168055171580">
+  <problem id="fs-id1168055392018">
+    <para id="fs-id1168055392021">Dwa pociągi pędzą tym samym torem z szybkością 30 m/s naprzeciw siebie. Maszyniści obu pociągów jednocześnie zauważają, że są na kursie kolizyjnym i uruchamiają hamulce bezpieczeństwa w momencie, gdy odległość między pociągami wynosi 1000 m. Jakie muszą być przyspieszenia obu pociągów (załóż, że mają takie same wartości), aby pociągi zatrzymały się tuż przed momentem zderzenia.</para>
+  </problem>
+  <solution id="fs-id1168055171872">
+    <para id="fs-id1168055392024">
+      <m:math>
+        <m:mi>a</m:mi>
+        <m:mo>=</m:mo>
+        <m:mo>−</m:mo>
+        <m:mn>0,9</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:msup>
+            <m:mi mathvariant="normal">s</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+		<m:mi>.</m:mi>
+      </m:math>
+	  
+    </para>
+  </solution>
+</exercise>
+<exercise id="fs-id1168055151366">
+  <problem id="fs-id1168055151368">
+    <para id="fs-id1168057341878">Ciężarówka o długości 10 m wyprzedza na autostradzie samochód osobowy o długości 3 m. Prędkość ciężarówki to 97 km/h, a samochodu 80 km/h. Jak długo trwa wyprzedzanie? (Ile czasu upłynie od chwili, gdy przód ciężarówki znajdzie się na wysokości tylnego zderzaka samochodu, do chwili, gdy tył ciężarówki minie czubek maski samochodu?)</para>
+    <media id="fs-id1168055140967" alt="Górny obrazek pokazuje samochód osobowy z prędkością 80 kilometrów na godzinę jadący za ciężarówką o prędkości 97 kilometrów na godzinę. Środkowy obrazek pokazuje oba samochody z tymi samymi prędkościami obok siebie. Na dolny obrazku samochód jedzie już przed ciężarówką.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_04_Prob10_img.jpg"/>
+    </media>
+  </problem>
+</exercise>
+<exercise id="fs-id1168055463266">
+  <problem id="fs-id1168055237626">
+    <para id="fs-id1168055237628">Patrol policji namierza pirata pędzącego z szybkością 40 m/s. W chwili, gdy pirat mija patrol, policjanci ruszają w pościg. Radiowóz ma przyspieszenie <m:math>
+      <m:mn>4</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:msup>
+          <m:mi mathvariant="normal">s</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      </m:math>. Po jakim czasie dogonią pirata?</para>
+    </problem>
+    <solution id="fs-id1168055306834">
+      <para id="fs-id1168055306836">Równanie ruchu dla pirata drogowego: Pirat ma stałą prędkość, równą prędkości średniej, i nie ma przyspieszenia, więc użyjemy równania na położenie z prędkością średnią, kładąc <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>x</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+        </m:mrow>
+      </m:math>: <m:math>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>x</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:mover>
+        <m:mi>v</m:mi>
+        <m:mo>¯</m:mo>
+      </m:mover>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mover>
+        <m:mi>v</m:mi>
+        <m:mo>¯</m:mo>
+      </m:mover>
+      <m:mi>t</m:mi>
+    </m:math>; Równanie ruchu dla radiowozu: Radiowóz porusza się ruchem jednostajnie przyspieszonym bez prędkości początkowej, więc użyjemy równania na położenie z <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>x</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:mrow>
+  </m:math> i <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>0</m:mn>
+  </m:mrow>
+</m:math>: <m:math>
+<m:mrow>
+  <m:mi>x</m:mi>
+  <m:mo>=</m:mo>
+  <m:msub>
+    <m:mi>x</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo>
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mi>t</m:mi>
+  <m:mo>+</m:mo>
+  <m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>a</m:mi>
+  <m:msup>
+    <m:mi>t</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo>
+  <m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mi>a</m:mi>
+  <m:msup>
+    <m:mi>t</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math>; Otrzymujemy układ dwóch równań, które rozwiążemy ze względu na niewiadomą <m:math>
+<m:mi>t</m:mi>
+</m:math>. <newline/>Krok 1: porównujemy położenia <m:math>
+<m:mi>x</m:mi>
+</m:math> radiowozu i pirata: <m:math>
+<m:mover>
+  <m:mi>v</m:mi>
+  <m:mo>¯</m:mo>
+</m:mover>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+  <m:mn>1</m:mn>
+  <m:mn>2</m:mn>
+</m:mfrac>
+<m:mi>a</m:mi>
+<m:msup>
+  <m:mi>t</m:mi>
+  <m:mn>2</m:mn>
+</m:msup>
+</m:math>; <newline/>Krok 2: obliczamy czas do spotkania <m:math>
+<m:mi>t</m:mi>
+</m:math>: <m:math>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+  <m:mrow>
+    <m:mn>2</m:mn>
+    <m:mover>
+      <m:mi>v</m:mi>
+      <m:mo>¯</m:mo>
+    </m:mover>
+  </m:mrow>
+  <m:mi>a</m:mi>
+</m:mfrac>
+</m:math>. Uciekający pirat ma stałą prędkość 40 m/s. Radiowóz ma przyspieszenie 4 m/s<sup>2</sup>. Obliczamy czas do spotkania, czyli czas, po jakim radiowóz dogoni pirata: <m:math>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+  <m:mrow>
+    <m:mn>2</m:mn>
+    <m:mi>v</m:mi>
+  </m:mrow>
+  <m:mi>a</m:mi>
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mfrac>
+  <m:mrow>
+    <m:mn>2</m:mn>
+    <m:mo>⋅</m:mo>
+    <m:mn>40</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:mrow>
+    <m:mn>4</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:msup>
+        <m:mi mathvariant="normal">s</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+  </m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mn>20</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1168057464878">
+  <problem id="fs-id1168057464880">
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168057424743">Bartek biegnie w półmaratonie ze stałą prędkością o wartości 3 m/s. Maciek biegnie z tą samą prędkością, ale 50 m za plecami Bartka. Aby nadrobić stratę, Maciek przyspiesza w tempie <m:math>
+      <m:mn>0,05</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:msup>
+          <m:mi mathvariant="normal">s</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+    </m:math>. <list id="eip-idm1305059232" list-type="enumerated" number-style="lower-alpha">
+    <item> Ile czasu zajmie Maćkowi dogonienie Bartka? </item>
+    <item> Jaką drogę pokona w tym czasie Maciek? </item>
+    <item> Z jaką prędkością końcową Maciek minie Bartka? </item>
+  </list>
+</para></problem>
+</exercise>
+<exercise id="fs-id1168055283140">
+  <problem id="fs-id1168055283142">
+    <para id="fs-id1168057354249">
+      <emphasis effect="bold">Niefizyczny wynik</emphasis> Biegaczka na 75 m przed linią mety zaczyna zwalniać od prędkości 8 m/s ze stałym opóźnieniem <m:math>
+        <m:mn>0,5</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:msup>
+            <m:mi mathvariant="normal">s</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+        </m:math>. Ile czasu upłynie, zanim biegaczka przetnie linię mety? Czy ten wynik ma sens?</para>
+      </problem>
+      <solution id="fs-id1168055381859">
+        <para id="fs-id1168055310472">Z podanym opóźnieniem biegaczka zatrzyma się po czasie <m:math>
+          <m:mi>t</m:mi>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mi>a</m:mi>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>8</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>0,5</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:msup>
+                  <m:mi mathvariant="normal">s</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mn>16</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:math>, ale droga pokonana w tym czasie to tylko <m:math>
+        <m:mi>x</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>8</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mn>16</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>⋅</m:mo>
+        <m:mn>0,5</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:msup>
+            <m:mi mathvariant="normal">s</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>16</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:msup>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>=</m:mo>
+        <m:mn>64</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        </m:math>, czyli mniej niż wynosi dystans do mety. Z takimi parametrami biegaczka nigdy nie ukończy biegu.</para>
+      </solution>
+    </exercise>
+    <exercise id="fs-id1168055095438">
+      <problem id="fs-id1168055095440">
+        <para id="fs-id1168055470146">Samolot zwiększa prędkość w poziomym locie w tempie <m:math>
+          <m:mn>5,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:msup>
+              <m:mi mathvariant="normal">s</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          </m:math>. Przyspieszając, pokonuje 10,0 km w czasie 30,0 s. Oblicz prędkość początkową i końcową samolotu.</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1168055124263">
+        <problem id="fs-id1168055124265">
+          <para id="fs-id1168055124267">Porównaj drogi przebyte przez dwa ciała, które poruszając się z tą samą prędkością początkową, w tym samym czasie zwiększają prędkość: dwukrotnie – ciało pierwsze, i czterokrotnie – ciało drugie. Załóż, że oba ciała mają (różne) stałe przyspieszenia.</para></problem>
+        <solution id="fs-id1168055323241">
+          <para id="fs-id1168055394272">
+            <m:math>
+              <m:msub>
+                <m:mi>x</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mn>3</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mi>t</m:mi>
+              <m:mo>,</m:mo>
+            </m:math>
+            <newline/>
+            <m:math>
+              <m:msub>
+                <m:mi>x</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mn>5</m:mn>
+                <m:mn>3</m:mn>
+              </m:mfrac>
+              <m:msub>
+                <m:mi>x</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1168055309203">
+        <problem id="fs-id1168057481425">
+          <para id="fs-id1168057481427">Cząstka porusza się w lewo osi ze stałą prędkością. W chwili początkowej <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>t</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+            </m:mrow>
+          </m:math> znajduje się w położeniu <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>x</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:math>. <list id="eip-idm357860784" list-type="enumerated" number-style="lower-alpha">
+        <item> Jakiego przyspieszenia musi doznać cząstka, aby po pewnym czasie <m:math>
+          <m:mi>t</m:mi>
+          </m:math> jej całkowite przemieszczenie wyniosło 0? </item>
+          <item> Jaka jest fizyczna interpretacja rozwiązania, jeśli zażądamy, aby <m:math>
+            <m:mrow>
+              <m:mi>t</m:mi>
+              <m:mtext>→</m:mtext>
+              <m:mi>∞</m:mi>
+            </m:mrow>
+            </m:math>? </item>
+          </list>
+        </para>
+      </problem>
+    </exercise>
+    <exercise id="fs-id1168055237526">
+      <problem id="fs-id1168055237528">
+        <para id="fs-id1168055391626">Piłkę rzucono pionowo do góry z nieznaną prędkością początkową. W swoim locie w górę piłka mija okno o wysokości 2 m, które znajduje się na wysokości 7,50 m nad miejscem wyrzucenia. Czas mijania okna wynosi 1,30 s. <list id="eip-idm637625264" list-type="enumerated" number-style="lower-alpha">
+          <item> Z jaką prędkością początkową wyrzucono piłkę? </item>
+          <item> Na jaką wysokość nad oknem wzniesie się jeszcze piłka? Po jakim czasie piłka drugi raz minie parapet? </item>
+        </list>
+      </para></problem>
+    <solution id="fs-id1168055391633">
+      <list id="eip-idm180728496" list-type="enumerated" number-style="lower-alpha"><item>
+          <m:math>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>7,9</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:math> – szybkość piłki na wysokości parapetu. <newline/>
+          <m:math>
+            <m:mi>v</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>7,9</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:math>
+          <newline/>
+          <m:math>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>14,1</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            </m:math>; </item>
+            <item> do samodzielnego rozwiązania.</item>
+          </list></solution>
+      </exercise>
+      <exercise id="fs-id1168055282726">
+        <problem id="fs-id1168057457672">
+          <para id="fs-id1168057457674">Pasażer lotu balonem upuścił monetę, gdy balon na wysokości 300 m nad ziemią wznosił się w górę ze stałą prędkością 10 m/s. Oblicz <list id="eip-idm383977952" list-type="enumerated" number-style="lower-alpha">
+            <item> maksymalną wysokość monety </item>
+            <item> oraz położenie i prędkość monety po upływie 4,00 s, </item>
+            <item> a także czas, po którym moneta upadnie na ziemię. </item>
+          </list>
+        </para>
+      </problem>
+    </exercise>
+    <exercise id="fs-id1168055388728">
+      <problem id="fs-id1168057522468">
+        <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168057522470">Piłka tenisowa zostaje upuszczona z wysokości 1,50 m na twardy kort i po odbiciu wznosi się na wysokość 1,10 m. <list id="eip-idm1270892704" list-type="enumerated" number-style="lower-alpha">
+          <item> Oblicz prędkość piłki tuż przed upadkiem na podłoże. </item>
+          <item> Oblicz prędkość piłki w ruchu w górę tuż po odbiciu od kortu. </item>
+          <item> Oblicz przyspieszenie, jakiego doznaje piłka w trakcie kontaktu z kortem, trwającego <m:math>
+            <m:mn>3,50</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>3</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            </m:math>. </item>
+            <item> O ile milimetrów piłka wgniotła się (na chwilę) w trakcie odbicia od kortu? Załóż, że podłoże jest idealnie twarde i nie odkształca się. </item>
+          </list>
+        </para></problem>
+      <solution id="fs-id1168055325521">
+        <list id="eip-idm371444480" list-type="enumerated" number-style="lower-alpha">
+          <item>
+            <m:math>
+              <m:mi>v</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>5,42</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              </m:math>; </item>
+              <item>
+                <m:math>
+                  <m:mi>v</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>4,64</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  </m:math>;</item>
+                  <item>
+                    <m:math>
+                      <m:mi>a</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mn>874,28</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:msup>
+                          <m:mi mathvariant="normal">s</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                      </m:math>; </item>
+                      <item>
+                        <m:math>
+                          <m:mi>x</m:mi>
+                          <m:mo>−</m:mo>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mn>0</m:mn>
+                          </m:msub>
+                          <m:mo>=</m:mo>
+                          <m:mn>5,11</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mi mathvariant="normal">m</m:mi>
+                          </m:mrow>
+                          </m:math>.</item>
+                        </list>
+                      </solution>
+                    </exercise>
+                    <exercise id="fs-id1168057461827">
+                      <problem id="fs-id1168057461829">
+                        <para id="fs-id1168057461831">
+                          <emphasis effect="bold">Niefizyczny wynik</emphasis>. Kropla deszczu upada z chmury wiszącej 300 m nad ziemią. Zakładając brak oporów powietrza, oblicz prędkość końcową kropli w chwili upadku na ziemię. Czy ten wynik ma sens?</para>
+                        </problem>
+                      </exercise>
+                      <exercise id="fs-id1168055124296">
+                        <problem id="fs-id1168055124298">
+                          <para id="fs-id1168055124300">Porównaj czasy przebywania w powietrzu dwóch siatkarzy, z których pierwszy wybija się na wysokość 1,0 m, a drugi na wysokość 0,3 m. Obaj poruszają się po pionowej prostej.</para>
+                        </problem>
+                        <solution id="fs-id1168057418927">
+                          <para id="fs-id1168057418929">Zakładamy, że siatkarze osiągają wysokość 1,0 i 0,3 m, odpowiednio, skacząc obaj z tego samego położenia początkowego.<newline/>0,9 s<newline/>0,5 s</para>
+                        </solution>
+                      </exercise>
+                      <exercise id="fs-id1168057556789">
+                        <problem id="fs-id1168057556792">
+                          <para id="fs-id1168055311511">Załóżmy, że chłopiec upuścił z pewnej wysokości kulkę, ale dzięki swojemu refleksowi, po 0,5 s zdołał ją złapać, zanim upadła na podłoże. <list id="eip-idm1302523952" list-type="enumerated" number-style="lower-alpha">
+                            <item> Jaki dystans pokonała kulka na Ziemi (<m:math>
+                              <m:mi>g</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mn>9,81</m:mn>
+                              <m:mspace width="0.2em"/>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">m</m:mi>
+                                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                <m:msup>
+                                  <m:mi mathvariant="normal">s</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                              </m:mrow>
+                              </m:math>) </item>
+                              <item> Jaki dystans pokonałaby kulka na Księżycu, na którym panuje 6 razy mniejsze przyspieszenie grawitacyjne? </item>
+                            </list>
+                          </para></problem>
+                      </exercise>
+                      <exercise id="fs-id1168055274264">
+                        <problem id="fs-id1168055274266">
+                          <para id="fs-id1168055274268">Balon na gorące powietrze unosi się z ziemi ze stałą szybkością 3,0 m/s. Po jednej minucie wznoszenia ktoś przypadkowo zrzuca balast (odwiązuje worek z piaskiem), który spada na ziemię. Oblicz <list id="eip-idm1359356672" list-type="enumerated" number-style="lower-alpha">
+                            <item> całkowity czas ruchu </item>
+                            <item> i prędkość końcową balastu w momencie upadku na ziemię. </item>
+                          </list>
+                        </para></problem>
+                      <solution id="fs-id1168055469821">
+                        <list id="eip-idm1405786976" list-type="enumerated" number-style="lower-alpha"><item>
+                            <m:math>
+                              <m:mi>t</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mn>6,37</m:mn>
+                              <m:mspace width="0.2em"/>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">s</m:mi>
+                              </m:mrow>
+                              </m:math> – wybieramy dodatni pierwiastek równania; </item>
+                              <item>
+                                <m:math>
+                                  <m:mi>v</m:mi>
+                                  <m:mo>=</m:mo>
+                                  <m:mn>59,5</m:mn>
+                                  <m:mspace width="0.2em"/>
+                                  <m:mrow>
+                                    <m:mi mathvariant="normal">m</m:mi>
+                                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                    <m:mi mathvariant="normal">s</m:mi>
+                                  </m:mrow>
+                                  </m:math>. </item>
+                                </list></solution>
+                            </exercise>
+                            <exercise id="fs-id1168055469798">
+                              <problem id="fs-id1168055308954">
+                                <list id="fs-id1168055308957" list-type="enumerated" number-style="lower-alpha"><item> Podczas igrzysk olimpijskich w Pekinie Usain Bolt ustanowił rekord świata w biegu na 100 m wynikiem 9,69 s. Zakładając, że Bolt przyspiesza do swojej maksymalnej prędkości w 3,00 s i potem utrzymuje ją do końca biegu, oblicz przyspieszenie Bolta w pierwszej fazie biegu i jego prędkość maksymalną. </item>
+                                  <item> W tej samej imprezie Jamajczyk popisał się także rekordowym biegiem na 200 m, uzyskując czas 19,30 s. Używając tych samych założeń, co w punkcie (a), oblicz maksymalną prędkość Bolta w tym biegu.</item>
+                                </list></problem>
+                            </exercise>
+                            <exercise id="fs-id1168055309639">
+                              <problem id="fs-id1168055309641">
+                                <para id="fs-id1168055309644">Ciało spada z wysokości 75,0 m nad ziemią. <list id="eip-idm1199727872" list-type="enumerated" number-style="lower-alpha"><item> Oblicz drogę przebytą przez nie w pierwszej sekundzie ruchu. </item>
+                                  <item> Oblicz prędkość, z jaką ciało uderzy w ziemię. </item>
+                                  <item> Oblicz drogę pokonaną przez ciało w ostatniej sekundzie ruchu przed zderzeniem. </item>
+                                </list></para>
+                            </problem>
+                            <solution id="fs-id1168055273683">
+                              <list id="eip-idm2127436480" list-type="enumerated" number-style="lower-alpha">
+                                <item>
+                                  <m:math>
+                                    <m:mi>y</m:mi>
+                                    <m:mo>=</m:mo>
+                                    <m:mn>4,9</m:mn>
+                                    <m:mspace width="0.2em"/>
+                                    <m:mrow>
+                                      <m:mi mathvariant="normal">m</m:mi>
+                                    </m:mrow>
+                                    </m:math>; </item>
+                                    <item>
+                                      <m:math>
+                                        <m:mi>v</m:mi>
+                                        <m:mo>=</m:mo>
+                                        <m:mn>38,3</m:mn>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">m</m:mi>
+                                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                          <m:mi mathvariant="normal">s</m:mi>
+                                        </m:mrow>
+                                        </m:math>; </item>
+                                        <item>
+                                          <m:math>
+                                            <m:mo>−</m:mo>
+                                            <m:mn>33,3</m:mn>
+                                            <m:mspace width="0.2em"/>
+                                            <m:mrow>
+                                              <m:mi mathvariant="normal">m</m:mi>
+                                            </m:mrow>
+                                            </m:math>.</item>
+                                          </list>
+                                        </solution>
+                                      </exercise>
+                                      <exercise id="fs-id1168052793064">
+                                        <problem id="fs-id1168052793066">
+                                          <para id="fs-id1168052793068">Twarda metalowa kulka upada na sztywne podłoże z wysokości 1,50 m i odbija się na wysokość 1,45 m. Oblicz jej prędkość <list id="eip-idm518483552" list-type="enumerated" number-style="lower-alpha">
+                                            <item> tuż przed upadkiem na ziemię </item>
+                                            <item> i tuż po odbiciu. </item>
+                                            <item> Oblicz przyspieszenie, jakiego doznaje kulka w trakcie odbicia, które trwa 0,080 ms (<m:math>
+                                              <m:mn>8,00</m:mn>
+                                              <m:mo>⋅</m:mo>
+                                              <m:msup>
+                                                <m:mn>10</m:mn>
+                                                <m:mrow>
+                                                  <m:mo>−</m:mo>
+                                                  <m:mn>5</m:mn>
+                                                </m:mrow>
+                                              </m:msup>
+                                              <m:mspace width="0.2em"/>
+                                              <m:mrow>
+                                                <m:mi mathvariant="normal">s</m:mi>
+                                              </m:mrow>
+                                              </m:math>). </item>
+                                              <item> O ile milimetrów kulka metalowa odkształciła się w momencie kontaktu z podłożem? </item>
+                                            </list>
+                                          </para>
+                                        </problem>
+                                      </exercise>
+                                      <exercise id="fs-id1168055324264">
+                                        <problem id="fs-id1168055324266">
+                                          <para id="fs-id1168055273765">Pewne ciało spadło z dachu budynku o wysokości <m:math>
+                                              <m:mi>h</m:mi>
+                                            </m:math>. Podczas ostatniej sekundy ruchu ciało pokonało drogę <m:math>
+                                          <m:mi>h</m:mi>
+                                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                          <m:mn>3</m:mn>
+                                          </m:math>. Oblicz wysokość budynku.</para></problem>
+                                        <solution id="fs-id1168055491899">
+                                          <para id="fs-id1168055491901"><m:math>
+                                              <m:mrow>
+                                                <m:mi>h</m:mi>
+                                                <m:mo>=</m:mo>
+                                                <m:mfrac>
+                                                  <m:mn>1</m:mn>
+                                                  <m:mn>2</m:mn>
+                                                </m:mfrac>
+                                                <m:mi>g</m:mi>
+                                                <m:msup>
+                                                  <m:mi>t</m:mi>
+                                                  <m:mn>2</m:mn>
+                                                </m:msup>
+                                              </m:mrow>
+                                            </m:math>, <m:math>
+                                              <m:mi>h</m:mi>
+                                            </m:math>
+                                           – całkowita droga pokonana przez ciało (wysokość budynku);<newline/>
+                                          <m:math>
+                                            <m:mrow>
+                                              <m:mfrac>
+                                                <m:mn>2</m:mn>
+                                                <m:mn>3</m:mn>
+                                              </m:mfrac>
+                                              <m:mi>h</m:mi>
+                                              <m:mo>=</m:mo>
+                                              <m:mfrac>
+                                                <m:mn>1</m:mn>
+                                                <m:mn>2</m:mn>
+                                              </m:mfrac>
+                                              <m:mi>g</m:mi>
+                                              <m:msup>
+                                                <m:mrow>
+                                                  <m:mo stretchy="false">(</m:mo>
+                                                  <m:mi>t</m:mi>
+                                                  <m:mo>−</m:mo>
+                                                  <m:mn>1</m:mn>
+                                                  <m:mo stretchy="false">)</m:mo>
+                                                </m:mrow>
+                                                <m:mn>2</m:mn>
+                                              </m:msup>
+                                            </m:mrow>
+                                          </m:math> w czasie <m:math>
+                                          <m:mi>t</m:mi>
+                                          <m:mo>-</m:mo>
+                                          <m:mn>1</m:mn>
+                                        </m:math> ciało pokonuje drogę <m:math>
+                                        <m:mn>2</m:mn>
+                                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                        <m:mn>3</m:mn>
+                                        <m:mo>·</m:mo>
+                                        <m:mi>h</m:mi>
+                                      </m:math>;<newline/>
+                                      <m:math>
+                                        <m:mrow>
+                                          <m:mfrac>
+                                            <m:mn>2</m:mn>
+                                            <m:mn>3</m:mn>
+                                          </m:mfrac>
+                                          <m:mrow>
+                                            <m:mo>(</m:mo>
+                                            <m:mrow>
+                                              <m:mfrac>
+                                                <m:mn>1</m:mn>
+                                                <m:mn>2</m:mn>
+                                              </m:mfrac>
+                                              <m:mi>g</m:mi>
+                                              <m:msup>
+                                                <m:mi>t</m:mi>
+                                                <m:mn>2</m:mn>
+                                              </m:msup>
+                                            </m:mrow>
+                                            <m:mo>)</m:mo>
+                                          </m:mrow>
+                                          <m:mo>=</m:mo>
+                                          <m:mfrac>
+                                            <m:mn>1</m:mn>
+                                            <m:mn>2</m:mn>
+                                          </m:mfrac>
+                                          <m:mi>g</m:mi>
+                                          <m:msup>
+                                            <m:mrow>
+                                              <m:mo stretchy="false">(</m:mo>
+                                              <m:mi>t</m:mi>
+                                              <m:mo>−</m:mo>
+                                              <m:mn>1</m:mn>
+                                              <m:mo stretchy="false">)</m:mo>
+                                            </m:mrow>
+                                            <m:mn>2</m:mn>
+                                          </m:msup>
+                                        </m:mrow>
+                                      </m:math>, czyli <m:math>
+                                      <m:mrow>
+                                        <m:mfrac>
+                                          <m:mrow>
+                                            <m:msup>
+                                              <m:mi>t</m:mi>
+                                              <m:mn>2</m:mn>
+                                            </m:msup>
+                                          </m:mrow>
+                                          <m:mn>3</m:mn>
+                                        </m:mfrac>
+                                        <m:mo>=</m:mo>
+                                        <m:mfrac>
+                                          <m:mn>1</m:mn>
+                                          <m:mn>2</m:mn>
+                                        </m:mfrac>
+                                        <m:msup>
+                                          <m:mrow>
+                                            <m:mo stretchy="false">(</m:mo>
+                                            <m:mi>t</m:mi>
+                                            <m:mo>−</m:mo>
+                                            <m:mn>1</m:mn>
+                                            <m:mo stretchy="false">)</m:mo>
+                                          </m:mrow>
+                                          <m:mn>2</m:mn>
+                                        </m:msup>
+                                      </m:mrow>
+                                    </m:math>
+                                    <newline/>
+                                    <m:math>
+                                      <m:mrow>
+                                        <m:mn>0</m:mn>
+                                        <m:mo>=</m:mo>
+                                        <m:msup>
+                                          <m:mi>t</m:mi>
+                                          <m:mn>2</m:mn>
+                                        </m:msup>
+                                        <m:mo>−</m:mo>
+                                        <m:mn>6</m:mn>
+                                        <m:mi>t</m:mi>
+                                        <m:mo>+</m:mo>
+                                        <m:mn>3,</m:mn>
+                                      </m:mrow>
+                                    </m:math>
+                                    <m:math>
+                                      <m:mrow>
+                                        <m:mspace width="0.2em"/>
+                                        <m:mi>t</m:mi>
+                                        <m:mo>=</m:mo>
+                                        <m:mfrac>
+                                          <m:mrow>
+                                            <m:mn>6</m:mn>
+                                            <m:mo>±</m:mo>
+                                            <m:msqrt>
+                                              <m:mrow>
+                                                <m:msup>
+                                                  <m:mn>6</m:mn>
+                                                  <m:mn>2</m:mn>
+                                                </m:msup>
+                                                <m:mo>−</m:mo>
+                                                <m:mn>4</m:mn>
+                                                <m:mo>·</m:mo>
+                                                <m:mn>3</m:mn>
+                                              </m:mrow>
+                                            </m:msqrt>
+                                          </m:mrow>
+                                          <m:mn>2</m:mn>
+                                        </m:mfrac>
+                                        <m:mo>=</m:mo>
+                                        <m:mn>3</m:mn>
+                                        <m:mo>±</m:mo>
+                                        <m:mfrac>
+                                          <m:mrow>
+                                            <m:msqrt>
+                                              <m:mrow>
+                                                <m:mn>24</m:mn>
+                                              </m:mrow>
+                                            </m:msqrt>
+                                          </m:mrow>
+                                          <m:mn>2</m:mn>
+                                        </m:mfrac>
+                                      </m:mrow>
+                                    </m:math>
+                                    <newline/>
+                                    <m:math>
+                                      <m:mi>t</m:mi>
+                                      <m:mo>=</m:mo>
+                                      <m:mn>5,45</m:mn>
+                                      <m:mspace width="0.2em"/>
+                                      <m:mrow>
+                                        <m:mi mathvariant="normal">s</m:mi>
+                                      </m:mrow>
+                                    </m:math> i <m:math>
+                                    <m:mi>h</m:mi>
+                                    <m:mo>=</m:mo>
+                                    <m:mn>145,5</m:mn>
+                                    <m:mspace width="0.2em"/>
+                                    <m:mrow>
+                                      <m:mi mathvariant="normal">m</m:mi>
+                                    </m:mrow>
+                                  </m:math>. Drugi pierwiastek daje wynik mniejszy niż 1 s. Sprawdzamy poprawność wyniku <m:math>
+                                  <m:mi>t</m:mi>
+                                  <m:mo>=</m:mo>
+                                  <m:mn>4,45</m:mn>
+                                  <m:mspace width="0.2em"/>
+                                  <m:mrow>
+                                    <m:mi mathvariant="normal">s</m:mi>
+                                  </m:mrow>
+                                </m:math>: <m:math>
+                                <m:mi>h</m:mi>
+                                <m:mo>=</m:mo>
+                                <m:mfrac>
+                                  <m:mn>1</m:mn>
+                                  <m:mn>2</m:mn>
+                                </m:mfrac>
+                                <m:mi>g</m:mi>
+                                <m:msup>
+                                  <m:mi>t</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                                <m:mo>=</m:mo>
+                                <m:mn>97,0</m:mn>
+                                <m:mspace width="0.2em"/>
+                                <m:mrow>
+                                  <m:mi mathvariant="normal">m</m:mi>
+                                </m:mrow>
+                                <m:mo>=</m:mo>
+                                <m:mfrac>
+                                  <m:mn>2</m:mn>
+                                  <m:mn>3</m:mn>
+                                </m:mfrac>
+                                <m:mo>⋅</m:mo>
+                                <m:mn>145,5</m:mn>
+                                <m:mspace width="0.2em"/>
+                                <m:mrow>
+                                  <m:mi mathvariant="normal">m</m:mi>
+                                </m:mrow>
+                              </m:math>
+                            </para></solution>
+                        </exercise>
+                      </section>
+                      <section id="fs-id1163713292662" class="review-challenge">
+                        <title>Zadania trudniejsze</title>
+                        <exercise id="fs-id1168055309429">
+                          <problem id="fs-id1168055309431">
+                            <para id="fs-id1168055309433">Zwycięzca biegu na 100 m przecina linię mety po 11,2 s. Zdobywca drugiego miejsca potrzebuje 11,6 s. W jakiej odległości za plecami mijającego linię mety zwycięzcy znajduje się zdobywca drugiego miejsca? Załóż, że biegacze cały dystans pokonują ze stałą prędkością.</para>
+                          </problem>
+                        </exercise>
+                        <exercise id="fs-id1168055190126">
+                          <problem id="fs-id1168055190128">
+                            <para id="fs-id1168055190131">Położenie cząstki poruszającej się po osi <m:math>
+                                <m:mi>x</m:mi>
+                              </m:math>
+                             zmienia się w czasie jak <m:math>
+                            <m:mi>x</m:mi>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mi>t</m:mi>
+                            <m:mo stretchy="false">)</m:mo>
+                            <m:mo>=</m:mo>
+                            <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:mrow>
+                                <m:mn>5,0</m:mn>
+                                <m:msup>
+                                  <m:mi>t</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                                <m:mo>−</m:mo>
+                                <m:mn>4,0</m:mn>
+                                <m:msup>
+                                  <m:mi>t</m:mi>
+                                  <m:mn>3</m:mn>
+                                </m:msup>
+                              </m:mrow>
+                              <m:mo>)</m:mo>
+                            </m:mrow>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">m</m:mi>
+                            </m:mrow>
+                          </m:math>. Oblicz: <list id="eip-idm263713696" list-type="enumerated" number-style="lower-alpha">
+                          <item> prędkość i przyspieszenie cząstki jako funkcje czasu; </item>
+                          <item> prędkość i przyspieszenie w chwili
+                            <m:math>
+                                <m:mi>t</m:mi>
+                                <m:mo>=</m:mo>
+                                <m:mn>2,0</m:mn>
+                                <m:mspace width="0.2em"/>
+                                <m:mrow>
+                                  <m:mi mathvariant="normal">s</m:mi>
+                                </m:mrow>
+                              </m:math>
+                            
+                            ;</item>
+                            <item> czas, po którym cząstka osiąga największe położenie; </item>
+                            <item> czas, po którym prędkość spada do zera; </item>
+                            <item> największą odległość od początku układu odniesienia.</item>
+                          </list>
+                        </para>
+                      </problem>
+                      <solution id="fs-id1168055269782">
+                        <list id="eip-idm417332384" list-type="enumerated" number-style="lower-alpha">
+                          <item>
+                            <m:math>
+                              <m:mi>v</m:mi>
+                              <m:mo stretchy="false">(</m:mo>
+                              <m:mi>t</m:mi>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo>=</m:mo>
+                              <m:mrow>
+                                <m:mo>(</m:mo>
+                                <m:mrow>
+                                  <m:mn>10</m:mn>
+                                  <m:mi>t</m:mi>
+                                  <m:mo>−</m:mo>
+                                  <m:mn>12</m:mn>
+                                  <m:msup>
+                                    <m:mi>t</m:mi>
+                                    <m:mn>2</m:mn>
+                                  </m:msup>
+                                </m:mrow>
+                                <m:mo>)</m:mo>
+                              </m:mrow>
+                              <m:mspace width="0.2em"/>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">m</m:mi>
+                                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                <m:mi mathvariant="normal">s</m:mi>
+                              </m:mrow>
+                            </m:math>, <m:math>
+                            <m:mi>a</m:mi>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mi>t</m:mi>
+                            <m:mo stretchy="false">)</m:mo>
+                            <m:mo>=</m:mo>
+                            <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:mrow>
+                                <m:mn>10</m:mn>
+                                <m:mo>−</m:mo>
+                                <m:mn>24</m:mn>
+                                <m:mi>t</m:mi>
+                              </m:mrow>
+                              <m:mo>)</m:mo>
+                            </m:mrow>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">m</m:mi>
+                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                              <m:msup>
+                                <m:mi mathvariant="normal">s</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                            </m:mrow>
+                            </m:math>;</item>
+                            <item>
+                              <m:math>
+                                <m:mi>v</m:mi>
+                                <m:mo stretchy="false">(</m:mo>
+                                <m:mn>2</m:mn>
+                                <m:mspace width="0.2em"/>
+                                <m:mrow>
+                                  <m:mi mathvariant="normal">s</m:mi>
+                                </m:mrow>
+                                <m:mo stretchy="false">)</m:mo>
+                                <m:mo>=</m:mo>
+                                <m:mo>−</m:mo>
+                                <m:mn>28</m:mn>
+                                <m:mspace width="0.2em"/>
+                                <m:mrow>
+                                  <m:mi mathvariant="normal">m</m:mi>
+                                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                  <m:mi mathvariant="normal">s</m:mi>
+                                </m:mrow>
+                              </m:math>, <m:math>
+                              <m:mi>a</m:mi>
+                              <m:mo stretchy="false">(</m:mo>
+                              <m:mn>2</m:mn>
+                              <m:mspace width="0.2em"/>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">s</m:mi>
+                              </m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo>=</m:mo>
+                              <m:mo>−</m:mo>
+                              <m:mn>38</m:mn>
+                              <m:mspace width="0.2em"/>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">m</m:mi>
+                                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                <m:msup>
+                                  <m:mi mathvariant="normal">s</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                              </m:mrow>
+                              </m:math>; </item>
+                              <item> Warunek: nachylenie funkcji położenia od czasu jest zero lub prędkość jest zero. Mamy dwa rozwiązania:
+                                <m:math>
+                                    <m:mi>t</m:mi>
+                                    <m:mo>=</m:mo>
+                                    <m:mn>0</m:mn>
+                                  </m:math>, dla którego <m:math>
+                              <m:mi>x</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mn>0</m:mn>
+                            </m:math>, lub <m:math>
+                            <m:mi>t</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mn>10,0</m:mn>
+                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            <m:mn>12,0</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">s</m:mi>
+                            </m:mrow>
+                            <m:mo>=</m:mo>
+                            <m:mn>0,83</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">s</m:mi>
+                            </m:mrow>
+                          </m:math>, dla którego <m:math>
+                            <m:mi>x</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mn>1,16</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">m</m:mi>
+                            </m:mrow>
+                          </m:math>. Drugie rozwiązanie jest poprawne; </item>
+                          <item> 0,83 s; </item>
+                          <item>1,16 m. </item>
+                        </list>
+                      </solution>
+                    </exercise>
+                    <exercise id="fs-id1168057481407">
+                      <problem id="fs-id1168057481409">
+                        <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168057481411">Dwójka kolarzy finiszuje w wyścigu. Jeden z nich porywa się na finisz sprinterski, rozpędzając się od początkowej prędkości 11,5 m/s z przyspieszeniem <m:math>
+                          <m:mn>0,500</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            <m:msup>
+                              <m:mi mathvariant="normal">s</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                        </m:math> przez 7,00 s. <list id="eip-idm1028144800" list-type="enumerated" number-style="lower-alpha">
+                        <item> Jaką prędkość końcową osiąga kolarz? </item>
+                        <item> Z tą prędkością kolarz pokonuje ostatni odcinek do mety. Jeśli zaczął on przyśpieszać 300 m przed metą to o ile szybciej dotarł do mety (w porównaniu do sytuacji, w której poruszałby się ze stałą prędkością 11,5 m/s)? </item>
+                        <item> Zdobywca drugiego miejsca w tym wyścigu był 5,0 m przed zwycięzcą w chwili, gdy tamten rozpoczął finisz, jednak nie miał sił na sprint i ze stałą szybkością 11,8 m/s kontynuował wyścig. Jaka była różnica czasów kolarzy na mecie? </item>
+                        <item> Jaki dystans w metrach dzielił na mecie zwycięzcę od zdobywcy drugiego miejsca? </item>
+                      </list>
+                    </para></problem>
+                </exercise>
+                <exercise id="fs-id1168055309457">
+                  <problem id="fs-id1168057239209">
+                    <para id="fs-id1168057239211">W 1967 roku na wyschniętym słonym jeziorze w stanie Utah Nowozelandczyk Burt Munro ustanowił do dziś niepobity rekord prędkości na motocyklu amerykańskiej marki Indian o pojemności do 1000 cm<sup>3</sup>. Wynosi on 295,38 km/h. Długa prosta na jeziorze ma długość 8,00 km. Przyspieszenie motocykla można zdefiniować jako czas potrzebny do osiągnięcia prędkości 96 km/h (60 mil na godzinę). Indian z 1967 roku osiągał tę prędkość w 4,00 s. Jeżeli Burt Munro ruszył z miejsca i z takim przyspieszeniem uzyskał rekordową prędkość, to w jakim czasie pokonał 8-kilometrową prostą?</para></problem>
+                  <solution id="fs-id1168057239219">
+                    <para id="fs-id1168057720330">
+                      <m:math>
+                        <m:mn>96</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">k</m:mi>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">h</m:mi>
+                        </m:mrow>
+                        <m:mo>=</m:mo>
+                        <m:mn>26,67</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                      </m:math>, <m:math>
+                      <m:mi>a</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>26,67</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>4,0</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>=</m:mo>
+                      <m:mn>6,67</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:msup>
+                          <m:mi mathvariant="normal">s</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:math>, <m:math>
+                    <m:mn>295,38</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">k</m:mi>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">h</m:mi>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mn>82,05</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:math>; <newline/>
+                  <m:math>
+                    <m:mi>t</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>12,3</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:math> to czas potrzebny na osiągnięcie maksymalnej prędkości; <newline/>
+                  <m:math>
+                    <m:mi>x</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>504,55</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                  </m:math> to droga pokonana w trakcie przyspieszania; <newline/>
+                  <m:math>
+                    <m:mn>7</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mn>495,44</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                  </m:math> to długość pozostałego odcinka w ruchu ze stałą prędkością;<newline/>
+                  <m:math>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mn>7</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mn>495,44</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mn>82,05</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>=</m:mo>
+                    <m:mn>91,35</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:math>, więc całkowity czas ruchu <m:math>
+                  <m:mn>91,35</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mn>12,3</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mn>103,65</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  </m:math>.</para>
+                </solution>
+              </exercise>
+            </section>
+          </content>
+        </document>

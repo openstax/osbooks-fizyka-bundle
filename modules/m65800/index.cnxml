@@ -1,0 +1,2636 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Toczenie się ciał</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65800</md:content-id>
+  <md:title>Toczenie się ciał</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>opisywać zjawisko toczenia się ciał bez poślizgu;</item>
+<item>wyjaśniać, jak w przypadku ruchu tocznego bez poślizgu zmienne liniowe związane są ze zmiennymi kątowymi;</item>
+<item>znajdować przyspieszenia liniowe i kątowe w ruchu tocznym bez poślizgu;</item>
+<item>obliczać statyczną siłę tarcia związaną z toczeniem się bez poślizgu;</item>
+<item>analizować ruch toczny ciał, używając zasady zachowania energii.</item>
+</list></md:abstract>
+  <md:uuid>8207bfe4-20f1-4475-90cf-ed7822e30962</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1165036895047"><term cmlnle:reference="toczenie się" class="no-emphasis">Toczenie się</term> lub <term class="no-emphasis">ruch toczny</term> ciał (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">rolling motion</term></foreign>) to ruch, który jest złożeniem ruchu obrotowego i postępowego ciał i obserwujemy go w wielu codziennych sytuacjach. Wystarczy pomyśleć o kołach samochodu poruszającego się po autostradzie, kołach startującego lub lądującego samolotu na pasie startowym lub obracających się łopat turbiny wiatrowej. Do precyzyjnego opisu ruchu toczenia się ciała niezbędne jest dogłębne zrozumienie pojęcia siły i momentu siły.</para><para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165038277654">Przy analizowaniu w tym rozdziale ruchu tocznego wokół stałej osi obrotu powołujemy się na <link target-id="CNX_UPhysics_10_04_RotInertia" document="m65794"/>, rozdział <link class="target-chapter" document="m65790">Obroty wokół stałej osi</link>, gdzie można znaleźć wyrażenia opisujące moment bezwładności wybranych, powszechnie występujących, obiektów geometrycznych. Podrozdział ten może się również okazać przydatny do wykonywania obliczeń parametrów różnych ruchów ciał, którym towarzyszy ruch obrotowy.</para><section id="fs-id1165038342162">
+      <title>Toczenie bez poślizgu</title>
+      <para id="fs-id1165037954725">Ludzie obserwowali toczenie się ciał bez poślizgu od czasu wynalezienia koła. Spójrzmy na przykład na wzajemne oddziaływanie opon samochodu i nawierzchni drogi. Jeśli kierowca podczas ruszania maksymalnie naciśnie pedał gazu, tak że opony obracają się, ale samochód nie porusza się do przodu, mamy do czynienia z tarciem kinetycznym pomiędzy oponami kół a powierzchnią drogi. Jeśli jednak kierowca będzie naciskał pedał gazu powoli, to spowoduje, że samochód ruszy do przodu, a opony kół będą toczyły się bez poślizgu. Wielu ludzi dziwi, że w rzeczywistości dolna część koła znajduje się w spoczynku w stosunku do podłoża, co oznacza, że tarcie między oponami a nawierzchnią drogi musi być tarciem statycznym. Na <link target-id="CNX_UPhysics_11_01_TireRoad" cmlnle:case="genitive"/>, rower wraz z rowerzystką jadącą w pozycji pionowej porusza się. Opony mają kontakt z nawierzchnią drogi, a nawet jeśli podczas toczenia część będąca w kontakcie, odkształca się nieznacznie, to nie dochodzi do poślizgu i opony przez pewien czas pozostają w stanie spoczynku w stosunku do powierzchni drogi. Aby tak było, tarcie między oponą i nawierzchnią drogi musi być tarciem statycznym.</para><figure id="CNX_UPhysics_11_01_TireRoad"><media id="fs-id1165038019140" alt="Ilustracja (a) jest fotografią osoby jadącej na rowerze. Kamera podąża za rowerem, więc obraz roweru i rowerzystki jest ostry. Tło jest rozmyte z powodu ruchu roweru. Ilustracja (b) to zdjęcie koła rowerowego toczącego się po powierzchni wykonane kamerą stacjonarną względem powierzchni ziemi. Koło i szprychy są rozmyte na górze, ale wyraźne od spodu.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_01_TireRoad.jpg"/>
+        </media>
+        
+      <caption>(a) Rower porusza się do przodu, a jego opony się nie ślizgają. Najniższe fragmenty opon mają kontakt z nawierzchnią drogi, a nawet jeśli podczas toczenia ich części odkształcają się nieznacznie, to nie dochodzi do poślizgu i dolne fragmenty opon przez jakiś czas są w stanie spoczynku w stosunku do powierzchni drogi. (b) Zdjęcie pokazuje, że górna część toczącego się koła jest rozmyta w czasie ruchu (zobacz obraz szprych), a dolna jest w stanie spoczynku. (Źródło (a) modyfikacja pracy Nelsona Lourenço; źródło (b) modyfikacja pracy Colin Rose)</caption></figure><para id="fs-id1165036844647">Przystępując do analizy ruchu tocznego bez poślizgu, wprowadzimy najpierw związki między wielkościami liniowymi prędkości i przyspieszenia środka masy koła jak również zmiennymi kątowymi, które opisują ruch obrotowy koła. Sytuację tę przedstawiono na <link target-id="CNX_UPhysics_11_01_RollNoSlip" cmlnle:case="locative"/>.</para><figure id="CNX_UPhysics_11_01_RollNoSlip"><media id="fs-id1165036784345" alt="Rysunek a przedstawia swobodny diagram koła, w tym miejscu, w którym działają siły. Pokazano cztery siły: M g jest siłą skierowaną ku dołowi, działającą na środek koła. N jest siłą skierowaną do góry, działającą na spód koła. F to siła na prawo, działająca na środek koła, a f-sub jest siłą na lewą stronę, działającą na spód koła. Siła nacisku jest mniejsza lub równa mi razy N. Rysunek b przedstawia ilustrację walcowania kół bez poślizgu na poziomej powierzchni. Punkt P jest punktem styku między spodem koła a powierzchnią. Koło obraca się zgodnie z ruchem wskazówek zegara, przyspieszenie po prawej stronie pod C M i prędkość z prawej strony podpunktu V M. Stosunki omega są takie, jak podgrupa C M nad R, a alfa jest pod C C nad R. Pokazany jest układ współrzędnych z dodatnim x na prawo i dodatnim y do góry. Rysunek c pokazuje koło w środku ramy masowej. Punkt P ma wektor prędkości w kierunku ujemnym względem środka masy koła. Wektor ten pokazany jest na rysunku i oznaczony jako minus R omega i hat. Jest styczny do koła na dole i wskazuje w lewo. Pokazane są dodatkowe wektory w różnych miejscach na obręczy koła, wszystkie styczne do koła i skierowane w kierunku zgodnym z ruchem wskazówek zegara.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_01_RollNoSlip.jpg"/>
+        </media>
+        <caption>(a) Koło jest ciągnięte po poziomej powierzchni przez siłę <m:math>
+          <m:mrow>
+            <m:mover>
+              <m:mi>F</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:math>. Siła tarcia statycznego <m:math>
+        <m:msub>
+          <m:mrow>
+            <m:mover>
+              <m:mi>T</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mtext>s</m:mtext>
+        </m:msub>
+      </m:math>, przy czym <m:math>
+      <m:msub>
+        <m:mi>T</m:mi>
+        <m:mtext>s</m:mtext>
+      </m:msub>
+      <m:mo>⩽</m:mo>
+      <m:msub>
+        <m:mi>μ</m:mi>
+        <m:mtext>s</m:mtext>
+      </m:msub>
+      <m:mi>N</m:mi>
+    </m:math>, jest wystarczająco duża, aby uchronić je przed poślizgiem. (b) Pokazano wektory prędkości liniowej i przyspieszenia środka masy oraz odpowiednie wyrażenia dla prędkości i przyspieszenia kątowego. Punkt <m:math>
+    <m:mi>P</m:mi>
+  </m:math> jest w stanie spoczynku w stosunku do powierzchni. (c) Punkt <m:math>
+  <m:mi>P</m:mi>
+</m:math> ma prędkość liniową <m:math>
+<m:mo>−</m:mo>
+<m:mi>R</m:mi>
+<m:mi>ω</m:mi>
+<m:mrow>
+  <m:mover>
+    <m:mi>i</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math> względem środka masy (ŚM) koła.</caption>
+</figure><para id="fs-id1165036767479">Na <link target-id="CNX_UPhysics_11_01_RollNoSlip" cmlnle:case="locative"/>(a) pokazano wektory sił zapobiegające poślizgowi koła. Na <link target-id="CNX_UPhysics_11_01_RollNoSlip" cmlnle:case="locative"/>(b), punkt <m:math>
+  <m:mi>P</m:mi>
+</m:math>, który dotyka powierzchni, pozostaje w stosunku do niej w spoczynku. Punkt <m:math>
+<m:mi>P</m:mi>
+</m:math> ma prędkość <m:math>
+<m:mo>−</m:mo>
+<m:mi>R</m:mi>
+<m:mi>ω</m:mi>
+<m:mrow>
+  <m:mover>
+    <m:mi>i</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math> względem środka masy,<newline/><m:math>
+<m:mi>R</m:mi>
+</m:math> oznacza tu promień koła, <m:math>
+<m:mrow>
+  <m:mi>ω</m:mi>
+</m:mrow>
+</m:math> jest prędkością kątową obrotu koła wokół własnej osi, zaś <m:math><m:mover>
+    <m:mi>i</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover></m:math> jest wektorem jednostkowym. Ponieważ koło toczy się bez poślizgu, prędkość punktu <m:math>
+<m:mi>P</m:mi>
+</m:math> względem powierzchni jest równa sumie jego prędkości względem środka masy i prędkość środka masy względem powierzchni: </para><equation id="fs-id1165036882247" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:msub>
+      <m:mover>
+        <m:mi>v</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+      <m:mi>P</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mtext>−</m:mtext>
+    <m:mi>R</m:mi>
+    <m:mi>ω</m:mi>
+    <m:mover>
+      <m:mi mathvariant="italic">i</m:mi>
+      <m:mo mathvariant="italic">^</m:mo>
+    </m:mover>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mtext>ŚM</m:mtext>
+    </m:msub>
+    <m:mover>
+      <m:mi>i</m:mi>
+      <m:mo>^</m:mo>
+    </m:mover>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1165038225631">Ponieważ prędkość <m:math>
+  <m:mi>P</m:mi>
+</m:math> względem powierzchni jest równa zero, <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mi>P</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+</m:mrow>
+</m:math>, oznacza to, że</para>
+<note id="fs-id1165038023772" class="equation-callout">
+  <equation id="fs-id1165038011296">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mrow>
+            <m:mtext>ŚM</m:mtext>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mi>R</m:mi>
+        <m:mi>ω</m:mi>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1165036752911">Tak więc prędkość środka masy koła jest równa iloczynowi jego prędkości kątowej wokół osi i jego promienia. Powyższe równanie pokazuje związek zmiennej liniowej (prędkości) po lewej stronie równania ze zmienną kątową (prędkością kątową) po prawej stronie równania. Podobny związek występuje w przypadku przyspieszenia liniowego.</para>
+<para id="fs-id1165038200740">Jeśli zróżniczkujemy lewą stronę <link target-id="fs-id1165038011296" cmlnle:case="genitive"/>, uzyskamy wyrażenie na liniowe przyspieszanie środka masy.<newline/><m:math>
+  <m:mi>R</m:mi>
+</m:math> po prawej stronie równania jest stałą, a ponieważ <m:math>
+<m:mi>ε</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:mi>ω</m:mi>
+<m:mrow>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+</m:mrow>
+<m:mrow>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:mi>t</m:mi>
+</m:math>otrzymujemy</para>
+<note id="fs-id1165038009071" class="equation-callout">
+  <equation id="fs-id1165038032310">
+    <label/>
+    <m:math>
+      <m:msub>
+        <m:mi>a</m:mi>
+        <m:mtext>ŚM</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mi>R</m:mi>
+      <m:mi>ε</m:mi>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1165037973486">Ponadto, odwołując się do <link target-id="CNX_UPhysics_11_01_RollDist" cmlnle:case="genitive"/>, można wyznaczyć odległość przebytą przez środek masy koła poprzez zmienną kątową związaną z ruchem tocznym koła. Zauważmy, że zewnętrzna powierzchnia koła od punktu <m:math>
+  <m:mi>A</m:mi>
+</m:math> do punktu <m:math>
+<m:mi>B</m:mi>
+</m:math> dokładnie odwzorowuje na ziemi długość, która jest równa odległości przebytej przez środek masy <m:math>
+<m:msub>
+  <m:mi>d</m:mi>
+  <m:mtext>ŚM</m:mtext>
+</m:msub>
+</m:math>. Z rysunku wynika też, że długość odcinka, który koło odwzorowuje na podłożu, jest długością łuku <m:math>
+<m:mi>R</m:mi>
+<m:mi>θ</m:mi>
+</m:math>. Z porównania tych dwóch długości otrzymujemy:</para><note id="fs-id1165038336837" class="equation-callout">
+  <equation id="fs-id1165038328732">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>d</m:mi>
+          <m:mrow>
+            <m:mtext>ŚM</m:mtext>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mi>R</m:mi>
+        <m:mi>θ</m:mi>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<figure id="CNX_UPhysics_11_01_RollDist">
+  <media id="fs-id1165037047314" alt="Koło o promieniu R toczy się po poziomej powierzchni w prawo z prędkością v sub C M. Przedstawiono dwa położenia koła. W pierwszym położeniu punkt A znajduje się na dole koła i jest w kontakcie z powierzchnią, a punkt B jest na górze. Długość łuku od A do B wzdłuż obwodu koła jest opisana jako R theta. W drugim położeniu punkt B jest na dole koła, w kontakcie z powierzchnią, punkt A jest na górze. Odległość pozioma między punktami kontaktu koła z powierzchnią w obu położeniach wynosi d sub C M. Długość łuku AB jest teraz po drugiej stronie koła.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_01_RollDist.jpg"/>
+  </media>
+  <caption>Gdy walec toczy się po powierzchni, to długość łuku <m:math>
+    <m:mrow>
+      <m:mi>R</m:mi>
+      <m:mi>θ</m:mi>
+    </m:mrow>
+  </m:math> od punktu <m:math>
+  <m:mi>A</m:mi>
+</m:math> do punktu <m:math>
+<m:mi>B</m:mi>
+</m:math> jest odwzorowana na powierzchni będąc równa odległości <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>d</m:mi>
+    <m:mrow>
+      <m:mtext>ŚM</m:mtext>
+    </m:mrow>
+  </m:msub>
+</m:mrow>
+</m:math>, którą przebywa środek masy.</caption>
+</figure>
+<example id="fs-id1165038044901">
+  <para id="fs-id1165037843795">
+    <title>Staczanie się z równi pochyłej</title>Walec stacza się bez poślizgu z równi pochyłej, bez prędkości początkowej. Masa walca wynosi <m:math>
+      <m:mi>m</m:mi>
+    </m:math>, a jego promień <m:math>
+    <m:mi>r</m:mi>
+    </m:math>.</para>
+    <list id="eip-idm1324690544" list-type="enumerated" number-style="lower-alpha" mark-prefix="(" mark-suffix=")">
+      <item>Jakie jest jego przyspieszenie?</item>
+      <item>Jaki warunek musi spełniać współczynnik tarcia statycznego <m:math>
+        <m:msub>
+          <m:mi>μ</m:mi>
+          <m:mtext>s</m:mtext>
+        </m:msub>
+        </m:math>, aby zapobiec poślizgowi walca?</item>
+      </list>
+      <para id="fs-id1165038232147">
+        <title>Strategia rozwiązania</title>Narysujmy diagram sił (działających na walec) i wybierzmy układ współrzędnych. Niech oś OX będzie równoległa do powierzchni równi i zwrócona w dół równi, zaś oś OY prostopadła do powierzchni równi i zwrócona w górę. Scharakteryzujmy siły działające na walec. Są to: siła normalna (siła reakcji podłoża (na siłę nacisku)), siła grawitacji i siła tarcia statycznego. Zapiszmy drugą zasadę dynamiki (drugie prawo Newtona) ruchu postępowego w kierunkach <m:math>
+          <m:mi>x</m:mi>
+        </m:math> i <m:math>
+        <m:mi>y</m:mi>
+        </m:math> oraz drugą zasadę dynamiki (drugie prawo Newtona) dla ruchu obrotowego. Na podstawie zapisanych równań obliczymy przyspieszenie i siłę tarcia.</para>
+        <para id="fs-id1165038272175">
+          <title>Rozwiązanie</title>
+        </para>
+        <list id="fs-id1165038059240" list-type="enumerated" number-style="lower-alpha"><item>
+            <para id="eip-idm205777216">Szkic sytuacyjny i diagram sił pokazane są na <link target-id="CNX_UPhysics_11_01_InclPlane" cmlnle:case="locative"/>, na którym zaznaczono siłę normalną, składowe siły ciężkości (ciężaru) oraz statyczną siłę tarcia. Rola siły tarcia (w stosunku do jej maksymalnej możliwej wartości) ogranicza się do zapewnienia toczenia się walca bez poślizgu. Innymi słowy, ponieważ nie dochodzi do poślizgu, wartość siły tarcia jest mniejsza lub równa <m:math>
+              <m:msub>
+                <m:mi>μ</m:mi>
+                <m:mtext>s</m:mtext>
+              </m:msub>
+              <m:mi>N</m:mi>
+            </m:math>. Zapisując drugą zasadę dynamiki dla kierunków <m:math>
+            <m:mi>x</m:mi>
+          </m:math> i <m:math>
+          <m:mi>y</m:mi>
+          </m:math>, otrzymujemy</para>
+          <equation id="fs-id1165036885999" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mo>∑</m:mo>
+              <m:msub>
+                <m:mi>F</m:mi>
+                <m:mi>x</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mi>m</m:mi>
+              <m:msub>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mtext>ŚM</m:mtext>
+                      </m:msub>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mi>x</m:mi>
+                  </m:msub>
+              <m:mo>,</m:mo>
+              <m:mspace linebreak="newline"/>
+              <m:mo>∑</m:mo>
+              <m:msub>
+                <m:mi>F</m:mi>
+                <m:mi>y</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mi>m</m:mi>
+              <m:msub>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mtext>ŚM</m:mtext>
+                      </m:msub>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mi>y</m:mi>
+                  </m:msub>
+              <m:mo>.</m:mo>
+            </m:math>
+          </equation>
+          <figure id="CNX_UPhysics_11_01_InclPlane"><media id="fs-id1165038047599" alt="Schemat walca toczącego się bez poślizgu po pochylonej płaszczyźnie i swobodnego schematu cylindra. Ilustracja po lewej stronie pokazuje nachyloną płaszczyznę, która sprawia, że kąt theta jest poziomy. Pokazuje się, że cylinder znajduje się w spoczynku na górze, a następnie przemieszcza się wzdłuż pochylni, gdy jest niższy. Po prawej stronie znajduje się schemat swobodnego ciała. Układ współrzędnych x y jest przechylony tak, że dodatni kierunek x jest równoległy do nachylonej płaszczyzny i skierowany ku jej spodowi, a dodatni kierunek y jest na zewnątrz, prostopadły do płaszczyzny. Pokazano cztery siły. N j z daszkiem działa w centrum cylindra i wskazuje dodatni kierunek y. M g sine theta i z daszkiem działa w środku cylindra i wskazuje w kierunku dodatnim x. Minus m g cosinus theta j z daszkiem działa w środku cylindra i wskazuje w kierunku ujemnym y. Minus f sub s i z daszkiem działa w punkcie styku i wskazuje w kierunku ujemnym x.">
+              <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_01_InclPlane.jpg"/>
+            </media>
+            
+        <caption>Walec staczający się z równi pochyłej (lewy rysunek), diagram sił działających na walec (prawy rysunek).</caption></figure>
+        <para id="eip-idm296862800"> Podstawiając odpowiednio wartości sił z diagramu sił, otrzymujemy</para>
+        <equation id="fs-id1165036779517">
+          <m:math>
+            <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+              <m:mtr>
+                <m:mtd>
+                  <m:mi>m</m:mi>
+                  <m:mi>g</m:mi>
+                  <m:mi>sin</m:mi>
+                  <m:mo>⁡</m:mo>
+                  <m:mi>θ</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:msub>
+                    <m:mi>T</m:mi>
+                    <m:mtext>s</m:mtext>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mi/>
+                  <m:mo>=</m:mo>
+                  <m:mi>m</m:mi>
+                  <m:msub>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mtext>ŚM</m:mtext>
+                      </m:msub>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mi>x</m:mi>
+                  </m:msub>
+                  <m:mo>,</m:mo>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd>
+                  <m:mi>N</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mi>m</m:mi>
+                  <m:mi>g</m:mi>
+                  <m:mi>cos</m:mi>
+                  <m:mo>⁡</m:mo>
+                  <m:mi>θ</m:mi>
+                </m:mtd>
+                <m:mtd>
+                  <m:mi/>
+                  <m:mo>=</m:mo>
+                  <m:mn>0</m:mn>
+                  <m:mo>,</m:mo>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd>
+                  <m:msub>
+                    <m:mi>T</m:mi>
+                    <m:mtext>s</m:mtext>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd>
+                  <m:mi/>
+                  <m:mo>⩽</m:mo>
+                  <m:msub>
+                    <m:mi>μ</m:mi>
+                    <m:mtext>s</m:mtext>
+                  </m:msub>
+                  <m:mi>N</m:mi>
+                  <m:mo>.</m:mo>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="eip-idm221976976"> Z powyższych równań możemy obliczyć liniowe przyspieszenie środka masy:</para>
+        <equation id="fs-id1165038170657">
+          <m:math>
+            <m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mtext>ŚM</m:mtext>
+                </m:msub>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mi>x</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mi>g</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>sin</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mi>θ</m:mi>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>μ</m:mi>
+                  <m:mtext>s</m:mtext>
+                </m:msub>
+                <m:mi>cos</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mi>θ</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="eip-idm429832592"> Ponieważ w powyższym równaniu nie znamy siły tarcia, to w celu znalezienia przyspieszenia liniowego potrzebne jest nam drugie równanie, w którym wyrazimy moment siły tarcia przez moment bezwładności. Zapiszmy drugą zasadę dynamiki dla ruchu obrotowego, </para>
+        <equation id="fs-id1165036736855" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mo>∑</m:mo>
+            <m:msub>
+              <m:mi>M</m:mi>
+              <m:mtext>ŚM</m:mtext>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mtext>ŚM</m:mtext>
+            </m:msub>
+            <m:mi>ε</m:mi>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="eip-idm196409056"> W powyższym równaniu momenty sił obliczamy względem osi przechodzącej przez środek masy walca. Jedynym niezerowym momentem siły jest moment siły tarcia. Mamy zatem:</para>
+        <equation id="fs-id1165038191364" class="unnumbered"><label/>
+          <m:math>
+<m:mi>r</m:mi>
+            <m:msub>
+              <m:mi>T</m:mi>
+              <m:mtext>s</m:mtext>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mtext>ŚM</m:mtext>
+            </m:msub>
+            <m:mi>ε</m:mi>
+            <m:mo>,</m:mo>
+          </m:math>
+        </equation><para id="eip-idm1441988832"> gdzie, jak wiemy, przyspieszenie liniowe związane jest z przyspieszaniem kątowym zależnością </para>
+        <equation id="fs-id1165038238692" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mtext>ŚM</m:mtext>
+                </m:msub>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mi>x</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mi>r</m:mi>
+            <m:mi>ε</m:mi>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="eip-idm211875424">Powyższe równanie można rozwiązać, wyrażając <m:math>
+          <m:msub>
+            <m:mi>a</m:mi>
+            <m:mtext>ŚM</m:mtext>
+          </m:msub>
+        </m:math>, <m:math>
+        <m:mi>ε</m:mi>
+      </m:math> i <m:math>
+      <m:msub>
+        <m:mi>T</m:mi>
+        <m:mtext>s</m:mtext>
+      </m:msub>
+    </m:math> jako funkcje momentu bezwładności. Walec porusza się jedynie wzdłuż osi <m:math>
+    <m:mi>x</m:mi>
+  </m:math>, dlatego w celu uproszczenia zapisu możemy opuścić wskaźnik <m:math>
+    <m:mi>x</m:mi>
+  </m:math>. Wyraźmy <m:math>
+  <m:msub>
+    <m:mi>a</m:mi>
+    <m:mtext>ŚM</m:mtext>
+  </m:msub>
+  </m:math> przez składową równoległą (do równi) siłę ciężkości i siłę tarcia, wykonując następujące podstawienia (wykorzystano <link target-id="fs-id1165036779517"/> i <link target-id="fs-id1165038170657"/>):</para><equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165036767230" class="unnumbered"><m:math display="block"><m:semantics><m:mtable><m:mtr><m:mtd><m:msub><m:mi>a</m:mi><m:mtext>ŚM</m:mtext></m:msub><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>g</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:mi>θ</m:mi></m:mrow></m:mrow><m:mo>−</m:mo><m:mrow><m:mfrac><m:msub><m:mi>T</m:mi><m:mtext>s</m:mtext></m:msub><m:mi>m</m:mi></m:mfrac><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>T</m:mi><m:mtext>s</m:mtext></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>I</m:mi><m:mtext>ŚM</m:mtext></m:msub><m:mo>⁢</m:mo><m:mi>ε</m:mi></m:mrow><m:mi>r</m:mi></m:mfrac><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>I</m:mi><m:mtext>ŚM</m:mtext></m:msub><m:mo>⁢</m:mo><m:msub><m:mi>a</m:mi><m:mtext>ŚM</m:mtext></m:msub></m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mfrac><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{align} a_{\text{ŚM}} = g\sin \theta - \frac{T_{\text{s}}}{m} \text{,} \\ T_{\text{s}} = \frac{I_{\text{ŚM}} \epsilon}{r} = \frac{I_{\text{ŚM}} a_{\text{ŚM}}}{r^2} \text{.} \end{align}</m:annotation></m:semantics></m:math></equation><para id="eip-idm247334000">Stąd otrzymujemy:</para>
+  <equation id="eip-idm571355344" class="unnumbered">
+    <m:math>
+      <m:msub>
+        <m:mi>a</m:mi>
+        <m:mtext>ŚM</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mi>g</m:mi>
+      <m:mi>sin</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mi>θ</m:mi>
+      <m:mo>−</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:msub>
+            <m:mi>I</m:mi>
+            <m:mtext>ŚM</m:mtext>
+          </m:msub>
+          <m:msub>
+            <m:mi>a</m:mi>
+            <m:mtext>ŚM</m:mtext>
+          </m:msub>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>m</m:mi>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mi>m</m:mi>
+          <m:mi>g</m:mi>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mi>θ</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>m</m:mi>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>I</m:mi>
+            <m:mtext>ŚM</m:mtext>
+          </m:msub>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-idm321276032">Zauważmy, że wynik ten jest niezależny od współczynnika tarcia <m:math>
+    <m:msub>
+      <m:mi>μ</m:mi>
+      <m:mtext>s</m:mtext>
+    </m:msub>
+  </m:math>. Ponieważ dla walca z <link target-id="CNX_UPhysics_10_04_RotInertia" document="m65794" cmlnle:case="genitive"/> moment bezwładności <m:math>
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mtext>ŚM</m:mtext>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mi>m</m:mi>
+  <m:msup>
+    <m:mi>r</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:mrow>
+    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  </m:mrow>
+  <m:mn>2</m:mn>
+  </m:math>, uzyskujemy</para><equation id="fs-id1170902901792" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:msub>
+        <m:mi>a</m:mi>
+        <m:mtext>ŚM</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mi>m</m:mi>
+          <m:mi>g</m:mi>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mi>θ</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>m</m:mi>
+          <m:mo>+</m:mo>
+          <m:mi>m</m:mi>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mrow>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          </m:mrow>
+          <m:mn>2</m:mn>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mn>2</m:mn>
+        <m:mn>3</m:mn>
+      </m:mfrac>
+      <m:mi>g</m:mi>
+      <m:mi>sin</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mi>θ</m:mi>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para id="eip-idm585370192">Otrzymujemy zatem:</para>
+  <equation id="fs-id1165037893780" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mi>ε</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:msub>
+          <m:mi>a</m:mi>
+          <m:mtext>ŚM</m:mtext>
+        </m:msub>
+        <m:mi>r</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mn>2</m:mn>
+        <m:mrow>
+          <m:mn>3</m:mn>
+          <m:mi>r</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mi>g</m:mi>
+      <m:mi>sin</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mi>θ</m:mi>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+</item>
+<item>
+  <para id="eip-idm276850960"> Ponieważ nie występuje poślizg, czyli <m:math>
+    <m:msub>
+      <m:mi>T</m:mi>
+      <m:mtext>s</m:mtext>
+    </m:msub>
+    <m:mo>⩽</m:mo>
+    <m:msub>
+      <m:mi>μ</m:mi>
+      <m:mtext>s</m:mtext>
+    </m:msub>
+    <m:mi>N</m:mi>
+    </m:math>, to wyrażenie na siłę tarcia ma postać:</para>
+    <equation id="fs-id1170902749848" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:msub>
+          <m:mi>T</m:mi>
+          <m:mtext>s</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mtext>ŚM</m:mtext>
+        </m:msub>
+        <m:mfrac>
+          <m:mi>ε</m:mi>
+          <m:mi>r</m:mi>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mtext>ŚM</m:mtext>
+        </m:msub>
+        <m:mfrac>
+          <m:msub>
+            <m:mi>a</m:mi>
+            <m:mtext>ŚM</m:mtext>
+          </m:msub>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:msub>
+            <m:mi>I</m:mi>
+            <m:mtext>ŚM</m:mtext>
+          </m:msub>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mfrac>
+        <m:mfrac>
+          <m:mrow>
+            <m:mi>m</m:mi>
+            <m:mi>g</m:mi>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mi>θ</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mi>m</m:mi>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mtext>ŚM</m:mtext>
+            </m:msub>
+            <m:mrow>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            </m:mrow>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mi>m</m:mi>
+            <m:mi>g</m:mi>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mtext>ŚM</m:mtext>
+            </m:msub>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mi>θ</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mtext>ŚM</m:mtext>
+            </m:msub>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+    <para id="eip-idm587646560"> Podstawiając to wyrażenie w miejsce równania – warunku na brak poślizgu – a także zauważając, że siła normalna <m:math>
+      <m:mrow>
+        <m:mi>N</m:mi>
+        <m:mo>=</m:mo>
+        <m:mi>m</m:mi>
+        <m:mi>g</m:mi>
+        <m:mspace width="0.2em"/>
+        <m:mtext>cos</m:mtext>
+        <m:mspace width="0.2em"/>
+        <m:mi>θ</m:mi>
+      </m:mrow>
+      </m:math>, otrzymujemy:</para>
+      <equation id="fs-id1165038053190" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>m</m:mi>
+              <m:mi>g</m:mi>
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mtext>ŚM</m:mtext>
+              </m:msub>
+              <m:mi>sin</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mi>θ</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mi>m</m:mi>
+              <m:msup>
+                <m:mi>r</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mtext>ŚM</m:mtext>
+              </m:msub>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>⩽</m:mo>
+          <m:msub>
+            <m:mi>μ</m:mi>
+            <m:mtext>s</m:mtext>
+          </m:msub>
+          <m:mi>m</m:mi>
+          <m:mi>g</m:mi>
+          <m:mi>cos</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mi>θ</m:mi>
+          <m:mo>,</m:mo>
+        </m:math>
+      </equation>
+      <para id="eip-idm497338720">lub</para>
+      <equation id="fs-id1165036877133" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:msub>
+            <m:mi>μ</m:mi>
+            <m:mtext>s</m:mtext>
+          </m:msub>
+          <m:mo>⩾</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>tg</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mi>θ</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo>+</m:mo>
+              <m:mi>m</m:mi>
+              <m:msup>
+                <m:mi>r</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mrow>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              </m:mrow>
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mtext>ŚM</m:mtext>
+              </m:msub>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="eip-idm586099328"> Warunek ten dla pełnego walca przyjmuje postać </para>
+      <equation id="fs-id1165038177799" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:msub>
+            <m:mi>μ</m:mi>
+            <m:mtext>s</m:mtext>
+          </m:msub>
+          <m:mo>⩾</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>tg</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mi>θ</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo>+</m:mo>
+              <m:mn>2</m:mn>
+              <m:mi>m</m:mi>
+              <m:msup>
+                <m:mi>r</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mrow>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              </m:mrow>
+              <m:mi>m</m:mi>
+              <m:msup>
+                <m:mi>r</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mn>3</m:mn>
+          </m:mfrac>
+          <m:mi>tg</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mi>θ</m:mi>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+    </item>
+  </list><para id="fs-id1165038184500">
+    <title>Znaczenie</title>
+  </para>
+  <list id="fs-id1165037027329" list-type="enumerated" number-style="lower-alpha">
+    <item>Przyspieszenie liniowe jest proporcjonalne do <m:math>
+      <m:mrow>
+        <m:mtext>sin</m:mtext>
+        <m:mspace width="0.2em"/>
+        <m:mi>θ</m:mi>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math> Zatem im większy jest kąt nachylenia, tym większe jest, jak można by się spodziewać, przyspieszenie liniowe. Przyspieszenie kątowe z kolei jest wprost proporcjonalne do <m:math>
+    <m:mrow>
+      <m:mtext>sin</m:mtext>
+      <m:mspace width="0.2em"/>
+      <m:mi>θ</m:mi>
+    </m:mrow>
+  </m:math> i odwrotnie proporcjonalne do promienia <m:math>
+  <m:mi>r</m:mi>
+  </m:math> walca. Tak więc im większy jest jego promień, tym mniejsze jest jego przyspieszenie kątowe.</item>
+  <item>W przypadku, gdy nie występuje poślizg, współczynnik tarcia musi być większy niż lub równy <m:math>
+    <m:mi>tg</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mi>θ</m:mi>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mrow>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+    </m:mrow>
+    <m:mn>3</m:mn>
+    </m:math>, a zatem im większy jest kąt nachylenia równi, tym większy musi być współczynnik tarcia, aby zapobiec poślizgowi walca.</item>
+  </list>
+</example>
+<note id="fs-id1165038340526" class="check-understanding">
+  <exercise id="fs-id1165037860970">
+    <problem id="fs-id1165036760531">
+      <para id="fs-id1165036865268"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Wydrążony (pusty w środku) walec (cylinder) stacza się ze zbocza o kącie nachylenia <m:math>
+          <m:msup>
+            <m:mn>60</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+        </m:math>. Współczynnik tarcia statycznego o powierzchnię jest równy <m:math>
+        <m:msub>
+          <m:mi>μ</m:mi>
+          <m:mtext>s</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mn>0,6</m:mn>
+        </m:math>. 
+
+<list id="eip-idm865184816" list-type="enumerated" number-style="lower-alpha"><item>Czy cylinder stacza się bez poślizgu?</item>
+<item>Czy walec w tych warunkach też będzie się toczyć bez poślizgu?</item></list></para></problem>
+      <solution id="fs-id1165037980496">
+        <para id="fs-id1165036770853">(a) Warunek na brak poślizgu ma postać <m:math>
+          <m:msub>
+            <m:mi>μ</m:mi>
+            <m:mtext>s</m:mtext>
+          </m:msub>
+          <m:mo>⩾</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>tg</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mi>θ</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo>+</m:mo>
+              <m:mi>m</m:mi>
+              <m:msup>
+                <m:mi>r</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mrow>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              </m:mrow>
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mtext>ŚM</m:mtext>
+              </m:msub>
+            </m:mrow>
+          </m:mfrac>
+        </m:math>. Podstawiając wartość kąta i zauważywszy, że dla cylindra <m:math>
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mtext>ŚM</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mi>m</m:mi>
+        <m:msup>
+          <m:mi>r</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:math>, mamy <m:math>
+      <m:msub>
+        <m:mi>μ</m:mi>
+        <m:mtext>s</m:mtext>
+      </m:msub>
+      <m:mo>⩾</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mi>tg</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mi>θ</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mn>1</m:mn>
+          <m:mo>+</m:mo>
+          <m:mi>m</m:mi>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mrow>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          </m:mrow>
+          <m:msub>
+            <m:mi>I</m:mi>
+            <m:mtext>ŚM</m:mtext>
+          </m:msub>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mi>tg</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:msup>
+        <m:mn>60</m:mn>
+        <m:mo>∘</m:mo>
+      </m:msup>
+      <m:mo>=</m:mo>
+      <m:mn>0,87</m:mn>
+    </m:math>, ponieważ dana jest wartość współczynnika tarcia 0,6, która jest mniejsza, niż 0,87, to warunek nie jest spełniony i cylinder będzie się ślizgał. <newline/>(b) Dla walca warunek na brak poślizgu ma postać <m:math>
+    <m:msub>
+      <m:mi>μ</m:mi>
+      <m:mtext>s</m:mtext>
+    </m:msub>
+    <m:mo>⩾</m:mo>
+    <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>3</m:mn>
+    </m:mfrac>
+    <m:mi>tg</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:msup>
+      <m:mn>60</m:mn>
+      <m:mo>∘</m:mo>
+    </m:msup>
+    <m:mo>=</m:mo>
+    <m:mn>0,58</m:mn>
+    </m:math> Wartość 0,6 spełnia ten warunek, a więc walec nie wpadnie w poślizg.</para>
+  </solution>
+</exercise>
+</note>
+<para id="fs-id1165037987064">Warto jeszcze raz powtórzyć równanie uzyskane w tym przykładzie dla przyspieszania toczącego się obiektu bez poślizgu:</para>
+<note id="fs-id1165037923489" class="equation-callout">
+  <equation id="fs-id1165038011534"><label/>
+    <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>a</m:mi>
+          <m:mtext>ŚM</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mi>m</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>g</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mi>sin</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mi>θ</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mrow>
+            <m:mi>m</m:mi>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mtext>ŚM</m:mtext>
+              </m:msub>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:msup>
+                <m:mi>r</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:mrow>
+        </m:mfrac>
+      </m:mrow>
+<m:mo>.</m:mo>
+    </m:math>
+  </equation></note>
+<para id="fs-id1165037914270">Jest to bardzo użyteczne równanie przy rozwiązywaniu zadań dotyczących toczenia się bez poślizgu. Należy zauważyć, że przyspieszenie to jest mniejsze niż przyspieszenie obiektu zsuwającego się bez obrotu po idealnie gładkiej powierzchni. Przyspieszenie będzie również różne dla dwóch staczających się bez poślizgu ciał z różnymi momentami bezwładności.</para></section>
+<section id="fs-id1165037186936">
+  <title>Toczenie się z poślizgiem</title>
+  <para id="fs-id1165036736793">W przypadku ruchu tocznego z poślizgiem zamiast siły tarcia statycznego występuje siła tarcia kinetycznego, określona przez współczynnik tarcia <m:math>
+    <m:msub>
+      <m:mi>μ</m:mi>
+      <m:mtext>k</m:mtext>
+    </m:msub>
+  </m:math>. Sytuację taką przedstawiono na <link target-id="CNX_UPhysics_11_01_RollSlip" cmlnle:case="locative"/>. W przypadku poślizgu <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mtext>ŚM</m:mtext>
+      </m:mrow>
+    </m:msub>
+    <m:mo>−</m:mo>
+    <m:mi>R</m:mi>
+    <m:mi>ω</m:mi>
+    <m:mo>≠</m:mo>
+    <m:mn>0</m:mn>
+  </m:mrow>
+</m:math>, gdyż punkt <m:math>
+<m:mi>P</m:mi>
+</m:math> na kole nie jest w stanie spoczynku względem powierzchni, oraz <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mi>P</m:mi>
+  </m:msub>
+  <m:mo>≠</m:mo>
+  <m:mn>0</m:mn>
+</m:mrow>
+</m:math>. Zatem <m:math>
+<m:mi>ω</m:mi>
+<m:mo>≠</m:mo>
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mtext>ŚM</m:mtext>
+</m:msub>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mi>R</m:mi>
+</m:math> i <m:math>
+<m:mi>ε</m:mi>
+<m:mo>≠</m:mo>
+<m:msub>
+  <m:mi>a</m:mi>
+  <m:mtext>ŚM</m:mtext>
+</m:msub>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mi>R</m:mi>
+</m:math>.</para><figure id="CNX_UPhysics_11_01_RollSlip">
+  <media id="fs-id1165036886781" alt="Rysunek a przedstawia dowolnie obrany schemat koła w tym miejscu, w którym działają siły. Pokazano cztery siły: M g jest siłą skierowaną ku dołowi, działającą na środek koła. N jest siłą skierowaną do góry, działającą na spód koła. F jest siłą na prawo, działającą na środek koła, a fpk jest siłą na lewą stronę, działającą na spód koła. Siła f sub k jest równa mu k n razy N. Rysunek b pokazuje obracanie się kół i ślizganie się na poziomej powierzchni. Koło obraca się zgodnie z ruchem wskazówek zegara, przyspieszenie po prawej stronie podrzędnej CM, a prędkość z prawej strony v pod V M omega nie jest równa v pod CM powyżej R, a alfa nie jest równa CM powyżej R. Pokazana jest współrzędna układu z dodatnim x na prawo i dodatnim y w górę.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_01_RollSlip.jpg"/>
+  </media>
+  <caption>(a) Pomiędzy kołem a powierzchnią występuje tarcie, ponieważ koło się ślizga. (b) Proste związki między zmiennymi liniowych i kątowymi nie obowiązują dla zilustrowanego przypadku.</caption>
+</figure>
+<example id="fs-id1165038275703"><para id="fs-id1165038219442">
+    <title>Staczanie się po równi pochyłej z poślizgiem</title>Walec stacza się z równi pochyłej bez prędkości początkowej z poślizgiem (<link target-id="CNX_UPhysics_11_01_InclSlip"/>). Masa walca wynosi <m:math>
+      <m:mi>m</m:mi>
+    </m:math>, a promień <m:math>
+    <m:mi>r</m:mi>
+    </m:math>. <list id="eip-idm1324690545" list-type="enumerated" number-style="lower-alpha"><item>Jakie jest jego przyspieszenie liniowe?</item><item>Jakie jest jego przyspieszenie kątowe wokół osi przechodzącej przez środek masy?</item></list></para>
+    <para id="fs-id1165038338130">
+      <title>Strategia rozwiązania</title>Wykonajmy rysunek wraz z diagramem działających sił. Jest on podobny do sytuacji bez poślizgu, z tą różnicą, że teraz siła tarcia jest siłą tarcia kinetycznego zamiast statycznego. Za pomocą drugiej zasady dynamiki (prawa Newtona) dla ruchu postępowego obliczymy przyspieszenie (liniowe) w kierunku osi <m:math>
+        <m:mi>x</m:mi>
+        </m:math>. Za pomocą drugiej zasady dynamiki (prawa Newtona) dla ruchu obrotowego znajdziemy rozwiązanie dla przyspieszenia kątowego.</para>
+        <para id="fs-id1165036725404">
+          <title>Rozwiązanie</title>
+        </para>
+        <figure id="CNX_UPhysics_11_01_InclSlip">
+          <media id="fs-id1165036895232" alt="Rysunek przedstawia walec staczający się po równi pochyłej bez prędkości początkowej, który doznaje poślizgu. Po lewej stronie zilustrowano sytuację nachylonej płaszczyzny, tworzącej z poziomem kąt theta. Pokazano, że cylinder znajduje się w spoczynku na górze, a następnie przemieszcza się wzdłuż pochylni, gdy jest niżej. Po prawej stronie znajduje się schemat ciała swobodnego. Układ współrzędnych xy jest przechylony tak, że dodatni kierunek x jest równoległy do płaszczyzny nachylonej i skierowany do jej spodu, a dodatni kierunek y jest na zewnątrz, prostopadły do płaszczyzny. Pokazano cztery siły. Nj z daszkiem działa w centrum cylindra i wskazuje dodatni kierunek y. M g sinus theta z daszkiem działa w środku cylindra i wskazuje w kierunku dodatnim x. Minus m g cosinus theta j z daszkiem działa w środku cylindra i wskazuje w kierunku ujemnym y. Minus f sub k i z daszkiem działa w punkcie styku i wskazuje w kierunku ujemnym x.">
+            <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_01_InclSlip.jpg"/>
+          </media>
+          <caption>Walec stacza się z równi bez prędkości początkowej i wpada w poślizg. Układ współrzędnych wybieramy w taki sposób, że oś <m:math>
+              <m:mi>x</m:mi>
+            </m:math>
+           jest równoległa do powierzchni równi i jest skierowana w dół równi, oś <m:math>
+            <m:mi>y</m:mi>
+          </m:math>
+         jest prostopadła do powierzchni równi i jest skierowaną w górę. Na rysunku pokazano diagram sił, a na nim siłę reakcji podłoża, siłę tarcia statycznego oraz składowe ciężaru <m:math>
+        <m:mi>m</m:mi>
+        <m:mover>
+          <m:mi>g</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+        </m:math>.</caption>
+      </figure>
+      <para id="fs-id1165037011065">Suma sił działających wzdłuż osi <m:math>
+          <m:mi>y</m:mi>
+        </m:math>
+       wynosi zero, więc siła tarcia jest teraz równa <m:math>
+      <m:msub>
+        <m:mi>T</m:mi>
+        <m:mtext>k</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>μ</m:mi>
+        <m:mtext>k</m:mtext>
+      </m:msub>
+      <m:mi>N</m:mi>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>μ</m:mi>
+        <m:mtext>k</m:mtext>
+      </m:msub>
+      <m:mi>m</m:mi>
+      <m:mi>g</m:mi>
+      <m:mi>cos</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mi>θ</m:mi>
+      </m:math>.</para>
+      <para id="fs-id1165037847979">Druga zasada dynamiki dla kierunku <m:math>
+        <m:mi>x</m:mi>
+        </m:math> daje:</para>
+        <equation id="fs-id1165036855552" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mrow>
+              <m:mstyle displaystyle="true">
+                <m:mo>∑</m:mo>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>F</m:mi>
+                    <m:mi>x</m:mi>
+                  </m:msub>
+                </m:mrow>
+              </m:mstyle>
+              <m:mo>=</m:mo>
+              <m:mi>m</m:mi>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mi>x</m:mi>
+              </m:msub>
+              <m:mo>,</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+<equation id="eip-idm4509275104" class="unnumbered"><label/><m:math display="inline"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>g</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:mi>θ</m:mi></m:mrow></m:mrow><m:mo>-</m:mo><m:msub><m:mi>T</m:mi><m:mi>k</m:mi></m:msub></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>a</m:mi><m:mi>x</m:mi></m:msub><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:math></equation><equation id="fs-id1165037982120" class="unnumbered">
+          <m:math>
+            <m:mi>m</m:mi>
+            <m:mi>g</m:mi>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mi>θ</m:mi>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>μ</m:mi>
+              <m:mtext>k</m:mtext>
+            </m:msub>
+            <m:mi>m</m:mi>
+            <m:mi>g</m:mi>
+            <m:mi>cos</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mi>θ</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>m</m:mi>
+            <m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mtext>ŚM</m:mtext>
+                </m:msub>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mi>x</m:mi>
+            </m:msub>
+            <m:mo>,</m:mo>
+          </m:math>
+        </equation>
+        <para id="fs-id1165038232273">lub</para>
+        <equation id="fs-id1165037052684" class="unnumbered">
+          <m:math>
+            <m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mtext>ŚM</m:mtext>
+                </m:msub>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mi>x</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mi>g</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>sin</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mi>θ</m:mi>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>μ</m:mi>
+                  <m:mtext>k</m:mtext>
+                </m:msub>
+                <m:mi>cos</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mi>θ</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="fs-id1165038184307">Moment siły tarcia jest jedynym niezerowym momentem siły wokół osi przechodzącej przez środek masy, dlatego druga zasada dynamiki dla ruchu obrotowego daje:</para>
+        <equation id="fs-id1165037019301" class="unnumbered">
+          <m:math>
+            <m:mo>∑</m:mo>
+            <m:msub>
+              <m:mi>M</m:mi>
+              <m:mtext>ŚM</m:mtext>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mtext>ŚM</m:mtext>
+            </m:msub>
+            <m:mi>ε</m:mi>
+            <m:mo>,</m:mo>
+          </m:math>
+        </equation>
+        <equation id="fs-id1165038011515" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:msub>
+              <m:mi>T</m:mi>
+              <m:mtext>k</m:mtext>
+            </m:msub>
+            <m:mi>r</m:mi>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mtext>ŚM</m:mtext>
+            </m:msub>
+            <m:mi>ε</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>ε</m:mi>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="fs-id1165036854791">Rozwiązując powyższy układ równań ze względu na <m:math>
+          <m:mi>ε</m:mi>
+          </m:math>, otrzymujemy:</para><equation id="fs-id1165037218551" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mi>ε</m:mi>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:msub>
+                    <m:mi>T</m:mi>
+                    <m:mtext>k</m:mtext>
+                  </m:msub>
+                </m:mrow>
+                <m:mrow>
+                  <m:mi>m</m:mi>
+                  <m:mi>r</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:msub>
+                    <m:mi>μ</m:mi>
+                    <m:mtext>k</m:mtext>
+                  </m:msub>
+                  <m:mi>g</m:mi>
+                  <m:mi>cos</m:mi>
+                  <m:mo>⁡</m:mo>
+                  <m:mi>θ</m:mi>
+                </m:mrow>
+                <m:mi>r</m:mi>
+              </m:mfrac>
+              <m:mo>.</m:mo>
+            </m:math>
+          </equation>
+          <para id="fs-id1165036995012">
+            <title>Znaczenie</title>Zapisujemy zależności przyspieszenia liniowego i kątowego od współczynnika tarcia kinetycznego. Przyspieszenie liniowe jest takie samo jak ciała ślizgającego się w dół równi pochyłej, na które działa siła tarcia kinetycznego. Przyspieszenie kątowe względem osi obrotu jest wprost proporcjonalne do siły tarcia, która z kolei zależy od kosinusa kąt nachylenia. Gdy kąt <m:math>
+              <m:mi>θ</m:mi>
+              <m:mtext>→</m:mtext>
+              <m:msup>
+                <m:mn>90</m:mn>
+                <m:mo>∘</m:mo>
+              </m:msup>
+              </m:math>, siła ta dąży do zera, a tym samym przyspieszenie kątowe też dąży do zera.</para>
+            </example></section>
+          <section id="fs-id1165038007718">
+            <title>Zachowanie energii mechanicznej podczas toczenia się</title>
+            <para id="fs-id1165038047294">W poprzednim podrozdziale przedstawiliśmy energię kinetyczną ruchu obrotowego. Każdy toczący się obiekt posiada energię kinetyczną ruchu obrotowego, a także energię kinetyczną ruchu postępowego i ewentualnie energię potencjalną. Łącznie z grawitacyjną energią potencjalną całkowita energia mechaniczna toczącego się ciała wynosi:</para>
+            <equation id="fs-id1165038024738" class="unnumbered"><label/>
+              <m:math>
+                <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>c</m:mtext>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mi>m</m:mi>
+                <m:msubsup>
+                  <m:mi>v</m:mi>
+                  <m:mtext>ŚM</m:mtext>
+                  <m:mn>2</m:mn>
+                </m:msubsup>
+                <m:mo>+</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mtext>ŚM</m:mtext>
+                </m:msub>
+                <m:msup>
+                  <m:mi>ω</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>+</m:mo>
+                <m:mi>m</m:mi>
+                <m:mi>g</m:mi>
+                <m:mi>h</m:mi>
+                <m:mo>.</m:mo>
+              </m:math>
+            </equation><para id="fs-id1165038058361">Przy braku sił niezachowawczych, które, jak wiadomo powodują rozpraszanie energii układu, całkowita energia mechaniczna toczącego się bez poślizgu ciała jest zachowana i jest stała podczas trwania całego ruchu. Przykładem, gdzie energia mechaniczna nie jest zachowana, jest toczący się obiekt. Mamy tu do czynienia również z tarciem, wynikającym z poślizgu. Zatem rozpraszana jest energia kinetyczna.</para><para id="fs-id1165038273119">Można zapytać, dlaczego podczas toczenia się bez poślizgu ciało zachowuje energię mechaniczną, chociaż statyczna siła tarcia jest niezachowawcza? Odpowiedź można znaleźć, wracając do <link target-id="CNX_UPhysics_11_01_RollNoSlip" cmlnle:case="genitive"/>. Punkt <m:math>
+              <m:mi>P</m:mi>
+            </m:math> w czasie kontaktu z powierzchnią znajduje się względem niej w spoczynku. Dlatego też jego nieskończenie małe przemieszczenie <m:math>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mover>
+                <m:mi>r</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            </m:math> względem powierzchni jest równe zero, a stąd także praca siły tarcia jest równa zero. Możemy więc stosować zasadę zachowania energii podczas badania ruchu tocznego otrzymując przy tym ciekawe wyniki.</para>
+            <example id="fs-id1165036851931">
+              <para id="fs-id1165038323389">
+                <title>Łazik Curiosity </title>Łazik Curiosity, pokazany na <link target-id="CNX_UPhysics_11_01_Curiosity" cmlnle:case="locative"/>, wylądował na Marsie 6 sierpnia 2012 r. Koła łazika mają promień 25 cm. Załóżmy, że astronauci docierają na Marsa w roku 2050 i znajdują tam niepracujący łazik Curiosity na zboczu niecki. Podczas demontażu łazika przez astronautę przypadkowo odrywa się jedno z kół, które toczy się bez poślizgu w dół niecki 25 m poniżej. Jeżeli koło ma masę 5 kg, to jaka jest jego prędkość na dnie niecki?</para>
+                <figure id="CNX_UPhysics_11_01_Curiosity">
+                  <media id="fs-id1165036990733" alt="Łazik Curiosity zbudowany przez NASA widoczny podczas testów w Jet Propulsion Laboratory.">
+                    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_01_Curiosity.jpg"/>
+                  </media>
+                  <caption>Łazik Curiosity w NASA Mars Science Laboratory podczas testów 3 czerwca 2011 roku. Fotografia z ośrodka Spacecraft Assembly Facility at NASA’s Jet Propulsion Laboratory w Pasadenie w Kalifornii. (Źródło: NASA / JPL-Caltech)</caption>
+                </figure>
+                <para id="fs-id1165036766832">
+                  <title>Strategia rozwiązania</title>Do analizy zadania zastosujemy zasadę zachowania energii mechanicznej. W górnej części zbocza koło znajduje się w spoczynku i ma tylko energię potencjalną (względem dna niecki). W dolnej części niecki koło ma energię kinetyczną ruchu obrotowego i postępowego, która, z zasady zachowania energii, musi być równa początkowej energii potencjalnej. Ponieważ koło toczy się bez poślizgu, użyjemy zależności <m:math>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mrow>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:mrow>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mi>r</m:mi>
+                      <m:mi>ω</m:mi>
+                    </m:mrow>
+                    </m:math>, aby w wyrażającym zasadę zachowania energii powiązać zmienne translacyjne (ruchu postępowego) ze zmiennymi obrotowymi (kątowymi). Następnie obliczymy prędkość. Z <link target-id="CNX_UPhysics_11_01_Curiosity" cmlnle:case="genitive"/> wynika, że dobrym przybliżeniem koła jest wydrążony walec (cylinder), dzięki czemu możemy korzystać ze wzoru na jego moment bezwładności w celu uproszczenia obliczeń.</para>
+                    <para id="fs-id1165036979069">
+                      <title>Rozwiązanie</title>Energia w górnej części zbocza niecki jest równa energii na jej dole:</para>
+                      <equation id="fs-id1165037031693" class="unnumbered">
+                        <label/>
+                        <m:math>
+                          <m:mi>m</m:mi>
+                          <m:mi>g</m:mi>
+                          <m:mi>h</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:mi>m</m:mi>
+                          <m:msubsup>
+                            <m:mi>v</m:mi>
+                            <m:mtext>ŚM</m:mtext>
+                            <m:mn>2</m:mn>
+                          </m:msubsup>
+                          <m:mo>+</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mtext>ŚM</m:mtext>
+                          </m:msub>
+                          <m:msup>
+                            <m:mi>ω</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          <m:mo>.</m:mo>
+                        </m:math>
+                      </equation>
+                      <para id="fs-id1165038222427">Znane są wielkości <m:math>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mi>m</m:mi>
+                        <m:msup>
+                          <m:mi>r</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:math>, <m:math>
+                      <m:mi>r</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>0,25</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:math> i <m:math>
+                    <m:mi>h</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>25,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                    </m:math>.</para>
+                    <para id="fs-id1165038024582">Przepiszmy powyższe równanie zachowania energii, eliminując <m:math>
+                      <m:mi>ω</m:mi>
+                    </m:math> przy użyciu <m:math>
+                    <m:mi>ω</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mtext>ŚM</m:mtext>
+                    </m:msub>
+                    <m:mrow>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    </m:mrow>
+                    <m:mi>r</m:mi>
+                    </m:math>. Otrzymujemy:</para>
+                    <equation id="fs-id1170902697900" class="unnumbered">
+                      <label/>
+                      <m:math>
+                        <m:mi>m</m:mi>
+                        <m:mi>g</m:mi>
+                        <m:mi>h</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:mi>m</m:mi>
+                        <m:msubsup>
+                          <m:mi>v</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo>+</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:mi>m</m:mi>
+                        <m:msup>
+                          <m:mi>r</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mfrac>
+                          <m:msubsup>
+                            <m:mi>v</m:mi>
+                            <m:mtext>ŚM</m:mtext>
+                            <m:mn>2</m:mn>
+                          </m:msubsup>
+                          <m:msup>
+                            <m:mi>r</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mfrac>
+                        <m:mo>,</m:mo>
+                      </m:math>
+                    </equation>
+                    <para id="fs-id1165038348234">lub</para>
+                    <equation id="fs-id1165036876890" class="unnumbered">
+                      <label/>
+                      <m:math>
+                        <m:mi>g</m:mi>
+                        <m:mi>h</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:msubsup>
+                          <m:mi>v</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo>+</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:msubsup>
+                          <m:mi>v</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mspace width="thickmathspace"/>
+                        <m:mo stretchy="false">⟹</m:mo>
+                        <m:mspace width="thickmathspace"/>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:msqrt>
+                          <m:mi>g</m:mi>
+                          <m:mi>h</m:mi>
+                        </m:msqrt>
+                        <m:mo>.</m:mo>
+                      </m:math>
+                    </equation>
+                    <para id="fs-id1165036900750">Na Marsie przyspieszenie grawitacyjne wynosi <m:math>
+                      <m:mn>3,71</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:msup>
+                          <m:mi mathvariant="normal">s</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:math>, co daje wartość prędkości u dołu zbocza równą</para>
+                    <equation id="fs-id1165037004488" class="unnumbered">
+                      <label/>
+                      <m:math>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:msqrt>
+                          <m:mn>3,71</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            <m:msup>
+                              <m:mi mathvariant="normal">s</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo>⋅</m:mo>
+                          <m:mn>25</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                          </m:mrow>
+                        </m:msqrt>
+                        <m:mo>=</m:mo>
+                        <m:mn>9,63</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                        <m:mo>.</m:mo>
+                      </m:math>
+                    </equation>
+                    <para id="fs-id1165036833023">
+                      <title>Znaczenie</title>Jest to dość dokładny wynik biorąc pod uwagę, że Mars ma bardzo rzadką atmosferę, a straty energii wynikające z oporu powietrza byłyby minimalne. Założono również, że teren jest gładki, więc koło nie napotykało kamieni i wybojów. </para>
+                      <para id="fs-id1165037982015">Ponadto w tym przypadku energia kinetyczna lub energia ruchu jest równo podzielona na ruch postępowy i obrotowy. Jeśli popatrzymy na momenty bezwładności obiektów o różnych kształtach <link target-id="CNX_UPhysics_10_04_RotInertia" document="m65794"/>, widzimy, że cylinder (wydrążony walec) posiada największy możliwy moment bezwładności dla danego promienia i masy. Gdyby kształt kół łazika był bardziej zbliżony kształtem do walca, to wtedy wkład energii kinetycznej ruchu postępowego do całkowitej energii byłby większy niż wkład energii ruchu obrotowego. To dałoby kołu większą prędkość liniową. W ten sposób, walec szybciej osiągnie dno niecki niż wydrążony w środku cylinder.</para>
+                    </example>
+                  </section>
+                  <section id="fs-id1165038013826" class="key-concepts">
+                    <title>Podsumowanie</title>
+                    <list xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165037035506" list-type="bulleted" bullet-style="bullet"><item>Podczas ruchu tocznego bez poślizgu pomiędzy toczącym się ciałem i powierzchnią występuje siła tarcia statycznego. Związki <m:math>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mi>R</m:mi>
+                        <m:mi>ω</m:mi>
+                      </m:math>, <m:math>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mtext>ŚM</m:mtext>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mi>R</m:mi>
+                      <m:mi>ε</m:mi>
+                    </m:math> i <m:math>
+                    <m:msub>
+                      <m:mi>d</m:mi>
+                      <m:mtext>ŚM</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mi>R</m:mi>
+                    <m:mi>θ</m:mi>
+                    </m:math> mają taką postać, że prędkość liniowa, przyspieszenie i odległość przebyta przez środek masy są wyrażone jako zmienne kątowe pomnożone przez promień obiektu.</item>
+                    <item>W ruchu tocznym z poślizgiem pomiędzy toczącym się przedmiotem i powierzchnią występuje siła tarcia kinetycznego. W tym przypadku <m:math>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mtext>ŚM</m:mtext>
+                      </m:msub>
+                      <m:mo>≠</m:mo>
+                      <m:mi>R</m:mi>
+                      <m:mi>ω</m:mi>
+                    </m:math>, <m:math>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mtext>ŚM</m:mtext>
+                    </m:msub>
+                    <m:mo>≠</m:mo>
+                    <m:mi>R</m:mi>
+                    <m:mi>ε</m:mi>
+                  </m:math> i <m:math>
+                  <m:msub>
+                    <m:mi>d</m:mi>
+                    <m:mtext>ŚM</m:mtext>
+                  </m:msub>
+                  <m:mo>≠</m:mo>
+                  <m:mi>R</m:mi>
+                  <m:mi>θ</m:mi>
+                  </m:math>.</item>
+                  <item>Do analizy ruchu tocznego ciał bez poślizgu może być stosowana zasada zachowania energii mechanicznej. Natomiast podczas toczenia się ciał z poślizgiem energia mechaniczna nie jest zachowywana na skutek wytwarzania ciepła towarzyszącego wykonywaniu pracy przeciwko sile tarcia kinetycznego.</item>
+                </list></section>
+              <section id="fs-id1165036847141" class="review-conceptual-questions">
+                <title>Pytania</title>
+                <exercise id="fs-id1165037924357">
+                  <problem id="fs-id1165037924360">
+                    <para id="fs-id1165036895837">Czy okrągły obiekt spoczywający na szczycie równi, a następnie puszczony zacznie się toczyć, jeżeli między nim a równią nie ma tarcia?</para>
+                  </problem>
+                  <solution id="fs-id1165036812159">
+                    <para id="fs-id1165036812161">Nie, gdyż siła tarcia statycznego jest równa zero.</para>
+                  </solution>
+                </exercise>
+                <exercise id="fs-id1165037166798">
+                  <problem id="fs-id1165037166800">
+                    <para id="fs-id1165037172146">Cylindryczna puszka o promieniu <m:math><m:mi>R</m:mi></m:math> toczy się po poziomej powierzchni bez poślizgu. <newline/>(a) Jaką odległość przebędzie środek masy po wykonaniu jednego obrotu? <newline/>(b) Gdyby doszło do poślizgu puszki, to czy ta odległość byłaby większa czy mniejsza?</para>
+                  </problem>
+                </exercise>
+                <exercise id="fs-id1165036788019">
+                  <problem id="fs-id1165036728807">
+                    <para id="fs-id1165036728809">Koło znajdujące się tuż pod wierzchołkiem zbocza zostaje puszczone w ruch. Czy jest bardziej prawdopodobne, że koło wpadnie w poślizg, gdy zbocze nachylone jest stromo, czy delikatnie?</para>
+                  </problem>
+                  <solution id="fs-id1165037047596">
+                    <para id="fs-id1165037047598">Bardziej prawdopodobne jest, że koło wpadnie w poślizg na stromym zboczu, ponieważ aby siła tarcia statycznego mogła utrzymać ruch toczny bez poślizgu, współczynnik tarcia musi się zwiększać wraz z kątem jego nachylenia.</para>
+                  </solution>
+                </exercise>
+                <exercise id="fs-id1165037056802">
+                  <problem id="fs-id1165037056804">
+                    <para id="fs-id1165037025408">Które ciało stacza się szybciej z nachylonej płaszczyzny–pełny walec czy pełna kula? Oba ciała mają taką samą masę i promień.</para>
+                  </problem>
+                </exercise>
+                <exercise id="fs-id1165038237583">
+                  <problem id="fs-id1165038237585">
+                    <para id="fs-id1165036900645">Wydrążona kula (sfera) i wydrążony walec (cylinder) o takiej samej masie i promieniu, mające taką samą prędkość początkową środka masy wtaczają się bez poślizgu na nachylone zbocze. Które z nich osiągnie większą wysokość przed zatrzymaniem się?</para>
+                  </problem>
+                  <solution id="fs-id1165036990641">
+                    <para id="fs-id1165036890359">Walec osiągnie większą wysokość. Można to wykazać na dwa sposoby. Ze względu na większy moment bezwładności walca:<list id="eip-idm291749952" list-type="enumerated" number-style="upper-roman">
+                      <item>Wartość bezwzględna jego przyspieszenia (jego opóźnienie) jest mniejsza, w związku z czym przy tej samej prędkości początkowej przebędzie on większą drogę, czyli osiągnie większą wysokość.</item>
+                      <item>Początkowa (całkowita) energia kinetyczna walca jest większa, większa więc musi być jego końcowa energia potencjalna, czyli większa musi być wysokość.</item>
+                    </list>
+                  </para>
+                </solution>
+              </exercise>
+            </section>
+            <section id="fs-id1165038359644" class="review-problems">
+              <title>Zadania</title>
+              <exercise id="fs-id1165036844835">
+                <problem id="fs-id1165036872618">
+                  <para id="fs-id1165036872620">Jaka jest prędkość kątowa opony samochodu o średnicy 75,0 cm jadącego z prędkością 90,0 km/h?</para>
+                </problem>
+                <solution id="fs-id1165036900627">
+                  <para id="fs-id1165038023457">
+                    <m:math>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mtext>ŚM</m:mtext>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mi>R</m:mi>
+                      <m:mi>ω</m:mi>
+                      <m:mspace width="thickmathspace"/>
+                      <m:mo stretchy="false">⟹</m:mo>
+                      <m:mspace width="thickmathspace"/>
+                      <m:mn>66,7</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">r</m:mi>
+                        <m:mi mathvariant="normal">a</m:mi>
+                        <m:mi mathvariant="normal">d</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                      <m:mo>.</m:mo>
+                    </m:math>
+                  </para>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1165038356515">
+                <problem id="fs-id1165036993790">
+                  <para id="fs-id1165036993792">Chłopiec przejechał na rowerze 2,00 km. Koła roweru mają promień 30,0 cm. Jaki jest całkowity kąt obrotu opon podczas tej podróży?</para>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1165036872740">
+                <problem id="fs-id1165038358404">
+                  <para id="fs-id1165038358406">Jeżeli chłopiec na rowerze z poprzedniego zadania ,będąc najpierw w stanie spoczynku, rusza i przyspiesza do osiągnięcia prędkości 10,0 m/s w czasie 10,0 s, to jakie jest przyspieszenie kątowe kół?</para>
+                </problem>
+                <solution id="fs-id1165037846364">
+                  <para id="fs-id1165037846366">
+                    <m:math>
+                      <m:mi>ε</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>3,3</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">r</m:mi>
+                        <m:mi mathvariant="normal">a</m:mi>
+                        <m:mi mathvariant="normal">d</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:msup>
+                          <m:mi mathvariant="normal">s</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo>.</m:mo>
+                    </m:math>
+                  </para>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1165037158884">
+                <problem id="fs-id1165037158886">
+                  <para id="fs-id1165037997997">Opony samochodów wyścigowych Formuły 1 mają 66 cm średnicy. Jeżeli samochody (bolidy) te pokonują trasę średnio z prędkością 300 km/h, to ile obrotów wykonują opony kół, jeśli samochód pokonuje trasę w 1,5 godziny?</para>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1165038008575">
+                <problem id="fs-id1165038008577">
+                  <para id="fs-id1165038038470">Spoczywająca kulka zaczyna staczać się z pochylni o kącie nachylenia 30°. <newline/>(a) Jakie jest jej przyspieszenie? <newline/>(b) Jaką drogę przebędzie w czasie 3,0 s? </para>
+                </problem>
+                <solution id="fs-id1165038000616">
+                  <para id="fs-id1165037151288">
+                    <list id="eip-idm380453680" list-type="enumerated" number-style="lower-alpha" mark-suffix=")" mark-prefix="(">
+                      <item>
+                        <m:math>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mtext>ŚM</m:mtext>
+                          </m:msub>
+                          <m:mo>=</m:mo>
+                          <m:mfrac>
+                            <m:mn>2</m:mn>
+                            <m:mn>5</m:mn>
+                          </m:mfrac>
+                          <m:mi>m</m:mi>
+                          <m:msup>
+                            <m:mi>r</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:math> , <m:math>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mn>3,5</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:msup>
+                            <m:mi mathvariant="normal">s</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                        </m:math>;</item>
+                        <item>
+                          <m:math>
+                            <m:mi>x</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mn>15,75</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">m</m:mi>
+                            </m:mrow>
+                            </m:math>.</item>
+                          </list>
+                        </para>
+                      </solution>
+                    </exercise>
+                    <exercise id="fs-id1165037064167">
+                      <problem id="fs-id1165037093666">
+                        <para id="fs-id1165037093669">Rozwiąż poprzednie zadanie, zastępując kulkę pełnym walcem. Wyjaśnij otrzymany wynik.</para>
+                      </problem>
+                    </exercise>
+                    <exercise id="fs-id1165036974293">
+                      <problem id="fs-id1165036974295">
+                        <para id="fs-id1165037934854">Bryła sztywna o cylindrycznym przekroju poprzecznym zostaje puszczona z wierzchołka pochylni o nachyleniu <m:math>
+                          <m:msup>
+                            <m:mn>30</m:mn>
+                            <m:mo>∘</m:mo>
+                          </m:msup>
+                        </m:math>. Bryła ta stacza się 10,0 m do dna pochylni w 2,60 s. Znajdź moment bezwładności bryły i wyraź go przez jego masę <m:math>
+                        <m:mi>m</m:mi>
+                      </m:math> i promień <m:math>
+                      <m:mi>r</m:mi>
+                      </m:math>.</para>
+                    </problem>
+                    <solution id="fs-id1165037169593">
+                      <para id="fs-id1165037169595">Wybieramy kierunek dodatni ruchu w dół pochylni. Mamy:<m:math>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mi>m</m:mi>
+                            <m:mi>g</m:mi>
+                            <m:mi>sin</m:mi>
+                            <m:mo>⁡</m:mo>
+                            <m:mi>θ</m:mi>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mi>m</m:mi>
+                            <m:mo>+</m:mo>
+                            <m:msub>
+                              <m:mi>I</m:mi>
+                              <m:mtext>ŚM</m:mtext>
+                            </m:msub>
+                            <m:mrow>
+                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            </m:mrow>
+                            <m:msup>
+                              <m:mi>r</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mspace width="thickmathspace"/>
+                        <m:mo stretchy="false">⟹</m:mo>
+                        <m:mspace width="thickmathspace"/>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:msup>
+                          <m:mi>r</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mrow>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mi>m</m:mi>
+                                <m:mi>g</m:mi>
+                                <m:mi>sin</m:mi>
+                                <m:mo>⁡</m:mo>
+                                <m:msup>
+                                  <m:mn>30</m:mn>
+                                  <m:mo>∘</m:mo>
+                                </m:msup>
+                              </m:mrow>
+                              <m:msub>
+                                <m:mi>a</m:mi>
+                                <m:mtext>ŚM</m:mtext>
+                              </m:msub>
+                            </m:mfrac>
+                            <m:mo>−</m:mo>
+                            <m:mi>m</m:mi>
+                          </m:mrow>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                      </m:math>,<newline/>
+                      <m:math>
+                        <m:mi>x</m:mi>
+                        <m:mo>−</m:mo>
+                        <m:msub>
+                          <m:mi>x</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mi>t</m:mi>
+                        <m:mo>−</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:msup>
+                          <m:mi>t</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mspace width="thickmathspace"/>
+                        <m:mo stretchy="false">⟹</m:mo>
+                        <m:mspace width="thickmathspace"/>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mn>2,96</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:msup>
+                            <m:mi mathvariant="normal">s</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mo>,</m:mo>
+                      </m:math>
+                      <newline/>
+                      <m:math>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mn>0,66</m:mn>
+                        <m:mi>m</m:mi>
+                        <m:msup>
+                          <m:mi>r</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>.</m:mo>
+                      </m:math>
+                    </para>
+                  </solution>
+                </exercise>
+                <exercise id="fs-id1165036972880">
+                  <problem id="fs-id1165038282935">
+                    <para id="fs-id1165038282937">Jo-jo można traktować jako pełny walec o masie <m:math>
+                      <m:mi>m</m:mi>
+                    </m:math>, a promieniu <m:math>
+                    <m:mi>r</m:mi>
+                    </m:math>, który ma nawinięty lekki sznurek wokół swojego obwodu (patrz niżej). Jeden koniec sznurka jest przymocowany do stałego punktu w przestrzeni. Jeśli walec opada, gdy sznurek odwija się bez poślizgu, to jakie jest przyspieszenie walca?</para>
+                    <media id="fs-id1165036853345" alt="Ilustracja przedstawia walec o promieniu r, do którego przyłożono siły. Siła mg działa na środek walca i skierowana jest w dół. Siła T działa na prawą krawędź i jest skierowana w górę.">
+                      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_01_Prob12_img.jpg"/>
+                    </media>
+                  </problem>
+                </exercise>
+                <exercise id="fs-id1165036894393">
+                  <problem id="fs-id1165036894395">
+                    <para id="fs-id1165036894397">Pełny walec o promieniu 10,0 cm stacza się z równi z poślizgiem. Kąt nachylenia równi wynosi <m:math>
+                      <m:msup>
+                        <m:mn>30</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      </m:math>, a współczynnik tarcia kinetycznego o jej powierzchnię 0,40. Jakie jest przyspieszenie kątowe walca? Ile wynosi jego przyspieszenie liniowe?</para>
+                    </problem>
+                    <solution id="fs-id1165038304382">
+                      <para id="fs-id1165036985297">
+                        <m:math>
+                          <m:mi>ε</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mn>67,9</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">r</m:mi>
+                            <m:mi mathvariant="normal">a</m:mi>
+                            <m:mi mathvariant="normal">d</m:mi>
+                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            <m:msup>
+                              <m:mi mathvariant="normal">s</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                        </m:math>,<m:math>
+                        <m:msub>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:msub>
+                              <m:mi>a</m:mi>
+                              <m:mtext>ŚM</m:mtext>
+                            </m:msub>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mi>x</m:mi>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mn>1,5</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:msup>
+                            <m:mi mathvariant="normal">s</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                        </m:math>.</para>
+                      </solution>
+                    </exercise>
+                    <exercise id="fs-id1165038314178">
+                      <problem id="fs-id1165038314180">
+                        <para id="fs-id1165036994657">Kula do gry w kręgle toczy się, do przechowalni, w górę rampy o wysokości 0,5 m bez poślizgu. Jej środek masy ma prędkość początkową 3,0 m/s. (a) Jaka jest jej prędkość na szczycie rampy? (b) Czy kula dotrze do szczytu w przypadku, gdy rampa ma 1 m wysokości? </para>
+                      </problem>
+                    </exercise>
+                    <exercise id="fs-id1165037046917">
+                      <problem id="fs-id1165037008544">
+                        <para id="fs-id1165037008546">Walec o masie 40,0 kg toczy się po poziomej powierzchni z prędkością 6,0 m/s. Jaka potrzebna jest praca,  żeby go zatrzymać?</para>
+                      </problem>
+                      <solution id="fs-id1165037047359">
+                        <para id="fs-id1165037047361">
+                          <m:math>
+                            <m:mi>W</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mo>−</m:mo>
+                            <m:mn>1080,0</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">J</m:mi>
+                            </m:mrow>
+                            </m:math>,<newline/>znak minus mówi, że siła hamująca walec jest przeciwna do jego kierunku ruchu.</para>
+                          </solution>
+                        </exercise>
+                        <exercise id="fs-id1165037168588">
+                          <problem id="fs-id1165036992300">
+                            <para id="fs-id1165036992302">Kula o masie 40,0 kg toczy się po poziomej powierzchni z prędkością 6,0 m/s. Jaka jest potrzebna praca, żeby ją zatrzymać? Porównaj otrzymany wynik z wynikiem poprzedniego zadania. </para>
+                          </problem>
+                        </exercise>
+                        <exercise id="fs-id1165036985337">
+                          <problem id="fs-id1165036985339">
+                            <para id="fs-id1165037988217">Walec wtacza się w górę równi o nachyleniu <m:math>
+                              <m:msup>
+                                <m:mn>20</m:mn>
+                                <m:mo>∘</m:mo>
+                              </m:msup>
+                              </m:math>. Jeśli ruch zaczyna się od dołu z prędkością 10 m/s, to jak daleko w górę równi będzie toczyć się ten walec? </para>
+                            </problem>
+                            <solution id="fs-id1165038133403">
+                              <para id="fs-id1165038133405">Energia mechaniczna na dole jest równa energii mechanicznej u góry:<m:math>
+                                <m:mfrac>
+                                  <m:mn>1</m:mn>
+                                  <m:mn>2</m:mn>
+                                </m:mfrac>
+                                <m:mi>m</m:mi>
+                                <m:msubsup>
+                                  <m:mi>v</m:mi>
+                                  <m:mn>0</m:mn>
+                                  <m:mn>2</m:mn>
+                                </m:msubsup>
+                                <m:mo>+</m:mo>
+                                <m:mfrac>
+                                  <m:mn>1</m:mn>
+                                  <m:mn>2</m:mn>
+                                </m:mfrac>
+                                <m:mrow>
+                                  <m:mo>(</m:mo>
+                                  <m:mrow>
+                                    <m:mfrac>
+                                      <m:mn>1</m:mn>
+                                      <m:mn>2</m:mn>
+                                    </m:mfrac>
+                                    <m:mi>m</m:mi>
+                                    <m:msup>
+                                      <m:mi>r</m:mi>
+                                      <m:mn>2</m:mn>
+                                    </m:msup>
+                                  </m:mrow>
+                                  <m:mo>)</m:mo>
+                                </m:mrow>
+                                <m:mo>⋅</m:mo>
+                                <m:msup>
+                                  <m:mrow>
+                                    <m:mo>(</m:mo>
+                                    <m:mfrac>
+                                      <m:msub>
+                                        <m:mi>v</m:mi>
+                                        <m:mn>0</m:mn>
+                                      </m:msub>
+                                      <m:mi>r</m:mi>
+                                    </m:mfrac>
+                                    <m:mo>)</m:mo>
+                                  </m:mrow>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                                <m:mo>=</m:mo>
+                                <m:mi>m</m:mi>
+                                <m:mi>g</m:mi>
+                                <m:mi>h</m:mi>
+                                <m:mspace width="thickmathspace"/>
+                                <m:mo stretchy="false">⟹</m:mo>
+                                <m:mspace width="thickmathspace"/>
+                                <m:mi>h</m:mi>
+                                <m:mo>=</m:mo>
+                                <m:mfrac>
+                                  <m:mn>1</m:mn>
+                                  <m:mi>g</m:mi>
+                                </m:mfrac>
+                                <m:mrow>
+                                  <m:mo>(</m:mo>
+                                  <m:mrow>
+                                    <m:mfrac>
+                                      <m:mn>1</m:mn>
+                                      <m:mn>2</m:mn>
+                                    </m:mfrac>
+                                    <m:mo>+</m:mo>
+                                    <m:mfrac>
+                                      <m:mn>1</m:mn>
+                                      <m:mn>4</m:mn>
+                                    </m:mfrac>
+                                  </m:mrow>
+                                  <m:mo>)</m:mo>
+                                </m:mrow>
+                                <m:msubsup>
+                                  <m:mi>v</m:mi>
+                                  <m:mn>0</m:mn>
+                                  <m:mn>2</m:mn>
+                                </m:msubsup>
+                              </m:math>,<newline/>Po podstawieniu otrzymujemy <m:math>
+                              <m:mi>h</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mn>7,7</m:mn>
+                              <m:mspace width="0.2em"/>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">m</m:mi>
+                              </m:mrow>
+                              </m:math>; tak więc maksymalna odległość przebyta przez walec wynosi 22,5 m.</para>
+                            </solution>
+                          </exercise>
+                          <exercise id="fs-id1165038375196">
+                            <problem id="fs-id1165038375198">
+                              <para id="fs-id1165036891065">Walec o masie <m:math>
+                                <m:mi>M</m:mi>
+                              </m:math> i promieniu <m:math>
+                              <m:mi>R</m:mi>
+                            </m:math> jest ciągnięty z siłą <m:math>
+                            <m:mrow>
+                              <m:mover>
+                                <m:mi>F</m:mi>
+                                <m:mtext>→</m:mtext>
+                              </m:mover>
+                            </m:mrow>
+                          </m:math> przyłożoną do jego środka pod kątem <m:math>
+                          <m:msup>
+                            <m:mn>37</m:mn>
+                            <m:mo>∘</m:mo>
+                          </m:msup>
+                        </m:math> do płaszczyzny poziomej (patrz rysunek). Jeśli koło ma się toczyć bez poślizgu, to jaka jest maksymalna wartość <m:math>
+                        <m:mrow>
+                          <m:mo>|</m:mo>
+                          <m:mrow>
+                            <m:mover>
+                              <m:mi>F</m:mi>
+                              <m:mtext>→</m:mtext>
+                            </m:mover>
+                          </m:mrow>
+                          <m:mo>|</m:mo>
+                        </m:mrow>
+                      </m:math>? Współczynniki tarcia statycznego i kinetycznego wynoszą odpowiednio <m:math>
+                      <m:msub>
+                        <m:mi>μ</m:mi>
+                        <m:mtext>s</m:mtext>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mn>0,40</m:mn>
+                    </m:math> i <m:math>
+                    <m:msub>
+                      <m:mi>μ</m:mi>
+                      <m:mtext>k</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mn>0,30</m:mn>
+                    </m:math>. Przyjmij, masa walca równa jest 5 kg.</para>
+                    <media id="fs-id1165036881763" alt="Siły przyłożone do koła o promieniu R spoczywającego na poziomej powierzchni. Środek koła znajduje się w początku układu współrzędnych x y, którego dodatnia półoś x biegnie w prawo a dodatnia półoś y w górę. Siła F działa na środek koła pod kątem 37 stopni do osi x. Siła M g działa na środek koła i skierowana jest w dół. Siła N jest skierowana w górę i działa na punkt kontaktu w którym koło dotyka powierzchni. Siła f sub s jest skierowana w lewo i również działa na punkt kontaktu miedzy kołem a powierzchnią.">
+                      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_01_Prob22_img.jpg"/>
+                    </media>
+                  </problem>
+                </exercise>
+                <exercise id="fs-id1165038133480">
+                  <problem id="fs-id1165036842355">
+                    <para id="fs-id1165036842357">Pusty w środku cylider mający prędkość 5,0 m/s wtacza się pod nachylenie do wysokości 1,0 m. Jak wysoko wtoczy się pod to nachylenie sfera o takiej samej masie i promieniu oraz takiej samej prędkości początkowej?</para>
+                  </problem>
+                  <solution id="fs-id1165038369522">
+                    <para id="fs-id1165038369524">Z zasady zachowania energii mechanicznej dla kuli i walca <newline/>
+                      <m:math>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:mi>m</m:mi>
+                        <m:msubsup>
+                          <m:mi>v</m:mi>
+                          <m:mn>0</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo>+</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mtext>Cylinder</m:mtext>
+                        </m:msub>
+                        <m:msubsup>
+                          <m:mi>ω</m:mi>
+                          <m:mn>0</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo>=</m:mo>
+                        <m:mi>m</m:mi>
+                        <m:mi>g</m:mi>
+                        <m:msub>
+                          <m:mi>h</m:mi>
+                          <m:mtext>cylinder</m:mtext>
+                        </m:msub>
+                      </m:math>,<newline/>
+                      <m:math>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:mi>m</m:mi>
+                        <m:msubsup>
+                          <m:mi>v</m:mi>
+                          <m:mn>0</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo>+</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mtext>sfera</m:mtext>
+                        </m:msub>
+                        <m:msubsup>
+                          <m:mi>ω</m:mi>
+                          <m:mn>0</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo>=</m:mo>
+                        <m:mi>m</m:mi>
+                        <m:mi>g</m:mi>
+                        <m:msub>
+                          <m:mi>h</m:mi>
+                          <m:mtext>sfera</m:mtext>
+                        </m:msub>
+                      </m:math>.<newline/>Odjęcie stronami tych dwóch równań, eliminuje początkową energię translacyjną (ruchu postępowego) i mamy:<newline/>
+                      <m:math>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mtext>cylinder</m:mtext>
+                        </m:msub>
+                        <m:msubsup>
+                          <m:mi>ω</m:mi>
+                          <m:mn>0</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo>−</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mtext>sfera</m:mtext>
+                        </m:msub>
+                        <m:msubsup>
+                          <m:mi>ω</m:mi>
+                          <m:mn>0</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo>=</m:mo>
+                        <m:mi>m</m:mi>
+                        <m:mi>g</m:mi>
+                        <m:mo>(</m:mo>
+                        <m:msub>
+                          <m:mi>h</m:mi>
+                          <m:mtext>cylinder</m:mtext>
+                        </m:msub>
+                        <m:mo>−</m:mo>
+                        <m:msub>
+                          <m:mi>h</m:mi>
+                          <m:mtext>sfera</m:mtext>
+                        </m:msub>
+                        <m:mo>)</m:mo>
+                      </m:math>,<newline/>
+                      <m:math>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:mi>m</m:mi>
+                        <m:msup>
+                          <m:mi>r</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mfrac>
+                              <m:msub>
+                                <m:mi>v</m:mi>
+                                <m:mn>0</m:mn>
+                              </m:msub>
+                              <m:mi>r</m:mi>
+                            </m:mfrac>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>−</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:mfrac>
+                          <m:mn>2</m:mn>
+                          <m:mn>3</m:mn>
+                        </m:mfrac>
+                        <m:mi>m</m:mi>
+                        <m:msup>
+                          <m:mi>r</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mfrac>
+                              <m:msub>
+                                <m:mi>v</m:mi>
+                                <m:mn>0</m:mn>
+                              </m:msub>
+                              <m:mi>r</m:mi>
+                            </m:mfrac>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>=</m:mo>
+                        <m:mi>m</m:mi>
+                        <m:mi>g</m:mi>
+                        <m:mo>(</m:mo>
+                        <m:msub>
+                          <m:mi>h</m:mi>
+                          <m:mtext>cylinder</m:mtext>
+                        </m:msub>
+                        <m:mo>−</m:mo>
+                        <m:msub>
+                          <m:mi>h</m:mi>
+                          <m:mtext>sfera</m:mtext>
+                        </m:msub>
+                        <m:mo>)</m:mo>
+                      </m:math>,<newline/>
+                      <m:math>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:msubsup>
+                          <m:mi>v</m:mi>
+                          <m:mn>0</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo>−</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:mfrac>
+                          <m:mn>2</m:mn>
+                          <m:mn>3</m:mn>
+                        </m:mfrac>
+                        <m:msubsup>
+                          <m:mi>v</m:mi>
+                          <m:mn>0</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo>=</m:mo>
+                        <m:mi>g</m:mi>
+                        <m:mo>(</m:mo>
+                        <m:msub>
+                          <m:mi>h</m:mi>
+                          <m:mtext>cylinder</m:mtext>
+                        </m:msub>
+                        <m:mo>−</m:mo>
+                        <m:msub>
+                          <m:mi>h</m:mi>
+                          <m:mtext>sfera</m:mtext>
+                        </m:msub>
+                        <m:mo>)</m:mo>
+                      </m:math>,<m:math>
+                      <m:msub>
+                        <m:mi>h</m:mi>
+                        <m:mtext>cylinder</m:mtext>
+                      </m:msub>
+                      <m:mo>−</m:mo>
+                      <m:msub>
+                        <m:mi>h</m:mi>
+                        <m:mtext>sfera</m:mtext>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mi>g</m:mi>
+                      </m:mfrac>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:mo>−</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>3</m:mn>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:msubsup>
+                        <m:mi>v</m:mi>
+                        <m:mn>0</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:msubsup>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mrow>
+                          <m:mn>9,8</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            <m:msup>
+                              <m:mi mathvariant="normal">s</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>⋅</m:mo>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>6</m:mn>
+                      </m:mfrac>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mrow>
+                            <m:mn>5,0</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">m</m:mi>
+                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                              <m:mi mathvariant="normal">s</m:mi>
+                            </m:mrow>
+                          </m:mrow>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>=</m:mo>
+                      <m:mn>0,43</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:math>.<newline/>W ten sposób sfera o mniejszym momencie bezwładności wtoczy się na wysokość mniejszą o <m:math>
+                    <m:mn>1,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>0,43</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mn>0,57</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                    </m:math>.</para>
+                  </solution>
+                </exercise>
+              </section>
+            </content>
+            <glossary>
+              <definition id="fs-id1165037056092">
+                <term class="no-emphasis" cmlnle:reference="ruch toczny">ruch toczny (toczenie się) (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">rolling motion</term></foreign>)</term>
+                <meaning id="fs-id1165038330800">złożenie ruchu obrotowego i translacyjnego lub/bez poślizgu</meaning>
+              </definition>
+            </glossary>
+          </document>

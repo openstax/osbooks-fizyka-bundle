@@ -1,0 +1,1571 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Energia i moc elektryczna</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67190</md:content-id>
+  <md:title>Energia i moc elektryczna</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>wyrażać moc prądu elektrycznego za pomocą napięcia oraz natężenia prądu;</item>
+<item>opisywać moc wydzielaną przez rezystor w obwodzie elektrycznym;</item>
+<item>obliczać wydajność energetyczną oraz efektywny koszt urządzeń i sprzętu.</item>
+</list></md:abstract>
+  <md:uuid>6b82fbfb-7b72-47cd-9cca-90c14643dc48</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902157862">W obwodzie elektrycznym energia elektryczna jest stale przetwarzana na inne rodzaje energii. Przykładowo, gdy prąd przepływa przez przewodnik, energia elektryczna zamienia się w energię cieplną w przewodniku. Pole elektryczne wygenerowane przez przyłożone napięcie przyspiesza swobodne elektrony, zwiększając ich energię kinetyczną na krótki czas. Ta zwiększona energia kinetyczna zamienia się w energię termiczną w wyniku zderzeń elektronów z jonami struktury krystalicznej przewodnika. W rozdziale <link class="target-chapter" document="m65770">Praca oraz energia kinetyczna</link> zdefiniowaliśmy moc jako pracę wykonywaną przez przyłożoną siłę w czasie, mierzoną w watach. Moc można zdefiniować również jako prędkość przekazywania energii. W tym rozdziale omówimy prędkość przekazywania energii, czyli moc, w obwodzie elektrycznym. </para><section xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902274398"><title>Moc w obwodach elektrycznych</title><para id="fs-id1170902535355">Wielu ludzi kojarzy moc z elektrycznością. Na żarówkach ich moc oznaczamy w watach. Co to jest <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="moc elektryczna">moc elektryczna</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">electric power</term></foreign>)?</para>
+      <para id="fs-id1170904140937">Porównajmy żarówki 25-watową i 60-watową – <link target-id="CNX_UPhysics_26_05_LightBulbs"/> (a). 60-watowa świeci jaśniej niż 25-watowa. Mimo że nie widać tego na zdjęciu, to żarówka 60-watowa ma wyższą temperaturę niż 25-watowa. Ciepło oraz światło są wytwarzane w wyniku konwersji energii elektrycznej. Energia kinetyczna tracona przez elektrony na skutek zderzeń zamienia się w energię wewnętrzną przewodnika oraz promieniowanie. W jaki sposób napięcie, natężenie prądu oraz rezystancja są powiązane z mocą elektryczną?</para>
+      <figure id="CNX_UPhysics_26_05_LightBulbs"><media id="fs-id1170902247090" alt="Obraz A przedstawia dwie fotografie dwóch świecących się żarówek. Obraz B to zdjęcie świecącej się świetlówki i jej światła fluoroscencyjnego.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_26_05_LightBulbs.jpg"/>
+        </media>
+        
+      <caption>(a) Powyżej przedstawiono dwie żarówki: 25-watową (lewa) oraz 60-watową (prawa). 60-watowa żarówka wytwarza światło o większej intensywności niż 25-watowa. Energia elektryczna dostarczona do żarówek zamienia się w ciepło i światło. (b) Ta świetlówka wytwarza światło o takiej samej intensywności jak 60-watowa żarówka, ale zużywa od <m:math display="inline"><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>10</m:mn></m:math> do <m:math display="inline"><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>4</m:mn></m:math> mniej mocy elektrycznej. Źródła: (a) modyfikacja pracy „Dickbauch”/Wikimedia Commons and Greg Westfall; (b) modyfikacja pracy „dbgg1979”/Flickr</caption></figure><para id="fs-id1170902204281">Aby policzyć moc elektryczną, rozważymy różnicę potencjałów wzdłuż przewodnika (<link target-id="CNX_UPhysics_26_05_PowerDer"/>). Potencjał elektryczny <m:math display="inline"><m:msub><m:mi>V</m:mi><m:mn>1</m:mn></m:msub></m:math> jest wyższy niż <m:math display="inline"><m:msub><m:mi>V</m:mi><m:mn>2</m:mn></m:msub></m:math>, więc napięcie <m:math display="inline"><m:mi>U</m:mi><m:mo>=</m:mo><m:mrow><m:msub><m:mi>V</m:mi><m:mn>2</m:mn></m:msub><m:mo>−</m:mo><m:msub><m:mi>V</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> jest ujemne. Jak już wspominaliśmy w rozdziale <link class="target-chapter" document="m67172">Potencjał elektryczny</link>, pomiędzy punktami o różnych wartościach potencjału występuje pole elektryczne. Wektor jego natężenia jest skierowany od wyższego potencjału do niższego. Przypominamy również, że potencjał elektryczny został zdefiniowany jako stosunek energii potencjalnej do ładunku, <m:math display="inline">
+  <m:mi>U</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mo>Δ</m:mo>
+      <m:msub>
+        <m:mi>E</m:mi>
+        <m:mtext>p</m:mtext>
+      </m:msub>
+    </m:mrow>
+    <m:mo>∕</m:mo>
+    <m:mi>q</m:mi>
+  </m:mrow>
+</m:math>. Jednocześnie ładunek <m:math display="inline">
+<m:mo>Δ</m:mo>
+<m:mi>Q</m:mi>
+</m:math> traci energię potencjalną, poruszając się wzdłuż różnicy potencjałów.</para><figure id="CNX_UPhysics_26_05_PowerDer">
+  <media id="fs-id1170902299825" alt="Rysunek jest schematycznym wykresem ładunku punktowego poruszającego się przez przewodnik z obszaru o wyższym potencjale V1 do obszaru o niższym potencjale V2. Odległość pomiędzy obszarami wynosi Delta L. ">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_26_05_PowerDer.jpg"/>
+  </media>
+  <caption>Gdy do przewodnika przyłożona jest różnica potencjałów, pojawia się pole elektryczne. Wektor natężenia pola elektrycznego skierowany jest od wyższego potencjału do niższego.</caption>
+</figure>
+<para id="fs-id1170902068595">Jeśli ładunek jest dodatni, to działa na niego siła związana z polem elektrycznym <m:math display="inline">
+  <m:mover>
+    <m:mi>F</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>m</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mover>
+      <m:mi>a</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mo>Δ</m:mo>
+      <m:mi>Q</m:mi>
+    </m:mrow>
+    <m:mo>⁢</m:mo>
+    <m:mover>
+      <m:mi>E</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+  </m:mrow>
+</m:math>. Ta siła jest niezbędna, aby spowodować ruch ładunku. Jednak nie powoduje ona przyspieszania ładunków wzdłuż długości <m:math display="inline">
+<m:mo>Δ</m:mo>
+<m:mi>L</m:mi>
+</m:math> z powodu strat związanych ze zderzeniami z innymi elektronami i atomami. Ich prędkość, a co za tym idzie także energia kinetyczna, nie zmieniają się w trakcie przemieszczania się wzdłuż <m:math display="inline">
+<m:mo>Δ</m:mo>
+<m:mi>L</m:mi>
+</m:math>, dlatego ładunek przechodzący przez powierzchnię <m:math display="inline">
+<m:msub>
+  <m:mi>S</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> ma taką samą prędkość dryfu <m:math display="inline">
+<m:msub>
+  <m:mi>v</m:mi>
+  <m:mtext>d</m:mtext>
+</m:msub>
+</m:math> jak przechodzący przez powierzchnię <m:math display="inline">
+<m:msub>
+  <m:mi>S</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math>. Jednakże pole elektryczne wykonuje pracę na ładunku, co zmienia jego energię potencjalną. Skoro zmiana potencjału elektrycznego jest ujemna, to pole elektryczne równa się</para><equation id="fs-id1170902205277" class="unnumbered"><m:math display="block"><m:mi>E</m:mi><m:mo>=</m:mo><m:mrow><m:mo>−</m:mo><m:mfrac><m:mrow><m:msub><m:mi>V</m:mi><m:mn>2</m:mn></m:msub><m:mo>−</m:mo><m:msub><m:mi>V</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:mo>Δ</m:mo><m:mi>L</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mfrac><m:mi>U</m:mi><m:mrow><m:mo>Δ</m:mo><m:mi>L</m:mi></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:math></equation><para id="fs-id1170903870810">Praca wykonana na przesunięcia ładunku równa się sile elektrycznej pomnożonej przez odległość, na jakiej jest przykładana</para><equation id="fs-id1170902220107" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mi>W</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>F</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>Δ</m:mo>
+        <m:mi>L</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mo>Δ</m:mo>
+          <m:mi>Q</m:mi>
+        </m:mrow>
+        <m:mo>⁢</m:mo>
+        <m:mi>E</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mrow>
+        <m:mo>Δ</m:mo>
+        <m:mi>L</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mo>Δ</m:mo>
+        <m:mi>Q</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mfrac>
+        <m:mi>U</m:mi>
+        <m:mrow>
+          <m:mo>Δ</m:mo>
+          <m:mi>L</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>Δ</m:mo>
+        <m:mi>L</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mo>Δ</m:mo>
+        <m:mi>Q</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mi>U</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mo>Δ</m:mo>
+        <m:msub>
+          <m:mi>E</m:mi>
+          <m:mtext>p</m:mtext>
+        </m:msub>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1170902126275">Ładunek porusza się ze stałą prędkością dryfu <m:math display="inline">
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mtext>d</m:mtext>
+  </m:msub>
+  </m:math>⁠, więc wykonana praca wiąże się z utratą energii potencjalnej, natomiast średnia energia kinetyczna się nie zmienia. Straty energii potencjalnej powodują wzrost energii termicznej materiału. W skali mikroskopowej przekazywanie energii wynika ze zderzeń między ładunkami a cząsteczkami materiału, co prowadzi do zwiększenia jego temperatury. Straty energii potencjalnej powodują wzrost energii wewnętrznej materiału, która jest przekazywana jako promieniowanie – w rezystorze jako ciepło, w żarówce jako ciepło i światło.</para><para id="fs-id1170904170390">Moc oddawana przez materiał jako ciepło i światło równa się zmianie pracy w czasie</para>
+  <equation id="fs-id1170902385622" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:mi>P</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mo>Δ</m:mo>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mtext>p</m:mtext>
+          </m:msub>
+        </m:mrow>
+        <m:mrow>
+          <m:mo>Δ</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mrow>
+              <m:mo>Δ</m:mo>
+              <m:mi>Q</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mi>U</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mo>Δ</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfrac>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>I</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>U</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1170902134134">Utrata energii potencjalnej, wynikająca ze spadku napięcia, zamienia się w ciepło. Prawo Ohma mówi, że spadek napięcia wzdłuż rezystora jest równy iloczynowi natężenia prądu oraz rezystancji, <m:math display="inline">
+    <m:mi>U</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>I</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>R</m:mi>
+    </m:mrow>
+    </m:math>. Moc pobierana przez rezystor wynosi</para><equation id="fs-id1170902437618" class="unnumbered"><m:math display="block"><m:mi>P</m:mi><m:mo>=</m:mo><m:mrow><m:mi>I</m:mi><m:mo>⁢</m:mo><m:mi>U</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>I</m:mi><m:mo>⋅</m:mo><m:mi>I</m:mi></m:mrow><m:mo>⁢</m:mo><m:mi>R</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:msup><m:mi>I</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:mi>R</m:mi></m:mrow></m:math></equation><para id="eip-56">lub</para><equation id="eip-60" class="unnumbered"><m:math display="block"><m:mrow>         
+ <m:mi>P</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>I</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>U</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mi>U</m:mi>
+            <m:mi>R</m:mi>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:mi>U</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:msup>
+              <m:mi>U</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>R</m:mi>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation><para id="fs-id1170902264590">Jeśli rezystor jest podłączony do baterii, moc pobraną przez przewody oraz rezystor wyrażamy jako <m:math display="inline">
+      <m:mi>P</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>I</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>U</m:mi>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msup>
+          <m:mi>I</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>⁢</m:mo>
+        <m:mi>R</m:mi>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msup>
+          <m:mi>U</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>∕</m:mo>
+        <m:mi>R</m:mi>
+      </m:mrow>
+    </m:math>. Moc pobrana z baterii jest równa iloczynowi napięcia i natężenia prądu <m:math display="inline">
+    <m:mi>P</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>I</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>U</m:mi>
+    </m:mrow>
+    </m:math>.</para><note id="fs-id1170903905040">
+      <title>Moc elektryczna</title>
+      <para id="fs-id1170903806059">Moc elektryczną oddawaną lub pobieraną przez urządzenie można zapisać jako</para>
+      <equation id="fs-id1170903888872">
+        <m:math display="block">
+          <m:mi>P</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mi>I</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>U</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1170902347467">Moc wydzielana przez rezystor wynosi</para>
+      <equation id="fs-id1170904156987">
+        <m:math display="block">
+          <m:mi>P</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msup>
+              <m:mi>I</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⁢</m:mo>
+            <m:mi>R</m:mi>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:msup>
+                <m:mi>U</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mi>R</m:mi>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+    </note>
+    <para id="fs-id1170904146177">Trzy różne wyrażenia na moc elektryczną pozwalają na inny wgląd w problem. Na przykład <m:math display="inline">
+      <m:mi>P</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msup>
+          <m:mi>U</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>∕</m:mo>
+        <m:mi>R</m:mi>
+      </m:mrow>
+    </m:math> pokazuje, że im mniejsza rezystancja zostanie podłączona do danego źródła napięciowego, tym większa będzie dostarczona moc. Skoro zaś moc zmienia się wraz z kwadratem napięcia, to zgodnie z wyrażeniem <m:math display="inline">
+    <m:mi>P</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msup>
+        <m:mi>U</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>∕</m:mo>
+      <m:mi>R</m:mi>
+    </m:mrow>
+  </m:math> efekt przykładania wyższego napięcia może być większy niż spodziewany. Gdy podamy dwa razy większe napięcie na 25-watową żarówkę, moc na niej zwiększy się cztery razy, do ok. <m:math display="inline">
+  <m:mn>100</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">W</m:mi>
+</m:math>, co doprowadzi do przepalenia żarówki. Gdyby rezystancja żarówki była stała, jej moc byłaby równa dokładnie <m:math display="inline">
+<m:mn>100</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">W</m:mi>
+</m:math>, jednakże w wyższej temperaturze rezystancja żarówki rośnie.</para><example id="fs-id1170902335576">
+  <para id="fs-id1170903742181"><title>Obliczanie mocy w urządzeniach elektrycznych</title>Stałoprądowy silnik wyciągarki pracuje po podłączeniu do napięcia <m:math display="inline">
+      <m:mn>115</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:math>. W takim przypadku przepływa przez niego prąd o natężeniu <m:math display="inline">
+    <m:mn>20</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">A</m:mi>
+  </m:math>. Gdy silnik pracuje z maksymalną mocą, wyciągarka może podnieść obiekt o ciężarze <m:math display="inline">
+  <m:mn>4900</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">N</m:mi>
+</m:math> na wysokość <m:math display="inline">
+<m:mn>10</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">m</m:mi>
+</m:math> w czasie <m:math display="inline">
+<m:mn>30</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">s</m:mi>
+</m:math> ze stałą prędkością.<list id="eip-idm1054843248" list-type="enumerated" number-style="lower-alpha"><item>Jaką moc pobiera silnik?</item>
+<item>Jaka moc jest potrzebna do podniesienia obiektu? Pomińmy opory powietrza.</item>
+<item>Zakładając, że różnica pomiędzy mocą pobraną przez silnik a wykorzystaną do podniesienia obiektu zamienia się w ciepło na rezystancji silnika, oszacujmy tę wielkość.</item>
+</list></para><para id="eip-574">
+  <title>Strategia rozwiązania</title>
+</para>
+<list id="eip-idm1224899584" list-type="enumerated" number-style="lower-alpha"><item>Moc pobraną przez silnik można obliczyć ze wzoru <m:math display="inline">
+    <m:mi>P</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>I</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>U</m:mi>
+    </m:mrow>
+    </m:math>.</item>
+    <item>Moc potrzebną do podniesienia obiektu ze stałą prędkością można wyznaczyć, używając <m:math display="inline"><m:mi>P</m:mi><m:mo>=</m:mo><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>v</m:mi></m:mrow></m:math>, gdzie prędkość to stosunek drogi i czasu. Siła wymagana do podniesienia obiektu równa się jego ciężarowi, ponieważ prędkość jest stała.</item>
+      <item>Rezystancję silnika można obliczyć za pomocą <m:math display="inline">
+        <m:mi>P</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msup>
+            <m:mi>I</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>⁢</m:mo>
+          <m:mi>R</m:mi>
+        </m:mrow>
+        </m:math>.</item>
+      </list><para id="fs-id1170904096461">
+        <title>Rozwiązanie</title>
+      </para>
+      <list id="fs-id1172101752705" list-type="enumerated" number-style="lower-alpha"><item>Moc pobraną przez silnik zapiszemy jako <m:math display="inline">
+          <m:mi>P</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mi>I</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>U</m:mi>
+          </m:mrow>
+        </m:math>, gdzie natężenie prądu wynosi <m:math display="inline">
+        <m:mn>20</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">A</m:mi>
+      </m:math>, natomiast napięcie <m:math display="inline">
+      <m:mn>115</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:math>
+    <equation id="fs-id1170904045425" class="unnumbered">
+      <label/>
+      <m:math display="block">
+        <m:mi>P</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>I</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>U</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>20</m:mn>
+           <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">A</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mn>115</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">V</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>2300</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">W</m:mi>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation>
+  </item>
+  <item>Moc potrzebna do podniesienia obiektu wynosi <m:math display="inline"><m:mi>P</m:mi><m:mo>=</m:mo><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>v</m:mi></m:mrow></m:math>, gdzie siła jest równa ciężarowi przedmiotu (<m:math display="inline">
+  <m:mn>4900</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">N</m:mi>
+</m:math>), a prędkość <m:math display="inline">
+<m:mi>v</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:mn>10</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">m</m:mi>
+  </m:mrow>
+  <m:mo>∕</m:mo>
+  <m:mrow>
+    <m:mn>30</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">s</m:mi>
+  </m:mrow>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>0,33</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mrow>
+    <m:mi mathvariant="normal">m</m:mi>
+    <m:mo>∕</m:mo>
+    <m:mi mathvariant="normal">s</m:mi>
+  </m:mrow>
+</m:mrow>
+</m:math>
+<equation id="fs-id1170903787823" class="unnumbered"><label/>
+  <m:math display="block">
+    <m:mi>P</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>v</m:mi></m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>4900</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">N</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mrow>
+        <m:mn>0,33</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mo>∕</m:mo>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>1633,33</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">W</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation></item>
+<item>Różnica między mocami wynosi <m:math display="inline">
+  <m:mrow>
+    <m:mrow>
+      <m:mn>2300</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">W</m:mi>
+    </m:mrow>
+    <m:mo>−</m:mo>
+    <m:mrow>
+      <m:mn>1633,33</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">W</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>666,67</m:mn>
+   <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">W</m:mi>
+  </m:mrow>
+</m:math>, natomiast rezystancję można obliczyć z zależności <m:math display="inline">
+<m:mi>P</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msup>
+    <m:mi>I</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>⁢</m:mo>
+  <m:mi>R</m:mi>
+</m:mrow>
+</m:math>
+<equation id="fs-id1170902101458" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mi>R</m:mi>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mi>P</m:mi>
+      <m:msup>
+        <m:mi>I</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mn>666,67</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">W</m:mi>
+      </m:mrow>
+      <m:msup>
+        <m:mfenced>
+          <m:mrow>
+            <m:mn>20</m:mn>
+           <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">A</m:mi>
+          </m:mrow>
+        </m:mfenced>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>1,67</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+</item>
+</list><para id="fs-id1170903934346">
+  <title>Znaczenie</title>Rezystancja silnika jest dosyć mała. Wynika ona z dużej liczby uzwojeń drutu miedzianego. Moc tracona przez silnik może być bardzo duża, ponieważ jest proporcjonalna do kwadratu natężenia prądu (<m:math display="inline">
+    <m:mi>P</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msup>
+        <m:mi>I</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>⁢</m:mo>
+      <m:mi>R</m:mi>
+    </m:mrow>
+    </m:math>).</para>
+  </example>
+  <note id="fs-id1170903895539" class="check-understanding">
+    <exercise id="fs-id1170902380718">
+      <problem id="fs-id1170904037219">
+        <para id="fs-id1170903885840"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Silniki elektryczne mają dość dużą sprawność. Silnik o mocy <m:math display="inline">
+            <m:mn>100</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">KM</m:mi>
+          </m:math> ma sprawność <m:math display="inline">
+          <m:mn>90</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">%</m:mi>
+        </m:math>, natomiast silnik o mocy <m:math display="inline">
+        <m:mn>1</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">KM</m:mi>
+      </m:math>
+      <m:math display="inline">
+        <m:mn>80</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">%</m:mi>
+        </m:math>. Dlaczego tak istotne jest używanie silników o wysokiej sprawności?</para></problem>
+      <solution id="fs-id1170904243967">
+        <para id="fs-id1170904081247">Mimo że silniki elektryczne mają wysokie sprawności, wciąż ok. <m:math display="inline">
+          <m:mrow>
+            <m:mn>10</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">%</m:mi>
+          </m:mrow>
+</m:math>–<m:math display="inline">
+          <m:mrow>
+            <m:mn>20</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">%</m:mi>
+          </m:mrow>
+          </m:math> mocy jest tracone, niewykorzystywane do wykonywania użytecznej pracy. Większość strat to zamiana na ciepło przez drut miedziany w uzwojeniu silnika. Ciepło jest oddawane na zewnątrz, co zwiększa temperaturę. Jednocześnie elektrownie muszą zwiększyć produkcję, aby uzupełnić straty, co może prowadzić do zwiększonego wytwarzania gazów cieplarnianych, szczególnie w przypadku elektrowni węglowych czy gazowych.</para></solution>
+      </exercise>
+    </note>
+    <para id="fs-id1170902291100">Bezpiecznik (<link target-id="CNX_UPhysics_26_5_BlownFuse"/>) jest urządzeniem chroniącym obwody elektryczne przed zbyt wysokim natężeniem przepływającego prądu. Składa się on z krótkiego drucika z dwoma kontaktami. Jak wiemy, gdy prąd przepływa przez przewodnik, energia kinetyczna ładunków zamienia się w energię cieplną w przewodniku. Kawałek naprężonego przewodnika w bezpieczniku ma niską temperaturę topnienia. Jest tak zaprojektowany, aby przy danej wartości natężenia prądu podgrzać się i pęknąć. Bezpiecznik zostanie zniszczony i musi zostać wymieniony na nowy, jednak pozostała część obwodu nie zostanie uszkodzona. Bezpieczniki mają krótki czas reakcji, jednak przegrzanie się i pęknięcie drucika zachodzi z opóźnieniem.</para>
+    <figure id="CNX_UPhysics_26_5_BlownFuse">
+      <media id="fs-id1170902109144" alt="Na zdjęciu przepalony bezpiecznik z przepalonym drutem w środku. ">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_26_05_BlownFuse.jpg"/>
+      </media>
+      <caption>Bezpiecznik zawiera krótki drucik z dwoma kontaktami. Gdy natężenie przepływającego prądu jest większe niż zadane, drucik się topi, przerywając połączenie. Na zdjęciu przedstawiono przepalony bezpiecznik, w którym zostało zerwane połączenie. Źródło: modyfikacja pracy „Shardayyy”/Flickr</caption>
+    </figure>
+    <para id="fs-id1170902166259">Wyłączniki instalacyjne są również oznaczane maksymalnym natężeniem prądu, który może przez nie płynąć. Służą do zabezpieczania obwodu, jednak w przeciwieństwie do bezpieczników mogą być resetowane i reagują dużo szybciej. Zakres tematyczny tego rozdziału nie obejmuje wyłączników instalacyjnych i zostaną one omówione w następnych rozdziałach. Inną metodą ochrony urządzeń i ludzi są wyłączniki różnicowoprądowe (GFCI, ang. <foreign>ground fault circuit interrupter</foreign>), powszechnie stosowane w kuchniach i łazienkach. Reagują one bardzo szybko na zmiany natężenia prądu. Jego przepływ zostaje przerwany, gdy następuje zmiana pola magnetycznego wytwarzanego przez przewodniki z przepływającym prądem. Ten temat również wykracza poza zakres niniejszego rozdziału i zostanie rozwinięty w dalszej części podręcznika.</para>
+  </section><section id="fs-id1170902556068">
+    <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Koszt elektryczności</title>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902297284">Im więcej urządzeń elektrycznych jest używanych, tym wyższy rachunek za energię elektryczną. Ten fakt wynika z relacji między energią a mocą. Płacimy za zużytą energię. Skoro <m:math display="inline">
+      <m:mi>P</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mrow>
+          <m:mi>E</m:mi>
+          <m:mo>∕</m:mo>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      </m:math>, widzimy, że</para><equation id="fs-id1170902299692" class="unnumbered">
+        <label/>
+        <m:math display="block">
+          <m:mi>E</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>∫</m:mo>
+            <m:mrow>
+              <m:mi>P</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170903878451">jest energią zużywaną przez urządzenie pobierające moc <m:math display="inline">
+        <m:mi>P</m:mi>
+      </m:math> w czasie <m:math display="inline">
+      <m:mi>t</m:mi>
+    </m:math>. Jeśli dostarczana moc jest stała, energię można obliczyć ze wzoru <m:math display="inline">
+    <m:mi>E</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>P</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>t</m:mi>
+    </m:mrow>
+  </m:math>. Przykładowo im więcej żarówek świeci się jednocześnie, tym większa wartość <m:math display="inline">
+  <m:mi>P</m:mi>
+</m:math>, a im dłużej się świecą, tym dłuższy czas <m:math display="inline">
+<m:mi>t</m:mi>
+</m:math>. </para>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170904095862">Jednostką energii na rachunku jest kilowatogodzina (<m:math display="inline">
+  <m:mi mathvariant="normal">kW</m:mi>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">h</m:mi>
+</m:math>), zgodnie z relacją <m:math display="inline">
+<m:mi>E</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi>P</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mi>t</m:mi>
+</m:mrow>
+</m:math>. Łatwo możemy oszacować koszt pracy urządzeń, jeśli znamy ich pobór mocy w watach lub kilowatach, czas pracy w godzinach oraz cenę jednej kilowatogodziny energii elektrycznej. Kilowatogodziny, tak jak inne specjalistyczne jednostki energii, np. kalorie, mogą zostać przeliczone na dżule. Możemy się przekonać, że <m:math display="inline">
+<m:mrow>
+  <m:mrow>
+    <m:mn>1</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">kW</m:mi>
+  </m:mrow>
+  <m:mo>⋅</m:mo>
+  <m:mrow>
+    <m:mn>1</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">h</m:mi>
+  </m:mrow>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:mn>3,6</m:mn>
+    <m:mo>⋅</m:mo>
+    <m:msup>
+      <m:mn>10</m:mn>
+      <m:mn>6</m:mn>
+    </m:msup>
+  </m:mrow>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">J</m:mi>
+</m:mrow>
+</m:math>.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170903877818">Zużycie energii elektrycznej (<m:math display="inline">
+  <m:mi>E</m:mi>
+</m:math>) można zredukować poprzez skrócenie czasu używania lub zmniejszenie mocy pobieranej przez urządzenia elektryczne. To spowoduje nie tylko spadek kosztu energii elektrycznej, ale także zmniejszy negatywny wpływ na środowisko naturalne. Udoskonalenie źródeł światła jest najszybszym sposobem redukcji zużycia energii elektrycznej w gospodarstwach domowych i przemyśle. Około <m:math display="inline"><m:semantics><m:mrow><m:mn>20</m:mn><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">%</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{20}{\percent}</m:annotation></m:semantics></m:math> energii elektrycznej zużywa się na oświetlenie w gospodarstwach domowych, natomiast ok. <m:math display="inline"><m:semantics><m:mrow><m:mn>40</m:mn><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">%</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{40}{\percent}</m:annotation></m:semantics></m:math> w zastosowaniach przemysłowych. Lampy fluorescencyjne, zarówno świetlówki liniowe, jak i kompaktowe (CFL), są cztery razy bardziej wydajne niż zwykłe żarówki – <link target-id="CNX_UPhysics_26_05_LightBulbs"/> (b). 60-watową żarówkę może zastąpić 15-watowa świetlówka, która ma taką samą intensywność świecenia i taki sam kolor. Świetlówki zbudowane są z wygiętej rurki wewnątrz klosza bądź spiralnej tuby podłączonej do gwintu Edisona, aby pasowała do standardowych podłączeń. (Początkowe problemy związane z kolorem, migotaniem, kształtem oraz wysokimi kosztami świetlówek zostały rozwiązane w ciągu ostatnich kilku lat).</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902348131">Wydzielanie ciepła jest mniejsze w przypadku świetlówek, jednocześnie mają one dziesięć razy dłuższą żywotność niż standardowe żarówki. W następnym przykładzie pokażemy, jak duże znaczenie ma inwestycja w świetlówki. Nowe żarówki światła białego na bazie małych diod LED są dwa razy wydajniejsze i mają żywotność pięć razy większą niż świetlówki. </para>
+<example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902163361">
+  <para id="fs-id1170902267536"><title>Obliczenie kosztu użycia żarówki na bazie LED</title>Zwykle 100-watową zwykłą żarówkę wolframową zastępuje się 20-watową żarówką LED, ponieważ dostarczają one taką samą ilość światła. Jak dużo można zaoszczędzić, używając żarówki LED zamiast wolframowej przez rok przy założeniu, że <m:math display="inline">
+      <m:mn>1</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mrow>
+        <m:mi mathvariant="normal">kW</m:mi>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">h</m:mi>
+      </m:mrow>
+    </m:math> kosztuje średnio <m:math display="inline">
+    <m:mn>0,55</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">zł</m:mi>
+  </m:math>? Przyjmijmy, że żarówka jest włączona przez <m:math display="inline">
+  <m:mn>3</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">h</m:mi>
+  </m:math> w ciągu dnia.</para><para id="eip-530">
+    <title>Strategia rozwiązania</title>
+  </para>
+  <list id="eip-idm278701696" list-type="enumerated" number-style="lower-alpha">
+    <item>Obliczmy energię zużytą przez każdą żarówkę w ciągu roku, korzystając ze wzoru <m:math display="inline">
+      <m:mi>E</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>P</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+      </m:math>.</item>
+      <item>Pomnóżmy energię przez cenę.</item>
+    </list>
+    <para id="fs-id1170902301866">
+      <title>Rozwiązanie</title>
+    </para>
+    <list id="fs-id1172099418089" list-type="enumerated" number-style="lower-alpha"><item>Energia pobierana przez każdą żarówkę<equation id="fs-id1170903857653" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:msub><m:mi>E</m:mi><m:mtext>żarówka</m:mtext></m:msub><m:mo>=</m:mo><m:mrow><m:mi>P</m:mi><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>100</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">W</m:mi></m:mrow><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">kW</m:mi></m:mrow><m:mrow><m:mn>1000</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">W</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">h</m:mi></m:mrow><m:mrow><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">dzień</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>365</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">dni</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>109,5</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mrow><m:mi mathvariant="normal">kW</m:mi><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">h</m:mi></m:mrow></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            E_{\text{żarówka}} = Pt = \SI{100}{\watt} \cdot \frac{\SI{1}{\kilo\watt}}{\SI{1000}{\watt}} \cdot \frac{\SI{3}{\hour}}{\SI{1}{\dzien}} \cdot \SI{365}{\dni} = \SI{109,5}{\kilo\watt\hour} \text{,}</m:annotation></m:semantics></m:math></equation><equation id="eip-524" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:msub><m:mi>E</m:mi><m:mtext>LED</m:mtext></m:msub><m:mo>=</m:mo><m:mrow><m:mi>P</m:mi><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>20</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">W</m:mi></m:mrow><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">kW</m:mi></m:mrow><m:mrow><m:mn>1000</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">W</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">h</m:mi></m:mrow><m:mrow><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">dzień</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>365</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">dni</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>21,9</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mrow><m:mi mathvariant="normal">kW</m:mi><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">h</m:mi></m:mrow></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            E_{\text{LED}} = Pt = \SI{20}{\watt} \cdot \frac{\SI{1}{\kilo\watt}}{\SI{1000}{\watt}} \cdot \frac{\SI{3}{\hour}}{\SI{1}{\dzien}} \cdot \SI{365}{\dni} = \SI{21,9}{\kilo\watt\hour} \text{.}</m:annotation></m:semantics></m:math></equation></item>
+    <item>Koszt wynosi<equation id="fs-id1170903856167" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:msub><m:mtext>koszt</m:mtext><m:mtext>żarówka</m:mtext></m:msub><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>109,5</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mrow><m:mi mathvariant="normal">kW</m:mi><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">h</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mn>0,55</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">zł</m:mi></m:mrow><m:mrow><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mrow><m:mi mathvariant="normal">kW</m:mi><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">h</m:mi></m:mrow></m:mrow></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>60,23</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">zł</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \text{koszt}_{\text{żarówka}} = \SI{109,5}{\kilo\watt\hour} \cdot \frac{\SI{0,55}{\zloty}}{\SI{1}{\kilo\watt\hour}} = \SI{60,23}{\zloty} \text{,}</m:annotation></m:semantics></m:math></equation><equation id="eip-975" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:msub><m:mtext>koszt</m:mtext><m:mtext>LED</m:mtext></m:msub><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>21,9</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mrow><m:mi mathvariant="normal">kW</m:mi><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">h</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mn>0,55</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">zł</m:mi></m:mrow><m:mrow><m:mn>1</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mrow><m:mi mathvariant="normal">kW</m:mi><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">h</m:mi></m:mrow></m:mrow></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>12,05</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">zł</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \text{koszt}_{\text{LED}} = \SI{21,9}{\kilo\watt\hour} \cdot \frac{\SI{0,55}{\zloty}}{\SI{1}{\kilo\watt\hour}} = \SI{12,05}{\zloty} \text{.}</m:annotation></m:semantics></m:math></equation></item>
+</list><para id="fs-id1170902434640"><title>Znaczenie</title>Żarówka LED zużywa o <m:math display="inline"><m:semantics><m:mrow><m:mn>80</m:mn><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">%</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{80}{\percent}</m:annotation></m:semantics></m:math> mniej energii niż standardowa, co przekłada się na oszczędność <m:math display="inline">
+  <m:mn>48,18</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">zł</m:mi>
+</m:math> na rok. Żarówka LED 20-watowa kosztuje ok. <m:math display="inline">
+<m:mn>30</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">zł</m:mi>
+</m:math>, natomiast 100-watowa żarówka standardowa kosztuje ok. <m:math display="inline">
+<m:mn>1,5</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">zł</m:mi>
+</m:math>, co należy wziąć pod uwagę, obliczając koszty oświetlenia. Żywotność standardowej żarówki to ok. <m:math display="inline">
+<m:mn>1200</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">h</m:mi>
+</m:math>, natomiast żarówki LED to ok. <m:math display="inline">
+<m:mn>50 000</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">h</m:mi>
+</m:math>. Przy używaniu oświetlenia przez <m:math display="inline">
+<m:mn>3</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">h</m:mi>
+</m:math> dziennie żarówka standardowa będzie działać przez <m:math display="inline">
+<m:mn>1,08</m:mn>
+</m:math> roku, natomiast LED przez <m:math display="inline">
+<m:mn>45,66</m:mn>
+</m:math> roku. Koszt zakupu żarówki LED jest wyższy, jednak w przeliczeniu na lata będzie on wynosił <m:math display="inline">
+<m:mn>1,39</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">zł</m:mi>
+  <m:mo>∕</m:mo>
+  <m:mi mathvariant="normal">rok</m:mi>
+</m:mrow>
+</m:math> użycia dla żarówki standardowej oraz <m:math display="inline">
+<m:mn>0,66</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">zł</m:mi>
+  <m:mo>∕</m:mo>
+  <m:mi mathvariant="normal">rok</m:mi>
+</m:mrow>
+</m:math> użycia dla LED. (Należy zauważyć, że ceny żarówek LED ciągle spadają). Oszczędność wynosi ok. <m:math display="inline">
+<m:mn>48,91</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">zł</m:mi>
+</m:math> w ciągu roku tylko dla jednej żarówki.</para></example>
+<note id="fs-id1170904170303" class="check-understanding">
+  <exercise id="fs-id1170902118377">
+    <problem id="fs-id1170902095011">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170903818572">
+        <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Czy wydajność żarówek to jedyny parametr brany pod uwagę przy ich porównywaniu?</para>
+      </problem>
+      <solution id="fs-id1170902191246">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902130712">Nie, wydajność żarówek jest bardzo ważnym parametrem, jednak są również inne. Tak jak wspomniano powyżej, koszt i żywotność żarówek są ważnymi parametrami. Przykładowo świetlówki zawierają rtęć, która jest neurotoksyną i musi być składowana jako odpad niebezpieczny. Gdy żarówkę standardową kontrolowaną przez ściemniacz zastępuje się żarówką LED, może się okazać, że ściemniacz też trzeba wymienić. Ceny tych urządzeń są porównywalne dla obydwu rodzajów żarówek, jednak jest to koszt, który musi zostać uwzględniony. Kolejną właściwością jest spektrum emitowanego światła. Szeroki zakres temperatur barwowych pozwala na dobranie żarówki według potrzeb. Te parametry nie powinny zniechęcać do wyboru świetlówek czy żarówek LED, jednak muszą zostać wzięte pod uwagę.</para>
+      </solution>
+    </exercise>
+  </note>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902191239">Zastąpienie żarówek standardowych świetlówkami lub żarówkami LED to prosty sposób na zmniejszenie konsumpcji energii w gospodarstwach domowych i przemyśle. Działanie świetlówki opiera się na zupełnie innym mechanizmie niż działanie standardowych żarówek wolframowych. Jest ono skomplikowane i wykracza poza zakres tego rozdziału, dlatego przedstawimy je tylko pokrótce. Świetlówki zawierają pary argonu i rtęci zamknięte w spiralnej tubie i używają statecznika, który służy do zwiększenia napięcia. Statecznik wytwarza prąd elektryczny, który przepływa przez mieszaninę gazów i wzbudza ich atomy. Te produkują światło w zakresie ultrafioletowym (UV), które pobudza fluorescencyjne pokrycie wewnątrz tuby do świecenia w zakresie światła widzialnego. Zwykłe świetlówki liniowe i kompaktowe charakteryzują się krótkim opóźnieniem, podczas którego mieszanina gazów jest podgrzewana, a cząsteczki wzbudzane. Należy zaznaczyć, że takie świetlówki zawierają trującą rtęć, jednak nawet jeśli dojdzie do uszkodzenia, to nie nastąpi jej wyciek. Nawet gdy świetlówka się rozbije, to rtęć pozostanie w warstwie fluorescencyjnej. Dodatkowo jej ilość jest bardzo mała. Oszczędność energii elektrycznej przewyższa zaś wady związane z używaniem rtęci.</para>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170903794626">Świetlówki są wypierane przez żarówki na bazie LED, co oznacza <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="dioda emitująca światło">diodę emitującą światło</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">light-emitting diode</term></foreign>). Dioda była pokrótce omawiana jako element nieomowy wykonany z półprzewodnikowych materiałów, pozwalający na przepływ prądu tylko w jednym kierunku. LED jest specjalnym typem diody zbudowanej z półprzewodnika zawierającego domieszki o specjalnym składzie i koncentracji. W diodzie LED energia powstała dzięki ruchowi elektronów wynikającemu z pobudzenia elektrycznego zamienia się w światło widzialne. Temat materiałów półprzewodnikowych zostanie szerzej omówiony w rozdziale <link class="target-chapter" document="m67254">Fizyka fazy skondensowanej</link>.</para>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902186640">Komercyjne żarówki LED stają się standardem w oświetleniu przemysłowym i w gospodarstwach domowych, wypierając żarówki wolframowe oraz świetlówki. Są zaprojektowane do świecenia w spektrum widzialnym. Składają się z galu z domieszką arsenu i fosforu. Barwa emitowana przez diodę LED zależy od materiału półprzewodnikowego i natężenia prądu przepływającego przez diodę. Początkowo małe lampki LED w obwodach były czerwone, żółte i zielone, natomiast dzisiaj żarówki LED mogą świecić w milionach kolorów oraz z różnymi temperaturami barwowymi światła białego.</para>
+  </section>
+  <section id="fs-id1170904057694">
+    <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Porównanie standardowej żarówki, świetlówki oraz żarówki LED</title>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170904031249">Oszczędność energii elektrycznej jest dość znacząca przy wymianie żarówki standardowej na żarówkę LED lub świetlówkę. Na żarówkach oznacza się ilość mocy pobieranej w watach oraz ilość emitowanego światła w lumenach. Lumen (lm) jest jednostką strumienia świetlnego w układzie SI i miarą całkowitego światła widzialnego wyemitowanego przez źródło. 60-watowa żarówka wolframowa może być zastąpiona przez 13- lub 15-watową świetlówkę albo 6- lub 8-watową żarówkę LED, ponieważ wszystkie trzy emitują światło o strumieniu równym ok. <m:math display="inline">
+      <m:mn>800</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">lm</m:mi>
+      </m:math>. W <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1170904037425" cmlnle:case="locative"/> przedstawiono wartości strumienia świetlnego powszechnie używanych żarówek.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902446623">Żywotność każdego z tych trzech typów żarówek jest zupełnie inna. Żarówka LED ma żywotność ok. <m:math display="inline">
+        <m:mn>50 000</m:mn>
+       <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">h</m:mi>
+      </m:math>, świetlówka <m:math display="inline">
+      <m:mn>8000</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">h</m:mi>
+    </m:math>, natomiast standardowa żarówka <m:math display="inline">
+    <m:mn>1200</m:mn>
+   <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">h</m:mi>
+  </m:math>. Żarówka LED jest najbardziej wytrzymała, odporna na drgania i uderzenia. Standardowa żarówka ma dużo mniejszą wytrzymałość, ponieważ żarnik oraz szkło łatwo uszkodzić. Świetlówki również są mniej trwałe z powodu szklanej konstrukcji. Moc tracona na ciepło w przypadku 8-watowej żarówki LED wynosi ok. <m:math display="inline">
+  <m:mn>1</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">W</m:mi>
+</m:math>, dla 60-watowej żarówki wolframowej jest to ok. <m:math display="inline">
+<m:mn>25</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">W</m:mi>
+</m:math>, natomiast dla świetlówki to ok. <m:math display="inline">
+<m:mn>9</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">W</m:mi>
+</m:math>. Jak już wcześniej wspomnieliśmy, poważną wadą świetlówek jest zawartość rtęci, neurotoksyny, która musi być składowana w specjalny sposób. Biorąc pod uwagę omówione czynniki, łatwo nam zrozumieć, dlaczego żarówki LED stają się standardem w oświetleniu.</para><table xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170904037425" summary="Ta tabela ma cztery kolumny i sześć wierszy. Pierwszy wiersz zawiera nagłówki dla każdej kolumny: “Strumień świetlny w lumenach”, “Żarówka LED w watach”, “Żarówka wolframowa w watach”, oraz “Świetlówka w watach”. Pod kolumną “Strumień świetlny” znajdują się liczby: 450; 800; 1100; 1600; 2600. Pod kolumną “Żarówka LED” znajduje się lista zakresów: 4-5; 6-8; 9-13; 16-20; 25-28. Kolumna “Żarówka wolframowa” zawiera liczba: 40; 60; 75; 100; 150. Pod kolumną “Świetlówka” znajdują się zakresy: 9-13; 13-15; 18-25; 23-30; 30-55."><title>Strumień świetlny dla żarówki LED, żarówki wolframowej oraz świetlówki.</title>
+<tgroup cols="4"><colspec colnum="1" colname="c1"/>
+    <colspec colnum="2" colname="c2"/>
+    <colspec colnum="3" colname="c3"/>
+    <colspec colnum="4" colname="c4"/>
+    <thead>
+      <row valign="top">
+        <entry valign="top" align="center">Strumień świetlny<newline/>(<m:math display="inline"><m:mi mathvariant="normal">lm</m:mi></m:math>)</entry>
+        <entry valign="top" align="center">Żarówka LED<newline/>(<m:math display="inline"><m:mi mathvariant="normal">W</m:mi></m:math>)</entry>
+        <entry valign="top" align="center">Żarówka wolframowa<newline/>(<m:math display="inline"><m:mi mathvariant="normal">W</m:mi></m:math>)</entry>
+        <entry valign="top" align="center">Świetlówka<newline/>(<m:math display="inline"><m:mi mathvariant="normal">W</m:mi></m:math>)</entry>
+      </row>
+    </thead>
+    <tbody>
+      <row valign="top">
+        <entry valign="top" align="center"><m:math display="inline">
+            <m:mn>450</m:mn>
+          </m:math></entry>
+        <entry valign="top" align="center">4−5</entry>
+        <entry valign="top" align="center">40</entry>
+        <entry valign="top" align="center">9−13</entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="center">          <m:math display="inline">
+            <m:mn>800</m:mn>
+          </m:math></entry>
+        <entry valign="top" align="center">6−8</entry>
+        <entry valign="top" align="center">60</entry>
+        <entry valign="top" align="center">13−15</entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:mn>1100</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="center">9−13</entry>
+        <entry valign="top" align="center">75</entry>
+        <entry valign="top" align="center">18−25</entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:mn>1600</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="center">16−20</entry>
+        <entry valign="top" align="center">100</entry>
+        <entry valign="top" align="center">23−30</entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:mn>2600</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="center">25−28</entry>
+        <entry valign="top" align="center">150</entry>
+        <entry valign="top" align="center">30−55</entry>
+      </row>
+    </tbody>
+  
+
+</tgroup>
+</table></section>
+<section id="fs-id1170902305816">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Podsumowanie zależności</title>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170904052041">W tym rozdziale omawialiśmy zależności pomiędzy napięciem, natężeniem prądu, rezystancją oraz mocą prądu elektrycznego. <link target-id="CNX_UPhysics_26_05_EqCircle"/> podsumowuje zależności między tymi wielkościami opisującymi elementy omowe. (Przypominamy, że elementy omowe spełniają prawo Ohma <m:math display="inline">
+    <m:mi>U</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>I</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>R</m:mi>
+    </m:mrow>
+  </m:math>). Przykładowo, jeśli chcemy policzyć moc, wykorzystujemy fioletową część, która pokazuje, że <m:math display="inline">
+  <m:mi>P</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>U</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>I</m:mi>
+  </m:mrow>
+</m:math>, <m:math display="inline">
+<m:mi>P</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msup>
+    <m:mi>U</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>∕</m:mo>
+  <m:mi>R</m:mi>
+</m:mrow>
+</m:math> oraz <m:math display="inline">
+<m:mi>P</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msup>
+    <m:mi>I</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>⁢</m:mo>
+  <m:mi>R</m:mi>
+</m:mrow>
+</m:math>.</para>
+<figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_26_05_EqCircle">
+  <media id="fs-id1170902235145" alt="Rysunek przedstawia koło demonstrujące wzajemne relacje między mocą w watach, natężeniem prądu w amperach, napięciem w woltach i oporem w omach. Prąd jest reprezentowany jako napięcie dzielone przez opór, moc podzieloną przez napięcie i pierwiastek kwadratowy mocy dzielonej przez opór. Opór jest reprezentowany przez kwadrat napięcia przez moc, napięcie dzielone przez natężenie, moc dzielona przez kwadrat natężenia. Napięcie jest reprezentowane jako moc dzielona przez natężenie, pierwiastek kwadratowy mocy i oporu, iloczyn natężenia i oporu. Moc jest reprezentowana jako iloczyn kwadratu natężenia i oporu, napięcia podzielonego przez kwadrat oporu oraz iloczynu napięcia i natężenia. ">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_26_05_EqCircle.jpg"/>
+  </media>
+  <caption>Koło przedstawia podsumowanie wzorów i związków między mocą, natężeniem prądu, napięciem oraz rezystancją.</caption>
+</figure>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902131469">W zależności od tego, jakie wielkości mierzymy, używamy różnych wzorów. Przykładowo, jeśli podane są natężenie prądu oraz rezystancja, użyjemy <m:math display="inline">
+  <m:mi>P</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msup>
+      <m:mi>I</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>⁢</m:mo>
+    <m:mi>R</m:mi>
+  </m:mrow>
+</m:math>. Mimo że przedstawiona liczba wzorów może wydać się przytłaczająca, pamiętajmy, że wszystkie one są kombinacjami tylko dwóch: prawa Ohma (<m:math display="inline">
+<m:mi>U</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi>I</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mi>R</m:mi>
+</m:mrow>
+</m:math>) oraz wyrażenia na moc (<m:math display="inline">
+<m:mi>P</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi>I</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mi>U</m:mi>
+</m:mrow>
+</m:math>).</para>
+</section>
+<section id="fs-id1170902147088" class="key-concepts">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Podsumowanie</title>
+  <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902351859" list-type="bulleted" bullet-style="bullet"><item>Moc elektryczna jest miarą energii elektrycznej dostarczanej do obwodu lub pobieranej przez obciążenie w czasie.</item>
+    <item>Moc pobierana przez rezystor zależy od kwadratu natężenia prądu płynącego przez rezystor i równa się <m:math display="inline">
+      <m:mi>P</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msup>
+          <m:mi>I</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>⁢</m:mo>
+        <m:mi>R</m:mi>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msup>
+          <m:mi>U</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>∕</m:mo>
+        <m:mi>R</m:mi>
+      </m:mrow>
+      </m:math>.</item>
+      <item>Jednostką mocy elektrycznej w układzie SI jest wat, natomiast jednostką energii elektrycznej dżul. Inną powszechnie używaną w przemyśle jednostką mocy jest kilowatogodzina (<m:math display="inline">
+        <m:mi mathvariant="normal">kW</m:mi>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">h</m:mi>
+        </m:math>).</item>
+        <item>Całkowita energia zużyta w czasie może być obliczona przy użyciu <m:math display="inline">
+          <m:mi>E</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>∫</m:mo>
+            <m:mrow>
+              <m:mi>P</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          </m:math>.</item>
+        </list></section>
+      <section id="fs-id1170903856420" class="review-conceptual-questions">
+        <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Pytania</title>
+        <exercise id="fs-id1170904070395">
+          <problem id="fs-id1170904070397">
+            <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170904070399">Typowe urządzenia elektryczne wymagają zasilania napięciem <m:math display="inline">
+              <m:mn>230</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">V</m:mi>
+              </m:math>, jednak do przesyłania energii elektrycznej elektrownie używają napięcia w zakresie kilowoltów, a następnie transformatory obniżają napięcie. W następnych rozdziałach dowiesz się, że transformator składa się ze zwojów drutu, który się grzeje podczas przepływu prądu, tracąc energię na ciepło. Wydaje się to bardzo nieefektywne. Dlaczego elektrownie przesyłają energię elektryczną w taki sposób?</para></problem>
+            <solution id="fs-id1170902350663">
+              <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902350665">Mimo że przewodniki mają małą rezystancję, linie energetyczne ciągną się kilometrami. Dzięki użyciu dużych napięć zmniejsza się natężenie prądu wymagane do dostarczenia takich samych mocy, co zmniejsza straty na liniach przesyłowych.</para>
+            </solution>
+          </exercise>
+          <exercise id="fs-id1170902305797">
+            <problem id="fs-id1170902305799">
+              <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902208687">Na twoim rachunku za prąd elektryczny zużycie jest podane w kilowatogodzinach (<m:math display="inline">
+                <m:mi mathvariant="normal">kW</m:mi>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">h</m:mi>
+                </m:math>). Ta jednostka mówi o wielkości ładunku, natężenia prądu, napięcia, mocy czy energii, którą kupujesz?</para></problem>
+            </exercise>
+            <exercise id="fs-id1170902182264">
+              <problem id="fs-id1170903904412">
+                <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170903904415">Rezystory używane w obwodach elektrycznych są najczęściej oznaczane <m:math display="inline"><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">W</m:mi></m:math>, <m:math display="inline"><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">W</m:mi></m:math>, <m:math display="inline"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">W</m:mi></m:math>, <m:math display="inline">
+            <m:mn>1</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">W</m:mi>
+          </m:math> oraz <m:math display="inline">
+          <m:mn>2</m:mn>
+         <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">W</m:mi>
+        </m:math>. Co może się wydarzyć, jeśli prąd o natężeniu <m:math display="inline">
+        <m:mi>I</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">A</m:mi>
+        </m:mrow>
+      </m:math> przypadkowo przepłynie przez rezystor <m:math display="inline">
+      <m:mi>R</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>1</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+    </m:math> oznaczony jako <m:math display="inline">
+    <m:mn>1</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">W</m:mi>
+    </m:math>? Czy można zapobiec takim wypadkom?</para></problem>
+  <solution id="fs-id1170904098616">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902183431">Rezystor się przegrzeje, prawdopodobnie do momentu, gdy się zapali. Bezpieczniki są powszechnie używane do zapobiegania takim przypadkom.</para>
+  </solution>
+</exercise>
+<exercise id="fs-id1170904257873">
+  <problem id="fs-id1170904257875">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170904257877">Grzałka jest małym urządzeniem wykorzystywanym do podgrzewania wody na herbatę składającym się z rezystora, przez który przepływa prąd. Czy jeśli zostanie przyłożone napięcie dwa razy większe, niż przewidziano, to czas potrzebny na podgrzanie wody się zmieni? O ile? Czy to jest dobry pomysł?</para>
+  </problem>
+</exercise>
+</section>
+<section id="fs-id1170904182295" class="review-problems">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Zadania</title>
+  <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170904182301"><problem id="fs-id1170902102125">
+      <para id="fs-id1170902102127">20-woltowa bateria zasila rezystor o rezystancji <m:math display="inline">
+        <m:mn>10</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">kΩ</m:mi>
+      </m:math>. Załóż, że spadek napięcia na przewodach jest pomijalny.<list id="eip-idm453544320" list-type="enumerated" number-style="lower-alpha">
+      <item>Jakie natężenie ma prąd przepływający przez rezystor?</item>
+      <item>Jaka jest moc pobierana przez rezystor?</item>
+      <item>Jaką moc daje bateria, zakładając, że całą pobiera rezystor?</item>
+      <item>Co dzieje się z energią pobraną przez rezystor?</item>
+    </list>
+  </para>
+</problem>
+<solution id="fs-id1170902296765">
+  <para id="fs-id1170902296767">a. <m:math display="inline">
+    <m:mi>I</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>0,3</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">mA</m:mi>
+    </m:mrow>
+  </m:math>; b. <m:math display="inline">
+  <m:mi>P</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>0,9</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">mW</m:mi>
+  </m:mrow>
+</m:math>; c. <m:math display="inline">
+<m:mi>P</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>0,9</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">mW</m:mi>
+</m:mrow>
+</m:math>; d. Jest zamieniana na ciepło.</para>
+</solution>
+</exercise><exercise id="fs-id1170902063658">
+  <problem id="fs-id1170902337230">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902337232">Jakie maksymalne napięcie może zostać przyłożone do rezystora <m:math display="inline">
+      <m:mn>10</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">kΩ</m:mi>
+    </m:math> oznaczonego <m:math display="inline"><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">W</m:mi></m:math>? </para></problem>
+</exercise>
+<exercise id="fs-id1170902405826">
+  <problem id="fs-id1170904063142">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170904063144">Grzałka zbudowana z cewki z drutu o średnicy <m:math display="inline">
+      <m:mn>1,628</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">mm</m:mi>
+    </m:math> (<m:math display="inline">
+    <m:mn>14</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">AWG</m:mi>
+  </m:math>) z chromonikieliny generuje moc o wartości <m:math display="inline">
+  <m:mn>300</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">W</m:mi>
+</m:math> przy użyciu napięcia <m:math display="inline">
+<m:mi>U</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>110</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">V</m:mi>
+</m:mrow>
+</m:math>. Jaką długość ma drut?</para></problem>
+<solution id="fs-id1170903931191">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170903931194"><m:math display="inline">
+      <m:mi>P</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msup>
+          <m:mi>U</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>∕</m:mo>
+        <m:mi>R</m:mi>
+      </m:mrow>
+    </m:math>, <m:math display="inline">
+    <m:mi>R</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>40</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+  </m:math>, <m:math display="inline">
+  <m:mi>S</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>2,08</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:msup>
+      <m:mi mathvariant="normal">mm</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+  </m:mrow>
+</m:math>, <m:math display="inline">
+<m:mi>ρ</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:mn>100</m:mn>
+    <m:mo>⋅</m:mo>
+    <m:msup>
+      <m:mn>10</m:mn>
+      <m:mrow><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow>
+    </m:msup>
+  </m:mrow>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mrow>
+    <m:mi mathvariant="normal">Ω</m:mi>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">m</m:mi>
+  </m:mrow>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:mi>R</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:mi>ρ</m:mi>
+    <m:mo>⋅</m:mo>
+    <m:mi>L</m:mi>
+  </m:mrow>
+  <m:mo>∕</m:mo>
+  <m:mi>S</m:mi>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:mi>L</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>83</m:mn>
+ <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+</m:math>.</para></solution>
+</exercise>
+<exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902274694">
+  <problem id="fs-id1170902274696">
+    <para id="fs-id1170902221126">Alternatywę dla świetlówek i standardowych żarówek stanowią żarówki LED. 100-watową żarówkę standardową może zastąpić 16-watowa żarówka LED. Obydwie wytwarzają strumień świetlny o wartości <m:math display="inline">
+      <m:mn>1600</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">lm</m:mi>
+    </m:math>. Ile zapłacisz za rok pracy żarówki przez <m:math display="inline">
+    <m:mn>4</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">h</m:mi>
+  </m:math> dziennie przy założeniu, że koszt <m:math display="inline">
+  <m:mn>1</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mrow>
+    <m:mi mathvariant="normal">kW</m:mi>
+   <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">h</m:mi>
+  </m:mrow>
+</m:math> wynosi <m:math display="inline">
+<m:mn>0,55</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">zł</m:mi>
+</m:math>?</para></problem>
+</exercise>
+<exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170904259309"><problem id="fs-id1170902288795">
+    <para id="fs-id1170902288797">Moc tracona przez rezystor o rezystancji <m:math display="inline">
+      <m:mi>R</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>100</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+    </m:math> jest równa <m:math display="inline">
+    <m:mi>P</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>2</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">W</m:mi>
+    </m:mrow>
+    </m:math>. Oblicz natężenie prądu płynącego przez rezystor oraz spadek napięcia na rezystorze. </para>
+  </problem>
+  <solution id="fs-id1170904062959">
+    <para id="fs-id1170902183437">
+      <m:math display="inline">
+        <m:mi>I</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>0,1</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">A</m:mi>
+        </m:mrow>
+      </m:math>, <m:math display="inline">
+      <m:mi>U</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>14</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+      </m:mrow>
+      </m:math>.</para>
+    </solution>
+  </exercise><exercise id="fs-id1170902365939">
+    <problem id="fs-id1170902365941">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902365943">Kierowca spieszył się na samolot i przez przypadek zostawił włączone światła w samochodzie na parkingu przy lotnisku. Podczas startu zorientował się, że popełnił błąd. Kierowca niedawno wymieniał akumulator w samochodzie, więc wie, że ma on <m:math display="inline">
+        <m:mn>12</m:mn>
+       <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+      </m:math> i jest oznaczony <m:math display="inline">
+      <m:mn>100</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mrow>
+        <m:mi mathvariant="normal">A</m:mi>
+       <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">h</m:mi>
+      </m:mrow>
+    </m:math>. Nic nie mogąc zrobić, oszacował, jak długo będą świeciły się światła, przy założeniu, że w aucie są dwie lampy po <m:math display="inline">
+    <m:mn>12</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">V</m:mi>
+  </m:math> i każda pobiera <m:math display="inline">
+  <m:mn>40</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">W</m:mi>
+  </m:math> mocy. Do jakich wniosków doszedł?</para></problem>
+</exercise>
+<exercise id="fs-id1170902321916">
+  <problem id="fs-id1170902275143">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902275146">Student fizyki mieszka w jednoosobowym pokoju w akademiku. Posiada małą lodówkę, która pracuje, pobierając prąd o natężeniu <m:math display="inline">
+      <m:mn>3</m:mn>
+   <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+    </m:math> i pod napięciem <m:math display="inline">
+    <m:mn>110</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">V</m:mi>
+  </m:math>, lampkę ze 100-watową żarówką, żyrandol z 60-watową żarówką i kilka innych urządzeń o łącznej mocy <m:math display="inline">
+  <m:mn>3</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">W</m:mi>
+</m:math>.<list id="eip-idm357130464" list-type="enumerated" number-style="lower-alpha"><item>Zakładając, że elektrownia, która zasila akademik, jest oddalona o <m:math display="inline">
+  <m:mn>10</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">km</m:mi>
+</m:math> i używa dwóch aluminiowych kabli o średnicy <m:math display="inline">
+<m:mn>8,252</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">mm</m:mi>
+</m:math>, oszacuj, jaka część dostarczanej mocy (w procentach) jest tracona w czasie przesyłu;</item>
+<item>Jak zmieniłby się wynik, gdyby elektrownia dostarczała prąd, korzystając z napięcia <m:math display="inline">
+  <m:mn>11</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">kV</m:mi>
+  </m:math>?</item>
+</list></para></problem>
+<solution id="fs-id1170902275155">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902275157">a. <m:math display="inline">
+    <m:mrow>
+      <m:mi>I</m:mi>
+      <m:mo>≈</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mn>3</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">A</m:mi>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>100</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">W</m:mi>
+          </m:mrow>
+          <m:mo>∕</m:mo>
+          <m:mrow>
+            <m:mn>110</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">V</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>60</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">W</m:mi>
+          </m:mrow>
+          <m:mo>∕</m:mo>
+          <m:mrow>
+            <m:mn>110</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">V</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>3</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">W</m:mi>
+          </m:mrow>
+          <m:mo>∕</m:mo>
+          <m:mrow>
+            <m:mn>110</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">V</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>4,48</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+    </m:mrow>
+  </m:math>, <m:math display="inline">
+  <m:mi>P</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>493</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">W</m:mi>
+  </m:mrow>
+</m:math>, <m:math display="inline">
+<m:mi>R</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>9,91</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">Ω</m:mi>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:msub>
+  <m:mi>P</m:mi>
+  <m:mtext>strat</m:mtext>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>200</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">W</m:mi>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:mrow>
+  <m:mi mathvariant="normal">%</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mtext> strat</m:mtext>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>40</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">%</m:mi>
+</m:mrow>
+</m:math>; b. <m:math display="inline">
+<m:mi>P</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>493</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">W</m:mi>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:mi>I</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>0,0045</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">A</m:mi>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:mi>R</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>9,91</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">Ω</m:mi>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:msub>
+  <m:mi>P</m:mi>
+  <m:mtext>strat</m:mtext>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>201</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">µW</m:mi>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:mrow>
+  <m:mi mathvariant="normal">%</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mtext> strat</m:mtext>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>0,000 04</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">%</m:mi>
+</m:mrow>
+</m:math>.</para></solution>
+</exercise>
+<exercise id="fs-id1170902304194">
+  <problem id="fs-id1170902304196">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170902304198">Przez rezystor o rezystancji <m:math display="inline">
+      <m:mn>220</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:math> i mocy maksymalnej <m:math display="inline">
+    <m:mn>0,5</m:mn>
+   <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">W</m:mi>
+    </m:math> płynie prąd o maksymalnym możliwym natężeniu. Jaka byłaby moc pobierana przez rezystor, gdyby natężenie prądu zmalało dwa razy?</para></problem>
+</exercise>
+</section>
+</content>
+<glossary>
+  <definition id="fs-id1170902155009">
+    <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="moc elektryczna">moc elektryczna (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">electric power</term></foreign>)</term>
+      <meaning id="fs-id1170902350158">prędkość zmian energii elektrycznej w czasie w obwodzie elektrycznym</meaning>
+    </definition>
+  </glossary>
+</document>

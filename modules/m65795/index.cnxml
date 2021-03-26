@@ -1,0 +1,1937 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" id="new" cnxml-version="0.8" module-id="new">
+  <title>Obliczanie momentu bezwładności</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65795</md:content-id>
+  <md:title>Obliczanie momentu bezwładności</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+ <list>
+      <item>obliczać moment bezwładności dla wysoce symetrycznych brył sztywnych,</item>
+      <item>stosować twierdzenie Steinera do wyznaczania momentu bezwładności wokół dowolnej osi równoległej do osi, względem której znany jest moment bezwładności,</item>
+      <item>obliczać moment bezwładności dla złożonych obiektów.</item>
+    </list></md:abstract>
+  <md:uuid>f19bbdea-ef6c-49ee-87f9-62d19477eb70</md:uuid>
+</metadata>
+
+<content>
+    <para id="ked-1bl0jdbsg_0j8">W poprzednim podrozdziale zdefiniowaliśmy moment bezwładności, ale nie pokazaliśmy, jak go obliczyć. Poniżej pokazujemy, jak obliczyć moment bezwładności dla kilku standardowych obiektów oraz jak wykorzystać znane momenty bezwładności, aby znaleźć moment bezwładności dla przesuniętej osi lub dla układu złożonego. Ta wiedza bardzo przydaje się, gdy chcemy zastosować ogólne równanie do złożonych układów (to umiejętności, które są kluczowe dla bardziej zaawansowanych kursów fizyki i inżynierii).</para>
+    <section id="ked-1bl0jdl1r_gs8">
+      <title>Moment bezwładności </title>
+      <para id="ked-1bl0je1l7_jp8">Zdefiniowaliśmy moment bezwładności dla punktów materialnych jako: <m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:munder><m:mo>∑</m:mo><m:mi>i</m:mi></m:munder><m:msub><m:mi>m</m:mi><m:mi>i</m:mi></m:msub><m:msubsup><m:mi>r</m:mi><m:mi>i</m:mi><m:mn>2</m:mn></m:msubsup></m:math>, gdzie <m:math><m:msub><m:mi>r</m:mi><m:mi>i</m:mi></m:msub></m:math> jest odległością <m:math><m:mi>i</m:mi></m:math>-tego punktu od osi obrotu, a <m:math><m:msub><m:mi>m</m:mi><m:mi>i</m:mi></m:msub></m:math> oznacza masę <m:math><m:mi>i</m:mi></m:math>-tego punktu. Tak więc, wartość momentu bezwładności będzie zależała od wyboru osi, czyli od rozkładu masy względem osi. Aby się o tym przekonać, weźmy prosty przykład dwóch mas na końcu bezmasowej (o nieistotnie małej masie) sztangi i obliczmy moment bezwładności względem dwóch różnych osi (patrz <link target-id="CNX_UPhysics_10_05_Barbell"/>). W tym przypadku sumowanie jest proste: dwie masy na końcach sztangi można uważać za masy punktowe, a zatem suma ma tylko dwa składniki.</para><para id="ked-1bl0l5i8t_gc">W przypadku osi przechodzącej przez środek sztangi, każda z dwóch mas <m:math><m:mi>m</m:mi></m:math> jest w takiej samej odległości <m:math><m:mi>R</m:mi></m:math> od osi, dając moment bezwładności:</para>
+      <equation id="ked-1bl0jhr31_ss8" class="unnumbered">
+        <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>R</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>R</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mn>2</m:mn>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>R</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="ked-1bl0ji7ig_62g">W przypadku, gdy oś umieścimy na jednym z końców sztangi, moment bezwładności jest równy:</para>
+      <equation id="ked-1bl0jia7o_fu" class="unnumbered">
+        <m:math>
+          <m:mstyle displaystyle="true" scriptlevel="0">
+            <m:mrow>
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mi>m</m:mi>
+<m:mo>⋅</m:mo>
+              <m:msup>
+                  <m:mn>0</m:mn>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+<m:mi>m</m:mi>
+<m:msup>
+                <m:mrow>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>R</m:mi>
+                  <m:mo stretchy="false">)</m:mo>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:mn>4</m:mn>
+              <m:mi>m</m:mi>
+              <m:msup>
+                <m:mi>R</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:mstyle>
+        </m:math>
+      </equation>
+      <para id="ked-1bl0jj08j_aro">Na podstawie tego wyniku możemy stwierdzić, że znacznie trudniej będzie obrócić sztangę wokół osi przechodzącej przez jej koniec niż wokół osi w połowie jej długości.</para>
+      <figure id="CNX_UPhysics_10_05_Barbell"><media id="ked-1bl0jj58f_58g" alt="Rysunek A przedstawia sztangę o długości 2 R z masami m na obu końcach. Sztanga obraca się wokół osi obrotu przechodzącej przez środek sztangi. Rysunek B pokazuje sztangę o długości 2 R z masami m na końcach. Sztanga obraca się wokół osi przechodzącej przez jeden z końców sztangi. ">
+          <image src="../../media/CNX_UPhysics_10_05_Barbell.jpg" mime-type="image/jpeg"/>
+        </media>
+        
+      <caption>(a) Oś obrotu przechodzi przez środek sztangi; (b) Oś obrotu przechodzi przez jeden z końców sztangi. Prędkość kątowa wynosi <m:math><m:mi>ω</m:mi></m:math>.</caption></figure><para id="ked-1bl0jmt5e_3l8">W tym przykładzie mamy dwie masy punktowe, więc suma była łatwa do obliczenia. Jednakże, aby poradzić sobie z obiektami, które nie są punktowe, musimy dokładnie przemyśleć każde z pojęć użytych w równaniu. Równanie wymaga zsumowania wkładów pochodzących od każdego „kawałka masy” znajdującego się w określonej odległości od osi obrotu. Ale co dokładnie oznacza ów każdy „kawałek masy”? Przypomnijmy, że w naszym wyprowadzeniu tego równania każda masa miała tę samą wartość prędkości, co oznacza, że każdy kawałek musiał mieć jednakową odległość <m:math><m:mi>r</m:mi></m:math> od osi obrotu. Niestety, nie jest to możliwe. Zatem, musimy zastąpić nasz „kawałek masy” nieskończenie małym fragmentem <m:math><m:mi mathvariant="normal">d</m:mi><m:mi>m</m:mi></m:math>, jak pokazano na <link target-id="CNX_UPhysics_10_05_pointmass" cmlnle:case="locative"/>.</para><figure id="CNX_UPhysics_10_05_pointmass">
+        <media id="ked-1bl0jp5dg_99g" alt="Rysunek pokazuje punkt dm umieszczony na osi X w odległości r od środka. ">
+          <image src="../../media/CNX_UPhysics_10_05_pointmass.jpg" mime-type="image/jpeg"/>
+        </media>
+        <caption>Idea użycia nieskończenie małego kawałka masy do obliczenia jego udziału w całkowitym momencie bezwładności. </caption>
+      </figure>
+      <para id="ked-1bl0jpq87_1r8">Potrzeba użycia nieskończenie małego kawałka <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>m</m:mi></m:math> sugeruje, że możemy napisać równanie na moment bezwładności całkując wkłady pochodzące od nieskończenie małych mas, zamiast liczyć dyskretną sumę skończonej liczby mas. Wówczas równanie:</para><note id="ked-1bl0jro8h_lfo" class="equation-callout">
+        <equation id="ked-1bl0jrse2_k1g">
+          <m:math>
+            <m:mi>I</m:mi>
+            <m:mo>=</m:mo>
+            <m:munder>
+              <m:mo movablelimits="false">∑</m:mo>
+              <m:mi>i</m:mi>
+            </m:munder>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mi>i</m:mi>
+            </m:msub>
+            <m:msubsup>
+              <m:mi>r</m:mi>
+              <m:mi>i</m:mi>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mspace width="1em"/>
+            <m:mtext>zmienia się w równanie</m:mtext>
+            <m:mspace width="1em"/>
+            <m:mi>I</m:mi>
+            <m:mo>=</m:mo>
+            <m:mo>∫</m:mo>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>m</m:mi>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+      </note>
+      <para id="ked-1bl0k2svp_8b">Jest to ogólna postać równania, pozwalająca na obliczenie momentów bezwładności ciał o złożonych kształtach. W pozostałej części tego rozdziału pokażemy szczegółowo, na konkretnych przykładach, jak liczyć moment bezwładności dla ciał sztywnych o wybranych kształtach. </para>
+      <section id="ked-1bl0k3r8c_t4o">
+        <title>Moment bezwładności cienkiego pręta względem osi przechodzącej przez jego środek </title>
+        <para id="ked-1bl0k47vn_h5">Rozważmy jednorodny cienki pręt o masie <m:math><m:mi>m</m:mi></m:math> i długości <m:math><m:mi>L</m:mi></m:math>, tak jak to pokazano na rysunku (<link target-id="CNX_UPhysics_10_05_thinrod"/>). Zakładamy, że pręt jest tak cienki a jego pole przekroju poprzecznego tak niewielkie, że pręt może być traktowany jako struna rozciągnięta wzdłuż linii prostej. Naszym zadaniem jest obliczenie momentu bezwładności tego pręta względem osi obrotu, która jest prostopadła do pręta i przechodzi przez jego środek. Skierujmy osie układu współrzędnych tak, by oś <m:math><m:mi>z</m:mi></m:math> była osią obrotu, a oś <m:math><m:mi>x</m:mi></m:math> prostą, na której leży pręt, tak jak pokazano na rysunku. Wykonamy teraz całkowanie wzdłuż osi <m:math><m:mi>x</m:mi></m:math>.</para>
+        <figure id="CNX_UPhysics_10_05_thinrod">
+          <media id="ked-1bl0k65mt_5i8" alt="Rysunek pokazuje cienki pręt obracający się wokół osi obrotu przechodzącej przez jego środek. Część pręta o długości dx ma masę dm. ">
+            <image src="../../media/CNX_UPhysics_10_05_thinrod.jpg" mime-type="image/jpeg"/>
+          </media>
+          <caption>Obliczanie momentu bezwładności dla jednorodnego pręta względem osi prostopadłej do pręta i przechodzącej przez jego środek. </caption>
+        </figure>
+        <para id="ked-1bl0k940i_8b8">Wybierzmy mały fragment pręta o długości <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>x</m:mi></m:math> i masie <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>m</m:mi></m:math>. Moment bezwładności jest całką po rozkładzie mas. Jak na razie umiemy jedynie wykonać całkowanie po zmiennych przestrzennych, nie po masie. Musimy zatem znaleźć sposób na powiązanie masy ze zmiennymi przestrzennymi. Dokonamy tego używając pojęcia <term cmlnle:reference="gęstość liniowa masy" class="no-emphasis">liniowej gęstości masy</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">linear mass density</term></foreign>) <m:math><m:mi>λ</m:mi></m:math>, czyli masy liczonej na jednostkę długości. Ponieważ pręt jest jednorodny, gęstość pręta jest stała; możemy zatem napisać:</para>
+        <equation id="ked-1bl0kbib8_tl" class="unnumbered">
+          <m:math>
+            <m:mi>λ</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>m</m:mi>
+              <m:mi>l</m:mi>
+            </m:mfrac>
+            <m:mspace width="1em"/>
+            <m:mtext>czyli</m:mtext>
+            <m:mspace width="1em"/>
+            <m:mi>m</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>λ</m:mi>
+            <m:mi>l</m:mi>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1bl0kbltr_mjo">Różniczkując obustronnie otrzymujemy:</para>
+        <equation id="ked-1bl0klatg_m2" class="unnumbered">
+          <m:math>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>m</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>λ</m:mi>
+                <m:mi>l</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mi>λ</m:mi>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>l</m:mi>
+            <m:mn>,</m:mn>
+          </m:math>
+        </equation>
+        <para id="ked-1bl0km7gd_o88">ponieważ <m:math><m:mi>λ</m:mi></m:math> jest wielkością stałą. Zauważmy, że element pręta <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi><m:mi>l</m:mi></m:mrow></m:math> leży całkowicie wzdłuż osi <m:math><m:mi>x</m:mi></m:math> i ma długość <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>x</m:mi></m:math>; czyli <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>l</m:mi><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>x</m:mi></m:math>. Możemy zatem napisać, że <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mi>λ</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>x</m:mi></m:mrow><m:mo>)</m:mo></m:mrow></m:math>, otrzymując zmienną całkowania, z którą umiemy już sobie poradzić. Odległość każdego fragmentu masy <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi><m:mi>m</m:mi></m:mrow></m:math> od osi obrotu jest określona przez zmienną <m:math><m:mi>x</m:mi></m:math>, jak to pokazano na rysunku. Łączymy to wszystko razem i otrzymujemy:</para>
+        <equation id="ked-1bl0ku4in_3h8" class="unnumbered">
+          <m:math>
+            <m:mi>I</m:mi>
+            <m:mo>=</m:mo>
+            <m:mo>∫</m:mo>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>m</m:mi>
+            <m:mo>=</m:mo>
+            <m:mo>∫</m:mo>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>m</m:mi>
+            <m:mo>=</m:mo>
+            <m:mo>∫</m:mo>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>λ</m:mi>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1bl0kufpu_u7">Określmy teraz granice całkowania. Zgodnie z rysunkiem, pręt rozciąga się od <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mtext>−</m:mtext><m:mi>L</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:math> do <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>L</m:mi><m:mtext>/</m:mtext><m:mn>2</m:mn></m:mrow></m:math>, mamy zatem:</para>
+        <equation id="ked-1bl0mtio1_dhg" class="unnumbered">
+          <m:math>
+            <m:mi>I</m:mi>
+            <m:mo>=</m:mo>
+            <m:munderover>
+              <m:mo>∫</m:mo>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mi>L</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>L</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:mrow>
+            </m:munderover>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>λ</m:mi>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>=</m:mo>
+            <m:msubsup>
+              <m:mrow>
+                <m:mo>[</m:mo>
+                <m:mrow>
+                  <m:mi>λ</m:mi>
+                  <m:mfrac>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mn>3</m:mn>
+                  </m:mfrac>
+                </m:mrow>
+                <m:mo>]</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mi>L</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>L</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:mrow>
+            </m:msubsup>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>λ</m:mi>
+              <m:mn>3</m:mn>
+            </m:mfrac>
+            <m:mrow>
+              <m:mo>[</m:mo>
+              <m:mrow>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mfrac>
+                      <m:mi>L</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>3</m:mn>
+                </m:msup>
+                <m:mo>−</m:mo>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mi>L</m:mi>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>3</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>]</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>λ</m:mi>
+              <m:mn>3</m:mn>
+            </m:mfrac>
+            <m:mo>⋅</m:mo>
+            <m:mfrac>
+              <m:msup>
+                <m:mi>L</m:mi>
+                <m:mn>3</m:mn>
+              </m:msup>
+              <m:mn>8</m:mn>
+            </m:mfrac>
+            <m:mo>⋅</m:mo>
+            <m:mn>2</m:mn>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>12</m:mn>
+            </m:mfrac>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>L</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1bl0muahf_jmo">Przejdźmy teraz do obliczenia momentu bezwładności dla tego samego jednorodnego, cienkiego pręta, ale względem innej osi, tak abyśmy mogli porównać wyniki. Spodziewamy się, że moment bezwładności będzie mniejszy względem osi przechodzącej przez środek pręta niż względem osi przechodzącej przez jego koniec, podobnie jak w przypadku sztangi omawianej na początku tego podrozdziału. Spodziewamy się tego, ponieważ większość masy jest rozłożona dalej od osi obrotu.</para>
+      </section>
+      <section id="ked-1bl0n0pb2_nd8">
+        <title>Moment bezwładności cienkiego pręta względem osi przechodzącej przez jeden z jego końców</title>
+        <para id="ked-1bl0n1f80_h9o">Rozpatrzmy teraz ten sam jednorodny pręt o masie <m:math><m:mi>m</m:mi></m:math> i długości <m:math><m:mi>L</m:mi></m:math>, lecz tym razem umieścimy oś obrotu na jednym z jego końców (patrz <link target-id="CNX_UPhysics_10_05_thinrod2"/>). Wyznaczmy moment bezwładności pręta względem tej osi. Zdefiniujemy <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>m</m:mi></m:math> jako nieskończenie mały fragment masy naszego pręta. Podobnie jak poprzednio otrzymamy:</para>
+        <equation id="ked-1bl0n3fjr_geo" class="unnumbered">
+          <m:math>
+            <m:mi>I</m:mi>
+            <m:mo>=</m:mo>
+            <m:mo>∫</m:mo>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>m</m:mi>
+            <m:mo>=</m:mo>
+            <m:mo>∫</m:mo>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>m</m:mi>
+            <m:mo>=</m:mo>
+            <m:mo>∫</m:mo>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>λ</m:mi>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1bl0n3qmv_qgo">Jednak tym razem mamy inne granice całkowania. Pręt rozciąga się od <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> do <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>L</m:mi></m:mrow></m:math>, ponieważ oś jest umieszczona na końcu pręta w <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>. Dlatego otrzymujemy: </para>
+        <equation id="ked-1bl0n537c_228" class="unnumbered">
+          <m:math>
+            <m:mi>I</m:mi>
+            <m:mo>=</m:mo>
+            <m:munderover>
+              <m:mo>∫</m:mo>
+              <m:mn>0</m:mn>
+              <m:mi>L</m:mi>
+            </m:munderover>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>λ</m:mi>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>=</m:mo>
+            <m:msubsup>
+              <m:mrow>
+                <m:mo>[</m:mo>
+                <m:mrow>
+                  <m:mi>λ</m:mi>
+                  <m:mfrac>
+                    <m:msup>
+                      <m:mi>x</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mn>3</m:mn>
+                  </m:mfrac>
+                </m:mrow>
+                <m:mo>]</m:mo>
+              </m:mrow>
+              <m:mn>0</m:mn>
+              <m:mi>L</m:mi>
+            </m:msubsup>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>λ</m:mi>
+              <m:mn>3</m:mn>
+            </m:mfrac>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:msup>
+                  <m:mi>L</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msup>
+                <m:mo>−</m:mo>
+                <m:msup>
+                  <m:mn>0</m:mn>
+                  <m:mn>3</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>λ</m:mi>
+              <m:mn>3</m:mn>
+            </m:mfrac>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mi>L</m:mi>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>3</m:mn>
+            </m:mfrac>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>L</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <figure id="CNX_UPhysics_10_05_thinrod2">
+          <media id="ked-1bl0nfagn_17o" alt="Rysunek przedstawia cienki pręt obracający się wokół osi obrotu przechodzącej przez jego koniec. Część pręta o długości dx ma masę dm. ">
+            <image src="../../media/CNX_UPhysics_10_05_thinrod2.jpg" mime-type="image/jpeg"/>
+          </media>
+          <caption>Obliczanie momentu bezwładności dla jednorodnego pręta względem osi prostopadłej do pręta i przechodzącej przez jego koniec. </caption>
+        </figure>
+        <para id="ked-1bl0nhgpa_l2">Zauważmy, że „bezwładność obrotowa” pręta przy obrotach względem jego końca jest czterokrotnie większa niż „bezwładność obrotowa” dla obrotów wokół jego środka. </para></section>
+    </section>
+    <section xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl0nio6s_1dg"><title>Twierdzenie Steinera </title><para id="ked-1bl0nj1v5_4b8">Podobieństwo między procesem obliczania momentu bezwładności pręta względem osi przechodzącej przez jego środek i względem osi przechodzącej przez jego koniec jest uderzające i sugeruje, że może istnieć prostsza metoda wyznaczenia momentu bezwładności pręta wokół dowolnej osi równoległej do osi przechodzącej przez środek masy. Taka oś jest nazywana <term cmlnle:reference="oś równoległa" class="no-emphasis">osią równoległą</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">parallel axis</term></foreign>). Istnieje twierdzenie pozwalające nam wyznaczyć moment bezwładności względem osi równoległej do osi przechodzącej przez środek masy, jeżeli znamy moment bezwładności względem osi przechodzącej przez środek masy. Jest to <term class="no-emphasis">twierdzenie Steinera</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">parallel axis theorem</term></foreign>, <foreign><term cxlxt:index="foreign" class="no-emphasis">Steiner's theorem</term></foreign>), które podamy tu bez dowodu.</para>
+      <note id="ked-1bl0qdg3i_cg">
+        <title>Twierdzenie Steinera </title>
+        <para id="ked-1bl0qdu41_c1g">Moment bezwładności względem osi równoległej do osi przechodzącej przez środek masy jest sumą momentu bezwładności względem osi przechodzącej przez środek masy oraz iloczynu masy i kwadratu odległości pomiędzy osiami:</para>
+        <equation id="ked-1bl0qel8c_9ho">
+          <m:math>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mrow>
+                <m:mtext>oś równoległa</m:mtext>
+              </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mrow>
+                <m:mtext>środek masy</m:mtext>
+              </m:mrow>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>d</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation></note>
+        <para id="ked-1bl0qn9aj_t4g">Zastosujmy to twierdzenie do wyznaczenia momentu bezwładności rozważanego poprzednio pręta:</para>
+        <equation id="ked-1bl0qnjd9_4" class="unnumbered">
+          <m:math>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mrow>
+                <m:mtext>koniec</m:mtext>
+              </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mrow>
+                <m:mtext>środek masy</m:mtext>
+              </m:mrow>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>d</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>12</m:mn>
+            </m:mfrac>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>L</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mfrac>
+                  <m:mi>L</m:mi>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>12</m:mn>
+                </m:mfrac>
+                <m:mo>+</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>4</m:mn>
+                </m:mfrac>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>L</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>3</m:mn>
+            </m:mfrac>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>L</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1bl0qnvvk_ss8">Wynik ten jest zgodny z poprzednimi, znacznie dłuższymi obliczeniami. To przydatne twierdzenie zastosujemy też w kolejnych przykładach.</para><equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-203" class="unnumbered"><m:math/></equation>
+        <note id="ked-1bl0qol0n_8n8" class="check-understanding">
+          <exercise id="ked-1bl0qopkv_jd8"><problem id="ked-1bl0qopk6_8a8">
+              <para id="ked-1bl0qopjc_ej8"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Jaki jest moment bezwładności walca o promieniu <m:math><m:mi>R</m:mi></m:math> i masie <m:math><m:mi>m</m:mi></m:math> liczony względem osi przechodzącej przez punkt na jego powierzchni, jak pokazano na poniższym rysunku? Oś jest prostopadła do płaszczyzny rysunku. </para>
+              <media id="ked-1bl1298fm_84" alt="Rysunek przedstawia cylinder o promieniu R, który obraca się wokół osi przechodzącej przez punkt na powierzchni.">
+                <image src="../../media/CNX_UPhysics_10_05_Cyl_img.jpg" mime-type="image/jpeg"/>
+              </media>
+            </problem>
+            <solution id="ked-1bl0qopje_72o">
+              <para id="ked-1bl0qopl7_vcg">
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>I</m:mi>
+                      <m:mrow>
+                        <m:mtext>oś równoległa</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>I</m:mi>
+                      <m:mrow>
+                        <m:mtext>środek masy</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mi>m</m:mi>
+                    <m:msup>
+                      <m:mi>d</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:mi>m</m:mi>
+                    <m:msup>
+                      <m:mi>R</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mi>m</m:mi>
+                    <m:msup>
+                      <m:mi>R</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mi>m</m:mi>
+                    <m:msup>
+                      <m:mi>R</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>
+              </para>
+            </solution>
+          </exercise></note>
+      <section id="ked-1bl12cova_ul">
+        <title>Moment bezwładności jednorodnej tarczy względem osi przechodzącej przez jej środek</title>
+        <para id="ked-1bl12ee0i_n18">Całkowanie w celu wyznaczenia momentu bezwładności obiektu dwuwymiarowego jest nieco trudniejsze, ale na tym poziomie studiów zwykle wykonuje się jeden przykład, mianowicie wyznaczenie momentu bezwładności jednorodnej cienkiej tarczy obracającej się wokół osi przechodzącej przez jej środek (<link target-id="CNX_UPhysics_10_05_disk"/>).</para>
+        <figure id="CNX_UPhysics_10_05_disk">
+          <media id="ked-1bl12go7n_emg" alt="Rysunek przedstawia jednorodny krążek o promieniu r obracający się wokół osi Z przechodzącej przez jego środek. ">
+            <image src="../../media/CNX_UPhysics_10_05_disk.jpg" mime-type="image/jpeg"/>
+          </media>
+          <caption>Obliczanie momentu bezwładności cienkiej tarczy względem osi przechodzącej przez jej środek.</caption>
+        </figure>
+        <para id="ked-1bl199iv5_dg">Ponieważ tarcza jest cienka, możemy założyć, że jej masa rozmieszczona jest całkowicie w płaszczyźnie <m:math><m:mi>x</m:mi><m:mi>y</m:mi></m:math>. Zaczynamy od zdefiniowania <term cmlnle:reference="powierzchniowa gęstość masy" class="no-emphasis">powierzchniowej gęstości masy</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">surface mass density</term></foreign>), czyli masy na jednostkę powierzchni. Ponieważ tarcza jest jednorodna, to gęstość powierzchniowa <m:math><m:mrow><m:mi>σ</m:mi></m:mrow></m:math> jest stała:</para>
+        <equation id="ked-1bl1a783m_96g" class="unnumbered"><m:math>
+            <m:mi>σ</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mi>m</m:mi>
+              <m:mi>S</m:mi>
+            </m:mfrac>
+            <m:mspace width="1em"/>
+            <m:mtext>czyli</m:mtext>
+            <m:mspace width="1em"/>
+            <m:mi>σ</m:mi>
+            <m:mi>S</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>m</m:mi>
+            <m:mtext>,</m:mtext>
+            <m:mspace width="1em"/>
+            <m:mtext>stąd</m:mtext>
+            <m:mspace width="1em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>m</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>σ</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">d</m:mi>
+                </m:mrow>
+                <m:mi>S</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation><para id="ked-1bl1a7h6d_kp8">Obszar zajmowany przez tarczę można uznać za złożony z szeregu cienkich pierścieni, z których każdy ma szerokość <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>r</m:mi></m:math> i masę <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>m</m:mi></m:math> równomiernie rozłożoną na okręgu o promieniu <m:math><m:mi>R</m:mi></m:math>, tak jak to pokazano na <link target-id="CNX_UPhysics_10_05_disk" cmlnle:case="locative"/>. Powierzchnia każdego pierścienia <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>S</m:mi></m:math> jest zatem iloczynem długości każdego pierścienia (<m:math><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi><m:mi>r</m:mi></m:mrow></m:math>) i jego szerokości <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>r</m:mi></m:math>:</para>
+        <equation id="ked-1bl1abqdo_m8o" class="unnumbered">
+          <m:math>
+            <m:mi>S</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>π</m:mi>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mtext>,</m:mtext>
+            <m:mspace width="1em"/>
+            <m:mtext>stąd</m:mtext>
+            <m:mspace width="1em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>S</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>π</m:mi>
+                <m:msup>
+                  <m:mi>r</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mi>π</m:mi>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:msup>
+                <m:mi>r</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>2</m:mn>
+            <m:mi>π</m:mi>
+            <m:mi>r</m:mi>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>r</m:mi>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1bl1ac6q9_bpo">Powierzchnia tarczy jest sumą powierzchni wszystkich cienkich pierścieni o promieniu od 0 do <m:math><m:mi>R</m:mi></m:math>, które są naszym granicami całkowania dla <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>r</m:mi></m:math>, tzn. całkujemy od <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> do <m:math><m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mi>R</m:mi></m:mrow></m:math>. Biorąc to wszystko po uwagę otrzymujemy:</para>
+        <equation id="ked-1bl1adkh1_0lo" class="unnumbered"><m:math display="block"><m:semantics><m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:mi>I</m:mi><m:mo id="U5f109895-1121-4635-96b9-c8949d84de8e">=</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mn>0</m:mn><m:mi>R</m:mi></m:munderover><m:mrow><m:mrow><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:mi>σ</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>2</m:mn></m:mrow><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>r</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>r</m:mi></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>σ</m:mi><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mn>0</m:mn><m:mi>R</m:mi></m:munderover><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>r</m:mi></m:mrow></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>σ</m:mi><m:mo>⁢</m:mo><m:msubsup><m:mfenced close="]" open="["><m:mfrac><m:msup><m:mi>r</m:mi><m:mn>4</m:mn></m:msup><m:mn>4</m:mn></m:mfrac></m:mfenced><m:mn>0</m:mn><m:mi>R</m:mi></m:msubsup></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mi>I</m:mi></m:mphantom><m:mo>=</m:mo><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>σ</m:mi><m:mo>⁢</m:mo><m:mfenced><m:mrow><m:mfrac><m:msup><m:mi>R</m:mi><m:mn>4</m:mn></m:msup><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>0</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi></m:mrow><m:mo>⋅</m:mo><m:mfrac><m:mi>m</m:mi><m:mi>S</m:mi></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:msup><m:mi>R</m:mi><m:mn>4</m:mn></m:msup><m:mn>4</m:mn></m:mfrac></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mi>I</m:mi></m:mphantom><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi></m:mrow><m:mo>⋅</m:mo><m:mfrac><m:mi>m</m:mi><m:mrow><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:msup><m:mi>R</m:mi><m:mn>4</m:mn></m:msup><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⁢</m:mo><m:mi>m</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mtext>.</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{multiline} I &amp;= \int_0^R r^2 \sigma \cdot 2 \pi r \d r = 2\pi \sigma \int_0^R r^3\d r = 2\pi \sigma [\frac{r^4}{4}]_0^R \\ &amp;= 2\pi \sigma (\frac{R^4}{4} - \frac{0}{4}) = 2\pi \cdot \frac{m}{S} \cdot \frac{R^4}{4} \\ &amp;= 2 \pi \cdot \frac{m}{\pi R^2} \cdot \frac{R^4}{4} = \frac12 mR^2 \text{.} \end{multiline}</m:annotation><m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mi>I</m:mi><m:mo id="U5f109895-1121-4635-96b9-c8949d84de8e-copy">=</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mn>0</m:mn><m:mi>R</m:mi></m:munderover><m:mrow><m:mrow><m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:mi>σ</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>2</m:mn></m:mrow><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>r</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>r</m:mi></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>σ</m:mi><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mn>0</m:mn><m:mi>R</m:mi></m:munderover><m:mrow><m:msup><m:mi>r</m:mi><m:mn>3</m:mn></m:msup><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>r</m:mi></m:mrow></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>σ</m:mi><m:mo>⁢</m:mo><m:msubsup><m:mfenced close="]" open="["><m:mfrac><m:msup><m:mi>r</m:mi><m:mn>4</m:mn></m:msup><m:mn>4</m:mn></m:mfrac></m:mfenced><m:mn>0</m:mn><m:mi>R</m:mi></m:msubsup></m:mrow><m:mo indenttarget="U5f109895-1121-4635-96b9-c8949d84de8e" linebreak="newline" indentalign="id">=</m:mo><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>σ</m:mi><m:mo>⁢</m:mo><m:mfenced><m:mrow><m:mfrac><m:msup><m:mi>R</m:mi><m:mn>4</m:mn></m:msup><m:mn>4</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>0</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi></m:mrow><m:mo>⋅</m:mo><m:mfrac><m:mi>m</m:mi><m:mi>S</m:mi></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:msup><m:mi>R</m:mi><m:mn>4</m:mn></m:msup><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo indenttarget="U5f109895-1121-4635-96b9-c8949d84de8e" linebreak="newline" indentalign="id">=</m:mo><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi></m:mrow><m:mo>⋅</m:mo><m:mfrac><m:mi>m</m:mi><m:mrow><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:msup><m:mi>R</m:mi><m:mn>4</m:mn></m:msup><m:mn>4</m:mn></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⁢</m:mo><m:mi>m</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mtext>.</m:mtext></m:mrow></m:annotation-xml></m:semantics></m:math></equation><para id="ked-1bl1af5eq_ii">Zauważmy, że wynik jest zgodny z rezultatem podanym na <link target-id="CNX_UPhysics_10_04_RotInertia" document="m65794" cmlnle:case="genitive"/>.</para></section>
+      <section id="ked-1bl1an9us_hk">
+        <title>Obliczanie momentu bezwładności układów złożonych </title>
+        <para id="ked-1bl1anp1f_klo">Rozpatrzmy teraz obiekt złożony, taki jak na rysunku poniżej. Rysunek przedstawia cienką tarczę na końcu cienkiego pręta. Nie można tego łatwo scałkować w celu wyznaczenia momentu bezwładności, ponieważ nie jest to obiekt o jednolitym kształcie. Jeśli jednak wrócimy do pierwotnej definicji momentu bezwładności jako sumy, możemy przypuścić, że moment bezwładności obiektu złożonego można wyznaczyć jako sumę momentów bezwładności każdej z jego części:</para>
+        <note id="ked-1bl1b35tq_ei8" class="equation-callout">
+          <equation id="ked-1bl1b3aap_46o">
+            <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>całkowite</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mstyle displaystyle="true">
+                  <m:munder>
+                    <m:mo>∑</m:mo>
+                    <m:mi>i</m:mi>
+                  </m:munder>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>I</m:mi>
+                      <m:mi>i</m:mi>
+                    </m:msub>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation>
+        </note>
+        <para id="ked-1bl1b3erq_1fg">Należy dodać, że momenty bezwładności obiektów w (<link cmlnle:case="locative" target-id="ked-1bl1b3aap_46o"/>) dotyczą momentów bezwładności liczonych względem wspólnej osi. W przypadku tego obiektu byłby to pręt o długości <m:math><m:mi>L</m:mi></m:math> obracający się wokół jego końca, oraz cienki krążek o promieniu <m:math><m:mi>R</m:mi></m:math>, obracający się wokół osi przesuniętej od środka masy krążka o odległość <m:math><m:mi>L</m:mi><m:mo>+</m:mo><m:mi>R</m:mi></m:math>. Oznaczmy masę pręta jako <m:math><m:msub><m:mi>m</m:mi><m:mtext>p</m:mtext></m:msub></m:math>, a masę krążka jako <m:math><m:msub><m:mi>m</m:mi><m:mtext>k</m:mtext></m:msub></m:math>.</para>
+        <figure id="CNX_UPhysics_10_05_RodDisk">
+          <media id="ked-1bl1b7umq_aag" alt="Rysunek pokazuje krążek o promieniu R powiązany z prętem o długości L. ">
+            <image src="../../media/CNX_UPhysics_10_05_RodDisk.jpg" mime-type="image/jpeg"/>
+          </media>
+          <caption>Obiekt złożony składający się z krążka zawieszonego na końcu pręta. Oś obrotu jest prostopadła do płaszczyzny rysunku i przechodzi przez punkt <m:math><m:mi>A</m:mi></m:math>. </caption>
+        </figure>
+        <para id="ked-1bl1b8kid_628">Oś przechodzi przez koniec pręta, więc jego moment bezwładności względem tej osi jest równy <m:math><m:msub><m:mi>m</m:mi><m:mtext>p</m:mtext></m:msub><m:mi>L</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>2</m:mn></m:math>. Aby wyznaczyć moment bezwładności krążka względem podanej osi, musimy zastosować twierdzenie Steinera. Moment bezwładności krążka liczony względem osi przechodzącej przez jego środek masy ma wartość <m:math><m:msub><m:mi>m</m:mi><m:mtext>k</m:mtext></m:msub><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>2</m:mn></m:math>; po zastosowaniu twierdzenia Steinera <m:math><m:mrow><m:msub><m:mi>I</m:mi><m:mrow><m:mtext>oś równoległa</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>I</m:mi><m:mrow><m:mtext>środek masy</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:mi>m</m:mi><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> otrzymamy:</para>
+        <equation id="ked-1bl1bag0c_fo8" class="unnumbered">
+          <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mrow>
+                  <m:mtext>oś równoległa</m:mtext>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mtext>k</m:mtext>
+              </m:msub>
+              <m:msup>
+                <m:mi>R</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mtext>k</m:mtext>
+              </m:msub>
+              <m:msup>
+                <m:mrow>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mi>L</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mi>R</m:mi>
+                  <m:mo stretchy="false">)</m:mo>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="ked-1bl1bb6fi_7u">Dodając moment bezwładności pręta do momentu bezwładności krążka przy przesuniętej osi obrotu stwierdzimy, że moment bezwładności dla przedmiotu złożonego jest równy:</para>
+        <equation id="ked-1bl1bbj4m_jfo" class="unnumbered">
+          <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mrow>
+                  <m:mtext>całkowity</m:mtext>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>3</m:mn>
+              </m:mfrac>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mtext>p</m:mtext>
+              </m:msub>
+              <m:msup>
+                <m:mi>L</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mtext>k</m:mtext>
+              </m:msub>
+              <m:msup>
+                <m:mi>R</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mtext>k</m:mtext>
+              </m:msub>
+              <m:msup>
+                <m:mrow>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mi>L</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mi>R</m:mi>
+                  <m:mo stretchy="false">)</m:mo>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+      </section>
+      <section id="ked-1bl1bc160_b9o">
+        <title>Obliczanie momentu bezwładności przy rozwiązywaniu zadań</title>
+        <para id="ked-1bl1bcd82_8u8">Rozpatrzmy teraz kilka praktycznych zastosowań obliczeń momentu bezwładności.</para>
+        <example id="ked-1bl1bdhb6_m1g">
+          <para id="ked-1bl1bdh9s_jtg"><title>Dziecko na karuzeli</title> Dziecko o masie 25 kg siedzi na karuzeli w odległości <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math> od jej osi obrotu (<link target-id="CNX_UPhysics_10_05_merrygor"/>). Karuzelę możemy rozpatrywać jako jednolitą tarczę o promieniu 2,0 m i masie 500 kg. Wyznacz moment bezwładności tego układu.</para>
+          <figure id="CNX_UPhysics_10_05_merrygor">
+            <media id="ked-1bl1bfnl1_48g" alt="Rysunek kręcącego się na karuzeli dziecka. Karuzela ma promień o długości 2 metrów. Dziecko stoi metr od środka.">
+              <image src="../../media/CNX_UPhysics_10_05_merrygor.jpg" mime-type="image/jpeg"/>
+            </media>
+            <caption>Obliczanie momentu bezwładności dla dziecka na karuzeli. </caption>
+          </figure>
+          <para id="ked-1bl1bhkk8_s2g"><title>Strategia rozwiązania</title> W tym zadaniu mamy obliczyć moment bezwładności całego układu. Mamy podaną masę i odległość dziecka do osi obrotu, a także masę i promień karuzeli. Ponieważ masa i rozmiar dziecka są znacznie mniejsze niż karuzeli, możemy rozpatrywać dziecko jako masę punktową. Wprowadźmy oznaczenia dla danych: <m:math><m:msub><m:mi>m</m:mi><m:mtext>d</m:mtext></m:msub><m:mo>=</m:mo><m:mn>25</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>r</m:mi><m:mtext>d</m:mtext></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>m</m:mi><m:mtext>k</m:mtext></m:msub><m:mo>=</m:mo><m:mn>500</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>r</m:mi><m:mtext>k</m:mtext></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>.</para>
+          <para id="ked-1bl1bo6mc_q7o">Naszym celem jest wyznaczenie całkowitego momentu bezwładności układu <m:math><m:msub><m:mi>I</m:mi><m:mrow><m:mtext>całkowity</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:munder><m:mo>∑</m:mo><m:mi>i</m:mi></m:munder><m:msub><m:mi>I</m:mi><m:mi>i</m:mi></m:msub></m:math>.</para>
+          <para id="ked-1bl1c0blj_bd8"><title>Rozwiązanie</title> Moment bezwładności dziecka <m:math><m:mrow><m:msub><m:mi>I</m:mi><m:mtext>d</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>m</m:mi><m:mtext>d</m:mtext></m:msub><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, a karuzeli <m:math><m:msub><m:mi>I</m:mi><m:mtext>k</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>m</m:mi><m:mtext>k</m:mtext></m:msub><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>2</m:mn></m:math>, stąd:</para>
+          <equation id="ked-1bl1c1meb_ckg" class="unnumbered"><m:math display="block"><m:semantics><m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:msub><m:mi>I</m:mi><m:mtext>całkowity</m:mtext></m:msub><m:mo id="U01e653e7-c4c8-4e77-aba5-d2b091dc4cc3">=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>25</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>500</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:msub><m:mi>I</m:mi><m:mtext>całkowity</m:mtext></m:msub></m:mphantom><m:mo id="Ubb0fadd5-785a-49c5-aa49-d16d87f5c156">=</m:mo><m:mrow><m:mrow><m:mn>25</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">kg</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mn>1000</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">kg</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>2025</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">kg</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{multiline} I_{\text{całkowity}} &amp;= \SI{25}{\kilo\gram} \cdot (\SI{1}{\metre})^2 + \frac12 \cdot \SI{500}{\kilo\gram} \cdot (\SI{2}{\metre})^2 \\ &amp;= \SI[inter-unit-product = ⋅]{25}{\kilo\gram\metre\squared} + \SI[inter-unit-product = ⋅]{1000}{\kilo\gram\metre\squared} = \SI[inter-unit-product = ⋅]{2025}{\kilo\gram\metre\squared} \text{.} \end{multiline}</m:annotation><m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:msub><m:mi>I</m:mi><m:mtext>całkowity</m:mtext></m:msub><m:mo id="U01e653e7-c4c8-4e77-aba5-d2b091dc4cc3-copy">=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>25</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mn>500</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo indenttarget="U01e653e7-c4c8-4e77-aba5-d2b091dc4cc3" indentalign="id" id="Ubb0fadd5-785a-49c5-aa49-d16d87f5c156-copy" linebreak="newline">=</m:mo><m:mrow><m:mrow><m:mn>25</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">kg</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mn>1000</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">kg</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>2025</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">kg</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mtext>.</m:mtext></m:mrow></m:annotation-xml></m:semantics></m:math></equation><para id="ked-1bl1c26sv_thg"><title>Znaczenie</title>Wartość <m:math><m:msub><m:mi>I</m:mi><m:mrow><m:mtext>całkowity</m:mtext></m:mrow></m:msub></m:math> powinna być zbliżona do momentu bezwładności pustej karuzeli, ponieważ karuzela ma dużo większą masę niż położona dalej od osi obrotu masa dziecka. </para>
+        </example>
+        <example id="ked-1bl1c4eis_oto">
+          <para id="ked-1bl1c4ek7_dgo"><title>Pręt i cienka powłoka sferyczna</title> Wyznacz moment bezwładności układu: pręt połączony z cienką powłoką sferyczną. Obliczeń dokonaj dla dwóch przypadków pokazanych na rysunku poniżej. Oś jest prostopadła do rysunku i umieszczona w punkcie A. Pręt ma długość 0,5 m i masę 2,0 kg. Promień sfery wynosi 20,0 cm i ma ona masę 1,0 kg. </para>
+          <media id="ked-1bl1c6gc3_co8" alt="Rysunek A przedstawia dysk o promieniu R połączony z prętem o długości L. Punkt A znajduje się na końcu pręta przeciwnie do dysku. Rysunek B pokazuje dysk o promieniu R połączony z prętem o długości L. Punkt B znajduje się na końcu pręta połączonego z dyskiem.">
+            <image src="../../media/CNX_UPhysics_10_05_RodSphere_img.jpg" mime-type="image/jpeg"/>
+          </media>
+          <para id="ked-1bl1c7t8f_kr"><title>Strategia rozwiązania</title> Ponieważ w obu przypadkach mamy złożony obiekt, możemy użyć twierdzenia Steinera do wyznaczenia momentu bezwładności względem każdej osi. W przypadku (a) środek masy sferycznej powłoki znajduje się w odległości <m:math><m:mi>L</m:mi><m:mo>+</m:mo><m:mi>R</m:mi></m:math> od osi obrotu. W przypadku (b) środek masy sferycznej powłoki znajduje się w odległości R od osi obrotu. W obu przypadkach moment bezwładności pręta jest momentem bezwładności liczonym względem osi przechodzącej przez jego koniec. Informacje na temat momentów bezwładności poszczególnych obiektów można znaleźć w podrozdziale <link document="m65794">Moment bezwładności i energia kinetyczna w ruchu obrotowym</link>.</para>
+          <para id="eip-434"><title>Rozwiązanie</title></para><list id="ked-1bl1cbbgr_t6" list-type="enumerated" number-style="lower-alpha">
+            <item>
+              <m:math>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>całkowity</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:munder>
+                  <m:mo movablelimits="false">∑</m:mo>
+                  <m:mi>i</m:mi>
+                </m:munder>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mi>i</m:mi>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>pręt</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>powłoka</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mn>,</m:mn>
+              </m:math>
+              <m:math>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>sfera</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>środek masy</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mrow>
+                    <m:mtext>sfera</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>L</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>R</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>2</m:mn>
+                  <m:mn>5</m:mn>
+                </m:mfrac>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mrow>
+                    <m:mtext>sfera</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:msup>
+                  <m:mi>R</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mrow>
+                    <m:mtext>sfera</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>L</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>R</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mn>,</m:mn>
+              </m:math>
+              <m:math>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>całkowity</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>pręt</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>sfera</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>3</m:mn>
+                </m:mfrac>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mrow>
+                    <m:mtext>pręt</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:msup>
+                  <m:mi>L</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>+</m:mo>
+                <m:mfrac>
+                  <m:mn>2</m:mn>
+                  <m:mn>5</m:mn>
+                </m:mfrac>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mrow>
+                    <m:mtext>sfera</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:msup>
+                  <m:mi>R</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mrow>
+                    <m:mtext>sfera</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>R</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>L</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mn>,</m:mn>
+              </m:math>
+              <m:math>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>całkowity</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>3</m:mn>
+                </m:mfrac>
+                <m:mo>⋅</m:mo>
+                <m:mn>2</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mn>,</m:mn>
+                      <m:mn>5</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>+</m:mo>
+                <m:mfrac>
+                  <m:mn>2</m:mn>
+                  <m:mn>5</m:mn>
+                </m:mfrac>
+                <m:mo>⋅</m:mo>
+                <m:mn>1</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mn>,</m:mn>
+                      <m:mn>2</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>+</m:mo>
+                <m:mn>1</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mn>,</m:mn>
+                      <m:mn>5</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                      <m:mo>+</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mn>,</m:mn>
+                      <m:mn>2</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mn>,</m:mn>
+              </m:math>
+              <m:math>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>całkowty</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>167</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mn>0</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>016</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mn>0</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>490</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>673</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>.</m:mo>
+              </m:math>
+            </item>
+            <item>
+              <m:math>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>sfera</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>2</m:mn>
+                  <m:mn>5</m:mn>
+                </m:mfrac>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mrow>
+                    <m:mtext>sfera</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:msup>
+                  <m:mi>R</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mrow>
+                    <m:mtext>sfera</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:msup>
+                  <m:mi>R</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mn>,</m:mn>
+              </m:math>
+              <m:math>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>całkowity</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>pręt</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>sfera</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>3</m:mn>
+                </m:mfrac>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mrow>
+                    <m:mtext>pręt</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:msup>
+                  <m:mi>L</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>+</m:mo>
+                <m:mfrac>
+                  <m:mn>2</m:mn>
+                  <m:mn>5</m:mn>
+                </m:mfrac>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mrow>
+                    <m:mtext>sfera</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:msup>
+                  <m:mi>R</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mrow>
+                    <m:mtext>sfera</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:msup>
+                  <m:mi>R</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mn>,</m:mn>
+              </m:math>
+              <m:math>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>całkowity</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>3</m:mn>
+                </m:mfrac>
+                <m:mo>⋅</m:mo>
+                <m:mn>2</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mn>,</m:mn>
+                      <m:mn>5</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>+</m:mo>
+                <m:mfrac>
+                  <m:mn>2</m:mn>
+                  <m:mn>5</m:mn>
+                </m:mfrac>
+                <m:mo>⋅</m:mo>
+                <m:mn>1</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mn>,</m:mn>
+                      <m:mn>2</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>+</m:mo>
+                <m:mn>1</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mn>,</m:mn>
+                      <m:mn>2</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mn>,</m:mn>
+              </m:math>
+              <m:math>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mrow>
+                    <m:mtext>całkowity</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>167</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mn>0</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>016</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mn>0</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>04</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>.</m:mo>
+              </m:math>
+            </item>
+          </list>
+          <para id="ked-1bl1ciu95_88o"><title>Znaczenie</title>Wykorzystanie twierdzenia Steinera ułatwia obliczenie momentu bezwładności obiektów złożonych. Widzimy, że moment bezwładności jest większy w przypadku (a) niż w przypadku (b). Dzieje się tak, ponieważ w przypadku (b) oś obrotu jest bliżej środka masy systemu. Prostą analogią jest tu moment bezwładności pręta. Moment bezwładności względem końca wynosi <m:math><m:mi>m</m:mi><m:msup><m:mi>L</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>3</m:mn></m:math>, a moment bezwładności względem osi przechodzącej przez środek masy wynosi <m:math><m:mi>m</m:mi><m:msup><m:mi>L</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>12</m:mn></m:math>. </para></example>
+        <example id="ked-1bl1cnkj5_t9o">
+          <para id="ked-1bl1cnki0_6fo">Prędkość kątowa wahadła. Wahadło w kształcie pręta (<link target-id="CNX_UPhysics_10_05_Pend"/>) wychylono o kąt 30°, a następnie puszczono swobodnie. Wahadło ma długość 30 cm i masę 300 g. Jaka jest jego prędkość kątowa w najniższym punkcie?</para>
+          <figure id="CNX_UPhysics_10_05_Pend">
+            <media id="ked-1bl1coe6p_3i" alt="Rysunek pokazuje wahadło w kształcie pręta o masie 300 gramów i długości 30 centymetrów. Wahadło wychylone jest o kąt 30 stopni. ">
+              <image src="../../media/CNX_UPhysics_10_05_Pend.jpg" mime-type="image/jpeg"/>
+            </media>
+            <caption>Wahadło w kształcie pręta puszczone swobodnie. </caption>
+          </figure>
+          <para id="ked-1bl1cq77r_udo"><title>Strategia rozwiązania</title>Zmiana energii potencjalnej wahadła jest równa zmianie jego energii kinetycznej ruchu obrotowego <m:math><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>p</m:mtext>
+             </m:msub><m:mo>+</m:mo><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:math>. </para><para id="ked-1bl1csnkm_1oo"><title>Rozwiązanie</title>W maksymalnym wychyleniu energia potencjalna wahadła wynosi <m:math><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>p</m:mtext>
+             </m:msub><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>g</m:mi><m:msub><m:mi>h</m:mi><m:mrow><m:mtext>ŚM</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>g</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>L</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>cos</m:mi><m:mo>⁡</m:mo><m:mi>θ</m:mi></m:math>. W najniższym położeniu <m:math><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>p</m:mtext>
+             </m:msub><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>g</m:mi><m:mi>L</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>2</m:mn></m:math>.</para><para id="ked-1bl1d49mb_ln">W maksymalnym wychyleniu energia kinetyczna wahadła wynosi <m:math><m:mrow><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>, a w najniższym <m:math><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub><m:mo>=</m:mo><m:mi>I</m:mi><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>2</m:mn></m:math>. Tak więc:</para><equation id="ked-1bl1d0o0p_3j8" class="unnumbered"><m:math>
+              <m:mrow>
+                <m:mi mathvariant="normal">Δ</m:mi>
+              </m:mrow>
+              <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>p</m:mtext>
+             </m:msub>
+              <m:mo>+</m:mo>
+              <m:mrow>
+                <m:mi mathvariant="normal">Δ</m:mi>
+              </m:mrow>
+              <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mspace width="thickmathspace"/>
+              <m:mo stretchy="false">⟹</m:mo>
+              <m:mspace width="thickmathspace"/>
+              <m:mrow>
+                <m:mo>[</m:mo>
+                <m:mrow>
+                  <m:mi>m</m:mi>
+                  <m:mi>g</m:mi>
+                  <m:mfrac>
+                    <m:mi>L</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>⋅</m:mo>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo>−</m:mo>
+                      <m:mi>cos</m:mi>
+                      <m:mo>⁡</m:mo>
+                      <m:mi>θ</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mn>0</m:mn>
+                </m:mrow>
+                <m:mo>]</m:mo>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>0</m:mn>
+                  <m:mo>−</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mi>I</m:mi>
+                  <m:msup>
+                    <m:mi>ω</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mn>,</m:mn>
+            </m:math>
+          </equation><para id="ked-1bl1d1d03_sig">stąd:</para>
+          <equation id="ked-1bl1d1is9_duo" class="unnumbered">
+            <m:math>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mi>I</m:mi>
+              <m:msup>
+                <m:mi>ω</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:mi>m</m:mi>
+              <m:mi>g</m:mi>
+              <m:mfrac>
+                <m:mi>L</m:mi>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo>−</m:mo>
+                  <m:mi>cos</m:mi>
+                  <m:mo>⁡</m:mo>
+                  <m:mi>θ</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </equation>
+          <para id="ked-1bl1d1m9a_kho">Wyliczając z powyższych równań <m:math><m:mi>ω</m:mi></m:math> otrzymujemy:</para>
+          <equation id="ked-1bl1d2qdq_pgo" class="unnumbered">
+            <m:math>
+              <m:mrow>
+                <m:mi>ω</m:mi>
+                <m:mo>=</m:mo>
+                <m:msqrt>
+                  <m:mrow>
+                    <m:mi>m</m:mi>
+                    <m:mi>g</m:mi>
+                    <m:mfrac>
+                      <m:mi>L</m:mi>
+                      <m:mi>I</m:mi>
+                    </m:mfrac>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>−</m:mo>
+                    <m:mtext>cos</m:mtext>
+                    <m:mspace width="0.2em"/>
+                    <m:mi>θ</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                  </m:mrow>
+                </m:msqrt>
+                <m:mo>=</m:mo>
+                <m:msqrt>
+                  <m:mrow>
+                    <m:mi>m</m:mi>
+                    <m:mi>g</m:mi>
+                    <m:mfrac>
+                      <m:mi>L</m:mi>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mtext>/</m:mtext>
+                        <m:mn>3</m:mn>
+                        <m:mi>m</m:mi>
+                        <m:msup>
+                          <m:mi>L</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>−</m:mo>
+                    <m:mtext>cos</m:mtext>
+                    <m:mspace width="0.2em"/>
+                    <m:mi>θ</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                  </m:mrow>
+                </m:msqrt>
+                <m:mo>=</m:mo>
+                <m:msqrt>
+                  <m:mrow>
+                    <m:mi>g</m:mi>
+                    <m:mfrac>
+                      <m:mn>3</m:mn>
+                      <m:mi>L</m:mi>
+                    </m:mfrac>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>−</m:mo>
+                    <m:mtext>cos</m:mtext>
+                    <m:mspace width="0.2em"/>
+                    <m:mi>θ</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                  </m:mrow>
+                </m:msqrt>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation>
+          <para id="ked-1bl1d3857_or">Wstawiając wartości numeryczne otrzymujemy:</para>
+          <equation id="ked-1bl1d3ej2_s4g" class="unnumbered">
+            <m:math>
+              <m:mi>ω</m:mi>
+              <m:mo>=</m:mo>
+              <m:msqrt>
+                <m:mn>9</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>8</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:msup>
+                    <m:mi mathvariant="normal">s</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mfrac>
+                  <m:mn>3</m:mn>
+                  <m:mrow>
+                    <m:mn>0</m:mn>
+                    <m:mn>,</m:mn>
+                    <m:mn>3</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>1</m:mn>
+                    <m:mo>−</m:mo>
+                    <m:mi>cos</m:mi>
+                    <m:mo>⁡</m:mo>
+                    <m:msup>
+                      <m:mn>30</m:mn>
+                      <m:mo>∘</m:mo>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:msqrt>
+              <m:mo>=</m:mo>
+              <m:mn>3</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>6</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">r</m:mi>
+                <m:mi mathvariant="normal">a</m:mi>
+                <m:mi mathvariant="normal">d</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </equation>
+          <para id="ked-1bl1d41or_2b"><title>Znaczenie</title>Należy zauważyć, że prędkość kątowa wahadła nie zależy od jego masy. </para>
+        </example>
+      </section>
+    </section><section id="ked-1bl1d6gbm_ihg" class="key-concepts">
+      <title>Podsumowanie</title>
+      <list id="ked-1bl1d7ab5_5og"><item>Momenty bezwładności można wyznaczyć przez zsumowanie lub scałkowanie wartości masy „każdego fragmentu” tworzącego obiekt, pomnożonej przez kwadrat odległości fragmentu od osi. W postaci całkowej moment bezwładności wynosi <m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mo>∫</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>m</m:mi></m:math>.</item>
+        <item>Moment bezwładności jest większy, gdy masa obiektu znajduje się dalej od osi obrotu.</item>
+        <item>Można wyznaczyć moment bezwładności obiektu względem nowej osi obrotu, gdy znany jest moment bezwładności dla osi do niej równoległej i przechodzącej przez środek masy układu. Mówi o tym twierdzenie Steinera: <m:math><m:mrow><m:msub><m:mi>I</m:mi><m:mrow><m:mtext>oś równoległa</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>I</m:mi><m:mrow><m:mtext>środek masy</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:mi>m</m:mi><m:msup><m:mi>d</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, gdzie <m:math><m:mi>d</m:mi></m:math> jest odległością pomiędzy osiami. </item>
+        <item>Moment bezwładności dla złożonego obiektu jest sumą momentów bezwładności każdego pojedynczego obiektu składającego się na obiekt złożony.</item>
+      </list></section>
+    <section id="ked-1bl1dbe8u_2v" class="review-conceptual-questions">
+      <title>Pytania</title>
+      <exercise id="ked-1bl1dcf7j_b58">
+        <problem id="ked-1bl1dci96_da">
+          <para id="ked-1bl1dcl4h_qv8">Jeśli dziecko idzie w kierunku środka karuzeli, to moment bezwładności wzrasta czy maleje?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl1dd11n_g5g">
+        <problem id="ked-1bl1ddhv1_leo">
+          <para id="ked-1bl1ddn3k_cfg">Dyskobol, zanim wypuści dysk, obraca się trzymając dysk w dłoni. (a) Jak zmieni się jego moment bezwładności po wypuszczeniu dysku? (b) Jak dobre przybliżenie należy zrobić, aby obliczyć moment bezwładności dyskobola i dysku?</para>
+        </problem>
+        <solution id="ked-1bl1deh28_ot8" class="section-exercises">
+          <para id="ked-1bl1delm1_kg8">a. Zmniejszy się, jeżeli za jego moment bezwładności rozumiemy sumę momentów człowieka i dysku. Jeżeli pytamy tylko o moment bezwładności samego człowieka, to pozostanie bez zmiany. </para>
+          <para id="ked-1bl1epd2v_lg">b. Ramiona można przybliżyć prętami, a dysk krążkiem. Tułów znajduje się w pobliżu osi obrotu, więc nie ma istotnego wkładu w moment bezwładności.</para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl1df67e_m58">
+        <problem id="ked-1bl1df9cr_8m8">
+          <para id="ked-1bl1dfcpb_ivg">Czy zwiększenie liczby łopatek śruby napędowej zwiększa czy zmniejsza moment bezwładności? Dlaczego?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl1dg1b9_t6o">
+        <problem id="ked-1bl1dg1d7_5n8">
+          <para id="ked-1bl1dg1ck_3h8">Moment bezwładności długiego pręta obracającego się wokół osi przechodzącej przez jeden z jego końców i prostopadłej do jego długości wynosi <m:math><m:mrow><m:mi>m</m:mi><m:msup><m:mi>L</m:mi><m:mn>2</m:mn></m:msup><m:mtext>/</m:mtext><m:mn>3</m:mn></m:mrow></m:math>. Dlaczego ten moment bezwładności jest większy niż gdyby umieścić masę punktową <m:math><m:mi>m</m:mi></m:math> w odległości równej odległości środka masy pręta od osi obrotu (<m:math><m:mi>L</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>2</m:mn></m:math>) (tzn. <m:math><m:mrow><m:mi>m</m:mi><m:msup><m:mi>L</m:mi><m:mn>2</m:mn></m:msup><m:mtext>/</m:mtext><m:mn>4</m:mn></m:mrow></m:math>)?</para>
+        </problem>
+        <solution id="ked-1bl1dg1bm_k9" class="section-exercises">
+          <para id="ked-1bl1dg1dd_e6o">Ponieważ moment bezwładności zmienia się z kwadratem odległości od osi obrotu. Masa pręta usytuowanego w odległości większej niż <m:math><m:mi>L</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>2</m:mn></m:math> zapewnia większy wkład do jego momentu bezwładności niż masa w punkcie <m:math><m:mi>L</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>2</m:mn></m:math>.</para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl1dkdg1_jdo">
+        <problem id="ked-1bl1dkdgh_jt8">
+          <para id="ked-1bl1dkdia_q6o">Dlaczego moment bezwładności obręczy o masie <m:math><m:mi>M</m:mi></m:math> i promieniu <m:math><m:mi>R</m:mi></m:math> jest większy niż moment bezwładności tarczy, która ma tę samą masę i promień?</para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="ked-1bl1dl6e1_ph8" class="review-problems">
+      <title>Zadania </title>
+      <exercise id="ked-1bl1dloti_ma">
+        <problem id="ked-1bl1dlosv_st">
+          <para id="ked-1bl1dlorr_m2o">Podczas kopnięcia piłki nożnej piłkarz obraca nogę w stawie biodrowym. Moment bezwładności nóg wynosi <m:math><m:mn>3</m:mn><m:mn>,</m:mn><m:mn>75</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, a energia kinetyczna ruchu obrotowego nogi to 175 J. (a) Jaka jest prędkość kątowa nogi? (b) Jaka jest prędkość końcówki buta zawodnika, jeśli jest ona w odległości 1,05 m od stawu biodrowego? </para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl1dmbaj_gog">
+        <problem id="ked-1bl1dmb9n_aho">
+          <para id="ked-1bl1dmb8k_bcg">Korzystając z twierdzenia Steinera wyznacz moment bezwładności pręta o masie <m:math><m:mi>m</m:mi></m:math> względem osi przedstawionej na rysunku poniżej.</para>
+          <media id="ked-1bl1dt6as_m2o" alt="Rysunek przedstawia pręt, który obraca się wokół osi, która przechodzi przez niego w odległości 1/6 długości od jednego z końców i 5/6 długości od przeciwnego końca. ">
+            <image src="../../media/CNX_UPhysics_10_05_Prob8_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bl1dmb7q_ab" class="section-exercises">
+          <para id="ked-1bl1dmb98_3mo">
+            <m:math>
+              <m:mi>I</m:mi>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mn>7</m:mn>
+                <m:mn>36</m:mn>
+              </m:mfrac>
+              <m:mi>m</m:mi>
+              <m:msup>
+                <m:mi>L</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl1ecn99_r3g">
+        <problem id="ked-1bl1ecn9b_lhg">
+          <para id="ked-1bl1ecn8i_q7">Wyznacz moment bezwładności pręta z poprzedniego zadania przez bezpośrednie całkowanie.</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl1efsv4_lo8">
+        <problem id="ked-1bl1efstv_308">
+          <para id="ked-1bl1efstk_er">Jednorodny pręt o masie 1,0 kg i długości 2,0 m może obracać się swobodnie wokół jednego z jego końców (patrz poniższy rysunek). Jeśli pręt zostanie puszczony swobodnie po wcześniejszym odchyleniu go o kąt <m:math><m:msup><m:mn>60</m:mn><m:mo>∘</m:mo></m:msup></m:math>, liczony względem poziomu, to z jaką prędkością końcówka pręta przechodzi przez pozycję poziomą?</para>
+          <media id="ked-1bl1ehgao_lhg" alt="Rysunek pokazuje pręt, którego koniec jest wychylony pod kątem 60 stopni w stosunku do linii poziomej. ">
+            <image src="../../media/CNX_UPhysics_10_05_RodAng_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bl1eft04_ru" class="section-exercises">
+          <para id="ked-1bl1efsv2_ah">
+            <m:math>
+              <m:mi>v</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>7</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>14</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl1ejeu0_hro">
+        <problem id="ked-1bl1ejerj_p98">
+          <para id="ked-1bl1ejesp_qcg">Wahadło składa się z pręta o masie 2 kg i długości 1 m oraz jednorodnej kuli umieszczonej na jednym z jego końców. Kula ma masę 0,3 kg i promień 20 cm (patrz poniższy rysunek). Jeśli wahadło odchylono o kąt <m:math><m:msup><m:mn>30</m:mn><m:mo>∘</m:mo></m:msup></m:math> i puszczono swobodnie, to jaka jest prędkość kątowa pręta w najniższym punkcie?</para>
+          <media id="ked-1bl1ekq23_3r8" alt="Rysunek przedstawia wahadło składające się z pręta o masie 2 kg i długości 1 m z kulą na końcu o masie 0,3 kg i promieniu 20 cm. Wahadło puszczone swobodnie wychyla się o 30 stopni. ">
+            <image src="../../media/CNX_UPhysics_10_05_PendSph_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl1em65n_71o">
+        <problem id="ked-1bl1em64q_5e8">
+          <para id="ked-1bl1em663_i88">Jednorodna kulka o promieniu 10 cm może swobodnie obracać się wokół osi zaznaczonej na rysunku poniżej. Kulkę pchnięto gwałtownie tak, że jej środek masy rozpoczął ruch od położenia pokazanego na poniższym rysunku, z prędkością 15 cm/s. Jaki maksymalny kąt tworzy średnica z pionem?</para>
+          <media id="ked-1bl1emkou_7s8" alt="Rysunek z lewej pokazuje najpierw kulkę o promieniu 10 cm, która obraca się swobodnie wokół osi i która zostaje silnie pchnięta w jego środku masy. Rysunek z prawej jest wyobrażeniem tej samej kulki po pchnięciu. Kąt, jaki tworzy z pionową średnicą oznaczony jest jako theta.">
+            <image src="../../media/CNX_UPhysics_10_05_SphPiv_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bl1em662_4oo" class="section-exercises">
+          <para id="ked-1bl1em64i_im">
+            <m:math>
+              <m:mi>θ</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>10</m:mn>
+              <m:mn>,</m:mn>
+              <m:msup>
+                <m:mn>2</m:mn>
+                <m:mo>∘</m:mo>
+              </m:msup>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+    </section>
+  </content>
+  <glossary>
+    <definition id="ked-1bl1eruln_6l">
+      <term cmlnle:reference="gęstość liniowa masy" class="no-emphasis">gęstość liniowa masy (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">linear mass density</term></foreign>)</term>
+      <meaning id="ked-1bl1erum5_85">masa na jednostkę długości obiektu liniowego</meaning>
+    </definition>
+    <definition id="ked-1bl1et0bj_sdg">
+      <term cmlnle:reference="oś równoległa" class="no-emphasis">oś równoległa (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">parallel axis</term></foreign>)</term>
+      <meaning id="ked-1bl1et0de_b1">oś obrotu, która jest równoległa do osi, względem której znany jest moment bezwładności obiektu</meaning>
+    </definition>
+    <definition id="ked-1bl1etjfv_qmo">
+      <term cmlnle:reference="gęstość powierzchniowa masy" class="no-emphasis">gęstość powierzchniowa masy (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">surface mass density</term></foreign>)</term>
+      <meaning id="ked-1bl1etjgb_15g">masa na jednostkę powierzchni obiektu dwuwymiarowego</meaning>
+    </definition>
+  </glossary>
+</document>

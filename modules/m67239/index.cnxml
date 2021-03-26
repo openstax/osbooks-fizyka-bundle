@@ -1,0 +1,1949 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Energia niesiona przez fale elektromagnetyczne</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67239</md:content-id>
+  <md:title>Energia niesiona przez fale elektromagnetyczne</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>wyrażać uśrednioną po czasie gęstość energii fali elektromagnetycznej jako funkcję wielkości opisujących  pola elektryczne i magnetyczne;</item>
+<item>wyliczać wektor Poyntinga i natężenie fali elektromagnetycznej;</item>
+<item>wyjaśniać, jak energia fali elektromagnetycznej zależy od jej amplitudy i jak energia fotonu zależna jest od jego częstotliwości.
+</item>
+</list></md:abstract>
+  <md:uuid>1b21c9d0-6c5e-450f-a7c0-f87801186b70</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242549184">Każdy, kto używał kiedykolwiek kuchenki mikrofalowej, wie, że fala elektromagnetyczna przenosi energię. Niekiedy jest to tak oczywiste, że nawet się nad tym nie zastanawiamy – jak w przypadku promieni słonecznych w gorący, lipcowy dzień. Czasami fala elektromagnetyczna przyjmuje bardziej subtelne formy – jak niewyczuwalna energia promieni gamma, które niszczą żywe komórki.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242542035">Fale elektromagnetyczne dostarczają energię przez pola – elektryczne i magnetyczne. Pola te mogą wytwarzać siły i poruszać ładunkami w układzie, a w ten sposób wykonywać w tym układzie pracę. Jednak fala elektromagnetyczna niesie w sobie energię bez względu na to, czy została ona pochłonięta, czy też nie. Po wytworzeniu fala unosi ze sobą energię ze źródła. Jeśli część energii zostanie gdzieś pochłonięta, natężenia oscylujących pól maleją, a pozostała energia przenoszona jest dalej.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171240332344">Oczywistym jest, że im silniejsze są indukowane pola elektryczne i magnetyczne, tym większą pracę mogą one wykonać i tym większą energię niesie fala elektromagnetyczna. Dla takiej fali amplituda jest maksymalnym natężeniem pola elektrycznego lub magnetycznego (<link target-id="CNX_UPhysics_33_03_EngbyWave"/>). Energia fali jest więc ściśle zależna od amplitudy.</para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_33_03_EngbyWave"><media id="fs-id1171242345463" alt="Rysunek z lewej przedstawia falę alektromagnetyczną z polem elektrycznym E i magnetycznym B. Fala oznaczona jest przez u. Rysunek po prawej przedstawia falę elektromagnetyczną z polem elektrycznym 2E i magnetycznym 2B. Tutaj amplitudy sinusoidalnych fal są podwojone. Fala oznaczona jest 4 u.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_33_03_EngbyWave.jpg"/>
+    </media>
+    
+<caption>Energia niesiona przez falę zależna jest od amplitudy tej fali. Dla fal elektromagnetycznych dwukrotne zwiększenie wartości <m:math display="inline">
+      <m:mi>E</m:mi>
+    </m:math> i <m:math display="inline">
+    <m:mi>B</m:mi>
+  </m:math> powoduje czterokrotne zwiększenie gęstości energii <m:math display="inline">
+  <m:mi>u</m:mi>
+</m:math> i strumienia energii <m:math display="inline"><m:semantics><m:mrow><m:mi>u</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            uc</m:annotation></m:semantics></m:math>.</caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242528655">W przypadku fali płaskiej, biegnącej w kierunku dodatnich wartości osi <m:math display="inline">
+  <m:mi>x</m:mi>
+</m:math> z fazą dobraną tak, by maksymalne natężenie pola w początku układu współrzędnych przypadało na czas <m:math display="inline"><m:semantics><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>0</m:mn><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            t = \SI{0}{\second}</m:annotation></m:semantics></m:math>, pola elektryczne i magnetyczne muszą podlegać zależnościom</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242478964" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mtable>
+      <m:mtr>
+        <m:mtd>
+          <m:mrow>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mi>y</m:mi>
+            </m:msub>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>x</m:mi>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+            <m:maligngroup/>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>cos</m:mo>
+              <m:mrow>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>k</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>x</m:mi>
+                    </m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mrow>
+                      <m:mi>ω</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mfenced>
+                <m:mo>⁢</m:mo>
+                <m:mtext>,</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:mrow>
+            <m:msub>
+              <m:mi>B</m:mi>
+              <m:mi>z</m:mi>
+            </m:msub>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>x</m:mi>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+            <m:maligngroup/>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>B</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>cos</m:mo>
+              <m:mrow>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>k</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>x</m:mi>
+                    </m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mrow>
+                      <m:mi>ω</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mfenced>
+                <m:mo>⁢</m:mo>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242138106">Energia fali elektromagnetycznej w dowolnej chwili jest sumą energii pól elektrycznego i magnetycznego, a energia przypadająca na jednostkę objętości, nazywana też gęstością energii <m:math display="inline">
+  <m:mi>u</m:mi>
+</m:math>, jest sumą gęstości energii pochodzących od pola elektrycznego i pola magnetycznego. Wyrażenia opisujące gęstość energii obu pól zostały wyprowadzone wcześniej (<m:math display="inline">
+<m:msub>
+  <m:mi>u</m:mi>
+  <m:mi>E</m:mi>
+</m:msub>
+</m:math> w <link class="target-chapter" document="m67179">Pojemność elektryczna</link> i <m:math display="inline">
+<m:msub>
+  <m:mi>u</m:mi>
+  <m:mi>B</m:mi>
+</m:msub>
+</m:math> w <link class="target-chapter" document="m67223">Indukcyjność</link>). Dodając te dwa wyrażenia, otrzymujemy</para><equation id="fs-id1171242524070" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:mi>u</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>x</m:mi>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>u</m:mi>
+        <m:mi>E</m:mi>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>u</m:mi>
+        <m:mi>B</m:mi>
+      </m:msub>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:msub>
+          <m:mi>ε</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:msup>
+          <m:mi>E</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>μ</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:msup>
+          <m:mi>B</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242316546">Równanie <m:math display="inline">
+  <m:mi>E</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>c</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>B</m:mi>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msup>
+      <m:mfenced>
+        <m:mrow>
+          <m:msub>
+            <m:mi>ε</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:msub>
+            <m:mi>μ</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+        </m:mrow>
+      </m:mfenced>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mn>1</m:mn>
+          <m:mo>∕</m:mo>
+          <m:mn>2</m:mn>
+        </m:mrow>
+      </m:mrow>
+    </m:msup>
+    <m:mo>⁢</m:mo>
+    <m:mi>B</m:mi>
+  </m:mrow>
+</m:math> pokazuje też, że gęstość energii pola magnetycznego <m:math display="inline">
+<m:msub>
+  <m:mi>u</m:mi>
+  <m:mi>B</m:mi>
+</m:msub>
+</m:math> i gęstość energii pola elektrycznego <m:math display="inline">
+<m:msub>
+  <m:mi>u</m:mi>
+  <m:mi>E</m:mi>
+</m:msub>
+</m:math> są sobie równe, mimo że zmienne pole elektryczne generuje słabe pole magnetyczne. Ta równość gęstości energii obu pól prowadzi do równania</para><equation id="fs-id1171242562347">
+  <m:math display="block">
+    <m:mrow>
+      <m:mi>u</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>x</m:mi>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>ε</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:msup>
+        <m:mi>E</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:msup>
+          <m:mi>B</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:msub>
+          <m:mi>μ</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+      </m:mfrac>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242499562">Gęstość energii przemieszcza się wraz z przemieszczającymi się polami elektrycznym i magnetycznym.</para>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242141252">Szybkość transportu energii możemy ustalić poprzez rozważenie małego odcinka czasu <m:math display="inline">
+  <m:mo>Δ</m:mo>
+  <m:mi>t</m:mi>
+</m:math>. Jak pokazano na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_33_03_EnergyCyl" cmlnle:case="locative"/>, energia w objętości cylindra o długości <m:math display="inline">
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mrow>
+  <m:mo>Δ</m:mo>
+  <m:mi>t</m:mi>
+</m:mrow>
+</m:math> i polu przekroju poprzecznego <m:math display="inline">
+<m:mi>A</m:mi>
+</m:math> przenika przez płaszczyznę poprzeczną w czasie <m:math display="inline">
+<m:mo>Δ</m:mo>
+<m:mi>t</m:mi>
+</m:math>.</para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_33_03_EnergyCyl"><media id="fs-id1171242159784" alt="Rysunek przedstawia cylinder o długości c delta t i przekrój obszaru A. Strzałki wskazują kierunek fali rozchodzącej się wzdłuż długości cylindra. Pokazane jest płaszczyzna prostopadła do kierunku fali. ">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_33_03_EnergyCyl.jpg"/>
+  </media>
+  
+<caption>Energia <m:math display="inline">
+    <m:mi>u</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>A</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>c</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mrow>
+      <m:mo>Δ</m:mo>
+      <m:mi>t</m:mi>
+    </m:mrow>
+  </m:math> zawarta w polach elektrycznym i magnetycznym fali elektromagnetycznej, w objętości <m:math display="inline">
+  <m:mi>A</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mi>c</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mrow>
+    <m:mo>Δ</m:mo>
+    <m:mi>t</m:mi>
+  </m:mrow>
+</m:math>, przenika przez powierzchnię <m:math display="inline">
+<m:mi>A</m:mi>
+</m:math> w czasie <m:math display="inline">
+<m:mo>Δ</m:mo>
+<m:mi>t</m:mi>
+</m:math>.</caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242566489">Energia przenikająca przez powierzchnię <m:math display="inline">
+  <m:mi>A</m:mi>
+</m:math> w czasie <m:math display="inline">
+<m:mo>Δ</m:mo>
+<m:mi>t</m:mi>
+</m:math> wynosi</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242551205" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:mi>u</m:mi>
+      <m:mo>⋅</m:mo>
+      <m:mtext>objętość</m:mtext>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>u</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>A</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>c</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>Δ</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242064677">Energia przypadająca na jednostkę powierzchni i jednostkę czasu, przechodząca przez płaszczyznę prostopadłą do kierunku rozchodzenia się fali, nazywana <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="strumień energii">strumieniem energii</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">energy flux</term></foreign>) i zapisywana jako <m:math display="inline">
+<m:mi>S</m:mi>
+</m:math>, może zostać obliczona przez podzielenie energii przez pole powierzchni <m:math display="inline">
+<m:mi>A</m:mi>
+</m:math> i czas <m:math display="inline">
+<m:mo>Δ</m:mo>
+<m:mi>t</m:mi>
+</m:math>
+</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171239841131" class="unnumbered"><label/>
+  <m:math display="block">
+    <m:mi>S</m:mi>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mtext>energia przenikająca przez powierzchnię </m:mtext>
+        <m:mo>⁢</m:mo>
+        <m:mi>A</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mtext> w czasie </m:mtext>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>Δ</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mrow>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>Δ</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>u</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>c</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>ε</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mi>c</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:msup>
+        <m:mi>E</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:msub>
+          <m:mi>μ</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+      </m:mfrac>
+      <m:mo>⁢</m:mo>
+      <m:mi>E</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>B</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242576327">W bardziej ogólnym ujęciu strumień energii przez dowolną powierzchnię zależy też od orientacji tej powierzchni. Aby uwzględnić tę orientację, wprowadza się wektor <m:math display="inline">
+  <m:mover>
+    <m:mi>S</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:math>, nazywany <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="wektor Poyntinga">wektorem Poyntinga</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">Poynting vector</term></foreign>), zdefiniowany jako</para><note id="fs-id1171242373735" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242344911">
+    <label/>
+    <m:math display="block">
+      <m:mover>
+        <m:mi>S</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mrow>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:msub>
+                <m:mi>μ</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mover>
+              <m:mi>E</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+          <m:mover>
+            <m:mi>B</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+        </m:mrow>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242567316">Wynik mnożenia wektorowego wektorów <m:math display="inline">
+  <m:mover>
+    <m:mi>E</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:math> i <m:math display="inline">
+<m:mover>
+  <m:mi>B</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math> jest również wektorem o kierunku prostopadłym do obu mnożników. Aby potwierdzić, że kierunek ten jest zgodny z kierunkiem rozchodzenia się, a nie jemu przeciwny, wróćmy do <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" document="m67238" target-id="CNX_UPhysics_33_02_GaussBox2" cmlnle:case="genitive"/>. Zwróćmy uwagę, że reguła Lenza i prawo Faradaya powodują, że dla rosnącego w czasie pola magnetycznego pole elektryczne musi być silniejsze w <m:math display="inline">
+<m:mi>x</m:mi>
+</m:math> niż w <m:math display="inline">
+<m:mi>x</m:mi>
+<m:mo>+</m:mo>
+<m:mrow>
+  <m:mo>Δ</m:mo>
+  <m:mi>x</m:mi>
+</m:mrow>
+</m:math>. W tym punkcie i tej chwili natężenie pola elektrycznego maleje więc ze wzrostem <m:math display="inline">
+<m:mi>x</m:mi>
+</m:math>. Proporcjonalność pomiędzy wartościami wektorów <m:math display="inline">
+<m:mover>
+  <m:mi>E</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math> i <m:math display="inline">
+<m:mover>
+  <m:mi>B</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math> wymusza, by natężenie pola elektrycznego rosło w czasie wraz z wartością indukcji pola magnetycznego. Jest to możliwe wtedy i tylko wtedy, gdy fala rozchodzi się w prawą stronę diagramu, co z kolei implikuje, że wektor wynikowy <m:math display="inline">
+<m:mover>
+  <m:mi>S</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:mover>
+      <m:mi>E</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+    <m:mo>×</m:mo>
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+  </m:mrow>
+  <m:mo>∕</m:mo>
+  <m:msub>
+    <m:mi>μ</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math> ma dokładnie ten sam kierunek i zwrot co kierunek rozchodzenia się fali elektromagnetycznej.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242505237">Strumień energii jest zależny od czasu, co można zobaczyć przez podstawienie <m:math display="inline">
+  <m:mi>u</m:mi>
+</m:math> z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" document="m67238" target-id="fs-id1171241058834" cmlnle:case="genitive"/> do <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1171242562347" cmlnle:case="genitive"/>
+</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242360612"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mi>S</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:msubsup><m:mi>E</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>⁢</m:mo><m:mrow><m:msup><m:mo>cos</m:mo><m:mn>2</m:mn></m:msup><m:mrow><m:mfenced><m:mrow><m:mrow><m:mi>k</m:mi><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow><m:mo>−</m:mo><m:mrow><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            S \apply (x,t) = c \epsilon_0 E_0^2 \cos^2 (kx- \omega t) \text{.}</m:annotation></m:semantics></m:math></equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242062174">Ponieważ częstotliwość światła widzialnego jest bardzo wysoka, rzędu <m:math display="inline">
+  <m:msup>
+    <m:mn>10</m:mn>
+    <m:mn>14</m:mn>
+  </m:msup>
+  <m:mo>⁢</m:mo>
+  <m:mi mathvariant="normal">Hz</m:mi>
+</m:math>, strumień energii dla światła widzialnego przenikający dowolną powierzchnię jest szybkozmienną funkcją czasu. Przez to niemal wszystkie urządzenia pomiarowe, włączając w to ludzkie oczy, są w stanie wykryć jedynie wartość uśrednioną po czasie. Taka średnia wartość strumienia energii to natężenie <m:math display="inline">
+<m:mi>I</m:mi>
+</m:math> energii elektromagnetycznej i jest ona równoważna mocy przypadającej na jednostkę powierzchni. Można ją wyliczyć przez uśrednienie funkcji cosinus w <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1171242360612" cmlnle:case="locative"/> po jednym pełnym cyklu</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242538156"><m:math display="block"><m:semantics><m:mrow><m:mi>I</m:mi><m:mo>=</m:mo><m:msub><m:mi>S</m:mi><m:mtext>śr</m:mtext></m:msub><m:mo>=</m:mo><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:msubsup><m:mi>E</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>⁢</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>T</m:mi></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mn>0</m:mn><m:mi>T</m:mi></m:munderover><m:mrow><m:msup><m:mo>cos</m:mo><m:mn>2</m:mn></m:msup><m:mrow><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mfrac><m:mi>t</m:mi><m:mi>T</m:mi></m:mfrac></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mrow><m:mi>t</m:mi><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            I = S_{\text{śr}} = c \epsilon_0 E_0^2 \frac{1}{T} \int_0^T \cos^2(2 \pi \frac{t}{T}) \d t \text{.}</m:annotation></m:semantics></m:math></equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242140509">Możemy albo obliczyć wartość powyższej całki, albo zauważyć, że sinus i cosinus różnią się jedynie przesunięciem w fazie, przez co średnia po pojedynczej oscylacji dla <m:math display="inline"><m:semantics><m:mrow><m:msup><m:mo>cos</m:mo><m:mn>2</m:mn></m:msup><m:mi>x</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \cos^2 x</m:annotation></m:semantics></m:math> będzie taka sama jak dla <m:math display="inline"><m:semantics><m:mrow><m:msup><m:mo>sin</m:mo><m:mn>2</m:mn></m:msup><m:mi>x</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \sin^2 x</m:annotation></m:semantics></m:math>. Wtedy otrzymujemy</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167586002515" class="unnumbered"><label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:mrow>
+        <m:mo>〈</m:mo>
+        <m:mrow>
+          <m:msup>
+            <m:mrow>
+              <m:mtext>cos</m:mtext>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mi>x</m:mi>
+        </m:mrow>
+        <m:mo>〉</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mo>[</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mo>〈</m:mo>
+            <m:mrow>
+              <m:msup>
+                <m:mrow>
+                  <m:mtext>cos</m:mtext>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mi>x</m:mi>
+            </m:mrow>
+            <m:mo>〉</m:mo>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mo>〈</m:mo>
+            <m:mrow>
+              <m:msup>
+                <m:mrow>
+                  <m:mtext>sin</m:mtext>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mi>x</m:mi>
+            </m:mrow>
+            <m:mo>〉</m:mo>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>]</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mrow>
+        <m:mo>〈</m:mo>
+        <m:mn>1</m:mn>
+        <m:mo>〉</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+      </m:mfrac>
+      <m:mo>,</m:mo>
+    </m:mrow>
+  </m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242488778">gdzie nawiasy ostre <m:math>
+  <m:mrow>
+    <m:mrow>
+      <m:mo>〈</m:mo>
+      <m:mtext>⋯</m:mtext>
+      <m:mo>〉</m:mo>
+    </m:mrow>
+  </m:mrow>
+</m:math> oznaczają operację uśredniania po czasie. Zatem natężenie światła, biegnącego z prędkością <m:math display="inline">
+<m:mi>c</m:mi>
+</m:math> przez próżnię, będzie wynosić</para>
+<note id="fs-id1171242499648" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242360811">
+    <label/>
+    <m:math display="block">
+      <m:mi>I</m:mi>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>S</m:mi>
+        <m:mtext>śr</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mi>c</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:msub>
+          <m:mi>ε</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:msubsup>
+          <m:mi>E</m:mi>
+          <m:mn>0</m:mn>
+          <m:mn>2</m:mn>
+        </m:msubsup>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242414188">Jest ono wyrażone przez amplitudę natężenia pola elektrycznego <m:math display="inline">
+  <m:msub>
+    <m:mi>E</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  </m:math>. Przekształcenia algebraiczne dają też zależność</para>
+  <note id="fs-id1171242515090" class="equation-callout">
+    <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242568244">
+      <label/>
+      <m:math display="block">
+        <m:mi>I</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mi>c</m:mi>
+            <m:msubsup>
+              <m:mi>B</m:mi>
+              <m:mn>0</m:mn>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+          </m:mrow>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:msub>
+              <m:mi>μ</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>,</m:mo>
+      </m:math>
+    </equation>
+  </note>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242105521">gdzie <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>B</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+    </m:mrow>
+  </m:math> jest amplitudą indukcji magnetycznej. Pomocne jest jeszcze jedno wyrażenie na <m:math>
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mtext>śr</m:mtext>
+  </m:msub>
+</m:math>, przedstawione przy pomocy parametrów zarówno pola <m:math>
+<m:mi>E</m:mi>
+</m:math>, jak i pola <m:math>
+<m:mi>B</m:mi>
+</m:math>. Podstawiając dane z zależności <m:math>
+<m:msub>
+  <m:mi>E</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mi>c</m:mi>
+<m:msub>
+  <m:mi>B</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+</m:math> do poprzedniego równania, otrzymujemy</para><note id="fs-id1171242166069" class="equation-callout">
+  <equation id="fs-id1171242374771">
+    <label/>
+    <m:math display="block">
+      <m:mi>I</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:mrow>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>B</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>μ</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242354546">Możemy używać któregokolwiek z trzech powyższych wzorów zależnie od tego, który jest w danej chwili wygodniejszy, ponieważ są to tak naprawdę trzy wersje tej samej własności: energia fali jest zależna od kwadratu amplitudy. Ponadto, ponieważ równania te oparte są na założeniu, że fale elektromagnetyczne są falami sinusoidalnymi, to maksymalne natężenie jest dwukrotnie większe niż natężenie średnie <m:math display="inline">
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>2</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:mi>I</m:mi>
+  </m:mrow>
+  </m:math>.</para><example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242455314">
+    <para id="fs-id1171242431424"><title>Wiązka laserowa</title>Wiązka laserowa z małego lasera laboratoryjnego zazwyczaj ma natężenie równe około <m:math display="inline">
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+        </m:msup>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mrow>
+          <m:mi mathvariant="normal">W</m:mi>
+          <m:mo>∕</m:mo>
+          <m:msup>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+        </m:math>. Zakładając, że wiązka ta złożona jest z fal płaskich, obliczmy amplitudy wielkości charakteryzujących pola elektryczne i magnetyczne w tej wiązce.</para><para id="fs-id1171242439140"><title>Strategia rozwiązania</title>Użyjemy równań na natężenie wiązki laserowej, wyrażone przez amplitudę natężenia pola elektrycznego, aby wyliczyć tę amplitudę.</para><para id="fs-id1171242348569"><title>Rozwiązanie</title>Z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1171242360811" cmlnle:case="genitive"/> natężenie wiązki laserowej jest równe</para><equation id="fs-id1171242506434" class="unnumbered">
+              <label/>
+              <m:math display="block">
+                <m:mi>I</m:mi>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>c</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi>ε</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>⁢</m:mo>
+                  <m:msubsup>
+                    <m:mi>E</m:mi>
+                    <m:mn>0</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:msubsup>
+                  <m:mo>⁢</m:mo>
+                  <m:mtext>.</m:mtext>
+                </m:mrow>
+              </m:math>
+            </equation>
+            <para id="eip-idm214427232">Amplituda natężenia pola elektrycznego wynosi więc</para>
+            <equation id="fs-id1167582483527" class="unnumbered"><label/>
+              <m:math display="block">
+                <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:msqrt>
+                  <m:mfrac>
+                    <m:mn>2</m:mn>
+                    <m:mrow>
+                      <m:mi>c</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:msub>
+                        <m:mi>ε</m:mi>
+                        <m:mn>0</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>I</m:mi>
+                </m:msqrt>
+                <m:mo>=</m:mo>
+                <m:msqrt>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>2</m:mn>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>3</m:mn>
+                            <m:mo>⋅</m:mo>
+                            <m:msup>
+                              <m:mn>10</m:mn>
+                              <m:mn>8</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mo>∕</m:mo>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo>⋅</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>8,85</m:mn>
+                            <m:mo>⋅</m:mo>
+                            <m:msup>
+                              <m:mn>10</m:mn>
+                              <m:mrow><m:mo>−</m:mo><m:mn>12</m:mn></m:mrow>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">F</m:mi>
+                            <m:mo>∕</m:mo>
+                            <m:mi mathvariant="normal">m</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">W</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:msup>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:msqrt>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>0,87</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">V</m:mi>
+                      <m:mo>∕</m:mo>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>⁢</m:mo>
+                  <m:mtext>.</m:mtext>
+                </m:mrow>
+              </m:math>
+            </equation><para id="eip-idm565509120">Amplituda indukcji magnetycznej może być obliczona z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" document="m67238" target-id="fs-id1171241429995" cmlnle:case="genitive"/>
+            </para><equation id="fs-id1171242611644" class="unnumbered"><label/>
+              <m:math display="block">
+                <m:msub>
+                  <m:mi>B</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:msub>
+                    <m:mi>E</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mi>c</m:mi>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>2,9</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mrow><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                    <m:mi mathvariant="normal">T</m:mi>
+                  </m:mrow>
+                  <m:mo>⁢</m:mo>
+                  <m:mtext>.</m:mtext>
+                </m:mrow>
+              </m:math>
+            </equation></example>
+          <example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171239838901">
+            <para id="fs-id1171242408743"><title>Pola żarówki</title>Żarówka emituje światło o mocy <m:math display="inline">
+                <m:mn>5</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">W</m:mi>
+              </m:math>. Ile wynosi średnie natężenie pola elektrycznego, a ile wartość indukcji magnetycznej tego światła w odległości <m:math display="inline">
+              <m:mn>3</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">m</m:mi>
+              </m:math> od żarówki?</para><para id="fs-id1171242105224"><title>Strategia rozwiązania</title>Do obliczenia natężenia światła załóżmy, że żarówka emituje światło o mocy <m:math display="inline">
+                  <m:mi>P</m:mi>
+                </m:math> izotropowo do wnętrza sfery o promieniu <m:math display="inline">
+                <m:mn>3</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+                </m:math>. Z natężenia światła możemy następnie wyliczyć amplitudę natężenia pola elektrycznego.</para><media id="fs-id1171242172415" alt="Rysunek przedstawia palącą się żarówkę w centrum strefy oświetlenia. Promień strefy ma 3 m.">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_33_03_Lightbulb_img.jpg"/>
+                </media>
+                <para id="fs-id1171240153273"><title>Rozwiązanie</title>Moc emitowana w postaci światła wynosi</para><equation id="fs-id1171239846457" class="unnumbered"><label/>
+                    <m:math display="block">
+                      <m:mtable>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mi>I</m:mi>
+                            <m:maligngroup/>
+                            <m:mo>=</m:mo>
+                            <m:mfrac>
+                              <m:mi>P</m:mi>
+                              <m:mrow>
+                                <m:mn>4</m:mn>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>π</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:msup>
+                                  <m:mi>r</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                              </m:mrow>
+                            </m:mfrac>
+                            <m:mo>=</m:mo>
+                            <m:mrow>
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:mi>c</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:msub>
+                                    <m:mi>ε</m:mi>
+                                    <m:mn>0</m:mn>
+                                  </m:msub>
+                                  <m:mo>⁢</m:mo>
+                                  <m:msubsup>
+                                    <m:mi>E</m:mi>
+                                    <m:mn>0</m:mn>
+                                    <m:mn>2</m:mn>
+                                  </m:msubsup>
+                                </m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mfrac>
+                              <m:mo>⁢</m:mo>
+                              <m:mtext>,</m:mtext>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:msub>
+                              <m:mi>E</m:mi>
+                              <m:mn>0</m:mn>
+                            </m:msub>
+                            <m:maligngroup/>
+                            <m:mo>=</m:mo>
+                            <m:msqrt>
+                              <m:mn>2</m:mn>
+                              <m:mo>⁢</m:mo>
+                              <m:mfrac>
+                                <m:mi>P</m:mi>
+                                <m:mrow>
+                                  <m:mn>4</m:mn>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>π</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:msup>
+                                    <m:mi>r</m:mi>
+                                    <m:mn>2</m:mn>
+                                  </m:msup>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>c</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:msub>
+                                    <m:mi>ε</m:mi>
+                                    <m:mn>0</m:mn>
+                                  </m:msub>
+                                </m:mrow>
+                              </m:mfrac>
+                            </m:msqrt>
+                            <m:mo>=</m:mo>
+                            <m:msqrt>
+                              <m:mn>2</m:mn>
+                              <m:mo>⁢</m:mo>
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:mn>5</m:mn>
+                                  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                                  <m:mi mathvariant="normal">W</m:mi>
+                                </m:mrow>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mn>4</m:mn>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi>π</m:mi>
+                                  </m:mrow>
+                                  <m:mo>⋅</m:mo>
+                                  <m:msup>
+                                    <m:mfenced>
+                                      <m:mrow>
+                                        <m:mn>3</m:mn>
+                                        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                                        <m:mi mathvariant="normal">m</m:mi>
+                                      </m:mrow>
+                                    </m:mfenced>
+                                    <m:mn>2</m:mn>
+                                  </m:msup>
+                                  <m:mo>⋅</m:mo>
+                                  <m:mrow>
+                                    <m:mrow>
+                                      <m:mn>3</m:mn>
+                                      <m:mo>⋅</m:mo>
+                                      <m:msup>
+                                        <m:mn>10</m:mn>
+                                        <m:mn>8</m:mn>
+                                      </m:msup>
+                                    </m:mrow>
+                                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                                    <m:mrow>
+                                      <m:mi mathvariant="normal">m</m:mi>
+                                      <m:mo>∕</m:mo>
+                                      <m:mi mathvariant="normal">s</m:mi>
+                                    </m:mrow>
+                                  </m:mrow>
+                                  <m:mo>⋅</m:mo>
+                                  <m:mrow>
+                                    <m:mrow>
+                                      <m:mn>8,85</m:mn>
+                                      <m:mo>⋅</m:mo>
+                                      <m:msup>
+                                        <m:mn>10</m:mn>
+                                        <m:mrow><m:mo>−</m:mo><m:mn>12</m:mn></m:mrow>
+                                      </m:msup>
+                                    </m:mrow>
+                                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                                    <m:mrow>
+                                      <m:msup>
+                                        <m:mi mathvariant="normal">C</m:mi>
+                                        <m:mn>2</m:mn>
+                                      </m:msup>
+                                      <m:mo>∕</m:mo>
+                                      <m:mfenced>
+                                        <m:mrow>
+                                          <m:mi mathvariant="normal">N</m:mi>
+                                          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                                          <m:msup>
+                                            <m:mi mathvariant="normal">m</m:mi>
+                                            <m:mn>2</m:mn>
+                                          </m:msup>
+                                        </m:mrow>
+                                      </m:mfenced>
+                                    </m:mrow>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mfrac>
+                            </m:msqrt>
+                            <m:mo>=</m:mo>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mn>5,77</m:mn>
+                                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                                <m:mrow>
+                                  <m:mi mathvariant="normal">V</m:mi>
+                                  <m:mo>∕</m:mo>
+                                  <m:mi mathvariant="normal">m</m:mi>
+                                </m:mrow>
+                              </m:mrow>
+                              <m:mo>⁢</m:mo>
+                              <m:mtext>,</m:mtext>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:msub>
+                              <m:mi>B</m:mi>
+                              <m:mn>0</m:mn>
+                            </m:msub>
+                            <m:maligngroup/>
+                            <m:mo>=</m:mo>
+                            <m:mfrac>
+                              <m:msub>
+                                <m:mi>E</m:mi>
+                                <m:mn>0</m:mn>
+                              </m:msub>
+                              <m:mi>c</m:mi>
+                            </m:mfrac>
+                            <m:mo>=</m:mo>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mn>1,92</m:mn>
+                                  <m:mo>⋅</m:mo>
+                                  <m:msup>
+                                    <m:mn>10</m:mn>
+                                    <m:mrow><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow>
+                                  </m:msup>
+                                </m:mrow>
+                                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                                <m:mi mathvariant="normal">T</m:mi>
+                              </m:mrow>
+                              <m:mo>⁢</m:mo>
+                              <m:mtext>.</m:mtext>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                      </m:mtable>
+                    </m:math>
+                  </equation><para id="fs-id1171242479138"><title>Znaczenie</title>Natężenie <m:math display="inline">
+                      <m:mi>I</m:mi>
+                      </m:math> maleje jak kwadrat odległości, jeśli promieniowanie jest emitowane jednakowo we wszystkich kierunkach.</para></example>
+                    <example id="fs-id1171240283503">
+                      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242228461"><title>Zasięg radia</title>Nadajnik radiowy o mocy <m:math display="inline">
+                          <m:mn>60</m:mn>
+                          <m:mo>⁢</m:mo>
+                          <m:mi mathvariant="normal">kW</m:mi>
+                        </m:math> na Ziemi wysyła sygnały do satelity odległego o <m:math display="inline">
+                        <m:mn>100</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi mathvariant="normal">km</m:mi>
+                      </m:math> (<link target-id="CNX_UPhysics_33_03_SolidAngle"/>). Jeśli moc nadajnika wzrosłaby do <m:math display="inline">
+                      <m:mn>90</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mi mathvariant="normal">kW</m:mi>
+                      </m:math>, to w jakiej odległości od źródła sygnał będzie generował pole o tej samej amplitudzie natężenia energii, zakładając, że sygnał wysyłany będzie w tym samym kierunku co poprzednio?</para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_33_03_SolidAngle">
+                        <media id="fs-id1171242359289" alt="Mamy punkt oznaczony jako źródło radiacji. Mały kwadrat oznaczony jako A1 leży w ścieżce linii promieniowania dochodzących od źródła radiacji. Linie przedłużają się z wierzchołka A1 i docierają do nieco większego kwadratu A2. A1 znajduje się w odległości r1 od źródła, a A2 w odległości r2. ">
+                          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_33_03_SolidAngle.jpg"/>
+                        </media>
+                        <caption>W przestrzeni trójwymiarowej sygnał wysyłany przez źródło rozprzestrzenia się wewnątrz kąta bryłowego.</caption>
+                      </figure>
+                      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242155523"><title>Strategia rozwiązania</title>Pole powierzchni, na którym rozpraszana jest moc sygnału kierunkowego, zwiększa się z kwadratem odległości, jak pokazano na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_33_03_SolidAngle" cmlnle:case="locative"/>. Powiększymy moc (<m:math display="inline">
+                          <m:mn>90</m:mn>
+                          <m:mo>⁢</m:mo>
+                          <m:mi mathvariant="normal">kW</m:mi>
+                        </m:math>/<m:math display="inline">
+                        <m:mn>60</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi mathvariant="normal">kW</m:mi>
+                      </m:math>) razy, wartość pola powierzchni zwiększymy w podobny sposób, by zachować stosunek <m:math display="inline">
+                      <m:mi>I</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mi>P</m:mi>
+                        <m:mo>∕</m:mo>
+                        <m:mi>A</m:mi>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>c</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:msub>
+                            <m:mi>ε</m:mi>
+                            <m:mn>0</m:mn>
+                          </m:msub>
+                          <m:mo>⁢</m:mo>
+                          <m:msubsup>
+                            <m:mi>E</m:mi>
+                            <m:mn>0</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:msubsup>
+                        </m:mrow>
+                        <m:mo>∕</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    </m:math>. Następnie użyjemy proporcji pomiędzy powierzchnią <m:math display="inline">
+                    <m:mi>A</m:mi>
+                    </m:math> na rysunku a odległością podniesioną do kwadratu, by znaleźć odległość, dla której powierzchnia jest taka sama jak wyliczona wcześniej.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242413699">
+                      <title>Rozwiązanie</title>Korzystając z proporcjonalności pola powierzchni do kwadratu odległości i przekształcając równanie, otrzymamy</para>
+                      <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170901629480" class="unnumbered"><label/>
+                        <m:math display="block">
+                          <m:mtable>
+                            <m:mtr>
+                              <m:mtd>
+                                <m:mfrac>
+                                  <m:msubsup>
+                                    <m:mi>r</m:mi>
+                                    <m:mn>2</m:mn>
+                                    <m:mn>2</m:mn>
+                                  </m:msubsup>
+                                  <m:msubsup>
+                                    <m:mi>r</m:mi>
+                                    <m:mn>1</m:mn>
+                                    <m:mn>2</m:mn>
+                                  </m:msubsup>
+                                </m:mfrac>
+                                <m:maligngroup/>
+                                <m:mo>=</m:mo>
+                                <m:mfrac>
+                                  <m:msub>
+                                    <m:mi>A</m:mi>
+                                    <m:mn>2</m:mn>
+                                  </m:msub>
+                                  <m:msub>
+                                    <m:mi>A</m:mi>
+                                    <m:mn>1</m:mn>
+                                  </m:msub>
+                                </m:mfrac>
+                                <m:mo>=</m:mo>
+                                <m:mrow>
+                                  <m:mfrac>
+                                    <m:mrow>
+                                      <m:mn>90</m:mn>
+                                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                                      <m:mi mathvariant="normal">W</m:mi>
+                                    </m:mrow>
+                                    <m:mrow>
+                                      <m:mn>60</m:mn>
+                                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                                      <m:mi mathvariant="normal">W</m:mi>
+                                    </m:mrow>
+                                  </m:mfrac>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mtext>,</m:mtext>
+                                </m:mrow>
+                              </m:mtd>
+                            </m:mtr>
+                            <m:mtr>
+                              <m:mtd>
+                                <m:msub>
+                                  <m:mi>r</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msub>
+                                <m:maligngroup/>
+                                <m:mo>=</m:mo>
+                                <m:mrow>
+                                  <m:msqrt>
+                                    <m:mfrac>
+                                      <m:mn>90</m:mn>
+                                      <m:mn>60</m:mn>
+                                    </m:mfrac>
+                                  </m:msqrt>
+                                  <m:mo>⋅</m:mo>
+                                  <m:mrow>
+                                    <m:mn>100</m:mn>
+                                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                                    <m:mi mathvariant="normal">km</m:mi>
+                                  </m:mrow>
+                                </m:mrow>
+                                <m:mo>=</m:mo>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mn>122</m:mn>
+                                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                                    <m:mi mathvariant="normal">km</m:mi>
+                                  </m:mrow>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mtext>.</m:mtext>
+                                </m:mrow>
+                              </m:mtd>
+                            </m:mtr>
+                          </m:mtable>
+                        </m:math>
+                      </equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242340458">
+                        <title>Znaczenie</title>Zasięg nadajnika radiowego to maksymalna odległość pomiędzy nadajnikiem i odbiornikiem, która jeszcze pozwala na prawidłowy przebieg komunikacji. W przypadku braku zakłóceń, takich jak odbicia od przeszkód, natężenie podlega prawu odwrotnych kwadratów. Oznacza to, że podwojenie zasięgu wymaga czterokrotnego zwiększenia mocy nadajnika.</para>
+                      </example>
+                      <section id="fs-id1171242456256" class="key-concepts">
+                        <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Podsumowanie</title>
+                        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-idm260391232">
+                          <list id="fs-id1171242517585" list-type="bulleted" bullet-style="bullet"><item>	Energia niesiona przez falę elektromagnetyczną jest proporcjonalna do kwadratu amplitudy. Dla fal elektromagnetycznych oznacza to, że ich natężenie wyrażone jest wzorem <m:math display="inline"><m:mi>I</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:msubsup><m:mi>E</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:math>, gdzie <m:math display="inline">
+                            <m:mi>I</m:mi>
+                          </m:math> jest średnim natężeniem wyrażonym w <m:math display="inline">
+                          <m:mi mathvariant="normal">W</m:mi>
+                          <m:mo>∕</m:mo>
+                          <m:msup>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:math>, a <m:math display="inline">
+                        <m:msub>
+                          <m:mi>E</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:math> jest amplitudą pola elektrycznego oscylującego sinusoidalnie. Równoważnie, natężenie może zostać również wyrażone przez maksymalną wartość indukcji magnetycznej jako <m:math display="inline"><m:mi>I</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:msubsup><m:mi>B</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfenced></m:mrow></m:math> albo przez amplitudę pól magnetycznego i elektrycznego jako <m:math display="inline"><m:mi>I</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:msub><m:mi>E</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:msub><m:mi>B</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfenced></m:mrow></m:math>. Wszystkie trzy powyższe równania na <m:math display="inline">
+                  <m:mi>I</m:mi>
+                  </m:math> są równoważne.</item>
+                </list></para>
+            </section>
+            <section id="fs-id1171240053962" class="review-conceptual-questions">
+              <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Pytania</title>
+              <exercise id="fs-id1171242355872">
+                <problem id="fs-id1171242469779">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242502683">Dlaczego, gdy stoisz na dworze w pełnym Słońcu, czujesz energię światła słonecznego, ale nie czujesz pędu przenoszonego przez to światło?</para></problem>
+                <solution id="fs-id1171242448224">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242366683">Ilość energii dostarczanej przez światło słoneczne (około <m:math display="inline"><m:semantics><m:mrow><m:mn>1000</m:mn><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">W</m:mi><m:mo>∕</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{1000}{\watt\per\squared\metre}</m:annotation></m:semantics></m:math>) jest wystarczająca, by szybko spowodować zauważalną zmianę temperatury powierzchni, na którą światło pada. Ciśnienie wywierane na tę samą powierzchnię (około <m:math display="inline">
+                  <m:mrow>
+                    <m:mn>3</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">N</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:msup>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  </m:math>) jest zbyt małe, abyśmy mogli je odczuć.</para></solution>
+              </exercise>
+              <exercise id="fs-id1171242169995">
+                <problem id="fs-id1171242156968">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242528032">Jak natężenie fali elektromagnetycznej zależy od natężenia pola elektrycznego? Jak zależy ono od natężenia pola magnetycznego?</para>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1171242366776">
+                <problem id="fs-id1171242557970">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242557973">Jakie jest fizyczne znaczenie wektora Poyntinga?</para>
+                </problem>
+                <solution id="fs-id1171242522614">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242522616">Jego wartość jest równa gęstości strumienia energii, a jego kierunek wskazuje na kierunek rozchodzenia się fali. Opisuje on kierunek przepływu energii fali elektromagnetycznej i ilość energii na jednostkę powierzchni, przenoszoną przez falę w jednostce czasu.</para></solution>
+              </exercise>
+              <exercise id="fs-id1171242367061">
+                <problem id="fs-id1171239828028">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242574803">Laser helowo-neonowy o mocy <m:math display="inline">
+                    <m:mn>2</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi mathvariant="normal">mW</m:mi>
+                  </m:math> emituje stały promień czerwonego światła o powierzchni przekroju poprzecznego równej <m:math display="inline">
+                  <m:mn>0,25</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">cm</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  </m:math>. Zakładając, że wiązka nie rozbiega się znacząco, jak zmienia się wartość skuteczna natężenia pola elektrycznego w zależności od odległości od lasera? Wyjaśnij dlaczego.</para></problem>
+              </exercise>
+            </section>
+            <section id="fs-id1171242092483" class="review-problems">
+              <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Zadania</title>
+              <exercise id="fs-id1171240157941">
+                <problem id="fs-id1171240157943">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242428917">W słoneczny dzień pewien student wychodzi na dwór, trzymając soczewkę dwuwypukłą o promieniu <m:math display="inline">
+                    <m:mn>4</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi mathvariant="normal">cm</m:mi>
+                  </m:math> nad kartką papieru. Na papierze pojawia się jasna plamka o promieniu <m:math display="inline">
+                  <m:mn>1</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi mathvariant="normal">cm</m:mi>
+                  </m:math> (zamiast zwyczajowego punktowego ogniska). Jaki jest stosunek natężeń pola elektrycznego w jasnej plamce do pola nieskupionego światła słonecznego?</para></problem>
+              </exercise>
+              <exercise id="fs-id1171242539584">
+                <problem id="fs-id1171242539587">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242344124">Płaska fala elektromagnetyczna przemieszcza się w kierunku północnym. W pewnym momencie natężenie pola elektrycznego wynosi <m:math display="inline">
+                    <m:mn>6</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">V</m:mi>
+                      <m:mo>∕</m:mo>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                    </m:math>, a jego wektor skierowany jest na wschód. Ile wynosi wartość indukcji magnetycznej i jaki jest zwrot jej wektora?</para></problem>
+                  <solution id="fs-id1171242344127">
+                    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242137715">Jego wartość skierowana jest w dół i ma wartość <m:math display="inline">
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mrow><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                      <m:mi mathvariant="normal">T</m:mi>
+                      </m:math>.</para></solution>
+                  </exercise>
+                  <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242551529">
+                    <problem id="fs-id1171240174140">
+                      <para id="fs-id1171240174142">Pole elektryczne fali elektromagnetycznej dane jest wyrażeniem <m:math display="inline"><m:semantics><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>6</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>-3</m:mn></m:msup></m:mrow><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">V</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>sin</m:mo><m:mrow><m:mfenced open="[" close="]"><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mfenced><m:mrow><m:mfrac><m:mi>x</m:mi><m:mrow><m:mn>18</m:mn><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mi>t</m:mi><m:mrow><m:mrow><m:mn>6</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>-8</m:mn></m:msup></m:mrow><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mfrac></m:mrow></m:mfenced></m:mrow></m:mfenced><m:mo>⋅</m:mo><m:mover><m:mi>j</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \vec{E}=\SI{6e-3}{\volt\per\metre}\cdot\sin[2\pi(\frac{x}{\SI{18}{\metre}}-\frac{t}{\SI{6e-8}{\second}})]\cdot\hat{j}</m:annotation></m:semantics></m:math>. Zapisz wyrażenie opisujące pole magnetyczne tej fali i jej wektor Poyntinga.</para></problem>
+                  </exercise>
+                  <exercise id="fs-id1171242431518">
+                    <problem id="fs-id1171242431520">
+                      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242431522">Pewna radiostacja nadaje na częstotliwości nośnej <m:math display="inline">
+                        <m:mn>760</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi mathvariant="normal">kHz</m:mi>
+                      </m:math>. Maksymalna wartość indukcji magnetycznej tej fali w odbiorniku w pewnej odległości od nadajnika wynosi <m:math display="inline">
+                      <m:mrow>
+                        <m:mn>2,15</m:mn>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mrow><m:mo>−</m:mo><m:mn>11</m:mn></m:mrow>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                      <m:mi mathvariant="normal">T</m:mi>
+                    </m:math>.<list id="eip-idm308784336" list-type="enumerated" number-style="lower-alpha">
+                    <item>Ile wynosi w tym odbiorniku maksymalne natężenie pola elektrycznego tej fali?</item>
+                    <item>Jaka jest długość tej fali?</item>
+                  </list>
+                </para></problem>
+              <solution id="fs-id1171242114360">
+                <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242114362">a. <m:math display="inline">
+                  <m:mrow>
+                    <m:mn>6,45</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">V</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                </m:math>; b. <m:math display="inline">
+                <m:mn>394</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+                </m:math>.</para></solution>
+            </exercise>
+            <exercise id="fs-id1171242164209">
+              <problem id="fs-id1171242164211">
+                <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242525673">Żarnik wewnątrz przezroczystej żarówki emituje światło widzialne o mocy <m:math display="inline">
+                  <m:mn>5</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                  <m:mi mathvariant="normal">W</m:mi>
+                </m:math>. Załóż, że żarówka ma postać kuli o promieniu <m:math display="inline">
+                <m:msub>
+                  <m:mi>r</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi mathvariant="normal">cm</m:mi>
+                </m:mrow>
+                </m:math> i oblicz, jaka ilość energii pochodzącej od światła widzialnego znajduje się wewnątrz żarówki.</para></problem>
+            </exercise>
+            <exercise id="fs-id1171242361457">
+              <problem id="fs-id1171239825179">
+                <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171239825181">W jakiej odległości natężenie światła emitowanego przez 100-watową żarówkę jest takie samo jak natężenie światła emitowanego przez 75-watową żarówkę w odległości <m:math display="inline">
+                  <m:mn>10</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  </m:math>? Załóż, że obie żarówki mają tą samą sprawność konwersji energii elektrycznej w energię świetlną.</para></problem>
+                <solution id="fs-id1171242528002">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242528004"><m:math display="inline">
+                      <m:mn>11,5</m:mn>
+                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      </m:math>.</para></solution>
+                  </exercise>
+                  <exercise id="fs-id1171242532548">
+                    <problem id="fs-id1171242532550">
+                      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242576251">Zwykła żarówka emituje jedynie <m:math display="inline">
+                        <m:mn>2,6</m:mn>
+                        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                        <m:mi mathvariant="normal">W</m:mi>
+                      </m:math> mocy jako promieniowanie elektromagnetyczne. Ile będzie wynosić wartość skuteczna natężenia pola elektrycznego promieniowania emitowanego przez żarówkę w odległości <m:math display="inline">
+                      <m:mn>3</m:mn>
+                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      </m:math> od żarówki?</para></problem>
+                  </exercise>
+                  <exercise id="fs-id1171242411876">
+                    <problem id="fs-id1171242411878">
+                      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242347677">150-watowa żarówka emituje <m:math display="inline">
+                        <m:mn>5</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi mathvariant="normal">%</m:mi>
+                      </m:math> pobieranej energii w postaci promieniowania elektromagnetycznego. Ile będzie wynosiła średnia wartość wektora Poyntinga w odległości <m:math display="inline">
+                      <m:mn>10</m:mn>
+                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      </m:math> od tej żarówki?</para></problem>
+                    <solution id="fs-id1171242375717">
+                      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242375719"><m:math display="inline">
+                          <m:mrow>
+                            <m:mn>5,97</m:mn>
+                            <m:mo>⋅</m:mo>
+                            <m:msup>
+                              <m:mn>10</m:mn>
+                              <m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">W</m:mi>
+                            <m:mo>∕</m:mo>
+                            <m:msup>
+                              <m:mi mathvariant="normal">m</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                          </m:math>.</para></solution>
+                      </exercise>
+                      <exercise id="fs-id1171242466690">
+                        <problem id="fs-id1171242466692">
+                          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242483096">Mały laser helowo-neonowy emituje <m:math display="inline">
+                            <m:mn>2,5</m:mn>
+                            <m:mo>⁢</m:mo>
+                            <m:mi mathvariant="normal">mW</m:mi>
+                          </m:math> mocy świetlnej. Jaka energia zawarta jest w promieniu światła o długości <m:math display="inline">
+                          <m:mn>1</m:mn>
+                          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          </m:math>?</para></problem>
+                      </exercise>
+                      <exercise id="fs-id1171242092064">
+                        <problem id="fs-id1171242502572">
+                          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242502574">W najwyższych partiach ziemskiej atmosfery uśredniona po czasie wartość wektora Poyntinga związanego ze światłem słonecznym wynosi <m:math display="inline">
+                            <m:mn>1,4</m:mn>
+                            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">kW</m:mi>
+                              <m:mo>∕</m:mo>
+                              <m:msup>
+                                <m:mi mathvariant="normal">m</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                            </m:mrow>
+                          </m:math>.<list id="eip-idm253190976" list-type="enumerated" number-style="lower-alpha"><item>Ile wynoszą amplitudy natężenia pola elektrycznego i indukcji magnetycznej dla promieniowania o takim samym natężeniu?</item>
+                          <item>Ile wynosi całkowita moc emitowana przez Słońce? Przyjmij, że Ziemia znajduje się <m:math display="inline">
+                            <m:mrow>
+                              <m:mn>1,5</m:mn>
+                              <m:mo>⋅</m:mo>
+                              <m:msup>
+                                <m:mn>10</m:mn>
+                                <m:mn>11</m:mn>
+                              </m:msup>
+                            </m:mrow>
+                            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            </m:math> od Słońca, a światło słoneczne złożone jest całkowicie z fal płaskich.</item>
+                          </list></para></problem>
+                      <solution id="fs-id1171242346093">
+                        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242346095">a. <m:math display="inline">
+                          <m:msub>
+                            <m:mi>E</m:mi>
+                            <m:mn>0</m:mn>
+                          </m:msub>
+                          <m:mo>=</m:mo>
+                          <m:mrow>
+                            <m:mn>1027</m:mn>
+                            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">V</m:mi>
+                              <m:mo>∕</m:mo>
+                              <m:mi mathvariant="normal">m</m:mi>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:math>, <m:math display="inline">
+                        <m:msub>
+                          <m:mi>B</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>3,42</m:mn>
+                            <m:mo>⋅</m:mo>
+                            <m:msup>
+                              <m:mn>10</m:mn>
+                              <m:mrow><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                          <m:mi mathvariant="normal">T</m:mi>
+                        </m:mrow>
+                      </m:math>; b. <m:math display="inline">
+                      <m:mrow>
+                        <m:mn>3,96</m:mn>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mn>26</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                      <m:mi mathvariant="normal">W</m:mi>
+                      </m:math>.</para></solution>
+                  </exercise>
+                  <exercise id="fs-id1171242448084">
+                    <problem id="fs-id1171242448086">
+                      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242443597">Pole magnetyczne elektromagnetycznej fali płaskiej, rozchodzącej się w próżni wzdłuż osi <m:math display="inline">
+                        <m:mi>z</m:mi>
+                      </m:math>, dane jest wyrażeniem <m:math display="inline">
+                      <m:mover>
+                        <m:mi>B</m:mi>
+                        <m:mo>→</m:mo>
+                      </m:mover>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>B</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mo>cos</m:mo>
+                          <m:mrow>
+                            <m:mfenced>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mi>k</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>z</m:mi>
+                                </m:mrow>
+                                <m:mo>+</m:mo>
+                                <m:mrow>
+                                  <m:mi>ω</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>t</m:mi>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mfenced>
+                            <m:mo>⁢</m:mo>
+                            <m:mover>
+                              <m:mi>j</m:mi>
+                              <m:mo>̂</m:mo>
+                            </m:mover>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:math>, gdzie <m:math display="inline">
+                    <m:msub>
+                      <m:mi>B</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mrow><m:mo>−</m:mo><m:mn>10</m:mn></m:mrow>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                      <m:mi mathvariant="normal">T</m:mi>
+                    </m:mrow>
+                  </m:math>, a <m:math display="inline">
+                  <m:mi>k</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>3,14</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mrow><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                    <m:msup>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>.<list id="eip-idm1125880800" list-type="enumerated" number-style="lower-alpha">
+                <item>Zapisz wyrażenie na natężenie pola elektrycznego związanego z tą falą;</item>
+                <item>Ile wynosi częstotliwość tej fali i jej długość?</item>
+                <item>Ile wynosi wartość uśrednionego wektora Poyntinga?</item>
+              </list>
+            </para></problem>
+        </exercise>
+        <exercise id="fs-id1171242352995">
+          <problem id="fs-id1171240241267">
+            <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171240241269">Ile wynosi natężenie fali elektromagnetycznej, dla której amplituda natężenia pola elektrycznego to <m:math display="inline">
+              <m:mn>125</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mrow>
+                <m:mi mathvariant="normal">V</m:mi>
+                <m:mo>∕</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              </m:math>?</para></problem>
+            <solution id="fs-id1171240241273">
+              <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242438862"><m:math display="inline">
+                  <m:mn>20,8</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">W</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:msup>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  </m:math>.</para></solution>
+              </exercise>
+              <exercise id="fs-id1171240245064">
+                <problem id="fs-id1171240245067">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171240245069">Załóż, że laser helowo-neonowy, zwyczajowo używany przez studentów na zajęciach laboratoryjnych, emituje moc <m:math display="inline">
+                    <m:mn>0,5</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi mathvariant="normal">mW</m:mi>
+                  </m:math>.<list id="eip-idm395992064" list-type="enumerated" number-style="lower-alpha">
+                  <item>Ile wyniesie natężenie światła w centrum plamki o średnicy <m:math display="inline">
+                    <m:mn>1</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi mathvariant="normal">mm</m:mi>
+                    </m:math> utworzonej przez taką wiązkę?</item>
+                    <item>Znajdź amplitudę indukcji magnetycznej dla tej wiązki;</item>
+                    <item>Znajdź amplitudę natężenia pola elektrycznego dla tej wiązki.</item>
+                  </list>
+                </para></problem>
+            </exercise>
+            <exercise id="fs-id1171240174365">
+              <problem id="fs-id1171240174367">
+                <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171240174370">Naziemny nadajnik radiowy w technologii AM emituje fale elektromagnetyczne o mocy <m:math display="inline">
+                  <m:mn>50</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi mathvariant="normal">kW</m:mi>
+                </m:math> równomiernie we wszystkich kierunkach.<list id="eip-idm173820080" list-type="enumerated" number-style="lower-alpha"><item>Zakładając, że wszystkie fale radiowe padające na ziemię są całkowicie absorbowane i że atmosfera i inne obiekty nie powodują rozpraszania energii fal, ile będzie wynosiło natężenie tych fal w odległości <m:math display="inline">
+                  <m:mn>30</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi mathvariant="normal">km</m:mi>
+                  </m:math> od nadajnika? (Wskazówka: Na górną półkulę przypada połowa mocy nadajnika);</item>
+                  <item>Ile wynosi amplituda natężenia pola elektrycznego w tej odległości?</item>
+                </list></para></problem>
+            <solution id="fs-id1171240157845">
+              <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171240056679">a. <m:math display="inline">
+                <m:mrow>
+                  <m:mn>4,42</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow>
+                  </m:msup>
+                </m:mrow>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mrow>
+                  <m:mi mathvariant="normal">W</m:mi>
+                  <m:mo>∕</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:math>; b. <m:math display="inline">
+              <m:mrow>
+                <m:mn>5,77</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+                </m:msup>
+              </m:mrow>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mrow>
+                <m:mi mathvariant="normal">V</m:mi>
+                <m:mo>∕</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              </m:math>.</para></solution>
+          </exercise>
+          <exercise id="fs-id1171242430038">
+            <problem id="fs-id1171242430040">
+              <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171240035278">Przyjmijmy, że maksymalne bezpieczne dla człowieka natężenie mikrofal wynosi <m:math display="inline">
+                <m:mn>1</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mrow>
+                  <m:mi mathvariant="normal">W</m:mi>
+                  <m:mo>∕</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:math>.<list id="eip-idm353769024" list-type="enumerated" number-style="lower-alpha">
+              <item>Jaka odległość będzie bezpieczna dla człowieka, jeśli z radaru „wycieka” jednorodnie we wszystkich kierunkach <m:math display="inline">
+                <m:mn>10</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">W</m:mi>
+                </m:math> mocy promieniowania mikrofalowego? Załóż, że nie występują żadne odbicia ani absorpcje;</item>
+                <item>Ile wynosi amplituda pola elektrycznego przy bezpiecznym natężeniu?</item>
+              </list>
+            </para></problem>
+        </exercise>
+        <exercise id="fs-id1171242357814">
+          <problem id="fs-id1171242357816">
+            <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242357818">Uniwersytecki talerz do komunikacji satelitarnej ma średnicę <m:math display="inline">
+              <m:mn>2,5</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:math> i służy do odbioru sygnału telewizyjnego o amplitudzie natężenia pola elektrycznego (dla pojedynczego kanału) równej <m:math display="inline">
+            <m:mn>7,5</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mrow>
+              <m:mi mathvariant="normal">µV</m:mi>
+              <m:mo>∕</m:mo>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+          </m:math> (patrz niżej).<list id="eip-idm168573760" list-type="enumerated" number-style="lower-alpha"><item>Ile wynosi natężenie tej fali?</item>
+          <item>Jaka jest moc odbierana przez tę antenę?</item>
+          <item>Jaką moc emituje satelita, jeśli nadaje sygnał jednorodnie na całej powierzchni <m:math display="inline">
+            <m:mrow>
+              <m:mn>1,5</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>13</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:msup>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            </m:math> (znaczna część Ameryki Północnej)?</item>
+          </list></para><media id="fs-id1171242485223" alt="Rysunek pokazujący fale uderzające w czaszę anteny. ">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_33_03_Dish_img.jpg"/>
+        </media>
+      </problem>
+      <solution id="fs-id1171240219486">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171240219488">a. <m:math display="inline">
+          <m:mrow>
+            <m:mn>7,47</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow><m:mo>−</m:mo><m:mn>14</m:mn></m:mrow>
+            </m:msup>
+          </m:mrow>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">W</m:mi>
+            <m:mo>∕</m:mo>
+            <m:msup>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:math>; b. <m:math display="inline">
+        <m:mrow>
+          <m:mn>3,66</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mrow><m:mo>−</m:mo><m:mn>13</m:mn></m:mrow>
+          </m:msup>
+        </m:mrow>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">W</m:mi>
+      </m:math>; c. <m:math display="inline">
+      <m:mn>1,12</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">W</m:mi>
+      </m:math>.</para></solution>
+  </exercise>
+  <exercise id="fs-id1171242407498">
+    <problem id="fs-id1171242407500">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242407502">Do pewnych zastosowań konstruuje się lasery zdolne do wytworzenia impulsu świetlnego o małym czasie trwania, ale bardzo dużym natężeniu. Lasery takie nazywa się impulsowymi. Używa się ich między innymi do inicjowania reakcji fuzji jądrowej. Takie lasery są zdolne do produkcji impulsów o amplitudzie pola elektrycznego równej <m:math display="inline">
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mn>11</m:mn>
+        </m:msup>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mrow>
+          <m:mi mathvariant="normal">V</m:mi>
+          <m:mo>∕</m:mo>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+      </m:math>, trwających <m:math display="inline">
+      <m:mn>1</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mi mathvariant="normal">ns</m:mi>
+    </m:math>.<list id="eip-idm806110576" list-type="enumerated" number-style="lower-alpha">
+    <item>Ile wynosi amplituda indukcji magnetycznej w takim impulsie?</item>
+    <item>Ile jest równe natężenie światła dla takiego impulsu?</item>
+    <item>Ile wynosi energia dostarczana przez taki impuls do obszaru o polu powierzchni <m:math display="inline">
+      <m:mn>1</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:msup>
+        <m:mi mathvariant="normal">mm</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      </m:math>?</item>
+    </list>
+  </para></problem>
+</exercise>
+</section>
+</content>
+<glossary>
+  <definition id="fs-id1171240142790">
+    <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="wektor Poyntinga">wektor Poyntinga (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">Poynting vector</term></foreign>)</term>
+      <meaning id="fs-id1171242454673">wektor będący wynikiem mnożenia wektorowego pól elektrycznego i magnetycznego, który opisuje przepływ energii przez powierzchnię</meaning>
+    </definition>
+  </glossary>
+</document>

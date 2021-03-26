@@ -1,0 +1,1683 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Analiza wymiarowa</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65736</md:content-id>
+  <md:title>Analiza wymiarowa</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>znajdować wymiary równania operującego na wielkościach fizycznych;</item>
+<item>określać, czy równanie jest wymiarowo spójne.</item>
+</list></md:abstract>
+  <md:uuid>a92852db-f0b2-4fe1-8555-c8767881c168</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1168328152648"><term class="no-emphasis" cmlnle:reference="wymiar">Wymiar</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">dimension</term></foreign>) wielkości fizycznej opisuje jej zależność od wielkości podstawowych. Wyraża się go za pomocą iloczynu lub potęgi tych wielkości. <link target-id="fs-id1168328269910"/> zawiera listę podstawowych wielkości fizycznych oraz symboli odpowiadających ich wymiarom. Mówi się na przykład, że pomiar długości ma wymiar L lub <m:math>
+      <m:msup>
+        <m:mtext>L</m:mtext>
+        <m:mn>1</m:mn>
+      </m:msup>
+    </m:math>, pomiar masy M lub <m:math>
+    <m:msup>
+      <m:mtext>M</m:mtext>
+      <m:mn>1</m:mn>
+    </m:msup>
+  </m:math>, a pomiar czasu T lub <m:math>
+  <m:msup>
+    <m:mtext>T</m:mtext>
+    <m:mn>1</m:mn>
+  </m:msup>
+</m:math>. Tak samo jak jednostki, na wymiarach można wykonywać działania algebraiczne. Dlatego pole powierzchni, będące iloczynem dwóch długości, ma wymiar <m:math>
+<m:msup>
+  <m:mtext>L</m:mtext>
+  <m:mn>2</m:mn>
+</m:msup>
+</m:math>, czyli długość do kwadratu. Objętość jest iloczynem trzech długości, a więc ma wymiar <m:math>
+<m:msup>
+  <m:mtext>L</m:mtext>
+  <m:mn>3</m:mn>
+</m:msup>
+</m:math>, czyli długość do potęgi trzeciej. Gęstość ma wymiar <m:math>
+<m:msup>
+  <m:mtext>M/L</m:mtext>
+  <m:mn>3</m:mn>
+</m:msup>
+</m:math> lub <m:math>
+<m:msup>
+  <m:mtext>ML</m:mtext>
+  <m:mrow>
+    <m:mo>−</m:mo>
+    <m:mn>3</m:mn>
+  </m:mrow>
+</m:msup>
+</m:math>, lub masa przez sześcian długości. Ogólnie rzecz biorąc, wymiar każdej wielkości fizycznej można zapisać w postaci <m:math>
+<m:mrow>
+  <m:msup>
+    <m:mtext>L</m:mtext>
+    <m:mi>a</m:mi>
+  </m:msup>
+  <m:msup>
+    <m:mtext>M</m:mtext>
+    <m:mi>b</m:mi>
+  </m:msup>
+  <m:msup>
+    <m:mtext>T</m:mtext>
+    <m:mi>c</m:mi>
+  </m:msup>
+  <m:msup>
+    <m:mtext>I</m:mtext>
+    <m:mi>d</m:mi>
+  </m:msup>
+  <m:msup>
+    <m:mtext>Θ</m:mtext>
+    <m:mi>e</m:mi>
+  </m:msup>
+  <m:msup>
+    <m:mtext>N</m:mtext>
+    <m:mi>f</m:mi>
+  </m:msup>
+  <m:msup>
+    <m:mtext>J</m:mtext>
+    <m:mi>g</m:mi>
+  </m:msup>
+</m:mrow>
+</m:math> dla potęg <m:math>
+<m:mi>a,</m:mi>
+</m:math> <m:math>
+<m:mi>b,</m:mi>
+</m:math> <m:math>
+<m:mi>c,</m:mi>
+</m:math> <m:math>
+<m:mi>d,</m:mi>
+</m:math> <m:math>
+<m:mi>e,</m:mi>
+</m:math> <m:math>
+<m:mi>f,</m:mi>
+</m:math> oraz <m:math>
+<m:mi>g</m:mi>
+</m:math>. Przyjmując, że <m:math>
+<m:mrow>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>1</m:mn>
+</m:mrow>
+</m:math>, a w miejscu pozostałych potęg podstawiając zero, możemy przedstawić wymiary długości: <m:math>
+<m:msup>
+  <m:mtext>L</m:mtext>
+  <m:mn>1</m:mn>
+</m:msup>
+<m:mo>=</m:mo>
+<m:msup>
+  <m:mtext>L</m:mtext>
+  <m:mn>1</m:mn>
+</m:msup>
+<m:msup>
+  <m:mtext>M</m:mtext>
+  <m:mn>0</m:mn>
+</m:msup>
+<m:msup>
+  <m:mtext>T</m:mtext>
+  <m:mn>0</m:mn>
+</m:msup>
+<m:msup>
+  <m:mtext>I</m:mtext>
+  <m:mn>0</m:mn>
+</m:msup>
+<m:msup>
+  <m:mtext>Θ</m:mtext>
+  <m:mn>0</m:mn>
+</m:msup>
+<m:msup>
+  <m:mtext>N</m:mtext>
+  <m:mn>0</m:mn>
+</m:msup>
+<m:msup>
+  <m:mtext>J</m:mtext>
+  <m:mn>0</m:mn>
+</m:msup>
+</m:math>. Każda wielkość, którą przedstawia się, za wszystkie potęgi podstawiając zero (to znaczy w następujący sposób: <m:math>
+<m:mrow>
+  <m:msup>
+    <m:mtext>L</m:mtext>
+    <m:mn>0</m:mn>
+  </m:msup>
+  <m:msup>
+    <m:mtext>M</m:mtext>
+    <m:mn>0</m:mn>
+  </m:msup>
+  <m:msup>
+    <m:mtext>T</m:mtext>
+    <m:mn>0</m:mn>
+  </m:msup>
+  <m:msup>
+    <m:mtext>I</m:mtext>
+    <m:mn>0</m:mn>
+  </m:msup>
+  <m:msup>
+    <m:mtext>Θ</m:mtext>
+    <m:mn>0</m:mn>
+  </m:msup>
+  <m:msup>
+    <m:mtext>N</m:mtext>
+    <m:mn>0</m:mn>
+  </m:msup>
+  <m:msup>
+    <m:mtext>J</m:mtext>
+    <m:mn>0</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math>), nazywana jest wielkością <term class="no-emphasis" cmlnle:reference="bezwymiarowa">bezwymiarową</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">dimensionless</term></foreign>) (lub liczbą o wymiarze 1, ponieważ każda liczba podniesiona do potęgi zerowej równa jest 1). Wielkości bezwymiarowe często nazywane są liczbami niemianowanymi.</para><table id="fs-id1168328269910" summary="Tabela składa się z dwóch kolumn i ośmiu wierszy. Pierwszy wiersz jest nagłówkiem tabeli, gdzie nazwy poszczególnych kolumn, od lewej do prawej, są nastepujące:“Wielkość podstawowa” i “Symbol wymiaru”. Pozostałem wiersze to: dlugość L, masa M, czas T; prad I; temperatura T, ilośc substancji N; światłość J.">
+  <title>Podstawowe wielkości fizyczne i ich wymiary</title>
+  <tgroup cols="2">
+    <colspec colnum="1" colname="c1"/>
+    <colspec colnum="2" colname="c2"/>
+    <thead>
+      <row valign="top">
+        <entry valign="top" align="left">
+          <emphasis effect="bold">Wielkość podstawowa</emphasis>
+        </entry>
+        <entry valign="top" align="left">
+          <emphasis effect="bold">Symbol</emphasis>
+        </entry>
+      </row>
+    </thead>
+    <tbody>
+      <row valign="top">
+        <entry valign="top" align="left">Długość</entry>
+        <entry valign="middle" align="left">L</entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">Masa</entry>
+        <entry valign="middle" align="left">M</entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">Czas</entry>
+        <entry valign="middle" align="left">T</entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">Natężenie prądu elektrycznego</entry>
+        <entry valign="middle" align="left">I</entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">Temperatura termodynamiczna</entry>
+        <entry valign="middle" align="left">Θ</entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">Liczność materii</entry>
+        <entry valign="middle" align="left">N</entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">Światłość</entry>
+        <entry valign="middle" align="left">J</entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+<para id="fs-id1168328227587">Symbol oznaczający wymiar wielkości fizycznej często umieszczany jest w nawiasach kwadratowych. Przykładowo, jeśli <m:math>
+  <m:mi>r</m:mi>
+</m:math> jest promieniem podstawy walca, a <m:math>
+<m:mi>h</m:mi>
+</m:math> jest jego wysokością, to zapis <m:math>
+<m:mrow>
+  <m:mo>[</m:mo>
+  <m:mi>r</m:mi>
+  <m:mo>]</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">L</m:mi>
+</m:mrow>
+</m:math> i <m:math>
+<m:mrow>
+  <m:mo>[</m:mo>
+  <m:mi>h</m:mi>
+  <m:mo>]</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">L</m:mi>
+</m:mrow>
+</m:math> oznacza, że wymiarem promienia i wysokości jest długość. Analogicznie, jeśli przez <m:math>
+<m:mi>P</m:mi>
+</m:math> oznaczymy pole powierzchni walca, a przez <m:math>
+<m:mi>V</m:mi>
+</m:math> jego objętość, to <m:math>
+<m:mrow>
+  <m:mo>[</m:mo>
+  <m:mi>P</m:mi>
+  <m:mo>]</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msup>
+    <m:mi mathvariant="normal">L</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math> oraz <m:math>
+<m:mrow>
+  <m:mo>[</m:mo>
+  <m:mi>V</m:mi>
+  <m:mo>]</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msup>
+    <m:mi mathvariant="normal">L</m:mi>
+    <m:mn>3</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math>. Jeśli <m:math>
+<m:mi>m</m:mi>
+</m:math> oznacza masę walca, a <m:math>
+<m:mi>ρ</m:mi>
+</m:math> jego gęstość, to <m:math>
+<m:mrow>
+  <m:mo>[</m:mo>
+  <m:mi>m</m:mi>
+  <m:mo>]</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">M</m:mi>
+</m:mrow>
+</m:math> oraz <m:math>
+<m:mrow>
+  <m:mo>[</m:mo>
+  <m:mi>ρ</m:mi>
+  <m:mo>]</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">M</m:mi>
+  <m:msup>
+    <m:mi mathvariant="normal">L</m:mi>
+    <m:mrow>
+      <m:mo>−</m:mo>
+      <m:mn>3</m:mn>
+    </m:mrow>
+  </m:msup>
+</m:mrow>
+</m:math>.</para>
+<para id="fs-id1168328194195">Określanie wymiarów jest bardzo istotne, ponieważ każde równanie matematyczne operujące na wielkościach fizycznych musi być <term class="no-emphasis" cmlnle:reference="spójność wymiarów">wymiarowo spójne</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">dimensionally consistent</term></foreign>), co oznacza, że musi spełniać następujące zasady:</para>
+<list id="fs-id1168328228670" list-type="bulleted" bullet-style="bullet"><item>Wszystkie składniki jednego wyrażenia muszą mieć ten sam wymiar – dodawanie lub odejmowanie wielkości o różnych wymiarach nie ma sensu. Szczególnie istotne jest to, aby wyrażenia występujące po dwóch stronach znaku równości miały te same wymiary. </item>
+  <item>Argumenty wszystkich standardowych funkcji matematycznych, takich jak na przykład funkcji trygonometrycznych (np. sinusa lub cosinusa), muszą być wielkościami bezwymiarowymi. Zarówno argumenty, jak i wyniki tych funkcji są liczbami niemianowanymi.</item>
+</list><para id="fs-id1168327924785">Jeśli któraś z powyższych zasad nie zostanie spełniona, wyrażenie nie będzie wymiarowo spójne i w związku z tym nie będzie stanowiło poprawnego opisu prawa fizyki. Tę wiedzę można wykorzystać, szukając błędów w równaniach lub zapamiętując różne zasady fizyczne. Może ona nawet pomóc wybrać formę, jaką mają przyjąć nowe prawa fizyki. Co prawda w tym tekście nie będziemy zajmować się tym ostatnim zastosowaniem, ale na pewno spotkamy się z nim jeszcze w czasie dalszej nauki.</para>
+<example id="fs-id1168327875278">
+  <para id="fs-id1168328260225">
+    <title>Zapamiętywanie wzorów dzięki analizie wymiarowej</title>Załóżmy, że dokonujemy obliczeń i potrzebujemy wzoru na pole koła. Jeśli od dłuższego czasu nie mieliśmy do czynienia z geometrią, do głowy mogą nam przyjść dwa wzory związane z zagadnieniem koła: <m:math>
+      <m:mrow>
+        <m:mi>π</m:mi>
+        <m:msup>
+          <m:mi>r</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+    </m:math> oraz <m:math>
+    <m:mrow>
+      <m:mn>2</m:mn>
+      <m:mi>π</m:mi>
+      <m:mi>r</m:mi>
+      <m:mo>.</m:mo>
+    </m:mrow>
+  </m:math> Jeden ze wzorów pozwala obliczyć obwód koła o promieniu <m:math>
+  <m:mi>r</m:mi>
+  </m:math>, a drugi jego pole powierzchni. Ale jak je od siebie odróżnić?</para>
+  <para id="fs-id1168328200011">
+    <title>Strategia rozwiązania </title>Jednym ze sposobów może być znalezienie wzoru, ale w takim przypadku musimy poświęcić czas na zaczerpnięcie informacji z wiarygodnego źródła. Poza tym nie powinniśmy wierzyć we wszystko, co czytamy, nawet jeśli wydaje nam się, że źródło jest wiarygodne. Możliwość zweryfikowania informacji za pomocą prostego rozumowania jest bardzo przydatna, poza tym nie zawsze mamy możliwość skorzystania z zewnętrznych źródeł (na przykład podczas egzaminu). Dlatego też najlepszą strategią jest znalezienie wymiarów obu wzorów, wykorzystując fakt, że na wymiarach można przeprowadzać działania algebraiczne. Wzór na pole koła musi mieć takie same wymiary jak pole powierzchni.</para>
+    <para id="fs-id1168328166110">
+      <title>Rozwiązanie</title>Wiemy, że wymiarem pola powierzchni jest <m:math>
+        <m:msup>
+          <m:mtext>L</m:mtext>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:math>. Wymiarem wyrażenia <m:math>
+      <m:mrow>
+        <m:mi>π</m:mi>
+        <m:msup>
+          <m:mi>r</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      </m:math> jest</para>
+      <equation id="fs-id1168328230548" class="unnumbered">
+        <m:math>
+          <m:mrow>
+            <m:mo>[</m:mo>
+            <m:mrow>
+              <m:mi>π</m:mi>
+              <m:msup>
+                <m:mi>r</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo>]</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>[</m:mo>
+            <m:mi>π</m:mi>
+            <m:mo>]</m:mo>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mrow>
+              <m:mo>[</m:mo>
+              <m:mi>r</m:mi>
+              <m:mo>]</m:mo>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>=</m:mo>
+          <m:mn>1</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:msup>
+              <m:mi mathvariant="normal">L</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msup>
+              <m:mi mathvariant="normal">L</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mo>,</m:mo>
+        </m:math>
+      </equation>
+      <para id="fs-id1168327873797">ponieważ stała <m:math>
+        <m:mi>π</m:mi>
+      </m:math> jest liczbą niemianowaną, a promień <m:math>
+      <m:mi>r</m:mi>
+    </m:math> określa długość. Możemy więc stwierdzić, że <m:math>
+    <m:mrow>
+      <m:mi>π</m:mi>
+      <m:msup>
+        <m:mi>r</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+  </m:math> ma wymiar pola powierzchni. Wymiarem wyrażenia <m:math>
+  <m:mrow>
+    <m:mn>2</m:mn>
+    <m:mi>π</m:mi>
+    <m:mi>r</m:mi>
+  </m:mrow>
+  </m:math> jest</para>
+  <equation id="fs-id1168327928019" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mo>[</m:mo>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mi>π</m:mi>
+          <m:mi>r</m:mi>
+        </m:mrow>
+        <m:mo>]</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>[</m:mo>
+        <m:mn>2</m:mn>
+        <m:mo>]</m:mo>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mrow>
+        <m:mo>[</m:mo>
+        <m:mi>π</m:mi>
+        <m:mo>]</m:mo>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mrow>
+        <m:mo>[</m:mo>
+        <m:mi>r</m:mi>
+        <m:mo>]</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mn>1</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:mn>1</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:mrow>
+        <m:mi mathvariant="normal">L</m:mi>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi mathvariant="normal">L</m:mi>
+      </m:mrow>
+      <m:mo>,</m:mo>
+    </m:math>
+  </equation>
+  <para id="fs-id1168328144407">ponieważ liczba <m:math>
+    <m:mn>2</m:mn>
+  </m:math> oraz stała <m:math>
+  <m:mi>π</m:mi>
+</m:math> są bezwymiarowe, a promień <m:math>
+<m:mi>r</m:mi>
+</m:math> określa długość. Widzimy więc, że wyrażenie <m:math>
+<m:mrow>
+  <m:mn>2</m:mn>
+  <m:mi>π</m:mi>
+  <m:mi>r</m:mi>
+</m:mrow>
+</m:math> ma wymiar długości, co oznacza, że nie może być wzorem na pole powierzchni.</para>
+<para id="fs-id1168328196275">Wyrażenie <m:math>
+  <m:mrow>
+    <m:mn>2</m:mn>
+    <m:mi>π</m:mi>
+    <m:mi>r</m:mi>
+  </m:mrow>
+</m:math> nie ma wymiaru pola powierzchni. Widzimy, że <m:math>
+<m:mrow>
+  <m:mi>π</m:mi>
+  <m:msup>
+    <m:mi>r</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math> ma wymiar pola powierzchni, więc jeśli musimy wybrać między dwoma podanymi wyrażeniami, powinniśmy wybrać <m:math>
+<m:mrow>
+  <m:mi>π</m:mi>
+  <m:msup>
+    <m:mi>r</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math>.</para>
+<para id="fs-id1168328292063">
+  <title>Znaczenie</title>Powyższy przykład może się wydawać banalny, ale służy on zaprezentowaniu pewnej idei. Jeśli tylko znamy wymiary wielkości fizycznych pojawiających się w wyrażeniu, możemy stwierdzić, czy wyrażenie to jest wymiarowo spójne. Poza tym jeśli nie jesteśmy pewni, co opisuje zapamiętany przez nas wzór, możemy dopasować go do odpowiedniej wielkości. Nie pomoże nam to zapamiętać bezwymiarowych współczynników (na przykład jeśli pomyliłbyś się i złączył dwa wyrażenia w jedno: <m:math>
+    <m:mrow>
+      <m:mn>2</m:mn>
+      <m:mi>π</m:mi>
+      <m:msup>
+        <m:mi>r</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+    </m:math>, to analiza wymiarowa na nic się nie przyda), ale pozwoli zapamiętać podstawową formę wyrażenia.</para>
+  </example>
+  <note id="fs-id1168327966053" class="check-understanding">
+    <exercise id="fs-id1168328063625">
+      <problem id="fs-id1168327920976">
+        <para id="fs-id1168327948336">
+          <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Załóżmy, że potrzebujemy wzoru na objętość kuli. Dwa wyrażenia mogące kojarzyć się z kulą to <m:math>
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mi>π</m:mi>
+              <m:msup>
+                <m:mi>r</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math> oraz <m:math>
+          <m:mn>4</m:mn>
+          <m:mi>π</m:mi>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>3</m:mn>
+          </m:msup>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mn>3</m:mn>
+        </m:math>. Jedno z nich pozwala obliczyć objętość kuli o promieniu <m:math>
+        <m:mi>r</m:mi>
+        </m:math>, a drugie pole jej powierzchni. Jak znaleźć to będące wzorem na objętość?</para>
+      </problem>
+      <solution id="fs-id1168328152709">
+        <para id="fs-id1168327943803">
+          <m:math>
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mi>π</m:mi>
+              <m:msup>
+                <m:mi>r</m:mi>
+                <m:mn>3</m:mn>
+              </m:msup>
+              <m:mtext>/</m:mtext>
+              <m:mn>3</m:mn>
+            </m:mrow>
+          </m:math>
+        </para>
+      </solution>
+    </exercise>
+  </note>
+  <example id="fs-id1168327962248">
+    <para id="fs-id1168327876346">
+      <title>Sprawdzanie spójności wymiarów w wyrażeniach</title>Wielkości fizyczne <m:math>
+        <m:mi>s</m:mi>
+        <m:mo>,</m:mo>
+      </m:math>
+      <m:math>
+        <m:mi>v</m:mi>
+        <m:mo>,</m:mo>
+      </m:math>
+      <m:math>
+        <m:mi>a</m:mi>
+      </m:math> i <m:math>
+      <m:mi>t</m:mi>
+    </m:math> mają wymiary <m:math>
+    <m:mrow>
+      <m:mo>[</m:mo>
+      <m:mi>s</m:mi>
+      <m:mo>]</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi mathvariant="normal">L</m:mi>
+    </m:mrow>
+  </m:math>, <m:math>
+  <m:mrow>
+    <m:mo>[</m:mo>
+    <m:mi>v</m:mi>
+    <m:mo>]</m:mo>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi mathvariant="normal">L</m:mi>
+    <m:msup>
+      <m:mi mathvariant="normal">T</m:mi>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>1</m:mn>
+      </m:mrow>
+    </m:msup>
+  </m:mrow>
+</m:math>, <m:math>
+<m:mrow>
+  <m:mo>[</m:mo>
+  <m:mi>a</m:mi>
+  <m:mo>]</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">L</m:mi>
+  <m:msup>
+    <m:mi mathvariant="normal">T</m:mi>
+    <m:mrow>
+      <m:mo>−</m:mo>
+      <m:mn>2</m:mn>
+    </m:mrow>
+  </m:msup>
+</m:mrow>
+</m:math> oraz <m:math>
+<m:mrow>
+  <m:mo>[</m:mo>
+  <m:mi>t</m:mi>
+  <m:mo>]</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">T</m:mi>
+</m:mrow>
+</m:math>. Sprawdź spójność wymiarową poniższych wyrażeń:<list id="eip-idm537930464" list-type="enumerated" number-style="lower-alpha">
+<item>
+  <m:math>
+    <m:mi>s</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>v</m:mi>
+    <m:mi>t</m:mi>
+    <m:mo>+</m:mo>
+    <m:mn>0,5</m:mn>
+    <m:mi>a</m:mi>
+    <m:msup>
+      <m:mi>t</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+    </m:math>; </item>
+    <item>
+      <m:math>
+        <m:mi>s</m:mi>
+        <m:mo>=</m:mo>
+        <m:mi>v</m:mi>
+        <m:msup>
+          <m:mi>t</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo>
+        <m:mn>0,5</m:mn>
+        <m:mi>a</m:mi>
+        <m:mi>t</m:mi>
+        </m:math>; </item>
+        <item>
+          <m:math>
+            <m:mi>v</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>a</m:mi>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mi>s</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            </m:math>. </item>
+          </list>
+        </para>
+        <para id="fs-id1168327934569">
+          <title>Strategia rozwiązania </title>W celu stwierdzenia, czy wyrażenie jest spójne, musimy sprawdzić, czy wszystkie składniki mają takie same wymiary i czy argumenty standardowych funkcji matematycznych są bezwymiarowe.</para>
+          <para id="fs-id1168327942625">
+            <title>Rozwiązanie</title>
+          </para>
+          <list id="fs-id1168327934419" list-type="enumerated" number-style="lower-alpha">
+            <item>W tym wyrażeniu nie ma funkcji trygonometrycznych, logarytmicznych ani wykładniczych, więc należy sprawdzić jedynie wymiary poszczególnych składników. Po lewej stronie znaku równości występuje jeden składnik, a po prawej dwa:<newline/>
+              <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168328246149" class="unnumbered"><label/>
+                <m:math>
+                  <m:mtable>
+                    <m:mtr>
+                      <m:mtd>
+                        <m:mfenced open="[" close="]">
+                          <m:mi>s</m:mi>
+                        </m:mfenced>
+                        <m:mo>=</m:mo>
+                        <m:mtext>L,</m:mtext>
+                      </m:mtd>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mtd>
+                        <m:mfenced open="[" close="]">
+                          <m:mrow>
+                            <m:mi>v</m:mi>
+                            <m:mi>t</m:mi>
+                          </m:mrow>
+                        </m:mfenced>
+                        <m:mo>=</m:mo>
+                        <m:mfenced open="[" close="]">
+                          <m:mi>v</m:mi>
+                        </m:mfenced>
+                        <m:mo>·</m:mo>
+                        <m:mfenced open="[" close="]">
+                          <m:mi>t</m:mi>
+                        </m:mfenced>
+                        <m:mo>=</m:mo>
+                        <m:msup>
+                          <m:mtext>LT</m:mtext>
+                          <m:mn>−1</m:mn>
+                        </m:msup>
+                        <m:mo>·</m:mo>
+                        <m:mtext>T</m:mtext>
+                        <m:mo>=</m:mo>
+                        <m:msup>
+                          <m:mtext>LT</m:mtext>
+                          <m:mn>0</m:mn>
+                        </m:msup>
+                        <m:mo>=</m:mo>
+                        <m:mtext>L,</m:mtext>
+                      </m:mtd>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mtd>
+                        <m:mfenced open="[" close="]">
+                          <m:mrow>
+                            <m:mo>0,5</m:mo>
+                            <m:mi>a</m:mi>
+                            <m:msup>
+                              <m:mi>t</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                        </m:mfenced>
+                        <m:mo>=</m:mo>
+                        <m:mfenced open="[" close="]">
+                          <m:mi>a</m:mi>
+                        </m:mfenced>
+                        <m:mo>·</m:mo>
+                        <m:msup>
+                          <m:mfenced open="[" close="]">
+                            <m:mi>t</m:mi>
+                          </m:mfenced>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>=</m:mo>
+                        <m:msup>
+                          <m:mtext>LT</m:mtext>
+                          <m:mn>−2</m:mn>
+                        </m:msup>
+                        <m:mo>·</m:mo>
+                        <m:msup>
+                          <m:mtext>T</m:mtext>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>=</m:mo>
+                        <m:msup>
+                          <m:mtext>LT</m:mtext>
+                          <m:mn>0</m:mn>
+                        </m:msup>
+                        <m:mo>=</m:mo>
+                        <m:mtext>L</m:mtext>
+                        <m:mtext>.</m:mtext>
+                      </m:mtd>
+                    </m:mtr>
+                  </m:mtable>
+                </m:math>
+              </equation><newline/>Wszystkie trzy składniki mają te same wymiary, co oznacza, że wyrażenie jest wymiarowo spójne.</item>
+              <item>W tym wyrażeniu również nie ma funkcji trygonometrycznych, logarytmicznych ani eksponenty, więc ponownie sprawdzamy wymiary poszczególnych składników:<newline/>
+                <equation id="fs-id1168327968069" class="unnumbered">
+                  <label/>
+                  <m:math>
+                    <m:mtable>
+                      <m:mtr>
+                        <m:mtd>
+                          <m:mfenced open="[" close="]">
+                            <m:mi>s</m:mi>
+                          </m:mfenced>
+                          <m:mo>=</m:mo>
+                          <m:mtext>L,</m:mtext>
+                        </m:mtd>
+                      </m:mtr>
+                      <m:mtr>
+                        <m:mtd>
+                          <m:mfenced open="[" close="]">
+                            <m:mrow>
+                              <m:mi>v</m:mi>
+                              <m:msup>
+                                <m:mi>t</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mfenced>
+                          <m:mo>=</m:mo>
+                          <m:mfenced open="[" close="]">
+                            <m:mi>v</m:mi>
+                          </m:mfenced>
+                          <m:mo>·</m:mo>
+                          <m:msup>
+                            <m:mfenced open="[" close="]">
+                              <m:mi>t</m:mi>
+                            </m:mfenced>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          <m:mo>=</m:mo>
+                          <m:msup>
+                            <m:mtext>LT</m:mtext>
+                            <m:mn>−1</m:mn>
+                          </m:msup>
+                          <m:mo>·</m:mo>
+                          <m:msup>
+                            <m:mtext>T</m:mtext>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          <m:mo>=</m:mo>
+                          <m:mtext>LT,</m:mtext>
+                        </m:mtd>
+                      </m:mtr>
+                      <m:mtr>
+                        <m:mtd>
+                          <m:mfenced open="[" close="]">
+                            <m:mrow>
+                              <m:mi>a</m:mi>
+                              <m:mi>t</m:mi>
+                            </m:mrow>
+                          </m:mfenced>
+                          <m:mo>=</m:mo>
+                          <m:mfenced open="[" close="]">
+                            <m:mi>a</m:mi>
+                          </m:mfenced>
+                          <m:mo>·</m:mo>
+                          <m:mfenced open="[" close="]">
+                            <m:mi>t</m:mi>
+                          </m:mfenced>
+                          <m:mo>=</m:mo>
+                          <m:msup>
+                            <m:mtext>LT</m:mtext>
+                            <m:mn>−2</m:mn>
+                          </m:msup>
+                          <m:mo>·</m:mo>
+                          <m:mtext>T</m:mtext>
+                          <m:mo>=</m:mo>
+                          <m:msup>
+                            <m:mtext>LT</m:mtext>
+                            <m:mn>−1</m:mn>
+                          </m:msup>
+                          <m:mo>.</m:mo>
+                        </m:mtd>
+                      </m:mtr>
+                    </m:mtable>
+                  </m:math>
+                </equation>
+                <newline/>Każdy z trzech składników ma inne wymiary, więc wyrażenie nie jest spójne.</item>
+                <item>W tym wyrażeniu występuje funkcja trygonometryczna, więc na początku sprawdźmy, czy jej argument jest liczbą niemianowaną:<newline/>
+                  <equation id="fs-id1168328067628" class="unnumbered">
+                    <label/>
+                    <m:math>
+                      <m:mtable>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mfenced open="[" close="]">
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:mi>a</m:mi>
+                                  <m:msup>
+                                    <m:mi>t</m:mi>
+                                    <m:mn>2</m:mn>
+                                  </m:msup>
+                                </m:mrow>
+                                <m:mi>s</m:mi>
+                              </m:mfrac>
+                            </m:mfenced>
+                            <m:mo>=</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mfenced open="[" close="]">
+                                  <m:mi>a</m:mi>
+                                </m:mfenced>
+                                <m:mo>·</m:mo>
+                                <m:msup>
+                                  <m:mfenced open="[" close="]">
+                                    <m:mi>t</m:mi>
+                                  </m:mfenced>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                              </m:mrow>
+                              <m:mfenced open="[" close="]">
+                                <m:mi>s</m:mi>
+                              </m:mfenced>
+                            </m:mfrac>
+                            <m:mo>=</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:msup>
+                                  <m:mtext>LT</m:mtext>
+                                  <m:mn>−2</m:mn>
+                                </m:msup>
+                                <m:mo>·</m:mo>
+                                <m:msup>
+                                  <m:mtext>T</m:mtext>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                              </m:mrow>
+                              <m:mtext>L</m:mtext>
+                            </m:mfrac>
+                            <m:mo>=</m:mo>
+                            <m:mfrac>
+                              <m:mtext>L</m:mtext>
+                              <m:mtext>L</m:mtext>
+                            </m:mfrac>
+                            <m:mo>=</m:mo>
+                            <m:mn>1</m:mn>
+                            <m:mo>.</m:mo>
+                          </m:mtd>
+                        </m:mtr>
+                      </m:mtable>
+                    </m:math>
+                  </equation>
+                  <newline/>Argument funkcji sinus jest liczbą niemianowaną, a więc na razie wszystko się zgadza. Teraz musimy sprawdzić, czy składnik występujący po lewej stronie znaku równości ma ten sam wymiar co składnik występujący po prawej:<newline/>
+                  <equation id="fs-id1168327968560" class="unnumbered">
+                    <label/>
+                    <m:math>
+                      <m:mtable>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mfenced open="[" close="]">
+                              <m:mi>v</m:mi>
+                            </m:mfenced>
+                            <m:mo>=</m:mo>
+                            <m:msup>
+                              <m:mtext>LT</m:mtext>
+                              <m:mn>−1</m:mn>
+                            </m:msup>
+                            <m:mtext>,</m:mtext>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mfenced open="[" close="]">
+                              <m:mrow>
+                                <m:mtext>sin</m:mtext>
+                                <m:mfenced>
+                                  <m:mfrac>
+                                    <m:mrow>
+                                      <m:mi>a</m:mi>
+                                      <m:msup>
+                                        <m:mi>t</m:mi>
+                                        <m:mn>2</m:mn>
+                                      </m:msup>
+                                    </m:mrow>
+                                    <m:mi>s</m:mi>
+                                  </m:mfrac>
+                                </m:mfenced>
+                              </m:mrow>
+                            </m:mfenced>
+                            <m:mo>=</m:mo>
+                            <m:mn>1</m:mn>
+                            <m:mo>.</m:mo>
+                          </m:mtd>
+                        </m:mtr>
+                      </m:mtable>
+                    </m:math>
+                  </equation>
+                </item>
+              </list>
+              <para id="fs-id1168327988704">Składniki mają różne wymiary, co oznacza, że wyrażenie nie jest spójne.</para>
+              <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1168328187420"><title>Znaczenie</title>Jeżeli mamy zaufanie do ludzi, tego typu weryfikacja może się wydawać niepotrzebna. Ale możemy być pewni, że w każdym podręczniku z dziedziny fizyki (również w tym, który właśnie czytasz) można znaleźć wzory z błędami. Sprawdzanie poprawności wyrażeń przy pomocy analizy wymiarowej uchroni nas przed użyciem błędnego wzoru. Jest to też świetny sposób na znalezienie ewentualnego błędu w naszych obliczeniach.</para></example>
+              <note id="fs-id1168328324841" class="check-understanding">
+                <exercise id="fs-id1168328196554">
+                  <problem id="fs-id1168328311467">
+                    <para id="fs-id1168328223038">
+                      <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Czy równanie <m:math>
+                        <m:mi>v</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mi>a</m:mi>
+                        <m:mi>t</m:mi>
+                        </m:math> z poprzedniego zadania jest wymiarowo spójne?</para>
+                      </problem>
+                      <solution id="fs-id1168328194212">
+                        <para id="fs-id1168328290643">tak</para>
+                      </solution>
+                    </exercise>
+                  </note>
+                  <para id="fs-id1168328267650">Kolejną rzeczą, o jakiej należy wspomnieć, jest wykonywanie na wymiarach działań z zakresu analizy matematycznej. Wiemy, że wymiary, tak jak jednostki, podlegają prawom algebry, ale co stanie się jeśli obliczymy pochodną cząstkową wielkości fizycznej lub scałkujemy jedną wielkość względem innej zmiennej wielkości? Pochodna funkcji jest to tangens nachylenia stycznej do wykresu funkcji, więc jeśli chodzi o wielkości fizyczne <m:math>
+                    <m:mi>v</m:mi>
+                  </m:math> oraz <m:math>
+                  <m:mi>t</m:mi>
+                </m:math>, wymiarem pochodnej <m:math>
+                <m:mi>v</m:mi>
+              </m:math> względem <m:math>
+              <m:mi>t</m:mi>
+            </m:math> jest stosunek wymiarów <m:math>
+            <m:mi>v</m:mi>
+          </m:math> i <m:math>
+          <m:mi>t</m:mi>
+          </m:math>: </para>
+          <equation id="fs-id1168328355646" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mfenced open="[" close="]">
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mtext>d</m:mtext>
+                    <m:mi>v</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mtext>d</m:mtext>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mfenced>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mfenced open="[" close="]">
+                  <m:mi>v</m:mi>
+                </m:mfenced>
+                <m:mfenced open="[" close="]">
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+              </m:mfrac>
+              <m:mo>.</m:mo>
+            </m:math>
+          </equation>
+          <para id="fs-id1168328277240">Całka jest sumą pewnej ilości składników, a więc wymiarem całki z <m:math>
+            <m:mi>v</m:mi>
+          </m:math> względem <m:math>
+          <m:mi>t</m:mi>
+        </m:math> jest po prostu wymiar <m:math>
+        <m:mi>v</m:mi>
+      </m:math> pomnożony razy wymiar <m:math>
+      <m:mi>t</m:mi>
+      </m:math>:</para>
+      <equation id="fs-id1168328240961" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mfenced open="[" close="]">
+            <m:mrow>
+              <m:mo>∫</m:mo>
+              <m:mi>v</m:mi>
+              <m:mtext>d</m:mtext>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfenced>
+          <m:mo>=</m:mo>
+          <m:mfenced open="[" close="]">
+            <m:mi>v</m:mi>
+          </m:mfenced>
+          <m:mo>·</m:mo>
+          <m:mfenced open="[" close="]">
+            <m:mi>t</m:mi>
+          </m:mfenced>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="fs-id1168328025044">Te same zasady odnoszą się do jednostek wielkości fizycznych, powstałych w wyniku całkowania lub różniczkowania innych wielkości.</para>
+      <section id="fs-id1168328356781" class="key-concepts">
+        <title>Podsumowanie</title>
+        <list id="fs-id1168327870263" list-type="bulleted" bullet-style="bullet">
+          <item>Wymiar wielkości fizycznej pochodnej wyrażony jest przez wielkości podstawowe, od których ta wielkość pochodzi.</item>
+          <item>Wszystkie wzory opisujące zjawiska fizyczne muszą być wymiarowo spójne. Tę wiedzę można wykorzystywać do zapamiętywania praw fizyki, do sprawdzania poprawności wyrażeń, a nawet do formułowania nowych zasad.</item>
+        </list>
+      </section>
+      <section id="fs-id1168328364228" class="review-problems">
+        <title>Zadania</title>
+        <exercise id="fs-id1168327942540">
+          <problem id="fs-id1168327942542">
+            <para id="fs-id1168328329443">Student próbuje zapamiętać kilka wzorów związanych z geometrią. Zakładamy, że: <m:math>
+              <m:mi>A</m:mi>
+            </m:math> oznacza pole powierzchni, <m:math>
+            <m:mi>V</m:mi>
+          </m:math> objętość, a pozostałe zmienne opisują długość. Które z następujących wyrażeń są wymiarowo spójne? <list id="eip-idm182314352" list-type="enumerated" number-style="lower-alpha">
+          <item>
+            <m:math>
+              <m:mi>V</m:mi>
+              <m:mo>=</m:mo>
+              <m:mi>π</m:mi>
+              <m:msup>
+                <m:mi>r</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mi>h</m:mi>
+              </m:math>; </item>
+              <item>
+                <m:math>
+                  <m:mi>A</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>π</m:mi>
+                  <m:msup>
+                    <m:mi>r</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>π</m:mi>
+                  <m:mi>r</m:mi>
+                  <m:mi>h</m:mi>
+                  </m:math>; </item>
+                  <item>
+                    <m:math>
+                      <m:mi>V</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>0,5</m:mn>
+                      <m:mi>b</m:mi>
+                      <m:mi>h</m:mi>
+                      </m:math>; </item>
+                      <item>
+                        <m:math>
+                          <m:mi>V</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mi>π</m:mi>
+                          <m:msup>
+                            <m:mi>d</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          </m:math>; </item>
+                          <item>
+                            <m:math>
+                              <m:mi>V</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mi>π</m:mi>
+                              <m:msup>
+                                <m:mi>d</m:mi>
+                                <m:mn>3</m:mn>
+                              </m:msup>
+                              <m:mtext>/</m:mtext>
+                              <m:mn>6</m:mn>
+                              </m:math>. </item>
+                            </list>
+                          </para>
+                        </problem>
+                      </exercise>
+                      <exercise id="fs-id1168328369689">
+                        <problem id="fs-id1168328369691">
+                          <para id="fs-id1168328365066">Dane są wielkości fizyczne <m:math>
+                            <m:mi>s</m:mi>
+                          </m:math>, <m:math>
+                          <m:mi>v</m:mi>
+                        </m:math>, <m:math>
+                        <m:mi>a</m:mi>
+                      </m:math> i <m:math>
+                      <m:mi>t</m:mi>
+                    </m:math> o wymiarach <m:math>
+                    <m:mfenced open="[" close="]">
+                      <m:mi>s</m:mi>
+                    </m:mfenced>
+                    <m:mo>=</m:mo>
+                    <m:mtext>L</m:mtext>
+                  </m:math>, <m:math>
+                  <m:mfenced open="[" close="]">
+                    <m:mi>v</m:mi>
+                  </m:mfenced>
+                  <m:mo>=</m:mo>
+                  <m:msup>
+                    <m:mtext>LT</m:mtext>
+                    <m:mn>−1</m:mn>
+                  </m:msup>
+                </m:math>, <m:math>
+                <m:mfenced open="[" close="]">
+                  <m:mi>a</m:mi>
+                </m:mfenced>
+                <m:mo>=</m:mo>
+                <m:msup>
+                  <m:mtext>LT</m:mtext>
+                  <m:mn>−2</m:mn>
+                </m:msup>
+              </m:math> i <m:math>
+              <m:mfenced open="[" close="]">
+                <m:mi>t</m:mi>
+              </m:mfenced>
+              <m:mo>=</m:mo>
+              <m:mtext>T</m:mtext>
+            </m:math>. Czy następujące wyrażenia są wymiarowo spójne?<list id="eip-idm343232112" list-type="enumerated" number-style="lower-alpha">
+            <item>
+              <m:math>
+                <m:msup>
+                  <m:mi>v</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>a</m:mi>
+                <m:mi>s</m:mi>
+                </m:math>; </item>
+                <item>
+                  <m:math>
+                    <m:mi>s</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mi>v</m:mi>
+                    <m:msup>
+                      <m:mi>t</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>+</m:mo>
+                    <m:mn>0,5</m:mn>
+                    <m:mi>a</m:mi>
+                    <m:msup>
+                      <m:mi>t</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    </m:math>; </item>
+                    <item>
+                      <m:math>
+                        <m:mi>v</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mi>s</m:mi>
+                        <m:mtext>/</m:mtext>
+                        <m:mi>t</m:mi>
+                        </m:math>; </item>
+                        <item>
+                          <m:math>
+                            <m:mi>a</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mi>v</m:mi>
+                            <m:mtext>/</m:mtext>
+                            <m:mi>t</m:mi>
+                            </m:math>. </item>
+                          </list>
+                        </para>
+                      </problem>
+                      <solution id="fs-id1168328201713">
+                        <list id="fs-id1168328201715" list-type="enumerated" number-style="lower-alpha">
+                          <item> Tak, oba składniki mają wymiar <m:math>
+                            <m:msup>
+                              <m:mtext>L</m:mtext>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                            <m:msup>
+                              <m:mtext>T</m:mtext>
+                              <m:mrow>
+                                <m:mo>−</m:mo>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:msup>
+                            </m:math>. </item>
+                            <item> Nie. </item>
+                            <item> Tak, oba składniki mają wymiar <m:math>
+                              <m:msup>
+                                <m:mtext>LT</m:mtext>
+                                <m:mrow>
+                                  <m:mo>−</m:mo>
+                                  <m:mn>1</m:mn>
+                                </m:mrow>
+                              </m:msup>
+                              </m:math>. </item>
+                              <item> Tak, oba składniki mają wymiar <m:math>
+                                <m:msup>
+                                  <m:mtext>LT</m:mtext>
+                                  <m:mrow>
+                                    <m:mo>−</m:mo>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:msup>
+                                </m:math>.</item>
+                              </list>
+                            </solution>
+                          </exercise>
+                          <exercise id="fs-id1168327948663">
+                            <problem id="fs-id1168327948665">
+                              <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168327948668">Dane są wielkości fizyczne <m:math>
+                                <m:mi>m</m:mi>
+                                <m:mo>,</m:mo>
+                              </m:math>
+<m:math>
+                                <m:mi>r</m:mi>
+                                <m:mo>,</m:mo>
+                              </m:math>
+                              <m:math>
+                                <m:mi>s</m:mi>
+                                <m:mo>,</m:mo>
+                              </m:math>
+                              <m:math>
+                                <m:mi>v</m:mi>
+                                <m:mo>,</m:mo>
+                              </m:math>
+                              <m:math>
+                                <m:mi>a</m:mi>
+                                <m:mo>,</m:mo>
+                              </m:math> i <m:math>
+                              <m:mi>t</m:mi>
+                            </m:math> o wymiarach <m:math>
+                            <m:mfenced open="[" close="]">
+                              <m:mi>m</m:mi>
+                            </m:mfenced>
+                            <m:mo>=</m:mo>
+                            <m:mtext>M</m:mtext>
+                          </m:math>, <m:math>
+                            <m:mfenced open="[" close="]">
+                              <m:mi>r</m:mi>
+                            </m:mfenced>
+                            <m:mo>=</m:mo>
+                            <m:mtext>L</m:mtext>
+                          </m:math>, <m:math>
+                          <m:mfenced open="[" close="]">
+                            <m:mi>s</m:mi>
+                          </m:mfenced>
+                          <m:mo>=</m:mo>
+                          <m:mtext>L</m:mtext>
+                        </m:math>, <m:math>
+                        <m:mfenced open="[" close="]">
+                          <m:mi>v</m:mi>
+                        </m:mfenced>
+                        <m:mo>=</m:mo>
+                        <m:msup>
+                          <m:mtext>LT</m:mtext>
+                          <m:mrow>
+                            <m:mo>−</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:msup>
+                      </m:math>, <m:math>
+                      <m:mfenced open="[" close="]">
+                        <m:mi>a</m:mi>
+                      </m:mfenced>
+                      <m:mo>=</m:mo>
+                      <m:msup>
+                        <m:mtext>LT</m:mtext>
+                        <m:mrow>
+                          <m:mo>−</m:mo>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                    </m:math> i <m:math>
+                    <m:mfenced open="[" close="]">
+                      <m:mi>t</m:mi>
+                    </m:mfenced>
+                    <m:mo>=</m:mo>
+                    <m:mtext>T</m:mtext>
+                  </m:math>. Zakładając, że wszystkie wyrażenia są wymiarowo spójne, znajdź wymiar wyrażenia znajdującego się po lewej stronie znaku równości. <list id="eip-idm416415584" list-type="enumerated" number-style="lower-alpha">
+                  <item>
+                    <m:math>
+                      <m:mi>F</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mi>m</m:mi>
+                      <m:mi>a</m:mi>
+                      </m:math>; </item>
+                      <item>
+                        <m:math>
+                          <m:mi>K</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                          <m:mi>m</m:mi>
+                          <m:msup>
+                            <m:mi>v</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          </m:math>; </item>
+                          <item>
+                            <m:math>
+                              <m:mi>p</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mi>m</m:mi>
+                              <m:mi>v</m:mi>
+                              </m:math>; </item>
+                              <item>
+                                <m:math>
+                                  <m:mi>W</m:mi>
+                                  <m:mo>=</m:mo>
+                                  <m:mi>m</m:mi>
+                                  <m:mi>a</m:mi>
+                                  <m:mi>s</m:mi>
+                                  </m:math>; </item>
+                                  <item>
+                                    <m:math>
+                                      <m:mi>L</m:mi>
+                                      <m:mo>=</m:mo>
+                                      <m:mi>m</m:mi>
+                                      <m:mi>v</m:mi>
+                                      <m:mi>r</m:mi>
+                                      </m:math>. </item>
+                                    </list>
+                                  </para></problem>
+                              </exercise>
+                              <exercise id="fs-id1168327876941">
+                                <problem id="fs-id1168327998123">
+                                  <para id="fs-id1168327998125">Wielkość <m:math>
+                                    <m:mi>s</m:mi>
+                                  </m:math> ma wymiar długości, a <m:math>
+                                  <m:mi>t</m:mi>
+                                </m:math> ma wymiar czasu. Wielkości <m:math>
+                                <m:mi>v</m:mi>
+                              </m:math> oraz <m:math>
+                              <m:mi>a</m:mi>
+                            </m:math> opisane są następującymi wzorami: <m:math>
+                            <m:mi>v</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mtext>d</m:mtext>
+                            <m:mi>s</m:mi>
+                            <m:mtext>/</m:mtext>
+                            <m:mtext>d</m:mtext>
+                            <m:mi>t</m:mi>
+                          </m:math> oraz <m:math>
+                          <m:mi>a</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mtext>d</m:mtext>
+                          <m:mi>v</m:mi>
+                          <m:mtext>/</m:mtext>
+                          <m:mtext>d</m:mtext>
+                          <m:mi>t</m:mi>
+                        </m:math>.<list id="eip-idm314851472" list-type="enumerated" number-style="lower-alpha">
+                        <item> Jaki jest wymiar wielkości <m:math>
+                          <m:mi>v</m:mi>
+                          </m:math>? </item>
+                          <item> Jaki jest wymiar wielkości <m:math>
+                            <m:mi>a</m:mi>
+                            </m:math>? </item>
+                            <item> Jaki jest wymiar wielkości <m:math>
+                              <m:mo>∫</m:mo>
+                              <m:mi>v</m:mi>
+                              <m:mtext>d</m:mtext>
+                              <m:mi>t</m:mi>
+                              </m:math>? </item>
+                              <item> Jaki jest wymiar wielkości <m:math>
+                                <m:mo>∫</m:mo>
+                                <m:mi>a</m:mi>
+                                <m:mtext>d</m:mtext>
+                                <m:mi>t</m:mi>
+                                </m:math>? </item>
+                                <item> Jaki jest wymiar wielkości <m:math>
+                                  <m:mtext>d</m:mtext>
+                                  <m:mi>a</m:mi>
+                                  <m:mtext>/</m:mtext>
+                                  <m:mtext>d</m:mtext>
+                                  <m:mi>t</m:mi>
+                                  </m:math>? </item>
+                                </list>
+                              </para>
+                            </problem>
+                            <solution id="fs-id1168328204280">
+                              <list id="fs-id1168327862374" list-type="enumerated" number-style="lower-alpha">
+                                <item>
+                                  <m:math>
+                                    <m:mfenced open="[" close="]">
+                                      <m:mi>v</m:mi>
+                                    </m:mfenced>
+                                    <m:mo>=</m:mo>
+                                    <m:msup>
+                                      <m:mtext>LT</m:mtext>
+                                      <m:mrow>
+                                        <m:mo>−</m:mo>
+                                        <m:mn>1</m:mn>
+                                      </m:mrow>
+                                    </m:msup>
+                                    </m:math>; </item>
+                                    <item>
+                                      <m:math>
+                                        <m:mfenced open="[" close="]">
+                                          <m:mi>a</m:mi>
+                                        </m:mfenced>
+                                        <m:mo>=</m:mo>
+                                        <m:msup>
+                                          <m:mtext>LT</m:mtext>
+                                          <m:mrow>
+                                            <m:mo>−</m:mo>
+                                            <m:mn>2</m:mn>
+                                          </m:mrow>
+                                        </m:msup>
+                                        </m:math>; </item>
+                                        <item>
+                                          <m:math>
+                                            <m:mfenced open="[" close="]">
+                                              <m:mrow>
+                                                <m:mo>∫</m:mo>
+                                                <m:mi>v</m:mi>
+                                                <m:mtext>d</m:mtext>
+                                                <m:mi>t</m:mi>
+                                              </m:mrow>
+                                            </m:mfenced>
+                                            <m:mo>=</m:mo>
+                                            <m:mtext>L</m:mtext>
+                                            </m:math>; </item>
+                                            <item>
+                                              <m:math>
+                                                <m:mfenced open="[" close="]">
+                                                  <m:mrow>
+                                                    <m:mo>∫</m:mo>
+                                                    <m:mi>a</m:mi>
+                                                    <m:mtext>d</m:mtext>
+                                                    <m:mi>t</m:mi>
+                                                  </m:mrow>
+                                                </m:mfenced>
+                                                <m:mo>=</m:mo>
+                                                <m:msup>
+                                                  <m:mtext>LT</m:mtext>
+                                                  <m:mn>–1</m:mn>
+                                                </m:msup>
+                                                </m:math>; </item>
+                                                <item>
+                                                  <m:math>
+                                                    <m:mfenced open="[" close="]">
+                                                      <m:mfrac>
+                                                        <m:mrow>
+                                                          <m:mtext>d</m:mtext>
+                                                          <m:mi>a</m:mi>
+                                                        </m:mrow>
+                                                        <m:mrow>
+                                                          <m:mtext>d</m:mtext>
+                                                          <m:mi>t</m:mi>
+                                                        </m:mrow>
+                                                      </m:mfrac>
+                                                    </m:mfenced>
+                                                    <m:mo>=</m:mo>
+                                                    <m:msup>
+                                                      <m:mtext>LT</m:mtext>
+                                                      <m:mn>–3</m:mn>
+                                                    </m:msup>
+                                                    </m:math>.</item>
+                                                  </list>
+                                                </solution>
+                                              </exercise>
+                                              <exercise id="fs-id1168328144822">
+                                                <problem id="fs-id1168328144824">
+                                                  <para id="fs-id1168327956741">Załóżmy, że <m:math>
+                                                    <m:mfenced open="[" close="]">
+                                                      <m:mi>V</m:mi>
+                                                    </m:mfenced>
+                                                    <m:mo>=</m:mo>
+                                                    <m:msup>
+                                                      <m:mtext>L</m:mtext>
+                                                      <m:mn>3</m:mn>
+                                                    </m:msup>
+                                                  </m:math>, <m:math>
+                                                  <m:mfenced open="[" close="]">
+                                                    <m:mi>ρ</m:mi>
+                                                  </m:mfenced>
+                                                  <m:mo>=</m:mo>
+                                                  <m:msup>
+                                                    <m:mtext>ML</m:mtext>
+                                                    <m:mn>–3</m:mn>
+                                                  </m:msup>
+                                                </m:math> i <m:math>
+                                                <m:mfenced open="[" close="]">
+                                                  <m:mi>t</m:mi>
+                                                </m:mfenced>
+                                                <m:mo>=</m:mo>
+                                                <m:mi>T</m:mi>
+                                              </m:math>. <list xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-idm1132473952" list-type="enumerated" number-style="lower-alpha"><item> Jaki wymiar ma wyrażenie <m:math>
+                                                <m:mo>∫</m:mo>
+                                                <m:mi>ρ</m:mi>
+                                                <m:mtext>d</m:mtext>
+                                                <m:mi>V</m:mi>
+                                                </m:math>? </item>
+                                                <item> Jaki wymiar ma wyrażenie <m:math>
+                                                  <m:mfrac>
+                                                    <m:mrow>
+                                                      <m:mtext>d</m:mtext>
+                                                      <m:mi>V</m:mi>
+                                                    </m:mrow>
+                                                    <m:mrow>
+                                                      <m:mtext>d</m:mtext>
+                                                      <m:mi>t</m:mi>
+                                                    </m:mrow>
+                                                  </m:mfrac>
+                                                  </m:math>? </item>
+                                                  <item> Jaki wymiar ma wyrażenie <m:math>
+                                                    <m:mi>ρ</m:mi>
+                                                    <m:mfrac>
+                                                      <m:mrow>
+                                                        <m:mtext>d</m:mtext>
+                                                        <m:mi>V</m:mi>
+                                                      </m:mrow>
+                                                      <m:mrow>
+                                                        <m:mtext>d</m:mtext>
+                                                        <m:mi>t</m:mi>
+                                                      </m:mrow>
+                                                    </m:mfrac>
+                                                    </m:math>? </item>
+                                                  </list></para>
+                                              </problem>
+                                            </exercise>
+                                            <exercise id="fs-id1168327918102">
+                                              <problem id="fs-id1168328364252">
+                                                <para id="fs-id1168328364255">Długość łuku <m:math>
+                                                  <m:mi>s</m:mi>
+                                                </m:math> opartego na kącie <m:math>
+                                                <m:mi>θ</m:mi>
+                                              </m:math> w okręgu o promieniu <m:math>
+                                              <m:mi>r</m:mi>
+                                            </m:math> można zdefiniować za pomocą wzoru <m:math>
+                                            <m:mi>s</m:mi>
+                                            <m:mo>=</m:mo>
+                                            <m:mi>r</m:mi>
+                                            <m:mi>θ</m:mi>
+                                          </m:math>. Jakie są wymiary a) <m:math>
+                                          <m:mi>s,</m:mi>
+                                        </m:math> b) <m:math>
+                                        <m:mi>r</m:mi>
+                                      </m:math> i c) <m:math>
+                                      <m:mi>θ</m:mi>
+                                      </m:math>?</para>
+                                    </problem>
+                                    <solution id="fs-id1168327948973">
+                                      <list id="fs-id1168327948975" list-type="enumerated" number-style="lower-alpha">
+                                        <item> L; </item>
+                                        <item> L; </item>
+                                        <item>
+                                          <m:math>
+                                            <m:msup>
+                                              <m:mtext>L</m:mtext>
+                                              <m:mn>0</m:mn>
+                                            </m:msup>
+                                            </m:math> = 1 (liczba niemianowana).</item>
+                                          </list>
+                                        </solution>
+                                      </exercise>
+                                    </section>
+                                  </content>
+                                  <glossary>
+                                    <definition id="fs-id1168327872808">
+                                      <term class="no-emphasis" cmlnle:reference="wymiar">wymiar (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">dimension</term></foreign>)</term>
+                                      <meaning id="fs-id1168327908525">opisuje zależność danej wielkości fizycznej od wielkości podstawowych; wyraża się go za pomocą iloczynu lub potęgi tych wielkości; wymiar wielkości fizycznej ma postać <m:math>
+                                        <m:mrow>
+                                          <m:msup>
+                                            <m:mtext>L</m:mtext>
+                                            <m:mtext>a</m:mtext>
+                                          </m:msup>
+                                          <m:msup>
+                                            <m:mtext>M</m:mtext>
+                                            <m:mtext>b</m:mtext>
+                                          </m:msup>
+                                          <m:msup>
+                                            <m:mtext>T</m:mtext>
+                                            <m:mtext>c</m:mtext>
+                                          </m:msup>
+                                          <m:msup>
+                                            <m:mtext>I</m:mtext>
+                                            <m:mtext>d</m:mtext>
+                                          </m:msup>
+                                          <m:msup>
+                                            <m:mtext>Θ</m:mtext>
+                                            <m:mtext>e</m:mtext>
+                                          </m:msup>
+                                          <m:msup>
+                                            <m:mtext>N</m:mtext>
+                                            <m:mtext>f</m:mtext>
+                                          </m:msup>
+                                          <m:msup>
+                                            <m:mtext>J</m:mtext>
+                                            <m:mtext>g</m:mtext>
+                                          </m:msup>
+                                        </m:mrow>
+                                        </m:math> dla wykładników a, b, c, d, e, f oraz g</meaning>
+                                      </definition>
+                                      <definition id="fs-id1168328025074">
+                                        <term class="no-emphasis" cmlnle:reference="spójność wymiarów">spójność wymiarów (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">dimensionally consistent</term></foreign>)</term>
+                                        <meaning id="fs-id1168327873954">mówimy o niej, kiedy wszystkie składniki równania mają taki sam wymiar, a argumenty funkcji matematycznych są liczbami niemianowanymi</meaning>
+                                      </definition>
+                                      <definition id="fs-id1168328321073">
+                                        <term class="no-emphasis" cmlnle:reference="bezwymiarowa">bezwymiarowa (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">dimensionless</term></foreign>)</term>
+                                        <meaning id="fs-id1168327949717">wielkość o wymiarze <m:math>
+                                          <m:mrow>
+                                            <m:msup>
+                                              <m:mtext>L</m:mtext>
+                                              <m:mn>0</m:mn>
+                                            </m:msup>
+                                            <m:msup>
+                                              <m:mtext>M</m:mtext>
+                                              <m:mn>0</m:mn>
+                                            </m:msup>
+                                            <m:msup>
+                                              <m:mtext>T</m:mtext>
+                                              <m:mn>0</m:mn>
+                                            </m:msup>
+                                            <m:msup>
+                                              <m:mtext>I</m:mtext>
+                                              <m:mn>0</m:mn>
+                                            </m:msup>
+                                            <m:msup>
+                                              <m:mtext>Θ</m:mtext>
+                                              <m:mn>0</m:mn>
+                                            </m:msup>
+                                            <m:msup>
+                                              <m:mtext>N</m:mtext>
+                                              <m:mn>0</m:mn>
+                                            </m:msup>
+                                            <m:msup>
+                                              <m:mtext>J</m:mtext>
+                                              <m:mn>0</m:mn>
+                                            </m:msup>
+                                            <m:mo>=</m:mo>
+                                            <m:mn>1</m:mn>
+                                            <m:mo/>
+                                          </m:mrow>
+                                          </m:math> nazywana jest również liczbą o wymiarze 1 lub niemianowaną </meaning>
+                                        </definition>
+                                      </glossary>
+                                    </document>

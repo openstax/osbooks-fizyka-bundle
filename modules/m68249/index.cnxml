@@ -1,0 +1,1707 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Równanie Schrӧdingera</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m68249</md:content-id>
+  <md:title>Równanie Schrӧdingera</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się: 
+<list>
+<item>opisywać, jaką rolę w mechanice kwantowej odgrywa równanie Schrӧdingera;</item>
+<item>wyjaśniać różnicę między równaniem Schrӧdingera zależnym i niezależnym od czasu;</item>  
+<item>interpretować rozwiązania równania Schrӧdingera.</item>
+</list></md:abstract>
+  <md:uuid>67a45d80-f5c8-472f-b6e0-72f37e536d27</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1170902057607">W tym podrozdziale postaramy się opisać kompletną i sformalizowaną teorię mechaniki kwantowej. Uczyniliśmy to już częściowo w podrozdziale <link class="target-chapter" document="m68247">Funkcje falowe</link>, w ramach ogólnego wprowadzenia do zagadnienia. W poprzednich dwóch podrozdziałach omówiliśmy, w jaki sposób w mechanice kwantowej powstało pojęcie funkcji falowej i jakich założeń wymagało, jak możemy wykorzystać funkcję falową i zasadę nieoznaczoności Heisenberga występującą w mechanice kwantowej. Raz jeszcze przywołajmy klasyczną teorię falową światła. W przypadku fali świetlnej pole elektryczne <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>E</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>x</m:mi>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E\apply(x,t)</m:annotation>
+    </m:semantics>
+  </m:math> spełnia następujące równanie</para><equation id="fs-id1170903853347">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mfrac>
+          <m:mrow>
+            <m:msup>
+              <m:mo>∂</m:mo>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>E</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mo>∂</m:mo>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:msup>
+                <m:mi>c</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mfrac>
+            <m:mo>⋅</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msup>
+                  <m:mo>∂</m:mo>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mi>E</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>∂</m:mo>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \frac{\partial ^2 E}{\partial x^2} = \frac{1}{c^2} \cdot \frac{\partial ^2 E}{\partial t^2} \text{,}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170904138778">gdzie <m:math display="inline">
+  <m:semantics>
+    <m:mi>c</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> c</m:annotation>
+  </m:semantics>
+</m:math> jest prędkością światła, a symbol <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mo>∂</m:mo>
+    <m:mtext/>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \partial\text{}</m:annotation>
+</m:semantics>
+</m:math> przedstawia pochodną cząstkową (przypomnienie z <link class="target-chapter" document="m65825">Drgania</link> – pochodna cząstkowa jest ściśle związana z normalną pochodną, ale dotyczy funkcji o więcej niż jednej zmiennej; gdy różniczkujemy po jednej zmiennej, pozostałe traktowane są jako stałe). Na falę światła składa się bardzo duża liczba fotonów, a więc wielkość <m:math display="inline">
+<m:semantics>
+  <m:msup>
+    <m:mfenced open="|" close="|">
+      <m:mrow>
+        <m:mi>E</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>x</m:mi>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+      </m:mrow>
+    </m:mfenced>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \abs{E\apply(x,t)}^2</m:annotation>
+</m:semantics>
+</m:math> może być interpretowana jako prawdopodobieństwo znalezienia pojedynczego fotonu w konkretnym miejscu (np. na ekranie projektora). </para>
+<para id="fs-id1170902194849">Istnieje wiele rozwiązań tego równania. Jednym szczególnie ważnym jest</para>
+<equation id="fs-id1170902118559">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:mi>E</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>x</m:mi>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>sin</m:mo>
+            <m:mrow>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>k</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mi>ω</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mfenced>
+              <m:mtext>,</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E\apply(x,t) = A \sin (kx - \omega t) \text{,}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170903859532">gdzie <m:math display="inline">
+  <m:semantics>
+    <m:mi>A</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> A</m:annotation>
+  </m:semantics>
+</m:math> jest amplitudą natężenia pola elektrycznego, <m:math display="inline">
+<m:semantics>
+  <m:mi>k</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k</m:annotation>
+</m:semantics>
+</m:math> liczbą falową, a <m:math display="inline">
+<m:semantics>
+  <m:mi>ω</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \omega</m:annotation>
+</m:semantics>
+</m:math> to częstość kątowa. Łącząc to równanie z <link target-id="fs-id1170903853347" cmlnle:case="instrumental"/>, otrzymujemy</para><equation id="fs-id1170902186856">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:msup>
+          <m:mi>k</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:msup>
+              <m:mi>ω</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:msup>
+              <m:mi>c</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mfrac>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k^2 = \frac{\omega^2}{c^2} \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170902142518">Według równań de Broglie’a <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>p</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>ℏ</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>k</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> p = \hbar k</m:annotation>
+  </m:semantics>
+</m:math> i <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>E</m:mi>
+      <m:mtext>f</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>ℏ</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>ω</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{f}} = \hbar \omega</m:annotation>
+</m:semantics>
+</m:math>, gdzie <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi>E</m:mi>
+    <m:mtext>f</m:mtext>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{f}}</m:annotation>
+</m:semantics>
+</m:math> to energia fotonu, <m:math display="inline">
+<m:semantics>
+  <m:mi>p</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> p</m:annotation>
+</m:semantics>
+</m:math> to jego pęd, a <m:math display="inline">
+<m:semantics>
+  <m:mi>k</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k</m:annotation>
+</m:semantics>
+</m:math> to jego wektor falowy (długość). Podstawiając te zależności do <link target-id="fs-id1170902186856" cmlnle:case="genitive"/>, uzyskujemy</para><equation id="fs-id1170904152351">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>p</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mtext>f</m:mtext>
+            </m:msub>
+            <m:mi>c</m:mi>
+          </m:mfrac>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> p = \frac{E_{\text{f}}}{c} \text{,}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170903805930">czyli energia fotonu <m:math display="inline">
+  <m:semantics>
+    <m:msub>
+      <m:mi>E</m:mi>
+      <m:mtext>f</m:mtext>
+    </m:msub>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{f}}</m:annotation>
+  </m:semantics>
+</m:math> jest proporcjonalna do jego pędu <m:math display="inline">
+<m:semantics>
+  <m:mi>p</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> p</m:annotation>
+</m:semantics>
+</m:math>
+</para>
+<equation id="fs-id1170904252568">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:msub>
+          <m:mi>E</m:mi>
+          <m:mtext>f</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>p</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>c</m:mi>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{f}} = pc \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170902284845">A zatem, biorąc pod uwagę zależność między energią a pędem ustaloną przez Einsteina (<link target-id="einsteins-equation" document="m68240"/>), <link target-id="fs-id1170903853347"/> opisuje cząstkę o zerowej masie spoczynkowej. To zgadza się z naszą wiedzą o fotonach.</para>
+<para id="fs-id1170904153453">Kierunek przeprowadzanej analizy myślowej może być odwrócony. Możemy np. zacząć od postulowania zależności między energią a pędem i dopiero zastanowić się, jakie równanie fali do niej pasuje. Równanie opisujące zależność energia–pęd cząstki nierelatywistycznej w jednym wymiarze zapisuje się jako</para><equation id="fs-id1170903900466">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>H</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:msup>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>m</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mi>V</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>x</m:mi>
+                <m:mi>t</m:mi>
+              </m:mfenced>
+            </m:mrow>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> H = \frac{p^2}{2m} + E_{\text{p}}\apply(x,t) \text{,}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170902287480">gdzie <m:math display="inline">
+  <m:semantics>
+    <m:mi>p</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> p</m:annotation>
+  </m:semantics>
+</m:math> odpowiada pędowi, <m:math display="inline">
+<m:semantics>
+  <m:mi>m</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> m</m:annotation>
+</m:semantics>
+</m:math> jest masą, <m:math display="inline">
+<m:semantics>
+  <m:mi>V</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{p}}</m:annotation>
+</m:semantics>
+</m:math> to energia potencjalna cząstki, a <m:math display="inline">
+<m:semantics>
+  <m:mi>H</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> H</m:annotation>
+</m:semantics>
+</m:math> to hamiltonian, czyli suma energii kinetycznej i potencjalnej (niekiedy oznaczana jako <m:math display="inline">
+<m:semantics>
+  <m:mi>E</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E</m:annotation>
+</m:semantics>
+</m:math>). W przedstawionym równaniu występujące wielkości są skalarami. Możemy jednak postulować, by <m:math display="inline">
+<m:semantics>
+  <m:mi>V</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{p}}</m:annotation>
+</m:semantics>
+</m:math>, <m:math display="inline">
+<m:semantics>
+  <m:mi>p</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> p</m:annotation>
+</m:semantics>
+</m:math> i <m:math display="inline">
+<m:semantics>
+  <m:mi>H</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> H</m:annotation>
+</m:semantics>
+</m:math> były operatorami działającymi na jakiś stan będący funkcją falową. Wówczas każdy z operatorów generowałby swoją wartość własną razy dany stan kwantowy, czyli razy kwantowo-mechaniczną funkcję falową. Równanie funkcji falowej pasującej do tej operatorowej zależności jest niezwykle ważne w mechanice kwantowej i nazywane <term cmlnle:reference="równanie Schrödingera zależne od czasu" class="no-emphasis">równaniem Schrӧdingera zależnym od czasu</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Schrӧdinger’s time-dependent equation</term></foreign>). Równanie Schrӧdingera zależne od czasu to równanie opisujące energię i pęd funkcji falowej. Jest ono znane jako ogólne równanie Schrӧdingera.</para><note id="fs-id1170903798652">
+  <title>Równanie Schrӧdingera zależne od czasu</title>
+  <equation id="fs-id1170902110094"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mrow><m:mo>−</m:mo><m:mrow><m:mfrac><m:msup><m:mi>ℏ</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:msup><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mn>2</m:mn></m:msup><m:mrow><m:mi mathvariant="normal">Ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow></m:mrow><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mrow><m:mi>V</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">Ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>i</m:mi><m:mo>⁢</m:mo><m:mi>ℏ</m:mi><m:mo>⁢</m:mo><m:mfrac><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mi mathvariant="normal">Ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow></m:mrow><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mtext>,</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            - \frac{\hbar^2}{2m} \cdot \frac{\d^2 \mathrm{Ψ}\apply(x,t)}{\d x^2} + V\apply(x,t) \mathrm{Ψ}\apply(x,t) = i \hbar \frac{\d \mathrm{Ψ}\apply(x,t)}{\d t} \text{,}</m:annotation></m:semantics></m:math></equation></note>
+<para id="eip-654">gdzie <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mrow><m:mi>i</m:mi><m:mo>⁢</m:mo><m:mi>ℏ</m:mi></m:mrow><m:mo>⋅</m:mo><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo></m:mrow><m:mo>∕</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>t</m:mi></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            i\hbar \cdot {\d} /\d t</m:annotation></m:semantics></m:math> to operator reprezentujący cały hamiltonian <m:math display="inline"><m:semantics><m:mrow><m:mi>H</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            H \apply (t)</m:annotation></m:semantics></m:math>, a operator <m:math display="inline"><m:semantics><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:msup><m:mi>ℏ</m:mi><m:mn>2</m:mn></m:msup><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mfenced><m:mrow><m:msup><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mn>2</m:mn></m:msup><m:mo>∕</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mfenced></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            -\hbar^2/(2m)({\d}^2 / \d x^2)</m:annotation></m:semantics></m:math> reprezentuje energię kinetyczną, natomiast <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>V</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>x</m:mi>
+      <m:mi>t</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{p}}\apply(x,t)</m:annotation>
+</m:semantics>
+</m:math> energię potencjalną i jest w istocie mnożeniem przez liczbę rzeczywistą <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>V</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>x</m:mi>
+      <m:mi>t</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{p}}\apply(x,t)</m:annotation>
+</m:semantics>
+</m:math>. <link target-id="fs-id1170902110094"/> daje dwa równania na stany własne, które można zapisać jako</para><equation id="eip-412"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mi>i</m:mi><m:mo>⁢</m:mo><m:mi>ℏ</m:mi><m:mo>⁢</m:mo><m:mfrac><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">Ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>H</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">Ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            i \hbar \frac{{\d}}{\d t} \mathrm{Ψ}\apply(x,t) = H\apply(t) \mathrm{Ψ}\apply(x,t)</m:annotation></m:semantics></m:math></equation><para id="eip-128">oraz</para>
+<equation id="eip-612"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mfenced close="]" open="["><m:mrow><m:mrow><m:mo>−</m:mo><m:mrow><m:mfrac><m:msup><m:mi>ℏ</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:msup><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mn>2</m:mn></m:msup><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>V</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">Ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>i</m:mi><m:mo>⁢</m:mo><m:mi>ℏ</m:mi><m:mo>⁢</m:mo><m:mfrac><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mi mathvariant="normal">Ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            [ - \frac{\hbar^2}{2m} \cdot \frac{{\d}^2 }{\d x^2} + V\apply(x,t) ] \mathrm{Ψ}\apply(x,t) = i \hbar \frac{{\d}}{\d t} \mathrm{Ψ}\apply(x,t) \text{.}</m:annotation></m:semantics></m:math></equation><para id="eip-690">Te równania to równanie Schrӧdingera zapisane w dwóch równoważnych postaciach i zależne od czasu. W szczególności <link target-id="eip-612" cmlnle:case="nominative"/> daje się zazwyczaj rozwiązać analitycznie przez separację zmiennych <m:math display="inline">
+  <m:semantics>
+    <m:mi>x</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+  </m:semantics>
+</m:math> i <m:math display="inline">
+<m:semantics>
+  <m:mi>t</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> t</m:annotation>
+</m:semantics>
+</m:math>, tzn. jawnie zakładamy, że <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mi mathvariant="normal">Ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:msub><m:mi>ψ</m:mi><m:mn>1</m:mn></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mi>f</m:mi><m:mo>⁡</m:mo><m:mfenced><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub><m:mi>t</m:mi></m:mfenced></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \mathrm{Ψ}\apply(x,t) = \psi_1\apply(x, t_1) f\apply(t_1, t)</m:annotation></m:semantics></m:math>, a zatem oddzielamy ewolucję układu kwantowego w czasie od położenia. Jest to możliwe, gdy <m:math display="inline">
+<m:semantics>
+  <m:mi>H</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> H</m:annotation>
+</m:semantics>
+</m:math> nie zależy od <m:math display="inline">
+<m:semantics>
+  <m:mi>x</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+</m:semantics>
+</m:math>. Stosując to założenie, otrzymujemy rozwiązanie w postaci iloczynu funkcji zależnej od położenia, stałej (i zależnej od chwili początkowej), i funkcji zależnej od czasu. Jest to wyrażone następująco</para><equation id="eip-803"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mi mathvariant="normal">Ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:msub><m:mi>ψ</m:mi><m:mn>1</m:mn></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mi>f</m:mi><m:mo>⁡</m:mo><m:mfenced><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub><m:mi>t</m:mi></m:mfenced></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:msub><m:mi>ψ</m:mi><m:mn>1</m:mn></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mo>exp</m:mo><m:mrow><m:mfenced close="]" open="["><m:mrow><m:mo>−</m:mo><m:mrow><m:mfrac><m:mi>i</m:mi><m:mi>ℏ</m:mi></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub><m:mi>t</m:mi></m:munderover><m:mrow><m:mrow><m:mi>H</m:mi><m:mo>⁡</m:mo><m:mfenced><m:msup><m:mi>t</m:mi><m:mo>′</m:mo></m:msup></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>t</m:mi><m:mo>′</m:mo></m:msup></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mfenced><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \mathrm{Ψ}\apply(x, t) = \psi_1\apply(x) f\apply(t_1,t) = \psi_1\apply(x, t_1) \exp [-\frac{i}{\hbar} \int_{t_1}^t H\apply (t') \d t'] \text{.}</m:annotation></m:semantics></m:math></equation><para id="eip-723">Ustaliwszy <m:math display="inline">
+  <m:semantics>
+    <m:msub>
+      <m:mi>t</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> t_1</m:annotation>
+  </m:semantics>
+</m:math> (chwilę początkową), rozpoznajemy funkcję <m:math display="inline"><m:semantics><m:mrow><m:mi>f</m:mi><m:mo>⁡</m:mo><m:mfenced><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub><m:mi>t</m:mi></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            f\apply(t_1, t)</m:annotation></m:semantics></m:math> jako będącą ewolucją fazy z czasem w równaniu Schrӧdingera i otrzymujemy funkcję falową w chwili późniejszej <m:math display="inline"><m:semantics><m:mi>t</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            t</m:annotation></m:semantics></m:math>. Wraz z upływem czasu <m:math display="inline"><m:semantics><m:mrow><m:mi>t</m:mi><m:mo>−</m:mo><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            t-t_1</m:annotation></m:semantics></m:math> faza funkcji falowej zmienia się o czynnik <m:math display="inline"><m:semantics><m:mrow><m:mi>f</m:mi><m:mo>⁡</m:mo><m:mfenced><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub><m:mi>t</m:mi></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            f\apply(t_1, t)</m:annotation></m:semantics></m:math>, wyrażony jako</para><equation id="eip-718"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mi>f</m:mi><m:mo>⁡</m:mo><m:mfenced><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>f</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mi>t</m:mi><m:mo>−</m:mo><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>exp</m:mo><m:mrow><m:mfenced close="]" open="["><m:mrow><m:mo>−</m:mo><m:mrow><m:mfrac><m:mi>i</m:mi><m:mi>ℏ</m:mi></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:msub><m:mi>t</m:mi><m:mn>2</m:mn></m:msub><m:mi>t</m:mi></m:munderover><m:mrow><m:mrow><m:mi>H</m:mi><m:mo>⁡</m:mo><m:mfenced><m:msup><m:mi>t</m:mi><m:mo>′</m:mo></m:msup></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>t</m:mi><m:mo>′</m:mo></m:msup></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mfenced><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            f \apply (t_1, t) = f\apply(t-t_1) = \exp [-\frac{i}{\hbar} \int_{t_2}^t H \apply (t') \d t'] \text{.}</m:annotation></m:semantics></m:math></equation><para id="eip-464">Funkcja <m:math display="inline"><m:semantics><m:mrow><m:mi>f</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mi>t</m:mi><m:mo>−</m:mo><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            f\apply(t-t_1)</m:annotation></m:semantics></m:math> to operator ewolucji funkcji falowej w czasie od chwili <m:math display="inline"><m:semantics><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub><m:annotation encoding="application/vnd.katalysteducation.mathtex">            t_1</m:annotation></m:semantics></m:math> do chwili <m:math display="inline"><m:semantics><m:mi>t</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            t</m:annotation></m:semantics></m:math>. Mnoży się wówczas funkcję falową z chwili <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi>t</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> t_1</m:annotation>
+</m:semantics>
+</m:math> przez <m:math display="inline"><m:semantics><m:mrow><m:mi>f</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mi>t</m:mi><m:mo>−</m:mo><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            f\apply(t-t_1)</m:annotation></m:semantics></m:math> i uzyskuje funkcję falową w nowej chwili: <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mrow>
+      <m:mi>H</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mi>H</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>E</m:mi>
+    <m:mo>=</m:mo>
+    <m:mtext>const</m:mtext>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> H\apply(t) = H = E = \text{const}</m:annotation>
+</m:semantics>
+</m:math>, czyli nie zależy od czasu. Wtedy</para><equation id="eip-929"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mi>f</m:mi><m:mo>⁡</m:mo><m:mfenced><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>f</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mi>t</m:mi><m:mo>−</m:mo><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>exp</m:mo><m:mrow><m:mfenced close="]" open="["><m:mrow><m:mo>−</m:mo><m:mrow><m:mfrac><m:mi>i</m:mi><m:mi>ℏ</m:mi></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mi>E</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mi>t</m:mi><m:mo>−</m:mo><m:msub><m:mi>t</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mfenced></m:mrow></m:mrow></m:mrow></m:mfenced><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            f\apply(t_1, t) = f\apply(t-t_1) = \exp [-\frac{i}{\hbar} E\apply(t-t_1)] \text{.}</m:annotation></m:semantics></m:math></equation><para id="eip-27">W przypadku, gdy energia potencjalna <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mrow>
+        <m:mi>V</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>x</m:mi>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>V</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>x</m:mi>
+        </m:mfenced>
+      </m:mrow>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{p}}\apply(x,t)= E_{\text{p}}\apply(x)</m:annotation>
+  </m:semantics>
+</m:math> jest niezależna od czasu, otrzymujemy niezależne od czasu równanie Schrӧdingera – wówczas <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mrow>
+      <m:mi>H</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mi>H</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>E</m:mi>
+    <m:mo>=</m:mo>
+    <m:mtext>const</m:mtext>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> H\apply(t) = H = E = \text{const}</m:annotation>
+</m:semantics>
+</m:math> (nie zależy od czasu) i zachodzi równanie</para><equation id="eip-444"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mfrac><m:msup><m:mi>ℏ</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mrow><m:mfrac><m:msup><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mn>2</m:mn></m:msup><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mrow><m:mo>+</m:mo><m:mrow><m:mrow><m:mi>V</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mi>ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>E</m:mi><m:mo>⁢</m:mo><m:mrow><m:mi>ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \frac{\hbar^2}{2m} \cdot \dd[\d][2]{x} + V \apply (x) \psi\apply(x) = E \psi\apply(x) \text{.}</m:annotation></m:semantics></m:math></equation><para id="fs-id1170902089474">Jak wiadomo z analiz właściwych fizyce klasycznej, obecność energii potencjalnej zależnej w czasie i przestrzeni <m:math display="inline"><m:semantics><m:mrow><m:mi>V</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            V\apply(x,t)</m:annotation></m:semantics></m:math> wywołuje zależne od czasu i położenia siły działające na daną cząstkę klasyczną. Uwzględnia to w szczególności formalizm hamiltonowski, istotny przy formułowaniu mechaniki kwantowej. Jak opisane zostało w <link class="target-chapter" document="m65775">Energia potencjalna i zasada zachowania energii</link>, siła <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mi>F</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> F_x = F</m:annotation>
+</m:semantics>
+</m:math> działająca na cząstkę w jednym wymiarze <m:math display="inline">
+<m:semantics>
+  <m:mi>x</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+</m:semantics>
+</m:math> jest opisywana przez następujące równanie</para><equation id="fs-id1170902179935"><m:math display="block"><m:semantics><m:mrow><m:mi>F</m:mi><m:mo>=</m:mo><m:mrow><m:mo>−</m:mo><m:mrow><m:mfrac><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mi>V</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow></m:mrow><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            F = - \frac{\d V\apply(x,t)}{\d x} \text{.}</m:annotation></m:semantics></m:math></equation><para id="fs-id1170902196817"><link target-id="eip-612"/> odgrywa w mechanice kwantowej rolę podobną do drugiej zasady dynamiki Newtona w mechanice klasycznej. Gdy określimy energię potencjalną cząstki lub, równie dobrze, gdy określimy siłę działającą na cząstkę, możemy sformułować równanie różniczkowe. Rozwiązanie tego równania różniczkowego w jednym wymiarze jest funkcją <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x\apply(t)</m:annotation>
+  </m:semantics>
+</m:math>, która określa położenie ciała w danym czasie <m:math display="inline">
+<m:semantics>
+  <m:mi>t</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> t</m:annotation>
+</m:semantics>
+</m:math>. Rozwiązanie równania Schrӧdingera zależnego od czasu daje narzędzie – funkcję falową, która może być wykorzystana do określenia, gdzie cząstka może się znajdować w danym czasie. Nasze rozważania mogą być rozszerzone do dwóch czy trzech wymiarów. Wtedy zamiast potencjału <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>V</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>x</m:mi>
+      <m:mi>t</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> V\apply(x,t)</m:annotation>
+</m:semantics>
+</m:math> występuje potencjał <m:math display="inline">
+<m:semantics>
+  <m:mi>V</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> V</m:annotation>
+</m:semantics>
+</m:math> zależny od <m:math display="inline">
+<m:semantics>
+  <m:mi>x</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+</m:semantics>
+</m:math>, <m:math display="inline">
+<m:semantics>
+  <m:mi>y</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> y</m:annotation>
+</m:semantics>
+</m:math> i <m:math display="inline">
+<m:semantics>
+  <m:mi>z</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> z</m:annotation>
+</m:semantics>
+</m:math> w postaci <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>V</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>x</m:mi>
+      <m:mi>y</m:mi>
+      <m:mi>z</m:mi>
+      <m:mi>t</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> V\apply(x,y,z,t)</m:annotation>
+</m:semantics>
+</m:math> oraz operator <m:math display="inline"><m:semantics><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:msup><m:mi>ℏ</m:mi><m:mn>2</m:mn></m:msup><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mfenced><m:mrow><m:msup><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mn>2</m:mn></m:msup><m:mo>∕</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mfenced></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            - \hbar^2/(2m) ({\d}^2 /\d x^2)</m:annotation></m:semantics></m:math>, zastąpiony przez operator</para><equation id="fs-idm1132945216"><m:math display="block"><m:semantics><m:mrow><m:mo>−</m:mo><m:mfenced><m:mrow><m:mrow><m:mfrac><m:msup><m:mi>ℏ</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:msup><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mn>2</m:mn></m:msup><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:msup><m:mi>ℏ</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:msup><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mn>2</m:mn></m:msup><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:msup><m:mi>ℏ</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:msup><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mn>2</m:mn></m:msup><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            - (\frac{\hbar^2}{2m} \cdot {\dd[\d][2]{x}} + \frac{\hbar^2}{2m} \cdot {\dd[\d][2]{y}} + \frac{\hbar^2}{2m} \cdot {\dd[\d][2]{z}})</m:annotation></m:semantics></m:math></equation><para id="fs-idm1316593984">w przypadku trójwymiarowym. W dwóch wymiarach przestrzennych pomijamy współrzędną <m:math display="inline">
+<m:semantics>
+  <m:mi>z</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> z</m:annotation>
+</m:semantics>
+</m:math> i występuje tylko <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>V</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>x</m:mi>
+      <m:mi>y</m:mi>
+      <m:mi>t</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> V\apply(x,y,t)</m:annotation>
+</m:semantics>
+</m:math> oraz</para>
+<equation id="fs-idm1172570464"><m:math display="block"><m:semantics><m:mrow><m:mo>−</m:mo><m:mrow><m:mfenced><m:mrow><m:mrow><m:mfrac><m:msup><m:mi>ℏ</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:msup><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mn>2</m:mn></m:msup><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>+</m:mo><m:mrow><m:mfrac><m:msup><m:mi>ℏ</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:msup><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mn>2</m:mn></m:msup><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mfenced><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            - (\frac{\hbar^2}{2m} \cdot {\dd[\d][2]{x}} + \frac{\hbar^2}{2m} \cdot {\dd[\d][2]{y}})\text{.}</m:annotation></m:semantics></m:math></equation><para id="fs-idm779527584">Zazwyczaj łatwo jest otrzymać rozwiązania w jednym wymiarze, trudniej jest takie rozwiązanie uzyskać dla dwóch, a najtrudniej dla trzech czy <m:math display="inline"><m:semantics><m:mi>N</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            N</m:annotation></m:semantics></m:math> wymiarów.</para><para id="fs-id1170902061967">Rozważmy szczególny przypadek cząstki swobodnej. Cząstka taka nie odczuwa działania żadnej siły w żadnym z trzech kierunków. Dla jednego rozważanego wymiaru mamy <m:math display="inline"><m:semantics><m:mrow><m:mi>F</m:mi><m:mo>=</m:mo><m:mrow><m:mn>0</m:mn><m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo><m:mi mathvariant="normal">N</m:mi></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            F=\SI{0}{\newton}</m:annotation></m:semantics></m:math>. Biorąc pod uwagę <link target-id="fs-id1170902179935"/>, musimy uwzględnić</para><equation id="fs-id1170902195526"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mi>V</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:msub><m:mi>V</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mtext>const.</m:mtext></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            V\apply(x,t) = V_0 = \text{const.}</m:annotation></m:semantics></m:math></equation><para id="fs-id1170902140135">Dla ułatwienia ustalmy <m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>V</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            V_0=0</m:annotation></m:semantics></m:math>. Wtedy równanie Schrӧdingera upraszcza się do postaci</para><equation id="fs-id1170904052586"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mo>−</m:mo><m:mrow><m:mfrac><m:msup><m:mi>ℏ</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:msup><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mn>2</m:mn></m:msup><m:mrow><m:mi mathvariant="normal">Ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow></m:mrow><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>i</m:mi><m:mo>⁢</m:mo><m:mi>ℏ</m:mi><m:mo>⁢</m:mo><m:mfrac><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mi mathvariant="normal">Ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow></m:mrow><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            - \frac{\hbar ^2}{2m} \cdot \frac{\d ^2 \mathrm{Ψ}\apply(x,t)}{\d x^2} = i \hbar \frac{\d \mathrm{Ψ}\apply(x,t)}{\d t} \text{.}</m:annotation></m:semantics></m:math></equation><para id="fs-id1170902194463">Rozwiązaniem tego równania będzie</para>
+    <equation id="fs-id1170902196880">
+<m:math display="block"><m:semantics><m:mrow><m:mrow><m:mi mathvariant="normal">Ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mi>i</m:mi><m:mo>⁢</m:mo><m:mfenced><m:mrow><m:mrow><m:mi>k</m:mi><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow><m:mo>−</m:mo><m:mrow><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow></m:mrow></m:mfenced></m:mrow></m:msup><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \mathrm{Ψ}\apply(x,t) = A e^{i(kx-\omega t)} \text{.}</m:annotation></m:semantics></m:math>
+    </equation>
+    <para id="fs-id1170904082323">Nie jest zaskakujące, że rozwiązanie zawiera liczbę urojoną (<m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mi>i</m:mi>
+          <m:mo>=</m:mo>
+          <m:msqrt>
+            <m:mn>-1</m:mn>
+          </m:msqrt>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> i=\sqrt{-1}</m:annotation>
+      </m:semantics>
+    </m:math>), ponieważ samo równanie różniczkowe posiada część urojoną. Jednak, na co zwróciliśmy uwagę wcześniej, mechanika kwantowa opiera swoje przewidywania wyłącznie na <m:math display="inline">
+    <m:semantics>
+      <m:msup>
+        <m:mfenced open="|" close="|">
+          <m:mrow>
+            <m:mi mathvariant="normal">Ψ</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>x</m:mi>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+          </m:mrow>
+        </m:mfenced>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \abs{\mathrm{Ψ}\apply(x,t)}^2</m:annotation>
+    </m:semantics>
+  </m:math>, które daje tylko rzeczywiste wartości. Zauważmy, że rzeczywiste rozwiązania dotyczące fal płaskich, <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mrow>
+        <m:mi mathvariant="normal">Ψ</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>x</m:mi>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>sin</m:mo>
+          <m:mfenced>
+            <m:mrow>
+              <m:mrow>
+                <m:mi>k</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>x</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mrow>
+                <m:mi>ω</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mrow>
+          </m:mfenced>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}\apply(x,t) = A \sin (kx-\omega t)</m:annotation>
+  </m:semantics>
+</m:math> i <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mrow>
+      <m:mi mathvariant="normal">Ψ</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>x</m:mi>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>A</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>cos</m:mo>
+        <m:mfenced>
+          <m:mrow>
+            <m:mrow>
+              <m:mi>k</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>x</m:mi>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mrow>
+              <m:mi>ω</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mrow>
+        </m:mfenced>
+      </m:mrow>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}\apply(x,t) = A \cos (kx-\omega t)</m:annotation>
+</m:semantics>
+</m:math>, nie spełniają równania Schrӧdingera, ale rozwiązanie postaci</para>
+<equation id="eip-317">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">Ψ</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>x</m:mi>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mi>A</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>k</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mi>ω</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mfenced>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mi>A</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>i</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>cos</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>k</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mi>ω</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mfenced>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>exp</m:mo>
+            <m:mfenced open="[" close="]">
+              <m:mrow>
+                <m:mi>i</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>k</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>x</m:mi>
+                      </m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mrow>
+                        <m:mi>ω</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mn>3</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>π</m:mi>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mfenced>
+              </m:mrow>
+            </m:mfenced>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}\apply(x,t) = A \sin (kx-\omega t) + Ai \cos (kx-\omega t) = A \exp [i(kx-\omega t + \frac{3\pi}{2})]</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="eip-480">spełnia to równanie. </para>
+<para id="eip-475">Istnienie części urojonej funkcji falowej uniemożliwia kuszącą perspektywę dotknięcia czy nawet zobaczenia jej w naturze. W teorii mechaniki kwantowej Schrӧdingera funkcja falowa jest jedynie narzędziem wykorzystywanym w obliczeniach.</para><para id="fs-id1170902183058">Jeżeli energia potencjalna (<m:math display="inline">
+  <m:semantics>
+    <m:mi>V</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{p}}</m:annotation>
+  </m:semantics>
+  </m:math>) nie zależy od czasu, to zależność</para><note id="fs-id1170903806306" class="equation-callout">
+    <equation id="fs-id1170902063770">
+      <m:math display="block">
+        <m:semantics>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">Ψ</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>x</m:mi>
+                <m:mi>t</m:mi>
+              </m:mfenced>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mi>ψ</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>x</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>⁢</m:mo>
+              <m:msup>
+                <m:mi>e</m:mi>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mi>i</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>ω</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:msup>
+              <m:mtext>,</m:mtext>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}\apply(x,t) = \psi\apply(x) e^{-i\omega t}\text{,}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </equation>
+  </note>
+  <para id="fs-id1170902089128">gdzie <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>ψ</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>x</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi\apply(x)</m:annotation>
+    </m:semantics>
+  </m:math> jest funkcją niezależną od czasu, a <m:math display="inline">
+  <m:semantics>
+    <m:msup>
+      <m:mi>e</m:mi>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mi>i</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>ω</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:msup>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> e^{-i\omega t}</m:annotation>
+  </m:semantics>
+</m:math> funkcją niezależną od położenia, spełnia równanie Schrӧdingera. Innymi słowy, funkcję falową można podzielić na dwa człony – zależny jedynie od czasu i zależny od położenia. Czynnik <m:math display="inline">
+<m:semantics>
+  <m:msup>
+    <m:mi>e</m:mi>
+    <m:mrow>
+      <m:mo>−</m:mo>
+      <m:mrow>
+        <m:mi>i</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>ω</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mrow>
+  </m:msup>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> e^{-i\omega t}</m:annotation>
+</m:semantics>
+</m:math> nazywamy <term cmlnle:reference="czynnik zależny od czasu dla funkcji falowej" class="no-emphasis">czynnikiem zależnym od czasu</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">time-modulation factor</term></foreign>). Według de Broglie’a energia fali materii jest dana wzorem <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>E</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>ℏ</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>ω</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E = \hbar \omega</m:annotation>
+</m:semantics>
+</m:math>, gdzie <m:math display="inline">
+<m:semantics>
+  <m:mi>E</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E</m:annotation>
+</m:semantics>
+</m:math> to energia całkowita. A zatem powyższe równanie może być również zapisane jako</para><equation id="fs-id1170904230883">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">Ψ</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>x</m:mi>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mi>ψ</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>x</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mo>−</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>i</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>E</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>∕</m:mo>
+                <m:mi>ℏ</m:mi>
+              </m:mrow>
+            </m:mrow>
+          </m:msup>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}\apply(x,t) = \psi\apply(x) e^{-iE t/ \hbar} \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170903868508">Każda kombinacja liniowa tych stanów (stan rozmyty energii lub pędu) jest rozwiązaniem powyższego równania. Stany takie mogą np. opisywać cząstkę zlokalizowaną (patrz <link target-id="CNX_UPhysics_40_02_packet" document="m68248"/>), której gęstość prawdopodobieństwa jest skupiona wokół jakiegoś punktu przestrzeni. Odpowiada ona intuicji klasycznej. Cząstka niezlokalizowana i rozproszona po całej przestrzeni lub posiadająca lokalizację w kilku miejscach w przestrzeni (kilka lokalnych maksimów) nie odpowiada tej intuicji, ale jest rozwiązaniem równania Schrӧdingera. Można to porównać do sytuacji, gdy dany człowiek siedzi na kilku oddalonych od siebie krzesłach, o czym była mowa we wstępie. Taki przykład pokazuje, że mechanika kwantowa rzadko kieruje się intuicją stosowaną w fizyce klasycznej. Jednak w pewnych sytuacjach ta klasyczna intuicja także obowiązuje. </para>
+<note id="fs-id1170903906579" class="check-understanding">
+  <exercise id="fs-id1170902220108">
+    <problem id="fs-id1170902234159">
+      <para id="fs-id1170904136006"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Cząstka o masie <m:math display="inline"><m:semantics><m:mi>m</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            m</m:annotation></m:semantics></m:math> porusza się wzdłuż osi <m:math display="inline"><m:semantics><m:mi>x</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            x</m:annotation></m:semantics></m:math> w potencjale harmonicznym określonym funkcją <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mi>V</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            V \apply (x) = m\omega^2 x^2/2</m:annotation></m:semantics></m:math> (przypadek kwantowy kulki o masie <m:math display="inline"><m:semantics><m:mi>m</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            m</m:annotation></m:semantics></m:math> na sprężynie, gdzie siła działająca na kulkę jest proporcjonalna do wielkości wychylenia od położenia równowagi). Obliczyć wartość średnia <m:math display="inline"><m:semantics><m:mfenced close="⟩" open="⟨"><m:mi>x</m:mi></m:mfenced><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \langle x \rangle</m:annotation></m:semantics></m:math> dla <m:math display="inline"><m:semantics><m:mi>n</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            n</m:annotation></m:semantics></m:math>–tego poziomu energetycznego wyrażona całką od <m:math display="inline"><m:semantics><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            -\infty</m:annotation></m:semantics></m:math> do <m:math display="inline"><m:semantics><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            +\infty</m:annotation></m:semantics></m:math> względem <m:math display="inline"><m:semantics><m:mi>x</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            x</m:annotation></m:semantics></m:math> z wyrażenia <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:msubsup><m:mi>ψ</m:mi><m:mi>n</m:mi><m:mtext>*</m:mtext></m:msubsup><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mi>V</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mrow><m:msub><m:mi>ψ</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \psi_n^{\text{*}} \apply (x) V\apply (x) \psi_n \apply (x)</m:annotation></m:semantics></m:math>, gdzie  <m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>ψ</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \psi_n \apply (x)</m:annotation></m:semantics></m:math> to funkcja falowa <m:math display="inline"><m:semantics><m:mi>n</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            n</m:annotation></m:semantics></m:math>–tego poziomu energetycznego kwantowego oscylatora harmonicznego. Odpowiedź wyraź w zależności od <m:math display="inline"><m:semantics><m:mi>n</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            n</m:annotation></m:semantics></m:math>. Jakie jest spektrum energii oscylatora harmonicznego?</para></problem>
+<solution id="fs-id1170903869252">
+  <para id="fs-id1170903815599">Mamy zadany Hamiltonian oscylatora harmonicznego <m:math display="inline"><m:semantics><m:mrow><m:mover><m:mi>H</m:mi><m:mo>̂</m:mo></m:mover><m:mo>=</m:mo><m:mrow><m:mrow><m:mfrac><m:mrow><m:mo>−</m:mo><m:mi>ℏ</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mfrac><m:msup><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mn>2</m:mn></m:msup><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow><m:mo>+</m:mo><m:mfrac><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \hat{H} = \frac{-\hbar}{2m} {\dd[\d][2]{x}} + \frac{m\omega^2}{2}</m:annotation></m:semantics></m:math>. Równanie na stany własne operatora <m:math display="inline"><m:semantics><m:mover><m:mi>H</m:mi><m:mo>̂</m:mo></m:mover><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \hat{H}</m:annotation></m:semantics></m:math> zapisujemy jako <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mover><m:mi>H</m:mi><m:mo>̂</m:mo></m:mover><m:mo>⁢</m:mo><m:mrow><m:msub><m:mi>ψ</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>E</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁢</m:mo><m:mrow><m:msub><m:mi>ψ</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \hat{H} \psi_n \apply (x) = E_n \psi_n \apply (x)</m:annotation></m:semantics></m:math>. Tutaj <m:math display="inline"><m:semantics><m:msub><m:mi>E</m:mi><m:mi>n</m:mi></m:msub><m:annotation encoding="application/vnd.katalysteducation.mathtex">            E_n</m:annotation></m:semantics></m:math> to dozwolone energie oscylatora harmonicznego (wartości własne operatora <m:math display="inline"><m:semantics><m:mover><m:mi>H</m:mi><m:mo>̂</m:mo></m:mover><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \hat H</m:annotation></m:semantics></m:math>). Udaje się pokazać, że <m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>E</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mrow><m:mi>ℏ</m:mi><m:mo>⁢</m:mo><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:mfenced><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mfenced></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            E_n = \hbar \omega (n + 1/2)</m:annotation></m:semantics></m:math>, gdzie <m:math display="inline"><m:semantics><m:mfenced close="" open=""><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mn>1</m:mn><m:mn>2</m:mn><m:mi>…</m:mi></m:mfenced><m:annotation encoding="application/vnd.katalysteducation.mathtex">            n = 0,1,2,\dots</m:annotation></m:semantics></m:math>. Natomiast funkcje własne operatora <m:math display="inline"><m:semantics><m:mover><m:mi>H</m:mi><m:mo>̂</m:mo></m:mover><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \hat H</m:annotation></m:semantics></m:math> zapisujemy jako <m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>ψ</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \psi_n \apply (x)</m:annotation></m:semantics></m:math> i są one wyrażone wzorem <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:msub><m:mi>ψ</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:msqrt><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup><m:mo>⁢</m:mo><m:mi>n</m:mi></m:mrow><m:mo>!</m:mo></m:msqrt></m:mfrac><m:mo>⁢</m:mo><m:msup><m:mfenced><m:mfrac><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>ω</m:mi></m:mrow><m:mrow><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>ℏ</m:mi></m:mrow></m:mfrac></m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>4</m:mn></m:mrow></m:msup><m:mo>⁢</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>ℏ</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:msup><m:mo>⁢</m:mo><m:mrow><m:msub><m:mi>H</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:msqrt><m:mfrac><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>ω</m:mi></m:mrow><m:mi>ℏ</m:mi></m:mfrac></m:msqrt><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \psi_n \apply (x) = \frac{1}{\sqrt{2^n n!}}(\frac{m\omega}{\pi \hbar})^{1/4} e^{-m \omega x^2 / (2\hbar)} H_n \apply (\sqrt{\frac{m\omega}{\hbar}} x)</m:annotation></m:semantics></m:math>, gdzie wielomiany Hermite'a są zadane jako <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:msub><m:mi>H</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:msup><m:mfenced><m:mn>-1</m:mn></m:mfenced><m:mi>n</m:mi></m:msup><m:mo>⁢</m:mo><m:msup><m:mi>e</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:msup><m:mo>⁢</m:mo><m:mfrac><m:msup><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>n</m:mi></m:msup><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            H_n \apply (x) = (-1)^n e^{x^2} {\dd[\d][d]{x}} e^{-x^2}</m:annotation></m:semantics></m:math>. Wartość średnią obserwabli położenia <m:math display="inline"><m:semantics><m:mfenced close="⟩" open="⟨"><m:mi>x</m:mi></m:mfenced><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \langle x \rangle</m:annotation></m:semantics></m:math> zapisujemy <m:math display="inline"><m:semantics><m:mrow><m:mfenced close="⟩" open="⟨"><m:mi>x</m:mi></m:mfenced><m:mo>=</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:munderover><m:mrow><m:mrow><m:msubsup><m:mi>ψ</m:mi><m:mi>n</m:mi><m:mtext>*</m:mtext></m:msubsup><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mover><m:mi>x</m:mi><m:mo>̂</m:mo></m:mover><m:mo>⁢</m:mo><m:mrow><m:msub><m:mi>ψ</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>x</m:mi></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:munderover><m:mrow><m:msup><m:mfenced close="|" open="|"><m:mrow><m:msub><m:mi>ψ</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>x</m:mi></m:mrow></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \langle x \rangle = \int_{-\infty}^{+\infty} \psi^{\text{*}}_n \apply (x) \hat x \psi_n \apply (x) \d x = \int_{-\infty}^{+\infty} \abs{\psi_n \apply (x)}^2 \d x</m:annotation></m:semantics></m:math>. Zauważamy, że dla <m:math display="inline"><m:semantics><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            n=0</m:annotation></m:semantics></m:math> wielomian Hermite'a daje się zapisać jako <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:msup><m:mfenced><m:mn>-1</m:mn></m:mfenced><m:mn>0</m:mn></m:msup><m:mo>⁢</m:mo><m:msup><m:mi>e</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:msup><m:mo>⁢</m:mo><m:mrow><m:mfrac><m:msup><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mn>0</m:mn></m:msup><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:msup><m:mi>x</m:mi><m:mn>0</m:mn></m:msup></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:msup><m:mi>e</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:msup><m:mo>⁢</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            H_0 \apply (x) = (-1)^0 e^{x^2} \dd[\d][0]{x} e^{-x^2} = e^{x^2} e^{-x^2} = 1</m:annotation></m:semantics></m:math>. Zatem dla <m:math display="inline"><m:semantics><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            n=0</m:annotation></m:semantics></m:math> mamy funkcję Gaussa będącą rozwiązaniem kwantowego oscylatora harmonicznego. Natomiast dla <m:math display="inline"><m:semantics><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            n=1</m:annotation></m:semantics></m:math> mamy <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:msub><m:mi>H</m:mi><m:mn>1</m:mn></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mfenced><m:mn>-1</m:mn></m:mfenced><m:mo>⁢</m:mo><m:msup><m:mi>e</m:mi><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:msup><m:mo>⁢</m:mo><m:mrow><m:mfrac><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            H_1 \apply (x) = (-1) e^{x^2} \dd[\d]{x} e^{-x^2} = 2x</m:annotation></m:semantics></m:math> i dla <m:math display="inline"><m:semantics><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            n=2</m:annotation></m:semantics></m:math> otrzymujemy wielomian <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:msub><m:mi>H</m:mi><m:mn>2</m:mn></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            H_2 \apply (x) = 4x^2 - 2</m:annotation></m:semantics></m:math>. Dla parzystch <m:math display="inline"><m:semantics><m:mi>n</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            n</m:annotation></m:semantics></m:math> (<m:math display="inline"><m:semantics><m:mfenced close="" open=""><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mn>2</m:mn><m:mn>4</m:mn><m:mi>…</m:mi></m:mfenced><m:annotation encoding="application/vnd.katalysteducation.mathtex">            n = 0, 2, 4, \dots</m:annotation></m:semantics></m:math>) wielomian <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:msub><m:mi>H</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>H</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            H_n \apply (x) = H_n \apply (-x)</m:annotation></m:semantics></m:math> jest funkcją parzystą, a zatem kwadrat modułu funkcji falowej jest również funkcją parzystą. Wówczas wyrażenie <m:math display="inline"><m:semantics><m:mrow><m:mfenced close="⟩" open="⟨"><m:mi>x</m:mi></m:mfenced><m:mo>=</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow></m:munderover><m:mrow><m:mi>x</m:mi><m:mo>⁢</m:mo><m:msup><m:mfenced close="]" open="["><m:mrow><m:mfrac><m:mn>1</m:mn><m:msqrt><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup><m:mo>⁢</m:mo><m:mi>n</m:mi></m:mrow><m:mo>!</m:mo></m:msqrt></m:mfrac><m:mo>⁢</m:mo><m:msup><m:mfenced><m:mfrac><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>ω</m:mi></m:mrow><m:mrow><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>ℏ</m:mi></m:mrow></m:mfrac></m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>4</m:mn></m:mrow></m:msup><m:mo>⁢</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>ℏ</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:msup><m:mo>⁢</m:mo><m:mrow><m:msub><m:mi>H</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:msqrt><m:mfrac><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>ω</m:mi></m:mrow><m:mi>ℏ</m:mi></m:mfrac></m:msqrt><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>x</m:mi></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \langle x \rangle = \int_{-\infty}^{+\infty} x [\frac{1}{\sqrt{2^n n!}}(\frac{m\omega}{\pi \hbar})^{1/4} e^{-m \omega x^2 / (2\hbar)} H_n \apply (\sqrt{\frac{m\omega}{\hbar}} x)]^2 \d x = 0</m:annotation></m:semantics></m:math>, gdyż <m:math display="inline"><m:semantics><m:msup><m:mfenced close="]" open="["><m:mrow><m:mfrac><m:mn>1</m:mn><m:msqrt><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup><m:mo>⁢</m:mo><m:mi>n</m:mi></m:mrow><m:mo>!</m:mo></m:msqrt></m:mfrac><m:mo>⁢</m:mo><m:msup><m:mfenced><m:mfrac><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>ω</m:mi></m:mrow><m:mrow><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>ℏ</m:mi></m:mrow></m:mfrac></m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>4</m:mn></m:mrow></m:msup><m:mo>⁢</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>ℏ</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:msup><m:mo>⁢</m:mo><m:mrow><m:msub><m:mi>H</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:msqrt><m:mfrac><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>ω</m:mi></m:mrow><m:mi>ℏ</m:mi></m:mfrac></m:msqrt><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup><m:annotation encoding="application/vnd.katalysteducation.mathtex">            [\frac{1}{\sqrt{2^n n!}}(\frac{m\omega}{\pi \hbar})^{1/4} e^{-m \omega x^2 / (2\hbar)} H_n \apply (\sqrt{\frac{m\omega}{\hbar}} x)]^2</m:annotation></m:semantics></m:math> to funkcja parzysta, a iloczyn funkcji parzystej i nieparzystej (u nas jest nią <m:math display="inline"><m:semantics><m:mi>x</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            x</m:annotation></m:semantics></m:math>) w zadanych granicach całkowania względem <m:math display="inline"><m:semantics><m:mi>x</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            x</m:annotation></m:semantics></m:math> od <m:math display="inline"><m:semantics><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            -\infty</m:annotation></m:semantics></m:math> do <m:math display="inline"><m:semantics><m:mrow><m:mo>+</m:mo><m:mi>∞</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            +\infty</m:annotation></m:semantics></m:math> wynosi <m:math display="inline"><m:semantics><m:mn>0</m:mn><m:annotation encoding="application/vnd.katalysteducation.mathtex">            0</m:annotation></m:semantics></m:math>. Zauważamy, że dla <m:math display="inline"><m:semantics><m:mfenced close="" open=""><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow><m:mn>3</m:mn><m:mn>5</m:mn><m:mi>…</m:mi></m:mfenced><m:annotation encoding="application/vnd.katalysteducation.mathtex">            n=1,3,5,\dots</m:annotation></m:semantics></m:math> (nieparzystych wartości <m:math display="inline"><m:semantics><m:mi>n</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            n</m:annotation></m:semantics></m:math>) średnia wartość <m:math display="inline"><m:semantics><m:mfenced close="⟩" open="⟨"><m:mi>x</m:mi></m:mfenced><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \langle x \rangle</m:annotation></m:semantics></m:math> jest także zerowa. Wynika to z faktu, że kwadrat modułu funkcji nieparzystej <m:math display="inline"><m:semantics><m:msup><m:mfenced close="]" open="["><m:mrow><m:mfrac><m:mn>1</m:mn><m:msqrt><m:mrow><m:msup><m:mn>2</m:mn><m:mi>n</m:mi></m:msup><m:mo>⁢</m:mo><m:mi>n</m:mi></m:mrow><m:mo>!</m:mo></m:msqrt></m:mfrac><m:mo>⁢</m:mo><m:msup><m:mfenced><m:mfrac><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>ω</m:mi></m:mrow><m:mrow><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>ℏ</m:mi></m:mrow></m:mfrac></m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>4</m:mn></m:mrow></m:msup><m:mo>⁢</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>ℏ</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:msup><m:mo>⁢</m:mo><m:mrow><m:msub><m:mi>H</m:mi><m:mi>n</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mrow><m:msqrt><m:mfrac><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>ω</m:mi></m:mrow><m:mi>ℏ</m:mi></m:mfrac></m:msqrt><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup><m:annotation encoding="application/vnd.katalysteducation.mathtex">            [\frac{1}{\sqrt{2^n n!}}(\frac{m\omega}{\pi \hbar})^{1/4} e^{-m \omega x^2 / (2\hbar)} H_n \apply (\sqrt{\frac{m\omega}{\hbar}} x)]^2</m:annotation></m:semantics></m:math> jest funkcją parzystą (kwadrat każdego wielomianiu Hermite'a jest funkcją parzystą, co łatwo pokazać) i z tego, że iloczyn tej funkcji parzystej przez funkcję nieparzystą <m:math display="inline"><m:semantics><m:mi>x</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            x</m:annotation></m:semantics></m:math> jest funkcją antysymetryczną. Zatem dla danego poziomu energetycznego <m:math display="inline"><m:semantics><m:mi>n</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            n</m:annotation></m:semantics></m:math> w kwantowym oscylatorze harmonicznym zawsze wielkość średnia położenia wynosi <m:math display="inline"><m:semantics><m:mrow><m:mfenced close="⟩" open="⟨"><m:mi>x</m:mi></m:mfenced><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \langle x \rangle = 0</m:annotation></m:semantics></m:math>.</para></solution>
+  </exercise>
+</note>
+<para id="fs-id1170903802658">Łącząc <link target-id="fs-id1170902110094"/> i <link target-id="fs-id1170902063770"/>, zależne od czasu równanie Schrӧdingera upraszcza się do</para>
+<note id="fs-id1170903855651" class="equation-callout">
+  <equation id="fs-id1170902298020"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mrow><m:mo>−</m:mo><m:mrow><m:mfrac><m:msup><m:mi>ℏ</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:msup><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mn>2</m:mn></m:msup><m:mrow><m:mi>ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow></m:mrow><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mrow><m:mi>V</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mi>ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>E</m:mi><m:mo>⁢</m:mo><m:mrow><m:mi>ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi></m:mfenced></m:mrow><m:mtext>,</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            -\frac{\hbar^2}{2m} \cdot \frac{\d ^2 \psi\apply(x)}{\d x^2} + V\apply(x) \psi\apply(x) = E\psi\apply(x) \text{,}</m:annotation></m:semantics></m:math></equation></note>
+<para id="fs-id1170904202033">gdzie <m:math display="inline">
+  <m:semantics>
+    <m:mi>E</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E</m:annotation>
+  </m:semantics>
+</m:math> jest energią całkowitą cząstki (liczba rzeczywista). Tę zależność nazwiemy <term cmlnle:reference="równanie Schrödingera niezależne od czasu" class="no-emphasis">równaniem Schrӧdingera niezależnym od czasu</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Schrӧdinger’s time-independent equation</term></foreign>). Zauważ, że stosujemy duże psi (<m:math display="inline">
+<m:semantics>
+  <m:mi mathvariant="normal">Ψ</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}</m:annotation>
+</m:semantics>
+</m:math>) do oznaczenia funkcji falowej zależnej od czasu, a małe psi (<m:math display="inline">
+<m:semantics>
+  <m:mi>ψ</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi</m:annotation>
+</m:semantics>
+</m:math>) do oznaczenia funkcji falowej niezależnej od czasu. Rozwiązanie tego równania musi być pomnożone przez czynnik zależny od czasu, aby można było uzyskać funkcję zależną od <m:math display="inline">
+<m:semantics>
+  <m:mi>t</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> t</m:annotation>
+</m:semantics>
+</m:math>.</para><para id="fs-id1170904272107">W następnych podrozdziałach rozwiążemy niezależne równanie Schrӧdingera dla trzech przypadków: cząstki kwantowej w pudle potencjału, prostego oscylatora harmonicznego i bariery potencjału. Dzięki rozwiązaniu tych podstawowych przykładów powinieneś z łatwością podołać nawet trudniejszym zagadnieniom. Niezależne od czasu funkcje <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>ψ</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>x</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi\apply(x)</m:annotation>
+  </m:semantics>
+  </m:math> muszą spełniać trzy warunki:</para><list id="fs-id1170902363308" list-type="bulleted" bullet-style="bullet"><item>
+      <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mi>ψ</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>x</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi\apply(x)</m:annotation>
+        </m:semantics>
+        </m:math> musi być funkcją ciągłą;</item>
+        <item>pierwsza pochodna <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mi>ψ</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>x</m:mi>
+              </m:mfenced>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi\apply(x)</m:annotation>
+          </m:semantics>
+        </m:math> po przestrzeni <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mi>ψ</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>x</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>∕</m:mo>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:mi>x</m:mi>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \d \psi\apply(x) / \d x</m:annotation>
+        </m:semantics>
+        </m:math> musi być ciągła, co wynika z ciągłości prądu prawdopodobieństwa;</item>
+        <item>
+          <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mi>ψ</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>x</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi\apply(x)</m:annotation>
+            </m:semantics>
+          </m:math> nie może być rozbieżna (wybuchać) dla żadnego <m:math display="inline">
+          <m:semantics>
+            <m:mi>x</m:mi>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+          </m:semantics>
+          </m:math>. </item>
+        </list><para id="fs-id1170902216092">Pierwszy warunek zapobiega nagłym skokom i dziurom w funkcji falowej oraz zapewnia ciągłość gęstości prawdopodobieństwa odnalezienia cząstki w przestrzeni w położeniu <m:math display="inline">
+          <m:semantics>
+            <m:mi>x</m:mi>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+          </m:semantics>
+        </m:math>. Drugi warunek gwarantuje, że funkcja jest gładka we wszystkich punktach oprócz szczególnych przypadków (w bardziej zaawansowanej mechanice kwantowej piki potencjału o nieskończonej głębokości lub wysokości są nazywane deltami Diraca i wykorzystywane np. do modelowania ciał stałych). Trzeci warunek zakłada normalizację funkcji falowej i zapewnia, że <m:math display="inline">
+        <m:semantics>
+          <m:msup>
+            <m:mfenced open="|" close="|">
+              <m:mrow>
+                <m:mi>ψ</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>x</m:mi>
+                </m:mfenced>
+              </m:mrow>
+            </m:mfenced>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \abs {\psi\apply(x)}^2</m:annotation>
+        </m:semantics>
+      </m:math> jest skończoną liczbą, którą możemy wykorzystać do obliczeń prawdopodobieństwa. Przypadek gęstości prawdopodobieństwa wybuchającej do plus nieskończoności dla współrzędnej położenia <m:math display="inline">
+      <m:semantics>
+        <m:mi>x</m:mi>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+      </m:semantics>
+      </m:math> świadczyłby o tym, że nie mamy do czynienia z realną sytuacją fizyczną. Takie rozwiązania należy odrzucać.</para><equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-203" class="unnumbered"><m:math/></equation>
+      <note id="fs-id1170904201971" class="check-understanding">
+        <exercise id="fs-id1170902214402">
+          <problem id="fs-id1170903855855">
+            <para id="fs-id1170902263944"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Wskaż, która z następujących funkcji falowych może być rozwiązaniem równania Schrӧdingera. Odpowiedź uzasadnij. <newline/></para><media id="fs-id1170904111214" alt="Pokazane są trzy wykresy funkcji Psi od x w stosunku do osi x. Na pierwszym funkcja rośnie w sposób nieciągły, jedna jej część rośnie i urywa się, druga biegnie od niższej wartości ku górze i osiąga wartość stałą. Druga funkcja wygląda jak fala, która po przełamaniu wraca do podstawy. Funkcja na trzecim wykresie wzrasta wykładniczo do nieskończoności. ">
+                <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_40_03_Acceptable_img.jpg"/>
+              </media>
+            </problem>
+            <solution id="fs-id1170904007351">
+              <para id="fs-id1170902118654">Żadna. Pierwsza funkcja jest nieciągła; druga przyjmuje podwójne wartości, a trzecia jest rozbieżna, a przez to niemożliwa do znormalizowania.</para>
+            </solution>
+          </exercise>
+        </note>
+        <section id="fs-id1170904054598" class="key-concepts">
+          <title>Podsumowanie</title>
+          <list id="fs-id1170903882590" list-type="bulleted" bullet-style="bullet"><item>Równanie Schrӧdingera jest podstawowym równaniem falowym mechaniki kwantowej. Pozwala nam to na dokonywanie przewidywań obserwabli fizycznych jakie są mierzone w eksperymencie fizycznym.</item>
+            <item>Kiedy cząstka porusza się w potencjale niezależnym od czasu, rozwiązaniem równania Schrӧdingera jest iloczyn niezależnej od czasu funkcji falowej i czynnika zależnego od czasu.</item>
+            <item>Równanie Schrӧdingera może być używane do opisu zjawisk fizycznych zachodzących na poziomie mikroskopowym i makroskopowym. W praktyce stosuje się zazwyczaj do opisu zjawisk w mikrościwecie. </item>
+          </list></section>
+        <section id="fs-id1170902041192" class="review-conceptual-questions">
+          <title>Pytania</title>
+          <exercise id="fs-id1170903850579">
+            <problem id="fs-id1170902402218">
+              <para id="fs-id1170903831926">Jaka jest różnica między funkcją falową <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mi>ψ</m:mi>
+                    <m:mo>⁡</m:mo>
+                    <m:mfenced>
+                      <m:mi>x</m:mi>
+                      <m:mi>y</m:mi>
+                      <m:mi>z</m:mi>
+                    </m:mfenced>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi\apply(x,y,z)</m:annotation>
+                </m:semantics>
+              </m:math> a funkcją falową <m:math display="inline">
+              <m:semantics>
+                <m:mrow>
+                  <m:mi mathvariant="normal">Ψ</m:mi>
+                  <m:mo>⁡</m:mo>
+                  <m:mfenced>
+                    <m:mi>x</m:mi>
+                    <m:mi>y</m:mi>
+                    <m:mi>z</m:mi>
+                    <m:mi>t</m:mi>
+                  </m:mfenced>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}\apply(x,y,z,t)</m:annotation>
+              </m:semantics>
+              </m:math> dla tej samej cząstki?</para>
+            </problem>
+          </exercise>
+          <exercise id="fs-id1170903809330">
+            <problem id="fs-id1170902558084">
+              <para id="fs-id1170902076463">Czy jeśli cząstka kwantowa znajduje się w stanie stacjonarnym, to oznacza, że się nie porusza?</para></problem>
+            <solution id="fs-id1170903818824">
+              <para id="fs-id1170902350869">Nie, oznacza to, że przewidywania dotyczące cząstki (wyrażone przez prawdopodobieństwo) są niezależne od czasu.</para></solution>
+          </exercise>
+          <exercise id="fs-id1170902042246">
+            <problem id="fs-id1170904183513">
+              <para id="fs-id1170903881317">Wyjaśnij różnicę pomiędzy równaniami Schrӧdingera zależnym od czasu i niezależnym od czasu.</para></problem>
+          </exercise>
+          <exercise id="fs-id1170902363597">
+            <problem id="fs-id1170904153173">
+              <para id="fs-id1170904192270">Załóżmy, że funkcja falowa jest nieciągła w którymś punkcie i ciągła poza nim. Czy taka funkcja może reprezentować stan kwantowy jakiejś cząsteczki fizycznej? Dlaczego? Dlaczego nie?</para></problem>
+            <solution id="fs-id1170902297147">
+              <para id="fs-id1170904173360">Tak może, ponieważ prawdopodobieństwo istnienia cząstki w wąskim (nieskończenie małym) przedziale nieciągłości jest nieskończenie małe.</para></solution>
+          </exercise>
+        </section>
+        <section id="fs-id1170903884904" class="review-problems">
+          <title>Zadania</title>
+          <exercise id="fs-id1170902160480">
+            <problem id="fs-id1170903883525">
+              <para id="fs-id1170903886924">Użyj <link target-id="fs-id1170903853347" cmlnle:case="genitive"/> i <link target-id="fs-id1170902118559" cmlnle:case="genitive"/>, by udowodnić, że <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>k</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>ω</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>∕</m:mo>
+                      <m:msup>
+                        <m:mi>c</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k^2 = \omega ^2/c^2</m:annotation>
+                </m:semantics>
+                </m:math>.</para>
+              </problem>
+              <solution id="fs-id1170903883339">
+                <para id="fs-id1170902183310">Rozwiązując równanie różniczkowe, otrzymujemy <m:math display="inline">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>k</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mi>ω</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>∕</m:mo>
+                        <m:msup>
+                          <m:mi>c</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k^2 = \omega ^2/c^2</m:annotation>
+                  </m:semantics>
+                  </m:math>.</para>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1170902396024">
+                <problem id="fs-id1170902100270">
+                  <para id="fs-id1170902353781">Pokaż, że <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">Ψ</m:mi>
+                          <m:mo>⁡</m:mo>
+                          <m:mfenced>
+                            <m:mi>x</m:mi>
+                            <m:mi>t</m:mi>
+                          </m:mfenced>
+                        </m:mrow>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:msup>
+                            <m:mi>e</m:mi>
+                            <m:mrow>
+                              <m:mi>i</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mfenced>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mi>k</m:mi>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi>x</m:mi>
+                                  </m:mrow>
+                                  <m:mo>−</m:mo>
+                                  <m:mrow>
+                                    <m:mi>ω</m:mi>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi>t</m:mi>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mfenced>
+                            </m:mrow>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}\apply (x,t) = A e^{i(kx - \omega t)}</m:annotation>
+                    </m:semantics>
+                    </m:math> jest rozwiązaniem spełniającym zależne od czasu równanie Schrӧdingera.</para>
+                  </problem>
+                </exercise>
+                <exercise id="fs-id1170904150582">
+                  <problem id="fs-id1170902299975">
+                    <para id="fs-id1170902180831">Pokaż, że <m:math display="inline">
+                      <m:semantics>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">Ψ</m:mi>
+                            <m:mo>⁡</m:mo>
+                            <m:mfenced>
+                              <m:mi>x</m:mi>
+                              <m:mi>t</m:mi>
+                            </m:mfenced>
+                          </m:mrow>
+                          <m:mo>=</m:mo>
+                          <m:mrow>
+                            <m:mi>A</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mrow>
+                              <m:mo>sin</m:mo>
+                              <m:mfenced>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mi>k</m:mi>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi>x</m:mi>
+                                  </m:mrow>
+                                  <m:mo>−</m:mo>
+                                  <m:mrow>
+                                    <m:mi>ω</m:mi>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi>t</m:mi>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mfenced>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}\apply (x,t) = A \sin (kx - \omega t)</m:annotation>
+                      </m:semantics>
+                    </m:math> i <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">Ψ</m:mi>
+                          <m:mo>⁡</m:mo>
+                          <m:mfenced>
+                            <m:mi>x</m:mi>
+                            <m:mi>t</m:mi>
+                          </m:mfenced>
+                        </m:mrow>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mi>A</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:mrow>
+                            <m:mo>cos</m:mo>
+                            <m:mfenced>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mi>k</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>x</m:mi>
+                                </m:mrow>
+                                <m:mo>−</m:mo>
+                                <m:mrow>
+                                  <m:mi>ω</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>t</m:mi>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mfenced>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}\apply (x,t) = A \cos (kx - \omega t)</m:annotation>
+                    </m:semantics>
+                    </m:math> nie spełniają zależnego od czasu równania Schrӧdingera.</para>
+                  </problem>
+                  <solution id="fs-id1170902307779">
+                    <para id="fs-id1170903831386">Różniczkując po funkcji sinus, uzyskujemy cosinus po prawej stronie równania, a więc równość nie jest spełniona. Podobna sytuacja występuje dla drugiej funkcji falowej.</para></solution>
+                </exercise>
+                <exercise id="fs-id1170902222104">
+                  <problem id="fs-id1170902158137">
+                    <para id="fs-id1170902092796">Udowodnij, że kiedy <m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi mathvariant="normal">Ψ</m:mi><m:mn>1</m:mn></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \mathrm{Ψ}_1 \apply(x,t)</m:annotation></m:semantics></m:math> i <m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi mathvariant="normal">Ψ</m:mi><m:mn>2</m:mn></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \mathrm{Ψ}_2 \apply(x,t)</m:annotation></m:semantics></m:math> są rozwiązaniami zależnego od czasu równania Schrӧdingera, a <m:math display="inline">
+                  <m:semantics>
+                    <m:mi>A</m:mi>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> A</m:annotation>
+                  </m:semantics>
+                </m:math> i <m:math display="inline">
+                <m:semantics>
+                  <m:mi>B</m:mi>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B</m:annotation>
+                </m:semantics>
+              </m:math> są liczbami, to funkcja <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mi mathvariant="normal">Ψ</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mrow><m:msub><m:mi mathvariant="normal">Ψ</m:mi><m:mn>1</m:mn></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mrow><m:msub><m:mi mathvariant="normal">Ψ</m:mi><m:mn>2</m:mn></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>x</m:mi><m:mi>t</m:mi></m:mfenced></m:mrow></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \mathrm{Ψ}\apply (x,t) = A \mathrm{Ψ}_1 \apply(x,t) + B \mathrm{Ψ}_2 \apply(x,t)</m:annotation></m:semantics></m:math>, będąca superpozycją tych funkcji, również jest rozwiązaniem.</para></problem>
+          </exercise>
+          <exercise id="fs-id1170902354437">
+            <problem id="fs-id1170903789116">
+              <para id="fs-id1170903893041">Cząstka o masie <m:math display="inline">
+                <m:semantics>
+                  <m:mi>m</m:mi>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> m</m:annotation>
+                </m:semantics>
+              </m:math> opisana jest następującą funkcją falową: <m:math display="inline">
+              <m:semantics>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>ψ</m:mi>
+                    <m:mo>⁡</m:mo>
+                    <m:mfenced>
+                      <m:mi>x</m:mi>
+                    </m:mfenced>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>A</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mrow>
+                        <m:mo>cos</m:mo>
+                        <m:mfenced>
+                          <m:mrow>
+                            <m:mi>k</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>x</m:mi>
+                          </m:mrow>
+                        </m:mfenced>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mrow>
+                      <m:mi>B</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mrow>
+                        <m:mo>sin</m:mo>
+                        <m:mfenced>
+                          <m:mrow>
+                            <m:mi>k</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>x</m:mi>
+                          </m:mrow>
+                        </m:mfenced>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi\apply(x) = A \cos (kx) + B \sin (kx)</m:annotation>
+              </m:semantics>
+            </m:math>, gdzie <m:math display="inline">
+            <m:semantics>
+              <m:mi>A</m:mi>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> A</m:annotation>
+            </m:semantics>
+          </m:math>, <m:math display="inline">
+          <m:semantics>
+            <m:mi>B</m:mi>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B</m:annotation>
+          </m:semantics>
+        </m:math> i <m:math display="inline">
+        <m:semantics>
+          <m:mi>k</m:mi>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> k</m:annotation>
+        </m:semantics>
+        </m:math> są stałymi. Zakładając, że cząstka jest swobodna, udowodnij, że funkcja ta jest rozwiązaniem stacjonarnego równania Schrӧdingera dla niej. Oblicz też energię, jaką posiada cząstka w tym stanie.</para></problem>
+      <solution id="fs-id1170903879003">
+        <para id="fs-id1170902267094">
+          <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mi>E</m:mi>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>ℏ</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>⁢</m:mo>
+                      <m:msup>
+                        <m:mi>k</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo>∕</m:mo>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>m</m:mi>
+                      </m:mrow>
+                    </m:mfenced>
+                  </m:mrow>
+                  <m:mo>⁢</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E = \hbar ^2 k^2 / (2m) \text{.}</m:annotation>
+            </m:semantics>
+            </m:math>. </para>
+          </solution>
+        </exercise>
+        <exercise id="fs-id1170903829721">
+          <problem id="fs-id1170903835143">
+            <para id="fs-id1170903875163">Oblicz wartość oczekiwaną energii kinetycznej dla cząstki w stanie <m:math display="inline">
+              <m:semantics>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">Ψ</m:mi>
+                    <m:mo>⁡</m:mo>
+                    <m:mfenced>
+                      <m:mi>x</m:mi>
+                      <m:mi>t</m:mi>
+                    </m:mfenced>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mi>A</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:msup>
+                      <m:mi>e</m:mi>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mfenced>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mi>k</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mi>x</m:mi>
+                            </m:mrow>
+                            <m:mo>−</m:mo>
+                            <m:mrow>
+                              <m:mi>ω</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mi>t</m:mi>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mfenced>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}\apply (x,t) = A e^{i(kx - \omega t)}</m:annotation>
+              </m:semantics>
+              </m:math>. Jaki wniosek możesz wyciągnąć z tego rozwiązania?</para></problem>
+          </exercise>
+          <exercise id="fs-id1170903896742">
+            <problem id="fs-id1170903896745">
+              <para id="fs-id1170903860046">Oblicz kwadrat wartości oczekiwanej kwadratu pędu dla cząstki znajdującej się w stanie <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">Ψ</m:mi>
+                      <m:mo>⁡</m:mo>
+                      <m:mfenced>
+                        <m:mi>x</m:mi>
+                        <m:mi>t</m:mi>
+                      </m:mfenced>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mi>A</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:msup>
+                        <m:mi>e</m:mi>
+                        <m:mrow>
+                          <m:mi>i</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:mfenced>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mi>k</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>x</m:mi>
+                              </m:mrow>
+                              <m:mo>−</m:mo>
+                              <m:mrow>
+                                <m:mi>ω</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>t</m:mi>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mfenced>
+                        </m:mrow>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}\apply (x,t) = A e^{i(kx - \omega t)}</m:annotation>
+                </m:semantics>
+                </m:math>. Jakie wnioski możesz wyciągnąć z tego rozwiązania?</para></problem>
+              <solution id="fs-id1170903762950">
+                <para id="fs-id1170903762952">
+                  <m:math display="inline">
+                    <m:semantics>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mi>ℏ</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>⁢</m:mo>
+                        <m:msup>
+                          <m:mi>k</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \hbar ^2 k^2</m:annotation>
+                    </m:semantics>
+                    </m:math>. Cząstka ma określony pęd, a przez to określony jest też kwadrat pędu.</para>
+                  </solution>
+                </exercise>
+                <exercise id="fs-id1170902156430">
+                  <problem id="fs-id1170902056810">
+                    <para id="fs-id1170902056812">Swobodny proton ma funkcję falową daną przez <m:math display="inline">
+                      <m:semantics>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">Ψ</m:mi>
+                            <m:mo>⁡</m:mo>
+                            <m:mfenced>
+                              <m:mi>x</m:mi>
+                              <m:mi>t</m:mi>
+                            </m:mfenced>
+                          </m:mrow>
+                          <m:mo>=</m:mo>
+                          <m:mrow>
+                            <m:mi>A</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mrow>
+                              <m:mo>exp</m:mo>
+                              <m:mfenced open="[" close="]">
+                                <m:mrow>
+                                  <m:mi>i</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mfenced>
+                                    <m:mrow>
+                                      <m:mrow>
+                                        <m:mrow>
+                                          <m:mn>5,02</m:mn>
+                                          <m:mo>⋅</m:mo>
+                                          <m:msup>
+                                            <m:mn>10</m:mn>
+                                            <m:mn>11</m:mn>
+                                          </m:msup>
+                                        </m:mrow>
+                                        <m:mo>⁢</m:mo>
+                                        <m:mi>x</m:mi>
+                                      </m:mrow>
+                                      <m:mo>−</m:mo>
+                                      <m:mrow>
+                                        <m:mrow>
+                                          <m:mn>8</m:mn>
+                                          <m:mo>⋅</m:mo>
+                                          <m:msup>
+                                            <m:mn>10</m:mn>
+                                            <m:mn>15</m:mn>
+                                          </m:msup>
+                                        </m:mrow>
+                                        <m:mo>⁢</m:mo>
+                                        <m:mi>t</m:mi>
+                                      </m:mrow>
+                                    </m:mrow>
+                                  </m:mfenced>
+                                </m:mrow>
+                              </m:mfenced>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \mathrm{Ψ}\apply(x,t) = A \exp [ i( \num{5,02e11}x - \num{8e15}t ) ]</m:annotation>
+                      </m:semantics>
+                      </m:math>. Współczynnik przy <m:math display="inline">
+                        <m:semantics>
+                          <m:mi>x</m:mi>
+                          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+                        </m:semantics>
+                      </m:math> wyrażony jest w <m:math display="inline">
+                      <m:semantics>
+                        <m:msup>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mn>-1</m:mn>
+                        </m:msup>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \si[per-mode=reciprocal]{\per\metre}</m:annotation>
+                      </m:semantics>
+                    </m:math>, a współczynnik przy <m:math display="inline">
+                    <m:semantics>
+                      <m:mi>t</m:mi>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> t</m:annotation>
+                    </m:semantics>
+                  </m:math> w <m:math display="inline">
+                  <m:semantics>
+                    <m:msup>
+                      <m:mi mathvariant="normal">s</m:mi>
+                      <m:mn>-1</m:mn>
+                    </m:msup>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \si[per-mode=reciprocal]{\per\second}</m:annotation>
+                  </m:semantics>
+                  </m:math>. Oblicz pęd i energię cząstki.</para></problem>
+              </exercise>
+            </section>
+          </content>
+          <glossary>
+            <definition id="fs-id1170904080909">
+              <term cmlnle:reference="równanie Schrödingera zależne od czasu" class="no-emphasis">równanie Schrödingera zależne od czasu (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Schrӧdinger’s time-dependent equation</term></foreign>)</term>
+                <meaning id="fs-id1170904169491">równanie w funkcji czasu i położenia pozwalające na znalezienie funkcji falowej cząstki kwantowej</meaning>
+              </definition>
+              <definition id="fs-id1170902450101">
+                <term cmlnle:reference="równanie Schrödingera niezależne od czasu" class="no-emphasis">równanie Schrödingera niezależne od czasu (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Schrӧdinger’s time-independent equation</term></foreign>)</term>
+                  <meaning id="fs-id1170902077000">równanie w funkcji położenia pozwalające na znalezienie funkcji falowej cząstki kwantowej; ta funkcja falowa musi zostać pomnożona przez czynnik zależny od czasu w celu otrzymania funkcji falowej zależnej od czasu</meaning>
+                </definition>
+                <definition id="fs-id1170902269928">
+                  <term cmlnle:reference="czynnik zależny od czasu dla funkcji falowej" class="no-emphasis">czynnik zależny od czasu dla funkcji falowej (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">time-modulation factor</term></foreign>)</term>
+                    <meaning id="fs-id1170902223795">czynnik <m:math display="inline">
+                      <m:semantics>
+                        <m:msup>
+                          <m:mi>e</m:mi>
+                          <m:mrow>
+                            <m:mo>−</m:mo>
+                            <m:mrow>
+                              <m:mi>i</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mi>ω</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mi>t</m:mi>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:msup>
+                        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> e^{-i \omega t}</m:annotation>
+                      </m:semantics>
+                      </m:math>, będący operatorem ewolucji w czasie, przez który mnoży się funkcję falową niezależną od czasu, kiedy są od niego niezależne również energia potencjalna cząstki i całkowita energia układu</meaning>
+                    </definition>
+                  </glossary>
+                </document>

@@ -1,0 +1,1855 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Prędkość chwilowa i szybkość średnia</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65748</md:content-id>
+  <md:title>Prędkość chwilowa i szybkość średnia</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item> wyjaśniać różnicę między prędkością średnią a prędkością chwilową; </item>
+<item> opisywać różnice między szybkością a prędkością; </item>
+<item> obliczać prędkość chwilową, znając zależność położenia od czasu; </item>
+<item> obliczać szybkość, znając prędkość chwilową; </item>
+<item> obliczać szybkość średnią. </item>
+</list></md:abstract>
+  <md:uuid>7a3ce395-f192-40eb-a904-8791e0c16dce</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1168326781535">Do tej pory nauczyliśmy się, jak obliczać prędkość średnią ciała w ruchu od punktu początkowego do punktu końcowego. W rzeczywistych przypadkach fizycznych ciała najczęściej poruszają się w sposób ciągły, dlatego bardziej interesująca byłaby informacja o aktualnej prędkości ciała w danej chwili czasu i w danym punkcie jego ruchu. Potrafimy znaleźć prędkość ciała w dowolnym punkcie jego toru ruchu, używając do tego podstaw rachunku różniczkowego. Wiedza zawarta w tej sekcji rozdziału 3 jest bardzo ważna do lepszego zrozumienia kinematyki ruchu i będzie bardzo przydatna w dalszych częściach podręcznika.</para>
+  <section id="fs-id1168329168511">
+    <title>Prędkość chwilowa</title>
+    <para id="fs-id1168329339669">Wielkość mówiąca o tym, jak szybko ciało porusza się wzdłuż swojego toru ruchu w danym momencie, nazywa się <term class="no-emphasis" cmlnle:reference="prędkość chwilowa">prędkością chwilową</term> (często po prostu prędkością). Jest to średnia prędkość ciała między dwoma punktami jego toru, ale w granicy, gdy czas i – w konsekwencji – przemieszczenie ciała między tymi punktami zmierzają do zera. Mówimy, że są nieskończenie małe lub infinitezymalne. Aby wyrazić powyższe stwierdzenie w sposób bardziej zmatematyzowany, musimy znać zależność położenia <m:math>
+      <m:mi>x</m:mi>
+    </m:math> od czasu <m:math>
+    <m:mi>t</m:mi>
+  </m:math>, a więc ciągłą funkcję <m:math>
+  <m:mi>x</m:mi>
+  <m:mo>(</m:mo>
+  <m:mi>t</m:mi>
+  <m:mo>)</m:mo>
+</m:math>. Przypomnijmy sobie wyrażenie na prędkość średnią między dwoma punktami: <m:math>
+<m:mover>
+  <m:mi>v</m:mi>
+  <m:mo>¯</m:mo>
+</m:mover>
+<m:mo>=</m:mo>
+<m:mfenced open="[" close="]">
+  <m:mrow>
+    <m:mi>x</m:mi>
+    <m:mo>(</m:mo>
+    <m:msub>
+      <m:mi>t</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>)</m:mo>
+    <m:mo>−</m:mo>
+    <m:mi>x</m:mi>
+    <m:mo>(</m:mo>
+    <m:msub>
+      <m:mi>t</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>)</m:mo>
+  </m:mrow>
+</m:mfenced>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mfenced open="[" close="]">
+  <m:mrow>
+    <m:msub>
+      <m:mi>t</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mi>t</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+  </m:mrow>
+</m:mfenced>
+</m:math>. Żeby znaleźć wzór na prędkość chwilową, podstawimy <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>t</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mi>t</m:mi>
+</m:mrow>
+</m:math> oraz <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>t</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mi>t</m:mi>
+  <m:mo>+</m:mo>
+  <m:mtext>Δ</m:mtext>
+  <m:mi>t</m:mi>
+</m:mrow>
+</m:math> i zażądamy, aby <m:math>
+<m:mrow>
+  <m:mtext>Δ</m:mtext>
+  <m:mi>t</m:mi>
+  <m:mtext>→</m:mtext>
+  <m:mn>0</m:mn>
+</m:mrow>
+</m:math>. Oznacza to, że przyrost czasu i zmiana położenia mają w granicy (łac. <foreign><term cxlxt:index="foreign">limes</term></foreign>) zdążać do zera. W takim razie definicja prędkości chwilowej, ujęta w postaci wzoru matematycznego, jest następująca:</para><equation id="fs-id1168329127174" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mi>v</m:mi>
+    <m:mfenced>
+      <m:mi>t</m:mi>
+    </m:mfenced>
+    <m:mo>=</m:mo>
+    <m:munder>
+      <m:mtext>lim</m:mtext>
+      <m:mrow>
+        <m:mtext>Δ</m:mtext>
+        <m:mi>t</m:mi>
+        <m:mtext>→</m:mtext>
+        <m:mn>0</m:mn>
+      </m:mrow>
+    </m:munder>
+    <m:mfrac>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>+</m:mo>
+        <m:mtext>Δ</m:mtext>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo>
+        <m:mo>−</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mrow>
+        <m:mtext>Δ</m:mtext>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+        <m:mi>x</m:mi>
+        <m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<note id="fs-id1168329192792">
+  <title>Prędkość chwilowa</title>
+  <para id="fs-id1168326802131">Prędkość chwilowa jest równa prędkości średniej w granicy czasu zdążającego do zera lub, równoważnie, jest to pochodna położenia <m:math>
+    <m:mi>x</m:mi>
+  </m:math> po czasie <m:math>
+  <m:mi>t</m:mi>
+  </m:math>. Czasem mówimy także, że prędkość (chwilowa) jest zmianą położenia w czasie. </para>
+  <equation id="fs-id1168329153584">
+    <m:math>
+      <m:mi>v</m:mi>
+      <m:mfenced>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mi mathvariant="normal">d</m:mi>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mi>x</m:mi>
+      <m:mfenced>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1168326795408">Podobnie jak prędkość średnia, także i prędkość chwilowa jest wektorem o wymiarze metr na sekundę (m/s). Prędkość w pewnej chwili czasu <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>t</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+  </m:mrow>
+</m:math> jest tempem (szybkością) zmian funkcji położenia od czasu. Interpretacja geometryczna pochodnej pomaga nam dodatkowo zauważyć, że prędkość jest miarą nachylenia funkcji położenia od czasu <m:math>
+<m:mrow>
+  <m:mi>x</m:mi>
+  <m:mo stretchy="false">(</m:mo>
+  <m:mi>t</m:mi>
+  <m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> w punkcie <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>t</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>. Wykres przedstawiony na <link target-id="CNX_UPhysics_03_02_InstVel" cmlnle:case="genitive"/> pokazuje, jak prędkość średnia <m:math>
+<m:mover>
+  <m:mi>v</m:mi>
+  <m:mo>¯</m:mo>
+</m:mover>
+<m:mo>=</m:mo>
+<m:mtext>Δ</m:mtext>
+<m:mi>x</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mtext>Δ</m:mtext>
+<m:mi>t</m:mi>
+</m:math> między dwiema chwilami zmierza do prędkości chwilowej w momencie <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>t</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>, gdy <m:math>
+<m:mtext>Δ</m:mtext>
+<m:mi>t</m:mi>
+</m:math> dąży do zera. Prędkość chwilowa jest zaznaczona prostą przechodzącą przez punkt <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>t</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>, która jest styczną do krzywej <m:math>
+<m:mrow>
+  <m:mi>x</m:mi>
+  <m:mo stretchy="false">(</m:mo>
+  <m:mi>t</m:mi>
+  <m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> w punkcie <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>t</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>. W tym konkretnym przypadku ta styczna ma zerowe nachylenie do osi poziomej, a więc wyznacza maksimum krzywej <m:math>
+<m:mrow>
+  <m:mi>x</m:mi>
+  <m:mo stretchy="false">(</m:mo>
+  <m:mi>t</m:mi>
+  <m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>. Prędkość chwilowa w tym momencie jest więc zero. W innych punktach, np. <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>t</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>,</m:mo>
+  <m:msub>
+    <m:mi>t</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math> lub kolejnych, prędkość chwilowa jest różna od zera, bo nachylenia stycznych są niezerowe. Prędkości w tych punktach są dodatnie lub ujemne. Gdyby w punkcie <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>t</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math> krzywa miała minimum, to prędkość chwilowa także byłaby zero. Z tego wynika ciekawy wniosek, że prędkość chwilowa jest zero w punktach, gdzie funkcja położenia ma ekstremum (minimum lub maksimum).</para>
+<figure id="CNX_UPhysics_03_02_InstVel"><media id="fs-id1168329052502" alt="Wykres zależności położenia od czasu. Położenie rośnie od t1 do t2 i do t3, osiąga wartość największą w t0, a potem maleje przez t4 i t5 aż do t6. Zaznaczono nachylenie prostej stycznej do t0 jako prędkość chwilową. Zaznaczono też sieczne między punktami t1-t6, t2-t5 i t3-t4 jako prędkości średnie zbliżające się do prędkości chwilowej.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_02_InstVel.jpg"/>
+  </media>
+  
+<caption>Na wykresie zależności położenia od czasu prędkość chwilowa jest nachyleniem stycznej do wykresu w danym punkcie. Prędkości średnie <m:math>
+    <m:mover>
+      <m:mi>v</m:mi>
+      <m:mo>¯</m:mo>
+    </m:mover>
+    <m:mo>=</m:mo>
+    <m:mtext>Δ</m:mtext>
+    <m:mi>x</m:mi>
+    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+    <m:mtext>Δ</m:mtext>
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:mfenced>
+      <m:mrow>
+        <m:msub>
+          <m:mi>x</m:mi>
+          <m:mtext>k</m:mtext>
+        </m:msub>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>x</m:mi>
+          <m:mtext>p</m:mtext>
+        </m:msub>
+      </m:mrow>
+    </m:mfenced>
+    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+    <m:mfenced>
+      <m:mrow>
+        <m:msub>
+          <m:mi>t</m:mi>
+          <m:mtext>k</m:mtext>
+        </m:msub>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>t</m:mi>
+          <m:mtext>p</m:mtext>
+        </m:msub>
+      </m:mrow>
+    </m:mfenced>
+  </m:math> między chwilami <m:math>
+  <m:mtext>Δ</m:mtext>
+  <m:mi>t</m:mi>
+  <m:mi>'</m:mi>
+  <m:mo>=</m:mo>
+  <m:msub>
+    <m:mi>t</m:mi>
+    <m:mn>6</m:mn>
+  </m:msub>
+  <m:mo>−</m:mo>
+  <m:msub>
+    <m:mi>t</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:math>, <m:math>
+<m:mtext>Δ</m:mtext>
+  <m:mi>t</m:mi>
+  <m:mi>''</m:mi>
+<m:mo>=</m:mo>
+<m:msub>
+  <m:mi>t</m:mi>
+  <m:mn>5</m:mn>
+</m:msub>
+<m:mo>−</m:mo>
+<m:msub>
+  <m:mi>t</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> oraz <m:math>
+<m:mtext>Δ</m:mtext>
+  <m:mi>t</m:mi>
+  <m:mi>'''</m:mi>
+<m:mo>=</m:mo>
+<m:msub>
+  <m:mi>t</m:mi>
+  <m:mn>4</m:mn>
+</m:msub>
+<m:mo>−</m:mo>
+<m:msub>
+  <m:mi>t</m:mi>
+  <m:mn>3</m:mn>
+</m:msub>
+</m:math> są zaznaczone różnymi kolorami. W granicy <m:math>
+<m:mrow>
+  <m:mtext>Δ</m:mtext>
+  <m:mi>t</m:mi>
+  <m:mtext>→</m:mtext>
+  <m:mn>0</m:mn>
+</m:mrow>
+</m:math> prędkości średnie stają się prędkością chwilową w <m:math>
+<m:mrow>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:msub>
+    <m:mi>t</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>.</caption></figure><example id="fs-id1168329165028">
+  <para id="fs-id1168326783480"><title>Obliczanie prędkości na podstawie wykresu zależności położenia od czasu</title>Na podstawie wykresu zależności położenia od czasu, <link target-id="CNX_UPhysics_03_02_PosGraph"/>, stwórz wykres zależności prędkości od czasu.</para><figure id="CNX_UPhysics_03_02_PosGraph"><media id="fs-id1168329023088" alt="Wykres zależności położenia w kilometrach od czasu w minutach. Zaczyna się w początku układu współrzędnych i rośnie do 0,5 kilometra w czasie 0,5 minuty. Nie zmienia się od 0,5 do 0,9 minuty, potem maleje do wartości 0 w punkcie 2,0 minuty.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_02_PosGraph.jpg"/>
+      </media>
+      
+    <caption>Ciało porusza się w kierunku dodatnim, potem zatrzymuje się, by zawrócić i zatrzymać się w punkcie początkowym. (Zwróć uwagę, że powyższy wykres może być jedynie przybliżeniem rzeczywistego przypadku ruchu ciała. Zauważ, że ciało zatrzymuje się natychmiastowo – w miejscu – co w rzeczywistości wymagałoby użycia nieskończenie dużej siły. Pojęcie sił i ich wpływu na ruch dyskutujemy w rozdziale <link class="target=chapter" document="m65754">Zasady dynamiki Newtona</link>.)</caption></figure><para id="fs-id1168326801052">
+      <title>Strategia rozwiązania</title>Wykres składa się z trzech prostych odcinków w trzech przedziałach czasu. Dla każdego z nich znajdziemy prędkość jako nachylenie prostoliniowych odcinków, zmierzone za pomocą siatki.</para>
+	  
+      <para id="fs-id1168329296202"><title>Rozwiązanie</title>
+        Przedział czasu od 0 s do 0,5 s: <m:math>
+          <m:mover>
+            <m:mi>v</m:mi>
+            <m:mtext>–</m:mtext>
+          </m:mover>
+          <m:mo>=</m:mo>
+          <m:mi mathvariant="normal">Δ</m:mi>
+          <m:mi>x</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">Δ</m:mi>
+          <m:mi>t</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mn>0,5</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>0,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mn>0,5</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>0,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mn>1,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:math>
+      </para>
+      <para id="fs-id1168328997510">Przedział czasu od 0,5 s do 1,0 s: <m:math>
+        <m:mover>
+          <m:mi>v</m:mi>
+          <m:mtext>–</m:mtext>
+        </m:mover>
+        <m:mo>=</m:mo>
+        <m:mi mathvariant="normal">Δ</m:mi>
+        <m:mi>x</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mi mathvariant="normal">Δ</m:mi>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>0,5</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>0,5</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>1,0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>0,5</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mn>0,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+      </m:math>
+    </para>
+    <para id="fs-id1168326760611">Przedział czasu od 1,0 s do 2,0 s: <m:math>
+      <m:mover>
+        <m:mi>v</m:mi>
+        <m:mtext>–</m:mtext>
+      </m:mover>
+      <m:mo>=</m:mo>
+      <m:mi mathvariant="normal">Δ</m:mi>
+      <m:mi>x</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:mi mathvariant="normal">Δ</m:mi>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mn>0,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>−</m:mo>
+          <m:mn>0,5</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mn>2,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+          <m:mo>−</m:mo>
+          <m:mn>1,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mo>−</m:mo>
+      <m:mn>0,5</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+    </m:math>
+  </para><para id="fs-id1168329038186">Wyniki nanosimy na wykres zależności prędkości od czasu – <link target-id="CNX_UPhysics_03_02_VelGraph"/>.</para><figure id="CNX_UPhysics_03_02_VelGraph"><media id="fs-id1168329138862" alt="Wykres prędkości w metrach na sekundę od czasu w sekundach. Prędkość ma stałą wartość 1 metr na sekundę między punktami 0 i 0,5 sekund, zero między 0,5 a 1,0 sekund, oraz -0,5 metra na sekundę między 1,0 i 2,0 sekund.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_02_VelGraph.jpg"/>
+    </media>
+    
+  <caption>Prędkość jest dodatnia w pierwszej fazie ruchu. Gdy ciało się zatrzymuje – spada do zera, a w ruchu z powrotem – jest ujemna.</caption></figure><para id="fs-id1168329443474"><title>Znaczenie</title>W przedziale czasu między 0 s a 5,0 s ciało oddala się od początku układu współrzędnych, przez co nachylenie położenia w funkcji czasu jest dodatnie. Oznacza to, że prędkość jest na tym odcinku dodatnia. W dowolnej chwili czasu z tego przedziału nachylenie położenia jest dodatnie i równe +1 m/s, co widać na <link target-id="CNX_UPhysics_03_02_VelGraph" cmlnle:case="genitive"/>. W kolejnym przedziale czasu, między 0,5 s a 1,0 s, położenie się nie zmienia i nachylenie wynosi zero. Od 1,0 s do 2,0 s ciało porusza się do tyłu, w stronę początku układu współrzędnych, przez co nachylenie jest −0,5 m/s. Ciało ma wtedy odwrotny kierunek ruchu oraz ujemną prędkość.</para></example>
+</section>
+<section id="fs-id1168327049595">
+  <title>Szybkość i szybkość średnia</title>
+  <para id="fs-id1168329146483">W codziennym życiu nie rozróżniamy pojęć <term class="no-emphasis">prędkość</term> oraz <term class="no-emphasis">szybkość</term> i używamy ich naprzemiennie. W fizyce jednak nie są to te same wielkości i znacząco się różnią. Prędkość jest wektorem, który poznaliśmy już przed chwilą. Ma kierunek, zwrot i wartość. Szybkość natomiast jest skalarem, nie ma kierunku ani zwrotu. W zadaniach będziemy najczęściej myśleć o wektorze, mówiąc prędkość, chociaż sformułowanie „samochód jedzie na wschód z prędkością 100 km/h” rozumiemy oczywiście jak „z prędkością o wartości 100 km/h i kierunku na wschód”.</para><para id="fs-id1168326794515">
+    <term class="no-emphasis" cmlnle:reference="szybkość średnia">Szybkość średnią</term> definiujemy jako stosunek całkowitej drogi i całkowitego czasu, w którym ta droga została pokonana:</para>
+    <note id="fs-id1168329177306" class="equation-callout">
+      <equation id="fs-id1168329030544">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:mtext>Szybkość średnia</m:mtext>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>v</m:mi>
+              <m:mtext>śr</m:mtext>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mtext>Całkowita droga</m:mtext>
+              </m:mrow>
+              <m:mrow>
+                <m:mtext>Całkowity czas</m:mtext>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>s</m:mi>
+                  <m:mtext>całk</m:mtext>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>t</m:mi>
+                  <m:mtext>całk</m:mtext>
+                </m:msub>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+    </note>
+    <para id="fs-id1168329155451">Szybkość średnia niekoniecznie jest równa wartości prędkości średniej, którą liczymy jako iloraz długości całkowitego przemieszczenia i całkowitego czasu. Jeśli np. podróż zaczyna się i kończy w tym samym punkcie, to całkowite przemieszczenie ma wartość zero, a więc i prędkość średnia ma zerową wartość. Szybkość średnia w tej podróży jednak nie jest zero, bo całkowita droga w tej podróży jest niezerowa, może być nawet bardzo duża. Jeżeli chcielibyśmy wyruszyć w drogę do celu oddalonego o 300 km, gdzie chcemy dotrzeć na konkretną godzinę, to będziemy oczywiście zainteresowani szybkością średnią w naszym ruchu.</para><para id="fs-id1168329265923">Jednocześnie zawsze możemy policzyć <term class="no-emphasis" cmlnle:reference="szybkość chwilowa">(chwilową) szybkość</term> jako długość prędkości chwilowej:</para>
+    <note id="fs-id1168326820899" class="equation-callout">
+      <equation id="fs-id1168329020268">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:mtext>Szybkość</m:mtext>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>|</m:mo>
+              <m:mrow>
+                <m:mi>v</m:mi>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo stretchy="false">)</m:mo>
+              </m:mrow>
+              <m:mo>|</m:mo>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+    </note>
+    <para id="fs-id1168329336688">Jeśli jedna cząstka porusza się wzdłuż osi <m:math>
+      <m:mi>x</m:mi>
+      </m:math> z prędkością +7,0 m/s, a druga cząstka porusza się względem tej samej osi z prędkością −7,0 m/s, to obie cząstki mają różne prędkości, ale tę samą szybkość równą 7,0 m/s. W tabeli poniżej prezentujemy typowe szybkości niektórych ciał i zjawisk.</para>
+      <table id="fs-id1168329070697" summary="Tabela ma trzy kolumny i dwanaście wierszy. Pierwszy wiersz zawiera tytuły każdej kolumny: „Szybkość”, „metry na sekundę”, „kilometry na godzinę”. W pierwszej kolumnie: Wędrówka kontynentów; Energiczny marsz; Rowerzysta; Bieg sprinterski; Ograniczenie prędkości poza obszarem zabudowanym; Oficjalny rekord szybkości na powierzchni Ziemi; Szybkość dźwięku na poziomie morza; Statek kosmiczny przy wejściu w atmosferę; Prędkość ucieczki z Ziemi; Szybkość Ziemi na orbicie wokół Słońca; Szybkość światła w próżni. W kolumnie drugiej i trzeciej: odpowiednie wartości liczbowe."><title>Przykładowe szybkości różnych obiektów i zjawisk</title>
+<tgroup cols="3"><colspec colnum="1" colname="col1"/>
+          <colspec colnum="2" colname="col2"/>
+          <colspec colnum="3" colname="col3"/>
+          <thead>
+            <row valign="top">
+              <entry valign="top" align="left">Szybkość</entry>
+              <entry valign="top" align="center">m/s</entry>
+              <entry valign="top" align="center">km/h</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">
+              <entry valign="top" align="left">Wędrówka kontynentów</entry>
+              <entry valign="top" align="center">
+                <m:math>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mn>10</m:mn>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mn>−7</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>
+              </entry>
+              <entry valign="top" align="center">
+                <m:math>
+                  <m:mn>3,6</m:mn>
+                  <m:mo>·</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>−7</m:mn>
+                  </m:msup>
+                </m:math>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Energiczny marsz</entry>
+              <entry valign="top" align="center">1,7</entry>
+              <entry valign="top" align="center">6,0</entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Rowerzysta</entry>
+              <entry valign="top" align="center">5</entry>
+              <entry valign="top" align="center">18</entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Bieg sprinterski</entry>
+              <entry valign="top" align="center">12,1</entry>
+              <entry valign="top" align="center">43,6</entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Ograniczenie prędkości poza obszarem zabudowanym</entry>
+              <entry valign="top" align="center">25</entry>
+              <entry valign="top" align="center">90</entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Oficjalny rekord szybkości na powierzchni Ziemi</entry>
+              <entry valign="top" align="center">341,1</entry>
+              <entry valign="top" align="center">1 228</entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Szybkość dźwięku na poziomie morza w warunkach normalnych*</entry>
+              <entry valign="top" align="center">343,2</entry>
+              <entry valign="top" align="center">1 235,2</entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Statek kosmiczny podczas wejścia w atmosferę</entry>
+              <entry valign="top" align="center">7 800</entry>
+              <entry valign="top" align="center">28 080</entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Prędkość ucieczki z Ziemi**</entry>
+              <entry valign="top" align="center">11 200</entry>
+              <entry valign="top" align="center">40 320</entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Średnia szybkość Ziemi na orbicie wokół Słońca</entry>
+              <entry valign="top" align="center">29 783</entry>
+              <entry valign="top" align="center">107 218,8</entry>
+            </row>
+            <row valign="top">
+              <entry valign="top" align="left">Prędkość światła w próżni</entry>
+              <entry valign="top" align="center">299 792 458</entry>
+              <entry valign="top" align="center">2 414 219 864,4</entry>
+            </row>
+          </tbody>
+        
+</tgroup><caption><newline/>* Warunki normalne oznaczają temperaturę 20° i ciśnienie 1013,25 hPa. <newline/>** Prędkość ucieczki to taka prędkość, jaką należy nadać ciału, aby opuściło ono pole grawitacyjne Ziemi i już nie wróciło na jej powierzchnię.</caption>
+</table></section>
+    <section id="fs-id1168329418227">
+      <title>Obliczanie prędkości chwilowej</title>
+      <para id="fs-id1168329137312">Żeby obliczyć prędkość chwilową w danej chwili czasu, a także ogólną zależność prędkości od czasu, trzeba znać dokładną funkcję zależności położenia od czasu <m:math>
+        <m:mi>x</m:mi>
+        <m:mo>(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>)</m:mo>
+      </m:math>. Prędkość chwilowa jest pochodną położenia po czasie. Na razie skupimy się na postaci funkcji położenia od czasu typu wielomianu: <m:math>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo stretchy="false">)</m:mo>
+        <m:mo>=</m:mo>
+        <m:mi>A</m:mi>
+        <m:msup>
+          <m:mi>t</m:mi>
+          <m:mi>n</m:mi>
+        </m:msup>
+      </m:mrow>
+      </m:math>, bo jest to funkcja stosunkowo łatwa do różniczkowania.</para>
+      <note id="fs-id1168326841988" class="equation-callout">
+        <equation id="fs-id1168329070126">
+          <label/>
+          <m:math>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+                <m:mi>x</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mi>n</m:mi>
+            <m:mi>A</m:mi>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>−</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+      </note>
+      <para id="fs-id1168329319372">Przykład poniżej ilustruje, jak korzystać z <link target-id="fs-id1168329070126" cmlnle:case="genitive"/>.</para><example id="fs-id1168329069804">
+        <para id="fs-id1168329439120">
+          <title>Prędkość chwilowa a prędkość średnia</title>Położenie cząstki dane jest funkcją <m:math>
+            <m:mi>x</m:mi>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo stretchy="false">)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mn>3,0</m:mn>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mn>0,5</m:mn>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            </m:math>.</para>
+            <list id="fs-id1168326791675" list-type="enumerated" number-style="lower-alpha">
+              <item>Korzystając z <link target-id="fs-id1168329153584" cmlnle:case="genitive"/> i <link target-id="fs-id1168329070126" cmlnle:case="genitive"/>, oblicz szybkość średnią w chwili <m:math>
+                <m:mi>t</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>2,0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                </m:math>.</item>
+                <item>Oblicz prędkość średnią cząstki pomiędzy chwilą 1,0 s oraz 3,0 s.</item>
+              </list>
+              <para id="fs-id1168329150787">
+                <title>Strategia rozwiązania</title>
+                <link target-id="fs-id1168329153584"/> pozwala obliczyć prędkość chwilową jako pochodną położenia po czasie. Zależność położenia od czasu jest, jak widzimy, funkcją wielomianową argumentu <m:math>
+                <m:mi>t</m:mi>
+                </m:math>. Dlatego użyjemy <link target-id="fs-id1168329070126" cmlnle:case="genitive"/> na pochodną wielomianu, aby znaleźć rozwiązanie. <link target-id="fs-id1168329020268" cmlnle:case="genitive"/> z poprzedniej sekcji użyjemy do obliczenia prędkości średniej.</para>
+                <para id="fs-id1168329466256">
+                  <title>Rozwiązanie</title>
+                </para>
+                <list id="fs-id1168329140398" list-type="enumerated" number-style="lower-alpha"><item>
+                    <m:math>
+                      <m:mi>v</m:mi>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>t</m:mi>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">d</m:mi>
+                          </m:mrow>
+                          <m:mi>x</m:mi>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mi>t</m:mi>
+                          <m:mo stretchy="false">)</m:mo>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">d</m:mi>
+                          </m:mrow>
+                          <m:mi>t</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mn>3,0</m:mn>
+                          <m:mo>+</m:mo>
+                          <m:mn>1,5</m:mn>
+                          <m:msup>
+                            <m:mi>t</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:math>.<newline/>Podstawiając <m:math>
+                    <m:mi>t</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>2,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:math> do tego równania otrzymujemy: <newline/><m:math>
+                  <m:mi>v</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mn>2,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mo>[</m:mo>
+                    <m:mrow>
+                      <m:mn>3,0</m:mn>
+                      <m:mo>+</m:mo>
+                      <m:mn>1,5</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>2,0</m:mn>
+                      <m:msup>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo>]</m:mo>
+                  </m:mrow>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mn>9,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  </m:math>.</item>
+                  <item> Żeby obliczyć prędkość średnią cząstki między chwilą 1,0 s i 3,0 s, musimy znaleźć wartości <m:math>
+                    <m:mi>x</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>1,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    <m:mo stretchy="false">)</m:mo>
+                  </m:math> oraz <m:math>
+                  <m:mi>x</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mn>3,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                </m:math>:<equation id="fs-id1168329503288" class="unnumbered">
+                <m:math>
+                  <m:mi>x</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mn>1,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mo>[</m:mo>
+                    <m:mrow>
+                      <m:mn>3,0</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:mn>1,0</m:mn>
+                      <m:mo>+</m:mo>
+                      <m:mn>0,5</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>1,0</m:mn>
+                      <m:msup>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo>]</m:mo>
+                  </m:mrow>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mn>3,5</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>,</m:mo>
+                </m:math>
+              </equation>
+              <equation id="fs-id1168329266138" class="unnumbered">
+                <m:math>
+                  <m:mi>x</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mn>3,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mo>[</m:mo>
+                    <m:mrow>
+                      <m:mn>3,0</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:mn>3,0</m:mn>
+                      <m:mo>+</m:mo>
+                      <m:mn>0,5</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>3,0</m:mn>
+                      <m:msup>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo>]</m:mo>
+                  </m:mrow>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mn>22,5</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mo>.</m:mo>
+                </m:math>
+              </equation>
+              <newline/>Wobec tego prędkość średnia wynosi<newline/>
+              <equation id="fs-id1168329338952" class="unnumbered">
+                <label/>
+                <m:math>
+                  <m:mover>
+                    <m:mi>v</m:mi>
+                    <m:mtext>–</m:mtext>
+                  </m:mover>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>3,0</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo>−</m:mo>
+                      <m:mi>x</m:mi>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>1,0</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>3,0</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mn>1,0</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>22,5</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mn>3,5</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>3,0</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mn>1,0</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>=</m:mo>
+                  <m:mn>9,5</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo>.</m:mo>
+                </m:math>
+              </equation>
+            </item>
+          </list><para id="fs-id1168329191891">
+            <title>Znaczenie</title>W granicy przedziału czasu, potrzebnego do obliczenia <m:math>
+              <m:mover>
+                <m:mi>v</m:mi>
+                <m:mtext>–</m:mtext>
+              </m:mover>
+            </m:math>, zmierzającego do zera, wartość prędkości średniej <m:math>
+            <m:mover>
+              <m:mi>v</m:mi>
+              <m:mtext>–</m:mtext>
+            </m:mover>
+          </m:math> zbiega się coraz bardziej z wartością prędkości chwilowej <m:math>
+          <m:mrow>
+            <m:mi>v</m:mi>
+          </m:mrow>
+          </m:math>.</para>
+        </example>
+        <example id="fs-id1168329085430">
+          <para id="fs-id1168326823363">
+            <title>Prędkość chwilowa a szybkość</title>Rozważmy teraz ruch cząstki, w którym zależność położenia od czasu wynosi <m:math>
+              <m:mi>x</m:mi>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>3,0</m:mn>
+                  <m:mi>t</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mn>3,0</m:mn>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              </m:math>.</para>
+              <list id="fs-id1168329022158" list-type="enumerated" number-style="lower-alpha">
+                <item>Jaka jest prędkość cząstki w chwilach <m:math>
+                  <m:mi>t</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>0,25</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:math>, <m:math>
+                <m:mi>t</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0,50</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+              </m:math> oraz <m:math>
+              <m:mi>t</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>1,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              </m:math>?</item>
+              <item>Jaka jest szybkość cząstki w tych chwilach? </item>
+            </list>
+            <para id="fs-id1168326912979">
+              <title>Strategia rozwiązania</title>Prędkość chwilowa jest pochodną położenia po czasie, natomiast szybkość to wartość prędkości. Użyjemy <link target-id="fs-id1168329153584" cmlnle:case="genitive"/> i <link target-id="fs-id1168329070126" cmlnle:case="genitive"/> do obliczenia prędkości chwilowej.</para>
+              <para id="fs-id1168329013693">
+                <title>Rozwiązanie</title>
+              </para>
+              <list id="fs-id1168326763228" list-type="enumerated" number-style="lower-alpha"><item>
+                  <m:math>
+                    <m:mi>v</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mi>t</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo>=</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">d</m:mi>
+                        </m:mrow>
+                        <m:mi>x</m:mi>
+                        <m:mo stretchy="false">(</m:mo>
+                        <m:mi>t</m:mi>
+                        <m:mo stretchy="false">)</m:mo>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">d</m:mi>
+                        </m:mrow>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mn>3,0</m:mn>
+                        <m:mo>−</m:mo>
+                        <m:mn>6,0</m:mn>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    <m:mo>,</m:mo>
+                  </m:math>
+                  <newline/>
+                  <m:math>
+                    <m:mi>v</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>0,25</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo>=</m:mo>
+                    <m:mn>1,50</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:math>, <m:math>
+                  <m:mi>v</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mn>0,5</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mn>0,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:math>, <m:math>
+                <m:mi>v</m:mi>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mn>1,0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                <m:mo stretchy="false">)</m:mo>
+                <m:mo>=</m:mo>
+                <m:mo>−</m:mo>
+                <m:mn>3,0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                </m:math>.</item>
+                <item>
+                  <m:math>
+                    <m:mtext>Szybkość</m:mtext>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mo>|</m:mo>
+                      <m:mrow>
+                        <m:mi>v</m:mi>
+                        <m:mo stretchy="false">(</m:mo>
+                        <m:mi>t</m:mi>
+                        <m:mo stretchy="false">)</m:mo>
+                      </m:mrow>
+                      <m:mo>|</m:mo>
+                    </m:mrow>
+                  </m:math>, stąd <m:math>
+                  <m:mrow>
+                    <m:mo>|</m:mo>
+                    <m:mrow>
+                      <m:mi>v</m:mi>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>0,25</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                    <m:mo>|</m:mo>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mn>1,50</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:math>, <m:math>
+                <m:mrow>
+                  <m:mo>|</m:mo>
+                  <m:mrow>
+                    <m:mi>v</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>0,50</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    <m:mo stretchy="false">)</m:mo>
+                  </m:mrow>
+                  <m:mo>|</m:mo>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mn>0,0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+              </m:math> oraz <m:math>
+              <m:mrow>
+                <m:mo>|</m:mo>
+                <m:mrow>
+                  <m:mi>v</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mn>1,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                </m:mrow>
+                <m:mo>|</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>3,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              </m:math>.</item>
+            </list><para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168329151690"><title>Znaczenie</title>Prędkość jest wektorem i daje nam informację o kierunku, wskazując, czy cząstka porusza się w kierunku dodatnim lub kierunku ujemnym względem osi. Szybkość daje informację o prędkości. Lepiej zrozumiemy różnice między tymi wielkościami (położenie, prędkość i szybkość), rysując wykresy zależności od czasu (<link target-id="CNX_UPhysics_03_02_PosVelSp"/>). Na wykresie (a) widzimy, że cząstka porusza się wzdłuż dodatniego kierunku osi do chwili <m:math>
+                <m:mi>t</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0,5</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+              </m:math>, po czym zmienia kierunek ruchu. Tę zmianę kierunku zauważamy też na wykresie (b), gdzie w chwili równej 0,5 s wykres prędkości cząstki przechodzi przez zero a następnie wartości prędkości stają się ujemne. Po czasie równym 1,0 s cząstka dociera z powrotem do miejsca, z którego wystartowała. Prędkość cząstki w chwili 1,0 s jest nadal ujemna, bo cząstka dalej porusza się wzdłuż ujemnego kierunku osi <m:math><m:mi>x</m:mi></m:math>. Z kolei na wykresie (c) wartości są zawsze dodatnie – szybkość jest zawsze nieujemna w całym czasie trwania ruchu. Na podstawie rysunków możemy też zinterpretować prędkość jako nachylenie krzywej położenia w funkcji czasu. Nachylenie <m:math>
+              <m:mi>x</m:mi>
+              <m:mo>(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>)</m:mo>
+              </m:math> do momentu 0,5 s jest dodatnie, ale maleje do zera. Potem rośnie, ale po stronie ujemnych wartości. Taka analiza porównawcza wykresów położenia, prędkości i szybkości w funkcji czasu, jak powyższa, pomaga wychwycić ewentualne błędy w naszych obliczeniach. Wykresy muszą być spójne ze sobą, a gdy są poprawne, pomagają w interpretacji wyników.</para><figure id="CNX_UPhysics_03_02_PosVelSp"><media id="fs-id1168326856378" alt="Wykres A pokazuje zależność położenia w metrach od czasu w sekundach. Zaczyna się od początku układu, rośnie do wartości maksymalnej w punkcie 0,5 sekundy, następnie maleje i przecina oś x w punkcie 1 sekunda. Wykres B pokazuje zależność prędkości w metrach na sekundę od czasu w sekundach. Prędkość maleje liniowo od 3 metry na sekundę do -6 metrów na sekundę w czasie 1,5 sekundy. Wykres C pokazuje zależność wartości bezwzględnej prędkości w metrach na sekundę w funkcji czasu w sekundach. Wykres ma kształt litery V. Wartości maleją do 0,5 sekundy, potem rosną.">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_02_PosVelSp.jpg"/>
+                </media>
+                
+            <caption>(a) Wykres położenia w funkcji czasu <m:math>
+                  <m:mi>x</m:mi>
+                  <m:mo>(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>)</m:mo>
+                </m:math>. (b) Wykres prędkości w funkcji czasu <m:math>
+                <m:mi>v</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo>)</m:mo>
+              </m:math>. Nachylenie funkcji położenia daje informację o prędkości. Pobieżne porównanie nachylenia stycznych na wykresie (a) w punktach 0,25 s, 0,5 s i 1,0 s z wielkością prędkości, w odpowiednich chwilach czasu wskazuje na poprawność naszych wyników. (c) Zależność szybkości od czasu <m:math>
+              <m:mrow>
+                <m:mrow>
+                  <m:mo>|</m:mo>
+                  <m:mrow>
+                    <m:mi>v</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mi>t</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                  </m:mrow>
+                  <m:mo>|</m:mo>
+                </m:mrow>
+              </m:mrow>
+              </m:math>. Szybkość ma zawsze wartości nieujemne (dodatnie lub zero).</caption></figure></example>
+          <note id="fs-id1168326919242" class="check-understanding">
+            <exercise id="fs-id1168329179170">
+              <problem id="fs-id1168326791759">
+                <para id="fs-id1168329124574">
+                  <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Położenie ciała w funkcji czasu wynosi <m:math>
+                    <m:mi>x</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mi>t</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo>=</m:mo>
+                    <m:mo>−</m:mo>
+                    <m:mn>3</m:mn>
+                    <m:msup>
+                      <m:mi>t</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                  </m:math>. <list id="eip-idm561944992" list-type="enumerated" number-style="lower-alpha">
+                  <item>Jaką funkcją czasu jest prędkość cząstki?</item>
+                  <item>Czy prędkość jest zawsze dodatnia?</item>
+                  <item>Jakie są prędkość i szybkość w chwili <m:math>
+                    <m:mi>t</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>1,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    </m:math>?</item>
+                  </list>
+                </para>
+              </problem>
+              <solution id="fs-id1168326791024">
+                <list id="eip-idm1354485456" list-type="enumerated" number-style="lower-alpha"><item>Różniczkując <m:math>
+                    <m:mi>x</m:mi>
+                    <m:mo>(</m:mo>
+                    <m:mi>t</m:mi>
+                    <m:mo>)</m:mo>
+                  </m:math> po czasie, otrzymujemy <m:math>
+                  <m:mi>v</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mo>−</m:mo>
+                  <m:mn>6</m:mn>
+                  <m:mi>t</m:mi>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  </m:math>.</item>
+                  <item>Nie, bo czas jest zawsze nieujemny.</item>
+                  <item>Prędkość wynosi <m:math>
+                    <m:mi>v</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>1,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo>=</m:mo>
+                    <m:mo>−</m:mo>
+                    <m:mn>6</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:math>, natomiast szybkość to <m:math>
+                  <m:mrow>
+                    <m:mo>|</m:mo>
+                    <m:mrow>
+                      <m:mi>v</m:mi>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>1,0</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                    <m:mo>|</m:mo>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mn>6</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  </m:math>.</item>
+                </list></solution>
+            </exercise>
+          </note>
+        </section>
+        <section id="fs-id1168329151013" class="key-concepts">
+          <title>Podsumowanie</title>
+          <list id="fs-id1168326904770" list-type="bulleted" bullet-style="bullet"><item> Prędkość chwilowa jest ciągłą funkcją czasu i daje informację o wektorze prędkości cząstki w dowolnym punkcie i dowolnej chwili w jej ruchu. Możemy obliczyć prędkość chwilową jako pochodną po czasie zależności położenia od czasu. W efekcie otrzymujemy ogólną zależność funkcyjną <m:math>
+              <m:mi>v</m:mi>
+              <m:mo>(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo>)</m:mo>
+              </m:math>, która w dalszej kolejności pozwala znaleźć prędkość w danej chwili czasu. </item>
+              <item> Prędkość chwilowa jest wektorem i może być ujemna w zależności od przyjętego układu współrzędnych.</item>
+              <item> Szybkość chwilowa (po prostu: szybkość) jest wartością prędkości chwilowej i jest zawsze nieujemna. W ruchu prostoliniowym jest to po prostu wartość bezwzględna prędkości. </item>
+              <item> Szybkość średnia jest dana przez stosunek całkowitej drogi i całkowitego czasu potrzebnego do pokonania tej drogi. </item>
+              <item> Nachylenie stycznej do krzywej zależności położenia od czasu w danym punkcie daje prędkość chwilową w tej chwili czasu. </item>
+            </list></section>
+          <section id="fs-id1168326822676" class="review-conceptual-questions">
+            <title>Pytania </title>
+            <exercise id="fs-id1168326759364">
+              <problem id="fs-id1168329072226">
+                <para id="fs-id1168326840996">W fizyce wyraźnie rozróżniamy szybkość średnią od wartości prędkości średniej. Podaj przykład ilustrujący różnice między tymi wielkościami.</para>
+              </problem>
+              <solution id="fs-id1168329402518">
+                <para id="fs-id1168326767452">Szybkość średnia jest równa całkowitej drodze podzielonej przez całkowity czas. Jeśli idziesz na spacer – wychodzisz z domu i do niego wracasz – twoja szybkość średnia jest pewną dodatnią liczbą. Ponieważ zaś: Prędkość średnia = Przemieszczenie/Całkowity czas, twoja prędkość średnia jest równa zero.</para></solution>
+            </exercise>
+            <exercise id="fs-id1168327094731">
+              <problem id="fs-id1168326926896">
+                <para id="fs-id1168326926898">Czy prędkościomierz w twoim samochodzie mierzy szybkość czy prędkość?</para>
+              </problem>
+            </exercise>
+            <exercise id="fs-id1168326896853">
+              <problem id="fs-id1168326896855">
+                <para id="fs-id1168326927106">Jeśli podzielisz wartość wskazywaną przez licznik twojego samochodu w podróży na wakacje przez całkowity czas jazdy, to obliczysz średnią szybkość czy wartość średniej prędkości? W jakiej sytuacji te dwie wielkości byłyby równe?</para>
+              </problem>
+              <solution id="fs-id1168326927108">
+                <para id="fs-id1168329151650">Szybkość średnią. Obie wielkości są sobie równe, gdy samochód w ruchu po prostej nie zawróci.</para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1168329340393">
+              <problem id="fs-id1168329340395">
+                <para id="fs-id1168327052762">Jak są ze sobą związane prędkość chwilowa i szybkość chwilowa? Czym się różnią?</para>
+              </problem>
+            </exercise>
+          </section>
+          <section id="fs-id1168326857991" class="review-problems">
+            <title>Zadania</title>
+            <exercise id="fs-id1168326798408">
+              <problem id="fs-id1168326798410">
+                <para id="fs-id1168329466670">Sarna nadbiega w stronę ulicy i dystans 20 m pokonuje w 5 s. Następnie zawraca tuż przez samochodem i odskakuje na 10 m w ciągu 3 s. <list id="eip-idm654450832" list-type="enumerated" number-style="lower-alpha">
+                  <item>Jaka jest średnia szybkość sarny?</item>
+                  <item>Jaka jest jej średnia prędkość?</item>
+                </list>
+              </para></problem>
+          </exercise>
+          <exercise id="fs-id1168326790679">
+            <problem id="fs-id1168326801116">
+              <para id="fs-id1168326801118">Na podstawie poniższego wykresu położenia od czasu narysuj wykres zależności prędkości od czasu.</para>
+              <media id="fs-id1168326859739" alt="Wykres przedstawia położenie w metrach w funkcji czasu w sekundach. Wykres zaczyna się początku układu, osiąga 4 metry dla 0.4 sekund; po czym opada i osiąga -2 metry dla 0.6 s, osiąga minimum wynoszące -6 metrów dla 1 s, wznosi się i osiąga -4 metry dla 1.6 s, wreszcie osiąga 2 metry dla 2 s.">
+                <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_02_Prob6_img.jpg"/>
+              </media>
+            </problem>
+            <solution id="fs-id1168326752308">
+              <para id="fs-id1168326752310">
+                <media id="fs-id1168326752311" alt="Wykres prędkości w metrach na sekundę od czasu w sekundach. Prędkość zaczyna maleć od 10 do -30 metrów na sekundę w punkcie 0,4 sekundy; potem rośnie do -10 w punkcie 0,6 sekundy, dalej rośnie do 5 w punkcie 1 sekunda i do 15 w punkcie 1,6 sekundy.">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_02_Prob6ans_img.jpg"/>
+                </media>
+              </para>
+            </solution>
+          </exercise>
+          <exercise id="fs-id1168328977772">
+            <problem id="fs-id1168326777148">
+              <para id="fs-id1168326777150">Na podstawie poniższego wykresu położenia od czasu narysuj wykres zależności prędkości od czasu.</para>
+              <media id="fs-id1168329282325" alt="Wykres położenia od czasu w sekundach. Wykres ma przebieg sinusoidalny. Zaczyna się od wartości dodatniej w punkcie 0, maleje do wartości ujemnych i znowu zaczyna rosnąć.">
+                <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_02_Prob7_img.jpg"/>
+              </media>
+            </problem>
+          </exercise>
+          <exercise id="fs-id1168329191384">
+            <problem id="fs-id1168326791352">
+              <para id="fs-id1168326791354">Mając do dyspozycji wykres zależności prędkości od czasu, narysuj zależność położenia od czasu.</para>
+              <media id="fs-id1168329503346" alt="Wykres prędkości od czasu. Od wartości dodatniej w punkcie 0 maleje do wartości ujemnych i dalej pozostaje stały.">
+                <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_02_Prob8_img.jpg"/>
+              </media>
+            </problem>
+            <solution id="fs-id1168329187573">
+              <para id="fs-id1168329186638">
+                <media id="fs-id1168329186639" alt="Wykres położenia w funkcji czasu. Zaczyna się w początku układu, rośnie do maksimum i maleje do zera.">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_03_02_Prob8ans_img.jpg"/>
+                </media>
+              </para>
+            </solution>
+          </exercise>
+          <exercise id="fs-id1168326762812">
+            <problem id="fs-id1168326762814">
+              <para id="fs-id1168326777140">Położenie cząstki w czasie zmienia się jak <m:math>
+                <m:mi>x</m:mi>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo stretchy="false">)</m:mo>
+                <m:mo>=</m:mo>
+                <m:mn>5</m:mn>
+                <m:mi>t</m:mi>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+              </m:math>. <list id="eip-idm535789152" list-type="enumerated" number-style="lower-alpha">
+              <item>Jaką funkcją czasu jest prędkość cząstki?</item>
+              <item>Narysuj wykresy zależności prędkości oraz położenia od czasu.</item>
+            </list>
+          </para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1168326809070">
+        <problem id="fs-id1168326809072">
+          <para id="fs-id1168326766071">Cząstka porusza się wzdłuż osi <m:math>
+            <m:mi>x</m:mi>
+          </m:math> zgodnie z równaniem <m:math>
+          <m:mi>x</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mn>10</m:mn>
+              <m:mi>t</m:mi>
+              <m:mo>−</m:mo>
+              <m:mn>2</m:mn>
+              <m:msup>
+                <m:mi>t</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+        </m:math>. <list id="eip-idm1335238496" list-type="enumerated" number-style="lower-alpha">
+        <item>Jaka jest prędkość chwilowa cząstki w <m:math>
+          <m:mi>t</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>2</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:math> oraz <m:math>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>3</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        </m:math>? </item>
+        <item>Jaką szybkość ma cząstka w tych momentach? </item>
+        <item>Jaką średnią prędkość ma cząstka pomiędzy <m:math>
+          <m:mi>t</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>2</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:math> i <m:math>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>3</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        </m:math>? </item>
+      </list>
+    </para>
+  </problem>
+  <solution id="fs-id1168326792665">
+    <para id="fs-id1168329445296">
+      <list id="eip-idm621899232" list-type="enumerated" number-style="lower-alpha">
+        <item>
+          <m:math>
+            <m:mi>v</m:mi>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo stretchy="false">)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mn>10</m:mn>
+                <m:mo>−</m:mo>
+                <m:mn>4</m:mn>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:math>, <newline/>
+          <m:math>
+            <m:mi>v</m:mi>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mn>2</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            <m:mo stretchy="false">)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mn>2</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:math>, <m:math>
+          <m:mi>v</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mn>3</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>2</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+          </m:math>; </item>
+          <item>
+            <m:math>
+              <m:mrow>
+                <m:mo>|</m:mo>
+                <m:mrow>
+                  <m:mi>v</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                </m:mrow>
+                <m:mo>|</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>2</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+            </m:math>, <m:math>
+            <m:mrow>
+              <m:mo>|</m:mo>
+              <m:mrow>
+                <m:mi>v</m:mi>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mn>3</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                <m:mo stretchy="false">)</m:mo>
+              </m:mrow>
+              <m:mo>|</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>2</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            </m:math>; </item>
+            <item>
+              <m:math>
+                <m:mover>
+                  <m:mi>v</m:mi>
+                  <m:mtext>–</m:mtext>
+                </m:mover>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                </m:math>.</item>
+              </list>
+            </para>
+          </solution>
+        </exercise>
+        <exercise id="fs-id1168329265497">
+          <problem id="fs-id1168329265499">
+            <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168329439612"><emphasis effect="bold">Niefizyczne rozwiązanie.</emphasis> Cząstka porusza się wzdłuż osi <m:math>
+                <m:mi>x</m:mi>
+              </m:math> zgodnie z równaniem położenia <m:math>
+              <m:mi>x</m:mi>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>3</m:mn>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>5</m:mn>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              </m:math>. W jakiej chwili czasu prędkość cząstki spada do zera? Czy ten wynik ma sens fizyczny?</para></problem>
+          </exercise>
+        </section>
+      </content>
+      <glossary>
+        <definition id="fs-id1168329197758">
+          <term cmlnle:reference="prędkość chwilowa" class="no-emphasis">prędkość chwilowa (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">instantaneous velocity</term></foreign>)</term>
+          <meaning id="fs-id1168326822697">prędkość cząstki w danej chwili czasu</meaning>
+        </definition>
+        <definition id="fs-id1168329418230">
+          <term cmlnle:reference="szybkość chwilowa" class="no-emphasis">szybkość chwilowa (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">instantaneous speed</term></foreign>)</term>
+          <meaning id="fs-id1168326764878">wartość bezwzględna prędkości chwilowej</meaning>
+        </definition>
+        <definition id="fs-id1168329478735">
+          <term cmlnle:reference="szybkość średnia" class="no-emphasis">szybkość średnia (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">average speed</term></foreign>)</term>
+          <meaning id="fs-id1168326838470">całkowita droga podzielona przez całkowity czas</meaning>
+        </definition>
+      </glossary>
+    </document>

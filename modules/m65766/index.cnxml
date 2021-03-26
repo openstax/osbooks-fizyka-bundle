@@ -1,0 +1,4949 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:m="http://www.w3.org/1998/Math/MathML" id="new" cnxml-version="0.7" module-id="new">
+  <title>Rozwiązywanie zadań związanych z zasadami dynamiki Newtona</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65766</md:content-id>
+  <md:title>Rozwiązywanie zadań związanych z zasadami dynamiki Newtona</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>stosować poznaną wcześniej metodologię rozwiązywania zadań fizycznych w bardziej złożonych układach sił;</item>
+<item>stosować podejście z kinematyki do rozwiązywania zagadnień związanych z zasadami dynamiki Newtona w ruchu postępowym;</item>
+<item>rozwiązywać bardziej złożone zadania dotyczące równowagi ciał;</item>
+<item>rozwiązywać bardziej złożone zadania dotyczące przyspieszenia ciał;</item>
+<item>stosować rachunek różniczkowy i całkowy do rozwiązywania bardziej złożonych zadań z dynamiki.</item>
+</list></md:abstract>
+  <md:uuid>36876582-9ab5-4789-8149-a7e53a2f6249</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165037093387">Umiejętność rozwiązywania zadań jest konieczna, aby zrozumieć i właściwie zastosować odpowiednie prawa i zasady fizyki. W rozdziale <link class="target-chapter" document="m65754">Zasady dynamiki Newtona</link> przedstawiliśmy metodologię rozwiązywania zadań związanych z zasadami dynamiki Newtona w ruchu postępowym. W niniejszym rozdziale będziemy kontynuować przyjętą strategię rozwiązywania tych zadań metodą „krok po kroku”.
+</para><section xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165037271303"><title>Strategia rozwiązywania zadań</title><para id="fs-id1165037181242">W niniejszym rozdziale będziemy kontynuować przyjętą wcześniej metodologię rozwiązywania problemów fizycznych, ale zostanie ona wzbogacona o konkretne strategie stosowane w odniesieniu do <term class="no-emphasis" cmlnle:reference="zasady dynamiki Newtona">zasad dynamiki Newtona</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Newton’s laws of motion</term></foreign>). Po zidentyfikowaniu, jakie zasady i prawa fizyczne występują w zagadnieniu problemowym i po stwierdzeniu, że są to zasady dynamiki Newtona, można zastosować wymienione niżej kroki, aby znaleźć rozwiązanie. Metodologia ta opisuje liczne pojęcia, które są przydatne również w wielu innych dziedzinach fizyki. W opracowanych przykładach przedstawiono wiele strategii rozwiązywania różnorodnych problemów fizycznych, więc ich analiza pomoże ugruntować nabyte wcześniej umiejętności. </para><note id="fs-id1165037056538" class="problem-solving"><title>Strategia rozwiązywania zadań: zastosowanie zasad dynamiki Newtona</title><list id="fs-id1165037201472" list-type="enumerated" number-style="arabic">
+      <item>Zidentyfikuj wielkości „dane” oraz „szukane”.
+    </item>
+    <item>Wykonaj rysunek poglądowy, zaznaczając wszystkie działające siły za pomocą strzałek.</item>
+    <item>Określ analizowany układ i narysuj <term class="no-emphasis" cmlnle:reference="rozkład sił działających na ciało">rozkład sił działających na ciało</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">free-body diagram</term></foreign>), który będzie niezbędny do rozwiązania danego problemu.</item>
+    <item>Zastosuj odpowiednią zasadę dynamiki Newtona. Jeśli to konieczne, zastosuj kinematyczne równania ruchu z rozdziału dotyczącego ruchu prostoliniowego.</item>
+    <item>Zastanów się, czy otrzymany wynik ma sens.</item>
+  </list>
+</note><para id="fs-id1165038188345">Spróbujmy zastosować powyższą strategię do rozwiązania zagadnienia związanego z transportowaniem pianina na drugie piętro budynku. Gdy już ustaliliśmy, że problem ten związany jest z drugą zasadą dynamiki Newtona (bo sytuacja ta wymaga stosowania sił), szczególnie istotne jest właściwe rozrysowanie rozkładu sił działających na pianino (patrz <link target-id="CNX_UPhysics_06_01_PianoHoist"/>(a)). Wszystkie działające siły można przedstawić w postaci strzałek (patrz <link target-id="CNX_UPhysics_06_01_PianoHoist"/>(b)). Jeśli tylko mamy do tego wystarczające informacje, narysowane strzałki powinny posiadać odpowiednią długość i kierunek, wiernie odwzorowując reprezentowane siły. </para><figure id="CNX_UPhysics_06_01_PianoHoist"><media id="fs-id1165037903574" alt="Rysunek ten przedstawia rozkłady sił działających na podnoszone i transportowane przez okno ciało. Na Rysunku a widać fortepian zwisający z dźwigu i częściowo umieszczony już w oknie. Rysunek b identyfikuje działające siły. Zawiera on ten sam szkic sytuacyjny, co na Rysunku a, ale dodatkowo w postaci strzałek zaznaczone zostały wektory działających sił. Wektor N skierowany jest w górę, natomiast wektory F sub N oraz Q skierowane są w dół. Na Rysunku c określony został analizowany układ. Ponownie przedstawiono ten sam szkic sytuacyjny, ale pianino zostało otoczone ramką wskazującą na analizowany układ. Tylko wektory N oraz Q są uwzględnione na tym rozkładzie sił. Siła F sub N skierowana w dół nie została uwzględniona, ponieważ jest ona wywierana na układ zewnętrzny, a nie na pianino. W związku z tym nie uwzględnia się jej w diagramie sił. Schematyczny rozkład sił działających na ciało składa się z kropki reprezentującej układ odniesienia oraz wektora N skierowanego w górę oraz wektora Q skierowanego w dół. Na Rysunku d przedstawiono sumę działających sił w postaci skierowanych przeciwnie strzałek reprezentujących wektory N i Q. W podpisie wyjaśnione jest, że siły te muszą być sobie równe oraz przeciwnie skierowane, ponieważ zewnętrzna siła jest równa zero. Oznacza to, że N jest równe -Q.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_PianoHoist.jpg"/>
+  </media>
+  
+<caption>(a) Wielki fortepian jest wciągany do mieszkania na drugim piętrze. (b) Działające siły są przedstawione za pomocą strzałek. <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>N</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math> jest naciągiem liny nad fortepianem, <m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>F</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mi>N</m:mi>
+  </m:msub>
+</m:math> to siła, jaką fortepian wywiera na linę, zaś <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>Q</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> jest ciężarem fortepianu. Wszystkie inne siły, takie jak podmuchy wiatru, są pomijane. (c) Załóżmy, że znamy masę fortepianu i mamy znaleźć naciąg liny. Definiujemy analizowany układ i wykonujemy diagram rozkładu sił działających na ciało, jak to zostało przedstawione na rysunku. Wówczas siła <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>N</m:mi>
+</m:msub>
+</m:math> nie jest już uwzględniania, ponieważ nie działa ona w obranym układzie odniesienia. <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>N</m:mi>
+</m:msub>
+</m:math> działa na układ zewnętrzny. (d) W celu znalezienia sumy sił działających w układzie zastosowano graficzną metodę dodawania wektorów. Jest oczywiste, że jeśli fortepian jest nieruchomy, to <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>N</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>Q</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>.</caption></figure><para id="fs-id1165037264521">Podobnie jak w innych zadaniach fizycznych, na początku trzeba określić, jakie wielkości są dane, a jakie szukane w treści zadania. Szczególnie ważne jest również właściwe określenie analizowanego układu. Następnie definiujemy, które siły są zewnętrzne, a które wewnętrzne w danym układzie, gdyż jest to konieczne, aby móc zastosować drugą zasadę dynamiki Newtona (patrz <link target-id="CNX_UPhysics_06_01_PianoHoist"/>(c)). Określenie, czy siły są wywierane pomiędzy składnikami układu (siły wewnętrzne) czy pomiędzy układem a elementami zewnętrznymi (siły zewnętrzne), może nastąpić w oparciu o trzecią zasadę dynamiki Newtona. Jak pokazano w rozdziale <link class="target-chapter" document="m65754">Zasady dynamiki Newtona</link>, wybór układu jest zdeterminowany wielkościami szukanymi w danym zadaniu. W rozkładzie sił działających na ciało uwzględnia się tylko siły, a nie przyspieszenie czy prędkość. Kilka przykładowych rozkładów sił zostało wykonanych w ramach rozwiązywania poprzednich zadań w niniejszym podręczniku. Z kolei rozkład sił dla dyskutowanego zadania z pianinem przedstawiono na rysunku (patrz <link target-id="CNX_UPhysics_06_01_PianoHoist"/>(c)). Warto zwrócić uwagę, że na rysunku tym nie ma żadnych sił wewnętrznych. </para><para id="fs-id1165038229922">Teraz możemy zastosować drugą zasadę dynamiki Newtona (patrz <link target-id="CNX_UPhysics_06_01_PianoHoist"/>(d)). Kiedy siły zewnętrzne zostaną właściwie zidentyfikowane i uwzględnione w rozkładzie sił, dalsze rozwiązanie zadania nie powinno sprawiać nam kłopotu. Jeśli analizowane zagadnienie jest jednowymiarowe (tak jak w tym przypadku) oraz jeśli działające siły są względem siebie równoległe, to sumowanie wektorów można przeprowadzić w sposób algebraiczny. Jeśli natomiast zagadnienie jest dwuwymiarowe, to wektory należy rozłożyć na składowe i przeprowadzić analizę jak dla dwóch zagadnień jednowymiarowych. Robimy to poprzez rzutowanie odpowiednich wektorów siły na osie wybranego wcześniej układu odniesienia. Jak wynika z poprzednich przykładów, właściwy wybór osi może wyraźnie uprościć zadanie. Na przykład jeśli chodzi o zadania z równią pochyłą, to zestaw osi z jedną osią równoległą do równi i drugą prostopadłą do niej jest najwygodniejszy. Zazwyczaj optymalnego wyboru osi dokonuje się tak, by jedna z osi była równoległa do kierunku ruchu. Ogólnie rzecz biorąc, wystarczy napisać drugie prawo Newtona dla odpowiednich składowych sił w różnych kierunkach. Wtedy otrzymamy następujące równania:</para><equation id="ked-1bqg3fsnc_ojo" class="unnumbered">
+  <m:math>
+    <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+      <m:mtr>
+        <m:mtd>
+          <m:munder>
+            <m:mo movablelimits="false">∑</m:mo>
+            <m:mi>i</m:mi>
+          </m:munder>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mi>i</m:mi>
+            </m:mrow>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mi>m</m:mi>
+          <m:msub>
+            <m:mi>a</m:mi>
+            <m:mi>x</m:mi>
+          </m:msub>
+          <m:mn>,</m:mn>
+          <m:mspace width="1em"/>
+          <m:munder>
+            <m:mo movablelimits="false">∑</m:mo>
+            <m:mi>i</m:mi>
+          </m:munder>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mrow>
+              <m:mi>y</m:mi>
+              <m:mi>i</m:mi>
+            </m:mrow>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mi>m</m:mi>
+          <m:msub>
+            <m:mi>a</m:mi>
+            <m:mi>y</m:mi>
+          </m:msub>
+          <m:mo>.</m:mo>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation>
+<para id="fs-id1165037222243">Jeśli na przykład układ doznaje przyspieszenia tylko w kierunku równoległym, wówczas można zapisać <m:math>
+  <m:msub>
+    <m:mi>a</m:mi>
+    <m:mi>y</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+  </m:math>. Wiedza ta jest niezbędna, aby określić, jakie nieznane siły działają w analizowanym układzie.</para>
+  <para id="fs-id1165038201982">Następnie, tak jak zawsze, musimy zweryfikować poprawność otrzymanego wyniku. Zazwyczaj sprowadza się to do sprawdzenia, czy wynik ten jest rozsądny. Na przykład rozsądne jest stwierdzenie, że tarcie powoduje, iż obiekt przesuwa się po równi pochyłej wolniej niż kiedy nie ma tarcia. W praktyce intuicja fizyczna rozwija się stopniowo poprzez rozwiązywanie kolejnych zadań. W miarę nabierania doświadczenia coraz łatwiejsze do oceny staje się stwierdzenie, czy odpowiedź jest rozsądna. Innym sposobem weryfikacji rozwiązania jest sprawdzenie jednostek. Jeśli rozwiązaniem zadania jest wyliczenie siły, a jednostką, którą otrzymamy jest na przykład milimetr na sekundę to wiemy, że popełniliśmy błąd.</para>
+  <para id="fs-id1165038396151">Istnieje wiele ciekawych przykładów zastosowania zasad dynamiki Newtona. Kilka z nich prezentowanych jest m.in. w niniejszym rozdziale. Ich analiza ma służyć zilustrowaniu kilku dalszych subtelności fizyki i pomóc rozwinąć umiejętności rozwiązywania zadań fizycznych. Najpierw przeanalizujemy zadania związane z równowagą cząstek, które wykorzystują pierwszą zasadę dynamiki Newtona, a następnie rozważymy przyspieszenia cząstek, które obejmują drugą zasadę dynamiki Newtona.</para>
+</section><section id="fs-id1165036762800">
+  <title>Równowaga ciała</title>
+  <para id="fs-id1165038270451">Przypomnijmy, że ciało jest w równowadze, jeśli działające na nie siły zewnętrzne są zrównoważone. Statyczna równowaga obejmuje przedmioty w spoczynku, a równowaga dynamiczna obejmuje obiekty poruszające się bez przyspieszenia. Ważne jednak, aby pamiętać, że warunki te są względne. Na przykład obiekt może być w spoczynku, gdy jest oglądany z naszego układu odniesienia, ale ten sam przedmiot wydaje się być w ruchu, gdy jest obserwowany przez kogoś poruszającego się ze stałą prędkością. Rozwiążmy teraz kolejne zadanie związane z <term class="no-emphasis" cmlnle:reference="równowaga ciał">równowagą ciał</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">particle equilibrium</term></foreign>), bazując na wiedzy zdobytej podczas analizy rozdziału <link class="target-chapter" document="m65754">Zasady dynamiki Newtona</link>. </para><example id="fs-id1165037164648">
+    <para id="fs-id1165037263177"><title>Różne siły naciągu pod różnymi kątami</title>Rozważmy sygnalizację świetlną o masie 15 kg umocowaną na dwóch kablach (patrz <link target-id="CNX_UPhysics_06_01_StopLight"/>). Znajdź siłę naciągu każdego z kabli, zakładając, że są one nieważkie.</para><figure id="CNX_UPhysics_06_01_StopLight">
+        <media id="fs-id1165038217981" alt="(a) Na rysunku widoczny jest szkic sygnalizacji świetlnej zawieszonej na dwóch kablach przyczepionych do dwóch słupów. (b) Zaprezentowane są siły działające w układzie. Naciąg N sub jeden przyłożony jest do wierzchołka lewego słupa i skierowany jest wzdłuż kabla łączącego wierzchołek tego słupa z sygnalizacją. Równy co do wartości lecz przeciwnie skierowany naciąg N sub jeden jest również skierowany wzdłuż tego samego kabla, ale posiada przeciwny zwrot i przyłożony jest do sygnalizacji świetlnej. Kabel ten tworzy z poziomem kąt 30 stopni. Naciąg N sub dwa przyłożony jest do wierzchołka prawego słupa i skierowany jest wzdłuż kabla łączącego wierzchołek tego słupa z sygnalizacją. Równy co do wartości lecz przeciwnie skierowany naciąg N sub dwa jest również skierowany wzdłuż tego samego kabla, ale posiada przeciwny zwrot i przyłożony jest do sygnalizacji świetlnej. Kabel ten tworzy z poziomem kąt 45 stopni. Ciężar Q sygnalizacji świetlnej przedstawiony jest w postaci strzałki skierowanej pionowo w dół i przyłożonej do sygnalizacji. (c) Wybranym analizowanym fragmentem układu jest sygnalizacja świetlna, na rysunku otoczona kółkiem. Naciąg N sub jeden jest wektorem przyłożonym do sygnalizacji i skierowanym wzdłuż kabla łączącego sygnalizację z wierzchołkiem lewego słupa, tworzącego =z poziomem kąt 30 stopni. Naciąg N sub dwa jest wektorem przyłożonym do sygnalizacji i skierowanym wzdłuż kabla łączącego sygnalizację z wierzchołkiem prawego słupa, tworzącego z poziomem kąt 45 stopni. Ciężar Q jest wektorem skierowanym pionowo w dół, przyłożonym do sygnalizacji. Rozkład sił działających na ciało jest dodatkowo wyrysowany jako układ trzech wektorów przyłożonych do punktu. Wektory są tak samo skierowane jak te, które są przyłożone do sygnalizacji świetlnej. Narysowany jest również układ współrzędnych z osią x skierowaną poziomo w prawo i osią y skierowaną pionowo w górę. (d) Siły zostają rozłożone na składowe. Naciąg N sub jeden jest rozłożony na N sub jeden x skierowany poziomo w lewo i N sub jeden y skierowany pionowo w górę. Kąt pomiędzy N sub jeden i N sub jeden x wynosi 30 stopni. Siła N sub dwa jest rozłożona na N sub 2 x skierowaną w prawo i N sub dwa y skierowaną w górę. Kąt pomiędzy N sub dwa i N sub dwa x wynosi 45 stopni. Ciężar Q jest wektorem skierowanym pionowo w dół. (e) Wypadkowa działających sił w kierunku pionowym wynosi zero, więc N sub jeden y dodać N sub dwa y jest równe Q. Składowe N sub jeden y i N sub dwa y są przedstawione na rozkładzie sił jako strzałki jednakowej długości skierowane w górę. Wektor ciężaru Q jest strzałką o długości dwa razy większej niż N sub jeden y i N sub dwa y, skierowaną w dół. Wypadkowa sił działających poziomo jest równa zero, więc N sub jeden x jest równe minus N sub dwa x. Składowa naciągu N sub jeden x jest przedstawiona jako strzałka skierowana poziomo w lewo, a składowa N sub dwa x jest strzałką skierowaną poziomo w prawo.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_StopLight.jpg"/>
+        </media>
+        <caption>(a) Sygnalizacja świetlna zawieszona jest na dwóch kablach. (b) Zaprezentowane są siły działające w układzie. (c) Przedstawione są tylko siły działające na analizowany układ. Obok narysowany jest rozkład sił działających na ciało. (d) Siły są rozłożone na składowe w kierunku pionowym (<m:math>
+            <m:mi>y</m:mi>
+          </m:math>
+        ) oraz poziomym (<m:math>
+          <m:mi>x</m:mi>
+        </m:math>
+        ). Poziome składowe siły naciągu znoszą się, zaś suma pionowych składowych siły naciągu musi być równa ciężarowi sygnalizacji. (e) Na rozkładzie sił działających na ciało przedstawione są siły działające w kierunku pionowym i poziomym.</caption>
+      </figure>
+      <para id="fs-id1165036980290"><title>Strategia rozwiązania</title>Analizowanym układem jest sygnalizacja świetlna, dla której rozkład działających sił został przedstawiony na rysunku (patrz <link target-id="CNX_UPhysics_06_01_StopLight"/>(c)). Wszystkie trzy działające siły nie są równoległe, więc trzeba je zrzutować na odpowiedni układ współrzędnych. Najbardziej wygodny układ współrzędnych będzie miał jedną oś poziomą, a drugą pionową. Rzuty poszczególnych sił na wskazany układ współrzędnych zostały przedstawione na rysunku (patrz <link target-id="CNX_UPhysics_06_01_StopLight"/>(d)).W analizowanym zadaniu występują dwie wielkości szukane <m:math>
+          <m:mo stretchy="false">(</m:mo>
+          <m:msub>
+            <m:mi>N</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mn>,</m:mn>
+          <m:msub>
+            <m:mi>N</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">)</m:mo>
+          </m:math>, więc konieczne jest sformułowanie dwóch układów równań. Równania te tworzymy w oparciu o drugą zasadę dynamiki Newtona wzdłuż poziomej oraz pionowej osi. Pamiętamy jednocześnie, że wypadkowa działających sił jest równa zero, ponieważ przyspieszenie jest równe zeru.</para><para id="fs-id1165036730070"><title>Rozwiązanie</title>Rozważmy siły działające w kierunku poziomym (lub osi <m:math>
+                <m:mi>x</m:mi>
+              </m:math>
+              ):</para><equation id="fs-id1165037064371" class="unnumbered">
+                <label/>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>F</m:mi>
+                      <m:mrow>
+                        <m:mtext>wyp</m:mtext>
+                        <m:mspace width="0.2em"/>
+                        <m:mi>x</m:mi>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>N</m:mi>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mi>x</m:mi>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>−</m:mo>
+                    <m:msub>
+                      <m:mi>N</m:mi>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mi>x</m:mi>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mn>0</m:mn>
+                    <m:mo>.</m:mo>
+                  </m:mrow>
+                </m:math>
+              </equation>
+              <para id="fs-id1165037912865">Z czego wynika:</para>
+              <equation id="fs-id1165036728944" class="unnumbered">
+                <label/>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>N</m:mi>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mi>x</m:mi>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>N</m:mi>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mi>x</m:mi>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>.</m:mo>
+                  </m:mrow>
+                </m:math>
+              </equation>
+              <para id="fs-id1165037229798">To z kolei daje nam następującą zależność:</para>
+              <equation id="fs-id1165037018206" class="unnumbered"><label/>
+                <m:math>
+                  <m:msub>
+                    <m:mi>N</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mi>cos</m:mi>
+                  <m:mo>⁡</m:mo>
+                  <m:msup>
+                    <m:mn>30</m:mn>
+                    <m:mrow>
+                      <m:mo>∘</m:mo>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mi>N</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mi>cos</m:mi>
+                  <m:mo>⁡</m:mo>
+                  <m:msup>
+                    <m:mn>45</m:mn>
+                    <m:mrow>
+                      <m:mo>∘</m:mo>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mo>.</m:mo>
+                </m:math>
+              </equation><para id="fs-id1165038361967">Zatem:</para>
+              <equation id="fs-id1165036752141" class="unnumbered"><label/>
+                <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>N</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mn>1,225</m:mn>
+                    <m:msub>
+                      <m:mi>N</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>.</m:mo>
+                  </m:mrow>
+                </m:math>
+              </equation><para id="fs-id1165038164630">Zauważ, że <m:math>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>N</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:math> i <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>N</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:math> nie są równe, ponieważ są skierowane pod innymi kątami. Sensowne jest spostrzeżenie, że <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>N</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mrow>
+          </m:math> jest większa niż <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>N</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:math> ponieważ jest skierowana bardziej poziomo niż <m:math>
+        <m:msub>
+          <m:mi>N</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        </m:math>.</para><para id="fs-id1165037166501">Teraz rozważmy siły działające w kierunku pionowym (osi <m:math>
+            <m:mi>y</m:mi>
+          </m:math>
+          ):</para>
+          <equation id="fs-id1165038158365" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>F</m:mi>
+                  <m:mrow>
+                    <m:mtext>wyp</m:mtext>
+                    <m:mspace width="0.2em"/>
+                    <m:mi>y</m:mi>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>N</m:mi>
+                  <m:mrow>
+                    <m:mn>1</m:mn>
+                    <m:mi>y</m:mi>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>N</m:mi>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>y</m:mi>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>−</m:mo>
+                <m:mi>Q</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation>
+          <para id="fs-id1165037051851">Stąd wynika, że:</para>
+          <equation id="fs-id1165036767171" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>N</m:mi>
+                  <m:mrow>
+                    <m:mn>1</m:mn>
+                    <m:mi>y</m:mi>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>N</m:mi>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>y</m:mi>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mi>Q</m:mi>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation>
+          <para id="fs-id1165038377574">To z kolei prowadzi do zależności:</para>
+          <equation id="fs-id1165037972428" class="unnumbered"><label/>
+            <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>N</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mspace width="0.2em"/>
+                <m:mtext>sin</m:mtext>
+                    <m:msup>
+                    <m:mn>30</m:mn>
+                    <m:mrow>
+                      <m:mo>∘</m:mo>
+                    </m:mrow>
+                  </m:msup>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>N</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+                <m:mtext>sin</m:mtext>
+                    <m:msup>
+                    <m:mn>45</m:mn>
+                    <m:mrow>
+                      <m:mo>∘</m:mo>
+                    </m:mrow>
+                  </m:msup>
+                    
+                <m:mo>=</m:mo>
+                <m:mi>Q</m:mi>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation><para id="fs-id1165037078144">W równaniu tym występują dwie niewiadome, ale podstawiając wyrażenie na <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>N</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mrow>
+          </m:math> zależne od <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>N</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mrow>
+          </m:math> (z analizy sił poziomych) upraszczamy to równanie do postaci równania z jedną niewiadomą:</para>
+          <equation id="fs-id1165038010491" class="unnumbered"><label/>
+            <m:math>
+              <m:msub>
+                <m:mi>N</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>⋅</m:mo>
+              <m:mn>0,500</m:mn>
+              
+              <m:mo>+</m:mo>
+              <m:mn>1,225</m:mn>
+              
+              <m:msub>
+                <m:mi>N</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>⋅</m:mo>
+              <m:mn>0,707</m:mn>
+              
+              <m:mo>=</m:mo>
+              <m:mi>Q</m:mi>
+              <m:mo>=</m:mo>
+              <m:mi>m</m:mi>
+              <m:mi>g</m:mi>
+              <m:mn>,</m:mn>
+            </m:math>
+          </equation><para id="fs-id1165037045574">co równa się</para>
+          <equation id="fs-id1165037159409" class="unnumbered"><label/>
+            <m:math>
+              <m:mn>1,3661</m:mn>
+              
+              <m:msub>
+                <m:mi>N</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>15,0</m:mn>
+              
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">k</m:mi>
+                <m:mi mathvariant="normal">g</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mn>9,80</m:mn>
+              
+              <m:mrow>
+                <m:mfrac>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:msup>
+                    <m:mi mathvariant="normal">s</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mfrac>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </equation><para id="fs-id1165037050403">Rozwiązanie tego ostatniego równania daje nam wartość liczbową <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>N</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:mrow>
+            </m:math> równą:</para>
+            <equation id="fs-id1165037212282" class="unnumbered">
+              <label/>
+              <m:math>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>N</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mn>108</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>N</m:mtext>
+                  <m:mo>.</m:mo>
+                </m:mrow>
+              </m:math>
+            </equation>
+            <para id="fs-id1165038013684">Na końcu znajdujemy wartość liczbową <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>N</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:math> poprzez zastosowanie zależności między siłami <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>N</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>1,225</m:mn>
+              <m:msub>
+                <m:mi>N</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:mrow>
+            </m:math>, co zostało wykazane wcześniej. Wówczas otrzymujemy wartość</para>
+            <equation id="fs-id1165038056225" class="unnumbered">
+              <label/>
+              <m:math>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>N</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mn>132</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>N</m:mtext>
+                  <m:mo>.</m:mo>
+                </m:mrow>
+              </m:math>
+            </equation>
+            <para id="fs-id1165038025011"><title>Znaczenie</title>Obie siły naciągu byłyby większe, gdyby kable były bardziej poziome. Z kolei siły naciągu każdego z kabli byłyby sobie równe wtedy i tylko wtedy, gdyby kąty po obu stronach były jednakowe (podobnie jak w przykładzie z linoskoczkiem analizowanym w rozdziale <link class="target-chapter" document="m65754">Zasady dynamiki Newtona</link>. </para></example>
+          </section>
+          <section id="fs-id1165037262704">
+            <title>Przyspieszenie ciała</title>
+            <para id="fs-id1165037071445">Rozważyliśmy kilka przykładów ciał w równowadze. Teraz nasza uwaga skupi się na zadaniach z <term class="no-emphasis" cmlnle:reference="przyspieszenie ciała">przyspieszeniem ciał</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">particle acceleration</term></foreign>), które wynika z istnienia niezerowej siły wypadkowej. Przyjrzyj się jeszcze raz strategii rozwiązywania zadań przedstawionej na początku tego rozdziału i zastanów się, jak można ją zastosować do poniższych przykładów. </para><example id="fs-id1165036901952">
+              <para id="fs-id1165037231725"><title>Siła oporu działająca na barkę</title>Dwa holowniki pchają barkę w różnych kierunkach (<link target-id="CNX_UPhysics_06_01_Tugboats"/>). Pierwszy holownik wywiera siłę <m:math>
+                  <m:mn>2</m:mn>
+                  <m:mn>,</m:mn>
+                  <m:mn>7</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>5</m:mn>
+                  </m:msup>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">N</m:mi>
+                  </m:mrow>
+                </m:math> w kierunku <m:math>
+                  <m:mi>x</m:mi>
+                </m:math>
+               a drugi holownik wywiera siłę <m:math>
+              <m:mn>3</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>6</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>5</m:mn>
+              </m:msup>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+              </m:mrow>
+            </m:math> w kierunku <m:math>
+              <m:mi>y</m:mi>
+            </m:math>. Masa barki wynosi <m:math>
+          <m:mn>5</m:mn>
+          <m:mn>,</m:mn>
+          <m:mn>0</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mn>6</m:mn>
+          </m:msup>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">k</m:mi>
+            <m:mi mathvariant="normal">g</m:mi>
+          </m:mrow>
+        </m:math>, a jej przyspieszenie jest równe <m:math>
+        <m:mn>7</m:mn>
+        <m:mn>,</m:mn>
+        <m:mn>5</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>2</m:mn>
+          </m:mrow>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:msup>
+            <m:mi mathvariant="normal">s</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+        </m:math> i skierowane jest jak przedstawiono na rysunku. Ile wynosi siła oporu wody działająca na barkę i utrudniająca jej ruch? (Zauważ, że siła oporu jest siłą wywieraną na ciała przez płyny takie jak powietrze lub woda. <term class="no-emphasis" cmlnle:reference="siła oporu">Siła oporu</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">drag force</term></foreign>) utrudnia ruch ciał. Ponieważ barka jest płaska z dołu, można założyć, że siła oporu działa w kierunku przeciwnym do ruchu barki.)</para><figure id="CNX_UPhysics_06_01_Tugboats"><media id="fs-id1165037208675" alt="(a) Przedstawiony jest widok z góry na dwa holowniki pchające barkę. Jeden holownik pcha barkę z siłą F sub 1 równą dwa i siedem dziesiątych razy dziesięć do potęgi piątej newtonów, skierowaną poziomo w prawo wzdłuż kierunku x. Drugi holownik pcha barkę z siłą F sub 2 równą trzy i sześć dziesiątych razy dziesięć do potęgi piątej netownów skierowaną pionowo w górę wzdłuż kierunku y. Przyspieszenie barki, a, jest przedstawione w postaci strzałki wektora skierowanego pod kątem pięćdziesiąt trzy i jedna dziesiąta stopnia względem kierunku poziomego x. Na rysunku przedstawiającym rozkład sił działających ciało jest reprezentowane przez punkt, siła F sub 2 działa w górę, siła F sub 1 działa w prawo, a siła oporu F sub op działa w przybliżeniu w kierunku południowo-zachodnim. (b) Wektory F sub 1 i F sub 2 tworzą przyprostokątne w trójkącie prostokątnym. Wynikiem dodawania metodą graficzną jest przeciwprostokątna tego trójkątna, oznaczona jako wektor F sub 12, skierowana pod kątem pięćdziesiąt trzy i jedna dziesiąta stopnia względem wektora poziomego F sub 1. Wektor F sub 12 dodać wektor F sub op (skierowany ukośnie w dół) daje wypadkową działających sił F sub wyp, skierowaną ukośnie w górę.">
+            <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_Tugboats.jpg"/>
+          </media>
+          
+          <caption>(a) Widok z góry na dwa holowniki pchające barkę. (b) Rozkład sił działających na barkę zawiera tylko siły działające w płaszczyźnie lustra wody. Pominięte zostają dwie siły działające w kierunku pionowym: siła ciężkości barki oraz siła wyporu wody, ponieważ się znoszą. Zauważ, że <m:math>
+            <m:msub>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>F</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>12</m:mn>
+              </m:mrow>
+            </m:msub>
+            </m:math> oznacza całkowitą, sumaryczną siłę wywieraną przez holowniki na barkę.</caption></figure><para id="fs-id1165038242669"><title>Strategia rozwiązania</title><link target-id="CNX_UPhysics_06_01_Tugboats"/>(a) przedstawia kierunki i wartości występujących wektorów sił i przyspieszenia. Całkowita siła wywierana przez holowniki na barkę (<m:math>
+            <m:msub>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>F</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>12</m:mn>
+              </m:mrow>
+            </m:msub>
+            </m:math>) wynosi:</para><equation id="fs-id1165036994827" class="unnumbered">
+              <label/>
+              <m:math>
+                <m:msub>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>F</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>12</m:mn>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>F</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>F</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msub>
+                <m:mo>.</m:mo>
+              </m:math>
+            </equation>
+            <para id="fs-id1165036826149">Siła oporu wody <m:math>
+              <m:msub>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>F</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mrow>
+                <m:mrow>
+                  <m:mtext>op</m:mtext>
+                </m:mrow>
+              </m:msub>
+            </m:math> skierowana jest przeciwnie do kierunku ruchu barki, czyli działa ona w kierunku przeciwnym niż siła <m:math>
+            <m:msub>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>F</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>12</m:mn>
+              </m:mrow>
+            </m:msub>
+          </m:math>, przedstawiona na rozkładzie sił na <link target-id="CNX_UPhysics_06_01_Tugboats" cmlnle:case="genitive"/>(b). W tym zadaniu analizowanym układem jest barka, więc do niej przyłożone są wektory sił i przyspieszenia. W związku z tym, że działające siły są prostopadłe, osie <m:math>
+            <m:mi>x</m:mi>
+          </m:math>
+         i <m:math>
+          <m:mi>y</m:mi>
+        </m:math>
+       są tak samo skierowane jak siły <m:math>
+      <m:msub>
+        <m:mrow>
+          <m:mover>
+            <m:mi>F</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:math> i <m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>F</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:math>. Analizowane zadanie staje się zagadnieniem jednowymiarowym wzdłuż kierunku działania siły, ponieważ siła oporu skierowana jest przeciwnie do kierunku działania siły <m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>F</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mrow>
+      <m:mn>12</m:mn>
+    </m:mrow>
+  </m:msub>
+</m:math>. Następnie przyjmujemy odpowiednią strategię, aby znaleźć kierunek i wartość wypadkowej sił wywieranych przez holowniki (<m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mn>12</m:mn>
+  </m:mrow>
+</m:msub>
+</m:math>) i zastosować drugą zasadę dynamiki Newtona do znalezienia siły oporu <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mtext>op</m:mtext>
+  </m:mrow>
+</m:msub>
+</m:math>.
+</para><para id="fs-id1165037948166">
+  <title>Rozwiązanie</title>Jako że siły <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mi>1</m:mi>
+      </m:msub>
+    </m:mrow>
+  </m:math> i <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mi>2</m:mi>
+    </m:msub>
+  </m:mrow>
+</m:math> są prostopadłe, możemy znaleźć kierunek i wartość wypadkowej tych dwóch sił <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mn>12</m:mn>
+  </m:mrow>
+</m:msub>
+</m:math> bezpośrednio z zależności geometrycznych. Po pierwsze, w celu obliczenia wartości tej siły zastosujemy twierdzenie Pitagorasa:</para>
+<equation id="ked-1bqg3fsp1_688" class="unnumbered">
+  <m:math>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mrow>
+        <m:mn>12</m:mn>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msqrt>
+      <m:msubsup>
+        <m:mi>F</m:mi>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+      </m:msubsup>
+      <m:mo>+</m:mo>
+      <m:msubsup>
+        <m:mi>F</m:mi>
+        <m:mn>2</m:mn>
+        <m:mn>2</m:mn>
+      </m:msubsup>
+    </m:msqrt>
+    <m:mo>=</m:mo>
+    <m:msqrt>
+      <m:msup>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>7</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mn>5</m:mn>
+            </m:msup>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>+</m:mo>
+      <m:msup>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>3</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>6</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mn>5</m:mn>
+            </m:msup>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:msqrt>
+    <m:mo>=</m:mo>
+    <m:mn>4</m:mn>
+    <m:mn>,</m:mn>
+    <m:mn>5</m:mn>
+    <m:mo>⋅</m:mo>
+    <m:msup>
+      <m:mn>10</m:mn>
+      <m:mn>5</m:mn>
+    </m:msup>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">N</m:mi>
+    </m:mrow>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1165037230368">Kąt natomiast jest równy:</para>
+<equation id="ked-1bqg3fsos_3v8" class="unnumbered">
+  <m:math>
+    <m:mi>θ</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>arctg</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mfrac>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+      </m:mfrac>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mi>arctg</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mn>3</m:mn>
+          <m:mn>,</m:mn>
+          <m:mn>6</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mn>5</m:mn>
+          </m:msup>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">N</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mn>,</m:mn>
+          <m:mn>7</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mn>5</m:mn>
+          </m:msup>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">N</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mn>53</m:mn>
+    <m:mn>,</m:mn>
+    <m:msup>
+      <m:mn>1</m:mn>
+      <m:mrow>
+        <m:mo>∘</m:mo>
+      </m:mrow>
+    </m:msup>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1165037998590">Z pierwszej zasady dynamiki Newtona wiadomo, że kierunek tej siły jest taki sam jak kierunek działającego przyspieszenia. Wiemy również, że siła oporu <m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>F</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mrow>
+      <m:mtext>op</m:mtext>
+    </m:mrow>
+  </m:msub>
+</m:math> działa w przeciwnym kierunku niż <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mn>12</m:mn>
+  </m:mrow>
+</m:msub>
+</m:math>, ponieważ zmniejsza ona przyspieszenie barki. W związku z tym wypadkowa sił zewnętrznych jest tak samo skierowana jak <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mn>12</m:mn>
+  </m:mrow>
+</m:msub>
+</m:math>, ale jej wartość jest nieco mniejsza niż wartość siły <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mrow>
+    <m:mn>12</m:mn>
+  </m:mrow>
+</m:msub>
+</m:math>. Jako że problem jest w zasadzie zagadnieniem jednowymiarowym, na podstawie diagramu rozkładu sił w układzie można napisać:</para><equation id="fs-id1165037219903" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mrow>
+          <m:mtext>wyp</m:mtext>
+        </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mrow>
+          <m:mtext>12</m:mtext>
+        </m:mrow>
+      </m:msub>
+      <m:mo>−</m:mo>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mtext>op</m:mtext>
+      </m:msub>
+      <m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1165036844709">Jednakże z drugiej zasady dynamiki Newtona wynika, że:</para>
+<equation id="fs-id1165038016013" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mrow>
+          <m:mtext>wyp</m:mtext>
+        </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mi>m</m:mi>
+      <m:mi>a</m:mi>
+      <m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1165036996613">Stąd</para>
+<equation id="fs-id1165038040172" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mrow>
+          <m:mtext>12</m:mtext>
+        </m:mrow>
+      </m:msub>
+      <m:mo>−</m:mo>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mtext>op</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mi>m</m:mi>
+      <m:mi>a</m:mi>
+      <m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1165036762597">Na tej podstawie można obliczyć wartość siły oporu wody <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mtext>op</m:mtext>
+    </m:msub>
+  </m:mrow>
+  </m:math> działającej na barkę. </para>
+  <equation id="fs-id1165038033630" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mtext>op</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mrow>
+            <m:mtext>12</m:mtext>
+          </m:mrow>
+        </m:msub>
+        <m:mo>−</m:mo>
+        <m:mi>m</m:mi>
+        <m:mi>a</m:mi>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1165037984171">Po podstawieniu znanych wartości liczbowych otrzymujemy:</para>
+  <equation id="fs-id1165038342612" class="unnumbered"><label/>
+    <m:math>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mrow>
+          <m:mtext>op</m:mtext>
+        </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>4</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>5</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>5</m:mn>
+      </m:msup>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+      </m:mrow>
+      <m:mo>−</m:mo>
+      <m:mn>5</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>0</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>6</m:mn>
+      </m:msup>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">k</m:mi>
+        <m:mi mathvariant="normal">g</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mn>7</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>5</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mn>2</m:mn>
+        </m:mrow>
+      </m:msup>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mfrac>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:msup>
+            <m:mi mathvariant="normal">s</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mfrac>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mn>7</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>5</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>4</m:mn>
+      </m:msup>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation><para id="fs-id1165038052094">Z kolei kierunek siły oporu wody <m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>F</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mtext>op</m:mtext>
+      </m:mrow>
+    </m:msub>
+  </m:math> został określony jako kierunek przeciwny do wypadkowej sił wywieranych na barkę przez holowniki <m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>F</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mrow>
+      <m:mn>12</m:mn>
+    </m:mrow>
+  </m:msub>
+</m:math> lub jako zwrócony pod kątem <m:math>
+<m:msup>
+  <m:mn>53</m:mn>
+  <m:mrow>
+    <m:mo>∘</m:mo>
+  </m:mrow>
+</m:msup>
+</m:math> na południowy zachód.</para><para id="fs-id1165037070888"><title>Znaczenie</title>Wartości liczbowe otrzymane w tym zadaniu są rozsądne dla umiarkowanie dużej barki. Uzyskanie większych wartości przyspieszeń przy użyciu holowników jest szczególnie trudne, a ponadto zachowanie małych prędkości jest pożądane. Przy niskich prędkościach, dla dobrze zaprojektowanych kadłubów, siła oporu jest stosunkowo niska, co zgadza się z odpowiedzią z zadania, gdzie <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mtext>op</m:mtext>
+      </m:msub>
+    </m:mrow>
+    </m:math> jest ponad 600 razy mniejsza od ciężaru barki.</para></example>
+  <para id="fs-id1165038283088">W rozdziale <link class="target-chapter" document="m65754">Zasady dynamiki Newtona</link> omawialiśmy pojęcie <term class="no-emphasis" cmlnle:reference="siła normalna">siły normalnej</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">normal force</term></foreign>), która jest kontaktową siłą reakcji w kierunku normalnym do płaszczyzny powierzchni i działającą na obiekt w taki sposób, że nie doznaje on przyspieszenia w kierunku prostopadłym do powierzchni. Waga laboratoryjna jest doskonałym przykładem urządzenia mierzącego normalną siłę reakcji działającą na ciało. Daje nam informację, jak mocno trzeba pchać w górę, aby podtrzymać ciężar ciała. Ale czy potrafisz przewidzieć, jakie wskazanie na skali wagi zobaczysz, jeśli waga umieszczona zostanie w poruszającej się <term class="no-emphasis" cmlnle:reference="winda">windzie</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">elevator</term></foreign>)? Czy wskazywana wartość będzie większa niż twój statyczny ciężar, kiedy winda wystartuje w górę? Jakie będzie wskazanie, jeśli winda będzie poruszała się w górę ze stałą prędkością? Postaraj się najpierw intuicyjnie odpowiedzieć na to pytanie, zanim jeszcze przyswoisz analizę kolejnego przykładu. </para><example id="fs-id1165038187326">
+    <para id="fs-id1165037866725">
+      <title>Co tak naprawdę pokazuje waga łazienkowa umieszczona w windzie?</title>
+      <link target-id="CNX_UPhysics_06_01_Scale"/> przedstawa mężczyznę o masie 75 kg, stojącego na wadze łazienkowej umieszczonej w windzie. Oblicz, jakie będą wskazania wagi w następujących przypadkach: <list id="eip-idm482963792" list-type="enumerated" number-style="lower-alpha">
+      <item>gdy winda porusza się w górę z przyspieszeniem <m:math>
+        <m:mrow>
+          <m:mn>1,20</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:msup>
+            <m:mrow>
+              <m:mtext>m/s</m:mtext>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo/>
+        </m:mrow>
+      </m:math>
+    </item>
+    <item>gdy winda porusza się w górę ze stałą prędkością równą 1 m/s.</item>
+  </list>
+</para>
+<figure id="CNX_UPhysics_06_01_Scale"><media id="fs-id1165037224602" alt="(a) Człowiek stoi na wadze łazienkowej w windzie. Siła ciężkości Q sub cz jest przedstawiona w postaci wektora skierowanego w dół przyłożonego do jego klatki piersiowej. F sub w jest siłą wywieraną przez wagę na człowieka, przedstawioną w postaci wektora skierowanego pionowo w górę, przyłożonego do stóp człowieka. Q sub wag jest ciężarem wagi w postaci wektora przyłożonego do wagi i skierowanego pionowo w dół. F sub cz jest siłą wywieraną przez człowieka na wagę, przedstawioną w postaci wektora przyłożonego do wagi i skierowanego pionowo w dół. F sub n jest siłą nacisku wagi na podłogę windy, skierowaną pionowo w dół, zaś R jest siłą normalną do podłoża (siłą reakcji podłogi na wagę), przyłożoną w miejscu styku windy i wagi, skierowaną pionowo w górę. b) Ten sam człowiek stoi na wadze w windzie, ale tylko dwie siły są uwzględnione na tym rysunku. Wynika to z faktu, że jako analizowany układ zaznaczony jest tylko człowiek. Q jest ciężarem człowieka skierowanym w dół, zaś F sub wag jest siłą wywieraną przez wagę na człowieka skierowaną w górę. Rozkład sił przedstawia dwa wektory sił przyłożone do jednego punktu: wektor Q skierowany pionowo w dół i wektor F sub cz skierowany pionowo w górę. Przyjęty prostokątny układ współrzędnych zawiera oś x skierowaną poziomo w prawo i oś y skierowaną pionowo w górę.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_Scale.jpg"/>
+  </media>
+  
+<caption>(a) Różne siły działające na człowieka stojącego w windzie na wadze łazienkowej. Długości wektorów odzwierciedlają sytuację, gdy winda porusza się ruchem jednostajnie przyspieszonym w górę. „Nieciągły” wektor reprezentuje siłę o wartości zbyt dużej, by mogła zostać w całości zaprezentowana na rysunku. <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>N</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math> jest siłą naciągu liny, na której wisi winda, <m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>Q</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mtext>cz</m:mtext>
+  </m:msub>
+</m:math> jest ciężarem człowieka, <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>Q</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mtext>wag</m:mtext>
+</m:msub>
+</m:math> jest ciężarem wagi, <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>Q</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mtext>win</m:mtext>
+</m:msub>
+</m:math> jest ciężarem windy, <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mtext>wag</m:mtext>
+</m:msub>
+</m:math> jest siłą wywieraną przez wagę na człowieka, <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mtext>cz</m:mtext>
+</m:msub>
+</m:math> jest siłą wywieraną przez człowieka na wagę, <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mtext>n</m:mtext>
+</m:msub>
+</m:math> jest siłą nacisku wywieraną przez wagę na podłogę windy, zaś <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>R</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> jest siłą normalną do podłoża (siłą reakcji podłogi wywieraną na wagę). (b) Wykonany rozkład sił zawiera tylko siły zewnętrzne działające <emphasis effect="italics">na</emphasis> zaznaczony układ (człowieka). Tylko te siły będą brane pod uwagę w dalszej analizie zagadnienia.</caption></figure><para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165038270338"><title>Strategia rozwiązania</title>Waga w spoczynku będzie wskazywała <m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>F</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mtext>cz</m:mtext>
+    </m:msub>
+  </m:math>, czyli wartość siły wywieranej na wagę przez człowieka. <link target-id="CNX_UPhysics_06_01_Scale"/>(a) przedstawia liczne siły działające na windę, człowieka i wagę. Mimo że analizowane zagadnienie jest jednowymiarowe, to wygląda ono na dużo bardziej złożone niż w przypadku, gdy jako analizowany układ wybrano tylko człowieka (patrz <link target-id="CNX_UPhysics_06_01_Scale"/>(b)). Wówczas jedynymi siłami działającymi na człowieka są jego ciężar <m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>Q</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mtext>cz</m:mtext>
+  </m:msub>
+</m:math> oraz siła wywierana przez wagę <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mtext>wag</m:mtext>
+</m:msub>
+</m:math>. Zgodnie z trzecią zasadą dynamiki Newtona siły <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mtext>cz</m:mtext>
+</m:msub>
+</m:math> i <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mtext>wag</m:mtext>
+</m:msub>
+</m:math> są zgodne co do wartości, ale przeciwnie skierowane. W związku z tym musimy znaleźć wartość <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>F</m:mi>
+    <m:mtext>wag</m:mtext>
+  </m:msub>
+</m:mrow>
+</m:math> po to, by dowiedzieć się, ile wynosi wskazanie wagi. Jak zawsze, zastosujemy w tym celu drugą zasadę dynamiki Newtona:</para><equation id="fs-id1165037968749" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>F</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mtext>wyp</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mi>m</m:mi>
+    <m:mrow>
+      <m:mover>
+        <m:mi>a</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1165038302166">Z rozkładu sił działających na ciało wynika, że <m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>F</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mtext>wyp</m:mtext>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>F</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mtext>wag</m:mtext>
+  </m:msub>
+  <m:mo>+</m:mo>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>Q</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mtext>cz</m:mtext>
+  </m:msub>
+  </m:math>, co po przejściu do zapisu skalarnego oznacza:</para><equation id="fs-id1165037151851" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mtext>wag</m:mtext>
+        </m:msub>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>Q</m:mi>
+          <m:mtext>cz</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mi>m</m:mi>
+        <m:mi>a</m:mi>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1165036851000">Po przekształceniu uzyskujemy równanie z jedną niewiadomą <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mi>wag</m:mi>
+      </m:msub>
+    </m:mrow>
+    </m:math>:</para><equation id="fs-id1165037231474" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mtext>wag</m:mtext>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mi>m</m:mi>
+          <m:mi>a</m:mi>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>Q</m:mi>
+            <m:mtext>cz</m:mtext>
+          </m:msub>
+          <m:mn>,</m:mn>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="fs-id1165038241944">a uwzględniając fakt, że <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>Q</m:mi>
+          <m:mtext>cz</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mi>m</m:mi>
+        <m:mi>g</m:mi>
+        <m:mn>,</m:mn>
+      </m:mrow>
+      </m:math> równanie upraszcza się do postaci:</para>
+      <equation id="fs-id1165038384336" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mtext>wag</m:mtext>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mi>m</m:mi>
+            <m:mi>a</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>m</m:mi>
+            <m:mi>g</m:mi>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1165038339458">Nie przyjmowaliśmy żadnych założeń dla przyspieszeń, więc uzyskane rozwiązanie powinno być uniwersalne. (Zauważ, że w tym zadaniu rozważamy przypadek, gdy winda porusza się ruchem jednostajnie przyspieszonym w górę. Gdyby poruszała się ruchem jednostajnie przyspieszonym w dół, zależność wynikająca z drugiej zasady dynamiki Newtona wyglądałaby następująco: <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mi>wag</m:mi>
+          </m:msub>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>Q</m:mi>
+            <m:mi>cz</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mtext>−</m:mtext>
+          <m:mi>m</m:mi>
+          <m:mi>a</m:mi>
+          <m:mo>.</m:mo>
+        </m:mrow>
+        </m:math>)</para><para id="fs-id1165036977173">
+          <title>Rozwiązanie</title>
+        </para>
+        <list id="fs-id1165036884300" list-type="enumerated" number-style="lower-alpha"><item>Przyjmijmy, że <m:math>
+            <m:mrow>
+              <m:mi>a</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>1,20</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:msup>
+                <m:mrow>
+                  <m:mtext>m/s</m:mtext>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>, więc<newline/>
+          <equation id="fs-id1165036762224" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:msub>
+                <m:mi>F</m:mi>
+                <m:mrow>
+                  <m:mtext>wag</m:mtext>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>75</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">k</m:mi>
+                <m:mi mathvariant="normal">g</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mn>9</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>80</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:msup>
+                    <m:mi mathvariant="normal">s</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mfrac>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>75</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">k</m:mi>
+                <m:mi mathvariant="normal">g</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mn>1</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>20</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:msup>
+                    <m:mi mathvariant="normal">s</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mfrac>
+              </m:mrow>
+              <m:mn>,</m:mn>
+            </m:math>
+          </equation>
+          <newline/>co daje<newline/>
+          <equation id="fs-id1165037159823" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>F</m:mi>
+                  <m:mtext>wag</m:mtext>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>825</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>N</m:mtext>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:math>
+          </equation>
+        </item>
+        <item> Teraz zastanówmy się, co się dzieje, gdy winda osiąga pewną ustaloną wartość prędkości skierowanej w górę? Czy wskazania wagi nadal będą większe niż ciężar człowieka? Otóż w każdym przypadku ruchu ze stałą prędkością, niezależnie, czy w górę, czy w dół, przyspieszenie jest równe zero, ponieważ <m:math>
+          <m:mi>a</m:mi>
+          <m:mo>=</m:mo>
+          <m:mi mathvariant="normal">Δ</m:mi>
+          <m:mi>v</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">Δ</m:mi>
+          <m:mi>t</m:mi>
+        </m:math> i <m:math>
+        <m:mi mathvariant="normal">Δ</m:mi>
+        <m:mi>v</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+     
+            <m:mi mathvariant="normal">s</m:mi>
+        
+        
+        </m:mrow>
+      </m:math>. Zatem<newline/>
+      <equation id="fs-id1165037180065" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mtext>wag</m:mtext>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mi>m</m:mi>
+            <m:mi>a</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>m</m:mi>
+            <m:mi>g</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>+</m:mo>
+            <m:mi>m</m:mi>
+            <m:mi>g</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <newline/>lub<newline/>
+      <equation id="fs-id1165038006119" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mtext>wag</m:mtext>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>75</m:mn>
+          <m:mn>,</m:mn>
+          <m:mn>0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">k</m:mi>
+            <m:mi mathvariant="normal">g</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mn>9</m:mn>
+          <m:mn>,</m:mn>
+          <m:mn>80</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mfrac>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:msup>
+                <m:mi mathvariant="normal">s</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mfrac>
+          </m:mrow>
+          <m:mn>,</m:mn>
+        </m:math>
+      </equation>
+      <newline/>co z kolei daje wartość <newline/>
+      <equation id="fs-id1165037200412" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mtext>wag</m:mtext>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>735</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>N</m:mtext>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+    </item>
+  </list><para id="fs-id1165038367365"><title>Znaczenie</title>Odczyt na wadze (<link target-id="CNX_UPhysics_06_01_Scale"/>(a)) wynosi ok. 84 kg. Jaki byłby odczyt wagi, gdyby znajdowała się ona w nieruchomej windzie? Jako że przyspieszenie byłoby równe zero, siła wywierana przez wagę na człowieka byłaby równa ciężarowi człowieka:</para><equation id="fs-id1165038327402" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mrow>
+              <m:mtext>wyp</m:mtext>
+            </m:mrow>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mi>m</m:mi>
+          <m:mi>a</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mtext>wag</m:mtext>
+          </m:msub>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>Q</m:mi>
+            <m:mtext>cz</m:mtext>
+          </m:msub>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <equation id="fs-id1165038177548" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>F</m:mi>
+            <m:mtext>wag</m:mtext>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>Q</m:mi>
+            <m:mtext>cz</m:mtext>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mi>m</m:mi>
+          <m:mi>g</m:mi>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <equation id="fs-id1165037909606" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mtext>s</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mn>75</m:mn>
+        <m:mn>,</m:mn>
+        <m:mn>0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">k</m:mi>
+          <m:mi mathvariant="normal">g</m:mi>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mn>9</m:mn>
+        <m:mn>,</m:mn>
+        <m:mn>80</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mfrac>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:msup>
+              <m:mi mathvariant="normal">s</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mfrac>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mn>735</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">N</m:mi>
+        </m:mrow>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1165037973823">Jeśli zatem odczyt wagi jest większy niż ciężar człowieka (wynoszący 735 N, czyli 75 kg) oznacza to, że waga „podnosi” człowieka z siłą większą niż jego ciężar, ponieważ działa na niego przyspieszenie. Zatem im większe jest przyspieszenie windy, tym większy odczyt wagi, co jest zgodne z odczuciami, jakich doznajemy porównując ruch w windach jadących z dużym lub z małym przyspieszeniem. Natomiast otrzymane w przypadku (b) wskazanie wagi wynoszące 735 N (75 kg) jest równe ciężarowi człowieka. Jest to przypadek ruchu windy ze stałą prędkością w górę, w dół lub windy nieruchomej. </para></example>
+  <note id="fs-id1165036995033" class="check-understanding">
+    <exercise id="fs-id1165036995036">
+      <problem id="fs-id1165036995038">
+        <para id="fs-id1165037085744"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Teraz oblicz, jakie będą wskazania wagi, jeśli winda będzie poruszać się w dół ruchem jednostajnie przyspieszonym z przyspieszeniem równym <m:math>
+            <m:mrow>
+              <m:mn>1,20</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:msup>
+                <m:mrow>
+                  <m:mtext>m/s</m:mtext>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </para></problem>
+      <solution id="fs-id1165037222074">
+        <para id="fs-id1165037222076">
+          <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>F</m:mi>
+                <m:mtext>wag</m:mtext>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>645</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>N</m:mtext>
+            </m:mrow>
+          </m:math>
+        </para>
+      </solution>
+    </exercise>
+  </note>
+  <para id="fs-id1165038304750">Jak już wspomniano, rozwiązanie poprzedniego przykładu odnosi się również do przypadku windy poruszającej się ruchem jednostajnie przyspieszonym w dół. Wówczas przyspieszenie <m:math>
+      <m:mi>a</m:mi>
+    </m:math>
+   jest ujemne, a odczyt wagi jest <emphasis effect="italics">mniejszy</emphasis> niż ciężar człowieka. Jeśli osiągnięta zostanie ustalona wartość prędkości w kierunku pionowym w dół, to wskazanie wagi będzie zgodne z ciężarem człowieka. Jeśli zaś winda zacznie spadać pionowo w dół z przyspieszeniem <m:math>
+    <m:mi>g</m:mi>
+  </m:math>, to odczyt na skali wagi będzie równy zero, a człowiek znajdzie się w stanie nieważkości. </para>
+  <example id="fs-id1165037146333"><para id="fs-id1165038306830">
+      <title>Dwa ciała połączone nicią przerzuconą przez bloczek </title>
+      <link target-id="CNX_UPhysics_06_01_Table"/> przedstawia ciężarek o masie <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+      </m:mrow>
+    </m:math> spoczywający na gładkiej, poziomej powierzchni. Ciężarek ten połączony jest z drugim ciężarkiem o masie <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+    </m:mrow>
+  </m:math> za pomocą cienkiej, nieważkiej i nierozciągliwej nici przerzuconej przez nieważki, nieruchomy bloczek. Znajdź przyspieszenie ciężarków oraz siłę naciągu liny przy założeniu znanych wartości <m:math>
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:math>, <m:math>
+<m:msub>
+  <m:mi>m</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> i <m:math>
+<m:mi>g</m:mi>
+</m:math>.</para>
+<figure id="CNX_UPhysics_06_01_Table">
+  <media id="fs-id1165036736462" alt="(a) Ciężarek m sub 1 znajduje się na poziomej powierzchni. Do niego przyłączona jest cienka, nieważka i nierozciągliwa nić przerzucona przez nieważki, nieruchomy bloczek. Na drugim końcu liny znajduje się drugi ciężarek m sub 2. Ciężarek m sub 1 ma przyspieszenie a sub 1 skierowane poziomo w prawo. Ciężarek m sub 2 ma przyspieszenie skierowane pionowo w dół. (b) Na rysunkach przedstawiono rozkłady sił działających na każdy ciężarek z osobna. Do ciężarka m sub 1 przyłożona jest siła ciężkości Q sub 1 skierowana pionowo w dół, siła reakcji podłoża R skierowana pionowo w górę oraz naciąg nici N skierowany poziomo w prawo. Do ciężarka m sub 2 has przyłożona jest siła Q sub 2 skierowana pionowo w dół oraz naciąg nici N skierowany pionowo w górę. Przyjęty prostokątny układ współrzędnych kartezjańskich posiada oś x skierowaną poziomo w prawo i oś y skierowaną pionowo w górę.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_Table.jpg"/>
+  </media>
+  <caption>(a) Ciężarek 1 jest połączony z ciężarkiem 2 za pomocą cienkiej, nieważkiej i nierozciągliwej nici przerzuconej przez nieważki, nieruchomy bloczek. (b) Rozkład sił działających na każdy z ciężarków.</caption>
+</figure>
+<para id="fs-id1165036787894"><title>Strategia rozwiązania</title>Dla każdego klocka z osobna rysujemy rozkład działających sił (<link target-id="CNX_UPhysics_06_01_Table"/>). Rozpatrujemy je oddzielnie. Zauważamy, że na klocek 1 działa siła ciężkości, siła reakcji podłoża i siła naciągu nici. Z kolei na klocek 2 wywierana jest siła ciężkości i siła naciągu nici. Równania sił wynikające z drugiej zasady dynamiki Newtona wyglądają następująco:</para><para id="fs-id1165038308700">Dla klocka 1: <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>N</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>Q</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>R</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>a</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mn>1</m:mn>
+    </m:msub>
+  </m:math>
+</para>
+<para id="fs-id1165036775987">Dla klocka 2: <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>N</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mo>+</m:mo>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>Q</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>a</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mn>2</m:mn>
+  </m:msub>
+  </m:math>.</para>
+  <para id="fs-id1165037179925">Zauważ, że siła naciągu nici <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>N</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    </m:math> jest taka sama dla obu klocków. W związku z tym, że nić i bloczek są nieważkie oraz że bloczek nie wywołuje tarcia, siły naciągu są takie same na całej długości nitki. Możemy zatem rozpisać równania na poszczególne składowe dla każdego klocka. Wszystkie siły działają albo w kierunku pionowym, albo poziomym, więc najwygodniej będzie użyć tego samego układu współrzędnych dla obu klocków. </para><para id="fs-id1165037231573">
+      <title>Rozwiązanie</title>Bilans sił działających wzdłuż poszczególnych kierunków wynika z równań wektorowych przedstawionych powyżej. Widzimy, że dla klocka 1 siły działające w kierunku pionowym są w równowadze (klocek nie porusza się w kierunku pionowym), więc je pomijamy i uwzględniamy tylko siły działające wzdłuż osi <m:math>
+          <m:mi>x</m:mi>
+        </m:math>. Z kolei na klocek 2 nie działają żadne siły w kierunku poziomym, więc jedynie siły działające wzdłuż osi <m:math>
+        <m:mi>y</m:mi>
+      </m:math>
+       są uwzględniane. W rezultacie otrzymujemy następujące zależności:</para>
+      <equation id="fs-id1165038303142" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mtable>
+            <m:mtr>
+              <m:mtd columnalign="left">
+                <m:mtext mathvariant="bold">Klocek 1</m:mtext>
+              </m:mtd>
+              <m:mtd/>
+              <m:mtd/>
+              <m:mtd columnalign="left">
+                <m:mtext mathvariant="bold">Klocek 2</m:mtext>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="left">
+                <m:mstyle displaystyle="true">
+                  <m:mo>∑</m:mo>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>F</m:mi>
+                      <m:mi>x</m:mi>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mi>m</m:mi>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mi>x</m:mi>
+                    </m:msub>
+                  </m:mrow>
+                </m:mstyle>
+              </m:mtd>
+              <m:mtd/>
+              <m:mtd/>
+              <m:mtd columnalign="left">
+                <m:mstyle displaystyle="true">
+                  <m:mo>∑</m:mo>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>F</m:mi>
+                      <m:mi>y</m:mi>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mi>m</m:mi>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mi>y</m:mi>
+                    </m:msub>
+                  </m:mrow>
+                </m:mstyle>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd columnalign="left">
+                <m:msub>
+                  <m:mi>N</m:mi>
+                  <m:mi>x</m:mi>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mrow>
+                    <m:mn>1</m:mn>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:msub>
+              </m:mtd>
+              <m:mtd/>
+              <m:mtd/>
+              <m:mtd columnalign="left">
+                <m:msub>
+                  <m:mi>N</m:mi>
+                  <m:mi>y</m:mi>
+                </m:msub>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+                <m:mi>g</m:mi>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>y</m:mi>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>.</m:mo>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="fs-id1165037986373">Gdy klocek 1 przesuwa się w prawo, klocek 2 przemieszcza się dokładnie o ten sam odcinek drogi w dół. Możemy zatem zapisać, że <m:math>
+        <m:msub>
+          <m:mi>a</m:mi>
+          <m:mrow>
+            <m:mn>1</m:mn>
+            <m:mi>x</m:mi>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mo>−</m:mo>
+        <m:msub>
+          <m:mi>a</m:mi>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mi>y</m:mi>
+          </m:mrow>
+        </m:msub>
+      </m:math>. Przyjmując jednakowe oznaczenie dla przyspieszeń każdego z klocków <m:math>
+      <m:mi>a</m:mi>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>a</m:mi>
+        <m:mrow>
+          <m:mn>1</m:mn>
+          <m:mi>x</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mo>−</m:mo>
+      <m:msub>
+        <m:mi>a</m:mi>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mi>y</m:mi>
+        </m:mrow>
+      </m:msub>
+      </m:math>, otrzymujemy zależność:</para>
+      <equation id="fs-id1165037171716" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:mi>N</m:mi>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mi>a</m:mi>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1165036981115">oraz</para>
+      <equation id="fs-id1165036981118" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:mi>N</m:mi>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mi>g</m:mi>
+            <m:mo>=</m:mo>
+            <m:mtext>−</m:mtext>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mi>a</m:mi>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1165036886577">Tworząc układ równań z dwóch powyższych zależności, jesteśmy w stanie wyprowadzić wyrażenia na dwie wielkości szukane: <m:math>
+          <m:mi>a</m:mi>
+        </m:math>
+       i <m:math>
+        <m:mi>N</m:mi>
+      </m:math>
+    
+  </para>
+  <equation id="fs-id1165036772949" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mi>a</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mrow>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:mfrac>
+        <m:mi>g</m:mi>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1165037923446">oraz</para>
+  <equation id="fs-id1165037923449" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mi>N</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mrow>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:mfrac>
+        <m:mi>g</m:mi>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1165037222225"><title>Znaczenie</title>Zauważ, że siła naciągu nici jest <emphasis effect="italics">mniejsza </emphasis> niż ciężar bloczka zwisającego na jej końcu. Często popełnianym błędem w tego typu zadaniach jest przyjmowanie następującej równowagi sił: <m:math>
+      <m:mi>N</m:mi>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mi>g</m:mi>
+      </m:math>. Z rozkładu sił działających na klocek 2 jasno wynika, że tego typu równanie jest niepoprawne, ponieważ klocek ten nie jest statyczny, lecz przyspiesza. </para></example><note id="fs-id1165037057129" class="check-understanding">
+      <exercise id="fs-id1165037057133">
+        <problem id="fs-id1165037057135">
+          <para id="fs-id1165036990766"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Oblicz wartości liczbowe przyspieszenia układu klocków oraz siłę naciągu nici przy założeniu następujących mas klocków: <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>5,00</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>kg</m:mtext>
+              </m:mrow>
+            </m:math> i <m:math>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>3</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>00</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">k</m:mi>
+              <m:mi mathvariant="normal">g</m:mi>
+            </m:mrow>
+            </m:math>.</para></problem>
+          <solution id="fs-id1165036742049">
+            <para id="fs-id1165037085032">
+              <m:math>
+                <m:mrow>
+                  <m:mi>a</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>3,68</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mtext>m/s</m:mtext>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mn>,</m:mn>
+                </m:mrow>
+              </m:math>
+              <m:math>
+                <m:mrow>
+                  <m:mi>N</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>18,4</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>N</m:mtext>
+                </m:mrow>
+              </m:math>
+            </para>
+          </solution>
+        </exercise>
+      </note>
+      <example id="fs-id1165037923338">
+        <para id="fs-id1165037923340"><title>Spadkownica Atwooda</title>Jednym z klasycznych zagadnień mechaniki jest analiza ruchu tzw. <term class="no-emphasis" cmlnle:reference="spadkownica Atwooda">spadkownicy Atwooda</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Atwood machine</term></foreign>), która składa się z liny przerzuconej przez bloczek, na końcu której zawieszone są ciała o różnych masach. Rozważmy spadkownicę przedstawioną na <link cmlnle:case="locative" target-id="CNX_UPhysics_06_01_Atwood"/>. Przyjmijmy, że bloczek jest nieruchomy, a masy zawieszonych ciężarków wynoszą odpowiednio <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>2,00</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>kg</m:mtext>
+            </m:mrow>
+          </m:math> i <m:math>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>4</m:mn>
+          <m:mn>,</m:mn>
+          <m:mn>00</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">k</m:mi>
+            <m:mi mathvariant="normal">g</m:mi>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:math>
+        <list id="eip-idm602773712" list-type="enumerated" number-style="lower-alpha">
+          <item>Jeśli swobodnie puścimy ciężarek o masie <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mrow>
+            </m:math>, to jakie będzie jego przyspieszenie?</item>
+            <item>Jaki będzie naciąg liny?</item>
+          </list>
+        </para><figure id="CNX_UPhysics_06_01_Atwood">
+          <media id="fs-id1165036996116" alt="Spadkownica Adtwooda składa się z dwóch klocków o różnych masach połączonych liną przerzuconą przez bloczek. Na rysunku klocek o masie m sub 1 znajduje się po lewej stronie, a klocek o masie m sub 2 znajduje się po prawej stronie. Na rozkładzie sił działających na klocek 1 widać wektor siły naciągu liny N skierowany pionowo w górę oraz wektor siły ciężkości Q sub 1 klocka skierowany pionowo w dół. Na rozkładzie sił działających na klocek 2 widać wektor siły naciągu liny N skierowany pionowo w górę oraz wektor siły ciężkości Q sub 2 klocka skierowany pionowo w dół.">
+            <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_Atwood.jpg"/>
+          </media>
+          <caption>Spadkownica Atwooda oraz rozkłady sił działających na poszczególne klocki. </caption>
+        </figure>
+        <para id="fs-id1165037936379"><title>Strategia rozwiązania</title>Dla każdego klocka z osobna trzeba narysować rozkłady sił, jak to zostało przedstawione powyżej. Następnie analizujemy każdy schemat, aby znaleźć wymagane wielkości szukane. Otrzymane bilanse sił dla każdego z klocków można ze sobą powiązać, tak jak to zostało przedstawione w poprzednim przykładzie. Jako że klocek 2 porusza się ruchem jednostajnie przyspieszonym w dół z przyspieszeniem <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mrow>
+          </m:math>, to klocek 1 porusza się ruchem jednostajnie przyspieszonym w górę z przyspieszeniem <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:math>. Skoro przyspieszenia te są równe co do wartości, to możemy zapisać: <m:math>
+        <m:mrow>
+          <m:mi>a</m:mi>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>a</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mtext>−</m:mtext>
+          <m:msub>
+            <m:mi>a</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+        </m:mrow>
+      </m:math>.
+    </para><para id="fs-id1165037199233">
+      <title>Rozwiązanie</title>
+    </para>
+    <list id="fs-id1165037199237" list-type="enumerated" number-style="lower-alpha">
+      <item>Ze schematów rozkładów sił wynikają następujące zależności:<newline/>
+        <equation id="fs-id1165038341715" class="unnumbered"><label/>
+          <m:math>
+            <m:mtable>
+              <m:mtr>
+                <m:mtd columnalign="left">
+                  <m:mtext>Dla</m:mtext>
+                  <m:mspace width="0.2em"/>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mn>:</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mstyle displaystyle="true">
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>F</m:mi>
+                        <m:mi>y</m:mi>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mi>N</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mi>g</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mo>.</m:mo>
+                </m:mtd>
+                <m:mtd/>
+                <m:mtd/>
+                <m:mtd columnalign="left">
+                  <m:mtext>Dla</m:mtext>
+                  <m:mspace width="0.2em"/>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mn>:</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mstyle displaystyle="true">
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>F</m:mi>
+                        <m:mi>y</m:mi>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mi>N</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mi>g</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mtext>−</m:mtext>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mo>.</m:mo>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation><newline/>Znak minus (<m:math>
+        <m:mo>−</m:mo>
+      </m:math>) przed <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:mi>a</m:mi>
+      </m:mrow>
+    </m:math> wskazuje, że przy intuicyjnie przyjętym układzie współrzędnych, gdzie oś <m:math>
+    <m:mi>y</m:mi>
+  </m:math> skierowana jest pionowo w górę, masa <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:mrow>
+</m:math> porusza się ruchem jednostajnie przyspieszonym w dół. Oba klocki poruszają się z jednakowym co do wartości przyspieszeniem, ale przeciwnie skierowanym. Po napisaniu układu równań i zauważeniu, że siły naciągu nici są takie same dla obu klocków, otrzymujemy następującą zależność: <newline/>
+<equation id="fs-id1165036770671" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:mo stretchy="false">(</m:mo>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>−</m:mo>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mi>g</m:mi>
+      <m:mo>=</m:mo>
+      <m:mo stretchy="false">(</m:mo>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mi>a</m:mi>
+      <m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+<newline/>co po przekształceniu daje następujące wyrażenie na przyspieszenie <m:math>
+  <m:mi>a</m:mi>
+</m:math>
+:<newline/>
+<equation id="fs-id1165036987902" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+        </m:mrow>
+        <m:mrow>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+        </m:mrow>
+      </m:mfrac>
+      <m:mi>g</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mn>4</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>kg</m:mtext>
+          <m:mo>−</m:mo>
+          <m:mn>2</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>kg</m:mtext>
+        </m:mrow>
+        <m:mrow>
+          <m:mn>4</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>kg</m:mtext>
+          <m:mo>+</m:mo>
+          <m:mn>2</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>kg</m:mtext>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mn>9,8</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:msup>
+        <m:mrow>
+          <m:mtext>m/s</m:mtext>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mo>=</m:mo>
+      <m:mn>3,27</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:msup>
+        <m:mrow>
+          <m:mtext>m/s</m:mtext>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+</item>
+<item>Siłę naciągu nici można obliczyć korzystając z bilansu sił dla któregokolwiek z klocków. Wybierając bilans dla klocka 1 uzyskujemy następujące rozwiązanie:<newline/>
+  <equation id="fs-id1165038164522" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mtable>
+        <m:mtr>
+          <m:mtd columnalign="left">
+            <m:mi>N</m:mi>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mi>g</m:mi>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mi>a</m:mi>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd columnalign="left">
+            <m:mi>N</m:mi>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mi>g</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>a</m:mi>
+            <m:mo stretchy="false">)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mn>2</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>kg</m:mtext>
+            <m:mo stretchy="false">)</m:mo>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mn>9,8</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:msup>
+              <m:mtext>m/s</m:mtext>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:mn>3,27</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:msup>
+              <m:mtext>m/s</m:mtext>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo stretchy="false">)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mn>26,1</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>N</m:mtext>
+            <m:mtext>.</m:mtext>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+    </m:math>
+  </equation>
+</item>
+</list>
+<para id="fs-id1165036766867">
+  <title>Znaczenie</title>Wyrażenie na przyspieszenie <m:math>
+    <m:mi>a</m:mi>
+  </m:math> w rozwiązaniu niniejszego przykładu może być rozumiane jako stosunek niezrównoważonej siły działającej na analizowany układ <m:math>
+  <m:mrow>
+    <m:mo stretchy="false">(</m:mo>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mi>g</m:mi>
+  </m:mrow>
+</m:math>, do całkowitej masy tego układu <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>+</m:mo>
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>. Spadkownicy Atwooda można używać również do pomiaru lokalnej siły grawitacji, a konkretnie lokalnej wartości przyspieszenia ziemskiego.</para>
+</example>
+<note id="fs-id1165036730450" class="check-understanding">
+  <exercise id="fs-id1165036730453">
+    <problem id="fs-id1165036891709">
+      <para id="fs-id1165036891711"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Przekształć powyższe równania tak, być znaleźć wyrażenie na siłę naciągu nici <m:math>
+          <m:mi>N</m:mi>
+        </m:math> dla spadkownicy Atwooda w funkcji wielkości danych w zadaniu: <m:math>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+      </m:math>, <m:math>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+    </m:math> i
+  <m:math>
+      <m:mi>g</m:mi>
+    </m:math>. </para></problem>
+<solution id="fs-id1165037181504">
+  <para id="fs-id1165037181506"><m:math>
+      <m:mrow>
+        <m:mi>T</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mrow>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:mfrac>
+        <m:mi>g</m:mi>
+      </m:mrow>
+      </m:math> (Ten wynik można otrzymać, wstawiając wyrażenie na przyspieszenie z <link cmlnle:case="genitive" target-id="CNX_UPhysics_06_01_Atwood"/>(a) do wyrażenia na siłę naciągu na <link cmlnle:case="locative" target-id="CNX_UPhysics_06_01_Atwood"/>(b).)</para></solution>
+  </exercise>
+</note>
+</section>
+<section id="fs-id1165037909478">
+  <title>Kinematyka i zasady dynamiki Newtona</title>
+  <para id="fs-id1165038014315">Fizyka jest najbardziej pasjonująca, gdy stosuje się ją do ogólnych sytuacji, które wymagają więcej niż jednego wąskiego zbioru stosowanych zasad fizycznych. Tak właśnie jest z zasadami dynamiki Newtona, które w trakcie rozwiązywania zadań często łączy się z zasadami lub prawami występującymi w innych działach fizyki. Na przykład w celu przeanalizowania ruchu przyspieszonego ciała odwołujemy się nie tylko do zasad dynamiki Newtona, ale również do naszej wiedzy z <term class="no-emphasis" cmlnle:reference="kinematyka">kinematyki</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">kinematics</term></foreign>).</para>
+  <para id="fs-id1165038294065">Gdy rozwiązujesz zadanie, w którym występują siły, przyspieszenia, prędkości i/lub położenie, należy wypisać wielkości dane i szukane, co pomoże rozpoznać, jakie zasady fizyczne należy zastosować. Wówczas będziesz w stanie odwołać się do konkretnych działów niniejszego podręcznika i na podstawie zamieszczonych tam strategii rozwiązania będziesz umieć to zadanie rozwiązać. W następnym przykładzie zaprezentujemy, jak strategia rozwiązania zadań z niniejszego rozdziału w powiązaniu z tymi przedstawionymi w rozdziałach wcześniejszych, mogą zostać zastosowane do rozwiązania bardziej złożonego zagadnienia fizycznego. </para>
+  <example id="fs-id1165038332555">
+    <para id="fs-id1165038332557">
+      <title>Jak bardzo piłkarz musi się starać, aby osiągnąć maksymalną prędkość?</title>Piłkarz znajduje się w spoczynku, po czym zaczyna biec ruchem jednostajnie przyspieszonym, dzięki czemu osiąga prędkość 8,00 m/s w ciągu 2,50 s. <list id="eip-idm194385616" list-type="enumerated" number-style="lower-alpha">
+        <item>Jakie jest jego średnie przyspieszenie?</item>
+        <item>Jaką średnią siłę wywiera podłoże na piłkarza, jeśli osiąga on wyliczone przyspieszenie? Masa piłkarza wynosi 70 kg, a opór powietrza pomijamy. </item>
+      </list>
+    </para>
+    <para id="fs-id1165037090449"><title>Strategia rozwiązania</title>Zastosujmy strategię rozwiązania zadań przedstawioną w niniejszym rozdziale. Nie zawsze trzeba wykonać wszystkie kroki, które zostały zaproponowane w ogólnej metodologii. W niniejszym zadaniu po zidentyfikowaniu wielkości danych i szukanych rozwiązujemy zadanie w oparciu o drugą zasadę dynamiki Newtona, a następnie sprawdzamy, czy uzyskany wynik jest racjonalny. </para><para id="fs-id1165038275989">
+        <title>Rozwiązanie</title>
+      </para>
+      <list id="fs-id1165038275993" list-type="enumerated" number-style="lower-alpha"><item>Mamy dane: prędkość początkową i końcową (odpowiednio 0 m/s i 8,00 m/s). W związku z tym różnica prędkości wynosi <m:math>
+          <m:mrow>
+            <m:mtext>Δ</m:mtext>
+            <m:mi>v</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>8,00</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>m/s</m:mtext>
+          </m:mrow>
+        </m:math>. Wiemy również, że czas ruchu wynosi <m:math>
+        <m:mrow>
+          <m:mtext>Δ</m:mtext>
+          <m:mi>t</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>2,50</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>s</m:mtext>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math> Szukane jest natomiast przyspieszenie, które można obliczyć na podstawie definicji: <newline/>
+      <equation id="fs-id1165037189733" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:mi>a</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mtext>Δ</m:mtext>
+                <m:mi>v</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mtext>Δ</m:mtext>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <newline/>Podstawiając dane z zadania, otrzymujemy<newline/>
+      <equation id="fs-id1165036793178" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mi>a</m:mi>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>8</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>00</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>50</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mn>3</m:mn>
+          <m:mn>,</m:mn>
+          <m:mn>20</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mfrac>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:msup>
+                <m:mi mathvariant="normal">s</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mfrac>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+    </item>
+    <item> Następnie jesteśmy pytani o średnią siłę, jaką ziemia wywiera na piłkarza, pomagając mu uzyskać przyspieszenie. Zgodnie z trzecią zasadą dynamiki Newtona jest to siła reakcji do tej, którą piłkarz wywiera na ziemię. Pomijając opór powietrza siła ta będzie co do wartości równa wypadkowej sił zewnętrznych działających na sportowca. Znając masę i przyspieszenie piłkarza, możemy zapisać:<newline/>
+      <equation id="fs-id1165037178448" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mrow>
+                <m:mtext>wyp</m:mtext>
+              </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mi>m</m:mi>
+            <m:mi>a</m:mi>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <newline/>Po podstawieniu wartości liczbowych na <m:math>
+        <m:mi>m</m:mi>
+      </m:math>
+     i <m:math>
+      <m:mi>a</m:mi>
+    </m:math>
+   otrzymujemy<newline/>
+  <equation id="fs-id1165038292770" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mrow>
+          <m:mtext>wyp</m:mtext>
+        </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>70</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>0</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">k</m:mi>
+        <m:mi mathvariant="normal">g</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mn>3</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>20</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mfrac>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:msup>
+            <m:mi mathvariant="normal">s</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mfrac>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mn>224</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+</item>
+</list><para id="fs-id1165036893533">Wartość ta jest racjonalna. Przyspieszenie to jest typowe dla sportowca w dobrej kondycji fizycznej. Siła natomiast odpowiada ciężarowi ciała o masie 22,7 kg, co również jest sensownym wynikiem.</para>
+<para id="fs-id1165037206514">
+  <title>Znaczenie</title>Przykład ten obrazuje, jak zastosować strategie rozwiązywania zadań do zagadnień wiążących w sobie różne działy fizyki. Najpierw trzeba określić, jakich zasad fizycznych dotyczy zadanie, a następnie zidentyfikować dane i szukane. W dalszej kolejności należy zastosować odpowiednie prawa (w tym przypadku drugą zasadę dynamiki Newtona), aby rozwiązać zadanie. Na końcu należy przedyskutować, czy otrzymany wynik jest rozsądny. Takie systematyczne podejście do rozwiązywania problemów będzie przydatne nie tylko w fizyce, ale również w innych dziedzinach nauki, a nawet w codziennym życiu. </para>
+</example>
+<note id="fs-id1165037206520" class="check-understanding">
+  <exercise id="fs-id1165037849718">
+    <problem id="fs-id1165038328833">
+      <para id="fs-id1165038328835"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Po zakończeniu akcji piłka znajduje się w odległości 2,00 m od piłkarza, który stwierdza, że za chwilę przejmie ją przeciwnik. Jak długo zajęłoby mu dotarcie do piłki, jeśli zacząłby biec pod wpływem siły 126 N?</para></problem>
+      <solution id="fs-id1165036851735">
+        <para id="fs-id1165036851738">1,49 s</para>
+      </solution>
+    </exercise>
+  </note>
+  <example id="fs-id1165037220604">
+    <para id="fs-id1165037220606"><title>Jaka siła działa na model helikoptera?</title>Model helikoptera o masie 1,5 kg porusza się z prędkością <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>j</m:mi>
+            <m:mo>^</m:mo>
+          </m:mover>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mn>5,00</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+      </m:math> w czasie <m:math>
+      <m:mrow>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0</m:mn>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math> Porusza się on ze stałym przyspieszeniem przez 2 sekundy, po czym osiąga prędkość <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>i</m:mi>
+        <m:mo>^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mn>6</m:mn>
+    <m:mn>,</m:mn>
+    <m:mn>00</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>j</m:mi>
+        <m:mo>^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mn>12</m:mn>
+    <m:mn>,</m:mn>
+    <m:mn>00</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+    </m:math>. Jaka jest wartość siły działającej na ten helikopter w trakcie opisywanego czasu? </para><para id="fs-id1165036981188">
+      <title>Strategia rozwiązania</title>Obieramy układ współrzędnych, w którym oś <m:math>
+          <m:mi>x</m:mi>
+        </m:math>
+       (kierunek <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo>^</m:mo>
+        </m:mover>
+      </m:mrow>
+    </m:math>) jest zorientowana poziomo, zaś oś <m:math>
+      <m:mi>y</m:mi>
+    </m:math>
+   (kierunek <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>j</m:mi>
+      <m:mo>^</m:mo>
+    </m:mover>
+  </m:mrow>
+</m:math>) jest zorientowana pionowo. Wiemy, że <m:math>
+<m:mi mathvariant="normal">Δ</m:mi>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+<m:mn>,</m:mn>
+<m:mn>00</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math> oraz że zmiana prędkości wynosi <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>i</m:mi>
+    <m:mo>^</m:mo>
+  </m:mover>
+</m:mrow>
+<m:mo>⋅</m:mo>
+<m:mn>6</m:mn>
+<m:mn>,</m:mn>
+<m:mn>00</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">m</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>j</m:mi>
+    <m:mo>^</m:mo>
+  </m:mover>
+</m:mrow>
+<m:mo>⋅</m:mo>
+<m:mn>12</m:mn>
+<m:mn>,</m:mn>
+<m:mn>00</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">m</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+<m:mo>−</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>j</m:mi>
+    <m:mo>^</m:mo>
+  </m:mover>
+</m:mrow>
+<m:mo>⋅</m:mo>
+<m:mn>5</m:mn>
+<m:mn>,</m:mn>
+<m:mn>00</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">m</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>. Mając te dane jesteśmy w stanie obliczyć przyspieszenie z definicji, a następnie zastosować drugą zasadę dynamiki Newtona. </para>
+<para id="fs-id1165036745239">
+  <title>Rozwiązanie</title>Otrzymujemy następujące zależności na przyspieszenie i siłę:</para>
+  <equation id="fs-id1165038276244" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mi>a</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mi mathvariant="normal">Δ</m:mi>
+          <m:mi>v</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">Δ</m:mi>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo>^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mn>6</m:mn>
+          <m:mn>,</m:mn>
+          <m:mn>00</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo>^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mn>12</m:mn>
+          <m:mn>,</m:mn>
+          <m:mn>00</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo>^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mn>5</m:mn>
+          <m:mn>,</m:mn>
+          <m:mn>00</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mn>,</m:mn>
+          <m:mn>00</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo>^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mn>3</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>00</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:msup>
+          <m:mi mathvariant="normal">s</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>j</m:mi>
+          <m:mo>^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mn>3</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>50</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:msup>
+          <m:mi mathvariant="normal">s</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <equation id="ked-1bqg3fsom_i3g" class="unnumbered">
+    <m:math>
+      <m:mo>∑</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>F</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mi>m</m:mi>
+      <m:mrow>
+        <m:mover>
+          <m:mi>a</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mn>1</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>5</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">k</m:mi>
+        <m:mi mathvariant="normal">g</m:mi>
+      </m:mrow>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo>^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mn>3</m:mn>
+          <m:mn>,</m:mn>
+          <m:mn>00</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:msup>
+              <m:mi mathvariant="normal">s</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo>^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mn>3</m:mn>
+          <m:mn>,</m:mn>
+          <m:mn>50</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:msup>
+              <m:mi mathvariant="normal">s</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo>^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mn>4</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>50</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>j</m:mi>
+          <m:mo>^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mn>5</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>25</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para id="fs-id1165037150103">Liczbowa wartość siły działającej na helikopter wynosi:</para>
+  <equation id="fs-id1165037184724" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mi>F</m:mi>
+        <m:mo>=</m:mo>
+        <m:msqrt>
+          <m:mrow>
+            <m:msup>
+              <m:mrow>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mn>4,50</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>N</m:mtext>
+                <m:mo stretchy="false">)</m:mo>
+              </m:mrow>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msup>
+              <m:mrow>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mn>5,25</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>N</m:mtext>
+                <m:mo stretchy="false">)</m:mo>
+              </m:mrow>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:msqrt>
+        <m:mo>=</m:mo>
+        <m:mn>6,91</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>N</m:mtext>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1165038150359">
+    <title>Znaczenie</title>Wielkości wektorowe dane w zadaniu zostały przedstawione w postaci typowego zapisu wektorowego, w którym używa się wektorów jednostkowych <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo>^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>−</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>j</m:mi>
+          <m:mo>^</m:mo>
+        </m:mover>
+      </m:mrow>
+      </m:math>, co oznacza, że w obliczeniach wykorzystany został rachunek wektorowy. Porównaj to rozwiązanie z rozwiązaniami podanymi w poprzednich przykładach.</para>
+    </example>
+    <note id="fs-id1165038386308" class="check-understanding">
+      <exercise id="fs-id1165036859174">
+        <problem id="fs-id1165036859176">
+          <para id="fs-id1165036859178"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Dla sytuacji w poprzednim zadaniu znajdź kierunek, w którym będzie się poruszał się model helikoptera.</para></problem>
+          <solution id="fs-id1165036738261">
+            <para id="fs-id1165036738263"><m:math>
+    <m:mn>49</m:mn>
+    <m:mn>,</m:mn>
+    <m:msup>
+      <m:mn>4</m:mn>
+      <m:mrow>
+        <m:mo>∘</m:mo>
+      </m:mrow>
+    </m:msup>
+  </m:math></para></solution>
+        </exercise>
+      </note>
+      <example id="fs-id1165036738269">
+        <para id="fs-id1165036992056">
+          <title>Ciągnik bagażowy</title>
+          <link target-id="CNX_UPhysics_06_01_Baggage"/>(a) przedstawia ciągnik ciągnący wózki z bagażami na lotnisku. Masa ciągnika wynosi 650,0 kg, masa wózka A 250,0 kg, zaś masa wózka B 150,0 kg. Ciągnik rusza pod wpływem siły ciągu silnika, która działa przez 3,00 s.<list id="eip-idm374509808" list-type="enumerated" number-style="lower-alpha">
+          <item>Jeśli siła ciągu silnika jest funkcją zależną od czasu, przedstawioną równaniem <m:math>
+            <m:mi>F</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>⋅</m:mo>
+            <m:mn>820</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            </m:math>, to jaka będzie prędkość ciągnika po upływie 3,00 s?</item>
+            <item>Ile wynosi siła naciągu liny łączącej ciągnik z wózkiem A?</item>
+          </list>
+        </para>
+        <figure id="CNX_UPhysics_06_01_Baggage"><media id="fs-id1165038244080" alt="Rysunek (a) przedstawia ciągnik jadący w lewo i ciągnący dwa wózki bagażowe. Zewnętrzne siły działające w układzie zostały przedstawione w postaci wektorów. Siły działające na ciągnik to F sub ciągnik, skierowana poziomo w lewo, R sub ciągnik skierowana pionowo w górę oraz Q sub ciągnik skierowana pionowo w dół. Siły działające na wózek A znajdujący się zaraz za ciągnikiem to R sub A skierowana pionowo w górę oraz Q sub A skierowana pionowo w dół. Siły działające na wózek na końcu, czyli wózek B to R sub B skierowana pionowo w górę oraz Q sub B skierowana pionowo w dół. Rysunek (b) przedstawia rozkład sił działających na ciągnik, czyli F sub ciągnik, skierowaną poziomo w lewo, R sub ciągnik skierowaną pionowo w górę, Q sub ciągnik skierowaną pionowo w dół oraz N skierowaną poziomo w prawo.">
+            <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_Baggage.jpg"/>
+          </media>
+          
+        <caption>(a) Rozkład sił zewnętrznych działających na układ składający się z ciągnika oraz przyłączonych do niego dwóch wózków bagażowych. (b) Rozkład sił działających tylko na ciągnik, przedstawiony w celu znalezienia siły naciągu liny łączącej ciągnik z wózkami.</caption></figure><para id="fs-id1165038006732">
+          <title>Strategia rozwiązania</title>Na rozkładzie sił działających na ciągnik przedstawiona jest siła ciągu silnika, która nadaje ciągnikowi przyspieszenie. Rozważamy tylko ruch w kierunku poziomym, ponieważ z bilansu sił w kierunku pionowym wynika, że siły te są w równowadze i nie trzeba ich brać pod uwagę. Z kolei w przykładzie (b) wykorzystujemy tylko rozkład sił dla samego ciągnika, ponieważ chcemy znaleźć siłę naciągu liny między ciągnikiem a wózkiem A, oznaczoną jako <m:math>
+            <m:mrow>
+              <m:mover>
+                <m:mi>N</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            </m:math>.</para>
+            <para id="fs-id1165037004399">
+              <title>Rozwiązanie</title>
+            </para>
+            <list id="fs-id1165038337366" list-type="enumerated" number-style="lower-alpha"><item>
+                <m:math>
+                  <m:mrow>
+                    <m:mstyle displaystyle="true">
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>F</m:mi>
+                          <m:mi>x</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mrow>
+                        <m:mtext>układu</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mi>x</m:mi>
+                    </m:msub>
+                  </m:mrow>
+                </m:math> i <m:math>
+                <m:mrow>
+                  <m:mstyle displaystyle="true">
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>F</m:mi>
+                        <m:mi>x</m:mi>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mo>=</m:mo>
+                  <m:mn>820,0</m:mn>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:math>, zatem<newline/>
+              <equation id="fs-id1165036978914" class="unnumbered">
+                <label/>
+                <m:math>
+                  <m:mtable>
+                    <m:mtr>
+                      <m:mtd columnalign="right">
+                        <m:mn>820,0</m:mn>
+                        <m:mi>t</m:mi>
+                      </m:mtd>
+                      <m:mtd columnalign="left">
+                        <m:mo>=</m:mo>
+                      </m:mtd>
+                      <m:mtd columnalign="left">
+                        <m:mo stretchy="false">(</m:mo>
+                        <m:mn>650,0</m:mn>
+                        <m:mo>+</m:mo>
+                        <m:mn>250,0</m:mn>
+                        <m:mo>+</m:mo>
+                        <m:mn>150,0</m:mn>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mi>a</m:mi>
+                      </m:mtd>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mtd columnalign="right">
+                        <m:mi>a</m:mi>
+                      </m:mtd>
+                      <m:mtd columnalign="left">
+                        <m:mo>=</m:mo>
+                      </m:mtd>
+                      <m:mtd columnalign="left">
+                        <m:mn>0,7809</m:mn>
+                        <m:mi>t</m:mi>
+                        <m:mo>.</m:mo>
+                      </m:mtd>
+                    </m:mtr>
+                  </m:mtable>
+                </m:math>
+              </equation>
+              <newline/>W związku z tym, że przyspieszenie jest funkcją zależną od czasu, prędkość można obliczyć, wychodząc z definicji przyspieszenia <m:math>
+              <m:mi>a</m:mi>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>v</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:math> przy założeniu warunków początkowych <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>v</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+            </m:mrow>
+          </m:math> w czasie <m:math>
+          <m:mrow>
+            <m:mi>t</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math> Po przekształceniu całkujemy obustronnie to wyrażenie w granicach od <m:math>
+        <m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+        </m:mrow>
+        </m:math> do <m:math display="inline"><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>3</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math></item>
+        <item>
+          <m:math>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>v</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>a</m:mi>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+              <m:mi mathvariant="normal">t</m:mi>
+            </m:mrow>
+            <m:mn>,</m:mn>
+            <m:mspace width="1em"/>
+            <m:munderover>
+              <m:mo>∫</m:mo>
+              <m:mn>0</m:mn>
+              <m:mn>3</m:mn>
+            </m:munderover>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>v</m:mi>
+            <m:mo>=</m:mo>
+            <m:munderover>
+              <m:mo>∫</m:mo>
+              <m:mn>0</m:mn>
+              <m:mn>3</m:mn>
+            </m:munderover>
+            <m:mi>a</m:mi>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>t</m:mi>
+            <m:mo>=</m:mo>
+            <m:munderover>
+              <m:mo>∫</m:mo>
+              <m:mn>0</m:mn>
+              <m:mn>3</m:mn>
+            </m:munderover>
+            <m:mn>0</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>7809</m:mn>
+            <m:mi>t</m:mi>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>t</m:mi>
+            <m:mn>,</m:mn>
+            <m:mspace width="1em"/>
+            <m:mi>v</m:mi>
+            <m:mo>=</m:mo>
+            <m:msubsup>
+              <m:mrow>
+                <m:mo>[</m:mo>
+                <m:mrow>
+                  <m:mn>0</m:mn>
+                  <m:mn>,</m:mn>
+                  <m:mn>3905</m:mn>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>]</m:mo>
+              </m:mrow>
+              <m:mn>0</m:mn>
+              <m:mn>3</m:mn>
+            </m:msubsup>
+            <m:mo>=</m:mo>
+            <m:mn>3</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>51</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mfrac>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mfrac>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </item>
+        <item>Spójrz na rozkład sił działających na ciągnik, przedstawiony na <link cmlnle:case="locative" target-id="CNX_UPhysics_06_01_Baggage"/>(b). Rozpisz bilans działających sił:<newline/>
+          <equation id="fs-id1165037983544" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mtable>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mstyle displaystyle="true">
+                      <m:mo>∑</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>F</m:mi>
+                          <m:mi>x</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mrow>
+                        <m:mtext>ciągnik</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mi>x</m:mi>
+                    </m:msub>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mn>820,0</m:mn>
+                    <m:mi>t</m:mi>
+                    <m:mo>−</m:mo>
+                    <m:mi>N</m:mi>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mrow>
+                        <m:mtext>ciągnik</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>0,7805</m:mn>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>820,0</m:mn>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>3,00</m:mn>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo>−</m:mo>
+                    <m:mi>N</m:mi>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>650,0</m:mn>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>0,7805</m:mn>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>3,00</m:mn>
+                    <m:mo stretchy="false">)</m:mo>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mi>N</m:mi>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mn>938</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>N</m:mtext>
+                    <m:mo>.</m:mo>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+        </item>
+      </list><para id="fs-id1165037064176">
+        <title>Znaczenie</title>W związku z tym, że siła jest zmienna w czasie, do rozwiązania tego zadania musimy użyć rachunku różniczkowo-całkowego. Zwróć uwagę, że w rozwiązaniu przykładu (a) pod uwagę brana jest masa całego układu (<link target-id="CNX_UPhysics_06_01_Baggage"/>(a)), zaś w rozwiązaniu przykładu (b) wystarczy znajomość masy ciągnika (<link target-id="CNX_UPhysics_06_01_Baggage"/>(b)), ponieważ to on bezpośrednio poddawany jest działaniu siły naciągu liny. </para>
+      </example>
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165038282901">Przypomnijmy, że <m:math>
+        <m:mi>v</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>s</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>t</m:mi>
+      </m:math> i <m:math>
+      <m:mi>a</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:mi>v</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:mi>t</m:mi>
+    </m:math>. Skoro przyspieszenie jest funkcją zależną od czasu, to w niniejszym przykładzie możemy zastosować metody rachunku różniczkowo-całkowego, jak to było robione w rozdziale <link class="target-chapter" document="m65746">Ruch prostoliniowy</link>. Czasami jednak przyspieszenie jest dane jako funkcja położenia. Wówczas możemy wyprowadzić szukane zależności, przekształcając odpowiednio równania różniczkowe. Na przykład przekształcając dwie pierwsze zależności na prędkość i przyspieszenie tak, by wyciągnąć z każdego <m:math>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:mi>t</m:mi>
+    </m:math>
+   otrzymujemy <m:math>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:mi>s</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi>v</m:mi>
+</m:math> i <m:math>
+<m:mrow>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:mi>v</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mi>a</m:mi>
+</m:math>. Następnie porównując te wyrażenia, otrzymujemy <m:math>
+<m:mrow>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:mi>s</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mi>v</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:mi>v</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mi>a</m:mi>
+</m:math>. Po przekształceniu ich ostatecznie otrzymujemy zależność <m:math>
+<m:mi>a</m:mi>
+<m:mrow>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:mi>s</m:mi>
+<m:mo>=</m:mo>
+<m:mi>v</m:mi>
+<m:mrow>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:mi>v</m:mi>
+</m:math>.</para><example id="fs-id1165037215094">
+  <para id="fs-id1165037215096"><title>Ruch pocisku wystrzelonego pionowo w górę</title>Pocisk o masie 10 kg jest wystrzeliwany z moździerza, znajdującego się na powierzchni ziemi, pionowo w górę z prędkością początkową 50,0 m/s (spójrz na <link cmlnle:case="accusative" target-id="CNX_UPhysics_06_01_Mortar"/>). Na jaką wysokość wzniesie się pocisk, jeśli opór powietrza wynosi <m:math>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mrow>
+          <m:mtext>op</m:mtext>
+        </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msup>
+        <m:mi>v</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>⋅</m:mo>
+      <m:mn>0</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>01</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">k</m:mi>
+        <m:mi mathvariant="normal">g</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+    </m:math>, gdzie <m:math>
+      <m:mi>v</m:mi>
+    </m:math>
+     jest szybkością pocisku w danej chwili?</para><figure id="CNX_UPhysics_06_01_Mortar">
+      <media id="fs-id1165037159383" alt="(a) Zdjęcie przestawia żołnierza wystrzeliwującego pocisk moździerzowy pionowo w górę. (b) Na rozkładzie sił działających na ciało przestawione są siły F sub op oraz Q, obie skierowane pionowo w dół. Siła ciężkości Q jest większa niż siła oporu powietrza F sub op.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_Mortar.jpg"/>
+      </media>
+      <caption>(a) Pocisk moździerzowy jest wystrzeliwany pionowo w górę. Uwzględniamy siłę oporu powietrza działającą na pocisk. (b) Rozkład sił działających na pocisk w ruchu.</caption>
+    </figure>
+    <para id="fs-id1165036778365">
+      <title>Strategia rozwiązania</title>Siła działająca na pocisk moździerzowy może zostać obliczona na podstawie równania ruchu zawierającego zależność siły od przyspieszenia. Zależność przyspieszenia od położenia pocisku może zostać obliczona na podstawie równań kinematycznych. </para>
+      <para id="fs-id1165036893873"><title>Rozwiązanie</title>W chwili początkowej <m:math>
+          <m:msub>
+            <m:mi>y</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+        </m:math> i <m:math>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mn>50</m:mn>
+        <m:mn>,</m:mn>
+        <m:mn>0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+      </m:math>. Po osiągnięciu maksymalnej wysokości <m:math>
+      <m:mi>y</m:mi>
+      <m:mo>=</m:mo>
+      <m:mi>h</m:mi>
+    </m:math>, <m:math>
+    <m:mi>v</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+  </m:math>. Na rozkładzie sił działających na pocisk siła oporu powietrza <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mtext>op</m:mtext>
+    </m:msub>
+  </m:mrow>
+  </m:math> jest skierowana w dół, ponieważ utrudnia ona ruch pocisku. W związku z tym możemy zapisać:</para><equation id="fs-id1165036873143" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mstyle displaystyle="true">
+          <m:mo>∑</m:mo>
+          <m:mrow/>
+        </m:mstyle>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mrow>
+            <m:mi>y</m:mi>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mi>m</m:mi>
+        <m:msub>
+          <m:mi>a</m:mi>
+          <m:mi>y</m:mi>
+        </m:msub>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <equation id="ked-1bqg3fsnt_5d8" class="unnumbered">
+    <m:math>
+      <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+        <m:mtr>
+          <m:mtd>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mtext>op</m:mtext>
+            </m:msub>
+            <m:mo>−</m:mo>
+            <m:mi>Q</m:mi>
+          </m:mtd>
+          <m:mtd>
+            <m:mi/>
+            <m:mo>=</m:mo>
+            <m:mi>m</m:mi>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mi>y</m:mi>
+            </m:msub>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mo>−</m:mo>
+            <m:mn>0</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>01</m:mn>
+            <m:msup>
+              <m:mi>v</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>−</m:mo>
+            <m:mn>98</m:mn>
+          </m:mtd>
+          <m:mtd>
+            <m:mi/>
+            <m:mo>=</m:mo>
+            <m:mn>10</m:mn>
+            <m:mi>a</m:mi>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>a</m:mi>
+          </m:mtd>
+          <m:mtd>
+            <m:mi/>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mn>0</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>001</m:mn>
+            <m:msup>
+              <m:mi>v</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>−</m:mo>
+            <m:mn>9</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>80.</m:mn>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+    </m:math>
+  </equation>
+  <para id="fs-id1165037056872">Wypadkowe przyspieszenie pocisku jest zmienne i zależy od <m:math>
+      <m:mi>v</m:mi>
+    </m:math>. Skoro <m:math>
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo>
+  <m:mi>f</m:mi>
+  <m:mo stretchy="false">(</m:mo>
+  <m:mi>v</m:mi>
+  <m:mo stretchy="false">)</m:mo>
+</m:math>, możemy uzależnić <m:math>
+  <m:mi>a</m:mi>
+</m:math>
+ od <m:math>
+  <m:mi>v</m:mi>
+</m:math>, korzystając z przekształceń przedstawionych powyżej:</para><equation id="fs-id1165038022132" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mi>a</m:mi>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>s</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>v</m:mi>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>v</m:mi>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1165038020675">Zamiast <m:math>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>s</m:mi>
+  </m:math>
+ podstawiamy <m:math>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:mi>y</m:mi>
+</m:math>, ponieważ rozważamy ruch w kierunku pionowym:</para>
+<equation id="fs-id1165037030605" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mi>a</m:mi>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>y</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>v</m:mi>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>v</m:mi>
+    <m:mn>,</m:mn>
+    <m:mspace width="1em"/>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mo>−</m:mo>
+    <m:mn>0</m:mn>
+    <m:mn>,</m:mn>
+    <m:mn>001</m:mn>
+    <m:msup>
+      <m:mi>v</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>−</m:mo>
+    <m:mn>9</m:mn>
+    <m:mn>,</m:mn>
+    <m:mn>80</m:mn>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>y</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>v</m:mi>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>v</m:mi>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1165037230742">Następnie rozdzielamy zmienne (<m:math>
+    <m:mi>v</m:mi>
+  </m:math>
+ i <m:math>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:mi>v</m:mi>
+</m:math>
+ przenosimy na jedną stronę równania, zaś <m:math>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:mi>y</m:mi>
+</m:math>
+ na drugą stronę):</para><para id="ked-1bqg3fso2_fj">
+  <m:math>
+    <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+      <m:mtr>
+        <m:mtd>
+          <m:munderover>
+            <m:mo>∫</m:mo>
+            <m:mn>0</m:mn>
+            <m:mi>h</m:mi>
+          </m:munderover>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>y</m:mi>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:munderover>
+            <m:mo>∫</m:mo>
+            <m:mrow>
+              <m:mn>50</m:mn>
+            </m:mrow>
+            <m:mn>0</m:mn>
+          </m:munderover>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>v</m:mi>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>v</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>0</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>001</m:mn>
+              <m:msup>
+                <m:mi>v</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>−</m:mo>
+              <m:mn>9</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>80</m:mn>
+            </m:mrow>
+          </m:mfrac>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd/>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:munderover>
+            <m:mo>∫</m:mo>
+            <m:mrow>
+              <m:mn>50</m:mn>
+            </m:mrow>
+            <m:mn>0</m:mn>
+          </m:munderover>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>v</m:mi>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>v</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>0</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>001</m:mn>
+              <m:msup>
+                <m:mi>v</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:mn>9</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>80</m:mn>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>5</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mn>3</m:mn>
+          </m:msup>
+          <m:mo>⋅</m:mo>
+          <m:msubsup>
+            <m:mrow>
+              <m:mo>[</m:mo>
+              <m:mrow>
+                <m:mi>ln</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mn>0</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>001</m:mn>
+                <m:msup>
+                  <m:mi>v</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>+</m:mo>
+                <m:mn>9</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>80</m:mn>
+                <m:mo stretchy="false">)</m:mo>
+              </m:mrow>
+              <m:mo>]</m:mo>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>50</m:mn>
+            </m:mrow>
+            <m:mn>0</m:mn>
+          </m:msubsup>
+          <m:mo>.</m:mo>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</para>
+<para id="fs-id1165037062398">Stąd wynika, że <m:math>
+  <m:mrow>
+    <m:mi>h</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>114</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>m</m:mtext>
+    <m:mtext>.</m:mtext>
+  </m:mrow>
+</m:math>
+</para>
+<para id="fs-id1165037180784"><title>Znaczenie</title>Zwróć uwagę, że skoro działająca siła nie jest stała, to również przyspieszenie w tym ruchu nie jest stałe, co wymusza konieczność zastosowania rachunku różniczkowo-całkowego. Co więcej, siła nie zależy od czasu <m:math>
+      <m:mi>t</m:mi>
+    </m:math>, ale od prędkości <m:math>
+    <m:mi>v</m:mi>
+  </m:math>, więc w celu rozwiązania zadania trzeba zastosować odpowiednie przekształcenia matematyczne. Uzyskane rozwiązanie wskazuje natomiast, że wysokość, na jaką wzniesie się pocisk, jest mniejsza niż w przypadku swobodnego ruchu w polu grawitacyjnym Ziemi, ponieważ działa siła oporu powietrza. Bardziej szczegółowe rozważania na temat sił oporu będziemy prowadzić w podrozdziale <link class="target-chapter" document="m65769">Siła oporu i prędkość graniczna</link>.</para></example>
+<note id="fs-id1165037085691" class="check-understanding">
+  <exercise id="fs-id1165037085695">
+    <problem id="fs-id1165037085697">
+      <para id="fs-id1165037085699"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Ustal maksymalną wysokość, na jaką wzniesie się pocisk, jeśli pominiemy wpływ siły oporu powietrza. Czy w rozwiązaniu tego zadania konieczne będzie stosowanie rachunku różniczkowo-całkowego?</para></problem>
+      <solution id="fs-id1165036795612">
+        <para id="fs-id1165036795615">128 m; nie</para>
+      </solution>
+    </exercise>
+  </note>
+  <note id="fs-id1165037123446" class="media-2">
+    <para id="fs-id1165037123450">Uruchom <link url="https://openstaxcollege.org/l/21forcesatwork">symulację</link> i sprawdź, jakie siły działają, gdy próbujesz przesunąć szafkę na dokumenty. Przyłóż odpowiednią siłę i zobacz, jaka jest siła tarcia między szafką i podłogą oraz jaka jest wypadkowa siła działająca na szafkę. Na wykresach możesz obejrzeć zależności siły, położenia, prędkości i przyspieszenia w funkcji czasu. Wyświetl schemat rozkładu sił działających na szafkę.</para>
+  </note>
+</section>
+<section id="fs-id1165036775374" class="key-concepts">
+  <title>Podsumowanie</title>
+  <list id="fs-id1165036852024" list-type="bulleted" bullet-style="bullet">
+    <item>Zasady dynamiki Newtona mogą znaleźć szerokie zastosowanie w rozwiązywaniu zadań i problemów fizycznych.</item>
+    <item>W niektórych zadaniach na obiekt działają różne siły skierowane pod różnymi kątami. Pamiętaj, aby narysować schemat sytuacyjny, nanieść wektory działających sił, rozłożyć je na składowe równoległe do osi przyjętego układu współrzędnych oraz aby narysować rozkład sił działających na analizowane ciało. Zawsze analizę prowadź wzdłuż kierunku, w którym obiekt przyspiesza, aby określić, czy <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mrow>
+            <m:mtext>wyp</m:mtext>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mi>m</m:mi>
+        <m:mi>a</m:mi>
+      </m:mrow>
+    </m:math> czy też <m:math>
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mrow>
+        <m:mtext>wyp</m:mtext>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">N</m:mi>
+    </m:mrow>
+    </m:math>.</item>
+    <item>Siła normalna działająca na obiekt nie zawsze jest równa co do wartości ciężarowi ciała. Jeśli obiekt porusza się z jakimś przyspieszeniem w kierunku pionowym, to siła normalna jest mniejsza lub większa od jego ciężaru. Podobnie, jeśli ciało znajduje się na równi pochyłej, to siła normalna jest zawsze mniejsza od ciężaru ciała.</item>
+    <item>Niektóre zagadnienia wiążą ze sobą różne wielkości fizyczne, np. siłę, przyspieszenie, prędkość czy położenie. W celu rozwiązania tego typu zadań można zastosować metodologie stosowane zarówno w kinematyce, jak i dynamice.</item>
+  </list>
+</section>
+<section id="fs-id1165036735565" class="review-conceptual-questions">
+  <title>Pytania</title>
+  <exercise id="fs-id1165036983215">
+    <problem id="fs-id1165036983217">
+      <para id="fs-id1165036983219">Aby zasymulować pozorną nieważkość występującą na orbicie, astronauci przechodzą treningi w specjalnych samolotach towarowych nurkujących z przyspieszeniem <m:math>
+          <m:mi>g</m:mi>
+        </m:math>. Dlaczego w tym przyspieszającym układzie odniesienia wydają się oni być nieważcy? Jakie jest wskazanie wagi łazienkowej w takich warunkach? Czy istnieje jakakolwiek różnica między pozorną nieważkością na orbicie a tą odczuwaną przez kosmonautów w samolocie treningowym? </para>
+      </problem>
+      <solution id="fs-id1165037207907">
+        <para id="fs-id1165037207909">Waga łazienkowa, podobnie jak astronauci, znajduje się w stanie nieważkości, więc jej wskazania są równe 0. Nie ma żadnej różnicy między pozorną nieważkością występującą na orbicie a tą, która występuje podczas swobodnego spadku samolotu treningowego. </para>
+      </solution>
+    </exercise>
+  </section>
+  <section id="fs-id1165036776336" class="review-problems">
+    <title>Zadania</title>
+    <exercise id="fs-id1165037186198">
+      <problem id="fs-id1165037186200">
+        <para id="fs-id1165037186202">Dziewczyna o masie 30 kg buja się na huśtawce. Jest ona odchylana od pionu o <m:math>
+          <m:msup>
+            <m:mn>30</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+        </m:math> i utrzymywana w pozycji nieruchomej dzięki poziomej sile <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>F</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+      </m:math>.<list id="eip-idm207742992" list-type="enumerated" number-style="lower-alpha">
+      <item>Oblicz siłę naciągu każdej z dwóch lin huśtawki.</item>
+      <item>Oblicz wartość siły <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>F</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        </m:math>.</item>
+      </list>
+    </para>
+  </problem>
+  <solution id="fs-id1165037883543">
+    <para id="fs-id1165037883546">a. 170 N; b. 170 N</para>
+  </solution>
+</exercise>
+<exercise id="fs-id1165037155160">
+  <problem id="fs-id1165037155163">
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165037155165">Oblicz siłę naciągu każdego z trzech kabli, na których wisi sygnalizacja świetlna o ciężarze <m:math>
+      <m:mn>2</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mrow>
+          <m:mn>2</m:mn>
+        </m:mrow>
+      </m:msup>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+      </m:mrow>
+      </m:math>.</para><media id="fs-id1165037155169" alt="Rysunek przedstawia sygnalizację świetlną widzącą na kablu, który z kolei przyłączony jest do dwóch innych kabli. Na kabel przyłączony bezpośrednio do sygnalizacji działa siła naciągu T sub 3, zaś na pozostałe dwa kable przyłączone do niego działają odpowiednio siła naciągu T sub 1 (kabel skierowany w lewo pod kątem 41 stopni w stosunku do płaszczyzny poziomej) oraz siła naciągu T sub 2 (kabel skierowany w prawo pod kątem 63 stopnie w stosunku do płaszczyzny poziomej). Ciężar sygnalizacji świetlnej wynosi 200 N i jest skierowany pionowo w dół.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_P3_img.jpg"/>
+      </media>
+    </problem>
+  </exercise>
+  <exercise id="fs-id1165037151556">
+    <problem id="fs-id1165037151559">
+      <para id="fs-id1165037151561">Trzy siły działają na cząstkę materialną, która porusza się ze stałą prędkością <m:math>
+        <m:mi>v</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>i</m:mi>
+            <m:mo>^</m:mo>
+          </m:mover>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mn>3</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>j</m:mi>
+            <m:mo>^</m:mo>
+          </m:mover>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mn>2</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+      </m:math>. Dwie spośród tych sił to: <m:math>
+      <m:msub>
+        <m:mrow>
+          <m:mover>
+            <m:mi>F</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo>^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mn>3</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>j</m:mi>
+          <m:mo>^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mn>5</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+      </m:mrow>
+      <m:mo>−</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>k</m:mi>
+          <m:mo>^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mn>6</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+      </m:mrow>
+    </m:math> i <m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>F</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>i</m:mi>
+        <m:mo>^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mn>4</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">N</m:mi>
+    </m:mrow>
+    <m:mo>−</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>j</m:mi>
+        <m:mo>^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mn>7</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">N</m:mi>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>k</m:mi>
+        <m:mo>^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mn>2</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">N</m:mi>
+    </m:mrow>
+    </m:math>. Znajdź trzecią siłę.</para>
+  </problem>
+  <solution id="fs-id1165038107216">
+    <para id="fs-id1165036820764">
+      <m:math>
+        <m:msub>
+          <m:mrow>
+            <m:mover>
+              <m:mi>F</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mn>3</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>i</m:mi>
+            <m:mo>^</m:mo>
+          </m:mover>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mo>−</m:mo>
+        <m:mn>7</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">N</m:mi>
+        </m:mrow>
+        <m:mo stretchy="false">)</m:mo>
+        <m:mo>+</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>j</m:mi>
+            <m:mo>^</m:mo>
+          </m:mover>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mn>2</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">N</m:mi>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>k</m:mi>
+            <m:mo>^</m:mo>
+          </m:mover>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mn>4</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">N</m:mi>
+        </m:mrow>
+      </m:math>
+    </para>
+  </solution>
+</exercise>
+<exercise id="fs-id1165037154683">
+  <problem id="fs-id1165037154685">
+    <para id="fs-id1165037154687">Pchła skacze, wywierając siłę <m:math>
+      <m:mn>1</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>2</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mn>5</m:mn>
+        </m:mrow>
+      </m:msup>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+      </m:mrow>
+    </m:math> na ziemię. Wiatr wiejący równolegle do powierzchni ziemi wywiera na pchłę siłę <m:math>
+    <m:mn>0</m:mn>
+    <m:mn>,</m:mn>
+    <m:mn>5</m:mn>
+    <m:mo>⋅</m:mo>
+    <m:msup>
+      <m:mn>10</m:mn>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>6</m:mn>
+      </m:mrow>
+    </m:msup>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">N</m:mi>
+    </m:mrow>
+  </m:math> w momencie, gdy pchła jest jeszcze w kontakcie z ziemią. Znajdź kierunek i wartość przyspieszenia pchły, jeśli jej masa wynosi <m:math>
+  <m:mn>6</m:mn>
+  <m:mn>,</m:mn>
+  <m:mn>0</m:mn>
+  <m:mo>⋅</m:mo>
+  <m:msup>
+    <m:mn>10</m:mn>
+    <m:mrow>
+      <m:mo>−</m:mo>
+      <m:mn>7</m:mn>
+    </m:mrow>
+  </m:msup>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">k</m:mi>
+    <m:mi mathvariant="normal">g</m:mi>
+  </m:mrow>
+  </m:math>. Pamiętaj o działaniu siły grawitacji.</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165036901084">
+  <problem id="fs-id1165036901086">
+    <para id="fs-id1165036901088">Dwa mięśnie łydki naciągają w górę ścięgno Achillesa, jak to zostało przedstawione na rysunku. Są to tzw. mięśnie brzuchate łydki (głowa przyśrodkowa i boczna). Znajdź wartość i kierunek działania wypadkowej siły wywieranej na ścięgno Achillesa. Jaki rodzaj ruchu można wykonywać dzięki działaniu tej siły?</para>
+    <media id="fs-id1165037262483" alt="Na Rysunku przedstawiono ścięgno Achillesa, na które działają dwie siły wywierane przez mięśnie brzuchate łydki. F sub 1 równa 200 N jest skierowana w górę pod kątem 20 stopni w prawo od pionu, zaś siła F sub 2 o wartości 200 N jest skierowana w górę pod kątem 20 stopni w lewo od pionu.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_P6_img.jpg"/>
+    </media>
+  </problem>
+  <solution id="fs-id1165038018560">
+    <para id="fs-id1165038018562">376 N skierowana poziomo w górę (wzdłuż przerywanej linii na rysunku). Siła ta jest wykorzystywana do podnoszenia pięty. </para>
+  </solution>
+</exercise>
+<exercise id="fs-id1165038018567"><problem id="fs-id1165036834090">
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165036834092">W trakcie pokazu cyrkowego dochodzi do nieszczęśliwego wypadku. Zrywa się trapez, na którym gimnastyczka o masie 76 kg wykonywała akrobacje. Drugi cyrkowiec próbuje uratować koleżankę, ciągnąc linę, której akrobatka się trzyma, jak to zostało przedstawione na rysunku. Oblicz siły naciągu liny, na której wisi kobieta, przy założeniu, że jest ona chwilowo nieruchoma. Wykonaj schemat rozkładu sił działających na akrobatkę. </para><media id="fs-id1165036834098" alt="Akrobatka zwisająca na linie jest wciągana w prawo przez innego cyrkowca. Jej ciężar jest przedstawiony w postaci wektora Q skierowanego pionowo w dół. Lina wywiera siłę naciągu T sub 1 w górę w lewo pod kątem 15 stopni względem kierunek pionowego. Z kolei drugi cyrkowiec ciągnie linę z siłą T sub 2 w prawo pod kątem 10 stopni względem poziomu.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_P7_img.jpg"/>
+    </media>
+  </problem>
+</exercise><exercise id="fs-id1165037271925">
+  <problem id="fs-id1165037271927">
+    <para id="fs-id1165037271929">Delfin o masie 35 kg dogania innego delfina, zwalniając od prędkości 12,0 m/s do 7,5 m/s w ciągu 2,3 s. Jaka średnia siła musiała być wywierana na delfina, aby go spowolnić? (Siła ciężkości jest równoważona przez siłę wyporu wody.)</para>
+  </problem>
+  <solution id="fs-id1165037017923">
+    <para id="fs-id1165037017926">−68,5 N</para>
+  </solution>
+</exercise>
+<exercise id="fs-id1165037017931">
+  <problem id="fs-id1165037017933">
+    <para id="fs-id1165037017935">W momencie startu biegu sprinter o masie ciała 70 kg wywiera na ziemię średnią siłę 650 N przez 0,8 s. (a) Jaką prędkość osiągnie? (b) Jak daleko dobiegnie?</para>
+  </problem>
+</exercise>
+<exercise id="fs-id1165037985556">
+  <problem id="fs-id1165037985558">
+    <para id="fs-id1165037985560">Rakieta ma masę <m:math>
+      <m:mn>2</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>00</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>6</m:mn>
+      </m:msup>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">k</m:mi>
+        <m:mi mathvariant="normal">g</m:mi>
+      </m:mrow>
+    </m:math> w momencie startu, a jej silniki wywołują siłę ciągu równą <m:math>
+    <m:mn>3</m:mn>
+    <m:mn>,</m:mn>
+    <m:mn>50</m:mn>
+    <m:mo>⋅</m:mo>
+    <m:msup>
+      <m:mn>10</m:mn>
+      <m:mn>7</m:mn>
+    </m:msup>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">N</m:mi>
+    </m:mrow>
+    <m:mo>.</m:mo>
+  </m:math>
+  <list id="eip-idm673014816" list-type="enumerated" number-style="lower-alpha">
+    <item>Znajdź początkowe przyspieszenie rakiety, jeśli startuje ona w kierunku pionowym.</item>
+    <item>Ile czasu rakieta będzie przyspieszać do osiągnięcia prędkości <m:math>
+      <m:mn>120</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">k</m:mi>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mi mathvariant="normal">h</m:mi>
+      </m:mrow>
+      </m:math> przy założeniu zachowania stałej masy i siły ciągu?</item>
+    </list>
+  </para>
+</problem>
+<solution id="fs-id1165037170393">
+  <para id="fs-id1165038282863">a. <m:math>
+    <m:mrow>
+      <m:mn>7,70</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:msup>
+        <m:mrow>
+          <m:mtext>m/s</m:mtext>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+    </m:math>; b. 4,33 s</para>
+  </solution>
+</exercise>
+<exercise id="fs-id1165037221234">
+  <problem id="fs-id1165037221236">
+    <para id="fs-id1165037221238">Koszykarz skacze w górę po piłkę. W tym celu ugina kolana zniżając się o 0,300 m, po czym prostuje je, gwałtownie przyspieszając na tym odcinku drogi. Następnie odrywa się od podłogi z prędkością wystarczającą, by mógł się wznieść na wysokość 0,900 m nad ziemią. <list id="eip-idm281884752" list-type="enumerated" number-style="lower-alpha">
+      <item>Oblicz prędkość, z jaką koszykarz odrywa się od podłogi.</item>
+      <item>Oblicz przyspieszenie jakie posiada jego środek masy w trakcie prostowania kolan. Pamiętaj, że jego prędkość zwiększa się od wartości równej zero do tej, którą obliczysz w punkcie (a) na dystansie równym 0,300 m.</item>
+      <item>Zakładając, że koszykarz waży 110 kg, oblicz siłę, jaką wywiera on na ziemię w trakcie tego ruchu.</item>
+    </list>
+  </para>
+</problem>
+</exercise>
+<exercise id="fs-id1165037223036">
+  <problem id="fs-id1165037223038">
+    <para id="fs-id1165037223040">Fajerwerk o masie 2,5 kg po wystrzale z moździerza osiąga wysokość 110 m. <list id="eip-idm324964432" list-type="enumerated" number-style="lower-alpha">
+      <item>Jeśli pominiemy wpływ oporu powietrza, to jaka jest prędkość fajerwerku w momencie opuszczania moździerza?</item>
+      <item>Moździerz ma postać rury o długości 0,450 m. Oblicz średnie przyspieszenie fajerwerku wewnątrz moździerza, jeśli jego prędkość zmienia się od zera do wartości obliczonej w punkcie (a).</item>
+      <item>Jaka średnia siła jest wywierana na fajerwerk wewnątrz moździerza? Wynik wyraź zarówno w niutonach, jak również w postaci stosunku tej siły do ciężaru fajerwerku.</item>
+    </list>
+  </para>
+</problem>
+<solution id="fs-id1165037223045">
+  <para id="fs-id1165036850211">a. 46,4 m/s; b. <m:math>
+    <m:mn>2</m:mn>
+    <m:mn>,</m:mn>
+    <m:mn>40</m:mn>
+    <m:mo>⋅</m:mo>
+    <m:msup>
+      <m:mn>10</m:mn>
+      <m:mn>3</m:mn>
+    </m:msup>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:msup>
+        <m:mi mathvariant="normal">s</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+  </m:math>; c. <m:math>
+  <m:mn>5</m:mn>
+  <m:mn>,</m:mn>
+  <m:mn>99</m:mn>
+  <m:mo>⋅</m:mo>
+  <m:msup>
+    <m:mn>10</m:mn>
+    <m:mn>3</m:mn>
+  </m:msup>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">N</m:mi>
+  </m:mrow>
+</m:math>
+; stosunek równy 245
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165037183422">
+  <problem id="fs-id1165037183424">
+    <para id="fs-id1165037183426">Ziemniak o masie 0,5 kg jest wystrzeliwany pod kątem <m:math>
+      <m:msup>
+        <m:mn>80</m:mn>
+        <m:mo>∘</m:mo>
+      </m:msup>
+    </m:math> względem poziomu z rury PCV służącej jako „działo ziemniaczane” i osiąga maksymalną wysokość równą 110,0 m. <list id="eip-idm1179536320" list-type="enumerated" number-style="lower-alpha">
+    <item>Pomijając opór powietrza, oblicz prędkość ziemniaka w momencie opuszczania działa.</item>
+    <item>Działo ma postać rury o długości 0,450 m. Oblicz średnie przyspieszenie ziemniaka wewnątrz rury wiedząc, że jego prędkość zmienia się od zera do wartości wyliczonej w punkcie (a).</item>
+    <item>Jaka średnia siła jest wywierana na ziemniak wewnątrz działa? Wynik wyraź zarówno w niutonach, jak również w postaci stosunku tej siły do ciężaru ziemniaka.</item>
+  </list>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165036784614">
+  <problem id="fs-id1165036784616">
+    <para id="fs-id1165036784618">Winda pełna pasażerów ma masę <m:math>
+      <m:mn>1</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>70</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>3</m:mn>
+      </m:msup>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">k</m:mi>
+        <m:mi mathvariant="normal">g</m:mi>
+      </m:mrow>
+    </m:math>. <list id="eip-idm949698416" list-type="enumerated" number-style="lower-alpha">
+    <item> Początkowo spoczywająca winda jedzie w górę z przyspieszeniem równym <m:math>
+      <m:mrow>
+        <m:mn>1,20</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:msup>
+          <m:mrow>
+            <m:mtext>m/s</m:mtext>
+          </m:mrow>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      </m:math> przez 1,50 s. Oblicz naciąg liny, na której umocowana jest winda.</item>
+      <item>Na dalszym etapie winda zaczyna poruszać się ruchem jednostajnym przez kolejne 8,50 s. Jaki jest wówczas naciąg liny utrzymującej windę?</item>
+      <item>Następnie winda zwalnia z opóźnieniem równym <m:math>
+        <m:mrow>
+          <m:mn>0,600</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:msup>
+            <m:mrow>
+              <m:mtext>m/s</m:mtext>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+        </m:math> w czasie 3,00 s. Ile wynosi naciąg liny w trakcie hamowania?</item>
+        <item>Na jaką wysokość wzniosła się winda w trakcie całego ruchu i jaka jest jej prędkość końcowa?</item>
+      </list>
+    </para>
+  </problem>
+  <solution id="fs-id1165038362269">
+    <para id="fs-id1165038362271">a. <m:math>
+      <m:mn>1</m:mn>
+      <m:mn>,</m:mn>
+      <m:mn>87</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>4</m:mn>
+      </m:msup>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+      </m:mrow>
+    </m:math> b. <m:math>
+    <m:mn>1</m:mn>
+    <m:mn>,</m:mn>
+    <m:mn>67</m:mn>
+    <m:mo>⋅</m:mo>
+    <m:msup>
+      <m:mn>10</m:mn>
+      <m:mn>4</m:mn>
+    </m:msup>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">N</m:mi>
+    </m:mrow>
+  </m:math> c. <m:math>
+  <m:mn>1</m:mn>
+  <m:mn>,</m:mn>
+  <m:mn>56</m:mn>
+  <m:mo>⋅</m:mo>
+  <m:msup>
+    <m:mn>10</m:mn>
+    <m:mn>4</m:mn>
+  </m:msup>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">N</m:mi>
+  </m:mrow>
+  </m:math> d. 19,4 m, 0 m/s</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165038203868">
+  <problem id="fs-id1165038203870">
+    <para id="fs-id1165038203872">Piłka o masie 20,0 g wisi na strunie przymocowanej do dachu samochodu towarowego. Gdy samochód rusza, struna odchyla się o kąt <m:math>
+      <m:msup>
+        <m:mn>35</m:mn>
+        <m:mo>∘</m:mo>
+      </m:msup>
+    </m:math> względem pionu. <list id="eip-idm236056816" list-type="enumerated" number-style="lower-alpha">
+    <item>Ile wynosi przyspieszenie samochodu?</item>
+    <item>Ile wynosi siła naciągu struny?</item>
+  </list>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1165036887553">
+  <problem id="fs-id1165036887555">
+    <para id="fs-id1165036887557">Plecak studenta wypełniony książkami zostaje zawieszony na dynamometrze przyczepionym do sufitu windy. Gdy winda porusza się w dół z przyspieszeniem <m:math>
+      <m:mrow>
+        <m:mn>3,8</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:msup>
+          <m:mrow>
+            <m:mtext>m/s</m:mtext>
+          </m:mrow>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+    </m:math>, odczyt na dynamometrze wynosi 60 N. <list id="eip-idm627650640" list-type="enumerated" number-style="lower-alpha">
+    <item>Jaka jest masa plecaka?</item>
+    <item>Jaki będzie odczyt na dynamometrze, jeśli winda będzie hamować, jadąc w górę z opóźnieniem <m:math>
+      <m:mrow>
+        <m:mn>3,8</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:msup>
+          <m:mrow>
+            <m:mtext>m/s</m:mtext>
+          </m:mrow>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      </m:math>?</item>
+      <item>Jaki będzie odczyt na dynamometrze, jeśli winda będzie poruszała się w górę ze stałą prędkością?</item>
+      <item>Jaki byłby odczyt na dynamometrze, jeśli zerwałaby się lina podtrzymująca windę, przez co winda zaczęłaby spadać swobodnie?</item>
+    </list>
+  </para>
+</problem>
+<solution id="fs-id1165034495684">
+  <para id="fs-id1165034495686">a. 10 kg; b. 90 N; c. 98 N; d. 0</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165038183857">
+  <problem id="fs-id1165038183859">
+    <para id="fs-id1165038183861">Winda towarowa transportuje 10,0 kg gruzu ze szczytu budowanego drapacza chmur na poziom ziemi z przyspieszeniem <m:math>
+      <m:mrow>
+        <m:mn>1,2</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:msup>
+          <m:mrow>
+            <m:mtext>m/s</m:mtext>
+          </m:mrow>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      </m:math>. Oblicz wartość siły wywieranej przez gruz na podłogę windy.</para>
+    </problem>
+  </exercise>
+  <exercise id="fs-id1165037265785">
+    <problem id="fs-id1165037265787">
+      <para id="fs-id1165037265789">Wózek kolejki górskiej startuje ze szczytu toru o długości 30,0 m nachylonego pod kątem <m:math>
+        <m:msup>
+          <m:mn>20</m:mn>
+          <m:mo>∘</m:mo>
+        </m:msup>
+      </m:math> do poziomu. Tarcie pomijamy. <list id="eip-idm322291216" list-type="enumerated" number-style="lower-alpha">
+      <item>Ile wynosi przyspieszenie wózka?</item>
+      <item>Jak długo wózek będzie zjeżdżał do końca toru?</item>
+    </list>
+  </para>
+</problem>
+<solution id="fs-id1165038003888">
+  <para id="fs-id1165038003890">a. <m:math>
+    <m:mrow>
+      <m:mn>3,35</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:msup>
+        <m:mrow>
+          <m:mtext>m/s</m:mtext>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+    </m:math>; b. 4,2 s</para>
+  </solution>
+</exercise>
+<exercise id="fs-id1165036842411">
+  <problem id="fs-id1165036842413">
+    <para id="fs-id1165036842415">Na rysunku poniżej przedstawiona jest, ta sama co w <link target-id="fs-id1165037923338" cmlnle:case="locative"/>, spadkownica Atwooda. Zakładając, że linka jest nieważka i nierozciągliwa, zaś bloczek jest nieważki i nieruchomy, <list id="eip-idm511299904" list-type="enumerated" number-style="lower-alpha">
+      <item>znajdź wyrażenie na przyspieszenie ciężarków zawieszonych na lince,</item>
+      <item>znajdź wyrażenie na siłę naciągu linki</item>
+      <item>oblicz przyspieszenie i siłę naciągu linki, jeśli dane są masy ciężarków równe odpowiednio 2,00 kg i 4,00 kg. </item>
+    </list>
+  </para><media id="fs-id1165037265194" alt="Na rysunku widoczna jest spadkownica Atwooda w postaci bloczka, przez który przewieszona jest linka z przyczepionymi ciężarkami na obu końcach. Ciężarek o masie m sub 1 jest po lewej stronie, zaś ciężarek o masie m sub 2 jest po prawej stronie.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_P21_img.jpg"/>
+  </media>
+</problem>
+</exercise>
+<exercise id="fs-id1165036779432"><problem id="fs-id1165036779434">
+    <para id="fs-id1165036779436">Dwa ciężarki połączone są nieważką nicią przerzuconą przez nieważki bloczek, tak jak to zostało przedstawione na rysunku. Masa ciężarka leżącego na poziomej powierzchni wynosi 4,0 kg, zaś masa ciężarka wiszącego na lince wynosi 1,0 kg. <list id="eip-idm333724736" list-type="enumerated" number-style="lower-alpha">
+      <item>Znajdź przyspieszenie układu.</item>
+      <item>Znajdź siłę naciągu nici.</item>
+      <item>Znajdź prędkość, z jaką ciężarek drugi uderzy w ziemię, jeśli rozpoczyna on swój ruch z wysokości 1,0 m nad podłożem. </item>
+    </list>
+  </para>
+  <media id="fs-id1165036963759" alt="Ciężarek o masie m sub 1 leży na poziomym stole. Jest on przyczepiony do cienkiej i nieważkiej nici przerzuconej przez bloczek umieszczony na krawędzi stołu. Za bloczkiem nić zwisa pionowo w dół, a na jej końcu umieszczony jest drugi ciężarek o masie m sub 2, który nie jest w kontakcie ze stołem. Ciężarek m sub 1 ma przyspieszenie a sub 1 skierowane poziomo w prawo, zaś ciężarek m sub 2 ma przyspieszenie m sub 2 skierowane pionowo w dół.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_P22_img.jpg"/>
+  </media>
+</problem>
+<solution id="fs-id1165036963770">
+  <para id="fs-id1165037177255">a. <m:math>
+    <m:mrow>
+      <m:mn>2,0</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:msup>
+        <m:mrow>
+          <m:mtext>m/s</m:mtext>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>;</m:mo>
+    </m:mrow>
+    </m:math> b. 7,8 N; c. 2,0 m/s</para>
+  </solution>
+</exercise><exercise id="fs-id1165038010136">
+  <problem id="fs-id1165038010139">
+    <para id="fs-id1165038010141">Dwa wózki połączone są sznurkiem przerzuconym przez nieważki bloczek. Wózki mogą poruszać się bez tarcia. Oblicz przyspieszenie wózków i siłę naciągu sznurka. </para>
+    <media id="fs-id1165038010146" alt="Dwa wózki połączone są sznurkiem przerzuconym przez nieważki bloczek. Wózki znajdują się po przeciwnych stronach podwójnej równi pochyłej. Bloczek umieszczony jest na szczycie równi. Kąt nachylenia równi z lewej strony wynosi 37 stopni do płaszczyzny poziomej, zaś kąt nachylenia równi po prawej stronie wynosi 53 stopnie względem poziomu. Wózek po lewej stronie ma masę 10 kg, zaś wózek po prawej stronie ma masę 15 kg.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_P23_img.jpg"/>
+    </media>
+  </problem>
+</exercise>
+<exercise id="fs-id1165037268006">
+  <problem id="fs-id1165037063523">
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165037063525">Ciężarek o masie 2,00 kg i ciężarek o masie 4,00 kg są połączone za pomocą cienkiej linki przerzuconej przez nieważki bloczek znajdujący się na szczycie równi pochyłej o kącie nachylenia <m:math>
+      <m:msup>
+        <m:mn>40</m:mn>
+        <m:mo>∘</m:mo>
+      </m:msup>
+    </m:math>. Tarcie pomijamy. <list id="eip-idm732916160" list-type="enumerated" number-style="lower-alpha">
+    <item>Ile wynosi przyspieszenie każdego z ciężarków?</item>
+    <item>Ile wynosi siła naciągu linki?</item>
+  </list>
+</para><media id="fs-id1165037063537" alt="Ciężarek 1 znajduje się na równi pochyłej o kącie nachylenia 40 stopni względem poziomu. Jest on połączony za pomocą cienkiej linki przerzuconej przez bloczek znajdujący się na szczycie równi z drugim ciężarkiem umocowanym na drugim końcu linki. Ciężarek 2 nie jest w kontakcie z równią.">
+  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_06_01_P24_img.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1165037179330">
+  <para id="fs-id1165037179332">a. <m:math>
+    <m:mrow>
+      <m:mn>0,933</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:msup>
+        <m:mrow>
+          <m:mtext>m/s</m:mtext>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+    </m:math> (ciężarek 1 porusza się ruchem przyspieszonym w górę, zaś ciężarek 2 opada w dół z tym samym przyspieszeniem); b. 21,5 N</para>
+  </solution>
+</exercise>
+</section>
+</content>
+</document>

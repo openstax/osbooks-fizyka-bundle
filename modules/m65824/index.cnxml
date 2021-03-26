@@ -1,0 +1,3550 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Lepkość i turbulencje</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65824</md:content-id>
+  <md:title>Lepkość i turbulencje</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>opisywać, czym jest lepkość;</item>
+<item>obliczać strumień i opór za pomocą prawa Poiseuille’a;</item>
+<item>rozumieć mechanizm spadku ciśnienia w związku z oporem;</item>
+<item>obliczać liczbę Reynoldsa dla przedmiotu poruszającego się w płynie;</item>
+<item>wykorzystywać liczbę Reynoldsa dla systemu do stwierdzenia, czy przepływ jest laminarny, czy turbulentny;</item>
+<item>określać, w jakich warunkach przedmiot osiąga prędkość graniczną.</item>
+</list></md:abstract>
+  <md:uuid>18de352f-b1c1-471f-ae9a-6f0bdd370f74</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1170959826602">W rozdziale <link class="target-chapter" document="m65765">Zastosowania praw Newtona</link>, gdzie wprowadziliśmy pojęcie tarcia, przekonaliśmy się, że przedmiot ślizgający się po podłodze z pewną prędkością początkową, na który nie działa żadna siła wypadkowa, zatrzyma się po pewnym czasie z powodu działania siły tarcia. Siła tarcia zależy od rodzaju materiałów, które są w kontakcie, i jest proporcjonalna do siły normalnej. W tym samym rozdziale omówiliśmy również opór powietrza i pokazaliśmy, że jest on proporcjonalny do prędkości przy małych prędkościach, a przy dużych - do kwadratu prędkości. W tym rozdziale dowiemy się więcej o siłach tarcia działających w płynach podczas ich ruchu. Na przykład na płyn przepływający przez rurę działa siła tarcia między nim a ścianami rury. Tarcie pojawia się również pomiędzy różnymi warstwami płynu. Te siły oporu zmieniają sposób, w jaki płyn porusza się przez rurę.</para><section id="fs-id1170959824719">
+    <title>Lepkość i przepływ laminarny</title>
+    <para id="fs-id1170957547260">Kiedy nalewasz sok do szklanki, płyn porusza się swobodnie i szybko. Ale kiedy wlewasz miód na kromkę chleba, przepływa on powoli i przykleja się do łyżki czy słoika. Różnicę powoduje tarcie, zarówno wewnątrz płynu, jak i pomiędzy płynem a jego otoczeniem. Tę cechę płynów nazywamy lepkością. Sok ma małą lepkość, a miód - dużą.</para><para id="fs-id1170957568742">Precyzyjna definicja lepkości wykorzystuje pojęcie laminarności, czyli przepływu nieturbulentnego. <link target-id="CNX_UPhysics_Figure_14_07_LaminarTur"/> pokazuje schematycznie, czym różni się przepływ laminarny od turbulentnego. Podczas przepływu laminarnego warstwy płynu poruszają się bez mieszania, a w przypadku przepływu turbulentnego warstwy się mieszają i mogą pojawić się obszary, w których wystąpią znaczne prędkości w kierunku innym niż wypadkowy przepływ.</para><figure id="CNX_UPhysics_Figure_14_07_LaminarTur"><media id="fs-id1170959803964" alt="Ilustracja (a) prezentuje schematycznie przepływ laminarny, w którym warstwy poruszają się bez mieszania. Prędkości płynu są różne dla różnych warstw. Ilustracja (b) prezentuje schematycznie przepływ turbulentny, spowodowany przeszkodą. Przepływ turbulentny miesza płyn, dając w efekcie niejednorodną prędkość.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_07_LaminarTur.jpg"/>
+      </media>
+      
+    <caption>(a) W przypadku przepływu laminarnego nie dochodzi do mieszania się warstw. Zwróćmy uwagę, że lepkość sprawia, iż warstwy płynu pociągają się nawzajem, podobnie jak dzieje się to z warstwami stałymi. Prędkość w pobliżu dolnej części przepływu (<m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>v</m:mi>
+            <m:mtext>b</m:mtext>
+          </m:msub>
+        </m:mrow>
+      </m:math>) jest mniejsza niż w pobliżu powierzchni (<m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mtext>t</m:mtext>
+        </m:msub>
+      </m:mrow>
+      </m:math>), ponieważ w tym przypadku powierzchnia pojemnika zawierającego płyn jest na spodzie. (b) Przeszkoda w pojemniku powoduje przepływ turbulentny, który miesza płyn. W takiej sytuacji występuje więcej oddziaływań, płyn zostaje podgrzany i pojawiają się większe opory niż w przypadku przepływu laminarnego.</caption></figure><para id="fs-id1170957575338"><term cmlnle:reference="turbulencja" class="no-emphasis">Turbulencja</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">turbulence</term></foreign>) to taki przepływ, w którym warstwy płynu się mieszają, tworząc zawirowania i zwroty w przepływie. Są dwa główne powody turbulencji: pierwszym jest przeszkoda o ostrych końcach, taka jak kran, która powoduje turbulencje przez wprowadzenie do przepływu prędkości do niego prostopadłych; drugim powodem jest duża prędkość. Przy dużej prędkości płynu oddziaływanie między sąsiadującymi warstwami oraz ich otoczeniem może powodować wiry i zawracanie płynu. Na <link target-id="CNX_UPhysics_Figure_14_07_SmokesEddy" cmlnle:case="locative"/> prędkość przyspieszającego dymu dochodzi do momentu, w którym zaczynają się tworzyć wiry z powodu tarcia między dymem a otaczającym go powietrzem.</para><figure id="CNX_UPhysics_Figure_14_07_SmokesEddy"><media id="fs-id1170959788750" alt="Ilustracja przedstawia zdjęcie dymu, który unosi się równomiernie na dole, a na górze duża prędkość powoduje powstawanie wirów.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_07_SmokesEddy.jpg"/>
+        </media>
+        
+      <caption>Dym unosi się równomiernie przez pewien czas, a później zaczynają w nim powstawać wiry. Równomierna część przepływu jest laminarna, natomiast w części z wirami obserwujemy turbulencje. Dym unosi się szybciej w obszarze przepływu laminarnego niż w obszarze przepływu turbulentnego, co oznacza, że turbulencja powoduje większe opory ruchu. (Źródło: „Creativity103”/Flickr)</caption></figure><para id="fs-id1170957605490"><link target-id="CNX_UPhysics_Figure_14_07_PlatesLami"/> przedstawia pomiar lepkości w płynie. Płyn, którego lepkość chcemy zmierzyć, umieszczamy pomiędzy dwiema równoległymi płytkami. Dolna jest umocowana do podłoża, podczas gdy górna porusza się w prawo, pociągając ze sobą płyn. Warstwa płynu w kontakcie z którąś z tych płytek nie porusza się względem niej, więc górna warstwa ma prędkość <m:math>
+          <m:mi>v</m:mi>
+        </m:math>, a dolna pozostaje w spoczynku. Każda kolejna warstwa od góry wywiera siłę na warstwę poniżej, próbując pociągnąć ją ze sobą, co wywołuje powstawanie ciągłej zmiany prędkości od <m:math>
+        <m:mi>v</m:mi>
+      </m:math> aż do 0, jak pokazano na rysunku. Podczas pomiaru należy zwracać uwagę, aby przepływ był laminarny, czyli aby warstwy się nie mieszały. Ruch zaprezentowany na rysunku przypomina ciągły ruch ścinający. Płyny mają zerową wytrzymałość na ścinanie, więc szybkość, z jaką odpowiadają na siłę ścinającą, jest związana z tymi samymi czynnikami geometrycznymi <m:math>
+      <m:mi>A</m:mi>
+    </m:math> oraz <m:math>
+    <m:mi>L</m:mi>
+  </m:math>, jak deformacja ścinająca w ciałach stałych. Na diagramie płyn jest początkowo w spoczynku. Warstwa płynu w kontakcie z poruszającą się płytką doznaje przyspieszenia i zaczyna się poruszać z powodu tarcia między nimi. Następna warstwa jest w kontakcie z poruszającą się warstwą. Ponieważ pojawia się tarcie pomiędzy tymi dwiema warstwami, ta warstwa również doznaje przyspieszenia. Sytuacja ta powtarza się aż do osiągnięcia dna płynu.</para><figure id="CNX_UPhysics_Figure_14_07_PlatesLami"><media id="fs-id1170959817862" alt="Ilustracja jest schematycznym rysunkiem układu do pomiaru lepkości przepływu laminarnego płynu między dwiema płytkami o polu A. L to odległość między płytkami. Dolna płytka jest przymocowana. Gdy górna płytka zostaje wprawiona w ruch, pociąga za sobą płyn. ">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_07_PlatesLami.jpg"/>
+    </media>
+    
+    <caption>Pomiar lepkości dla przepływu laminarnego między dwiema płytkami o polu powierzchni <m:math>
+        <m:mi>A</m:mi>
+      </m:math>. Dolna płytka jest przymocowana do podłoża. Gdy górna płytka zostaje wprawiona w ruch, pociąga za sobą płyn.</caption></figure><para id="fs-id1170959732663">Aby utrzymywać górną płytkę z <link target-id="CNX_UPhysics_Figure_14_07_PlatesLami" cmlnle:case="genitive"/> w ruchu jednostajnym z prędkością <m:math>
+        <m:mi>v</m:mi>
+      </m:math>, potrzebna jest siła <m:math>
+      <m:mi>F</m:mi>
+    </m:math>. Eksperymenty wykazały, że siła ta zależy od czterech czynników. Pierwszym z nich jest wymóg prostej proporcjonalności <m:math>
+    <m:mi>F</m:mi>
+  </m:math>
+ do <m:math>
+  <m:mi>v</m:mi>
+</m:math>
+ (jest tak do czasu aż prędkość nie wzrośnie do wartości, po której zaczynają występować turbulencje - w tym momencie zaczyna być potrzebna znacznie większa siła, a jej zależność od <m:math>
+  <m:mi>v</m:mi>
+</m:math>
+ staje się znacznie bardziej skomplikowana). Po drugie, <m:math>
+  <m:mi>F</m:mi>
+</m:math>
+ musi być proporcjonalna do pola powierzchni płytki <m:math>
+  <m:mi>A</m:mi>
+</m:math>. Ten związek wydaje się naturalny, ponieważ <m:math>
+  <m:mi>A</m:mi>
+</m:math>
+ jest wprost proporcjonalne do ilości przepływającego płynu. Po trzecie, <m:math>
+  <m:mi>F</m:mi>
+</m:math>
+ jest odwrotnie proporcjonalna do odległości między płytkami <m:math>
+  <m:mi>L</m:mi>
+</m:math>. Ten związek również wydaje się naturalny: <m:math>
+  <m:mi>L</m:mi>
+</m:math>
+ działa jak ramię dźwigni – im dłuższe ramię, tym mniejsza siła jest potrzebna. Po czwarte, <m:math>
+  <m:mi>F</m:mi>
+</m:math>
+ jest wprost proporcjonalna do <term cmlnle:reference="współczynnik lepkości" class="no-emphasis">współczynnika lepkości</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">coefficient of viscosity</term></foreign>), <m:math>
+<m:mi>η</m:mi>
+</m:math>. Im większa lepkość, tym większa siła jest potrzebna. Powyższe związki mogą być podsumowane przy pomocy następującego równania:</para><equation id="fs-id1170960187113" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:mi>F</m:mi>
+      <m:mo>=</m:mo>
+      <m:mi>η</m:mi>
+      <m:mfrac>
+        <m:mrow>
+          <m:mi>v</m:mi>
+          <m:mi>A</m:mi>
+        </m:mrow>
+        <m:mi>L</m:mi>
+      </m:mfrac>
+      <m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1170960164078">Równanie to jest definicją współczynnika lepkości płynu <m:math>
+  <m:mi>η</m:mi>
+</m:math>. Po jego rozwiązaniu ze względu na <m:math>
+<m:mi>η</m:mi>
+</m:math> otrzymujemy:</para><note id="fs-id1170957414482" class="equation-callout">
+  <equation id="fs-id1170959643666">
+    <label/>
+    <m:math>
+      <m:mi>η</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mi>F</m:mi>
+          <m:mi>L</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>v</m:mi>
+          <m:mi>A</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>,</m:mo>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1170959723888">czyli definicję współczynnika lepkości płynu uzyskaną przez rozważenie procedury jego pomiaru.</para>
+<para id="fs-id1170959775662">Jednostką SI lepkości jest <m:math>
+  <m:mrow>
+    <m:mi mathvariant="normal">N</m:mi>
+    <m:mo>⋅</m:mo>
+    <m:mi mathvariant="normal">m</m:mi>
+    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+    <m:mo stretchy="false">[</m:mo>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi mathvariant="normal">m</m:mi>
+    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+    <m:mi mathvariant="normal">s</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:msup>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo stretchy="false">]</m:mo>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi mathvariant="normal">N</m:mi>
+    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+    <m:msup>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mi mathvariant="normal">s</m:mi>
+  </m:mrow>
+  </m:math> lub <m:math>
+  <m:mrow>
+    <m:mi mathvariant="normal">P</m:mi>
+    <m:mi mathvariant="normal">a</m:mi>
+    <m:mo>⋅</m:mo>
+    <m:mi mathvariant="normal">s</m:mi>
+  </m:mrow>
+  </m:math>. <link target-id="fs-id1170959763405"/> podaje współczynniki lepkości dla różnych płynów. Wartość lepkości różni się między płynami o wiele rzędów wielkości. Zgodnie z oczekiwaniami lepkości gazów są znacznie niższe niż w przypadku cieczy i często zależą od temperatury.</para><table id="fs-id1170959763405" summary="Ta tabela ma trzy kolumny i trzydzieści wierszy. Pierwszy rząd zawiera nagłówki i etykiety kolumn: Płyn, Temperatura w stopniach C, i Lepkość w pascalach razy sekunda. W kolumnie Płyn zawiera listę płynów: Powietrze, Amoniak, Dwutlenek węgla, Hel, Wodór, Rtęć, Tlen, Para wodna, Woda ciekła, Krew, Osocze krwi, Alkohol etylowy, Metanol, Olej ciężki maszynowy, Olej silnikowy SAE 10, Oliwa z oliwek, Gliceryna, Miód, Syrop klonowy, Mleko, Olej kukurydziany. W kolumnie Temperatura w stopniach C zawiera listę następujących wartości: 0, 20, 40, 100, 20, 20, 20, 0, 20, 20, 100, 0, 20, 37, 40, 100, 20, 37, 20, 37, 20, 20, 20, 30, 20, 20, 20, 20, 20, 20. Kolumna Lepkość w paskalach razy sekunda zawiera listę następujących wartości: 0.0171, 0.0181, 0.0190, 0.0218, 0.00974, 0.0147, 0.0196, 0.0090, 0.0450, 0.0203, 0.0130, 1.792, 1.002, 0.6947, 0.653, 0.282, 3.015, 2.084, 1.810, 1.257, 1.20, 0.584, 660, 200, 138, 1500, 2000-10000, 2000-3000, 3.0, 65."><title>Współczynniki lepkości różnych płynów</title><tgroup cols="3">
+      <colspec colnum="1" colname="col1"/>
+      <colspec colnum="1" colname="col1"/>
+      <colspec colnum="2" colname="col2"/>
+      <thead>
+        <row valign="top">
+          <entry valign="top" align="left">Płyn</entry>
+          <entry valign="top" align="center">Temperatura<newline/>
+            <m:math>
+              <m:mrow>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mtext>°C)</m:mtext>
+              </m:mrow>
+            </m:math>
+          </entry>
+          <entry valign="top" align="center">Lepkość<newline/>
+            <m:math>
+              <m:mi>η</m:mi>
+            </m:math>
+            <m:math>
+              <m:mrow>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mtext>Pa</m:mtext>
+                    <m:mo>⋅</m:mo>
+                    <m:mtext>s</m:mtext>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry valign="top" align="left" morerows="3">Powietrze</entry>
+          <entry valign="top" align="center">0</entry>
+          <entry valign="top" align="right">0,0171</entry>
+        </row>
+        <row>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">0,0181</entry>
+        </row>
+        <row>
+          <entry valign="top" align="center">40</entry>
+          <entry valign="top" align="right">0,0190</entry>
+        </row>
+        <row>
+          <entry valign="top" align="center">100</entry>
+          <entry valign="top" align="right">0,0218</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Amoniak</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">0,00974</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Dwutlenek węgla</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">0,0147</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Hel</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">0,0196</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Wodór</entry>
+          <entry valign="top" align="center">0</entry>
+          <entry valign="top" align="right">0.0090</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Rtęć</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">0,0450</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Tlen</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">0,0203</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Para wodna</entry>
+          <entry valign="top" align="center">100</entry>
+          <entry valign="top" align="right">0,0130</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left" morerows="4">Woda ciekła</entry>
+          <entry valign="top" align="center">0</entry>
+          <entry valign="top" align="right">1,792</entry>
+        </row>
+        <row>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">1,002</entry>
+        </row>
+        <row>
+          <entry valign="top" align="center">37</entry>
+          <entry valign="top" align="right">0,6947</entry>
+        </row>
+        <row>
+          <entry valign="top" align="center">40</entry>
+          <entry valign="top" align="right">0,653</entry>
+        </row>
+        <row>
+          <entry valign="top" align="center">100</entry>
+          <entry valign="top" align="right">0,282</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left" morerows="1">Krew</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">3,015</entry>
+        </row>
+        <row>
+          <entry valign="top" align="center">37</entry>
+          <entry valign="top" align="right">2,084</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left" morerows="1">Plazma krwi</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">1,810</entry>
+        </row>
+        <row>
+          <entry valign="top" align="center">37</entry>
+          <entry valign="top" align="right">1,257</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Alkohol etylowy</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">1,20</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Metanol</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">0,584</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Olej (ciężki, maszynowy)</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">660</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Olej (silnikowy, SAE 10)</entry>
+          <entry valign="top" align="center">30</entry>
+          <entry valign="top" align="right">200</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Oliwa z oliwek</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">138</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Gliceryna</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">1500</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Miód</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">2000–10000</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Syrop klonowy</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">2000–3000</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Mleko</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">3,0</entry>
+        </row>
+        <row>
+          <entry valign="top" align="left">Olej kukurydziany</entry>
+          <entry valign="top" align="center">20</entry>
+          <entry valign="top" align="right">65</entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table></section>
+<section id="fs-id1170959657924">
+  <title>Przepływ laminarny płynu w rurze. Prawo Poiseuille’a</title><para id="fs-id1170959680154">Co jest przyczyną przepływu? Odpowiedź na to pytanie nie zaskakuje – przepływ powoduje różnica ciśnień. Tak naprawdę istnieje bardzo prosta relacja między przepływem horyzontalnym a ciśnieniem. Strumień <m:math>
+      <m:mi>Q</m:mi>
+    </m:math>
+
+     ma kierunek od wyższego ciśnienia do niższego. Im większa różnica ciśnień pomiędzy dwoma punktami, tym większy strumień. Relację tę możemy wyrazić następująco:</para><equation id="fs-id1170959809336" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mi>Q</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mi>R</m:mi>
+        </m:mfrac>
+        <m:mo>,</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1170959702846">gdzie <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>p</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+      </m:mrow>
+    </m:math> i <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>p</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+    </m:mrow>
+  </m:math> są ciśnieniami w dwóch różnych miejscach, takich jak końce rury, a <m:math>
+    <m:mi>R</m:mi>
+  </m:math>
+ jest oporem stawianym przepływowi. Opór <m:math>
+  <m:mi>R</m:mi>
+</m:math>
+ zawiera wszystkie elementy, które wpływają na przepływ, za wyjątkiem ciśnienia. Na przykład <m:math>
+  <m:mi>R</m:mi>
+</m:math>
+ jest większe w rurze długiej niż w krótkiej. Im większa lepkość płynu, tym większa wartość <m:math>
+  <m:mi>R</m:mi>
+</m:math>. Turbulencje znacznie podwyższają wartość <m:math>
+  <m:mi>R</m:mi>
+</m:math>, a zwiększenie średnicy rury ją zmniejsza.</para><para id="fs-id1170959719704">Jeżeli lepkość wynosi zero, to tarcie wynosi zero i opory stawiane przepływowi są również zerowe. Porównując przepływ płynu nielepkiego z przepływem płynu lepkiego, widzimy, że (<link target-id="CNX_UPhysics_Figure_14_07_ViscousNon"/>) płyn lepki ma największą prędkość w centrum przepływu, co wynika z tarcia o ściany rury. Efekt działania lepkości możemy zaobserwować w palniku Bunsena (część (c) rysunku), pomimo niewielkiej gęstości gazu ziemnego.</para><figure id="CNX_UPhysics_Figure_14_07_ViscousNon"><media id="fs-id1170959698378" alt="Ilustracja (a) jest schematycznym rysunkiem przepływu nielepkiego w rurze. Wszystkie warstwy płynu poruszają się z tą samą szybkością. Ilustracja (b) jest schematycznym rysunkiem przepływu lepkiego płynu w rurze. Warstwy w środku rury poruszają się z większą prędkością. Ilustracja (c) jest zdjęciem palnika Bunsena z płomieniem w kształcie stożka.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_07_ViscousNon.jpg"/>
+  </media>
+  
+<caption>(a) Jeżeli płyn przepływający w rurze ma pomijalną lepkość, wówczas prędkość jest taka sama w całej rurze. (b) Gdy lepki płyn przepływa przez rurę, to jego prędkość przy ścianach wynosi zero i rośnie stopniowo w miarę zbliżania się do środka rury, gdzie osiąga maksymalną wartość. (c) Kształt płomienia w palniku Bunsena wynika z profilu prędkości w rurze. (Źródło: modyfikacja zdjęcia Jasona Woodheada)</caption></figure><para id="fs-id1170960047674">Opór <m:math>
+    <m:mi>R</m:mi>
+  </m:math>
+ stawiany laminarnemu przepływowi nieściśliwego płynu o lepkości <m:math>
+<m:mi>η</m:mi>
+</m:math> przez poziomą rurę o jednorodnym promieniu <m:math>
+  <m:mi>r</m:mi>
+</m:math>
+ i długości <m:math>
+  <m:mi>l</m:mi>
+</m:math>, opisuje równanie:</para><note id="fs-id1170959712611" class="equation-callout">
+  <equation id="fs-id1170959706366">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mi>R</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mn>8</m:mn>
+            <m:mi>η</m:mi>
+            <m:mi>l</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mi>π</m:mi>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>4</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1170959670072">Równanie to nazywa się <term cmlnle:reference="prawo Poiseuille’a" class="no-emphasis">prawem Poiseuille’a</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Poiseuille’s law</term></foreign>) na cześć francuskiego uczonego <term cxlxt:index="name" cxlxt:name="Poiseuille, Jean Léonard Marie" cxlxt:born="1797" cxlxt:died="1869" cmlnle:reference="Poiseuille, Jean Léonard Marie (1797–1869)" class="no-emphasis">J. L. Poiseuille'a (1797–1869)</term>, który je wyprowadził, próbując wyjaśnić przepływ krwi w ciele.</para><para id="fs-id1170959795586">Przeanalizujmy równanie Poiseuille’a na <m:math>
+    <m:mi>R</m:mi>
+  </m:math>
+ i przekonajmy się, czy jest ono intuicyjne. Widzimy, że opór jest wprost proporcjonalny zarówno do lepkości płynu <m:math>
+<m:mi>η</m:mi>
+</m:math>, jak i do długości rury <m:math>
+  <m:mi>l</m:mi>
+</m:math>. Oba te elementy bezpośrednio wpływają na tarcie doświadczane przez płyn – im większa jest wartość któregoś z nich, tym większy opór i mniejszy strumień. Promień <m:math>
+  <m:mi>r</m:mi>
+</m:math>
+ rury wpływa na opór, co również jest intuicyjne, ponieważ im większy promień, tym większy strumień (przy zachowaniu pozostałych parametrów). Zaskakuje jednak fakt, że <m:math>
+  <m:mi>r</m:mi>
+</m:math>
+ jest podniesione do potęgi czwartej. Wykładnik ten oznacza, że zmiana promienia rury ma ogromny wpływ na opór. Na przykład dwukrotne zwiększenie promienia zmniejsza opór <m:math>
+<m:mrow>
+  <m:msup>
+    <m:mn>2</m:mn>
+    <m:mn>4</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo>
+  <m:mn>16</m:mn>
+</m:mrow>
+</m:math>-krotnie.</para><para id="fs-id1170959748267">Jeśli połączymy <m:math>
+  <m:mi>Q</m:mi>
+  <m:mo>=</m:mo>
+  <m:mo stretchy="false">(</m:mo>
+  <m:msub>
+    <m:mi>p</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>−</m:mo>
+  <m:msub>
+    <m:mi>p</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo stretchy="false">)</m:mo>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi>R</m:mi>
+</m:math> z <m:math>
+<m:mi>R</m:mi>
+<m:mo>=</m:mo>
+<m:mn>8</m:mn>
+<m:mi>η</m:mi>
+<m:mi>l</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mrow>
+  <m:mo>(</m:mo>
+  <m:mrow>
+    <m:mi>π</m:mi>
+    <m:msup>
+      <m:mi>r</m:mi>
+      <m:mn>4</m:mn>
+    </m:msup>
+  </m:mrow>
+  <m:mo>)</m:mo>
+</m:mrow>
+</m:math> uzyskamy następujące równanie na strumień:</para><note id="fs-id1170959712759" class="equation-callout">
+  <equation id="fs-id1170959765405">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mi>Q</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mo stretchy="false">(</m:mo>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo stretchy="false">)</m:mo>
+            <m:mi>π</m:mi>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>4</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mrow>
+            <m:mn>8</m:mn>
+            <m:mi>η</m:mi>
+            <m:mi>l</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1170960194977">To równanie opisuje przepływ laminarny w rurze. Nazywane jest często prawem Poiseuille’a dla przepływu laminarnego lub po prostu prawem Poiseuille’a (<link target-id="CNX_UPhysics_Figure_14_07_LaminrPipe"/>).</para><figure id="CNX_UPhysics_Figure_14_07_LaminrPipe"><media id="fs-id1170959801955" alt="Ilustracja jest schematem rury o długości l i promieniu r. Płyn przepływa przez rurę w kierunku od większego ciśnienia p2 do niższego ciśnienia p1. Przepływ jest laminarny i jest większy w środku rury.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_07_LaminrPipe.jpg"/>
+  </media>
+  
+<caption>Prawo Poiseuille'a stosuje się do laminarnego nieściśliwego płynu o lepkości <m:math>
+    <m:mi>η</m:mi>
+  </m:math> przez rurę o długości <m:math>
+    <m:mi>l</m:mi>
+  </m:math>
+
+<span> i promieniu </span>
+<m:math>
+    <m:mi>r</m:mi>
+  </m:math>
+
+<span>. Płyn porusza się od większego ciśnienia do mniejszego. Strumień </span>
+<m:math>
+      <m:mi>Q</m:mi>
+    </m:math>
+
+
+<span> jest wprost proporcjonalny do różnicy ciśnień </span>
+<m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+  </m:mrow>
+</m:math>
+<span>, a odwrotnie proporcjonalny do długości rury </span>
+<m:math>
+    <m:mi>l</m:mi>
+  </m:math>
+
+<span> i lepkości płynu </span>
+<m:math>
+  <m:mi>η</m:mi>
+</m:math>
+<span>. Strumień wzrasta z promieniem o czynnik </span>
+<m:math>
+  <m:mrow>
+    <m:msup>
+      <m:mi>r</m:mi>
+      <m:mn>4</m:mn>
+    </m:msup>
+  </m:mrow>
+</m:math>.
+</caption></figure><example id="fs-id1170959803130">
+  <para id="fs-id1170959718938"><title>Wykorzystanie strumienia: układy klimatyzacji</title>Układ klimatyzacji zaprojektowano tak, aby dostarczał powietrze pod ciśnieniem manometrycznym 0,054 Pa w temperaturze <m:math>
+      <m:mrow>
+        <m:mn>20</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>°</m:mtext>
+        <m:mtext>C</m:mtext>
+        <m:mo>.</m:mo>
+      </m:mrow>
+      </m:math> Powietrze jest przesyłane izolowanym przewodem o przekroju kołowym, którego średnica wynosi 18,00 cm. Ma on długość 20 m i wylot w pomieszczeniu, gdzie panuje ciśnienie atmosferyczne 101,30 kPa. Ma ono długość 12 m, szerokość 6 m i wysokość 3 m. (a) Jaki jest strumień objętościowy przepływający przez rurę, zakładając przepływ laminarny? (b) Oszacuj, ile czasu trzeba, aby całkowicie wymienić powietrze w pokoju. (c) Robotnicy decydują się oszczędzić trochę pieniędzy przez użycie przewodu o średnicy 9,00 cm. Jaki będzie strumień w tym przypadku?</para><para id="fs-id1170960078288"><title>Strategia rozwiązania</title>Jeśli przyjmiemy przepływ laminarny, prawo Poiseuille’a mówi, że:</para><equation id="fs-id1170960189942" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mi>Q</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo stretchy="false">(</m:mo>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mo stretchy="false">)</m:mo>
+                <m:mi>π</m:mi>
+                <m:msup>
+                  <m:mi>r</m:mi>
+                  <m:mn>4</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>8</m:mn>
+                <m:mi>η</m:mi>
+                <m:mi>l</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">d</m:mi>
+                </m:mrow>
+                <m:mi>V</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">d</m:mi>
+                </m:mrow>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+          </m:math>
+        </equation>
+        <para id="fs-id1170960190939">Musimy porównać promienie przewodu przed redukcją i po redukcji strumienia. Zauważmy, że znamy średnicę przewodu, więc, aby obliczyć promień, musimy podzielić ją przez 2. </para><para id="fs-id1170959875767">
+          <title>Rozwiązanie</title>
+        </para>
+        <list id="fs-id1170959697768" list-type="enumerated" number-style="lower-alpha"><item>Jeśli założymy stałą różnicę ciśnień i użyjemy lepkości <m:math>
+            <m:mrow>
+              <m:mi>η</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>0,0181</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>mPa</m:mtext>
+              <m:mo>⋅</m:mo>
+              <m:mtext>s</m:mtext>
+            </m:mrow>
+          </m:math>, otrzymujemy:<newline/>
+          <equation id="fs-id1170959644606" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mi>Q</m:mi>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mn>0,052</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">P</m:mi>
+                    <m:mi mathvariant="normal">a</m:mi>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mn>3,14</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mn>0,09</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:msup>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mrow>
+                  <m:mn>8</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:mn>0,0181</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mn>3</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">P</m:mi>
+                    <m:mi mathvariant="normal">a</m:mi>
+                    <m:mo>⋅</m:mo>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mn>20</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mn>3,84</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mn>3</m:mn>
+                </m:mrow>
+              </m:msup>
+              <m:mspace width="0.2em"/>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>.</m:mo>
+            </m:math>
+          </equation>
+        </item>
+        <item>Załózmy stały przepływ <m:math>
+          <m:mi>Q</m:mi>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>V</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>≈</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi mathvariant="normal">Δ</m:mi>
+              <m:mi>V</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">Δ</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+        </m:math>
+        <newline/>
+        <equation id="fs-id1170959788489" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mi mathvariant="normal">Δ</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi mathvariant="normal">Δ</m:mi>
+                <m:mi>V</m:mi>
+              </m:mrow>
+              <m:mi>Q</m:mi>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mn>12</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mn>6</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mn>3</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>3,84</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>3</m:mn>
+                  </m:mrow>
+                </m:msup>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mn>5,63</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mn>4</m:mn>
+            </m:msup>
+            <m:mspace width="0.2em"/>
+            <m:mo>=</m:mo>
+            <m:mn>15,63</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">h</m:mi>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+      </item>
+      <item>Stosujemy założenia przepływu laminarnego, dzięki czemu z prawa Poiseuille’a uzyskujemy:<newline/>
+        <equation id="fs-id1170957516048" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mi>Q</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mn>0,054</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">P</m:mi>
+                  <m:mi mathvariant="normal">a</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mn>3,14</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mn>0,045</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+                <m:msup>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mn>4</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>8</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:mn>0,0181</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>3</m:mn>
+                  </m:mrow>
+                </m:msup>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">P</m:mi>
+                  <m:mi mathvariant="normal">a</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mn>20</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mn>2,4</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>4</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mspace width="0.2em"/>
+            <m:mfrac>
+              <m:mrow>
+                <m:msup>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <newline/>Widzimy więc, że redukcja promienia przewodu o połowę, zmniejszy strumień do 6,25% początkowej wartości.</item>
+      </list><para id="fs-id1170959875235"><title>Znaczenie</title>Ogólnie, w przypadku przepływu laminarnego, zmniejszenie promienia ma bardziej odczuwalne konsekwencje, niż zwiększenie jego długości. Jeżeli zostanie ona zwiększona przy zachowaniu pozostałych warunków, to strumień maleje o:</para><equation id="fs-id1170957419057" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mrow>
+              <m:mtable>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>Q</m:mi>
+                          <m:mi>A</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>Q</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>p</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msub>
+                                <m:mo>−</m:mo>
+                                <m:msub>
+                                  <m:mi>p</m:mi>
+                                  <m:mn>1</m:mn>
+                                </m:msub>
+                              </m:mrow>
+                              <m:mo>)</m:mo>
+                            </m:mrow>
+                            <m:mi>π</m:mi>
+                            <m:msubsup>
+                              <m:mi>r</m:mi>
+                              <m:mi>A</m:mi>
+                              <m:mn>4</m:mn>
+                            </m:msubsup>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>8</m:mn>
+                            <m:mi>η</m:mi>
+                            <m:msub>
+                              <m:mi>l</m:mi>
+                              <m:mi>A</m:mi>
+                            </m:msub>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>p</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msub>
+                                <m:mo>−</m:mo>
+                                <m:msub>
+                                  <m:mi>p</m:mi>
+                                  <m:mn>1</m:mn>
+                                </m:msub>
+                              </m:mrow>
+                              <m:mo>)</m:mo>
+                            </m:mrow>
+                            <m:mi>π</m:mi>
+                            <m:msubsup>
+                              <m:mi>r</m:mi>
+                              <m:mi>B</m:mi>
+                              <m:mn>4</m:mn>
+                            </m:msubsup>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>8</m:mn>
+                            <m:mi>η</m:mi>
+                            <m:msub>
+                              <m:mi>l</m:mi>
+                              <m:mi>B</m:mi>
+                            </m:msub>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>=</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>l</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>l</m:mi>
+                          <m:mi>A</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:msub>
+                      <m:mi>Q</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:msub>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>l</m:mi>
+                          <m:mi>A</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>l</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:msub>
+                      <m:mi>Q</m:mi>
+                      <m:mi>A</m:mi>
+                    </m:msub>
+                    <m:mo>.</m:mo>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="fs-id1170960054881">Dwukrotne zwiększenie długości zmniejsza strumień do połowy początkowej wartości.</para>
+        <para id="fs-id1170957416772">Jeżeli promień zostanie zmniejszony, a wartości pozostałych zmiennych pozostaną takie same, to strumień zmaleje o znacznie większy czynnik.</para><equation id="fs-id1170959814449" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mrow>
+              <m:mtable>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>Q</m:mi>
+                          <m:mi>A</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>Q</m:mi>
+                          <m:mi>B</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>p</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msub>
+                                <m:mo>−</m:mo>
+                                <m:msub>
+                                  <m:mi>p</m:mi>
+                                  <m:mn>1</m:mn>
+                                </m:msub>
+                              </m:mrow>
+                              <m:mo>)</m:mo>
+                            </m:mrow>
+                            <m:mi>π</m:mi>
+                            <m:msubsup>
+                              <m:mi>r</m:mi>
+                              <m:mi>A</m:mi>
+                              <m:mn>4</m:mn>
+                            </m:msubsup>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>8</m:mn>
+                            <m:mi>η</m:mi>
+                            <m:msub>
+                              <m:mi>l</m:mi>
+                              <m:mi>A</m:mi>
+                            </m:msub>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>p</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msub>
+                                <m:mo>−</m:mo>
+                                <m:msub>
+                                  <m:mi>p</m:mi>
+                                  <m:mn>1</m:mn>
+                                </m:msub>
+                              </m:mrow>
+                              <m:mo>)</m:mo>
+                            </m:mrow>
+                            <m:mi>π</m:mi>
+                            <m:msubsup>
+                              <m:mi>r</m:mi>
+                              <m:mi>B</m:mi>
+                              <m:mn>4</m:mn>
+                            </m:msubsup>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>8</m:mn>
+                            <m:mi>η</m:mi>
+                            <m:msub>
+                              <m:mi>l</m:mi>
+                              <m:mi>B</m:mi>
+                            </m:msub>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>=</m:mo>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mrow>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>r</m:mi>
+                                  <m:mi>A</m:mi>
+                                </m:msub>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>r</m:mi>
+                                  <m:mi>B</m:mi>
+                                </m:msub>
+                              </m:mrow>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mn>4</m:mn>
+                    </m:msup>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="right">
+                    <m:msub>
+                      <m:mi>Q</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:msub>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:mo>=</m:mo>
+                  </m:mtd>
+                  <m:mtd columnalign="left">
+                    <m:msup>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mrow>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>r</m:mi>
+                                  <m:mi>B</m:mi>
+                                </m:msub>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>r</m:mi>
+                                  <m:mi>A</m:mi>
+                                </m:msub>
+                              </m:mrow>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mn>4</m:mn>
+                    </m:msup>
+                    <m:msub>
+                      <m:mi>Q</m:mi>
+                      <m:mi>A</m:mi>
+                    </m:msub>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="fs-id1170959960940">Zmniejszenie promienia o połowę zmniejsza strumień do jednej szesnastej początkowego strumienia.</para>
+      </example>
+    </section>
+    <section id="fs-id1170959753093">
+      <title>Przepływ i opory jako przyczyny spadków ciśnienia</title>
+      <para id="fs-id1170959732135">Ciśnienie wody w domach i mieszkaniach bywa mniejsze podczas zwiększonego jej zużycia, na przykład w gorące, słoneczne dni. Spadek ciśnienia następuje w głównej magistrali wodociągowej, przed dotarciem wody do pojedynczych mieszkań. Rozważmy sytuację [pokazaną na <link target-id="CNX_UPhysics_Figure_14_07_WtrPrHouse" cmlnle:case="locative"/>, czyli przepływ w głównej magistrali. Przekształcając równania na strumień, możemy zrozumieć, dlaczego ciśnienie wody dopływającej do mieszkania <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+        </m:mrow>
+        </m:math> spada podczas zwiększonego zapotrzebowania:</para><equation id="fs-id1170959936580" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mtable>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:mi>Q</m:mi>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>p</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msub>
+                      <m:mo>−</m:mo>
+                      <m:msub>
+                        <m:mi>p</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mi>R</m:mi>
+                  </m:mfrac>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd columnalign="right">
+                  <m:msub>
+                    <m:mi>p</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mo>–</m:mo>
+                  <m:msub>
+                    <m:mi>p</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mo>=</m:mo>
+                </m:mtd>
+                <m:mtd columnalign="left">
+                  <m:mi>R</m:mi>
+                  <m:mi>Q</m:mi>
+                  <m:mo>.</m:mo>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:math>
+        </equation>
+        <para id="fs-id1170960187837">W tym przypadku <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+          </m:mrow>
+        </m:math> to ciśnienie wody przy przepompowni, a <m:math>
+          <m:mi>R</m:mi>
+        </m:math>
+       to opór w głównej magistrali wodociągowej. Podczas zwiększonego zużycia strumień <m:math>
+        <m:mi>Q</m:mi>
+      </m:math>
+     ma dużą wartość. Oznacza to, że różnica <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>p</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>−</m:mo>
+      <m:msub>
+        <m:mi>p</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:mrow>
+  </m:math> również musi być duża, dlatego <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+  </m:mrow>
+</m:math> musi zmaleć. Przepływ i jego opory powodują spadek ciśnienia z <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>p</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math> do <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>p</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>. Równanie <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>p</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>−</m:mo>
+  <m:msub>
+    <m:mi>p</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mi>R</m:mi>
+  <m:mi>Q</m:mi>
+</m:mrow>
+</m:math> jest spełnione zarówno dla przepływu laminarnego, jak i dla turbulentnego.</para><figure id="CNX_UPhysics_Figure_14_07_WtrPrHouse"><media id="fs-id1170959654530" alt="Ilustracja przedstawia schematyczny rysunek kilku małych przyłączy wiodących do poszczególnych domów, które łączą się w główną magistralę.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_07_WtrPrHouse.jpg"/>
+  </media>
+  
+<caption>Podczas zwiększonego zużycia w głównej magistrali występuje znaczący spadek ciśnienia i ciśnienie <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>p</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:mrow>
+  </m:math> wody dostarczanej użytkownikowi jest znacznie mniejsze niż ciśnienie <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:mrow>
+</m:math> wytworzone przy stacji wodociągowej. Jeżeli przepływ jest mały, spadek ciśnienia jest pomijalny i <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>p</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>≈</m:mo>
+  <m:msub>
+    <m:mi>p</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>.</caption></figure><para id="fs-id1170959869238">Aby przeanalizować spadek ciśnienia pojawiający się w bardziej złożonych systemach, w których promień nie jest wszędzie taki sam, możemy również użyć <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mi>R</m:mi>
+    <m:mi>Q</m:mi>
+  </m:mrow>
+</m:math>. Opór jest znacznie większy w miejscach zwężenia, takich jak zmiany w obrębie tętnicy wieńcowej. Dla konkretnego strumienia <m:math>
+  <m:mi>Q</m:mi>
+</m:math>, spadek ciśnienia jest największy w tym miejscu, w którym przewód jest najwęższy. Właśnie w ten sposób kurek kontroluje przepływ wody. Dodatkowo <m:math>
+  <m:mi>R</m:mi>
+</m:math> jest znacznie zwiększony przez turbulencje, więc przewężenia je wywołujące znacznie zmniejszają ciśnienie poniżej. Płytka miażdżycowa w tętnicy zmniejsza ciśnienie, a co za tym idzie także przepływ, zarówno przez zwiększenie oporu, jak i wytwarzanie turbulencji.</para></section>
+<section id="fs-id1170959865673">
+  <title>Pomiar turbulencji</title>
+  <para id="fs-id1170957521193">Parametr zwany <term cmlnle:reference="liczba Reynoldsa" class="no-emphasis">liczbą Reynoldsa</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Reynolds number</term></foreign>)
+ <m:math>
+    <m:mi>R</m:mi>
+    <m:mi>e</m:mi>
+    </m:math> może powiedzieć nam, czy przepływ ma charakter laminarny, czy turbulentny. Dla przepływu w rurze o stałej średnicy liczbę Reynoldsa definiujemy jako:</para><equation id="fs-id1170959658247">
+      <label/>
+      <m:math>
+        <m:mi>R</m:mi>
+        <m:mi>e</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mi>ρ</m:mi>
+            <m:mi>v</m:mi>
+            <m:mi>r</m:mi>
+          </m:mrow>
+          <m:mi>η</m:mi>
+        </m:mfrac>
+        <m:mspace width="1em"/>
+        <m:mtext>(przepływ w rurze)</m:mtext>
+      </m:math>
+    </equation>
+    <para id="fs-id1170959713645">gdzie <m:math>
+      <m:mi>ρ</m:mi>
+    </m:math> jest gęstością płynu, <m:math>
+      <m:mi>v</m:mi>
+    </m:math>
+   jego prędkością, <m:math>
+  <m:mi>η</m:mi>
+</m:math> jego lepkością, a <m:math>
+  <m:mi>r</m:mi>
+</m:math>
+ promieniem rury. Liczba Reynoldsa to wielkość bezwymiarowa. Doświadczenia pokazały, że <m:math>
+<m:mi>R</m:mi>
+<m:mi>e</m:mi>
+</m:math> jest związane z powstawaniem turbulencji. Dla <m:math>
+<m:mi>R</m:mi>
+<m:mi>e</m:mi>
+</m:math> poniżej około 2000 przepływ jest laminarny. Dla <m:math>
+<m:mi>R</m:mi>
+<m:mi>e</m:mi>
+</m:math> powyżej 3000 przepływ jest turbulentny.</para><para id="fs-id1170960164102">Dla wartości <m:math>
+  <m:mi>R</m:mi>
+  <m:mi>e</m:mi>
+  </m:math> pomiędzy około 2000 a 3000 przepływ jest niestabilny, czyli bywa laminarny, ale małe przeszkody czy zaburzenia na powierzchni płynu mogą sprawić, że stanie się on turbulentny. Przepływ może również oscylować losowo pomiędzy przepływem laminarnym a turbulentnym. Przepływ płynu o liczbie Reynoldsa pomiędzy 2000 a 3000 stanowi dobry przykład zachowania chaotycznego. System jest chaotyczny, jeżeli jego zachowanie jest tak czułe na zmianę pewnego czynnika, że niezwykle trudno je przewidzieć. Przewidzenie, czy przepływ płynu o liczbie Reynoldsa w tym zakresie jest laminarny, czy turbulentny okazuje się trudne, choć nie niemożliwe, z powodu wyjątkowo dużego wpływu czynników, takich jak nierówności powierzchni czy przeszkody, na rodzaj przepływu. Niewielka zmiana w jednym czynniku ma nieproporcjonalnie duży (czyli nieliniowy) wpływ na własności przepływu.</para><example id="fs-id1170959970547">
+    <para id="fs-id1170957594773"><title>Zastosowanie strumienia: przepływ turbulentny czy przepływ laminarny</title>W <link target-id="fs-id1170959803130" cmlnle:case="locative"/> obliczyliśmy, że strumień objętościowy systemu klimatyzacyjnego wynosi <m:math>
+        <m:mi>Q</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>3,84</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>3</m:mn>
+          </m:mrow>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:msup>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mn>3</m:mn>
+          </m:msup>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        </m:math> Te obliczenia zakładały przepływ laminarny. (a) Czy założenie to było prawidłowe? (b) Przy jakiej wartości prędkości przepływ stałby się turbulentny?</para><para id="fs-id1170957517578"><title>Strategia rozwiązania</title>Aby określić, czy przepływ powietrza przez układ klimatyzacyjny jest laminarny, musimy po pierwsze obliczyć jego prędkość. W tym celu możemy się posłużyć:</para><equation id="fs-id1170959936919" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mrow>
+                <m:mi>Q</m:mi>
+                <m:mo>=</m:mo>
+                <m:mi>A</m:mi>
+                <m:mi>v</m:mi>
+                <m:mo>=</m:mo>
+                <m:mi>π</m:mi>
+                <m:msup>
+                  <m:mi>r</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mi>v</m:mi>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation>
+          <para id="fs-id1170959781203">Następnie możemy obliczyć liczbę Reynoldsa, używając poniższego równania, i sprawdzić, czy zawiera się ona w zakresie przepływu laminarnego:</para><equation id="fs-id1170957588838" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mi>R</m:mi>
+              <m:mi>e</m:mi>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mi>ρ</m:mi>
+                  <m:mi>v</m:mi>
+                  <m:mi>r</m:mi>
+                </m:mrow>
+                <m:mi>η</m:mi>
+              </m:mfrac>
+              <m:mo>.</m:mo>
+            </m:math>
+          </equation>
+          <para id="fs-id1170959801676">
+            <title>Rozwiązanie</title>
+          </para>
+          <list id="fs-id1170960179988" list-type="enumerated" number-style="lower-alpha"><item>Podstawienie podanych wartości prowadzi do:<newline/>
+<equation id="fs-id1170959766539" class="unnumbered"><label/>
+              <m:math>
+                <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+                  <m:mtr>
+                    <m:mtd>
+                      <m:mi>v</m:mi>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mi/>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mi>Q</m:mi>
+                        <m:mrow>
+                          <m:mi>π</m:mi>
+                          <m:msup>
+                            <m:mi>r</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>3,84</m:mn>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mn>10</m:mn>
+                            <m:mrow>
+                              <m:mo>−</m:mo>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                          </m:msup>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:msup>
+                              <m:mi mathvariant="normal">m</m:mi>
+                              <m:mn>3</m:mn>
+                            </m:msup>
+                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>3,14</m:mn>
+                          <m:mo>⋅</m:mo>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mn>0,09</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                          </m:mrow>
+                          <m:msup>
+                            <m:mo stretchy="false">)</m:mo>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>=</m:mo>
+                      <m:mn>0,15</m:mn>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mtd>
+                  </m:mtr>
+                  <m:mtr>
+                    <m:mtd>
+                      <m:mi>R</m:mi>
+                      <m:mi>e</m:mi>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mi/>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                          <m:mi>ρ</m:mi>
+                          <m:mi>v</m:mi>
+                          <m:mi>r</m:mi>
+                        </m:mrow>
+                        <m:mi>η</m:mi>
+                      </m:mfrac>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                          <m:mo>⋅</m:mo>
+                          <m:mn>1,23</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">k</m:mi>
+                            <m:mi mathvariant="normal">g</m:mi>
+                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            <m:msup>
+                              <m:mi mathvariant="normal">m</m:mi>
+                              <m:mn>3</m:mn>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mo>⋅</m:mo>
+                          <m:mn>0,15</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                          <m:mo>⋅</m:mo>
+                          <m:mn>0,09</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>0,0181</m:mn>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mn>10</m:mn>
+                            <m:mrow>
+                              <m:mo>−</m:mo>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                          </m:msup>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">P</m:mi>
+                            <m:mi mathvariant="normal">a</m:mi>
+                            <m:mo>⋅</m:mo>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>=</m:mo>
+                      <m:mn>1835.</m:mn>
+                    </m:mtd>
+                  </m:mtr>
+                </m:mtable>
+              </m:math>
+              </equation><newline/>Ponieważ liczba Reynoldsa wynosi 1835 &lt; 2000, przepływ jest laminarny, a nie turbulentny. Założenie lainarności przepływu okazało się prawidłowe.</item>
+              <item>Aby obliczyć maksymalną prędkość powietrza, przy której przepływ będzie laminarny, obliczmy liczbę Reynoldsa.
+			  <newline/>
+<equation id="fs-id1170959973499" class="unnumbered"><label/>
+                <m:math>
+                  <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+                    <m:mtr>
+                      <m:mtd>
+                        <m:mi>R</m:mi>
+                        <m:mi>e</m:mi>
+                      </m:mtd>
+                      <m:mtd>
+                        <m:mi/>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mi>ρ</m:mi>
+                            <m:mi>v</m:mi>
+                            <m:mi>r</m:mi>
+                          </m:mrow>
+                          <m:mi>η</m:mi>
+                        </m:mfrac>
+                        <m:mo>≤</m:mo>
+                        <m:mn>2000</m:mn>
+                      </m:mtd>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mtd>
+                        <m:mi>v</m:mi>
+                      </m:mtd>
+                      <m:mtd>
+                        <m:mi/>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mn>2000</m:mn>
+                            <m:mo>⋅</m:mo>
+                            <m:mn>0,0181</m:mn>
+                            <m:mo>⋅</m:mo>
+                            <m:msup>
+                              <m:mn>10</m:mn>
+                              <m:mrow>
+                                <m:mo>−</m:mo>
+                                <m:mn>3</m:mn>
+                              </m:mrow>
+                            </m:msup>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">P</m:mi>
+                              <m:mi mathvariant="normal">a</m:mi>
+                              <m:mo>⋅</m:mo>
+                              <m:mi mathvariant="normal">s</m:mi>
+                            </m:mrow>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mo>⋅</m:mo>
+                            <m:mn>1,23</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">P</m:mi>
+                              <m:mi mathvariant="normal">a</m:mi>
+                              <m:mo>⋅</m:mo>
+                              <m:mi mathvariant="normal">s</m:mi>
+                            </m:mrow>
+                            <m:mo>⋅</m:mo>
+                            <m:mn>0,09</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">m</m:mi>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>=</m:mo>
+                        <m:mn>0,16</m:mn>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>.</m:mo>
+                      </m:mtd>
+                    </m:mtr>
+                  </m:mtable>
+                </m:math>
+				</equation>
+              </item>
+            </list><para id="fs-id1170957613120"><title>Znaczenie</title>Podczas przekazywania płynu z jednego miejsca w drugie korzystnie jest ograniczyć turbulencje. Pociąga ona za sobą straty energii, gdyż jej część, która w zamyśle miała służyć transportowi płynu, ulega rozproszeniu w miejscach, w których tworzą się wiry. W tym przypadku układ klimatyzacyjny będzie mniej wydajny, gdy prędkość powietrza przekroczy 0,16 m/s, ponieważ przy niej zaczną się pojawiać turbulencje.</para></example>
+          </section>
+          <section id="fs-id1170957408166" class="key-concepts">
+            <title>Podsumowanie</title>
+            <list id="fs-id1170960151568" list-type="bulleted" bullet-style="bullet"><item>Przepływ laminarny charakteryzuje się brakiem mieszania poruszających się warstw płynu.</item>
+              <item>Turbulencja cechuje się wirami i zwrotami prędkości, które mieszają warstwy płynu.</item>
+              <item>Lepkość płynu <m:math>
+                <m:mi>η</m:mi>
+                </m:math> jest spowodowana tarciem wewnętrznym w płynie.</item>
+                <item>Przepływ pozostaje proporcjonalny do różnicy ciśnień i odwrotnie proporcjonalny do oporu:<newline/>
+                  <equation id="fs-id1170960071681" class="unnumbered"><label/>
+                    <m:math>
+                      <m:mrow>
+                        <m:mi>Q</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>p</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msub>
+                            <m:mo>−</m:mo>
+                           
+                            <m:msub>
+                              <m:mi>p</m:mi>
+                              <m:mn>1</m:mn>
+                            </m:msub>
+                          </m:mrow>
+                          <m:mi>R</m:mi>
+                        </m:mfrac>
+                        <m:mo>.</m:mo>
+                      </m:mrow>
+                    </m:math>
+                  </equation></item>
+                <item>Spadek ciśnienia powodują zarówno przepływ, jak i opory, określa go równanie: <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>p</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>–</m:mo>
+                    <m:msub>
+                      <m:mi>p</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mi>R</m:mi>
+                    <m:mi>Q</m:mi>
+                  </m:mrow>
+                  </m:math>.</item>
+                  <item>Liczba Reynoldsa <m:math>
+                    <m:mi>R</m:mi>
+                    <m:mi>e</m:mi>
+                  </m:math> pomaga stwierdzić, czy przepływ jest laminarny, czy turbulentny. Wynosi ona: <m:math>
+                  <m:mi>R</m:mi>
+                  <m:mi>e</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mi>ρ</m:mi>
+                      <m:mi>v</m:mi>
+                      <m:mi>r</m:mi>
+                    </m:mrow>
+                    <m:mi>η</m:mi>
+                  </m:mfrac>
+                  </m:math>.</item>
+                  <item>Dla <m:math>
+                    <m:mi>R</m:mi>
+                    <m:mi>e</m:mi>
+                  </m:math> poniżej około 2000 przepływ jest laminarny. Dla <m:math>
+                  <m:mi>R</m:mi>
+                  <m:mi>e</m:mi>
+                </m:math> powyżej około 3000 przepływ jest turbulentny. Dla wartości <m:math>
+                <m:mi>R</m:mi>
+                <m:mi>e</m:mi>
+                </m:math> pomiędzy 2000 a 3000 może być albo jednego typu, albo drugiego, albo wykazywać cechy obu.</item>
+              </list></section>
+            <section id="fs-id1170957599964" class="key-equations">
+              <title>Najważniejsze wzory</title>
+              <table id="fs-id1170901514019" class="unnumbered unstyled" summary="Ta tabela zawiera następujące wzory: Gęstość próbki na stałej wysokości, rho równa jest m przez V; Ciśnienie, p równa się F przez A; Ciśnienie na wysokości h w płynie o stałej gęstości, p równa się p0 plus rho g h; Zmiana ciśnienia z wysokością w płynie o stałej gęstości, dp przez dy równa się minus rho g; Ciśnienie absolutne, p indeks abs równa się p indeks g plus p indeks atm; Zasada Pascala, F1 przez A1 równa się F2 przez A2; Strumień objętościowy, Q równa się dV przez dt; Równanie ciągłości (przy stałej gęstości), A1 v1 równa się A2 v2; Rórnanie ciągłości, postać ogólna, rho 1 A1 v1 równa się rho 2 A 2 v2; Równanie Bernoulli’ego, p plus jedna druga rho v do kwadratu plus rho gy równa się const; Lepkość, eta równa się FL przez vA; Prawo oporu Poiseuille’a, R równa się 8 eta L przez pi r do potęgi czwartej; Prawo Poiseuille’a, Q równa się: w liczniku, otworzyć nawias p2 minus p1 zamknąć nawias pi r do potęgi czwartej przez, w mianowniku, 8 eta l.">
+                <label/>
+                <tgroup cols="2">
+                  <colspec colnum="1" colname="c1"/>
+                  <colspec colnum="2" colname="c2"/>
+                  <tbody>
+                    <row>
+                      <entry align="left">Gęstość próbki przy stałej gęstości</entry>
+                      <entry align="left">
+                        <m:math>
+                          <m:mrow>
+                            <m:mi>ρ</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mfrac>
+                              <m:mi>m</m:mi>
+                              <m:mi>V</m:mi>
+                            </m:mfrac>
+                          </m:mrow>
+                        </m:math>
+                      </entry>
+                    </row>
+                    <row>
+                      <entry align="left">Ciśnienie</entry>
+                      <entry align="left">
+                        <m:math>
+                          <m:mrow>
+                            <m:mi>p</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mfrac>
+                              <m:mi>F</m:mi>
+                              <m:mi>A</m:mi>
+                            </m:mfrac>
+                          </m:mrow>
+                        </m:math>
+                      </entry>
+                    </row>
+                    <row>
+                      <entry align="left">Ciśnienie na głębokości <m:math>
+                          <m:mi>h</m:mi>
+                        </m:math>
+                         w płynie o stałej gęstości</entry>
+                        <entry align="left">
+                          <m:math>
+                            <m:mrow>
+                              <m:mi>p</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:msub>
+                                <m:mi>p</m:mi>
+                                <m:mn>0</m:mn>
+                              </m:msub>
+                              <m:mo>+</m:mo>
+                              <m:mi>ρ</m:mi>
+                              <m:mi>g</m:mi>
+                              <m:mi>h</m:mi>
+                            </m:mrow>
+                          </m:math>
+                        </entry>
+                      </row>
+                      <row>
+                        <entry align="left">Zmiana ciśnienia z wysokością w płynie o <newline/>stałej gęstości</entry>
+                        <entry align="left">
+                          <m:math>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mi mathvariant="normal">d</m:mi>
+                                </m:mrow>
+                                <m:mi>p</m:mi>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mi mathvariant="normal">d</m:mi>
+                                </m:mrow>
+                                <m:mi>y</m:mi>
+                              </m:mrow>
+                            </m:mfrac>
+                            <m:mo>=</m:mo>
+                            <m:mo>−</m:mo>
+                            <m:mi>ρ</m:mi>
+                            <m:mi>g</m:mi>
+                          </m:math>
+                        </entry>
+                      </row>
+                      <row>
+                        <entry align="left">Ciśnienie absolutne</entry>
+                        <entry align="left">
+                          <m:math>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>p</m:mi>
+                                <m:mrow>
+                                  <m:mtext>abs</m:mtext>
+                                </m:mrow>
+                              </m:msub>
+                              <m:mo>=</m:mo>
+                              <m:msub>
+                                <m:mi>p</m:mi>
+                                <m:mtext>g</m:mtext>
+                              </m:msub>
+                              <m:mo>+</m:mo>
+                              <m:msub>
+                                <m:mi>p</m:mi>
+                                <m:mrow>
+                                  <m:mtext>atm</m:mtext>
+                                </m:mrow>
+                              </m:msub>
+                            </m:mrow>
+                          </m:math>
+                        </entry>
+                      </row>
+                      <row>
+                        <entry align="left">Zasada Pascala</entry>
+                        <entry align="left">
+                          <m:math>
+                            <m:mrow>
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:msub>
+                                    <m:mi>F</m:mi>
+                                    <m:mn>1</m:mn>
+                                  </m:msub>
+                                </m:mrow>
+                                <m:mrow>
+                                  <m:msub>
+                                    <m:mi>A</m:mi>
+                                    <m:mn>1</m:mn>
+                                  </m:msub>
+                                </m:mrow>
+                              </m:mfrac>
+                              <m:mo>=</m:mo>
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:msub>
+                                    <m:mi>F</m:mi>
+                                    <m:mn>2</m:mn>
+                                  </m:msub>
+                                </m:mrow>
+                                <m:mrow>
+                                  <m:msub>
+                                    <m:mi>A</m:mi>
+                                    <m:mn>2</m:mn>
+                                  </m:msub>
+                                </m:mrow>
+                              </m:mfrac>
+                            </m:mrow>
+                          </m:math>
+                        </entry>
+                      </row>
+                      <row>
+                        <entry align="left">Strumień objętościowy</entry>
+                        <entry align="left">
+                          <m:math>
+                            <m:mi>Q</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mi mathvariant="normal">d</m:mi>
+                                </m:mrow>
+                                <m:mi>V</m:mi>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mi mathvariant="normal">d</m:mi>
+                                </m:mrow>
+                                <m:mi>t</m:mi>
+                              </m:mrow>
+                            </m:mfrac>
+                          </m:math>
+                        </entry>
+                      </row>
+                      <row>
+                        <entry align="left">Równanie ciągłości (przy stałej gęstości)</entry>
+                        <entry align="left">
+                          <m:math>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>A</m:mi>
+                                <m:mn>1</m:mn>
+                              </m:msub>
+                              <m:msub>
+                                <m:mi>v</m:mi>
+                                <m:mn>1</m:mn>
+                              </m:msub>
+                              <m:mo>=</m:mo>
+                              <m:msub>
+                                <m:mi>A</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msub>
+                              <m:msub>
+                                <m:mi>v</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msub>
+                            </m:mrow>
+                          </m:math>
+                        </entry>
+                      </row>
+                      <row>
+                        <entry align="left">Równanie ciągłości (postać ogólna)</entry>
+                        <entry align="left">
+                          <m:math>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>ρ</m:mi>
+                                <m:mn>1</m:mn>
+                              </m:msub>
+                              <m:msub>
+                                <m:mi>A</m:mi>
+                                <m:mn>1</m:mn>
+                              </m:msub>
+                              <m:msub>
+                                <m:mi>v</m:mi>
+                                <m:mn>1</m:mn>
+                              </m:msub>
+                              <m:mo>=</m:mo>
+                              <m:msub>
+                                <m:mi>ρ</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msub>
+                              <m:msub>
+                                <m:mi>A</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msub>
+                              <m:msub>
+                                <m:mi>v</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msub>
+                            </m:mrow>
+                          </m:math>
+                        </entry>
+                      </row>
+                      <row>
+                        <entry align="left">Równanie Bernoulliego</entry>
+                        <entry align="left">
+                          <m:math>
+                            <m:mrow>
+                              <m:mi>p</m:mi>
+                              <m:mo>+</m:mo>
+                              <m:mfrac>
+                                <m:mn>1</m:mn>
+                                <m:mn>2</m:mn>
+                              </m:mfrac>
+                              <m:mi>ρ</m:mi>
+                              <m:msup>
+                                <m:mi>v</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                              <m:mo>+</m:mo>
+                              <m:mi>ρ</m:mi>
+                              <m:mi>g</m:mi>
+                              <m:mi>y</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mtext>constant</m:mtext>
+                            </m:mrow>
+                          </m:math>
+                        </entry>
+                      </row>
+                      <row>
+                        <entry align="left">Lepkość</entry>
+                        <entry align="left">
+                          <m:math>
+                            <m:mrow>
+                              <m:mi>η</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:mi>F</m:mi>
+                                  <m:mi>L</m:mi>
+                                </m:mrow>
+                                <m:mrow>
+                                  <m:mi>v</m:mi>
+                                  <m:mi>A</m:mi>
+                                </m:mrow>
+                              </m:mfrac>
+                            </m:mrow>
+                          </m:math>
+                        </entry>
+                      </row>
+                      <row>
+                        <entry align="left">Prawo oporu Poiseuille’a</entry>
+                        <entry align="left">
+                          <m:math>
+                            <m:mrow>
+                              <m:mi>R</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:mn>8</m:mn>
+                                  <m:mi>η</m:mi>
+                                  <m:mi>l</m:mi>
+                                </m:mrow>
+                                <m:mrow>
+                                  <m:mi>π</m:mi>
+                                  <m:msup>
+                                    <m:mi>r</m:mi>
+                                    <m:mn>4</m:mn>
+                                  </m:msup>
+                                </m:mrow>
+                              </m:mfrac>
+                            </m:mrow>
+                          </m:math>
+                        </entry>
+                      </row>
+                      <row>
+                        <entry align="left">Prawo Poiseuille’a</entry>
+                        <entry align="left">
+                          <m:math>
+                            <m:mrow>
+                              <m:mi>Q</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:mo stretchy="false">(</m:mo>
+                                  <m:msub>
+                                    <m:mi>p</m:mi>
+                                    <m:mn>2</m:mn>
+                                  </m:msub>
+                                  <m:mo>−</m:mo>
+                                  <m:msub>
+                                    <m:mi>p</m:mi>
+                                    <m:mn>1</m:mn>
+                                  </m:msub>
+                                  <m:mo stretchy="false">)</m:mo>
+                                  <m:mi>π</m:mi>
+                                  <m:msup>
+                                    <m:mi>r</m:mi>
+                                    <m:mn>4</m:mn>
+                                  </m:msup>
+                                </m:mrow>
+                                <m:mrow>
+                                  <m:mn>8</m:mn>
+                                  <m:mi>η</m:mi>
+                                  <m:mi>l</m:mi>
+                                </m:mrow>
+                              </m:mfrac>
+                            </m:mrow>
+                          </m:math>
+                        </entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </table>
+              </section>
+              <section id="fs-id1170957570933" class="review-conceptual-questions">
+                <title>Pytania</title>
+                <exercise id="fs-id1170959709434">
+                  <problem id="fs-id1170957579618">
+                    <para id="fs-id1170957579620">Wyjaśnij, dlaczego lepkość w cieczy maleje z temperaturą. Innymi słowy, wyjaśnij w jaki sposób wzrost temperatury może zmniejszyć skutki siły spójności w płynie. Wyjaśnij również, dlaczego lepkość gazu zwiększa się wraz z temperaturą, czyli w jaki sposób wzrost temperatury wpływa na zwiększenie liczby zderzeń między atomami i cząsteczkami.</para></problem>
+                </exercise>
+                <exercise id="fs-id1170957503452">
+                  <problem id="fs-id1170957503454">
+                    <para id="fs-id1170957599930">Kiedy wiosłujemy w górę rzeki, najkorzystniej jest tak sterować łódką czy kajakiem, aby płynąć możliwie najbliżej brzegu. Z kolei podczas spływu z prądem najkorzystniej jest być blisko środka rzeki. Wyjaśnij dlaczego.</para></problem>
+                  <solution id="fs-id1170957574903">
+                    <para id="fs-id1170957574905">Woda w środku strumienia porusza się szybciej niż woda w pobliżu brzegów ze względu na siły oporu występujące pomiędzy wodą a brzegiem oraz pomiędzy warstwami płynu. W pobliżu brzegu jest zwykle również więcej turbulencji, które spowalniają wodę. Podczas gdy wiosłujemy pod prąd, woda pcha nas w przeciwnym kierunku, więc najkorzystniej jest być blisko brzegu, aby zminimalizować tę siłę. Podczas poruszania się z prądem, woda pcha łódkę, zwiększając jej prędkość, więc korzystniej jest być w środku strumienia, aby zmaksymalizować ten efekt.</para></solution>
+                </exercise>
+                <exercise xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170960047636"><problem id="fs-id1170959693566">
+                    <para id="fs-id1170959693568">Urządzenia hydrauliczne w mieszkaniach zwykle zawierają wypełnione wodą rury w pobliżu kranów (patrz: rysunek poniżej). Wyjaśnij, do czego są one potrzebne i jak działają.</para> <figure id="fs-id11709598ooiii" class="unnumbered"><media id="fs-id11709598iiiii" alt="Ilustracja A prezentuje schematycznie przepływ laminarny, w którym warstwy poruszają się bez mieszania. Prędkości płynu są różne dla różnych warstw. Ilustracja B prezentuje schematycznie przepływ turbulentny, spowodowany przeszkodą. Przepływ turbulentny miesza płyn, dając w efekcie niejednorodną prędkość.">
+                      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_07_Sink_img.jpg"/>
+                    </media></figure>
+                  </problem>
+              </exercise><exercise id="fs-id1170960071345">
+                <problem id="fs-id1170960071347">
+                  <para id="fs-id1170960071349">Ultrasonografia dopplerowska może być używana do pomiaru prędkości krwi w ciele. Jeżeli w tętnicy znajduje się częściowe zwężenie, to gdzie należy oczekiwać największej prędkości krwi: w miejscu zwężenia czy za nim? Jakie są powody większego oporu w miejscu zwężenia?</para></problem>
+                <solution id="fs-id1170959972868">
+                  <para id="fs-id1170959972870">Prędkość będzie większa w miejscu zwężenia, a mniejsza za zwężeniem. Opór zwiększa się z powodu zmniejszenia wielkości otworu oraz turbulencji, która zostanie stworzona przez zwężenie. Oba efekty sprawiają, że prędkość płynu spada.</para></solution>
+              </exercise>
+              <exercise id="fs-id1170959972872"><problem id="fs-id1170960179941">
+                  <para id="fs-id1170960179943">Odpływy zlewów często mają zamontowane części, takie jak zaprezentowane na rysunku poniżej, w celu zwiększenia szybkości przepływu wody. Jak one działają?</para>
+                  <media id="fs-id1170959782856" alt="Ilustracja jest schematycznym rysunkiem urządzenia, które układa wodę w strumienie. Urządzenie ma kształt koła przedzielonego czterema segmentami.">
+                    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_07_SinkDrains_img.jpg"/>
+                  </media>
+                </problem>
+              </exercise></section>
+            <section id="fs-id1170959706338" class="review-problems">
+              <title>Zadania</title>
+              <exercise id="fs-id1170959814351">
+                <problem id="fs-id1170959814353">
+                  <para id="fs-id1170957613137">(a) Oblicz siłę opóźniającą spowodowaną lepkością warstwy powietrza pomiędzy wózkiem a poziomym torem powietrznym, mając do dyspozycji następujące informacje: temperatura powietrza <m:math>
+                    <m:mrow>
+                      <m:mn>20</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mtext>°C</m:mtext>
+                    </m:mrow>
+                  </m:math>, prędkość wózka 0,400 m/s, jego pole powierzchni <m:math>
+                  <m:mn>2,5</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mn>2</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:math> i grubość warstwy powietrza <m:math>
+                <m:mn>6,00</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>5</m:mn>
+                  </m:mrow>
+                </m:msup>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+                </m:math>. (b) Jaki jest iloraz tej siły do ciężaru wózka, którego masa wynosi 0,300 kg?</para></problem>
+              <solution id="fs-id1170959868708">
+                <para id="fs-id1170960143892">a. <m:math>
+                  <m:mn>3,02</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mn>3</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">N</m:mi>
+                  </m:mrow>
+                </m:math>; b. <m:math>
+                <m:mn>1,03</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>3</m:mn>
+                  </m:mrow>
+                </m:msup>
+                <m:mspace width="0.2em"/>
+              </m:math>
+            </para>
+          </solution>
+        </exercise>
+        <exercise id="fs-id1170957613003">
+          <problem id="fs-id1170957565280">
+            <para id="fs-id1170957565282">Tętniczki (małe tętnice) prowadzące do organu mogą się kurczyć w celu zmniejszenia dopływu krwi. Aby wyłączyć organ, dopływ krwi do niego musi zmniejszyć się do 1,00% pierwotnej wartości. O ile muszą się skurczyć tętniczki?</para></problem>
+        </exercise>
+        <exercise id="fs-id1170959961278">
+          <problem id="fs-id1170959961280">
+            <para id="fs-id1170959961282">Dla sferycznej cząsteczki spadającej z prędkością graniczną w płynie siła grawitacji jest równoważona przez tarcie i siłę wyporu. Siła wyporu równa się ciężarowi wypartego płynu. Zwykle zakłada się, że siła tarcia dana jest przez prawo Stokesa, <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>F</m:mi>
+                  <m:mtext>s</m:mtext>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>6</m:mn>
+                <m:mi>π</m:mi>
+                <m:mi>r</m:mi>
+                <m:mi>η</m:mi>
+                <m:mi>v</m:mi>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math> Pokaż, że prędkość graniczna zadana jest przez <m:math>
+            <m:mrow>
+              <m:mi>v</m:mi>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:msup>
+                    <m:mi>R</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mi>g</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mn>9</m:mn>
+                  <m:mi>η</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>ρ</m:mi>
+                    <m:mtext>s</m:mtext>
+                  </m:msub>
+                  <m:mo>−</m:mo>
+                  <m:msub>
+                    <m:mi>ρ</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>, gdzie <m:math>
+            <m:mi>R</m:mi>
+          </m:math>
+         jest promieniem sfery, <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>ρ</m:mi>
+            <m:mtext>s</m:mtext>
+          </m:msub>
+        </m:mrow>
+      </m:math> jej gęstością, <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>ρ</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+      </m:mrow>
+    </m:math> gęstością płynu, a <m:math>
+    <m:mi>η</m:mi>
+    </m:math> współczynnikiem lepkości.</para></problem>
+</exercise>
+<exercise id="fs-id1170957601837">
+  <problem id="fs-id1170957601839">
+    <para id="fs-id1170957601841">Wykorzystując równania z poprzedniego problemu, oblicz lepkość oleju silnikowego, w którym stalowa kulka o promieniu 0,8 mm spada z prędkością graniczną równą 4,32 cm/s. Gęstości kulki i oleju wynoszą odpowiednio 7,86 i 0,88 g/ml.</para></problem>
+</exercise>
+<exercise id="fs-id1170959806563">
+  <problem id="fs-id1170957602656">
+    <para id="fs-id1170957602658">Skoczek spadochronowy osiągnie prędkość graniczną, gdy opór powietrza zrówna się z jego wagą. Dla skoczka o dużej powierzchni, turbulencja jest ważnym czynnikiem przy dużych prędkościach. Tarcie w takim przypadku jest w przybliżeniu proporcjonalne do kwadratu prędkości. Przy założeniu, że wynosi ono <m:math>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mi>D</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mi>ρ</m:mi>
+      <m:mi>A</m:mi> 
+      <m:msup>
+        <m:mi>v</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:mn>2</m:mn>
+      </m:math> i zrównawszy tę siłę z ciężarem skoczka, oblicz prędkość graniczną dla skoczka spadającego z rozpostartymi rękami i nogami równolegle do ziemi.</para></problem>
+    <solution id="fs-id1170957601474">
+      <para id="fs-id1170957588652">40 m/s</para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1170957588658">
+    <problem id="fs-id1170957471940">
+      <para id="fs-id1170957471942">(a) Wykaż, że 5-procentowy spadek promienia powoduje 19-procentowy spadek strumienia przepływu laminarnego przez rurę, przy zachowaniu wartości pozostałych zmiennych. (b) Jaki wzrost strumienia spowoduje wzrost promienia o 5,00%, zakładając, że pozostałe zmienne się nie zmieniły?</para></problem>
+  </exercise>
+  <exercise id="fs-id1170960195065">
+    <problem id="fs-id1170957441732">
+      <para id="fs-id1170957441735">Gdy lekarze diagnozują zatory tętnicze, mówią o redukcji przepływu (strumienia). Jeżeli strumień w tętnicy został zredukowany przez skrzep do 10,0% swojej normalnej wartości, a średnia różnica ciśnień wzrosła o 20,0%, to o ile promień średnicy został zmniejszony przez skrzep?</para></problem>
+    <solution id="fs-id1170960072383">
+      <para id="fs-id1170957408851"><m:math>
+          <m:mrow>
+            <m:mn>0,537</m:mn>
+            <m:mi>r</m:mi>
+          </m:mrow>
+          </m:math>; promień został zmniejszony do 53,7% swojej normalnej wielkości</para></solution>
+      </exercise>
+      <exercise id="fs-id1170959978251">
+        <problem id="fs-id1170957505676">
+          <para id="fs-id1170957505678">Wytrysk ropy naftowej w szybie wiertniczym wyrzuca ją na wysokość 25,0 m przez rurę o średnicy 0,100 m. Pomijając opór powietrza, ale uwzględniając opór rury i zakładając przepływ laminarny, oblicz ciśnienie przy wejściu do 50-metrowej rury, przez którą wylatuje ropa. Załóż, że gęstość ropy naftowej wynosi <m:math>
+            <m:mrow>
+              <m:mn>900</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:msup>
+                <m:mrow>
+                  <m:mtext>kg/m</m:mtext>
+                </m:mrow>
+                <m:mn>3</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>, a jej lepkość <m:math>
+          <m:mn>1,00</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">N</m:mi>
+            <m:mo>⋅</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:msup>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:math> (lub <m:math>
+        <m:mrow>
+          <m:mn>1,00</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>Pa</m:mtext>
+          <m:mo>⋅</m:mo>
+          <m:mtext>s</m:mtext>
+        </m:mrow>
+        </m:math>). Zauważ, że musisz wziąć pod uwagę ciśnienie 50-metrowej kolumny ropy w rurze.</para></problem>
+    </exercise>
+    <exercise id="fs-id1170959807462">
+      <problem id="fs-id1170959807464">
+        <para id="fs-id1170959807467">Beton jest pompuje się z betoniarki do miejsca, w którym zostanie wylany. Strumień ma wartość 200 l/min i płynie przez przewód o długości 50,0 m i średnicy 8,00 cm, a ciśnienie przy pompie wynosi <m:math>
+          <m:mn>8,00</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mrow>
+              <m:mn>6</m:mn>
+            </m:mrow>
+          </m:msup>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">N</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:msup>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          </m:math>. (a) Oblicz opór w przewodzie. (b) Jaka jest lepkość betonu, przy założeniu, że przepływ jest laminarny? (c) Jaka moc została dostarczona, jeśli miejsce, do którego pompuje się beton, znajduje się na tym samym poziomie co pompa? Możesz pominąć moc potrzebną do zwiększenia prędkości betonu.</para></problem>
+        <solution id="fs-id1170960042194">
+          <para id="fs-id1170960042196">a. <m:math>
+            <m:mn>2,40</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow>
+                <m:mn>9</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+              <m:mo>⋅</m:mo>
+              <m:mi mathvariant="normal">s</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:msup>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mn>5</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>; b. <m:math>
+          <m:mn>48,3</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">N</m:mi>
+            <m:mo>⋅</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:msup>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:math>; c. <m:math>
+        <m:mn>2,67</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mn>4</m:mn>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">W</m:mi>
+        </m:mrow>
+      </m:math>
+    </para>
+  </solution>
+</exercise>
+<exercise id="fs-id1170960161804">
+  <problem id="fs-id1170960161806">
+    <para id="fs-id1170960161808">Wykaż, że przepływ ropy w trakcie wytrysku z szybu jest laminarny dla wypływu na wysokość 25 m przez rurę o średnicy 0,100 m. Pionowo ustawiona rura ma długość 50 m. Załóż, że gęstość ropy to <m:math>
+      <m:mrow>
+        <m:mn>900</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:msup>
+          <m:mrow>
+            <m:mtext>kg/m</m:mtext>
+          </m:mrow>
+          <m:mn>3</m:mn>
+        </m:msup>
+      </m:mrow>
+    </m:math>, a jej lepkość <m:math>
+    <m:mn>1,00</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">N</m:mi>
+      <m:mo>⋅</m:mo>
+      <m:mi mathvariant="normal">s</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:msup>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+  </m:math> (czyli <m:math>
+  <m:mrow>
+    <m:mn>1,00</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>Pa</m:mtext>
+    <m:mo>⋅</m:mo>
+    <m:mtext>s</m:mtext>
+  </m:mrow>
+  </m:math>).</para></problem>
+</exercise>
+<exercise id="fs-id1170957554980">
+  <problem id="fs-id1170960159678">
+    <para id="fs-id1170960159680">Oblicz liczbę Reynoldsa dla przepływu wody przez; (a) dyszę o promieniu 0,250 cm oraz (b) wąż ogrodowego o promieniu 0,900 cm z dołączoną dyszą. Strumień przez wąż i dyszę wynosi 0,500 l/s. Czy przepływ w tych elementach może być laminarny?</para></problem>
+  <solution id="fs-id1170959671891">
+    <para id="fs-id1170960159682">a. dysza: <m:math>
+      <m:mi>v</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>25,5</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+    </m:math>
+    <newline/>
+    <m:math>
+      <m:mi>R</m:mi>
+      <m:mi>e</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>1,27</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>5</m:mn>
+      </m:msup>
+      <m:mo>&gt;</m:mo>
+      <m:mn>2000</m:mn>
+      <m:mo stretchy="false">⇒</m:mo>
+    </m:math>
+    <newline/>przepływ nie jest laminarny<newline/>b. wąż: <m:math>
+    <m:mi>v</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>1,96</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+  </m:math>
+  <newline/>
+  <m:math>
+    <m:mi>R</m:mi>
+    <m:mi>e</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>35</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mn>100</m:mn>
+    <m:mo>&gt;</m:mo>
+    <m:mn>2000</m:mn>
+    <m:mo stretchy="false">⇒</m:mo>
+  </m:math>
+  <newline/>przepływ nie jest laminarny</para></solution>
+</exercise>
+<exercise id="fs-id1170957590612">
+  <problem id="fs-id1170957590614">
+    <para id="fs-id1170957590616">Wąż strażacki ma wewnętrzną średnicę 6,40 cm. Załóż, że przepływ w nim wynosi 40,0 l/s przy początkowym ciśnieniu manometrycznym równym <m:math>
+      <m:mn>1,62</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>6</m:mn>
+      </m:msup>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:msup>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      </m:math>. Wąż wzniesiony jest do wysokości 10,0 m na drabinie i kończy się dyszą o średnicy 3,00 cm. Oblicz liczby Reynoldsa dla przepływu w wężu strażackim oraz w dyszy i pokaż, że w obu przypadkach musi on być turbulentny.</para></problem>
+  </exercise>
+  <exercise id="fs-id1170957530985">
+    <problem id="fs-id1170957530987">
+      <para id="fs-id1170957530989">Przy jakim strumieniu może pojawić się turbulencja w rurze z wodą o średnicy 0,200 m? Załóż temperaturę wody równą <m:math>
+        <m:mrow>
+          <m:mn>20</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>°C</m:mtext>
+        </m:mrow>
+        </m:math>.</para>
+      </problem>
+      <solution id="fs-id1170957594680">
+        <para id="fs-id1170957594683">
+          <m:math>
+            <m:mn>3,16</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>4</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:msup>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mn>3</m:mn>
+              </m:msup>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:math>
+        </para>
+      </solution>
+    </exercise>
+  </section>
+  <section id="fs-id1170960026175" class="review-additional-problems">
+    <title>Zadania dodatkowe</title>
+    <exercise id="fs-id1170960026182">
+      <problem id="fs-id1170960026184">
+        <para id="fs-id1170957628345">Przed powstaniem cyfrowych urządzeń zapisujących dane, takich jak pamięć w telefonie komórkowym, muzykę nagrywano na dyskach winylowych z wyciętymi rowkami o zmiennej głębokości. Gramofon używał igły, która poruszała się wzdłuż rowków, mierząc ich głębokość. Ciśnienie wywierane przez gramofon na igłę jest zaskakująco duże. Jeżeli odpowiednik masy 1,00 g jest utrzymywany przez igłę, której czubek ma promień 0,200 mm, to jakie ciśnienie w paskalach jest wywierane na płytę?</para></problem>
+    </exercise>
+    <exercise id="fs-id1170957529939">
+      <problem id="fs-id1170957529941">
+        <para id="fs-id1170957529944">Wieże ciśnień gromadzą wodę ponad poziomem, na którym znajdują się użytkownicy, dla potrzeb zwiększonego zużycia, eliminując potrzebę stosowania pomp o dużej wydajności. Jak wysoko ponad poziomem, na którym są użytkownicy, musi znajdować się woda, aby wytworzyć ciśnienie manometryczne równe <m:math>
+          <m:mn>3,00</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mrow>
+              <m:mn>5</m:mn>
+            </m:mrow>
+          </m:msup>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">N</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:msup>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          </m:math>?</para></problem>
+        <solution id="fs-id1170957554936">
+          <para id="fs-id1170957554938">30,6 m</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1170957554944">
+        <problem id="fs-id1170957554946">
+          <para id="fs-id1170960071725">Ciecz wodnista w ludzkim oku działa siłą 0,300 N na rogówkę o powierzchni <m:math>
+            <m:mn>1,10</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">c</m:mi>
+              <m:msup>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            </m:math>. Jakiemu ciśnieniu w mmHg odpowiadają te wartości?</para></problem>
+        </exercise>
+        <exercise id="fs-id1170959869293">
+          <problem id="fs-id1170959869295">
+            <para id="fs-id1170959869297">(a) Przelicz odczyt normalnego ciśnienia krwi wynoszącego 120/80 mmHg na niutony na metr kwadratowy, nie używając przelicznika, tylko wykorzystując relację pomiędzy ciśnieniem a ciężarem płynu <m:math>
+              <m:mrow>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mi>p</m:mi>
+                <m:mo>=</m:mo>
+                <m:mi>h</m:mi>
+                <m:mi>ρ</m:mi>
+                <m:mi>g</m:mi>
+                <m:mo stretchy="false">)</m:mo>
+              </m:mrow>
+              </m:math>. (b) Wyjaśnij, dlaczego ciśnienie krwi noworodka powinno być mniejsze niż u osoby dorosłej. Zwróć uwagę na wysokość, na jaką krew musi być pompowana.</para></problem>
+            <solution id="fs-id1170957485561">
+              <para id="fs-id1170957485563">a. <m:math>
+                <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+                  <m:mtr>
+                    <m:mtd>
+                      <m:msub>
+                        <m:mi>p</m:mi>
+                        <m:mrow>
+                          <m:mn>120</m:mn>
+                        </m:mrow>
+                      </m:msub>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mi/>
+                      <m:mo>=</m:mo>
+                      <m:mn>1,60</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mn>4</m:mn>
+                      </m:msup>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">N</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:msup>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                  <m:mtr>
+                    <m:mtd>
+                      <m:msub>
+                        <m:mi>p</m:mi>
+                        <m:mrow>
+                          <m:mn>80</m:mn>
+                        </m:mrow>
+                      </m:msub>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mi/>
+                      <m:mo>=</m:mo>
+                      <m:mn>1,07</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mn>4</m:mn>
+                      </m:msup>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">N</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:msup>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                </m:mtable>
+                </m:math><newline/>b. Ponieważ noworodek mierzy zwykle około 50 cm, podczas gdy osoba dorosła około 175 cm, ciśnienie krwi u noworodka powinno być mniejsze niż u osoby dorosłej. W przypadku noworodka mamy do czynienia ze słupem cieczy o maksymalnej wysokości 50 cm, więc ciśnienie powinno być mniejsze.</para></solution>
+            </exercise>
+            <exercise id="fs-id1170957568640">
+              <problem id="fs-id1170957568642">
+                <para id="fs-id1170957568644">Szybkowary znane są od ponad 300 lat, choć ich użycie znacznie się zmniejszyło w ostatnich latach (wczesne modele miały tę paskudną cechę, że zdarzało im się wybuchać). Jaką siłą muszą działać zatrzaski utrzymujące pokrywę szybkowaru, jeżeli średnica pokrywy wynosi <m:math>
+                  <m:mrow>
+                    <m:mn>25,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>cm</m:mtext>
+                  </m:mrow>
+                  </m:math>, a ciśnienie manometryczne wewnątrz niego ma wartość 300 atm? Pomiń wagę pokrywy.</para></problem>
+              </exercise>
+              <exercise id="fs-id1170959874302">
+                <problem id="fs-id1170959874304">
+                  <para id="fs-id1170957570978">Kości ptaków mają puste przestrzenie, co zmniejsza ciężar i jednocześnie powoduje, że mają znacznie mniejszą gęstość niż kości innych zwierząt. Załóż, że ornitolog waży ptasią kość w powietrzu i w wodzie i stwierdza, że jej masa wynosi 45,0 g, a masa pozorna, po zanurzeniu, 3,60 g (załóż, że kości są hermetyczne). (a) Jaką masę wody wyparła kość? (b) Jaka jest objętość kości? (c) Jaka jest jej średnia gęstość?</para></problem>
+                <solution id="fs-id1170959924880">
+                  <para id="fs-id1170959924882">a. 41,4 g; b. 41,4 cm<sup>3</sup>; c. 1,09 g/cm<sup>3</sup>. Oczywiście nie jest to gęstość kości w każdym jej miejscu. Puste przestrzenie mają gęstość w przybliżeniu <m:math>
+                    <m:mn>1,29</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">g</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">c</m:mi>
+                      <m:msup>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    </m:math>, a lita kość będzie znacznie gęstsza.</para></solution>
+                </exercise>
+                <exercise id="fs-id1170960195222">
+                  <problem id="fs-id1170960195224">
+                    <para id="fs-id1170960195227">W pomiarze przez zanurzenie gęstości ciała kobiety stwierdzono, że jej masa wynosi 62,0 kg w powietrzu, a pozorna masa w wodzie 0,0850 kg po całkowitym zanurzeniu, poprzedzonym całkowitym wydechem. (a) Jaką masę wody wyparło ciało kobiety? (b) Jaka jest jej objętość? (c) Oblicz jej gęstość. (d) Jeżeli pojemność jej płuc wynosi 1,75 l, czy byłaby w stanie unosić się na wodzie bez poruszania kończynami, gdyby jej płuca były wypełnione powietrzem?</para></problem>
+                </exercise>
+                <exercise id="fs-id1170957599332">
+                  <problem id="fs-id1170959874323">
+                    <para id="fs-id1170959874325">Niektóre ryby mają gęstość trochę mniejszą niż gęstość wody i muszą działać siłą (pływać), żeby pozostać pod wodą. Jaką siłą musi działać garnik wielki o masie 85,0 kg, aby pozostać pod wodą (morską), jeżeli gęstość jego ciała wynosi <m:math>
+                      <m:mrow>
+                        <m:mn>1015</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mtext>kg/m</m:mtext>
+                          </m:mrow>
+                          <m:mn>3</m:mn>
+                        </m:msup>
+                        <m:mo>?</m:mo>
+                      </m:mrow>
+                    </m:math>
+                  </para>
+                </problem>
+                <solution id="fs-id1170960013511">
+                  <para id="fs-id1170960013513">8,21 N</para>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1170957609864">
+                <problem id="fs-id1170957609866">
+                  <para id="fs-id1170957609868">Ludzki układ krążenia ma w przybliżeniu <m:math>
+                    <m:mn>1</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mn>9</m:mn>
+                    </m:msup>
+                  </m:math> naczyń włosowatych. Każde z nich ma średnicę około <m:math>
+                  <m:mn>8</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi>μ</m:mi>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  </m:math>. Przy założeniu, że rzut serca wynosi 5 l/min, oblicz średnią prędkość przepływu krwi przez każde z tych naczyń.</para></problem>
+              </exercise>
+              <exercise id="fs-id1170959842107">
+                <problem id="fs-id1170959842109">
+                  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170959842112">Strumień krwi przez naczynie włosowate o promieniu <m:math>
+                    <m:mn>2,00</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+<m:mo>–</m:mo>
+                        <m:mn>6</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                  </m:math> wynosi <m:math>
+                  <m:mn>3,80</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mn>9</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:msup>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:math>. (a) Jaka jest prędkość przepływu krwi? (b) Przy założeniu, że cała krew znajdująca się w ciele przepływa przez naczynia włosowate, ile z nich potrzeba, aby przepuścić strumień o wartości <m:math>
+                <m:mrow>
+                  <m:mn>90,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mtext>cm</m:mtext>
+                    </m:mrow>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mtext>/s</m:mtext>
+                </m:mrow>
+                </m:math>?</para></problem>
+              <solution id="fs-id1170957578552">
+                <para id="fs-id1170957578554">a. <m:math>
+                  <m:mn>3,02</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mn>2</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:math>. (Tak mała prędkość daje czas na dyfuzję materii pomiędzy krwią a komórkami.) b. <m:math>
+                <m:mn>2,37</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow>
+                    <m:mn>10</m:mn>
+                  </m:mrow>
+                </m:msup>
+                </m:math> naczyń włosowatych. (Ta wielka liczba jest przeszacowana, ale ma w przybliżeniu prawidłowy rząd wielkości.)</para></solution>
+            </exercise>
+            <exercise id="fs-id1170957470462">
+              <problem id="fs-id1170957470464">
+                <para id="fs-id1170957470466">Lewa komora serca osoby dorosłej w spoczynku pompuje krew o strumieniu <m:math>
+                  <m:mrow>
+                    <m:mn>83,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mtext>cm</m:mtext>
+                      </m:mrow>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mtext>/s</m:mtext>
+                  </m:mrow>
+                  </m:math>, zwiększając jej ciśnienie o 110 mmHg, prędkość od 0,0 cm/s do 30,0 cm/s, a wysokość o 5,00 cm. (Wszystkie wartości są uśrednione po pełnej ewolucji serca.) Oblicz całkowitą moc lewej komory. Zwróć uwagę, że większość tej mocy jest używana do podniesienia ciśnienia krwi.</para></problem>
+              </exercise>
+              <exercise id="fs-id1170957531081">
+                <problem id="fs-id1170957604295">
+                  <para id="fs-id1170957604297">Pompa używana do osuszania piwnic, które są poniżej poziomu wód gruntowych, osusza zalaną piwnicę strumieniem 0,750 l/s, z ciśnieniem wyjściowym <m:math>
+                    <m:mn>3,00</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">N</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:msup>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    </m:math>. (a) Woda wlewa się do węża o wewnętrznej średnicy 3,00 cm i wznosi do poziomu 2,50 m powyżej pompy. Jakie jest ciśnienie w tym punkcie? (b) Wąż przechodzi ponad fundamentem i opada o 0,500 m, a następnie rozszerza się do średnicy 4,00 cm. Jakie ciśnienie panuje w tym miejscu? Możesz pominąć straty związane z tarciem w obu częściach zadania.</para></problem>
+                  <solution id="fs-id1170957599532">
+                    <para id="fs-id1170957599535">a. <m:math>
+                      <m:mn>2,76</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mrow>
+                          <m:mn>5</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">N</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:msup>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:math>; b. <m:math>
+                    <m:msub>
+                      <m:mi>P</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mn>2,81</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">N</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:msup>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:math>
+                </para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1170957594743">
+              <problem id="fs-id1170957594745">
+                <para id="fs-id1170957594747">Roztwór glukozy podaje się dożylnie strumieniem <m:math>
+                  <m:mrow>
+                    <m:mn>4,00</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mtext>cm</m:mtext>
+                      </m:mrow>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mtext>/min</m:mtext>
+                  </m:mrow>
+                  </m:math>. Jaki będzie strumień, jeżeli glukozę zamienimy na krew, która ma tę samą gęstość co glukoza, ale jej lepkość jest 2,50 razy większa? Wszystkie pozostałe wartości pozostają takie same.</para></problem>
+              </exercise>
+              <exercise id="fs-id1170960057837">
+                <problem id="fs-id1170960057839">
+                  <para id="fs-id1170960057842">Mała tętnica ma długość <m:math>
+                    <m:mn>1,1</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                  </m:math> i promień <m:math>
+                  <m:mn>2,5</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mn>5</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                </m:math>. Jeżeli spadek ciśnienia w tej tętnicy wynosi 1,3 kPa, to jaki jest w niej strumień? (Załóż, że temperatura wynosi <m:math>
+                <m:mrow>
+                  <m:mn>37</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>°C</m:mtext>
+                </m:mrow>
+                </m:math>).</para></problem>
+              <solution id="fs-id1170960151186">
+                <para id="fs-id1170960151188">
+                  <m:math>
+                    <m:mn>8.7</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:msup>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:math>
+                </para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1170957554901">
+              <problem id="fs-id1170957554903">
+                <para id="fs-id1170957568845">Angioplastyka to technika, w której tętnice częściowo zablokowane przez płytkę miażdżycową rozszerza się, aby zwiększyć przepływ krwi. O ile trzeba powiększyć promień tętnicy, aby 10-krotnie zwiększyć przepływ krwi?</para></problem>
+            </exercise>
+            <exercise id="fs-id1170957569717">
+              <problem id="fs-id1170957569719">
+                <para id="fs-id1170957509456">Załóż, że płytka miażdżycowa zmniejsza promień naczynia krwionośnego do 90,0% początkowej wartości, a organizm kompensuje to zwężenie zwiększeniem różnicy ciśnień wzdłuż tego naczynia, aby utrzymać stały przepływ. (a) O ile musi wzrosnąć różnica ciśnień? (b) Gdyby przeszkoda dodatkowo powodowała turbulencje, to jaki wpływ miałyby one na strumień?</para></problem>
+              <solution id="fs-id1170957509467">
+                <para id="fs-id1170957590261">a. 1,52; b. Turbulencja zmniejszyłaby strumień krwi, i skompensowanie tego zjawiska wymagałoby jeszcze większej różnicy ciśnień, co doprowadziłoby do wyższego ciśnienia krwi w ciele.</para>
+              </solution>
+            </exercise>
+          </section>
+          <section id="fs-id1170957590269" class="review-challenge">
+            <title>Zadania trudniejsze</title>
+            <exercise id="fs-id1170960192139">
+              <problem id="fs-id1170960192141">
+                <para id="fs-id1170960192143">Ciśnienie na tamę pokazaną we wcześniejszym rozdziale zwiększa się wraz z głębokością. W związku z tym pojawia się moment siły działający na tamę. Oblicz wypadkowy moment siły działającej na tamę.</para></problem>
+            </exercise>
+            <exercise id="fs-id1170957601146">
+              <problem id="fs-id1170957601148">
+                <para id="fs-id1170957601150">Temperatura atmosfery nie jest zawsze stała i może rosnąć lub maleć z wysokością. W statycznej atmosferze, gdy mieszanie pionowe jest pomijalne, temperatura zmniejsza się z szybkością w przybliżeniu równą 6,5 K na km. Wielkość tej zmiany temperatury ze wzrostem wysokości znana jest jako gradient pionowy <m:math>
+                  <m:mi mathvariant="normal">Γ</m:mi>
+                </m:math> (Symbol ten to wielka grecka litera gamma.) Załóż, że ciśnienie na powierzchni Ziemi wynosi <m:math>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>1,013</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow>
+                    <m:mn>5</m:mn>
+                  </m:mrow>
+                </m:msup>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">P</m:mi>
+                  <m:mi mathvariant="normal">a</m:mi>
+                </m:mrow>
+              </m:math>, temperatura <m:math>
+              <m:mrow>
+                <m:mtext>T</m:mtext>
+                <m:mo>=</m:mo>
+                <m:mn>293</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>K</m:mtext>
+              </m:mrow>
+            </m:math>, a gradient pionowy <m:math>
+            <m:mo>−</m:mo>
+            <m:mi mathvariant="normal">Γ</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>6,5</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">K</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mi mathvariant="normal">k</m:mi>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            </m:math>. Oszacuj ciśnienie 3,0 km powyżej powierzchni Ziemi.</para></problem>
+          <solution id="fs-id1170957582636">
+            <para id="fs-id1170957582638">
+              <m:math>
+                <m:mi>p</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0,99</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>5</m:mn>
+                </m:msup>
+                <m:mrow>
+                  <m:mi mathvariant="normal">P</m:mi>
+                  <m:mi mathvariant="normal">a</m:mi>
+                </m:mrow>
+              </m:math>
+            </para>
+          </solution>
+        </exercise>
+        <exercise id="fs-id1170957530781">
+          <problem id="fs-id1170957530783">
+            <para id="fs-id1170957530785">Okręt podwodny osiadł na mieliźnie i jego górny właz znajduje się na głębokości 25,0 m poniżej powierzchni wody. Oblicz siłę potrzebną do otwarcia włazu od wewnątrz przy założeniu, że jest on kołowy i ma średnicę 0,450 m. Ciśnienie atmosferyczne wewnątrz okrętu wynosi 1,00 atm.</para></problem>
+        </exercise>
+        <exercise id="fs-id1170957529493">
+          <problem id="fs-id1170957529495">
+            <para id="fs-id1170957529498">Czasami pnie drzew pływają po jeziorze w pozycji pionowej, ponieważ jeden z końców nasiąknął wodą i stał się cięższy niż drugi. Jaka jest średnia gęstość pnia o jednorodnej średnicy, który pływa zanurzony jednym końcem, a 20% jego wysokości wystaje ponad wodę?</para></problem>
+          <solution id="fs-id1170957529504">
+            <para id="fs-id1170957529506">
+              <m:math>
+                <m:mrow>
+                  <m:mn>800</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mtext>kg/m</m:mtext>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>3</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                </m:mrow>
+              </m:math>
+            </para>
+          </solution>
+        </exercise>
+        <exercise id="fs-id1170957529523">
+          <problem id="fs-id1170957529525">
+            <para id="fs-id1170957529527">Powszechnie wiadomo, że oszuści sprzedają pokryte złotem sztabki wolframowe jako sztabki złote poniżej ceny złota, ale znacznie powyżej ceny wolframu. Z jaką dokładnością należy zmierzyć masę takiej sztaby w wodzie i w powietrzu, aby można było stwierdzić, czy jest to prawie czysty wolfram, czy czyste złoto?</para></problem>
+        </exercise>
+        <exercise id="fs-id1170957604246">
+          <problem id="fs-id1170957604248">
+            <para id="fs-id1170957604250">Objętość wnętrza domu odpowiada objętości prostopadłościanu o wymiarach 13,0 m szerokości na 20,0 m długości na 2,75 m wysokości. Dom ogrzewa grzejnik gazowy z nawiewem. Jego główny przewód wentylacyjny ma średnicę 0,300 m. Jaka jest średnia prędkość powietrza w przewodzie, jeżeli w ciągu 15 min całe powietrze w domu przechodzi przez grzejnik?</para></problem>
+          <solution id="fs-id1170957604260">
+            <para id="fs-id1170957604262">11,2 m/s</para>
+          </solution>
+        </exercise>
+        <exercise id="fs-id1170957604268">
+          <problem id="fs-id1170957604270">
+            <para id="fs-id1170957604272">Wąż ogrodowy o średnicy 2,0 cm został użyty do napełnienia wiadra, które ma objętość 0,10 <m:math>
+                
+               
+                  <m:msup>
+                    <m:mrow>
+                      <m:mtext>m</m:mtext>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>3</m:mn>
+                    </m:mrow>
+                  </m:msup>
+              </m:math>. Na napełnienie wiadra potrzeba 1,2 min. Do węża doczepiona jest regulowana dysza, dzięki której można zmniejszyć średnicę otworu, co zwiększy prędkość wody. Wąż jest równoległy do powierzchni Ziemi na wysokości 1,0 m, a średnica otworu dyszy jest zmniejszana tak długo, aż strumień wody doleci do grządki odległej o 3,0 m. (a) Jaki jest strumień objętościowy wody przez dyszę, gdy średnica wynosi 2,0 cm? (b) Jaka jest prędkość wody wylatującej z węża? (c) Jaka musi być prędkość wody, aby strumień mógł dolecieć do grządki odległej o 3,0 m? (d) Jaka musi być średnica otworu dyszy, aby woda mogła dolecieć do grządki?</para></problem>
+        </exercise>
+        <exercise id="fs-id1170957555075">
+          <problem id="fs-id1170957555077">
+            <para id="fs-id1170957555079">Często przytaczana zasada projektowania samolotów mówi, że skrzydła powinny generować około 1000 N siły nośnej na <m:math>
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mtext>m</m:mtext>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                </m:mrow>
+              </m:math> skrzydła. (Fakt, że skrzydła mają stronę wierzchnią i spodnią, nie podwaja tej powierzchni.) (a) Podczas startu samolot porusza się z prędkością 60,0 m/s, więc prędkość powietrza względem spodu skrzydła wynosi 60,0 m/s. Jak szybko musi się poruszać powietrze ponad górną częścią skrzydła, aby wywołać idealną
+siłę nośną, jeśli jego gęstość 
+na poziomie morza wynosi <m:math>
+              <m:mrow>
+                <m:mn>1,29</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:msup>
+                  <m:mrow>
+                    <m:mtext>kg/m</m:mtext>
+                  </m:mrow>
+                  <m:mn>3</m:mn>
+                </m:msup>
+              </m:mrow>
+              </m:math>? (b) Jak szybko musi się poruszać powietrze nad górną powierzchnią skrzydła podczas lotu z prędkością przelotową 245 m/s na wysokości, na której gęstość powietrza wynosi jedną czwartą gęstości na poziomie morza? (Zwróć uwagę, że nie jest to cała siła nośna samolotu – część z niej pochodzi z korpusu samolotu, część z odrzutu silników itd. Dodatkowo równanie Bernoulliego daje jedynie przybliżoną odpowiedź, gdyż powietrze, opływając skrzydła, wywołuje turbulencje.)</para></problem>
+            <solution id="fs-id1170957555105">
+              <para id="fs-id1170957555108">a. 71,8 m/s; b. 257 m/s</para>
+            </solution>
+          </exercise>
+          <exercise id="fs-id1170957555113">
+            <problem id="fs-id1170957555115">
+              <para id="fs-id1170957555117">Dwie rury o stałej średnicy wychodzą z przepompowni i wyrzucają wodę z drugiej strony przez otwarty na ciśnienie atmosferyczne koniec (patrz: rysunek poniżej). Woda wchodzi pod ciśnieniem 2 atm i z prędkością <m:math>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>1,0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                </m:math>. Jedna z rur opada o 10 m na swojej długości. Jaka jest prędkość wody wylatującej z każdej z tych rur?</para><media id="fs-id1170960151274" alt="Ilustracja jest schematycznym rysunkiem dwóch rur o równej i stałej średnicy. Są one otwarte na działanie ciśnienia atmosferycznego po jednej stroni i są podłączone do zbiornika z wodą po drugiej strono. Podłączenie jednej z tych rur jest na wysokości 10 metrów nad ziemią.">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_06_pumpstatn_img.jpg"/>
+                </media>
+              </problem>
+            </exercise>
+            <exercise id="fs-id1170960071568">
+              <problem id="fs-id1170960071570">
+                <para id="fs-id1170960071572">Płyn początkowo płynie przez rurę strumieniem <m:math>
+                  <m:mrow>
+                    <m:mn>100</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mtext>cm</m:mtext>
+                      </m:mrow>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mtext>/s</m:mtext>
+                  </m:mrow>
+                  </m:math>. Aby zilustrować czułość strumienia na różne czynniki oblicz strumień powstały pod wpływem następujących zmian, przy pozostałych zmiennych o poprzednich wartościach. (a) Różnica ciśnień wzrasta o czynnik 1,50. (b) Użyto innego płynu o 3,0 razy większej lepkości. (c) Rurę zastąpiono inną, o 4,00 razy większej długości. (d) Rurę zastąpiono rurą o średnicy 0,100 oryginalnej średnicy. (e) Rurę zastąpiono jeszcze inną rurą o promieniu 0,100 oryginalnego promienia i o długości o połowę mniejszej przy podniesieniu ciśnienia o 1,50.</para></problem>
+                <solution id="fs-id1170957542556">
+                  <para id="fs-id1170957542558">a. <m:math>
+                    <m:mrow>
+                      <m:mn>150</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mtext>cm</m:mtext>
+                        </m:mrow>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                      <m:mtext>/s</m:mtext>
+                    </m:mrow>
+                  </m:math>; b. <m:math>
+                  <m:mrow>
+                    <m:mn>33,3</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mtext>cm</m:mtext>
+                      </m:mrow>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                    <m:mtext>/s</m:mtext>
+                  </m:mrow>
+                </m:math>; c. <m:math>
+                <m:mrow>
+                  <m:mn>25,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mtext>cm</m:mtext>
+                    </m:mrow>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                  <m:mtext>/s</m:mtext>
+                </m:mrow>
+              </m:math>; d. <m:math>
+              <m:mrow>
+                <m:mn>0,0100</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:msup>
+                  <m:mrow>
+                    <m:mtext>cm</m:mtext>
+                  </m:mrow>
+                  <m:mn>3</m:mn>
+                </m:msup>
+                <m:mtext>/s</m:mtext>
+              </m:mrow>
+            </m:math>; e. <m:math>
+            <m:mrow>
+              <m:mn>0,0300</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:msup>
+                <m:mrow>
+                  <m:mtext>cm</m:mtext>
+                </m:mrow>
+                <m:mn>3</m:mn>
+              </m:msup>
+              <m:mtext>/s</m:mtext>
+            </m:mrow>
+          </m:math>
+        </para>
+      </solution>
+    </exercise>
+    <exercise id="fs-id1170957472076">
+      <problem id="fs-id1170957472078">
+        <para id="fs-id1170957472080">Podczas maratonu przepływ krwi u biegaczki rośnie do 10-krotności jej przepływu spoczynkowego. Lepkość jej krwi zaś spada do 95,0% normalnej wartości, a różnica ciśnień wzdłuż układu krwionośnego wzrasta o 50,0%. O ile średnio zwiększą się promienie jej naczyń krwionośnych?</para></problem>
+    </exercise>
+    <exercise id="fs-id1170957472106">
+      <problem id="fs-id1170957472108">
+        <para id="fs-id1170957472110">W lecie, wcześnie rano, gdy zużycie w sąsiedztwie jest niskie, woda dostarczana do domu przez magistralę wodociągową ma ciśnienie <m:math>
+          <m:mn>3,00</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mn>5</m:mn>
+          </m:msup>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">N</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:msup>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:math>. Wytwarza ono strumień 20,0 l/min w wężu ogrodowym. W późniejszej porze ciśnienie na przyłączu dochodzącym do domu spada i strumień w tym samym wężu wynosi jedynie 8,00 l/min. (a) Jakie ciśnienie jest teraz dostarczane do domu, jeśli opór się nie zmienił? (b) O ile strumień w magistrali wodociągowej musiał się zwiększyć, aby doprowadzić do takiego spadku dostarczonego ciśnienia? Ciśnienie na wejściu magistrali wodociągowej wynosi <m:math>
+        <m:mn>5,00</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mn>5</m:mn>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">N</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:msup>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+        </m:math>, a początkowy strumień wynosi 200 l/min. (c) Ilu więcej pojawiło się użytkowników, jeśli każdy z nich z rana zużywa 20,0 l/min?</para></problem>
+      <solution id="fs-id1170957445235">
+        <para id="fs-id1170957445237">a. <m:math>
+          <m:mn>1,20</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mn>5</m:mn>
+          </m:msup>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">N</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:msup>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          </m:math>; b. Strumień w magistrali wzrósł o 90%. c. Z rana było w zaokrągleniu o 38 użytkowników więcej.</para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1170957545156">
+        <problem id="fs-id1170957545158">
+          <para id="fs-id1170957545160">Benzynę z rafinerii przesyła się do dużych odbiorców podziemnym rurociągiem. Strumień wynosi <m:math>
+            <m:mn>3,00</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>2</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:msup>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mn>3</m:mn>
+              </m:msup>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:math>, lepkość benzyny w rurociągu wynosi<m:math>
+          <m:mn>1,00</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>3</m:mn>
+            </m:mrow>
+          </m:msup>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">N</m:mi>
+            <m:mo>⋅</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:msup>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:math>, a jej gęstość <m:math>
+        <m:mrow>
+          <m:mn>680</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:msup>
+            <m:mrow>
+              <m:mtext>kg/m</m:mtext>
+            </m:mrow>
+            <m:mn>3</m:mn>
+          </m:msup>
+          <m:mo>.</m:mo>
+        </m:mrow>
+        </m:math> (a) Jaką minimalną średnicę musi mieć rurociąg, aby liczba Reynoldsa była poniżej 2000? (b) Jaką różnicę ciśnień należy utrzymywać pomiędzy początkiem a końcem każdego kilometra rurociągu, aby utrzymać ten strumień?</para></problem>
+    </exercise>
+  </section>
+</content>
+<glossary>
+  <definition id="fs-id1170957530015">
+<term cmlnle:reference="prawo Poiseuille’a" class="no-emphasis">prawo Poiseuille’a (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Poiseuille’s law</term></foreign>)</term>
+    <meaning id="fs-id1170957530020">strumień laminarnego przepływu nieściśliwego płynu w rurze: <m:math>
+      <m:mi>Q</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mo stretchy="false">(</m:mo>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>−</m:mo>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mi>π</m:mi>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>4</m:mn>
+          </m:msup>
+        </m:mrow>
+        <m:mrow>
+          <m:mn>8</m:mn>
+          <m:mi>η</m:mi>
+          <m:mi>l</m:mi>
+        </m:mrow>
+      </m:mfrac>
+    </m:math>
+  </meaning>
+</definition>
+<definition id="fs-id1170957613559">
+<term cmlnle:reference="prawo oporu Poiseuille’a" class="no-emphasis">prawo oporu Poiseuille’a (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Poiseuille’s law for resistance</term></foreign>)</term>
+  <meaning id="fs-id1170957613564">opór stawiany laminarnemu przepływowi nieściśliwego płynu w rurze: <m:math>
+    <m:mrow>
+      <m:mi>R</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mn>8</m:mn>
+          <m:mi>η</m:mi>
+          <m:mi>l</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>π</m:mi>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>4</m:mn>
+          </m:msup>
+        </m:mrow>
+      </m:mfrac>
+    </m:mrow>
+  </m:math>
+</meaning>
+</definition>
+<definition id="fs-id1170957573257">
+<term cmlnle:reference="liczba Reynoldsa" class="no-emphasis">liczba Reynoldsa (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Reynolds number</term></foreign>)</term>
+  <meaning id="fs-id1170957573262">bezwymiarowy parametr, który może pomóc określić, czy przepływ jest laminarny, czy turbulentny</meaning>
+</definition>
+<definition id="fs-id1170957573267">
+<term cmlnle:reference="turbulencja" class="no-emphasis">turbulencja (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">turbulence</term></foreign>)</term>
+  <meaning id="fs-id1170957573272">przepływ płynu, w którym jego warstwy mieszają się w wyniku powstania wirów i zwrotów prędkości</meaning>
+</definition>
+</glossary>
+</document>

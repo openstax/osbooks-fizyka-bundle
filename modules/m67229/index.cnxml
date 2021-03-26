@@ -1,0 +1,1512 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Obwody RLC</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67229</md:content-id>
+  <md:title>Obwody RLC</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>wyznaczać częstość kątową oscylacji w obwodzie zawierającym opór, indukcyjność własną i pojemność (RLC);</item>
+<item>odnosić drgania obwodu RLC do oscylatora harmonicznego z tłumieniem.</item>
+</list></md:abstract>
+  <md:uuid>62594a8d-fb60-4c1d-abaa-d07252e07494</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131427799"><term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="obwód RLC">Obwód RLC</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">RLC circuit</term></foreign>) otrzymamy, jeśli rozważania z poprzedniej sekcji rozszerzymy o uwzględnienie skończonego oporu w obwodzie. Przyjmiemy, że opór podłączonych do obwodu urządzeń oraz przewodów tworzących połączenia możemy reprezentować w postaci pojedynczego opornika o oporze <m:math display="inline">
+    <m:mi>R</m:mi>
+  </m:math>. Powoduje on rozpraszanie energii z szybkością <m:math display="inline">
+  <m:msup>
+    <m:mi>i</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>⁢</m:mo>
+  <m:mi>R</m:mi>
+  </m:math> po zamknięciu obwodu przedstawionego schematycznie na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_31_06_RLC" cmlnle:case="genitive"/> (a). Uprzednio naładowany kondensator zaczyna się rozładowywać. Zmiany zmagazynowanej w obwodzie energii opisuje równanie</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131187496"><m:math display="block"><m:semantics><m:mrow><m:mfrac><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:msub><m:mi>E</m:mi><m:mtext>cał</m:mtext></m:msub></m:mrow><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mrow><m:mrow><m:mfrac><m:mi>q</m:mi><m:mi>C</m:mi></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mi>q</m:mi></m:mrow><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>L</m:mi><m:mo>⁢</m:mo><m:mi>i</m:mi><m:mo>⁢</m:mo><m:mfrac><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mi>i</m:mi></m:mrow><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mi>t</m:mi></m:mrow></m:mfrac></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>−</m:mo><m:mrow><m:msup><m:mi>i</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:mi>R</m:mi><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \frac{\d E_{\text{cał}}}{\d t} = \frac{q}{C} \cdot \frac{\d q}{\d t} + L i \frac{\d i}{\d t} = - i^2 R \text{,}</m:annotation></m:semantics></m:math></equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167134812842">gdzie <m:math display="inline">
+    <m:mi>i</m:mi>
+  </m:math> oraz <m:math display="inline">
+  <m:mi>q</m:mi>
+  </m:math> zależą od czasu. Uprościmy nieco powyższy zapis</para>
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131262832"><m:math display="block">
+      <m:mrow>
+        <m:mrow>
+          <m:mi>L</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:msup>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mi>q</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:msup>
+                <m:mi>t</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:mfrac>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mrow>
+          <m:mi>R</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mi>q</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mi>C</m:mi>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:mi>q</m:mi>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_31_06_RLC"><media id="fs-id1167131091260" alt="Rysunek a jest obwodem z kondensatorem, induktorem i rezystorem połączonych ze sobą szeregowo. Są one również połączone szeregowo z przełącznikiem, który jest otwarty. Rysunek b przedstawia wykres ładunku w stosunku do czasu. Ładunek ma maksymalną wartość, q0, w czasie t=0. Krzywa jest podobna do fali przypominającej sinusoidę, która redukuje amplitudę aż do wartości zerowej. ">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_31_06_RLC.jpg"/>
+    </media>
+    
+    <caption>(a) Obwód RLC. Oscylacje elektromagnetyczne mają swój początek w momencie zamknięcia obwodu. Zakładamy, że początkowo kondensator jest w pełni naładowany. (b) Zachowanie tłumionych oscylacji ładunku na kondensatorze <m:math display="inline">
+        <m:mi>q</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mfenced>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+      </m:math>. Początkowy ładunek wynosi <m:math display="inline">
+      <m:msub>
+        <m:mi>q</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      </m:math>.</caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131632316">To równanie jest analogiczne do równania ruchu masy zawieszonej na sprężynie z uwzględnieniem tłumienia</para>
+    <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131274811"><label/>
+      <m:math display="block">
+        <m:mrow>
+          <m:mrow>
+            <m:mi>m</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msup>
+                  <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mi>x</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mi>b</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:mi>x</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mi>k</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>x</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>0</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167134541538">Z tym równaniem po raz pierwszy spotkaliśmy się w rozdziale <link document="m65825">Drgania</link>. Zobaczyliśmy tam, że rozwiązania mogą przyjmować trzy postacie, zależnie od wartości częstości kątowej nietłumionej sprężyny względem <m:math display="inline">
+      <m:mrow>
+        <m:mi>b</m:mi>
+        <m:mo>∕</m:mo>
+        <m:mn>2</m:mn>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mi>m</m:mi>
+    </m:math>. Układ może być tłumiony słabo (<m:math display="inline">
+    <m:msqrt>
+      <m:mi>k</m:mi>
+      <m:mo>∕</m:mo>
+      <m:mi>m</m:mi>
+    </m:msqrt>
+    <m:mo>&gt;</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mi>b</m:mi>
+        <m:mo>∕</m:mo>
+        <m:mn>2</m:mn>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mi>m</m:mi>
+    </m:mrow>
+  </m:math>), krytycznie (<m:math display="inline">
+  <m:msqrt>
+    <m:mi>k</m:mi>
+    <m:mo>∕</m:mo>
+    <m:mi>m</m:mi>
+  </m:msqrt>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mi>b</m:mi>
+      <m:mo>∕</m:mo>
+      <m:mn>2</m:mn>
+    </m:mrow>
+    <m:mo>⁢</m:mo>
+    <m:mi>m</m:mi>
+  </m:mrow>
+</m:math>) albo silnie (<m:math display="inline">
+<m:msqrt>
+  <m:mi>k</m:mi>
+  <m:mo>∕</m:mo>
+  <m:mi>m</m:mi>
+</m:msqrt>
+<m:mo>&lt;</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:mi>b</m:mi>
+    <m:mo>∕</m:mo>
+    <m:mn>2</m:mn>
+  </m:mrow>
+  <m:mo>⁢</m:mo>
+  <m:mi>m</m:mi>
+</m:mrow>
+</m:math>). Podstawiając <m:math display="inline">
+<m:mi>L</m:mi>
+</m:math> za <m:math display="inline">
+<m:mi>m</m:mi>
+</m:math>, <m:math display="inline">
+<m:mi>R</m:mi>
+</m:math> za <m:math display="inline">
+<m:mi>b</m:mi>
+</m:math>, <m:math display="inline">
+<m:mn>1</m:mn>
+<m:mo>∕</m:mo>
+<m:mi>C</m:mi>
+</m:math> za <m:math display="inline">
+<m:mi>k</m:mi>
+</m:math> i <m:math display="inline">
+<m:mi>q</m:mi>
+</m:math> za <m:math display="inline">
+<m:mi>x</m:mi>
+</m:math> w <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1167131274811" cmlnle:case="locative"/>, przy założeniu <m:math display="inline">
+<m:msqrt>
+  <m:mrow>
+    <m:mn>1</m:mn>
+    <m:mo>∕</m:mo>
+    <m:mi>L</m:mi>
+  </m:mrow>
+  <m:mo>⁢</m:mo>
+  <m:mi>C</m:mi>
+</m:msqrt>
+<m:mo>&gt;</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:mi>R</m:mi>
+    <m:mo>∕</m:mo>
+    <m:mn>2</m:mn>
+  </m:mrow>
+  <m:mo>⁢</m:mo>
+  <m:mi>L</m:mi>
+</m:mrow>
+</m:math> otrzymujemy</para><note id="fs-id1167131269228" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131111252"><label/>
+    <m:math display="block">
+      <m:mrow>
+        <m:mi>q</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mfenced>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:msub>
+            <m:mi>q</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mo>−</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>R</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                  <m:mo>∕</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:mi>L</m:mi>
+              </m:mrow>
+            </m:mrow>
+          </m:msup>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mo>cos</m:mo>
+          <m:mrow>
+            <m:mfenced>
+              <m:mrow>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>ω</m:mi>
+                    <m:mo>′</m:mo>
+                  </m:msup>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mi>ϕ</m:mi>
+              </m:mrow>
+            </m:mfenced>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation></note>
+<para id="fs-id1167134869818">gdzie częstość kątowa drgań dana jest wzorem</para>
+<note id="fs-id1167134940770" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167134958768"><label/>
+    <m:math display="block">
+      <m:msup>
+        <m:mi>ω</m:mi>
+        <m:mo>′</m:mo>
+      </m:msup>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msqrt>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mrow>
+              <m:mi>L</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>C</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>−</m:mo>
+          <m:msup>
+            <m:mfenced>
+              <m:mfrac>
+                <m:mi>R</m:mi>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>L</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mfenced>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:msqrt>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation></note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167134476902">Rozwiązanie odpowiadające słabemu tłumieniu przedstawione jest na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_31_06_RLC" cmlnle:case="genitive"/> (b). Amplituda oscylacji zmniejsza się, gdyż energia rozpraszana jest na oporniku. Doświadczalnego potwierdzenia można dokonać, mierząc napięcie na kondensatorze w różnych chwilach czasu. Napięcie pomnożone przez pojemność da nam <m:math display="inline">
+  <m:mi>q</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+  </m:math>.</para>
+  <note id="fs-id1167131082824" class="media-2">
+    <para id="fs-id1167131331119">Wypróbuj <link url="https://openstaxcollege.org/l/21phetcirconstr">interaktywny generator obwodów</link> (w języku angielskim) pozwalający na śledzenie zmian natężenia prądu i napięcia w czasie. Za jago pomocą możesz tworzyć obwody RLC o dowolnej topografii ze źródłami prądu stałego i zmiennego.</para>
+  </note>
+  <note id="fs-id1167131183816" class="media-2">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131549948">Przejrzyj <link url="https://openstaxcollege.org/l/21cirphysbascur">stronę zawierającą interaktywny applet Java</link> (w języku angielskim), za pomocą którego będziesz mógł ćwiczyć rozwiązywanie zadań z obwodami prądu.</para>
+  </note>
+  <note id="fs-id1167131584277" class="check-understanding">
+    <exercise id="fs-id1167134713946">
+      <problem id="fs-id1167131102121">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131502463"><emphasis effect="bold">Sprawdź, czy rozumiesz. </emphasis>W obwodzie RLC <m:math display="inline">
+            <m:mi>L</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>5</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">mH</m:mi>
+            </m:mrow>
+          </m:math>, <m:math display="inline">
+          <m:mi>C</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>6</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">µF</m:mi>
+          </m:mrow>
+        </m:math> i <m:math display="inline">
+        <m:mi>R</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>200</m:mn>
+         <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">Ω</m:mi>
+        </m:mrow>
+      </m:math>.
+    <list id="eip-idm1041220688" list-type="enumerated" number-style="lower-alpha">
+      <item>Określ, czy obwód jest tłumiony słabo, krytycznie czy silnie;</item>
+      <item>Jeśli początkowy ładunek na kondensatorze wynosi <m:math display="inline">
+        <m:mrow>
+          <m:mn>3</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+          </m:msup>
+        </m:mrow>
+       <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">C</m:mi>
+        </m:math>, jak dużo energii rozproszy się na oporniku do momentu wygaśnięcia oscylacji?</item>
+      </list>
+    </para></problem>
+  <solution id="fs-id1167131459285">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131201247">a. Silnie; b. <m:math display="inline">
+      <m:mn>0,75</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">J</m:mi>
+      </m:math>.</para></solution>
+  </exercise>
+</note>
+<section id="fs-id1167131227727" class="key-concepts">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Podsumowanie</title>
+  <list id="fs-id1167131225149" list-type="bulleted" bullet-style="bullet">
+    <item>Zależność ładunku od czasu w słabo tłumionym obwodzie RLC opisuje równanie<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131204578" class="unnumbered"><label/>
+        <m:math display="block">
+          <m:mrow>
+            <m:mi>q</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:msub>
+                <m:mi>q</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:msup>
+                <m:mi>e</m:mi>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>R</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                      <m:mo>∕</m:mo>
+                      <m:mn>2</m:mn>
+                    </m:mrow>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>L</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:msup>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mo>cos</m:mo>
+              <m:mrow>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>ω</m:mi>
+                        <m:mo>′</m:mo>
+                      </m:msup>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mi>ϕ</m:mi>
+                  </m:mrow>
+                </m:mfenced>
+                <m:mo>⁢</m:mo>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation></item>
+    <item>Częstość kątowa w słabo tłumionym obwodzie RLC wynosi<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167134967794" class="unnumbered"><label/>
+        <m:math display="block">
+          <m:mrow>
+            <m:msup>
+              <m:mi>ω</m:mi>
+              <m:mo>′</m:mo>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:msqrt>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mrow>
+                    <m:mi>L</m:mi>
+                    <m:mi>C</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>−</m:mo>
+                <m:msup>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mi>R</m:mi>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mi>L</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:msqrt>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation></item>
+  </list>
+</section>
+<section id="fs-id1167134863650" class="key-equations">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Najważniejsze wzory</title>
+  <table xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167584933154" class="unnumbered unstyled" summary=".">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+      <colspec colnum="2" colname="c2"/>
+      <tbody>
+        <row valign="top">
+          <entry valign="middle" align="left">Indukcyjność wzajemna względem strumienia pola</entry>
+          <entry valign="middle" align="left">
+            <m:math display="inline">
+              <m:mi>M</m:mi>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>N</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi mathvariant="normal">Φ</m:mi>
+                    <m:mn>21</m:mn>
+                  </m:msub>
+                </m:mrow>
+                <m:msub>
+                  <m:mi>i</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>N</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi mathvariant="normal">Φ</m:mi>
+                    <m:mn>12</m:mn>
+                  </m:msub>
+                </m:mrow>
+                <m:msub>
+                  <m:mi>i</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mfrac>
+            </m:math>
+          </entry>
+        </row>
+        <row valign="top">
+          <entry valign="middle" align="left">Indukcyjność wzajemna w obwodach</entry>
+          <entry valign="middle" align="left">
+            <m:math display="inline">
+              <m:msub>
+                <m:mi>ε</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mrow>
+                  <m:mi>M</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                      <m:msub>
+                        <m:mi>i</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row valign="top">
+          <entry valign="middle" align="left">Indukcyjność własna względem strumienia pola</entry>
+          <entry valign="middle" align="left">
+            <m:math display="inline">
+              <m:mrow>
+                <m:mi>N</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:msub>
+                  <m:mi mathvariant="normal">Φ</m:mi>
+                  <m:mi>B</m:mi>
+                </m:msub>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mi>L</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>i</m:mi>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row valign="top">
+          <entry valign="middle" align="left">Indukcyjność własna względem SEM</entry>
+          <entry valign="middle" align="left">
+            <m:math display="inline">
+              <m:mi>ε</m:mi>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mrow>
+                  <m:mi>L</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                      <m:mi>i</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row valign="top">
+          <entry valign="middle" align="left">Indukcyjność własna solenoidu</entry>
+          <entry valign="middle" align="left">
+            <m:math display="inline">
+              <m:msub>
+                <m:mi>L</m:mi>
+                <m:mtext>solenoid</m:mtext>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>μ</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>⁢</m:mo>
+                  <m:msup>
+                    <m:mi>N</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>S</m:mi>
+                </m:mrow>
+                <m:mi>l</m:mi>
+              </m:mfrac>
+            </m:math>
+          </entry>
+        </row>
+        <row valign="top">
+          <entry valign="middle" align="left">Indukcyjność własna prostokątnego toroidu</entry>
+          <entry valign="middle" align="left">
+            <m:math display="inline">
+              <m:msub>
+                <m:mi>L</m:mi>
+                <m:mtext>toroid</m:mtext>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>μ</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>⁢</m:mo>
+                    <m:msup>
+                      <m:mi>N</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>h</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>π</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:mo>ln</m:mo>
+                  <m:mfrac>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msub>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row valign="top">
+          <entry valign="middle" align="left">Energia zmagazynowana w cewce indukcyjnej</entry>
+          <entry valign="middle" align="left">
+            <m:math display="inline">
+              <m:msub><m:mi>E</m:mi><m:mi>L</m:mi></m:msub>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mo>⁢</m:mo>
+                <m:mi>L</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mi>i</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row valign="top">
+          <entry valign="middle" align="left">Prąd w funkcji czasu w obwodzie RL</entry>
+          <entry valign="middle" align="left">
+            <m:math display="inline">
+              <m:mrow>
+                <m:mi>i</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mi>ε</m:mi>
+                  <m:mi>R</m:mi>
+                </m:mfrac>
+                <m:mo>⁢</m:mo>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mn>1</m:mn>
+                    <m:mo>−</m:mo>
+                    <m:msup>
+                      <m:mi>e</m:mi>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mrow>
+                          <m:mi>t</m:mi>
+                          <m:mo>∕</m:mo>
+                          <m:msub>
+                            <m:mi>τ</m:mi>
+                            <m:mi>L</m:mi>
+                          </m:msub>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                </m:mfenced>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row valign="top">
+          <entry valign="middle" align="left">Stała czasowa obwodu RL</entry>
+          <entry valign="middle" align="left">
+            <m:math display="inline">
+              <m:msub>
+                <m:mi>τ</m:mi>
+                <m:mi>L</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mi>L</m:mi>
+                <m:mi>R</m:mi>
+              </m:mfrac>
+            </m:math>
+          </entry>
+        </row>
+        <row valign="top">
+          <entry valign="middle" align="left">Oscylacje ładunku w obwodzie LC</entry>
+          <entry valign="middle" align="left">
+            <m:math display="inline">
+              <m:mrow>
+                <m:mi>q</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>q</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mo>cos</m:mo>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>ω</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                      <m:mo>+</m:mo>
+                      <m:mi>ϕ</m:mi>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row valign="top">
+          <entry valign="middle" align="left">Częstość kątowa obwodu LC</entry>
+          <entry valign="middle" align="left">
+            <m:math display="inline">
+              <m:mi>ω</m:mi>
+              <m:mo>=</m:mo>
+              <m:msqrt>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mrow>
+                    <m:mi>L</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>C</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+              </m:msqrt>
+            </m:math>
+          </entry>
+        </row>
+        <row valign="top">
+          <entry valign="middle" align="left">Oscylacje natężenia prądu w obwodzie LC</entry>
+          <entry valign="middle" align="left">
+            <m:math display="inline">
+              <m:mrow>
+                <m:mi>i</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>ω</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:msub>
+                      <m:mi>q</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mrow>
+                    <m:mo>sin</m:mo>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>ω</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:mi>t</m:mi>
+                        </m:mrow>
+                        <m:mo>+</m:mo>
+                        <m:mi>ϕ</m:mi>
+                      </m:mrow>
+                    </m:mfenced>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row valign="top">
+          <entry valign="middle" align="left">Oscylacje ładunku w obwodzie RLC</entry>
+          <entry valign="middle" align="left">
+            <m:math display="inline">
+              <m:mrow>
+                <m:mi>q</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>q</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>⁢</m:mo>
+                  <m:msup>
+                    <m:mi>e</m:mi>
+                    <m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mi>R</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>t</m:mi>
+                          </m:mrow>
+                          <m:mo>∕</m:mo>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>L</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mo>cos</m:mo>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mi>ω</m:mi>
+                          <m:mo>′</m:mo>
+                        </m:msup>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                      <m:mo>+</m:mo>
+                      <m:mi>ϕ</m:mi>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row valign="top">
+          <entry valign="middle" align="left">Częstość kątowa obwodu RLC</entry>
+          <entry valign="middle" align="left">
+            <m:math display="inline">
+              <m:msup>
+                <m:mi>ω</m:mi>
+                <m:mo>′</m:mo>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:msqrt>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mrow>
+                    <m:mi>L</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>C</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>−</m:mo>
+                <m:msup>
+                  <m:mfenced>
+                    <m:mfrac>
+                      <m:mi>R</m:mi>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>L</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mfenced>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:msqrt>
+            </m:math>
+          </entry>
+        </row>
+      </tbody>
+    
+
+
+
+
+
+</tgroup>
+</table></section>
+<section id="fs-id1167129963317" class="review-conceptual-questions">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Pytania</title>
+  <exercise id="fs-id1167131375593">
+    <problem id="fs-id1167131375595">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131589779">Kiedy zewrzemy ze sobą dwa końce solenoidu, mogą pojawić się oscylacje, takie jak w obwodzie RLC. Wyjaśnij, skąd bierze się w takim obwodzie pojemność elektryczna.</para>
+    </problem>
+  </exercise>
+  <exercise id="fs-id1167131332160">
+    <problem id="fs-id1167134435225">
+      <para id="fs-id1167134435228">Jaki wpływ na obwód LC ma skończony opór przewodów?</para>
+    </problem>
+    <solution id="fs-id1167131548526">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131584168">W efekcie otrzymujemy obwód RLC, w którym energia jest rozpraszana, co powoduje wygasanie amplitudy w tempie zależnym od wielkości oporu.</para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1167131563568">
+    <problem id="fs-id1167131563570">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131631269">Załóżmy, że chciałbyś zaprojektować obwód LC o częstotliwości <m:math display="inline">
+        <m:mn>0,01</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">Hz</m:mi>
+        </m:math>. Z jakimi trudnościami mógłbyś się spotkać?</para></problem>
+    </exercise>
+    <exercise id="fs-id1167131389037">
+      <problem id="fs-id1167131389039">
+        <para id="fs-id1167130363828">Odbiornik radiowy z wbudowanym obwodem RLC można ustawić tak, by odbierał sygnał o wybranej częstotliwości bez zakłóceń z sygnałów o innych częstotliwościach. Jak zaprojektować taki obwód?</para>
+      </problem>
+      <solution id="fs-id1167131485960">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131571411">Należy wybrać opór na tyle mały, żeby dostroić się do jednej stacji, ale na tyle duży, by nie było potrzebne zbyt precyzyjne strojenie. Indukcyjność własna albo pojemność takiego układu musi być zmienna. Z praktycznego punktu widzenia dużo łatwiej jest skonstruować kondensator o zmiennej pojemności.</para>
+      </solution>
+    </exercise>
+  </section>
+  <section id="fs-id1167131399674" class="review-problems">
+    <title>Zadania</title>
+    <exercise id="fs-id1167130042880">
+      <problem id="fs-id1167130042882">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131496539">W oscylującym obwodzie RLC <m:math display="inline">
+          <m:mi>R</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>5</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+        </m:math>, <m:math display="inline">
+        <m:mi>L</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>5</m:mn>
+       <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">mH</m:mi>
+        </m:mrow>
+      </m:math> oraz <m:math display="inline">
+      <m:mi>C</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>500</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">µF</m:mi>
+      </m:mrow>
+      </m:math>. Ile wynosi częstość kątowa oscylacji?</para></problem>
+  </exercise>
+  <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167129991327"><problem id="fs-id1167129991329">
+      <para id="fs-id1167134830787">W oscylującym obwodzie RLC <m:math display="inline">
+        <m:mi>L</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>10</m:mn>
+         <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">mH</m:mi>
+        </m:mrow>
+      </m:math>, <m:math display="inline">
+      <m:mi>C</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>1,5</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">µF</m:mi>
+      </m:mrow>
+    </m:math> i <m:math display="inline">
+    <m:mi>R</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>2</m:mn>
+ <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+    </m:math>. Ile czasu upłynie, zanim amplituda oscylacji spadnie do połowy swojej początkowej wartości?</para>
+  </problem>
+  <solution id="fs-id1167131475304">
+    <para id="fs-id1167131341458">
+      <m:math display="inline">
+        <m:mn>6,9</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">ms</m:mi>
+        </m:math>.</para>
+      </solution>
+    </exercise><exercise id="fs-id1167131140433">
+      <problem id="fs-id1167134582582">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167134582584">Opornik o jakim oporze musi zostać połączony z cewką o indukcyjności <m:math display="inline">
+          <m:mn>200</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">mH</m:mi>
+        </m:math>, by oscylacje zanikły do <m:math display="inline">
+        <m:mn>50</m:mn>
+       <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">%</m:mi>
+      </m:math> swojej początkowej wartości po <m:math display="inline">
+      <m:mn>50</m:mn>
+    </m:math> cyklach? A o jakim, by zanikły do <m:math display="inline">
+    <m:mn>0,1</m:mn>
+ <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">%</m:mi>
+  </m:math> początkowej wartości po <m:math display="inline">
+  <m:mn>50</m:mn>
+  </m:math> cyklach?</para></problem>
+</exercise>
+</section>
+<section id="fs-id1167131581260" class="review-additional-problems">
+  <title>Zadania dodatkowe</title>
+  <exercise id="fs-id1167131567322">
+    <problem id="fs-id1167131567324">
+      <para id="fs-id1167131204931">Wykaż, że indukcyjność własna na jednostkę długości nieskończonego, prostego, cienkiego drutu jest nieskończona.</para>
+    </problem>
+    <solution id="fs-id1167131231390">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131231393">Dowód: Na zewnątrz <m:math display="inline"><m:mi>B</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mi>I</m:mi></m:mrow><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>r</m:mi></m:mrow></m:mfenced></m:mrow></m:math>; Wewnątrz <m:math display="inline"><m:mi>B</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mi>I</m:mi><m:mo>⁢</m:mo><m:mi>r</m:mi></m:mrow><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced></m:mrow></m:math>, <m:math display="inline"><m:mi>U</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:msup><m:mi>I</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:mi>l</m:mi></m:mrow><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi></m:mrow></m:mfenced></m:mrow><m:mo>⋅</m:mo><m:mfenced close="]" open="["><m:mrow><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>4</m:mn></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>ln</m:mo><m:mfenced><m:mrow><m:mi>R</m:mi><m:mo>∕</m:mo><m:mi>a</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mfenced></m:mrow></m:math>. Zatem <m:math display="inline"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>U</m:mi></m:mrow><m:mo>∕</m:mo><m:msup><m:mi>I</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mi>l</m:mi></m:mrow><m:mo>∕</m:mo><m:msup><m:mi>I</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>⋅</m:mo><m:mfenced close="]" open="["><m:mrow><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>4</m:mn></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>ln</m:mo><m:mfenced><m:mrow><m:mi>R</m:mi><m:mo>∕</m:mo><m:mi>a</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mfenced></m:mrow></m:math> i 
+<m:math display="inline"><m:semantics><m:mrow><m:mi>L</m:mi><m:mo>⟶</m:mo><m:mi>∞</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            L \to \infty</m:annotation></m:semantics></m:math>.</para></solution>
+</exercise>
+<exercise id="fs-id1167131343417">
+  <problem id="fs-id1167131510640">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131510642">Przez dwa długie, równoległe druty płynie prąd w przeciwnych kierunkach. Promień każdego z drutów wynosi <m:math display="inline">
+      <m:mi>a</m:mi>
+    </m:math>, natomiast odległość między środkami drutów wynosi <m:math display="inline">
+    <m:mi>d</m:mi>
+    </m:math>. Pokaż, że jeśli pominiemy strumień pola magnetycznego wewnątrz durutów, indukcyjność własna drutów wynosi <m:math display="inline"><m:mi>L</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mi>l</m:mi></m:mrow><m:mo>∕</m:mo><m:mi>π</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>ln</m:mo><m:mfenced close="]" open="["><m:mrow><m:mfenced><m:mrow><m:mi>d</m:mi><m:mo>−</m:mo><m:mi>a</m:mi></m:mrow></m:mfenced><m:mo>∕</m:mo><m:mi>a</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:math>. Wskazówka: Znajdź strumień pola magnetycznego przez prostokąt o boku długości <m:math display="inline">
+      <m:mi>I</m:mi>
+    </m:math> umieszczony między drutami. Nastepnie skorzystaj z tego, że <m:math display="inline">
+    <m:mi>L</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mi>N</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi mathvariant="normal">Φ</m:mi>
+      </m:mrow>
+      <m:mo>∕</m:mo>
+      <m:mi>I</m:mi>
+    </m:mrow>
+    </m:math>.</para></problem>
+</exercise>
+<exercise id="fs-id1167134990271">
+  <problem id="fs-id1167134884275">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167134884277">Niewielka, prostokątna pętla z drutu umieszczona jest w płaszczyźnie wyznaczonej przez znacznie większą prostokątną pętlę. Dwa krótsze boki większej pętli są w takiej odległości od małej ramki, że mała pętla nie odczuwa ich pola magnetycznego. Ile wynosi względna indukcyjność tych dwóch pętli?
+<newline/></para><media id="fs-id1167129979424" alt="Rysunek pokazuje pętlę prostokątnego przewodu. Długość prostokąta wynosi l a szerokość a. Obydwa boki prostokąta są przewodami równoległymi do jego długości. Odcinki d znajdują się poza prostokątem. Prąd l1 płynie przez obydwa w przeciwnych sobie kierunkach. ">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_31_06_Problem47_img.jpg"/>
+    </media>
+  </problem>
+  <solution id="fs-id1167131263669">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131327853"><m:math display="inline"><m:mi>M</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mi>l</m:mi></m:mrow><m:mo>∕</m:mo><m:mi>π</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>ln</m:mo><m:mfenced close="]" open="["><m:mrow><m:mfenced><m:mrow><m:mi>d</m:mi><m:mo>+</m:mo><m:mi>a</m:mi></m:mrow></m:mfenced><m:mo>∕</m:mo><m:mi>a</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:math>.</para></solution>
+</exercise>
+<exercise id="fs-id1167129970346">
+  <problem id="fs-id1167129970348">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131199484">Cylindryczny solenoid nawinięty jest na żelazny rdzeń, którego podatność magnetyczna wynosi <m:math display="inline">
+      <m:mi>x</m:mi>
+      </m:math>. Korzystając z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" document="m67225" target-id="fs-id1167133805496" cmlnle:case="genitive"/> wykaż, że indukcyjność własna tego solenoidu wynosi <m:math display="inline"><m:mi>L</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:msup><m:mi>N</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:mi>S</m:mi></m:mrow><m:mo>∕</m:mo><m:mi>l</m:mi></m:mrow></m:math>, gdzie <m:math display="inline">
+        <m:mi>l</m:mi>
+      </m:math> jest jego długością, <m:math display="inline">
+      <m:mi>S</m:mi>
+    </m:math> – polem przekroju poprzecznego, a <m:math display="inline">
+    <m:mi>N</m:mi>
+    </m:math> – liczbą zwojów.</para></problem>
+</exercise>
+<exercise id="fs-id1167131615186">
+  <problem id="fs-id1167131615188">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167134717550">Solenoid z poprzedniego zadania nawinięto na żelazny rdzeń o podatności magnetycznej <m:math display="inline">
+      <m:mn>4</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>3</m:mn>
+      </m:msup>
+    </m:math>.<list id="eip-idm185976320" list-type="enumerated" number-style="lower-alpha"><item>Ile wynosi indukcja pola magnetycznego wewnątrz rdzenia, jeśli przez solenoid płynie prąd o natężeniu <m:math display="inline">
+      <m:mn>2</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+      </m:math>?</item>
+      <item>Ile wynosi efektywne natężenie prądu powierzchniowego, którego źródłem są występujące w żelaznym rdzeniu pętle o rozmiarach atomu, w których płynie prąd?</item>
+      <item>Ile wynosi indukcyjność własna solenoidu z rdzeniem?</item>
+    </list></para>
+</problem>
+<solution id="fs-id1167134565655">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167134565657">a. <m:math display="inline">
+    <m:mn>100</m:mn>
+   <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">T</m:mi>
+  </m:math>; b. <m:math display="inline">
+  <m:mn>2</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">A</m:mi>
+</m:math>; c. <m:math display="inline">
+<m:mn>0,5</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">H</m:mi>
+</m:math>.</para></solution>
+</exercise>
+<exercise id="fs-id1167131619226">
+  <problem id="fs-id1167131619228">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167134921523">Cewka o <m:math display="inline">
+      <m:mi>N</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>3000</m:mn>
+    </m:math> zwojach nawinięta na żelazny rdzeń w kształcie toroidu o przekroju prostokątnym o promieniu wewnętrznym <m:math display="inline">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>7</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">cm</m:mi>
+    </m:mrow>
+  </m:math>, zewnętrznym <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>9</m:mn>
+ <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">cm</m:mi>
+  </m:mrow>
+</m:math>, wysokości <m:math display="inline">
+<m:mi>h</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>3</m:mn>
+ <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">cm</m:mi>
+</m:mrow>
+</m:math> i podatności magnetycznej <m:math display="inline">
+<m:mn>5,2</m:mn>
+<m:mo>⋅</m:mo>
+<m:msup>
+  <m:mn>10</m:mn>
+  <m:mn>3</m:mn>
+</m:msup>
+</m:math>.<list id="eip-idm670554400" list-type="enumerated" number-style="lower-alpha">
+<item>Ile wynosi indukcyjność własna cewki?</item>
+<item>Ile wynosi pole magnetyczne w środku rdzenia, jeśli przez cewkę płynie prąd o natężeniu <m:math display="inline">
+  <m:mn>2</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">A</m:mi>
+  </m:math>?</item>
+  <item>Ile wynosi efektywne natężenie prądu powierzchniowego?</item>
+</list>
+</para></problem>
+</exercise>
+<exercise id="fs-id1167131399352">
+  <problem id="fs-id1167131399354">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131205180">W czasie <m:math display="inline"><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>0</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math> poniższy obwód został zamknięty przełącznikiem <m:math display="inline">
+    <m:mi>S</m:mi>
+  </m:math>. Wyznacz natężenie prądu płynącego przez baterię<list id="eip-idm1045871376" list-type="enumerated" number-style="lower-alpha">
+  <item>w chwili zamknięcia obwodu;</item>
+  <item>po osiągnięciu przez obwód stanu ustalonego.</item>
+</list>
+<newline/></para><media id="fs-id1167131399490" alt="12 woltowa bateria połączona szeregowo z 5 omowym opornikiem, cewką indukcyjności 1 henra, 3 omowym opornikiem i otwartym włącznikiem S. Równoległe do 3omowego opornika i cewki o indykcyjności 2 henrów. ">
+  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_31_06_Problem51_img.jpg"/>
+</media>
+</problem>
+<solution id="fs-id1167134932628">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131256402">a. <m:math display="inline">
+    <m:mn>0</m:mn>
+   <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">A</m:mi>
+  </m:math>; b. <m:math display="inline">
+  <m:mn>2,4</m:mn>
+ <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">A</m:mi>
+  </m:math>.</para></solution>
+</exercise>
+<exercise id="fs-id1167131233926">
+  <problem id="fs-id1167131233928">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131144509">W obwodzie RLC <m:math display="inline">
+      <m:mi>R</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>7</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+    </m:math>, <m:math display="inline">
+    <m:mi>L</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>10</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">mH</m:mi>
+    </m:mrow>
+  </m:math> i <m:math display="inline">
+  <m:mi>C</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>3</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">µF</m:mi>
+  </m:mrow>
+</m:math>. Początkowy ładunek na kondensatorze wynosi <m:math display="inline">
+<m:mn>8</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">µC</m:mi>
+</m:math> przy zerowym prądzie. Oblicz ładunek na kondensatorze<list id="eip-idm209050192" list-type="enumerated" number-style="lower-alpha">
+<item>po pięciu cyklach oscylacji;</item>
+<item>po pięćdziesięciu cyklach.</item>
+</list>
+</para></problem>
+</exercise>
+<exercise id="fs-id1167131422580">
+  <problem id="fs-id1167131422582">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131255835">Prąd o natężeniu <m:math display="inline">
+      <m:mn>100</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+    </m:math> płynący przez cewkę o indukcyjności własnej <m:math display="inline">
+    <m:mn>25</m:mn>
+   <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">H</m:mi>
+  </m:math> wyłączony jest w czasie <m:math display="inline">
+  <m:mn>1</m:mn>
+ <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">ms</m:mi>
+</m:math>.<list id="eip-idm281348976" list-type="enumerated" number-style="lower-alpha">
+<item>Ile wynosi napięcie przeciwdziałające wyłączeniu prądu?</item>
+<item>Co nierealnego jest w tym wyniku?</item>
+<item>Które założenie jest za to odpowiedzialne?</item>
+</list>
+</para></problem>
+<solution id="fs-id1167131615087">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167129963748">a. <m:math display="inline">
+    <m:mrow>
+      <m:mn>2,5</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>6</m:mn>
+      </m:msup>
+    </m:mrow>
+   <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">V</m:mi>
+    </m:math>; b. Napięcie jest tak ogromne, że między końcami przełącznika wytworzyłby się łuk elektryczny, a prąd nie zostałby zredukowany tak szybko; c. Nierealne jest użycie takiej cewki indukcyjnej w celu wyłączenia prądu o tak wysokim natężeniu w tak krótkim czasie.</para></solution>
+</exercise>
+</section>
+<section id="fs-id1167130203588" class="review-challenge">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Zadania </title>
+  <exercise id="fs-id1167134858899">
+    <problem id="fs-id1167134858901">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131315192">Wewnętrzny przewód w kablu koncentrycznym ma promień <m:math display="inline">
+        <m:mi>a</m:mi>
+      </m:math>, a zewnętrzny – <m:math display="inline">
+      <m:mi>b</m:mi>
+    </m:math>. Prąd o natężeniu <m:math display="inline">
+    <m:mi>I</m:mi>
+  </m:math> płynie w wewnętrznym przewodzie w przeciwnym kierunku niż w zewnętrznym. Indukcyjność własna kabla zależeć będzie od tego, jak rozkłada się natężenie prądu w wewnętrznym przewodzie. Rozważ i porównaj ze sobą dwa skrajne przypadki:<list id="eip-idm1629671328" list-type="enumerated" number-style="lower-alpha">
+  <item>Niech prąd płynie tylko po powierzchni przewodu;</item>
+  <item>Niech prąd płynie równomiernie przez cały przekrój poprzeczny przewodu.</item>
+  </list>Załóż, że wewnętrzny przewód ma kształt litego cylindra, a zewnętrzny – cylindrycznej cienkiej powłoki.</para>
+</problem>
+</exercise>
+<exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167134573587"><problem id="fs-id1167134951548">
+    <para id="fs-id1167134951550">W obwodzie oscylacyjnym z tłumieniem energia jest rozpraszana na oporniku. Dobrocią (<m:math display="inline">
+      <m:mi>Q</m:mi>
+      </m:math>) nazywamy bezwymiarową stałą określającą odporność oscylatora na stratę energii wskutek tłumienia.
+      <list id="eip-idm1616268448" list-type="enumerated" number-style="lower-alpha"><item>Wykaż, że w obwodzie ze słabym tłumieniem energia zanika według równania <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mrow><m:msub><m:mi>E</m:mi><m:mtext>cał</m:mtext></m:msub><m:mo>∕</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mi>t</m:mi></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>−</m:mo><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>β</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>E</m:mi><m:mtext>cał</m:mtext></m:msub></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \d E_{\text{cał}} / \d t = - 2 \beta E_{\text{cał}}</m:annotation></m:semantics></m:math>;</item>
+      <item>Dobroć zdefiniowana jest jako stosunek początkowej energii do straty energii w kolejnym cyklu. Wykaż, że dobroć oscylatora ze słabym tłumieniem można wyrazić <m:math display="inline"><m:semantics><m:mrow><m:mi>Q</m:mi><m:mo>=</m:mo><m:mrow><m:msub><m:mi>E</m:mi><m:mtext>pocz</m:mtext></m:msub><m:mo>∕</m:mo><m:mrow><m:mo>Δ</m:mo><m:msub><m:mi>E</m:mi><m:mtext>na cykl</m:mtext></m:msub></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mi>R</m:mi></m:mrow><m:mo>⋅</m:mo><m:msqrt><m:mi>L</m:mi><m:mo>∕</m:mo><m:mi>C</m:mi></m:msqrt></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            Q = E_{\text{pocz}} / \prefop{\Delta} E_{\text{na cykl}} = 1/R \cdot \sqrt{L/C}</m:annotation></m:semantics></m:math>.</item></list></para>
+</problem>
+</exercise><exercise id="fs-id1167131225222">
+  <problem id="fs-id1167131225224">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167134929702">Znajdź natężenie prądu płynącego przez <m:math display="inline">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:math>, <m:math display="inline">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:math> i baterię w funkcji czasu po zamknięciu poniższego obwodu w chwili <m:math display="inline">
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>0</m:mn>
+   <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">s</m:mi>
+  </m:mrow>
+  </m:math>.
+<newline/></para><media id="fs-id1167134969759" alt="12 woltowa bateria połączona jest z 6 omowym opornikiem i przełącznikiem S, który pozostaje otwarty w czasie t=0. Połączenie równoległe z 6 omowym opornikiem i innym 6 omowym opornikiem oraz z cewką indukcyjną o indukcyjności 24 henrów. ">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_31_06_Problem80_img.jpg"/>
+  </media>
+</problem>
+</exercise>
+<exercise id="fs-id1167134717198">
+  <problem id="fs-id1167134717200">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167129962405">Kwadratowa ramka o boku <m:math display="inline">
+      <m:mn>2</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">cm</m:mi>
+    </m:math> umieszczona jest w odległości <m:math display="inline">
+    <m:mn>1</m:mn>
+   <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">cm</m:mi>
+  </m:math> od długiego przewodu, w którym płynie prąd, którego natężenie zmienia się jednostajnie z szybkością <m:math display="inline">
+  <m:mn>3</m:mn>
+ <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mrow>
+    <m:mi mathvariant="normal">A</m:mi>
+    <m:mo>∕</m:mo>
+    <m:mi mathvariant="normal">s</m:mi>
+  </m:mrow>
+</m:math>.<list id="eip-idm1121342368" list-type="enumerated" number-style="lower-alpha">
+<item>Korzystając z prawa Ampère’a, znajdź wzór na indukcję pola magnetycznego wytworzonego przez przewód;</item>
+<item>Wyznacz strumień pola magnetycznego przez ramkę;</item>
+<item>Ile wynosi natężenie wyindukowanego w ramce prądu, jeśli jej opór równy jest <m:math display="inline">
+  <m:mn>3</m:mn>
+ <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">Ω</m:mi>
+  </m:math>?</item>
+</list>
+</para></problem>
+<solution id="fs-id1167131225968">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167131282092">a. <m:math display="inline"><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mi>B</m:mi><m:mo>∕</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>t</m:mi></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>6</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow></m:msup></m:mrow><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mrow><m:mi mathvariant="normal">T</m:mi><m:mo>∕</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:math>; b. <m:math display="inline"><m:msub><m:mi mathvariant="normal">Φ</m:mi><m:mi>B</m:mi></m:msub><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>I</m:mi></m:mrow><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi></m:mrow></m:mfenced></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>ln</m:mo><m:mfenced close="]" open="["><m:mrow><m:mfenced><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:mfenced><m:mo>∕</m:mo><m:mi>b</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:math>; c. <m:math display="inline">
+<m:mn>4</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">nA</m:mi>
+</m:math>.</para></solution>
+</exercise>
+<exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167129968165">
+  <problem id="fs-id1167129968167">
+    <para id="fs-id1167131084448">Prostokątna ramka z miedzi ma masę <m:math display="inline">
+      <m:mn>100</m:mn>
+     <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">g</m:mi>
+    </m:math> i opór <m:math display="inline">
+    <m:mn>0,2</m:mn>
+   <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">Ω</m:mi>
+  </m:math>. Umieszczono ją w jednorodnym polu magnetycznym, którego linie przechodzą prostopadle przez ramkę i są równoległe do powierzchni Ziemi, tak że dolna krawędź ramki pokrywa się z dolną krawędzią obszaru, w którym pole magnetyczne jest niezerowe. W pewnym momencie ramka jest puszczona swobodnie i zaczyna spadać w kierunku Ziemi, tak jak przedstawiono to na rysunku poniżej.<list id="eip-idm1314516352" list-type="enumerated" number-style="lower-alpha"><item>Znajdź szybkość poruszania się ramki w momencie, gdy jej cała powierzchnia znajdzie się poza obszarem, w którym działa pole magnetyczne;</item>
+  <item>Po jakim czasie od chwili czasu <m:math display="inline"><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mn>0</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢</m:mo><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>, gdy została puszczona, opuści ona obszar działania pola magnetycznego?</item>
+  </list>Załóż, że <m:math display="inline">
+  <m:mi>a</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>25</m:mn>
+   <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">cm</m:mi>
+  </m:mrow>
+</m:math>, <m:math display="inline">
+<m:mi>b</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>50</m:mn>
+ <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">cm</m:mi>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:mi>B</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>3</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">T</m:mi>
+</m:mrow>
+</m:math> i <m:math display="inline">
+<m:mi>g</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>9,8</m:mn>
+ <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mrow>
+    <m:mi mathvariant="normal">m</m:mi>
+    <m:mo>∕</m:mo>
+    <m:msup>
+      <m:mi mathvariant="normal">s</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+  </m:mrow>
+</m:mrow>
+</m:math> oraz że indukcja pola magnetycznego pochodzącego od wyindukowanego prądu jest pomijalnie mała w porównaniu z <m:math display="inline"><m:semantics><m:mi>B</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            B</m:annotation></m:semantics></m:math>.
+<newline/></para><media id="fs-id1167131378231" alt="Rysunek (a) przedstawia pole z krzyżykami w środku. Oznaczone jest t=0. Jest też wyznaczony obszar z równymi szerokościami a i równymi długościami b. Rysunek (b) pokazuje to samo pole z krzyżykami w środku. Jest oznaczone jako &quot;gdy istnieje siatka&quot;. Wyznaczony obszar z rysunku a znajduje się pod polem. Są również dwie opadające strzałki oznaczone jako g i v. ">
+  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_31_06_Problem82_img.jpg"/>
+</media>
+</problem>
+</exercise>
+</section>
+</content>
+<glossary>
+  <definition id="fs-id1167134655841">
+    <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="obwód RLC">obwód RLC (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">RLC circuit</term></foreign>)</term>
+      <meaning id="fs-id1167131188977">obwód zawierający opornik, cewkę indukcyjną i kondensator</meaning>
+    </definition>
+  </glossary>
+</document>

@@ -1,0 +1,849 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Pojemność cieplna gazu doskonałego</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67245</md:content-id>
+  <md:title>Pojemność cieplna gazu doskonałego</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>definiować pojemność cieplną gazu doskonałego dla konkretnego procesu;</item>
+<item>obliczać ciepło właściwe gazu doskonałego dla procesów izobarycznego i izochorycznego;</item>
+<item>wyjaśniać różnicę między pojemnością cieplną gazu doskonałego a rzeczywistego;</item>
+<item>szacować zmianę ciepła właściwego gazu w różnych zakresach temperatur.</item>
+</list></md:abstract>
+  <md:uuid>14256003-0251-4b28-b859-2fff92600692</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100730938">Ciepło właściwe oraz molową pojemność cieplną omówiliśmy już w rozdziale <link class="target-chapter" document="m67140">Temperatura i ciepło</link>; jednak nie rozpatrywaliśmy procesu, w którym ciepło jest dostarczane do układu. Zrobimy to w tej części rozdziału. Na początku zbadamy proces, w którym układ ma stałą objętość, a później porównamy to z sytuacją, w której układ ma stałe ciśnienie i pokażemy, jak ciepła właściwe dla tych procesów są ze sobą powiązane.</para><para id="fs-id1172098759826">Zacznijmy od rozpatrzenia <link target-id="CNX_UPhysics_20_05_IsochorBar" cmlnle:case="genitive"/>, na którym znajdują się dwa pojemniki, <m:math display="inline">
+      <m:mi>A</m:mi>
+    </m:math> oraz <m:math display="inline">
+    <m:mi>B</m:mi>
+  </m:math>, każdy zawierający <m:math display="inline">
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi mathvariant="normal">mol</m:mi>
+</m:math> tego samego rodzaju gazu doskonałego o temperaturze <m:math display="inline">
+<m:mi>T</m:mi>
+</m:math> i o objętości <m:math display="inline">
+<m:mi>V</m:mi>
+</m:math>. Jedyna różnica między tymi pojemnikami polega na tym, że tłok na górze pojemnika <m:math display="inline">
+  <m:mi>A</m:mi>
+</m:math> nie może się ruszać, podczas gdy ten na górze pojemnika <m:math display="inline">
+  <m:mi>B</m:mi>
+</m:math> może. Na tłoki działa stałe zewnętrzne ciśnienie <m:math display="inline">
+<m:mi>p</m:mi>
+</m:math>. Rozważmy, co się stanie, gdy temperatura gazu w każdym z pojemników będzie powoli rosła do <m:math display="inline">
+<m:mi>T</m:mi>
+<m:mo>+</m:mo>
+<m:mrow>
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mi>T</m:mi>
+</m:mrow>
+</m:math> dzięki dostarczaniu ciepła.</para>
+<figure id="CNX_UPhysics_20_05_IsochorBar">
+  <media id="fs-id1172096179238" alt="Na rysunku widać dwa zbiorniki, oznaczone jako Pojemnik A i Pojemnik B. Oba są wypełnione gazem i zamknięte od góry tłokiem. W pojemniku A tłok jest przymocowany na stałe gwoździami. W pojemniku B tłok może się swobodnie poruszać, co wskazuje strzałka z grotami na obu końcach blisko tłoka.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_20_05_IsochorBar.jpg"/>
+  </media>
+  <caption>Pojemniki różnią się jedynie możliwością ruchu tłoka. Tłok na górze pojemnika <m:math><m:mi>A</m:mi></m:math> nie może się ruszać, podczas gdy ten na górze pojemnika <m:math><m:mi>B</m:mi></m:math> może. Na tłoki działa stałe zewnętrzne ciśnienie <m:math><m:mi>p</m:mi></m:math>.</caption>
+</figure>
+<para id="fs-id1172100611115">Tłok pojemnika <m:math display="inline">
+    <m:mi>A</m:mi>
+  </m:math> nie może się przemieszczać, a więc objętość gazu się nie zmieni. Dlatego też gaz nie wykonuje pracy i z pierwszej zasady termodynamiki mamy</para>
+  <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098423631" class="unnumbered"><label/>
+    <m:math display="block">
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mi>U</m:mi>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mi>Q</m:mi>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mi>W</m:mi>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mrow>
+          <m:mi>Q</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation><para id="fs-id1172100610498">Fakt, że ciepło jest wymieniane przy stałej objętości, zapisujemy jako</para>
+  <equation id="fs-id1172100993517" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mi>Q</m:mi>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>C</m:mi>
+          <m:mi>V</m:mi>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mrow>
+            <m:mi>T</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1172100916185">gdzie <m:math display="inline">
+    <m:msub>
+      <m:mi>C</m:mi>
+      <m:mi>V</m:mi>
+    </m:msub>
+  </m:math> to <term class="no-emphasis" cmlnle:reference="molowa pojemność cieplna przy stałej objętości">molowa pojemność cieplna przy stałej objętości</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">molar heat capacity at constant volume</term></foreign>) gazu. Dodatkowo dla tego konkretnego procesu <m:math display="inline">
+<m:mrow>
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mi>U</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mi>Q</m:mi>
+</m:mrow>
+</m:math>, więc</para>
+<equation id="fs-id1172098447995">
+  <m:math display="block">
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mi>U</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>C</m:mi>
+        <m:mi>V</m:mi>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mrow>
+          <m:mi>T</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1172098275530">Równanie to otrzymujemy, zakładając, że objętość gazu jest stała. Jednak energia wewnętrzna jest funkcją stanu zależącą jedynie od temperatury gazu doskonałego. Dlatego z <m:math display="inline">
+  <m:mrow>
+    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+    <m:mi>U</m:mi>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msub>
+      <m:mi>C</m:mi>
+      <m:mi>V</m:mi>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mi>T</m:mi>
+    </m:mrow>
+  </m:mrow>
+</m:math> wynika zmiana energii wewnętrznej gazu doskonałego dla każdego procesu, w którym następuje zmiana temperatury <m:math display="inline">
+<m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+<m:mi>T</m:mi>
+</m:math>.</para>
+<para id="fs-id1172098524812">Kiedy gaz w pojemniku <m:math display="inline">
+    <m:mi>B</m:mi>
+  </m:math> jest podgrzewany, rozszerza się, przesuwając ruchomy tłok oraz wykonując pracę <m:math display="inline">
+<m:mrow>
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mi>W</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi>p</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mrow>
+    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+    <m:mi>V</m:mi>
+  </m:mrow>
+</m:mrow>
+</m:math>. W tym przypadku ciepło jest dostarczone przy stałym ciśnieniu i możemy zapisać</para>
+<equation id="fs-id1172098511070" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mi>Q</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>C</m:mi>
+        <m:mi>p</m:mi>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mrow>
+          <m:mi>T</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1172098455357">gdzie <m:math display="inline">
+  <m:msub>
+    <m:mi>C</m:mi>
+    <m:mi>p</m:mi>
+  </m:msub>
+</m:math> to <term class="no-emphasis" cmlnle:reference="molowa pojemność cieplna przy stałym ciśnieniu">molowa pojemność cieplna przy stałym ciśnieniu</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">molar heat capacity at constant pressure</term></foreign>) gazu. Co więcej, gaz doskonały rozszerza się przy stałym ciśnieniu, a zatem</para>
+<equation id="fs-id1172100675040" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mfenced>
+        <m:mrow>
+          <m:mi>p</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>V</m:mi>
+        </m:mrow>
+      </m:mfenced>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mrow>
+        <m:mfenced>
+          <m:mrow>
+            <m:mi>R</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>T</m:mi>
+          </m:mrow>
+        </m:mfenced>
+        <m:mo>⁢</m:mo>
+        <m:mtext>,</m:mtext>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1172100570741">co możemy przekształcić do</para>
+<equation id="fs-id1172096091036" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:mi>p</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mi>V</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>R</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mrow>
+          <m:mi>T</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1172100952741">Ostatecznie, używając wyrażeń na <m:math display="inline">
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mi>Q</m:mi>
+</m:math> oraz <m:math display="inline">
+<m:mi>p</m:mi>
+<m:mo>⁢</m:mo>
+<m:mrow>
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mi>V</m:mi>
+</m:mrow>
+</m:math> dla pierwszej zasady termodynamiki, otrzymujemy</para>
+<equation id="fs-id1172100493256" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mi>U</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mi>Q</m:mi>
+      </m:mrow>
+      <m:mo>−</m:mo>
+      <m:mrow>
+        <m:mi>p</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mi>V</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfenced>
+        <m:mrow>
+          <m:msub>
+            <m:mi>C</m:mi>
+            <m:mi>p</m:mi>
+          </m:msub>
+          <m:mo>−</m:mo>
+          <m:mi>R</m:mi>
+        </m:mrow>
+      </m:mfenced>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mrow>
+          <m:mi>T</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1172100510952">Znaleźliśmy więc <m:math display="inline">
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mi>U</m:mi>
+</m:math> zarówno dla procesu izochorycznego, jak i izobarycznego. Ponieważ energia wewnętrzna gazu doskonałego zależy tylko od temperatury, <m:math display="inline">
+<m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+<m:mi>U</m:mi>
+</m:math> musi być takie samo dla obu procesów. Dlatego</para>
+<equation id="fs-id1172098456480" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:msub>
+        <m:mi>C</m:mi>
+        <m:mi>V</m:mi>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mi>T</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfenced>
+        <m:mrow>
+          <m:msub>
+            <m:mi>C</m:mi>
+            <m:mi>p</m:mi>
+          </m:msub>
+          <m:mo>−</m:mo>
+          <m:mi>R</m:mi>
+        </m:mrow>
+      </m:mfenced>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mrow>
+          <m:mi>T</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1172098453405">oraz</para>
+<note id="fs-id1172098592382" class="equation-callout">
+  <equation id="fs-id1172100983763">
+    <label/>
+    <m:math display="block">
+      <m:msub>
+        <m:mi>C</m:mi>
+        <m:mi>p</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>C</m:mi>
+          <m:mi>V</m:mi>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:mrow>
+          <m:mi>R</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100677416"><link target-id="fs-id1172100983763"/> było oparte tylko na równaniu stanu gazu doskonałego. W konsekwencji równanie to jest w przybliżeniu prawidłowe dla wszystkich rozrzedzonych gazów: jednoatomowych, jak He, dwuatomowych, jak O<sub>2</sub>, czy wieloatomowych, jak CO<sub>2</sub> lub NH<sub>3</sub>. </para><para id="fs-id1172096311171">W poprzednim rozdziale pokazaliśmy, że molowa pojemność cieplna gazu doskonałego o stałej objętości to</para>
+  <equation id="fs-id1172100536321" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:msub>
+        <m:mi>C</m:mi>
+        <m:mi>V</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:mi>d</m:mi>
+          <m:mn>2</m:mn>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mi>R</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mtext>,</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100595390">gdzie <m:math display="inline">
+    <m:mi>d</m:mi>
+  </m:math> to liczba stopni swobody cząsteczek w układzie. <link target-id="fs-id1172100537645"/> pokazuje molowe pojemności cieplne pewnych rozrzedzonych gazów doskonałych. Pojemności cieplne gazów rzeczywistych są nieco wyższe niż te przewidziane przez wyrażenia na <m:math display="inline">
+  <m:msub>
+    <m:mi>C</m:mi>
+    <m:mi>V</m:mi>
+  </m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>C</m:mi>
+  <m:mi>p</m:mi>
+</m:msub>
+</m:math>, dane w <link target-id="fs-id1172100983763" cmlnle:case="locative"/>. Oznacza to, że wibracje cząsteczek wieloatomowych mają znaczący wpływ na pojemność cieplną, nawet w temperaturze pokojowej. Niemniej jednak różnica między molowymi pojemnościami cieplnymi, <m:math display="inline">
+<m:msub>
+  <m:mi>C</m:mi>
+  <m:mi>p</m:mi>
+</m:msub>
+<m:mo>−</m:mo>
+<m:msub>
+  <m:mi>C</m:mi>
+  <m:mi>V</m:mi>
+</m:msub>
+</m:math>, jest bardzo zbliżona do <m:math display="inline">
+<m:mi>R</m:mi>
+</m:math>, nawet dla gazów wieloatomowych.</para><table xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100537645" summary="Tabela ma 5 kolumn i 4 wiersze. Pierwszy wiersz, to wiersz z nagłówkami “Rodzaj cząsteczek”, “Gaz”, “C p (J na mol K)”, “C V (J na mol K)”, “C p minus C V (J na mol K)”. Pierwsza kolumna zawiera hasła “Jednoatomowy”, “Dwuatomowy”, “Wieloatomowy”. Druga kolumna ma słowo “idealny” w każdym z 3 wierszy. Trzecia kolumna ma hasła “5 drugich R równa się 20.79”, “7 drugich R równa się 29.10”, “4 R równa się 33.26”. Czwarta kolumna zawiera hasła “3 drugie R równa się 12.47”, “5 drugich R równa się 20.79”, “3 R równa się 24.94”. Piąta kolumna ma “R=8.31” we wszystkich wierszach.">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+    <colspec colnum="2" colname="c2"/>
+    <colspec colnum="3" colname="c3"/>
+    <colspec colnum="4" colname="c4"/>
+    <colspec colnum="5" colname="c5"/>
+    <thead>
+      <row>
+        <entry align="center" namest="c1" nameend="c5">Molowe pojemności cieplne rozrzedzonych gazów doskonałych</entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">Rodzaj cząsteczek</entry>
+        <entry valign="top" align="center">Gaz</entry>
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:msub>
+              <m:mi>C</m:mi>
+              <m:mi>p</m:mi>
+            </m:msub>
+          </m:math> (<m:math display="inline">
+              <m:mrow>
+                <m:mi mathvariant="normal">J</m:mi>
+                <m:mo>∕</m:mo>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">mol</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi mathvariant="normal">K</m:mi>
+                  </m:mrow>
+                </m:mfenced>
+              </m:mrow>
+          </m:math>)
+        </entry>
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:msub>
+              <m:mi>C</m:mi>
+              <m:mi>V</m:mi>
+            </m:msub>
+          </m:math> (<m:math display="inline">
+              <m:mrow>
+                <m:mi mathvariant="normal">J</m:mi>
+                <m:mo>∕</m:mo>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">mol</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi mathvariant="normal">K</m:mi>
+                  </m:mrow>
+                </m:mfenced>
+              </m:mrow>
+          </m:math>)
+        </entry>
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:msub>
+              <m:mi>C</m:mi>
+              <m:mi>p</m:mi>
+            </m:msub>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>C</m:mi>
+              <m:mi>V</m:mi>
+            </m:msub>
+          </m:math> (<m:math display="inline">
+              <m:mrow>
+                <m:mi mathvariant="normal">J</m:mi>
+                <m:mo>∕</m:mo>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">mol</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi mathvariant="normal">K</m:mi>
+                  </m:mrow>
+                </m:mfenced>
+              </m:mrow>
+          </m:math>)
+        </entry>
+      </row>
+    </thead>
+    <tbody>
+      <row valign="top">
+        <entry valign="top" align="left">Jednoatomowa</entry>
+        <entry valign="top" align="center">Doskonały</entry>
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>5</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mi>R</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>20,79</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>3</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mi>R</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>12,47</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:mi>R</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>8,31</m:mn>
+          </m:math>
+        </entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">Dwuatomowa</entry>
+        <entry valign="top" align="center">Doskonały</entry>
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>7</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mi>R</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>29,10</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>5</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mi>R</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>20,79</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:mi>R</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>8,31</m:mn>
+          </m:math>
+        </entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">Wieloatomowa</entry>
+        <entry valign="top" align="center">Doskonały</entry>
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>R</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>33,26</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:mrow>
+              <m:mn>3</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>R</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>24,94</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="center">
+          <m:math display="inline">
+            <m:mi>R</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>8,31</m:mn>
+          </m:math>
+        </entry>
+      </row>
+    </tbody>
+  
+
+
+
+
+</tgroup>
+</table><section id="fs-id1172100677254" class="key-concepts">
+  <title>Podsumowanie</title>
+  <list xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100883814" list-type="bulleted" bullet-style="bullet"><item>Dla gazu doskonałego molowa pojemność cieplna przy stałym ciśnieniu <m:math display="inline">
+      <m:msub>
+        <m:mi>C</m:mi>
+        <m:mi>p</m:mi>
+      </m:msub>
+    </m:math> jest dana przez <m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>C</m:mi><m:mi>p</m:mi></m:msub><m:mo>=</m:mo><m:mrow><m:msub><m:mi>C</m:mi><m:mi>V</m:mi></m:msub><m:mo>+</m:mo><m:mi>R</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>d</m:mi><m:mo>⁢</m:mo><m:mi>R</m:mi></m:mrow><m:mo>∕</m:mo><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mi>R</m:mi></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            C_p = C_V + R= dR/2 + R</m:annotation></m:semantics></m:math>, gdzie <m:math display="inline">
+  <m:mi>d</m:mi>
+  </m:math> to liczba stopni swobody każdej cząsteczki/jednostki układu.</item>
+  <item>Gaz rzeczywisty ma molową pojemność cieplną nieco wyższą niż molowa pojemność cieplna odpowiedniego gazu doskonałego, <m:math display="inline">
+    <m:msub>
+      <m:mi>C</m:mi>
+      <m:mi>p</m:mi>
+    </m:msub>
+    <m:mo>≈</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>C</m:mi>
+        <m:mi>V</m:mi>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mi>R</m:mi>
+        <m:mo>⁢</m:mo>
+      </m:mrow>
+    </m:mrow>
+  </m:math>.
+</item>
+</list></section>
+<section id="fs-id1172101004326" class="review-conceptual-questions">
+  <title>Pytania</title>
+  <exercise id="fs-id1172101006189">
+    <problem id="fs-id1172096297102">
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100762557">Większość substancji rozszerza się na skutek podgrzewania. Godnym uwagi wyjątkiem jest woda w temperaturze między <m:math display="inline">
+        <m:mn>0</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mi mathvariant="normal">℃</m:mi>
+      </m:math> a <m:math display="inline">
+      <m:mn>4</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mi mathvariant="normal">℃</m:mi>
+    </m:math>, która zmniejsza objętość podczas podgrzewania. Która wartość w przypadku wody w tym zakresie temperaturowym jest większa, <m:math display="inline">
+    <m:msub>
+      <m:mi>C</m:mi>
+      <m:mi>p</m:mi>
+    </m:msub>
+  </m:math> czy <m:math display="inline">
+  <m:msub>
+    <m:mi>C</m:mi>
+    <m:mi>V</m:mi>
+  </m:msub>
+  </m:math>?</para></problem>
+<solution id="fs-id1172100893897">
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100786129">Zazwyczaj pojemność <m:math display="inline">
+    <m:msub>
+      <m:mi>C</m:mi>
+      <m:mi>p</m:mi>
+    </m:msub>
+  </m:math> jest większa niż <m:math display="inline">
+  <m:msub>
+    <m:mi>C</m:mi>
+    <m:mi>V</m:mi>
+  </m:msub>
+</m:math>, ponieważ gdy następuje rozszerzanie układu przy stałym ciśnieniu, układ wykonuje pracę nad otoczeniem. Z tego wynika, że ciepło może zamienić się w energię wewnętrzną i pracę. Gdy objętość jest stała, całe ciepło zamienia się w energię wewnętrzną. W rozpatrywanym przypadku woda kurczy się podczas podgrzewania, więc jeśli dostarczymy ciepło przy stałym ciśnieniu, to praca jest wykonywana nad wodą przez otoczenie i dlatego <m:math display="inline">
+<m:msub>
+  <m:mi>C</m:mi>
+  <m:mi>p</m:mi>
+</m:msub>
+</m:math> jest mniejsza niż <m:math display="inline">
+<m:msub>
+  <m:mi>C</m:mi>
+  <m:mi>V</m:mi>
+</m:msub>
+</m:math>.</para></solution>
+</exercise>
+<exercise id="fs-id1172100980286">
+  <problem id="fs-id1172100791240">
+    <para id="fs-id1172100614779">Dlaczego dla gazów mamy dwa ciepła właściwe, <m:math display="inline">
+      <m:msub>
+        <m:mi>C</m:mi>
+        <m:mi>p</m:mi>
+      </m:msub>
+    </m:math> i <m:math display="inline">
+    <m:msub>
+      <m:mi>C</m:mi>
+      <m:mi>V</m:mi>
+    </m:msub>
+    </m:math>, a dla ciał stałych tylko jedno?</para>
+  </problem>
+</exercise>
+</section>
+<section id="fs-id1172100502018" class="review-problems">
+  <title>Zadania</title>
+  <exercise id="fs-id1172100738604">
+    <problem id="fs-id1172100855114">
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098257097">Temperatura jednoatomowego gazu doskonałego wzrosła o <m:math display="inline">
+        <m:mn>8</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">K</m:mi>
+      </m:math>. Ile wynosi zmiana energii wewnętrznej <m:math display="inline"><m:semantics><m:mrow><m:mn>1</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">mola</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{1}{\mola}</m:annotation></m:semantics></m:math> tego gazu, jeśli jego objętość się nie zmienia?</para></problem>
+    <solution id="fs-id1172100904891">
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100973883"><m:math display="inline">
+          <m:mn>100</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">J</m:mi>
+        </m:math>.
+      </para></solution>
+  </exercise>
+  <exercise id="fs-id1172098719883">
+    <problem id="fs-id1172100985453">
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098612056">Dla wzrostu temperatury o <m:math display="inline">
+        <m:mn>10</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mi mathvariant="normal">℃</m:mi>
+      </m:math> przy stałej objętości, ile ciepła pobiera <list id="fs-idm380653216" list-type="enumerated" number-style="lower-alpha"><item><m:math display="inline"><m:semantics><m:mrow><m:mn>3</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">mole</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{3}{\molee}</m:annotation></m:semantics></m:math> rozrzedzonego gazu jednoatomowego;</item>
+<item><m:math display="inline"><m:semantics><m:mrow><m:mn>0,5</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">mola</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{0,5}{\mola}</m:annotation></m:semantics></m:math> rozrzedzonego gazu dwuatomowego;</item>
+<item><m:math display="inline"><m:semantics><m:mrow><m:mn>15</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">moli</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{15}{\moli}</m:annotation></m:semantics></m:math> rozrzedzonego gazu wieloatomowego?</item></list></para></problem>
+</exercise>
+<exercise id="fs-id1172098394379">
+  <problem id="fs-id1172100516656">
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100967900">Jeśli początkowa temperatura gazów z poprzedniego zadania jest równa <m:math display="inline">
+      <m:mn>300</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">K</m:mi>
+      </m:math>, to ile wynoszą ich energie wewnętrzne po pobraniu ciepła?</para></problem>
+    <solution id="fs-id1172100754101">
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100785261">a. <m:math display="inline">
+        <m:mn>370</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">J</m:mi>
+      </m:math>; b. <m:math display="inline">
+      <m:mn>100</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">J</m:mi>
+    </m:math>; c. <m:math display="inline">
+    <m:mn>500</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">J</m:mi>
+  </m:math>.
+</para></solution>
+</exercise>
+<exercise id="fs-id1172100747501">
+  <problem id="fs-id1172100946854">
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100777635">Rozważ sytuację, w której mamy <m:math display="inline"><m:semantics><m:mrow><m:mn>0,4</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">mola</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{0,4}{\mola}</m:annotation></m:semantics></m:math> rozrzedzonego dwutlenku węgla o ciśnieniu <m:math display="inline">
+    <m:mn>0,5</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:mi mathvariant="normal">atm</m:mi>
+  </m:math> i objętości <m:math display="inline">
+  <m:mn>50</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">l</m:mi>
+  </m:math>. Ile wynosi energia wewnętrzna tego gazu?</para></problem>
+</exercise>
+<exercise id="fs-id1172100670245">
+  <problem id="fs-id1172100643898">
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100618117">Gdy dostarczamy powoli <m:math display="inline">
+      <m:mn>400</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">J</m:mi>
+    </m:math> ciepła do <m:math display="inline"><m:semantics><m:mrow><m:mn>10</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">moli</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{10}{\moli}</m:annotation></m:semantics></m:math> jednoatomowego gazu doskonałego, to jego temperatura wzrasta o <m:math display="inline">
+  <m:mn>10</m:mn>
+  <m:mo>⁢</m:mo>
+  <m:mi mathvariant="normal">℃</m:mi>
+  </m:math>. Ile wynosi praca wykonywana na tym gazie?</para></problem>
+<solution id="fs-id1172100893734">
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098318724"><m:math display="inline">
+      <m:mn>850</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">J</m:mi>
+    </m:math>.
+  </para></solution>
+</exercise>
+<exercise id="fs-id1172100523260">
+  <problem id="fs-id1172101033431">
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100726476"><m:math display="inline"><m:semantics><m:mrow><m:mn>1</m:mn><m:mo>⁢</m:mo><m:mi mathvariant="normal">mol</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{1}{\mol}</m:annotation></m:semantics></m:math> rozrzedzonego gazu dwuatomowego o początkowej objętości równej <m:math display="inline">
+      <m:mn>10</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">l</m:mi>
+    </m:math> rozszerza się pod stałym ciśnieniem <m:math display="inline">
+    <m:mn>2</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:mi mathvariant="normal">atm</m:mi>
+  </m:math> podczas powolnego podgrzewania. Jeśli temperatura gazu wzrasta o <m:math display="inline">
+  <m:mn>10</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">K</m:mi>
+</m:math>, a ciepło dostarczone podczas tego procesu wynosi <m:math display="inline">
+<m:mn>400</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">J</m:mi>
+</m:math>, to jaka będzie objętość końcowa gazu?</para></problem>
+</exercise>
+</section>
+</content>
+<glossary>
+  <definition id="fs-idm1231568832">
+    <term cmlnle:reference="molowa pojemność cieplna przy stałym ciśnieniu" class="no-emphasis">molowa pojemność cieplna przy stałym ciśnieniu (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">molar heat capacity at constant pressure</term></foreign>)</term>
+      <meaning id="fs-idm1126058480">określa stosunek ilości ciepła dodanego/usuniętego do zmiany temperatury podczas pomiaru przy stałym ciśnieniu</meaning>
+    </definition>
+    <definition id="fs-idm242737440">
+      <term cmlnle:reference="molowa pojemność cieplna przy stałej objętości" class="no-emphasis">molowa pojemność cieplna przy stałej objętości (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">molar heat capacity at constant volume</term></foreign>)</term>
+        <meaning id="fs-idm218731024">określa stosunek ilości ciepła dodanego/usuniętego do zmiany temperatury podczas pomiaru przy stałej objętości</meaning>
+      </definition>
+    </glossary>
+  </document>

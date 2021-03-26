@@ -1,0 +1,3853 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Napęd rakietowy</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65789</md:content-id>
+  <md:title>Napęd rakietowy</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się: 
+<list>
+<item>opisywać wykorzystanie zasady zachowania pędu, gdy masa i prędkość zmieniają się w czasie;</item>
+<item>obliczać prędkość rakiety w przestrzeni kosmicznej przy danych parametrach początkowych;</item>
+<item>obliczać prędkość rakiety w warunkach grawitacji ziemskiej przy danych parametrach początkowych.</item>
+</list></md:abstract>
+  <md:uuid>59406119-73cc-4a0c-9fb9-3f0981edd214</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1167132331513">Zajmiemy się teraz przypadkiem, w którym masa poruszającego się ciała ulega zmianie. Przeanalizujmy ruch rakiety, której prędkość oraz pęd zmieniają się wskutek wyrzucenia spalin, powodując przyspieszenie rakiety w kierunku przeciwnym do prędkości wyrzucanych gazów (zobacz <link target-id="CNX_UPhysics_09_07_Shuttle" cmlnle:case="accusative"/>). Rakieta w przestrzeni kosmicznej, zaopatrzona w zapas paliwa, ma masę <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+    </m:mrow>
+  </m:math> (jest to masa własna rakiety wraz z masą paliwa). Rakieta przyspiesza na zasadzie zjawiska odrzutu, dzięki reakcjom spalania paliwa oraz wyrzucaniu spalin za siebie. Na pewnym etapie jej prędkość wynosi <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>v</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math>, a masa <m:math>
+  <m:mi>m</m:mi>
+</m:math>
+ i jest to masa własna rakiety oraz części niezużytego jeszcze paliwa. Zauważmy, że operujemy tu pojęciem masy chwilowej <m:math>
+  <m:mi>m</m:mi>
+  <m:mo stretchy="false">(</m:mo>
+  <m:mi>t</m:mi>
+  <m:mo stretchy="false">)</m:mo>
+</m:math>
+ i prędkości chwilowej <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>v</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>t</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:math>. Obliczymy teraz, jak zmieni się prędkość rakiety na skutek zużycia całego paliwa, jeżeli szybkość spalania w silnikach rakiety oraz szybkość wyrzutu spalin będą na stałym poziomie.
+</para><figure id="CNX_UPhysics_09_07_Shuttle"><media id="fs-id1167133396746" alt="Fotografia startującego promu kosmicznego.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_09_07_Shuttle.jpg"/>
+  </media>
+  
+<caption>Prom kosmiczny wykorzystuje zarówno paliwo stałe, jak i ciekłe i wyposażony jest w sporą liczbę elementów wielokrotnego użytku. Ogromne zbiorniki na paliwo ciekłe przeznaczone są wprawdzie na straty, ale dodatkowe zbiorniki na paliwo stałe odzyskuje się i powtórnie napełnia po każdym locie. Również sam statek po powrocie na Ziemię wykorzystywany jest do kolejnych lotów. Umożliwiają to m.in. pokrywy ceramiczne chroniące go przed przegrzaniem podczas powtórnego wejścia w atmosferę. Można zatem wielokrotnie powtarzać misje wahadłowca. (Źródło: NASA)</caption></figure><section id="fs-id1167133406272">
+  <title>Analiza fizyczna ruchu</title>
+  <para id="fs-id1167132501076">Omówimy teraz, co dzieje się podczas ruchu rakiety w przestrzeni kosmicznej oraz omówimy fizyczną naturę tego procesu:</para><list id="fs-id1167132274414" list-type="bulleted" bullet-style="bullet"><item>Podczas pracy silnika produkowane są gazy, które posiadają zarówno masę jak i prędkość, a więc również pęd. Z zasady zachowania pędu wynika, że rakieta odrzucająca spaliny dozna takiej samej zmiany pędu, ale z przeciwnym znakiem. Załóżmy, że gazy wyrzucane są ze stałą szybkością, co oznacza, że przyrost pędu rakiety będzie również stały. Odwołując się do <link target-id="fs-id1167131584453" document="m65783" cmlnle:case="genitive"/>, stwierdzimy, że oznacza to obecność stałej siły działającej na rakietę i nadającej jej przyspieszenie.</item>
+    <item>W miarę upływu czasu masa rakiety (obejmująca także masę paliwa) maleje w sposób ciągły. Jeśli siła napędu rakiety się nie zmienia, przyspieszenie rakiety będzie rosnąć.</item>
+    <item>Zatem całkowita zmiana prędkości rakiety zależy w sposób nieliniowy od ilości zużytego paliwa.</item>
+  </list><para id="fs-id1167133823900">Mamy więc do czynienia ze zmianami zarówno masy jak i prędkości rakiety, a także masy wyrzucanych gazów. Jeśli jako układ zdefiniujemy <emphasis effect="italics">„rakietę plus paliwo”</emphasis>, to będzie to układ zamknięty (ponieważ rozważamy rakietę w przestrzeni kosmicznej, na układ nie działają siły zewnętrzne). W efekcie pęd układu będzie zachowany i możemy skorzystać z zasady zachowania pędu (<link target-id="CNX_UPhysics_09_07_rocket"/>).</para>
+  <figure id="CNX_UPhysics_09_07_rocket"><media id="fs-id1167132415258" alt="Na rysunku pokazano układ współrzędnych xy i rakietę poruszającą się poziomo z prędkością v w kierunku +x. Masa rakiety z paliwem wynosi m. Rakieta wyrzuca za sobą gazy o masie dm z indeksem g, poruszające się w lewo z prędkością u. Rakietę oraz gazy otoczono elipsą, nad którą napisano układ">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_09_07_rocket.jpg"/>
+    </media>
+    
+    <caption>Rakieta przyspiesza (w prawo) wyrzucając gazy z dyszy (w lewo). Zasada zachowania pędu pozwala na wyznaczenie prędkości rakiety po odrzucie. Masa <m:math>
+        <m:mi>m</m:mi>
+      </m:math>
+       jest chwilową wartością sumy masy własnej rakiety i znajdującego się w niej paliwa. (Źródło: zmodyfikowany przez NASA/Bill Ingalls)</caption></figure><para id="fs-id1167132260598">Ze względu na zależność masy i prędkości od czasu, należy operować wielkościami chwilowymi dla konkretnego momentu na osi czasu. Definiujemy więc prędkość chwilową <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>v</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+    </m:math> (w kierunku <m:math>
+    <m:mo>+</m:mo>
+    <m:mi>x</m:mi>
+    </m:math>) mierzoną względem Ziemi. Pęd początkowy układu wyrażamy jako:</para>
+    <equation id="fs-id1167133366597" class="unnumbered">
+      <m:math>
+        <m:msub>
+          <m:mrow>
+            <m:mover>
+              <m:mi>p</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mtext>przed</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mi>m</m:mi>
+        <m:mi>v</m:mi>
+        <m:mrow>
+          <m:mover>
+            <m:mi>i</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1167133784377">Silniki rakietowe spalają paliwo ze stałą szybkością i wyrzucają gazy w kierunku <m:math>
+        <m:mo>−</m:mo>
+        <m:mi>x</m:mi>
+      </m:math>. W infinitezymalnym przedziale czasu <m:math>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:mi>t</m:mi>
+    </m:math>
+   masa wyrzuconego gazu wynosi <m:math>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mtext>g</m:mtext>
+  </m:msub>
+</m:math>, a ich prędkość <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>u</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:mi>u</m:mi>
+<m:mrow>
+  <m:mover>
+    <m:mi>i</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>. Zwróćmy uwagę, że o ile prędkość rakiety <m:math>
+<m:mi>v</m:mi>
+<m:mrow>
+  <m:mover>
+    <m:mi>i</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math> mierzona jest względem Ziemi, prędkość wyrzucanych gazów mierzona jest względem poruszającej się rakiety. Przekształcając ją w odniesieniu do układu związanego z Ziemią, uzyskamy <m:math>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>v</m:mi>
+<m:mo>−</m:mo>
+<m:mi>u</m:mi>
+<m:mo stretchy="false">)</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>i</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>.</para><para id="fs-id1167132371915">W następstwie wyrzucenia spalonych gazów masa rakiety zmalała o <m:math>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mtext>g</m:mtext>
+  </m:msub>
+</m:math>, a jej prędkość wzrosła o <m:math>
+<m:mrow>
+  <m:mi mathvariant="normal">d</m:mi>
+  <m:mi>v</m:mi>
+  <m:mstyle mathsize="normal">
+    <m:mover accent="true">
+      <m:mi>i</m:mi>
+      <m:mo>^</m:mo>
+    </m:mover>
+  </m:mstyle>
+</m:mrow>
+</m:math>. Uwzględniając zmianę masy rakiety oraz wyrzuconych gazów, końcowy pęd układu obliczymy jako:</para><equation id="fs-id1167133658461" class="unnumbered">
+  <m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>p</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mtext>po</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>p</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mtext>r</m:mtext>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>p</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mtext>g</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>m</m:mi>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mtext>g</m:mtext>
+        </m:msub>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>v</m:mi>
+        <m:mo>+</m:mo>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>v</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mrow>
+      <m:mover>
+        <m:mi>i</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mtext>g</m:mtext>
+    </m:msub>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>v</m:mi>
+        <m:mo>−</m:mo>
+        <m:mi>u</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mrow>
+      <m:mover>
+        <m:mi>i</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1167132423342">Ponieważ wszystkie wektory skierowane są wzdłuż osi <m:math>
+    <m:mi>x</m:mi>
+  </m:math>, możemy zrezygnować z notacji wektorowej. Stosując zasadę zachowania pędu, otrzymujemy:</para><equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167133396253" class="unnumbered"><m:math display="block"><m:semantics><m:mtable><m:mtr><m:mtd><m:msub><m:mi>p</m:mi><m:mtext>przed</m:mtext></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:msub><m:mi>p</m:mi><m:mtext>po</m:mtext></m:msub><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>v</m:mi><m:maligngroup/></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mfenced><m:mrow><m:mi>m</m:mi><m:mo>−</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:msub><m:mi>m</m:mi><m:mtext>g</m:mtext></m:msub></m:mrow></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mfenced><m:mrow><m:mi>v</m:mi><m:mo>+</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mi>v</m:mi></m:mrow></m:mrow></m:mfenced></m:mrow><m:mo>+</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>⁢</m:mo><m:mfenced><m:mrow><m:mi>v</m:mi><m:mo>−</m:mo><m:mi>u</m:mi></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>v</m:mi><m:maligngroup/></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mi>v</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mi>v</m:mi></m:mrow></m:mrow></m:mrow><m:mo>−</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>⁢</m:mo><m:mi>v</m:mi></m:mrow></m:mrow><m:mo>−</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>⁢</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mi>v</m:mi></m:mrow></m:mrow></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>⁢</m:mo><m:mi>v</m:mi></m:mrow></m:mrow></m:mrow><m:mo>−</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>⁢</m:mo><m:mi>u</m:mi><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mi>v</m:mi><m:maligngroup/></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>⁢</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mi>v</m:mi></m:mrow></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mrow><m:msub><m:mi>m</m:mi><m:mtext>g</m:mtext></m:msub><m:mo>⁢</m:mo><m:mi>u</m:mi><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{align} p_{\text{przed}} &amp;= p_{\text{po}} \text{,} \\ mv &amp;= (m-\d m_{\text{g}})(v + \d v) + \d m_{\text{g}} (v-u) \text{,} \\ mv &amp;= mv + m\d v - \d m_{\text{g}} v - \d m_{\text{g}} \d v + \d m_{\text{g}} v- \d m_{\text{g}} u \text{,} \\ m \d v &amp;= \d m_{\text{g}} \d v + \d m_{\text{g}} u \text{.} \end{align}</m:annotation></m:semantics></m:math></equation><para id="fs-id1167132416648">Ponieważ <m:math>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mtext>g</m:mtext>
+    </m:msub>
+  </m:math> i <m:math>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>v</m:mi>
+  </m:math>
+   są bardzo małe, ich iloczyn jest tym bardziej znikomy w porównaniu z pozostałymi wyrazami w równaniu. Pomijając go, otrzymamy:</para>
+  <equation id="fs-id1167133822229" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mi>m</m:mi>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:mi>v</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mtext>g</m:mtext>
+      </m:msub>
+      <m:mi>u</m:mi>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para id="fs-id1167132414244">Zauważmy, że <m:math>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mtext>g</m:mtext>
+    </m:msub>
+    </m:math> reprezentuje masę wyrzuconych gazów, ale liczbowo jest ona równa ubytkowi masy rakiety:</para>
+    <equation id="fs-id1167132261159" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mtext>g</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>m</m:mi>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1167133565517">Po zastąpieniu <m:math>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mtext>g</m:mtext>
+      </m:msub>
+      </m:math> w powyższym równaniu, uzyskamy:</para>
+      <equation id="fs-id1167133331678" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mi>m</m:mi>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>v</m:mi>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>m</m:mi>
+          <m:mi>u</m:mi>
+          <m:mo>,</m:mo>
+        </m:math>
+      </equation>
+      <para id="fs-id1167133544606">czyli:</para>
+      <equation id="fs-id1167133354925" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>v</m:mi>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>m</m:mi>
+            </m:mrow>
+            <m:mi>m</m:mi>
+          </m:mfrac>
+          <m:mi>u</m:mi>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="fs-id1167132231097">Całkujemy obustronnie od masy <m:math>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+        </m:math>
+       do masy <m:math>
+        <m:mi>m</m:mi>
+      </m:math>
+       rakiety:</para><equation id="fs-id1167133700691" class="unnumbered">
+        <m:math>
+          <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <m:mtr>
+              <m:mtd>
+                <m:munderover>
+                  <m:mo>∫</m:mo>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mi>v</m:mi>
+                </m:munderover>
+                <m:mrow>
+                  <m:mi mathvariant="normal">d</m:mi>
+                </m:mrow>
+                <m:mi>v</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mi/>
+                <m:mo>=</m:mo>
+                <m:mo>−</m:mo>
+                <m:mi>u</m:mi>
+                <m:munderover>
+                  <m:mo>∫</m:mo>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mi>m</m:mi>
+                </m:munderover>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">d</m:mi>
+                    </m:mrow>
+                    <m:mi>m</m:mi>
+                  </m:mrow>
+                  <m:mi>m</m:mi>
+                </m:mfrac>
+                <m:mo>,</m:mo>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd>
+                <m:mi>v</m:mi>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mtd>
+              <m:mtd>
+                <m:mi/>
+                <m:mo>=</m:mo>
+                <m:mi>u</m:mi>
+                <m:mi>ln</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mfrac>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mi>m</m:mi>
+                </m:mfrac>
+                <m:mo>.</m:mo>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="fs-id1167133568482">Odpowiedź na pytanie: „jak zmieni się prędkość rakiety?” brzmi więc następująco:</para><note id="fs-id1167131393821" class="equation-callout">
+        <equation id="fs-id1167133539448">
+          <m:math>
+            <m:mi mathvariant="normal">Δ</m:mi>
+            <m:mi>v</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>u</m:mi>
+            <m:mi>ln</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfrac>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mi>m</m:mi>
+            </m:mfrac>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+      </note>
+      <para id="fs-id1167133445045">To równanie znane jest pod nazwą <term cmlnle:reference="równanie ruchu rakiety" class="no-emphasis">równania ruchu rakiety</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">rocket equation</term></foreign>) lub <term cmlnle:reference="wzór Ciołkowskiego" class="no-emphasis">wzoru Ciołkowskiego</term> dla ruchu rakiety w próżni i przy braku grawitacji. Wzór ten, wyprowadzony przez rosyjskiego fizyka Konstantina Ciołkowskiego w roku 1897 wykazuje nieliniowy charakter zmian prędkości rakiety, której masa z paliwem wynosi <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+        </m:mrow>
+      </m:math>, a masa bez paliwa równa jest <m:math>
+        <m:mi>m</m:mi>
+      </m:math>.
+      </para><note id="fs-id1167133635427" class="problem-solving"><title>Strategia rozwiązywania zadań: analiza zjawiska odrzutu</title><para id="fs-id1167133830184">W typowych zagadnieniach opisujących ruch rakiety najczęściej poszukiwaną wielkością jest zmiana prędkości rakiety, wynikająca z faktu spalenia paliwa lub też związanego z tym przyspieszenia.</para><list id="fs-id1167131138658" list-type="enumerated" number-style="arabic"><item>Do wyznaczenia zmiany prędkości skorzystaj z <link target-id="fs-id1167133539448" cmlnle:case="genitive"/> Ciołkowskiego.</item>
+          <item>Do wyznaczenia przyspieszenia określ siłę (na podstawie reguły pędu i popędu), a następnie zmianę prędkości (z równania Ciołkowskiego).</item>
+        </list></note><example id="fs-id1167132331629">
+        <para id="fs-id1167133562110"><title>Siła ciągu silników statku kosmicznego</title>Statek kosmiczny porusza się w przestrzeni kosmicznej po torze prostym, kiedy pilot postanawia przyspieszyć. Włącza w tym celu silniki, które wytwarzają strumień gazów o stałej szybkości wypływu masy równej <m:math>
+            <m:mn>2</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">k</m:mi>
+              <m:mi mathvariant="normal">g</m:mi>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:math>, przy ich prędkości względem rakiety <m:math>
+          <m:mn>2,5</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:math>. Początkowa masa statku z paliwem wynosi <m:math>
+        <m:mn>2</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mn>4</m:mn>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">k</m:mi>
+          <m:mi mathvariant="normal">g</m:mi>
+        </m:mrow>
+        </m:math>, a czas pracy silników wynosił 30 s.</para><list id="fs-id1167133557994" list-type="enumerated" number-style="lower-alpha"><item>Jaka jest siła ciągu silników statku?</item>
+          <item>Wyznacz przyspieszenie statku w funkcji czasu.</item>
+          <item>Jaka była wartość przyspieszenia statku w chwilach <m:math>
+            <m:mi>t</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:math>, <m:math>
+          <m:mi>t</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>15</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:math>, <m:math>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>30</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+      </m:math>, <m:math>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>35</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+      </m:math>?</item>
+    </list><para id="fs-id1167133560436">
+      <title>Strategia rozwiązania</title>
+    </para>
+    <list id="fs-id1167132319102" list-type="enumerated" number-style="lower-alpha"><item>Na podstawie reguły pędu i popędu stwierdzamy, że siła ciągu silników będzie równa szybkości zmiany pędu statku.</item>
+      <item>Znając siłę ciągu z podpunktu (a), skorzystamy z II zasady dynamiki Newtona do wyznaczenia przyspieszenia. Kluczowy jest tu fakt, że mimo stałej prędkości wyrzutu gazów z dyszy i stałej siły ciągu przyspieszenie rośnie, ponieważ maleje masa statku. Z tego powodu spodziewamy się zależności przyspieszenia od czasu.</item>
+      <item>Odpowiedź wyliczoną w podpunkcie (b) wykorzystamy do wyznaczenia wartości liczbowych dla podanych momentów na osi czasu. Pamiętamy, że przyspieszenie powinno rosnąć, ponieważ zmniejsza się masa statku wskutek zużywania paliwa.</item>
+    </list><para id="fs-id1167133676986">
+      <title>Rozwiązanie</title>
+    </para>
+    <list id="fs-id1167133685958" list-type="enumerated" number-style="lower-alpha"><item>Pęd wyrzucanych gazów<newline/>
+        <equation id="fs-id1167133560380" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mrow>
+              <m:mi>p</m:mi>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mi>g</m:mi>
+              </m:msub>
+              <m:mi>u</m:mi>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <newline/>Prędkość wyrzucanych gazów <m:math>
+        <m:mi>u</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>2,5</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+      </m:math> jest stała, zatem licząc pochodną po czasie otrzymamy siłę ciągu jako:<newline/>
+      <equation id="fs-id1167132331662" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mi>F</m:mi>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>p</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mi>u</m:mi>
+          <m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mtext>g</m:mtext>
+              </m:msub>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <newline/>Zauważmy, że <m:math>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mtext>g</m:mtext>
+      </m:msub>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:mi>t</m:mi>
+    </m:math> jest szybkością wypływu masy wyrzucanych gazów, która zgodnie z treścią zadania wynosi <m:math>
+    <m:mn>2</m:mn>
+    <m:mo>⋅</m:mo>
+    <m:msup>
+      <m:mn>10</m:mn>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">k</m:mi>
+      <m:mi mathvariant="normal">g</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+  </m:math>. Po podstawieniu otrzymamy siłę ciągu silników:<newline/>
+  <equation id="fs-id1167132375260" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mi>F</m:mi>
+      <m:mo>=</m:mo>
+      <m:mi>u</m:mi>
+      <m:mfrac>
+        <m:mrow>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mtext>g</m:mtext>
+          </m:msub>
+        </m:mrow>
+        <m:mrow>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mn>2,5</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mspace width="0.2em"/>
+      </m:msup>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mn>2,0</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">k</m:mi>
+        <m:mi mathvariant="normal">g</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mn>5,0</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>4</m:mn>
+      </m:msup>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+</item>
+<item>Masa statku to suma jego masy własnej oraz paliwa, które w danej chwili ów statek posiada: <m:math>
+  <m:mi>m</m:mi>
+  <m:mo>=</m:mo>
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mtext>r</m:mtext>
+  </m:msub>
+  <m:mo>+</m:mo>
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mtext>g</m:mtext>
+  </m:msub>
+</m:math>. Z II zasady dynamiki Newtona<newline/>
+<equation id="fs-id1167132375186" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mi>a</m:mi>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mi>F</m:mi>
+      <m:mi>m</m:mi>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mi>F</m:mi>
+      <m:mrow>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mtext>r</m:mtext>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mtext>g</m:mtext>
+        </m:msub>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<newline/>Siła ciągu i masa własna pustej rakiety to wielkości stałe, natomiast masa paliwa jest funkcją zależną od czasu:<newline/>
+<equation id="fs-id1167133399469" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mtext>g</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mtext>g</m:mtext>
+    </m:msub>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>t</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mtext>g</m:mtext>
+    </m:msub>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mn>0</m:mn>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>−</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mtext>g</m:mtext>
+        </m:msub>
+      </m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mi>t</m:mi>
+    <m:mo>,</m:mo>
+  </m:math>
+</equation>
+<newline/>gdzie <m:math>
+<m:msub>
+  <m:mi>m</m:mi>
+  <m:mtext>g</m:mtext>
+</m:msub>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>0</m:mn>
+<m:mo stretchy="false">)</m:mo>
+</m:math> oznacza masę paliwa w rakiecie w chwili początkowej.<newline/>Wobec tego:<newline/>
+<equation id="fs-id1167133344911" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mi>a</m:mi>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mi>F</m:mi>
+      <m:mrow>
+        <m:mi>M</m:mi>
+        <m:mo>−</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mtext>g</m:mtext>
+            </m:msub>
+          </m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>,</m:mo>
+  </m:math>
+</equation>
+<newline/>gdzie <m:math>
+<m:mi>M</m:mi>
+<m:mo>=</m:mo>
+<m:msub>
+  <m:mi>m</m:mi>
+  <m:mtext>r</m:mtext>
+</m:msub>
+<m:mo>+</m:mo>
+<m:msub>
+  <m:mi>m</m:mi>
+  <m:mtext>g</m:mtext>
+</m:msub>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>0</m:mn>
+<m:mo stretchy="false">)</m:mo>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+<m:mo>⋅</m:mo>
+<m:msup>
+  <m:mn>10</m:mn>
+  <m:mn>4</m:mn>
+</m:msup>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">k</m:mi>
+  <m:mi mathvariant="normal">g</m:mi>
+</m:mrow>
+</m:math> jest masą rakiety wraz z paliwem w chwili <m:math>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+</m:math>.
+ Z powyższego wzoru wynika jawnie zależność przyspieszenia od czasu, która będzie funkcją rosnącą. Po podstawieniu danych z zadania:<newline/>
+<equation id="fs-id1167132340651" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mi>a</m:mi>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mn>5,0</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mn>4</m:mn>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">N</m:mi>
+        </m:mrow>
+      </m:mrow>
+      <m:mrow>
+        <m:mn>2,0</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mn>4</m:mn>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">k</m:mi>
+          <m:mi mathvariant="normal">g</m:mi>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>2,0</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">k</m:mi>
+          <m:mi mathvariant="normal">g</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+</item>
+<item>We wskazanych momentach:<newline/>gdy <m:math>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">s</m:mi>
+  </m:mrow>
+</m:math> (kiedy tylko pojawia się siła ciągu silników):<newline/>
+<equation id="fs-id1167132504089" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mi>a</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mn>0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mn>5,0</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mn>4</m:mn>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">N</m:mi>
+        </m:mrow>
+      </m:mrow>
+      <m:mrow>
+        <m:mn>2,0</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mn>4</m:mn>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">k</m:mi>
+          <m:mi mathvariant="normal">g</m:mi>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mn>2,0</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">k</m:mi>
+          <m:mi mathvariant="normal">g</m:mi>
+          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mn>0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">s</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mn>2,5</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+      <m:msup>
+        <m:mi mathvariant="normal">s</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+    <m:mo>,</m:mo>
+  </m:math>
+</equation>
+<newline/>gdy <m:math>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mn>15</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>, to <m:math>
+<m:mi>a</m:mi>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>15</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+<m:mo>=</m:mo>
+<m:mn>2,9</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">m</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:msup>
+    <m:mi mathvariant="normal">s</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math>,<newline/>gdy <m:math>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mn>30</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>,  to <m:math>
+<m:mi>a</m:mi>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>30</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+<m:mo>=</m:mo>
+<m:mn>3,6</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">m</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:msup>
+    <m:mi mathvariant="normal">s</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math>,<newline/>ale gdy <m:math>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mn>35</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>,  to <m:math>
+<m:mi>a</m:mi>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>35</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">m</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:msup>
+    <m:mi mathvariant="normal">s</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math>, ponieważ <m:math>
+  <m:mi>F</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+</m:math>
+ (silniki zostały wyłączone).<newline/>W trakcie pracy silników, jak się spodziewaliśmy, przyspieszenie rosło.</item>
+</list><para id="fs-id1167133406211"><title>Znaczenie</title>Zauważmy, że przyspieszenie nie jest stałe, co powoduje, że każda wielkość dynamiczna lub kinematyczna powinna być liczona z użyciem całki lub (w prostszym przypadku) z zasady zachowania energii całkowitej.</para></example>
+<note id="fs-id1167133365488" class="check-understanding">
+  <exercise id="fs-id1167133451449">
+    <problem id="fs-id1167133792368">
+      <para id="fs-id1167132436151"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Jaka jest fizyczna różnica (lub zależność) między <m:math>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+            <m:mi>m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mi mathvariant="normal">d</m:mi>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:math> i <m:math>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mtext>g</m:mtext>
+        </m:msub>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>t</m:mi>
+        </m:math> w powyższym przykładzie?</para></problem>
+      <solution id="fs-id1167132289452">
+        <para id="fs-id1167133789987">Symbol <m:math>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mtext>g</m:mtext>
+          </m:msub>
+        </m:math> dotyczy masy paliwa, która jest funkcją czasu <m:math>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mtext>g</m:mtext>
+        </m:msub>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo stretchy="false">)</m:mo>
+      </m:math>, a <m:math>
+        <m:mi>m</m:mi>
+      </m:math>
+     jest masą rakiety z paliwem, przy czym <m:math>
+    <m:mi>m</m:mi>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mtext>r</m:mtext>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mtext>g</m:mtext>
+    </m:msub>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>t</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+  </m:math>. Z kolei <m:math>
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mtext>r</m:mtext>
+  </m:msub>
+</m:math> oznacza masę pustej rakiety (jej masę własną). Różniczkowanie ostatniego równania po czasie daje wynik:<newline/>
+<m:math>
+  <m:mfrac>
+    <m:mrow>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:mi>m</m:mi>
+    </m:mrow>
+    <m:mrow>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:mi>t</m:mi>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo>
+  <m:mfrac>
+    <m:mrow>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mtext>r</m:mtext>
+      </m:msub>
+    </m:mrow>
+    <m:mrow>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:mi>t</m:mi>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>+</m:mo>
+  <m:mfrac>
+    <m:mrow>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mtext>g</m:mtext>
+      </m:msub>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo stretchy="false">)</m:mo>
+    </m:mrow>
+    <m:mrow>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:mi>t</m:mi>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo>
+  <m:mfrac>
+    <m:mrow>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mtext>g</m:mtext>
+      </m:msub>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo stretchy="false">)</m:mo>
+    </m:mrow>
+    <m:mrow>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:mi>t</m:mi>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>,</m:mo>
+</m:math>
+<newline/>ponieważ <m:math>
+<m:mrow>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:msub>
+  <m:mi>m</m:mi>
+  <m:mtext>r</m:mtext>
+</m:msub>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math> (masa własna rakiety nie ulega zmianie). Zatem szybkość zmian masy rakiety z paliwem jest taka sama jak szybkość zmian masy paliwa w zbiornikach.</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1167133375888">
+  <title>Rakieta w polu grawitacyjnym Ziemi</title>
+  <para id="fs-id1167133535955">Przeanalizujmy teraz zmiany prędkości rakiety podczas fazy startu w polu grawitacyjnym Ziemi. Przyjmijmy, że w omawianym na tym etapie przedziale wysokości przyspieszenie grawitacyjne traktujemy jako stałe i wynoszące <m:math>
+      <m:mi>g</m:mi>
+    </m:math>.
+    </para><para id="fs-id1167133558499">Analiza przebiega podobnie jak w przypadku rakiety w przestrzeni kosmicznej, z tym że uwzględniamy obecność stałej siły skierowanej pionowo w dół <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>F</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mo>−</m:mo>
+      <m:mi>m</m:mi>
+      <m:mi>g</m:mi>
+      <m:mrow>
+        <m:mover>
+          <m:mi>j</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+    </m:math>, działającej na nasz układ. Siła ta wytwarza impuls <m:math>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mrow>
+      <m:mover>
+        <m:mi>J</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>F</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:mo>−</m:mo>
+    <m:mi>m</m:mi>
+    <m:mi>g</m:mi>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>t</m:mi>
+    <m:mrow>
+      <m:mover>
+        <m:mi>j</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    </m:math>, który jest równy zmianie pędu:</para>
+    <equation id="fs-id1167133612598" class="unnumbered">
+      <m:math>
+        <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+          <m:mtr>
+            <m:mtd>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>p</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mtd>
+            <m:mtd>
+              <m:mi/>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>J</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:msub>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>p</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mrow>
+                <m:mtext>po</m:mtext>
+              </m:msub>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>p</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mrow>
+                <m:mtext>przed</m:mtext>
+              </m:msub>
+            </m:mtd>
+            <m:mtd>
+              <m:mi/>
+              <m:mo>=</m:mo>
+              <m:mo>−</m:mo>
+              <m:mi>m</m:mi>
+              <m:mi>g</m:mi>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:mrow>
+                <m:mo>[</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>m</m:mi>
+                      <m:mo>−</m:mo>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">d</m:mi>
+                      </m:mrow>
+                      <m:msub>
+                        <m:mi>m</m:mi>
+                        <m:mtext>g</m:mtext>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>v</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">d</m:mi>
+                      </m:mrow>
+                      <m:mi>v</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mtext>g</m:mtext>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>v</m:mi>
+                      <m:mo>−</m:mo>
+                      <m:mi>u</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mi>m</m:mi>
+                  <m:mi>v</m:mi>
+                </m:mrow>
+                <m:mo>]</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mtd>
+            <m:mtd>
+              <m:mi/>
+              <m:mo>=</m:mo>
+              <m:mo>−</m:mo>
+              <m:mi>m</m:mi>
+              <m:mi>g</m:mi>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>j</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+      </m:math>
+    </equation>
+    <para id="fs-id1167132205531">A zatem</para>
+    <equation id="fs-id1167133540165" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mi>m</m:mi>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>v</m:mi>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mtext>g</m:mtext>
+        </m:msub>
+        <m:mi>u</m:mi>
+        <m:mo>=</m:mo>
+        <m:mo>−</m:mo>
+        <m:mi>m</m:mi>
+        <m:mi>g</m:mi>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>t</m:mi>
+        <m:mo>,</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1167133513938">gdzie, podobnie jak poprzednio, pominęliśmy człon <m:math>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mtext>g</m:mtext>
+      </m:msub>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:mi>v</m:mi>
+    </m:math> oraz zrezygnowaliśmy z zapisu wektorowego. Możemy także zamienić <m:math>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mtext>g</m:mtext>
+    </m:msub>
+  </m:math> symbolem <m:math>
+  <m:mo>−</m:mo>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:mi>m</m:mi>
+  </m:math>:</para>
+  <equation id="fs-id1167133612085" class="unnumbered">
+    <m:math>
+      <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+        <m:mtr>
+          <m:mtd>
+            <m:mi>m</m:mi>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>v</m:mi>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>m</m:mi>
+            <m:mi>u</m:mi>
+          </m:mtd>
+          <m:mtd>
+            <m:mi/>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mi>m</m:mi>
+            <m:mi>g</m:mi>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>t</m:mi>
+            <m:mo>,</m:mo>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>m</m:mi>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>v</m:mi>
+          </m:mtd>
+          <m:mtd>
+            <m:mi/>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>m</m:mi>
+            <m:mi>u</m:mi>
+            <m:mo>−</m:mo>
+            <m:mi>m</m:mi>
+            <m:mi>g</m:mi>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>t</m:mi>
+            <m:mo>.</m:mo>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+    </m:math>
+  </equation>
+  <para id="fs-id1167133514676">Po podzieleniu przez <m:math>
+      <m:mi>m</m:mi>
+    </m:math>
+     otrzymujemy</para>
+    <equation id="fs-id1167132539368" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>v</m:mi>
+        <m:mo>=</m:mo>
+        <m:mo>−</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mi>m</m:mi>
+          </m:mrow>
+          <m:mi>m</m:mi>
+        </m:mfrac>
+        <m:mi>u</m:mi>
+        <m:mo>−</m:mo>
+        <m:mi>g</m:mi>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>t</m:mi>
+        <m:mo>,</m:mo>
+      </m:math>
+    </equation>
+    <para id="fs-id1167133694572">a po scałkowaniu:</para>
+    <note id="fs-id1167131226099" class="equation-callout">
+      <equation id="fs-id1167133523104">
+        <label/>
+        <m:math>
+          <m:mi mathvariant="normal">Δ</m:mi>
+          <m:mi>v</m:mi>
+          <m:mo>=</m:mo>
+          <m:mi>u</m:mi>
+          <m:mi>ln</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mfrac>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mi>m</m:mi>
+          </m:mfrac>
+          <m:mo>−</m:mo>
+          <m:mi>g</m:mi>
+          <m:mi mathvariant="normal">Δ</m:mi>
+          <m:mi>t</m:mi>
+          <m:mo>,</m:mo>
+        </m:math>
+      </equation>
+    </note>
+    <para id="fs-id1167133446981">przy czym <m:math>
+      <m:mrow>
+        <m:mtext>Δ</m:mtext>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:math> oznacza czas trwania procesu spalania paliwa. Nikogo chyba nie dziwi, że ze względu na przyciąganie ziemskie zmiana prędkości rakiety będzie teraz mniejsza. Przy braku grawitacji nie miało znaczenia, ile czasu trwało zużycie całego paliwa – maksymalna zmiana prędkości nie była od tego zależna. W obecności siły grawitacji jednak okazuje się to istotne. Czynnik <m:math>
+    <m:mo>−</m:mo>
+    <m:mi>g</m:mi>
+    <m:mi mathvariant="normal">Δ</m:mi>
+    <m:mi>t</m:mi>
+  </m:math> w <link target-id="fs-id1167133523104" cmlnle:case="locative"/> mówi nam, że im dłużej będzie trwało spalanie całego paliwa, tym mniejszą zmianę prędkości uzyskamy. Z tego powodu przy starcie rakiety moment jej poderwania jest zawsze tak spektakularnym widowiskiem. Ważne jest bowiem spalenie dużej ilości paliwa (i wypuszczenie ogromnej ilości gazów) w jak najkrótszym czasie – tak aby uzyskać możliwie największe <m:math>
+  <m:mrow>
+    <m:mtext>Δ</m:mtext>
+    <m:mi>v</m:mi>
+  </m:mrow>
+  </m:math>.
+</para></section>
+<section id="fs-id1167131237917" class="key-concepts">
+  <title>Podsumowanie</title>
+  <list id="fs-id1167133384840" list-type="bulleted" bullet-style="bullet">
+    <item>Napęd rakietowy jest przykładem zasady zachowania pędu w układzie, w którym masa ulega zmianom w sposób ciągły, w efekcie spalania paliwa i wyrzucania gazów przez silniki rakiety.</item>
+    <item>Równanie ruchu rakiety znane też jako równanie Ciołkowskiego przedstawia zmianę prędkości rakiety wskutek spalania paliwa i zmniejszania się masy rakiety.</item>
+  </list>
+</section>
+<section id="fs-id1167133829595" class="key-equations">
+  <title>Najważniejsze wzory</title>
+  <table id="fs-id1170902236204" class="unnumbered unstyled" summary="Definicja pędu, wektor p równego m razy wektor; Popęd siły (impulsu), wektor J równy całce ti do tf wektora F t dt lub wektor J równy wektorowi F z indeksem dolnym śm delta t; Reguła pędu i popędu, wektor J równy wektorowi delta P; Zależność zmiany pędu od siły średniej, wektor F równy delta wektor P przez delta t; Zależność zmiany pędu od siły średniej, wektor F równy delta wektor P przez delta t; Zależność pędu od siły (II prawo Newtona), wektor F t równy d przez dt wektor p; Zasada zachowania pędu, d przez dt wektor p1 plus d przez dt wektor p2 równy zero lub wektor p1 plus wektor p2 równy const; Uogólniona zasada zachowania pędu, suma j od 1 do N wektor p z indeksem J równe const; Zasada zachowania pędu w dwóch wymiarach, P z indeksem f, x równe P z indeksem 1, i, x plus P z indeksem 2, i, x, P z indeksem f, y równe P z indeksem 1, i, y plus P z indeksem 2, i, y; Siły zewnętrzne, wektor F z równy sumie j od 1 do N d przez dt wektor p z indeksem j; II zasada dynamiki dla obiektów fizycznych (rozciągłych) jako wektor F równy od zera do d przez dt wektor P z indeksem CM; II zasada dynamiki dla obiektów fizycznych (rozciągłych), wektor F równy d przez dt wektor P z indeksem CM; Przyspieszenie środka masy, wektor a z indeksem CM równym d do kwadratu przez dt do kwadratu nawias otwarty 1 przez M sumy j od 1 do N m z indeksem j wektor r z indeksem j nawias zamknięty równe i przez M sumy j od 1 do N m z indeksem j wektor a z indeksem j; Przyspieszenie środka masy układu cząstek, wektor r z indeksem CM równy 1 przez M suma j od 1 do N m z indeksem j wektor z indeksem j; Prędkość środka masy, wektor v z indeksem CM równe d przez dt nawias otwarty 1 przez M suma j równe 1 do N m z indeksem j wektor r z indeksem j nawias zamknięty równe 1 przez M suma j od 1 do N m z indeksem j wektor v z indeksem j; Położenie środka masy o rozkładzie ciągłym, wektor r z indeksem CM równy 1 przez M całka wektor r d m; Równanie ruchu rakiety (wzór Ciołkowskiego) – bez grawitacji, delta v równe logarytm naturalny nawias otwarty m z indeksem i przez m nawias zamknięty."><label/>
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+      <colspec colnum="2" colname="c2"/>
+      <tbody>
+        <row>
+          <entry align="left">Definicja pędu</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:mstyle mathsize="normal">
+                  <m:mover accent="true">
+                    <m:mi>p</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mstyle>
+                <m:mo>=</m:mo>
+                <m:mi>m</m:mi>
+                <m:mstyle mathsize="normal">
+                  <m:mover accent="true">
+                    <m:mi>v</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mstyle>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Popęd siły (impuls)</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:mover accent="true">
+                  <m:mi>J</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+                <m:mo>≡</m:mo>
+                <m:mstyle displaystyle="true">
+                  <m:mrow>
+                    <m:munderover>
+                      <m:mo symmetric="true" largeop="true" movablelimits="true">∫</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>t</m:mi>
+                          <m:mtext>0</m:mtext>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>t</m:mi>
+                          <m:mtext>1</m:mtext>
+                        </m:msub>
+                      </m:mrow>
+                    </m:munderover>
+                    <m:mrow>
+                      <m:mover accent="true">
+                        <m:mi>F</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mi>t</m:mi>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mi mathvariant="normal">d</m:mi>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+              </m:mrow>
+              <m:mspace width="0.2em"/>
+              <m:mtext>lub</m:mtext>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mstyle mathsize="normal">
+                  <m:mover accent="true">
+                    <m:mi>J</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mstyle>
+                <m:mo>=</m:mo>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>F</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mrow>
+                    <m:mtext>śr</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mi>Δ</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Reguła pędu i popędu</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:mstyle mathsize="normal">
+                  <m:mover accent="true">
+                    <m:mi>J</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mstyle>
+                <m:mo>=</m:mo>
+                <m:mi>Δ</m:mi>
+                <m:mstyle mathsize="normal">
+                  <m:mover accent="true">
+                    <m:mi>p</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mstyle>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Zależność zmiany pędu od siły średniej</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>F</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mrow>
+                    <m:mtext>śr</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi>Δ</m:mi>
+                    <m:mstyle mathsize="normal">
+                      <m:mover accent="true">
+                        <m:mi>p</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mstyle>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi>Δ</m:mi>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Zależność pędu od siły (II prawo Newtona)</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:mstyle mathsize="normal">
+                  <m:mover accent="true">
+                    <m:mi>F</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mstyle>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo stretchy="false">)</m:mo>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                    <m:mstyle mathsize="normal">
+                      <m:mover accent="true">
+                        <m:mi>p</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mstyle>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Zasada zachowania pędu</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                    <m:msub>
+                      <m:mstyle mathsize="normal">
+                        <m:mover accent="true">
+                          <m:mi>p</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                      </m:mstyle>
+                      <m:mstyle mathsize="normal">
+                        <m:mn>1</m:mn>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>+</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                    <m:msub>
+                      <m:mstyle mathsize="normal">
+                        <m:mover accent="true">
+                          <m:mi>p</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                      </m:mstyle>
+                      <m:mstyle mathsize="normal">
+                        <m:mn>2</m:mn>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+              <m:mspace width="0.5em"/>
+              <m:mtext>lub</m:mtext>
+              <m:mspace width="0.5em"/>
+              <m:mrow>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>p</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mstyle mathsize="normal">
+                    <m:mn>1</m:mn>
+                  </m:mstyle>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>p</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mstyle mathsize="normal">
+                    <m:mn>2</m:mn>
+                  </m:mstyle>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mtext>const</m:mtext>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Uogólniona zasada zachowania pędu</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:mstyle displaystyle="true">
+                  <m:munderover>
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:mi>j</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mi>N</m:mi>
+                  </m:munderover>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mstyle mathsize="normal">
+                        <m:mover accent="true">
+                          <m:mi>p</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                      </m:mstyle>
+                      <m:mstyle mathsize="normal">
+                        <m:mi>j</m:mi>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mo>=</m:mo>
+                <m:mtext>const</m:mtext>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Zasada zachowania pędu w dwóch wymiarach</entry>
+          <entry align="left">
+            <m:math>
+              <m:mtable>
+                <m:mtr>
+                  <m:mtd columnalign="left">
+                    <m:msub>
+                      <m:mi>p</m:mi>
+                      <m:mrow>
+                        <m:mi>x</m:mi>
+                        <m:mspace width="0.2em"/>
+                        <m:mtext>sum po</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>p</m:mi>
+                      <m:mrow>
+                        <m:mi>x1</m:mi>
+                        <m:mspace width="0.2em"/>
+                        <m:mtext>przed</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>p</m:mi>
+                      <m:mrow>
+                        <m:mi>x2</m:mi>
+                        <m:mspace width="0.2em"/>
+                        <m:mtext>przed</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd columnalign="left">
+                    <m:msub>
+                      <m:mi>p</m:mi>
+                      <m:mrow>
+                        <m:mi>y</m:mi>
+                        <m:mspace width="0.2em"/>
+                        <m:mtext>sum po</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>p</m:mi>
+                      <m:mrow>
+                        <m:mi>y1</m:mi>
+                        <m:mspace width="0.2em"/>
+                        <m:mtext>przed</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>p</m:mi>
+                      <m:mrow>
+                        <m:mi>y2</m:mi>
+                        <m:mspace width="0.2em"/>
+                        <m:mtext>przed</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Siły zewnętrzne</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>F</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mrow>
+                    <m:mtext>z</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mstyle displaystyle="true">
+                  <m:munderover>
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:mi>j</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mi>N</m:mi>
+                  </m:munderover>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">d</m:mi>
+                        <m:msub>
+                          <m:mstyle mathsize="normal">
+                            <m:mover accent="true">
+                              <m:mi>p</m:mi>
+                              <m:mtext>→</m:mtext>
+                            </m:mover>
+                          </m:mstyle>
+                          <m:mi>j</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">d</m:mi>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mstyle>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">II zasada dynamiki dla obiektów fizycznych (rozciągłych)</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>F</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mrow>
+                    <m:mtext>z</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                    <m:msub>
+                      <m:mstyle mathsize="normal">
+                        <m:mover accent="true">
+                          <m:mi>p</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                      </m:mstyle>
+                      <m:mrow>
+                        <m:mtext>ŚM</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Przyspieszenie środka masy</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:mstyle mathsize="normal">
+                  <m:mover accent="true">
+                    <m:mi>a</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mstyle>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi mathvariant="normal">d</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                    <m:msup>
+                      <m:mi>t</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mi>M</m:mi>
+                    </m:mfrac>
+                    <m:mstyle displaystyle="true">
+                      <m:munderover>
+                        <m:mo>∑</m:mo>
+                        <m:mrow>
+                          <m:mi>j</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                        <m:mi>N</m:mi>
+                      </m:munderover>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>m</m:mi>
+                          <m:mi>j</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:msub>
+                      <m:mstyle mathsize="normal">
+                        <m:mover accent="true">
+                          <m:mi>r</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                      </m:mstyle>
+                      <m:mi>j</m:mi>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mi>M</m:mi>
+                </m:mfrac>
+                <m:mstyle displaystyle="true">
+                  <m:munderover>
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:mi>j</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mi>N</m:mi>
+                  </m:munderover>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mi>j</m:mi>
+                    </m:msub>
+                  </m:mrow>
+                </m:mstyle>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>a</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mi>j</m:mi>
+                </m:msub>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Położenie środka masy układu cząstek</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>r</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mrow>
+                    <m:mtext>ŚM</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>≡</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mi>M</m:mi>
+                </m:mfrac>
+                <m:mstyle displaystyle="true">
+                  <m:munderover>
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:mi>j</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mi>N</m:mi>
+                  </m:munderover>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mi>j</m:mi>
+                    </m:msub>
+                  </m:mrow>
+                </m:mstyle>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>r</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mi>j</m:mi>
+                </m:msub>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Prędkość środka masy</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:mstyle mathsize="normal">
+                  <m:mover accent="true">
+                    <m:mi>v</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mstyle>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mi mathvariant="normal">d</m:mi>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mi>M</m:mi>
+                    </m:mfrac>
+                    <m:mstyle displaystyle="true">
+                      <m:munderover>
+                        <m:mo>∑</m:mo>
+                        <m:mrow>
+                          <m:mi>j</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                        <m:mi>N</m:mi>
+                      </m:munderover>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>m</m:mi>
+                          <m:mi>j</m:mi>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:msub>
+                      <m:mstyle mathsize="normal">
+                        <m:mover accent="true">
+                          <m:mi>r</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                      </m:mstyle>
+                      <m:mi>j</m:mi>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mi>M</m:mi>
+                </m:mfrac>
+                <m:mstyle displaystyle="true">
+                  <m:munderover>
+                    <m:mo>∑</m:mo>
+                    <m:mrow>
+                      <m:mi>j</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:mrow>
+                    <m:mi>N</m:mi>
+                  </m:munderover>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mi>j</m:mi>
+                    </m:msub>
+                  </m:mrow>
+                </m:mstyle>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>v</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mi>j</m:mi>
+                </m:msub>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Położenie środka masy ciała o rozkładzie ciągłym</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mstyle mathsize="normal">
+                    <m:mover accent="true">
+                      <m:mi>r</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mstyle>
+                  <m:mrow>
+                    <m:mtext>ŚM</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>≡</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mi>M</m:mi>
+                </m:mfrac>
+                <m:mstyle displaystyle="true">
+                  <m:mrow>
+                    <m:mo stretchy="false">∫</m:mo>
+                    <m:mrow>
+                      <m:mstyle mathsize="normal">
+                        <m:mover accent="true">
+                          <m:mi>r</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                      </m:mstyle>
+                      <m:mspace width="0.2em"/>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mi mathvariant="normal">d</m:mi>
+                <m:mi>m</m:mi>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row>
+          <entry align="left">Równanie ruchu rakiety (wzór Ciołkowskiego)<newline/> – bez grawitacji</entry>
+          <entry align="left">
+            <m:math>
+              <m:mrow>
+                <m:mi>Δ</m:mi>
+                <m:mi>v</m:mi>
+                <m:mo>=</m:mo>
+                <m:mi>u</m:mi>
+                <m:mspace width="0.2em"/>
+                <m:mtext>ln</m:mtext>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>m</m:mi>
+                          <m:mtext>0</m:mtext>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mi>m</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+      </tbody>
+    
+</tgroup>
+</table></section>
+<section id="fs-id1167133333085" class="review-conceptual-questions">
+  <title>Pytania</title>
+  <exercise id="fs-id1167133603524">
+    <problem id="fs-id1167133603526">
+      <para id="fs-id1167132235862">Możliwa jest sytuacja, kiedy prędkość rakiety jest większa od prędkości wyrzucanych gazów. Gdy ma to miejsce, prędkość i pęd gazów skierowane są w tę samą stronę co rakieta. Jak to się dzieje, że rakieta wciąż uzyskuje napęd z takiego spalania?</para>
+    </problem>
+    <solution id="fs-id1167133780024">
+      <para id="fs-id1167133780026">Napęd rakiety jest efektem zasady zachowania pędu i nie zależy od prędkości gazów względem rakiety. Statek przyspiesza, bo wyrzuca gazy za siebie, i to jest gwarancją przyrostu prędkości.</para></solution>
+  </exercise>
+</section>
+<section id="fs-id1167133780028" class="review-problems">
+  <title>Zadania</title>
+  <exercise id="fs-id1167132243654"><problem id="fs-id1167133346136">
+      <para id="fs-id1167132273364">Kałamarnica o masie 5 kg, będąca początkowo w spoczynku, wyrzuca z siebie 0,25 kg wody z prędkością 10 m/s.</para><list id="eip-idm880488064" list-type="enumerated" number-style="lower-alpha"><item>Jaka będzie prędkość odrzutu kałamarnicy, jeśli czas trwania wyrzutu wody wynosił 0,1 s a siła oporów ruchu wynosi 5 N?</item><item>Ile energii zużyła kałamarnica, aby pokonać siłę oporów ruchu?</item></list>
+    </problem>
+    <solution id="fs-id1167132273369">
+      <para id="fs-id1167132522511">a. 0,413 m/s, b. około 0,2 J.</para>
+    </solution>
+  </exercise><exercise id="fs-id1167132522517">
+    <problem id="fs-id1167132620035">
+      <para id="fs-id1167132620037">Rakieta startuje z powierzchni Ziemi i osiąga prędkość 100 m/s w czasie 10 s. Przyjmując, że prędkość wylotu gazów jest równa 1500 m/s, a masa spalonego paliwa wynosi 100 kg, oblicz początkową masę rakiety.</para></problem>
+  </exercise>
+  <exercise id="fs-id1167132362217">
+    <problem id="fs-id1167132467177">
+      <para id="fs-id1167132467179">Przeprowadź analizę jak w poprzednim zadaniu, przyjmując jednak, że rakieta startuje ze stacji kosmicznej, gdzie nie ma wpływu grawitacji (pomijając niewielką grawitację, której źródłem jest sama stacja).</para></problem>
+    <solution id="fs-id1167132414203">
+      <para id="fs-id1167132414205">1551 kg</para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1167133842903">
+    <problem id="fs-id1167133842905">
+      <para id="fs-id1167132528474">Ile paliwa potrzeba dla rakiety o masie własnej 1000 kg, aby wystartować z powierzchni Ziemi i osiągnąć prędkość 1000 m/s w ciągu 30 s? Prędkość wyrzutu gazów wynosi 1000 m/s.</para></problem>
+  </exercise>
+  <exercise id="fs-id1167132616660">
+    <problem id="fs-id1167132616662">
+      <para id="fs-id1167132446574">Jaka prędkość wyrzutu gazów jest potrzebna do przyspieszenia rakiety w przestrzeni kosmicznej z prędkości 800 m/s do 1000 m/s w czasie 5 s, jeżeli całkowita masa rakiety wynosi 1200 kg i zostało w niej tylko 50 kg paliwa?</para></problem>
+    <solution id="fs-id1167133464000">
+      <para id="fs-id1167133464002">4,9 km/s</para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1167132376612">
+    <problem id="fs-id1167132376614">
+      <para id="fs-id1167132361762"><emphasis effect="bold">Nieracjonalne wyniki.</emphasis> Podobno kałamarnice są w stanie wyskoczyć z wody i pokonać w powietrzu poziomą odległość równą 30 m.</para><para id="fs-id1167132619975">a. Zakładając, że można pominąć straty na oderwanie się od wody i opór powietrza, oblicz początkową prędkość kałamarnicy, jeśli wyskakuje ona z wody pod kątem 20°.</para><para id="fs-id1167132267521">b. Kałamarnica uzyskuje napęd wyrzucając wodę z wnętrza swojego ciała. Jaki ułamek masy jej ciała powinna stanowić woda, aby uzyskać prędkość potrzebną do wyskoku w poprzednim podpunkcie? Woda wyrzucana jest z prędkością 12 m/s, pomijamy przyspieszenie ziemskie podczas odrzutu oraz siły tarcia.</para>
+        <para id="fs-id1167132267526">c. Co jest niedorzecznego w otrzymanych wynikach?</para>
+        <para id="fs-id1167133457650">d. Które założenie jest niesłuszne, albo które założenia są ze sobą niespójne?</para>
+      </problem>
+    </exercise>
+  </section>
+  <section id="fs-id1167133856322" class="review-additional-problems">
+    <title>Zadania dodatkowe</title>
+    <exercise id="fs-id1167132530479">
+      <problem id="fs-id1167132243177">
+        <para id="fs-id1167132243179">Wioślarze o masie 70 kg płyną kajakiem o masie 50 kg. Kajak porusza się z prędkością 1,2 m/s względem wody, zaś woda płynie z prędkością 4 m/s względem lądu. Jaki jest ich pęd względem lądu?</para></problem>
+    </exercise>
+    <exercise id="fs-id1167133606659">
+      <problem id="fs-id1167133606661">
+        <para id="fs-id1167133606663">Co ma większy pęd: Ważący 3 tony słoń biegnący z prędkością 40 km/h czy gepard o masie 60 kg biegnący z prędkością 112 km/h?</para></problem>
+      <solution id="fs-id1167132228807">
+        <para id="fs-id1167133550418">Słoń ma większy pęd.</para>
+      </solution>
+    </exercise>
+    <exercise id="fs-id1167133550424">
+      <problem id="fs-id1167132276399">
+        <para id="fs-id1167132276401">Kierowca, naciskając pedał hamulca, zmniejsza prędkość samochodu o 20%, nie zmieniając kierunku ruchu auta. Jaką zmianę pędu to wywoła?</para></problem>
+    </exercise>
+    <exercise id="fs-id1167133863112">
+      <problem id="fs-id1167133484982">
+        <para id="fs-id1167133484984">Twój kolega twierdzi, że skoro pęd jest iloczynem masy i prędkości, to ciało o większej masie ma zawsze większy pęd. Czy zgadzasz się z tym? Wyjaśnij.</para></problem>
+      <solution id="fs-id1167132463331">
+        <para id="fs-id1167132463334">O ile pierwsza część wypowiedzi jest prawdą to druga niekoniecznie, ponieważ prędkość lekkiego obiektu może być bardzo duża co spowoduje, że pęd tego ciała będzie większy, niż pęd ciężkiego obiektu poruszającego się powoli.</para>
+      </solution>
+    </exercise>
+    <exercise id="fs-id1167133718494">
+      <problem id="fs-id1167133805059">
+        <para id="fs-id1167133805062">Prawdopodobieństwo rozbicia się szklanki po upadku na betonową podłogę jest zdecydowanie większe niż po upadku na miękki trawnik. Wyjaśnij, dlaczego tak się dzieje, w kontekście reguły pędu i popędu.</para>
+      </problem>
+    </exercise>
+    <exercise id="fs-id1167132319328">
+      <problem id="fs-id1167132319330">
+        <para id="fs-id1167133683538">Twój sportowy samochód o masie 1,5 tony przyspiesza od 0 do 30 m/s w 10 s. Jaka średnia siła działa na niego podczas przyspieszania?</para></problem>
+      <solution id="fs-id1167132412597">
+        <para id="fs-id1167132412599">
+          <m:math>
+            <m:mn>4,5</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </para>
+      </solution>
+    </exercise>
+    <exercise id="fs-id1167132426568">
+      <problem id="fs-id1167132426570">
+        <para id="fs-id1167132371110">Piłkę o masie <m:math>
+          <m:mi>m</m:mi>
+        </m:math> upuszczono swobodnie w polu grawitacyjnym Ziemi. Jakim wzorem opiszesz impuls udzielony piłce od chwili wypuszczenia jej z ręki do pewnej chwili <m:math>
+        <m:mi>τ</m:mi>
+        </m:math>? Opory ruchu pomijamy.</para></problem>
+    </exercise>
+    <exercise id="fs-id1167132463268">
+      <problem id="fs-id1167132361231">
+        <para id="fs-id1167132361233">Przeanalizuj poprzednie zagadnienie uwzględniając siłę oporów ruchu <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mstyle mathsize="normal">
+                <m:mover accent="true">
+                  <m:mi>F</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mstyle>
+              <m:mrow>
+                <m:mtext>op</m:mtext>
+              </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mtext>−</m:mtext>
+            <m:mi>b</m:mi>
+            <m:mover accent="true">
+              <m:mi>v</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </para>
+    </problem>
+    <solution id="fs-id1167132541928">
+      <para id="fs-id1167133793004">
+        <m:math>
+          <m:mrow>
+            <m:mstyle mathsize="normal">
+              <m:mover accent="true">
+                <m:mi>J</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mstyle>
+            <m:mo>=</m:mo>
+            <m:mstyle displaystyle="true">
+              <m:mrow>
+                <m:munderover>
+                  <m:mo symmetric="true" largeop="true" movablelimits="true">∫</m:mo>
+                  <m:mn>0</m:mn>
+                  <m:mi>τ</m:mi>
+                </m:munderover>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mo>[</m:mo>
+                    <m:mrow>
+                      <m:mi>m</m:mi>
+                      <m:mover accent="true">
+                        <m:mi>g</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                      <m:mo>−</m:mo>
+                      <m:mi>m</m:mi>
+                      <m:mover accent="true">
+                        <m:mi>g</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mo>−</m:mo>
+                          <m:msup>
+                            <m:mi>e</m:mi>
+                            <m:mrow>
+                              <m:mtext>−</m:mtext>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mi>b</m:mi>
+                                  <m:mi>t</m:mi>
+                                </m:mrow>
+                                <m:mtext>/</m:mtext>
+                                <m:mi>m</m:mi>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>]</m:mo>
+                  </m:mrow>
+                  <m:mi mathvariant="normal">d</m:mi>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msup>
+                  <m:mi>m</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mi>b</m:mi>
+            </m:mfrac>
+            <m:mover accent="true">
+              <m:mi>g</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:msup>
+                  <m:mi>e</m:mi>
+                  <m:mrow>
+                    <m:mtext>−</m:mtext>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>b</m:mi>
+                        <m:mi>τ</m:mi>
+                      </m:mrow>
+                      <m:mtext>/</m:mtext>
+                      <m:mi>m</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:msup>
+                <m:mo>−</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1167133549801">
+    <problem id="fs-id1167133855091">
+      <para id="fs-id1167133855093">Jaki impuls został przekazany jajku podczas rozbicia się o podłogę, jeśli spadło ono z lady znajdującej się na wysokości 90 cm? Masa jajka wynosiła 5 g.</para></problem>
+  </exercise>
+  <exercise id="fs-id1167132305009">
+    <problem id="fs-id1167132305011">
+      <para id="fs-id1167133395287">Rozpędzony samochód uderza w nieruchome drzewo. Prędkość samochodu zmniejsza się podczas zderzenia z 30 m/s do zera, a długość drogi, którą w tym czasie pokonał jego środek ciężkości równa jest około. połowy długości auta, czyli 1,3 m.<list id="fs-id1167132423414" list-type="enumerated" number-style="lower-alpha"><item>Jaki impuls został przekazany przez pasy bezpieczeństwa kierowcy o masie 70 kg, zakładając, że poruszał się dokładnie tak samo jak samochód?</item>
+        <item>Jaką średnią siłą działały pasy na kierowcę?</item>
+      </list></para></problem>
+  <solution id="fs-id1167132423412">
+    <list id="eip-idm608172768" list-type="enumerated" number-style="lower-alpha">
+      <item>
+        <m:math>
+          <m:mo>−</m:mo>
+          <m:mn>2,1</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mn>3</m:mn>
+          </m:msup>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">k</m:mi>
+            <m:mi mathvariant="normal">g</m:mi>
+            <m:mo>⋅</m:mo>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          </m:math>, </item>
+          <item>
+            <m:math>
+              <m:mo>−</m:mo>
+              <m:mn>24</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>3</m:mn>
+              </m:msup>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo stretchy="false">^</m:mo>
+                </m:mover>
+              </m:mrow>
+              </m:math>.</item>
+            </list>
+          </solution>
+        </exercise>
+        <exercise id="fs-id1167132230395">
+          <problem id="fs-id1167132230397">
+            <para id="fs-id1167132579530">Dwóch hokeistów jadących z jednakową prędkością <m:math>
+                <m:mi>v</m:mi>
+              </m:math>
+             zderza się czołowo na lodowisku. Zderzają się niesprężyście, upadają i suną z prędkością <m:math>
+            <m:mi>v</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mn>5</m:mn>
+            </m:math>. Jaki jest stosunek ich mas?</para>
+          </problem>
+        </exercise>
+        <exercise id="fs-id1167132257267">
+          <problem id="fs-id1167133775656">
+            <para id="fs-id1167133775658">Jedziesz na rowerze o masie 10 kg z prędkością 15 m/s, gdy na twoim kasku rowerowym przysiada owad o masie 5 g. Poruszał się on wcześniej z prędkością 2 m/s w tym samym kierunku. Przyjmując, że twoja masa wynosi 60 kg, oblicz:<list xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-idm1100329728" list-type="enumerated" number-style="lower-alpha"><item>Jaki był pęd twój i roweru, zanim nadleciał owad?</item>
+              <item>Jaki był początkowy pęd owada?</item>
+              <item>Jak zmieniła się twoja prędkość po wylądowaniu owada?</item>
+              <item>Ile wynosiłaby ta zmiana, gdyby owad nadlatywał z przeciwnej strony?</item>
+            </list></para></problem>
+        <solution id="fs-id1167133775660">
+          <list id="fs-id1167133862928" list-type="enumerated" number-style="lower-alpha">
+            <item>
+              <m:math>
+                <m:mn>1,1</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>3</m:mn>
+                </m:msup>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>i</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+                </m:math>,</item>
+                <item>
+                  <m:math>
+                    <m:mn>0,01</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">k</m:mi>
+                      <m:mi mathvariant="normal">g</m:mi>
+                      <m:mo>⋅</m:mo>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    <m:mo>⋅</m:mo>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>i</m:mi>
+                        <m:mo stretchy="false">^</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                    </m:math>,</item>
+                    <item>
+                      <m:math>
+                        <m:mo>−</m:mo>
+                        <m:mn>0,000</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mn>93</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                        <m:mo>⋅</m:mo>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>i</m:mi>
+                            <m:mo stretchy="false">^</m:mo>
+                          </m:mover>
+                        </m:mrow>
+                        </m:math>,</item>
+                        <item>
+                          <m:math>
+                            <m:mo>−</m:mo>
+                            <m:mn>0,0012</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">m</m:mi>
+                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                              <m:mi mathvariant="normal">s</m:mi>
+                            </m:mrow>
+                            <m:mo>⋅</m:mo>
+                            <m:mrow>
+                              <m:mover>
+                                <m:mi>i</m:mi>
+                                <m:mo stretchy="false">^</m:mo>
+                              </m:mover>
+                            </m:mrow>
+                          </m:math>
+                        </item>
+                      </list>
+                    </solution>
+                  </exercise>
+                  <exercise id="fs-id1167132371653">
+                    <problem id="fs-id1167132259332">
+                      <para id="fs-id1167132259334">Ładunek żwiru został zrzucony wprost na ciężarówkę o masie 30 ton jadącą z prędkością 2,2 m/s po poziomej rampie. Wiedząc, że wskutek tego prędkość ciężarówki zmniejszyła się do 1,5 m/s, oblicz masę załadowanego żwiru.</para></problem>
+                  </exercise>
+                  <exercise id="fs-id1167132411513">
+                    <problem id="fs-id1167132586714">
+                      <para id="fs-id1167132586716">Dwa wózki zderzają się czołowo na płaskim torze. Pierwszy z nich poruszał się z prędkością 3,6 m/s w kierunku <m:math>
+                          <m:mo>+</m:mo>
+                          <m:mi>x</m:mi>
+                        </m:math>,
+                         a drugi z prędkością 2,4 m/s w kierunku przeciwnym. Po zderzeniu drugi wózek kontynuuje jazdę w tym samym kierunku z prędkością 0,24 m/s. Jeżeli wiemy, że masa drugiego wózka jest 5 razy większa od masy pierwszego, jaka jest masa pierwszego wózka i jego prędkość po zderzeniu?</para></problem>
+                      <solution id="fs-id1167132415512">
+                        <para id="fs-id1167132415514">0,10 kg; <m:math>
+                          <m:mo>−</m:mo>
+                          <m:mn>7,2</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                          <m:mo>⋅</m:mo>
+                          <m:mrow>
+                            <m:mover>
+                              <m:mi>i</m:mi>
+                              <m:mo stretchy="false">^</m:mo>
+                            </m:mover>
+                          </m:mrow>
+                          </m:math>.</para></solution>
+                      </exercise>
+                      <exercise id="fs-id1167133359911">
+                        <problem id="fs-id1167133359913">
+                          <para id="fs-id1167132465617">Astronauta o masie 100 kg znajduje się w odległości 10 m od statku kosmicznego i oddala się od niego z prędkością 0,1 m/s. Aby wrócić na statek, astronauta wyrzuca przed siebie worek o masie 10 kg, nadając mu prędkość równą 5 m/s. Ile czasu zajmie mu dotarcie do statku?</para></problem>
+                      </exercise>
+                      <exercise id="fs-id1167132227134">
+                        <problem id="fs-id1167132227136">
+                          <para id="fs-id1167132227138">Wyprowadź równania opisujące końcowe prędkości dwóch ciał zderzających się sprężyście. Masy ciał wynoszą <m:math>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>m</m:mi>
+                                <m:mn>1</m:mn>
+                              </m:msub>
+                            </m:mrow>
+                          </m:math> i <m:math>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>m</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msub>
+                          </m:mrow>
+                        </m:math>, początkowa prędkość pierwszego ciała była równa <m:math>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mrow>
+                              <m:mtext>1</m:mtext>
+                            </m:mrow>
+                          </m:msub>
+                        </m:mrow>
+                        </m:math>, a drugie pozostawało w spoczynku.</para>
+                      </problem>
+                      <solution id="fs-id1167133396887">
+                        <para id="fs-id1167133396889">
+                          <m:math>
+                            <m:msub>
+                              <m:mi>u</m:mi>
+                              <m:mn>1</m:mn>
+                            </m:msub>
+                            <m:mo>=</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>m</m:mi>
+                                  <m:mn>1</m:mn>
+                                </m:msub>
+                                <m:mo>−</m:mo>
+                                <m:msub>
+                                  <m:mi>m</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msub>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>m</m:mi>
+                                  <m:mn>1</m:mn>
+                                </m:msub>
+                                <m:mo>+</m:mo>
+                                <m:msub>
+                                  <m:mi>m</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msub>
+                              </m:mrow>
+                            </m:mfrac>
+                            <m:msub>
+                              <m:mi>v</m:mi>
+                              <m:mn>1</m:mn>
+                            </m:msub>
+                          </m:math>, <m:math>
+                          <m:msub>
+                            <m:mi>u</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msub>
+                          <m:mo>=</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                              <m:msub>
+                                <m:mi>m</m:mi>
+                                <m:mn>1</m:mn>
+                              </m:msub>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>m</m:mi>
+                                <m:mn>1</m:mn>
+                              </m:msub>
+                              <m:mo>+</m:mo>
+                              <m:msub>
+                                <m:mi>m</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msub>
+                            </m:mrow>
+                          </m:mfrac>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mn>1</m:mn>
+                          </m:msub>
+                          </m:math>.</para>
+                        </solution>
+                      </exercise>
+                      <exercise id="fs-id1167132202557">
+                        <problem id="fs-id1167132252231">
+                          <para id="fs-id1167132252233">Przeanalizuj poprzedni problem w przypadku niezerowej prędkości drugiego ciała.</para>
+                        </problem>
+                      </exercise>
+                      <exercise id="fs-id1167133780121">
+                        <problem id="fs-id1167133780123">
+                          <para id="fs-id1167133780125">Dziecko zjeżdża na sankach z górki i uderza z prędkością 5,6 m/s w stojące sanki – identyczne, ale puste. Wskutek zderzenia dziecko zostało wyrzucone do przodu, natomiast sanki sczepiły się i sunęły wolno po płaskim torze. Jaka była ich prędkość po złączeniu?</para></problem>
+                        <solution id="fs-id1167132320046">
+                          <para id="fs-id1167132320049">2,8 m/s</para>
+                        </solution>
+                      </exercise>
+                      <exercise id="fs-id1167132238341">
+                        <problem id="fs-id1167132238343">
+                          <para id="fs-id1167132238345">Dla przypadku z poprzedniego zadania oblicz prędkości sanek, gdyby zderzenie było sprężyste.</para></problem>
+                      </exercise>
+                      <exercise id="fs-id1167132369938">
+                        <problem id="fs-id1167132369940">
+                          <para id="fs-id1167133805123">Bramkarz o masie 90 kg wyskakuje pionowo w górę, aby złapać piłkę o masie 0,5 kg lecącą dokładnie poziomo w jego kierunku z prędkością 17 m/s. Jaka jest składowa pozioma jego prędkości po złapaniu piłki?</para></problem>
+                        <solution id="fs-id1167133396908">
+                          <para id="fs-id1167133396910">0,094 m/s</para>
+                        </solution>
+                      </exercise>
+                      <exercise id="fs-id1167132539301">
+                        <problem id="fs-id1167132539303">
+                          <para id="fs-id1167133792513">Trójka akrobatów spadochronowych spada w kierunku ziemi. Początkowo trzymają się razem, aby w pewnym momencie odepchnąć się od siebie.. Dwaj z nich masie odpowiednio: 70 kg i 80 kg uzyskują prędkości poziome w kierunku północno-wschodnim równe odpowiednio 1,2 m/s i 1,4 m/s. Jaka jest prędkość pozioma trzeciego uczestnika, jeśli jego masa wynosi 55 kg?</para></problem>
+                      </exercise>
+                      <exercise id="fs-id1167133829088">
+                        <problem id="fs-id1167133829090">
+                          <para id="fs-id1167132374798">Dwie kule bilardowe leżą na stole bilardowym stykając się. Wzdłuż linii symetrii między tymi kulami porusza się trzecia z prędkością 3,8 m/s i uderza w nie równocześnie. Jeżeli zderzenie jest zderzeniem sprężystym, jakie będą prędkości kul po zderzeniu?</para>
+                        </problem>
+                        <solution id="fs-id1167132306238">
+                          <para id="fs-id1167132306240">Prędkość kuli uderzającej: <m:math>
+                            <m:mo>−</m:mo>
+                            <m:mn>0,76</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">m</m:mi>
+                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                              <m:mi mathvariant="normal">s</m:mi>
+                            </m:mrow>
+                            <m:mo>⋅</m:mo>
+                            <m:mrow>
+                              <m:mover>
+                                <m:mi>i</m:mi>
+                                <m:mo stretchy="false">^</m:mo>
+                              </m:mover>
+                            </m:mrow>
+                          </m:math>; końcowe prędkości kul uderzonych są jednakowe i wynoszą 2,6 m/s, skierowane pod kątem <m:math>
+                          <m:mo>±</m:mo>
+                          <m:msup>
+                            <m:mn>30</m:mn>
+                            <m:mo>∘</m:mo>
+                          </m:msup>
+                          </m:math>, symetrycznie względem toru kuli nacierającej.</para>
+                        </solution>
+                      </exercise>
+                      <exercise id="fs-id1167133647819">
+                        <problem id="fs-id1167133647821">
+                          <para id="fs-id1167132240717">Kula bilardowa poruszającą się z prędkością <m:math>
+                            <m:mn>2,2</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">m</m:mi>
+                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                              <m:mi mathvariant="normal">s</m:mi>
+                            </m:mrow>
+                            <m:mo>⋅</m:mo>
+                            <m:mrow>
+                              <m:mover>
+                                <m:mi>i</m:mi>
+                                <m:mo stretchy="false">^</m:mo>
+                              </m:mover>
+                            </m:mrow>
+                            <m:mo>−</m:mo>
+                            <m:mn>0,4</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">m</m:mi>
+                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                              <m:mi mathvariant="normal">s</m:mi>
+                            </m:mrow>
+                            <m:mo>⋅</m:mo>
+                            <m:mrow>
+                              <m:mover>
+                                <m:mi>j</m:mi>
+                                <m:mo stretchy="false">^</m:mo>
+                              </m:mover>
+                            </m:mrow>
+                          </m:math> zderza się ze ścianą, która jest ustawiona wzdłuż kierunku <m:math>
+                          <m:mstyle mathsize="normal">
+                            <m:mover accent="true">
+                              <m:mi>j</m:mi>
+                              <m:mo>^</m:mo>
+                            </m:mover>
+                          </m:mstyle>
+                          </m:math>. Zakładając, że zderzenie jest sprężyste, oblicz końcową prędkość kuli po odbiciu.</para>
+                        </problem>
+                      </exercise>
+                      <exercise id="fs-id1167133403316">
+                        <problem id="fs-id1167133403318">
+                          <para id="fs-id1167133403320">Dwie identyczne kule bilardowe zderzają się. Pierwsza, poruszała się początkowo z prędkością <m:math>
+                            <m:mn>2,2</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">m</m:mi>
+                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                              <m:mi mathvariant="normal">s</m:mi>
+                            </m:mrow>
+                            <m:mo>⋅</m:mo>
+                            <m:mrow>
+                              <m:mover>
+                                <m:mi>i</m:mi>
+                                <m:mo stretchy="false">^</m:mo>
+                              </m:mover>
+                            </m:mrow>
+                            <m:mo>−</m:mo>
+                            <m:mn>0,4</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">m</m:mi>
+                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                              <m:mi mathvariant="normal">s</m:mi>
+                            </m:mrow>
+                            <m:mo>⋅</m:mo>
+                            <m:mrow>
+                              <m:mover>
+                                <m:mi>j</m:mi>
+                                <m:mo stretchy="false">^</m:mo>
+                              </m:mover>
+                            </m:mrow>
+                          </m:math>, a druga z prędkością <m:math>
+                          <m:mo>−</m:mo>
+                          <m:mn>1,4</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                          <m:mo>⋅</m:mo>
+                          <m:mrow>
+                            <m:mover>
+                              <m:mi>i</m:mi>
+                              <m:mo stretchy="false">^</m:mo>
+                            </m:mover>
+                          </m:mrow>
+                          <m:mo>+</m:mo>
+                          <m:mn>2,4</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                          <m:mo>⋅</m:mo>
+                          <m:mrow>
+                            <m:mover>
+                              <m:mi>j</m:mi>
+                              <m:mo stretchy="false">^</m:mo>
+                            </m:mover>
+                          </m:mrow>
+                        </m:math>. W chwili zderzenia kula pierwsza znajduje się w środku układu współrzędnych, a druga w punkcie <m:math>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mi>R</m:mi>
+                            <m:mo>,</m:mo>
+                            <m:mspace width="0.2em"/>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                      </m:math>, gdzie <m:math>
+                        <m:mi>R</m:mi>
+                      </m:math>
+                       jest promieniem kuli. Jakie będą końcowe prędkości obu kul?</para>
+                    </problem>
+                    <solution id="fs-id1167132573202">
+                      <para id="fs-id1167133822121">Kula 1: <m:math>
+                        <m:mo>−</m:mo>
+                        <m:mn>1,4</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                        <m:mo>⋅</m:mo>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>i</m:mi>
+                            <m:mo stretchy="false">^</m:mo>
+                          </m:mover>
+                        </m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>0,4</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                        <m:mo>⋅</m:mo>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>j</m:mi>
+                            <m:mo stretchy="false">^</m:mo>
+                          </m:mover>
+                        </m:mrow>
+                      </m:math>, Kula 2: <m:math>
+                      <m:mn>2,2</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                      <m:mo>⋅</m:mo>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>i</m:mi>
+                          <m:mo stretchy="false">^</m:mo>
+                        </m:mover>
+                      </m:mrow>
+                      <m:mo>+</m:mo>
+                      <m:mn>2,4</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                      <m:mo>⋅</m:mo>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>j</m:mi>
+                          <m:mo stretchy="false">^</m:mo>
+                        </m:mover>
+                      </m:mrow>
+                    </m:math>
+                  </para></solution>
+              </exercise>
+              <exercise id="fs-id1167132452153">
+                <problem id="fs-id1167132452155">
+                  <para id="fs-id1167133328891">Przeprowadź analizę jak w poprzednim zadaniu, ale dla sytuacji, gdy środek drugiej kuli jest w punkcie <m:math>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                        <m:mo>,</m:mo>
+                        <m:mspace width="0.2em"/>
+                        <m:mn>2</m:mn>
+                        <m:mi>R</m:mi>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    </m:math> względem środka pierwszej kuli, będącego jednocześnie środkiem układu współrzędnych.</para></problem>
+                </exercise>
+                <exercise id="fs-id1167132273346">
+                  <problem id="fs-id1167132273348">
+                    <para id="fs-id1167132410318">Przeprowadź analizę jak w poprzednim zadaniu, ale dla sytuacji, gdy środek drugiej kuli jest w punkcie <m:math>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:msqrt>
+                            <m:mn>3</m:mn>
+                          </m:msqrt>
+                          <m:mi>R</m:mi>
+                          <m:mo>,</m:mo>
+                          <m:mspace width="0.2em"/>
+                          <m:mi>R</m:mi>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                      </m:math> względem środka pierwszej kuli, będącego jednocześnie środkiem układu współrzędnych.</para></problem>
+                    <solution id="fs-id1167132497150">
+                      <para id="fs-id1167133521698">Kula 1: <m:math>
+                        <m:mn>0,71</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                        <m:mo>⋅</m:mo>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>i</m:mi>
+                            <m:mo stretchy="false">^</m:mo>
+                          </m:mover>
+                        </m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>1,26</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                        <m:mo>⋅</m:mo>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>j</m:mi>
+                            <m:mo stretchy="false">^</m:mo>
+                          </m:mover>
+                        </m:mrow>
+                      </m:math>, Kula 2: <m:math>
+                      <m:mn>0,09</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                      <m:mo>⋅</m:mo>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>i</m:mi>
+                          <m:mo stretchy="false">^</m:mo>
+                        </m:mover>
+                      </m:mrow>
+                      <m:mo>+</m:mo>
+                      <m:mn>3,26</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                      <m:mo>⋅</m:mo>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>j</m:mi>
+                          <m:mo stretchy="false">^</m:mo>
+                        </m:mover>
+                      </m:mrow>
+                      </m:math>.</para></solution>
+                  </exercise>
+                  <exercise id="fs-id1167132241577">
+                    <problem id="fs-id1167132241579">
+                      <para id="fs-id1167132241581">Gdzie znajduje się środek masy pręta wygiętego w kształt półokręgu o promieniu <m:math>
+                          <m:mi>R</m:mi>
+                        </m:math>? Układ współrzędnych osadzony został w środku półokręgu, z osią <m:math>
+                        <m:mi>x</m:mi>
+                      </m:math>
+                       przechodzącą przez początek i koniec pręta.</para></problem>
+                  </exercise>
+                  <exercise id="fs-id1167133717950">
+                    <problem id="fs-id1167133717952">
+                      <para id="fs-id1167133717954">Gdzie znajduje się środek masy kawałka pizzy, którą podzielono na 8 części? Układ współrzędnych osadzony został w środku pizzy o promieniu <m:math>
+                          <m:mi>R</m:mi>
+                        </m:math>,
+                       oś <m:math>
+                        <m:mi>x</m:mi>
+                      </m:math>
+                       przebiega wzdłuż jednego z ramion kąta.</para></problem>
+                    <solution id="fs-id1167132396715">
+                      <para id="fs-id1167132396717">
+                        <m:math>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mrow>
+                              <m:mi>r</m:mi>
+                              <m:mo>,</m:mo>
+                              <m:mspace width="0.2em"/>
+                              <m:mi>θ</m:mi>
+                            </m:mrow>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mo>=</m:mo>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                              <m:mi>R</m:mi>
+                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                              <m:mn>3</m:mn>
+                              <m:mo>,</m:mo>
+                              <m:mspace width="0.2em"/>
+                              <m:mi>π</m:mi>
+                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                              <m:mn>8</m:mn>
+                            </m:mrow>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mo>.</m:mo>
+                        </m:math>
+                      </para>
+                    </solution>
+                  </exercise>
+                  <exercise id="fs-id1167132244398">
+                    <problem id="fs-id1167132437387">
+                      <para id="fs-id1167132437389">Gdyby cała populacja Ziemi została przesiedlona na Księżyc, jak przesunąłby się środek masy układu Ziemia-Księżyc-populacja? Przyjmijmy, że populacja liczy 7 miliardów ludzi, średnia masa człowieka to 65 kg i zarówno Ziemia jak i Księżyc zaludnione są jednorodnie. Masa Ziemi wynosi <m:math>
+                        <m:mn>5,97</m:mn>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mrow>
+                            <m:mn>24</m:mn>
+                          </m:mrow>
+                        </m:msup>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">k</m:mi>
+                          <m:mi mathvariant="normal">g</m:mi>
+                        </m:mrow>
+                      </m:math>, masa Księżyca równa jest <m:math>
+                      <m:mn>7,34</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mrow>
+                          <m:mn>22</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">k</m:mi>
+                        <m:mi mathvariant="normal">g</m:mi>
+                      </m:mrow>
+                    </m:math>. Promień orbity Księżyca wynosi <m:math>
+                    <m:mn>3,84</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mn>8</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                    </m:math>.</para>
+                  </problem>
+                </exercise>
+                <exercise id="fs-id1167132497049">
+                  <problem id="fs-id1167132497052">
+                    <para id="fs-id1167132497054">Twój kolega zastanawia się, jak rakieta może się ciągle wznosić, nawet gdy na odpowiedniej wysokości wyłączy już napęd odrzutowy. Co mu odpowiesz?</para></problem>
+                  <solution id="fs-id1167133703698">
+                    <para id="fs-id1167133703700">Zmiana pędu rakiety i jej przyspieszanie jest następstwem zasady zachowania pędu. Pęd gazów wyrzucanych w każdej sekundzie jest kompensowany przyrostem pędu rakiety. Po wyjściu z warstw atmosfery i z obszaru oddziaływania grawitacyjnego Ziemi rakieta może się dalej wznosić nawet przy wyłączonych silnikach – będzie to ruch jednostajny, zgodnie z I zasadą dynamiki.</para></solution>
+                </exercise>
+                <exercise id="fs-id1167133703708">
+                  <problem id="fs-id1167132228842">
+                    <para id="fs-id1167132228844">Czy w celu zwiększenia przyspieszenia rakiety można by wyrzucać z niej kamienie? Jeśli tak, to raczej przez właz tylni czy przedni? Pomijamy aspekty dekompresji rakiety.</para></problem>
+                </exercise>
+              </section>
+              <section id="fs-id1167132306218" class="review-challenge">
+                <title>Zadania trudniejsze</title>
+                <exercise id="fs-id1167132278372">
+                  <problem id="fs-id1167132278374">
+                    <para id="fs-id1167132278376">Człowiek o masie 65 kg wyskakuje z okna na pierwszym piętrze płonącego budynku i ląduje niemal pionowo na ziemi z prędkością o składowej poziomej 3 m/s i pionowej -9 m/s. Podczas uderzenia o ziemię wytraca prędkość w bardzo krótkim czasie. Siła, której doświadczają jego stopy zależy od tego, czy zamortyzował upadek uginając kolana, czy też nie. Oblicz siłę działająca na jego stopy w obu przypadkach.</para>
+                    <media id="fs-id1167132298477" alt="Rysunek przedstawia człowieka tuż przed kontaktem z ziemią. Wektor prędkości skierowany jest niemal pionowo w dół (nieznacznie odchylony w prawo) i opisany jako: v0 = 3m/s „i z daszkiem” minus 9 m/s „j z daszkiem”. Na rysunku zaznaczono osie układu współrzędnych: oś x skierowana poziomo w prawo, a oś y jest skierowana pionowo do góry">
+                      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_09_02_Falling_img.jpg"/>
+                    </media>
+                    <list id="fs-id1167133581069" list-type="enumerated" number-style="lower-alpha"><item>Wyznacz najpierw impuls przekazany człowiekowi podczas zderzenia. Oblicz zarówno jego wartość jak i kierunek.</item>
+                      <item>Wyznacz średnią wartość siły działającej na stopy człowieka, gdy jego nogi pozostają proste, a jego środek ciężkości przesuwa się podczas zderzenia zaledwie o 1 cm w dół i 1 cm w prawo.</item>
+                      <item>Wyznacz średnią wartość siły działającej na stopy, gdy człowiek ugiął nogi podczas lądowania, a jego środek ciężkości przesuwa się podczas zderzenia o 50 cm w dół i 5 cm w prawo.</item>
+                      <item>Porównaj wyniki z podpunktu (b) i (c) i wyciągnij wnioski. Który sposób lądowania jest bardziej bezpieczny?</item>
+                    </list><para id="fs-id1167133564676">Do powyższych obliczeń potrzebny będzie czas działania siły oraz założenie o jej stałej wartości. Siła wprawdzie nie jest stała podczas całego zderzenia (bardziej szczegółową analizę przeprowadzono w przykładzie opisującym zderzenie meteoryt z Ziemią), niemniej tu założenie o stałości siły jest akceptowalne.</para></problem>
+                  <solution id="fs-id1167132441490">
+                    <list id="fs-id1167132441492" list-type="enumerated" number-style="lower-alpha"><item>
+                        <m:math>
+                          <m:mn>617</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">N</m:mi>
+                            <m:mo>⋅</m:mo>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                        </m:math>, <m:math>
+                        <m:msup>
+                          <m:mn>108</m:mn>
+                          <m:mo>∘</m:mo>
+                        </m:msup>
+                        </m:math>;</item>
+                        <item>
+                          <m:math>
+                            <m:msub>
+                              <m:mi>F</m:mi>
+                              <m:mi>x</m:mi>
+                            </m:msub>
+                            <m:mo>=</m:mo>
+                            <m:mn>2,91</m:mn>
+                            <m:mo>⋅</m:mo>
+                            <m:msup>
+                              <m:mn>10</m:mn>
+                              <m:mn>4</m:mn>
+                            </m:msup>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">N</m:mi>
+                            </m:mrow>
+                          </m:math>, <m:math>
+                          <m:msub>
+                            <m:mi>F</m:mi>
+                            <m:mi>y</m:mi>
+                          </m:msub>
+                          <m:mo>=</m:mo>
+                          <m:mn>2,6</m:mn>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mn>10</m:mn>
+                            <m:mn>5</m:mn>
+                          </m:msup>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">N</m:mi>
+                          </m:mrow>
+                          </m:math>;</item>
+                          <item>
+                            <m:math>
+                              <m:msub>
+                                <m:mi>F</m:mi>
+                                <m:mi>x</m:mi>
+                              </m:msub>
+                              <m:mo>=</m:mo>
+                              <m:mn>5</m:mn>
+                              <m:mspace width="0.2em"/>
+                              <m:mn>850</m:mn>
+                              <m:mspace width="0.2em"/>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">N</m:mi>
+                              </m:mrow>
+                            </m:math>, <m:math>
+                            <m:msub>
+                              <m:mi>F</m:mi>
+                              <m:mi>y</m:mi>
+                            </m:msub>
+                            <m:mo>=</m:mo>
+                            <m:mn>5</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mn>265</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">N</m:mi>
+                            </m:mrow>
+                            </m:math>.</item>
+                          </list></solution>
+                      </exercise>
+                      <exercise id="fs-id1167132415455">
+                        <problem id="fs-id1167132415458">
+                          <para id="fs-id1167132415460">Dwie cząstki o masach <m:math>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>m</m:mi>
+                                <m:mn>1</m:mn>
+                              </m:msub>
+                            </m:mrow>
+                          </m:math> i <m:math>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>m</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msub>
+                          </m:mrow>
+                        </m:math> wystrzelono z tymi samymi prędkościami, ale w przeciwnych kierunkach z dwóch miejsc oddalonych od siebie o <m:math>
+                          <m:mi>D</m:mi>
+                        </m:math>.
+                       Obie docierają do punktu spotkania w najwyższym punkcie swojego lotu, zderzają się i łączą. W jakim miejscu wylądują? Przyjmujemy przyspieszenie grawitacyjne <m:math>
+                        <m:mi>g</m:mi>
+                      </m:math>.
+                      </para></problem>
+                  </exercise>
+                  <exercise id="fs-id1167132201915">
+                    <problem id="fs-id1167132201918">
+                      <para id="fs-id1167132201920">Dwa identyczne ciała (np. kule bilardowe) ulegają zderzeniu liniowemu, przy czym początkowo jedno z nich jest w spoczynku. Po zderzeniu poruszający się obiekt zatrzymuje się, a drugi porusza się z taką prędkością, jak pierwszy z nich przed zderzeniem. Wykaż, że w tym zderzeniu zachowana była zarówno energia kinetyczna, jak i pęd.</para></problem>
+                    <solution id="fs-id1167133694087">
+                      <para id="fs-id1167133694089">Zgodnie z zasadą zachowania pędu: <m:math>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>m</m:mi>
+                            <m:mn>1</m:mn>
+                          </m:msub>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mrow>
+                              <m:mtext>1</m:mtext>
+                            </m:mrow>
+                          </m:msub>
+                          <m:mo>+</m:mo>
+                          <m:msub>
+                            <m:mi>m</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msub>
+                          <m:msub>
+                            <m:mi>v</m:mi>
+                            <m:mrow>
+                              <m:mtext>2</m:mtext>
+                            </m:mrow>
+                          </m:msub>
+                          <m:mo>=</m:mo>
+                          <m:msub>
+                            <m:mi>m</m:mi>
+                            <m:mn>1</m:mn>
+                          </m:msub>
+                          <m:msub>
+                            <m:mi>u</m:mi>
+                            <m:mrow>
+                              <m:mtext>1</m:mtext>
+                            </m:mrow>
+                          </m:msub>
+                          <m:mo>+</m:mo>
+                          <m:msub>
+                            <m:mi>m</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msub>
+                          <m:msub>
+                            <m:mi>u</m:mi>
+                            <m:mrow>
+                              <m:mtext>2</m:mtext>
+                            </m:mrow>
+                          </m:msub>
+                        </m:mrow>
+                      </m:math>. Z danych wynika, że <m:math>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>m</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:msub>
+                          <m:mi>m</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                    </m:math> oraz <m:math>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mrow>
+                          <m:mtext>1</m:mtext>
+                        </m:mrow>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:msub>
+                        <m:mi>u</m:mi>
+                        <m:mrow>
+                          <m:mtext>2</m:mtext>
+                        </m:mrow>
+                      </m:msub>
+                    </m:mrow>
+                  </m:math>, a <m:math>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mrow>
+                        <m:mtext>2</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>u</m:mi>
+                      <m:mrow>
+                        <m:mtext>1</m:mtext>
+                      </m:mrow>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                </m:math>. Łącząc ze sobą powyższe, otrzymujemy, że <m:math>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mrow>
+                      <m:mtext>1</m:mtext>
+                    </m:mrow>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:msub>
+                    <m:mi>v</m:mi>
+                    <m:mrow>
+                      <m:mtext>1</m:mtext>
+                    </m:mrow>
+                  </m:msub>
+                </m:mrow>
+              </m:math>, co jest oczywiście prawdą, zatem zasada zachowania pędu jest spełniona.<newline/>Podobnie postępujemy z energią kinetyczną. Gdyby miała być zachowana, oznaczałoby to, że <m:math>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:msubsup>
+                <m:mi>v</m:mi>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mn>2</m:mn>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:msubsup>
+                <m:mi>v</m:mi>
+                <m:mn>2</m:mn>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mn>2</m:mn>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:msubsup>
+                <m:mi>u</m:mi>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mn>2</m:mn>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:msubsup>
+                <m:mi>u</m:mi>
+                <m:mn>2</m:mn>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+              <m:mn>2</m:mn>
+              </m:math>. Wprowadzając dane dotyczące mas i prędkości otrzymujemy również tautologię, zatem energia kinetyczna jest tu wielkością zachowaną.</para></solution>
+          </exercise>
+          <exercise id="fs-id1167132426551">
+            <problem id="fs-id1167132426553">
+              <para id="fs-id1167132426555">Mobilna rampa o masie <m:math>
+                  <m:mi>M</m:mi>
+                </m:math>
+                 spoczywa na poziomym podłożu. Na górze rampy umieszczono mały wózek, który rozpoczyna zjeżdżanie po umieszczonej na niej pochylni. Jakie będą prędkości wózka oraz rampy, kiedy wózek dotrze do jej końca (patrz: rysunek).</para><media id="fs-id1167132606907" alt="Górna część rysunku przedstawia sytuację przed zjazdem. Wózek o masie m znajduje się na szczycie rampy. Rampa stanowi konstrukcję na kółkach, która z lewej strony stanowi płaski tor, wznoszący się ukośnie w kierunku prawej strony, do wysokości h. Masa rampy wynosi M. Dolna część rysunku pokazuje sytuację po zjeździe. Po zjechaniu z pochylni wózek znajduje się na płaskim odcinku rampy po lewej stronie i porusza się w lewo z prędkością v w. Rampa porusza się w prawo z prędkością v r.">
+                  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_09_04_CProb2_img.jpg"/>
+                </media>
+                <para id="fs-id1167132260464">Jakie są prędkości rampy i wózka względem ziemi w chwili, gdy wózek opuszcza rampę?</para>
+              </problem>
+            </exercise>
+            <exercise id="fs-id1167132416290">
+              <problem id="fs-id1167132416293">
+                <para id="fs-id1167132416295">Wyznacz środek masy układu brył pokazanego na rysunku. Przyjmij jednakową grubość każdego prostopadłościanu wynoszącą 20 cm oraz jednorodną gęstość równą <m:math>
+                  <m:mn>1</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">g</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:msup>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  </m:math>.</para>
+                  <media id="fs-id1167132355036" alt="Rysunek przedstawia układ figur (9 prostokątów i koła) imitujących sylwetkę człowieka z rozpostartymi rękoma, symetryczną względem pionowej osi. U góry znajduje się koło o promieniu 8 cm, symbolizujące głowę. Pod nim narysowano prostokąt o szerokości 25 cm i wysokości 60 cm, symbolizujący tułów człowieka. Wzdłuż górnej linii prostokąta poprowadzono na boki po dwa prostokąty symbolizujące rozłożone ręce. Pierwszy – o szerokości 60cm i wysokości 5 cm (ramię i przedramię), drugi – kwadrat o boku 5cm (symbolizujący dłoń). Górne krawędzie prostokątów są współliniowe z górną krawędzią tułowia. Od tułowia w dół poprowadzono dwa długie prostokąty o wysokości 70 cm i szerokości 8 cm symbolizujące nogi. Krawędź zewnętrzna każdego z nich pokrywa się z krawędziami zewnętrznymi tułowia. Pod prostokątami nóg narysowano stopy – prostokąty o szerokości 15 cm i wysokości 3 cm. Wewnętrzne krawędzie stóp (pięty) są współliniowe z wewnętrznymi krawędziami nóg.">
+                    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_09_06_CProb1_img.jpg"/>
+                  </media>
+                </problem>
+                <solution id="fs-id1167132460519">
+                  <para id="fs-id1167132460521">Jeśli przyjmiemy środek układu współrzędnych na podłodze na osi symetrii (będącej osią <m:math>
+                      <m:mi>y</m:mi>
+<m:mi>)</m:mi>
+                    </m:math>, współrzędne środka masy wynoszą <m:math>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>x</m:mi>
+                        <m:mtext>ŚM</m:mtext>
+                      </m:msub>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="0.2em"/>
+                      <m:msub>
+                        <m:mi>y</m:mi>
+                        <m:mtext>ŚM</m:mtext>
+                      </m:msub>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="0.2em"/>
+                      <m:msub>
+                        <m:mi>z</m:mi>
+                        <m:mtext>ŚM</m:mtext>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">c</m:mi>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="0.2em"/>
+                      <m:mn>86</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">c</m:mi>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                      <m:mo>,</m:mo>
+                      <m:mspace width="0.2em"/>
+                      <m:mn>0</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">c</m:mi>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  </m:math></para></solution>
+              </exercise>
+            </section>
+          </content>
+          <glossary>
+            <definition id="fs-id1167132409972">
+              <term cmlnle:reference="równanie ruchu rakiety" class="no-emphasis">równanie ruchu rakiety (wzór Ciołkowskiego) (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">rocket equation</term></foreign>)</term>
+              <meaning id="fs-id1167132320522">wyprowadzone przez rosyjskiego fizyka Konstantina Ciołkowskiego w roku 1897, opisuje zmianę prędkości rakiety wynikającą z odrzutu spalanych gazów, co powoduje systematyczne zmniejszanie się masy rakiety z początkowej (masa własna rakiety plus masa paliwa) do końcowej (docelowo: masa własna rakiety)</meaning>
+            </definition>
+          </glossary>
+        </document>

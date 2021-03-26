@@ -1,0 +1,3599 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:m="http://www.w3.org/1998/Math/MathML" id="imp-idm264818144" cnxml-version="0.7" module-id="new">
+  <title>Tom II - Część 1: Termodynamika - 02 Kinetyczna teoria gazów - Moduł 01: Model cząsteczkowy gazu doskonałego</title>
+  <metadata mdml-version="0.5">
+    <!-- WARNING! The 'metadata' section is read only. Do not edit below. Changes to the metadata section in the source will not be saved. -->
+    <md:repository>https://legacy.cnx.org/content</md:repository>
+    <md:content-id>new</md:content-id>
+    <md:title>Tom II - Część 1: Termodynamika - 02 Kinetyczna teoria gazów - Moduł 01: Model cząsteczkowy gazu doskonałego</md:title>
+    <md:version>1.3</md:version>
+    <md:created>2017/02/15 08:06:02.242 US/Central</md:created>
+    <md:revised>2017/09/03 10:06:50.395 GMT-5</md:revised>
+    <md:actors>
+      <md:person userid="katalysteducation">
+        <md:firstname>Katalyst</md:firstname>
+        <md:surname>Education</md:surname>
+        <md:fullname>Katalyst Education</md:fullname>
+        <md:email>katalyst.education@gmail.com</md:email>
+      </md:person>
+    </md:actors>
+    <md:roles>
+      <md:role type="author">katalysteducation</md:role>
+      <md:role type="maintainer">katalysteducation</md:role>
+      <md:role type="licensor">katalysteducation</md:role>
+    </md:roles>
+    <md:license url="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License 4.0</md:license>
+    <!-- For information on license requirements for use or modification, see license url in the above <md:license> element. For information on formatting required attribution, see the URL: CONTENT_URL/content_info#cnx_cite_header where CONTENT_URL is the value provided above in the <md:content-url> element. -->
+    <md:derived-from url="https://legacy.cnx.org/content/m58391/1.3/"/>
+    <md:keywordlist>
+      <md:keyword>Avogrado’s number</md:keyword>
+      <md:keyword>Boltzmann constant</md:keyword>
+      <md:keyword>Critical temperature</md:keyword>
+      <md:keyword>diagram pV</md:keyword>
+      <md:keyword>gaz doskonały</md:keyword>
+      <md:keyword>Ideal gas</md:keyword>
+      <md:keyword>Ideal gas law</md:keyword>
+      <md:keyword>liczba Avogarda</md:keyword>
+      <md:keyword>mol</md:keyword>
+      <md:keyword>Mole</md:keyword>
+      <md:keyword>nadkrytyczny</md:keyword>
+      <md:keyword>pV diagram</md:keyword>
+      <md:keyword>równanie stanu gazu doskonałego</md:keyword>
+      <md:keyword>równanie van der Waalsa</md:keyword>
+      <md:keyword>stała Boltzmanna</md:keyword>
+      <md:keyword>supercritical</md:keyword>
+      <md:keyword>temeperatura krytyczna</md:keyword>
+      <md:keyword>universal gas constant</md:keyword>
+      <md:keyword>uniwersalna stała gazowa</md:keyword>
+      <md:keyword>van der Waals equation of state</md:keyword>
+    </md:keywordlist>
+    <md:subjectlist>
+      <md:subject>Science and Technology</md:subject>
+    </md:subjectlist>
+    <md:abstract>W tym podrozdziale nauczysz się: <list>
+      <item> stosować równanie stanu gazu doskonałego w sytuacjach opisywanych przez ciśnienie, objętość, temperaturę i liczbę cząsteczek gazu; </item>
+      <item> stosować do określenia liczności materii jednostki molowe, a także masy cząsteczkowe i masy makroskopowe zamiennie z liczbą cząsteczek gazu; </item>
+      <item> używać równania stanu gazu doskonałego z uwzględnieniem wielkości molowych w miejsce liczby cząsteczek gazu; </item>
+      <item> stosować równanie stanu gazu Van der Waalsa w sytuacjach, w których prawa w modelu gazu doskonałego nie są poprawne. </item>
+    </list>
+  </md:abstract>
+  <md:language>pl</md:language>
+  <!-- WARNING! The 'metadata' section is read only. Do not edit above. Changes to the metadata section in the source will not be saved. -->
+</metadata>
+<content id="module">
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="paragraph-15">W tym podrozdziale zajmujemy się badaniem cieplnych (termicznych) właściwości gazów. Słowo <quote display="inline">gaz</quote> pochodzi z języka flamandzkiego, w którym oznacza ono <quote display="inline">chaos</quote>. Po raz pierwszy zostało użyte przez siedemnastowiecznego chemika (także lekarza, fizjologa i alchemika) J. B. van Helmonta w odniesieniu do par cieczy. Termin ten okazał się bardziej odpowiedni niż można było wtedy przypuszczać, ponieważ gazy składają się z cząsteczek będących w nieustannym ruchu, przypadkowo zderzających się między sobą. Ta losowość (przypadkowość) stanowi pomost pomiędzy poziomami mikroskopowym i makroskopowym układów wielu cząstek, przy czym przejście między poziomami jest znacznie prostsze dla gazów aniżeli dla cieczy i ciał stałych. </para>
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="paragraph-16">Czym różnią się gazy od cieczy i ciał stałych? W zwykłych warunkach, czyli takich, jakie nas otaczają, podstawowa różnica polega na tym, że cząsteczki w gazach są znacznie bardziej oddalone od siebie, niż to ma miejsce w ciałach stałych i cieczach. Ponieważ typowe odległości między cząsteczkami w gazie są duże w porównaniu z rozmiarami tych cząsteczek, jak to pokazano na <link target-id="figure-2" cmlnle:case="locative"/>, to siły, z jakimi cząsteczki oddziałują na siebie, uważa się za zaniedbywalne, z wyjątkiem sytuacji, w których cząsteczki wchodzą w bezpośredni kontakt ze sobą podczas zderzeń. Ponadto, w temperaturach znacznie wyższych od temperatury wrzenia cieczy, cząsteczki poruszają się z dużymi prędkościami, dzięki czemu gazy szybko się rozprężają, dążąc do wypełnienia całej dostępnej objętości. Przeciwnie, w cieczach i ciałach stałych cząsteczki znajdują się blisko siebie i ich zachowanie się jest silnie ograniczone przez oddziaływania międzycząsteczkowe. Makroskopowe własności tych substancji istotnie zależą od sił międzycząsteczkowych i ponieważ wiele cząsteczek oddziałuje ze sobą opis zachowania wielu ciał może być bardzo skomplikowany (zobacz rozdział <link class="target-chapter" document="Module.2017-02-17.0646">Fizyka fazy skondensowanej</link>). </para>
+  <figure xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="figure-2">
+    <media id="fs-id1172098261456" alt="Rysunek ilustrujący ruch atomów w gazie. Atomy przedstawione są w postaci małych sfer, rozmieszczonych daleko jedna od drugiej. Strzałki reprezentują prędkości. Prędkości są rozmaite, kierunki bezładne i długości różne. ">
+      <image mime-type="image/jpeg" src="CNX_UPhysics_19_01_AtomsinGas.jpg"/>
+    </media>
+    <caption>Atomy (lub cząsteczki) w gazie zwykle znajdują się daleko od siebie. Ponieważ siły ich wzajemnego oddziaływania na tych odległościach są dostatecznie małe, to właściwości gazów zależą bardziej od ilości atomów (cząsteczek) w jednostce objętości oraz od temperatury aniżeli od rodzaju atomów (cząsteczek) </caption>
+  </figure>
+  <section id="header-5">
+    <title> Prawa gazów </title>
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="paragraph-29">W poprzednim rozdziale poznaliśmy jedną z konsekwencji dużej odległości międzycząsteczkowej w gazach: gazy można łatwo sprężać. Z <link target-id="fs-id1170902626134" document="Module.2017-02-15.5910" cmlnle:case="genitive"/> wynika, że współczynnik rozszerzalności objętościowej przyjmuje większe wartości dla gazów niż dla ciał stałych i cieczy. Te duże wartości oznaczają, że gazy rozprężają się lub sprężają bardzo szybko wraz ze zmianami temperatury. Dowiedzieliśmy się także, w podrozdziale o rozszerzalności cieplnej, że większość gazów rozpręża się w takim samym stopniu, czyli, że posiada te same wartości współczynnika rozszerzalności objętościowej <m:math display="inline">
+      <m:mi>β</m:mi>
+      </m:math>. Powstaje pytanie: dlaczego wszystkie gazy zachowują się niemal tak samo, podczas gdy różne ciecze i różne ciała stałe cechuje szeroki zakres wartości współczynników rozszerzalności? </para>
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="paragraph-37">Aby przenalizować, jak ciśnienie, objętość i temperatura gazu są powiązane ze sobą, rozważmy co się dzieje, kiedy pompujemy powietrze do wnętrza pustej (opróżnionej) opony samochodowej. Początkowo objętość opony samochodowej wzrasta proporcjonalnie do ilości wpompowanego powietrza – bez istotnego (znaczącego) wzrostu ciśnienia powietrza w oponie. Gdy opona osiągnie niemal swój pełny rozmiar, to jej ściany zaczną ograniczać możliwość dalszego zwiększania jej objętości. Jeżeli będziemy kontynuować pompowanie powietrza do opony, to nastąpi wzrost ciśnienia w oponie. Jeżeli samochód następnie wyjedzie na trasę, to opony będą podlegać zginaniu (gięciu), ich temperatura wzrośnie i nastąpi dalszy wzrost ciśnienia w oponach (<link target-id="figure-3"/>). </para>
+      <figure xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="figure-3">
+        <media id="fs-id1172096291820" alt="Rysunek składa się z trzech części, każda prezentuje oponę z przyłożonym do niej ciśnieniomierzem na starcie i na końcu stadium rozszerzania się opony, oznakowanym odpowiednio przez P i P prim. W części a ciśnienie na początku jest zerowe. Po dodaniu powietrza, czemu odpowiada strzałka oznaczona jako Pompowanie powietrza, ciśnienie rośnie nieco powyżej zera. W części b, wskaźnik ciśnienia początkowego jest w połowie skali. Po dodaniu powietrza, jak wskazuje strzałka Pompowanie powietrza, ciśnienie wzrasta do trzech czwartych zakresu skali. W części c ciśnienie początkowe to trzy czwarte zakresu skali. Po wzroście temperatury, reprezentowanej przez strzałkę wzrostu temperatury, ciśnienie rośnie prawie do końca zakresu skali. ">
+          <image mime-type="image/jpeg" src="CNX_UPhysics_19_01_FlatTire.jpg"/>
+        </media>
+        <caption>(a) Gdy powietrze jest pompowane do opróżnionej opony, to początkowo jej objętość wzrasta bez znaczącej zmiany ciśnienia w jej wnętrzu. (b) Kiedy opona jest wypełniona w odpowiednim stopniu, to jej ściany przeciwstawiają się dalszej ekspansji i ciśnienie w oponie rośnie wraz z wpompowywanym powietrzem. (c) Kiedy opona jest napompowana, to ciśnienie powietrza w jej wnętrzu rośnie wraz z jego temperaturą. </caption>
+      </figure>
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="paragraph-45">Dane przedstawione na <link target-id="figure-4" cmlnle:case="locative"/> pochodzą z doświadczenia przeprowadzonego przez Roberta <term class="no-emphasis" cmlnle:reference="Boyle">Boyle’a</term> (1627-1691) i ilustrują to, co obecnie nazywamy <term class="no-emphasis" cmlnle:reference="prawo Boyle’a-Mariotte’a">prawem Boyle’a-Mariotte’a</term>: w stałej temperaturze i dla ustalonej liczby cząsteczek gazu ciśnienie bezwzględne gazu jest odwrotnie proporcjonalne do jego objętości. (Przypominamy, że ciśnienie bezwzględne jest rzeczywistym ciśnieniem mierzonym względem próżni, natomiast nadciśnienie to ciśnienie bezwzględne pomniejszone o ciśnienie otoczenia, którym najczęściej jest ciśnieniem atmosferyczne – odwołaj się do rozdziału <link class="target-chapter" document="Module.2017-02-15.4148">Mechanika płynów</link>. Wykres na <link target-id="figure-4" cmlnle:case="locative"/> przedstawia tę zależność jako odwrotną proporcjonalność objętości i ciśnienia. </para>
+      <figure xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="figure-4">
+        <media id="fs-id1172098700632" alt="Rysunek jest wykresem objętości (w arbitralnie wybranych jednostkach) na osi pionowej w funkcji ciśnienia (w odwrotnych cali rtęci) na osi poziomej. Na skali poziomej wartości biegną od zera do 0,04. Na skali pionowej od zera do 60. Wykres pokazuje dane punktowe leżące na linii prostej, rozpoczynającej się od wielkości około 0,008 odwrotności ciśnienia w calach rtęci i odpowiadającemu mu ciśnieniu wartości 11 na osi pionowej do końcowej odwrotności ciśnienia zbliżonej do 0,035 odwrotności cali rtęci i objętości 50 na osi pionowej. Dane punktowe są rozmieszczone blisko siebie nisko wykresu, a coraz dalej oddalone od siebie gdzie rosną odwrotność ciśnienia i objętość. ">
+          <image mime-type="image/jpeg" src="CNX_UPhysics_19_01_BoylesLaw.jpg"/>
+        </media>
+        <caption>Robert Boyle wraz ze swoim asystentem odkrył, że objętość gazu jest odwrotnie proporcjonalna do jego ciśnienia (w ustalonej temperaturze). Tutaj jego pomiary zostały wykreślone jako zależność objętości gazu <m:math display="inline">
+          <m:mi>V</m:mi>
+        </m:math> od odwrotności jego ciśnienia <m:math display="inline">
+        <m:mn>1</m:mn>
+        <m:mo>/</m:mo>
+        <m:mi>p</m:mi>
+        </m:math>; z liniowości tego wykresu wynika odwrotna proporcjonalność tych wielkości. Liczby na osi rzędnych podają objętość za pomocą wysokości słupa powietrza (w calach), znajdującego się w cylindrycznej, szklanej rurze. Rzeczywistą objętość można otrzymać, mnożąc podane wysokości przez pole przekroju poprzecznego tej szklanej rury, którego wartości jednak Boyle nie opublikował. Dane pochodzą z książki Boyle’a <cite-title pub-type="book">A Defence of the Doctrine Touching the Spring and Weight of the Air…</cite-title>, s. 60<footnote id="footnote-2">http://bvpb.mcu.es/en/consulta/registro.cmd?id=406806</footnote> (<emphasis effect="italics">Obrona doktryny dotyczącej sprężystości i ciężaru powietrza…</emphasis>) </caption>
+      </figure>
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="paragraph-83">Na <link target-id="figure-5" cmlnle:case="locative"/> przedstawiono dane doświadczalne opublikowane przez Jacques'a <term class="no-emphasis" cmlnle:reference="Charles">Charles'a</term> (1746-1823), które ilustrują prawo nazwane jego nazwiskiem (<term class="no-emphasis">prawo Charles'a</term>). Prawo to stwierdza, że przy stałym ciśnieniu i dla ustalonej liczby cząsteczek objętość gazu jest wprost proporcjonalna do jego temperatury bezwzględnej. </para>
+      <figure xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="figure-5">
+        <media id="fs-id1172100848668" alt="Rysunek jest wykresem objętości (w arbitralnych jednostkach) oznaczonej na osi pionowej w funkcji temperatury (w kelwinach) na osi poziomej. Wielkości na skali poziomej biegną od zera do 350 K, a na skali pionowej od 0 do 140. Pokazanych jest dziewięć danych punktowych. Dane te leżą na prostej i są równo rozmieszczone. Dane rozciągnięte są od 273 K i objętości 108 do 313 K i objętości 123. Linia oznaczona jako ekstrapolowana linia najlepszego dopasowania wykreślona jest poprzez dane i powrót do 0 K. Udane trafienie osi pionowej jest ponad punktem wyjściowym. ">
+          <image mime-type="image/jpeg" src="CNX_UPhysics_19_01_CharlesLaw.jpg"/>
+        </media>
+        <caption>Dane doświadczalne pokazują, że przy ustalonym ciśnieniu objętość gazu jest w przybliżeniu proporcjonalna do jego temperatury. Linia najlepszego dopasowania do danych doświadczalnych przechodzi w przybliżeniu przez początek układu współrzędnych<footnote id="footnote-3">http://chemed.chem.purdue.edu/genchem/history/charles.html</footnote>
+      </caption>
+    </figure>
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="paragraph-89">Zbliżone do prawa Charlesa jest <term class="no-emphasis">prawo Gay-Lussaca</term>, które stwierdza, że przy stałej objętości i dla ustalonej liczby cząsteczek, ciśnienie gazu jest proporcjonalne do jego temperatury. Prawo to stanowi podstawę działania i konstrukcji termometru gazowego o stałej objętości, omówionego w poprzednim rozdziale. Prawdziwa historia odkrycia tych praw jest znacznie bardziej skomplikowana niż to, co zaprezentowaliśmy tutaj. </para>
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="paragraph-90">Z wielu przeprowadzonych doświadczeń wynika, że dla gazów o małej gęstości, których cząsteczki zajmują pomijalnie mały ułamek objętości całkowitej gazu, znajdujących się w temperaturze znacznie powyżej punktu wrzenia cieczy, te proporcjonalności stanowią dobre przybliżenie ich własności. Nie jest zaskoczeniem, że przy ustalonych pozostałych wielkościach albo ciśnienie, albo objętość są proporcjonalne do liczby cząsteczek gazu. Większe zaskoczenie budzi fakt, że po sprowadzeniu tych proporcjonalności do pojedynczego równania współczynnik proporcjonalności okazuje się niezależny od składu gazu. Równanie to stosuje się do wszystkich gazów w granicy małych gęstości i wysokich temperatur; jest ono takie samo dla tlenu, helu czy też dla sześciofluorku uranu (fluorek uranu (VI)). Gaz spełniający te warunki graniczne jest nazywany <term class="no-emphasis" cmlnle:reference="gaz doskonały">gazem doskonałym</term> (ang. <foreign>
+      <term cxlxt:index="foreign" class="no-emphasis">ideal gas</term>
+    </foreign>); podlega on <term class="no-emphasis" cmlnle:reference="równanie stanu gazu doskonałego">równaniu stanu gazu doskonałego</term> (ang. <foreign>
+    <term cxlxt:index="foreign" class="no-emphasis">ideal gas law</term>
+    </foreign>) (nazywanego również równaniem Clapeyrona – Benoit Clapeyron, 1799-1864, fizyk i matematyk francuski; przyp. tłum.). </para>
+    <note id="imp-idm300065600">
+      <title>Równanie stanu gazu doskonałego </title>
+      <para id="paragraph-91"> Równanie stanu gazu doskonałego stwierdza, że: </para>
+      <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="equation-1">
+        <m:math>
+          <m:mi>p</m:mi>
+          <m:mi>V</m:mi>
+          <m:mo>=</m:mo>
+          <m:mi>N</m:mi>
+          <m:msub>
+            <m:mi>k</m:mi>
+            <m:mrow>
+              <m:mi>B</m:mi>
+            </m:mrow>
+          </m:msub>
+          <m:mi>T</m:mi>
+          <m:mo>,</m:mo>
+        </m:math>
+      </equation>
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="paragraph-92">gdzie <m:math display="inline">
+        <m:mi>p</m:mi>
+      </m:math> jest ciśnieniem bezwzględnym gazu, <m:math display="inline">
+      <m:mi>V</m:mi>
+    </m:math> jest zajmowaną przez niego objętością, <m:math display="inline">
+    <m:mi>N</m:mi>
+  </m:math> jest liczbą cząsteczek w gazie, a <m:math display="inline">
+  <m:mi>T</m:mi>
+  </m:math> jest jego temperaturą bezwzględną. </para>
+</note>
+<para id="paragraph-93"> Stała <m:math display="inline">
+  <m:msub>
+    <m:mi>k</m:mi>
+    <m:mi>B</m:mi>
+  </m:msub>
+  </m:math> jest nazywana stałą Boltzmanna na cześć austriackiego fizyka Ludwika Boltzmanna (1844-1906) i posiada wartość: </para>
+  <equation id="imp-idm470556448" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:msub>
+        <m:mi>k</m:mi>
+        <m:mrow>
+          <m:mi>B</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>1</m:mn>
+      <m:mo>,</m:mo>
+      <m:mn>38</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mn>23</m:mn>
+        </m:mrow>
+      </m:msup>
+      <m:msup>
+        <m:mrow>
+          <m:mi mathvariant="normal">J</m:mi>
+          <m:mi mathvariant="normal">K</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mn>1</m:mn>
+        </m:mrow>
+      </m:msup>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="paragraph-94">Równanie stanu gazu doskonałego opisuje własności dowolnego gazu rzeczywistego, gdy jego gęstość jest wystarczająco mała lub gdy jego temperatura jest wystarczająco wysoka, tak, aby znajdował się w stanie dalekim od skraplania. Warunki te obejmują wiele praktycznych sytuacji. W następnym podrozdziale zobaczymy, dlaczego to prawo nie zależy od rodzaju gazu. </para>
+  <para id="paragraph-95"> Bardzo często równanie stanu gazu doskonałego stosuje się do opisu zachowania próbek gazu o ustalonej liczbie cząsteczek; np. do gazu znajdującego się w szczelnym zbiorniku. Jeżeli <m:math display="inline">
+    <m:mi>N</m:mi>
+  </m:math> jest stałe, to wyliczając <m:math display="inline">
+  <m:mi>N</m:mi>
+</m:math> z prawa gazu doskonałego można przekonać się, że <m:math display="inline">
+<m:mrow>
+  <m:mi>p</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mi>V</m:mi>
+</m:mrow>
+<m:mo>/</m:mo>
+<m:mi>T</m:mi>
+</m:math> musi być stałe. Fakt ten możemy zapisać w dogodnej postaci jako: </para>
+<note id="imp-idm280382288" class="equation-callout">
+  <equation id="imp-idm448414656">
+    <label/>
+    <m:math>
+      <m:mfrac>
+        <m:mrow>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mrow>
+              <m:mn>1</m:mn>
+            </m:mrow>
+          </m:msub>
+          <m:msub>
+            <m:mi>V</m:mi>
+            <m:mrow>
+              <m:mn>1</m:mn>
+            </m:mrow>
+          </m:msub>
+        </m:mrow>
+        <m:msub>
+          <m:mi>T</m:mi>
+          <m:mrow>
+            <m:mn>1</m:mn>
+          </m:mrow>
+        </m:msub>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mrow>
+              <m:mn>2</m:mn>
+            </m:mrow>
+          </m:msub>
+          <m:msub>
+            <m:mi>V</m:mi>
+            <m:mrow>
+              <m:mn>2</m:mn>
+            </m:mrow>
+          </m:msub>
+        </m:mrow>
+        <m:msub>
+          <m:mi>T</m:mi>
+          <m:mrow>
+            <m:mn>2</m:mn>
+          </m:mrow>
+        </m:msub>
+      </m:mfrac>
+      <m:mo>,</m:mo>
+    </m:math>
+  </equation>
+</note>
+<para id="paragraph-100"> gdzie indeksy 1 i 2 odnoszą się do dwóch stanów tego gazu określonych w dwóch różnych chwilach czasu. Podkreślmy, że temperatura w powyższym równaniu powinna być wyrażona w kelwinach, a ciśnienie musi być ciśnieniem bezwzględnym, które jest sumą nadciśnienia i ciśnienia atmosferycznego. </para>
+<example id="imp-idm498324576">
+  <para id="paragraph-101">
+    <title> Obliczanie zmian ciśnienia spowodowanych zmianami temperatury </title> Przypuśćmy, że opona twojego roweru została w pełni napompowana do ciśnienia bezwzględnego <m:math>
+      <m:mn>7</m:mn>
+      <m:mo>⋅</m:mo>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mrow>
+          <m:mn>5</m:mn>
+        </m:mrow>
+      </m:msup>
+      <m:mrow>
+        <m:mi mathvariant="normal">P</m:mi>
+        <m:mi mathvariant="normal">a</m:mi>
+      </m:mrow>
+      </m:math> (czyli nadciśnienie wynosi ok. 6,00 atm) w temperaturze 18,0 °C. Jakie będzie ciśnienie w tej oponie, jeżeli jej temperatura w upalny dzień wzrośnie do 35,0 °C? Załóż, że nie ma dostrzegalnych wycieków powietrza oraz zmian objętości opony. </para>
+      <para id="paragraph-104">
+        <title> Strategia rozwiązania </title> Ciśnienie w oponie zmienia się jedynie z powodu zmiany jej temperatury (od nagrzanej opony ogrzewa się powietrze w oponie do tej samej temperatury). Znamy ciśnienie początkowe <m:math id="maths-inline-3">
+          <semantics>
+            <m:mrow>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>p</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo stretchy="false">=</m:mo>
+                <m:mrow>
+                  <m:mn>7</m:mn>
+                  <m:mo stretchy="false">⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>5</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+              <m:mtext>Pa</m:mtext>
+            </m:mrow>
+            <annotation encoding="StarMath 5.0"> p_0 = 7 cdot 10^5 undefinedquot;Paundefinedquot; </annotation>
+          </semantics>
+        </m:math> , temperaturę początkową <m:math>
+        <m:msub>
+          <m:mi>t</m:mi>
+          <m:mrow>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:msup>
+          <m:mn>80</m:mn>
+          <m:mrow>
+            <m:mo>∘</m:mo>
+          </m:mrow>
+        </m:msup>
+        <m:mrow>
+          <m:mi mathvariant="normal">C</m:mi>
+        </m:mrow>
+      </m:math> oraz temperaturę końcową <m:math>
+      <m:msub>
+        <m:mi>t</m:mi>
+        <m:mrow>
+          <m:mi>k</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msup>
+        <m:mn>35</m:mn>
+        <m:mrow>
+          <m:mo>∘</m:mo>
+        </m:mrow>
+      </m:msup>
+      <m:mrow>
+        <m:mi mathvariant="normal">C</m:mi>
+      </m:mrow>
+    </m:math> . Musimy znaleźć ciśnienie końcowe w opnie <m:math>
+    <m:msub>
+      <m:mi>p</m:mi>
+      <m:mi>k</m:mi>
+    </m:msub>
+    </m:math> . Ponieważ liczba cząsteczek jest ustalona, to możemy skorzystać z równania: </para>
+    <equation id="imp-idm436079072" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mfrac>
+          <m:mrow>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mi>k</m:mi>
+            </m:msub>
+            <m:msub>
+              <m:mi>V</m:mi>
+              <m:mi>k</m:mi>
+            </m:msub>
+          </m:mrow>
+          <m:msub>
+            <m:mi>T</m:mi>
+            <m:mi>k</m:mi>
+          </m:msub>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:msub>
+              <m:mi>V</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:msub>
+            <m:mi>T</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+        </m:mfrac>
+      </m:math>
+    </equation>
+    <para id="paragraph-105"> Ponieważ objętość opony jest stała, <m:math display="inline">
+      <m:msub>
+        <m:mi>V</m:mi>
+        <m:mi>k</m:mi>
+      </m:msub>
+    </m:math> i <m:math display="inline">
+    <m:msub>
+      <m:mi>V</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    </m:math> przyjmują te same wartości i można je uprościć. Zatem: </para>
+    <equation id="imp-idm498749712" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mi>p</m:mi>
+        <m:mi>V</m:mi>
+        <m:mo>=</m:mo>
+        <m:mi>N</m:mi>
+        <m:msub>
+          <m:mi>k</m:mi>
+          <m:mi>B</m:mi>
+        </m:msub>
+        <m:mi>T</m:mi>
+        <m:mrow>
+          <m:mo>,</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="paragraph-106"> Przekształcamy to równanie wyznaczając <m:math>
+      <m:msub>
+        <m:mi>p</m:mi>
+        <m:mi>k</m:mi>
+      </m:msub>
+      </m:math>: </para>
+      <equation id="imp-idm382548832" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mi>k</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>p</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mfrac>
+            <m:msub>
+              <m:mi>T</m:mi>
+              <m:mi>k</m:mi>
+            </m:msub>
+            <m:msub>
+              <m:mi>T</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+          </m:mfrac>
+          <m:mrow>
+            <m:mo>,</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="paragraph-107"> gdzie temperaturę należy wstawić w kelwinach. </para>
+      <para id="imp-idm473986880">
+        <title> Rozwiązanie </title>
+      </para>
+      <list id="list8150903691188256572" list-type="enumerated" number-style="arabic">
+        <item id="list-item-5">
+          <para id="imp-idm439573456">Przeliczamy temperaturę ze stopni Celsjusza na kelwiny</para>
+          <equation id="imp-idm309099328" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mtable columnalign="left" rowspacing="4pt" columnspacing="1em">
+                <m:mtr>
+                  <m:mtd>
+                    <m:msub>
+                      <m:mi>T</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mn>18</m:mn>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">K</m:mi>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mn>273</m:mn>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">K</m:mi>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mn>291</m:mn>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">K</m:mi>
+                      <m:mo>,</m:mo>
+                    </m:mrow>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd>
+                    <m:msub>
+                      <m:mi>k</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>38</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>23</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:msup>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">J</m:mi>
+                        <m:mi mathvariant="normal">K</m:mi>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mo>.</m:mo>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+        </item>
+        <item id="list-item-6">
+          <para id="imp-idm468081328">Podstawiamy wyznaczone wartości wielkości do równania:</para>
+          <equation id="imp-idm426854848" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>p</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                  <m:msub>
+                    <m:mi>V</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mrow>
+                <m:msub>
+                  <m:mi>T</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>p</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                  <m:msub>
+                    <m:mi>V</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                </m:mrow>
+                <m:msub>
+                  <m:mi>T</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mrow>
+                <m:mo>,</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation>
+        </item>
+      </list>
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="paragraph-110">
+        <title>Znaczenie </title>Temperatura końcowa opony jest o ok. 6% (w skali Kelvina) wyższa od temperatury początkowej i w efekcie ciśnienie końcowe w oponie wzrasta również o 6%. Należy zapamiętać, że w równaniu stanu gazu doskonałego używa się bezwzględnego ciśnienia (zob. rozdział <link class="target-chapter" document="Module.2017-02-15.4148">Mechanika płynów</link>) oraz temperatury bezwzględnej (zob. rozdział <link class="target-chapter" document="Module.2017-02-15.5622">Temperatura i ciepło</link>). </para>
+      </example>
+      <example id="example-2-2">
+        <para id="paragraph-127">
+          <title> Wyznaczanie liczby cząsteczek w jednym metrze sześciennym gazu </title> Ile cząsteczek znajduje się w typowej sytuacji stanu skupienia, takim jak gaz w oponie lub woda w szklance? Celem tych obliczeń jest zorientowanie się, jak duże są typowe wartości <m:math>
+            <m:mi>N</m:mi>
+          </m:math>. Obliczmy liczbę cząsteczek powietrza pobieraną przez młodą osobę podczas jednego wdechu o objętości 500 ml w warunkach normalnych, czyli w temperaturze 0 °C i pod ciśnieniem 1 atm ( <m:math>
+          <m:mn>1</m:mn>
+          <m:mo>,</m:mo>
+          <m:mn>01</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mrow>
+              <m:mn>5</m:mn>
+            </m:mrow>
+          </m:msup>
+          <m:mtext>
+          </m:mtext>
+          <m:mrow>
+            <m:mi mathvariant="normal">P</m:mi>
+            <m:mi mathvariant="normal">a</m:mi>
+          </m:mrow>
+          </m:math> ). (Mamy zimę i nasza młoda osoba znajduje się na dworze.) </para>
+          <para id="paragraph-129">
+            <title> Strategia rozwiązania </title> Ponieważ mamy podane wartości ciśnienia, objętości i temperatury wdychanego powietrza, to, aby wyznaczyć <m:math>
+              <m:mi>N</m:mi>
+              </m:math>, możemy zastosować równanie stanu gazu doskonałego <m:math id="maths-inline-8"/> . </para>
+              <para id="imp-idm441891920">
+                <title> Rozwiązanie </title>
+              </para>
+              <list id="list6406356186911779053" list-type="enumerated" number-style="arabic">
+                <item id="list-item-7">
+                  <para id="paragraph-130"> Określamy wartości wielkości danych: </para>
+                  <para id="imp-idm259484784">
+                    <m:math>
+                      <m:mi>T</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:msup>
+                        <m:mn>0</m:mn>
+                        <m:mrow>
+                          <m:mo>∘</m:mo>
+                        </m:mrow>
+                      </m:msup>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">C</m:mi>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mn>273</m:mn>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">K</m:mi>
+                      </m:mrow>
+                    </m:math>, <m:math>
+                    <m:mi>p</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>1</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mtext>
+                    </m:mtext>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">P</m:mi>
+                      <m:mi mathvariant="normal">a</m:mi>
+                    </m:mrow>
+                  </m:math>, <m:math>
+                  <m:mi>V</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>500</m:mn>
+                  <m:mtext>
+                  </m:mtext>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mi mathvariant="normal">l</m:mi>
+                  </m:mrow>
+                </m:math>, <m:math>
+                <m:msub>
+                  <m:mi>k</m:mi>
+                  <m:mi>B</m:mi>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+                <m:mo>,</m:mo>
+                <m:mn>38</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>23</m:mn>
+                  </m:mrow>
+                </m:msup>
+                <m:mtext>
+                </m:mtext>
+                <m:msup>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">J</m:mi>
+                    <m:mi mathvariant="normal">K</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:msup>
+              </m:math>
+            </para>
+          </item>
+          <item id="list-item-8">
+            <para id="imp-idm439791088">Wyznaczając <m:math>
+              <m:mi>N</m:mi>
+              </m:math> z równania stanu gazu doskonałego i podstawiając dane otrzymujemy</para>
+              <equation id="imp-idm292231824" class="unnumbered">
+                <label/>
+                <m:math>
+                  <m:mi>N</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mi>p</m:mi>
+                      <m:mi>V</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>k</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:msub>
+                      <m:mi>T</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo>,</m:mo>
+                      <m:mn>1</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mrow>
+                          <m:mn>5</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                      <m:mtext>
+                      </m:mtext>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">P</m:mi>
+                        <m:mi mathvariant="normal">a</m:mi>
+                      </m:mrow>
+                      <m:mtext>
+                      </m:mtext>
+                      <m:mo>⋅</m:mo>
+                      <m:mtext>
+                      </m:mtext>
+                      <m:mn>5</m:mn>
+                      <m:mtext>
+                      </m:mtext>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mrow>
+                          <m:mo>−</m:mo>
+                          <m:mn>4</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>3</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo>,</m:mo>
+                      <m:mn>38</m:mn>
+                      <m:mtext>
+                      </m:mtext>
+                      <m:mo>⋅</m:mo>
+                      <m:mtext>
+                      </m:mtext>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mrow>
+                          <m:mo>−</m:mo>
+                          <m:mn>23</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                      <m:mtext>
+                      </m:mtext>
+                      <m:msup>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">J</m:mi>
+                          <m:mi mathvariant="normal">K</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mo>−</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                      <m:mtext>
+                      </m:mtext>
+                      <m:mo>⋅</m:mo>
+                      <m:mtext>
+                      </m:mtext>
+                      <m:mn>273</m:mn>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">K</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>=</m:mo>
+                  <m:mn>1</m:mn>
+                  <m:mo>,</m:mo>
+                  <m:mn>34</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mn>22</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:mi mathvariant="normal">z</m:mi>
+                    <m:mrow>
+                      <m:mo>ą</m:mo>
+                    </m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                    <m:mi mathvariant="normal">t</m:mi>
+                    <m:mi mathvariant="normal">e</m:mi>
+                    <m:mi mathvariant="normal">c</m:mi>
+                    <m:mi mathvariant="normal">z</m:mi>
+                    <m:mi mathvariant="normal">e</m:mi>
+                    <m:mi mathvariant="normal">k</m:mi>
+                  </m:mrow>
+                </m:math>
+              </equation>
+            </item>
+          </list>
+          <para id="paragraph-132">
+            <title> Znaczenie </title> Jak to określono w rozdziale o mechanice płynów, wymiarem paskala jest <m:math>
+              <m:mi>N</m:mi>
+              <m:mrow>
+                <m:mo>/</m:mo>
+              </m:mrow>
+              <m:msup>
+                <m:mi>m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:math>, więc <m:math>
+            <m:mrow>
+              <m:mi mathvariant="normal">P</m:mi>
+              <m:mi mathvariant="normal">a</m:mi>
+            </m:mrow>
+            <m:mtext>
+            </m:mtext>
+            <m:msup>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mn>3</m:mn>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mi mathvariant="normal">J</m:mi>
+            </m:mrow>
+          </m:math> . Wobec tego wyznaczona wartość <emphasis effect="italics">
+          <m:math>
+            <m:mi>N</m:mi>
+          </m:math>
+          </emphasis> jest bezwymiarowa, czyli jest „czystą” liczbą, którą można by było – w zasadzie – wyznaczyć przez bezpośrednie zliczanie cząsteczek (precyzyjniej, niż za pomocą technik pomiarowych). Ponieważ jest to liczba cząsteczek, to nazwa ta została wstawiona po wyznaczonej wartości, jednak należy pamiętać, że nie jest to nazwa jednostki, lecz tylko informacja o sensie tej liczby. </para>
+        </example>
+      </section>
+      <section id="header-17">
+        <title> Mole i liczba Avogadra </title>
+        <para id="paragraph-135"> Często jest znacznie wygodniej, z ludzkiego punktu widzenia, mierzyć liczność substancji (materii) w innych jednostkach niż za pomocą liczby cząsteczek. W układzie SI w tym celu stosuje się jednostkę, która została opracowana przez włoskiego naukowca Amadeo <term class="no-emphasis" cmlnle:reference="Avogadro">Avogadrę</term> (1776-1856). (Korzystał on z hipotezy, że takie same objętości gazów pod stałym ciśnieniem i w stałej temperaturze zawierają takie same liczby cząsteczek, niezależnie od rodzaju gazu. Jak stwierdzono wcześniej, hipoteza ta jest słuszna w przybliżeniu gazu doskonałego.) <term cmlnle:reference="mol">Molem</term> (w skrócie mol) nazywamy taką ilość danej substancji, która zawiera taką samą liczbę cząsteczek jak liczba atomów w dokładnie 12 g izotopu węgla C<sup id="superscript-10">12</sup>. Liczba cząsteczek w jednym molu nazywana jest liczbą Avogadra ( <sub id="subscript-5">
+          <m:math>
+            <m:msub>
+              <m:mi>N</m:mi>
+              <m:mi>A</m:mi>
+            </m:msub>
+          </m:math>
+          </sub> ), a obecnie wyznaczona jej wartość wynosi: </para>
+          <equation id="maths-block-2" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:msub>
+                <m:mi>N</m:mi>
+                <m:mi>A</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>6</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>02</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mrow>
+                  <m:mn>23</m:mn>
+                </m:mrow>
+              </m:msup>
+              <m:mtext>
+              </m:mtext>
+              <m:msup>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mi mathvariant="normal">o</m:mi>
+                  <m:mi mathvariant="normal">l</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:msup>
+              <m:mrow>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation>
+          <para id="paragraph-136"> Możemy teraz napisać <m:math>
+            <m:mi>N</m:mi>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>N</m:mi>
+              <m:mi>A</m:mi>
+            </m:msub>
+            <m:mi>n</m:mi>
+          </m:math> , gdzie <m:math>
+          <m:mi>n</m:mi>
+          </m:math> oznacza liczbę moli danej substancji. </para>
+          <para id="paragraph-137"> Liczba Avogadra określa relację między ilością substancji w gramach a liczbą protonów i neutronów w pewnym atomie lub cząsteczce (12 w atomie węgla C<sup id="superscript-11">12</sup>), która z grubsza określa ich masę. Wobec tego naturalne jest takie zdefiniowanie jednostki masy, aby masa danego atomu była w przybliżeniu równa jego liczbie protonów i neutronów. Taką jednostką, przyjętą do stosowania równolegle z jednostką układu SI, jest <term class="no-emphasis">
+            <emphasis effect="italics">ujednolicona jednostka masy atomowej</emphasis>
+          </term> (u), nazywana także <term class="no-emphasis">
+          <emphasis effect="italics">daltonem</emphasis>
+        </term>. W szczególności, atom węgla C<sup id="superscript-12">12</sup> posiada masę dokładnie równą 12 u, co oznacza, że jego masa molowa <m:math>
+        <m:mi>M</m:mi>
+      </m:math> w gramach na mol jest liczbowo równa masie atomu węgla C<sup id="superscript-13">12</sup> wyrażoną w u. Taka równoważność dotyczy każdej substancji. Mówiąc inaczej, <m:math id="maths-inline-13">
+      <semantics>
+        <m:msub>
+          <m:mi>N</m:mi>
+          <m:mi>A</m:mi>
+        </m:msub>
+        <annotation encoding="StarMath 5.0"> N_A </annotation>
+      </semantics>
+    </m:math> służy nie tylko do zamiany liczby cząsteczek na kmole, ale także do zamiany masy wyrażonej w u na gramy: <m:math>
+    <m:mn>6</m:mn>
+    <m:mo>,</m:mo>
+    <m:mn>02</m:mn>
+    <m:mo>⋅</m:mo>
+    <m:msup>
+      <m:mn>10</m:mn>
+      <m:mrow>
+        <m:mn>23</m:mn>
+      </m:mrow>
+    </m:msup>
+    <m:mrow>
+      <m:mi mathvariant="normal">u</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mn>1</m:mn>
+    <m:mrow>
+      <m:mi mathvariant="normal">g</m:mi>
+    </m:mrow>
+    </m:math> . Zobacz <link target-id="figure-6"/>. </para>
+    <figure xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="figure-6">
+      <media id="fs-id1172100506689" alt="Ilustracja pokazuje płaski ląd z samotną górą, oznaczoną jako (Mt. Everest w skali), oraz błękitne niebo ponad szczytem. Podwójnie skierowana pionowa strzałka, oznakowana jako &quot;piłka tenisa stołowego&quot;, rozpięta jest pomiędzy lądem a niebem. ">
+        <image mime-type="image/jpeg" src="CNX_UPhysics_19_01_MoleSize.jpg"/>
+      </media>
+      <caption>Jak duży jest mol? Na poziomie makroskopowym liczba piłeczek tenisowych pingpongowych równa liczbie Avogadra mogłaby pokryć Ziemię do wysokości ok. 40 km </caption>
+    </figure>
+    <para id="paragraph-140"> Wobec tego, jeżeli <m:math>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mi>s</m:mi>
+      </m:msub>
+    </m:math> oznacza masę próbki pewnej substancji, to <m:math>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mi>s</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mi>M</m:mi>
+    <m:mi>n</m:mi>
+  </m:math> (gdzie <m:math>
+  <m:mi>M</m:mi>
+</m:math> jest masą molową tej substancji, a <m:math>
+<m:mi>n</m:mi>
+</m:math> liczbą jej moli; należy zwrócić uwagę na jednostki w tym wzorze – przyp. tłum.). Jeżeli natomiast <m:math>
+<m:mi>m</m:mi>
+</m:math> oznacza masę pojedynczej cząsteczki, to <m:math>
+<m:mi>M</m:mi>
+<m:mo>=</m:mo>
+<m:msub>
+  <m:mi>N</m:mi>
+  <m:mi>A</m:mi>
+</m:msub>
+<m:mi>m</m:mi>
+</m:math> . </para>
+<note id="imp-idm394162896" class="check-understanding">
+  <exercise id="imp-idm435470816">
+    <problem id="imp-idm282998080">
+      <para id="paragraph-141">
+        <emphasis id="bold-12">Sprawdź, czy rozumiesz.</emphasis> Zalecana dzienna dawka witaminy B<sub id="subscript-7">3</sub> (niacyny – C<sub id="subscript-8">6</sub>NH<sub id="subscript-9">5</sub>O<sub id="subscript-10">2</sub>) dla kobiet, które nie są w ciąży i nie karmią, wynosi 14 mg. Wyznacz liczbę cząsteczek niacyny w tej dawce. </para>
+      </problem>
+      <solution id="imp-idm513196048">
+        <para id="paragraph-143"> Najpierw musimy obliczyć masę molową (czyli masę jednego mola) niacyny. W tym celu mnożymy ilość atomów każdego pierwiastka w cząsteczce przez jego masę molową i dodajemy wszystkie wyniki. </para>
+        <equation id="imp-idm399138560" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mn>6</m:mn>
+            <m:mtext>
+            </m:mtext>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">l</m:mi>
+              <m:mi mathvariant="normal">i</m:mi>
+              <m:mtext>
+              </m:mtext>
+              <m:mi mathvariant="normal">w</m:mi>
+              <m:mrow>
+                <m:mo>ę</m:mo>
+              </m:mrow>
+              <m:mi mathvariant="normal">g</m:mi>
+              <m:mi mathvariant="normal">l</m:mi>
+              <m:mi mathvariant="normal">a</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mn>12</m:mn>
+            <m:mtext>
+            </m:mtext>
+            <m:mrow>
+              <m:mi mathvariant="normal">g</m:mi>
+              <m:mrow>
+                <m:mo>/</m:mo>
+              </m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">l</m:mi>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>5</m:mn>
+            <m:mtext>
+            </m:mtext>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">l</m:mi>
+              <m:mi mathvariant="normal">i</m:mi>
+              <m:mtext>
+              </m:mtext>
+              <m:mi mathvariant="normal">w</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">d</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">r</m:mi>
+              <m:mi mathvariant="normal">u</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mn>1</m:mn>
+            <m:mtext>
+            </m:mtext>
+            <m:mrow>
+              <m:mi mathvariant="normal">g</m:mi>
+              <m:mrow>
+                <m:mo>/</m:mo>
+              </m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">l</m:mi>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>1</m:mn>
+            <m:mtext>
+            </m:mtext>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">l</m:mi>
+              <m:mtext>
+              </m:mtext>
+              <m:mi mathvariant="normal">a</m:mi>
+              <m:mi mathvariant="normal">z</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">t</m:mi>
+              <m:mi mathvariant="normal">u</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mn>14</m:mn>
+            <m:mtext>
+            </m:mtext>
+            <m:mrow>
+              <m:mi mathvariant="normal">g</m:mi>
+              <m:mrow>
+                <m:mo>/</m:mo>
+              </m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">l</m:mi>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mn>2</m:mn>
+            <m:mtext>
+            </m:mtext>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">l</m:mi>
+              <m:mi mathvariant="normal">e</m:mi>
+              <m:mtext>
+              </m:mtext>
+              <m:mi mathvariant="normal">t</m:mi>
+              <m:mi mathvariant="normal">l</m:mi>
+              <m:mi mathvariant="normal">e</m:mi>
+              <m:mi mathvariant="normal">n</m:mi>
+              <m:mi mathvariant="normal">u</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mn>16</m:mn>
+            <m:mtext>
+            </m:mtext>
+            <m:mrow>
+              <m:mi mathvariant="normal">g</m:mi>
+              <m:mrow>
+                <m:mo>/</m:mo>
+              </m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">l</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>123</m:mn>
+            <m:mtext>
+            </m:mtext>
+            <m:mrow>
+              <m:mi mathvariant="normal">g</m:mi>
+              <m:mrow>
+                <m:mo>/</m:mo>
+              </m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">l</m:mi>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="paragraph-146"> Następnie wyznaczamy liczbę moli niacyny w 14 mg. </para>
+        <equation id="imp-idm465065376" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mi>n</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mn>14</m:mn>
+                <m:mtext>
+                </m:mtext>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>123</m:mn>
+                <m:mtext>
+                </m:mtext>
+                <m:msup>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">g</m:mi>
+                    <m:mtext>
+                    </m:mtext>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mi mathvariant="normal">o</m:mi>
+                    <m:mi mathvariant="normal">l</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>⋅</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mn>1</m:mn>
+                <m:mtext>
+                </m:mtext>
+                <m:mrow>
+                  <m:mi mathvariant="normal">g</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>1000</m:mn>
+                <m:mtext>
+                </m:mtext>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+            <m:mo>,</m:mo>
+            <m:mn>14</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>4</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mtext>
+            </m:mtext>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">l</m:mi>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="paragraph-147"> I wreszcie, używamy liczby Avogadra aby obliczyć ilość cząsteczek. </para>
+        <equation id="maths-block-3" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:mi>N</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>n</m:mi>
+            <m:msub>
+              <m:mi>N</m:mi>
+              <m:mi>A</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+            <m:mo>,</m:mo>
+            <m:mn>14</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>4</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mtext>
+            </m:mtext>
+            <m:mrow>
+              <m:mi mathvariant="normal">g</m:mi>
+              <m:mrow>
+                <m:mo>/</m:mo>
+              </m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">l</m:mi>
+            </m:mrow>
+            <m:mtext>
+            </m:mtext>
+            <m:mo>⋅</m:mo>
+            <m:mtext>
+            </m:mtext>
+            <m:mn>6</m:mn>
+            <m:mo>,</m:mo>
+            <m:mn>02</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow>
+                <m:mn>23</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mtext>
+            </m:mtext>
+            <m:mrow>
+              <m:mi mathvariant="normal">c</m:mi>
+              <m:mi mathvariant="normal">z</m:mi>
+              <m:mrow>
+                <m:mo>ą</m:mo>
+              </m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+              <m:mi mathvariant="normal">t</m:mi>
+              <m:mi mathvariant="normal">e</m:mi>
+              <m:mi mathvariant="normal">k</m:mi>
+              <m:mrow>
+                <m:mo>/</m:mo>
+              </m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mi mathvariant="normal">o</m:mi>
+              <m:mi mathvariant="normal">l</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>6</m:mn>
+            <m:mo>,</m:mo>
+            <m:mn>85</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow>
+                <m:mn>19</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mtext>
+            </m:mtext>
+            <m:mrow>
+              <m:mi mathvariant="normal">c</m:mi>
+              <m:mi mathvariant="normal">z</m:mi>
+              <m:mrow>
+                <m:mo>ą</m:mo>
+              </m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+              <m:mi mathvariant="normal">t</m:mi>
+              <m:mi mathvariant="normal">e</m:mi>
+              <m:mi mathvariant="normal">k</m:mi>
+            </m:mrow>
+          </m:math>
+        </equation>
+      </solution>
+    </exercise>
+  </note>
+  <note id="imp-idm273955232" class="check-understanding">
+    <exercise id="imp-idm649219168">
+      <problem id="imp-idm416690880">
+        <para id="paragraph-148">
+          <emphasis id="bold-14">Sprawdź, czy rozumiesz.</emphasis> Gęstość powietrza w klasie ( <m:math>
+            <m:mi>p</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+            <m:mtext>
+            </m:mtext>
+            <m:mrow>
+              <m:mi mathvariant="normal">a</m:mi>
+              <m:mi mathvariant="normal">t</m:mi>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+          </m:math> i <m:math>
+          <m:mi>t</m:mi>
+          <m:mo>=</m:mo>
+          <m:msup>
+            <m:mn>20</m:mn>
+            <m:mrow>
+              <m:mo>∘</m:mo>
+            </m:mrow>
+          </m:msup>
+          <m:mrow>
+            <m:mi mathvariant="normal">C</m:mi>
+          </m:mrow>
+          </m:math> ) wynosi 1,20 kg/m <sup id="superscript-14">3</sup>. Pod jakim ciśnieniem gęstość powietrza będzie wynosić 0,600 kg/m <sup id="superscript-15">3</sup>, jeżeli temperatura w klasie utrzymywana jest na stałym poziomie? </para>
+        </problem>
+        <solution id="imp-idm385279600">
+          <para id="paragraph-150"> Gęstość gazu można wyrazić jako iloczyn jego średniej masy cząsteczkowej oraz koncentracji jego cząsteczek <m:math>
+            <m:mi>N</m:mi>
+            <m:mrow>
+              <m:mo>/</m:mo>
+            </m:mrow>
+            <m:mi>V</m:mi>
+          </m:math> . Z równania stanu gazu doskonałego, <m:math>
+          <m:mi>p</m:mi>
+          <m:mi>V</m:mi>
+          <m:mo>=</m:mo>
+          <m:mi>N</m:mi>
+          <m:msub>
+            <m:mi>k</m:mi>
+            <m:mi>B</m:mi>
+          </m:msub>
+          <m:mi>T</m:mi>
+          <m:mrow>
+            <m:mo>,</m:mo>
+          </m:mrow>
+        </m:math>
+        <m:math id="maths-inline-22">
+          <semantics>
+            <m:mrow>
+              <m:mi>p</m:mi>
+              <m:mrow>
+                <m:mi>V</m:mi>
+                <m:mo stretchy="false">=</m:mo>
+                <m:mi>N</m:mi>
+              </m:mrow>
+              <m:msub>
+                <m:mi>k</m:mi>
+                <m:mi>B</m:mi>
+              </m:msub>
+              <m:mi>T</m:mi>
+            </m:mrow>
+            <annotation encoding="StarMath 5.0"> p V = N k_B T </annotation>
+          </semantics>
+        </m:math> , widzimy, że <m:math id="maths-inline-23">
+        <semantics>
+          <m:mrow>
+            <m:mrow>
+              <m:mi>N</m:mi>
+              <m:mo stretchy="false">/</m:mo>
+              <m:mi>V</m:mi>
+            </m:mrow>
+            <m:mo stretchy="false">=</m:mo>
+            <m:mrow>
+              <m:mi>p</m:mi>
+              <m:mo stretchy="false">/</m:mo>
+              <m:mrow>
+                <m:mo fence="true" stretchy="false">(</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>k</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:msub>
+                    <m:mi>T</m:mi>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo fence="true" stretchy="false">)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <annotation encoding="StarMath 5.0"> N/V = p/( k_B T ) </annotation>
+        </semantics>
+      </m:math> . Wobec tego, w stałej temperaturze, jeżeli gęstość i, tym samym, koncentracja cząsteczek maleją dwukrotnie, to ciśnienie gazu również musi zmaleć dwukrotnie, czyli <m:math id="maths-inline-24">
+      <semantics>
+        <m:mrow>
+          <m:mrow>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mi>k</m:mi>
+            </m:msub>
+            <m:mo stretchy="false">=</m:mo>
+            <m:mn>0,500</m:mn>
+          </m:mrow>
+          <m:mtext>atm</m:mtext>
+        </m:mrow>
+        <annotation encoding="StarMath 5.0"> p_k = 0,500 undefinedquot;atmundefinedquot; </annotation>
+      </semantics>
+      </m:math> . </para>
+    </solution>
+  </exercise>
+</note>
+</section>
+<section id="header-18">
+  <title> Przeformułowanie równania stanu gazu doskonałego z użyciem moli (liczności materii) </title>
+  <para id="paragraph-151"> Bardzo często spotyka się równanie stanu gazu doskonałego, w którym zamiast liczby cząsteczek <emphasis effect="italics">
+    <m:math id="maths-inline-25">
+      <semantics>
+        <m:mi>N</m:mi>
+        <annotation encoding="StarMath 5.0"> N </annotation>
+      </semantics>
+    </m:math>
+  </emphasis> używa się liczby moli <emphasis effect="italics">
+  <m:math id="maths-inline-26">
+    <semantics>
+      <m:mi>n</m:mi>
+      <annotation encoding="StarMath 5.0"> n </annotation>
+    </semantics>
+  </m:math>
+  </emphasis> w próbce. Zaczynamy od znanej postaci równania stanu gazu doskonałego: </para>
+  <equation id="imp-idm282708896" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:mrow>
+        <m:mfrac>
+          <m:mrow>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mi>k</m:mi>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>V</m:mi>
+              <m:mi>k</m:mi>
+            </m:msub>
+          </m:mrow>
+          <m:msub>
+            <m:mi>T</m:mi>
+            <m:mi>k</m:mi>
+          </m:msub>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:msub>
+              <m:mi>p</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>V</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:msub>
+            <m:mi>T</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+        </m:mfrac>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="paragraph-152"> a następnie mnożymy i dzielimy jego prawą stronę przez liczbę Avogadra <m:math id="maths-inline-27">
+    <semantics>
+      <m:msub>
+        <m:mi>N</m:mi>
+        <m:mi>A</m:mi>
+      </m:msub>
+      <annotation encoding="StarMath 5.0"> N_A </annotation>
+    </semantics>
+    </m:math> . Daje to: </para>
+    <equation id="imp-idm389180208" class="unnumbered">
+      <label/>
+      <m:math display="block">
+        <m:mrow>
+          <m:mrow>
+            <m:mi>p</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>V</m:mi>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mi>N</m:mi>
+              <m:msub>
+                <m:mi>N</m:mi>
+                <m:mi>A</m:mi>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>N</m:mi>
+              <m:mi>A</m:mi>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>k</m:mi>
+              <m:mi>B</m:mi>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mi>T</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="paragraph-153"> Można zauważyć, że <m:math id="maths-inline-28">
+      <semantics>
+        <m:mrow>
+          <m:mi>N</m:mi>
+          <m:mo stretchy="false">/</m:mo>
+          <m:msub>
+            <m:mi>N</m:mi>
+            <m:mi>A</m:mi>
+          </m:msub>
+        </m:mrow>
+        <annotation encoding="StarMath 5.0"> N/N_A </annotation>
+      </semantics>
+    </m:math> jest równe liczbie moli <m:math>
+    <m:mi>n</m:mi>
+  </m:math> próbki substancji. Definiując uniwersalną stałą gazową <m:math id="maths-inline-29">
+  <semantics>
+    <m:mrow>
+      <m:mrow>
+        <m:mi>R</m:mi>
+        <m:mo stretchy="false">=</m:mo>
+        <m:msub>
+          <m:mi>N</m:mi>
+          <m:mi>A</m:mi>
+        </m:msub>
+      </m:mrow>
+      <m:msub>
+        <m:mi>k</m:mi>
+        <m:mi>B</m:mi>
+      </m:msub>
+    </m:mrow>
+    <annotation encoding="StarMath 5.0"> R = N_A k_B </annotation>
+  </semantics>
+  </m:math> otrzymujemy równanie stanu gazu doskonałego zawierające liczbę moli gazu (liczność materii). </para>
+  <note id="imp-idm448721392">
+    <title>Równanie stanu gazu doskonałego (z użyciem liczby moli)</title>
+    <para id="paragraph-154"> Prawo gazu doskonałego z użyciem liczby moli <m:math id="maths-inline-30">
+      <semantics>
+        <m:mi>n</m:mi>
+        <annotation encoding="StarMath 5.0"> n </annotation>
+      </semantics>
+      </m:math> ma postać: </para>
+      <para id="paragraph-155"> W jednostkach układu SI: </para>
+      <equation id="imp-idm307564592" class="unnumbered">
+        <label/>
+        <m:math display="block">
+          <m:mrow>
+            <m:mi>R</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:msub>
+                <m:mi>N</m:mi>
+                <m:mi>A</m:mi>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>k</m:mi>
+                <m:mi>B</m:mi>
+              </m:msub>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>6,2</m:mn>
+                  <m:mo>·</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>23</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mi mathvariant="normal">mol</m:mi>
+                  <m:mn>-1</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>·</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>1,38</m:mn>
+                  <m:mo>·</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>-23</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:mi mathvariant="normal">J</m:mi>
+                  <m:msup>
+                    <m:mi mathvariant="normal">K</m:mi>
+                    <m:mn>-1</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>8,31</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mi mathvariant="normal">J</m:mi>
+                <m:msup>
+                  <m:mi mathvariant="normal">mol</m:mi>
+                  <m:mn>-1</m:mn>
+                </m:msup>
+                <m:msup>
+                  <m:mi mathvariant="normal">K</m:mi>
+                  <m:mn>-1</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="paragraph-156"> W innych jednostkach: </para>
+      <equation id="imp-idm405272000" class="unnumbered">
+        <label/>
+        <m:math display="block">
+          <m:mrow>
+            <m:mi>R</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>1,99</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mi mathvariant="normal">cal</m:mi>
+                <m:msup>
+                  <m:mi mathvariant="normal">mol</m:mi>
+                  <m:mn>-1</m:mn>
+                </m:msup>
+                <m:msup>
+                  <m:mi mathvariant="normal">K</m:mi>
+                  <m:mn>-1</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>0,821</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mi mathvariant="normal">l</m:mi>
+                <m:mi mathvariant="normal">atm</m:mi>
+                <m:msup>
+                  <m:mi mathvariant="normal">mol</m:mi>
+                  <m:mn>-1</m:mn>
+                </m:msup>
+                <m:mi mathvariant="normal">K</m:mi>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="paragraph-157"> Odpowiednią wartość <m:math id="maths-inline-31">
+        <semantics>
+          <m:mi>R</m:mi>
+          <annotation encoding="StarMath 5.0"> R </annotation>
+        </semantics>
+        </m:math> należy dobierać do konkretnego problemu. </para>
+      </note>
+      <note id="imp-idm377659808">
+        <title>Równanie stanu gazu doskonałego z użyciem koncentracji cząsteczek (dod. tłum.)</title>
+        <para id="paragraph-158"> Również często spotyka się równanie stanu gazu doskonałego, w którym zamiast liczby cząsteczek występuje ich koncentracja <m:math id="maths-inline-32">
+          <semantics>
+            <m:mrow>
+              <m:msub>
+                <m:mi>n</m:mi>
+                <m:mi>V</m:mi>
+              </m:msub>
+              <m:mo stretchy="false">=</m:mo>
+              <m:mrow>
+                <m:mi>N</m:mi>
+                <m:mo stretchy="false">/</m:mo>
+                <m:mi>V</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <annotation encoding="StarMath 5.0"> n_V = N/V </annotation>
+          </semantics>
+        </m:math> . Dzieląc Równanie 2.1 obustronnie przez objętość <m:math id="maths-inline-33">
+        <semantics>
+          <m:mi>V</m:mi>
+          <annotation encoding="StarMath 5.0"> V </annotation>
+        </semantics>
+        </m:math> otrzymujemy: </para>
+        <equation id="imp-idm373194656" class="unnumbered">
+          <label/>
+          <m:math display="block">
+            <m:mrow>
+              <m:mi>p</m:mi>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>n</m:mi>
+                  <m:mi>V</m:mi>
+                </m:msub>
+                <m:mo>⁢</m:mo>
+                <m:msub>
+                  <m:mi>k</m:mi>
+                  <m:mi>B</m:mi>
+                </m:msub>
+                <m:mo>⁢</m:mo>
+                <m:mi>T</m:mi>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </equation>
+      </note>
+      <example id="imp-idm371831008">
+        <para id="paragraph-160">
+          <title>Gęstość powietrza w warunkach normalnych i w balonie na gorące powietrze</title> Oblicz gęstość suchego powietrza (a) w warunkach normalnych i (b) w balonie na gorące powietrze o temperaturze 120 °C. Suche powietrze zawiera (molowo) w przybliżeniu 78% N<sub id="subscript-11">2</sub>, 21% O<sub id="subscript-12">2</sub> i 1% Ar. </para>
+          <para id="imp-idm379918000">
+            <title> Strategia rozwiązania i rozwiązanie </title>
+          </para>
+          <list id="list3171070414165531786" list-type="enumerated" number-style="lower-alpha">
+            <item id="list-item-9">
+              <para id="imp-idm462187456"> Mamy wyznaczyć gęstość, czyli masę przypadającą na metr sześcienny. Możemy zacząć od wyznaczenia masy molowej. Jeżeli mamy sto cząsteczek, z których 78 to cząsteczki azotu, 21 to cząsteczki tlenu i 1 to atom argonu to średnia masa cząsteczki wynosi <m:math display="inline">
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>78</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:msub>
+                        <m:mi>m</m:mi>
+                        <m:msub>
+                          <m:mtext>N</m:mtext>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mrow>
+                      <m:mn>21</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:msub>
+                        <m:mi>m</m:mi>
+                        <m:msub>
+                          <m:mtext>O</m:mtext>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mtext>Ar</m:mtext>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mn>100</m:mn>
+                </m:mfrac>
+                </m:math> , lub jest sumą mas wszystkich składników pomnożonych przez ich odsetki. To samo można zastosować do mas cząsteczkowych, co daje: </para>
+                <equation id="imp-idm462509920" class="unnumbered">
+                  <label/>
+                  <m:math display="block">
+                    <m:mrow>
+                      <m:mi>M</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mn>0,78</m:mn>
+                          <m:mo>⁢</m:mo>
+                          <m:msub>
+                            <m:mi>M</m:mi>
+                            <m:msub>
+                              <m:mtext>N</m:mtext>
+                              <m:mn>2</m:mn>
+                            </m:msub>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mo>+</m:mo>
+                        <m:mrow>
+                          <m:mn>0,21</m:mn>
+                          <m:mo>⁢</m:mo>
+                          <m:msub>
+                            <m:mi>M</m:mi>
+                            <m:msub>
+                              <m:mtext>O</m:mtext>
+                              <m:mn>2</m:mn>
+                            </m:msub>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mo>+</m:mo>
+                        <m:mrow>
+                          <m:mn>0,1</m:mn>
+                          <m:mo>⁢</m:mo>
+                          <m:msub>
+                            <m:mi>M</m:mi>
+                            <m:mtext>Ar</m:mtext>
+                          </m:msub>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mn>29</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">g</m:mi>
+                          <m:msup>
+                            <m:mi mathvariant="normal">mol</m:mi>
+                            <m:mn>-1</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:math>
+                </equation>
+                <para id="paragraph-163"> Teraz możemy wyznaczyć liczbę moli suchego powietrza przypadającą na metr sześcienny. Zastosujemy równanie stanu gazu doskonałego w postaci uwzględniającej liczbą moli, <m:math display="inline">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>p</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>V</m:mi>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mi>n</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>R</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>T</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:math>, gdzie <m:math id="maths-inline-34">
+                <semantics>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>p</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>1,00</m:mn>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mtext>atm</m:mtext>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mn>1,01</m:mn>
+                        <m:mo stretchy="false">⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mn>5</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mtext>Pa</m:mtext>
+                  </m:mrow>
+                  <annotation encoding="StarMath 5.0"> p = 1,00 undefinedquot;atmundefinedquot; = 1,01 cdot 10^5 undefinedquot;Paundefinedquot; </annotation>
+                </semantics>
+              </m:math> , <m:math id="maths-inline-35">
+              <semantics>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>T</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>273</m:mn>
+                  </m:mrow>
+                  <m:mtext>K</m:mtext>
+                </m:mrow>
+                <annotation encoding="StarMath 5.0"> T = 273 undefinedquot;Kundefinedquot; </annotation>
+              </semantics>
+            </m:math> , <m:math id="maths-inline-36">
+            <semantics>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>V</m:mi>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+                <m:msup>
+                  <m:mtext>m</m:mtext>
+                  <m:mn>3</m:mn>
+                </m:msup>
+              </m:mrow>
+              <annotation encoding="StarMath 5.0"> V = 1 undefinedquot;mundefinedquot;^3 </annotation>
+            </semantics>
+          </m:math> , <m:math id="maths-inline-37">
+          <semantics>
+            <m:mrow>
+              <m:mrow>
+                <m:mi>R</m:mi>
+                <m:mo stretchy="false">=</m:mo>
+                <m:mn>8,31</m:mn>
+              </m:mrow>
+              <m:mtext>J/(mol·K)</m:mtext>
+            </m:mrow>
+            <annotation encoding="StarMath 5.0"> R = 8,31 undefinedquot;J/(mol·K)undefinedquot; </annotation>
+          </semantics>
+          </m:math> . Wybrano taką właśnie postać uniwersalnej stałej gazowej, ponieważ wartości wszystkich danych zostały podane w jednostkach układu SI. Otrzymujemy: </para>
+          <equation id="imp-idm466565920" class="unnumbered">
+            <label/>
+            <m:math display="block">
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi>p</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>V</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi>R</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>T</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>1,1</m:mn>
+                        <m:mo>·</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mn>5</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo>⁢</m:mo>
+                      <m:mi mathvariant="normal">Pa</m:mi>
+                    </m:mrow>
+                    <m:mo>·</m:mo>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:msup>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>8,31</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">J</m:mi>
+                        <m:msup>
+                          <m:mi mathvariant="normal">mol</m:mi>
+                          <m:mn>-1</m:mn>
+                        </m:msup>
+                        <m:msup>
+                          <m:mi mathvariant="normal">K</m:mi>
+                          <m:mn>-1</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>·</m:mo>
+                    <m:mrow>
+                      <m:mn>273</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mi mathvariant="normal">K</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mn>44,5</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi mathvariant="normal">mol</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:math>
+          </equation>
+          <para id="paragraph-164"> Wobec tego masa <m:math id="maths-inline-38">
+            <semantics>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mi>s</m:mi>
+              </m:msub>
+              <annotation encoding="StarMath 5.0"> m_s </annotation>
+            </semantics>
+            </m:math> tego powietrza wynosi: </para>
+            <equation id="imp-idm1182506736" class="unnumbered">
+              <label/>
+              <m:math display="block">
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mtext>S</m:mtext>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mi>M</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>n</m:mi>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>44,5</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mi mathvariant="normal">mol</m:mi>
+                    </m:mrow>
+                    <m:mo>·</m:mo>
+                    <m:mrow>
+                      <m:mn>29</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">g</m:mi>
+                        <m:msup>
+                          <m:mi mathvariant="normal">mol</m:mi>
+                          <m:mn>-1</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mn>1290</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi mathvariant="normal">g</m:mi>
+                  </m:mrow>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mn>1,29</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi mathvariant="normal">kg</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:math>
+            </equation>
+            <para id="paragraph-165"> Ostatecznie gęstość suchego powietrza w warunkach normalnych wynosi: </para>
+            <equation id="maths-block-6">
+              <m:math>
+                <semantics>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>ρ</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:msub>
+                          <m:mi>m</m:mi>
+                          <m:mi>s</m:mi>
+                        </m:msub>
+                        <m:mi>V</m:mi>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>1,29</m:mn>
+                          <m:mi mathvariant="italic">kg</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:msup>
+                            <m:mi>m</m:mi>
+                            <m:mn>3</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>1,29</m:mn>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mi mathvariant="italic">kg</m:mi>
+                      <m:mo stretchy="false">/</m:mo>
+                      <m:msup>
+                        <m:mi>m</m:mi>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mi>.</m:mi>
+                  </m:mrow>
+                  <annotation encoding="StarMath 5.0"> ρ= {{m} rsub {s}} over {V} = {1,29 kg} over {1 {m} ^ {3}} =1,29 kg/ {m} ^ {3} . </annotation>
+                </semantics>
+              </m:math>
+            </equation>
+          </item>
+          <item id="list-item-10">
+            <para id="imp-idm997655168">Ciśnienie powietrza wewnątrz balonu też wynosi 1 atm, ponieważ spód balonu jest otwarty do atmosfery. Obliczenia są takie same, ale musimy wstawić wartość temperatury 120 °C, czyli 393 K. Możemy powtórzyć obliczenia z punktu (a), lub zauważyć, że gęstość jest proporcjonalna do liczby moli, a ta z kolei jest odwrotnie proporcjonalna do temperatury. Oznaczając indeksem 1 wartości dla suchego powietrza w warunkach normalnych, a indeksem 2 wartości dla gorącego powietrza otrzymujemy</para>
+            <equation id="maths-block-7" class="unnumbered">
+              <label/>
+              <m:math>
+                <semantics>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>ρ</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:msub>
+                        <m:mi>ρ</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mo fence="true" stretchy="true">(</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>1,29</m:mn>
+                            <m:mrow>
+                              <m:mi mathvariant="italic">kg</m:mi>
+                              <m:mo stretchy="false">/</m:mo>
+                              <m:msup>
+                                <m:mi>m</m:mi>
+                                <m:mn>3</m:mn>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo fence="true" stretchy="true">)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>273</m:mn>
+                          <m:mi>K</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>393</m:mn>
+                          <m:mi>K</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>0,896</m:mn>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mi mathvariant="italic">kg</m:mi>
+                      <m:mo stretchy="false">/</m:mo>
+                      <m:msup>
+                        <m:mi>m</m:mi>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mi>.</m:mi>
+                  </m:mrow>
+                  <annotation encoding="StarMath 5.0"> {ρ} rsub {2} = {ρ} rsub {1} {{T} rsub {1}} over {{T} rsub {2}} = left (1,29 kg/ {m} ^ {3} right ) {273 K} over {393 K} =0,896 kg/ {m} ^ {3} . </annotation>
+                </semantics>
+              </m:math>
+            </equation>
+          </item>
+        </list>
+        <para id="paragraph-168">
+          <title>Znaczenie</title> Stosując metodę podaną w rozdziale <link class="target-chapter" document="Module.2017-02-15.4911">Prawo Archimedesa z siła wyporu</link> możemy obliczyć, że wypadkowa siła działająca na objętość 2200 m<sup id="superscript-16">3</sup> powietrza o temperaturze 120 °C (znajdującą się w atmosferze o warunkach normalnych – przyp. tłum.) wynosi <m:math id="maths-inline-40">
+            <semantics>
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>F</m:mi>
+                      <m:mi>b</m:mi>
+                    </m:msub>
+                    <m:mo stretchy="false">−</m:mo>
+                    <m:msub>
+                      <m:mi>F</m:mi>
+                      <m:mi>g</m:mi>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:msub>
+                    <m:mi mathvariant="normal">ϱ</m:mi>
+                    <m:mtext>normalne</m:mtext>
+                  </m:msub>
+                </m:mrow>
+                <m:mi>V</m:mi>
+                <m:mrow>
+                  <m:mi>g</m:mi>
+                  <m:mo stretchy="false">−</m:mo>
+                  <m:msub>
+                    <m:mi mathvariant="normal">ϱ</m:mi>
+                    <m:mtext>gorące</m:mtext>
+                  </m:msub>
+                </m:mrow>
+                <m:mi>V</m:mi>
+                <m:mrow>
+                  <m:mi>g</m:mi>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mrow>
+                    <m:mn>8,49</m:mn>
+                    <m:mo stretchy="false">⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mn>3</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mrow>
+                <m:mtext>N</m:mtext>
+              </m:mrow>
+              <annotation encoding="StarMath 5.0"> F_b - F_g = %varrho_undefinedquot;normalneundefinedquot; V g - %varrho_undefinedquot;gorąceundefinedquot; V g = 8,49 cdot 10^3 undefinedquot;Nundefinedquot; </annotation>
+            </semantics>
+            </m:math> , czyli wystarczy żeby udźwignąć około 867 kg. Gęstość masy oraz gęstość molowa powietrza w warunkach normalnych, wyznaczone powyżej, są często używanymi wartościami. Korzystając z gęstości molowej możemy łatwo wyznaczyć inną użyteczną wartość, objętość molową w warunkach normalnych, która wynosi 22,4 l. </para>
+          </example>
+          <note id="imp-idm470400704" class="check-understanding">
+            <exercise id="imp-idm479125296">
+              <problem id="imp-idm479125040">
+                <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="paragraph-182">
+                  <emphasis id="bold-16">Sprawdź, czy rozumiesz</emphasis> Ciecze i ciała stałe posiadają gęstości w przybliżeniu 1000 razy większe od gęstości gazów. Wyjaśnij, jak z tego wynika, że odległości między cząsteczkami w gazach są w przybliżeniu 100 razy większe od rozmiarów tych cząsteczek. </para>
+                </problem>
+                <solution id="imp-idm255249056">
+                  <para id="paragraph-184"> Gęstość ciała to jego masa podzielona przez jego objętość (albo masa jednostkowej objętości), natomiast objętość ciała jest proporcjonalna do jego charakterystycznego rozmiaru (w przypadku kuli – jej promienia) w trzeciej potędze. Tak więc, jeżeli odległość między cząsteczkami wzrasta o czynnik 10, to objętość przez nie zajmowana rośnie o czynnik 1000, a tym samym gęstość maleje o czynnik 1000. Ponieważ przyjęliśmy, że w cieczach i ciałach stałych cząsteczki stykają się ze sobą, to odległość między ich środkami jest porównywalna z ich charakterystycznym rozmiarem, natomiast w gazach odległość ta wzrasta o czynnik rzędu 10. </para>
+                </solution>
+              </exercise>
+            </note>
+            <para id="paragraph-185"> Równanie stanu gazu doskonałego jest blisko powiązane z pojęciem energii: wypadkową jednostką wielkości po obu stronach równania są dżule. Prawa strona równania ma postać <m:math id="maths-inline-41">
+              <semantics>
+                <m:mrow>
+                  <m:mi>N</m:mi>
+                  <m:msub>
+                    <m:mi>k</m:mi>
+                    <m:mi>B</m:mi>
+                  </m:msub>
+                  <m:mi>T</m:mi>
+                </m:mrow>
+                <annotation encoding="StarMath 5.0"> N k_B T </annotation>
+              </semantics>
+            </m:math> . To wyrażenie z grubsza określa całkowitą translacyjną energię kinetyczną (która, gdy omawiamy gazy, odpowiada energii przemieszczania/translacji cząsteczek, bez uwzględniania ich obrotów oraz drgań wchodzących w ich skład atomów) <m:math id="maths-inline-42">
+            <semantics>
+              <m:mi>N</m:mi>
+              <annotation encoding="StarMath 5.0"> N </annotation>
+            </semantics>
+          </m:math> cząsteczek w temperaturze bezwzględnej <m:math id="maths-inline-43">
+          <semantics>
+            <m:mi>T</m:mi>
+            <annotation encoding="StarMath 5.0"> T </annotation>
+          </semantics>
+        </m:math> , jak to zostanie formalnie pokazane w następnej sekcji. Lewa strona równania stanu gazu doskonałego to iloczyn <m:math id="maths-inline-44">
+        <semantics>
+          <m:mrow>
+            <m:mi>p</m:mi>
+            <m:mi>V</m:mi>
+          </m:mrow>
+          <annotation encoding="StarMath 5.0"> p V </annotation>
+        </semantics>
+        </m:math> . Jak zauważono w przykładzie o liczbie cząsteczek w gazie doskonałym, iloczyn ciśnienia i objętości posiada również wymiar energii. Energia gazu może ulec zmianie, gdy gaz wykonuje pracę podczas zwiększania swojej objętości, co było analizowane w poprzednim rozdziale, a wielkość tej pracy jest powiązana z ciśnieniem gazu. Tego typu procesy występują w silnikach benzynowych, parowych i turbinach, jak to zobaczymy w następnym rozdziale. </para>
+        <note id="imp-idm266283408" class="problem-solving">
+          <title>Strategia rozwiązania zadania: równanie stanu gazu doskonałego</title>
+          <list id="imp-idm299712512" list-type="enumerated" number-style="arabic">
+            <item>Przeanalizuj sytuację, aby stwierdzić, czy stosowanie pojęcia gazu doskonałego jest uzasadnione. Większość gazów jest bliska gazowi idealnemu za wyjątkiem sytuacji, gdy znajdują się blisko punktu wrzenia lub gdy ich ciśnienie jest znacznie wyższe od ciśnienia atmosferycznego.</item>
+            <item>Zrób listę wielkości, które są dane lub mogą być wyznaczone na podstawie sformułowanego zadania (rozpoznaj/zidentyfikuj znane wielkości – dane).</item>
+            <item>Określ, co dokładnie należy wyznaczyć w zadaniu (rozpoznaj/zidentyfikuj nieznane wielkości – szukane). Wypisanie tej listy może być użyteczne.</item>
+            <item> Określ, czy znana jest liczba cząsteczek gazu czy też liczba jego kmoli i zadecyduj, czy użyć prawa gazu doskonałego w postaci <m:math id="maths-inline-45">
+              <semantics>
+                <m:mrow>
+                  <m:mi>p</m:mi>
+                  <m:mrow>
+                    <m:mi>V</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mi>N</m:mi>
+                  </m:mrow>
+                  <m:msub>
+                    <m:mi>k</m:mi>
+                    <m:mi>B</m:mi>
+                  </m:msub>
+                  <m:mi>T</m:mi>
+                </m:mrow>
+                <annotation encoding="StarMath 5.0"> p V = N k_B T </annotation>
+              </semantics>
+            </m:math> , gdzie <m:math id="maths-inline-46">
+            <semantics>
+              <m:mi>N</m:mi>
+              <annotation encoding="StarMath 5.0"> N </annotation>
+            </semantics>
+          </m:math> jest liczbą cząsteczek, czy też w postaci <m:math id="maths-inline-47">
+          <semantics>
+            <m:mrow>
+              <m:mi>p</m:mi>
+              <m:mrow>
+                <m:mi>V</m:mi>
+                <m:mo stretchy="false">=</m:mo>
+                <m:mi>n</m:mi>
+              </m:mrow>
+              <m:mi>R</m:mi>
+              <m:mi>T</m:mi>
+            </m:mrow>
+            <annotation encoding="StarMath 5.0"> p V = n R T </annotation>
+          </semantics>
+        </m:math> , gdzie <m:math>
+        <m:mi>n</m:mi>
+        </m:math> oznacza liczbę moli. </item>
+        <item> Wyraź znane wielkości w odpowiednich jednostkach układu SI (temperatura w K, ciśnienie w Pa, objętość w m<sup id="superscript-17">3</sup>, liczność substancji w molach lub w liczbie cząsteczek). Jeżeli wymiary wielkości danych są zgodne z którąś z pozaukładowych wartości uniwersalnej stałej gazowej <m:math id="maths-inline-48">
+          <semantics>
+            <m:mi>R</m:mi>
+            <annotation encoding="StarMath 5.0"> R </annotation>
+          </semantics>
+          </m:math> , to możesz pozostać przy tych jednostkach. </item>
+          <item>Rozwiąż równanie gazu doskonałego względem wielkości do wyznaczenia (wielkość nieznana – szukana). Może być konieczne wyznaczenie stosunku stanu końcowego do stanu początkowego, aby wyeliminować nieznane wielkości, które pozostają ustalone.</item>
+          <item>Podstaw znane wartości wraz z jednostkami do odpowiedniego równania i oblicz wartość rozwiązania łącznie z jednostką.</item>
+          <item>Przeanalizuj odpowiedź, aby sprawdzić, czy jest ona rozsądna: czy ma to sens?</item>
+        </list>
+      </note>
+    </section>
+    <section id="header-27">
+      <title> Równanie stanu gazu van der Waalsa </title>
+      <para id="paragraph-194"> Musimy ponownie przypomnieć, że równanie stanu gazu doskonałego jest równaniem przybliżonym. Jak można je ulepszyć? Takie ulepszenia zawiera <term>równanie van der Waalsa</term> (nazwane tak dla uczczenia holenderskiego fizyka Johannesa Diderika <term class="no-emphasis" cmlnle:reference="van der Waals">van der Waalsa</term>, 1837-1923), w którym uwzględniono dwa czynniki. Po pierwsze, uwzględniono siły przyciągania międzycząsteczkowego, które narastają ze wzrostem gęstości i zmniejszają ciśnienie gazu – do ciśnienia dodano składnik proporcjonalny do kwadratu gęstości molowej pomnożony przez pewną stałą dodatnią <m:math id="maths-inline-49">
+        <semantics>
+          <m:mi>a</m:mi>
+          <annotation encoding="StarMath 5.0"> a </annotation>
+        </semantics>
+      </m:math> . Po drugie, uwzględniono objętość zajmowaną przez cząsteczki, którą można uznać za stałą – od objętości zajmowanej przez gaz odjęto objętość mola cząsteczek, oznaczoną przez stałą <m:math id="maths-inline-50">
+      <semantics>
+        <m:mi>b</m:mi>
+        <annotation encoding="StarMath 5.0"> b </annotation>
+      </semantics>
+    </m:math> , pomnożoną przez liczbę moli <m:math id="maths-inline-51">
+    <semantics>
+      <m:mi>n</m:mi>
+      <annotation encoding="StarMath 5.0"> n </annotation>
+    </semantics>
+  </m:math> , co daje rzeczywistą objętość dostępną dla poruszających się cząsteczek gazu. Stałe <m:math id="maths-inline-52">
+  <semantics>
+    <m:mi>a</m:mi>
+    <annotation encoding="StarMath 5.0"> a </annotation>
+  </semantics>
+</m:math> i <m:math id="maths-inline-53">
+<semantics>
+  <m:mi>b</m:mi>
+  <annotation encoding="StarMath 5.0"> b </annotation>
+</semantics>
+</m:math> wyznacza się doświadczalnie dla każdego rodzaju gazu. Postać równania stanu van der Waalsa jest następująca: </para>
+<note id="imp-idm476129904" class="equation-callout">
+  <equation id="imp-idm479870560">
+    <label/>
+    <m:math display="block">
+      <m:mrow>
+        <m:mrow>
+          <m:mrow>
+            <m:mo>[</m:mo>
+            <m:mrow>
+              <m:mi>p</m:mi>
+              <m:mo>+</m:mo>
+              <m:mrow>
+                <m:mi>a</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mfrac>
+                      <m:mi>n</m:mi>
+                      <m:mi>V</m:mi>
+                    </m:mfrac>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>]</m:mo>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>V</m:mi>
+              <m:mo>-</m:mo>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>b</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>n</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>R</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>T</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para id="paragraph-195"> W granicy małych gęstości gazu (małe <m:math>
+  <m:mi>n</m:mi>
+</m:math>), składniki zawierające poprawki <m:math id="maths-inline-54">
+<semantics>
+  <m:mi>a</m:mi>
+  <annotation encoding="StarMath 5.0"> a </annotation>
+</semantics>
+</m:math> i <m:math id="maths-inline-55">
+<semantics>
+  <m:mi>b</m:mi>
+  <annotation encoding="StarMath 5.0"> b </annotation>
+</semantics>
+</m:math> stają się pomijalne i otrzymujemy równanie stanu gazu doskonałego, jak być powinno przy niskich gęstościach. Z drugiej strony, jeżeli <m:math id="maths-inline-56">
+<semantics>
+  <m:mrow>
+    <m:mrow>
+      <m:mi>V</m:mi>
+      <m:mo stretchy="false">−</m:mo>
+      <m:mi>n</m:mi>
+    </m:mrow>
+    <m:mi>b</m:mi>
+  </m:mrow>
+  <annotation encoding="StarMath 5.0"> V - n b </annotation>
+</semantics>
+</m:math> jest małe, co oznacza, że cząsteczki gazu znajdują się bardzo blisko siebie, to aby uzyskać tę samą wartość <m:math id="maths-inline-57">
+<semantics>
+  <m:mrow>
+    <m:mi>n</m:mi>
+    <m:mi>R</m:mi>
+    <m:mi>T</m:mi>
+  </m:mrow>
+  <annotation encoding="StarMath 5.0"> n R T </annotation>
+</semantics>
+</m:math> ciśnienie powinno być wyższe, niż spodziewane w przypadku silnie sprężonych gazów. Jednakże wzrost ciśnienia jest niższy niż to sugeruje powyższy argument, ponieważ przy dużych gęstościach składnik <m:math id="maths-inline-58">
+<semantics>
+  <m:msup>
+    <m:mrow>
+      <m:mo fence="true" stretchy="false">(</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mi>n</m:mi>
+          <m:mo stretchy="false">/</m:mo>
+          <m:mi>V</m:mi>
+        </m:mrow>
+      </m:mrow>
+      <m:mo fence="true" stretchy="false">)</m:mo>
+    </m:mrow>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <annotation encoding="StarMath 5.0"> ( n/V )^2 </annotation>
+</semantics>
+</m:math> staje się istotny. Dzięki temu, że jest on dodatni, takie same wartości <m:math id="maths-inline-59">
+<semantics>
+  <m:mrow>
+    <m:mi>n</m:mi>
+    <m:mi>R</m:mi>
+    <m:mi>T</m:mi>
+  </m:mrow>
+  <annotation encoding="StarMath 5.0"> n R T </annotation>
+</semantics>
+</m:math> zapewnia niższy wzrost ciśnienia. </para>
+<para id="paragraph-196"> Równanie van der Waalsa może być stosowane dla większości gazów i w szerokim zakresie warunków. Jak zobaczymy w następnym module przewiduje ono nawet przejście gaz-ciecz. </para>
+</section>
+<section id="header-28">
+  <title>Wykresy <m:math>
+    <m:mi>p</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>V</m:mi>
+  </m:math>
+</title>
+<para id="paragraph-197"> Możemy analizować własności substancji za pomocą wykresów (diagramów) <term>
+  <m:math id="maths-inline-60">
+    <semantics>
+      <m:mrow>
+        <m:mi>p</m:mi>
+        <m:mi>V</m:mi>
+      </m:mrow>
+      <annotation encoding="StarMath 5.0"> p V </annotation>
+    </semantics>
+  </m:math>
+</term> , które są graficznym przedstawieniem zależności ciśnienia w danej substancji od jej objętości. Jeżeli substancje zachowują się jak gaz doskonały, to równanie stanu gazu doskonałego <m:math id="maths-inline-61">
+<semantics>
+  <m:mrow>
+    <m:mi>p</m:mi>
+    <m:mrow>
+      <m:mi>V</m:mi>
+      <m:mo stretchy="false">=</m:mo>
+      <m:mi>n</m:mi>
+    </m:mrow>
+    <m:mi>R</m:mi>
+    <m:mi>T</m:mi>
+  </m:mrow>
+  <annotation encoding="StarMath 5.0"> p V = n R T </annotation>
+</semantics>
+</m:math> opisuje związek między jego ciśnieniem i objętością. Na diagramach <m:math id="maths-inline-62">
+<semantics>
+  <m:mrow>
+    <m:mi>p</m:mi>
+    <m:mi>V</m:mi>
+  </m:mrow>
+  <annotation encoding="StarMath 5.0"> p V </annotation>
+</semantics>
+</m:math> zazwyczaj wykreśla się tzw. izotermy, które są krzywymi przedstawiającymi <emphasis effect="italics">
+<m:math id="maths-inline-63">
+  <semantics>
+    <m:mi>p</m:mi>
+    <annotation encoding="StarMath 5.0"> p </annotation>
+  </semantics>
+</m:math>
+</emphasis> jako funkcję <emphasis effect="italics">
+<m:math id="maths-inline-64">
+  <semantics>
+    <m:mi>V</m:mi>
+    <annotation encoding="StarMath 5.0"> V </annotation>
+  </semantics>
+</m:math>
+</emphasis> przy ustalonych wartościach liczby cząsteczek i temperatury. Dla gazu doskonałego mamy <m:math id="maths-inline-65">
+<semantics>
+  <m:mrow>
+    <m:mi>p</m:mi>
+    <m:mrow>
+      <m:mi>V</m:mi>
+      <m:mo stretchy="false">=</m:mo>
+      <m:mtext>const</m:mtext>
+    </m:mrow>
+  </m:mrow>
+  <annotation encoding="StarMath 5.0"> p V = undefinedquot;constundefinedquot; </annotation>
+</semantics>
+</m:math> , co oznacza, że ciśnienie gazu wzrasta gdy maleje jego objętość. Zależność tę przedstawia hiperbola. </para>
+<para id="paragraph-198"> Jeżeli rozpatrzymy równanie stanu gazu van der Waalsa, to izotermy stają się jeszcze bardziej interesujące, jak to pokazano na <link target-id="figure-7"/>. Mianowicie, w wysokich temperaturach krzywe te są w przybliżeniu hiperbolami i reprezentują właściwości gazu idealnego w tychże temperaturach. Gdy obniżymy jednak tę temperaturę, to izotermy coraz mniej przypominają hiperbole – jest tak, ponieważ gaz nie zachowuje się jak gaz idealny. Izoterma odpowiadająca tzw. <term cmlnle:reference="temperatura krytyczna">temperaturze krytycznej</term>
+<m:math id="maths-inline-66">
+  <semantics>
+    <m:msub>
+      <m:mi>T</m:mi>
+      <m:mi>c</m:mi>
+    </m:msub>
+    <annotation encoding="StarMath 5.0"> T_c </annotation>
+  </semantics>
+  </m:math> posiada jeden charakterystyczny punkt, w którym nachylenie stycznej do izotermy jest zerowe (w tym wypadku jest to punkt przegięcia – przyp. tłum.). Izotermy odpowiadające niższym temperaturom nie maleją monotoniczne; każda z krzywych posiada <quote display="inline">garb</quote>, czyli w pewnym zakresie wartości objętości jej wzrost wywołuje wzrost ciśnienia. </para>
+  <figure xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="figure-7">
+    <media id="fs-id1172098777008" alt="Rysunek wykresu ciśnienia, p, na osi pionowej jako funkcji objętości, V, na osi poziomej dla pięciu temperatur. Krzywe zaczynają się w strefie wysokich ciśnień dla najniższych objętości i opadają. Dwie górne krzywe, czerwone, opadają monotonicznie z malejącym nachyleniem. Krzywe te są oznaczone jako mające T większe od T c. Krzywa środkowa, purpurowa, jest oznaczona T c. Krzywa opada szybko, ma punkt siodłowy i kontynuuje stopniowo spadek. Najniższe dwie krzywe, kolor niebieski, opadają minimalnie blisko siebie, potem unoszą się szeroko do góry, a następnie stopniowo opadają. Krzywe te oznaczone są jako te, których T jest mniejsze od T c. Ciśnieniowe minimum niskich krzywych występuje dla objętości nieznacznie niższych niż ciśnienie T c krzywej ze zlokalizowanym punktem siodłowym. ">
+      <image mime-type="image/jpeg" src="CNX_UPhysics_19_01_VanderWaal.jpg"/>
+    </media>
+    <caption>Wykresy <m:math id="maths-inline-67">
+      <semantics>
+        <m:mrow>
+          <m:mi>p</m:mi>
+          <m:mi>V</m:mi>
+        </m:mrow>
+        <annotation encoding="StarMath 5.0"> p V </annotation>
+      </semantics>
+    </m:math> dla pewnego gazu van der Waalsa w różnych temperaturach. Czerwone krzywe zostały obliczone dla temperatur wyższych od temperatury krytycznej natomiast krzywe niebieskie dla temperatur niższych od niej. Na krzywych niebieskich występują pewne wahnięcia (zagięcia), w zakresie których objętość ( <m:math id="maths-inline-68">
+    <semantics>
+      <m:mi>V</m:mi>
+      <annotation encoding="StarMath 5.0"> V </annotation>
+    </semantics>
+  </m:math> ) wzrasta wraz ze wzrostem ciśnienia ( <m:math id="maths-inline-69">
+  <semantics>
+    <m:mi>p</m:mi>
+    <annotation encoding="StarMath 5.0"> p </annotation>
+  </semantics>
+  </m:math> ). Jest to sytuacja nierealna i powinna być skorygowana tak, jak to pokazano na <link target-id="figure-8"/>. (Źródło: „Eman”/Wikimedia Commons) </caption>
+</figure>
+<para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="paragraph-203">Takie zachowanie się gazu jest całkowicie niefizyczne. Jednakże przebieg tych krzywych staje się zrozumiały, jeżeli weźmiemy pod uwagę <term class="no-emphasis">przejście fazowe</term> gaz-ciecz. Część krzywej z wahnięciem (zagięciem) zastępuje się linią poziomą, na której ciśnienie pozostaje stałe przy wzroście objętości (przy stałej temperaturze). Takie zachowanie się substancji odpowiada jej wrzeniu lub skraplaniu. Jeżeli substancja osiąga temperaturę wrzenia przy odpowiednim ciśnieniu, to może zwiększyć swoją objętość, gdy część cieczy zamienia się w gaz, lub zmniejszyć objętość, gdy część gazu zamienia się w ciecz – i to bez zmiany temperatury lub ciśnienia układu gaz-ciecz. </para>
+<para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="paragraph-204">Na <link target-id="figure-8" cmlnle:case="locative"/> pokazano izotermy bardziej realistyczne niż te, które bazują na równaniu van der Waalsa. Stroma część tych krzywych, na lewo od obszaru przejścia fazowego, odpowiada fazie ciekłej, która jest mało ściśliwa – nawet niewielkie zmniejszenie objętości wymaga znacznego wzrostu ciśnienia. Płaska część krzywej odpowiada przejściu fazowemu gaz-ciecz; zaznaczony niebieski obszar odpowiada takim kombinacjom ciśnienia i objętości, przy których możliwe jest współistnienie gazu i cieczy. </para>
+<figure id="figure-8">
+  <media id="fs-id1172100575444" alt="Rysunek ma dwa wykresy ciśnienia, p, na osi pionowej jako funkcji objętości, V, na osi poziomej, dla kilku różnych temperatur. Rysunek a pokazuje sześć izoterm, oznaczonych od dołu do góry, T 1, T 2, T C, T 3, T 4 i T 5. Notka na wykresie mówi nam, że temperatury podane są w porządku rosnącym. Wykresy pokazują ogólny spadek i wzrost objętości dla wszystkich temperatur, z wyjątkiem temperatur niskich gdy ciśnienie jest stałe jako funkcja objętości podczas fazy zmiany stanu skupienia. Faza zmiany stanu skupienia obejmuje region oznaczony na wykresie kolorem niebieskim i oznaczony jest jako region równowagi płynno-parowej. Rysunek b jest tym samym wykresem pokazującym w zbliżeniu diagram p V w otoczeniu zacieniowanego regionu płynno-parowego. Ponad tym regionem krzywe monotonicznie opadają. Krzywa, która jest jeszcze po drugiej stronie właśnie dotyka szczytu regionu płynno-parowego oznaczonego krytyczną izotermą T c. Punkt, w którym krzywa spotyka się z zacieniowanym regionem jest oznaczony jako punkt krytyczny. Region po lewej stronie zacieniowanego obszaru z ciśnieniem niższym niż ciśnienie w punkcie krytycznym jest regionem płynnym. Region po prawej zacienionego obszaru jest regionem parowania. Prawy kraniec regionu zacieniowanego krzywą nasyconą. Region powyżej krytycznej izotermy jest oznakowany jako prawdziwy ale nie jest gazem doskonałym.">
+    <image mime-type="image/jpeg" src="CNX_UPhysics_19_01_Isotherms.jpg"/>
+  </media>
+  <caption> Wykresy <m:math id="maths-inline-70">
+    <semantics>
+      <m:mrow>
+        <m:mi>p</m:mi>
+        <m:mi>V</m:mi>
+      </m:mrow>
+      <annotation encoding="StarMath 5.0"> p V </annotation>
+    </semantics>
+  </m:math> . (a) Każda krzywa (izoterma) przedstawia zależność ciśnienia od objętości przy ustalonej temperaturze; wyższym temperaturom odpowiadają wyżej położone krzywe. Niżej położone krzywe nie są hiperbolami, ponieważ gaz przestaje być gazem doskonałym. (b) Powiększona część wykresu <m:math id="maths-inline-71">
+  <semantics>
+    <m:mrow>
+      <m:mi>p</m:mi>
+      <m:mi>V</m:mi>
+    </m:mrow>
+    <annotation encoding="StarMath 5.0"> p V </annotation>
+  </semantics>
+  </m:math> w obszarze niskich temperatur, gdzie występuje przejście fazowe gaz-ciecz. Pojęcie „pary” odpowiada fazie gazowej, która istnieje w temperaturze poniżej temperatury wrzenia. </caption>
+</figure>
+<para id="paragraph-207"> Izotermy odpowiadające temperaturom wyższym od <m:math id="maths-inline-72">
+  <semantics>
+    <m:msub>
+      <m:mi>T</m:mi>
+      <m:mi>c</m:mi>
+    </m:msub>
+    <annotation encoding="StarMath 5.0"> T_c </annotation>
+  </semantics>
+</m:math> nie przechodzą przez obszar przejścia fazowego ciecz-gaz. Wobec tego ciecze nie mogą istnieć powyżej temperatury krytycznej (opisanej w rozdziale o temperaturze i cieple). Przy odpowiednio niskim ciśnieniu i powyżej temperatury krytycznej gęstość gazu jest zbliżona do gęstości cieczy, jednakże gaz nie ulega skropleniu. Przy wyższych ciśnieniach następuje przejście w stan stały. Dwutlenek węgla (tlenek węgla-IV), na przykład, nie posiada fazy ciekłej w temperaturach powyżej 31,0 °C. Ciśnieniem krytycznym nazywamy maksymalne ciśnienie, przy którym jeszcze może istnieć dana substancja w fazie ciekłej. Punkt na wykresie <m:math>
+<m:mi>p</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>V</m:mi>
+</m:math> odpowiadający temperaturze krytycznej i ciśnieniu krytycznemu nazywamy punktem krytycznym (o którym uczyliśmy się w rozdziale o temperaturze i cieple). Przykładowe wartości temperatury krytycznej i ciśnienia krytycznego podano w <link target-id="table-1"/>. </para>
+<table id="table-1" summary="Tabela ma 3 kolumny oraz 10 wierszy. Pierwsze dwa wiersze tworzą nagłówek tabeli składający się z nazw kolumn w pierwszym wierszu oraz nazw jednostek w drugim wierszu. Pierwsza kolumna zatytułowana jest „Substancja”. Druga kolumna zatytułowana jest „Temperatura krytyczna” i jest podzielona na na dwie podkolumny, pierwsza zawierająca wartości w kelwinach, druga natomiast w stopniach Celsiusza. Trzecia kolumna zatytułowana jest „Ciśnienie krytyczne” i jest podzielona na dwie podkolumny, pierwsza zawierająca wartości w paskalach, druga natomiast w atmosferach. Pierwszy wiersz danych to „woda”, 647,4 kelwina, 374,3 stopnia Celsiusza, 22,12 razy 10 do szóstej paskali oraz 219 atmosfer. Drugi wiersz danych to „dwutlenek siarki”, 430,7 kelwina, 157,6 stopnia Celsiusza, 7,88 razy 10 do szóstej paskali oraz 78 atmosfer. Trzeci wiersz danych to „amoniak”, 405,5 kelwina, 132,4 stopnia Celsiusza, 11,28 razy 10 do szóstej paskali oraz 111,7 atmosfery. Czwarty wiersz danych to „dwutlenek węgla”, 304,2 kelwina, 31,1 stopnia Celsiusza, 7,38 razy 10 do szóstej paskali oraz 73,2 atmosfery. Piąty wiersz danych to „tlen”, 154,8 kelwina, -118,4 stopnia Celsiusza, 5,08 razy 10 do szóstej paskala oraz 50,3 atmosfery. Szósty wiersz danych to „azot”, 126,2 kelwina, -146,9 stopnia Celsiusza, 3,39 razy 10 do szóstej paskali oraz 33,6 atmosfery. Siódmy wiersz danych to „Wodór”, 33,3 kelwina, -239,9 stopnia Celsiusza, 1,30 razy 10 do szóstej paskala oraz 12,9 atmosfery. Ósmy wiersz danych to „hel”, 5,3 kelwina, -267,9 stopnia Celsiusza, 0,229 razy 10 do szóstej paskali oraz 2,27 atmosfery.">
+  <title>Krytyczne temperatury i ciśnienia dla różnych substancji</title>
+  <tgroup cols="5">
+    <colspec colname="c1"/>
+    <colspec colname="c2"/>
+    <colspec colname="c3"/>
+    <colspec colname="c4"/>
+    <colspec colname="c5"/>
+    <thead>
+      <row>
+        <entry>Substancja</entry>
+        <entry namest="c2" nameend="c3">Temperatura krytyczna</entry>
+        <entry namest="c4" nameend="c5">Ciśnienie krytyczne</entry>
+      </row>
+    </thead>
+    <tbody>
+      <row>
+        <entry/>
+        <entry>K</entry>
+        <entry>℃</entry>
+        <entry>Pa</entry>
+        <entry>atm</entry>
+      </row>
+      <row>
+        <entry>woda</entry>
+        <entry>647,4</entry>
+        <entry>374,3</entry>
+        <entry>
+          <m:math display="inline">
+            <m:mrow>
+              <m:mn>22,12</m:mn>
+              <m:mo>·</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>6</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </entry>
+        <entry>219,0</entry>
+      </row>
+      <row>
+        <entry>dwutlenek siarki</entry>
+        <entry>430,7</entry>
+        <entry>157,6</entry>
+        <entry>
+          <m:math display="inline">
+            <m:mrow>
+              <m:mn>7,88</m:mn>
+              <m:mo>·</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>6</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </entry>
+        <entry>78,0</entry>
+      </row>
+      <row>
+        <entry>amoniak</entry>
+        <entry>405,5</entry>
+        <entry>132,4</entry>
+        <entry>
+          <m:math display="inline">
+            <m:mrow>
+              <m:mn>11,28</m:mn>
+              <m:mo>·</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>6</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </entry>
+        <entry>111,7</entry>
+      </row>
+      <row>
+        <entry>dwutlenek węgla</entry>
+        <entry>304,2</entry>
+        <entry>31,1</entry>
+        <entry>
+          <m:math display="inline">
+            <m:mrow>
+              <m:mn>7,39</m:mn>
+              <m:mo>·</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>6</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </entry>
+        <entry>73,2</entry>
+      </row>
+      <row>
+        <entry>tlen</entry>
+        <entry>154,8</entry>
+        <entry>–118,4</entry>
+        <entry>
+          <m:math display="inline">
+            <m:mrow>
+              <m:mn>5,8</m:mn>
+              <m:mo>·</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>6</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </entry>
+        <entry>50,3</entry>
+      </row>
+      <row>
+        <entry>azot</entry>
+        <entry>126,2</entry>
+        <entry>–146,9</entry>
+        <entry>
+          <m:math display="inline">
+            <m:mrow>
+              <m:mn>3,39</m:mn>
+              <m:mo>·</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>6</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </entry>
+        <entry>33,6</entry>
+      </row>
+      <row>
+        <entry>wodór</entry>
+        <entry>33,3</entry>
+        <entry>–239,9</entry>
+        <entry>
+          <m:math display="inline">
+            <m:mrow>
+              <m:mn>1,30</m:mn>
+              <m:mo>·</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>6</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </entry>
+        <entry>12,9</entry>
+      </row>
+      <row>
+        <entry>hel</entry>
+        <entry>5,3</entry>
+        <entry>-267,9</entry>
+        <entry>
+          <m:math display="inline">
+            <m:mrow>
+              <m:mn>0,229</m:mn>
+              <m:mo>·</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>6</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </entry>
+        <entry>2,27</entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+</section>
+<section id="imp-idm250834000" class="key-concepts">
+  <title id="titlegraph-269"> Podsumowanie </title>
+  <list id="list8423331821022540630" list-type="bulleted" bullet-style="bullet">
+    <item id="list-item-11"> Równanie stanu gazu doskonałego określa związek pomiędzy ciśnieniem gazu, jego objętością, liczbą cząsteczek i temperaturą. </item>
+    <item id="list-item-12">
+      <para id="imp-idm399350752">Mol dowolnej substancji zawiera liczbę cząsteczek równą liczbie atomów w dwunastogramowej próbce węgla-12 (<sup id="superscript-26">12</sup>C). Liczba cząsteczek w molu jest nazywana liczbą Avogadra <m:math id="maths-inline-73">
+        <semantics>
+          <m:msub>
+            <m:mi>N</m:mi>
+            <m:mi>A</m:mi>
+          </m:msub>
+          <annotation encoding="StarMath 5.0"> N_A </annotation>
+        </semantics>
+        </m:math>,</para>
+        <equation id="imp-idm384567040" class="unnumbered">
+          <label/>
+          <m:math display="block">
+            <m:mrow>
+              <m:msub>
+                <m:mi>N</m:mi>
+                <m:mtext>A</m:mtext>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>6,2</m:mn>
+                  <m:mo>·</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>23</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:msup>
+                  <m:mi mathvariant="normal">mol</m:mi>
+                  <m:mn>-1</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mrow>
+            <m:mtext>.</m:mtext>
+          </m:math>
+        </equation>
+      </item>
+      <item id="list-item-13">
+        <para id="imp-idm1184258160">Jeden mol danej substancji ma masę, która wyrażona w gramach jest numerycznie (liczbowo) równa jej masie wyrażonej w ujednoliconych jednostkach masy – wartości te dla pierwiastków można znaleźć tablicy układu okresowego pierwiastków Mendelejewa. Równanie stanu gazu doskonałego można również zapisać używając liczby moli gazu:</para>
+        <equation id="imp-idm301514544" class="unnumbered">
+          <label/>
+          <m:math id="maths-inline-75">
+            <semantics>
+              <m:mrow>
+                <m:mi>p</m:mi>
+                <m:mrow>
+                  <m:mi>V</m:mi>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mi>n</m:mi>
+                </m:mrow>
+                <m:mi>R</m:mi>
+                <m:mi>T</m:mi>
+              </m:mrow>
+              <annotation encoding="StarMath 5.0"> p V = n R T </annotation>
+            </semantics>
+          </m:math>
+        </equation>
+        <para id="paragraph-276"> gdzie <m:math id="maths-inline-76">
+          <semantics>
+            <m:mi>n</m:mi>
+            <annotation encoding="StarMath 5.0"> n </annotation>
+          </semantics>
+        </m:math> oznacza liczbę moli, a <m:math id="maths-inline-77">
+        <semantics>
+          <m:mi>R</m:mi>
+          <annotation encoding="StarMath 5.0"> R </annotation>
+        </semantics>
+        </m:math> jest uniwersalną stałą gazową, </para>
+        <equation id="maths-block-8" class="unnumbered">
+          <label/>
+          <m:math>
+            <semantics>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>R</m:mi>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mn>8,31</m:mn>
+                </m:mrow>
+                <m:mtext>J/(mol·K)</m:mtext>
+              </m:mrow>
+              <annotation encoding="StarMath 5.0"> R = 8,31 undefinedquot;J/(mol·K)undefinedquot; </annotation>
+            </semantics>
+          </m:math>
+        </equation>
+      </item>
+      <item id="list-item-14"> Używanie równania stanu gazu doskonałego jest poprawne, gdy temperatura danego gazu jest istotnie wyższa od jego temperatury wrzenia. </item>
+      <item id="list-item-15"> Równanie stanu gazu van der Waalsa może być stosowane, gdy temperatury gazu są bliższe jego temperaturze wrzenia, niż to ma miejsce dla równania stanu gazu doskonałego. </item>
+      <item id="list-item-16"> Jeżeli temperatura i ciśnienie danej substancji są wyższe od jej temperatury krytycznej i jej ciśnienia krytycznego to substancja ta w tych warunkach nie może istnieć w stanie ciekłym i mówimy, że znajduje się w stanie „nadkrytycznym”. </item>
+    </list>
+  </section>
+  <section id="imp-idm251595648" class="review-conceptual-questions">
+    <title>Pytania</title>
+    <exercise id="imp-idm449119120">
+      <problem id="imp-idm649129808">
+        <para id="imp-idm291022944">Dwie cząsteczki H<sub id="subscript-13">2</sub> mogą przereagować z jedną cząsteczką O<sub id="subscript-14">2</sub> i wytworzyć dwie cząsteczki wody H<sub id="subscript-15">2</sub>O. Ile moli cząsteczek wodoru potrzeba, aby całkowicie przereagowało z jednym molem cząsteczek tlenu?</para>
+      </problem>
+      <solution id="imp-idm455592352">
+        <para id="paragraph-283"> 2 mole, gdyż cząsteczka wody zawiera dwa razy więcej atomów wodoru niż atomów tlenu. </para>
+      </solution>
+    </exercise>
+    <exercise id="imp-idm489708192">
+      <problem id="imp-idm489707936">
+        <para id="imp-idm458099088">W jakich okolicznościach należy spodziewać się, że własności gazu będą istotnie różne od własności przewidywanych w modelu gazu doskonałego?</para>
+      </problem>
+    </exercise>
+    <exercise id="imp-idm454931056">
+      <problem id="imp-idm383639632">
+        <para id="imp-idm255462432">Termometr gazowy o stałej objętości zawiera określoną ilość gazu. Która z własności gazu jest wykorzystywana jako wskaźnik jego temperatury?</para>
+      </problem>
+      <solution id="imp-idm372201680">
+        <para id="paragraph-287"> Ciśnienie. </para>
+      </solution>
+    </exercise>
+    <exercise id="imp-idm505782160">
+      <problem id="imp-idm265780816">
+        <para id="imp-idm380324016">Napompuj balonik w temperaturze pokojowej. Następnie wstaw go na noc do lodówki. Co stanie się z balonikiem i dlaczego?</para>
+      </problem>
+    </exercise>
+    <exercise id="imp-idm511317536">
+      <problem id="imp-idm271497552">
+        <para id="imp-idm271497296">W poprzednim rozdziale wyjaśniono zjawisko konwekcji swobodnej jako efekt działania sił wyporu na rozgrzaną ciecz. Wyjaśnij ruch w górę powietrza w płomieniu wykorzystując równanie stanu gazu doskonałego.</para>
+      </problem>
+      <solution id="imp-idm467328448">
+        <para id="paragraph-291"> Płomień zawiera gorący gaz (ogrzany w procesie spalania). Ciśnienie gazu w płomieniu jest ciągle ciśnieniem atmosferycznym, w stanie równowagi mechanicznej z otaczającym go powietrzem (lub w przybliżeniu). Gęstość gorącego gazu jest proporcjonalna do koncentracji jego cząsteczek <m:math id="maths-inline-78">
+          <semantics>
+            <m:mrow>
+              <m:mi>N</m:mi>
+              <m:mo stretchy="false">/</m:mo>
+              <m:mi>V</m:mi>
+            </m:mrow>
+            <annotation encoding="StarMath 5.0"> N/V </annotation>
+          </semantics>
+        </m:math> (niezależnie od różnic w składach gazu w płomieniu i otaczającego go powietrza). Z równania stanu gazu doskonałego wynika, że <m:math id="maths-inline-79">
+        <semantics>
+          <m:mrow>
+            <m:mrow>
+              <m:mi>N</m:mi>
+              <m:mo stretchy="false">/</m:mo>
+              <m:mi>V</m:mi>
+            </m:mrow>
+            <m:mo stretchy="false">=</m:mo>
+            <m:mrow>
+              <m:mi>p</m:mi>
+              <m:mo stretchy="false">/</m:mo>
+              <m:mrow>
+                <m:mo fence="true" stretchy="false">(</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>k</m:mi>
+                      <m:mi>B</m:mi>
+                    </m:msub>
+                    <m:mi>T</m:mi>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo fence="true" stretchy="false">)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <annotation encoding="StarMath 5.0"> N/V = p/( k_B T ) </annotation>
+        </semantics>
+        </m:math> , co oznacza, że gaz w płomieniu posiadający wyższą temperaturę ma mniejszą koncentrację cząsteczek niż otaczające go powietrze. Wobec tego gorący gaz w płomieniu ma mniejszą gęstość niż otaczające go powietrze i jest unoszony do góry przez siłę wyporu (zmiana składu gazu w płomieniu przy tak dużej różnicy temperatur nie ma większego znaczenia). </para>
+      </solution>
+    </exercise>
+  </section>
+  <section id="imp-idm397802304" class="review-problems">
+    <title>Zadania</title>
+    <exercise id="imp-idm460691664">
+      <problem id="imp-idm470999344">
+        <para id="imp-idm470999088"> Nadciśnienie w oponach samochodu wyprodukowanego w Gliwicach wynosi <m:math id="maths-inline-80">
+          <semantics>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>2,50</m:mn>
+                <m:mo stretchy="false">⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>5</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:msup>
+                <m:mtext>N/m</m:mtext>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <annotation encoding="StarMath 5.0"> 2,50 cdot 10^5 undefinedquot;N/mundefinedquot;^2 </annotation>
+          </semantics>
+          </m:math> w temperaturze 35,0 °C. Samochód ten jest eksportowany koleją na północ Norwegii. Jakie będzie nadciśnienie w tych oponach, jeżeli nocą temperatura na miejscu spadnie do –40,0 °C? Zakładamy, że ilość powietrza w oponach się nie zmienia. </para>
+        </problem>
+      </exercise>
+      <exercise id="imp-idm465649184">
+        <problem id="imp-idm511493008">
+          <para id="imp-idm279608512">Zakładamy, że ciśnienie gazu w rurze lampy jarzeniowej jest równe ciśnieniu atmosferycznemu gdy temperatura lampy wynosi 20 °C. (a) Wyznacz nadciśnienie panujące w rurze ciepłej lampy zakładając, że jej średnia temperatura wynosi 60 °C (w przybliżeniu) i zaniedbując zmiany jej objętości spowodowane rozszerzalnością cieplną oraz wycieki gazu. (b) Rzeczywiste ciśnienie gazu w rurze lampy jarzeniowej powinno być mniejsze od obliczonego w części (a) ze względu na rozprężanie (rozciąganie) szkła lampy. Czy efekt ten jest znaczący?</para>
+        </problem>
+        <solution id="imp-idm257207824">
+          <para id="paragraph-303"> 0,137 atm; (b) <m:math id="maths-inline-82">
+            <semantics>
+              <m:mrow>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>p</m:mi>
+                    <m:mi>g</m:mi>
+                  </m:msub>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+                <m:mrow>
+                  <m:mtext>atm</m:mtext>
+                  <m:mo stretchy="false">⋅</m:mo>
+                  <m:mrow>
+                    <m:mo fence="true" stretchy="false">(</m:mo>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                        <m:msub>
+                          <m:mi>V</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo fence="true" stretchy="false">)</m:mo>
+                  </m:mrow>
+                  <m:mo stretchy="false">/</m:mo>
+                  <m:mrow>
+                    <m:mo fence="true" stretchy="false">(</m:mo>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:msub>
+                          <m:mi>V</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo fence="true" stretchy="false">)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+              <annotation encoding="StarMath 5.0"> p_g = 1 undefinedquot;atmundefinedquot; cdot ( T_2 V_1 )/( T_1 V_2 ) </annotation>
+            </semantics>
+          </m:math> . Z powodu rozszerzalności cieplnej lampy mamy <m:math id="maths-inline-83">
+          <semantics>
+            <m:mrow>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>V</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mo stretchy="false">/</m:mo>
+                <m:msub>
+                  <m:mi>V</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mo stretchy="false">=</m:mo>
+              <m:mn>0,99973</m:mn>
+            </m:mrow>
+            <annotation encoding="StarMath 5.0"> V_1 / V_2 = 0,99973 </annotation>
+          </semantics>
+          </m:math> . Pomnożenie przez ten czynnik nie daje żadnej istotnej różnicy. </para>
+        </solution>
+      </exercise>
+      <exercise id="imp-idm510805120">
+        <problem id="imp-idm260700848">
+          <para id="imp-idm249590096">Ludzie kupujący żywność w szczelnych torebkach często zauważają, że torebki te puchną, gdyż powietrze wewnątrz nich się rozszerza. Torebka precli została zapakowana pod ciśnieniem 1 atm i w temperaturze 22,0 ° C. Gdy została otwarta na letnim pikniku na Giewoncie, w temperaturze 32 °C, objętość powietrza w torebce była 1,38 razy większa od objętości oryginalnej. Jakie było ciśnienie powietrza?</para>
+        </problem>
+      </exercise>
+      <exercise id="imp-idm303729888">
+        <problem id="imp-idm480782544">
+          <para id="imp-idm396739808"> Ile moli zawartych jest w (a) 0,0500 g N<sub id="subscript-16">2</sub> ( <m:math id="maths-inline-85">
+            <semantics>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>M</m:mi>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mn>28,0</m:mn>
+                </m:mrow>
+                <m:mtext>g/mol</m:mtext>
+              </m:mrow>
+              <annotation encoding="StarMath 5.0"> M = 28,0 undefinedquot;g/molundefinedquot; </annotation>
+            </semantics>
+          </m:math> )? (b) 10,0 g CO<sub id="subscript-17">2</sub> ( <m:math id="maths-inline-87">
+          <semantics>
+            <m:mrow>
+              <m:mrow>
+                <m:mi>M</m:mi>
+                <m:mo stretchy="false">=</m:mo>
+                <m:mn>44,0</m:mn>
+              </m:mrow>
+              <m:mtext>g/mol</m:mtext>
+            </m:mrow>
+            <annotation encoding="StarMath 5.0"> M = 44,0 undefinedquot;g/molundefinedquot; </annotation>
+          </semantics>
+          </m:math> )? (c) Ile cząsteczek zawartych jest w każdej próbce gazu? </para>
+        </problem>
+        <solution id="imp-idm423777280">
+          <para id="paragraph-322">
+            <m:math id="maths-inline-89">
+              <semantics>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>1,79</m:mn>
+                    <m:mo stretchy="false">⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mtext>mol</m:mtext>
+                </m:mrow>
+                <annotation encoding="StarMath 5.0"> 1,79 cdot 10^-3 undefinedquot;molundefinedquot; </annotation>
+              </semantics>
+            </m:math> ; (b) 0,227 mol; © <m:math id="maths-inline-91">
+            <semantics>
+              <m:mrow>
+                <m:mn>1,08</m:mn>
+                <m:mo stretchy="false">⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>21</m:mn>
+                </m:msup>
+              </m:mrow>
+              <annotation encoding="StarMath 5.0"> 1,08 cdot 10^21 </annotation>
+            </semantics>
+          </m:math> cząsteczek azotu, <m:math id="maths-inline-93">
+          <semantics>
+            <m:mrow>
+              <m:mn>1,37</m:mn>
+              <m:mo stretchy="false">⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>23</m:mn>
+              </m:msup>
+            </m:mrow>
+            <annotation encoding="StarMath 5.0"> 1,37 cdot 10^23 </annotation>
+          </semantics>
+          </m:math> cząsteczek dwutlenku węgla. </para>
+        </solution>
+      </exercise>
+      <exercise id="imp-idm258888992">
+        <problem id="imp-idm473776976">
+          <para id="imp-idm473776720">Sześcienny zbiornik o objętości 2,0 l zawiera 0,500 mola gazowego azotu o temperaturze 25,0 °C. Jaką wartość ma siła, z jaką azot działa na jedną ze ścian zbiornika? Porównaj tę siłę z ciężarem azotu.</para>
+        </problem>
+      </exercise>
+      <exercise id="imp-idm491810656">
+        <problem id="imp-idm394612768">
+          <para id="imp-idm394612512">Oblicz liczbę moli powietrza w płucach przeciętnego człowieka o objętości 2,0 l. Przyjmij, że powietrze ma temperaturę 37 °C (temperatura ciała). Zauważ, że całkowita objętość płuc jest kilkakrotnie większa od objętości typowego wdechu podanej w <link target-id="example-2-2"/>.</para>
+        </problem>
+        <solution id="imp-idm486233904">
+          <equation id="maths-block-9" class="unnumbered">
+            <label/>
+            <m:math>
+              <semantics>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>7,84</m:mn>
+                    <m:mo stretchy="false">⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mtext>mol</m:mtext>
+                </m:mrow>
+                <annotation encoding="StarMath 5.0"> 7,84 cdot 10^-2 undefinedquot;molundefinedquot; </annotation>
+              </semantics>
+            </m:math>
+          </equation>
+        </solution>
+      </exercise>
+      <exercise id="imp-idm388513296">
+        <problem id="imp-idm388513040">
+          <para id="imp-idm269277376"> Pewien pasażer samolotu startującego z lotniska położonego na poziomie morza posiadał w swoim żołądku 100 cm<sup id="superscript-27">3</sup> powietrza. Jaka będzie objętość tego powietrza na wysokości podróżnej, jeżeli ciśnienie wewnątrz kabiny pasażerskiej obniżono do <m:math id="maths-inline-94">
+            <semantics>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>7,50</m:mn>
+                  <m:mo stretchy="false">⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>4</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:msup>
+                  <m:mtext>N/m</m:mtext>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <annotation encoding="StarMath 5.0"> 7,50 cdot 10^4 undefinedquot;N/mundefinedquot;^2 </annotation>
+            </semantics>
+            </m:math> ? </para>
+          </problem>
+        </exercise>
+        <exercise id="imp-idm451480496">
+          <problem id="imp-idm399465952">
+            <para id="imp-idm399465696"> Pewna firma dostarcza w butlach o objętości 43,8 l hel o nadciśnieniu <m:math id="maths-inline-95">
+              <semantics>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>1,72</m:mn>
+                    <m:mo stretchy="false">⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mn>7</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  <m:msup>
+                    <m:mtext>N/m</m:mtext>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <annotation encoding="StarMath 5.0"> 1,72 cdot 10^7 undefinedquot;N/mundefinedquot;^2 </annotation>
+              </semantics>
+            </m:math> . Ile balonów o objętości 4,00 l można napełnić taką ilością helu? Przyjmij, że ciśnienie helu w balonach wynosi <m:math id="maths-inline-96">
+            <semantics>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>1,01</m:mn>
+                  <m:mo stretchy="false">⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>5</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:msup>
+                  <m:mtext>N/m</m:mtext>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <annotation encoding="StarMath 5.0"> 1,01 cdot 10^5 undefinedquot;N/mundefinedquot;^2 </annotation>
+            </semantics>
+            </m:math> , oraz że temperatura helu w butli i w balonach wynosi 25,0 °C. </para>
+          </problem>
+          <solution id="imp-idm385124832">
+            <equation id="maths-block-10" class="unnumbered">
+              <label/>
+              <m:math>
+                <semantics>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>1,87</m:mn>
+                      <m:mo stretchy="false">⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mtext>balonów</m:mtext>
+                  </m:mrow>
+                  <annotation encoding="StarMath 5.0"> 1,87 cdot 10^3 undefinedquot;balonówundefinedquot; </annotation>
+                </semantics>
+              </m:math>
+            </equation>
+          </solution>
+        </exercise>
+        <exercise id="imp-idm439191248">
+          <problem id="imp-idm439190992">
+            <para id="paragraph-338"> Zgodnie z <link id="link-5" url="http://hyperphysics.phy-astr.gsu.edu/hbase/solar/venusenv.html"/> atmosfera Wenus składa się objętościowo z 96,5% CO<sub id="subscript-18">2</sub> oraz z 3,5% N<sub id="subscript-19">2</sub>. Jaka jest gęstość atmosfery Wenus na jej powierzchni, gdzie panuje temperatura ok. 750 K oraz ciśnienie ok. 90 atm.? </para>
+          </problem>
+        </exercise>
+        <exercise id="imp-idm298957664">
+          <problem id="imp-idm997595376">
+            <para id="paragraph-344"> Za pomocą najlepszych (i kosztownych) systemów próżniowych można uzyskać najniższe ciśnienia rzędu <m:math id="maths-inline-98">
+              <semantics>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>1,00</m:mn>
+                    <m:mo stretchy="false">⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:mn>7</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                  <m:msup>
+                    <m:mtext>N/m</m:mtext>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <annotation encoding="StarMath 5.0"> 1,00 cdot 10^-7 undefinedquot;N/mundefinedquot;^2 </annotation>
+              </semantics>
+              </m:math> w temperaturze 20 °C. Ile cząsteczek gazu znajduje się w jednym centymetrze sześciennym w takich warunkach? </para>
+            </problem>
+            <solution id="imp-idm374632368">
+              <equation id="maths-block-11" class="unnumbered">
+                <label/>
+                <m:math>
+                  <semantics>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>2,47</m:mn>
+                        <m:mo stretchy="false">⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mn>7</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mtext>cząstek</m:mtext>
+                    </m:mrow>
+                    <annotation encoding="StarMath 5.0"> 2,47 cdot 10^7 undefinedquot;cząstekundefinedquot; </annotation>
+                  </semantics>
+                </m:math>
+              </equation>
+            </solution>
+          </exercise>
+          <exercise id="imp-idm465465424">
+            <problem id="imp-idm465465168">
+              <para id="paragraph-349"> Koncentracja cząsteczek gazu <m:math id="maths-inline-100">
+                <semantics>
+                  <m:mrow>
+                    <m:mi>N</m:mi>
+                    <m:mo stretchy="false">/</m:mo>
+                    <m:mi>V</m:mi>
+                  </m:mrow>
+                  <annotation encoding="StarMath 5.0"> N/V </annotation>
+                </semantics>
+              </m:math> w pewnym miejscu przestrzeni kosmicznej w pobliżu naszej planety wynosi <m:math id="maths-inline-102">
+              <semantics>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>1,00</m:mn>
+                    <m:mo stretchy="false">⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mn>11</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  <m:msup>
+                    <m:mtext>m</m:mtext>
+                    <m:mrow>
+                      <m:mo stretchy="false">−</m:mo>
+                      <m:mn>3</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                </m:mrow>
+                <annotation encoding="StarMath 5.0"> 1,00 cdot 10^11 undefinedquot;mundefinedquot;^-3 </annotation>
+              </semantics>
+            </m:math> , a ciśnienie jest równe <m:math id="maths-inline-104">
+            <semantics>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>2,75</m:mn>
+                  <m:mo stretchy="false">⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mo stretchy="false">−</m:mo>
+                      <m:mn>10</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                </m:mrow>
+                <m:mtext>Pa</m:mtext>
+              </m:mrow>
+              <annotation encoding="StarMath 5.0"> 2,75 cdot 10^-10 undefinedquot;Paundefinedquot; </annotation>
+            </semantics>
+            </m:math> . Jaka panuje temperatura w tym miejscu? </para>
+          </problem>
+        </exercise>
+        <exercise id="imp-idm412983984">
+          <problem id="imp-idm648773056">
+            <para id="paragraph-357"> Opona rowerowa zawiera 2,00 l gazu o temperaturze 18,0 °C i pod ciśnieniem bezwzględnym <m:math id="maths-inline-106">
+              <semantics>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>7,00</m:mn>
+                    <m:mo stretchy="false">⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mn>5</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  <m:msup>
+                    <m:mtext>N/m</m:mtext>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <annotation encoding="StarMath 5.0"> 7,00 cdot 10^5 undefinedquot;N/mundefinedquot;^2 </annotation>
+              </semantics>
+              </m:math> . Jakie będzie ciśnienie w tej oponie, jeżeli usuniemy z niej taką ilość powietrza, która pod ciśnieniem atmosferycznym zajmuje objętość 100 cm<sup id="superscript-28">3</sup>? Zakładamy, że temperatura opony i jej objętość nie zmieniają się. </para>
+            </problem>
+            <solution id="imp-idm274864384">
+              <equation id="maths-block-12" class="unnumbered">
+                <label/>
+                <m:math>
+                  <semantics>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>6,95</m:mn>
+                        <m:mo stretchy="false">⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mn>5</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mtext>Pa</m:mtext>
+                    </m:mrow>
+                    <annotation encoding="StarMath 5.0"> 6,95 cdot 10^5 undefinedquot;Paundefinedquot; </annotation>
+                  </semantics>
+                </m:math>
+              </equation>
+            </solution>
+          </exercise>
+          <exercise id="imp-idm412120880">
+            <problem id="imp-idm500982496">
+              <para id="paragraph-363"> W popularnym doświadczeniu butelkę po ogrzaniu zatyka się ugotowanym na twardo jajkiem, które jest nieco większe niż szyjka butelki. Kiedy butelka się ochładza różnica ciśnień między jej wnętrzem i zewnętrzem wpycha jajko do środka butelki. Załóżmy, że butelka ma objętość 0,500 l, a temperatura w jej wnętrzu została podniesiona do 80 °C przy stałym ciśnieniu 1 atm, gdyż butelka jest otwarta. (a) Ile moli powietrza znajduje się w butelce? (b) Zamykamy butelkę za pomocą jajka. Jakie będzie ciśnienie nadmiarowe wewnątrz butelki tuż przed wepchnięciem jajka do jej środka, jeżeli powietrze wewnątrz ochłodziło się do temperatury pokojowej 25 °C? </para>
+            </problem>
+          </exercise>
+          <exercise id="imp-idm260617488">
+            <problem id="imp-idm260617232">
+              <para id="paragraph-364"> Wysokociśnieniowa butla zawiera 50 l toksycznego gazu pod ciśnieniem <m:math id="maths-inline-107">
+                <semantics>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>1,40</m:mn>
+                      <m:mo stretchy="false">⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mn>7</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:msup>
+                      <m:mtext>N/m</m:mtext>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  <annotation encoding="StarMath 5.0"> 1,40 cdot 10^7 undefinedquot;N/mundefinedquot;^2 </annotation>
+                </semantics>
+                </m:math> i o temperaturze 25 °C. Butla została ochłodzona do temperatury suchego lodu (–78.5 °C) aby zredukować ciśnienie i wielkość wycieku, co umożliwia jej bezpieczną naprawę. (a) Jakie jest końcowe ciśnienie w butli po jej ochłodzeniu? Zakładamy, że wyciek gazu jest zaniedbywalny, i że gaz nie ulega skropleniu. (b) Jakie będzie ciśnienie końcowe, jeżeli jedna dziesiąta część masy gazu wycieknie z butli podczas jej schładzania? (c) Do jakiej temperatury należałoby schłodzić butlę, aby zredukować ciśnienie gazu do 1 atm? Zakładamy, że gaz w butli się nie skrapla, oraz że nie ma wycieku gazu podczas schładzania. (d) Czy schładzanie butli opisane w podpunkcie (c) można uznać za praktyczne rozwiązanie? </para>
+              </problem>
+              <solution id="imp-idm454025648">
+                <para id="paragraph-366"> (a) <m:math id="maths-inline-108">
+                  <semantics>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>9,14</m:mn>
+                        <m:mo stretchy="false">⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mn>6</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mtext>Pa</m:mtext>
+                    </m:mrow>
+                    <annotation encoding="StarMath 5.0"> 9,14 cdot 10^6 undefinedquot;Paundefinedquot; </annotation>
+                  </semantics>
+                </m:math> ; (b) <m:math id="maths-inline-109">
+                <semantics>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>8,22</m:mn>
+                      <m:mo stretchy="false">⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mn>6</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mtext>Pa</m:mtext>
+                  </m:mrow>
+                  <annotation encoding="StarMath 5.0"> 8,22 cdot 10^6 undefinedquot;Paundefinedquot; </annotation>
+                </semantics>
+                </m:math> ; 2,15 K; (d) nie. </para>
+              </solution>
+            </exercise>
+            <exercise id="imp-idm441835616">
+              <problem id="imp-idm1179287632">
+                <para id="paragraph-367"> Wyznacz liczbę moli gazu o objętości 2,00 l, o temperaturze 35 °C i pod ciśnieniem <m:math id="maths-inline-110">
+                  <semantics>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>7,41</m:mn>
+                        <m:mo stretchy="false">⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mn>7</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mtext>Pa</m:mtext>
+                    </m:mrow>
+                    <annotation encoding="StarMath 5.0"> 7,41 cdot 10^7 undefinedquot;Paundefinedquot; </annotation>
+                  </semantics>
+                  </m:math> . </para>
+                </problem>
+              </exercise>
+              <exercise id="imp-idm381288448">
+                <problem id="imp-idm293523376">
+                  <para id="paragraph-368"> Oblicz grubość warstwy piłeczek tenisowych pokrywających Ziemię, jeżeli ich ilość jest równa liczbie Avogadra. Każda piłeczka posiada średnicę 3,75 cm. Zakładamy, że wolna przestrzeń między piłeczkami daje dodatkowy wkład w wysokości 25% ich objętości, oraz że piłeczki nie są zgniatane pod własnym ciężarem. </para>
+                </problem>
+                <solution id="imp-idm250008800">
+                  <para id="paragraph-370"> 40,7 km </para>
+                </solution>
+              </exercise>
+              <exercise id="imp-idm453081712">
+                <problem id="imp-idm269073296">
+                  <para id="paragraph-371"> (a) Ile wynosi nadciśnienie w oponie samochodowej o objętości 30,0 l, zawierającej 3,60 moli gazu o temperaturze 25 °C? (b) Jakie będzie nadciśnienie w tej oponie, jeżeli wpompujemy do niej powietrze o temperaturze 25 °C oryginalnie zajmujące objętość 1,00 l pod ciśnieniem atmosferycznym? Temperatura i objętość opony się nie zmieniają. </para>
+                </problem>
+              </exercise>
+            </section>
+          </content>
+          <glossary>
+            <definition id="imp-idm262124240">
+              <term>diagram pV (ang. p-V diagram)</term>
+              <meaning id="imp-idm394307328">wykres zależności ciśnienia od objętości danej substancji, w szczególności gazu</meaning>
+            </definition>
+            <definition id="imp-idm413071952">
+              <term>gaz doskonały (ang. ideal gas)</term>
+              <meaning id="imp-idm301060304">gaz rzeczywisty w granicy niskich gęstości i wysokich temperatur</meaning>
+            </definition>
+            <definition id="imp-idm499608224">
+              <term>liczba Avogadra <m:math id="maths-inline-112">
+                <semantics>
+                  <m:msub>
+                    <m:mi>N</m:mi>
+                    <m:mi>A</m:mi>
+                  </m:msub>
+                  <annotation encoding="StarMath 5.0"> N_A </annotation>
+                </semantics>
+                </m:math> (ang. Avogadro’s numer)</term>
+                <meaning id="imp-idm374214304"> liczba cząsteczek w jednym molu substancji; <m:math id="maths-inline-114">
+                  <semantics>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>N</m:mi>
+                        <m:mi>A</m:mi>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mn>6,02</m:mn>
+                        <m:mo stretchy="false">⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mn>23</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                    <annotation encoding="StarMath 5.0"> N_A = 6,02 cdot 10^23 </annotation>
+                  </semantics>
+                  </m:math> cząsteczek/mol </meaning>
+                </definition>
+                <definition id="imp-idm371791728">
+                  <term>mol (ang. mole)</term>
+                  <meaning id="imp-idm286328288">miara liczności substancji; ilość substancji o masie równej jej masie cząsteczkowej wyrażonej w gramach</meaning>
+                </definition>
+                <definition id="imp-idm274292176">
+                  <term>równanie stanu gazu doskonałego (ang. ideal gas law)</term>
+                  <meaning id="imp-idm311487936">prawo fizyczne określające związek między ciśnieniem, objętością, temperaturą i liczbą moli gazu w stanie dalekim od skraplania</meaning>
+                </definition>
+                <definition id="imp-idm439613808">
+                  <term>równanie stanu gazu van der Waalsa (ang. van der Waals equation of state)</term>
+                  <meaning id="imp-idm1182590672">równanie, zazwyczaj przybliżone, opisujące związek między ciśnieniem, objętością, temperaturą i liczbą cząsteczek (lub liczbą moli) gazu rzeczywistego</meaning>
+                </definition>
+                <definition id="imp-idm1182590288">
+                  <term> stała Boltzmanna <m:math id="maths-inline-116">
+                    <semantics>
+                      <m:msub>
+                        <m:mi>k</m:mi>
+                        <m:mi>B</m:mi>
+                      </m:msub>
+                      <annotation encoding="StarMath 5.0"> k_B </annotation>
+                    </semantics>
+                    </m:math> (ang. Boltzmann constant) </term>
+                    <meaning id="imp-idm1170808688"> stała fizyczna, która określa związek energii z temperaturą, występuje w równaniu stanu gazu doskonałego; <m:math id="maths-inline-118">
+                      <semantics>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>k</m:mi>
+                              <m:mi>b</m:mi>
+                            </m:msub>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mrow>
+                              <m:mn>1,38</m:mn>
+                              <m:mo stretchy="false">⋅</m:mo>
+                              <m:msup>
+                                <m:mn>10</m:mn>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mn>23</m:mn>
+                                </m:mrow>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mrow>
+                          <m:mtext>J/K</m:mtext>
+                        </m:mrow>
+                        <annotation encoding="StarMath 5.0"> k_b = 1,38 cdot 10^-23 undefinedquot;J/Kundefinedquot; </annotation>
+                      </semantics>
+                    </m:math>
+                  </meaning>
+                </definition>
+                <definition id="imp-idm425092496">
+                  <term>stan nadkrytyczny (ang. supercritical)</term>
+                  <meaning id="imp-idm424675728">takie warunki dla płynu (wysoka temperatura i wysokie ciśnienie), w których nie może istnieć jego faza ciekła</meaning>
+                </definition>
+                <definition id="imp-idm433357856">
+                  <term> temperatura krytyczna <m:math id="maths-inline-120">
+                    <semantics>
+                      <m:msub>
+                        <m:mi>T</m:mi>
+                        <m:mi>c</m:mi>
+                      </m:msub>
+                      <annotation encoding="StarMath 5.0"> T_c </annotation>
+                    </semantics>
+                    </m:math> (ang. critical temperature) </term>
+                    <meaning id="imp-idm280756272">punkt na izotermie, w którym jej nachylenie wynosi zero (punkt przegięcia o zerowym nachyleniu – przyp. tłum.)</meaning>
+                  </definition>
+                  <definition id="imp-idm280756016">
+                    <term> uniwersalna stała gazowa <m:math id="maths-inline-122">
+                      <semantics>
+                        <m:mi>R</m:mi>
+                        <annotation encoding="StarMath 5.0"> R </annotation>
+                      </semantics>
+                      </m:math> (ang. universal gas constant) </term>
+                      <meaning id="imp-idm311726560"> stała fizyczna występująca w równaniu stanu gazu doskonałego z uwzględnieniem liczby moli, <m:math id="maths-inline-124">
+                        <semantics>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mi>R</m:mi>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:msub>
+                                <m:mi>N</m:mi>
+                                <m:mi>a</m:mi>
+                              </m:msub>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>k</m:mi>
+                                <m:mi>B</m:mi>
+                              </m:msub>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mn>8,31</m:mn>
+                            </m:mrow>
+                            <m:mtext>J/(mol·K)</m:mtext>
+                          </m:mrow>
+                          <annotation encoding="StarMath 5.0"> R = N_a k_B = 8,31 undefinedquot;J/(mol·K)undefinedquot; </annotation>
+                        </semantics>
+                      </m:math>
+                    </meaning>
+                  </definition>
+                </glossary>
+              </document>

@@ -1,0 +1,1359 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Rezonans w obwodzie prądu zmiennego</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67235</md:content-id>
+  <md:title>Rezonans w obwodzie prądu zmiennego</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>ustalać częstotliwość rezonansową obwodu RLC;</item>
+<item>wyjaśniać zależność kształtu widma mocy średniej od częstotliwości prądu i jego znaczenie przy użyciu terminów takich jak szerokość pasma i dobroć.</item></list></md:abstract>
+  <md:uuid>ab22097e-66e9-4d5e-a442-9bc2f9439374</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100859886">W obwodzie RLC zawierającym szeregowo połączony opornik, kondensator, cewkę indukcyjną jak i zasilanym zmienną w czasie źródłem napięciowym jak jest to przedstawione na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_03_acrlc" cmlnle:case="genitive" document="m67233"/> amplituda natężenia prądu elektrycznego wynosi wg <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172101904392" cmlnle:case="genitive" document="m67233"/></para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100799858">
+    <m:math display="block">
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:msqrt>
+            <m:msup>
+              <m:mi>R</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msup>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>ω</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>L</m:mi>
+                  </m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mrow>
+                      <m:mi>ω</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>C</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mfenced>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:msqrt>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100915011">Jeśli będziemy zmieniać częstotliwość źródła, jednocześnie utrzymując stałą amplitudę napięcia prądu, uzyskamy zmianę natężenia prądu elektrycznego w obwodzie. Wykres <m:math display="inline">
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+  </m:math> w funkcji <m:math display="inline">
+  <m:mi>ω</m:mi>
+  </m:math> przedstawiono na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_05_ivsw" cmlnle:case="genitive"/>.</para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_32_05_ivsw"><media id="fs-id1172100726653" alt="Rysunek przedstawia wykres I0 w funkcji omega. Krzywa początkowo wznosi się, osiąga wartość maksymalną, a następnie opada. Krzywa osiąga wartość maksymalną równą V0 dzielone przez R dla wartości omega 0. ">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_32_05_ivsw.jpg"/>
+    </media>
+    
+    <caption>Dla częstotliwości rezonansowej obwodu RLC (<m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:msqrt><m:mn>1</m:mn><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mi>L</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mfenced></m:msqrt></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \omega_0=\sqrt{1/(LC)}</m:annotation></m:semantics></m:math>) amplituda natężenia prądu osiąga maksymalną wartość.</caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-820">Zauważmy, że w sytuacji <m:math display="inline">
+      <m:mi>R</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+    </m:math> (nierealnej fizycznie, bo zawsze istnieje jakiś niezerowy opór elektryczny w układzie) możemy mieć nieskończenie wielki przepływ prądu dla <m:math display="inline"><m:semantics><m:mrow><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:msqrt><m:mn>1</m:mn><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mi>L</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mfenced></m:msqrt></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \omega_0=\sqrt{1/(LC)}</m:annotation></m:semantics></m:math>. Taka sytuacja będzie zachodziła, gdy siła elektromotoryczna mająca kołową częstość <m:math display="inline">
+  <m:msub>
+    <m:mi>ω</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:math> będzie „pompować” energię do obwodu RLC (będzie systematycznie zwiększała się energia pola elektrycznego i magnetycznego) o częstości rezonansowej <m:math display="inline">
+<m:msub>
+  <m:mi>ω</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+</m:math> tak, że natężenie prądu elektrycznego będzie stale rosnąć i osiągnie wartość nieskończoną (w praktyce bardzo dużą), co doprowadzi do zniszczenia obwodu. Warto tutaj odwołać się do analogii pomiędzy oscylatorem harmonicznym tłumionym a obwodem RLC z zewnętrzną siłą elektromotoryczną SEM będącą w istocie sinusoidalną (harmoniczną) siłą wymuszającą i odpowiadającą sinusoidalnej sile wymuszającej w oscylatorze mechanicznym. Możemy również rozważać niesinusoidalną siłę wymuszającą i wtedy należy pamiętać, że niesinusoidalną funkcję można zasadniczo skonstruować poprzez sumę sinusoidalnych funkcji.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100785250">W rozdziale <link class="target-chapter" document="m65825">Drgania</link> natknęliśmy się na podobny wykres jak w przypadku obwodu RLC i <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_05_ivsw" cmlnle:case="genitive"/>, gdzie przedstawiono amplitudę tłumionego oscylatora harmonicznego w zależności od częstotliwości sinusoidalnej siły napędzającej (patrz <link target-id="CNX_UPhysics_15_07_ForcDmpAmp" document="m65832">Drgania wymuszone</link>). To podobieństwo nie jest przypadkowe. Jak przedstawiono wcześniej, przez zastosowanie drugiego prawa Kirchhoffa do obwodu z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_03_acrlc" document="m67233" cmlnle:case="genitive"/>
+</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100744720"><m:math display="block">
+    <m:mrow>
+      <m:mrow>
+        <m:mi>L</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mi>i</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfrac>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mi>i</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>R</m:mi>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mfrac>
+        <m:mi>q</m:mi>
+        <m:mi>C</m:mi>
+      </m:mfrac>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>sin</m:mo>
+        <m:mrow>
+          <m:mfenced>
+            <m:mrow>
+              <m:mi>ω</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfenced>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100584131">albo</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100746864" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:mrow>
+        <m:mi>L</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:msup>
+              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>q</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:msup>
+              <m:mi>t</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:mfrac>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mi>R</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mi>q</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfrac>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mi>C</m:mi>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mi>q</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>sin</m:mo>
+        <m:mrow>
+          <m:mfenced>
+            <m:mrow>
+              <m:mi>ω</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfenced>
+          <m:mo>⁢</m:mo>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100659302">gdzie za <m:math display="inline">
+  <m:mi>i</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+</m:math> podstawiliśmy <m:math display="inline">
+<m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:mi>q</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>t</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:mo>∕</m:mo>
+  <m:mrow>
+    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+    <m:mi>t</m:mi>
+  </m:mrow>
+</m:mrow>
+</m:math>. <link target-id="fs-id1172100744720"/> i równania dla tłumionego ruchu harmonicznego (<link target-id="fs-id1167131231570" document="m65831">Drgania tłumione</link>) pozwalają łatwo zauważyć, że zasilony obwód RLC jest elektrycznym odpowiednikiem napędzanego, tłumionego oscylatora harmonicznego.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100876537"><term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="częstotliwość rezonansowa">Częstotliwość rezonansowa</term>
+  <m:math display="inline">
+    <m:msub>
+      <m:mi>f</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+  </m:math> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">resonant frequency</term></foreign>) obwodu RLC to taka częstotliwość, dla której amplituda natężenia prądu osiąga swoje maksimum, a obwód oscylowałby również po usunięciu generatora. Odpowiada to takiej częstości <m:math display="inline">
+  <m:msub>
+    <m:mi>ω</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>2</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:mi>π</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:msub>
+      <m:mi>f</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+  </m:mrow>
+</m:math>, dla której impedancja <m:math display="inline">
+<m:mi>Z</m:mi>
+</m:math> z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172100799858" cmlnle:case="genitive"/> osiąga swoje minimum, albo sytuacji, kiedy</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100815006" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:msub>
+        <m:mi>ω</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mi>L</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mrow>
+          <m:msub>
+            <m:mi>ω</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mi>C</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>⁢</m:mo>
+      <m:mtext>,</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100664791">z czego wynika, że</para>
+<note id="fs-id1172100831401" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100657430">
+    <label/>
+    <m:math display="block">
+      <m:msub>
+        <m:mi>ω</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msqrt>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mrow>
+              <m:mi>L</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>C</m:mi>
+            </m:mrow>
+          </m:mfrac>
+        </m:msqrt>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100732198">Jest to wyrażenie opisujące rezonansową częstość kołową obwodu. Podstawiając <m:math display="inline">
+  <m:msub>
+    <m:mi>ω</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  </m:math> do <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172101939335" cmlnle:case="genitive" document="m67233"/>, <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172101904392" cmlnle:case="genitive" document="m67233"/> i <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172101939380" cmlnle:case="genitive" document="m67233"/>, otrzymujemy</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100760871" class="unnumbered"><m:math display="block"><m:mi>ϕ</m:mi><m:mo>=</m:mo><m:mrow><m:mo>arc tg</m:mo><m:mfenced><m:mn>0</m:mn></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mn>0</m:mn><m:mo>⁢</m:mo><m:mtext>, </m:mtext><m:mo>⁢</m:mo><m:msub><m:mi>I</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:msub><m:mi>U</m:mi><m:mn>0</m:mn></m:msub><m:mo>∕</m:mo><m:mi>R</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>, </m:mtext><m:mo>⁢</m:mo><m:mi>Z</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>R</m:mi><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:math></equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100781156">Oznacza to, że w warunkach rezonansu obwód RLC jest czysto rezystywny, z przyłożoną SEM i natężeniem prądu zgodnymi w fazie.</para>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100757806">Co w takim razie dzieje się z mocą w rezonansie? <link target-id="fs-id1172102033252" document="m67234"/> opisuje, jak średnia moc przesyłana z generatora napięcia zmiennego do obwodów RLC zależy od częstotliwości. Ponadto <m:math display="inline">
+    <m:msub>
+      <m:mi>P</m:mi>
+      <m:mtext>śr</m:mtext>
+    </m:msub>
+  </m:math> osiąga maksimum wtedy, kiedy <m:math display="inline">
+  <m:mi>Z</m:mi>
+</m:math>, zależące od częstotliwości, osiąga minimum, czyli kiedy <m:math display="inline">
+<m:msub>
+  <m:mi>X</m:mi>
+  <m:mi>L</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msub>
+  <m:mi>X</m:mi>
+  <m:mi>C</m:mi>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:mi>Z</m:mi>
+<m:mo>=</m:mo>
+<m:mi>R</m:mi>
+</m:math>. Oznacza to, że w rezonansie średnia moc wytwarzana przez źródło w szeregowym układzie RLC osiąga maksymalną wartość. Według <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172102033252" cmlnle:case="genitive" document="m67234"/> to maksimum równe jest natomiast <m:math display="inline">
+<m:msubsup>
+  <m:mi>U</m:mi>
+  <m:mtext>sk</m:mtext>
+  <m:mn>2</m:mn>
+</m:msubsup>
+<m:mo>∕</m:mo>
+<m:mi>R</m:mi>
+</m:math>.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100638065"><link target-id="CNX_UPhysics_32_05_band"/> to typowy wykres zależności <m:math display="inline">
+  <m:msub>
+    <m:mi>P</m:mi>
+    <m:mtext>śr</m:mtext>
+  </m:msub>
+</m:math> od <m:math display="inline">
+<m:mi>ω</m:mi>
+</m:math> w obszarze maksimum mocy. <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="szerokość pasma">Szerokość pasma</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">bandwidth</term></foreign>) <m:math display="inline">
+<m:mo>Δ</m:mo>
+<m:mi>ω</m:mi>
+</m:math> piku rezonansowego jest zdefiniowana jako zakres częstości kołowych <m:math display="inline">
+<m:mi>ω</m:mi>
+</m:math>, dla których średnia moc <m:math display="inline">
+<m:msub>
+  <m:mi>P</m:mi>
+  <m:mtext>śr</m:mtext>
+</m:msub>
+</m:math> jest większa niż połowa maksymalnej wartości <m:math display="inline">
+<m:msub>
+  <m:mi>P</m:mi>
+  <m:mtext>śr</m:mtext>
+</m:msub>
+</m:math>. Stromość piku opisywana jest przy pomocy wielkości niemianowanej nazywanej <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="dobroć">dobrocią</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">quality factor</term></foreign>) <m:math display="inline">
+<m:mi>Q</m:mi>
+</m:math> obwodu. Jest ona miarą tego, jak długo układ RLC może przechowywać zgromadzoną energię w postaci energii pola elektrycznego i energii pola magnetycznego czyli ile cyklów drgań pola elektrycznego musi upłynąć by układ RLC stracił przechowywaną energię</para><note id="fs-id1172100836100" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100858447">
+    <label/>
+    <m:math display="block">
+      <m:mi>Q</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:msub>
+            <m:mi>ω</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mrow>
+            <m:mo>Δ</m:mo>
+            <m:mi>ω</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mtext>,</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100556251">gdzie <m:math display="inline">
+  <m:msub>
+    <m:mi>ω</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:math> jest rezonansową częstością kołową. Wysoka dobroć <m:math display="inline">
+<m:mi>Q</m:mi>
+</m:math> wskazuje na stromy pik rezonansowy. Dobroć <m:math display="inline">
+<m:mi>Q</m:mi>
+</m:math> zapisana za pomocą parametrów obwodu przyjmuje postać</para><note id="fs-id1172100639871" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100780758">
+    <label/>
+    <m:math display="block">
+      <m:mi>Q</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:mrow>
+            <m:msub>
+              <m:mi>ω</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mi>L</m:mi>
+          </m:mrow>
+          <m:mi>R</m:mi>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_32_05_band"><media id="fs-id1172100667039" alt="Rysunek przedstawia wykres zależności średniej mocy, oznaczonej jako P z kreską w funkcji omega. Wykres funkcji początkowo rośnie, osiąga maksimum i następnie maleje do swej wartości początkowej. Funkcja osiąga wartość maksymalną, która wynosi V rms do kwadratu dzielone przez R dla wartości x równej omega zero. Szerokość połówkowa krzywej oznaczona jest delta omega. ">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_32_05_band.jpg"/>
+  </media>
+  
+<caption>Podobnie jak natężenie prądu, średnia moc wydzielana w obwodzie RLC przez generator napięcia zmiennego osiąga amplitudę dla częstotliwości rezonansowej.</caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100627991">Układ RLC o nieskończenie małym oporze elektrycznym będzie miał będzie miał nieskończenie dużą dobroć oznaczaną literą <m:math display="inline">
+  <m:mi>Q</m:mi>
+</m:math> (będącą stosunkiem energii ulokowanej w statycznym polu elektrycznym do energii traconej w jednym cyklu) i wówczas będzie mógł przechowywać energię obecną w polu elektrycznym i magnetycznym (w kondensatorze i cewce) nieskończenie długo. Obwody rezonansowe są często używane jako filtry – do przepuszczania lub odrzucania („odfiltrowania”) wybranych zakresów częstotliwości. Energia z tych zakresów częstości trafia do obwodu RLC i tam ulega rozproszeniu. Osiąga się to poprzez zmianę wartości jednego z elementów, czyli przez „strojenie” obwodu do konkretnych częstotliwości rezonansowych. Na przykład w radiach odbiornik jest dostrojony do pożądanej stacji poprzez ustawienie częstotliwości rezonansowej obwodów radia do częstotliwości, na której nadaje ta stacja. Jeśli obwód filtrujący ma wysoką dobroć <m:math display="inline">
+<m:mi>Q</m:mi>
+</m:math>, będzie się on charakteryzował małą szerokością pasma, więc sygnał ze stacji o częstotliwościach nawet nieznacznie różnych od częstotliwości rezonansowej doświadczy wysokiej impedancji i nie zostanie przepuszczony przez obwód. Telefony komórkowe działają na podobnej zasadzie, korzystając z sygnałów o częstotliwościach wokół wartości <m:math display="inline">
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi mathvariant="normal">GHz</m:mi>
+</m:math>, dostrajanych za pomocą obwodów kondensator-cewka. Jednym z najczęstszych zastosowań kondensatorów jest użycie ich w zmiennoprądowych obwodach czasowych, pracujących dla częstotliwości rezonansowej. Detektory metalu również działają na zasadzie zmiany częstotliwości rezonansowej spowodowanej obecnością metalu w pobliżu obwodu (<link target-id="CNX_UPhysics_32_05_swim"/>).</para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_32_05_swim"><media id="fs-id1172100526304" alt="Zdjęcie płetwonurka pod wodą z detektorem do wykrywania metali.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_32_05_swim.jpg"/>
+  </media>
+  
+<caption>Kiedy detektor znajduje się w pobliżu kawałka metalu, samoindukcja jednej z cewek ulega zmianie. To powoduje przesunięcie częstotliwości rezonansowej całego obwodu zawierającego tą cewkę. Zmiana jest wykrywana przez urządzenie i przesyłana do nurka przez słuchawki.</caption></figure><example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100517213"><para id="eip-713"><title>Rezonans w szeregowym obwodzie RLC</title></para><list id="eip-idm1252753952" list-type="enumerated" number-style="lower-alpha"><item>Ile wynosi częstotliwość rezonansowa obwodu z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172101788195" document="m67232" cmlnle:case="genitive"/>?</item>
+      <item>Jeśli generator napięcia zmiennego zmieni częstotliwość pracy na tą z podpunktu (a), bez zmiany amplitudy napięcia wyjściowego, ile będzie wynosić amplituda natężenia prądu?</item>
+    </list><para id="fs-id1172100882291"><title>Strategia rozwiązania</title>Częstotliwość rezonansowa obwodu RLC obliczana jest z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172100657430" cmlnle:case="genitive"/>, wyprowadzonego z równości kapacytancji i induktancji. Ponieważ obwód ten znajduje się w stanie rezonansu, jego impedancja jest równa oporowi opornika. Amplituda natężenia prądu wyliczana jest z iloczynu napięcia prądu i impedancji.</para><para id="fs-id1172100876587"><title>Rozwiązanie</title></para><list id="fs-id1172100618230" list-type="enumerated" number-style="lower-alpha">
+      <item>Częstotliwość rezonansową ustalamy z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172100657430" cmlnle:case="genitive"/>
+        <equation id="fs-id1172100730270" class="unnumbered"><label/>
+          <m:math display="block">
+            <m:msub>
+              <m:mi>f</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:msqrt>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mrow>
+                    <m:mi>L</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>C</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+              </m:msqrt>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:msqrt>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>3</m:mn>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                      <m:mi mathvariant="normal">H</m:mi>
+                    </m:mrow>
+                    <m:mo>⋅</m:mo>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>8</m:mn>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mrow><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                      <m:mi mathvariant="normal">F</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mfrac>
+              </m:msqrt>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>1,03</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">Hz</m:mi>
+              </m:mrow>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:math>
+        </equation></item>
+      <item>W rezonansie impedancja obwodu pochodzi jedynie od oporu opornika, więc amplituda natężenia prądu wynosi<equation id="fs-id1172100876870" class="unnumbered"><label/>
+        <m:math display="block">
+          <m:msub>
+            <m:mi>I</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>0,1</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">V</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>2,5</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+                </m:msup>
+              </m:mrow>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">A</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation></item>
+  </list>
+  <para id="fs-id1172100781040"><title>Znaczenie</title>Jeśli obwód nie byłby dostrojony do częstotliwości rezonansowej, musielibyśmy ustalić całkowitą impedancję obwodu w celu wyznaczenia amplitudy natężenia prądu.</para></example><example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100841992"><para id="eip-407"><title>Transfer mocy w szeregowym obwodzie RLC w rezonansie</title></para>
+      <list id="eip-idm501988240" list-type="enumerated" number-style="lower-alpha"><item>Jaka jest rezonansowa częstość kołowa obwodu RLC, jeśli <m:math display="inline">
+          <m:mi>R</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>0,2</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+        </m:math>, <m:math display="inline">
+        <m:mi>L</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>4</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+            </m:msup>
+          </m:mrow>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">H</m:mi>
+        </m:mrow>
+      </m:math> i <m:math display="inline">
+      <m:mi>C</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mrow><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow>
+          </m:msup>
+        </m:mrow>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">F</m:mi>
+      </m:mrow>
+      </m:math>?</item>
+      <item>Jeśli źródło napięcia zmiennego dostarcza napięcie o amplitudzie <m:math display="inline">
+        <m:mn>4</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+        </m:math> przy częstotliwości rezonansowej, to jaka jest średnia moc dostarczana przez nie do obwodu?</item>
+        <item>Znajdźmy dobroć i szerokość pasma dla tego obwodu.</item>
+      </list><para id="fs-id1172100620759"><title>Strategia rozwiązania</title>Rezonansowa częstość kołowa wyliczana jest według <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172100657430" cmlnle:case="genitive"/>. Średnia moc w obwodzie wyznaczana jest za pomocą napięcia skutecznego i rezystancji obwodu. Dobroć wyliczamy z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172100780758" cmlnle:case="genitive"/> przy znajomości częstotliwości rezonansowej. Do wyznaczenia szerokości pasma używamy <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172100858447" cmlnle:case="genitive"/> i wyliczonej wcześniej dobroci.</para><para id="fs-id1172100858423">
+        <title>Rozwiązanie</title>
+      </para>
+      <list id="fs-id1172100845573" list-type="enumerated" number-style="lower-alpha"><item>Rezonansowa częstość kołowa wynosi<equation id="fs-id1172100917090" class="unnumbered"><label/>
+          <m:math display="block">
+            <m:msub>
+              <m:mi>ω</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msqrt>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:mi>L</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>C</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:msqrt>
+            <m:mo>=</m:mo>
+            <m:msqrt>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>4</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                    <m:mi mathvariant="normal">H</m:mi>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mrow><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                    <m:mi mathvariant="normal">F</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mfrac>
+            </m:msqrt>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>1,12</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>4</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mrow>
+                  <m:mi mathvariant="normal">rad</m:mi>
+                  <m:mo>∕</m:mo>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:math>
+        </equation></item>
+      <item>Dla takiej częstości średnia moc dostarczana do obwodu osiąga maksymalną wartość, więc<equation id="fs-id1172100883235" class="unnumbered"><label/>
+        <m:math display="block">
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mtext>śr</m:mtext>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:msubsup>
+              <m:mi>U</m:mi>
+              <m:mtext>sk</m:mtext>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mi>R</m:mi>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:msup>
+              <m:mfenced close="]" open="[">
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:msqrt>
+                      <m:mn>2</m:mn>
+                    </m:msqrt>
+                  </m:mfrac>
+                  <m:mo>⋅</m:mo>
+                  <m:mrow>
+                    <m:mn>4</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                    <m:mi mathvariant="normal">V</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mfenced>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mrow>
+              <m:mn>0,2</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>40</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation></item>
+    <item>Dobroć obwodu wynosić będzie<equation id="fs-id1172100883186" class="unnumbered"><label/>
+      <m:math display="block">
+        <m:mi>Q</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:msub>
+              <m:mi>ω</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mi>L</m:mi>
+          </m:mrow>
+          <m:mi>R</m:mi>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>1,12</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>4</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mrow>
+                <m:mi mathvariant="normal">rad</m:mi>
+                <m:mo>∕</m:mo>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>4</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+                </m:msup>
+              </m:mrow>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">H</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mrow>
+            <m:mn>0,2</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>224</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation>
+Z powyższego wynika, że szerokość pasma równa jest<equation id="eip-766"><m:math display="block">
+      <m:mrow>
+        <m:mo>Δ</m:mo>
+        <m:mi>ω</m:mi>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:msub>
+          <m:mi>ω</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mi>Q</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>1,12</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mn>4</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">rad</m:mi>
+            <m:mo>∕</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mn>224</m:mn>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mn>50</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">rad</m:mi>
+            <m:mo>∕</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation></item>
+</list><para id="fs-id1172100916265">
+  <title>Znaczenie</title>Jeśli pożądana jest mniejsza szerokość pasma, obwód musi mieć niższą rezystancję albo wyższą induktancję. Jednak niższa rezystancja powoduje wzrost mocy dostarczanej do obwodu, co nie zawsze jest korzystne. Czasami możemy bowiem przekroczyć maksymalną moc, dla której zaprojektowany został obwód.</para>
+</example><note id="fs-id1172100796341" class="check-understanding">
+  <exercise id="fs-id1172100796345">
+    <problem id="fs-id1172100867248">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100867250"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Dla obwodu z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_03_acrlc" document="m67233" cmlnle:case="genitive"/> <m:math display="inline">
+        <m:mi>L</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+            </m:msup>
+          </m:mrow>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">H</m:mi>
+        </m:mrow>
+      </m:math>, <m:math display="inline">
+      <m:mi>C</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mn>5</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mrow><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow>
+          </m:msup>
+        </m:mrow>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">F</m:mi>
+      </m:mrow>
+    </m:math> i <m:math display="inline">
+    <m:mi>R</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>40</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+  </m:math>.<list id="eip-idm586032448" list-type="enumerated" number-style="lower-alpha">
+  <item>Jaka jest częstotliwość rezonansowa?</item>
+  <item>Jaka jest wartość impedancji tego obwodu w rezonansie?</item>
+  <item>Jeśli amplituda napięcia wynosi <m:math display="inline">
+    <m:mn>10</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">V</m:mi>
+  </m:math>, jak wygląda <m:math display="inline">
+  <m:mi>i</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+  </m:math> w warunkach rezonansu?</item>
+  <item>Częstotliwość pracy generatora została zmieniona na <m:math display="inline">
+    <m:mn>200</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:mi mathvariant="normal">Hz</m:mi>
+    </m:math>. Oblicz różnicę faz pomiędzy natężeniem prądu i SEM tego generatora.</item>
+  </list>
+</para></problem>
+<solution id="fs-id1172100845433">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100810831">a. <m:math display="inline">
+    <m:mn>160</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:mi mathvariant="normal">Hz</m:mi>
+  </m:math>; b. <m:math display="inline">
+  <m:mn>40</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">Ω</m:mi>
+</m:math>; c. <m:math display="inline">
+<m:mrow>
+  <m:mn>0,25</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">A</m:mi>
+</m:mrow>
+<m:mo>⋅</m:mo>
+<m:mrow>
+  <m:mo>sin</m:mo>
+  <m:mfenced>
+    <m:mrow>
+      <m:msup>
+        <m:mn>10</m:mn>
+        <m:mn>3</m:mn>
+      </m:msup>
+      <m:mo>⋅</m:mo>
+      <m:mi>t</m:mi>
+    </m:mrow>
+  </m:mfenced>
+</m:mrow>
+</m:math>; d. <m:math display="inline">
+<m:mn>0,023</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">rad</m:mi>
+</m:math>.</para></solution>
+</exercise>
+</note>
+<note id="fs-id1172100754660" class="check-understanding">
+  <exercise id="fs-id1172100754663">
+    <problem id="fs-id1172100842006">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100842009"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Jak zmieni się częstotliwość rezonansowa szeregowego obwodu RLC, kiedy następujące wielkości zostaną zwiększone czterokrotnie: <list id="eip-idm894504336" list-type="enumerated" number-style="lower-alpha">
+          <item>kapacytancja;</item>
+          <item>samoinduktancja;</item>
+          <item>opór?</item>
+        </list>
+      </para></problem>
+    <solution id="fs-id1172100886257">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100845864">a. Zmniejszy się o połowę; b. Zmniejszy się o połowę; c. Pozostanie bez zmian.</para>
+    </solution>
+  </exercise>
+</note>
+<note id="fs-id1172100800113" class="check-understanding">
+  <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100800116"><problem id="fs-id1172100800118">
+      <para id="fs-id1172100769034"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Rezonansowa częstość kołowa szeregowego obwodu RLC wynosi <m:math display="inline">
+          <m:mrow>
+            <m:mn>4</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">rad</m:mi>
+            <m:mo>∕</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:math>. Źródło napięcia zmiennego działa z tą częstością i dostarcza średnią moc <m:math display="inline">
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mrow><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+          </m:msup>
+        </m:mrow>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">W</m:mi>
+      </m:math> do obwodu. Opór obwodu równy jest <m:math display="inline">
+      <m:mn>0,5</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+      </m:math>. Zapisz wyrażenie na SEM tego generatora.</para></problem>
+    <solution id="fs-id1172100632808">
+      <para id="fs-id1172100882781"><m:math display="inline">
+          <m:mrow>
+            <m:mi>u</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>0,14</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">V</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mrow>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>4</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo>⋅</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mfenced>
+                <m:mo>⁢</m:mo>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </para></solution>
+  </exercise></note>
+<section id="fs-id1172100878722" class="key-concepts">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Podsumowanie</title>
+  <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100780985" list-type="bulleted" bullet-style="bullet"><item>Dla częstotliwości rezonansowej kapacytancja równa jest induktancji.</item>
+    <item>Pik na wykresie zależności średniej mocy w obwodzie RLC od częstości kołowej odpowiada częstości rezonansowej; stromość i szerokość tego piku znana jest jako szerokość pasma.</item>
+    <item>Szerokość pasma połączona jest z bezwymiarową wielkością nazywaną dobrocią. Duża dobroć charakteryzuje ostry i wąski pik oraz niewielki opór elektryczny w obwodzie RLC.</item>
+  </list></section>
+<section id="fs-id1172100846205" class="review-problems">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Zadania</title>
+  <exercise id="fs-id1172100841908">
+    <problem id="fs-id1172100841910">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100785228">Wykonaj obliczenia i odpowiedz na pytanie.<list id="eip-idm235709664" list-type="enumerated" number-style="lower-alpha"><item>Oblicz rezonansową częstość kołową szeregowego obwodu RLC, w którym <m:math display="inline">
+          <m:mi>R</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>20</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+        </m:math>, <m:math display="inline">
+        <m:mi>L</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>75</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi mathvariant="normal">mH</m:mi>
+        </m:mrow>
+      </m:math> i <m:math display="inline">
+      <m:mi>C</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>4</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">µF</m:mi>
+      </m:mrow>
+      </m:math>;</item>
+      <item>Co stanie się z wartością rezonansowej częstości kołowej, jeśli wartość <m:math display="inline">
+        <m:mi>R</m:mi>
+      </m:math> zostanie zmieniona na <m:math display="inline">
+      <m:mn>300</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+      </m:math>?</item>
+    </list></para>
+</problem>
+</exercise>
+<exercise id="fs-id1172100840243">
+  <problem id="fs-id1172100840245">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100842118">Częstotliwość rezonansowa szeregowego obwodu RLC wynosi <m:math display="inline">
+      <m:mrow>
+        <m:mn>2</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mn>3</m:mn>
+        </m:msup>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mi mathvariant="normal">Hz</m:mi>
+    </m:math>. Jeśli indukcyjność tego obwodu jest równa <m:math display="inline">
+    <m:mn>5</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:mi mathvariant="normal">mH</m:mi>
+    </m:math>, ile wynosi jego pojemność?</para>
+  </problem>
+  <solution id="fs-id1172100639465">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100639467"><m:math display="inline">
+        <m:mrow>
+          <m:mrow>
+            <m:mn>1,3</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow>
+            </m:msup>
+          </m:mrow>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">F</m:mi>
+        </m:mrow>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:math>
+    </para></solution>
+</exercise>
+<exercise id="fs-id1172100796516">
+  <problem id="fs-id1172100796518">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100796520">Odpowiedz na następujące pytania.<list id="eip-idm1449720176" list-type="enumerated" number-style="lower-alpha"><item>Ile jest równa częstotliwość rezonansowa szeregowego obwodu RLC dla <m:math display="inline">
+        <m:mi>R</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>20</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">Ω</m:mi>
+        </m:mrow>
+      </m:math>, <m:math display="inline">
+      <m:mi>L</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>2</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mi mathvariant="normal">mH</m:mi>
+      </m:mrow>
+    </m:math> i <m:math display="inline">
+    <m:mi>C</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>4</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">µF</m:mi>
+    </m:mrow>
+    </m:math>?</item>
+    <item>Ile jest równa impedancja tego obwodu w warunkach rezonansu?</item>
+  </list></para>
+</problem>
+</exercise>
+<exercise id="fs-id1172100887307">
+  <problem id="fs-id1172100887310">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100762598">Dla szeregowego obwodu RLC <m:math display="inline">
+      <m:mi>R</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>100</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+    </m:math>, <m:math display="inline">
+    <m:mi>L</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>150</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mi mathvariant="normal">mH</m:mi>
+    </m:mrow>
+  </m:math>, a <m:math display="inline">
+  <m:mi>C</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>0,25</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">µF</m:mi>
+  </m:mrow>
+</m:math>.<list id="eip-idm829677216" list-type="enumerated" number-style="lower-alpha"><item>Jeśli do tego obwodu podłączymy źródło napięcia zmiennego, dla jakiej częstotliwości na oporniku zostanie rozproszone maksimum mocy?</item>
+<item>Ile wynosi dobroć tego obwodu?</item>
+</list></para></problem>
+<solution id="fs-id1172100886504">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100886506">a. <m:math display="inline">
+    <m:mn>820</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:mi mathvariant="normal">Hz</m:mi>
+  </m:math>; b. <m:math display="inline">
+  <m:mn>7,8</m:mn>
+  </m:math>.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1172100790890">
+  <problem id="fs-id1172100790892">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100790894">Źródło zmiennego napięcia o amplitudzie <m:math display="inline">
+      <m:mn>100</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:math> i częstotliwości <m:math display="inline">
+    <m:mi>f</m:mi>
+  </m:math> zasila szeregowy obwód RLC z <m:math display="inline">
+  <m:mi>R</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>100</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">Ω</m:mi>
+  </m:mrow>
+</m:math>, <m:math display="inline">
+<m:mi>L</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>150</m:mn>
+  <m:mo>⁢</m:mo>
+  <m:mi mathvariant="normal">mH</m:mi>
+</m:mrow>
+</m:math> i <m:math display="inline">
+<m:mi>C</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>0,25</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">µF</m:mi>
+</m:mrow>
+</m:math>.<list id="eip-idm391370704" list-type="enumerated" number-style="lower-alpha"><item>Narysuj wykres natężenia prądu płynącego przez rezystor w funkcji częstotliwości <m:math display="inline">
+  <m:mi>f</m:mi>
+  </m:math>;</item>
+  <item>Przy pomocy wykresu ustal częstotliwość rezonansową tego obwodu.</item>
+</list></para></problem>
+</exercise>
+<exercise id="fs-id1172100886484">
+  <problem id="fs-id1172100886486">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100886488">Odpowiedz na następujące pytania.<list id="eip-idm224773376" list-type="enumerated" number-style="lower-alpha"><item>Ile równa jest częstotliwość rezonansowa opornika <m:math display="inline">
+        <m:mi>R</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>100</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">Ω</m:mi>
+        </m:mrow>
+      </m:math>, kondensatora <m:math display="inline">
+      <m:mi>C</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>5</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">µF</m:mi>
+      </m:mrow>
+    </m:math> i cewki <m:math display="inline">
+    <m:mi>L</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>2</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">H</m:mi>
+    </m:mrow>
+    </m:math> połączonych ze sobą szeregowo?</item>
+    <item>Jeśli ten obwód podłączony zostanie do źródła napięcia zmiennego o amplitudzie <m:math display="inline">
+      <m:mn>100</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+      </m:math>, pracującego ze stałą częstotliwością, ile równa będzie moc produkowana przez źródło?</item>
+      <item>Ile wynosi dobroć <m:math display="inline">
+        <m:mi>Q</m:mi>
+        </m:math> tego obwodu?</item>
+        <item>Ile równa jest szerokość pasma tego obwodu?</item>
+      </list></para>
+  </problem>
+  <solution id="fs-id1172100883713">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100883716">a. <m:math display="inline">
+      <m:mn>50</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mi mathvariant="normal">Hz</m:mi>
+    </m:math>; b. <m:math display="inline">
+    <m:mn>50</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">W</m:mi>
+  </m:math>; c. <m:math display="inline">
+  <m:mn>13</m:mn>
+</m:math>; d. <m:math display="inline">
+<m:mn>25</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">rad</m:mi>
+  <m:mo>∕</m:mo>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>.</para></solution>
+</exercise>
+<exercise id="fs-id1172100884947">
+  <problem id="fs-id1172100884949">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100884951">Załóżmy, że pewna cewka ma indukcyjność równą <m:math display="inline">
+      <m:mn>20</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">H</m:mi>
+    </m:math> i induktancję wynoszącą <m:math display="inline">
+    <m:mn>200</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">Ω</m:mi>
+  </m:math>. Jaką <list id="eip-idm274029456" list-type="enumerated" number-style="lower-alpha">
+  <item>pojemność;</item>
+  <item>rezystancję</item>
+</list> należy przyłączyć szeregowo do tej cewki, aby tak powstały obwód miał częstotliwość rezonansową równą <m:math display="inline">
+<m:mn>100</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+<m:mi mathvariant="normal">Hz</m:mi>
+</m:math> i dobroć <m:math display="inline">
+<m:mi>Q</m:mi>
+<m:mo>=</m:mo>
+<m:mn>10</m:mn>
+</m:math>?</para></problem>
+</exercise>
+<exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100884986">
+  <problem id="fs-id1172100916201">
+    <para id="fs-id1172100916203">Generator napięcia zmiennego podłączono do pewnego odbiornika, którego wewnętrzne połączenia nie są znane. Znane są jedynie wartości natężenia i napięcia prądu, jak pokazano poniżej. Opierając się na podanych informacjach, jakie możesz wyciągnąć wnioski na temat właściwości elektrycznych podłączonego urządzenia i jego zapotrzebowania na moc?<newline/></para><media id="fs-id1172100916208" alt="Rysunek przedstawia źródło prądu przemiennego połączone ze skrzynką oznaczoną Z. Napięcie na zaciskach źródła ma wartość 170 V, cosinus 120 pi t. Natężenie prądu płynącego w obwodzie wynosi 0,5 Amp, cosinus nawias 120 pi t plus pi przez 4 nawias.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_32_05_Problem49_img.jpg"/>
+    </media>
+  </problem>
+  <solution id="fs-id1172100885112">
+    <para id="fs-id1172100885114">Kapacytancja jest większa od induktancji, ponieważ natężenie prądu „wyprzedza” napięcie prądu. Zużycie mocy wynosi <m:math display="inline">
+      <m:mn>30</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">W</m:mi>
+      </m:math>.</para></solution>
+  </exercise>
+</section>
+</content>
+<glossary>
+  <definition id="fs-id1172100886540">
+    <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="szerokość pasma">szerokość pasma (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">bandwidth</term></foreign>)</term>
+      <meaning id="fs-id1172100886545">zakres częstości kołowych, dla których średnia moc jest większa niż połowa maksymalnej wartości</meaning>
+    </definition>
+    <definition id="fs-id1172100846558">
+      <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="dobroć">dobroć (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">quality factor</term></foreign>)</term>
+        <meaning id="fs-id1172100846563">bezwymiarowa wielkość opisująca stromość piku rezonansowego i szerokość pasma; duża dobroć definiuje stromy pik i małą szerokość pasma, co w praktyce oznacza zdolność obwodu RLC do przechowywania energii pola </meaning>
+      </definition>
+      <definition id="fs-id1172100846569">
+        <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="częstotliwość rezonansowa">częstotliwość rezonansowa (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">resonant frequency</term></foreign>)</term>
+          <meaning id="fs-id1172100858659">częstotliwość, przy której amplituda natężenia prądu osiąga wartość maksymalną, a obwód oscylowałby po odłączeniu od źródła napięcia przez pewien charakterystyczny czas</meaning>
+        </definition>
+      </glossary>
+    </document>

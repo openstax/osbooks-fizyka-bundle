@@ -1,0 +1,2521 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:m="http://www.w3.org/1998/Math/MathML" id="new" cnxml-version="0.7" module-id="new">
+  <title>Ruch harmoniczny</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65826</md:content-id>
+  <md:title>Ruch harmoniczny</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>podawać definicję okresu i częstotliwości drgań;</item>
+<item>wymieniać cechy ruchu harmonicznego;</item>
+<item>wyjaśniać pojęcie przesunięcia fazowego;</item>
+<item>zapisywać równania ruchu dla drgającego klocka na sprężynie;</item>
+<item>opisywać ruch masy drgającej na sprężynie w układzie pionowym.</item>
+</list></md:abstract>
+  <md:uuid>0b9c96a6-6b43-4a36-8fb0-4eff094cddf6</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1167134822736">Przy szarpnięciu struny gitary uzyskujemy trwający dość długo dźwięk o stałym tonie (<link target-id="CNX_UPhysics_15_01_GuitarStrg"/>). Struna wykonuje drgania wokół położenia równowagi. Cykl jednego pełnego drgania rozpoczyna się w położeniu początkowym. Stąd struna przemieszcza się do jednego ze skrajnych położeń, po czym wędruje do drugiego skrajnego położenia i wreszcie powraca do położenia początkowego, kończąc tym samym cykl. <term cmlnle:reference="ruch periodyczny" class="no-emphasis">Ruch periodyczny</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">periodic motion</term></foreign>) definiujemy jako powtarzającą się zmianę położenia w regularnych odstępach czasu. Przykładami mogą być: ruch struny gitary lub dziecko, które rozbujało się na huśtawce. W tym podrozdziale przedstawiamy podstawowe cechy drgań wraz z ich opisem matematycznym.</para><figure id="CNX_UPhysics_15_01_GuitarStrg"><media id="fs-id1167131421041" alt="Zdjęcie strun gitary.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_15_01_GuitarStrg.jpg"/>
+    </media>
+    
+  <caption>Struna gitarowa po szarpnięciu wykonuje drgania periodyczne (okresowe) w górę i w dół. Struna wywołuje drgania otaczających cząsteczek powietrza i wytwarza fale dźwiękowe. (Źródło: Yutaka Tsutano) </caption></figure><section id="fs-id1167131467648">
+    <title>Okres i częstotliwość drgań</title>
+    <para id="fs-id1167134960712">W ruchu periodycznym <term cmlnle:reference="okres" class="no-emphasis">okresem</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">period</term></foreign>), oznaczanym <m:math><m:mi>T</m:mi></m:math>, nazywamy czas wykonania jednego pełnego drgania. Za jednostkę okresu przyjmujemy zazwyczaj sekundę, ale może być on wyrażony w innej jednostce czasu (np. minuta, godzina,…). Słowo „okres” oznacza też czas trwania jakiegoś zdarzenia, które może się powtarzać (ale nie musi). W tym podrozdziale zajmiemy się przede wszystkim ruchem okresowym, który z definicji jest ruchem powtarzalnym.</para><para id="fs-id1167131343764">Pojęciem ściśle związanym z okresem jest częstotliwość. <term cmlnle:reference="częstotliwość" class="no-emphasis">Częstotliwość</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">frequency</term></foreign>), oznaczaną <m:math>
+            <m:mi>f</m:mi>
+         </m:math>, określa się jako liczbę zdarzeń na jednostkę czasu. Dla ruchu periodycznego częstotliwość to liczba drgań (oscylacji) w jednostce czasu. Zależność między częstotliwością i okresem określa następujący wzór: </para><note id="fs-id1167134967900" class="equation-callout">
+        <equation id="fs-id1167131377089">
+          <label/>
+          <m:math>
+            <m:mrow>
+              <m:mi>f</m:mi>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mi>T</m:mi>
+              </m:mfrac>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+      </note>
+      <para id="fs-id1167129963501">W układzie SI jednostką częstotliwości jest <emphasis effect="italics">herc</emphasis> (Hz). 1 Hz określa się jako jeden <emphasis effect="italics">cykl na sekundę</emphasis>:</para><equation id="fs-id1167131432113" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:mn>1</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>Hz</m:mtext>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+            <m:mfrac>
+              <m:mrow>
+                <m:mtext>cykl</m:mtext>
+              </m:mrow>
+              <m:mrow>
+                <m:mtext>sekunda</m:mtext>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="0.5em"/>
+            <m:mtext>albo</m:mtext>
+            <m:mspace width="0.5em"/>
+            <m:mn>1</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>Hz</m:mtext>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mtext>s</m:mtext>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:msup>
+              <m:mrow>
+                <m:mtext>s</m:mtext>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>−1</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1167131088896">Cykl to jedno pełne <term class="no-emphasis">drgnienie</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">pulse</term></foreign>).</para><example id="fs-id1167134891908">
+        <para id="fs-id1167131217922"><title>Ustalenie częstotliwości fal stosowanych w ultrasonografii (USG) </title>Urządzenia ultradźwiękowe lekarze wykorzystują w celu obrazowania i badania narządów wewnętrznych ludzkiego ciała. Aparat USG emituje fale dźwiękowe o wysokiej częstotliwości, które odbijają się od narządów. Rejestracja i obróbka komputerowa danych pozwala uzyskać obraz, który następnie analizuje lekarz. Aby określić częstotliwość drgań, możemy zastosować wzór podany powyżej. Rozważmy urządzenie USG generujące ultradźwięki z oscylacjami o okresie <m:math>
+            <m:mrow>
+              <m:mn>0,400</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mi>μ</m:mi>
+              <m:mtext>s</m:mtext>
+            </m:mrow>
+            </m:math>. Jaka jest częstotliwość tych drgań?</para><para id="fs-id1167134452651"><title>Strategia rozwiązania</title>Mamy już podany okres drgań (<m:math>
+                  <m:mi>T</m:mi>
+                </m:math>), zatem musimy wyznaczyć częstotliwość (<m:math><m:mi>f</m:mi>
+              </m:math>).</para><para id="fs-id1167130301932"><title>Rozwiązanie</title>Podstawmy <m:math>
+                  <m:mrow>
+                    <m:mn>0,400</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mi>μ</m:mi>
+                    <m:mtext>s</m:mtext>
+                  </m:mrow>
+                </m:math> w miejsce <m:math>
+                  <m:mi>T</m:mi>
+                </m:math>
+               we wzorze <m:math>
+              <m:mrow>
+                <m:mi>f</m:mi>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mi>T</m:mi>
+                </m:mfrac>
+              </m:mrow>
+              </m:math>:</para><equation id="fs-id1167130203639" class="unnumbered">
+                <label/>
+                <m:math>
+                  <m:mi>f</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mi>T</m:mi>
+                  </m:mfrac>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mrow>
+                      <m:mn>0,400</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mrow>
+                          <m:mo>−</m:mo>
+                          <m:mn>6</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>.</m:mo>
+                </m:math>
+              </equation>
+              <para id="fs-id1167134541538">co daje:</para>
+              <equation id="fs-id1170904127048" class="unnumbered">
+                <m:math>
+                  <m:mi>f</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>2,50</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mn>6</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">H</m:mi>
+                    <m:mi mathvariant="normal">z</m:mi>
+                  </m:mrow>
+                  <m:mo>.</m:mo>
+                </m:math>
+              </equation>
+              <para id="fs-id1167131248982"><title>Znaczenie</title>Ta częstotliwość dźwięku jest znacznie wyższa niż najwyższa częstotliwość, jaką człowiek może usłyszeć (zakres słyszalności dźwięków u człowieka wynosi od 20 Hz do ok. 20 000 Hz), dlatego falę tę nazywamy ultradźwiękową. Drgania generowane przez urządzenia USG o tak wysokiej częstotliwości umożliwiają nieinwazyjną diagnostykę medyczną, np. obserwację płodu w łonie matki.</para></example>
+              </section>
+              <section id="fs-id1167131314724">
+                <title>Charakterystyka ruchu harmonicznego</title>
+                <para id="fs-id1167131234891">Bardzo powszechnym ruchem periodycznym jest <term class="no-emphasis">ruch harmoniczny</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">simple harmonic motion</term></foreign>). Układem, który swobodnie oscyluje i wykonuje ruch harmoniczny, jest <term class="no-emphasis">oscylator harmoniczny</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">harmonic oscillator</term></foreign>).</para><note id="fs-id1167131181710">
+                  <title>Ruch harmoniczny</title>
+                  <para id="fs-id1167131557387">W ruchu harmonicznym przyspieszenie układu, a więc i siła wypadkowa, są proporcjonalne do przemieszczenia i skierowane są w kierunku położenia równowagi.</para></note>
+                <para id="fs-id1167134503929">Dobrym przykładem ruchu harmonicznego jest klocek o masie <m:math>
+                    <m:mi>m</m:mi>
+                  </m:math>
+                   przymocowany do nieważkiej sprężyny i poruszający się po powierzchni bez tarcia, tak jak pokazano na <link target-id="CNX_UPhysics_15_01_MassSpring" cmlnle:case="locative"/>. Masa wykonuje drgania wokół położenia równowagi, a siła wypadkowa działająca na obiekt jest równa sile wywieranej przez sprężynę. Siła ta spełnia <term class="no-emphasis">prawo Hooke’a</term>
+                  <m:math>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>F</m:mi>
+                        <m:mi>s</m:mi>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mtext>−</m:mtext>
+                      <m:mi>k</m:mi>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                    </m:mrow>
+                    </m:math> zgodnie z treścią poprzedniego rozdziału.</para><para id="fs-id1167131259287">Jeżeli siłę wypadkową można opisać przez prawo Hooke'a i nie zachodzi <emphasis effect="italics">tłumienie</emphasis> (spowalniające ruch ze względu na tarcie lub inną siłę niezachowawczą), to oscylator harmoniczny wykonuje drgania. Zakres wartości przemieszczeń po obu stronach względem położenia równowagi jest podobny, tak jak pokazano na <link target-id="CNX_UPhysics_15_01_MassSpring" cmlnle:case="locative"/>. Maksymalne przemieszczenie względem położenia równowagi nazywamy <term cmlnle:reference="amplituda" class="no-emphasis">amplitudą</term> (<m:math>
+                        <m:mi>A</m:mi>
+                      </m:math>). Jednostki amplitudy i przesunięcia są takie same, ale zależą od rodzaju drgań. W przypadku klocka na sprężynie jednostki amplitudy i przemieszczenia wyraża się w metrach.</para><figure id="CNX_UPhysics_15_01_MassSpring"><media id="fs-id1167131606536" alt="Ruch swobodnej cząstki o masie m, zamocowanej do poziomej sprężyny o stałej sprężystości w różnych momentach jej ruchu. Na rysunku (a) masa jest przesunięta do położenia x = A, które znajduje się na prawo od punktu x =0 i wychylona z położenia równowagi (v=0). Sprężyna jest naprężona. Siła działająca na masę jest skierowana w lewo. Ciężar cząstki swobodnej w jest skierowany w dół, N oznacza siłę normalną, która jest skierowana w górę i równa jest ciężarowi, siła F jest skierowana w lewo. (b) Cząstka znajduje się w położeniu x = 0 i porusza się w kierunku przeciwnym do zwrotu osi x z prędkością v sub max. Sprężyna nie jest naprężona. Przyłożona do masy siła wynosi zero. Ciężar cząstki w jest skierowany w dół, siła normalna N jest skierowana w górę i jest równa ciężarowi. (c) Położenie ciała wynosi minus A i znajduje się ono po lewej stronie punktu x = 0 a prędkość masy wynosi v =0. Sprężyna jest ściśnięta. Siła F jest skierowana w prawo. Ciężar ciała w jest skierowany w dół, siła normalna N jest skierowana w górę i jest równa ciężarowi, siła F jest skierowana w prawo. (d) Ciało znajduje się w położeniu x = 0 i porusza się w kierunku zgodnym ze zwrotem osi x z prędkością plus v sub max. Sprężyna nie jest napięta. Siła przyłożona do ciała wynosi zero. Ciężar ciała w jest skierowany w dół, siła normalna N jest skierowana w górę i równa ciężarowi. (e) Ciało jest znowu w położeniu x = A, które znajduje się na prawo od punktu x =0 a prędkość wynosi v=0. Sprężyna jest naprężona. Siła przyłożona do ciała jest skierowana w lewo. Ciężar ciała w jest skierowany w dół, siła normalna N jest skierowana w górę i równa ciężarowi, siła F jest skierowana w lewo.">
+                          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_15_01_MassSpring.jpg"/>
+                        </media>
+                        
+  <caption>Dobrym przykładem oscylatora harmonicznego jest klocek przymocowany do sprężyny. Drugi koniec sprężyny przytwierdzono do ściany. Klocek porusza się po powierzchni bez tarcia. Położenie masy, gdy sprężyna nie jest ani rozciągnięta ani ściśnięta, oznaczono jako <m:math>
+                          <m:mrow>
+                            <m:mi>x</m:mi>
+                            <m:mo>=</m:mo>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:math>. Położenie to określa również stan równowagi. (a) Klocek przesunięto do położenia <m:math>
+                        <m:mrow>
+                          <m:mi>x</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mi>A</m:mi>
+                        </m:mrow>
+                      </m:math>, po czym swobodnie go puszczono. (b) Klocek przyspiesza i przemieszcza się w kierunku przeciwnym do zwrotu <m:math>
+                        <m:mi>x</m:mi>
+                      </m:math>
+                    i osiąga maksymalną ujemną prędkość w punkcie <m:math>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:math>. (c) Klocek kontynuuje ruch w ujemnym kierunku <m:math>
+                    <m:mi>x</m:mi>
+                  </m:math>, zmniejszając swoją prędkość aż do zatrzymania się w punkcie <m:math>
+                <m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mtext>−</m:mtext>
+                  <m:mi>A</m:mi>
+                </m:mrow>
+              </m:math>. (d) Klocek, poruszając się w kierunku zgodnym ze zwrotem osi <m:math>
+                <m:mi>x</m:mi>
+              </m:math>, przyspiesza i osiąga maksymalną prędkość w punkcie <m:math>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+            </m:mrow>
+          </m:math>. (e) Klocek kontynuuje ruch w kierunku dodatnim i zatrzymuje się w punkcie <m:math>
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>A</m:mi>
+          </m:mrow>
+        </m:math>. Ruch harmoniczny klocka ma amplitudę
+        <m:math>
+            <m:mi>A</m:mi>
+          </m:math>
+         i okres drgań <m:math>
+          <m:mi>T</m:mi>
+        </m:math>. Maksymalna prędkość klocka występuje, gdy przechodzi on przez punkt równowagi. Zastosowanie sztywniejszej sprężyny skróciłoby okres <m:math>
+        <m:mi>T</m:mi>
+      </m:math>
+     drgań. Przy zwiększeniu masy klocka nastąpiłoby wydłużenie okresu <m:math>
+      <m:mi>T</m:mi>
+    </m:math>
+     drgań.</caption></figure><para id="fs-id1167134781058">W ruchu harmonicznym okres <m:math>
+      <m:mi>T</m:mi>
+    </m:math>
+   i częstotliwość <m:math>
+    <m:mi>f</m:mi>
+  </m:math>
+   drgań oscylatora harmonicznego nie zależą od amplitudy drgań, np. struna gitary oscyluje z taką samą częstotliwością zarówno przy mocnym, jak i delikatnym szarpnięciu.</para><para id="fs-id1167129981431">Dwa ważne czynniki wpływają na okres drgań oscylatora harmonicznego: współczynnik sprężystości i masa układu drgającego. Układ z dużą wartością <term cmlnle:reference="współczynnik sprężystości" class="no-emphasis">współczynnika sprężystości</term> (<m:math><m:mi>k</m:mi></m:math>) ma krótszy okres drgań. Dzięki temu można, np. odpowiednio wybrać sztywność trampoliny. Im bardziej sztywna, tym szybciej oscyluje, a jej okres drgań jest krótszy. Okres zależy również od masy układu drgającego. Im układ ma większą masę, tym dłuższy jest okres drgań (np. ludzie o dużej masie oscylują na trampolinie z niższą częstotliwością niż ci o mniejszej masie). W rzeczywistości masa <m:math>
+    <m:mi>m</m:mi>
+  </m:math>
+ i współczynnik sprężystości <m:math>
+  <m:mi>k</m:mi>
+</m:math>
+ są jedynymi czynnikami, które wpływają na okres i częstotliwość drgań w ruchu harmonicznym. Aby wyprowadzić wyrażenie na okres i częstotliwość drgań, musimy najpierw zdefiniować i przeanalizować równania ruchu. </para></section>
+<section id="fs-id1167129981701">
+  <title>Równania opisujące ruch harmoniczny</title>
+  <para id="fs-id1167131271096">Przyjrzyjmy się klockowi przymocowanemu do sprężyny i poruszającemu się po stole bez tarcia (<link target-id="CNX_UPhysics_15_01_MSExpSetup"/>). <term cmlnle:reference="położenie równowagi" class="no-emphasis">Położenie równowagi</term> (miejsce, w którym sprężyna nie jest ani rozciągnięta, ani ściśnięta) oznaczono jako <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:mrow>
+    </m:math>. W położeniu równowagi siła wypadkowa wynosi zero.</para><figure id="CNX_UPhysics_15_01_MSExpSetup"><media id="fs-id1167134942232" alt="Blok jest zamocowany do poziomej sprężyny i leży na gładkiej powierzchni stołu. Położenie równowagi, w którym sprężyna nie jest ani wydłużona, ani ściśnięta jest oznaczone jako x=0. Położenie po lewej stronie bloku jest oznaczone jako x = - A, a położenie po prawej stronie bloku jako x = + A.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_15_01_MSExpSetup.jpg"/>
+      </media>
+      
+      <caption>Klocek przymocowano do sprężyny i umieszczono na stole, po którym może poruszać się bez tarcia. Położenie równowagi dla sprężyny nieodkształconej oznaczono jako <m:math>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+          <m:mo/>
+        </m:mrow>
+        </m:math>.</caption></figure><para id="fs-id1167134528344">Przesuwamy klocek do położenia <m:math>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>=</m:mo>
+          <m:mo>+</m:mo>
+          <m:mi>A</m:mi>
+          <m:mo/>
+        </m:mrow>
+      </m:math>, wykonując przy tym pracę, a następnie go puszczamy. Maksymalną wartość położenia <m:math>
+        <m:mi>x</m:mi>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mi>A</m:mi>
+        <m:mo stretchy="false">)</m:mo>
+      </m:math>
+     nazywamy amplitudą ruchu drgającego. Klocek zaczyna oscylować w zakresie pomiędzy <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mo>+</m:mo>
+      <m:mi>A</m:mi>
+    </m:mrow>
+  </m:math> a <m:math>
+  <m:mrow>
+    <m:mi>x</m:mi>
+    <m:mo>=</m:mo>
+    <m:mtext>−</m:mtext>
+    <m:mi>A</m:mi>
+    <m:mo/>
+  </m:mrow>
+</m:math>, gdzie <m:math>
+  <m:mi>A</m:mi>
+</m:math>
+ to amplituda ruchu, a <m:math>
+  <m:mi>T</m:mi>
+</m:math>
+ to okres drgań. Okres to czas trwania jednej oscylacji (cyklu). <link target-id="CNX_UPhysics_15_01_MassSprOsc"/> przedstawia ruch klocka, który wykonał półtora drgania (cyklu) od momentu zwolnienia. <link target-id="CNX_UPhysics_15_01_MassSprGrf"/> pokazuje wykres położenia klocka w funkcji czasu. Przebieg położenia w funkcji czasu możemy opisać funkcją cosinus o amplitudzie <m:math>
+  <m:mi>A</m:mi>
+</m:math>
+ i okresie <m:math>
+  <m:mi>T</m:mi>
+</m:math>. Wartości funkcji <m:math>
+<m:mrow>
+  <m:mtext>cos</m:mtext>
+  <m:mi>θ</m:mi>
+</m:mrow>
+</m:math> powtarzają się co każdą wielokrotność <m:math>
+<m:mrow>
+  <m:mn>2</m:mn>
+  <m:mi>π</m:mi>
+  <m:mo/>
+</m:mrow>
+</m:math>, natomiast ruch klocka – co jeden okres <m:math>
+  <m:mi>T</m:mi>
+</m:math>. Zauważmy, że wartości funkcji <m:math>
+<m:mi>cos</m:mi>
+<m:mo>⁡</m:mo>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>2</m:mn>
+<m:mi>π</m:mi>
+<m:mi>t</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mi>T</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:math> powtarzają się dla każdej chwili <m:math>
+  <m:mi>t</m:mi>
+</m:math>
+ będącej wielokrotnością okresu drgań. Maksimum wartości funkcji cosinus wynosi jeden, dlatego konieczne jest pomnożenie tej funkcji przez amplitudę <m:math>
+  <m:mi>A</m:mi>
+</m:math>. </para><note id="fs-id1167134687679" class="equation-callout">
+  <equation id="fs-id1167131399479">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mi>A</m:mi>
+        <m:mspace width="0.1em"/>
+        <m:mtext>cos</m:mtext>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+              </m:mrow>
+              <m:mi>T</m:mi>
+            </m:mfrac>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mi>A</m:mi>
+        <m:mspace width="0.1em"/>
+        <m:mtext>cos</m:mtext>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1167131399354">Przypomnijmy, że w rozdziale opisującym ruch po okręgu częstość kątową określiliśmy jako <m:math>
+  <m:mi>ω</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:mi>θ</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">d</m:mi>
+  </m:mrow>
+  <m:mi>t</m:mi>
+</m:math>. W rozważanym przypadku wartość okresu drgań jest stała, a więc częstość kątową (kołową) definiuje się jako <m:math>
+<m:mrow>
+  <m:mn>2</m:mn>
+  <m:mi>π</m:mi>
+</m:mrow>
+</m:math> podzielone przez wartość okresu drgań <m:math>
+<m:mi>ω</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+<m:mi>π</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mi>T</m:mi>
+</m:math>.</para><figure id="CNX_UPhysics_15_01_MassSprOsc"><media id="fs-id1167131636680" alt="Seria rysunków, ilustrujących ruch ciała o masie m, przymocowanego do poziomej sprężyny i poruszającego się po poziomej powierzchni. Położenie ciała, sprężyny i działająca na ciało siła są pokazane w chwilach, odpowiadających kolejnym jednym ósmym okresu, poczynając od chwili t = 0 do t = 1.5 T. Ilustracje leżą jedna pod drugą, ilustracje poszczególnych położeń ciała są połączone niebieską linią, tworząc wykres zależności położenia od czasu. Położenie x = 0 jest zlokalizowane po środku poziomej powierzchni. Na górnym rysunku ciało znajduje się w położeniu x = +A, wypadkowa siła jest skierowana w lewo i wynosi – kA. Sprężyna jest maksymalnie naprężona. Chwila czasu została oznaczona jako t = 0. Na drugim rysunku ciało znajduje się pomiędzy punktami x = +A/2 i x = A, siła wypadkowa jest skierowana w lewo i ma mniejszą wartość niż na poprzednim rysunku. Sprężyna jest mniej naprężona niż w chwili t=0. Na trzecim rysunku ciało znajduje się w położeniu x = 0, siła wypadkowa wynosi zero. Sprężyna nie jest naprężona. Chwila czasu jest oznaczona jako t = 1/4 T. Na czwartym rysunku ciało znajduje się pomiędzy punktami x = -A/2 i x = -A, siła wypadkowa jest skierowana w prawo. Wartość siły jest taka sama jak na drugim rysunku. Sprężyna jest nieco naprężona. Na piątym rysunku ciało znajduje się w położeniu x = -A, siła wypadkowa jest skierowana w prawo i wynosi + k A. Sprężyna jest maksymalnie naprężona. Chwila czasu to t = 1/2 T. Na szóstym rysunku ciało jest w położeniu pomiędzy punktami x = -A/2 i x = -A, siła wypadkowa jest skierowana w prawo. Wartość siły jest taka sama jak na drugim rysunku. Sprężyna jest nieco naprężona. Rysunek jest identyczny z rysunkiem czwartym. Na siódmym rysunku ciało znajduje się w położeniu x = 0, siła wypadkowa wynosi zero. Sprężyna nie jest naprężona. Chwila czasu wynosi t = 3/4 T. Rysunek jest taki sam jak trzeci rysunek. Na ósmym rysunku ciało znajduje się w położeniu pomiędzy punktami x = +A/2 i x = A, siła wypadkowa jest skierowana w lewo. Rysunek jest identyczny z rysunkiem drugim. Na dziewiątym rysunku ciało znajduje się w położeniu x = +A, siła wypadkowa jest skierowana w lewo i wynosi – k A. Sprężyna jest maksymalnie naprężona. Chwila czasu wynosi t = 0. Rysunek jest identyczny z rysunkiem pierwszym. Pozostałe cztery rysunki są identyczne z rysunkami kolejno drugim, trzecim, czwartym i piątym, chwila czasu dla jedenastego rysunku wynosi t = 1 i 1/4 T a dla trzynastego t = 1 i 1/2 T. Krzywa łącząca położenia ciała ma kształt sinusoidy.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_15_01_MassSprOsc.jpg"/>
+  </media>
+  
+<caption>Klocek umieszczono na stole i przymocowano do jednego końca sprężyny.  Drugi koniec sprężyny przymocowano do ściany. Klocek porusza się bez tarcia. Położenie równowagi, dla którego siła wypadkowa równa się zero, oznaczono jako <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>m</m:mtext>
+      <m:mtext/>
+    </m:mrow>
+  </m:math>. Przesuwamy klocek do położenia w punkcie <m:math>
+  <m:mrow>
+    <m:mi>x</m:mi>
+    <m:mo>=</m:mo>
+    <m:mo>+</m:mo>
+    <m:mi>A</m:mi>
+  </m:mrow>
+</m:math>, następnie puszczamy go swobodnie. Masa oscyluje w zakresie położeń pomiędzy <m:math>
+<m:mrow>
+  <m:mi>x</m:mi>
+  <m:mo>=</m:mo>
+  <m:mo>+</m:mo>
+  <m:mi>A</m:mi>
+</m:mrow>
+</m:math> a <m:math>
+<m:mrow>
+  <m:mi>x</m:mi>
+  <m:mo>=</m:mo>
+  <m:mtext>−</m:mtext>
+  <m:mi>A</m:mi>
+</m:mrow>
+</m:math>. Siłę wypadkową działającą na klocek pokazano w postaci wektora.</caption></figure><figure xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_15_01_MassSprGrf"><media id="fs-id1167131247808" alt="Wykres położenia w funkcji czasu. Zakres wartości na osi pionowej wynosi od – A do +A a na osi poziomej od 0 do 3/2 T. Krzywa jest funkcją cosinus, osiąga wartość +A dla t=0 oraz dla t=T.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_15_01_MassSprGrf.jpg"/>
+  </media>
+  
+<caption>Wykres położenia klocka z <link target-id="CNX_UPhysics_15_01_MassSprOsc" cmlnle:case="genitive"/> w funkcji czasu. Przebieg położenia można modelować funkcją okresową taką jak sinus albo cosinus.</caption></figure><para id="fs-id1167131487022">Wyrażenie przedstawiające położenie jako funkcję czasu <m:math>
+  <m:mrow>
+    <m:mi>x</m:mi>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mi>A</m:mi>
+    <m:mspace width="0.1em"/>
+    <m:mtext>cos</m:mtext>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>ω</m:mi>
+        <m:mi>t</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+  </m:mrow>
+</m:math> jest dobrym modelem opisującym sytuację, w której położenie klocka w chwili początkowej <m:math>
+<m:mrow>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>0,00</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mtext>s</m:mtext>
+</m:mrow>
+</m:math> jest równe amplitudzie <m:math>
+  <m:mi>A</m:mi>
+</m:math>, a prędkość początkowa wynosi zero. Przykładowe dane eksperymentalne najprawdopodobniej wykażą, że położenie masy w chwili początkowej <m:math>
+<m:mrow>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>0,00</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mtext>s</m:mtext>
+</m:mrow>
+</m:math> nie jest równe amplitudzie, a prędkość początkowa jest różna od zera. Rozważmy zbiór danych zebranych przez studenta w laboratorium dla 10 sekund ruchu, który przedstawiono na <link target-id="CNX_UPhysics_15_01_MassSprDat" cmlnle:case="locative"/>.</para><figure id="CNX_UPhysics_15_01_MassSprDat"><media id="fs-id1167131118403" alt="Zbiór danych położenia w funkcji czasu dla ciała zamocowanego na sprężynie. Pozioma oś czasu jest wyskalowana w sekundach, zakres wartości od 0 do 10 s. Pozioma oś przedstawia położenie x w centymetrach, zakres wartości -3 cm do 4 cm. Dane są zaprezentowane jako punkty, na każdą sekundę przypada 10 punktów. Dane układają się na sinusoidzie, w czasie 10 s wykonywane są 4 drgania. W chwili t=0, x = -0.8 cm. Maksymalne wychylenie, x = 3 cm osiągane jest dla położeń t = 0.6 s, 3.1 s, 5.5 s i 7.9 s. Minimalne wychylenie, x = -3 cm jest osiągane dla t=1.9 s, 4.3 s, 6.7 s i 9.0 s.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_15_01_MassSprDat.jpg"/>
+  </media>
+  
+<caption>Dane przedstawiają położenie klocka przymocowanego do sprężyny. Student rejestrował dane w laboratorium, posługując się dalmierzem akustycznym. Dane dla chwili <m:math>
+    <m:mrow>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0,00</m:mn>
+      <m:mtext>s</m:mtext>
+    </m:mrow>
+  </m:math> pokazują, że początkowe położenie klocka wynosi <m:math>
+  <m:mrow>
+    <m:mi>x</m:mi>
+    <m:mo>≈</m:mo>
+    <m:mo>−</m:mo>
+    <m:mn>0,80</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>cm</m:mtext>
+    <m:mo>≠</m:mo>
+    <m:mn>3,00</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>cm</m:mtext>
+  </m:mrow>
+</m:math>, zatem początkowe położenie nie jest równe amplitudzie <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>x</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mo>+</m:mo>
+  <m:mi>A</m:mi>
+</m:mrow>
+</m:math>. Prędkość jest pochodną przemieszczenia względem czasu, stąd można ją obliczyć z nachylenia stycznej do krzywej w danym punkcie. W chwili początkowej wartość kąta nachylenia stycznej nie jest równa zeru, więc prędkość nie wynosi <m:math>
+<m:mrow>
+  <m:mi>v</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>0,00</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mtext>m/s</m:mtext>
+</m:mrow>
+</m:math> w chwili <m:math>
+<m:mrow>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>0,00</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mtext>s</m:mtext>
+</m:mrow>
+</m:math>. </caption></figure><para id="fs-id1167134871170">Dane na <link target-id="CNX_UPhysics_15_01_MassSprDat" cmlnle:case="locative"/> można opisywać funkcją periodyczną taką jak funkcja cosinus, którą na wykresie przesunięto w prawo. To przesunięcie znane jest jako <term class="no-emphasis">przesunięcie fazowe</term> i zwykle oznacza się je grecką literą fi <m:math>
+  <m:mrow>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>ϕ</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+  </m:mrow>
+  </m:math>. Przemieszczenie jako funkcję czasu dla danego klocka na sprężynie opisuje wzór:</para><equation id="fs-id1167130205939" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mi>A</m:mi>
+        <m:mspace width="0.1em"/>
+        <m:mtext>cos</m:mtext>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>ϕ</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1167131196202">Ten uogólniony wzór opisuje ruch harmoniczny, gdzie <m:math>
+      <m:mi>t</m:mi>
+    </m:math>
+   oznacza czas mierzony w sekundach, <m:math>
+  <m:mi>ω</m:mi>
+</m:math> jest częstością kołową mierzoną w radianach na sekundę <m:math>
+<m:mo stretchy="false">(</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">r</m:mi>
+  <m:mi mathvariant="normal">a</m:mi>
+  <m:mi mathvariant="normal">d</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+</m:math>, <m:math>
+  <m:mi>A</m:mi>
+</m:math>
+ jest amplitudą mierzoną w metrach lub centymetrach, a <m:math>
+<m:mi>ϕ</m:mi>
+</m:math> jest przesunięciem fazowym wyrażonym w radianach (<link target-id="CNX_UPhysics_15_01_OffsetExam"/>). Należy zauważyć, że skoro funkcje sinus i cosinus różnią się jedynie o przesunięcie fazowe, to ruch harmoniczny może być modelowany zarówno przy użyciu funkcji cosinus, jak i sinus. </para><figure id="CNX_UPhysics_15_01_OffsetExam"><media id="fs-id1167129979691" alt="Dwa wykresy położenia w funkcji kąta. Na rysunku a, mamy funkcję cos kąta teta w funkcji teta, który przybiera wartości od pi do dwóch pi. Funkcja zmienia się pomiędzy -1 a +1, wartość maksymalną +1 osiąga dla teta równego zero. Na rysunku b mamy funkcję cos of kąta teta plus phi w funkcji teta, przybierającego wartości od minus pi do dwóch pi. Funkcja zmienia się od -1 do +1, i osiąga maximum dla teta równego phi. Krzywa jest cosinusoidą, przesuniętą w prawo o phi.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_15_01_OffsetExam.jpg"/>
+  </media>
+  
+<caption>(a) Funkcja cosinus. (b) Funkcja cosinus przesunięta w prawo o kąt o wartości <m:math>
+    <m:mi>ϕ</m:mi>
+  </m:math>. Kąt <m:math>
+  <m:mi>ϕ</m:mi>
+  </m:math> określa przesunięcie fazowe funkcji.</caption></figure><para id="fs-id1167134892558">Prędkość wykonującej ruch harmoniczny masy na sprężynie można wyznaczyć na podstawie pochodnej przemieszczenia względem czasu:</para><equation id="fs-id1167131362138" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mi>v</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>t</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>x</m:mi>
+      </m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>A</m:mi>
+    <m:mi>cos</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>ω</m:mi>
+    <m:mi>t</m:mi>
+    <m:mo>+</m:mo>
+    <m:mi>ϕ</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>=</m:mo>
+    <m:mo>−</m:mo>
+    <m:mi>A</m:mi>
+    <m:mi>ω</m:mi>
+    <m:mi>sin</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>ω</m:mi>
+    <m:mi>t</m:mi>
+    <m:mo>+</m:mo>
+    <m:mi>ϕ</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>=</m:mo>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mi mathvariant="normal">a</m:mi>
+          <m:mi mathvariant="normal">x</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:msub>
+    <m:mi>sin</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>ω</m:mi>
+    <m:mi>t</m:mi>
+    <m:mo>+</m:mo>
+    <m:mi>ϕ</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1167134929478">Ze względu na to, że funkcja sinus zmienia się w zakresie od -1 do +1, to prędkość maksymalna jest iloczynem amplitudy i częstości kątowej (<m:math>
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mrow>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mi mathvariant="normal">a</m:mi>
+        <m:mi mathvariant="normal">x</m:mi>
+      </m:mrow>
+    </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mi>A</m:mi>
+  <m:mi>ω</m:mi>
+</m:math> ). Maksymalna prędkość występuje podczas przejścia przez położenie równowagi <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+</m:mrow>
+</m:math>, kiedy masa porusza się w kierunku <m:math>
+<m:mrow>
+  <m:mi>x</m:mi>
+  <m:mo>=</m:mo>
+  <m:mo>+</m:mo>
+  <m:mi>A</m:mi>
+</m:mrow>
+</m:math>. Maksymalną prędkość w kierunku przeciwnym osiąga się w położeniu równowagi <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+</m:mrow>
+</m:math>, kiedy masa porusza się w kierunku <m:math>
+<m:mrow>
+  <m:mi>x</m:mi>
+  <m:mo>=</m:mo>
+  <m:mtext>−</m:mtext>
+  <m:mi>A</m:mi>
+</m:mrow>
+</m:math> i wynosi <m:math>
+<m:mrow>
+  <m:mtext>−</m:mtext>
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mrow>
+      <m:mtext>max</m:mtext>
+    </m:mrow>
+  </m:msub>
+</m:mrow>
+</m:math>.</para><para id="fs-id1167131632292">Przyspieszenie masy na sprężynie można wyznaczyć z pochodnej prędkości względem czasu:</para>
+<equation id="fs-id1167129981969" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mi>a</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>t</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>v</m:mi>
+      </m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mi mathvariant="normal">d</m:mi>
+      </m:mrow>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mo>−</m:mo>
+    <m:mi>A</m:mi>
+    <m:mi>ω</m:mi>
+    <m:mi>sin</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>ω</m:mi>
+    <m:mi>t</m:mi>
+    <m:mo>+</m:mo>
+    <m:mi>ϕ</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>=</m:mo>
+    <m:mo>−</m:mo>
+    <m:mi>A</m:mi>
+    <m:msup>
+      <m:mi>ω</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>cos</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>ω</m:mi>
+    <m:mi>t</m:mi>
+    <m:mo>+</m:mo>
+    <m:mi>ϕ</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>=</m:mo>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mi>a</m:mi>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mi mathvariant="normal">a</m:mi>
+          <m:mi mathvariant="normal">x</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:msub>
+    <m:mi>cos</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>ω</m:mi>
+    <m:mi>t</m:mi>
+    <m:mo>+</m:mo>
+    <m:mi>ϕ</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1167131427399">Wprowadziliśmy oznaczenie <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>a</m:mi>
+      <m:mrow>
+        <m:mtext>max</m:mtext>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mi>A</m:mi>
+    <m:msup>
+      <m:mi>ω</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+  </m:mrow>
+</m:math>. W położeniu <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mo/>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mtext>−</m:mtext>
+      <m:mi>A</m:mi>
+    </m:mrow>
+    <m:mo/>
+  </m:mrow>
+</m:mrow>
+</m:math> przyspieszenie ciała osiąga maksymalną wartość bezwzględną, która wynosi <m:math>
+<m:mrow>
+  <m:mtext>−</m:mtext>
+  <m:msub>
+    <m:mi>a</m:mi>
+    <m:mrow>
+      <m:mtext>max</m:mtext>
+    </m:mrow>
+  </m:msub>
+</m:mrow>
+</m:math>.</para>
+</section>
+<section id="fs-id1167131078626">
+  <title>Podsumowanie wzorów opisujących ruch harmoniczny</title>
+  <para id="fs-id1167131616657">Podsumowując, ruch drgający masy na sprężynie może być opisywany następującymi równaniami:</para>
+  <note id="fs-id1167131587782" class="equation-callout">
+    <equation id="fs-id1167131605890">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mi>A</m:mi>
+          <m:mtext>cos</m:mtext>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:mi>ϕ</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <equation id="fs-id1167131144268">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:mi>v</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mtext>−</m:mtext>
+          <m:msub>
+            <m:mi>v</m:mi>
+            <m:mrow>
+              <m:mtext>max</m:mtext>
+            </m:mrow>
+          </m:msub>
+          <m:mtext>sin</m:mtext>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:mi>ϕ</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <equation id="fs-id1167131334061">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:mi>a</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mtext>−</m:mtext>
+          <m:msub>
+            <m:mi>a</m:mi>
+            <m:mrow>
+              <m:mtext>max</m:mtext>
+            </m:mrow>
+          </m:msub>
+          <m:mtext>cos</m:mtext>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:mi>ϕ</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <equation id="fs-id1167131433279">
+      <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>x</m:mi>
+            <m:mrow>
+              <m:mtext>max</m:mtext>
+            </m:mrow>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mi>A</m:mi>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <equation id="fs-id1167131152882">
+      <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>v</m:mi>
+            <m:mrow>
+              <m:mtext>max</m:mtext>
+            </m:mrow>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mi>A</m:mi>
+          <m:mi>ω</m:mi>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <equation id="fs-id1167131476351">
+      <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>a</m:mi>
+            <m:mrow>
+              <m:mtext>max</m:mtext>
+            </m:mrow>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mi>A</m:mi>
+          <m:msup>
+            <m:mi>ω</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+  </note>
+  <para id="fs-id1167131435550">W tym przypadku <m:math>
+      <m:mi>A</m:mi>
+    </m:math>
+   jest amplitudą ruchu, <m:math>
+    <m:mi>T</m:mi>
+  </m:math>
+ jest okresem drgań, <m:math>
+<m:mi>ϕ</m:mi>
+</m:math> jest przesunięciem fazowym, a <m:math>
+<m:mrow>
+  <m:mi>ω</m:mi>
+  <m:mo>=</m:mo>
+  <m:mfrac>
+    <m:mrow>
+      <m:mn>2</m:mn>
+      <m:mi>π</m:mi>
+    </m:mrow>
+    <m:mi>T</m:mi>
+  </m:mfrac>
+  <m:mo>=</m:mo>
+  <m:mn>2</m:mn>
+  <m:mi>π</m:mi>
+  <m:mi>f</m:mi>
+</m:mrow>
+</m:math> jest częstością kołową ruchu klocka.</para><example id="fs-id1167131618352">
+  <para id="fs-id1167131444519"><title>Wyznaczanie wyrażeń opisujących ruch klocka na sprężynie</title>Klocek o masie 2 kg umieszczono na idealnie gładkiej powierzchni, a tarcie nie wpływa na ruch klocka. Sprężynę o współczynniku sprężystości <m:math>
+      <m:mrow>
+        <m:mi>k</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>32,00</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mtext>N</m:mtext>
+          <m:mtext>/</m:mtext>
+          <m:mtext>m</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:math> przymocowano do klocka, a jej przeciwny koniec przyczepiono do ściany. Sprężyna może ulec skróceniu lub rozciągnięciu. Położenie równowagi układu oznaczono jako <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0,00</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>m</m:mtext>
+      <m:mtext/>
+    </m:mrow>
+    </m:math>. </para><para id="fs-id1167131255532">Praca wykonana nad klockiem powoduje jego przesunięcie do położenia <m:math>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mo>=</m:mo>
+        <m:mo>+</m:mo>
+        <m:mn>0,02</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>m</m:mtext>
+        <m:mtext/>
+      </m:mrow>
+    </m:math>. Klocek puszczono swobodnie, powodując jego oscylacje w zakresie wartości przemieszczeń pomiędzy <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mo>+</m:mo>
+      <m:mn>0,02</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>m</m:mtext>
+    </m:mrow>
+  </m:math> a <m:math>
+  <m:mrow>
+    <m:mi>x</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>−0,02</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>m</m:mtext>
+    <m:mtext/>
+  </m:mrow>
+  </m:math>. Okres drgań wynosi 1,57 s. Wyznacz wyrażenia opisujące ruch.</para><para id="fs-id1167131511855"><title>Strategia rozwiązania</title>Najpierw wyznaczamy wartość częstości kołowej. Przesunięcie fazowe jest zerowe, <m:math>
+      <m:mrow>
+        <m:mi>ϕ</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0,00</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>rad</m:mtext>
+      </m:mrow>
+    </m:math>, ponieważ ruch klocka zaczyna się w położeniu <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mi>A</m:mi>
+      <m:mo>=</m:mo>
+      <m:mo>+</m:mo>
+      <m:mn>0,02</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>m</m:mtext>
+      <m:mtext/>
+    </m:mrow>
+    </m:math>. Po wyznaczeniu częstości kątowej możemy określić maksymalne wartości prędkości i przyspieszenia klocka.</para><para id="fs-id1167130040139"><title>Rozwiązanie</title>Częstość kątową możemy wyznaczyć, a następnie użyć do wyliczenia maksymalnych wartości prędkości i przyspieszenia:</para><equation id="fs-id1167131129743" class="unnumbered"><label/>
+        <m:math>
+          <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <m:mtr>
+              <m:mtd>
+                <m:mi>ω</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mi/>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>π</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>1,57</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mn>4,00</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mi mathvariant="normal">a</m:mi>
+                      <m:mi mathvariant="normal">x</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:msub>
+              </m:mtd>
+              <m:mtd>
+                <m:mi/>
+                <m:mo>=</m:mo>
+                <m:mi>A</m:mi>
+                <m:mi>ω</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0,02</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mn>4,00</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mn>0,08</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mi mathvariant="normal">a</m:mi>
+                      <m:mi mathvariant="normal">x</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:msub>
+              </m:mtd>
+              <m:mtd>
+                <m:mi/>
+                <m:mo>=</m:mo>
+                <m:mi>A</m:mi>
+                <m:msup>
+                  <m:mi>ω</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:mn>0,02</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>4,00</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:mn>0,32</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi mathvariant="normal">s</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>.</m:mo>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="fs-id1167129965798">Możemy więc zapisać następujące wyrażenia opisujące ruch masy:</para>
+      <equation id="fs-id1167129962398" class="unnumbered"><label/>
+        <m:math>
+          <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <m:mtr>
+              <m:mtd>
+                <m:mi>x</m:mi>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo stretchy="false">)</m:mo>
+              </m:mtd>
+              <m:mtd>
+                <m:mi/>
+                <m:mo>=</m:mo>
+                <m:mi>A</m:mi>
+                <m:mi>cos</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>ϕ</m:mi>
+                <m:mo stretchy="false">)</m:mo>
+                <m:mo>=</m:mo>
+                <m:mn>0,02</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mi>cos</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>4,00</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>⋅</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd>
+                <m:mi>v</m:mi>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo stretchy="false">)</m:mo>
+              </m:mtd>
+              <m:mtd>
+                <m:mi/>
+                <m:mo>=</m:mo>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mi mathvariant="normal">a</m:mi>
+                      <m:mi mathvariant="normal">x</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:msub>
+                <m:mi>sin</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>ϕ</m:mi>
+                <m:mo stretchy="false">)</m:mo>
+                <m:mo>=</m:mo>
+                <m:mo>−</m:mo>
+                <m:mn>0,08</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>⋅</m:mo>
+                <m:mi>sin</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>4,00</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>⋅</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd>
+                <m:mi>a</m:mi>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo stretchy="false">)</m:mo>
+              </m:mtd>
+              <m:mtd>
+                <m:mi/>
+                <m:mo>=</m:mo>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mi mathvariant="normal">a</m:mi>
+                      <m:mi mathvariant="normal">x</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:msub>
+                <m:mi>cos</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>ϕ</m:mi>
+                <m:mo stretchy="false">)</m:mo>
+                <m:mo>=</m:mo>
+                <m:mo>−</m:mo>
+                <m:mn>0,32</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">m</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi mathvariant="normal">s</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>⋅</m:mo>
+                <m:mi>cos</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>4,00</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                    <m:mo>⋅</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>.</m:mo>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="fs-id1167131626517">
+        <title>Znaczenie</title>Dla dowolnej chwili ruchu drgającego możemy określić położenie, prędkość i przyspieszenie. Ważne jest, aby przy korzystaniu z kalkulatora ustalić tryb rad (radiany) jako jednostkę miary kąta.</para>
+      </example>
+    </section>
+    <section id="fs-id1167130004422">
+      <title>Okres i częstotliwość drgań masy na sprężynie</title>
+      <para id="fs-id1167131581434">Jedną z cech ruchu harmonicznego klocka umocowanego do sprężyny jest to, że częstość kołowa, a więc okres i częstotliwość drgań, zależą tylko od masy i współczynnika sprężystości, a nie od innych czynników (np. od amplitudy drgań). Możemy więc skorzystać z prawa Hooke’a i drugiej zasady dynamiki Newtona <m:math>
+        <m:mover>
+          <m:mi>F</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+      </m:math>=<m:math>
+      <m:mi>m</m:mi>
+      <m:mover>
+        <m:mi>a</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+      </m:math>, aby znaleźć wzory na częstość kołową, częstotliwość i okres drgań.</para><para id="fs-id1167129987818">Przyjrzyjmy się klockowi na sprężynie poruszającemu się po powierzchni bez tarcia. Na masę działają trzy siły: siła ciężkości, siła normalna i siła sprężystości. Siły, które działają prostopadle do powierzchni, to siła ciężkości i siła normalna, mające jednakowe wartości i przeciwne kierunki, a ich suma wynosi zero. Jedyną siłą, która działa równolegle do powierzchni, jest siła sprężystości, a więc siła wypadkowa jest równa sile wywieranej przez sprężynę na klocek:</para><equation id="fs-id1167131181895" class="unnumbered"><label/>
+        <m:math>
+          <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <m:mtr>
+              <m:mtd>
+                <m:msub>
+                  <m:mi>F</m:mi>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                </m:msub>
+              </m:mtd>
+              <m:mtd>
+                <m:mi/>
+                <m:mo>=</m:mo>
+                <m:mo>−</m:mo>
+                <m:mi>k</m:mi>
+                <m:mi>x</m:mi>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd>
+                <m:mi>m</m:mi>
+                <m:mi>a</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mi/>
+                <m:mo>=</m:mo>
+                <m:mo>−</m:mo>
+                <m:mi>k</m:mi>
+                <m:mi>x</m:mi>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd>
+                <m:mi>m</m:mi>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi mathvariant="normal">d</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">d</m:mi>
+                    </m:mrow>
+                    <m:msup>
+                      <m:mi>t</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mtd>
+              <m:mtd>
+                <m:mi/>
+                <m:mo>=</m:mo>
+                <m:mo>−</m:mo>
+                <m:mi>k</m:mi>
+                <m:mi>x</m:mi>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi mathvariant="normal">d</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mi>x</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">d</m:mi>
+                    </m:mrow>
+                    <m:msup>
+                      <m:mi>t</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mtd>
+              <m:mtd>
+                <m:mi/>
+                <m:mo>=</m:mo>
+                <m:mo>−</m:mo>
+                <m:mfrac>
+                  <m:mi>k</m:mi>
+                  <m:mi>m</m:mi>
+                </m:mfrac>
+                <m:mi>x</m:mi>
+                <m:mo>.</m:mo>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:math>
+      </equation>
+      <para id="fs-id1167131091220">Podstawiając <link target-id="fs-id1167131605890"/> i <link target-id="fs-id1167131334061"/> w miejsce <m:math>
+          <m:mi>x</m:mi>
+        </m:math>
+       i <m:math>
+        <m:mi>a</m:mi>
+      </m:math>
+       otrzymujemy:</para><equation id="fs-id1167131414465" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:mtext>−</m:mtext>
+            <m:mi>A</m:mi>
+            <m:msup>
+              <m:mi>ω</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mtext>cos</m:mtext>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>ϕ</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mfrac>
+              <m:mi>k</m:mi>
+              <m:mi>m</m:mi>
+            </m:mfrac>
+            <m:mi>A</m:mi>
+            <m:mtext>cos</m:mtext>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>ϕ</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="fs-id1167131141784">Po wyłączeniu podobnych członów wyznaczamy częstość kołową:</para>
+      <note id="fs-id1167131141787" class="equation-callout">
+        <equation id="fs-id1167131237022">
+          <label/>
+          <m:math>
+            <m:mrow>
+              <m:mi>ω</m:mi>
+              <m:mo>=</m:mo>
+              <m:msqrt>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mi>k</m:mi>
+                    <m:mi>m</m:mi>
+                  </m:mfrac>
+                </m:mrow>
+              </m:msqrt>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+      </note>
+      <para id="fs-id1167131459185">Częstość kołowa zależy jedynie od współczynnika sprężystości i masy klocka, a nie od amplitudy drgań. Wykorzystując wzór na częstość kołową <m:math>
+        <m:mrow>
+          <m:mi>ω</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>2</m:mn>
+          <m:mi>π</m:mi>
+          <m:mtext>/</m:mtext>
+          <m:mi>T</m:mi>
+          <m:mo/>
+        </m:mrow>
+        </m:math> otrzymujemy wzór na okres drgań:</para><note id="fs-id1167131247043" class="equation-callout">
+          <equation id="fs-id1167134573788">
+            <label/>
+            <m:math>
+              <m:mrow>
+                <m:mi>T</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+                <m:msqrt>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mi>m</m:mi>
+                      <m:mi>k</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:msqrt>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation>
+        </note>
+        <para id="fs-id1167134929970">Okres drgań zależy tylko od masy klocka i współczynnika sprężystości. Im większa masa, tym dłuższy okres, a im sztywniejsza sprężyna, tym okres jest krótszy. Częstotliwość opisuje wzór:</para><note id="fs-id1167134929975" class="equation-callout">
+          <equation id="fs-id1167131231742">
+            <label/>
+            <m:math>
+              <m:mrow>
+                <m:mi>f</m:mi>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mi>T</m:mi>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>π</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+                <m:msqrt>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mi>k</m:mi>
+                      <m:mi>m</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:msqrt>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation>
+        </note>
+      </section>
+      <section id="fs-id1167131091228">
+        <title>Drgania pionowe</title><para id="fs-id1167130269218">Zgodnie z <link target-id="CNX_UPhysics_15_04_VerSpEquil" cmlnle:case="instrumental"/> do sprężyny zawieszonej pionowo przymocowano klocek. Zauważmy, że siła grawitacji zmienia położenie równowagi układu. Na klocek działają dwie siły: ciężar i siła sprężystości. Siła ciężkości jest stała, a siła sprężystości zmienia się wraz ze zmianą długości sprężyny. Klocek wykonuje ruch harmoniczny.</para><figure id="CNX_UPhysics_15_04_VerSpEquil"><media id="fs-id1167131502495" alt="Rysunek przedstawia pionową sprężynę, zamocowaną do sufitu. Oś y jest skierowana w górę. Na rysunku a, który jest po lewej stronie, nie ma ciała zawieszonego na sprężynie. Dolny koniec sprężyny znajduje się w odległości y sub zero od podłogi. Na środkowym rysunku, b, na sprężynie zawieszone jest ciało o masie m. Górny koniec sprężyny znajduje się na tym samym poziomie co na rysunku a, ale sprężyna jest skrócona o odcinek delta y, stąd dolny koniec sprężyny znajduje się w odległości y sub 1 równej y sub zero minus delta y od podłogi. Na rysunku c, z prawej strony, siły działające na ciało to siła ciężaru, która wynosi mg i jest skierowana w dół oraz siła F sub s skierowana w górę, która wynosi k delta y, czyli k razy nawias, a w nawiasie y sub zero minus y sub 1.">
+            <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_15_04_VerSpEquil.jpg"/>
+          </media>
+          
+        <caption>Sprężynę zawieszono pod sufitem. Po przyłączeniu klocka masa znajduje się w nowym położeniu równowagi; w punkcie tym siła ciężkości jest zrównoważona siłą sprężystości. (a) Sprężyna zwisa z sufitu; położenie równowagi oznaczono jako <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mi>o</m:mi>
+              </m:msub>
+            </m:mrow>
+          </m:math>. (b) Masa, którą zamocowano na sprężynie, osiąga nowe położenie równowagi (<m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>y</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>y</m:mi>
+              <m:mi>o</m:mi>
+            </m:msub>
+            <m:mo>−</m:mo>
+            <m:mtext>Δ</m:mtext>
+            <m:mi>y</m:mi>
+          </m:mrow>
+          </m:math>), kiedy siła działająca na klocek równa się sile ciężkości. (c) Diagram dwóch sił działających na masę: siły ciężkości i siły sprężystości.</caption></figure><para id="fs-id1167134892023">Gdy klocek osiąga położenie równowagi tak jak na <link target-id="CNX_UPhysics_15_04_VerSpEquil" cmlnle:case="locative"/>, wartość siły sprężystości jest równa wartości siły ciężkości działającej na klocek <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mrow>
+                <m:mtext>wyp</m:mtext>
+              </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mtext>s</m:mtext>
+            </m:msub>
+            <m:mo>−</m:mo>
+            <m:mi>m</m:mi>
+            <m:mi>g</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:mrow>
+          </m:math>, gdzie:</para><equation id="fs-id1167131531797" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mrow>
+                <m:mtext>−</m:mtext>
+                <m:mi>k</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mtext>−</m:mtext>
+                    <m:mtext>Δ</m:mtext>
+                    <m:mi>y</m:mi>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mi>m</m:mi>
+                <m:mi>g</m:mi>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation>
+          <para id="fs-id1167130226551">Z rysunku możemy wywnioskować, że zmiana położenia wynosi <m:math>
+            <m:mrow>
+              <m:mtext>Δ</m:mtext>
+              <m:mi>y</m:mi>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mi>0</m:mi>
+              </m:msub>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:mrow>
+            </m:math>, a zatem otrzymujemy:</para><equation id="fs-id1167131521958" class="unnumbered">
+              <label/>
+              <m:math>
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>y</m:mi>
+                        <m:mi>0</m:mi>
+                      </m:msub>
+                      <m:mo>−</m:mo>
+                      <m:msub>
+                        <m:mi>y</m:mi>
+                        <m:mn>1</m:mn>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mi>m</m:mi>
+                  <m:mi>g</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>0</m:mn>
+                  <m:mo>.</m:mo>
+                </m:mrow>
+              </m:math>
+            </equation>
+            <para id="fs-id1167129980696">Jeżeli klocek przesuniemy w płaszczyźnie pionowej, a następnie powoli puścimy, to będzie oscylować wokół nowego położenia równowagi. Jak pokazano na <link target-id="CNX_UPhysics_15_04_HungSpring" cmlnle:case="locative"/>, jeżeli położenie klocka określono w funkcji czasu, to dane tworzą funkcję okresową. </para><para id="fs-id1167130362582">Jeśli klocek przesuniemy do pozycji
+              <m:math>
+                <m:mi>y</m:mi>
+              </m:math>, to siła wypadkowa wyniesie <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>F</m:mi>
+                <m:mrow>
+                  <m:mtext>wyp</m:mtext>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mi>k</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>y</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mi>m</m:mi>
+              <m:mi>g</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+            </m:mrow>
+          </m:math>. Dla położenia równowagi zachodzi zależność <m:math>
+          <m:mrow>
+            <m:mi>m</m:mi>
+            <m:mi>g</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>k</m:mi>
+            <m:mtext>Δ</m:mtext>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>k</m:mi>
+            <m:msub>
+              <m:mi>y</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>−</m:mo>
+            <m:mi>k</m:mi>
+            <m:msub>
+              <m:mi>y</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mrow>
+          </m:math>, a zatem:</para><equation id="fs-id1167131360764" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>F</m:mi>
+                  <m:mrow>
+                    <m:mtext>wyp</m:mtext>
+                  </m:mrow>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mi>k</m:mi>
+                <m:mi>y</m:mi>
+                <m:mo>−</m:mo>
+                <m:mi>k</m:mi>
+                <m:msub>
+                  <m:mi>y</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>−</m:mo>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mi>k</m:mi>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>−</m:mo>
+                    <m:mi>k</m:mi>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mtext>−</m:mtext>
+                <m:mi>k</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mi>y</m:mi>
+                    <m:mo>−</m:mo>
+                    <m:msub>
+                      <m:mi>y</m:mi>
+                      <m:mn>1</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>.</m:mo>
+              </m:mrow>
+            </m:math>
+          </equation>
+          <para id="fs-id1167131607817">Przypominamy, że <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:mrow>
+          </m:math> jest położeniem równowagi, które możemy określić względem dowolnego punktu, może więc przykładowo wynosić <m:math>
+          <m:mn>0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          </m:math>. Wówczas siła wypadkowa wyniesie:</para><equation id="fs-id1167134723964" class="unnumbered"><label/>
+            <m:math>
+              <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+                <m:mtr>
+                  <m:mtd>
+                    <m:msub>
+                      <m:mi>F</m:mi>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">w</m:mi>
+                          <m:mi mathvariant="normal">y</m:mi>
+                          <m:mi mathvariant="normal">p</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:msub>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mi/>
+                    <m:mo>=</m:mo>
+                    <m:mo>−</m:mo>
+                    <m:mi>k</m:mi>
+                    <m:mi>y</m:mi>
+                  </m:mtd>
+                </m:mtr>
+                <m:mtr>
+                  <m:mtd>
+                    <m:mi>m</m:mi>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msup>
+                            <m:mi mathvariant="normal">d</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mi>y</m:mi>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">d</m:mi>
+                        </m:mrow>
+                        <m:msup>
+                          <m:mi>t</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mtd>
+                  <m:mtd>
+                    <m:mi/>
+                    <m:mo>=</m:mo>
+                    <m:mo>−</m:mo>
+                    <m:mi>k</m:mi>
+                    <m:mi>y</m:mi>
+                    <m:mo>.</m:mo>
+                  </m:mtd>
+                </m:mtr>
+              </m:mtable>
+            </m:math>
+          </equation>
+          <para id="fs-id1167131096793">Jest to więc zależność analogiczna do tej, którą wcześniej znaleźliśmy dla horyzontalnie drgającej masy na sprężynie. Działanie stałej siły grawitacji spowodowało jedynie zmianę położenia punktu równowagi. W związku z tym końcowe rozwiązanie powinno mieć taką samą postać jak dla klocka drgającego w poziomie: <m:math>
+            <m:mrow>
+              <m:mi>y</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mi>A</m:mi>
+              <m:mtext>cos</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>ω</m:mi>
+                  <m:mi>t</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mi>ϕ</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+            </m:math>. Zauważmy też, że ruch możemy opisać funkcją cosinus lub sinus, ponieważ te dwie funkcje różnią się jedynie o wartość przesunięcia fazowego. Podobnie równania określające prędkość i przyspieszenie klocka drgającego pionowo mają postać identyczną jak wzory dla ruchu horyzontalnego. </para><figure id="CNX_UPhysics_15_04_HungSpring"><media id="fs-id1167131111015" alt="Seria 10 rysunków, ilustrujących piłkę zamocowaną na pionowej sprężynie. Rysunki są rozmieszczone jeden obok drugiego. Pionowe położenia zostały oznaczone jako y = +A, y = 0 i y = -A i znajdują się po prawej stronie rysunku. Idąc od lewej do prawej: na rysunku najbardziej na lewo sprężyna jest ściśnięta, piłka znajduje się w położeniu y = +A. Na drugim rysunku piłka znajduje się w położeniu y = 0 i przemieszcza się w dół. Na trzecim rysunku sprężyna jest ściśnięta, piłka znajduje się w położeniu y = -A. Na czwartym rysunku piłka znajduje się w położeniu y = 0 i przemieszcza się w górę. Na piątym rysunku sprężyna jest ściśnięta, piłka jest w położeniu y = +A. Na szóstym rysunku piłka znajduje się w położeniu y = 0 i porusza się w dół. Na siódmym rysunku sprężyna jest rozciągnięta i piłka znajduje się w położeniu y = -A. Na ósmym rysunku piłka znajduje się w położeniu y = 0 i porusza się w górę. Na dziewiątym rysunku sprężyna jest ściśnięta, a piłka znajduje się w położeniu y = +A. Na dzisiątym rysunku piłka znajduje się w położeniu y = 0 i porusza się w górę. Poniżej tych rysunków znajduje się seria rysunków ułożonych pionowo. Górny rysunek to wykres położenia w funkcji czasu. Na osi pionowej mamy położenie y, którego wartości zmieniają się między –A a +A. Oś pozioma to czas t, wyskalowana w T. Wartość y=+A występuje dla t=0, liczba drgań to 2 i 1/4. Pozioma odległość między maksimami funkcji wynosi T, a pionowa odległość pomiędzy poziomymi osiami a maximum jest oznaczona jako amplituda A. Środkowy rysunek przedstawia wykres prędkości w funkcji czasu. Oś pionowa to prędkość v, zakres prędkości wynosi od minus v sub max do v max. Pozioma oś to czas t, wyskalowana w T. Funkcja osiąga v=0 dla t=0 a liczba cykli wynosi 2 i 1/4. Dolny wykres przedstawia przyspieszenie w funkcji czasu. Oś pozioma to przyspieszenie a, które przybiera wartości między -a sub max do +a max. Oś pozioma to czas t, wyskalowana w T. Zaznaczone wartości to a równe minus a sub max i a równe a sub max, zaś liczba cykli wynosi 2 i 1/4. Poniżej tych wykresów znajdują się trzy rysunki przedstawiające piłkę na sprężynie. Po prawej stronie zaznaczono położenia y = +A, y=0 i y = -A. Na górnym rysunku po lewej stronie widać rękę trzymającą piłkę, długość sprężyny jest oznaczona jako długość sprężyny nieodkształconej. To położenie znajduje się powyżej y = +A. Na środkowym rysunku piłka nie jest trzymana i znajduje się w położeniu opisanym jako położenie równowagi. To położenie to y = 0. Na rysunku po prawej stronie piłka jest pokazana w czterech różnych położeniach. Te położenia to y = +A, nieco powyżej y = 0, nieco poniżej y = 0 i y = -A.">
+                <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_15_04_HungSpring.jpg"/>
+              </media>
+              
+    <caption>Wykresy 
+                <m:math>
+                    <m:mi>y</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mi>t</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                  </m:math>, <m:math>
+                <m:mi>v</m:mi>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mi>t</m:mi>
+                <m:mo stretchy="false">)</m:mo>
+              </m:math>
+             i <m:math>
+              <m:mi>a</m:mi>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo stretchy="false">)</m:mo>
+            </m:math>
+           w funkcji czasu <m:math>
+            <m:mi>t</m:mi>
+          </m:math>
+         dla pionowych drgań kuli na sprężynie. Siłę wypadkową działającą na kulę można opisać prawem Hooke'a, więc kula porusza się ruchem harmonicznym. Należy zauważyć, że początkowe położenie osiąga wartość maksymalną <m:math>
+          <m:mi>A</m:mi>
+        </m:math>
+      ; <m:math>
+        <m:mi>v</m:mi>
+      </m:math>
+       jest początkowo zerowa, a następnie staje się ujemna, kiedy kula porusza się w dół. Początkowe przyspieszenie jest ujemne, następnie kula przesuwając się do położenia równowagi, osiąga zerową wartość przyspieszenia.</caption></figure></section>
+  <section id="fs-id1167130057012" class="key-concepts">
+    <title>Podsumowanie</title>
+    <list xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167134648788" list-type="bulleted" bullet-style="bullet"><item>Ruch periodyczny to powtarzające się drgania. Czas wykonania jednego pełnego drgnienia to okres <m:math>
+          <m:mi>T</m:mi>
+        </m:math>, liczba drgań na jednostkę czasu definiuje zaś częstotliwość <m:math>
+        <m:mi>f</m:mi>
+      </m:math>. Obie wielkości są związane relacją <m:math>
+    <m:mrow>
+      <m:mi>f</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mi>T</m:mi>
+      </m:mfrac>
+    </m:mrow>
+    </m:math>.</item>
+    <item>Ruch harmoniczny jest ruchem drgającym układu, w którym siła zwrotna zmienia się wraz z przemieszczeniem i działa w kierunku do niego przeciwnym.</item>
+    <item>Maksymalne przemieszczenie to amplituda <m:math>
+        <m:mi>A</m:mi>
+      </m:math>. Dla oscylatora harmonicznego częstość kołowa <m:math>
+    <m:mi>ω</m:mi>
+  </m:math>, okres drgań <m:math>
+    <m:mi>T</m:mi>
+  </m:math>
+ i ich częstotliwość <m:math>
+  <m:mi>f</m:mi>
+</m:math>
+ są odpowiednio określone wzorami <m:math>
+<m:mi>ω</m:mi>
+<m:mo>=</m:mo>
+<m:msqrt>
+  <m:mi>k</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi>m</m:mi>
+</m:msqrt>
+</m:math>, <m:math>
+<m:mi>T</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+<m:mi>π</m:mi>
+<m:msqrt>
+  <m:mi>m</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi>k</m:mi>
+</m:msqrt>
+</m:math> i <m:math>
+<m:mi>f</m:mi>
+<m:mo>=</m:mo>
+<m:msqrt>
+  <m:mi>k</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi>m</m:mi>
+</m:msqrt>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>2</m:mn>
+<m:mi>π</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:math>, gdzie <m:math>
+  <m:mi>m</m:mi>
+</m:math>
+ jest masą klocka a <m:math>
+  <m:mi>k</m:mi>
+</m:math>
+ – współczynnikiem sprężystości sprężyny.</item>
+<item>W oscylatorze harmonicznym przemieszczenie jest funkcją czasu określoną wzorem <m:math>
+  <m:mi>x</m:mi>
+  <m:mo stretchy="false">(</m:mo>
+  <m:mi>t</m:mi>
+  <m:mo stretchy="false">)</m:mo>
+  <m:mo>=</m:mo>
+  <m:mi>A</m:mi>
+  <m:mi>cos</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mo stretchy="false">(</m:mo>
+  <m:mn>2</m:mn>
+  <m:mi>π</m:mi>
+  <m:mi>t</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi>T</m:mi>
+  <m:mo>+</m:mo>
+  <m:mi>ϕ</m:mi>
+  <m:mo stretchy="false">)</m:mo>
+  <m:mo>=</m:mo>
+  <m:mi>A</m:mi>
+  <m:mi>cos</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mo stretchy="false">(</m:mo>
+  <m:mi>ω</m:mi>
+  <m:mi>t</m:mi>
+  <m:mo>+</m:mo>
+  <m:mi>ϕ</m:mi>
+  <m:mo stretchy="false">)</m:mo>
+  </m:math>.</item>
+  <item>Prędkość jest wyrażona relacją <m:math>
+    <m:mrow>
+      <m:mi>v</m:mi>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mo>=</m:mo>
+      <m:mtext>−</m:mtext>
+      <m:mi>A</m:mi>
+      <m:mi>ω</m:mi>
+      <m:mtext>sin</m:mtext>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mi>ω</m:mi>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mi>ϕ</m:mi>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mtext>−</m:mtext>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mrow>
+          <m:mtext>max</m:mtext>
+        </m:mrow>
+      </m:msub>
+      <m:mtext>sin</m:mtext>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mi>ω</m:mi>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mi>ϕ</m:mi>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>,</m:mo>
+      <m:mspace width="0.2em"/>
+    </m:mrow>
+  </m:math> gdzie <m:math>
+  <m:msub>
+    <m:mi>v</m:mi>
+    <m:mrow>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mi mathvariant="normal">a</m:mi>
+        <m:mi mathvariant="normal">x</m:mi>
+      </m:mrow>
+    </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mi>A</m:mi>
+  <m:mi>ω</m:mi>
+  <m:mo>=</m:mo>
+  <m:mi>A</m:mi>
+  <m:msqrt>
+    <m:mi>k</m:mi>
+    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+    <m:mi>m</m:mi>
+  </m:msqrt>
+  </m:math>.</item>
+  <item>Przyspieszenie określa wzór <m:math>
+    <m:mrow>
+      <m:mi>a</m:mi>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mo>=</m:mo>
+      <m:mtext>−</m:mtext>
+      <m:mi>A</m:mi>
+      <m:msup>
+        <m:mi>ω</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mtext>cos</m:mtext>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mi>ω</m:mi>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mi>ϕ</m:mi>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mtext>−</m:mtext>
+      <m:msub>
+        <m:mi>a</m:mi>
+        <m:mrow>
+          <m:mtext>max</m:mtext>
+        </m:mrow>
+      </m:msub>
+      <m:mtext>cos</m:mtext>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mi>ω</m:mi>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mi>ϕ</m:mi>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+    </m:mrow>
+  </m:math>, gdzie <m:math>
+  <m:msub>
+    <m:mi>a</m:mi>
+    <m:mrow>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+        <m:mi mathvariant="normal">a</m:mi>
+        <m:mi mathvariant="normal">x</m:mi>
+      </m:mrow>
+    </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mi>A</m:mi>
+  <m:msup>
+    <m:mi>ω</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo>
+  <m:mi>A</m:mi>
+  <m:mi>k</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi>m</m:mi>
+  </m:math>.</item>
+</list></section>
+<section id="fs-id1167131432394" class="review-conceptual-questions">
+  <title>Pytania</title>
+  <exercise id="fs-id1167131497119">
+    <problem id="fs-id1167131497121">
+      <para id="fs-id1167131497123">Jakie warunki należy spełnić, aby zachodził ruch harmoniczny?</para>
+    </problem>
+    <solution id="fs-id1167131214952">
+      <para id="fs-id1167131214954">Siła zwrotna musi być proporcjonalna do przemieszczenia i działać w kierunku położenia równowagi. Ruch odbywa się bez siły oporu lub tarcia. Częstotliwość oscylacji nie zależy od amplitudy drgań.</para></solution>
+  </exercise>
+  <exercise xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1167131590312"><problem id="fs-id1167131590314">
+<para id="eip-idm1946873808">Odpowiedz na poniższe pytania.
+      <list id="fs-id1167131590316" list-type="enumerated" number-style="lower-alpha"><item>Jeśli częstotliwość drgań w układzie nie jest stała, to czy te drgania są ruchem harmonicznym?</item>
+        <item>Czy możesz podać przykłady ruchu okresowego, w których częstotliwość zależy od amplitudy drgań?</item>
+      </list></para></problem>
+  </exercise><exercise id="fs-id1167131275299">
+    <problem id="fs-id1167131275301">
+      <para id="fs-id1167131275303">Podaj przykład oscylatora, w którym częstotliwość jest niezależna od amplitudy drgań.</para>
+    </problem>
+    <solution id="fs-id1167131473586">
+      <para id="fs-id1167131473588">Przykłady: masa przymocowana do sprężyny poruszająca się na stole bez tarcia, masa zwisająca na sprężynie, wahadło matematyczne z małą amplitudą wychylenia. W tych przypadkach ruch drgający odbywa się z częstotliwością niezależną od amplitudy. </para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1167134887417">
+    <problem id="fs-id1167134887419">
+      <para id="fs-id1167134887421">Wyjaśnij, dlaczego zakłada się, że ciało wykonane ze sztywnego materiału będzie drgać z większą częstotliwością niż ciało zbudowane z bardziej miękkiego materiału.</para></problem>
+  </exercise>
+  <exercise id="fs-id1167131515468">
+    <problem id="fs-id1167131515470">
+      <para id="fs-id1167131515472">Mijając na autostradzie ciężarówkę z przyczepą, zauważasz, że przyczepa wolno kołysze się w górę i w dół. Co jest bardziej prawdopodobne: przyczepa jest mocno obciążona czy prawie pusta? Wyjaśnij to.</para></problem>
+    <solution id="fs-id1167131408951">
+      <para id="fs-id1167131408953">Częstotliwość drgań przyczepy wzrasta wraz z pierwiastkiem kwadratowym ze współczynnika sprężystości i maleje wraz ze wzrostem pierwiastka kwadratowego z masy. Należy więc wywnioskować, że przyczepa jest znacznie obciążona. Zauważ, że na współczynnik sprężystości nie ma wpływu to, czy przyczepa jest pusta, czy obciążona. </para></solution>
+  </exercise>
+  <exercise id="fs-id1167131544359">
+    <problem id="fs-id1167131544361">
+      <para id="fs-id1167131420997">Niektórzy tuningują samochody, m.in. przez obniżenie zawieszenia. Czy powinni zainstalować sztywniejsze amortyzatory? Wyjaśnij swoją odpowiedź.</para></problem>
+  </exercise>
+</section>
+<section id="fs-id1167131401190" class="review-problems">
+  <title>Zadania</title>
+  <exercise id="fs-id1167129973678">
+    <problem id="fs-id1167129973680">
+      <para id="fs-id1167131134446">Udowodnij, że zastosowanie równania <m:math>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>t</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mi>A</m:mi>
+          <m:mtext>sin</m:mtext>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:mi>ϕ</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+        </m:math> będzie też prowadzić do tego samego wzoru na okres drgań układu masy na sprężynie. Dlaczego zagadnienie to analizowaliśmy, korzystając z funkcji cosinus?</para></problem>
+      <solution id="fs-id1167131216186">
+        <para id="fs-id1167130007548">Dowód.</para></solution>
+    </exercise>
+    <exercise id="fs-id1167130007554">
+      <problem id="fs-id1167130007556">
+        <para id="fs-id1167134951807">Jaki jest okres drgań prądu w sieci elektrycznej, jeśli częstotliwość wynosi 50,0 Hz?</para>
+      </problem>
+    </exercise>
+    <exercise id="fs-id1167131333987">
+      <problem id="fs-id1167131333989">
+        <para id="fs-id1167134830889">Jeśli w czasie wykonywania intensywnych ćwiczeń twoje tętno wynosi 150 uderzeń na minutę, to ile trwa jedno uderzenie serca wyrażone w sekundach?</para></problem>
+      <solution id="fs-id1167134830894">
+        <para id="fs-id1167134830896">0,4 s/uderzenie.</para></solution>
+    </exercise>
+    <exercise id="fs-id1167131275837">
+      <problem id="fs-id1167131275839">
+        <para id="fs-id1167131116326">Wyznacz częstotliwość kamertonu, który wykonuje jedno pełne drganie w czasie <m:math>
+          <m:mrow>
+            <m:mn>2,50</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mo>·</m:mo>
+            <m:mspace width="0.2em"/>
+            <m:msup>
+              <m:mrow>
+                <m:mn>10</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>−3</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mtext>s</m:mtext>
+          </m:mrow>
+          </m:math>.</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1167130059340">
+        <problem id="fs-id1167130059342">
+          <para id="fs-id1167130059344">Stroboskop generuje błysk co <m:math>
+            <m:mn>8,00</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>5</m:mn>
+              </m:mrow>
+            </m:msup>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            </m:math>. Jaka jest częstotliwość błysków?</para>
+          </problem>
+          <solution id="fs-id1167134914448">
+            <para id="fs-id1167134914450">12,500 Hz.</para></solution>
+        </exercise>
+        <exercise id="fs-id1167130141241">
+          <problem id="fs-id1167130141243">
+            <para id="fs-id1167130141245">Opona ma wzór bieżnika z poprzecznymi rowkami umieszczonymi co 2 cm. Każdy rowek odpowiada za pojedyncze drganie. Jaka jest częstotliwość tych drgań, jeśli samochód porusza się z prędkością 30 m/s?</para></problem>
+        </exercise>
+        <exercise id="fs-id1167131407685">
+          <problem id="fs-id1167131407687">
+            <para id="fs-id1167131407689">Każdy tłok w silniku generuje impuls dźwiękowy co drugi obrót wału korbowego. <list id="eip-idm1211766816" list-type="enumerated" number-style="lower-alpha">
+              <item>Jak szybko porusza się samochód wyścigowy wyposażony w ośmiocylindrowy silnik, jeśli emituje on dźwięk o częstotliwości 750 Hz, a wał korbowy wykonuje 2000 obrotów na kilometr drogi?</item>
+              <item>Ile obrotów na minutę wykonuje silnik?</item>
+            </list>
+          </para>
+        </problem>
+        <solution id="fs-id1167131153961">
+          <list id="fs-id1167129970050" list-type="enumerated" number-style="lower-alpha"><item>340 km/h;</item>
+            <item>
+              <m:math>
+                <m:mn>11,3</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow>
+                    <m:mn>3</m:mn>
+                  </m:mrow>
+                </m:msup>
+                </m:math> obr/min.</item>
+              </list></solution>
+          </exercise>
+          <exercise id="fs-id1167131540637">
+            <problem id="fs-id1167131540639">
+              <para id="fs-id1167131540642">Mechaniczny zegar z kukułką odmierza czas na podstawie drgań masy na sprężynie. Masa ta może być ozdobną figurką, np. aniołkiem. Jak należy dobrać współczynnik sprężystości, aby uzyskać okres 0,5 s dla masy 0,015 kg?</para>
+            </problem>
+          </exercise>
+          <exercise id="fs-id1167131263097">
+            <problem id="fs-id1167131263099">
+              <para id="fs-id1167131263102">Przyłączona do sprężyny masa <m:math>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:math> zwisa pionowo. Zostaje ona podniesiona nieco do góry i puszczona swobodnie. Wykonuje oscylacje z częstotliwością <m:math>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>f</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:math>. Jeśli zastąpimy ją inną masą o wartości dziewięciokrotnie wyższej i powtórzymy eksperyment, to o jaką krotność zmieni się częstotliwość <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>f</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+            </m:mrow>
+            </m:math> drgań? </para></problem>
+          <solution id="fs-id1167131460477">
+            <para id="fs-id1167131460479">
+              <m:math>
+                <m:mrow>
+                  <m:mi>f</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mn>3</m:mn>
+                  </m:mfrac>
+                  <m:msub>
+                    <m:mi>f</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mrow>
+              </m:math>
+            </para>
+          </solution>
+        </exercise>
+        <exercise id="fs-id1167134874146">
+          <problem id="fs-id1167134874148">
+            <para id="fs-id1167134874150">Masa 0,5 kg zawieszona na sprężynie wykonuje drgania z okresem 1,50 s. O ile musimy zwiększyć masę drgającego ciała, aby uzyskać okres drgań równy 2 s?</para>
+          </problem>
+        </exercise>
+        <exercise id="fs-id1167134952352">
+          <problem id="fs-id1167134952354">
+            <para id="fs-id1167134952356">Z jaką dokładnością powinna być dobrana masa w poprzednim zadaniu, jeśli chcemy, aby okres drgań nie był dłuższy niż 2,01 s ani krótszy niż 1,99 s? Podaj oczekiwany procentowy błąd względny przy doborze masy i określ dopuszczalny zakres masy ciężarka.</para></problem>
+          <solution id="fs-id1167130057055">
+            <para id="fs-id1167130057057">0,009 kg; 2%.</para></solution>
+        </exercise>
+      </section>
+    </content>
+    <glossary>
+      <definition id="fs-id1167134884122">
+        <term cmlnle:reference="amplituda" class="no-emphasis">amplituda (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">amplitude</term></foreign>)</term>
+        <meaning id="fs-id1167131140954">maksymalne przemieszczenie ciała z położenia równowagi w czasie ruchu oscylacyjnego </meaning>
+      </definition>
+      <definition id="fs-id1167131140959">
+        <term cmlnle:reference="położenie równowagi" class="no-emphasis">położenie równowagi (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">equilibrium position</term></foreign>)</term>
+        <meaning id="fs-id1167134873791">pozycja oscylatora, kiedy sprężyna jest nieodkształcona tzn. ani nie jest rozciągnięta, ani ściśnięta</meaning>
+      </definition>
+      <definition id="fs-id1167134873795">
+        <term cmlnle:reference="współczynnik sprężystości" class="no-emphasis">współczynnik sprężystości (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">force constant</term></foreign>)</term>
+        <meaning id="fs-id1167134967604">parametr charakteryzujący sprężynę, zdefiniowany jako stosunek siły przyłożonej do sprężyny do uzyskanego przemieszczenia </meaning>
+      </definition>
+      <definition id="fs-id1167134967610">
+        <term cmlnle:reference="częstotliwość" class="no-emphasis">częstotliwość (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">frequency</term></foreign>)</term>
+        <meaning id="fs-id1167130056516">liczba zdarzeń okresowych przypadająca na jednostkę czasu</meaning>
+      </definition>
+      <definition id="fs-id1167134967258">
+        <term cmlnle:reference="drgnienie" class="no-emphasis">drgnienie (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">oscillation</term></foreign>)</term>
+        <meaning id="fs-id1167134967263">pojedyncza lub powtarzalna zmiana wielkości fizycznej, polegająca na przejściu z jednej skrajnej wartości do drugiej i z powrotem </meaning>
+      </definition>
+      <definition id="fs-id1167130001987">
+        <term cmlnle:reference="ruch periodyczny" class="no-emphasis">ruch periodyczny (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">periodic motion</term></foreign>)</term>
+        <meaning id="fs-id1167134820694">ruch cyklicznie powtarzający się w równych odstępach czasu </meaning>
+      </definition>
+      <definition id="fs-id1167134820699">
+        <term cmlnle:reference="okres" class="no-emphasis">okres (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">period</term></foreign>)</term>
+        <meaning id="fs-id1167131268003">czas trwania jednego pełnego drgnienia w ruchu drgającym</meaning>
+      </definition>
+      <definition id="fs-id1167131401866">
+        <term cmlnle:reference="przesunięcie fazowe" class="no-emphasis">przesunięcie fazowe (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">phase shift</term></foreign>)</term>
+        <meaning id="fs-id1167131401872">kąt wyrażony w radianach stosowany w funkcji cosinus lub sinus, aby przesunąć funkcję na lewo lub na prawo, w celu dopasowania funkcji do danych zarejestrowanych dla ruchu oscylatora harmonicznego</meaning>
+      </definition>
+      <definition id="fs-id1167134434639">
+        <term cmlnle:reference="ruch harmoniczny" class="no-emphasis">ruch harmoniczny (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">simple harmonic motion</term></foreign>)</term>
+        <meaning id="fs-id1167131531285">ruch drgający układu, gdzie siła zwrotna jest proporcjonalna do przemieszczenia i działa na ciało w kierunku położenia równowagi </meaning>
+      </definition>
+      <definition id="fs-id1167131531291">
+        <term cmlnle:reference="oscylator harmoniczny" class="no-emphasis">oscylator harmoniczny (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">simple harmonic oscillator</term></foreign>)</term>
+        <meaning id="fs-id1167134812940">układ, który drga w RH, gdzie siła zwrotna jest proporcjonalna do przemieszczenia i działa na ciało w kierunku położenia równowagi </meaning>
+      </definition>
+    </glossary>
+  </document>

@@ -1,0 +1,272 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="new" cnxml-version="0.7" module-id="new">
+  <title>Chłodziarki i pompy ciepła</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67154</md:content-id>
+  <md:title>Chłodziarki i pompy ciepła</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>opisywać chłodziarkę i pompę ciepła oraz wyjaśniać różnice między nimi;</item>
+<item>obliczać współczynnik wydajności chłodniczej prostych chłodziarek i pomp ciepła.</item></list></md:abstract>
+  <md:uuid>7fccd6c6-45ca-417e-9f4d-fd5bcc583e37</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1167586011511">W poprzednim rozdziale opisywaliśmy cykle silnika będące procesami odwracalnymi. Każda sekwencja etapów mogła być bez problemu wykonana w odwrotnej kolejności. Teraz będziemy rozważać specjalne typy silników cieplnych, które działają w odwrotnym kierunku. Przykładami takich silników są <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="chłodziarka">chłodziarka</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">refrigerator</term></foreign>) i <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="pompa ciepła">pompa ciepła</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">heat pump</term></foreign>). W przypadku chłodziarki ciepło jest pobierane z zimnego rezerwuaru, a w przypadku pompy ciepła dostarczane do ciepłego rezerwuaru.</para><para id="fs-id1167585759744">Najpierw omówimy chłodziarkę (<link target-id="CNX_UPhysics_21_03_Fridge"/>), której głównym celem jest obniżenie temperatury jakiegoś ciała do temperatury niższej od temperatury jego otoczenia. Silnik ten pobiera ciepło z zimnego rezerwuaru. Zimnym rezerwuarem dla chłodziarki jest przestrzeń wewnątrz chłodziarki, a w przypadku klimatyzatora przestrzeń wewnątrz budynku.</para><figure id="CNX_UPhysics_21_03_Fridge">
+    <media id="fs-id1167582411296" alt="Rysunek przedstawia schemat chłodziarki lub pompy ciepła. Na dole schematu znajduje się zbiornik o temperaturze T c i wychodzi z niego strzałka skierowana w górę z podpisem Q c. Powyżej jest chłodziarka lub pompa, do której z boku dochodzi strzałka z podpisem W. Z urządzenia wychodzi strzałka skierowana w górę z podpisem Q h, która dochodzi do zbiornika o temperaturze T h.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_21_03_Fridge.jpg"/>
+    </media>
+    <caption>Schemat chłodziarki lub pompy ciepła. Strzałka z podpisem <m:math>
+      <m:mi>W</m:mi>
+      </m:math> symbolizuje pracę dostarczaną do układu.</caption>
+    </figure>
+    <para id="fs-id1167585971853">Chłodziarka (lub pompa ciepła) pobiera ciepło <m:math display="inline">
+      <m:msub>
+        <m:mi>Q</m:mi>
+        <m:mtext>z</m:mtext>
+      </m:msub>
+    </m:math> z zimnego rezerwuaru o temperaturze <m:math display="inline">
+    <m:msub>
+      <m:mi>T</m:mi>
+      <m:mtext>z</m:mtext>
+    </m:msub>
+  </m:math>, oddaje ciepło <m:math display="inline">
+  <m:msub>
+    <m:mi>Q</m:mi>
+    <m:mtext>c</m:mtext>
+  </m:msub>
+</m:math> do ciepłego rezerwuaru o temperaturze <m:math display="inline">
+<m:msub>
+  <m:mi>T</m:mi>
+  <m:mtext>c</m:mtext>
+</m:msub>
+</m:math>, a praca wykonywana na czynniku roboczym silnika to <m:math display="inline">
+<m:mi>W</m:mi>
+</m:math>, jak pokazano na schemacie. Jednostką obu temperatur jest kelwin. W przypadku lodówki ciepło jest odbierane z żywności wewnątrz lodówki i następnie przekazywane do otoczenia. Praca potrzebna do działania lodówki, za którą potem płacimy rachunki, wykonywana jest przez silniczek przemieszczający czynnik chłodzący. Schemat lodówki znajduje się na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_21_03_FridgeDiag" cmlnle:case="genitive"/>.</para><figure id="CNX_UPhysics_21_03_FridgeDiag">
+  <media id="fs-id1167585858767" alt="Schemat działania lodówki.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_21_03_FridgeDiag.jpg"/>
+  </media>
+  <caption>Schemat działania lodówki. Chłodziwo o temperaturze wrzenia niższej niż temperatura zamarzania wody przepływa cyklicznie przez kolejne elementy (na schemacie zgodnie ze wskazówkami zegara). Ciepło pobierane jest z lodówki w parowniku, gdzie chłodziwo jest odparowywane. Następnie chłodziwo ulega sprężeniu i przepompowywane jest do skraplacza, w którym oddaje ciepło do otoczenia.</caption>
+</figure>
+<para id="fs-id1167582414256">Sprawność lub <term>współczynnik wydajności </term>
+<m:math display="inline">
+  <m:msub>
+    <m:mi>K</m:mi>
+    <m:mtext>ch</m:mtext>
+  </m:msub>
+</m:math> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">coefficient of performance</term></foreign>) urządzenia chłodniczego to stosunek ciepła usuniętego z ciepłego rezerwuaru do pracy wykonanej przez czynnik roboczy w jednym cyklu pracy</para><note id="fs-id1167582669004" class="equation-callout">
+  <equation id="fs-id1167582858331"><label/>
+    <m:math display="block">
+      <m:msub>
+        <m:mi>K</m:mi>
+        <m:mtext>ch</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:msub>
+          <m:mi>Q</m:mi>
+          <m:mtext>z</m:mtext>
+        </m:msub>
+        <m:mi>W</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:msub>
+            <m:mi>Q</m:mi>
+            <m:mtext>z</m:mtext>
+          </m:msub>
+          <m:mrow>
+            <m:msub>
+              <m:mi>Q</m:mi>
+              <m:mtext>c</m:mtext>
+            </m:msub>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>Q</m:mi>
+              <m:mtext>z</m:mtext>
+            </m:msub>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation></note>
+<para id="fs-id1167586033077">Zauważ, że użyliśmy zasady zachowania energii, <m:math display="inline">
+  <m:mi>W</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msub>
+      <m:mi>Q</m:mi>
+      <m:mtext>c</m:mtext>
+    </m:msub>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mi>Q</m:mi>
+      <m:mtext>z</m:mtext>
+    </m:msub>
+  </m:mrow>
+  </m:math>, w końcowym kroku obliczeń.</para>
+  <para id="fs-id1167585842715">Z kolei sprawność lub współczynnik wydajności <m:math display="inline">
+    <m:msub>
+      <m:mi>K</m:mi>
+      <m:mtext>p</m:mtext>
+    </m:msub>
+    </m:math> pompy ciepła to stosunek dostarczonego ciepła do pracy wykonanej przez czynnik roboczy w jednym cyklu i wynosi</para><note id="fs-id1167586282348" class="equation-callout">
+      <equation id="fs-id1167586292005">
+        <label/>
+        <m:math display="block">
+          <m:msub>
+            <m:mi>K</m:mi>
+            <m:mtext>p</m:mtext>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:msub>
+              <m:mi>Q</m:mi>
+              <m:mtext>c</m:mtext>
+            </m:msub>
+            <m:mi>W</m:mi>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:msub>
+                <m:mi>Q</m:mi>
+                <m:mtext>c</m:mtext>
+              </m:msub>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>Q</m:mi>
+                  <m:mtext>c</m:mtext>
+                </m:msub>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>Q</m:mi>
+                  <m:mtext>z</m:mtext>
+                </m:msub>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+    </note>
+    <para id="fs-id1167582388524">Ponownie użyliśmy wzoru na zachowanie energii w powyższym równaniu.</para><section id="fs-id1167585844105" class="key-concepts">
+      <title>Podsumowanie</title>
+      <list id="fs-id1167582521993" list-type="bulleted" bullet-style="bullet"><item>Chłodziarka i pompa ciepła to silniki cieplne działające w odwrotnym kierunku.</item>
+        <item>Zadaniem chłodziarki jest usuwanie ciepła z zimnego rezerwuaru ze współczynnikiem wydajności <m:math display="inline">
+          <m:msub>
+            <m:mi>K</m:mi>
+            <m:mtext>ch</m:mtext>
+          </m:msub>
+          </m:math>.</item>
+          <item>Zadaniem pompy ciepła jest dostarczanie ciepła do ciepłego rezerwuaru ze współczynnikiem wydajności <m:math display="inline">
+            <m:msub>
+              <m:mi>K</m:mi>
+              <m:mtext>p</m:mtext>
+            </m:msub>
+            </m:math>.</item>
+          </list></section>
+        <section id="fs-id1167585877724" class="review-conceptual-questions">
+          <title>Pytania </title>
+          <exercise id="fs-id1167585859215">
+            <problem id="fs-id1167586273993">
+              <para id="fs-id1167585980637">Co się stanie z temperaturą w kuchni, jeśli drzwi lodówki pozostaną otwarte?</para>
+            </problem>
+            <solution id="fs-id1167582425884">
+              <para id="fs-id1167582812079">Temperatura powietrza w kuchni wzrośnie, ponieważ ciepło emitowane za lodówką jest większe niż chłodzenie z wnętrza lodówki.</para>
+            </solution>
+          </exercise>
+          <exercise id="fs-id1167585909829">
+            <problem id="fs-id1167586176358">
+              <para id="fs-id1167585956250">Czy sprawność silnika odwracalnego może być większa niż <m:math display="inline">
+                <m:mn>1</m:mn>
+              </m:math>? Czy współczynnik wydajności chłodziarki odwracalnej może być mniejszy niż <m:math display="inline">
+              <m:mn>1</m:mn>
+              </m:math>?</para>
+            </problem>
+          </exercise>
+        </section>
+        <section id="fs-id1167586225195" class="review-problems">
+          <title>Zadania</title>
+          <exercise id="fs-id1167586291839">
+            <problem id="fs-id1167582453251">
+              <para id="fs-id1167582424407">Chłodziarka ma współczynnik wydajności równy <m:math display="inline">
+                <m:mn>3</m:mn>
+              </m:math>.
+<list id="eip-idm924496640" list-type="enumerated" number-style="lower-alpha"><item>Jeśli jeden cykl pracy chłodziarki wymaga <m:math display="inline">
+              <m:mn>200</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">J</m:mi>
+              </m:math>, to ile ciepła jest usuwane z zimnego rezerwuaru podczas jednego cyklu?</item>
+<item>Ile ciepła jest emitowane do ciepłego rezerwuaru podczas jednego cyklu?</item>
+</list></para></problem>
+            <solution id="fs-id1167586219600">
+              <para id="fs-id1167582451611">a. <m:math display="inline">
+                <m:mn>600</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">J</m:mi>
+              </m:math>; b. <m:math display="inline">
+              <m:mn>800</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">J</m:mi>
+              </m:math>.</para></solution>
+          </exercise>
+          <exercise id="fs-id1167585991364">
+            <problem id="fs-id1167586235935">
+              <para id="fs-id1167585907037">Podczas jednego cyklu chłodziarka usuwa <m:math display="inline">
+                <m:mn>500</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+                <m:mi mathvariant="normal">J</m:mi>
+              </m:math> ciepła z zimnego rezerwuaru i oddaje <m:math display="inline">
+              <m:mn>800</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">J</m:mi>
+              </m:math> do ciepłego rezerwuaru.
+<list id="eip-idm391375312" list-type="enumerated" number-style="lower-alpha">
+<item>Jaki jest współczynnik wydajności?</item>
+<item>Ile pracy potrzeba do wykonania jednego cyklu tego silnika?</item>
+</list></para></problem>
+          </exercise>
+          <exercise id="fs-id1167585966299">
+            <problem id="fs-id1167586143856">
+              <para id="fs-id1167585767578">Chłodziarka emituje <m:math display="inline">
+                <m:mn>80</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+                <m:mi mathvariant="normal">J</m:mi>
+              </m:math> ciepła podczas jednego cyklu, a jej współczynnik wydajności wynosi <m:math display="inline">
+              <m:mn>6</m:mn>
+              </m:math>.
+<list id="eip-idm970401152" list-type="enumerated" number-style="lower-alpha"><item>Ile ciepła pobiera z zimnego rezerwuaru podczas jednego cyklu silnika?</item>
+<item>Ile pracy potrzebuje do działania podczas jednego cyklu silnika?</item>
+</list></para></problem>
+            <solution id="fs-id1167582460583">
+              <para id="fs-id1167582673486">a. <m:math display="inline">
+                <m:mn>69</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">J</m:mi>
+              </m:math>; b. <m:math display="inline">
+              <m:mn>11</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">J</m:mi>
+              </m:math>.</para></solution>
+          </exercise>
+        </section>
+      </content>
+      <glossary>
+        <definition id="fs-idm349082080">
+          <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="współczynnik wydajności">współczynnik wydajności (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">coefficient of performance</term></foreign>)</term>
+            <meaning id="fs-idm366711504">miara efektywności chłodziarki lub pompy ciepła</meaning>
+          </definition>
+          <definition id="fs-idm311142848">
+            <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="pompa ciepła">pompa ciepła (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">heat pump</term></foreign>)</term>
+              <meaning id="fs-idm368127008">urządzenie, które dostarcza ciepło do ciepłego rezerwuaru</meaning>
+            </definition>
+            <definition id="fs-idm374582752">
+              <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="chłodziarka">chłodziarka (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">refrigerator</term></foreign>)</term>
+                <meaning id="fs-idm953660896">urządzenie, które pobiera ciepło z zimnego rezerwuaru</meaning>
+              </definition>
+            </glossary>
+          </document>

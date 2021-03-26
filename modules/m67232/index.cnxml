@@ -1,0 +1,2233 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Proste obwody prądu zmiennego</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67232</md:content-id>
+  <md:title>Proste obwody prądu zmiennego</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>interpretować wykresy wskazowe i stosować je do obwodów z opornikami, kondensatorami i cewkami;</item>
+<item>definiować reaktancję rezystora, kondensatora i cewki w celu zrozumienia dokładnego zachowania prądu w każdym z tych elementów.</item></list></md:abstract>
+  <md:uuid>901543fe-0a7d-4750-bc34-73bd14586e95</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101904658">W tym podrozdziale zajmiemy się analizą prostych obwodów składających się ze źródła napięcia zmiennego podłączonego do trzech elementów: (1) opornika, (2) kondensatora i (3) cewki. Siła elektromotoryczna dostarczana przez źródło podana jest jako</para>
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101907714" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:mrow>
+        <m:mi>u</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>U</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>sin</m:mo>
+          <m:mrow>
+            <m:mfenced>
+              <m:mrow>
+                <m:mi>ω</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfenced>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101927817">jak przedstawiono na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_02_acout" cmlnle:case="genitive"/>, przy założeniu, że zaczynamy rejestrację przebiegu w czasie <m:math display="inline">
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>0</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+  </m:math> dla <m:math display="inline">
+  <m:mi>u</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>0</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">V</m:mi>
+  </m:mrow>
+  </m:math>. Możliwe jest również wprowadzenie stałej fazowej, która „przesunie” wykres funkcji w przypadku rozpoczęcia pomiarów w innym punkcie przebiegu. Jest to przypadek podobny do omawianego w rozdziale <link class="target-chapter" document="m65833">Fale</link>. Ponieważ wolno nam jednak dokonywać pomiarów w dowolnym momencie, możemy na razie pominąć ten stały czynnik fazowy. Napięcie w obwodzie i na poszczególnych elementach może być określane z zastosowaniem dwóch metod: (1) podejścia analitycznego, opartego na naszej wiedzy na temat obwodów i elementów elektronicznych wyrażonej w równaniach różniczkowych, które należy rozwiązać otrzymując przebiegi napięcia i natężenia prądu elektrycznego co jest podejściem najogólniejszym, albo (2) podejścia schematycznego dla przebiegów okresowych prądu elektrycznego i napięcia (napięcie i natężenie prądu są tutaj funkcjami periodycznymi) wyrażonego graficznie przez wskazy, które objaśnione zostanie w kolejnych podrozdziałach.</para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_32_02_acout"><media id="fs-id1172101890377" alt="Rysunek a przedstawia sinusoidę, której wartości maksymalne i minimalne wynoszą odpowiednio V0 i minus V0. Punkty na osi x, wskazane strzałką oznaczają wartości równe kolejnym wielokrotnościom jednego okresu i wynoszą kolejno 2pi przez omega, 4pi przez omega i 6 pi przez omega. Rysunek b przedstawia symbol stosowany do oznaczania napięcia prądu zmiennego. ">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_32_02_acout.jpg"/>
+    </media>
+    
+    <caption>(a) Przebieg wyjściowy <m:math display="inline"><m:mrow><m:mi>u</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>U</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:mfenced><m:mrow><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:math> generatora napięcia zmiennego. (b) Symbol używany dla źródła napięcia zmiennego w schemacie elektrycznym.</caption></figure><section id="fs-id1172101766503">
+      <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Opornik</title>
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101753438">Na początek zanalizujmy opornik podłączony do źródła napięcia zmiennego. Z prawa Ohma wynika, że napięcie na oporze z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_02_acresistor" cmlnle:case="genitive"/> (a) wynosi</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101918913" class="unnumbered">
+        <label/>
+        <m:math display="block">
+          <m:mrow>
+            <m:msub>
+              <m:mi>u</m:mi>
+              <m:mi>R</m:mi>
+            </m:msub>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mrow>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mi>ω</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                </m:mfenced>
+                <m:mo>⁢</m:mo>
+                <m:mtext>,</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101756482">a natężenie prądu płynącego przez ten rezystor wynosi</para>
+      <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101912680" class="unnumbered"><label/>
+        <m:math display="block">
+          <m:mrow>
+            <m:msub>
+              <m:mi>i</m:mi>
+              <m:mi>R</m:mi>
+            </m:msub>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:msub>
+                <m:mi>u</m:mi>
+                <m:mi>R</m:mi>
+              </m:msub>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>t</m:mi>
+              </m:mfenced>
+            </m:mrow>
+            <m:mi>R</m:mi>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:msub>
+                <m:mi>U</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mi>R</m:mi>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mi>ω</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfenced>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mi>ω</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfenced>
+<m:mo>⁢</m:mo><m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_32_02_acresistor"><media id="fs-id1172101804233" alt="Rysunek a przedstawia obwód ze źródłem napięcia AC połączonym z opornikiem opornikiem. Źródło jest oznaczone V0 sinus omega t. Rysunek b pokazuje sinusoidalne krzywe będące wykresami napięcia AC i prądu w funkcji czasu, narysowane w tym samym układzie współrzędnych. Napięcie ma większą amplitudę niż natężenie prądu. Maksymalna wartość napięcia oznaczona jest V0 na osi y. Maksymalna wartość natężenia prądu oznaczona jest I0. Krzywa napięcia oznaczona jest jako V ze znakiem R nawias t nawias równe V0 sinus omega t. Krzywa natężenia prądu jest oznaczona i ze znakiem R nawias t nawias równe I0 sinus omega t.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_32_02_acresistor.jpg"/>
+        </media>
+        
+      <caption>(a) Opornik podłączony do źródła napięcia zmiennego. (b) Wykresy natężenia prądu <m:math display="inline"><m:msub><m:mi>i</m:mi><m:mi>R</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:math> płynącego przez opornik i napięcia <m:math display="inline"><m:msub><m:mi>u</m:mi><m:mi>R</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:math> na nim. Obie wielkości są zgodne w fazie.</caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101715678">W tym przypadku <m:math display="inline">
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>∕</m:mo>
+          <m:mi>R</m:mi>
+        </m:mrow>
+      </m:math> jest amplitudą zmiennego w czasie natężenia prądu. Wykresy <m:math display="inline">
+      <m:msub>
+        <m:mi>i</m:mi>
+        <m:mi>R</m:mi>
+      </m:msub>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+    </m:math> i <m:math display="inline">
+    <m:msub>
+      <m:mi>u</m:mi>
+      <m:mi>R</m:mi>
+    </m:msub>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>t</m:mi>
+    </m:mfenced>
+    </m:math> przedstawione zostały na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_02_acresistor" cmlnle:case="genitive"/> (b). Obie krzywe osiągają maksima i minima w tym samym czasie, a więc oznacza to, że natężenie prądu płynącego przez opornik i napięcie prądu na oporniku są zgodne w fazie.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101905956">Graficzne przedstawienie relacji fazowej pomiędzy natężeniem i napięciem prądu jest bardzo przydatne w analizie obwodów prądu zmiennego. Takie przedstawienie nazywane jest <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="wykres wskazowy">wykresem wskazowym</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">phasor diagram</term></foreign>). Wykres wskazowy dla <m:math display="inline">
+    <m:msub>
+      <m:mi>i</m:mi>
+      <m:mi>R</m:mi>
+    </m:msub>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>t</m:mi>
+    </m:mfenced>
+  </m:math> przedstawiony został na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_02_phasorres_a" cmlnle:case="genitive"/> (a) z natężeniem prądu odłożonym na osi pionowej <m:math display="inline">
+  <m:mi>i</m:mi>
+</m:math>. Strzałka (nazywana wskazem) obraca się przeciwnie do ruchu wskazówek zegara ze stałą prędkością kątową <m:math display="inline">
+<m:mi>ω</m:mi>
+</m:math>, więc widoczna jest w jednej z chwil <m:math display="inline">
+<m:mi>t</m:mi>
+</m:math>. Jeśli długość wskazu odpowiada amplitudzie natężenia prądu <m:math display="inline">
+<m:msub>
+  <m:mi>I</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+</m:math>, to rzut obracającego się wskazu na oś pionową wynosi <m:math display="inline">
+<m:mrow>
+  <m:msub>
+    <m:mi>i</m:mi>
+    <m:mi>R</m:mi>
+  </m:msub>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>⁢</m:mo>
+  <m:mrow>
+    <m:mo>sin</m:mo>
+    <m:mfenced>
+      <m:mrow>
+        <m:mi>ω</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfenced>
+  </m:mrow>
+</m:mrow>
+</m:math>, co odpowiada wartości chwilowej natężenia prądu.</para>
+<figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_32_02_phasorres_a"><media id="fs-id1172101764982" alt="Rysunek a przedstawia układ współrzędnych. Strzałka oznaczona I0 biegnie z początku układu i skierowana jest w górę i w prawo, tworząc kąt omega t z osią x. Narysowana jest również strzałka oznaczona omega w pobliżu ostrza, prostopadła do niego, skierowana w górę w lewo. Rzut I0 na oś y oznaczone jest i indeks dolny R nawias t nawias. Na rysunku b strzałka oznaczona V0 biegnie z początku układu i skierowana jest w w górę i w lewo. Jej rzut na oś y wynosi V indeks dolny R nawias t nawias. Strzałka oznaczona omega znajduje się w pobliżu ostrza, prostopadle do niego, wskazując w dół w lewo.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_32_02_phasorres_a.jpg"/>
+  </media>
+  
+<caption>Wykres wskazowy przedstawiający natężenie prądu płynącego przez opornik z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_02_acresistor" cmlnle:case="genitive"/>. (b) Wykres wskazowy przedstawiający zarówno <m:math display="inline"><m:msub><m:mi>i</m:mi><m:mi>R</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:math>, jak i <m:math display="inline"><m:msub><m:mi>u</m:mi><m:mi>R</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:math>.</caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101749242">Oś pionowa wykresu wskazowego może reprezentować zarówno natężenie, jak i napięcie prądu, w zależności od wskazu, który właśnie analizujemy. Ponadto możliwe jest przedstawienie kilku wielkości na tym samym wykresie wskazowym. Przykładowo na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_02_phasorres_a" cmlnle:case="genitive"/> (b) pokazano natężenie prądu <m:math display="inline">
+  <m:msub>
+    <m:mi>i</m:mi>
+    <m:mi>R</m:mi>
+  </m:msub>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+</m:math> oraz <m:math display="inline">
+<m:msub>
+  <m:mi>u</m:mi>
+  <m:mi>R</m:mi>
+</m:msub>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>t</m:mi>
+</m:mfenced>
+</m:math>. Ponieważ obie wielkości mają tę samą częstotliwość i są zgodne w fazie, ich wskazy mają ten sam kierunek i zwrot i obracają się z jednakową prędkością. Ponieważ obie wielkości mają tę samą częstotliwość i są zgodne w fazie, ich wskazy mają ten sam kierunek, a także zwrot i obracają się z jednakową prędkością kątową. Obracające się ze stałą prędkością kątową wskazy są konstrukcją matematyczną. To co jest mierzalne doświadczalnie to ich rzut na oś rzeczywistą (taki rzut jest wartością rzeczywistą w dwuwymiarowym układzie współrzędnych reprezentującym wszystkie możliwe liczby zespolone <m:math display="inline"><m:semantics><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mrow><m:mi>i</m:mi><m:mo>⁢</m:mo><m:mi>y</m:mi></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            z = x + iy</m:annotation></m:semantics></m:math>, gdzie <m:math display="inline"><m:semantics><m:mrow><m:msup><m:mi>i</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>-1</m:mn></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            i^2 = -1</m:annotation></m:semantics></m:math>). Każdy wskaz wyraża liczbę zespoloną <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mi>z</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>z</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mfenced close="]" open="["><m:mrow><m:mrow><m:mo>sin</m:mo><m:mfenced><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow><m:mo>−</m:mo><m:mi>α</m:mi></m:mrow></m:mfenced></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>i</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo>cos</m:mo><m:mfenced><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow><m:mo>−</m:mo><m:mi>α</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mrow></m:mfenced></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            z \apply (t) = z_0 [\sin (\omega t - \alpha) + i \cos (\omega t - \alpha)]</m:annotation></m:semantics></m:math>, gdzie <m:math display="inline"><m:semantics><m:msub><m:mi>z</m:mi><m:mn>0</m:mn></m:msub><m:annotation encoding="application/vnd.katalysteducation.mathtex">            z_0</m:annotation></m:semantics></m:math>, <m:math display="inline"><m:semantics><m:mi>ω</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \omega</m:annotation></m:semantics></m:math> i <m:math display="inline"><m:semantics><m:mi>α</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \alpha</m:annotation></m:semantics></m:math> są stałymi o wartościach rzeczywistych, a <m:math display="inline"><m:semantics><m:mi>i</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            i</m:annotation></m:semantics></m:math> to jednostka urojona, której kwadrat jest liczbą <m:math display="inline"><m:semantics><m:mn>-1</m:mn><m:annotation encoding="application/vnd.katalysteducation.mathtex">            -1</m:annotation></m:semantics></m:math>.  Koncepcja obracającego się wskazu wyrażonego analitycznie przez liczbę zespoloną <m:math display="inline"><m:semantics><m:mrow><m:mi>z</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            z \apply (t)</m:annotation></m:semantics></m:math> jest po prostu innym sposobem przedstawienia drgań oscylatora harmonicznego, którego położenie jest sinusoidalnie zmiennie w czasie.  Przykładowo można zauważyć, że obracający się pręt o długości <m:math display="inline"><m:semantics><m:mi>L</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            L</m:annotation></m:semantics></m:math> w danej płaszczyźnie <m:math display="inline"><m:semantics><m:mfenced close="" open="" separators="⁣"><m:mi>x</m:mi><m:mi>y</m:mi></m:mfenced><m:annotation encoding="application/vnd.katalysteducation.mathtex">            x\sep y</m:annotation></m:semantics></m:math> ze stałą prędkością kątową <m:math display="inline"><m:semantics><m:mi>ω</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \omega</m:annotation></m:semantics></m:math> i zaczepiony w punkcie <m:math display="inline"><m:semantics><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mrow><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mfenced><m:annotation encoding="application/vnd.katalysteducation.mathtex">            (x=0, y=0)</m:annotation></m:semantics></m:math> można reprezentować drgania masy na sprężynie, kiedy nie występuje tarcie (<m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mi>x</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>L</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:mfenced><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow><m:mo>−</m:mo><m:mi>α</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            x \apply (t) = L\sin (\omega t - \alpha)</m:annotation></m:semantics></m:math>).  Tak obracający się pręt jest wskazem <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mi>z</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>L</m:mi><m:mo>⁢</m:mo><m:mfenced close="]" open="["><m:mrow><m:mrow><m:mo>sin</m:mo><m:mfenced><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow><m:mo>−</m:mo><m:mi>α</m:mi></m:mrow></m:mfenced></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>i</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo>cos</m:mo><m:mfenced><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow><m:mo>−</m:mo><m:mi>α</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mrow></m:mfenced></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            z \apply (t) = L[\sin(\omega t - \alpha) + i \cos (\omega t - \alpha)]</m:annotation></m:semantics></m:math>. Stosowanie wskazów niesienie ukryte założenie, że zakładany przebieg zmienności napięcia i natężenia prądu elektrycznego cechuje się periodycznością czyli okresowością. Oczywiście tak jest w układach AC. </para></section>
+<section id="fs-id1172101752376">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Kondensator</title>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-148">W celu wygodnego przedstawienia zjawisk okresowych będziemy stosowali liczby zespolone. Liczby zespolone mogą być reprezentowane jako dwuwymiarowe wektory. Zakładając sinusoidalną zmienność prądu elektrycznego i napięcia definiujemy <m:math display="inline">
+    <m:mrow>
+      <m:mi>I</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>ω</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>exp</m:mo>
+        <m:mfenced close="]" open="[">
+          <m:mrow>
+            <m:mi>i</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mfenced>
+              <m:mrow>
+                <m:mi>t</m:mi>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>t</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:mfenced>
+          </m:mrow>
+        </m:mfenced>
+      </m:mrow>
+    </m:mrow>
+  </m:math> oraz <m:math display="inline">
+  <m:mrow>
+    <m:mi>U</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>ω</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:mrow>
+      <m:mo>exp</m:mo>
+      <m:mfenced close="]" open="[">
+        <m:mrow>
+          <m:mi>i</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>ω</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mfenced>
+            <m:mrow>
+              <m:mi>t</m:mi>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>t</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+            </m:mrow>
+          </m:mfenced>
+        </m:mrow>
+      </m:mfenced>
+    </m:mrow>
+  </m:mrow>
+</m:math>, gdzie <m:math display="inline">
+<m:msub>
+  <m:mi>I</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+</m:math> to amplituda prądu elektrycznego będąca liczbą rzeczywistą, <m:math display="inline">
+<m:msub>
+  <m:mi>t</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+</m:math> to pewna stała rzeczywista, <m:math display="inline">
+<m:mi>ω</m:mi>
+</m:math> to częstotliwość kołowa, a <m:math display="inline">
+<m:msub>
+  <m:mi>U</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+</m:math> to amplituda napięcia będąca liczbą rzeczywistą. To, co mierzymy na przykład na oporniku, to część rzeczywista <m:math display="inline">
+<m:mi>I</m:mi>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>ω</m:mi>
+</m:mfenced>
+</m:math> oraz <m:math display="inline">
+<m:mi>U</m:mi>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>ω</m:mi>
+</m:mfenced>
+</m:math>. W pewnym sensie koncepcja wskazów jest uogólnieniem prawa Ohma, gdzie natężenie prądu elektrycznego <m:math display="inline">
+<m:mi>I</m:mi>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>ω</m:mi>
+</m:mfenced>
+</m:math> (wyrażone przez wskaz) przepływającego przez dany element elektroniczny jest powiązane z napięciem <m:math display="inline">
+<m:mi>U</m:mi>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>ω</m:mi>
+</m:mfenced>
+</m:math> (wyrażonym przez wskaz) przyłożonym do tego elementu: <m:math display="inline">
+<m:mrow>
+  <m:mi>U</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>ω</m:mi>
+  </m:mfenced>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:mi>Z</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>ω</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:mo>⁢</m:mo>
+  <m:mrow>
+    <m:mi>I</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>ω</m:mi>
+    </m:mfenced>
+  </m:mrow>
+</m:mrow>
+</m:math>. Tutaj <m:math display="inline">
+<m:mi>Z</m:mi>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>ω</m:mi>
+</m:mfenced>
+</m:math> jest impedancją będącą uogólnieniem oporności elektrycznej (<m:math display="inline">
+<m:mrow>
+  <m:mi>Z</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>ω</m:mi>
+  </m:mfenced>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mi>R</m:mi>
+</m:math> w przypadku opornika o oporze elektrycznym <m:math display="inline">
+<m:mi>R</m:mi>
+</m:math> i jest wyrażone liczbą zespoloną – posiada część rzeczywistą i urojoną). Jednak zarówno napięcie, jak i natężenie prądu są reprezentowane przez wskazy (dwuwymiarowe wektory, które są liczbami zespolonymi). Długości wskazów wyrażają amplitudę wielkości sinusoidalnie zmiennych. Jednak stosunek długości tych dwóch wskazów może zostać wyrażony przez rezystancję, ponieważ jeden z nich reprezentuje napięcie, a drugi natężenie prądu. Część rzeczywista (<m:math display="inline">
+  <m:mtext>Re</m:mtext>
+</m:math>) impedancji to opór elektryczny (<m:math display="inline">
+<m:mi>R</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mo>Re</m:mo>
+  <m:mfenced>
+    <m:mi>Z</m:mi>
+  </m:mfenced>
+</m:mrow>
+</m:math>), a część urojona (<m:math display="inline">
+  <m:mtext>Im</m:mtext>
+</m:math>) impedancji to reaktancja (<m:math display="inline">
+<m:mi>X</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mo>Im</m:mo>
+  <m:mfenced>
+    <m:mi>Z</m:mi>
+  </m:mfenced>
+</m:mrow>
+</m:math>).</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101664237">Rozpatrzmy teraz obwód z <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="kondensator">kondensatorem</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">capacitor</term></foreign>) połączonym ze źródłem napięcia zmiennego. Zgodnie z drugim prawem Kirchhoffa napięcie na kondensatorze z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_02_accap" cmlnle:case="genitive"/> (a) opisane jest jako</para>
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101895890" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:mrow>
+        <m:msub>
+          <m:mi>u</m:mi>
+          <m:mi>C</m:mi>
+        </m:msub>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>U</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>sin</m:mo>
+          <m:mrow>
+            <m:mfenced>
+              <m:mrow>
+                <m:mi>ω</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfenced>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101694487">Pamiętamy, że ładunek zgromadzony w kondensatorze podlega zależności <m:math display="inline">
+    <m:mi>Q</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>C</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>U</m:mi>
+    </m:mrow>
+    </m:math>. Jest ona prawdziwa dla każdej chwili w cyklu prądu zmiennego. Oznacza to, że chwilową wartość ładunku w kondensatorze da się opisać zależnością</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101753850" class="unnumbered">
+      <label/>
+      <m:math display="block">
+        <m:mrow>
+          <m:mi>q</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>C</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>u</m:mi>
+              <m:mi>c</m:mi>
+            </m:msub>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>C</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>sin</m:mo>
+            <m:mrow>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mi>ω</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfenced>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101804971">Natężenie prądu w obwodzie z definicji jest miarą przepływu ładunku na jednostkę czasu, więc natężenie prądu może opisywać tempo opuszczania (lub pojawiania się) ładunku w kondensatorze</para>
+    <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101774445" class="unnumbered">
+      <label/>
+      <m:math display="block">
+        <m:mrow>
+          <m:msub>
+            <m:mi>i</m:mi>
+            <m:mi>C</m:mi>
+          </m:msub>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mrow>
+              <m:mi>q</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>t</m:mi>
+              </m:mfenced>
+            </m:mrow>
+          </m:mrow>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>ω</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>C</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>cos</m:mo>
+            <m:mfenced>
+              <m:mrow>
+                <m:mi>ω</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfenced>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>I</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>cos</m:mo>
+            <m:mrow>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mi>ω</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfenced>
+              <m:mo>⁢</m:mo>
+              <m:mtext>,</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101756960">gdzie <m:math display="inline">
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>ω</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>C</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:msub>
+          <m:mi>U</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+      </m:mrow>
+    </m:math> jest amplitudą natężenia prądu. Gdy zastosujemy zależność pomiędzy funkcją cosinus i sinus, czyli <m:math display="inline">
+    <m:mrow>
+      <m:mo>cos</m:mo>
+      <m:mfenced>
+        <m:mrow>
+          <m:mi>ω</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mfenced>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>sin</m:mo>
+      <m:mfenced>
+        <m:mrow>
+          <m:mrow>
+            <m:mi>ω</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mi>π</m:mi>
+            <m:mo>∕</m:mo>
+            <m:mn>2</m:mn>
+          </m:mrow>
+        </m:mrow>
+      </m:mfenced>
+    </m:mrow>
+    </m:math>, chwilowa wartość natężenia prądu przyjmuje postać</para><equation id="fs-id1172101939710" class="unnumbered">
+      <label/>
+      <m:math display="block">
+        <m:mrow>
+          <m:msub>
+            <m:mi>i</m:mi>
+            <m:mi>C</m:mi>
+          </m:msub>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>I</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>sin</m:mo>
+            <m:mrow>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>ω</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mfrac>
+                    <m:mi>π</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mfenced>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101920493">Poprzez podzielenie <m:math display="inline">
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+    </m:math> przez <m:math display="inline">
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    </m:math> otrzymamy wyrażenie podobne do prawa Ohma</para>
+    <note id="fs-id1172101891511" class="equation-callout">
+      <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101611081">
+        <label/>
+        <m:math display="block">
+          <m:mfrac>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mrow>
+              <m:mi>ω</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>C</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>X</m:mi>
+              <m:mi>C</m:mi>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+    </note>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101615113">Wielkość <m:math display="inline">
+      <m:msub>
+        <m:mi>X</m:mi>
+        <m:mi>C</m:mi>
+      </m:msub>
+    </m:math> jest odpowiednikiem rezystancji (oporu) w obwodzie prądu stałego w kontekście stosunku napięcia do natężenia prądu w obwodzie. W związku z tym obie te wielkości mają wspólną jednostkę om oznaczaną <m:math display="inline"><m:semantics><m:mi mathvariant="normal">Ω</m:mi><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \si{\ohm}</m:annotation></m:semantics></m:math> w odniesieniu do innych jednostek <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mn>1</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">Ω</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>1</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:mrow><m:mo>∕</m:mo><m:mrow><m:mn>1</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">A</m:mi></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \SI{1}{\ohm} = \SI{1}{\volt} / \SI{1}{\ampere}</m:annotation></m:semantics></m:math> (jeden om to jeden wolt dzielony przez jeden amper). Pamiętaj jednak, że kondensator przechowuje i uwalnia energię elektryczną, podczas gdy opornik ją rozprasza. Wielkość <m:math display="inline">
+    <m:msub>
+      <m:mi>X</m:mi>
+      <m:mi>C</m:mi>
+    </m:msub>
+  </m:math> nazywana jest <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="reaktancja pojemnościowa">reaktancją pojemnościową</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">capacitive reactance</term></foreign>), <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="kapacytancja">kapacytancją</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">capacitance</term></foreign>) lub <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="opór bierny pojemnościowy kondensatora">oporem biernym pojemnościowym kondensatora</term>. Jest ona odwrotnie zależna od częstotliwości źródła napięcia zmiennego – im wyższa częstotliwość, tym niższa reaktancja pojemnościowa i odwrotnie – im niższa częstotliwość, tym wyższa kapacytancja, co pozwala użyć kondensatora jako elementu odfiltrowującego składową stałą prądu elektrycznego.</para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_32_02_accap"><media id="fs-id1172101905593" alt="Rysunek a przedstawia obwód ze źródłem napięcia AC połączony z kondensatorem. Źródło oznaczone jest V0 sin omega t. Rysunek b przedstawia sinusoidalny wykres napięcia AC i natężenia prądu w funkcji czasu, w tym samym układzie współrzędnych. Napięcie ma większą amplitudę niż natężenie prądu, a jego wartość maksymalna wynosi V0. Maksymalna wartość natężenia prądu oznaczona jest I0. Obie krzywe mają ten sam okres ale są przesunięte w fazie o pi/2. Krzywa napięcia jest opisana V ze znakiem C nawias t nawias równe V0 sinus omega t. Krzywa natężenia prądu oznaczona jest i ze znakiem C nawias t nawias równa jet l0 sinus nawias omega t plus pi przez 2 nawias.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_32_02_accap.jpg"/>
+    </media>
+    
+<caption>(a) Kondensator połączony szeregowo ze źródłem napięcia zmiennego. (b) Natężenie prądu <m:math display="inline"><m:msub><m:mi>i</m:mi><m:mi>C</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:math> płynącego przez kondensator i napięcie prądu <m:math display="inline"><m:msub><m:mi>u</m:mi><m:mi>C</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:math> na tym kondensatorze. Zauważ, że <m:math display="inline"><m:msub><m:mi>i</m:mi><m:mi>C</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:math> „wyprzedza” <m:math display="inline"><m:msub><m:mi>u</m:mi><m:mi>C</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:math> o <m:math display="inline"><m:semantics><m:mrow><m:mfenced><m:mrow><m:mi>π</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mi mathvariant="normal">rad</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            (\pi/2)\si{\radian}</m:annotation></m:semantics></m:math>.</caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101730820">Porównanie wyrażeń na <m:math display="inline">
+  <m:msub>
+    <m:mi>u</m:mi>
+    <m:mi>C</m:mi>
+  </m:msub>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>i</m:mi>
+  <m:mi>C</m:mi>
+</m:msub>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>t</m:mi>
+</m:mfenced>
+</m:math> pozwala zauważyć, że występuje pomiędzy nimi przesunięcie fazowe o <m:math display="inline"><m:semantics><m:mrow><m:mfenced><m:mrow><m:mi>π</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mi mathvariant="normal">rad</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            (\pi/2)\si{\radian}</m:annotation></m:semantics></m:math>. Gdy obie te wielkości zostaną umieszone razem na wykresie wskazowym, widać, że natężenie prądu osiąga amplitudę ćwierć cyklu (lub <m:math display="inline"><m:semantics><m:mrow><m:mfenced><m:mrow><m:mi>π</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mi mathvariant="normal">rad</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            (\pi/2)\si{\radian}</m:annotation></m:semantics></m:math>) wcześniej niż napięcie prądu. Pokazuje to <link target-id="CNX_UPhysics_32_02_accap"/> (b).</para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_32_02_phasorcap"><media id="fs-id1172101716023" alt="Rysunek przedstawia układ współrzędnych. Strzałka oznaczona V0 biegnie z początku układu i wskazuje w górę i w prawo tworząc kąt omega t z osią x. Strzałka opisana jako omega znajduje się w w pobliżu ostrza, jest prostopadła do niego i wskazuje w górę w lewo. Rzut ostrza strzałki V0 wynosi V ze znakiem C nawias t nawias. Strzałka oznaczona l0 biegnie z początku układu i wskazuje w górę w lewo. Jest prostopadła do V0. Jej rzut na y oznaczony jest i ze znakiem C nawias t nawias. Strzałka opisana jako omega znajduje się w pobliżu ostrza, jest prostopadła do niego, wskazuje w dół w lewo.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_32_02_phasorcap.jpg"/>
+  </media>
+  
+  <caption>Wykres wskazowy dla kondensatora z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_02_accap" cmlnle:case="genitive"/> (a). Wskaz natężenia prądu wyprzedza wskaz napięcia prądu o <m:math display="inline"><m:semantics><m:mrow><m:mfenced><m:mrow><m:mi>π</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mi mathvariant="normal">rad</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            (\pi/2)\si{\radian}</m:annotation></m:semantics></m:math>, ale oba nadal obracają się z jednakową prędkością kątową.</caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101717698">Do tej pory używaliśmy w naszych rozważaniach jedynie amplitud natężenia lub napięcia prądu (<m:math display="inline">
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+  </m:math> i <m:math display="inline">
+  <m:msub>
+    <m:mi>U</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:math>). Gdy spróbujemy wyliczyć średnią wartość natężenia lub napięcia prądu, wynikiem będzie wartość zerowa. Jednak w opisie natężenia i napięcia prądu często używana jest alternatywna wartość, nazywana <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="wartość skuteczna">wartością skuteczną</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">root mean square value, rms</term></foreign>). Proces wyliczania takiej wartości polega na wyliczeniu średniej kwadratowej, stąd jest to wartość niezerowa. Odbiorniki prądu zmiennego oznacza się zazwyczaj stosując wartości skuteczne, a nie amplitud. W dalszych rozważaniach wartości skuteczne oznaczane będą za pomocą indeksu dolnego „sk” tak jak np. <m:math display="inline">
+<m:msub>
+  <m:mi>I</m:mi>
+  <m:mtext>sk</m:mtext>
+</m:msub>
+</m:math>.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101986438">Mimo że kondensator tak naprawdę przerywa obwód elektryczny (likwidując składową stałą prądu elektrycznego i pozostawiając składowe sinusoidalnie zmienne czyli z <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mi>I</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>I</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mrow><m:msub><m:mi>I</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:mfenced><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow><m:mo>−</m:mo><m:mi>α</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            I \apply (t) = I_1 + I_0 \sin (\omega t - \alpha)</m:annotation></m:semantics></m:math> otrzymujemy <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:mi>I</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>I</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:mfenced><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow><m:mo>−</m:mo><m:mi>α</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            I \apply (t) = I_0 \sin (\omega t - \alpha)</m:annotation></m:semantics></m:math>), <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="natężenie skuteczne">natężenie skuteczne</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">rms current</term></foreign>) prądu pojawia się w obwodzie, zawierającym źródło napięcia zmiennego. Ma ono wartość</para><note id="fs-id1172101969905" class="equation-callout">
+    <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101642042">
+      <label/>
+      <m:math display="block">
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mtext>sk</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:msqrt>
+              <m:mn>2</m:mn>
+            </m:msqrt>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation>
+  </note>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101923994">gdzie <m:math display="inline">
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+  </m:math> jest amplitudą natężenia prądu w rozważanym obwodzie. <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="napięcie skuteczne">Napięcie skuteczne</term> na danym kondensatorze (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">rms voltage</term></foreign>) w sytuacji sinusoidalnie zmiennego prądu wynosi</para><note id="fs-id1172101802989" class="equation-callout">
+    <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101782170">
+      <label/>
+      <m:math display="block">
+        <m:msub>
+          <m:mi>U</m:mi>
+          <m:mtext>sk</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:msqrt>
+              <m:mn>2</m:mn>
+            </m:msqrt>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation>
+  </note>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101642973">gdzie <m:math display="inline">
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+  </m:math> jest amplitudą napięcia w rozważanym obwodzie. Natężenie skuteczne pojawia się, ponieważ napięcie ciągle odwraca kierunki, ładując i rozładowując kondensator. W sytuacji, gdy częstotliwość płynącego prądu elektrycznego dąży do zera otrzymujemy napięcie stałe i wówczas <m:math display="inline">
+  <m:msub>
+    <m:mi>X</m:mi>
+    <m:mi>C</m:mi>
+  </m:msub>
+  </m:math> dąży do nieskończoności, a wartość natężenia prądu elektrycznego będzie równa zero po naładowaniu się kondensatora. Dla bardzo wysokich częstotliwości reaktancja pojemnościowa kondensatora dąży do zera i nie opóźnia już przepływu prądu i możemy wówczas zapomnieć o istnieniu kondensatora zastępując go zwartym kablem w schemacie obwodowym.</para></section>
+<section id="fs-id1172101734420">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Cewka</title>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101642944">Ostatnim rozważanym elementem jest cewka podłączona do źródła napięcia zmiennego. Zgodnie z drugim prawem Kirchhoffa napięcie na <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="cewka">cewce</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">inductor</term></foreign>) <m:math display="inline">
+  <m:mi>L</m:mi>
+  </m:math> z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_02_acinduct" cmlnle:case="genitive"/> (a) wynosi</para>
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101790116">
+    <m:math display="block">
+      <m:mrow>
+        <m:msub>
+          <m:mi>u</m:mi>
+          <m:mi>L</m:mi>
+        </m:msub>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>U</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>sin</m:mo>
+          <m:mrow>
+            <m:mfenced>
+              <m:mrow>
+                <m:mi>ω</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfenced>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101915675">Siła elektromotoryczna działająca na cewkę równa jest <m:math display="inline"><m:mi>ε</m:mi><m:mo>=</m:mo><m:mrow><m:mo>−</m:mo><m:mrow><m:mi>L</m:mi><m:mo>⋅</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mi>L</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>∕</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>t</m:mi></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:math> (co wyraża prawo Faradaya i przy założeniu, że strumień pol magnetycznego generowany przez cewkę jest proporcjonalny do wielkości natężenia przepływającego prądu elektrycznego). Spadek potencjału na cewce wynosi <m:math display="inline"><m:mrow><m:msub><m:mi>u</m:mi><m:mi>L</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>L</m:mi><m:mo>⋅</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mi>L</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>∕</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>t</m:mi></m:mrow></m:mrow></m:mrow></m:mrow></m:math>, ponieważ suma napięć w całej pętli ma wynosić zero – napięcie wytworzone przez źródło musi zostać odłożone na cewce. Tym samym po podłączeniu cewki do źródła napięcia otrzymujemy</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101922756" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:mfrac>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>i</m:mi>
+              <m:mi>L</m:mi>
+            </m:msub>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+          </m:mrow>
+        </m:mrow>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mi>L</m:mi>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>sin</m:mo>
+          <m:mrow>
+            <m:mfenced>
+              <m:mrow>
+                <m:mi>ω</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfenced>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_32_02_acinduct"><media id="fs-id1172101963395" alt="Rysunek a przedstawia obwód ze źródłem napięcia AC połączony z cewką. Źródło oznaczone jest V0 sinus omega t. Rysunek b przedstawia krzywą sinusoidalną napięcia AC i natężenia prądu w tym samym układzie współrzędnych. Napięcie ma mniejszą amplitudę niż natężenie prądu, a jego maksymalna wartość jest oznaczona V0. Maksymalna wartość prądu oznaczona jest I0. Dwie krzywe mają ten sam okres ale są przesunięte w fazie o pi/2. Krzywa napięcia opisana jest V ze znakiem L nawias t nawias równa V0 sinus omega t. Krzywa prądu oznaczona jest I ze znakiem L nawias t nawias równe I0 sinus nawias omega t minus pi przez dwa nawias.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_32_02_acinduct.jpg"/>
+    </media>
+    
+<caption>(a) Cewka podłączona do źródła napięcia zmiennego. (b) Natężenie prądu <m:math display="inline"><m:msub><m:mi>i</m:mi><m:mi>L</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:math> płynącego przez cewkę i napięcie <m:math display="inline"><m:msub><m:mi>u</m:mi><m:mi>L</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:math> na niej. W tym przypadku <m:math display="inline"><m:msub><m:mi>i</m:mi><m:mi>L</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:math> jest opóźnione względem <m:math display="inline"><m:msub><m:mi>u</m:mi><m:mi>L</m:mi></m:msub><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:math> o <m:math display="inline"><m:semantics><m:mrow><m:mfenced><m:mrow><m:mi>π</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mi mathvariant="normal">rad</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            (\pi/2)\si{\radian}</m:annotation></m:semantics></m:math>.</caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101988586">Natężenie prądu <m:math display="inline">
+  <m:msub>
+    <m:mi>i</m:mi>
+    <m:mi>L</m:mi>
+  </m:msub>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+  </m:math> wyznacza się poprzez obustronne scałkowanie powyższego wyrażenia. Ponieważ obwód nie posiada żadnego źródła stałej siły elektromotorycznej, nie istnieje w nim stałe natężenie prądu. Dzięki temu możemy przyjąć stałą całkowania, odpowiadającą wartości stałoprądowego natężenia prądu w obwodzie, za zero. Tym samym otrzymujemy</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101896479">
+    <m:math display="block">
+      <m:mrow>
+        <m:msub>
+          <m:mi>i</m:mi>
+          <m:mi>L</m:mi>
+        </m:msub>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>t</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mi>ω</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>L</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>cos</m:mo>
+            <m:mfenced>
+              <m:mrow>
+                <m:mi>ω</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfenced>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mrow>
+            <m:mi>ω</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>L</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>sin</m:mo>
+          <m:mfenced>
+            <m:mrow>
+              <m:mrow>
+                <m:mi>ω</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mfrac>
+                <m:mi>π</m:mi>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+            </m:mrow>
+          </m:mfenced>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>sin</m:mo>
+          <m:mrow>
+            <m:mfenced>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>ω</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>−</m:mo>
+                <m:mfrac>
+                  <m:mi>π</m:mi>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+              </m:mrow>
+            </m:mfenced>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101751940">gdzie <m:math display="inline"><m:msub><m:mi>I</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mrow><m:msub><m:mi>U</m:mi><m:mn>0</m:mn></m:msub><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:mi>L</m:mi></m:mrow></m:mfenced></m:mrow></m:math>. Relacja pomiędzy <m:math display="inline">
+  <m:msub>
+    <m:mi>U</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:math> a <m:math display="inline">
+<m:msub>
+  <m:mi>I</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+</m:math> może również zostać zapisana w postaci analogicznej do prawa Ohma</para><note id="fs-id1172101883504" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101883508">
+    <label/>
+    <m:math display="block">
+      <m:mfrac>
+        <m:msub>
+          <m:mi>U</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>ω</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>L</m:mi>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>X</m:mi>
+          <m:mi>L</m:mi>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101895592">Wielkość <m:math display="inline">
+  <m:msub>
+    <m:mi>X</m:mi>
+    <m:mi>L</m:mi>
+  </m:msub>
+</m:math> znana jest jako <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="reaktancja indukcyjna">reaktancja indukcyjna</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">inductive reactance</term></foreign>), <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="induktancja">induktancja</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">inductance</term></foreign>) lub <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="opór bierny indukcyjny cewki">opór bierny indukcyjny cewki</term> przed wywołany szybkością zmiany natężenia prądu elektrycznego w obwodzie wyrażone przez <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mi>ω</mi><annotation encoding="application/vnd.katalysteducation.mathtex">            \omega</annotation></semantics></math>. Jednostką impedancji indukcyjnej jest również om. Istotny jest tutaj fakt, że cewka przepuszcza jedynie składową stałą prądu elektrycznego w granicy dużych częstości <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mi>ω</mi><annotation encoding="application/vnd.katalysteducation.mathtex">            \omega</annotation></semantics></math> (w tym sensie cewka ma własność odwrotną do cechy kondensatora, który przepuszcza składowe zmienne prądu elektrycznego i zatrzymuje składowe stałe prądu elektrycznego). Zauważmy, że <m:math display="inline">
+<m:msub>
+  <m:mi>X</m:mi>
+  <m:mi>L</m:mi>
+</m:msub>
+</m:math> jest liniowo zależne od częstotliwości źródła napięcia zmiennego – wysoka częstotliwość powoduje pojawienie się wysokiej reaktancji indukcyjnej.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101663129">Różnica fazy o wartości <m:math display="inline"><m:semantics><m:mrow><m:mfenced><m:mrow><m:mi>π</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mi mathvariant="normal">rad</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            (\pi/2)\si{\radian}</m:annotation></m:semantics></m:math> pojawia się pomiędzy natężeniem prądu płynącego przez cewkę i napięciem prądu odłożonym na cewce. Z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172101790116" cmlnle:case="genitive"/> i <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172101896479" cmlnle:case="genitive"/> wynika, że natężenie prądu jest opóźnione względem napięcia na cewce o <m:math display="inline"><m:semantics><m:mrow><m:mfenced><m:mrow><m:mi>π</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mi mathvariant="normal">rad</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            (\pi/2)\si{\radian}</m:annotation></m:semantics></m:math>, czyli o ćwierć cyklu. Wykres wskazowy dla tego przypadku pokazuje <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_02_phasorind" cmlnle:case="nominative"/>.</para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_32_02_phasorind"><media id="fs-id1172101970403" alt="Rysunek przedstawia układ współrzędnych. Strzałka oznaczona V0 biegnie z początku układu i wskazuje w górę i w prawo tworząc kąt omega t z osią x. W pobliżu ostrza narysowana jest strzałka oznaczona omega, prostopadła do ostrza, wskazująca w górę w lewo. Rzut V0 na y wynosi V ze znakiem L nawias t nawias. Strzałka oznaczona I0 biegnie z początku układu i wskazuje w dół w prawo. Jest prostopadła do V0. Rzut strzałki na ujemną oś y wynosi i ze znakiem L nawias t nawias. W pobliżu ostrza narysowana jest strzałka oznaczona omega, jest ona prostopadła do do strzałki V0 i wskazuje w górę i w prawo.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_32_02_phasorind.jpg"/>
+  </media>
+  
+  <caption>Wykres wskazowy dla cewki z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_32_02_acinduct" cmlnle:case="genitive"/>. Wskaz natężenia prądu jest opóźniony względem wskazu napięcia o wartość <m:math display="inline"><m:semantics><m:mrow><m:mfenced><m:mrow><m:mi>π</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mi mathvariant="normal">rad</m:mi></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            (\pi/2)\si{\radian}</m:annotation></m:semantics></m:math>, ale oba nadal obracają się z jednakową prędkością kątową.</caption></figure><note id="fs-id1172101731993" class="media-2">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101731996">Animacja obwodów prądu zmiennego wykonana przez University of New South Wales (<link url="https://openstaxcollege.org/l/21accircuits">obwody prądu zmiennego</link> ) przedstawia niektóre z zagadnień opisywanych w tym rozdziale. Ponadto zawiera ona wykresy przebiegów i wskazów, które ewoluują w czasie, co pozwala na lepsze zrozumienie zjawisk zachodzących w takich obwodach.</para></note>
+  <example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101788195">
+    <para id="fs-id1172101788197"><title>Proste obwody prądu zmiennego</title>Generator napięcia zmiennego wytwarza siłę elektromotoryczną o amplitudzie <m:math display="inline">
+        <m:mn>10</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+      </m:math> i częstotliwości <m:math display="inline">
+      <m:mi>f</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>60</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mi mathvariant="normal">Hz</m:mi>
+      </m:mrow>
+    </m:math>. Wyznaczmy wartość napięcia odłożonego na elementach i wartość natężenia prądu płynącego przez elementy, gdy generator jest podłączony do <list id="eip-idm733611168" list-type="enumerated" number-style="lower-alpha"><item>opornika o oporze <m:math display="inline">
+      <m:mn>100</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+      </m:math>;</item>
+      <item>kondensatora o pojemności <m:math display="inline">
+        <m:mn>10</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">µF</m:mi>
+        </m:math>;</item>
+        <item>cewki o indukcyjności <m:math display="inline">
+          <m:mn>15</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi mathvariant="normal">mH</m:mi>
+          </m:math>.</item>
+        </list></para><para id="fs-id1172101922001"><title>Strategia rozwiązania</title>Całkowite napięcie zmienne na każdym z elementów jest równe napięciu źródła. Możemy znaleźć wartość natężenia prądu przez znalezienie reaktancji <m:math display="inline">
+          <m:mi>X</m:mi>
+        </m:math> każdego z elementów i wykorzystanie zależności pomiędzy amplitudami <m:math display="inline">
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>∕</m:mo>
+          <m:mi>X</m:mi>
+        </m:mrow>
+        </m:math>.</para><para id="fs-id1172101920379">
+          <title>Rozwiązanie</title>Napięcie na zaciskach generatora wynosi</para>
+          <equation id="fs-id1172101949855" class="unnumbered"><label/>
+            <m:math display="block">
+              <m:mrow>
+                <m:mi>u</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>U</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>⁢</m:mo>
+                <m:mrow>
+                  <m:mo>sin</m:mo>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mi>ω</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>10</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                  <m:mi mathvariant="normal">V</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mo>sin</m:mo>
+                  <m:mrow>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mn>120</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>π</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                    </m:mfenced>
+                    <m:mo>⁢</m:mo>
+                    <m:mtext>,</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:math>
+          </equation><para id="fs-id1172101773536">gdzie <m:math display="inline">
+            <m:mi>ω</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>π</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>f</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>120</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>π</m:mi>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mrow>
+                <m:mi mathvariant="normal">rad</m:mi>
+                <m:mo>∕</m:mo>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+            </m:mrow>
+          </m:math> jest częstością. Ponieważ <m:math display="inline">
+          <m:mi>u</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+          </m:math> jest jednocześnie napięciem na każdym z elementów, otrzymujemy</para><equation id="fs-id1172101759446" class="unnumbered"><label/>
+            <m:math display="block">
+              <m:mrow>
+                <m:mi>u</m:mi>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>u</m:mi>
+                  <m:mi>R</m:mi>
+                </m:msub>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>u</m:mi>
+                  <m:mi>C</m:mi>
+                </m:msub>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>u</m:mi>
+                  <m:mi>L</m:mi>
+                </m:msub>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>10</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                  <m:mi mathvariant="normal">V</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mo>sin</m:mo>
+                  <m:mrow>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mn>120</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>π</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                    </m:mfenced>
+                    <m:mo>⁢</m:mo>
+                    <m:mtext>.</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:math>
+          </equation><list id="fs-id1172101976501" list-type="enumerated" number-style="lower-alpha"><item>Kiedy <m:math display="inline">
+              <m:mi>R</m:mi>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mn>100</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">Ω</m:mi>
+              </m:mrow>
+            </m:math>, amplituda natężenia prądu płynącego przez opornik wynosi<equation id="fs-id1172101994903" class="unnumbered">
+            <label/>
+            <m:math display="block">
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:msub>
+                  <m:mi>U</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mi>R</m:mi>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mn>10</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                  <m:mi mathvariant="normal">V</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mn>100</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                  <m:mi mathvariant="normal">Ω</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>0,1</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                  <m:mi mathvariant="normal">A</m:mi>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:mtext>,</m:mtext>
+              </m:mrow>
+            </m:math>
+          </equation>
+          <equation id="fs-id1172101971087" class="unnumbered"><label/>
+            <m:math display="block">
+              <m:mrow>
+                <m:msub>
+                  <m:mi>i</m:mi>
+                  <m:mi>R</m:mi>
+                </m:msub>
+                <m:mo>⁡</m:mo>
+                <m:mfenced>
+                  <m:mi>t</m:mi>
+                </m:mfenced>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>0,1</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                  <m:mi mathvariant="normal">A</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mo>sin</m:mo>
+                  <m:mrow>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mn>120</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>π</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                    </m:mfenced>
+                    <m:mo>⁢</m:mo>
+                    <m:mtext>.</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:math>
+          </equation></item>
+        <item>Z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172101611081" cmlnle:case="genitive"/> kapacytancja wynosi<equation id="fs-id1172101775338" class="unnumbered">
+          <label/>
+          <m:math display="block">
+            <m:msub>
+              <m:mi>X</m:mi>
+              <m:mi>C</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mrow>
+                <m:mi>ω</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>C</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mn>120</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>π</m:mi>
+                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">rad</m:mi>
+                      <m:mo>∕</m:mo>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow><m:mo>−</m:mo><m:mn>6</m:mn></m:mrow>
+                  </m:msup>
+                </m:mrow>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">F</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>265</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">Ω</m:mi>
+              </m:mrow>
+              <m:mo>⁢</m:mo>
+              <m:mtext>,</m:mtext>
+            </m:mrow>
+          </m:math>
+        </equation>więc amplituda natężenia prądu elektrycznego będzie równa<equation id="fs-id1172101949891" class="unnumbered">
+        <label/>
+        <m:math display="block">
+          <m:msub>
+            <m:mi>I</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:msub>
+              <m:mi>X</m:mi>
+              <m:mi>C</m:mi>
+            </m:msub>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>10</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">V</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>256</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>3,8</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+                </m:msup>
+              </m:mrow>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">A</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <equation id="fs-id1172101971148" class="unnumbered">
+        <label/>
+        <m:math display="block">
+          <m:mrow>
+            <m:msub>
+              <m:mi>i</m:mi>
+              <m:mi>C</m:mi>
+            </m:msub>
+            <m:mo>⁡</m:mo>
+            <m:mfenced>
+              <m:mi>t</m:mi>
+            </m:mfenced>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>3,8</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow>
+                </m:msup>
+              </m:mrow>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">A</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mrow>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mn>120</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>π</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mfrac>
+                      <m:mi>π</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mfenced>
+                <m:mo>⁢</m:mo>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+    </item>
+    <item>Jak wynika z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172101883508" cmlnle:case="genitive"/>, induktancja wynosi<equation id="fs-id1172101949347" class="unnumbered">
+      <label/>
+      <m:math display="block">
+        <m:msub>
+          <m:mi>X</m:mi>
+          <m:mi>L</m:mi>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>ω</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>L</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>120</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>π</m:mi>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mrow>
+              <m:mi mathvariant="normal">rad</m:mi>
+              <m:mo>∕</m:mo>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>15</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+              </m:msup>
+            </m:mrow>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">H</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>5,7</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation>Amplituda natężenia prądu elektrycznego jest wtedy równa<equation id="fs-id1172101986265" class="unnumbered"><label/>
+    <m:math display="block">
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mn>10</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">V</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mn>5,7</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">Ω</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>1,8</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">A</m:mi>
+<m:mo>⁢</m:mo><m:mtext>,</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation> a natężenie chwilowe wynosi <equation id="fs-id1172101996054" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:msub>
+        <m:mi>i</m:mi>
+        <m:mi>L</m:mi>
+      </m:msub>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>1,8</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">A</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mrow>
+        <m:mo>sin</m:mo>
+        <m:mrow>
+          <m:mfenced>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>120</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>π</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mfrac>
+                <m:mi>π</m:mi>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+            </m:mrow>
+          </m:mfenced>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+</item>
+</list><para id="fs-id1172101963327"><title>Znaczenie</title>Mimo że napięcie na każdym z elementów jest identyczne, amplitudy natężenia prądu różnią się między sobą w zależności od reaktancji elementu. Reaktancja każdego z elementów zależna jest od wartości oporności, pojemności i indukcyjności.</para></example>
+<note id="fs-id1172101963336" class="check-understanding">
+  <exercise id="fs-id1172101963339">
+    <problem id="fs-id1172101963341">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101963343"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Powtórz <link target-id="fs-id1172101788195"/> dla generatora napięcia zmiennego o amplitudzie <m:math display="inline">
+          <m:mn>20</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">V</m:mi>
+        </m:math> i częstotliwości <m:math display="inline">
+        <m:mn>100</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mi mathvariant="normal">Hz</m:mi>
+        </m:math>.</para></problem>
+      <solution id="fs-id1172101963351">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101963353">a. <m:math display="inline">
+          <m:mrow>
+            <m:mn>20</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">V</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mo>sin</m:mo>
+            <m:mfenced>
+              <m:mrow>
+                <m:mn>200</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>π</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfenced>
+          </m:mrow>
+        </m:math>, <m:math display="inline">
+        <m:mrow>
+          <m:mn>0,2</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">A</m:mi>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mo>sin</m:mo>
+          <m:mfenced>
+            <m:mrow>
+              <m:mn>200</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>π</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfenced>
+        </m:mrow>
+      </m:math>; b. <m:math display="inline">
+      <m:mrow>
+        <m:mn>20</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mrow>
+        <m:mo>sin</m:mo>
+        <m:mfenced>
+          <m:mrow>
+            <m:mn>200</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>π</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfenced>
+      </m:mrow>
+    </m:math>, <m:math display="inline">
+    <m:mrow>
+      <m:mn>0,13</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mo>sin</m:mo>
+      <m:mfenced>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>200</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>π</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mi>π</m:mi>
+            <m:mo>∕</m:mo>
+            <m:mn>2</m:mn>
+          </m:mrow>
+        </m:mrow>
+      </m:mfenced>
+    </m:mrow>
+  </m:math>; c. <m:math display="inline">
+  <m:mrow>
+    <m:mn>20</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">V</m:mi>
+  </m:mrow>
+  <m:mo>⋅</m:mo>
+  <m:mrow>
+    <m:mo>sin</m:mo>
+    <m:mfenced>
+      <m:mrow>
+        <m:mn>200</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mi>π</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfenced>
+  </m:mrow>
+</m:math>, <m:math display="inline">
+<m:mrow>
+  <m:mn>2,10</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">A</m:mi>
+</m:mrow>
+<m:mo>⋅</m:mo>
+<m:mrow>
+  <m:mo>sin</m:mo>
+  <m:mfenced>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>200</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mi>π</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+      <m:mo>−</m:mo>
+      <m:mrow>
+        <m:mi>π</m:mi>
+        <m:mo>∕</m:mo>
+        <m:mn>2</m:mn>
+      </m:mrow>
+    </m:mrow>
+  </m:mfenced>
+</m:mrow>
+</m:math>.</para></solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1172101949115" class="key-concepts">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Podsumowanie</title>
+  <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101949122" list-type="bulleted" bullet-style="bullet"><item>W przypadku opornika natężenie prądu płynącego przez niego i odłożone na nim napięcie są zgodne w fazie, a wówczas impedancja opornika wynosi <m:math display="inline">
+      <m:mi>R</m:mi>
+      </m:math> i jest liczbą rzeczywistą.</item>
+      <item>W przypadku kondensatora (np. układu dwóch równoległych płytek metalu rozsuniętych i niedotykających siebie) poddanego działaniu zmiennego sinusoidalnie napięcia natężenie prądu przez niego płynącego wyprzedza w fazie napięcie na nim o ćwierć cyklu. Ponieważ kondensator przerywa obwód, gdy jest w pełni naładowany, ogranicza to natężenie prądu płynącego przez niego i zapewnia dodatkowy rodzaj oporu zmiennoprądowego (impedancji), nazywany tutaj kapacytancją (reaktancją pojemnościową) i wyrażany w jednostkach oporu elektrycznego (omach).</item>
+      <item>W przypadku cewki (np. zwoju drutu nawiniętego na izolator), do której przyłożono sinusoidalnie zmienne napięcie, napięcie wyprzedza natężenie prądu w fazie o ćwierć cyklu.</item>
+      <item>Opór cewki przed zmianami natężenia prądu jest wyrażony jako rodzaj reaktancji zmiennoprądowej. Jest to induktancja (reaktancja indukcyjna), mająca wymiar omów i zależna od częstotliwości źródła napięcia zmiennego.</item>
+    </list></section>
+  <section id="fs-id1172101949146" class="review-conceptual-questions">
+    <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Pytania</title>
+    <exercise id="fs-id1172101976784">
+      <problem id="fs-id1172101976786">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101976788">Wyjaśnij, dlaczego dla wysokich częstotliwości kondensator zachowuje się jak zwarty kabel w obwodzie (jego obecność można pominąć) , a
+cewkę można zastąpić przerwanym kablem?</para></problem>
+    </exercise>
+  </section>
+  <section id="fs-id1172101976804" class="review-problems">
+    <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Zadania</title>
+    <exercise id="fs-id1172101976811">
+      <problem id="fs-id1172101976813">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101976815">Oblicz reaktancję kondensatora o pojemności <m:math display="inline">
+          <m:mn>5</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">µF</m:mi>
+        </m:math> dla częstotliwości<list id="eip-idm237530832" list-type="enumerated" number-style="lower-alpha">
+        <item>
+          <m:math display="inline">
+            <m:mn>60</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi mathvariant="normal">Hz</m:mi>
+            </m:math>;</item>
+            <item>
+              <m:math display="inline">
+                <m:mn>600</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi mathvariant="normal">Hz</m:mi>
+                </m:math>;</item>
+                <item>
+                  <m:math display="inline">
+                    <m:mn>6000</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi mathvariant="normal">Hz</m:mi>
+                    </m:math>.</item>
+                  </list>
+                </para></problem>
+              <solution id="fs-id1172101976831">
+                <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101976833">a. <m:math display="inline">
+                  <m:mn>530</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                  <m:mi mathvariant="normal">Ω</m:mi>
+                </m:math>; b. <m:math display="inline">
+                <m:mn>53</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">Ω</m:mi>
+              </m:math>; c. <m:math display="inline">
+              <m:mn>5,3</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+              </m:math>.</para></solution>
+          </exercise>
+          <exercise id="fs-id1172101971191">
+            <problem id="fs-id1172101971193">
+              <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101971196">Ile wynosi pojemność kondensatora, którego kapacytancja dla częstotliwości <m:math display="inline">
+                <m:mn>60</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi mathvariant="normal">Hz</m:mi>
+              </m:math> jest równa <m:math display="inline">
+              <m:mn>10</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+              </m:math>?</para></problem>
+          </exercise>
+          <exercise id="fs-id1172101969276">
+            <problem id="fs-id1172101969278">
+              <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101969280">Oblicz induktancję cewki o indukcyjności <m:math display="inline">
+                <m:mn>5</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi mathvariant="normal">mH</m:mi>
+              </m:math> dla częstotliwości<list id="eip-idm259926272" list-type="enumerated" number-style="lower-alpha">
+              <item>
+                <m:math display="inline">
+                  <m:mn>60</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi mathvariant="normal">Hz</m:mi>
+                  </m:math>;</item>
+                  <item>
+                    <m:math display="inline">
+                      <m:mn>600</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mi mathvariant="normal">Hz</m:mi>
+                      </m:math>;</item>
+                      <item>
+                        <m:math display="inline">
+                          <m:mn>6000</m:mn>
+                          <m:mo>⁢</m:mo>
+                          <m:mi mathvariant="normal">Hz</m:mi>
+                          </m:math>.</item>
+                        </list>
+                      </para>
+                    </problem>
+                    <solution id="fs-id1172101969285">
+                      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101969287">a. <m:math display="inline">
+                        <m:mn>1,9</m:mn>
+                        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                        <m:mi mathvariant="normal">Ω</m:mi>
+                      </m:math>; b. <m:math display="inline">
+                      <m:mn>19</m:mn>
+                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                      <m:mi mathvariant="normal">Ω</m:mi>
+                    </m:math>; c. <m:math display="inline">
+                    <m:mn>190</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                    <m:mi mathvariant="normal">Ω</m:mi>
+                    </m:math>.</para></solution>
+                </exercise>
+                <exercise id="fs-id1172101969314">
+                  <problem id="fs-id1172101969316">
+                    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101969318">Ile wynosi indukcyjność cewki, której induktancja dla częstotliwości <m:math display="inline">
+                      <m:mn>60</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mi mathvariant="normal">Hz</m:mi>
+                    </m:math> ma wartość <m:math display="inline">
+                    <m:mn>10</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                    <m:mi mathvariant="normal">Ω</m:mi>
+                    </m:math>?</para></problem>
+                </exercise>
+                <exercise id="fs-id1172101969337">
+                  <problem id="fs-id1172101969339">
+                    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101969341">Dla jakiej częstotliwości kapacytancja kondensatora o pojemności <m:math display="inline">
+                      <m:mn>20</m:mn>
+                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                      <m:mi mathvariant="normal">µF</m:mi>
+                    </m:math> jest równa induktancji cewki o indukcyjności <m:math display="inline">
+                    <m:mn>10</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi mathvariant="normal">mH</m:mi>
+                    </m:math>?</para></problem>
+                  <solution id="fs-id1172101988486">
+                    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101988488">
+                      <m:math display="inline">
+                        <m:mn>360</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi mathvariant="normal">Hz</m:mi>
+                        </m:math>.</para>
+                      </solution>
+                    </exercise>
+                    <exercise id="fs-id1172101988494">
+                      <problem id="fs-id1172101988496">
+                        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101988498">Dla częstotliwości <m:math display="inline">
+                          <m:mn>1000</m:mn>
+                          <m:mo>⁢</m:mo>
+                          <m:mi mathvariant="normal">Hz</m:mi>
+                        </m:math> induktancja cewki o indukcyjności <m:math display="inline">
+                        <m:mn>5</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi mathvariant="normal">mH</m:mi>
+                        </m:math> jest równa kapacytancji pewnego kondensatora. Ile wynosi pojemność tego kondensatora?</para>
+                      </problem>
+                    </exercise>
+                    <exercise id="fs-id1172101988528">
+                      <problem id="fs-id1172101988530">
+                        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101988532">Opornik o oporze <m:math display="inline">
+                          <m:mn>50</m:mn>
+                          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                          <m:mi mathvariant="normal">Ω</m:mi>
+                        </m:math> podłączony jest do źródła o wzorze <m:math display="inline">
+                        <m:mrow>
+                          <m:mi>u</m:mi>
+                          <m:mo>⁡</m:mo>
+                          <m:mfenced>
+                            <m:mi>t</m:mi>
+                          </m:mfenced>
+                        </m:mrow>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>160</m:mn>
+                            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                            <m:mi mathvariant="normal">V</m:mi>
+                          </m:mrow>
+                          <m:mo>⋅</m:mo>
+                          <m:mrow>
+                            <m:mo>sin</m:mo>
+                            <m:mfenced>
+                              <m:mrow>
+                                <m:mn>120</m:mn>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>π</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>t</m:mi>
+                              </m:mrow>
+                            </m:mfenced>
+                          </m:mrow>
+                        </m:mrow>
+                        </m:math>. Zapisz wyrażenie na natężenie prądu płynącego przez ten opornik.</para></problem>
+                      <solution id="fs-id1172101995624">
+                        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101995626"><m:math display="inline">
+                            <m:mrow>
+                              <m:mi>i</m:mi>
+                              <m:mo>⁡</m:mo>
+                              <m:mfenced>
+                                <m:mi>t</m:mi>
+                              </m:mfenced>
+                            </m:mrow>
+                            <m:mo>=</m:mo>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mn>3,2</m:mn>
+                                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                                <m:mi mathvariant="normal">A</m:mi>
+                              </m:mrow>
+                              <m:mo>⋅</m:mo>
+                              <m:mrow>
+                                <m:mo>sin</m:mo>
+                                <m:mrow>
+                                  <m:mfenced>
+                                    <m:mrow>
+                                      <m:mn>120</m:mn>
+                                      <m:mo>⁢</m:mo>
+                                      <m:mi>π</m:mi>
+                                      <m:mo>⁢</m:mo>
+                                      <m:mi>t</m:mi>
+                                    </m:mrow>
+                                  </m:mfenced>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mtext>.</m:mtext>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:math>
+                        </para></solution>
+                    </exercise>
+                    <exercise id="fs-id1172101963521">
+                      <problem id="fs-id1172101963523">
+                        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101963525">Do źródła o wzorze <m:math display="inline">
+                          <m:mrow>
+                            <m:mi>u</m:mi>
+                            <m:mo>⁡</m:mo>
+                            <m:mfenced>
+                              <m:mi>t</m:mi>
+                            </m:mfenced>
+                          </m:mrow>
+                          <m:mo>=</m:mo>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mn>160</m:mn>
+                              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                              <m:mi mathvariant="normal">V</m:mi>
+                            </m:mrow>
+                            <m:mo>⋅</m:mo>
+                            <m:mrow>
+                              <m:mo>sin</m:mo>
+                              <m:mfenced>
+                                <m:mrow>
+                                  <m:mn>120</m:mn>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>π</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mi>t</m:mi>
+                                </m:mrow>
+                              </m:mfenced>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:math> podłączono kondensator o pojemności <m:math display="inline">
+                        <m:mn>25</m:mn>
+                        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                        <m:mi mathvariant="normal">µF</m:mi>
+                        </m:math>. 
+
+<list id="eip-idm243874112" list-type="enumerated" number-style="lower-alpha">
+<item>Ile wynosi kapacytancja tego kondensatora?</item>
+<item>Zapisz wyrażenie na natężenie prądu wypływającego ze źródła.</item>
+</list></para></problem>
+                    </exercise>
+                    <exercise id="fs-id1172101970345">
+                      <problem id="fs-id1172101970347">
+                        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101970349">Do źródła z poprzedniego zadania podłączono cewkę o indukcyjności <m:math display="inline">
+                          <m:mn>100</m:mn>
+                          <m:mo>⁢</m:mo>
+                          <m:mi mathvariant="normal">mH</m:mi>
+                        </m:math>.<list id="eip-idm727038352" list-type="enumerated" number-style="lower-alpha">
+                        <item>Ile wynosi induktancja tej cewki?</item>
+                        <item>Zapisz wyrażenie na natężenie prądu płynącego przez tę cewkę.</item>
+                      </list>
+                    </para>
+                  </problem>
+                  <solution id="fs-id1172101970355">
+                    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101970357">a. <m:math display="inline">
+                      <m:mn>38</m:mn>
+                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                      <m:mi mathvariant="normal">Ω</m:mi>
+                    </m:math>; b. <m:math display="inline">
+                    <m:mrow>
+                      <m:mi>i</m:mi>
+                      <m:mo>⁡</m:mo>
+                      <m:mfenced>
+                        <m:mi>t</m:mi>
+                      </m:mfenced>
+                    </m:mrow>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>4,24</m:mn>
+                        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                        <m:mi mathvariant="normal">A</m:mi>
+                      </m:mrow>
+                      <m:mo>⋅</m:mo>
+                      <m:mrow>
+                        <m:mo>sin</m:mo>
+                        <m:mfenced>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mn>120</m:mn>
+                              <m:mo>⁢</m:mo>
+                              <m:mi>π</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:mi>t</m:mi>
+                            </m:mrow>
+                            <m:mo>−</m:mo>
+                            <m:mrow>
+                              <m:mi>π</m:mi>
+                              <m:mo>∕</m:mo>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mfenced>
+                      </m:mrow>
+                    </m:mrow>
+                    </m:math>.</para></solution>
+                </exercise>
+              </section>
+            </content>
+            <glossary>
+<definition id="fs-idm1306065536">
+<term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="kapacytancja">kapacytancja (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">capacitance</term></foreign>)</term>
+<meaning id="fs-idm894633136">opór kondensatora przed zmianami natężenia prądu</meaning>
+</definition>
+<definition id="fs-idm1067500576">
+<term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="induktancja">induktancja (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">inductance</term></foreign>)</term>
+<meaning id="fs-idm897435280">opór cewki przez zmianami natężenia prądu</meaning>
+</definition>
+              <definition id="fs-id1172101988128">
+                <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="reaktancja pojemnościowa">reaktancja pojemnościowa (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">capacitive reactance</term></foreign>)</term>
+                  <meaning id="fs-id1172101988133">patrz „<emphasis effect="bold">kapacytancja</emphasis>”</meaning>
+                </definition>
+                <definition id="fs-id1172101988137">
+                  <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="reaktancja indukcyjna">reaktancja indukcyjna (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">inductive reactance</term></foreign>)</term>
+                    <meaning id="fs-id1172101988143">patrz „<emphasis effect="bold">induktancja</emphasis>”</meaning>
+                  </definition>
+                  <definition id="fs-id1172101988147">
+                    <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="wartość skuteczna natężenia prądu">wartość skuteczna natężenia prądu (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">rms current</term></foreign>)</term>
+                      <meaning id="fs-id1172101988152">wartość średniej kwadratowej dla natężenia chwilowego prądu</meaning>
+                    </definition>
+                    <definition id="fs-id1172101988157">
+                      <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="wartość skuteczna napięcia prądu">wartość skuteczna napięcia prądu (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">rms voltage</term></foreign>)</term>
+                        <meaning id="fs-id1172101988163">wartość średniej kwadratowej dla napięcia chwilowego prądu</meaning>
+                      </definition>
+                    </glossary>
+                  </document>

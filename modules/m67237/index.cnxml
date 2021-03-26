@@ -1,0 +1,2568 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.8" module-id="new">
+  <title>Równania Maxwella i fale elektromagnetyczne</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67237</md:content-id>
+  <md:title>Równania Maxwella i fale elektromagnetyczne</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>wyjaśniać tzw. poprawkę Maxwella do prawa Ampere’a przez dodanie prądu przesunięcia;</item>
+<item>zapisywać i stosować równania Maxwella w postaci całkowej;</item>
+<item>wyjaśniać, jak symetria pomiędzy zmiennymi polami elektrycznymi i magnetycznymi tłumaczy przewidywania Maxwella odnośnie fal elektromagnetycznych;</item>
+<item>opisywać, jak Hertz potwierdził przewidywania Maxwella co do istnienia fal elektromagnetycznych.</item>
+</list></md:abstract>
+  <md:uuid>078722fd-cb24-422e-9a57-d676239f06c0</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242165545">
+    <term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cxlxt:index="name" cxlxt:name="Maxwell, James Clerk" cxlxt:born="1831" cxlxt:died="1879" cmlnle:reference="Maxwell, James Clerk (1831–1879)">James Clerk Maxwell (1831–1879)</term> był jednym z największych fizyków XIX wieku (<link target-id="CNX_UPhysics_33_01_Maxwell"/>). Pomimo swojej przedwczesnej śmierci znacząco przyczynił się do rozwoju kinetycznej teorii gazów, zrozumienia zjawiska widzenia kolorów czy natury pierścieni Saturna. Jednak jest on najbardziej znany ze względu na skonsolidowanie całej ówczesnej wiedzy o zjawiskach elektrycznych i magnetycznych. Dodając do niej również swoje pomysły i obserwacje, sformułował pełną i skończoną teorię zjawisk elektromagnetycznych, przedstawianą skrótowo w postaci równań Maxwella.</para>
+    <figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_33_01_Maxwell">
+      <media id="fs-id1171242415001" alt="Fotografia Jamesa Clerka Maxwella. ">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_33_01_Maxwell.jpg"/>
+      </media>
+      <caption>James Clerk Maxwell – XIX-wieczny fizyk, który opracował teorię wyjaśniającą powiązania pomiędzy elektrycznością i magnetyzmem, a także prawidłowo przewidział, że światło widzialne jest rodzajem fal elektromagnetycznych.</caption>
+    </figure>
+    <section id="fs-id1171242138520">
+      <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Poprawka Maxwella do praw elektryczności i magnetyzmu</title>
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242164618">Cztery podstawowe prawa elektryczności i magnetyzmu zostały odkryte eksperymentalnie dzięki pracom takich fizyków, jak: Ørsted, Coulomb, Gauss czy Faraday. Maxwell odnalazł w tych wcześniejszych pracach pewne logiczne nieścisłości i zidentyfikował problem w postaci niekompletności prawa Ampère’a.</para>
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242155064">Przypomnijmy sobie, że według prawa Ampère’a całka wektora indukcji magnetycznej wytworzonego przez prąd przepływający przez zamkniętą pętlę <m:math display="inline">
+        <m:mi>C</m:mi>
+      </m:math> jest proporcjonalna do natężenia prądu <m:math display="inline">
+      <m:mi>i</m:mi>
+    </m:math> przepływającego przez dowolną powierzchnię, której brzegiem jest ta pętla (mała litera oznacza, że wielkość zależna jest od czasu <m:math display="inline">
+    <m:mrow>
+      <m:mi>i</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>t</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mi>i</m:mi>
+    </m:math>) </para>
+    <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242092094">
+      <m:math display="block">
+        <m:mrow>
+          <m:munder>
+            <m:mo>∮</m:mo>
+            <m:mi>C</m:mi>
+          </m:munder>
+          <m:mrow>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mover>
+                <m:mi>s</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>μ</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mi>i</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171239996669">Istnieje nieskończenie wiele powierzchni ograniczonych przez daną pętlę, a prawo Ampère’a według definicji z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1171242092094" cmlnle:case="genitive"/> jest niezależne od wyboru powierzchni.</para>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242462123">Rozpatrzmy sytuację z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_33_01_GaussSurf" cmlnle:case="genitive"/>. Źródło siły elektromotorycznej zostaje podłączone do kondensatora składającego się z dwóch równoległych płytek metalowych w taki sposób, że w przewodzie pojawia się prąd, którego natężenie zależy od czasu. Zastosujmy prawo Ampère’a do pętli <m:math display="inline">
+      <m:mi>C</m:mi>
+    </m:math>, przedstawionej na rysunku w chwili przed całkowitym naładowaniem kondensatora, a więc gdy <m:math display="inline">
+    <m:mi>i</m:mi>
+    <m:mo>≠</m:mo>
+    <m:mn>0</m:mn>
+  </m:math>. Natężenie prądu płynącego przez powierzchnię <m:math display="inline">
+  <m:msub>
+    <m:mi>S</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:math> jest większe od zera, zaś przez powierzchnię <m:math display="inline">
+<m:msub>
+  <m:mi>S</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> równe zero</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171240238942" class="unnumbered"><m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:munder>
+            <m:mo>∮</m:mo>
+            <m:mi>C</m:mi>
+          </m:munder>
+          <m:mrow>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mover>
+                <m:mi>s</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mfenced open="{" close="">
+          <m:mtable>
+            <m:mtr>
+              <m:mtd>
+                <m:msub>
+                  <m:mi>μ</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>⁢</m:mo>
+                <m:mi>i</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mtext>dla </m:mtext>
+                <m:mo>⁢</m:mo>
+                <m:msub>
+                  <m:mi>S</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mtd>
+            </m:mtr>
+            <m:mtr>
+              <m:mtd>
+                <m:mn>0</m:mn>
+              </m:mtd>
+              <m:mtd>
+                <m:mtext>dla </m:mtext>
+                <m:mo>⁢</m:mo>
+                <m:msub>
+                  <m:mi>S</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+                <m:mo>⁢</m:mo>
+                <m:mtext>.</m:mtext>
+              </m:mtd>
+            </m:mtr>
+          </m:mtable>
+        </m:mfenced>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \oint_C \vec{B} \cdot \d \vec{s} = \left{ \begin{matrix} \mu_0 i &amp; \text{dla } S_1 \\ 0 &amp; \text{dla } S_2 \text{.} \end{matrix} \right.</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242515169">Jasne jest, że w takim sformułowaniu prawo Ampère’a nie działa. Nie jest to zaskoczeniem, gdyż prawo Ampère’a używane we wcześniejszych rozdziałach wymagało stałego przepływu ładunku. Tymczasem w naszym przykładzie natężenie prądu zmienia się w czasie i to niekoniecznie jednostajnie.</para>
+<figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_33_01_GaussSurf">
+  <media id="fs-id1171242179620" alt="Rysunek przedstawia przewód połączony z płaszczyzną równolegle do płaszczyzny kondensatora. Prąd l przepływa przez niego ku dołowi. Przewód przechodzi również przez płaską powierzchnię cylindra na szczycie kondensatora. Powierzchnia oznaczona S1 i jej okrągła granica oznaczona jest C. Pokazana jest strzałka stycznie do C. Boki cylindra zwężają się ku dołowi i do wewnątrz. Powierzchnia oznaczona jest S2. Pokazane są linie pola oznaczone wektorem E między dwiema płytkami kondensatora, skierowane ku dołowi.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_33_01_GaussSurf.jpg"/>
+  </media>
+  <caption>Prądy płynące przez powierzchnię <m:math display="inline">
+    <m:msub>
+      <m:mi>S</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+  </m:math> i przez powierzchnię <m:math display="inline">
+  <m:msub>
+    <m:mi>S</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:math> nie są co do wartości równe, mimo że obie powierzchnie ograniczone są tą samą pętlą <m:math display="inline">
+<m:mi>C</m:mi>
+</m:math>.</caption>
+</figure>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242148670">Jak można zatem zmodyfikować prawo Ampère’a, aby działało we wszystkich przypadkach? Maxwell zaproponował włączenie dodatkowego czynnika, nazywanego prądem przesunięcia, do rzeczywistego natężenia prądu <m:math display="inline">
+  <m:mi>i</m:mi>
+</m:math>
+</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242092001">
+  <m:math display="block">
+    <m:mrow>
+      <m:munder>
+        <m:mo>∮</m:mo>
+        <m:mi>C</m:mi>
+      </m:munder>
+      <m:mrow>
+        <m:mover>
+          <m:mi>B</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+          <m:mover>
+            <m:mi>s</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>μ</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mfenced>
+        <m:mrow>
+          <m:mi>i</m:mi>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>i</m:mi>
+            <m:mtext>p</m:mtext>
+          </m:msub>
+        </m:mrow>
+      </m:mfenced>
+      <m:mo>⁢</m:mo>
+      <m:mtext>,</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242171863">gdzie prąd przesunięcia zdefiniowany jest jako</para>
+<note id="fs-id1171242520328" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242561521">
+    <label/>
+    <m:math display="block">
+      <m:msub>
+        <m:mi>i</m:mi>
+        <m:mtext>p</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>ε</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+            <m:msub>
+              <m:mi mathvariant="normal">Φ</m:mi>
+              <m:mi>E</m:mi>
+            </m:msub>
+          </m:mrow>
+          <m:mrow>
+            <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242534240">
+  <m:math display="inline">
+    <m:msub>
+      <m:mi>ε</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+  </m:math> jest tutaj <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="przenikalność elektryczna próżni">przenikalnością elektryczną próżni</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">permittivity of free space</term></foreign>), a <m:math display="inline">
+<m:msub>
+  <m:mi mathvariant="normal">Φ</m:mi>
+  <m:mi>E</m:mi>
+</m:msub>
+</m:math> jest <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="strumień pola elektrycznego">strumieniem pola elektrycznego</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">electric flux</term></foreign>) zdefiniowanym jako</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242417001" class="unnumbered"><label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi mathvariant="normal">Φ</m:mi>
+      <m:mi>E</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:munder>
+        <m:mo>∬</m:mo>
+        <m:mrow>
+          <m:mtext>powierzchnia </m:mtext>
+          <m:mo>⁢</m:mo>
+          <m:mi>S</m:mi>
+        </m:mrow>
+      </m:munder>
+      <m:mrow>
+        <m:mover>
+          <m:mi>E</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>A</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242449732">
+  <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="prąd przesunięcia">Prąd przesunięcia</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">displacement current</term></foreign>) jest czynnikiem odpowiadającym prawdziwemu prądowi z prawa Ampère’a. Jest on jednak wytwarzany przez zmienne pole elektryczne. Składnik ten opisuje wytwarzanie pola magnetycznego przez zmienne pole elektryczne, jak w przypadku faktycznego przepływu prądu. Jednak prąd przesunięcia wytwarza pole magnetyczne nawet wtedy, gdy nie płynie żaden rzeczywisty prąd. Gdy uwzględni się ten dodatkowy składnik, prawo Ampère’a przybiera postać</para>
+    <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242497518">
+      <m:math display="block">
+        <m:mrow>
+          <m:munder>
+            <m:mo>∮</m:mo>
+            <m:mi>C</m:mi>
+          </m:munder>
+          <m:mrow>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mover>
+                <m:mi>s</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:msub>
+              <m:mi>μ</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mi>i</m:mi>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>ε</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>μ</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:msub>
+                  <m:mi mathvariant="normal">Φ</m:mi>
+                  <m:mi>E</m:mi>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242106264">i jest ono niezależne od wyboru powierzchni <m:math display="inline">
+      <m:mi>S</m:mi>
+      </m:math>, przez którą przepływa prąd.</para>
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242408440">Możemy teraz przeanalizować zmodyfikowane prawo Ampère’a, aby potwierdzić, że działa ono bez względu na to, czy wybrana jest powierzchnia <m:math display="inline">
+        <m:msub>
+          <m:mi>S</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+      </m:math>, czy <m:math display="inline">
+      <m:msub>
+        <m:mi>S</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+    </m:math> z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_33_01_GaussSurf" cmlnle:case="genitive"/>. Pole elektryczne <m:math display="inline">
+    <m:mover>
+      <m:mi>E</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+  </m:math>, odpowiadające strumieniowi <m:math display="inline">
+  <m:msub>
+    <m:mi mathvariant="normal">Φ</m:mi>
+    <m:mi>E</m:mi>
+  </m:msub>
+</m:math> w <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1171242561521" cmlnle:case="locative"/>, zlokalizowane jest pomiędzy okładkami kondensatora. Tym samym pole <m:math display="inline">
+<m:mover>
+  <m:mi>E</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math> i prąd przesunięcia liczone dla powierzchni <m:math display="inline">
+<m:msub>
+  <m:mi>S</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math> są równe zero, a <link target-id="fs-id1171242092001"/> przyjmuje postać</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242511610">
+  <m:math display="block">
+    <m:mrow>
+      <m:munder>
+        <m:mo>∮</m:mo>
+        <m:mi>C</m:mi>
+      </m:munder>
+      <m:mrow>
+        <m:mover>
+          <m:mi>B</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+          <m:mover>
+            <m:mi>s</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>μ</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mi>i</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242413358">Należy teraz wykazać, że dla powierzchni <m:math display="inline">
+  <m:msub>
+    <m:mi>S</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:math>, przez którą nie przepływa żaden rzeczywisty prąd, obecność prądu przesunięcia spowoduje otrzymanie tej samej wartości <m:math display="inline">
+<m:msub>
+  <m:mi>μ</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+<m:mo>⁢</m:mo>
+<m:mi>i</m:mi>
+</m:math> dla prawej strony prawa Ampère’a. Dla powierzchni <m:math display="inline">
+<m:msub>
+  <m:mi>S</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math>, równanie wygląda jak poniżej</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242567844"><m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:munder>
+            <m:mo>∮</m:mo>
+            <m:mi>C</m:mi>
+          </m:munder>
+          <m:mrow>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mover>
+                <m:mi>s</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>μ</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mrow>
+              <m:mfenced>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>ε</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>⁢</m:mo>
+                  <m:mrow>
+                    <m:munder>
+                      <m:mo>∬</m:mo>
+                      <m:mrow>
+                        <m:mtext>powierzchnia </m:mtext>
+                        <m:mo>⁢</m:mo>
+                        <m:msub>
+                          <m:mi>S</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                    </m:munder>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>E</m:mi>
+                        <m:mo>→</m:mo>
+                      </m:mover>
+                      <m:mo>⋅</m:mo>
+                      <m:mrow>
+                        <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                        <m:mover>
+                          <m:mi>A</m:mi>
+                          <m:mo>→</m:mo>
+                        </m:mover>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+              </m:mfenced>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \oint_C \vec{B} \cdot \d \vec{s} = \mu_0 \dd t (\epsilon_0 \iint_{\text{powierzchnia } S_2} \vec{E} \cdot \d \vec{A}) \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242340241">Prawo Gaussa dla ładunków elektrycznych wymaga zastosowania powierzchni zamykającej pewną przestrzeń, przez co nie można go zastosować do samej tylko powierzchni <m:math display="inline">
+  <m:msub>
+    <m:mi>S</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:math> ani samej tylko powierzchni <m:math display="inline">
+<m:msub>
+  <m:mi>S</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math>. Jednak powierzchnia bryły utworzonej z połączenia powierzchni <m:math display="inline">
+<m:msub>
+  <m:mi>S</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>S</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> z <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_33_01_GaussSurf" cmlnle:case="genitive"/> jest zamknięta, co oznacza, że można do niej zastosować prawo Gaussa. Ponieważ pole elektryczne przenikające przez powierzchnię <m:math display="inline">
+<m:msub>
+  <m:mi>S</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math> jest równe zero, strumień tego pola również będzie zerowy. Tym samym</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1170903050197" class="unnumbered"><m:math display="block">
+    <m:semantics>
+      <m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:mrow><m:mrow><m:munder><m:mo>∯</m:mo>
+              <m:mrow><m:mrow><m:mtext>powierzchnia </m:mtext>
+                  <m:mo>⁢</m:mo>
+                  <m:msub><m:mi>S</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub></m:mrow><m:mo>+</m:mo>
+                <m:msub><m:mi>S</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub></m:mrow></m:munder><m:mover><m:mi>E</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover></m:mrow><m:mo>⋅</m:mo>
+          <m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mover><m:mi>A</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover></m:mrow></m:mrow><m:mo id="U634f831f-f76e-4465-ae26-0d005e6bc55e">=</m:mo>
+        <m:mrow><m:mrow><m:munder><m:mo>∬</m:mo>
+              <m:mrow><m:mtext>powierzchnia </m:mtext>
+                <m:mo>⁢</m:mo>
+                <m:msub><m:mi>S</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub></m:mrow></m:munder><m:mrow><m:mover><m:mi>E</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover><m:mo>⋅</m:mo>
+              <m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                <m:mover><m:mi>A</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover></m:mrow></m:mrow></m:mrow><m:mo>+</m:mo>
+          <m:mrow><m:munder><m:mo>∬</m:mo>
+              <m:mrow><m:mtext>powierzchnia </m:mtext>
+                <m:mo>⁢</m:mo>
+                <m:msub><m:mi>S</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub></m:mrow></m:munder><m:mrow><m:mover><m:mi>E</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover><m:mo>⋅</m:mo>
+              <m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                <m:mover><m:mi>A</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover></m:mrow></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mrow><m:mrow><m:munder><m:mo>∯</m:mo>
+              <m:mrow><m:mrow><m:mtext>powierzchnia </m:mtext>
+                  <m:mo>⁢</m:mo>
+                  <m:msub><m:mi>S</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub></m:mrow><m:mo>+</m:mo>
+                <m:msub><m:mi>S</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub></m:mrow></m:munder><m:mover><m:mi>E</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover></m:mrow><m:mo>⋅</m:mo>
+          <m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mover><m:mi>A</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover></m:mrow></m:mrow></m:mphantom><m:mo id="U982d9662-2bc4-400c-b930-02893661b095">=</m:mo>
+        <m:mrow><m:mn>0</m:mn>
+          <m:mo>+</m:mo>
+          <m:mrow><m:munder><m:mo>∬</m:mo>
+              <m:mrow><m:mtext>powierzchnia </m:mtext>
+                <m:mo>⁢</m:mo>
+                <m:msub><m:mi>S</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub></m:mrow></m:munder><m:mrow><m:mover><m:mi>E</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover><m:mo>⋅</m:mo>
+              <m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                <m:mover><m:mi>A</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover></m:mrow></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo>
+        <m:mrow><m:munder><m:mo>∬</m:mo>
+            <m:mrow><m:mtext>powierzchnia </m:mtext>
+              <m:mo>⁢</m:mo>
+              <m:msub><m:mi>S</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub></m:mrow></m:munder><m:mrow><m:mover><m:mi>E</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover><m:mo>⋅</m:mo>
+            <m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+              <m:mrow><m:mover><m:mi>A</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover><m:mo>⁢</m:mo>
+                <m:mtext>.</m:mtext>
+              </m:mrow></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex"> \begin{multiline} \prefop{\u{222F}}_{\text{powierzchnia } S_1+S_2} \vec{E} \cdot \d \vec{A} &amp;= \iint_{\text{powierzchnia } S_1} \vec{E} \cdot \d \vec{A} + \iint_{\text{powierzchnia } S_2} \vec{E} \cdot \d \vec{A} \\ &amp;= 0 + \iint_{\text{powierzchnia } S_2} \vec{E} \cdot \d \vec{A} = \iint_{\text{powierzchnia } S_2} \vec{E} \cdot \d \vec{A} \text{.} \end{multiline}</m:annotation>
+    <m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mrow>
+          <m:mrow>
+            <m:munder>
+              <m:mo>∯</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mtext>powierzchnia </m:mtext>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi>S</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>S</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:munder>
+            <m:mover>
+              <m:mi>E</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mover>
+              <m:mi>A</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mo id="U634f831f-f76e-4465-ae26-0d005e6bc55e-copy">=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:munder>
+              <m:mo>∬</m:mo>
+              <m:mrow>
+                <m:mtext>powierzchnia </m:mtext>
+                <m:mo>⁢</m:mo>
+                <m:msub>
+                  <m:mi>S</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:munder>
+            <m:mrow>
+              <m:mover>
+                <m:mi>E</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                <m:mover>
+                  <m:mi>A</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:munder>
+              <m:mo>∬</m:mo>
+              <m:mrow>
+                <m:mtext>powierzchnia </m:mtext>
+                <m:mo>⁢</m:mo>
+                <m:msub>
+                  <m:mi>S</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:munder>
+            <m:mrow>
+              <m:mover>
+                <m:mi>E</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                <m:mover>
+                  <m:mi>A</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo id="U982d9662-2bc4-400c-b930-02893661b095-copy" indenttarget="U634f831f-f76e-4465-ae26-0d005e6bc55e" linebreak="newline" indentalign="id">=</m:mo>
+        <m:mrow>
+          <m:mn>0</m:mn>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:munder>
+              <m:mo>∬</m:mo>
+              <m:mrow>
+                <m:mtext>powierzchnia </m:mtext>
+                <m:mo>⁢</m:mo>
+                <m:msub>
+                  <m:mi>S</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mrow>
+            </m:munder>
+            <m:mrow>
+              <m:mover>
+                <m:mi>E</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                <m:mover>
+                  <m:mi>A</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:munder>
+            <m:mo>∬</m:mo>
+            <m:mrow>
+              <m:mtext>powierzchnia </m:mtext>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>S</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mrow>
+          </m:munder>
+          <m:mrow>
+            <m:mover>
+              <m:mi>E</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>A</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+                <m:mo>⁢</m:mo>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:annotation-xml></m:semantics>
+  </m:math></equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242138933">Dzięki temu możemy zamienić w <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1171242511610" cmlnle:case="locative"/> całkę po powierzchni <m:math display="inline">
+  <m:msub>
+    <m:mi>S</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:math> na całkę po zamkniętej powierzchni Gaussa <m:math display="inline">
+<m:msub>
+  <m:mi>S</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+<m:mo>+</m:mo>
+<m:msub>
+  <m:mi>S</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math>, a następnie zastosować prawo Gaussa, aby otrzymać</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242133491">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:mrow>
+            <m:munder>
+              <m:mo>∯</m:mo>
+              <m:msub>
+                <m:mi>S</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:munder>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+            <m:mover>
+              <m:mi>A</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>μ</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mi>q</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>μ</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mi>i</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\u{222F}}_{S_1} \vec{B} \cdot \d \vec{A} = \mu_0 \frac{\d q}{\d t} = \mu_0 i \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242521013">Widać więc, że zmodyfikowane prawo Ampère’a daje taki sam wynik dla powierzchni <m:math display="inline">
+  <m:msub>
+    <m:mi>S</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:math> (dzięki poprawce od prądu przesunięcia) jak dla powierzchni <m:math display="inline">
+<m:msub>
+  <m:mi>S</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math> (gdzie wynika on z oryginalnej postaci prawa).</para>
+<example id="fs-id1171242487493">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242505410">
+    <title>Prąd przesunięcia w ładującym się kondensatorze</title>Kondensator o płasko-równoległych okładkach i pojemności <m:math display="inline">
+      <m:mi>C</m:mi>
+    </m:math>, którego okładki mają powierzchnię <m:math display="inline">
+    <m:mi>A</m:mi>
+  </m:math> i oddalone są od siebie o odległość <m:math display="inline">
+  <m:mi>d</m:mi>
+</m:math>, podłączono do opornika <m:math display="inline">
+<m:mi>R</m:mi>
+</m:math> i baterii o napięciu <m:math display="inline">
+<m:msub>
+  <m:mi>U</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+</m:math>. Przepływ prądu rozpoczyna się w chwili <m:math display="inline">
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>0</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+  <m:mi mathvariant="normal">s</m:mi>
+</m:mrow>
+</m:math>.<list id="eip-idm1382602512" list-type="enumerated" number-style="lower-alpha">
+<item>Znajdźmy prąd przesunięcia pomiędzy okładkami kondensatora w chwili <m:math display="inline">
+  <m:mi>t</m:mi>
+  </m:math>.</item>
+  <item>Na podstawie własności kondensatora znajdźmy prąd rzeczywisty <m:math display="inline">
+    <m:mi>i</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mrow>
+        <m:mi>q</m:mi>
+        <m:mo>∕</m:mo>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    </m:math> i porównajmy rozwiązanie z oczekiwanym natężeniem prądu dla takiego obwodu RC.</item>
+  </list>
+</para>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242470736">
+  <title>Strategia rozwiązania</title>Należy wykorzystać równania do analizy obwodów RC (<link class="target-chapter" document="m67230">Obwody prądu zmiennego</link>) oraz prawo Ampère’a z poprawką Maxwella.</para>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242165158">
+    <title>Rozwiązanie</title>
+  </para>
+  <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242155039" list-type="enumerated" number-style="lower-alpha">
+    <item>	Napięcie pomiędzy okładkami w czasie <m:math display="inline">
+      <m:mi>t</m:mi>
+    </m:math> dane jest wzorem<equation id="fs-id1171242426846" class="unnumbered">
+    <m:math display="block">
+      <m:msub>
+        <m:mi>u</m:mi>
+        <m:mi>C</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mi>q</m:mi>
+        <m:mi>C</m:mi>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>U</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:mfenced>
+          <m:mrow>
+            <m:mn>1</m:mn>
+            <m:mo>−</m:mo>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mrow>
+                  <m:mi>t</m:mi>
+                  <m:mo>∕</m:mo>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mi>R</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>C</m:mi>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+        </m:mfenced>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>Umówmy się, że oś <m:math display="inline">
+  <m:mi>z</m:mi>
+</m:math> skierowana będzie od okładki dodatniej do okładki ujemnej. Wtedy składowa <m:math display="inline">
+<m:mi>z</m:mi>
+</m:math>-owa pola elektrycznego pomiędzy okładkami w funkcji czasu będzie równa<equation id="fs-id1171242405999" class="unnumbered">
+<label/>
+<m:math display="block">
+  <m:mrow>
+    <m:msub>
+      <m:mi>E</m:mi>
+      <m:mi>z</m:mi>
+    </m:msub>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>t</m:mi>
+    </m:mfenced>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mfrac>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mi>d</m:mi>
+    </m:mfrac>
+    <m:mo>⁢</m:mo>
+    <m:mfenced>
+      <m:mrow>
+        <m:mn>1</m:mn>
+        <m:mo>−</m:mo>
+        <m:msup>
+          <m:mi>e</m:mi>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mrow>
+              <m:mi>t</m:mi>
+              <m:mo>∕</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mi>R</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>C</m:mi>
+                </m:mrow>
+              </m:mfenced>
+            </m:mrow>
+          </m:mrow>
+        </m:msup>
+      </m:mrow>
+    </m:mfenced>
+    <m:mo>⁢</m:mo>
+    <m:mtext>.</m:mtext>
+  </m:mrow>
+</m:math>
+</equation>Oznacza to, że składowa <m:math display="inline">
+<m:mi>z</m:mi>
+</m:math>-owa prądu przesunięcia <m:math display="inline">
+<m:msub>
+  <m:mi>i</m:mi>
+  <m:mtext>p</m:mtext>
+</m:msub>
+</m:math> pomiędzy okładkami wynosi<equation id="fs-id1171242098429" class="unnumbered">
+<label/>
+<m:math display="block">
+  <m:msub>
+    <m:mi>i</m:mi>
+    <m:mtext>p</m:mtext>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msub>
+      <m:mi>ε</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:mi>A</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mo>∂</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mi>z</m:mi>
+          </m:msub>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>t</m:mi>
+          </m:mfenced>
+        </m:mrow>
+      </m:mrow>
+      <m:mrow>
+        <m:mo>∂</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mfrac>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mrow>
+        <m:msub>
+          <m:mi>ε</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:mi>A</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mfrac>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mi>d</m:mi>
+        </m:mfrac>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mfrac>
+        <m:mn>1</m:mn>
+        <m:mrow>
+          <m:mi>R</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>C</m:mi>
+        </m:mrow>
+      </m:mfrac>
+    </m:mrow>
+    <m:mo>⁢</m:mo>
+    <m:msup>
+      <m:mi>e</m:mi>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>∕</m:mo>
+          <m:mfenced>
+            <m:mrow>
+              <m:mi>R</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>C</m:mi>
+            </m:mrow>
+          </m:mfenced>
+        </m:mrow>
+      </m:mrow>
+    </m:msup>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mfrac>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mi>R</m:mi>
+    </m:mfrac>
+    <m:mo>⁢</m:mo>
+    <m:msup>
+      <m:mi>e</m:mi>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>∕</m:mo>
+          <m:mfenced>
+            <m:mrow>
+              <m:mi>R</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>C</m:mi>
+            </m:mrow>
+          </m:mfenced>
+        </m:mrow>
+      </m:mrow>
+    </m:msup>
+    <m:mo>⁢</m:mo>
+    <m:mtext>,</m:mtext>
+  </m:mrow>
+</m:math>
+</equation>przy czym użyliśmy wzoru <m:math display="inline">
+<m:mi>C</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:msub>
+      <m:mi>ε</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:mi>A</m:mi>
+  </m:mrow>
+  <m:mo>∕</m:mo>
+  <m:mi>d</m:mi>
+</m:mrow>
+</m:math> dla pojemności kondensatora.</item>
+<item>	Z wyrażenia na <m:math display="inline">
+  <m:msub>
+    <m:mi>u</m:mi>
+    <m:mi>C</m:mi>
+  </m:msub>
+</m:math> otrzymujemy, że ładunek zgromadzony na okładkach kondensatora wynosi<equation id="fs-id1171242439392" class="unnumbered">
+<m:math display="block">
+  <m:mi>q</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>C</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:msub>
+      <m:mi>u</m:mi>
+      <m:mi>C</m:mi>
+    </m:msub>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>C</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:mfenced>
+      <m:mrow>
+        <m:mn>1</m:mn>
+        <m:mo>−</m:mo>
+        <m:msup>
+          <m:mi>e</m:mi>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mrow>
+              <m:mi>t</m:mi>
+              <m:mo>∕</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mi>R</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>C</m:mi>
+                </m:mrow>
+              </m:mfenced>
+            </m:mrow>
+          </m:mrow>
+        </m:msup>
+      </m:mrow>
+    </m:mfenced>
+    <m:mo>⁢</m:mo>
+    <m:mtext>.</m:mtext>
+  </m:mrow>
+</m:math>
+</equation>Natężenie prądu płynącego przez kondensator po zamknięciu obwodu jest tym samym równe<equation id="fs-id1171242500152" class="unnumbered">
+<m:math display="block">
+  <m:mi>i</m:mi>
+  <m:mo>=</m:mo>
+  <m:mfrac>
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mi>q</m:mi>
+    </m:mrow>
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mi>t</m:mi>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mfrac>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mi>R</m:mi>
+    </m:mfrac>
+    <m:mo>⁢</m:mo>
+    <m:msup>
+      <m:mi>e</m:mi>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mi>t</m:mi>
+          <m:mo>∕</m:mo>
+          <m:mfenced>
+            <m:mrow>
+              <m:mi>R</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>C</m:mi>
+            </m:mrow>
+          </m:mfenced>
+        </m:mrow>
+      </m:mrow>
+    </m:msup>
+    <m:mo>⁢</m:mo>
+    <m:mtext>.</m:mtext>
+  </m:mrow>
+</m:math>
+</equation>Ten prąd jest równy prądowi przesunięcia <m:math display="inline">
+<m:msub>
+  <m:mi>i</m:mi>
+  <m:mtext>p</m:mtext>
+</m:msub>
+</m:math>, obliczonemu w podpunkcie (a).</item>
+</list>
+</example>
+</section>
+<section id="fs-id1171242186965">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Równania Maxwella</title>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242068404">Z uwzględnieniem poprawki prądu przesunięcia równania Maxwella otrzymują formę</para>
+  <note id="fs-id1171240036551" class="equation-callout">
+    <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242557152"><m:math display="block">
+        <m:semantics>
+          <m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mo>∯</m:mo>
+                <m:mover>
+                  <m:mi>E</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:mover>
+                  <m:mi>A</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mi>q</m:mi>
+                <m:msub>
+                  <m:mi>ε</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mtext> (Prawo Gaussa),</m:mtext>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\u{222F}} \vec{E} \cdot \d \vec{A} = \frac{q}{\epsilon_0} \text{ (Prawo Gaussa),}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </equation><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242254942"><m:math display="block">
+        <m:semantics>
+          <m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mo>∯</m:mo>
+                <m:mover>
+                  <m:mi>B</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:mover>
+                  <m:mi>A</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>0</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mtext> (Prawo Gaussa dla pola magnetycznego),</m:mtext>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \prefop{\u{222F}} \vec{E} \cdot \d \vec{A} = 0 \text{ (Prawo Gaussa dla pola magnetycznego),}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </equation><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242162638"><label/>
+      <m:math display="block">
+        <m:mrow>
+          <m:mo>∮</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>E</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mover>
+                <m:mi>s</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:msub>
+                  <m:mi mathvariant="normal">Φ</m:mi>
+                  <m:mi>B</m:mi>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mtext> (Prawo Faradaya),</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242369180"><label/>
+      <m:math display="block">
+        <m:mrow>
+          <m:mo>∮</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+              <m:mover>
+                <m:mi>s</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:msub>
+              <m:mi>μ</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mi>i</m:mi>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>ε</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>μ</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:msub>
+                  <m:mi mathvariant="normal">Φ</m:mi>
+                  <m:mi>E</m:mi>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mtext> (Prawo Ampère’a-Maxwella).</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation></note>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242061313">Kiedy wektory <m:math display="inline">
+    <m:mover>
+      <m:mi>E</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+  </m:math> i <m:math display="inline">
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:math> zostaną wyliczone za pomocą powyższych czterech równań, <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="wzór na siłę Lorentza">wzór na siłę Lorentza</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">Lorentz force equation</term></foreign>) ma następującą postać</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242564239">
+  <m:math display="block">
+    <m:mover>
+      <m:mi>F</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mi>q</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mover>
+          <m:mi>E</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mrow>
+            <m:mi>q</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mover>
+              <m:mi>v</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+          <m:mover>
+            <m:mi>B</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+        </m:mrow>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242263980">Powyższe równanie pozwala na ustalenie, z jaką siłą pola te oddziałują na cząstkę o ładunku <m:math display="inline">
+  <m:mi>q</m:mi>
+</m:math>, poruszającą się z prędkością <m:math display="inline">
+<m:mover>
+  <m:mi>v</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math>. Siła Lorentza uwzględnia oddziaływanie obu tych pól na poruszający się w nich ładunek. Zarówno siły magnetyczne, jak i elektryczne były już omawiane we wcześniejszych rozdziałach.</para>
+<note xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242083795">
+  <title>Równania Maxwella</title>
+  <list id="eip-idm889695824" list-type="enumerated" number-style="arabic">
+    <item>
+      <emphasis effect="bold">Prawo Gaussa</emphasis>
+      <para id="eip-idm557642080">Strumień pola elektrycznego przenikający przez dowolną powierzchnię zamkniętą równy jest ładunkowi elektrycznemu <m:math display="inline">
+        <m:mi>q</m:mi>
+        </m:math> zamkniętemu wewnątrz tej powierzchni. Prawo Gaussa (<link target-id="fs-id1171242557152"/>) opisuje związek pomiędzy ładunkiem elektrycznym a polem, które on wytwarza. Konsekwencją tego związku jest charakter linii pola elektrycznego, które biegną od cząstek dodatnio naładowanych i kończą się na cząstkach ujemnie naładowanych, a linie w każdym punkcie wskazują kierunek pola elektrycznego.</para></item>
+      <item>
+        <emphasis effect="bold">Prawo Gaussa dla pola magnetycznego</emphasis>
+        <para id="eip-idm476879840">Strumień indukcji magnetycznej przez dowolną powierzchnię zamkniętą równy jest zero (<link target-id="fs-id1171242254942"/>). Jest to równoznaczne ze stwierdzeniem, że linie pola magnetycznego są ciągłe – nie mają początku ani końca. Każda linia pola magnetycznego „wchodząca” do obszaru ograniczonego zamkniętą powierzchnią musi również go „opuścić”. Do tej pory nie odkryto żadnych źródeł pola magnetycznego analogicznych do źródeł pola elektrycznego, czyli monopoli magnetycznych – punktów, w których linie pola magnetycznego kończyłyby się (lub zaczynały) (patrz <link class="target-chapter" document="m67201">Pola magnetyczne i ich linie</link>).</para></item>
+      <item>
+        <emphasis effect="bold">Prawo Faradaya</emphasis>
+        <para id="eip-idm890723968">Zmieniający się strumień indukcji magnetycznej indukuje siłę elektromotoryczną, a przez to pole elektryczne. Kierunek siły elektromotorycznej stara się zapobiec zmianom. Trzecie równanie Maxwella (<link target-id="fs-id1171242162638"/>) to sformułowanie prawa Faradaya, zawierające też regułę Lenza. Linie pola elektrycznego, indukowanego przez zmienne pole magnetyczne, mają kształt zamkniętych pętli, bez początku ani końca.</para></item>
+      <item>
+        <emphasis effect="bold">Prawo Ampère’a-Maxwella</emphasis>
+        <para id="eip-idm518062640">Pola magnetyczne są generowane przez poruszające się ładunki lub przez zmieniający się strumień pola elektrycznego. To czwarte równanie Maxwella (<link target-id="fs-id1171242369180"/>) zawiera w sobie prawo Ampère’a i dodaje kolejne źródło pól magnetycznych – zmienne pola elektryczne.</para></item>
+    </list>
+  </note>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242458790">Równania Maxwella wraz ze wzorem na siłę Lorentza tworzą komplet praw opisujących zjawiska elektryczne i magnetyczne. Symetria, jaką Maxwell wprowadził tymi sformułowaniami matematycznymi, może nie być widoczna na pierwszy rzut oka. Prawo Faradaya stwierdza, że zmienne pole magnetyczne jest źródłem dla pola elektrycznego. Prąd przesunięcia, wprowadzony przez Maxwella, wyjaśnia, że zmienne pole elektryczne jest źródłem pola magnetycznego. Równania opisujące efekty zmienności pól elektrycznych i magnetycznych różnią się jedynie tam, gdzie brak monopoli magnetycznych spowodował wyzerowanie się niektórych czynników. Ta symetria w konsekwencjach zmian w polach magnetycznym i elektrycznym okaże się niezbędna do wyjaśnienia natury fal elektromagnetycznych.</para>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242237992">Późniejsze użycie teorii względności Einsteina do interpretacji pełnej i symetrycznej teorii Maxwella udowodniło, że siły elektryczne i magnetyczne to nie oddzielne siły, lecz są one przejawem tego samego oddziaływania – oddziaływania elektromagnetycznego. Oddziaływanie to i słabe oddziaływania jądrowe są podobnie ze sobą zunifikowane – jako oddziaływania elektrosłabe. Ta unifikacja sił była jedną z głównych motywacji dla prób połączenia wszystkich czterech podstawowych oddziaływań przyrody: grawitacyjnych, elektromagnetycznych, jądrowych silnych i jądrowych słabych w jedno oddziaływanie (patrz <link class="target-chapter" document="m67255">Fizyka cząstek elementarnych i kosmologia</link>).</para>
+</section>
+<section id="fs-id1171242411851">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Mechanizm rozchodzenia się fali elektromagnetycznej</title>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242407640">Aby dowieść, że postulowana przez Maxwella symetria jednoznacznie wskazuje na istnienie połączonych fal elektrycznych i magnetycznych rozchodzących się w przestrzeni, wyobraźmy sobie zmienne w czasie pole magnetyczne <m:math display="inline">
+    <m:msub>
+      <m:mover>
+        <m:mi>B</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>t</m:mi>
+    </m:mfenced>
+  </m:math> wytwarzane przez prąd zmienny o wysokiej częstotliwości, co pokazano na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_33_01_WaveMech" cmlnle:case="locative"/>. Pole <m:math display="inline">
+  <m:msub>
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+</m:math> przedstawiono na nim za pomocą pojedynczej linii tego pola. Z prawa Faradaya wynika, że zmienne pole magnetyczne przepływające przez powierzchnię wytwarza zmienne w czasie pole elektryczne <m:math display="inline">
+<m:msub>
+  <m:mover>
+    <m:mi>E</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+  <m:mn>0</m:mn>
+</m:msub>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>t</m:mi>
+</m:mfenced>
+</m:math> na granicy tej powierzchni. Źródło pola elektrycznego wytwarzanego jako konsekwencja prądu przesunięcia zachowuje się podobnie do źródła pola magnetycznego wytwarzanego jako skutek prawa Faradaya – wytwarza pole o liniach będących zamkniętymi pętlami. Jest to konsekwencja matematycznej symetrii występującej w równaniach opisujących indukowane pole elektryczne i indukowane pole magnetyczne. Na rysunku przedstawiono również pojedynczą linię pola <m:math display="inline">
+<m:msub>
+  <m:mover>
+    <m:mi>E</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+  <m:mn>0</m:mn>
+</m:msub>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>t</m:mi>
+</m:mfenced>
+</m:math>. Wyindukowane zmienne pole <m:math display="inline">
+<m:msub>
+  <m:mover>
+    <m:mi>E</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+  <m:mn>0</m:mn>
+</m:msub>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>t</m:mi>
+</m:mfenced>
+</m:math> wytwarza następnie pole magnetyczne <m:math display="inline">
+<m:msub>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+  <m:mn>1</m:mn>
+</m:msub>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>t</m:mi>
+</m:mfenced>
+</m:math> zgodnie ze zmodyfikowanym prawem Ampère’a. To zmienne pole indukuje pole <m:math display="inline">
+<m:msub>
+  <m:mover>
+    <m:mi>E</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+  <m:mn>1</m:mn>
+</m:msub>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>t</m:mi>
+</m:mfenced>
+</m:math>, które indukuje pole <m:math display="inline">
+<m:msub>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+  <m:mn>2</m:mn>
+</m:msub>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>t</m:mi>
+</m:mfenced>
+</m:math> i tak dalej. Mamy zatem samopodtrzymujący się proces, który prowadzi do powstania zmiennego w czasie pola elektrycznego i magnetycznego w obszarach coraz to bardziej oddalonych od punktu początkowego. Proces ten może służyć jako wizualizacja mechanizmu rozchodzenia się fali elektromagnetycznej w przestrzeni.</para>
+<figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_33_01_WaveMech">
+  <media id="fs-id1171239827904" alt="Rysunek przedstawia 3 wymiarowy schemat. Drut przewodzący prąd AC jest położony wzdłuż osi z. Okrąg oznaczony B0 otacza przewód i leży na płaszczyźnie xy. Inny okrąg, oznaczony E0 otacza B0. E0 leży na płaszczyźnie xz. Okrąg B1 przechodzi przez E0 i E1 przechodzi przez B1 tworząc rodzaj łańcucha. Okręgi B0, B1 i B2 są w płaszczyźnie xy, ze środkami wzdłuż osi x. Przeplecione są z okręgami E0, E1 i E2 w płaszczyźnie xz, których środki leżą na osi y.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_33_01_WaveMech.jpg"/>
+  </media>
+  <caption>Rysunek przedstawia, w jaki sposób pola <m:math display="inline">
+    <m:mover>
+      <m:mi>E</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+  </m:math> i <m:math display="inline">
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+  </m:math> rozchodzą się w przestrzeni.</caption>
+</figure>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242180587">W kolejnym podrozdziale przedstawimy matematycznie, jak równania Maxwella przewidują istnienie fal elektromagnetycznych, mogących poruszać się w przestrzeni bez obecności medium materialnego, i implikują równość prędkości tych fal z prędkością światła.</para>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242180590">Jeszcze przed publikacją prac Maxwella wykonywano eksperymenty, które wskazywały, że światło wykazuje naturę falową, jednak natura fal świetlnych pozostawała nieznana. W 1801 roku <term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cxlxt:index="name" cxlxt:name="Young, Thomas" cxlxt:born="1773" cxlxt:died="1829" cmlnle:reference="Young, Thomas (1773–1829)">Thomas Young (1773–1829)</term> pokazał, że gdy promień świetlny zostanie podzielony i przepuszczony przez dwie wąskie szczeliny, a następnie ponownie połączony, na ekranie uformuje się pewien wzór złożony z na przemian jasnych i ciemnych prążków. Young tłumaczył to zachowanie, zakładając, że światło złożone jest z fal, które – po przejściu przez szczeliny – dodają się w pewnych punktach konstruktywnie, a w pewnych punktach destruktywnie (patrz <link class="target-chapter" document="m65899">Interferencja</link>). Później <term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cxlxt:index="name" cxlxt:name="Fresnel, Augustin" cxlxt:born="1788" cxlxt:died="1827" cmlnle:reference="Fresnel, Augustin (1788–1827)">Augustin Fresnel (1788–1827)</term> przez drobiazgowe eksperymenty z wykorzystaniem interferencji i dyfrakcji światła, ugruntował przekonanie o falowej naturze światła, a ostatecznego dowodu dostarczył <term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cxlxt:index="name" cxlxt:name="Foucault, Léon" cxlxt:born="1819" cxlxt:died="1868" cmlnle:reference="Foucault, Léon (1819–1868)">Léon Foucault (1819–1868)</term>, mierząc prędkość światła w różnych ośrodkach i wykazując, że – wbrew teorii korpuskularnej – jest w nich mniejsza niż w próżni. Zatem wiadomym było, że światło jest falą. Maxwell zaś przewidział istnienie fal elektromagnetycznych rozchodzących się z prędkością światła. Wnioski nasunęły się same: światło musi być formą promieniowania elektromagnetycznego. Jednakowoż równania Maxwella pokazywały także, że fale elektromagnetyczne mogą też mieć inne częstotliwości i długości, nie tylko te świetlne. Maxwell wykazał, że promieniowanie elektromagnetyczne o takich samych własnościach fizycznych jak światło widzialne powinno istnieć dla dowolnej częstotliwości. Sprawdzenie i potwierdzenie swoich przewidywań pozostawił innym.</para><equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-203" class="unnumbered"><m:math/></equation>
+<note id="fs-id1171240056685" class="check-understanding">
+  <exercise id="fs-id1171240056688">
+    <problem id="fs-id1171242409945">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242409947">
+        <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Jeśli do zacisków rozładowanego kondensatora przyłożona i włączona zostanie siła elektromotoryczna, to kiedy wyindukowane przez prąd przesunięcia pole magnetyczne będzie miało najwyższą wartość?</para>
+      </problem>
+      <solution id="fs-id1171242528704">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242181934">Pole magnetyczne osiąga najwyższą wartość od razu po włączeniu prądu. Natężenie prądu przesunięcia i natężenie pola magnetycznego indukowanego ten prąd są proporcjonalne do szybkości zmiany pola elektrycznego pomiędzy płytkami. Pole to osiąga najwyższą wartość, gdy płytki zaczynają się ładować.</para>
+      </solution>
+    </exercise>
+  </note>
+</section>
+<section id="fs-id1171242445935">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Obserwacje Hertza</title>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242501654">Niemiecki fizyk <term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cxlxt:index="name" cxlxt:name="Hertz, Heinrich" cxlxt:born="1857" cxlxt:died="1894" cmlnle:reference="Hertz, Heinrich (1857–1894)">Heinrich Hertz (1857–1894)</term> był pierwszą osobą, która wygenerowała i była w stanie wykryć pewien konkretny rodzaj fal elektromagnetycznych w warunkach laboratoryjnych. Począwszy od roku 1887 przeprowadził on serię eksperymentów, które nie tylko potwierdziły istnienie fal elektromagnetycznych, lecz także dowiodły, że rozchodzą się one z prędkością światła.</para>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242379310">Hertz używał zmiennoprądowego obwodu RLC (opornik-cewka-kondensator), który rezonuje dla znanej częstotliwości <m:math display="inline">
+    <m:msub>
+      <m:mi>f</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>1</m:mn>
+      <m:mo>∕</m:mo>
+      <m:mfenced>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi>π</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:msqrt>
+            <m:mi>L</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>C</m:mi>
+          </m:msqrt>
+        </m:mrow>
+      </m:mfenced>
+    </m:mrow>
+    </m:math>, podłączonego do drucianej pętli, jak pokazano na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_33_01_HertzGen" cmlnle:case="locative"/>. Wysokie napięcie wyindukowane na szczelinie iskrownika powodowało wytworzenie się iskry, będącej widocznym dowodem przepływu prądu w obwodzie, i umożliwiało generację fal elektromagnetycznych.</para>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242072504">Po drugiej stronie swojego laboratorium Hertz umieścił drugą pętlę, połączoną z kolejnym obwodem RLC, który mógł być dostrajany (tak samo jak radioodbiornik) do tej samej częstotliwości rezonansowej co pierwszy obwód i tym samym służyć jako odbiornik fal elektromagnetycznych. Ta pętla również posiadała przerwę, w której wytwarzały się iskry, będące dowodem, że obwód odbiera fale elektromagnetyczne.</para>
+    <figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_33_01_HertzGen">
+      <media id="fs-id1171242321241" alt="Rysunek przedstawia obwód z lewej z R, L i C połączonych szeregowo do AC źródła napięcia. Rezonuje on jako f ze znakiem 0 równym u góry 1 przez 2 pi pierwiastek z LC. Induktor w obwodzie tworzy pierwotną cewkę transformatora. Druga cewka jest połączona z pętlą oznaczoną jako pętla 1 nadajnika. W obrębie pętli jest szczelina nazwana na rysunku szczeliną iskrową. W pewnej odległości w prawo znajduje się druga pętla oznaczona jako pętla 2 odbiorcza. Słowa napisane w jej środku oznaczają indukowane iskry. Jest ona połączona z pudełkiem oznaczającym tuner. ">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_33_01_HertzGen.jpg"/>
+      </media>
+      <caption>Schemat aparatury wykorzystywanej przez Hertza w 1887 roku do generacji i detekcji fal elektromagnetycznych.</caption>
+    </figure>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242058187">Hertz badał też odbicie, załamanie i obrazy interferencyjne wygenerowanych przez siebie fal elektromagnetycznych, jeszcze mocniej potwierdzające falową naturę tego zjawiska. Na podstawie obrazów interferencyjnych był w stanie wyznaczyć długość fal i obliczyć prędkość ich rozchodzenia się, używając wzoru <m:math display="inline">
+      <m:mi>v</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>f</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>λ</m:mi>
+      </m:mrow>
+    </m:math>, gdzie <m:math display="inline">
+    <m:mi>v</m:mi>
+  </m:math> oznacza prędkość rozchodzenia się, <m:math display="inline">
+  <m:mi>f</m:mi>
+</m:math> jest częstotliwością fali, a <m:math display="inline">
+<m:mi>λ</m:mi>
+</m:math> jej długością. Hertz mógł przez to niepodważalnie dowieść, że fale elektromagnetyczne poruszają się z prędkością światła. W układzie SI ku jego pamięci nazwano jego imieniem jednostkę częstotliwości – herc (<m:math display="inline">
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi mathvariant="normal">Hz</m:mi>
+</m:math> to 1 cykl na sekundę).</para><equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-204" class="unnumbered"><m:math/></equation>
+<note id="fs-id1171242158512" class="check-understanding">
+  <exercise id="fs-id1171242154695">
+    <problem id="fs-id1171242154697">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171240220377">
+        <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Czy samo pole elektryczne mogłoby rozchodzić się przez próżnię jako fala bez obecności pola magnetycznego? Wyjaśnij swoją odpowiedź.</para>
+      </problem>
+      <solution id="fs-id1171242143429">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242143431">Nie. Zmienne pole elektryczne zgodnie z Prawem Ampère’a-Maxwella będzie zawsze indukowało zmienne pole magnetyczne.</para>
+      </solution>
+    </exercise>
+  </note>
+</section>
+<section id="fs-id1171242279700" class="key-concepts">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Podsumowanie</title>
+  <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242430230" list-type="bulleted" bullet-style="bullet">
+    <item>Hipoteza Maxwella o istnieniu fal elektromagnetycznych została wysnuta z jego sformułowania kompletnej i symetrycznej teorii elektryczności i magnetyzmu, znanej jako równania Maxwella.</item>
+    <item>Cztery równania Maxwella, wraz ze wzorem na siłę Lorentza, opisują wszystkie główne prawa elektryczności i magnetyzmu. Pierwsze dwa to prawo Gaussa dla elektryczności i magnetyzmu, trzecie to prawo indukcji Faradaya (wraz z regułą Lenza), a czwarte – prawo Ampère’a z poprawką Maxwella.</item>
+    <item>Symetria pomiędzy polami elektrycznym i magnetycznym, wprowadzona przez poprawkę Maxwella, tłumaczy mechanizm rozchodzenia się fal elektromagnetycznych, w których zmienne pole elektryczne wytwarza zmienne pole magnetyczne i vice versa.</item>
+    <item>Mimo że wiadomo było, że światło jest falą, natura tych fal nie była zrozumiała przed ogłoszeniem teorii Maxwella. Równania Maxwella przewidziały nie tylko fale odpowiadające światłu widzialnemu, ale również fale dłuższe i krótsze od światła. Te teoretyczne rozważania zostały później potwierdzone eksperymentalnie przez Heinricha Hertza.</item>
+  </list>
+</section>
+<section id="fs-id1171242557146" class="review-conceptual-questions">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Pytania</title>
+  <exercise id="fs-id1171242168029">
+    <problem id="fs-id1171242533938">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242533940">Wytłumacz, jak prąd przesunięcia pomaga w wyjaśnieniu zachowania ciągłości przepływu prądu w obwodzie zawierającym kondensator.</para>
+    </problem>
+    <solution id="fs-id1171240238016">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171240238018">Ciągłość jest zapewniona przez to, że prąd płynący do kondensatora jest równy prądowi przesunięcia pomiędzy okładkami kondensatora.</para>
+    </solution>
+  </exercise>
+  <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242345478">
+    <problem id="fs-id1171242345480">
+      <para id="fs-id1171242486658">Opisz, jak będą wyglądać linie pola magnetycznego wyindukowanego wzdłuż krawędzi teoretycznego cylindra pokazanego na rysunku. Cylinder znajduje się w przestrzennie jednorodnym polu elektrycznym, którego wektor natężenia ma kierunek poziomy, zwrot w prawo i rosnącą wartość.</para>
+      <media id="fs-id1171242502069" alt="Rysunek pokazuje położony poziomo cylinder. Trzy kolumny strzałek oznaczają wektor E biegnący przez cylinder. Strzałki wskazują na prawo. Kolumna z lewej ma strzałki krótsze, a kolumny po prawej dłuższe. ">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_33_01_FldCylindr_img.jpg"/>
+      </media>
+    </problem>
+  </exercise>
+  <exercise id="fs-id1171240240850">
+    <problem id="fs-id1171240240852">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171240240854">Dlaczego łatwiej jest pokazać, że zmienne pole magnetyczne indukuje pole elektryczne niż że zmienne pole elektryczne indukuje pole magnetyczne?</para>
+    </problem>
+    <solution id="fs-id1171242454501">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171240096741">Pierwsza demonstracja wymaga tylko zaobserwowania przepływu prądu w przewodzie wystawionym na działanie zmiennego pola magnetycznego. Druga demonstracja wymaga ładunku poruszającego się z jednego miejsca do drugiego, czyli prądu zdolnego do wytworzenia zmiennego pola elektrycznego. Niełatwo jest oddzielić wkład do pola magnetycznego pochodzący od prądu przesunięcia od pola pochodzącego bezpośrednio od tego prądu.</para>
+    </solution>
+  </exercise>
+</section>
+<section id="fs-id1171240096745" class="review-problems">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Zadania</title>
+  <exercise id="fs-id1171242356566">
+    <problem id="fs-id1171242120878">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242120880">Pokaż, że indukcja pola magnetycznego w odległości <m:math display="inline">
+        <m:mi>r</m:mi>
+      </m:math> od osi układu dwóch równoległych, okrągłych płytek, wytworzonego przez ładunek <m:math display="inline">
+      <m:mi>q</m:mi>
+    </m:math> umieszczony na płytkach, wynosi: <m:math display="inline">
+    <m:msub>
+      <m:mi>B</m:mi>
+      <m:mtext>ind</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:msub>
+          <m:mi>μ</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>∕</m:mo>
+        <m:mfenced>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>π</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>r</m:mi>
+          </m:mrow>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mrow>
+        <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+        <m:mrow>
+          <m:mi>q</m:mi>
+          <m:mo>∕</m:mo>
+          <m:mrow>
+            <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    </m:math>.</para>
+  </problem>
+  <solution id="fs-id1171242206228">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242206230">
+      <m:math display="inline">
+        <m:msub>
+          <m:mi>B</m:mi>
+          <m:mtext>ind</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:msub>
+              <m:mi>μ</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>π</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>r</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:msub>
+            <m:mi>I</m:mi>
+            <m:mtext>ind</m:mtext>
+          </m:msub>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mfrac>
+              <m:msub>
+                <m:mi>μ</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>π</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>r</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>⋅</m:mo>
+            <m:msub>
+              <m:mi>ε</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mo>∂</m:mo>
+              <m:msub>
+                <m:mi mathvariant="normal">Φ</m:mi>
+                <m:mi>E</m:mi>
+              </m:msub>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>∂</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mfrac>
+                <m:msub>
+                  <m:mi>μ</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>r</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⋅</m:mo>
+              <m:msub>
+                <m:mi>ε</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mfrac>
+              <m:mi>A</m:mi>
+              <m:mi>d</m:mi>
+            </m:mfrac>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mo>∂</m:mo>
+              <m:mi>E</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>∂</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mfrac>
+                <m:msub>
+                  <m:mi>μ</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>r</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⋅</m:mo>
+              <m:msub>
+                <m:mi>ε</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mfrac>
+              <m:mi>A</m:mi>
+              <m:mi>d</m:mi>
+            </m:mfrac>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+              <m:mi>u</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mfrac>
+                <m:msub>
+                  <m:mi>μ</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>r</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⋅</m:mo>
+              <m:msub>
+                <m:mi>ε</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mfrac>
+              <m:mi>A</m:mi>
+              <m:mi>d</m:mi>
+            </m:mfrac>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mi>C</m:mi>
+          </m:mfrac>
+          <m:mo>⋅</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+              <m:mi>u</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+        </m:mrow>
+      </m:math>, a ponieważ <m:math display="inline">
+      <m:mi>C</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:msub>
+            <m:mi>ε</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mi>A</m:mi>
+        </m:mrow>
+        <m:mo>∕</m:mo>
+        <m:mi>d</m:mi>
+      </m:mrow>
+    </m:math> to <m:math display="inline">
+    <m:msub>
+      <m:mi>B</m:mi>
+      <m:mtext>ind</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:msub>
+          <m:mi>μ</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi>π</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>r</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>⋅</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mi>q</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mfrac>
+    </m:mrow>
+    </m:math>.</para>
+  </solution>
+</exercise>
+<exercise id="fs-id1171242430250">
+  <problem id="fs-id1171242430252">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242430254">Wyraź prąd przesunięcia dla kondensatora w funkcji pojemności tego kondensatora i szybkości zmiany napięcia na tym kondensatorze.</para>
+  </problem>
+</exercise>
+<exercise id="fs-id1171242258505">
+  <problem id="fs-id1171242258507">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242258509">Różnica potencjałów <m:math display="inline">
+      <m:mi>u</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>U</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>sin</m:mo>
+          <m:mfenced>
+            <m:mrow>
+              <m:mi>ω</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfenced>
+        </m:mrow>
+      </m:mrow>
+    </m:math> jest utrzymywana pomiędzy dwiema okrągłymi okładkami kondensatora płaskiego o pojemności <m:math display="inline">
+    <m:mi>C</m:mi>
+  </m:math>. Cienki przewód o oporze <m:math display="inline">
+  <m:mi>R</m:mi>
+</m:math> łączy środki obu okładek i pozwala ładunkowi „przeciekać” z jednej okładki na drugą w czasie ładowania kondensatora.<list id="eip-idm353052128" list-type="enumerated" number-style="lower-alpha">
+<item> Znajdź wyrażenie na natężenie prądu „przecieku” <m:math display="inline">
+  <m:msub>
+    <m:mi>i</m:mi>
+    <m:mtext>rezystora</m:mtext>
+  </m:msub>
+</m:math> płynącego przez przewód. Użyj tego wyrażenia do znalezienia wyrażenia na natężenie prądu <m:math display="inline">
+<m:msub>
+  <m:mi>i</m:mi>
+  <m:mtext>rzeczywiste</m:mtext>
+</m:msub>
+</m:math> płynącego w przewodach podłączonych do kondensatora;</item>
+<item>Znajdź wartość prądu przesunięcia w przestrzeni pomiędzy okładkami kondensatora i pojawiającego się na skutek zmieniającego się pola elektrycznego;</item>
+<item> Porównaj <m:math display="inline">
+  <m:msub>
+    <m:mi>i</m:mi>
+    <m:mtext>rzeczywiste</m:mtext>
+  </m:msub>
+</m:math> z sumą prądu przesunięcia <m:math display="inline">
+<m:msub>
+  <m:mi>i</m:mi>
+  <m:mtext>p</m:mtext>
+</m:msub>
+</m:math> i prądu „przecieku” <m:math display="inline">
+<m:msub>
+  <m:mi>i</m:mi>
+  <m:mtext>rezystora</m:mtext>
+</m:msub>
+</m:math> i wyjaśnij, dlaczego zaobserwowana relacja ma sens fizyczny.</item>
+</list>
+</para>
+</problem>
+<solution id="fs-id1171240192685">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171240192687">a. <m:math display="inline">
+    <m:msub>
+      <m:mi>i</m:mi>
+      <m:mtext>rezystora</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>sin</m:mo>
+        <m:mrow>
+          <m:mfenced>
+            <m:mrow>
+              <m:mi>ω</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfenced>
+          <m:mo>∕</m:mo>
+          <m:mi>R</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>; b. <m:math display="inline">
+  <m:msub>
+    <m:mi>i</m:mi>
+    <m:mtext>p</m:mtext>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>C</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:mi>ω</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mrow>
+      <m:mo>cos</m:mo>
+      <m:mfenced>
+        <m:mrow>
+          <m:mi>ω</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mfenced>
+    </m:mrow>
+  </m:mrow>
+</m:math>; c. <m:math display="inline">
+<m:msub>
+  <m:mi>i</m:mi>
+  <m:mtext>rzeczywiste</m:mtext>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msub>
+    <m:mi>i</m:mi>
+    <m:mtext>rezystora</m:mtext>
+  </m:msub>
+  <m:mo>+</m:mo>
+  <m:mrow>
+    <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+    <m:mrow>
+      <m:mi>q</m:mi>
+      <m:mo>∕</m:mo>
+      <m:mrow>
+        <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:mrow>
+  </m:mrow>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:mrow>
+      <m:mo>sin</m:mo>
+      <m:mrow>
+        <m:mfenced>
+          <m:mrow>
+            <m:mi>ω</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfenced>
+        <m:mo>∕</m:mo>
+        <m:mi>R</m:mi>
+      </m:mrow>
+    </m:mrow>
+  </m:mrow>
+  <m:mo>+</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mrow>
+        <m:mi>C</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:msub>
+          <m:mi>U</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mtext>d</m:mtext>
+    </m:mrow>
+    <m:mo>∕</m:mo>
+    <m:mrow>
+      <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+      <m:mrow>
+        <m:mi>t</m:mi>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mo>sin</m:mo>
+          <m:mfenced>
+            <m:mrow>
+              <m:mi>ω</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfenced>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:mrow>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mrow>
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:mrow>
+      <m:mo>sin</m:mo>
+      <m:mrow>
+        <m:mfenced>
+          <m:mrow>
+            <m:mi>ω</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+        </m:mfenced>
+        <m:mo>∕</m:mo>
+        <m:mi>R</m:mi>
+      </m:mrow>
+    </m:mrow>
+  </m:mrow>
+  <m:mo>+</m:mo>
+  <m:mrow>
+    <m:mi>C</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:mi>ω</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mrow>
+      <m:mo>cos</m:mo>
+      <m:mfenced>
+        <m:mrow>
+          <m:mi>ω</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mfenced>
+    </m:mrow>
+  </m:mrow>
+</m:mrow>
+</m:math>, których suma to <m:math display="inline">
+<m:msub>
+  <m:mi>i</m:mi>
+  <m:mtext>rezystora</m:mtext>
+</m:msub>
+</m:math> plus <m:math display="inline">
+<m:msub>
+  <m:mi>i</m:mi>
+  <m:mtext>rzeczywiste</m:mtext>
+</m:msub>
+</m:math>, zgodnie z tym, jak prąd przesunięcia zapewnia ciągłość prądu.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1171242341003">
+  <problem id="fs-id1171242341005">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242341007">Załóż, że kondensator płaski pokazany na rysunku zbiera ładunek na okładkach w tempie <m:math display="inline">
+      <m:mn>0,01</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mrow>
+        <m:mi mathvariant="normal">C</m:mi>
+        <m:mo>∕</m:mo>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+    </m:math>. Ile wynosi natężenie wytworzonego pola magnetycznego w odległości <m:math display="inline">
+    <m:mn>10</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:mi mathvariant="normal">cm</m:mi>
+    </m:math> od osi tego kondensatora?</para>
+    <media id="fs-id1171242341012" alt="Rysunek przedstawia kondensator z dwiema okrągłymi płytkami równoległymi. Połączone są ze sobą drutem. Płynie w nim prąd. Punkt poniżej kondensatora jest podświetlony. Znajduje się 10 cm od środka płytek. ">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_33_01_Capacitor1_img.jpg"/>
+    </media>
+  </problem>
+</exercise>
+<exercise id="fs-id1171242527428">
+  <problem id="fs-id1171242527430">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242527432">Różnica potencjałów <m:math display="inline">
+      <m:mi>i</m:mi>
+    </m:math> przyłożona pomiędzy okładkami kondensatora z poprzedniego zadania zwiększa się chwilowo w tempie <m:math display="inline">
+    <m:msup>
+      <m:mn>10</m:mn>
+      <m:mn>7</m:mn>
+    </m:msup>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mrow>
+      <m:mi mathvariant="normal">V</m:mi>
+      <m:mo>∕</m:mo>
+      <m:mi mathvariant="normal">s</m:mi>
+    </m:mrow>
+  </m:math>. Ile wynosi natężenie prądu przesunięcia pomiędzy okładkami, jeśli są one oddalone od siebie o <m:math display="inline">
+  <m:mn>1</m:mn>
+  <m:mo>⁢</m:mo>
+  <m:mi mathvariant="normal">cm</m:mi>
+</m:math> i mają pole powierzchni równe <m:math display="inline">
+<m:mn>0,2</m:mn>
+<m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+<m:msup>
+  <m:mi mathvariant="normal">m</m:mi>
+  <m:mn>2</m:mn>
+</m:msup>
+</m:math>?</para>
+</problem>
+<solution id="fs-id1171242458842">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242458844">
+    <m:math display="inline">
+      <m:mrow>
+        <m:mn>1,77</m:mn>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mn>10</m:mn>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>3</m:mn>
+          </m:mrow>
+        </m:msup>
+      </m:mrow>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+      </m:math>.</para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1171242163800">
+    <problem id="fs-id1171242163803">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242354186">Kondensator płaski ma okładki o polu powierzchni równym <m:math display="inline">
+        <m:mi>A</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>0,25</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:msup>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+      </m:math> i oddalone od siebie o <m:math display="inline">
+      <m:mn>0,01</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:math>. Ile musi być równa częstość kołowa <m:math display="inline">
+    <m:mi>ω</m:mi>
+  </m:math> dla napięcia <m:math display="inline">
+  <m:mi>u</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:mrow>
+      <m:mo>sin</m:mo>
+      <m:mfenced>
+        <m:mrow>
+          <m:mi>ω</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mfenced>
+    </m:mrow>
+  </m:mrow>
+</m:math> przy <m:math display="inline">
+<m:msub>
+  <m:mi>U</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>100</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+  <m:mi mathvariant="normal">V</m:mi>
+</m:mrow>
+</m:math>, by wytworzyć pomiędzy okładkami kondensatora prąd przesunięcia o amplitudzie równej <m:math display="inline">
+<m:mn>1</m:mn>
+<m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+<m:mi mathvariant="normal">A</m:mi>
+</m:math>?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1171239885460">
+  <problem id="fs-id1171239885462">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171239885464">Napięcie pomiędzy dwiema okładkami kondensatora płaskiego, o polu powierzchni <m:math display="inline">
+      <m:mi>A</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>800</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:msup>
+          <m:mi mathvariant="normal">cm</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+    </m:math> i oddalonymi od siebie o <m:math display="inline">
+    <m:mi>d</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>2</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mi mathvariant="normal">mm</m:mi>
+    </m:mrow>
+  </m:math>, zmienia się sinusoidalnie, jak <m:math display="inline">
+  <m:mi>u</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>15</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mi mathvariant="normal">mV</m:mi>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mo>cos</m:mo>
+      <m:mfenced>
+        <m:mrow>
+          <m:mn>150</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mfenced>
+    </m:mrow>
+  </m:mrow>
+</m:math>, gdzie <m:math display="inline">
+<m:mi>t</m:mi>
+</m:math> wyrażone jest w sekundach. Znajdź natężenie prądu przesunięcia pomiędzy tymi okładkami.</para>
+</problem>
+<solution id="fs-id1171242354105">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171242354107">
+    <m:math display="inline">
+      <m:msub>
+        <m:mi>i</m:mi>
+        <m:mtext>p</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>7,97</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>10</m:mn>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">A</m:mi>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mo>sin</m:mo>
+          <m:mfenced>
+            <m:mrow>
+              <m:mn>150</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfenced>
+        </m:mrow>
+      </m:mrow>
+      </m:math>.</para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1171240250096">
+    <problem id="fs-id1171240250098">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171240250100">Napięcie pomiędzy dwiema okładkami kondensatora płaskiego, o polu powierzchni <m:math display="inline">
+        <m:mi>A</m:mi>
+      </m:math> i oddalonymi od siebie o <m:math display="inline">
+      <m:mi>d</m:mi>
+    </m:math>, zmienia się z czasem <m:math display="inline">
+    <m:mi>t</m:mi>
+  </m:math>, jak następuje: <m:math display="inline">
+  <m:mi>u</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>a</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:msup>
+      <m:mi>t</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+  </m:mrow>
+</m:math>, gdzie <m:math display="inline">
+<m:mi>a</m:mi>
+</m:math> jest stałe. Znajdź natężenie prądu przesunięcia pomiędzy tymi okładkami.</para>
+</problem>
+</exercise>
+</section>
+</content>
+<glossary>
+  <definition id="fs-id1171240253588">
+    <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="prąd przesunięcia">prąd przesunięcia (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">displacement current</term></foreign>)</term>
+      <meaning id="fs-id1171240251462">dodatkowy składnik w prawie Ampère’a-Maxwella, który odpowiada za zmienne pole elektryczne wytwarzające pole magnetyczne, nawet gdy nie płynie żaden rzeczywisty prąd</meaning>
+    </definition>
+    <definition id="fs-id1171240251470">
+      <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="równania Maxwella">równania Maxwella (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">Maxwell’s equations</term></foreign>)</term>
+        <meaning id="fs-id1171240251476">zbiór 4 równań, które składają się na spójną teorię elektromagnetyzmu, łączącą wszystkie aspekty oddziaływań elektromagnetycznych</meaning>
+      </definition>
+    </glossary>
+  </document>

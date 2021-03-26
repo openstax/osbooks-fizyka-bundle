@@ -1,0 +1,565 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Drgania tłumione</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65831</md:content-id>
+  <md:title>Drgania tłumione</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>opisywać ruch oscylatora harmonicznego tłumionego;</item>
+<item>zapisywać wzory na ruch oscylatora, kiedy drgania są tłumione.</item>
+</list></md:abstract>
+  <md:uuid>e2e72410-afea-47bd-ba16-5b245b817bd5</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1167131080334">W otaczającym nas świecie obserwowane drgania rzadko mają postać ruchu harmonicznego, ponieważ zwykle siła oporu tłumi drgania, co przy braku siły podtrzymującej prowadzi do stopniowego wygaszania oscylacji. Omówimy więc przykłady <term cmlnle:reference="tłumienie drgań harmonicznych" class="no-emphasis">tłumienia drgań harmonicznych</term> i odpowiednio zmodyfikujemy równania ruchu, aby opisać ten bardziej uogólniony przypadek drgań.</para><para id="fs-id1167134593364">Po szarpnięciu struny gitarowej obserwujemy zanik jej drgań w czasie kilku sekund. Aby huśtawka kontynuowała oscylacje, musimy ją popychać (<link target-id="CNX_UPhysics_15_06_Swing"/>). Choć często możemy stworzyć takie warunki, w których siły oporu i inne siły niezachowawcze można zaniedbać, przypadki swobodnych, nietłumionych drgań są rzadkie. Bywają też sytuacje, kiedy drgania są czymś niepożądanym i celowo staramy się je tłumić jak np. w przypadku amortyzatorów w samochodach.</para><figure id="CNX_UPhysics_15_06_Swing"><media id="fs-id1167134458597" alt="Zdjęcie osoby huśtającej się na wiszącej huśtawce">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_15_06_Swing.jpg"/>
+    </media>
+    
+  <caption>Jeśli chcemy huśtać się na huśtawce, musimy wykonywać odpowiednie ruchy ciała w celu kompensacji strat energii wynikających z obecności sił oporu ośrodka i sił tarcia. (Źródło: Bob Mical).</caption></figure><para id="fs-id1167131181569"><link target-id="CNX_UPhysics_15_06_DampedOsci"/> przedstawia klocek o masie <m:math>
+      <m:mi>m</m:mi>
+    </m:math>
+   przymocowany do sprężyny o współczynniku sprężystości <m:math>
+  <m:mrow>
+    <m:mi>k</m:mi>
+    <m:mo/>
+  </m:mrow>
+</m:math>. Klocek podniesiono do położenia <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>, które jest początkową amplitudą, a następnie puszczono go swobodnie. Klocek wykonuje drgania wokół położenia równowagi w cieczy o lepkości <m:math>
+<m:mtext>η</m:mtext>
+</m:math>, a kolejne uzyskiwane wartości amplitudy maleją wraz z upływem czasu. Jest to typowy wykres dla układu ze słabym tłumieniem. Ten zanik oscylacji wywołują siły oporu ośrodka, a więc siły niezachowawcze, których działanie powoduje tworzenie różnych form energii termicznej kosztem energii oscylatora (obniżenie energii kinetycznej i energii potencjalnej sprężystości). W warunkach słabego tłumienia okres i częstotliwość drgań są podobne do odpowiednich wartości w swobodnym oscylatorze harmonicznym.</para><figure id="CNX_UPhysics_15_06_DampedOsci">
+  <media id="fs-id1167129981857" alt="Rysunek przedstawia masę zawieszoną pionowo na sprężynie i zanurzoną w cieczy o lepkości eta. Pokazany obok wykres drgań tłumionych przedstawia na osi pionowej wychylenie x w metrach jako funkcję czasu w sekundach oznaczanego na osi poziomej. Zakres ruchów to minus A sub zero do plus A sub zero. Skala czasu jest oznaczona od zera do 7 T, z podziałką co T. W chwili zero odchylenie wynosi plus A sub zero a masa oscyluje między dodatnimi maksimami a ujemnymi minimami, przy czym każdy pełny cykl jest wykonywany w takim samym czasie T, ale amplituda oscylacji maleje w czasie.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_15_06_DampedOsci.jpg"/>
+  </media>
+  <caption>Ciężarek zawieszony na sprężynie wykonuje drgania w cieczy o lepkości <m:math>
+    <m:mtext>η</m:mtext>
+    </m:math>. Wartość okresu drgań pozostaje stała, ale amplitudy kolejnych oscylacji zmniejszają się na skutek tłumienia drgań przez lepki ośrodek.</caption>
+  </figure>
+  <para id="fs-id1167129966801">Rozważmy działanie sił na ciężarek, który ma masę <m:math>
+    <m:mi>m</m:mi>
+  </m:math>. Należy zauważyć, że siła ciężkości działająca na ten ciężarek jest kompensowana zmianą położenia równowagi, co już omawialiśmy w rozdziale. Na siłę wypadkową wpływa zarówno siła sprężystości związana ze sprężyną, jak i siła oporu ośrodka <m:math>
+  <m:mrow>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mi>O</m:mi>
+        </m:msub>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+  </m:mrow>
+</m:math>. Jeśli maksymalna prędkość drgającego ciężarka jest mała, to siła oporu ośrodka jest proporcjonalna do prędkości ciała i działa przeciwnie do kierunku ruchu ciężarka <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mi>O</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mtext>−</m:mtext>
+      <m:mi>b</m:mi>
+      <m:mi>v</m:mi>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+</m:mrow>
+</m:math>. W tych warunkach wypadkowa siła działająca na ciężarek o masie <m:math>
+<m:mi>m</m:mi>
+</m:math> wynosi:</para><equation id="fs-id1167134887400" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:mi>m</m:mi>
+      <m:mi>a</m:mi>
+      <m:mo>=</m:mo>
+      <m:mtext>−</m:mtext>
+      <m:mi>b</m:mi>
+      <m:mi>v</m:mi>
+      <m:mo>−</m:mo>
+      <m:mi>k</m:mi>
+      <m:mi>x</m:mi>
+      <m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1167131201320">Możemy zapisać ten wzór w postaci równania różniczkowego:</para>
+<note id="fs-id1167131345696" class="equation-callout">
+  <equation id="fs-id1167131231570">
+    <label/>
+    <m:math>
+      <m:mi>m</m:mi>
+      <m:mfrac>
+        <m:mrow>
+          <m:mrow>
+            <m:msup>
+              <m:mi mathvariant="normal">d</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mi>x</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:msup>
+            <m:mi>t</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>+</m:mo>
+      <m:mi>b</m:mi>
+      <m:mfrac>
+        <m:mrow>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>x</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mrow>
+            <m:mi mathvariant="normal">d</m:mi>
+          </m:mrow>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>+</m:mo>
+      <m:mi>k</m:mi>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0.</m:mn>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1167131498071">Aby zaproponować rozwiązanie tego równania różniczkowego, przeanalizujmy wykres położenia ciężarka względem czasu przedstawiony na <link target-id="CNX_UPhysics_15_06_DampedOscX" cmlnle:case="locative"/>. Krzywa ta przypomina funkcję cosinus, która ma postać funkcji wykładniczej <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>A</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:msup>
+      <m:mi>e</m:mi>
+      <m:mrow>
+        <m:mtext>−</m:mtext>
+        <m:mi>α</m:mi>
+        <m:mi>t</m:mi>
+      </m:mrow>
+    </m:msup>
+  </m:mrow>
+</m:math>, gdzie <m:math>
+<m:mrow>
+  <m:mi>α</m:mi>
+  <m:mo>=</m:mo>
+  <m:mfrac>
+    <m:mi>b</m:mi>
+    <m:mrow>
+      <m:mn>2</m:mn>
+      <m:mi>m</m:mi>
+    </m:mrow>
+  </m:mfrac>
+</m:mrow>
+</m:math>. Rozwiązaniem jest:</para><note id="fs-id1167134722670" class="equation-callout">
+  <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167134928721"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mi>x</m:mi><m:mo>⁡</m:mo><m:mfenced><m:mi>t</m:mi></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>A</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mrow><m:mfrac><m:mi>b</m:mi><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow></m:mrow></m:msup><m:mo>⁢</m:mo><m:mrow><m:mo>cos</m:mo><m:mrow><m:mfenced><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo>⁢</m:mo><m:mi>t</m:mi></m:mrow><m:mo>+</m:mo><m:mi>ϕ</m:mi></m:mrow></m:mfenced><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            x\apply (t) = A_0 e^{-\frac{b}{2m} t } \cos (\omega t + \phi) \text{.}</m:annotation></m:semantics></m:math></equation></note>
+<para id="fs-id1167131363125">Rozwiązanie to spełnia równanie różniczkowe, a udowodnienie tego pozostawiamy jako ćwiczenie. W tym celu wyznacz pierwszą i drugą pochodną względem czasu i wstaw je do <link target-id="fs-id1167131231570" cmlnle:case="genitive"/>. Możemy również stwierdzić, że <link target-id="fs-id1167134928721"/> jest rozwiązaniem, jeśli:</para><equation id="ked-1bpg4b3u9_of" class="unnumbered">
+  <m:math>
+    <m:mi>ω</m:mi>
+    <m:mo>=</m:mo>
+    <m:msqrt>
+      <m:mfrac>
+        <m:mi>k</m:mi>
+        <m:mi>m</m:mi>
+      </m:mfrac>
+      <m:mo>−</m:mo>
+      <m:msup>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mfrac>
+            <m:mi>b</m:mi>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mi>m</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:msqrt>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1167131406299">Przypomnijmy, że częstość kołowa <m:math>
+  <m:msub>
+    <m:mi>ω</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  </m:math> drgań oscylatora harmonicznego nietłumionego jest równa pierwiastkowi kwadratowemu ze współczynnika sprężystości sprężyny podzielonemu przez masę ciężarka. Wartość ta może być traktowana jako <term class="no-emphasis">częstotliwość własna</term> (naturalna częstość kołowa drgań), którą opisuje wzór:</para><note id="fs-id1167131154142" class="equation-callout">
+    <equation id="fs-id1167131161057">
+      <label/>
+      <m:math>
+        <m:msub>
+          <m:mi>ω</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:msqrt>
+          <m:mfrac>
+            <m:mi>k</m:mi>
+            <m:mi>m</m:mi>
+          </m:mfrac>
+        </m:msqrt>
+        <m:mo>.</m:mo>
+      </m:math>
+    </equation>
+  </note>
+  <para id="fs-id1167134812855">Natomiast w przypadku drgań tłumionych częstość kołowa wynosi:</para>
+  <note id="fs-id1167131621821" class="equation-callout">
+<equation id="fs-id1167131503225"><label/>
+    <m:math>
+      <m:mi>ω</m:mi>
+      <m:mo>=</m:mo>
+      <m:msqrt>
+        <m:msubsup>
+          <m:mi>ω</m:mi>
+          <m:mn>0</m:mn>
+          <m:mn>2</m:mn>
+        </m:msubsup>
+        <m:mo>−</m:mo>
+        <m:msup>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mfrac>
+              <m:mi>b</m:mi>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mi>m</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:msqrt>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  </note>
+
+  <figure id="CNX_UPhysics_15_06_DampedOscX"><media id="fs-id1167131281519" alt="Wykres oscylacji, gdzie na osi pionowej zaznaczono wychylenie w metrach, a na osi poziomej czas w sekundach. Położenie zmienia się od minus A sub zero do plus A sub zero, a czas: od zera do 10 T. Wychylenie zaznaczone jako niebieska krzywa oscyluje między punktami maksimum a minimum tworząc falę, której amplituda zmniejsza się stopniowo w miarę oddalania się od punktu t=0. Czas, T, między kolejnymi szczytami wychylenia pozostaje stały. Obwiednia, czyli krzywa łącząca szczyty wychyleń, zarówno dodatnie jak i ujemne, została pokazana jako para czerwonych, przerywanych linii. Górną krzywą, łączącą dodatnie szczyty wychyleń, czyli maksima, opisano jako plus A sub zero razy e do potęgi minus b razy t przez 2 m. Dolną krzywą, łączącą ujemne szczyty wychyleń, czyli minima, opisano jako minus A sub zero razy e do potęgi otworzyć nawias minus b razy t przez 2 m, zamknąć nawias.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_15_06_DampedOscX.jpg"/>
+    </media>
+    
+  <caption>Położenie względem czasu dla ciężarka zawieszonego na sprężynie drgającego w cieczy jako ośrodku tłumiącym drgania. Zauważmy, że krzywa ma postać funkcji cosinus z obwiednią o charakterze funkcji wykładniczej.</caption></figure><para id="fs-id1167134883275">Kiedy zaczęliśmy opisywać ruch harmoniczny tłumiony, stwierdziliśmy, że tłumienie musi być małe. Pojawiają się więc dwa pytania: dlaczego tłumienie powinno być małe i jak to dokładnie opisać? Jeśli stopniowo <emphasis effect="italics">zwiększamy</emphasis> wartość tłumienia w układzie, to okres i częstotliwość drgań będą się zmieniać. Ze względu na to, że siła oporu ośrodka działa przeciwnie do kierunku ruchu, to ruch drgający spowolni się (wypadkowa siła działająca na ciężarek jest mniejsza). Częstość kołową opisuje wzór:</para><equation id="fs-id1167131164435" class="unnumbered"><label/>
+    <m:math>
+      <m:mi>ω</m:mi>
+      <m:mo>=</m:mo>
+      <m:msqrt>
+        <m:mfrac>
+          <m:mi>k</m:mi>
+          <m:mi>m</m:mi>
+        </m:mfrac>
+        <m:mo>−</m:mo>
+        <m:msup>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mfrac>
+              <m:mi>b</m:mi>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mi>m</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:msqrt>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para id="fs-id1167134678379">Gdy współczynnik oporu <m:math>
+      <m:mi>b</m:mi>
+    </m:math>
+   wzrasta, <m:math>
+  <m:mrow>
+    <m:mfrac>
+      <m:mi>k</m:mi>
+      <m:mi>m</m:mi>
+    </m:mfrac>
+    <m:mo>−</m:mo>
+    <m:msup>
+      <m:mrow>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mi>b</m:mi>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mi>m</m:mi>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+      </m:mrow>
+      <m:mn>2</m:mn>
+    </m:msup>
+  </m:mrow>
+</m:math> maleje i ostatecznie osiąga wartość zero, gdy <m:math>
+<m:mrow>
+  <m:mi>b</m:mi>
+  <m:mo>=</m:mo>
+  <m:msqrt>
+    <m:mrow>
+      <m:mn>4</m:mn>
+      <m:mi>m</m:mi>
+      <m:mi>k</m:mi>
+    </m:mrow>
+  </m:msqrt>
+</m:mrow>
+</m:math>. Dalsze zwiększenie <m:math>
+  <m:mi>b</m:mi>
+</m:math>
+ powoduje, że <m:math>
+<m:mrow>
+  <m:mfrac>
+    <m:mi>k</m:mi>
+    <m:mi>m</m:mi>
+  </m:mfrac>
+  <m:mo>−</m:mo>
+  <m:msup>
+    <m:mrow>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mi>b</m:mi>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mi>m</m:mi>
+            </m:mrow>
+          </m:mfrac>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+    </m:mrow>
+    <m:mn>2</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math> przyjmuje ujemną wartość, a <m:math>
+<m:mrow>
+  <m:msqrt>
+    <m:mrow>
+      <m:mfrac>
+        <m:mi>k</m:mi>
+        <m:mi>m</m:mi>
+      </m:mfrac>
+      <m:mo>−</m:mo>
+      <m:msup>
+        <m:mrow>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mi>b</m:mi>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mi>m</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+  </m:msqrt>
+</m:mrow>
+</m:math> jest liczbą zespoloną. W przypadku bardzo dużego tłumienia układ nie wykazuje oscylacji i powoli zmierza do położenia równowagi.</para><para id="fs-id1167131215180"><link target-id="CNX_UPhysics_15_06_DampedOscB"/> przedstawia czasowy przebieg przemieszczenia oscylatora harmonicznego dla różnych wartości współczynnika tłumienia. Kiedy współczynnik tłumienia <m:math>
+  <m:mi>b</m:mi>
+</m:math> jest mały <m:math>
+<m:mrow>
+  <m:mi>b</m:mi>
+  <m:mo>&lt;</m:mo>
+  <m:msqrt>
+    <m:mrow>
+      <m:mn>4</m:mn>
+      <m:mi>m</m:mi>
+      <m:mi>k</m:mi>
+    </m:mrow>
+  </m:msqrt>
+</m:mrow>
+</m:math>, układ wykonuje drgania z <term cmlnle:reference="tłumienie podkrytyczne" class="no-emphasis">tłumieniem podkrytycznym</term>, zgodnie z krzywą (a), amplituda w kolejnych chwilach ruchu zmniejsza się wykładniczo. Wiele oscylatorów wykazuje drgania z tłumieniem podkrytycznym, m.in. drgający klocek na sprężynie. Choć współczynnik tłumienia jest małą wartością, to w końcu drgania zanikają i klocek osiąga stan bezruchu. Jeśli współczynnik tłumienia wynosi <m:math>
+<m:mrow>
+  <m:mi>b</m:mi>
+  <m:mo>=</m:mo>
+  <m:msqrt>
+    <m:mrow>
+      <m:mn>4</m:mn>
+      <m:mi>m</m:mi>
+      <m:mi>k</m:mi>
+    </m:mrow>
+  </m:msqrt>
+</m:mrow>
+</m:math>, to zachodzi <term cmlnle:reference="tłumienie krytyczne" class="no-emphasis">tłumienie krytyczne</term>, a zachowanie układu przedstawia krzywa (b). W tych warunkach układ nie oscyluje, ale asymptotycznie zbliża się do położenia równowagi w jak najkrótszym czasie. Możliwie najszybszy zanik niepożądanych drgań bywa kwestią niezwykle ważną, a przykładem układu z tłumieniem krytycznym są amortyzatory w samochodzie. Z kolei krzywa (c) na <link target-id="CNX_UPhysics_15_06_DampedOscB" cmlnle:case="locative"/> przedstawia układ z <term cmlnle:reference="tłumienie nadkrytyczne" class="no-emphasis">tłumieniem nadkrytycznym</term>, dla którego <m:math>
+<m:mrow>
+  <m:mi>b</m:mi>
+  <m:mo>&gt;</m:mo>
+  <m:msqrt>
+    <m:mrow>
+      <m:mn>4</m:mn>
+      <m:mi>m</m:mi>
+      <m:mi>k</m:mi>
+    </m:mrow>
+  </m:msqrt>
+  <m:mo/>
+</m:mrow>
+</m:math>. Początkowe wychylenie przy tłumieniu nadkrytycznym z czasem zanika.</para><figure id="CNX_UPhysics_15_06_DampedOscB"><media id="fs-id1167131502315" alt="Położenie x w metrach, na osi pionowej, względem czasu w sekundach, na osi poziomej, przy różnych współczynnikach tłumienia. Dla żadnej z osi nie określono skali. W chwili zero wszystkie trzy krzywe zaczynają się w tym samym, dodatnim punkcie. Niebieska krzywa a, opisana równaniem b kwadrat mniejsze niż 4 m k, wykonuje nieco ponad dwie i ćwierć oscylacji o malejącej amplitudzie i niezmiennym okresie. Czerwona krzywa b, opisana równaniem b kwadrat równe 4 m k, w chwili t=0 ma mniejszy kąt nachylenia względem osi poziomej niż krzywa niebieska, ale nie wykonuje oscylacji. Czerwona krzywa dąży asymptotycznie do x=0 i zbliża się do niego w czasie jednej oscylacji niebieskiej krzywej. Zielona krzywa c, opisana równaniem b kwadrat większe niż 4 m k, w punkcie t=0 obniża się wolniej niż krzywa czerwona i również nie wykonuje oscylacji. Zielona krzywa asymptotycznie zbliża się do x=0, ale po ponad dwóch oscylacjach niebieskiej krzywej, na końcu wykresu, wciąż jest w sporej odległości od zera.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_15_06_DampedOscB.jpg"/>
+  </media>
+  
+<caption>Położenie względem czasu dla układu składającego się z masy i sprężyny w lepkiej cieczy. (a) Jeśli tłumienie jest małe <m:math>
+    <m:mrow>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mi>b</m:mi>
+          <m:mo>&lt;</m:mo>
+          <m:msqrt>
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mi>m</m:mi>
+              <m:mi>k</m:mi>
+            </m:mrow>
+          </m:msqrt>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+    </m:mrow>
+  </m:math>, masa oscyluje i powoli zmniejsza się amplituda drgań ze względu na utratę energii na skutek działania sił niezachowawczych. Przypadkiem granicznym jest (b) kiedy współczynnik tłumienia wynosi dokładnie <m:math>
+  <m:mrow>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>b</m:mi>
+        <m:mo>=</m:mo>
+        <m:msqrt>
+          <m:mrow>
+            <m:mn>4</m:mn>
+            <m:mi>m</m:mi>
+            <m:mi>k</m:mi>
+          </m:mrow>
+        </m:msqrt>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+  </m:mrow>
+</m:math>. (c) Gdy tłumienie jest bardzo duże <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mi>b</m:mi>
+      <m:mo>&gt;</m:mo>
+      <m:msqrt>
+        <m:mrow>
+          <m:mn>4</m:mn>
+          <m:mi>m</m:mi>
+          <m:mi>k</m:mi>
+        </m:mrow>
+      </m:msqrt>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+</m:mrow>
+</m:math>, masa nie oscyluje po początkowym wychyleniu, ale wolno zmierza do położenia równowagi.</caption></figure><para id="fs-id1167131503759">Tłumienie krytyczne bywa cechą pożądaną, ponieważ taki układ potrafi bardzo szybko powrócić do stanu równowagi i pozostaje w tym stanie. Ponadto jeśli do układu z tłumieniem krytycznym przyłożymy stałą siłę, to uzyska on nowe położenie równowagi w możliwie najkrótszym czasie bez efektu przekraczania tego położenia i bez oscylacji wokół nowego położenia równowagi. </para><equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-203" class="unnumbered"><m:math/></equation><note id="fs-id1167134781058" class="check-understanding">
+  <exercise id="fs-id1167134562163">
+    <problem id="fs-id1167134882302">
+      <para id="fs-id1167131119648"><emphasis effect="bold">Sprawdź, czy rozumiesz. </emphasis> Dlaczego swobodne, nietłumione oscylatory harmoniczne są rzadko spotykane? </para></problem>
+      <solution id="fs-id1167134541830">
+        <para id="fs-id1167129968201">Na ruch obiektu często wpływa tarcie, które powoduje tłumienie drgań oscylatora harmonicznego.</para>
+      </solution>
+    </exercise>
+  </note>
+  <section id="fs-id1167131420681" class="key-concepts">
+    <title>Podsumowanie</title>
+    <list id="fs-id1167131395544" list-type="bulleted" bullet-style="bullet">
+      <item>W oscylatorach harmonicznych tłumionych działają siły niezachowawcze, które powodują dyssypację energii.</item>
+      <item>Tłumienie krytyczne powoduje, że układ możliwie najszybciej, asymptotycznie wraca do położenia równowagi.</item>
+      <item>Układ drgający z tłumieniem podkrytycznym wykonuje drgania wokół położenia równowagi.</item>
+      <item>Układ z tłumieniem nadkrytycznym osiąga stan równowagi wolniej niż ten z tłumieniem krytycznym.</item>
+    </list>
+  </section>
+  <section id="fs-id1167134653363" class="review-conceptual-questions">
+    <title>Pytania</title>
+    <exercise id="fs-id1167131216072">
+      <problem id="fs-id1167131360745">
+        <para id="fs-id1167131359766">Podaj przykład oscylatora harmonicznego tłumionego (są one bardziej rozpowszechnione niż swobodne oscylatory harmoniczne).</para></problem>
+      <solution id="fs-id1167134989944">
+        <para id="fs-id1167131216679">Amortyzator w samochodzie.</para>
+      </solution>
+    </exercise>
+    <exercise id="fs-id1167131162178">
+      <problem id="fs-id1167131143061">
+        <para id="fs-id1167134960494">Samochód przejeżdżający przez próg zwalniający wpada w drganie. Opisz przebieg drgań z tłumieniem:</para><para id="fs-id1167134911846">a) nadkrytycznym</para>
+        <para id="fs-id1167131399549">b) podkrytycznym</para>
+        <para id="fs-id1167134648584">c) krytycznym.</para>
+      </problem>
+    </exercise>
+    <exercise id="fs-id1167134817328">
+      <problem id="fs-id1167134872904">
+        <para id="fs-id1167131561284">W większości oscylatorów harmonicznych zachodzi tłumienie i w nieobecności siły wymuszającej drgania ulegają wygaszeniu. Wyjaśnij to.</para>
+      </problem>
+      <solution id="fs-id1167134724463">
+        <para id="fs-id1167134671552">Druga zasada termodynamiki mówi, że nie można zbudować maszyny poruszającej się bez końca. W końcu uporządkowany ruch zanika i układ powraca do stanu równowagi.</para>
+      </solution>
+    </exercise>
+  </section>
+  <section id="fs-id1167134514126" class="review-problems">
+    <title>Zadania</title>
+    <exercise id="fs-id1167131136928">
+      <problem id="fs-id1167134666935">
+        <para id="fs-id1167131483625">Oscylator słabo tłumiony wykonuje drgania, a w każdym kolejnym cyklu amplituda tych drgań jest mniejsza o <m:math>
+          <m:mrow>
+            <m:mn>3,0</m:mn>
+            <m:mi>%</m:mi>
+          </m:mrow>
+          </m:math>. Jaki procent energii mechanicznej oscylatora jest tracony w każdym cyklu?</para>
+        </problem>
+        <solution id="fs-id1167134928633">
+          <para id="fs-id1167134834992">9%.</para></solution>
+      </exercise>
+    </section>
+  </content>
+  <glossary>
+    <definition id="fs-id1167131256031">
+      <term cmlnle:reference="tłumienie krytyczne" class="no-emphasis">tłumienie krytyczne (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">critically dampened</term></foreign>)</term>
+      <meaning id="fs-id1167130035193">tłumienie powodujące możliwie najszybszy powrót oscylatora do stanu równowagi, przy czym w ruchu tym nie występują oscylacje wokół położenia równowagi</meaning>
+    </definition>
+    <definition id="fs-id1167131178689">
+      <term cmlnle:reference="częstotliwość własna" class="no-emphasis">częstotliwość własna (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">natural angular frequency</term></foreign>)</term>
+      <meaning id="fs-id1167131567542">częstotliwość drgań swobodnego oscylatora harmonicznego</meaning>
+    </definition>
+    <definition id="fs-id1167134687928">
+      <term cmlnle:reference="tłumienie nadkrytyczne" class="no-emphasis">tłumienie nadkrytyczne (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">overdampened</term></foreign>)</term>
+      <meaning id="fs-id1167131364306">tłumienie skutkujące powolnym powrotem oscylatora do stanu równowagi, przy czym oscylacje wokół stanu równowagi nie występują</meaning>
+    </definition>
+    <definition id="fs-id1167131406610">
+      <term cmlnle:reference="tłumienie podkrytyczne" class="no-emphasis">tłumienie podkrytyczne (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">underdampened</term></foreign>)</term>
+      <meaning id="fs-id1167131266887">tłumienie powodujące zanik kolejnych amplitud drgań aż do zera</meaning>
+    </definition>
+  </glossary>
+</document>

@@ -1,0 +1,940 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Prawo Biota-Savarta</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67208</md:content-id>
+  <md:title>Prawo Biota-Savarta</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>wyznaczać indukcję pola magnetycznego wytwarzanego przez dowolny prąd elektryczny, płynący przez prostoliniowy odcinek przewodu;</item>
+<item>jak, stosując prawo Biota-Savarta, obliczać indukcję pola magnetycznego dla wybranej geometrii, tj. przewodu prostoliniowego i przewodu w kształcie łuku okręgu.</item>
+</list></md:abstract>
+  <md:uuid>0b9a7de1-ba1e-492c-818a-ac4bc3d3424c</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl95f1va_o78">Z lektury poprzednich rozdziałów wiemy już, że dowolne ciało obdarzone masą jest źródłem pola grawitacyjnego. Z polem tym oddziałuje z kolei każdy inny obiekt posiadający masę i umieszczony w zasięgu tego ciała. Analogiczną prawidłowość obserwujemy w przypadku pola elektrycznego wytwarzanego przez dowolny, nieruchomy ładunek elektryczny. Ponieważ poruszający się ładunek elektryczny, a więc prąd elektryczny, także oddziałuje z polem magnetycznym – możemy słusznie przypuszczać, że jest on również źródłem pola magnetycznego. </para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl978jma_nr8"><term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="prawo Biota-Savarta">Prawo Biota-Savarta</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">Biot-Savart law</term></foreign>) jest w istocie równaniem umożliwiającym wyznaczenie wartości i kierunku wektora indukcji pola magnetycznego wytwarzanego przez przepływający prąd elektryczny. Jest to prawo empiryczne, nazwane na cześć dwóch uczonych, którzy sformułowali je, badając oddziaływanie pomiędzy prostoliniowym przewodem z prądem a magnesem trwałym. Zgodnie z nim w dowolnym punkcie <m:math display="inline"><m:mi>P</m:mi></m:math> (<link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_29_01_LineSeg" cmlnle:case="nominative"/>) wektor indukcji pola magnetycznego <m:math display="inline">
+    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+  </m:math>, wytwarzanego przez element przewodu o długości <m:math display="inline">
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mover>
+    <m:mi>l</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:math> przewodzącego prąd <m:math display="inline">
+<m:mi>I</m:mi>
+</m:math>, określony jest wzorem</para><equation id="ked-1bl95jmli_f3o">
+  <m:math display="block">
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mover>
+        <m:mi>B</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mfrac>
+          <m:msub>
+            <m:mi>μ</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mrow>
+            <m:mn>4</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>π</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>⋅</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mi>I</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>l</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+                <m:mo>×</m:mo>
+                <m:mover>
+                  <m:mi>r</m:mi>
+                  <m:mo>̂</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mfrac>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_29_01_LineSeg"><media id="ked-1bl95je89_4hg" alt="Rysunek demonstruje prawo Biota-Savarta. Prąd dl płynie poprzez przewodnik magnetyczny. Punkt P jest wyznaczony w odległości r od przewodnika. Wektor r do punktu P tworzy z przewodnikiem kąt theta. W punkcie P istnieje pole magnetyczne dB.">
+    <image src="../../media/CNX_UPhysics_29_01_LineSeg.jpg" mime-type="image/jpeg"/>
+  </media>
+  
+<caption>Element długości przewodnika <m:math display="inline">
+    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+    <m:mover>
+      <m:mi>l</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+  </m:math>, przez który płynie prąd <m:math display="inline">
+  <m:mi>I</m:mi>
+</m:math>, wytwarza w punkcie <m:math display="inline"><m:mi>P</m:mi></m:math> pole magnetyczne o indukcji <m:math display="inline">
+<m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+<m:mover>
+  <m:mi>B</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math>, określonej prawem Biota-Savarta. </caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl95nmlp_gv8">Występująca w równaniu stała <m:math display="inline">
+  <m:msub>
+    <m:mi>μ</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+</m:math> jest <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="przenikalność magnetyczna próżni">przenikalnością magnetyczną próżni</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">permeability of free space</term></foreign>). Jej wartość w układzie SI wynosi</para>
+<note id="ked-1bl95o8v7_ef" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl95oc0q_q48"><m:math display="block"><m:semantics><m:mrow><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>-7</m:mn></m:msup></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mrow><m:mi mathvariant="normal">T</m:mi><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>∕</m:mo><m:mi mathvariant="normal">A</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \mu_0 = 4\pi \cdot 10^{-7}\si{\tesla\metre\per\ampere} \text{.}</m:annotation></m:semantics></m:math></equation></note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl95seal_b1o">Wektor <m:math display="inline">
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mover>
+    <m:mi>l</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:math> określa nieskończenie mały element długości przewodu; kierunek tego wektora (przyjęty na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_29_01_LineSeg" cmlnle:case="genitive"/> jako dodatni) jest zgodny z kierunkiem przepływu prądu o natężeniu <m:math display="inline">
+<m:mi>I</m:mi>
+</m:math>. Symbol <m:math display="inline">
+<m:mi>r</m:mi>
+</m:math> oznacza odległość elementu <m:math display="inline">
+<m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+<m:mover>
+  <m:mi>l</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math> od punktu <m:math display="inline"><m:mi>P</m:mi></m:math>, natomiast wektor jednostkowy <m:math display="inline">
+<m:mover>
+  <m:mi>r</m:mi>
+  <m:mo>̂</m:mo>
+</m:mover>
+</m:math> jest skierowany od elementu <m:math display="inline">
+<m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+<m:mover>
+  <m:mi>l</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math> do tegoż punktu. </para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl978jmn_ddo">Kierunek wektora indukcji pola magnetycznego <m:math display="inline">
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:math> (prostopadły do płaszczyzny <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_29_01_LineSeg" cmlnle:case="genitive"/>) wynika z własności iloczynu wektorowego <m:math display="inline">
+<m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>l</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+  <m:mo>×</m:mo>
+  <m:mover>
+    <m:mi>r</m:mi>
+    <m:mo>̂</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>, przy czym jego zwrot określa reguła prawej dłoni. Wartość indukcji <m:math display="inline">
+<m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+<m:mover>
+  <m:mi>B</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math> dana jest wyrażeniem</para>
+<note id="ked-1bl967p15_uno" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl967s8l_fc">
+    <m:math display="block">
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mi>B</m:mi>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mfrac>
+            <m:msub>
+              <m:mi>μ</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>π</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>⋅</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>I</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                <m:mrow>
+                  <m:mi>l</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mrow>
+                    <m:mo>sin</m:mo>
+                    <m:mi>θ</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mfrac>
+        </m:mrow>
+        <m:mo>⁢</m:mo>
+        <m:mtext>,</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl9689mb_328">w którym <m:math display="inline">
+  <m:mi>θ</m:mi>
+</m:math> jest kątem pomiędzy kierunkami wektorów <m:math display="inline">
+<m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+<m:mover>
+  <m:mi>l</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math> i <m:math display="inline">
+<m:mover>
+  <m:mi>r</m:mi>
+  <m:mo>̂</m:mo>
+</m:mover>
+</m:math>. Zauważmy, że gdy <m:math display="inline">
+<m:mi>θ</m:mi>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>, to z powyższego wzoru otrzymamy <m:math display="inline">
+<m:mrow>
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>. Oznacza to, że pole magnetyczne wytwarzane przez element prądu <m:math display="inline">
+<m:mi>I</m:mi>
+<m:mo>⁢</m:mo>
+<m:mrow>
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mover>
+    <m:mi>l</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math> nie zawiera składowej równoległej do wektora <m:math display="inline">
+<m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+<m:mover>
+  <m:mi>l</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math>. Pole magnetyczne wytworzone przez skończony przewód z prądem znajdziemy, całkując równanie wzdłuż jego długości. Otrzymamy w ten sposób często spotykaną postać prawa Biota-Savarta.</para><note xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl96g4vc_8ng">
+  <title>Prawo Biota-Savarta </title>
+  <para id="eip-311">Wektor indukcji pola magnetycznego <m:math display="inline">
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+    </m:math>, wytwarzanego przez przewód z prądem o skończonej długości, określony jest wyrażeniem</para>
+    <equation id="ked-1bl96ii9l_hcg">
+      <m:math display="block">
+        <m:mover>
+          <m:mi>B</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:msub>
+              <m:mi>μ</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>π</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>∫</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mi>I</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mrow>
+                    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>l</m:mi>
+                        <m:mo>→</m:mo>
+                      </m:mover>
+                      <m:mo>×</m:mo>
+                      <m:mover>
+                        <m:mi>r</m:mi>
+                        <m:mo>̂</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+                <m:msup>
+                  <m:mi>r</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mtext>,</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+  </note>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl96it1f_4eo">przy czym całkowanie w powyższym wzorze przebiega po długości przewodu. Zauważmy, że omawiana całka jest całką wektorową, a więc przyczynki do sumarycznego wektora indukcji pochodzące od poszczególnych elementów prądu mogą mieć różne kierunki. Oznacza to, że obliczenie całki we wzorze jest często trudne, nawet przy względnie nieskomplikowanej geometrii przewodu. W takim przypadku zaleca się następujące postępowanie:</para><note xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl96jsmm_fh8" class="problem-solving">
+    <title>Strategia rozwiązania: stosowanie prawa Biota-Savarta</title>
+    <list id="ked-1bl96kend_0co" list-type="enumerated" number-style="arabic"><item> Przekonaj się, że prawo Biota-Savarta jest optymalnym narzędziem rozwiązania danego zagadnienia. Jeżeli dostrzegasz symetrię układu wektorów <m:math display="inline">
+        <m:mover>
+          <m:mi>B</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+      </m:math> oraz <m:math display="inline">
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mover>
+        <m:mi>l</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+      </m:math>, lepszym narzędziem może się okazać prawo Ampère’a. </item>
+      <item>Narysuj element przewodu <m:math display="inline">
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mover>
+          <m:mi>l</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+      </m:math> i wektor jednostkowy <m:math display="inline">
+      <m:mover>
+        <m:mi>r</m:mi>
+        <m:mo>̂</m:mo>
+      </m:mover>
+    </m:math>. Pamiętaj, że kierunek wektora <m:math display="inline">
+    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+    <m:mover>
+      <m:mi>l</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+  </m:math> musi być zgodny z kierunkiem przepływu prądu przez przewód oraz że wektor <m:math display="inline">
+  <m:mover>
+    <m:mi>r</m:mi>
+    <m:mo>̂</m:mo>
+  </m:mover>
+</m:math> musi leżeć na prostej łączącej element <m:math display="inline">
+<m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+<m:mover>
+  <m:mi>l</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math> z punktem, w którym chcesz obliczyć indukcję pola. </item>
+<item>Oblicz iloczyn wektorowy <m:math display="inline">
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>l</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+    <m:mo>×</m:mo>
+    <m:mover>
+      <m:mi>r</m:mi>
+      <m:mo>̂</m:mo>
+    </m:mover>
+  </m:mrow>
+  </m:math>. Zgodnie z prawem Biota-Savarta kierunek i zwrot otrzymanego w ten sposób wektora wyznaczają orientację w przestrzeni poszukiwanego wektora indukcji pola magnetycznego. </item>
+  <item>Wykorzystaj <link target-id="ked-1bl96ii9l_hcg"/>, podstawiając wartości występujących w nim wielkości. Zauważ, że wszystkie wielkości, które są stałe na rozpatrywanej długości przewodu, mogą być zapisane przed symbolem całki. </item>
+  <item>W celu sprawdzenia kierunku obliczanego wektora indukcji pola magnetycznego zastosuj regułę prawej dłoni. Jeżeli do tej pory określona została jedynie wartość wektora indukcji, uzupełnij otrzymane wyniki o wyznaczony kierunek tego wektora. </item>
+</list></note>
+<example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl96smrm_ta">
+  <para id="ked-1bl96smqj_7og"><title>Obliczanie pól magnetycznych krótkich odcinków przewodów z prądem</title>Przez pionowy przewód przepływa prąd o natężeniu <m:math display="inline">
+      <m:mn>2</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+    </m:math>. Oblicz indukcję pola magnetycznego wytwarzanego przez krótki wycinek tego przewodu o długości <m:math display="inline">
+    <m:mn>1</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:mi mathvariant="normal">cm</m:mi>
+  </m:math> w punkcie <m:math display="inline"><m:mi>P</m:mi></m:math> położonym w odległości <m:math display="inline">
+  <m:mn>1</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+  <m:mi mathvariant="normal">m</m:mi>
+  </m:math> od przewodu w kierunku osi <m:math display="inline"><m:mi>x</m:mi></m:math> układu współrzędnych (<link target-id="CNX_UPhysics_29_01_LineSeg2"/>). Należy przyjąć, że pole wytwarzane przez pozostałą część przewodu zostało wyeliminowane dzięki zastosowaniu odpowiedniego ekranu magnetycznego.</para><figure id="CNX_UPhysics_29_01_LineSeg2">
+    <media id="ked-1bl96u0ii_koo" alt="Rysunek przedstawia przewód l z krótkim nieekranowanym kawałkiem dl z płynącym prądem. Punkt P jest umieszczony w odległości x od przewodu. Wektor do punktu P z dl tworzy z przewodem kąt theta. Długość wektora jest pierwiastkiem kwadratowym sumy kwadratów x i l.">
+      <image src="../../media/CNX_UPhysics_29_01_LineSeg2.jpg" mime-type="image/jpeg"/>
+    </media>
+    <caption>Przez krótki wycinek pionowego przewodu przepływa prąd o natężeniu <m:math display="inline">
+      <m:mi>I</m:mi>
+    </m:math>. Jaka jest indukcja pola magnetycznego w odległości <m:math display="inline">
+    <m:mi>x</m:mi>
+    </m:math> od tego wycinka? </caption>
+  </figure>
+  <para id="ked-1bl96vf1b_8ng"><title>Strategia rozwiązania</title>Indukcję pola magnetycznego w punkcie <m:math display="inline"><m:mi>P</m:mi></m:math> możemy wyznaczyć, wykorzystując prawo Biota-Savarta. Ponieważ długość rozpatrywanego pojedynczego wycinka przewodu jest bardzo mała w porównaniu z odległością <m:math display="inline">
+      <m:mi>x</m:mi>
+    </m:math>, operacji całkowania we wzorze Biota-Savarta można nie przeprowadzać, zastępując całkę równoważną jej sumą – w tym celu długość fragmentu <m:math display="inline">
+    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+    <m:mi>l</m:mi>
+  </m:math> oznaczymy przez <m:math display="inline">
+  <m:mo>Δ</m:mo>
+  <m:mi>l</m:mi>
+</m:math>. Zauważmy przy okazji, że jeżeli <m:math display="inline">
+<m:mo>Δ</m:mo>
+<m:mi>l</m:mi>
+</m:math> jest małe w stosunku do <m:math display="inline">
+<m:mi>x</m:mi>
+</m:math>, odległość dowolnego fragmentu rozpatrywanego wycinka od punktu <m:math display="inline"><m:mi>P</m:mi></m:math> jest w przybliżeniu taka sama. Kąt <m:math display="inline">
+<m:mi>θ</m:mi>
+</m:math> na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_29_01_LineSeg2" cmlnle:case="genitive"/> obliczymy, stosując definicję funkcji tangens. Indukcję pola magnetycznego w punkcie <m:math display="inline"><m:mi>P</m:mi></m:math> wyznaczymy, podstawiając do uzyskanego wyrażenia odpowiednie wartości liczbowe. </para><para id="ked-1bl978jkp_djg"><title>Rozwiązanie</title>Kąt pomiędzy wektorami <m:math display="inline">
+    <m:mo>Δ</m:mo>
+    <m:mover>
+      <m:mi>l</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+  </m:math> oraz <m:math display="inline">
+  <m:mover>
+    <m:mi>r</m:mi>
+    <m:mo>̂</m:mo>
+  </m:mover>
+</m:math> znajdujemy z zależności trygonometrycznych, przyjmując wartości odległości <m:math display="inline">
+<m:mi>l</m:mi>
+</m:math> oraz <m:math display="inline">
+<m:mi>x</m:mi>
+</m:math> takie jak w treści zadania</para><equation id="ked-1bl974mg0_778" class="unnumbered">
+  <m:math display="block">
+    <m:mi>θ</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>arc tg</m:mo>
+      <m:mfenced>
+        <m:mfrac>
+          <m:mrow>
+            <m:mn>1</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mn>0,01</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+        </m:mfrac>
+      </m:mfenced>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>89,4</m:mn>
+        <m:mo>°</m:mo>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="ked-1bl978jm6_p6o">Wartość indukcji pola magnetycznego w punkcie <m:math display="inline"><m:mi>P</m:mi></m:math>, obliczona z prawa Biota-Savarta, wynosi więc</para><equation id="ked-1bl9752mf_nn8" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:mi>B</m:mi><m:mo>=</m:mo><m:mrow><m:mfrac><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mi>I</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo>Δ</m:mo><m:mi>l</m:mi></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:mi>θ</m:mi></m:mrow></m:mrow><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:msup><m:mn>10</m:mn><m:mn>-7</m:mn></m:msup><m:mo>⁢</m:mo><m:mrow><m:mrow><m:mi mathvariant="normal">T</m:mi><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>∕</m:mo><m:mi mathvariant="normal">A</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mrow><m:mn>2</m:mn><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">A</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mn>0,01</m:mn><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>sin</m:mo><m:mrow><m:mn>89,4</m:mn><m:mo>°</m:mo></m:mrow></m:mrow></m:mrow><m:msup><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>-9</m:mn></m:msup></m:mrow><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">T</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            B = \frac{\mu_0}{4 \pi} \cdot \frac{I \prefop{\Delta} l \sin \theta}{r^2} = 10^{-7} \si{\tesla\metre\per\ampere} \cdot \frac{\SI{2}{\ampere} \cdot \SI{0,01}{\metre} \cdot \sin \ang{89,4} }{(\SI{1}{\metre})^2} = \SI{2e-9}{\tesla} \text{.}</m:annotation></m:semantics></m:math></equation><para id="ked-1bl975ls1_hu8">Na podstawie reguły prawej dłoni oraz prawa Biota-Savarta stwierdzamy, że wektor indukcji jest zwrócony w głąb rysunku, prostopadle do jego płaszczyzny.</para>
+<para id="ked-1bl975raa_r6o"><title>Znaczenie</title>Opisane przybliżenie jest dobre, gdy długość fragmentu przewodu jest mała w porównaniu z jego odległością od punktu, w którym wyznaczamy pole. W przeciwnym wypadku należy wykorzystać całkową postać prawa Biota-Savarta, przy czym całkowanie musi przebiegać po całej długości rozpatrywanego fragmentu przewodu. </para></example>
+<note id="ked-1bl9793tb_9u8" class="check-understanding">
+  <exercise id="ked-1bl979fkp_c78">
+    <problem id="ked-1bl979fl0_89o">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl979fi2_n1"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> W jakiej odległości powinien znajdować się punkt <m:math display="inline"><m:mi>P</m:mi></m:math> z powyższego <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="ked-1bl96smrm_ta" cmlnle:case="genitive"/>, aby mierzona w nim indukcja pola magnetycznego była równa połowie obliczonej wartości? </para></problem>
+      <solution id="ked-1bl979fkm_58g">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl979fie_49"><m:math display="inline">
+            <m:mn>1,41</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+            <m:mi mathvariant="normal">m</m:mi>
+            </m:math>.</para></solution>
+        </exercise>
+      </note>
+      <example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bl97chdh_pb">
+        <para id="ked-1bl97chd7_r4o"><title>Obliczanie pola magnetycznego przewodu w kształcie łuku okręgu</title>Przez przewód w kształcie łuku okręgu o promieniu <m:math display="inline">
+            <m:mi>R</m:mi>
+          </m:math> i dowolnym kącie środkowym <m:math display="inline">
+          <m:mi>θ</m:mi>
+        </m:math> przepływa prąd o natężeniu <m:math display="inline">
+        <m:mi>I</m:mi>
+        </m:math> (<link target-id="CNX_UPhysics_29_01_ArcSeg"/>). Oblicz indukcję pola magnetycznego w punkcie <m:math display="inline"><m:mi>P</m:mi></m:math> znajdującym się w środku tego łuku.</para><figure id="CNX_UPhysics_29_01_ArcSeg">
+          <media id="ked-1bl97d99o_am8" alt="Rysunek przedstawia kawałek przewodu w kształcie łuku okręgu o promieniu R przez arbitralnie wyznaczony kąt theta. Przewód przesyła prąd dl. Punkt P jest umieszczony w środku. Wektor r do punktu P jest prostopadły do wektora dl.">
+            <image src="../../media/CNX_UPhysics_29_01_ArcSeg.jpg" mime-type="image/jpeg"/>
+          </media>
+          <caption>Przewód w kształcie łuku okręgu, przez który przepływa prąd o natężeniu <m:math display="inline">
+            <m:mi>I</m:mi>
+          </m:math>. Zaznaczono wektory: radialny <m:math display="inline">
+          <m:mover>
+            <m:mi>r</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+        </m:math> oraz <m:math display="inline">
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mover>
+          <m:mi>l</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+        </m:math>, związany z elementem przewodu. </caption>
+      </figure>
+      <para id="ked-1bla1tgr2_ot8"><title>Strategia rozwiązania</title>Indukcję pola magnetycznego w punkcie <m:math display="inline"><m:mi>P</m:mi></m:math> wyznaczymy, korzystając z prawa Biota-Savarta. Zauważmy, że kierunki wektorów: radialnego oraz związanego z elementem przewodu, są w dowolnym punkcie łuku prostopadłe, więc mnożenie wektorowe możemy łatwo zastąpić równoważnym mu w tym przypadku iloczynem wartości wektorów. Zauważmy także, że długość drogi pokonywanej wzdłuż łuku jest iloczynem wartości jego promienia i wartości kąta <m:math display="inline">
+          <m:mi>θ</m:mi>
+          </m:math> wyrażonej w radianach. Indukcję pola magnetycznego możemy teraz łatwo obliczyć, wyłączając odpowiednie stałe przed symbol całki. </para><para id="ked-1bla1v2bv_kqo"><title>Rozwiązanie</title>Najpierw przypomnijmy równanie wyrażające prawo Biota-Savarta </para><equation id="ked-1bla1vi7g_i5o" class="unnumbered">
+              <m:math display="block">
+                <m:mover>
+                  <m:mi>B</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:msub>
+                      <m:mi>μ</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mrow>
+                      <m:mn>4</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>π</m:mi>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>⁢</m:mo>
+                  <m:mrow>
+                    <m:mo>∫</m:mo>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mi>I</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:mrow>
+                            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                            <m:mrow>
+                              <m:mover>
+                                <m:mi>l</m:mi>
+                                <m:mo>→</m:mo>
+                              </m:mover>
+                              <m:mo>×</m:mo>
+                              <m:mover>
+                                <m:mi>r</m:mi>
+                                <m:mo>̂</m:mo>
+                              </m:mover>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:msup>
+                          <m:mi>r</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mfrac>
+                      <m:mo>⁢</m:mo>
+                      <m:mtext>.</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+              </m:math>
+            </equation>
+            <para id="ked-1bla20c0m_mu">Całkując wzdłuż łuku, stwierdzamy, że wszystkie przyczynki do badanego pola mają w środku łuku ten sam kierunek: od rysunku, prostopadle do jego płaszczyzny – wystarczy więc obliczyć wartość wektora indukcji. Ponieważ wektory <m:math display="inline">
+              <m:mover>
+                <m:mi>r</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+            </m:math> oraz <m:math display="inline">
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mover>
+              <m:mi>l</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:math> są prostopadłe, mnożenie wektorowe możemy łatwo zastąpić równoważnym mu iloczynem. Wówczas długość wektora <m:math display="inline">
+          <m:mover>
+            <m:mi>r</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+        </m:math> zastępujemy symbolem <m:math display="inline">
+        <m:mi>R</m:mi>
+      </m:math>. Wyrażając długość elementu łuku zależnością <m:math display="inline">
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mi>l</m:mi>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>r</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mi>θ</m:mi>
+        </m:mrow>
+      </m:mrow>
+      </m:math>, otrzymujemy</para>
+      <equation id="ked-1bla23l4b_u3" class="unnumbered">
+        <m:math display="block">
+          <m:mi>B</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:msub>
+                <m:mi>μ</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mn>4</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>π</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>∫</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi>I</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>r</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mrow>
+                      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                      <m:mi>θ</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:msup>
+                    <m:mi>R</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mfrac>
+                <m:mo>⁢</m:mo>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="ked-1bla23p2u_1i8">Ponieważ natężenie prądu i promień łuku pozostają stałe wzdłuż całego przewodu, odpowiadające im symbole możemy wyłączyć przed symbol całki. Pozostaje więc jedynie całkowanie po kącie</para><equation id="ked-1bla242bk_ceo" class="unnumbered">
+        <m:math display="block">
+          <m:mi>B</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>μ</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>⁢</m:mo>
+                <m:mi>I</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>4</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>π</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>R</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>∫</m:mo>
+              <m:mrow>
+                <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                <m:mrow>
+                  <m:mi>θ</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mtext>.</m:mtext>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="ked-1bla24b29_qqg">Wartość kąta środkowego łuku zmienia się od 0 do <m:math display="inline">
+        <m:mi>θ</m:mi>
+        </m:math>, zatem wynik całkowania ma postać</para>
+        <equation id="ked-1bla251vk_8bg" class="unnumbered">
+          <m:math display="block">
+            <m:mi>B</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>μ</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>I</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>θ</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mn>4</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>R</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para id="ked-1bla25n9e_0kg"><title>Znaczenie</title>Jak wykazano w poprzednim rozdziale, kierunek wektora indukcji magnetycznej w punkcie <m:math display="inline"><m:mi>P</m:mi></m:math> wynika z reguły prawej dłoni. Jeżeli pole magnetyczne wytwarzane jest przez układ przewodu o kształcie łuku i innych przewodów, musimy oddzielnie wyznaczyć przyczynki do pola magnetycznego pochodzące od każdego ze składników układu, a odpowiadające im wektory – dodać. Należy przy tym zwracać uwagę na kierunek i zwrot każdego z wektorów. </para></example>
+        <note id="ked-1bla29i2o_emo" class="check-understanding">
+          <exercise id="ked-1bla2a412_n5o">
+            <problem id="ked-1bla2a41o_lvo">
+              <para id="ked-1bla2a42k_0g">
+                <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Pętla przewodu, przez którą przepływa prąd o natężeniu <m:math display="inline">
+                  <m:mi>I</m:mi>
+                </m:math>, ma kształt pełnego okręgu o promieniu <m:math display="inline">
+                <m:mi>R</m:mi>
+                </m:math>. Wyznacz wartość indukcji pola magnetycznego w jej środku. </para>
+              </problem>
+              <solution id="ked-1bla2a43e_dhg">
+                <para id="ked-1bla2a42q_b6">
+                  <m:math display="inline">
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>μ</m:mi>
+                        <m:mn>0</m:mn>
+                      </m:msub>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>I</m:mi>
+                    </m:mrow>
+                    <m:mo>∕</m:mo>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>R</m:mi>
+                      </m:mrow>
+                    </m:mfenced>
+                    </m:math>. </para>
+                  </solution>
+                </exercise>
+              </note>
+              <section id="ked-1bla54sjj_i6" class="key-concepts">
+                <title>Podsumowanie </title>
+                <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bla5593q_5go"><item>Wektor indukcji pola magnetycznego wytwarzanego przez przewód z prądem można wyznaczyć, stosując prawo Biota-Savarta. </item>
+                  <item>Element prądu <m:math display="inline">
+                    <m:mi>I</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mrow>
+                      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                      <m:mover>
+                        <m:mi>l</m:mi>
+                        <m:mo>→</m:mo>
+                      </m:mover>
+                    </m:mrow>
+                  </m:math> w odległości <m:math display="inline">
+                  <m:mi>r</m:mi>
+                  </m:math> od siebie wytwarza pole magnetyczne.</item>
+                </list></section>
+              <section id="ked-1bla573ls_p6o" class="review-conceptual-questions">
+                <title>Pytania</title>
+                <exercise id="ked-1bla57hnq_g0o">
+                  <problem id="ked-1bla57hmn_cfg">
+                    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bla57hlm_bu8">Jakie są zalety i wady prawa Biota-Savarta przy obliczaniu pól magnetycznych?</para>
+                  </problem>
+                  <solution id="ked-1bla57hlj_9oo">
+                    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bla57hmm_83o">Zaletą prawa Biota-Savarta jest to, że sprawdza się ono w przypadku wyznaczania pól magnetycznych pętli z prądem, natomiast jako wada postrzegany jest często długi czas obliczeń.</para>
+                  </solution>
+                </exercise>
+                <exercise id="ked-1bla57g8e_ll">
+                  <problem id="ked-1bla57g9u_hig">
+                    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bla57gam_3">Opisz pole magnetyczne wytwarzane przez dwa przewody ciasno skręcone ze sobą i podłączone do zacisków źródła siły elektromotorycznej.</para></problem>
+                </exercise>
+                <exercise id="ked-1bla57ep6_iug">
+                  <problem id="ked-1bla57ep2_k8o">
+                    <para id="ked-1bla57epf_tio">W jaki sposób rozstrzygnąć, czy przewód jest nieskończony?</para>
+                  </problem>
+                  <solution id="ked-1bla57ep2_mhg">
+                    <para id="ked-1bla57eoo_9fg">Przewód możemy uważać za nieskończony, jeżeli wartość kąta <m:math display="inline">
+                      <m:mi>θ</m:mi>
+                    </m:math> między początkowym wycinkiem przewodu <m:math display="inline">
+                    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                    <m:mover>
+                      <m:mi>l</m:mi>
+                      <m:mo>→</m:mo>
+                    </m:mover>
+                  </m:math> a promieniem <m:math display="inline">
+                  <m:mover>
+                    <m:mi>r</m:mi>
+                    <m:mo>→</m:mo>
+                  </m:mover>
+                  </m:math> jest w przybliżeniu zerowa. Akceptowalna dokładność tego przybliżenia zależy od założonej dokładności wyniku obliczeń pola.</para>
+                </solution>
+              </exercise>
+              <exercise id="ked-1bla57csr_0bg">
+                <problem id="ked-1bla57cuj_rco">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bla57crv_2f8">Przez dwa przewody kołowe płyną w tym samym kierunku prądy o jednakowym natężeniu, przy czym średnica pierwszej pętli jest dwukrotnie większa od średnicy drugiej. Porównaj pola magnetyczne wytwarzane w środku każdej z pętli.</para>
+                </problem>
+              </exercise>
+            </section>
+            <section id="ked-1bla5ao5k_1g8" class="review-problems">
+              <title>Zadania</title>
+              <exercise id="ked-1bla5bmg5_c5">
+                <problem id="ked-1bla5bmi0_42g">
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bla5bmhd_4e8">Prąd o natężeniu <m:math display="inline">
+                    <m:mn>10</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                    <m:mi mathvariant="normal">A</m:mi>
+                  </m:math> płynie przez przewód pokazany na rysunku. Jaka jest wartość indukcji pola magnetycznego wytwarzanego przez zaznaczony na rysunku fragment przewodu o długości <m:math display="inline">
+                  <m:mn>0,5</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi mathvariant="normal">mm</m:mi>
+                </m:math> mierzona<list id="eip-idm1133763232" list-type="enumerated" number-style="lower-alpha"><item>w punkcie <m:math display="inline"><m:mi>A</m:mi></m:math>;</item>
+                <item>w punkcie <m:math display="inline"><m:mi>B</m:mi></m:math>?</item>
+              </list><newline/></para><media id="ked-1bla5c97n_8d" alt="Rysunek przedstawia kawałek drutu. Punkt P jest umieszczony 3 centymetry ponad 0,5 centymetrowym segmentem drutu, Punkt B jest umieszczony 4 centymetry w prawo od punktu A. ">
+              <image src="../../media/CNX_UPhysics_29_08_Pr01_img.jpg" mime-type="image/jpeg"/>
+            </media>
+          </problem>
+        </exercise>
+        <exercise id="ked-1bla5bkdp_p1o">
+          <problem id="ked-1bla5bkes_71o">
+            <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bla5bkcp_rgo">Prąd o natężeniu <m:math display="inline">
+              <m:mn>10</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">A</m:mi>
+            </m:math> płynie przez przewód w kształcie kwadratowej ramki o boku równym <m:math display="inline">
+            <m:mn>20</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi mathvariant="normal">cm</m:mi>
+          </m:math>. Każdy z wierzchołków ramki zwarty jest dodatkowym odcinkiem przewodu o długości <m:math display="inline">
+          <m:mn>0,01</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi mathvariant="normal">cm</m:mi>
+          </m:math>, jak pokazano na rysunku. Oblicz wartość indukcji pola magnetycznego w środku pętli.<newline/></para><media id="ked-1bla5dfl0_sn8" alt="Pokazana jest pętla w kształcie kwadratu o zaokrąglonych narożnikach. Nie ma na niej żadnych oznaczeń.">
+            <image src="../../media/CNX_UPhysics_29_08_Pr02_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bla5bke1_tb8">
+          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bla5bkd8_2qg"><m:math display="inline">
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow>
+                </m:msup>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">T</m:mi>
+              </m:math>. </para></solution>
+          </exercise>
+          <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bla5bifd_118">
+            <problem id="ked-1bla5bif3_44g">
+              <para id="ked-1bla5bico_ejg">Wyznacz indukcję pola magnetycznego wytwarzanego w punkcie <m:math display="inline"><m:mi>P</m:mi></m:math>, jak na rysunku. Przez przewód płynie prąd o natężeniu <m:math display="inline">
+                <m:mi>I</m:mi>
+                </m:math>.<newline/></para><media id="ked-1bla5fco2_2p8" alt="Rysunek przedstawia prądową pętlę składającą się z dwóch koncentrycznych kołowych łuków i dwóch równoległych linii promieniowania. Łuk zewnętrzny jest umieszczony w odległości b od centrum, łuk wewnętrzny jest umieszczony w odległości a od centrum. ">
+                  <image src="../../media/CNX_UPhysics_29_08_Pr03_img.jpg" mime-type="image/jpeg"/>
+                </media>
+              </problem>
+            </exercise>
+            <exercise id="ked-1bla5bgjo_vco">
+              <problem id="ked-1bla5bgjh_dto">
+                <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bla5bgkt_4c8">Załączony rysunek ukazuje przewód w kształcie pętli składającej się z dwóch koncentrycznych łuków okręgów oraz dwóch prostopadłych, ułożonych radialnie odcinków prostoliniowych. Wyznacz indukcję pola magnetycznego w punkcie <m:math display="inline"><m:mi>P</m:mi></m:math>.<newline/></para><media id="ked-1bla5gmog_5n" alt="Rysunek przedstawia prądową pętlę składającą się z dwóch koncentrycznych kołowych łuków i dwóch prostopadłych linii promieniowania. Łuk zewnętrzny jest umieszczony w odległości a od centrum, łuk wewnętrzny jest umieszczony w odległości a od centrum.">
+                  <image src="../../media/CNX_UPhysics_29_08_Pr04_img.jpg" mime-type="image/jpeg"/>
+                </media>
+              </problem>
+              <solution id="ked-1bla5bgin_kn">
+                <para id="ked-1bla5bgl9_di8">
+                  <m:math display="inline">
+                    <m:mi>B</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>μ</m:mi>
+                            <m:mn>0</m:mn>
+                          </m:msub>
+                          <m:mo>⁢</m:mo>
+                          <m:mi>I</m:mi>
+                        </m:mrow>
+                        <m:mo>∕</m:mo>
+                        <m:mn>8</m:mn>
+                      </m:mrow>
+                      <m:mo>⋅</m:mo>
+                      <m:mfenced>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                            <m:mo>∕</m:mo>
+                            <m:mi>a</m:mi>
+                          </m:mrow>
+                          <m:mo>−</m:mo>
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                            <m:mo>∕</m:mo>
+                            <m:mi>b</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mfenced>
+                    </m:mrow>
+                    </m:math>, wektor skierowany jest prostopadle od płaszczyzny rysunku.</para>
+                  </solution>
+                </exercise>
+                <exercise id="ked-1bla5beq7_oi">
+                  <problem id="ked-1bla5beq5_ju">
+                    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bla5bert_fn">Znajdź indukcję pola magnetycznego w środku <m:math display="inline"><m:mi>C</m:mi></m:math> prostokątnej pętli przewodu przedstawionego na załączonym rysunku.<newline/></para><media id="ked-1bla5jlg9_b38" alt="Rysunek przedstawia prostokątną pętlę prądową. Długość krótszej strony wynosi b, długość dłuższej strony wynosi a. Punkt C znajduje się w centrum pętli. ">
+                      <image src="../../media/CNX_UPhysics_29_08_Pr14_img.jpg" mime-type="image/jpeg"/>
+                    </media>
+                  </problem>
+                </exercise>
+                <exercise id="ked-1bla5bd7d_soo">
+                  <problem id="ked-1bla5bd69_kdo">
+                    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bla5bd6r_s0g">Dwa długie przewody, z których jeden zaopatrzono w półkoliste wygięcie o promieniu <m:math display="inline">
+                      <m:mi>R</m:mi>
+                    </m:math>, położone są jak na załączonym rysunku. Zakładając, że przez oba przewody płynie prąd o natężeniu <m:math display="inline">
+                    <m:mi>I</m:mi>
+                    </m:math>, oblicz odległość ich prostoliniowych fragmentów, przy której indukcja pola magnetycznego w punkcie <m:math display="inline"><m:mi>P</m:mi></m:math> będzie zerowa. Rozstrzygnij, czy prąd w przewodzie prostoliniowym musi wówczas płynąć w górę, czy w dół rysunku.<newline/></para><media id="ked-1bla5knqq_e5g" alt="Rysunek przedstawia dwa równoległe druty umieszczone jeden od drugiego w odległości a. Jeden z drutów ma półkolisty łuk o promieniu R.">
+                      <image src="../../media/CNX_UPhysics_29_08_Pr15_img.jpg" mime-type="image/jpeg"/>
+                    </media>
+                  </problem>
+                  <solution id="ked-1bla5bd63_95">
+                    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bla5bd5g_tq"><m:math display="inline">
+                        <m:mi>a</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>R</m:mi>
+                          </m:mrow>
+                          <m:mo>∕</m:mo>
+                          <m:mi>π</m:mi>
+                        </m:mrow>
+                        </m:math>. Prąd w przewodzie po prawej stronie musi płynąć w górę rysunku.</para></solution>
+                    </exercise>
+                  </section>
+                </content>
+                <glossary>
+                  <definition id="ked-1bla60jc0_qc8">
+                    <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="prawo Biota-Savarta">prawo Biota-Savarta (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">Biot-Savart law</term></foreign>)</term>
+                      <meaning id="ked-1bla60jdn_rfo">równanie określające w danym punkcie przestrzeni wektor indukcji pola magnetycznego wytwarzanego przez przewód z prądem </meaning>
+                    </definition>
+                    <definition id="ked-1bla6245v_79o">
+                      <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="przenikalność magnetyczna próżni">przenikalność magnetyczna próżni (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">permeability of free space</term></foreign>)</term>
+                        <meaning id="ked-1bla6247u_7mg">uniwersalna stała fizyczna wiążąca wartość indukcji magnetycznej z natężeniem prądu będącym źródłem tego pola</meaning>
+                      </definition>
+                    </glossary>
+                  </document>

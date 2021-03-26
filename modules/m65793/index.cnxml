@@ -1,0 +1,908 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" id="new" cnxml-version="0.8" module-id="new">
+  <title>Związek między wielkościami w ruchach obrotowym i postępowym</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65793</md:content-id>
+  <md:title>Związek między wielkościami w ruchach obrotowym i postępowym</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+ <list>
+    <item>na podstawie równania dla ruchu postępowego pisać analogiczne równanie dla ruchu obrotowego;</item>
+    <item>obliczać liniowe przemieszczenia, prędkości i przyspieszenia punktów biorących udział w ruchu obrotowym na podstawie ich przyspieszenia i prędkości kątowej.
+    </item>
+  </list></md:abstract>
+  <md:uuid>3aea3248-bc6d-4894-ad51-aa82234d052f</md:uuid>
+</metadata>
+
+<content>
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bku4j1om_rj">W tym podrozdziale odniesiemy każdą ze zmiennych obrotowych do zmiennych w ruchu postępowym, zdefiniowanych w rozdziałach <link class="target-chapter" document="m65746">Ruch prostoliniowy</link> i <link class="target-chapter" document="m63778">Ruch w dwóch i trzech wymiarach</link>. To pozwoli nam opisywać obroty wokół stałej osi.</para><section id="ked-1bku4kkoc_rh">
+      <title>Zmienne kątowe a zmienne liniowe </title>
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bku4kvig_us8">Jeśli porównamy definicje zmiennych obrotowych (które zdefiniowane zostały w podrozdziale <link document="m65791">Zmienne opisujące ruch obrotowy</link>) z definicjami zmiennych kinematycznych w ruchu postępowym, zdefiniowanymi w rozdziałach <link class="target-chapter" document="m65746">Ruch prostoliniowy</link> i <link class="target-chapter" document="m63778">Ruch w dwóch i trzech wymiarach</link>, zauważymy, że istnieje odwzorowanie wielkości liniowych na obrotowe. Położenie, prędkość liniowa i przyspieszenie liniowe mają swoje odpowiedniki w wielkościach obrotowych.</para><table id="ked-1bku4odju_6v" summary="Tabela składa się z trzech kolumn i trzech rzędów, określających położenie, prędkość i przyspieszenie,a każdemu z nich odpowiadają symbole lub wzory; liniowe w kolumnie pierwszej i obrotowe - w drugiej.">
+<tgroup cols="3"><thead>
+            <row>
+              <entry/>
+              <entry>Liniowe</entry>
+              <entry>Obrotowe</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>Położenie </entry>
+              <entry>
+                <m:math>
+                    <m:mi>x</m:mi>
+                  </m:math>
+                
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mi>θ</m:mi>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Prędkość </entry>
+              <entry>
+                <m:math>
+                  <m:mi>v</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>t</m:mi>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mi>ω</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>θ</m:mi>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>t</m:mi>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>Przyspieszenie </entry>
+              <entry>
+                <m:math>
+                  <m:mi>a</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>v</m:mi>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>t</m:mi>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mi>ε</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>ω</m:mi>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>t</m:mi>
+                </m:math>
+              </entry>
+            </row>
+          </tbody>
+        
+</tgroup><caption>Związek pomiędzy wielkościami opisującymi ruch liniowy oraz obrotowy.</caption>
+</table><para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bku4vr4q_0tg">Porównajmy indywidualnie zmienne liniowe i obrotowe. Jednostką zmiennych liniowych położenia jest metr, podczas gdy jednostką położenia kątowego jest bezwymiarowa jednostka radian, co wynika z definicji <m:math><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>s</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi>r</m:mi></m:math>, gdzie droga kątowa jest ilorazem dwóch wielkości, z których każda jest wyrażona w jednostkach długości. Jednostką prędkości liniowej jest m/s, a jej odpowiednik, prędkość kątowa, ma jednostkę rad/s. W podrozdziale <link document="m65791">Zmienne opisujące ruch obrotowy</link> widzieliśmy, że w przypadku ruchu po okręgu o promieniu <m:math><m:mi>r</m:mi></m:math> prędkość liniowa cząstki jest związana z prędkością kątową zależnością <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>ω</m:mi></m:mrow></m:math>. Zależność ta ma zastosowanie również do punktów ciała sztywnego, obracającego się wokół stałej osi. Tutaj rozważamy jedynie ruch po okręgu. W ruchu po okręgu, zarówno jednostajnym jak i niejednostajnym, istnieje jeszcze <term class="no-emphasis" cmlnle:reference="przyspieszenie dośrodkowe">przyspieszenie dośrodkowe</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">centripetal acceleration</term></foreign>) (patrz rozdział <link class="target-chapter" document="m63778">Ruch w dwóch i trzech wymiarach</link>). Wektor przyspieszenia dośrodkowego skierowany jest do wnętrza toru, od cząstki wykonującej ruch po okręgu do osi obrotu. Wyprowadzenie wartości przyspieszenia dośrodkowego przedstawiono w rozdziale <link class="target-chapter" document="m63778">Ruch w dwóch i trzech wymiarach</link>. Wartość przyspieszenia dośrodkowego wyraża się wzorem: </para><equation id="ked-1bku5520a_3rg"><m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mtext>d</m:mtext>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msup>
+                  <m:mi>v</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mi>r</m:mi>
+            </m:mfrac>
+            <m:mn>,</m:mn>
+          </m:mrow>
+        </m:math>
+      </equation><para id="ked-1bku55mf5_pb8">gdzie <m:math><m:mi>r</m:mi></m:math> jest promieniem okręgu. </para>
+      <para id="ked-1bku56hlc_nho">Tak więc w jednostajnym w ruchu po okręgu, w którym wartość prędkości kątowej jest stała, a przyspieszenie kątowe jest równe zeru, występuje przyspieszenie liniowe – konkretnie przyspieszenie dośrodkowe – ponieważ wartość prędkości liniowej w powyższym <link target-id="ked-1bku5520a_3rg" cmlnle:case="locative"/> jest stała, a zmienia się kierunek wektora prędkości. Jeżeli ruch po okręgu jest ruchem niejednostajnym i obracające się ciało ma przyspieszenie kątowe, to w tym przypadku występuje zarówno zmieniające się przyspieszenie dośrodkowe (ponieważ zmienia się kierunek i zwrot wektora prędkości), jak i <term class="no-emphasis" cmlnle:reference="przyspieszenie styczne">przyspieszenie styczne</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">tangential acceleration</term></foreign>) (ponieważ zmienia się wartość wektora prędkości stycznej). Zależność ta jest pokazana na <link target-id="CNX_UPhysics_10_03_Cent" cmlnle:case="locative"/>, gdzie przedstawiono przyspieszenie dośrodkowe i przyspieszenie styczne, zarówno dla ruchu jednostajnego, jak i ruchu niejednostajnego po okręgu.</para><figure xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_10_03_Cent"><media id="ked-1bku58j08_1m" alt="Rysunek A ilustruje jednolity ruch kołowy. Wektor przyspieszenia ma swój wektor skierowany do wewnątrz w kierunku osi obrotu. Nie ma przyspieszenia stycznego, a v2 jest równoważne v1. Rysunek A ilustruje nierównomierny ruch kołowy. Wektor przyspieszenia ma swój wektor skierowany do wewnątrz w kierunku osi obrotu. Obecne jest przyspieszenie styczne, a v2 jest większe niż v1.">
+          <image src="../../media/CNX_UPhysics_10_03_Cent.jpg" mime-type="image/jpeg"/>
+        </media>
+        
+      <caption>(a) Ruch jednostajny po okręgu. Wektor przyspieszenia dośrodkowego <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mtext>d</m:mtext></m:msub></m:mrow></m:math> skierowany jest w kierunku do osi obrotu. Nie ma przyspieszenia stycznego. (b) Niejednostajny ruch po okręgu. Istnienie przyspieszenia kątowego jest przyczyną zmiany wartości przyspieszenia dośrodkowego oraz istnienia przyspieszenia stycznego <m:math><m:msub><m:mi>a</m:mi><m:mtext>s</m:mtext></m:msub></m:math>.</caption></figure><para id="ked-1bkucqo3j_f0g">Przyspieszenie dośrodkowe wywołane jest ciągłą zmianą kierunku prędkości, podczas gdy przyspieszenie styczne związane jest ze zmianą wartości wektora prędkości. Wektory przyspieszenia stycznego <m:math><m:msub><m:mrow><m:mover><m:mi>a</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mtext>s</m:mtext></m:msub></m:math> i dośrodkowego <m:math><m:msub><m:mrow><m:mover><m:mi>a</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mtext>d</m:mtext></m:msub></m:math> są zawsze prostopadłe do siebie, tak jak to przedstawiono na <link target-id="CNX_UPhysics_10_03_Cent" cmlnle:case="locative"/>. Dla pełnego opisu musimy jeszcze dodać wektor przyspieszenia całkowitego dla punktu obracającego się ciała oraz cząstki wykonującej ruch po okręgu o promieniu <m:math><m:mi>r</m:mi></m:math>. Wektor <term cmlnle:reference="całkowite przyspieszenie liniowe" class="no-emphasis">całkowitego przyspieszenia liniowego</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">total linear acceleration</term></foreign>) <m:math><m:mrow><m:mover><m:mi>a</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest sumą wektorową przyspieszenia stycznego i dośrodkowego: </para><note id="ked-1bkucug7e_dd" class="equation-callout">
+        <equation id="ked-1bkucuk35_tio">
+          <m:math>
+            <m:mrow>
+              <m:mover>
+                <m:mi>a</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>a</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mtext>d</m:mtext>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>a</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mtext>s</m:mtext>
+            </m:msub>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+      </note>
+      <para id="ked-1bkucv6iv_es">W przypadku niejednostajnego ruchu po okręgu, wektor przyspieszenia całkowitego skierowany jest pod pewnym kątem między wektorami przyspieszenia stycznego i dośrodkowego, tak jak pokazano to na <link target-id="CNX_UPhysics_10_03_TotAcc" cmlnle:case="locative"/>. Ponieważ <m:math><m:msub><m:mrow><m:mover><m:mi>a</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mtext>d</m:mtext></m:msub><m:mo>⊥</m:mo><m:msub><m:mrow><m:mover><m:mi>a</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mtext>s</m:mtext></m:msub></m:math>, wartość całkowitego przyspieszenia liniowego wynosi:</para><equation id="ked-1bkud0uak_b2"><m:math>
+          <m:mrow>
+            <m:mo>|</m:mo>
+            <m:mrow>
+              <m:mover>
+                <m:mi>a</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mo>|</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:msqrt>
+            <m:msubsup>
+              <m:mi>a</m:mi>
+              <m:mtext>d</m:mtext>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mo>+</m:mo>
+            <m:msubsup>
+              <m:mi>a</m:mi>
+              <m:mtext>s</m:mtext>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+          </m:msqrt>
+          <m:mtext>.</m:mtext>
+        </m:math>
+      </equation><para id="ked-1bkud1isa_nag">Zauważ, że jeżeli przyspieszenie kątowe jest równe zero, to całkowite przyspieszenie liniowe jest równe przyspieszeniu dośrodkowemu.</para>
+      <figure id="CNX_UPhysics_10_03_TotAcc">
+        <media id="ked-1bkud1n18_sho" alt="Rysunek pokazuję cząstkę wykonującą ruch obrotowy. Wektor ac tworzy kąt między wektorami a i at.">
+          <image src="../../media/CNX_UPhysics_10_03_TotAcc.jpg" mime-type="image/jpeg"/>
+        </media>
+        <caption>Cząstka wykonuje ruch po okręgu z pewnym przyspieszeniem kątowym. Całkowite przyspieszenie liniowe cząstki jest sumą wektorową wektora przyspieszenia dośrodkowego i wektora przyspieszenia stycznego. Wektor całkowitego przyspieszenia liniowego leży pomiędzy wektorami przyspieszenia stycznego i dośrodkowego.</caption>
+      </figure>
+    </section>
+    <section id="ked-1bkud44o9_vl8">
+      <title>Związek pomiędzy wielkościami kątowymi i liniowymi </title>
+      <para id="ked-1bkud4ep8_clo">Przedstawmy teraz dwa związki między ruchem rotacyjnym i postępowym.</para>
+      <list id="ked-1bkud5g42_pm" list-type="enumerated" number-style="arabic">
+        <item>Ogólnie rzecz biorąc liniowe równania kinematyczne mają swoje odpowiedniki w równaniach dla ruchu obrotowego. <link target-id="ked-1bkud80ne_at8"/> prezentuje cztery liniowe równania kinematyczne i odpowiadające im równania dla ruchu obrotowego. Te dwa zestawy równań są podobne do siebie, ale opisują dwie różne sytuacje fizyczne, tj. obrót i ruch postępowy.<table id="ked-1bkud80ne_at8" summary="Pokazana jest tabela o dwóch kolumnach i pięciu rzędach. Pierwsza kolumna o nagłówku “Ruch obrotowy” dwóch rzędach z pięcioma “theta z indeksem f równe theta z indeksem 0 plus omega t,” “omega z indeksem f równe z indeksem 0 plus alfa t,” “theta z indeksem f równe theta z indeksem 0 plus omega z indeksem 0 czasem t plus one połowa alfa t do kwadratu,” i “omega z indeksem f z indeksem 2 równe omega z indeksem 0 z indeksem 2 plus 2 alfa czasem delta theta.” Kolumna druga zawiera w rzędzie nagłówek “Ruch postępowy” i ma dwa rzędy z pięcioma wpisami “x równe x z indeksem 0 plus v z kreską t,” “v z indeksem f równe v z indeksem 0 plus a t,” “x z indeksem f równe x z indeksem 0 plus v z indeksem zero t plus jedna druga a t do kwadratu,” i “v z indeksem f z indeksem 2 równe v zero z indeksem 2 plus 2 razy delta x.”"><title>Równania kinematyczne dla ruchu obrotowego i postępowego</title>
+<tgroup cols="2"><thead><row><entry>Ruch obrotowy</entry><entry>Ruch postępowy</entry></row></thead><tbody><row><entry><m:math><m:mrow><m:msub><m:mi>θ</m:mi><m:mtext>k</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>θ</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:mover accent="true"><m:mi>ω</m:mi><m:mo>–</m:mo></m:mover><m:mi>t</m:mi></m:mrow></m:math></entry><entry><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:mover accent="true"><m:mi>v</m:mi><m:mo>–</m:mo></m:mover><m:mi>t</m:mi></m:mrow></m:math></entry></row><row><entry><m:math><m:mrow><m:msub><m:mi>ω</m:mi><m:mtext>k</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:mi>ε</m:mi><m:mi>t</m:mi></m:mrow></m:math></entry><entry><m:math><m:mrow><m:msub><m:mi>v</m:mi><m:mtext>k</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>v</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:mi>a</m:mi><m:mi>t</m:mi></m:mrow></m:math></entry></row><row><entry><m:math><m:mrow><m:msub><m:mi>θ</m:mi><m:mtext>k</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>θ</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub><m:mi>t</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>ε</m:mi><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></entry><entry><m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mtext>k</m:mtext></m:msub><m:mo>=</m:mo><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>v</m:mi><m:mn>0</m:mn></m:msub><m:mi>t</m:mi><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>a</m:mi><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></entry></row><row><entry><m:math><m:mrow><m:msubsup><m:mi>ω</m:mi><m:mtext>k</m:mtext><m:mn>2</m:mn></m:msubsup><m:mo>=</m:mo><m:msubsup><m:mi>ω</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>ε</m:mi><m:mo stretchy="false">(</m:mo><m:mtext>Δ</m:mtext><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></entry><entry><m:math><m:mrow><m:msubsup><m:mi>v</m:mi><m:mtext>k</m:mtext><m:mn>2</m:mn></m:msubsup><m:mo>=</m:mo><m:msubsup><m:mi>v</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>a</m:mi><m:mo stretchy="false">(</m:mo><m:mtext>Δ</m:mtext><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></entry></row></tbody>
+</tgroup>
+</table></item>
+        <item>Drugi zestaw zależności dotyczy zmiennych liniowych i obrotowych w szczególnym przypadku ruchu po okręgu. Zależności te pokazano w trzeciej kolumnie <link target-id="ked-1bkuderi3_igo" cmlnle:case="genitive"/>, gdzie znajdują się równania łączące zmienne obrotowe ze zmiennymi liniowymi. <table id="ked-1bkuderi3_igo" summary="Tabela składa się z trzech kolumn i pięciu rzędów. Pierwszy rząd z nagłówkiem ‘Ruch obrotowy’; ‘Ruch postępowy’;związek między stałym r promienia. W kolumnie pod Ruchem obrotowym : theta; omega; alfa. W kolumnie nad ‘Ruch obrotowy’: s; vt; alfa t; alfa c. W kolumnie nad ‘Związki’: Theta jest równe s dzielone przez r; Omega jest równe vt dzielone przez r; Alpha is równe alfa t dzielone przez r; alfa c is równe vt do kwadratu dzielone przez r."><title>Wielkości ruchu postępowego i obrotowego i zależności między nimi</title>
+<tgroup cols="3"><thead><row><entry>Ruch obrotowy</entry><entry>Ruch postępowy</entry><entry>Związek pomiędzy wielkościami (<m:math><m:mi>r</m:mi></m:math> = promień okręgu)</entry></row></thead><tbody><row><entry><m:math><m:mi>θ</m:mi></m:math></entry><entry><m:math><m:mi>s</m:mi></m:math></entry><entry><m:math><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>s</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi>r</m:mi></m:math></entry></row><row><entry><m:math><m:mi>ω</m:mi></m:math></entry><entry><m:math><m:mrow><m:mi>v</m:mi></m:mrow></m:math></entry><entry><m:math><m:mi>ω</m:mi><m:mo>=</m:mo><m:mi>v</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi>r</m:mi></m:math></entry></row><row><entry><m:math><m:mi>ε</m:mi></m:math></entry><entry><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mtext>s</m:mtext></m:msub></m:mrow></m:math></entry><entry><m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:msub><m:mi>a</m:mi><m:mtext>s</m:mtext></m:msub><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi>r</m:mi></m:math></entry></row><row><entry/><entry><m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mtext>d</m:mtext></m:msub></m:mrow></m:math></entry><entry><m:math><m:msub><m:mi>a</m:mi><m:mtext>d</m:mtext></m:msub><m:mo>=</m:mo><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi>r</m:mi></m:math></entry></row></tbody>
+
+
+</tgroup>
+</table></item>
+      </list>
+      <example id="ked-1bkukuv4p_aag">
+        <para id="ked-1bkukuv4k_jbo"><title>Przyspieszenie liniowe wirówki</title> Wirówka o promieniu 20 cm zwalnia ze stałym przyspieszeniem kątowym od maksymalnej prędkości obrotowej wynoszącej 10 000 obr/min i zatrzymuje się po upływie 30 s. Przez cały ten czas wirówka obraca się w lewo. Jaka jest wartość całkowitego przyspieszenia liniowego punktu położonego na obrzeżu wirówki w chwili <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>29</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>? Jaki jest kierunek wektora całkowitego przyspieszenia liniowego? </para>
+        <para id="ked-1bkure6c9_a28"><title>Strategia rozwiązania</title> Dzięki podanym informacjom możemy obliczyć przyspieszenie kątowe, co następnie pozwoli nam wyznaczyć przyspieszenie styczne. Obliczając prędkość styczną w chwili <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>29</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math> możemy wyznaczyć przyspieszenie dośrodkowe. Dzięki wyznaczonym wartościom przyspieszeń możemy obliczyć całkowite przyspieszenie liniowe. Na podstawie opisu obrotów przedstawionych w zadaniu możemy naszkicować kierunek całkowitego wektora przyspieszenia. </para>
+        <para id="ked-1bkure6aq_41g"><title>Rozwiązanie</title>Przyspieszenie kątowe: </para>
+        <equation id="ked-1bkuldrch_mm8" class="unnumbered">
+          <m:math>
+            <m:mi>ε</m:mi>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mi>ω</m:mi>
+                <m:mo>−</m:mo>
+                <m:msub>
+                  <m:mi>ω</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mn>0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">r</m:mi>
+                  <m:mi mathvariant="normal">a</m:mi>
+                  <m:mi mathvariant="normal">d</m:mi>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                <m:mo>−</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>4</m:mn>
+                </m:msup>
+                <m:mo>⋅</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mn>60</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">r</m:mi>
+                  <m:mi mathvariant="normal">a</m:mi>
+                  <m:mi mathvariant="normal">d</m:mi>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>30</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mn>34</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>9</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">r</m:mi>
+              <m:mi mathvariant="normal">a</m:mi>
+              <m:mi mathvariant="normal">d</m:mi>
+              <m:mrow>
+                <m:mtext>/</m:mtext>
+              </m:mrow>
+              <m:msup>
+                <m:mi mathvariant="normal">s</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1bkulea9d_ra">Stąd, przyspieszenie styczne:</para>
+        <equation id="ked-1bkulee6g_mmo" class="unnumbered">
+          <m:math>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mtext>s</m:mtext>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mi>r</m:mi>
+            <m:mi>ε</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>2</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>34</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>9</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">r</m:mi>
+                  <m:mi mathvariant="normal">a</m:mi>
+                  <m:mi mathvariant="normal">d</m:mi>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:msup>
+                    <m:mi mathvariant="normal">s</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mn>7</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mrow>
+                <m:mtext>/</m:mtext>
+              </m:mrow>
+              <m:msup>
+                <m:mi mathvariant="normal">s</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1bkulf5ph_dno">Prędkość kątowa w chwili <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>29</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>:</para>
+        <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bkulh4e6_k3" class="unnumbered"><m:math display="block">
+  <m:semantics>
+    <m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:mi>ω</m:mi>
+      <m:mo id="Ude6fe92b-47d7-4b4d-8ec4-a408559dab03">=</m:mo>
+      <m:mrow><m:msub><m:mi>ω</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub><m:mo id="U0326f50b-335d-4bea-80bf-ee10a13477e4">+</m:mo>
+        <m:mrow><m:mi>ε</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mi>ω</m:mi>
+      </m:mphantom><m:mo>=</m:mo>
+      <m:mrow><m:mrow><m:mrow><m:mn>1,0</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup><m:mn>10</m:mn>
+              <m:mn>4</m:mn>
+            </m:msup></m:mrow><m:mo>⋅</m:mo>
+          <m:mfrac><m:mrow><m:mn>2</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>π</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi mathvariant="normal">rad</m:mi>
+            </m:mrow><m:mrow><m:mn>60,0</m:mn>
+              <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow></m:mfrac></m:mrow><m:mo>+</m:mo>
+        <m:mrow><m:mfenced><m:mrow><m:mo>−</m:mo>
+              <m:mrow><m:mn>34,9</m:mn>
+                <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                <m:mrow><m:mi mathvariant="normal">rad</m:mi>
+                  <m:mo>∕</m:mo>
+                  <m:msup><m:mi mathvariant="normal">s</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup></m:mrow></m:mrow></m:mrow></m:mfenced><m:mo>⋅</m:mo>
+          <m:mrow><m:mn>29,0</m:mn>
+            <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mi>ω</m:mi>
+      </m:mphantom><m:mo>=</m:mo>
+      <m:mrow><m:mrow><m:mn>1047,2</m:mn>
+          <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+          <m:mrow><m:mi mathvariant="normal">rad</m:mi>
+            <m:mo>∕</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow></m:mrow><m:mo>−</m:mo>
+        <m:mrow><m:mn>1012,71</m:mn>
+          <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+          <m:mrow><m:mi mathvariant="normal">rad</m:mi>
+            <m:mo>∕</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow></m:mrow></m:mrow><m:mo>=</m:mo>
+      <m:mrow><m:mrow><m:mn>35,1</m:mn>
+          <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+          <m:mrow><m:mi mathvariant="normal">rad</m:mi>
+            <m:mo>∕</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow></m:mrow><m:mtext>.</m:mtext>
+      </m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{multiline} \omega &amp;= \omega_0 + \epsilon t \\ &amp;= \num{1,0e4} \cdot \frac{2\pi \si{\radian}}{\SI{60,0}{\second}} + (-\SI{34,9}{\radian\per\second\squared}) \cdot \SI{29,0}{\second} \\ &amp;= \SI{1047,2}{\radian\per\second} - \SI{1012,71}{\radian\per\second} = \SI{35,1}{\radian\per\second} \text{.} \end{multiline}</m:annotation>
+  <m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mi>ω</m:mi>
+      <m:mo id="Ude6fe92b-47d7-4b4d-8ec4-a408559dab03-copy">=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>ω</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo id="U0326f50b-335d-4bea-80bf-ee10a13477e4-copy">+</m:mo>
+        <m:mrow>
+          <m:mi>ε</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:mrow>
+      <m:mo indenttarget="Ude6fe92b-47d7-4b4d-8ec4-a408559dab03" linebreak="newline" indentalign="id">=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>1,0</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mn>4</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>π</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi mathvariant="normal">rad</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>60,0</m:mn>
+              <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+          </m:mfrac>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mrow>
+          <m:mfenced>
+            <m:mrow>
+              <m:mo>−</m:mo>
+              <m:mrow>
+                <m:mn>34,9</m:mn>
+                <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+                <m:mrow>
+                  <m:mi mathvariant="normal">rad</m:mi>
+                  <m:mo>∕</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">s</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:mfenced>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mn>29,0</m:mn>
+            <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo indenttarget="Ude6fe92b-47d7-4b4d-8ec4-a408559dab03" linebreak="newline" indentalign="id">=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mn>1047,2</m:mn>
+          <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">rad</m:mi>
+            <m:mo>∕</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mn>1012,71</m:mn>
+          <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">rad</m:mi>
+            <m:mo>∕</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mn>35,1</m:mn>
+          <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">rad</m:mi>
+            <m:mo>∕</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:annotation-xml></m:semantics>
+</m:math></equation><para id="ked-1bkumou9i_js">Tak więc, prędkość w chwili <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>29</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math> można wyliczyć jako:</para>
+        <equation id="ked-1bkump10v_7pg" class="unnumbered">
+          <m:math>
+              <m:mi>v</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>r</m:mi>
+            <m:mi>ω</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>2</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mn>35</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>1</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">r</m:mi>
+              <m:mi mathvariant="normal">a</m:mi>
+              <m:mi mathvariant="normal">d</m:mi>
+              <m:mrow>
+                <m:mtext>/</m:mtext>
+              </m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>7</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mrow>
+                <m:mtext>/</m:mtext>
+              </m:mrow>
+              <m:mi mathvariant="normal">s</m:mi>
+            </m:mrow>
+            <m:mtext>.</m:mtext>
+          </m:math>
+        </equation>
+        <para id="ked-1bkumurfe_ua">Teraz możemy wyznaczyć przyspieszenie dośrodkowe:</para>
+        <equation id="ked-1bkumuv2m_ing" class="unnumbered"><m:math>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mtext>d</m:mtext>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+
+         <m:msup>
+                <m:mi>v</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+
+              <m:mi>r</m:mi>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:msup>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>7</m:mn>
+                    <m:mn>,</m:mn>
+                    <m:mn>0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mrow>
+                        <m:mtext>/</m:mtext>
+                      </m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mrow>
+                <m:mn>0</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>2</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mn>245</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mrow>
+                <m:mtext>/</m:mtext>
+              </m:mrow>
+              <m:msup>
+                <m:mi mathvariant="normal">s</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation><para id="ked-1bkumvtdd_mgo">Ponieważ dwa wektory przyspieszenia są do siebie prostopadłe, wartość całkowitego przyspieszenia liniowego to:</para>
+        <equation id="ked-1bkun0alf_lg" class="unnumbered"><m:math>
+            <m:mrow>
+              <m:mo>|</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>a</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>|</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:msqrt>
+              <m:msubsup>
+                <m:mi>a</m:mi>
+                <m:mtext>d</m:mtext>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mo>+</m:mo>
+              <m:msubsup>
+                <m:mi>a</m:mi>
+                <m:mtext>s</m:mtext>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+            </m:msqrt>
+            <m:mo>=</m:mo>
+            <m:msqrt>
+              <m:msup>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>245</m:mn>
+                    <m:mn>,</m:mn>
+                    <m:mn>0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mrow>
+                        <m:mtext>/</m:mtext>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mi mathvariant="normal">s</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:msup>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>7</m:mn>
+                    <m:mn>,</m:mn>
+                    <m:mn>0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mrow>
+                        <m:mtext>/</m:mtext>
+                      </m:mrow>
+                      <m:msup>
+                        <m:mi mathvariant="normal">s</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:msqrt>
+            <m:mo>=</m:mo>
+            <m:mn>245</m:mn>
+            <m:mn>,</m:mn>
+            <m:mn>1</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mrow>
+                <m:mtext>/</m:mtext>
+              </m:mrow>
+              <m:msup>
+                <m:mi mathvariant="normal">s</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation><para id="ked-1bkun137h_pr8">Wirówka ma ujemne przyspieszenie kątowe. Oznacza to, że wiruje z coraz mniejszą prędkością kątową. Całkowity wektor przyspieszenia jest taki, jak pokazano na <link target-id="CNX_UPhysics_10_03_Centrif" cmlnle:case="locative"/>. Kąt pomiędzy wektorem przyspieszenia dośrodkowego a wektorem przyspieszenia całkowitego jest równy: </para>
+        <equation id="ked-1bkun458o_71g" class="unnumbered">
+          <m:math>
+            <m:mi>θ</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>arctg</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mn>7</m:mn>
+                  <m:mn>,</m:mn>
+                  <m:mn>0</m:mn>
+                </m:mrow>
+                <m:mn>245</m:mn>
+              </m:mfrac>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mn>1</m:mn>
+            <m:mn>,</m:mn>
+            <m:msup>
+              <m:mn>6</m:mn>
+              <m:mo>∘</m:mo>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1bkun4anl_qug">Znak ujemny oznacza, że wektor przyspieszenia całkowitego jest ustawiony pod kątem w kierunku zgodnym z ruchem wskazówek zegara.</para>
+        <figure id="CNX_UPhysics_10_03_Centrif">
+          <media id="ked-1bkuo00cs_078" alt="Rysunek przedstawia przyspieszenie styczne a t skierowane przeciwnie do ruchu wskazówek zegara. Wektory a a c skierowane są ku środkowi koła, a napis “kierunek ruchu ” wskazuje kierunek przeciwny do kierunku wektora a t.">
+            <image src="../../media/CNX_UPhysics_10_03_Centrif.jpg" mime-type="image/jpeg"/>
+          </media>
+          <caption>Wektory przyspieszenia dośrodkowego, stycznego i całkowitego. Wirówka zmniejsza obroty, więc przyspieszenie styczne skierowane jest zgodnie z ruchem wskazówek zegara, w kierunku przeciwnym do kierunku obrotu wirówki.</caption>
+        </figure>
+        <para id="ked-1bkuo1opc_0go"><title>Znaczenie</title>Z <link target-id="CNX_UPhysics_10_03_Centrif" cmlnle:case="genitive"/> wynika, że wektor przyspieszenia stycznego jest skierowany przeciwnie do kierunku obrotów. Wartość przyspieszenia stycznego jest znacznie mniejsza niż przyspieszenia dośrodkowego, więc wektor całkowitego przyspieszenia liniowego będzie tworzyć bardzo mały kąt z wektorem przyspieszenia dośrodkowego. </para>
+      </example>
+      <note id="ked-1bkuo4rm2_trg" class="check-understanding">
+        <exercise id="ked-1bkuo56fe_ubo">
+          <problem id="ked-1bkuo56fg_t8g">
+            <para id="ked-1bkuo56da_mug"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Chłopiec wskakuje na platformę karuzeli o promieniu 5 m, która jest w spoczynku. Karuzela rozpoczyna obracać się ze stałym przyspieszeniem kątowym, osiągając prędkość kątową 5 rad/s po 20 sekundach. Jaką drogę na karuzeli chłopiec przebył w tym czasie? </para>
+          </problem>
+          <solution id="ked-1bkuo56ev_1l">
+            <para id="ked-1bkuo56f8_cio">Wartość przyspieszenia kątowego wynosi:<m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo>−</m:mo><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>20</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>25</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, stąd całkowity kąt, o jaki obróci się karuzela z chłopcem, wynosi: <m:math><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msubsup><m:mi>ω</m:mi><m:mn>0</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>2</m:mn><m:mi>ε</m:mi><m:mo>=</m:mo><m:mrow><m:mo>[</m:mo><m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>5</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>−</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mo>]</m:mo></m:mrow><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mo>⋅</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>25</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>50</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi></m:mrow></m:math>. Droga, jaką przebędzie chłopiec hest równa <m:math><m:mi>s</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>50</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mo>=</m:mo><m:mn>250</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>.</para>
+          </solution>
+        </exercise>
+      </note>
+      <note id="ked-1bkuo8p0i_n" class="media-2">
+        <para id="ked-1bkuo9f10_ct8">Poeksperymentuj z <link url="https://openstaxcollege.org/l/21rotatingdisk">symulacją z repozytorium PhET</link>. Zmieniając parametry tarczy obrotowej (kąt początkowy, prędkość kątową i przyspieszenie kątowe) umieszczaj biedronkę i chrząszcza w różnych odległościach od osi obrotu. W ten sposób możesz zbadać, jak ruch obiektu po okręgu zależy od jego położenia, prędkości i przyspieszenia. Użyj wykresów i wektorów prezentowanych w aplikacji.</para>
+      </note>
+    </section>
+    <section id="ked-1bkuoaq7d_4e" class="key-concepts">
+      <title>Podsumowanie</title>
+      <list xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bkuoc6o3_qk"><item>Równania ruchu postępowego mają swoje odpowiedniki w równaniach ruchu obrotowego. Istnieje odwzorowanie: <m:math><m:mrow><m:mi>x</m:mi><m:mtext>→</m:mtext><m:mi>θ</m:mi><m:mn>,</m:mn><m:mspace width="0.5em"/><m:mi>v</m:mi><m:mtext>→</m:mtext><m:mi>ω</m:mi><m:mn>,</m:mn><m:mspace width="0.5em"/><m:mi>a</m:mi><m:mtext>→</m:mtext><m:mi>ε</m:mi></m:mrow></m:math>.</item>
+        <item>Ruch jednostajny po okręgu to ruch, w którym cząstka porusza się po okręgu ze stałą co do wartości prędkością liniową i kątową. Jednakże ze względu na ciągłą zmianę kierunku wektora prędkości, cząstka ma przyspieszenie dośrodkowe, zależne od odległości od osi obrotu.</item>
+        <item>Układ obracający się ruchem niejednostajnym obraca się z pewnym przyspieszeniem kątowym, a tym samym każdy punkt układu położony w odległości <m:math><m:mi>r</m:mi></m:math> od osi obrotu ma przyspieszenie dośrodkowe i związane z nim przyspieszenie styczne.</item>
+        <item>Całkowite przyspieszenie liniowe jest sumą wektorową wektora przyspieszenia dośrodkowego i wektora przyspieszenia stycznego. Ponieważ w ruchu po okręgu wektory przyspieszenia odśrodkowego i stycznego są prostopadłe do siebie, wartość całkowitego przyspieszenia liniowego jest równa: <m:math><m:mrow><m:mo>|</m:mo><m:mrow><m:mover><m:mi>a</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>|</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt><m:msubsup><m:mi>a</m:mi><m:mtext>d</m:mtext><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>a</m:mi><m:mtext>s</m:mtext><m:mn>2</m:mn></m:msubsup></m:msqrt></m:math>.</item>
+      </list></section>
+    <section id="ked-1bkuognt7_4qg" class="review-conceptual-questions">
+      <title>Pytania</title>
+      <exercise id="ked-1bkuohd38_rk">
+        <problem id="ked-1bkuohd16_n6">
+          <para id="ked-1bkuohd31_uno">Wyjaśnij, dlaczego przyspieszenie dośrodkowe zmienia kierunek prędkości w ruchu po okręgu, lecz nie zmienia jego wartości.</para>
+        </problem>
+        <solution id="ked-1bkuohd2s_78o" class="section-exercises">
+          <para id="ked-1bkuohd1u_m2">Ponieważ wektor przyspieszenia odśrodkowego jest prostopadły do wektora prędkości.</para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bkuoi367_1n8">
+        <problem id="ked-1bkuoi37i_js8">
+          <para id="ked-1bkuoi36l_288">Dlaczego w ruchu po okręgu przyspieszenie styczne może zmieniać wartość prędkości, ale nie jej kierunek? Uzasadnij swoją odpowiedź.</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bkuoitcm_b38">
+        <problem id="ked-1bkuoitds_c0g">
+          <para id="ked-1bkuoitd5_gno">Załóżmy, że kawałek marchewki znajduje się na obrzeżu płyty obrotowej kuchenki mikrofalowej. Czy doświadcza on działania przyspieszenia stycznego, przyspieszenia dośrodkowego, czy też obu, gdy: <list id="eip-idm984864560" list-type="enumerated" number-style="lower-alpha"><item> Płyta zaczyna wirować szybciej? </item><item> Płyta obraca się ze stałą prędkością kątową? </item><item> Płyta powoli zatrzymuje się? </item></list></para>
+        </problem>
+        <solution id="ked-1bkuoitd5_cjo" class="section-exercises">
+          <list id="eip-idm555172256" list-type="enumerated" number-style="lower-alpha">
+            <item> Obu. </item>
+            <item> Tylko przyspieszenia kątowego.</item>
+            <item> Obu.</item>
+          </list>
+        </solution>
+      </exercise>
+    </section>
+    <section id="ked-1bkuokq40_dp8" class="review-problems">
+      <title>Zadania</title>
+      <exercise id="ked-1bkuokvfn_db8">
+        <problem id="ked-1bkuokvf4_p9g">
+          <para id="ked-1bkuokvfh_mr">Trąba powietrzna ma średnicę 60,0 m, a prędkość wirującego powietrza ma wartość 500 km/h. Jaka jest prędkość obrotowa (częstotliwość obrotów) trąby powietrznej?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bkuolkpe_h7">
+        <problem id="ked-1bkuolkqb_teo">
+          <para id="ked-1bkuolkr4_jj8">Człowiek stoi na karuzeli obracającej się z prędkością kątową 2,5 rad/s. Jeżeli współczynnik tarcia statycznego między butami człowieka i karuzelą jest równy <m:math><m:mrow><m:msub><m:mi>μ</m:mi><m:mtext>S</m:mtext></m:msub><m:mo>=</m:mo><m:mn>0,5</m:mn></m:mrow></m:math>, to jak daleko od osi obrotu może on stać bez poślizgu?</para>
+        </problem>
+        <solution id="ked-1bkuolkq9_19o" class="section-exercises">
+          <para id="ked-1bkuolkpi_1d8">
+            <m:math>
+              <m:mi>r</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>78</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bkuood42_ie8">
+        <problem id="ked-1bkuood61_c3g">
+          <para id="ked-1bkuood48_7ug">Ultrawirówka przyspiesza od spoczynku do 100 000 obrotów na minutę w ciągu 2,00 min. <list id="eip-idm2196929168" list-type="enumerated" number-style="lower-alpha"><item> Jakie jest średnie przyspieszenie kątowe w <m:math><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>? </item><item> Jakie jest przyspieszenie styczne w punkcie odległym o 9,50 cm od osi obrotu? </item><item> Jakie jest przyspieszenie dośrodkowe tego punktu w <m:math><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> i w wielokrotności <m:math><m:mi>g</m:mi></m:math> w momencie, gdy wirówka osiąga maksymalną prędkość obrotową? </item><item> Jaka jest całkowita droga przebyta przez punkt oddalony o 9,5 cm od osi obrotu ultrawirówki, licząc od początku ruchu do osiągnięcia przez ultrawirówkę maksymalnej prędkości? </item></list>
+                </para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bkuosuhd_vl">
+        <problem id="ked-1bkuosuhv_jqg">
+          <para id="ked-1bkuosuhv_b9">Turbina wiatrowa obracająca się w kierunku przeciwnym do ruchu wskazówek zegara z prędkością 0,5 obr/s zaczyna zwalniać i po 10 s zatrzymuje się. Łopatki turbiny mają długość 20 m. <list id="eip-idm314173552" list-type="enumerated" number-style="lower-alpha"><item> Jakie jest przyspieszenie kątowe łopatek turbiny? </item><item> Jakie jest przyspieszenie dośrodkowe punktów na końcach łopatek w chwili rozpoczęcia spowalniania (<m:math><m:msub><m:mi>t</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>)? </item><item> Jaka jest wartość i kierunek całkowitego przyspieszenia liniowego końcówki łopatek w chwili <m:math><m:msub><m:mi>t</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>?</item></list></para>
+        </problem>
+        <solution id="ked-1bkuosuhg_01o" class="section-exercises">
+          <list id="eip-idm1600677744" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>314</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>; </item>
+            <item><m:math><m:msub><m:mi>a</m:mi><m:mtext>d</m:mtext></m:msub><m:mo>=</m:mo><m:mn>197</m:mn><m:mn>,</m:mn><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>; </item>
+            <item><m:math><m:mi>a</m:mi><m:mo>=</m:mo><m:msqrt><m:msubsup><m:mi>a</m:mi><m:mtext>d</m:mtext><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:msubsup><m:mi>a</m:mi><m:mtext>s</m:mtext><m:mn>2</m:mn></m:msubsup></m:msqrt><m:mo>=</m:mo><m:msqrt><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>197</m:mn><m:mn>,</m:mn><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mn>6</m:mn><m:mn>,</m:mn><m:mn>28</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:msqrt><m:mo>=</m:mo><m:mn>197</m:mn><m:mn>,</m:mn><m:mn>5</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, <m:math><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>arctg</m:mi><m:mo>⁡</m:mo><m:mrow><m:mo>(</m:mo><m:mfrac><m:mrow><m:mo>−</m:mo><m:mn>6</m:mn><m:mn>,</m:mn><m:mn>28</m:mn></m:mrow><m:mrow><m:mn>197</m:mn><m:mn>,</m:mn><m:mn>4</m:mn></m:mrow></m:mfrac><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:msup><m:mn>8</m:mn><m:mo>∘</m:mo></m:msup></m:math>.</item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bkuptj9p_bng">
+        <problem id="ked-1bkuptj86_h18">
+          <para id="ked-1bkuptj9c_mk">Jaka jest wartość (a) prędkości kątowej oraz (b) prędkości liniowej punktu na powierzchni Ziemi, na <m:math><m:msup><m:mn>30</m:mn><m:mo>∘</m:mo></m:msup></m:math> szerokości geograficznej północnej. Promień Ziemi wynosi 6370 km. (c) Na jakiej szerokości geograficznej prędkość liniowa wynosi 10 m/s?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bkuq1p04_3mo">
+        <problem id="ked-1bkuq1ove_aoo">
+          <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bkuq1ov6_0qo">Dziecko o masie 40 kg siedzi na skraju karuzeli w odległości 3,0 m od osi obrotu. Karuzela przyspiesza od spoczynku do 0,4 obr/s w ciągu 10 s. Jeśli współczynnik tarcia statycznego pomiędzy dzieckiem a powierzchnią karuzeli wynosi 0,6, to czy dziecko spadnie z karuzeli przed upływem 5 s od początku przyspieszania, czy nie?</para></problem>
+        <solution id="ked-1bkuq1ov0_4f8" class="section-exercises">
+          <para id="ked-1bkuq1ovd_9u">Siła odśrodkowa <m:math><m:msub><m:mi>F</m:mi><m:mrow><m:mtext>od</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mn>30</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mn>,</m:mn><m:mn>77</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>=</m:mo><m:mn>142</m:mn><m:mn>,</m:mn><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow></m:math>, <m:math><m:mi>m</m:mi><m:mi>a</m:mi><m:mo>=</m:mo><m:mn>40</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>5</m:mn><m:mn>,</m:mn><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>=</m:mo><m:mn>204</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow></m:math>. Maksymalna siła tarcia statycznego <m:math><m:msub><m:mi>μ</m:mi><m:mi>s</m:mi></m:msub><m:mi>N</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>6</m:mn><m:mo>⋅</m:mo><m:mn>30</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>9</m:mn><m:mn>,</m:mn><m:mn>8</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>=</m:mo><m:mn>176</m:mn><m:mn>,</m:mn><m:mn>4</m:mn><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow></m:math>, więc dziecko pozostanie na karuzeli po 5 s.</para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bkuqhlob_4do">
+        <problem id="ked-1bkuqhln9_8eo">
+          <para id="ked-1bkuqhlpb_ce">Koło rowerowe o promieniu 0,3 m obraca się osiągając częstotliwość 3 obr/s po upływie 5 s od rozpoczęcia obrotów. Jaka jest wartość i kierunek wektora całkowitego przyspieszenia punktu na krawędzi koła w chwili <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bkuqikdp_sl">
+        <problem id="ked-1bkuqikdv_gjg">
+          <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bkuqike4_44g">Prędkość kątowa koła zamachowego o promieniu 1,0 m zmienia się zgodnie z zależnością <m:math><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2,0</m:mn><m:mi>t</m:mi></m:mrow></m:math>. Narysuj, dla punktu położonego w odległości <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math> od osi obrotu, wykres <m:math><m:msub><m:mi>a</m:mi><m:mi>d</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:math> i <m:math><m:msub><m:mi>a</m:mi><m:mi>t</m:mi></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:math> dla <m:math><m:mi>t</m:mi><m:mo>∈</m:mo><m:mrow><m:mo>⟨</m:mo><m:mrow><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo>;</m:mo><m:mspace width="0.2em"/><m:mn>3</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>⟩</m:mo></m:mrow></m:math>. Przeanalizuj te wykresy, aby wyjaśnić, kiedy dla punktu koła oddalonego o 1,0 m od osi obrotu <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mtext>d</m:mtext></m:msub><m:mo>≫</m:mo><m:msub><m:mi>a</m:mi><m:mtext>s</m:mtext></m:msub></m:mrow></m:math> oraz kiedy <m:math><m:mrow><m:msub><m:mi>a</m:mi><m:mtext>d</m:mtext></m:msub><m:mo>≪</m:mo><m:msub><m:mi>a</m:mi><m:mtext>s</m:mtext></m:msub></m:mrow></m:math>.</para></problem>
+        <solution id="ked-1bkuqikef_6v" class="section-exercises">
+          <para id="ked-1bkuqikfu_io8"><m:math><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>ω</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mi>t</m:mi><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mn>,</m:mn><m:mspace linebreak="newline"/><m:msub><m:mi>a</m:mi><m:mtext>d</m:mtext></m:msub><m:mo>=</m:mo><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>,</m:mn><m:mspace linebreak="newline"/><m:msub><m:mi>a</m:mi><m:mtext>s</m:mtext></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>ε</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>r</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>ω</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>.</m:mo></m:math><newline/> Wykresy przyspieszenia dośrodkowego i stycznego <newline/>
+                      <media id="ked-1bkuqq4j6_vdo" alt="Rysunek przedstawia przyspieszenie liniowe w metrach przez kwadrat sekundy, narysowane jako funkcja czasu w sekundach. Dośrodkowe rozpoczyna się w początku układu współrzędnych i rośnie wykładniczo wraz z czasem. Styczne jest stałe w czasie i dodatnie"><image src="../../media/CNX_UPhysics_10_03_Prob9_img.jpg" mime-type="image/jpeg"/></media><newline/>Przyspieszenie styczne jest stałe, podczas gdy przyspieszenie dośrodkowe zależy od czasu i wzrasta z upływem czasu do wartości znacznie większych niż przyspieszenie styczne po <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>. W okresach poniżej 0,7 s i zbliżających się do zera przyspieszenie dośrodkowe jest dużo mniejsze niż przyspieszenie styczne.</para></solution>
+      </exercise>
+    </section>
+  </content>
+  <glossary>
+    <definition id="ked-1bkuqq4j6_vdx">
+      <term cmlnle:reference="całkowite przyspieszenie liniowe" class="no-emphasis">całkowite przyspieszenie liniowe (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">total linear acceleration</term></foreign>)</term>
+      <meaning id="ked-1bkuqq4j6_vdy">wektorowa suma wektorów przyspieszenia dośrodkowego i stycznego</meaning>
+    </definition>
+  </glossary>
+</document>

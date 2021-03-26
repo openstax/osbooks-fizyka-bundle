@@ -1,0 +1,514 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Półprzewodniki i domieszkowanie</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m68264</md:content-id>
+  <md:title>Półprzewodniki i domieszkowanie</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>opisywać zmiany w strukturze energetycznej półprzewodnika spowodowane domieszkowaniem; </item>
+<item>wskazywać różnicę między półprzewodnikiem typu n a półprzewodnikiem typu p; </item>
+<item>opisywać efekt Halla i wyjaśnić jego znaczenie;</item>
+<item>obliczać ładunek, prędkość unoszenia i gęstość nośników ładunku w półprzewodniku, korzystając z informacji uzyskanej z pomiarów efektu Halla.</item></list></md:abstract>
+  <md:uuid>26fb4ea7-cc21-48c0-a0ef-416f20f99b4a</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1172098618359">W poprzednim rozdziale rozważaliśmy jedynie następujący problem: jaki jest wkład do prądu elektrycznego od elektronów zajmujących stany w paśmie przewodnictwa. Jednakże, jeśli elektron z pasma walencyjnego wzbudzony jest do pasma przewodnictwa, to pozostawia on po sobie w pasmie walencyjnym nieobsadzony stan nazywany <term class="no-emphasis" cmlnle:reference="dziura">dziurą</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">hole</term></foreign>). Do tego stanu może łatwo przemieścić się sąsiadujący elektron, przez co przemieści się dziura. Na prąd elektryczny związany z takim przemieszczaniem się można patrzeć albo jak na kolektywny ruch elektronów o ładunku ujemnym, albo ruch dziur o ładunku dodatnim. </para>
+    <para id="fs-id1172100633528">Aby to zilustrować, rozważmy jednowymiarową sieć, jak na <link target-id="CNX_UPhysics_42_06_Holes" cmlnle:case="locative"/>. Załóżmy, że jeden elektron walencyjny z każdego atomu daje wkład do prądu elektrycznego. Jeśli dziura po prawej stronie (powstała na skutek wzbudzenia elektronu do pasma przewodnictwa) zapełniona zostanie przez sąsiadujący elektron, wówczas przesunie się w lewo. Prąd zatem może być interpretowany jako ruch dodatniego ładunku w lewo. Gęstość dziur lub liczbę dziur przypadającą na jednostkę objętości (koncentrację dziur) oznaczamy przez <m:math display="inline">
+      <m:semantics>
+        <m:mi>p</m:mi>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> p</m:annotation>
+      </m:semantics>
+    </m:math>. Każdy elektron wzbudzany do pasma przewodnictwa pozostawia po sobie dziurę. Jeśli pasmo przewodnictwa było początkowo puste, wówczas koncentracja elektronów <m:math display="inline">
+    <m:semantics>
+      <m:mi>n</m:mi>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+    </m:semantics>
+  </m:math> jest równa koncentracji dziur, czyli <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>n</m:mi>
+      <m:mo>=</m:mo>
+      <m:mi>p</m:mi>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=p</m:annotation>
+  </m:semantics>
+  </m:math>.</para><figure id="CNX_UPhysics_42_06_Holes">
+    <media id="fs-id1172098600993" alt="Na rysunku znajdują się cztery pary uszeregowanych poziomo znaków. W górnym rzędzie każdej pary znajdują się znaki minus a w dolnym rzędzie kółeczka ze znakiem plus wewnątrz. Na dole rysunku znajduje się strzałka skierowana w lewo opisana jako ruch dodatnich ładunków. W drugim rzędzie znaków minus brakuje ostatniego minusa. To puste miejsce opisane jest jako dziura. W trzecim rzędzie znaków minus brakuje przedostatniego minusa. Od tego pustego miejsca do ostatniego minusa biegnie strzałka, opisana jako: elektron zapełnia dziurę. Podobnie, w czwartym rzędzie znaków minus brakuje trzeciego od końca minusa. Tym razem strzałka biegnie od pustego miejsca do przedostatniego minusa i jest również opisana: elektron zapełnia dziurę.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_42_06_Holes.jpg"/>
+    </media>
+    <caption>Ruch dziur w sieci krystalicznej. Gdy elektron przesuwa się w prawo, dziura przemieszcza się w lewo. </caption>
+  </figure>
+  <para id="fs-id1172098528088">Jak już wspomniano, półprzewodnik to materiał z zapełnionym pasmem walencyjnym, pustym pasmem przewodnictwa i stosunkowo niewielką przerwą energetyczną między tymi pasmami. W materiale takim można wprowadzić dodatkowe elektrony lub dziury poprzez umieszczenie w sieci kryształu <term class="no-emphasis" cmlnle:reference="atom domieszki">atomu domieszki</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">impurity atom</term></foreign>), o nieco innej liczbie elektronów walencyjnych niż materiał macierzysty. Taki proces nazywany jest <term class="no-emphasis" cmlnle:reference="domieszkowanie">domieszkowaniem</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">doping</term></foreign>). Załóżmy na przykład, że dodamy atom arsenu do kryształu krzemu (<link target-id="CNX_UPhysics_42_06_Impurities"/> (a)). </para><figure id="CNX_UPhysics_42_06_Impurities"><media id="fs-id1172098317873" alt="Rysunek a przedstawia sieć z kółeczkami w każdym węźle, opisanymi jako atomy krzemu. W jednym z węzłów znajduje się kółko o innym kolorze opisane jako atom arsenu. Małe kółeczko znajdujące się pomiędzy atomami sieci opisane jest jako dodatkowy elektron z atomu arsenu. Rysunek b przedstawia taką samą sieć jak rysunek a, ale w jednym z węzłów znajduje się kółko o odmiennym kolorze oznaczone jako atom aluminium. Małe kółeczko znajdujące się pomiędzy atomami sieci opisane jest jako dziura.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_42_06_Impurities.jpg"/>
+    </media>
+    
+  <caption>(a) Domieszka donorowa; (b) domieszka akceptorowa. Wprowadzanie domieszek donorowych i akceptorowych do kryształu półprzewodnika znacząco zmienia jego właściwości elektronowe. </caption></figure><para id="fs-id1172100991668">Arsen posiada pięć elektronów walencyjnych, podczas gdy krzem tylko cztery. Ten dodatkowy elektron musi zatem przejść do pasma przewodnictwa, ponieważ nie ma dla niego już miejsca w paśmie walencyjnym. Atom arsenu pozbawiony elektronu ma wypadkowy ładunek dodatni, który słabo wiąże zdelokalizowany elektron. Wiązanie to jest słabe, ponieważ sieć otaczająca jon arsenu ekranuje jego pole elektryczne. Z tego powodu energia wiązania elektronu wynosi zaledwie ok. <m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:mn>0,02</m:mn>
+       <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">eV</m:mi>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,02}{\electronvolt}</m:annotation>
+    </m:semantics>
+  </m:math>. Innymi słowy, poziom energetyczny elektronu domieszki znajduje się w przerwie energetycznej o ok. <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mn>0,02</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mi mathvariant="normal">eV</m:mi>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,02}{\electronvolt}</m:annotation>
+  </m:semantics>
+</m:math> poniżej krawędzi pasma przewodnictwa. Jest to wartość o wiele mniejsza od wartości przerwy energetycznej Si, równej <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mn>1,14</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">eV</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{1,14}{\electronvolt}</m:annotation>
+</m:semantics>
+</m:math>. W temperaturze pokojowej elektron domieszki jest łatwo wzbudzany do pasma przewodnictwa i wnosi wkład do przewodnictwa (<link target-id="CNX_UPhysics_42_06_ExtraElect"/> (a)). Domieszka z dodatkowym elektronem nosi nazwę <term class="no-emphasis" cmlnle:reference="domieszka donorowa">domieszki donorowej</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">donor impurity</term></foreign>), a domieszkowany w ten sposób półprzewodnik jest <term class="no-emphasis" cmlnle:reference="półprzewodnik typu n">półprzewodnikiem typu n</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">n-type semiconductor</term></foreign>), ponieważ większościowe nośniki ładunku (elektrony) mają ładunek ujemny. </para><figure id="CNX_UPhysics_42_06_ExtraElect"><media id="fs-id1172100961147" alt=" Rysunek a przedstawia zacieniowany prostokąt, opisany u dołu jako pasmo walencyjne, oraz poziomą linię u góry opisaną jako pasmo przewodnictwa. Prostokąt i linia rozdzielone są przerwą oznaczoną przez E z indeksem g. Powyżej górnej linii znajduje się elektron, a pod linią i pod elektronem krótka pozioma kreska. Rysunek b jest podobny, ale z wieloma elektronami powyżej linii pasma przewodnictwa i wieloma krótkimi kreseczkami tworzącymi poniżej linię przerywaną. Ta linia przerywana nazwana jest pasmem domieszkowym.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_42_06_ExtraElect.jpg"/>
+  </media>
+  
+<caption>(a) Dodatkowy elektron z domieszki donorowej wzbudzony do pasma przewodnictwa; (b) poziom domieszkowy w półprzewodniku typu n.</caption></figure><para id="fs-id1172100638917">Poprzez dodanie większej liczby domieszek możemy doprowadzić do pojawienia się <term class="no-emphasis" cmlnle:reference="poziom domieszkowy">poziomu domieszkowego</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">impurity band</term></foreign>), nowego poziomu energetycznego powstałego poprzez domieszkowanie, jak pokazano na <link target-id="CNX_UPhysics_42_06_ExtraElect" cmlnle:case="locative"/> (b). Poziom Fermiego znajduje się teraz pomiędzy tym poziomem a dolną krawędzią pasma przewodnictwa. W temperaturze pokojowej wiele elektronów jest wzbudzonych termicznie do pasma przewodnictwa, wnosząc wkład do przewodnictwa elektrycznego. Przewodnictwo może również wystąpić na poziomie domieszkowym, gdzie powstają puste miejsca po elektronach (które mogą się przemieszczać). Zauważmy, że zmiany energii elektronu wiążą się z jego ruchem względem półprzewodnika (prędkością lub energią kinetyczną), a nie z ruchem całego półprzewodnika. </para><para id="fs-id1172098618759">Domieszkowanie można również realizować, używając atomów, które mają o jeden elektron walencyjny mniej niż atomy półprzewodnika. Na przykład Al, który ma trzy elektrony walencyjne, może zastąpić Si, jak pokazano na <link target-id="CNX_UPhysics_42_06_Impurities" cmlnle:case="locative"/> (b). Taka domieszka nazywana jest <term class="no-emphasis" cmlnle:reference="domieszka akceptorowa">domieszką akceptorową</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">acceptor impurity</term></foreign>), a domieszkowany w ten sposób półprzewodnik staje się <term class="no-emphasis" cmlnle:reference="półprzewodnik typu p">półprzewodnikiem typu p</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">p-type semiconductor</term></foreign>), ponieważ większościowe nośniki (dziury) mają ładunek dodatni. Jeśli potraktujemy dziurę jako dodatni ładunek słabo związany z domieszką, wówczas pusty stan elektronowy powstaje w przerwie energetycznej tuż powyżej górnej krawędzi pasma walencyjnego. Jeśli stan ten jest zapełniony przez elektron termicznie wzbudzony z pasma walencyjengo (<link target-id="CNX_UPhysics_42_06_Excited"/> (a)), to w paśmie walencyjnym powstaje mobilna dziura. Poprzez dodanie większej liczby domieszek akceptorowych możemy wytworzyć poziom domieszkowy, jak pokazano na <link target-id="CNX_UPhysics_42_06_Excited" cmlnle:case="locative"/> (b). </para><figure id="CNX_UPhysics_42_06_Excited"><media id="fs-id1172098453018" alt="Rysunek a przedstawia zacieniowany prostokąt, opisany u dołu jako pasmo walencyjne, oraz poziomą linię u góry opisaną jako pasmo przewodnictwa. Prostokąt i linia rozdzielone są przerwą oznaczoną przez E z indeksem g. Ponad pasmem walencyjnym znajduje się elektron z krótką poziomą kreseczką poniżej. W paśmie walencyjnym znajduje się dziura, dokładnie pod elektronem. Rysunek b jest podobny, ale z wieloma elektronami tuż powyżej pasma walencyjnego i krótkimi kreseczkami poniżej elektronów, tworzącymi linię przerywaną. Linia przerywana nazwana jest pasmem domieszkowym. Pod każdym elektronem znajduje się dziura w paśmie walencyjnym.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_42_06_Excited.jpg"/>
+    </media>
+    
+  <caption>(a) Elektron z pasma walencyjnego jest wzbudzony do pustego stanu powstałego przy domieszcze akceptorowej. (b) Tworzenie poziomu domieszkowego w półprzewodniku typu p</caption></figure><para id="fs-id1172098382391">Prąd elektryczny w domieszkowanych półprzewodnikach może być związany z ruchem <term class="no-emphasis" cmlnle:reference="nośnik większościowy">nośników większościowych</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">majority carriers</term></foreign>), gdy na przykład dziury pochodzą od atomów domieszki, lub z ruchem <term class="no-emphasis" cmlnle:reference="nośnik mniejszościowy">nośników mniejszościowych</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">minority carriers</term></foreign>), gdy dziury pochodzą tylko od wzbudzeń termicznych elektronów poprzez przerwę energetyczną. W półprzewodniku typu n nośnikami większościowymi są swobodne elektrony pochodzące od atomów domieszek, a nośniki mniejszościowe to dziury, które powstały w wyniku pobudzenia termicznego elektronów z pasma walencyjnego do pasma przewodnictwa. W półprzewodniku typu p nośnikami większościowymi są dziury pochodzące od atomów domieszek, a nośnikami mniejszościowymi są swobodne elektrony powstałe w wyniku wzbudzeń termicznych poprzez przerwę energetyczną. Zasadniczo liczba nośników większościowych znacznie przewyższa liczbę nośników mniejszościowych. Koncepcja nośników większościowych i mniejszościowych zostanie wykorzystana w następnym rozdziale do wyjaśnienia działania diod i tranzystorów. </para><para id="fs-id1172098709482">Rozważania na temat domieszkowania typu p i typu n w sposób naturalny prowadzą do pytania: czy „elektronowe dziury” rzeczywiście zachowują się jak cząstki? Istnienie dziur w domieszkowanym półprzewodniku typu p można wykazać za pomocą efektu Halla. Efekt ten polega na powstawaniu różnicy potencjałów, gdy przez przewodnik (półprzewodnik) umieszczony w polu magnetycznym płynie prąd (patrz <link class="target-chapter" document="m67205">Efekt Halla</link>). Efekt Halla w sposób schematyczny pokazany jest na <link target-id="CNX_UPhysics_42_06_HallEffect" cmlnle:case="locative"/> (a). Cienka płytka półprzewodnika znajduje się w jednorodnym polu magnetycznym (które skierowane jest prostopadle do niej). Gdy dziury elektronowe przemieszczają się przez półprzewodnik zgodnie z kierunkiem prądu, siła Lorentza spycha je w stronę lewej krawędzi płytki (przypomnijmy, że ruch dodatnich ładunków w polu magnetycznym podlega regule prawej ręki). Ładunki dodatnie gromadzą się na lewej krawędzi płytki aż do momentu, gdy siła związana ze skierowanym w prawo polem elektrycznym pomiędzy lewą i prawą krawędzią (<m:math display="inline">
+<m:semantics>
+    <m:mrow>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mtext>E</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>E</m:mi>
+        <m:mtext>q</m:mtext>
+      </m:msub>
+    </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> F_{\text{E}}=E_{\text{q}}</m:annotation>
+</m:semantics>
+</m:math>) zrównoważy siłę magnetyczną skierowaną w lewo (<m:math display="inline">
+<m:semantics>
+    <m:mrow>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mtext>B</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>q</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>v</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>B</m:mi>
+      </m:mrow>
+    </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> F_{\text{B}}=qvB</m:annotation>
+</m:semantics>
+</m:math>). Porównując te dwie siły, otrzymujemy <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>E</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>v</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>B</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E=vB</m:annotation>
+</m:semantics>
+</m:math>. Napięcie, które powstaje w poprzek płytki, jest zatem równe </para><note id="fs-id1172098255866" class="equation-callout">
+  <equation id="fs-id1172100574901"><label/>
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mtext>H</m:mtext>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mi>v</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>B</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>w</m:mi>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> U_{\text{H}}=vBw\text{,}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation></note>
+<para id="fs-id1172098692218">gdzie <m:math display="inline">
+  <m:semantics>
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mtext>H</m:mtext>
+    </m:msub>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> U_{\text{H}}</m:annotation>
+  </m:semantics>
+</m:math> jest napięciem Halla, <m:math display="inline">
+<m:semantics>
+  <m:mi>v</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> v</m:annotation>
+</m:semantics>
+</m:math> to <term class="no-emphasis" cmlnle:reference="prędkość unoszenia">prędkość unoszenia</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">drift velocity</term></foreign>) dziur lub średnia prędkość przemieszczania się cząstki poruszającej się w sposób częściowo losowy, <m:math display="inline">
+<m:semantics>
+  <m:mi>B</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> B</m:annotation>
+</m:semantics>
+</m:math> jest indukcją pola magnetycznego, a <m:math display="inline">
+<m:semantics>
+  <m:mi>w</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> w</m:annotation>
+</m:semantics>
+</m:math> jest szerokością płytki. Zauważmy, że napięcie Halla jest prostopadłe do napięcia, które powoduje przepływ prądu elektrycznego przez płytkę. Pomiar znaku tego napięcia (różnicy potencjałów) potwierdza, że na lewej krawędzi płytki gromadzą się dziury. Z wartości napięcia Halla można wyznaczyć prędkość unoszenia (<m:math display="inline">
+<m:semantics>
+  <m:mi>v</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> v</m:annotation>
+</m:semantics>
+</m:math>) nośników większościowych. </para><para id="fs-id1172100952875">Z napięcia Halla można uzyskać jeszcze jedną informację. Zauważmy, że gęstość prądu elektrycznego (natężenie prądu na jednostkę pola powierzchni przekroju płytki półprzewodnika) wynosi</para><equation id="fs-id1172098585408"><m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>j</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>n</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>q</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>v</m:mi>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> j=nqv\text{,}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation><para id="fs-id1172101028703">gdzie <m:math display="inline">
+  <m:semantics>
+    <m:mi>q</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> q</m:annotation>
+  </m:semantics>
+</m:math> jest ładunkiem cząstki, <m:math display="inline">
+<m:semantics>
+  <m:mi>n</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+</m:semantics>
+</m:math> to koncentracja nośników ładunku, a <m:math display="inline">
+<m:semantics>
+  <m:mi>v</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> v</m:annotation>
+</m:semantics>
+</m:math> jest prędkością unoszenia. Gęstość prądu łatwo wyznacza się poprzez podzielenie natężenia prądu przez pole powierzchni przekroju poprzecznego płytki, <m:math display="inline">
+<m:semantics>
+  <m:mi>q</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> q</m:annotation>
+</m:semantics>
+</m:math> jest ładunkiem dziury (ładunek elektronu ze znakiem plus), a <m:math display="inline">
+<m:semantics>
+  <m:mi>v</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> v</m:annotation>
+</m:semantics>
+</m:math> wyznacza się z efektu Halla według <link target-id="fs-id1172098585408" cmlnle:case="genitive"/>. Tak więc powyższe wyrażenie na gęstość prądu elektrycznego może być wykorzystane do wyznaczenia koncentracji nośników ładunku, <m:math display="inline">
+<m:semantics>
+  <m:mi>n</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+</m:semantics>
+</m:math>. Podobną analizę można wykonać dla nośników ładunku ujemnego w materiale typu n (patrz <link target-id="CNX_UPhysics_42_06_HallEffect"/>). </para><figure id="CNX_UPhysics_42_06_HallEffect"><media id="fs-id1172101038158" alt="Na rysunku pokazana jest płytka o długości L, szerokości W i grubości t. Źródło napięcia VX przyłączone jest tak, że różnica potencjałów występuje wzdłuż płytki. Prąd w obwodzie płynie zgodnie z ruchem wskazówek zegara. Źródło napięcia VH jest podłączone w poprzek płytki. Prąd w obwodzie (VH) płynie w kierunku przeciwnym do ruchu wskazówek zegara. Strzałka BZ skierowana w dół wskazuje kierunek pola magnetycznego. Strzałka na płytce oznaczona jest przez E i skierowana jest w prawo. Rysunek b jest podobny do a, ale polaryzacje VX i VH są odwrotne niż na rysunku a, a także I, BZ i E są przeciwnie skierowane.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_42_06_HallEffect.jpg"/>
+  </media>
+  
+<caption>Efekt Halla. W polu magnetycznym skierowanym prostopadle do płytki i do dołu (a) dziury elektronowe o ładunku dodatnim spychane są w lewą stronę, zaś (b) elektrony posiadające ładunek ujemny spychane są w prawo. Powstałe pole elektryczne jest skierowane w prawo.</caption></figure><section id="fs-id1172100883951" class="key-concepts">
+  <title>Podsumowanie</title>
+  <list id="fs-id1172098526939" list-type="bulleted" bullet-style="bullet"><item>Struktura energetyczna półprzewodnika może być modyfikowana poprzez zamianę części atomów w sieci innymi atomami (domieszkowanie).</item>
+    <item>Domieszkowanie typu n powoduje powstanie nowych dozwolonych poziomów energetycznych tuż poniżej pasma przewodnictwa.</item>
+      <item> Domieszkowanie typu p powoduje powstanie nowych dozwolonych poziomów energetycznych tuż powyżej pasma walencyjnego.</item>
+        <item>Efekt Halla można wykorzystać do wyznaczenia ładunku, prędkości unoszenia i koncentracji nośników w półprzewodniku.</item>
+      </list></section>
+    <section id="fs-id1172098616494" class="review-conceptual-questions">
+      <title>Pytania </title>
+      <exercise id="fs-id1172100719463">
+        <problem id="fs-id1172100896656">
+          <para id="fs-id1172100924636">Jaki rodzaj półprzewodnika powstanie przez domieszkowanie germanu <list id="eip-idm206318672" list-type="enumerated" number-style="lower-alpha">
+            <item>arsenem;</item>
+            <item>galem?</item>
+          </list>
+        </para>
+      </problem>
+      <solution id="fs-id1172098396192">
+        <para id="fs-id1172098544678">a. German ma cztery elektrony walencyjne. Jeśli jest on domieszkowany arsenem (pięć elektronów walencyjnych), wówczas cztery elektrony tworzą wiązania, a jeden pozostaje słabo związany (i wnosi wkład do przewodnictwa). Powstaje w ten sposób półprzewodnik typu n; b. Jeśli german jest domieszkowany galem (trzy elektrony walencyjne), wszystkie trzy elektrony tworzą wiązania, ale brak jednego elektronu powoduje powstanie dziury (wnoszącej wkład do przewodnictwa elektrycznego). W ten sposób powstaje półprzewodnik typu p.</para></solution>
+    </exercise>
+    <exercise id="fs-id1172098479783">
+      <problem id="fs-id1172100664832">
+        <para id="fs-id1172100999885">Jaki rodzaj półprzewodnika powstaje, gdy krzem domieszkowany jest <list id="eip-idm432976240" list-type="enumerated" number-style="lower-alpha">
+          <item>fosforem;</item>
+          <item>indem?</item>
+        </list>
+      </para>
+    </problem>
+  </exercise>
+  <exercise id="fs-id1172100736890">
+    <problem id="fs-id1172098582155">
+      <para id="fs-id1172100620337">Co to jest efekt Halla i do czego może być wykorzystany? </para>
+    </problem>
+    <solution id="fs-id1172098692244">
+      <para id="fs-id1172098749800">Efekt Halla to powstawanie różnicy potencjałów na skutek przepływu prądu przez przewodnik (półprzewodnik) umieszczony w odpowiednio skierowanym polu magnetycznym. Może być wykorzystany do wyznaczenia prędkości unoszenia nośników ładunku (elektronów lub dziur). Jeśli zmierzona jest gęstość prądu, efekt ten może posłużyć także do wyznaczenia koncentracji nośników ładunku.</para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1172098352391">
+    <problem id="fs-id1172098453743">
+      <para id="fs-id1172098396068">W jaki sposób atomy domieszki zmieniają strukturę energetyczną materiału w półprzewodniku typu n? </para></problem>
+    </exercise>
+    <exercise id="fs-id1172100777031">
+      <problem id="fs-id1172098312979">
+        <para id="fs-id1172098643860">W jaki sposób atomy domieszki zmieniają strukturę energetyczną materiału w półprzewodniku typu p? </para></problem>
+        <solution id="fs-id1172098410134">
+          <para id="fs-id1172100895918">Powstają nowe nieobsadzone poziomy energetyczne tuż powyżej pasma walencyjnego. Poziomy te mogą być łatwo obsadzane elektronami z pasma walencyjnego. </para>
+        </solution>
+      </exercise>
+    </section>
+    <section id="fs-id1172098636725" class="review-problems">
+      <title>Zadania</title>
+      <exercise id="fs-id1172098616180">
+        <problem id="fs-id1172098762520">
+          <para id="fs-id1172100896782">Wykonano eksperyment, aby zademonstrować efekt Halla. Cienką prostokątną płytkę półprzewodnika o szerokości <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mn>10</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">cm</m:mi>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{10}{\centi\metre}</m:annotation>
+            </m:semantics>
+          </m:math> i długości <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>30</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">cm</m:mi>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{30}{\centi\metre}</m:annotation>
+          </m:semantics>
+        </m:math> przyłączono do baterii i umieszczono w polu magnetycznym <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mn>1,5</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">T</m:mi>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{1,5}{\tesla}</m:annotation>
+        </m:semantics>
+      </m:math> prostopadłym do powierzchni płytki. Powstało napięcie Halla o wartości <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mn>12</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">V</m:mi>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{12}{\volt}</m:annotation>
+      </m:semantics>
+      </m:math>. Jaka była prędkość unoszenia nośników ładunku? </para></problem>
+  </exercise>
+  <exercise id="fs-id1172098583315"><problem id="fs-id1172098320962">
+      <para id="fs-id1172100977170">Przyjmij, że pole przekroju poprzecznego płytki z poprzedniego zadania (przekroju prostopadłego do prądu elektrycznego) wynosi <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mn>1</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:msup>
+              <m:mi mathvariant="normal">mm</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{1}{\milli\metre\squared}</m:annotation>
+        </m:semantics>
+      </m:math>, a zmierzony niezależnie prąd ma wartość <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">mA</m:mi>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{2}{\milli\ampere}</m:annotation>
+      </m:semantics>
+      </m:math>. Jaka jest koncentracja nośników ładunku?</para></problem>
+    <solution id="fs-id1172100657944">
+      <para id="fs-id1172098461930">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mi>n</m:mi>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>1,56</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>19</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mrow>
+                  <m:mi mathvariant="normal">dziur</m:mi>
+                  <m:mo>∕</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=\SI{1,56e19}{\holes\per\metre\cubed}</m:annotation>
+          </m:semantics>
+          </m:math>.</para>
+        </solution>
+      </exercise><exercise id="fs-id1172098316203">
+        <problem id="fs-id1172098396030">
+          <para id="fs-id1172100904647">W miedzianym drucie o polu powierzchni przekroju poprzecznego <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mi>σ</m:mi>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                 <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">mm</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \sigma=\SI{2}{\milli\metre\squared}</m:annotation>
+            </m:semantics>
+          </m:math> płynie prąd elektryczny. Jeśli prędkość unoszenia wynosi <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>0,02</m:mn>
+             <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mrow>
+                <m:mi mathvariant="normal">cm</m:mi>
+                <m:mo>∕</m:mo>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{0,02}{\centi\metre\per\second}</m:annotation>
+          </m:semantics>
+          </m:math>, to jaki jest całkowity prąd płynący przez drut? </para></problem>
+      </exercise>
+      <exercise id="fs-id1172098626545"><problem id="fs-id1172100585790">
+          <para id="fs-id1172098618468">W laboratorium zademonstrowano efekt Halla. Cienką prostokątną płytkę półprzewodnika o szerokości <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mn>5</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">cm</m:mi>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{5}{\centi\metre}</m:annotation>
+            </m:semantics>
+          </m:math> i polu powierzchni przekroju poprzecznego <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>2</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:msup>
+                <m:mi mathvariant="normal">mm</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{2}{\milli\metre\squared}</m:annotation>
+          </m:semantics>
+        </m:math> przyłączono do baterii i umieszczono w polu magnetycznym prostopadłym do powierzchni płytki. Powstało napięcie Halla o wartości <m:math display="inline">
+        <m:semantics>
+          <m:mrow>
+            <m:mn>12,5</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">V</m:mi>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{12,5}{\volt}</m:annotation>
+        </m:semantics>
+      </m:math>, a zmierzona prędkość unoszenia nośników wynosiła <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mn>50</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mo>∕</m:mo>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{50}{\metre\per\second}</m:annotation>
+      </m:semantics>
+      </m:math>. Jaka była wartość indukcji pola magnetycznego? </para>
+    </problem>
+    <solution id="fs-id1172098646490">
+      <para id="fs-id1172100652571">
+        <m:math display="inline">
+          <m:semantics>
+            <m:mrow>
+              <m:mn>5</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">T</m:mi>
+            </m:mrow>
+            <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \SI{5}{\tesla}</m:annotation>
+          </m:semantics>
+          </m:math>.</para>
+        </solution>
+      </exercise></section>
+  </content>
+  <glossary>
+    <definition id="fs-id1172100950511">
+      <term class="no-emphasis" cmlnle:reference="domieszka akceptorowa">domieszka akceptorowa (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">acceptor impurity</term></foreign>)</term>
+        <meaning id="fs-id1172098591331">atom podstawiony za atom macierzysty w półprzewodniku, co skutkuje pojawieniem się swobodnej dziury elektronowej </meaning>
+      </definition>
+      <definition id="fs-id1172098464068">
+        <term class="no-emphasis" cmlnle:reference="domieszka donorowa">domieszka donorowa (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">donor impurity</term></foreign>)</term>
+          <meaning id="fs-id1172098694815">atom podstawiony za atom macierzysty półprzewodnika, co skutkuje pojawieniem się swobodnego elektronu</meaning>
+        </definition>
+        <definition id="fs-id1172098389313">
+          <term class="no-emphasis" cmlnle:reference="domieszkowanie">domieszkowanie (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">doping</term></foreign>)</term>
+            <meaning id="fs-id1172096062939">zmiana w materiale półprzewodnika polegająca na zastąpieniu jednego typu atomu innym </meaning>
+          </definition>
+          <definition id="fs-id1172098594697">
+            <term class="no-emphasis" cmlnle:reference="prędkość unoszenia">prędkość unoszenia (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">drift velocity</term></foreign>)</term>
+              <meaning id="fs-id1172100575348">średnia prędkość uporządkowanego przemieszczania się cząstki, która porusza się losowo </meaning>
+            </definition>
+            <definition id="fs-id1172096188454">
+              <term class="no-emphasis" cmlnle:reference="dziura">dziura (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">hole</term></foreign>)</term>
+                <meaning id="fs-id1172098361688">nieobsadzony stan w paśmie energetycznym </meaning>
+              </definition>
+              <definition id="fs-id1172098500576">
+                <term class="no-emphasis" cmlnle:reference="atom domieszki">atom domieszki (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">impurity atom</term></foreign>)</term>
+                  <meaning id="fs-id1172098447481">atom domieszki akceptorowej lub donorowej</meaning>
+                </definition>
+                <definition id="fs-id1172098529090">
+                  <term class="no-emphasis" cmlnle:reference="poziom domieszkowy">poziom domieszkowy (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">impurity band</term></foreign>)</term>
+                    <meaning id="fs-id1172098409585">poziom energetyczny powstały na skutek domieszkowania półprzewodnika</meaning>
+                  </definition>
+                  <definition id="fs-id1172101010613">
+                    <term class="no-emphasis" cmlnle:reference="nośnik większościowy">nośnik większościowy (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">majority carriers</term></foreign>)</term>
+                      <meaning id="fs-id1172098643396">swobodny elektron (lub dziura) pochodzący od atomu domieszki</meaning>
+                    </definition>
+                    <definition id="fs-id1172100595362">
+                      <term class="no-emphasis" cmlnle:reference="nośnik mniejszościowy">nośnik mniejszościowy (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">minority carriers</term></foreign>)</term>
+                        <meaning id="fs-id1172098592136">swobodny elektron (lub dziura) wzbudzony termicznie przez przerwę energetyczną</meaning>
+                      </definition>
+                      <definition id="fs-id1172098524589">
+                        <term class="no-emphasis" cmlnle:reference="półprzewodnik typu n">półprzewodnik typu n (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">n-type semiconductor</term></foreign>)</term>
+                          <meaning id="fs-id1172098419284">domieszkowany półprzewodnik, w którym głównie elektrony przewodzą prąd</meaning>
+                        </definition>
+                        <definition id="fs-id1172096216106">
+                          <term class="no-emphasis" cmlnle:reference="półprzewodnik typu p">półprzewodnik typu p (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">p-type semiconductor</term></foreign>)</term>
+                            <meaning id="fs-id1172098392100">domieszkowany półprzewodnik, w którym głównie dziury przewodzą prąd</meaning>
+                          </definition>
+                        </glossary>
+                      </document>

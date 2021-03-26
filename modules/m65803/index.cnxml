@@ -1,0 +1,2644 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Precesja żyroskopu</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65803</md:content-id>
+  <md:title>Precesja żyroskopu</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>opisywać procesy fizyczne leżące u podstaw zjawiska precesji;</item>
+<item>obliczać prędkość kątową precesji żyroskopu.</item>
+</list></md:abstract>
+  <md:uuid>74d4c7ea-d2d6-490f-aaa1-c60953b81a30</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1165036830130">
+    <link target-id="CNX_UPhysics_11_04_Gyroscope"/> przedstawia <term class="no-emphasis">żyroskop</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">gyroscope</term></foreign>), który definiujemy jako wirujący dysk (ciało – bryłę sztywną o symetrii osiowej), obracający się wokół włsnej osi symetrii, przy czym oś obrotu jest osią swobodną, to znaczy może przyjąć dowolny kierunek przestrzeni. Podczas wirowania kierunek osi obrotu żyroskopu jest niezależny od orientacji układu, w którym żyroskop jest umieszczony. Żyroskop można przenosić z miejsca na miejsce, a orientacja (kierunek) osi obrotu pozostaje taka sama. To sprawia, że żyroskopy są bardzo przydatne w nawigacji, w szczególności gdy nie można stosować kompasów magnetycznych, na przykład w załogowych i bezzałogowych statkach kosmicznych, międzykontynentalnych pociskach balistycznych, bezzałogowych statkach powietrznych oraz satelitach takich jak Hubble Space Teleskop.</para>
+    <figure id="CNX_UPhysics_11_04_Gyroscope">
+      <media id="fs-id1165036900957" alt="Żyroskop składający się z dysku wirującego wokół osi symetrii, biegnącej prostopadle do płaszczyzny dysku i przez środek. Dwa pierścienie otaczają żyroskop. Jeden jest przymocowany do wału na górze i na dole dysku, a drugi jest przymocowany do pierwszego pierścienia i znajduje się w płaszczyźnie dysku w taki sposób, że drugi pierścień jest koncentryczny z tarczą.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_04_Gyroscope.jpg"/>
+      </media>
+      <caption>Żyroskop składa się z dysku wirującego wokół osi symetrii, która może przyjmować dowolną orientację w przestrzeni.</caption>
+    </figure>
+    <para id="fs-id1165038331707">
+      <term class="no-emphasis" cmlnle:reference="precesja">Precesję</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">precession</term></foreign>) żyroskopu zilustrujmy na przykładzie zachowania się bączka na dwóch poniższych rysunkach. Jeśli punkt podparcia bączka jest umieszczony na płaskiej powierzchni w pobliżu powierzchni Ziemi, oś symetrii tworzy kąt z pionem, a bączek nie kręci się, to moment siły działający na środek ciężkości żyroskopu powoduje jego przewrócenie. Jest to pokazane na <link target-id="CNX_UPhysics_11_04_Top" cmlnle:case="locative"/>(a). Jednakże, jeśli bączek wiruje wokół swojej osi symetrii, to zamiast się przewrócić, z powodu działania momentu siły ciężkości, oś obrotu wykonuje ruch precesyjny (dokonuje precesji), tzn. oś symetrii bączka obraca się wokół określonego kierunku w przestrzeni, zakreślając powierzchnię boczną stożka, co przedstawiono w części (b) <link target-id="CNX_UPhysics_11_04_Top" cmlnle:case="genitive"/>. </para>
+      <figure id="CNX_UPhysics_11_04_Top">
+        <media id="fs-id1165038058020" alt="Rysunek a: Na pokazanym układzie współrzędnych x y z , z x na stronie, y na prawo, i z na górze. Początek jest punktem O. Górna część jest pokazana z jej punktem w miejscu pochodzenia, a jej oś jest odchylona od pionowej osi z. Oś górna jest linią O O prim. Wektor r rozciąga się od początku do środka masy, oznaczonego jako C M, wierzchołka. Siła M g działa w dół do środka masy. Moment obrotowy o pochodzeniu jest równy wektorowi r przecinającemu wektorowi M g. Ten moment jest wektorem w płaszczyźnie xy prostopadłej do wektora r. Rysunek b: Wyświetlana jest współrzędna x y z i górna. Górna krawędź jest odchylana od osi z i szybko obraca się w kierunku przeciwnym do ruchu wskazówek zegara wokół osi głównej O O, widzianej z góry. Precesja górnej śladuje w kierunku przeciwnym do ruchu wskazówek zegara, patrząc od góry, wyśrodkowana na osi z. Stożek przecięty precesją góry jest zaznaczony za pomocą linii przerywanych.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_04_Top.jpg"/>
+        </media>
+        <caption>(a) Jeżeli bączek się nie kręci, to moment siły <m:math>
+          <m:mover>
+            <m:mi>r</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+          <m:mspace width="0.2em"/>
+          <m:mo>×</m:mo>
+          <m:mspace width="0.2em"/>
+          <m:mi>m</m:mi>
+          <m:mover>
+            <m:mi>g</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:math> względem punktu podparcia O (w rzeczywistości punkt, względem którego liczymy moment sił, nie ma znaczenia, gdyż na ciało działa para sił) powoduje jego przewrócenie. (b) Jeżeli bączek obraca się wokół swojej osi <m:math>
+        <m:mi>O</m:mi>
+        <m:msup>
+          <m:mi>O</m:mi>
+          <m:mo>'</m:mo>
+        </m:msup>
+      </m:math>, to nie przewraca się, ale porusza się ruchem precesyjnym wokół osi <m:math>
+        <m:mi>z</m:mi>
+      </m:math>
+      .</caption>
+    </figure>
+    <para id="fs-id1165038198551">
+      <link target-id="CNX_UPhysics_11_04_Precess"/> przedstawia siły działające na bączek. Wektor momentu sił działa prostopadle do wektora momentu pędu. Zmienia on kierunek wektora momentu pędu <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>L</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:math>, zgodnie z zależnością <m:math>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mrow>
+      <m:mover>
+        <m:mi>L</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>M</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>t</m:mi>
+  </m:math>, ale nie jego wartość. Oś symetrii porusza się ruchem precesyjnym wokół osi pionowej, ponieważ moment sił jest zawsze poziomy i prostopadły do <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>L</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  </m:math>. Jeśli bączek nie kręci się, to uzyskuje moment pędu w kierunku momentu sił i obraca się wokół osi poziomej, a następnie upada, jak moglibyśmy oczekiwać.</para>
+  <figure id="CNX_UPhysics_11_04_Precess">
+    <media id="fs-id1165038056074" alt="Wyświetla się układ współrzędnych x y z, z x z strony, y w prawo i z w górę. Początek jest punktem O. Górna krawędź jest pokazana z jej punktem w punkcie wyjściowym, a jego oś jest nachylona przez kąt theta od pionowej osi z, zgodnie z ruchem wskazówek zegara. Wektor r rozciąga się od początku do środka masy, oznaczonego jako C M, wierzchołka. Siła M g działa w dół do środka masy. Moment, tau, o pochodzeniu jest równy wektorowi r przecinającemu się wektorem M g. Moment ten jest wektorem w płaszczyźnie xy, prostopadłej do wektora r, na stronie. Prędkość kątowa, omega, góry jest przeciwna do ruchu wskazówek zegara, patrząc od góry. Moment kątowy, L, jest w tym samym kierunku co wektor r, przechylony wzdłuż osi górnej. Okrąg wyznaczony przez precesję góry jest pokazany jako okrąg poziomego powyżej wierzchołka. Precesja prędkości kątowej omega z indeksem p jest przeciwna do ruchu wskazówek zegara, patrząc od góry. Promień koła precesyjnego to L sine theta. Wektor d L jest styczny do okręgu, wskazujący na stronę i jest równy wektorowi tau dt. Trójkąt tworzy L sine theta i pokazano dl, a kąt z dl jest oznaczony jako dph. ">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_04_Precess.jpg"/>
+    </media>
+    <caption>Wypadkowa sił działająca na środek ciężkości wytwarza moment sił <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>M</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:math> w kierunku prostopadłym do <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>L</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math>. Wartość <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>L</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math> nie zmienia się, ale kierunek <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>L</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> podlega zmianom, a oś symetrii bączka dokonuje precesji wokół osi <m:math>
+  <m:mi>z</m:mi>
+</m:math>
+.</caption>
+</figure>
+<para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1165036995141">Możemy zbadać to zjawisko samodzielnie, trzymając kręcące się koło rowerowe i próbując obrócić je wokół osi prostopadłej do osi obrotu. Jak pokazano na <link target-id="CNX_UPhysics_11_04_Bicycle" cmlnle:case="locative"/>, osoba wywiera siły prostopadłe do osi obrotu i w ten sposób próbuje obrócić koło, ale zamiast tego oś koła zaczyna zmieniać swój kierunek w lewo (tj. w stronę lewej dłoni osoby) pod wpływem przyłożonego momentu sił.</para><figure id="CNX_UPhysics_11_04_Bicycle">
+  <media id="fs-id1165037984605" alt="Na rysunku a, kobieta zwrócona twarzą do obserwatora trzyma przy osi obracające się koło rowerowe o promieniu r. Koło ustawione jest tak, że prędkość kątowa omega i kąt pędu L leżą wzdłuż osi obrotu koła, w lewo (w prawo od widza). Oznacza to, że ruch koła jest taki, że dolna część koła porusza się w kierunku kobiety (na stronę). Kierunek siły F nałożony przez jej lewą rękę jest pokazany w dół, a przez prawą rękę w kierunku do góry. Moment obrotowy tau leży w jej kierunku (na stronie). Na rysunku b pokazano dwa wektory L i delta-L, które są równoległe do tau momentu obrotowego. Wynik dwóch wektorów jest oznaczony jako L plus delta L. Kierunek obrotu, omega sub p, jest przeciwny do ruchu wskazówek zegara, jak widać z góry. ">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_04_Bicycle.jpg"/>
+  </media>
+  <caption>(a) Osoba trzymająca oburącz oś obrotu koła rowerowego próbując obrócić koło unosi oś prawą ręką w górę i popycha w dół z lewej strony. Dzięki temu powstaje wypadkowy moment sił skierowany do osoby. Ten moment sił powoduje zmianę momentu pędu w tym kierunku. (b) Diagram ilustruje dodawanie przyrostu wektora momentu pędu <m:math>
+    <m:mi mathvariant="normal">Δ</m:mi>
+    <m:mrow>
+      <m:mover>
+        <m:mi>L</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math>, równoległego do <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>M</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math>, do wektora momentu pędu koła <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>L</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>, w wyniku czego otrzymujemy nowy wektor momentu pędu. Koło porusza się w kierunku osoby, prostopadle do wektorów sił jakie ona na nie wywiera.</caption>
+</figure>
+<para id="fs-id1165038173514">Wszyscy wiemy, jak łatwo jest przewrócić się na rowerze, gdy siedzi się na nim w stanie spoczynku. Ale podczas jazdy, jest to trudniejsze (tym trudniejsze im, większa jest prędkość roweru), ponieważ, chcąc się przewrócić, musimy zmienić wektor momentu pędu obracających się kół.</para><note id="fs-id1165038229883" class="media-2">
+  <para id="fs-id1165037000048">Zobacz film o <link url="https://openstaxcollege.org/l/21gyrovideo">precesji żyroskopu</link> (<emphasis effect="italics">gyroscope precession</emphasis>) pokazujący pełną demonstrację precesji koła rowerowego.</para>
+</note>
+<para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1165038310722">Spróbuj zmienić położenie odtwarzacza Blu-Ray z umieszczonym i obracającym się w nim Blu-Ray Disc (B-RD). Łatwo jest przesunąć (bez obrotu) urządzenie w wybranym kierunku, ale znacznie trudniej jest dokonać obrotu Blu-Ray wokół osi prostopadłej do osi, wokół której obraca się B-RD, ponieważ przykładamy wówczas do działającego urządzenia odtwarzającego moment siły (prostopadły do osi obrotu B-RD), który powoduje precesję wektora momentu pędu wirującego B-RD. </para><para id="fs-id1165038356976">Możemy obliczyć szybkość precesji koła z <link target-id="CNX_UPhysics_11_04_Precess" cmlnle:case="genitive"/>. Widzimy, że wielkość momentu sił wynosi</para>
+<equation id="fs-id1165038010430" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mi>M</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>r</m:mi>
+    <m:mi>m</m:mi>
+    <m:mi>g</m:mi>
+    <m:mspace width="0.2em"/>
+    <m:mtext>sin</m:mtext>
+    <m:mspace width="0.2em"/>
+    <m:mi>θ</m:mi>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1165037848462">Stąd</para>
+<equation id="fs-id1165038383738" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mtext>d</m:mtext>
+    <m:mi>L</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>r</m:mi>
+    <m:mi>m</m:mi>
+    <m:mi>g</m:mi>
+    <m:mspace width="0.2em"/>
+    <m:mtext>sin</m:mtext>
+    <m:mspace width="0.2em"/>
+    <m:mi>θ</m:mi>
+    <m:mspace width="0.2em"/>
+    <m:mtext>d</m:mtext>
+    <m:mi>t</m:mi>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1165038379266">Kąt, o jaki zmienia się wektor momentu pędu w czasie <m:math>
+  <m:mtext>d</m:mtext>
+  <m:mi>t</m:mi>
+  </m:math>, jest równy (z <link target-id="CNX_UPhysics_11_04_Precess" cmlnle:case="genitive"/> i definicji kąta płaskiego mamy <m:math display="inline"><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>ϕ</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mrow><m:mi>L</m:mi><m:mo>/</m:mo><m:mi>L</m:mi></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:mi>θ</m:mi></m:mrow></m:mrow></m:mrow></m:math>)</para><equation id="fs-id1165038192661" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mtext>d</m:mtext>
+      <m:mi>ϕ</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mtext>d</m:mtext>
+          <m:mi>L</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>L</m:mi>
+          <m:mspace width="0.2em"/>
+          <m:mtext>sin</m:mtext>
+          <m:mspace width="0.2em"/>
+          <m:mi>θ</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mi>r</m:mi>
+          <m:mi>m</m:mi>
+          <m:mi>g</m:mi>
+          <m:mspace width="0.2em"/>
+          <m:mtext>sin</m:mtext>
+          <m:mspace width="0.2em"/>
+          <m:mi>θ</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mi>L</m:mi>
+          <m:mspace width="0.2em"/>
+          <m:mtext>sin</m:mtext>
+          <m:mspace width="0.2em"/>
+          <m:mi>θ</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mtext>d</m:mtext>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mi>r</m:mi>
+          <m:mi>m</m:mi>
+          <m:mi>g</m:mi>
+        </m:mrow>
+        <m:mi>L</m:mi>
+      </m:mfrac>
+      <m:mtext>d</m:mtext>
+      <m:mi>t</m:mi>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para id="fs-id1165036995012">Prędkość kątową precesji określa wzór <m:math>
+    <m:msub>
+      <m:mi>ω</m:mi>
+      <m:mtext>p</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>ϕ</m:mi>
+    <m:mrow>
+      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+    </m:mrow>
+    <m:mrow>
+      <m:mi mathvariant="normal">d</m:mi>
+    </m:mrow>
+    <m:mi>t</m:mi>
+    </m:math>, z którego wynika jej wartość </para>
+    <equation id="fs-id1165038334175" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:msub>
+          <m:mi>ω</m:mi>
+          <m:mtext>p</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mi>r</m:mi>
+            <m:mi>m</m:mi>
+            <m:mi>g</m:mi>
+          </m:mrow>
+          <m:mi>L</m:mi>
+        </m:mfrac>
+        <m:mo>,</m:mo></m:math></equation>
+		<para id="fs-idm425578592">a ponieważ <m:math><m:mi>L</m:mi>
+        <m:mo>=</m:mo>
+        <m:mi>I</m:mi>
+        <m:mi>ω</m:mi></m:math>, to <m:math>
+        <m:msub>
+          <m:mi>ω</m:mi>
+          <m:mtext>p</m:mtext>
+        </m:msub></m:math> można wyrazić jako</para><note id="fs-id1165038184162" class="equation-callout">
+      <equation id="fs-id1165036990079">
+        <label/>
+        <m:math>
+          <m:msub>
+            <m:mi>ω</m:mi>
+            <m:mtext>p</m:mtext>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi>r</m:mi>
+              <m:mi>m</m:mi>
+              <m:mi>g</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mi>I</m:mi>
+              <m:mi>ω</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+    </note>
+    <para id="fs-id1165037997345">W tym wyprowadzeniu założyliśmy, że <m:math>
+      <m:msub>
+        <m:mi>ω</m:mi>
+        <m:mtext>p</m:mtext>
+      </m:msub>
+      <m:mo>≪</m:mo>
+      <m:mi>ω</m:mi>
+    </m:math>, to znaczy, że prędkość kątowa precesji jest znacznie mniejsza niż prędkość kątowa obrotów wokół osi żyroskopu. W rzeczywistości prędkość kątowa precesji dodaje niewielką składową do momentu pędu żyroskopu wzdłuż osi <m:math>
+      <m:mi>z</m:mi>
+    </m:math>
+    . Objawia się to podczas precesji żyroskopu niewielkim wahaniem w górę i w dół jego osi obrotu. Zjawisko to nosi nazwę nutacji. </para><para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1165038037226">Sama Ziemia zachowuje się jak gigantyczny żyroskop. Wektor moment pędu Ziemi jest równoległy do jej osi i wskazuje na Gwiazdę Północną. Ale Ziemia ulega powolnej precesji (raz na około 26 000 lat) ze względu na moment siły grawitacji Słońca i Księżyca oraz na jej niesferyczny kształt (Ziemia ma kształt elipsoidy obrotowej; jest spłaszczona przy biegunach o około 23 km).</para><example id="fs-id1165037982225">
+      <para id="fs-id1165038046435">
+        <title>Okres precesji</title>Żyroskop kręci się i jego dolny końcowy fragment umieszczony jest na poziomej powierzchni i dlatego mamy do czynienia z nieznacznym oporem siły tarcia. Dysk żyroskopu ma masę 0,3 kg i wiruje z częstotliwością 20 obr/s. Jego środek masy jest odległy 5,0 cm od osi obrotu i promień jego tarczy wynosi 5,0 cm. Jaki jest okres precesji żyroskopu?</para>
+        <para id="fs-id1165038054751">
+          <title>Strategia rozwiązania</title>Zastosujemy <link target-id="fs-id1165036990079"/>, aby znaleźć prędkość kątową precesji żyroskopu. To pozwoli nam wyznaczyć okres precesji.</para>
+          <para id="fs-id1165037967653">
+            <title>Rozwiązanie</title>Moment bezwładności tarczy wynosi</para>
+            <equation id="fs-id1165038364104" class="unnumbered">
+              <label/>
+              <m:math>
+                <m:mi>I</m:mi>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mi>m</m:mi>
+                <m:msup>
+                  <m:mi>r</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:mo>⋅</m:mo>
+                <m:mn>0,30</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>0,05</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:mn>3,75</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                </m:msup>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>,</m:mo>
+              </m:math>
+            </equation>
+            <para id="fs-id1165038249568">a jego prędkość kątowa</para>
+            <equation id="fs-id1165037936500" class="unnumbered">
+              <label/>
+              <m:math>
+                <m:mn>20,0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">o</m:mi>
+                  <m:mi mathvariant="normal">b</m:mi>
+                  <m:mi mathvariant="normal">r</m:mi>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mn>20,0</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">r</m:mi>
+                  <m:mi mathvariant="normal">a</m:mi>
+                  <m:mi mathvariant="normal">d</m:mi>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mn>125,66</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">r</m:mi>
+                  <m:mi mathvariant="normal">a</m:mi>
+                  <m:mi mathvariant="normal">d</m:mi>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                <m:mo>.</m:mo>
+              </m:math>
+            </equation>
+            <para id="fs-id1165038376026">Obie wielkości możemy teraz wstawić do <link target-id="fs-id1165036990079" cmlnle:case="genitive"/>. Prędkość kątowa precesji jest równa</para>
+            <equation xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1165038183843" class="unnumbered"><label/>
+              <m:math>
+                <m:msub>
+                  <m:mi>ω</m:mi>
+                  <m:mtext>p</m:mtext>
+                </m:msub>
+<m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi>r</m:mi>
+                    <m:mi>m</m:mi>
+                    <m:mi>g</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mi>I</m:mi>
+                    <m:mi>ω</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>0,05</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                    <m:mo>⋅</m:mo>
+                    <m:mn>0,3</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">k</m:mi>
+                      <m:mi mathvariant="normal">g</m:mi>
+                    </m:mrow>
+                    <m:mo>⋅</m:mo>
+                    <m:mn>9,8</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:msup>
+                        <m:mi mathvariant="normal">s</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>3,75</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>4</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">k</m:mi>
+                      <m:mi mathvariant="normal">g</m:mi>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    <m:mo>⋅</m:mo>
+                    <m:mn>125,66</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">r</m:mi>
+                      <m:mi mathvariant="normal">a</m:mi>
+                      <m:mi mathvariant="normal">d</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mn>3,12</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">r</m:mi>
+                  <m:mi mathvariant="normal">a</m:mi>
+                  <m:mi mathvariant="normal">d</m:mi>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                <m:mo>,</m:mo>
+              </m:math>
+            </equation><para id="fs-id1165037078744">natomiast okres precesji żyroskopu wynosi</para>
+            <equation id="fs-id1165038021514" class="unnumbered">
+              <label/>
+              <m:math>
+                <m:msub>
+                  <m:mi>T</m:mi>
+                  <m:mtext>p</m:mtext>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>π</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>3,12</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">r</m:mi>
+                      <m:mi mathvariant="normal">a</m:mi>
+                      <m:mi mathvariant="normal">d</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>=</m:mo>
+                <m:mn>2,0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                <m:mo>.</m:mo>
+              </m:math>
+            </equation>
+            <para id="fs-id1165037026304">
+              <title>Znaczenie</title>
+              <emphasis effect="bold">Prędkość</emphasis> kątowa precesji, 3,12 rad/s, lub częstotliwość precesji równa około 0,5 obr/s, jest znacznie mniejsza niż częstotliwość 20 obr/s tarczy żyroskopu. Dlatego też nie należy się spodziewać dużej składowej momentu pędu na skutek precesji, a równanie jest dobrym przybliżeniem prędkości kątowej precesji.</para>
+            </example>
+            <note id="fs-id1165037948134" class="check-understanding">
+              <exercise id="fs-id1165038053442">
+                <problem id="fs-id1165036846942">
+                  <para id="fs-id1165038202555">
+                    <emphasis effect="bold">Sprawdź, czy rozumiesz. </emphasis> Żyroskop ma prędkość kątową precesji 5,0 rad/s na Ziemi. Jaka jest prędkość kątowa precesji na Księżycu?</para>
+                  </problem>
+                  <solution id="fs-id1165037850054">
+                    <para id="fs-id1165037271048">Przyspieszenie grawitacyjne na Księżycu wynosi 1/6 tego co na Ziemi. Z równania widzimy, że prędkość kątowa precesji jest proporcjonalna do przyspieszenia ziemskiego. Wszystkie pozostałe wielkości: masa, moment bezwładności i prędkość kątowa wokół osi żyroskopu są takie same na Księżycu. Tak więc prędkość kątowa precesji na Księżycu jest równa<newline/>
+                      <m:math>
+                        <m:msub>
+                          <m:mi>ω</m:mi>
+                          <m:mtext>p</m:mtext>
+                        </m:msub>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mtext>Księżyca</m:mtext>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>6</m:mn>
+                        </m:mfrac>
+                        <m:msub>
+                          <m:mi>ω</m:mi>
+                          <m:mtext>p</m:mtext>
+                        </m:msub>
+                        <m:mrow>
+                          <m:mo>(</m:mo>
+                          <m:mtext>Ziemi</m:mtext>
+                          <m:mo>)</m:mo>
+                        </m:mrow>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>6</m:mn>
+                        </m:mfrac>
+                        <m:mo>⋅</m:mo>
+                        <m:mn>5,0</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">r</m:mi>
+                          <m:mi mathvariant="normal">a</m:mi>
+                          <m:mi mathvariant="normal">d</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                        <m:mo>=</m:mo>
+                        <m:mn>0,83</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">r</m:mi>
+                          <m:mi mathvariant="normal">a</m:mi>
+                          <m:mi mathvariant="normal">d</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                        <m:mo>.</m:mo>
+                      </m:math>
+                    </para>
+                  </solution>
+                </exercise>
+              </note>
+              <section id="fs-id1165038298264" class="key-concepts">
+                <title>Podsumowanie</title>
+                <list id="fs-id1165038041222" list-type="bulleted" bullet-style="bullet"><item>Gdy żyroskop jest umieszczony na obrotowym trzpieniu na powierzchni ziemi i wiruje wokół własnej osi symetrii, to wykonuje precesję wokół osi pionowej, ponieważ moment siły jest zawsze poziomy i prostopadły do <m:math>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>L</m:mi>
+                        <m:mtext>→</m:mtext>
+                      </m:mover>
+                    </m:mrow>
+                    </m:math>. Jeżeli żyroskop nie kręci się, uzyskuje moment pędu w kierunku momentu siły i obraca się wokół osi poziomej i wypada z trzpienia, jak moglibyśmy tego oczekiwać.</item>
+                    <item>Prędkość kątową precesji wyraża wzór <m:math>
+                      <m:msub>
+                        <m:mi>ω</m:mi>
+                        <m:mtext>p</m:mtext>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mi>r</m:mi>
+                      <m:mi>m</m:mi>
+                      <m:mi>g</m:mi>
+                      <m:mrow>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      </m:mrow>
+                      <m:mi>I</m:mi>
+                      <m:mi>ω</m:mi>
+                    </m:math>, gdzie: <m:math>
+                    <m:mi>r</m:mi>
+                  </m:math> jest odległością od osi, wokół której następuje precesja, do środka masy żyroskopu, <m:math>
+                  <m:mi>I</m:mi>
+                </m:math> jest momentem bezwładności wirującego dysku żyroskopu, <m:math>
+                <m:mi>m</m:mi>
+              </m:math> jest jego masą, a <m:math>
+              <m:mi>ω</m:mi>
+              </m:math> jest prędkością kątową żyroskopu.</item>
+            </list></section>
+          <section id="fs-id1165037979908" class="key-equations">
+            <title>Najważniejsze wzory</title>
+            <table id="fs-id1170901754929" class="unnumbered unstyled" summary="Tabela podaje następujące zależności : Prędkość środka masy toczącego się ciała , V z indksem CM równe R omega; Przyspieszenie środka masy toczącego się ciała , a z indeksem CM równe R alpha; Przemieszczenie środka masy toczącego się ciała , d z indeksem CM równe R theta; Przyspieszanie w ruchu tocznym bez poślizgu , a z indeksem CM równe mg sinus theta liczniku przez m plus nawias otwarty I z indeksem CM przez r do kwadratu nawias zamknięty w mianownikku ; Moment pędu , wektor l równy z wektorem r razy wektor p; Pochodna momentu pędu równa momentowi siły , d przez dt wektor l równy sumie tau; Moment pędu układu cząsteczek , wektor L równy wektorowi l1 plus wektor l2 plus plus wektor lN; W przypadku układu cząstek pochodna momentu pędu jest równa , d przez dt wektor L równy sumie tau; Moment pędu obracającej sie bryły sztywnej , L równe I omega; Zachowanie momentu pędu , d przez dt wektor L równy zero; Zasada zachowania momentu pędu , wektor L równy wektorowi l1 plus wektor l2 plus plus wektor lN równy constant; Prędkość kątowa precesji, omega z indeksem P równa r M g przez I omega.">
+              <label/>
+              <tgroup cols="2">
+                <colspec colnum="1" colname="c1"/>
+                <colspec colnum="2" colname="c2"/>
+                <tbody>
+                  <row valign="top">
+                    <entry valign="top" align="left">Prędkość środka masy toczącego się ciała</entry>
+                    <entry valign="top" align="left">
+                      <m:math>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mi>R</m:mi>
+                        <m:mi>ω</m:mi>
+                      </m:math>
+                    </entry>
+                  </row>
+                  <row valign="top">
+                    <entry valign="top" align="left">Przyspieszenie środka masy toczącego się ciała</entry>
+                    <entry valign="top" align="left">
+                      <m:math>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mi>R</m:mi>
+                        <m:mi>ε</m:mi>
+                      </m:math>
+                    </entry>
+                  </row>
+                  <row valign="top">
+                    <entry valign="top" align="left">Przemieszczenie środka masy toczącego się ciała</entry>
+                    <entry valign="top" align="left">
+                      <m:math>
+                        <m:msub>
+                          <m:mi>d</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mi>R</m:mi>
+                        <m:mi>θ</m:mi>
+                      </m:math>
+                    </entry>
+                  </row>
+                  <row valign="top">
+                    <entry valign="top" align="left">Przyspieszenie w ruchu tocznym bez poślizgu</entry>
+                    <entry valign="top" align="left">
+                      <m:math>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mi>m</m:mi>
+                            <m:mi>g</m:mi>
+                            <m:mspace width="0.2em"/>
+                            <m:mtext>sin</m:mtext>
+                            <m:mspace width="0.2em"/>
+                            <m:mi>θ</m:mi>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mi>m</m:mi>
+                            <m:mo>+</m:mo>
+                            <m:mrow>
+                              <m:mo>(</m:mo>
+                              <m:msub>
+                                <m:mi>I</m:mi>
+                                <m:mtext>ŚM</m:mtext>
+                              </m:msub>
+                            </m:mrow>
+                            <m:mtext>/</m:mtext>
+                            <m:mrow>
+                              <m:msup>
+                                <m:mi>r</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                              <m:mo>)</m:mo>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:math>
+                    </entry>
+                  </row>
+                  <row valign="top">
+                    <entry valign="top" align="left">Moment pędu</entry>
+                    <entry valign="top" align="left">
+                      <m:math>
+                        <m:mover>
+                          <m:mi>l</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                        <m:mo>=</m:mo>
+                        <m:mover>
+                          <m:mi>r</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                        <m:mspace width="0.2em"/>
+                        <m:mo>×</m:mo>
+                        <m:mspace width="0.2em"/>
+                        <m:mover>
+                          <m:mi>p</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                      </m:math>
+                    </entry>
+                  </row>
+                  <row valign="top">
+                    <entry valign="top" align="left">Pochodna momentu pędu równa momentowi siły</entry>
+                    <entry valign="top" align="left">
+                      <m:math>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mtext>d</m:mtext>
+                            <m:mover>
+                              <m:mi>l</m:mi>
+                              <m:mtext>→</m:mtext>
+                            </m:mover>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mtext>d</m:mtext>
+                            <m:mi>t</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>=</m:mo>
+                        <m:mo>∑</m:mo>
+                        <m:mover>
+                          <m:mi>M</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                      </m:math>
+                    </entry>
+                  </row>
+                  <row valign="top">
+                    <entry valign="top" align="left">Moment pędu układu cząstek</entry>
+                    <entry valign="top" align="left">
+                      <m:math>
+                        <m:mover>
+                          <m:mi>L</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                        <m:mo>=</m:mo>
+                        <m:msub>
+                          <m:mover>
+                            <m:mi>l</m:mi>
+                            <m:mtext>→</m:mtext>
+                          </m:mover>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>+</m:mo>
+                        <m:msub>
+                          <m:mover>
+                            <m:mi>l</m:mi>
+                            <m:mtext>→</m:mtext>
+                          </m:mover>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                        <m:mo>+</m:mo>
+                        <m:mo>⋯</m:mo>
+                        <m:mo>+</m:mo>
+                        <m:msub>
+                          <m:mover>
+                            <m:mi>l</m:mi>
+                            <m:mtext>→</m:mtext>
+                          </m:mover>
+                          <m:mi>N</m:mi>
+                        </m:msub>
+                      </m:math>
+                    </entry>
+                  </row>
+                  <row valign="top">
+                    <entry valign="top" align="left">W przypadku układu cząstek pochodna momentu pędu jest równa</entry>
+                    <entry valign="top" align="left">
+                      <m:math>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mtext>d</m:mtext>
+                            <m:mover>
+                              <m:mi mathvariant="normal">L</m:mi>
+                              <m:mtext>→</m:mtext>
+                            </m:mover>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mtext>d</m:mtext>
+                            <m:mi>t</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>=</m:mo>
+                        <m:mo>∑</m:mo>
+                        <m:mover>
+                          <m:mi mathvariant="normal">M</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                      </m:math>
+                    </entry>
+                  </row>
+                  <row valign="top">
+                    <entry valign="top" align="left">Moment pędu obracającej się bryły sztywnej</entry>
+                    <entry valign="top" align="left">
+                      <m:math>
+                        <m:mrow>
+                          <m:mi>L</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mi>I</m:mi>
+                          <m:mi>ω</m:mi>
+                        </m:mrow>
+                      </m:math>
+                    </entry>
+                  </row>
+                  <row valign="top">
+                    <entry valign="top" align="left">Zachowanie momentu pędu</entry>
+                    <entry valign="top" align="left">
+                      <m:math>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mtext>d</m:mtext>
+                            <m:mover>
+                              <m:mi>L</m:mi>
+                              <m:mtext>→</m:mtext>
+                            </m:mover>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mtext>d</m:mtext>
+                            <m:mi>t</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:math>
+                    </entry>
+                  </row>
+                  <row valign="top">
+                    <entry valign="top" align="left">Zasada zachowania momentu pędu</entry>
+                    <entry valign="top" align="left">
+                      <m:math>
+                        <m:mover>
+                          <m:mi>L</m:mi>
+                          <m:mtext>→</m:mtext>
+                        </m:mover>
+                        <m:mo>=</m:mo>
+                        <m:msub>
+                          <m:mover>
+                            <m:mi>l</m:mi>
+                            <m:mtext>→</m:mtext>
+                          </m:mover>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>+</m:mo>
+                        <m:msub>
+                          <m:mover>
+                            <m:mi>l</m:mi>
+                            <m:mtext>→</m:mtext>
+                          </m:mover>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                        <m:mo>+</m:mo>
+                        <m:mo>⋯</m:mo>
+                        <m:mo>+</m:mo>
+                        <m:msub>
+                          <m:mover>
+                            <m:mi>l</m:mi>
+                            <m:mtext>→</m:mtext>
+                          </m:mover>
+                          <m:mi>N</m:mi>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mtext>constant</m:mtext>
+                      </m:math>
+                    </entry>
+                  </row>
+                  <row valign="top">
+                    <entry valign="top" align="left">Prędkość kątowa precesji</entry>
+                    <entry valign="top" align="left">
+                      <m:math>
+                        <m:msub>
+                          <m:mi>ω</m:mi>
+                          <m:mtext>p</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mi>r</m:mi>
+                            <m:mi>m</m:mi>
+                            <m:mi>g</m:mi>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mi>I</m:mi>
+                            <m:mi>ω</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:math>
+                    </entry>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table>
+          </section>
+          <section id="fs-id1165037038127" class="review-conceptual-questions">
+            <title>Pytania</title>
+            <exercise id="fs-id1165038023965">
+              <problem id="fs-id1165038349302">
+                <para id="fs-id1165037151815">Żyroskopy stosowane w systemach naprowadzania w celu wskazywania kierunku w przestrzeni muszą mieć niezerowy moment pędu, który nie może zmieniać kierunku. Po zainstalowaniu ich w pojeździe (również w samolocie, rakiecie, pojeździe kosmicznym) są umieszczone w komorze, która jest oddzielona od głównego kadłuba pojazdu tak, że zmiany w jego orientacji nie mają wpływu na orientację żyroskopu. Jeżeli pojazd poddawany jest działaniu dużych sił oraz przyspieszeń, to w jaki sposób kierunek momentu pędu, a tym samym osi żyroskopu, może być przez cały czas stały?</para>
+              </problem>
+              <solution id="fs-id1165038015942">
+                <para id="fs-id1165038002450">Aby zmienić moment pędu żyroskopu (kręt), potrzebny jest moment sił w kierunku do niego prostopadłym. Ale siły działające na pojazd są siłami działającymi na zewnątrz pojemnika, w którym zamontowany jest żyroskopm i nie działają na oś obracającego się żyroskopu.</para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1165038039328">
+              <problem id="fs-id1165038353938">
+                <para id="fs-id1165038385433">Ziemia porusza się ruchem precesyjnym wokół swojej osi pionowej z okresem 26 000 lat. Przedyskutuj, czy <link target-id="fs-id1165036990079"/> może być wykorzystane do obliczenia prędkości kątowej precesji Ziemi?</para>
+              </problem>
+            </exercise>
+          </section>
+          <section id="fs-id1165036730065" class="review-problems">
+            <title>Zadania</title>
+            <exercise id="fs-id1165038011972">
+              <problem id="fs-id1165036756335">
+                <para id="fs-id1165037092873">Żyroskop ma wbudowany dysk o masie 0,5 kg i promieniu 10 cm, który obraca się z częstotliwością 40 obr/s. Środek masy dysku znajduje się w odległości 10 cm od trzpienia obrotowego, na którym osadzona jest oś obrotu żyroskopu. Jaka jest prędkość kątowa jego precesji?</para>
+              </problem>
+              <solution id="fs-id1165037847376">
+                <para id="fs-id1165036846832">
+                  <m:math>
+                    <m:mi>I</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>2,5</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">k</m:mi>
+                      <m:mi mathvariant="normal">g</m:mi>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:math>,<newline/>
+                  <m:math>
+                    <m:msub>
+                      <m:mi>ω</m:mi>
+                      <m:mtext>p</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mn>0,78</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">r</m:mi>
+                      <m:mi mathvariant="normal">a</m:mi>
+                      <m:mi mathvariant="normal">d</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    </m:math>.</para>
+                  </solution>
+                </exercise>
+                <exercise id="fs-id1165038052721">
+                  <problem id="fs-id1165037846735">
+                    <para id="fs-id1165037861675">Prędkość kątowa precesji żyroskopu wynosi 1,0 rad/s. Jeżeli masa obracającej się tarczy (dysku) żyroskopu wynosi 0,4 kg, jego promień 30 cm, a odległość od środka masy do przegubu (trzpienia) obrotowego jest równa promieniowi, to jaka jest częstotliwość obrotów dysku?</para>
+                  </problem>
+                </exercise>
+                <exercise id="fs-id1165038048019">
+                  <problem id="fs-id1165037927895">
+                    <para id="fs-id1165036782973">Oś Ziemi tworzy kąt <m:math>
+                      <m:mn>23</m:mn>
+                      <m:mo>,</m:mo>
+                      <m:msup>
+                        <m:mn>5</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      </m:math> z kierunkiem prostopadłym do płaszczyzny orbity ziemskiej (ekliptyki). Tak jak pokazano poniżej, oś ta ulega precesji, przy czym jeden kompletny obrót wynosi 25 780 lat. </para>
+                      <para id="fs-id1165036741332">(a) Oblicz zmianę momentu pędu dla połowy tego czasu. </para>
+                      <para id="fs-id1165037980941">(b) Jaki jest średni moment sił, które powodują tę zmianę momentu pędu?</para>
+                      <para id="fs-id1165037029545">(c) W przypadku gdyby moment ten został wywołany przez parę sił przyłożonych w najbardziej efektywnych punktach, tj. na równiku, to jaka jest ich wartość? </para>
+                      <media id="fs-id1165038349493" alt="Figura przedstawia obraz Ziemi. Płaszczyzna orbity Ziemi jest pokazana jako linia pozioma na równiku. Oś północ–południe jest odchylona od pionu o kąt 23,5 stopnia. Wektory, L i L prim, nachylone pod kątem 23.5 do pionu są zaczepione w środku Ziemi. Wektor L przechodzi przez biegun północny Ziemi. Groty wektorów dotykają obwodu koła, które, jeśli patrzymy z góry obraca się w kierunku przeciwnym do ruchu wskazówek zegara. Wektor delta L jest skierowany w lewo, wzdłuż średnicy koła.">
+                        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_04_Prob7_img.jpg"/>
+                      </media>
+                    </problem>
+                    <solution id="fs-id1165038051884">
+                      <para id="fs-id1165036786085">a. <m:math>
+                        <m:msub>
+                          <m:mi>L</m:mi>
+                          <m:mtext>Ziemi</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mn>7,06</m:mn>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mrow>
+                            <m:mn>33</m:mn>
+                          </m:mrow>
+                        </m:msup>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">k</m:mi>
+                          <m:mi mathvariant="normal">g</m:mi>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                      </m:math>,<newline/>
+                      <m:math>
+                        <m:mi mathvariant="normal">Δ</m:mi>
+                        <m:mi>L</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>5,63</m:mn>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mn>10</m:mn>
+                          <m:mrow>
+                            <m:mn>33</m:mn>
+                          </m:mrow>
+                        </m:msup>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">k</m:mi>
+                          <m:mi mathvariant="normal">g</m:mi>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">s</m:mi>
+                        </m:mrow>
+                      </m:math>;<newline/>b. <m:math>
+                      <m:mi>M</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>1,38</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mrow>
+                          <m:mn>22</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">N</m:mi>
+                        <m:mo>⋅</m:mo>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:math>;<newline/>c. <m:math>
+                    <m:mi>F</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>1,08</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mn>15</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">N</m:mi>
+                    </m:mrow>
+                    </m:math>.</para>
+                  </solution>
+                </exercise>
+              </section>
+              <section id="fs-id1165037846368" class="review-additional-problems">
+                <title>Zadania dodatkowe</title>
+                <exercise id="fs-id1165036993455">
+                  <problem id="fs-id1165038363946">
+                    <para id="fs-id1165038298753">Kulka toczy się po płaszczyźnie poziomej z prędkością 7,0 m/s, a następnie zaczyna się wtaczać na płaszczyznę nachyloną pod kątem <m:math>
+                      <m:msup>
+                        <m:mn>30</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      </m:math> do płaszczyzny poziomej. <newline/>(a) Jaką odległość przebędzie kula wzdłuż nachylonej płaszczyzny przed zatrzymaniem się? <newline/>(b) Ile czasu upłynie do jej zatrzymania się?</para>
+                    </problem>
+                  </exercise>
+                  <exercise id="fs-id1165036834113">
+                    <problem id="fs-id1165038023085">
+                      <para id="fs-id1165036886627">Rozwiąż poprzednie zadanie, zastępując pełną kulę kulą wydrążoną. Wyjaśnij otrzymane wyniki.</para>
+                    </problem>
+                    <solution id="fs-id1165036847469">
+                      <para id="fs-id1165038017243">a. <m:math>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mo>−</m:mo>
+                        <m:mfrac>
+                          <m:mn>3</m:mn>
+                          <m:mn>10</m:mn>
+                        </m:mfrac>
+                        <m:mi>g</m:mi>
+                      </m:math>,<newline/>
+                      <m:math>
+                        <m:msup>
+                          <m:mi>v</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>=</m:mo>
+                        <m:msubsup>
+                          <m:mi>v</m:mi>
+                          <m:mn>0</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:msubsup>
+                        <m:mo>+</m:mo>
+                        <m:mn>2</m:mn>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mtext>ŚM</m:mtext>
+                        </m:msub>
+                        <m:mspace width="thickmathspace"/>
+                        <m:mo stretchy="false">⟹</m:mo>
+                        <m:mspace width="thickmathspace"/>
+                        <m:msup>
+                          <m:mi>v</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>=</m:mo>
+                        <m:msup>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mrow>
+                              <m:mn>7,0</m:mn>
+                              <m:mspace width="0.2em"/>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">m</m:mi>
+                                <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                <m:mi mathvariant="normal">s</m:mi>
+                              </m:mrow>
+                            </m:mrow>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>−</m:mo>
+                        <m:mn>2</m:mn>
+                        <m:mo>⋅</m:mo>
+                        <m:mfrac>
+                          <m:mn>3</m:mn>
+                          <m:mn>10</m:mn>
+                        </m:mfrac>
+                        <m:mi>g</m:mi>
+                        <m:mo>⋅</m:mo>
+                        <m:mi>x</m:mi>
+                      </m:math>, <m:math>
+                      <m:msup>
+                        <m:mi>v</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>=</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mspace width="thickmathspace"/>
+                      <m:mo stretchy="false">⟹</m:mo>
+                      <m:mspace width="thickmathspace"/>
+                      <m:mi>x</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>8,34</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:math>;<newline/>b. <m:math>
+                    <m:mi>t</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>v</m:mi>
+                        <m:mo>−</m:mo>
+                        <m:msub>
+                          <m:mi>v</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mtext>ŚM</m:mtext>
+                      </m:msub>
+                    </m:mfrac>
+                    <m:mo>,</m:mo>
+                    <m:mspace width="0.5em"/>
+                  </m:math>
+                  <m:math>
+                    <m:mi>v</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>v</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mtext>ŚM</m:mtext>
+                    </m:msub>
+                    <m:mi>t</m:mi>
+                    <m:mspace width="thickmathspace"/>
+                    <m:mo stretchy="false">⟹</m:mo>
+                    <m:mspace width="thickmathspace"/>
+                    <m:mi>t</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>2,38</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    </m:math>;<newline/>Wydrążona kula ma większy moment bezwładności, a więc mniejszą wartość przyspieszenia niż kula pełna. Dlatego przebyta przez nią odległość jest teraz większa, a czasm jaki upłynąłm jest dłuższy niż pełnej kuli.</para>
+                  </solution>
+                </exercise>
+                <exercise id="fs-id1165038009026">
+                  <problem id="fs-id1165037983074">
+                    <para id="fs-id1165037026530">Masa obręczy o promieniu 1,0 m wynosi 6,0 kg. Obręcz toczy się po poziomej powierzchni z prędkością 10,0 m/s. (a) Jaka praca jest potrzebna, aby zatrzymać obręcz? (b) Jeśli obręcz zaczyna wtaczać się na powierzchnię umieszczoną pod kątem <m:math>
+                      <m:msup>
+                        <m:mn>30</m:mn>
+                        <m:mo>∘</m:mo>
+                      </m:msup>
+                      </m:math> w stosunku do poziomu z prędkością 10,0 m/s, to jak daleko wzdłuż pochyłości będzie się toczyć przed zatrzymaniem i stoczeniem się z powrotem na dół?</para>
+                    </problem>
+                  </exercise>
+                  <exercise id="fs-id1165038249122">
+                    <problem id="fs-id1165038305352">
+                      <para id="fs-id1165036883382">Rozwiąż powyższe zadanie dla wydrążonej sfery o tym samym promieniu, masie i prędkości początkowej. Wyjaśnij różnice w wynikach.</para>
+                    </problem>
+                    <solution id="fs-id1165037967947">
+                      <para id="fs-id1165038024254">a. <m:math>
+                        <m:mi>W</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mo>−</m:mo>
+                        <m:mn>500,0</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">J</m:mi>
+                        </m:mrow>
+                      </m:math>;<newline/>b. <m:math>
+                      <m:mi>K</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:msub>
+                        <m:mi>U</m:mi>
+                        <m:mtext>graw</m:mtext>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mtext>constant</m:mtext>
+                    </m:math>,<newline/>
+                    <m:math>
+                      <m:mn>500</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">J</m:mi>
+                      </m:mrow>
+                      <m:mo>+</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">J</m:mi>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mo>+</m:mo>
+                      <m:mn>6,0</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">k</m:mi>
+                        <m:mi mathvariant="normal">g</m:mi>
+                      </m:mrow>
+                      <m:mo>⋅</m:mo>
+                      <m:mn>9,8</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:msup>
+                          <m:mi mathvariant="normal">s</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo>⋅</m:mo>
+                      <m:mi>h</m:mi>
+                    </m:math>,<newline/>
+                    <m:math>
+                      <m:mi>h</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>8,5</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:math>, <m:math>
+                    <m:mi>d</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>17,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                    </m:math>;<newline/>Moment bezwładności jest mniejszy dla wydrążonej kuli niż dla obręczy, w związku z czym mniej pracy potrzeba, aby ją zatrzymać. Podobnie przebyta przez nią droga jest krótsza niż obręczy.</para>
+                  </solution>
+                </exercise>
+                <exercise id="fs-id1165037168860">
+                  <problem id="fs-id1165036779762">
+                    <para id="fs-id1165036779764">Cząstka ma masę 0,5 kg i porusza się wzdłuż prostej <m:math>
+                      <m:mi>x</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>5,0</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:math> z prędkością 2,0 m/s, w dodatnim kierunku osi <m:math>
+                      <m:mi>y</m:mi>
+                    </m:math>
+                    . Ile wynosi moment pędu cząstki?</para>
+                  </problem>
+                </exercise>
+                <exercise id="fs-id1165037914410">
+                  <problem id="fs-id1165038326873">
+                    <para id="fs-id1165038326875">Cząstka o masie 4,0 kg porusza się po okręgu o promieniu 2,0 m. Moment pędu cząstki zmienia się w czasie, zgodnie z zależnością <m:math>
+                      <m:mi>l</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>5,0</m:mn>
+                      <m:msup>
+                        <m:mi>t</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:math>. (a) Ile wynosi moment siły działającej na cząstkę względem środka okręgu w <m:math>
+                    <m:mi>t</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>3,4</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:math>? (b) Ile wynosi prędkość kątowa cząstki w czasie <m:math>
+                  <m:mi>t</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>3,4</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  </m:math>?</para>
+                </problem>
+                <solution id="fs-id1165037176278">
+                  <para id="fs-id1165038327648">a. <m:math>
+                    <m:mi>M</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>34,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">N</m:mi>
+                      <m:mo>⋅</m:mo>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                  </m:math>;<newline/>b. <m:math>
+                  <m:mi>l</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mi>m</m:mi>
+                  <m:msup>
+                    <m:mi>r</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mi>ω</m:mi>
+                  <m:mspace width="thickmathspace"/>
+                  <m:mo stretchy="false">⟹</m:mo>
+                  <m:mspace width="thickmathspace"/>
+                  <m:mi>ω</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>3,6</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">r</m:mi>
+                    <m:mi mathvariant="normal">a</m:mi>
+                    <m:mi mathvariant="normal">d</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  </m:math>.</para>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1165038191690">
+                <problem id="fs-id1165038025152">
+                  <para id="fs-id1165038025154">Proton w cyklotronie jest przyspieszany do prędkości <m:math>
+                    <m:mn>5,0</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mn>6</m:mn>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    </m:math> w czasie 0,01 s. Torem ruchu protonu jest okrąg. Jeśli promień cyklotronu wynosi 0,5 km, to: <newline/>(a) jaki jest moment pędu protonu względem środka cyklotronu, przy jego maksymalnej prędkości? <newline/>(b) jaki jest moment siły działającej na proton względem środka cyklotronu, gdy przyspiesza on do maksymalnej prędkości?</para>
+                  </problem>
+                </exercise>
+                <exercise id="fs-id1165038006851">
+                  <problem id="fs-id1165038006853">
+                    <para id="fs-id1165037912236">(a) Jaki jest moment pędu Księżyca na jego orbicie wokół Ziemi? <newline/>(b) Porównaj ten moment pędu z momentem pędu Księżyca związanym z jego obrotem wokół osi. Pamiętaj przy tym, że Księżyc przez cały czas jest zwrócony jedną stroną w kierunku Ziemi.</para>
+                  </problem>
+                  <solution id="fs-id1165037912238">
+                    <para id="fs-id1165037984809">a. <m:math>
+                      <m:msub>
+                        <m:mi>d</m:mi>
+                        <m:mtext>K</m:mtext>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mn>3,85</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mn>8</m:mn>
+                      </m:msup>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:math> – średnia odległość do Księżyca;<newline/>
+                    <m:math>
+                      <m:mn>27,32</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">d</m:mi>
+                        <m:mi mathvariant="normal">n</m:mi>
+                        <m:mi mathvariant="normal">i</m:mi>
+                        <m:mi mathvariant="normal">a</m:mi>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mn>2,36</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mn>6</m:mn>
+                      </m:msup>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:math> – okres obiegu po orbicie okołoziemskiej;<newline/>
+                    <m:math>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                          <m:mi>π</m:mi>
+                          <m:mo>⋅</m:mo>
+                          <m:mn>3,85</m:mn>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mn>10</m:mn>
+                            <m:mn>8</m:mn>
+                          </m:msup>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>2,36</m:mn>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mn>10</m:mn>
+                            <m:mn>6</m:mn>
+                          </m:msup>
+                          <m:mspace width="0.2em"/>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo>=</m:mo>
+                      <m:mn>1,0</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mn>3</m:mn>
+                      </m:msup>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:math> – orbitalna szybkość Księżyca;<newline/>
+                    <m:math>
+                      <m:mn>7,35</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mrow>
+                          <m:mn>22</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">k</m:mi>
+                        <m:mi mathvariant="normal">g</m:mi>
+                      </m:mrow>
+                    </m:math> – masa Księżyca;<newline/>
+                    <m:math>
+                      <m:mi>L</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>2,90</m:mn>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mn>10</m:mn>
+                        <m:mrow>
+                          <m:mn>34</m:mn>
+                        </m:mrow>
+                      </m:msup>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">k</m:mi>
+                        <m:mi mathvariant="normal">g</m:mi>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:math> – orbitalny moment pędu Księżyca;<newline/>b. <m:math>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mtext>K</m:mtext>
+                    </m:msub>
+                    <m:mo>=</m:mo>
+                    <m:mn>1,74</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mn>6</m:mn>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                  </m:math> – promień Księżyca;<newline/>okres obiegu po orbicie jest taki sam jak w (a);<newline/>
+                  <m:math>
+                    <m:mi>ω</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>2,66</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>6</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">r</m:mi>
+                      <m:mi mathvariant="normal">a</m:mi>
+                      <m:mi mathvariant="normal">d</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:math>;<newline/>
+                  <m:math>
+                    <m:mi>L</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>2,37</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mn>10</m:mn>
+                      <m:mrow>
+                        <m:mn>29</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">k</m:mi>
+                      <m:mi mathvariant="normal">g</m:mi>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:math> – moment pędu Księżyca związany z obrotem wokół własnej osi. Orbitalny moment pędu jest <m:math>
+                  <m:mn>1,22</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mn>5</m:mn>
+                  </m:msup>
+                  </m:math> razy większy od momentu pędu Księżyca związanego z obrotem wokół własnej osi.</para>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1165037914398">
+                <problem id="fs-id1165037914400">
+                  <para id="fs-id1165036862177">Płyta DVD obraca się z częstotliwością 500 obr/min. Ile wynosi moment pędu płyty DVD, jeśli ma ona promień 6,0 cm i masę 20,0 g?</para>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1165036735533">
+                <problem id="fs-id1165037874001">
+                  <para id="fs-id1165037874003">Koło garncarskie zaczyna się obracać osiągając 10 obr/s w czasie 15 s. Koło ma masę 3,0 kg i promień 30,0 cm. Ile wynosi moment pędu koła w chwilach <m:math>
+                    <m:mi>t</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:math>, <m:math>
+                  <m:mi>t</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>10</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  </m:math>?</para>
+                </problem>
+                <solution id="fs-id1165036843544">
+                  <para id="fs-id1165036990154">
+                    <m:math>
+                      <m:mi>I</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>0,135</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">k</m:mi>
+                        <m:mi mathvariant="normal">g</m:mi>
+                        <m:mo>⋅</m:mo>
+                        <m:msup>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:math>,<newline/>
+                    <m:math>
+                      <m:mi>ε</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>4,19</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">r</m:mi>
+                        <m:mi mathvariant="normal">a</m:mi>
+                        <m:mi mathvariant="normal">d</m:mi>
+                        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                        <m:msup>
+                          <m:mi mathvariant="normal">s</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:math>, <m:math>
+                    <m:mi>ω</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:msub>
+                      <m:mi>ω</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>+</m:mo>
+                    <m:mi>ε</m:mi>
+                    <m:mi>t</m:mi>
+                  </m:math>,<newline/>
+                  <m:math>
+                    <m:mi>ω</m:mi>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mn>5</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo>=</m:mo>
+                    <m:mn>21,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">r</m:mi>
+                      <m:mi mathvariant="normal">a</m:mi>
+                      <m:mi mathvariant="normal">d</m:mi>
+                      <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:math>, <m:math>
+                  <m:mi>L</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>2,84</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">k</m:mi>
+                    <m:mi mathvariant="normal">g</m:mi>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:math>,<newline/>
+                <m:math>
+                  <m:mi>ω</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mn>10</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo>=</m:mo>
+                  <m:mn>41,9</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">r</m:mi>
+                    <m:mi mathvariant="normal">a</m:mi>
+                    <m:mi mathvariant="normal">d</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:math>, <m:math>
+                <m:mi>L</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>5,66</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mrow>
+                </m:math>.</para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1165037974226">
+              <problem id="fs-id1165037974228">
+                <para id="fs-id1165037159243">Załóżmy, że musisz uruchomić stary samochód przy użyciu korby, na którą działasz siłą 300 N w czasie 0,25 sek. Jaki moment pędu został przekazany silnikowi, jeżeli uchwyt korby jest w odległości 0,30 m od osi obrotu, a wywierana na korbę siła przez cały czas jest stała i równa 300 N?</para>
+              </problem>
+            </exercise>
+            <exercise id="fs-id1165036854532"><problem id="fs-id1165036854534">
+                <para id="fs-id1165036966348">Walec o masie 2,0 kg i promieniu 20 cm obraca się w lewo (przeciwnie do ruchu wskazówek zegara) wokół pionowej osi symetrii, z częstotliwością 600 obr/min. Drugi taki sam walec obraca się w prawo (zgodnie z ruchem wskazówek zegara), wokół tej samej osi pionowej, z częstotliwością 900 obr/min. Jeśli walce połączą się tak, że dalej będą obracać się wokół tej samej osi pionowej, to jaka będzie ich częstotliwość obrotów?</para></problem>
+              <solution id="fs-id1165036784851">
+                <para id="fs-id1165036784853">W równaniu na zasadę zachowania momentu pędu, przed i po połączeniu, po obu stronach pojawia się częstotliwość obrotów, więc zamiast prędkości kątowej można zachować (obr/min), gdyż jest ona równa prędkości kątowej pomnożonej przez stałą wartość.<m:math>
+                  <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+                    <m:mtr>
+                      <m:mtd>
+                        <m:msub>
+                          <m:mi>L</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                      </m:mtd>
+                      <m:mtd>
+                        <m:mi/>
+                        <m:mo>=</m:mo>
+                        <m:mo>−</m:mo>
+                        <m:mn>0,04</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">k</m:mi>
+                          <m:mi mathvariant="normal">g</m:mi>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mo>⋅</m:mo>
+                        <m:mn>300,0</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">o</m:mi>
+                          <m:mi mathvariant="normal">b</m:mi>
+                          <m:mi mathvariant="normal">r</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mi mathvariant="normal">i</m:mi>
+                          <m:mi mathvariant="normal">n</m:mi>
+                        </m:mrow>
+                        <m:mo>,</m:mo>
+                      </m:mtd>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mtd>
+                        <m:msub>
+                          <m:mi>L</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                      </m:mtd>
+                      <m:mtd>
+                        <m:mi/>
+                        <m:mo>=</m:mo>
+                        <m:mn>0,04</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">k</m:mi>
+                          <m:mi mathvariant="normal">g</m:mi>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mo>⋅</m:mo>
+                        <m:mn>600,0</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">o</m:mi>
+                          <m:mi mathvariant="normal">b</m:mi>
+                          <m:mi mathvariant="normal">r</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mi mathvariant="normal">i</m:mi>
+                          <m:mi mathvariant="normal">n</m:mi>
+                        </m:mrow>
+                        <m:mo>,</m:mo>
+                      </m:mtd>
+                    </m:mtr>
+                  </m:mtable>
+                </m:math>
+                <m:math>
+                  <m:mi>ω</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>150,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">o</m:mi>
+                    <m:mi mathvariant="normal">b</m:mi>
+                    <m:mi mathvariant="normal">r</m:mi>
+                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                  </m:math>, w prawo zgodnie z ruchem wskazówek zegara.</para>
+                </solution>
+              </exercise><exercise id="fs-id1165037903736">
+                <problem id="fs-id1165037903738">
+                  <para id="fs-id1165037903740">Chłopiec stoi na środku platformy, która obraca się bez tarcia, wykonując 1,0 obr/s. Chłopiec trzyma ciężarki tak daleko od swojego ciała, jak to jest możliwe. W tym położeniu całkowity moment bezwładności chłopca, platformy i ciężarków wynosi <m:math>
+                    <m:mn>5,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">k</m:mi>
+                      <m:mi mathvariant="normal">g</m:mi>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:math>. Chłopiec ściąga ciężarki w pobliże swojego ciała, tym samym zmniejszając całkowity moment bezwładności do <m:math>
+                  <m:mn>1,5</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">k</m:mi>
+                    <m:mi mathvariant="normal">g</m:mi>
+                    <m:mo>⋅</m:mo>
+                    <m:msup>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                  </m:math>. <newline/>(a) Jaka jest końcowa prędkość kątowa platformy? <newline/>(b) O ile zwiększyła się energia kinetyczna ruchu obrotowego układu?</para>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1165038013887">
+                <problem id="fs-id1165038013889">
+                  <para id="fs-id1165036984318">Ośmioro dzieci, każde o masie 40 kg, wspina się na małą karuzelę. Ustawiają się równomiernie wzdłuż zewnętrznej krawędzi, trzymając się za ręce. Karuzela ma promień 4,0 m oraz moment bezwładności równy <m:math>
+                    <m:mn>1</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mn>000,0</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">k</m:mi>
+                      <m:mi mathvariant="normal">g</m:mi>
+                      <m:mo>⋅</m:mo>
+                      <m:msup>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                    </m:math>. Gdy karuzeli nadano częstotliwość 6,0 obr/min, dzieci zaczęły iść do środka karuzeli i zatrzymały się, gdy były w odległości 0,75 m od osi obrotu. Jaka jest nowa częstotliwość obrotów karuzeli? Załóżmy, że moment sił tarcia w układzie jest znikomy.</para>
+                  </problem>
+                  <solution id="fs-id1165037887956">
+                    <para id="fs-id1165036763770">
+                      <m:math>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo/>
+                        <m:msub>
+                          <m:mi>ω</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                        <m:mo/>
+                        <m:msub>
+                          <m:mi>ω</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                      </m:math>,<newline/>
+                      <m:math>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mn>6</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mn>120,0</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">k</m:mi>
+                          <m:mi mathvariant="normal">g</m:mi>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                      </m:math>,<newline/>
+                      <m:math>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mn>1</m:mn>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mn>1</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mn>180,0</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">k</m:mi>
+                          <m:mi mathvariant="normal">g</m:mi>
+                          <m:mo>⋅</m:mo>
+                          <m:msup>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                      </m:math>,<newline/>
+                      <m:math>
+                        <m:msub>
+                          <m:mi>ω</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mn>31,1</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">o</m:mi>
+                          <m:mi mathvariant="normal">b</m:mi>
+                          <m:mi mathvariant="normal">r</m:mi>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mi mathvariant="normal">m</m:mi>
+                          <m:mi mathvariant="normal">i</m:mi>
+                          <m:mi mathvariant="normal">n</m:mi>
+                        </m:mrow>
+                        </m:math>.</para>
+                      </solution>
+                    </exercise>
+                    <exercise id="fs-id1165037882259">
+                      <problem id="fs-id1165037882261">
+                        <para id="fs-id1165038308409">Cienki metrowy kij o masie 150 g obraca się wokół osi prostopadłej do osi kija z częstotliwością 240 obr/min. Ile wynosi moment pędu kija, jeżeli oś obrotu przechodzi przez: <newline/>(a) środek kija? <newline/>(b) jeden z końców kija?</para>
+                      </problem>
+                    </exercise>
+                    <exercise id="fs-id1165036885789">
+                      <problem id="fs-id1165036885791">
+                        <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165038356709">Satelita w kształcie kuli masie 20000 kg i promieniu 5,0 m wiruje wokół osi przechodzącej przez jego środek masy. Jego częstotliwość wynosi 8,0 obr/s. W pewnej chwili w płaszczyźnie obrotu od środka satelity zostaną wysunięte dwie anteny. Każda antena może być przybliżona przez pręt o masie 200,0 kg i długości 7,0 m. Jaka jest nowa wartość częstotliwości obrotów (szybkość obrotowa) satelity?</para></problem>
+                      <solution id="fs-id1165038369521">
+                        <para id="fs-id1165038369523">
+                          <m:math>
+                            <m:msub>
+                              <m:mi>L</m:mi>
+                              <m:mn>1</m:mn>
+                            </m:msub>
+                            <m:mo>=</m:mo>
+                            <m:mn>1,00</m:mn>
+                            <m:mo>⋅</m:mo>
+                            <m:msup>
+                              <m:mn>10</m:mn>
+                              <m:mn>6</m:mn>
+                            </m:msup>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">k</m:mi>
+                              <m:mi mathvariant="normal">g</m:mi>
+                              <m:mo>⋅</m:mo>
+                              <m:msup>
+                                <m:mi mathvariant="normal">m</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                              <m:mi mathvariant="normal">s</m:mi>
+                            </m:mrow>
+                          </m:math>,<newline/>
+                          <m:math>
+                            <m:msub>
+                              <m:mi>L</m:mi>
+                              <m:mn>1</m:mn>
+                            </m:msub>
+                            <m:mo>=</m:mo>
+                            <m:mn>3,35</m:mn>
+                            <m:mo>⋅</m:mo>
+                            <m:msup>
+                              <m:mn>10</m:mn>
+                              <m:mn>4</m:mn>
+                            </m:msup>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">k</m:mi>
+                              <m:mi mathvariant="normal">g</m:mi>
+                              <m:mo>⋅</m:mo>
+                              <m:msup>
+                                <m:mi mathvariant="normal">m</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                              <m:mi mathvariant="normal">s</m:mi>
+                            </m:mrow>
+                          </m:math>,<newline/>
+                          <m:math>
+                            <m:msub>
+                              <m:mi>f</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msub>
+                            <m:mo>=</m:mo>
+                            <m:mn>4,35</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:mi mathvariant="normal">o</m:mi>
+                              <m:mi mathvariant="normal">b</m:mi>
+                              <m:mi mathvariant="normal">r</m:mi>
+                              <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                              <m:mi mathvariant="normal">s</m:mi>
+                            </m:mrow>
+                            </m:math>.</para>
+                          </solution>
+                        </exercise>
+                        <exercise id="fs-id1165037150252">
+                          <problem id="fs-id1165036884256">
+                            <para id="fs-id1165036884258">Bąk ma moment bezwładności <m:math>
+                              <m:mn>3,2</m:mn>
+                              <m:mo>⋅</m:mo>
+                              <m:msup>
+                                <m:mn>10</m:mn>
+                                <m:mrow>
+                                  <m:mo>−</m:mo>
+                                  <m:mn>4</m:mn>
+                                </m:mrow>
+                              </m:msup>
+                              <m:mspace width="0.2em"/>
+                              <m:mrow>
+                                <m:mi mathvariant="normal">k</m:mi>
+                                <m:mi mathvariant="normal">g</m:mi>
+                                <m:mo>⋅</m:mo>
+                                <m:msup>
+                                  <m:mi mathvariant="normal">m</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                              </m:mrow>
+                              </m:math> i odległość 4,0 cm od środka masy do punktu podparcia. Jeśli bąk obraca się z częstotliwością 20,0 obr/s i dokonuje precesji, to ile obrotów podczas niej wykona w czasie 10,0 s?</para>
+                            </problem>
+                          </exercise>
+                        </section>
+                        <section id="fs-id1165038034234" class="review-challenge">
+                          <title>Zadania trudniejsze</title>
+                          <exercise id="fs-id1165038334845">
+                            <problem id="fs-id1165038334847">
+                              <para id="fs-id1165038364566">Samochód ciężarowy przedstawiony poniżej znajduje się początkowo w stanie spoczynku. Na jego przyczepie znajduje się cylindryczna rola (bela) papieru. Jeżeli samochód zacznie poruszać się do przodu ze stałym przyspieszeniem <m:math>
+                                <m:mi>a</m:mi>
+                              </m:math>, to jaką odległość <m:math>
+                              <m:mi>s</m:mi>
+                            </m:math> przebędzie on od momentu ruszenia z miejsca, do chwili, gdy rola papieru stoczy się z tyłu samochodu? (Wskazówka: Jeśli względem ziemi rola papieru przyspiesza do przodu z przyspieszeniem <m:math>
+                            <m:msup>
+                              <m:mi>a</m:mi>
+                              <m:mo>'</m:mo>
+                            </m:msup>
+                          </m:math>, to względem samochodu przyspiesza ona do tyłu z przyspieszeniem <m:math>
+                          <m:mi>a</m:mi>
+                          <m:mo>-</m:mo>
+                          <m:msup>
+                            <m:mi>a</m:mi>
+                            <m:mo>'</m:mo>
+                          </m:msup>
+                        </m:math>. Również <m:math>
+                        <m:mi>R</m:mi>
+                        <m:mi>ε</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mi>a</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:msup>
+                          <m:mi>a</m:mi>
+                          <m:mo>'</m:mo>
+                        </m:msup>
+                        </m:math>).</para>
+                        <media id="fs-id1165036892204" alt="Rysunek ciężarówki płaskiej na poziomej drodze. Wózek przyspiesza do przodu z przyspieszeniem a. Łóżko na ciężarówce ma cylinder na nim, odległość d od tylnego końca łóżka.">
+                          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_01_Prob16_img.jpg"/>
+                        </media>
+                      </problem>
+                      <solution id="fs-id1165038014111">
+                        <para id="fs-id1165038014113">Załóżmy, że rola przyspiesza do przodu w stosunku do ziemi z przyspieszeniem <m:math>
+                          <m:mrow>
+                            <m:msup>
+                              <m:mi>a</m:mi>
+                              <m:mo>′</m:mo>
+                            </m:msup>
+                          </m:mrow>
+                        </m:math>, to względem ciężarówki przyspiesza ona do tyłu z przyspieszeniem <m:math>
+                        <m:mi>a</m:mi>
+                        <m:mo>−</m:mo>
+                        <m:msup>
+                          <m:mi>a</m:mi>
+                          <m:mo>'</m:mo>
+                        </m:msup>
+                      </m:math>.<newline/>
+                      <media id="fs-id1165036758482" alt="Pokazano siły działające na walec na powierzchni poziomej. Promień walca wynosi R a jego moment bezwładności połowa m R do kwadratu. Siła m g działa na środek walca i jest skierowana w dół. Siła N jest skierowana w górę i działa na punkt kontaktu walca z powierzchnią. Siła f sub s skierowana jest w prawo i również działa na punkt kontaktu walca z powierzchnią.">
+                        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_01_Prob24_img-a812.jpg"/>
+                      </media>
+                      <newline/>Ale ponieważ<newline/>
+                      <m:math>
+                        <m:mi>R</m:mi>
+                        <m:mi>ε</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mi>a</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:msup>
+                          <m:mi>a</m:mi>
+                          <m:mo>'</m:mo>
+                        </m:msup>
+                        <m:mo>,</m:mo>
+                        <m:mo/>
+                        <m:mspace width="0.2em"/>
+                        <m:mo/>
+                        <m:mi>I</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:mi>m</m:mi>
+                        <m:msup>
+                          <m:mi>R</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                        <m:mo>,</m:mo>
+                        <m:mo/>
+                        <m:mspace width="0.5em"/>
+                        <m:mo>∑</m:mo>
+                        <m:msub>
+                          <m:mi>F</m:mi>
+                          <m:mi>x</m:mi>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mi>s</m:mi>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mi>m</m:mi>
+                        <m:msup>
+                          <m:mi>a</m:mi>
+                          <m:mo>'</m:mo>
+                        </m:msup>
+                      </m:math>,<newline/>
+                      <m:math>
+                        <m:mo>∑</m:mo>
+                        <m:mi>M</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mi>s</m:mi>
+                        </m:msub>
+                        <m:mi>R</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mi>I</m:mi>
+                        <m:mi>ε</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mi>I</m:mi>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mi>a</m:mi>
+                            <m:mo>-</m:mo>
+                            <m:msup>
+                              <m:mi>a</m:mi>
+                              <m:mo>'</m:mo>
+                            </m:msup>
+                          </m:mrow>
+                          <m:mi>R</m:mi>
+                        </m:mfrac>
+                        <m:mo>,</m:mo>
+                        <m:mo/>
+                        <m:mspace width="0.5em"/>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mi>s</m:mi>
+                        </m:msub>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mi>I</m:mi>
+                          <m:msup>
+                            <m:mi>R</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mfrac>
+                        <m:mo>(</m:mo>
+                        <m:mi>a</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:msup>
+                          <m:mi>a</m:mi>
+                          <m:mo>'</m:mo>
+                        </m:msup>
+                        <m:mo>)</m:mo>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mn>2</m:mn>
+                        </m:mfrac>
+                        <m:mi>m</m:mi>
+                        <m:mo>(</m:mo>
+                        <m:mi>a</m:mi>
+                        <m:mo>-</m:mo>
+                        <m:msup>
+                          <m:mi>a</m:mi>
+                          <m:mo>'</m:mo>
+                        </m:msup>
+                        <m:mo>)</m:mo>
+                      </m:math>.<newline/>Rozwiązując ze względu na <m:math>
+                      <m:msup>
+                        <m:mi>a</m:mi>
+                        <m:mo>′</m:mo>
+                      </m:msup>
+                    </m:math>:<newline/>
+                    <m:math>
+                      <m:msub>
+                        <m:mi>T</m:mi>
+                        <m:mi>s</m:mi>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                      <m:mi>m</m:mi>
+                      <m:mo>(</m:mo>
+                      <m:mi>a</m:mi>
+                      <m:mo>-</m:mo>
+                      <m:msup>
+                        <m:mi>a</m:mi>
+                        <m:mo>'</m:mo>
+                      </m:msup>
+                      <m:mo>)</m:mo>
+                      <m:mo>,</m:mo>
+                      <m:mo/>
+                      <m:mo/>
+                      <m:mo/>
+                      <m:msup>
+                        <m:mi>a</m:mi>
+                        <m:mo>'</m:mo>
+                      </m:msup>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mi>a</m:mi>
+                        <m:mn>3</m:mn>
+                      </m:mfrac>
+                    </m:math>,<newline/>
+                    <m:math>
+                      <m:mi>x</m:mi>
+                      <m:mo>−</m:mo>
+                      <m:msub>
+                        <m:mi>x</m:mi>
+                        <m:mn>0</m:mn>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:msub>
+                        <m:mi>v</m:mi>
+                        <m:mn>0</m:mn>
+                      </m:msub>
+                      <m:mi>t</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>2</m:mn>
+                      </m:mfrac>
+                      <m:mi>a</m:mi>
+                      <m:msup>
+                        <m:mi>t</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>,</m:mo>
+                      <m:mo/>
+                      <m:mspace width="0.5em"/>
+                      <m:mi>d</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:mn>3</m:mn>
+                      </m:mfrac>
+                      <m:mi>a</m:mi>
+                      <m:msup>
+                        <m:mi>t</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mo>,</m:mo>
+                      <m:mo/>
+                      <m:mspace width="0.5em"/>
+                      <m:mi>t</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:msqrt>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mn>3</m:mn>
+                            <m:mi>d</m:mi>
+                          </m:mrow>
+                          <m:mi>a</m:mi>
+                        </m:mfrac>
+                      </m:msqrt>
+                      <m:mo>,</m:mo>
+                    </m:math>
+                    <newline/>Stąd, <m:math>
+                    <m:mi>s</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>1,5</m:mn>
+                    <m:mo/>
+                    <m:mi>d</m:mi>
+                  </m:math>
+                </para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1165036758699">
+              <problem id="fs-id1165038334807">
+                <para id="fs-id1165038334809">Kula do gry w kręgle o promieniu 8,5 cm została rzucona i porusza się wzdłuż toru z prędkością 9,0 m/s. Z punktu widzenia obserwatora kierunek rzutu jest w lewo, tak że kula, podczas ruchu, w wyniku tarcia o podłogę, zaczyna obracać się w kierunku przeciwnym do ruchu wskazówek zegara. Współczynnik tarcia kinetycznego na pasie wynosi 0,3. (a) Jaki jest czas potrzebny do tego, aby kula osiągnęła punkt, w którym przestanie się ślizgać? Jaka jest odległość <m:math><m:mi>d</m:mi></m:math> do tego punktu?</para>
+              </problem>
+            </exercise>
+            <exercise id="fs-id1165038041066">
+              <problem id="fs-id1165038041068">
+                <para id="fs-id1165038041070">Mała kulka o masie 0,50 kg jest przyczepiona za pomocą nieważkiego sznurka do pionowego pręta, który obraca się w sposób pokazany poniżej. Gdy pręt ma prędkość kątową 6,0 rad/s, sznurek tworzy kąt <m:math>
+                  <m:msup>
+                    <m:mn>30</m:mn>
+                    <m:mo>∘</m:mo>
+                  </m:msup>
+                  </m:math> w stosunku do pionu. <newline/>(a) Jeżeli prędkość kątowa pręta zostanie zwiększona do 10,0 rad/s, to jaki jest nowy kąt między sznurkiem a pionem? <newline/>(b) Oblicz początkowy i końcowy moment bezwładności piłki. <newline/>(c) Czy obrót pręta może być tak szybki, żeby sznurek z kulką ustawił się poziomo?</para>
+                  <media id="fs-id1165038046374" alt="Pręt obraca się wokół osi. Sznurek jest przytwierdzony jednym końcem do szczytu pręta a drugim do piłki. Sznurek tworzy z prętem kąt.">
+                    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_11_02_Prob16_img.jpg"/>
+                  </media>
+                </problem>
+                <solution id="fs-id1165038369443">
+                  <para id="fs-id1165038369445">Składowa pozioma siły naprężenia sznurka daje siłę dośrodkową, taką że <m:math>
+                    <m:mi>T</m:mi>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>sin</m:mtext>
+                    <m:mspace width="0.2em"/>
+                    <m:mi>θ</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mi>m</m:mi>
+                    <m:msub>
+                      <m:mi>r</m:mi>
+                      <m:mo>⊥</m:mo>
+                    </m:msub>
+                    <m:msup>
+                      <m:mi>ω</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:math>. Składowa pionowa siły naprężenia sznurka równoważy siłę grawitacji <m:math>
+                  <m:mi>T</m:mi>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>cos</m:mtext>
+                  <m:mspace width="0.2em"/>
+                  <m:mi>θ</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mi>m</m:mi>
+                  <m:mi>g</m:mi>
+                </m:math>. Daje to <m:math>
+                <m:mi>T</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>5,7</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">N</m:mi>
+                </m:mrow>
+              </m:math>, a stąd odległość kulki od pręta wynosi <m:math>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mo>⊥</m:mo>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>0,16</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+            </m:math>, długość sznurka jest równą <m:math>
+            <m:mi>r</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>0,32</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+          </m:math>. Dla <m:math>
+          <m:mi>ω</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>10,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">r</m:mi>
+            <m:mi mathvariant="normal">a</m:mi>
+            <m:mi mathvariant="normal">d</m:mi>
+            <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+            <m:mi mathvariant="normal">s</m:mi>
+          </m:mrow>
+        </m:math> mamy nowy kąt odchylenia sznurka, jego siłę naprężenia oraz odległość kulki od pręta. Podzielenie stronami dwóch równań pozwala wyeliminować naprężenie sznurka, stąd otrzymujemy<newline/>a. <m:math>
+        <m:mfrac>
+          <m:mrow>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mi>θ</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mi>cos</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mi>θ</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mn>0,32</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mi>θ</m:mi>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mi>ω</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mi>g</m:mi>
+        </m:mfrac>
+        <m:mspace width="thickmathspace"/>
+        <m:mo stretchy="false">⟹</m:mo>
+        <m:mspace width="thickmathspace"/>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mrow>
+            <m:mi>cos</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mi>θ</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mn>0,32</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mi>ω</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mi>g</m:mi>
+        </m:mfrac>
+        <m:mo>,</m:mo>
+      </m:math>
+      <newline/>
+      <m:math>
+        <m:mi>cos</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mi>θ</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0,31</m:mn>
+        <m:mspace width="thickmathspace"/>
+        <m:mo stretchy="false">⟹</m:mo>
+        <m:mspace width="thickmathspace"/>
+        <m:mi>θ</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>72</m:mn>
+        <m:mo>,</m:mo>
+        <m:msup>
+          <m:mn>2</m:mn>
+          <m:mo>∘</m:mo>
+        </m:msup>
+        <m:mo>;</m:mo>
+      </m:math>
+      <newline/>b. <m:math>
+      <m:msub>
+        <m:mi>L</m:mi>
+        <m:mtext>pocz</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>0,08</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">k</m:mi>
+        <m:mi mathvariant="normal">g</m:mi>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+    </m:math>.<newline/>
+    <m:math>
+      <m:msub>
+        <m:mi>L</m:mi>
+        <m:mtext>końcowa</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>0,46</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">k</m:mi>
+        <m:mi mathvariant="normal">g</m:mi>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mi mathvariant="normal">m</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mi mathvariant="normal">s</m:mi>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:math>
+    <newline/>c. Nie, cosinus kąta jest odwrotnie proporcjonalny do kwadratu prędkości kątowej, dlatego aby <m:math>
+    <m:mi>θ</m:mi>
+    <m:mtext>→</m:mtext>
+    <m:mn>90</m:mn>
+    <m:mtext>°</m:mtext>
+  </m:math>, <m:math>
+  <m:mi>ω</m:mi>
+  <m:mtext>→</m:mtext>
+  <m:mi>∞</m:mi>
+  </m:math>, a to znaczy, że pręt musiałby kręcić się nieskończenie szybko.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165036833826">
+  <problem id="fs-id1165036833829">
+    <para id="fs-id1165037967907">Lecący poziomo owad z prędkością 1,0 m/s zderza się z końcem jednorodnego, wiszącego pionowo kijka. Po zderzeniu kijek wychyla się, przy czym maksymalny kąt wychylenia od pionu wynosi <m:math>
+      <m:mn>5</m:mn>
+      <m:mo>,</m:mo>
+      <m:msup>
+        <m:mn>0</m:mn>
+        <m:mo>∘</m:mo>
+      </m:msup>
+      </m:math>. Oblicz długość kijka wiedząc, że masa kija jest 10 razy większa niż owada.</para></problem>
+  </exercise>
+</section>
+</content>
+<glossary>
+  <definition id="fs-id1165036763778">
+<term class="no-emphasis" cmlnle:reference="precesja">precesja (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">precession</term></foreign>)</term>
+    <meaning id="fs-id1165038052965">zmiana kierunku osi obrotu obracającego się ciała, zachodząca pod wpływem momentu siły; oś obrotu wykonuje ruch obrotowy wokół określonego kierunku w przestrzeni, zakreślając powierzchnię boczną stożka</meaning>
+  </definition>
+</glossary>
+</document>

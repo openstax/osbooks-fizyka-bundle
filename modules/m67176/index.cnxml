@@ -1,0 +1,1366 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="new" cnxml-version="0.8" module-id="new">
+  <title>Obliczanie natężenia na podstawie potencjału</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67176</md:content-id>
+  <md:title>Obliczanie natężenia na podstawie potencjału</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>podawać definicję natężenia pola na podstawie potencjału elektrycznego;</item>
+<item>obliczać natężenie pola w określonym kierunku dla zadanej funkcji skalarnej potencjału elektrycznego;</item>
+<item>obliczać pole elektryczne w całej przestrzeni na podstawie potencjału elektrycznego.</item></list></md:abstract>
+  <md:uuid>df5c85b9-c19f-4f07-91be-1c28e84d9fdc</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1167585079315">W poprzednim podrozdziale pokazaliśmy, jak na podstawie znajomości wektora natężenia pola elektrycznego obliczyć potencjał określonego układu ładunków, także tworzącego ciągły rozkład. Wykorzystaliśmy wtedy wzór całkowy. Jak się zapewne domyślasz, możliwy jest rachunek w drugą stronę ‒ obliczenie natężenia jako pochodnej potencjału. Uwagi wymaga jednak przejście od wielkości skalarnej do wektorowej. Najczęściej potrzebujemy wektora <m:math display="inline">
+    <m:mover>
+      <m:mi>E</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+  </m:math>, żeby obliczyć siłę działającą na ładunek w danym polu. Jednak często łatwiej jest znaleźć potencjał niż natężenie, dlatego wygodnie byłoby znać metodę obliczania wektora natężenia pola <m:math display="inline">
+  <m:mover>
+    <m:mi>E</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:math> na podstawie potencjału <m:math display="inline">
+<m:mi>V</m:mi>
+</m:math>.</para>
+<para id="fs-id1167585117799">Wektor natężenia pola jest w ogólności, niezależnie od tego, czy pole jest jednorodne, czy nie, skierowany w stronę malejącego potencjału. Dzieje się tak dlatego, że siła działająca na ładunek próbny dodatni zwrócona jest zgodnie z liniami pola <m:math display="inline">
+  <m:mover>
+    <m:mi>E</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:math>, czyli w stronę mniejszego potencjału <m:math display="inline">
+<m:mi>V</m:mi>
+</m:math>. Co więcej, wartość wektora <m:math display="inline">
+<m:mover>
+  <m:mi>E</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math> jest równa szybkości spadku potencjału <m:math display="inline">
+<m:mi>V</m:mi>
+</m:math> wraz ze zmianą odległości. Widać to choćby na podstawie analizy wymiarowej natężenia (jednostką natężenia jest <m:math display="inline">
+<m:mi mathvariant="normal">V</m:mi>
+<m:mo>∕</m:mo>
+<m:mi mathvariant="normal">m</m:mi>
+</m:math>). Im szybciej <m:math display="inline">
+<m:mi>V</m:mi>
+</m:math> maleje wraz ze zmianą odległości, tym większe jest natężenie pola. Możemy więc podać następujące stwierdzenie.</para>
+<note id="fs-id1167585024334">
+  <title>Związek napięcia z natężeniem pola jednorodnego</title>
+  <para id="fs-id1167585171099">Równanie opisujące zależność napięcia i natężenia pola jednorodnego możemy zapisać następująco</para>
+  <equation id="fs-id1167584746933" class="unnumbered">
+    <m:math display="block">
+      <m:mi>E</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:mo>Δ</m:mo>
+              <m:mi>V</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>Δ</m:mo>
+              <m:mi>s</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1167585121263">gdzie <m:math display="inline">
+    <m:mo>Δ</m:mo>
+    <m:mi>s</m:mi>
+  </m:math> jest odległością, na jakiej zachodzi zmiana potencjału <m:math display="inline">
+  <m:mo>Δ</m:mo>
+  <m:mi>V</m:mi>
+  </m:math>. Znak minus we wzorze oznacza, że wektor natężenia jest skierowany w stronę malejącego potencjału. Mówimy, że natężenie pola jest gradientem potencjału.</para>
+</note>
+<para id="fs-id1167585168351">Dla ciągłej funkcji potencjału wielkości <m:math display="inline">
+  <m:mo>Δ</m:mo>
+  <m:mi>V</m:mi>
+</m:math> i <m:math display="inline">
+<m:mo>Δ</m:mo>
+<m:mi>s</m:mi>
+</m:math> stają się małymi przyrostami (różniczkami) i musimy zastosować rachunek różniczkowy w celu obliczenia natężenia pola. Na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_24_04_Derive" cmlnle:case="locative"/> pokazujemy, że jeśli <m:math display="inline">
+<m:mo>Δ</m:mo>
+<m:mi>s</m:mi>
+</m:math> jest bardzo małe, natężenie pola jest zasadniczo stałe na tym odcinku i możemy to zapisać następująco</para>
+<equation id="fs-id1167584971212" class="unnumbered">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>E</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:mi>V</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                <m:mi>s</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E = - \frac{\d V}{\d s} \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<figure id="CNX_UPhysics_24_04_Derive">
+  <media id="fs-id1167584917175" alt="Rysunek przedstawia składowe wektora natężenia pola elektrycznego dla dwóch punktów A i B oddalonych od siebie na odległość delta s i mających różnicę potencjałów delta V. ">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_24_04_Derive.jpg"/>
+  </media>
+  <caption>Składowa wektora natężenia pola elektrycznego wzdłuż przemieszeczenia <m:math display="inline">
+    <m:mo>Δ</m:mo>
+    <m:mi>s</m:mi>
+  </m:math> jest równa <m:math display="inline">
+  <m:mi>E</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mo>−</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mo>Δ</m:mo>
+        <m:mi>V</m:mi>
+      </m:mrow>
+      <m:mo>∕</m:mo>
+      <m:mrow>
+        <m:mo>Δ</m:mo>
+        <m:mi>s</m:mi>
+      </m:mrow>
+    </m:mrow>
+  </m:mrow>
+</m:math>. Zauważ, że gdy punkty <m:math display="inline">
+<m:mi>A</m:mi>
+</m:math> i <m:math display="inline">
+<m:mi>B</m:mi>
+</m:math> są blisko siebie, natężenie pola jest stałe na odcinku <m:math display="inline">
+<m:mo>Δ</m:mo>
+<m:mi>s</m:mi>
+</m:math>.</caption>
+</figure>
+<para id="fs-id1167584702763">We wszystkich trzech kierunkach układu kartezjańskiego możemy zdefiniować składowe wektora natężenia pola jako odpowiednie pochodne</para>
+<note id="fs-id1167584955917" class="equation-callout">
+  <equation id="fs-id1167585012696">
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mi>x</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>V</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>x</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mtext>, </m:mtext>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>E</m:mi>
+                <m:mi>y</m:mi>
+              </m:msub>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>V</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>y</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mtext>, </m:mtext>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>E</m:mi>
+                <m:mi>z</m:mi>
+              </m:msub>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>V</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>z</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_x = -\frac{\partial V}{\partial x} \text{, } E_y = - \frac{\partial V}{\partial y} \text{, } E_z = -\frac{\partial V}{\partial z} \text{.}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1167585148078">Użyliśmy tutaj zapisu z użyciem symbolu pochodnej cząstkowej <m:math display="inline">
+  <m:mo>∂</m:mo>
+  <m:mtext/>
+</m:math>. Do zapisania tych trzech równań w bardziej zwartej postaci możemy użyć operatora matematycznego gradientu (oznaczenie <m:math display="inline">
+<m:semantics>
+  <m:mover>
+    <m:mo>∇</m:mo>
+    <m:mo>→</m:mo>
+  </m:mover>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \vec{\nabla}</m:annotation>
+</m:semantics>
+</m:math> lub „grad”). Postać tego operatora różniczkowego, który jest wektorem o trzech składowych, w zmiennych kartezjańskich jest następująca</para>
+<note id="fs-id1167584896800" class="equation-callout">
+  <equation id="fs-id1167584748277">
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:mover>
+            <m:mo>∇</m:mo>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mover>
+                <m:mi>i</m:mi>
+                <m:mo>̂</m:mo>
+              </m:mover>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mo>∂</m:mo>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>x</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mover>
+                <m:mi>j</m:mi>
+                <m:mo>̂</m:mo>
+              </m:mover>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mo>∂</m:mo>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>y</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mover>
+                <m:mi>k</m:mi>
+                <m:mo>̂</m:mo>
+              </m:mover>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mo>∂</m:mo>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>z</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \vec{x} = \hat{i}{\dd[\partial]{x}} + \hat{j}{\dd[\partial]{y}} + \hat{k}{\dd[\partial]{z}} \text{.}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1167584764801">Za pomocą tej notacji możemy zapisać jedno równanie na wektor natężenia pola obliczony na podstawie potencjału elektrycznego</para>
+<note id="fs-id1167584700679" class="equation-callout">
+  <equation id="fs-id1167584716432">
+    <m:math display="block">
+      <m:mover>
+        <m:mi>E</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mrow>
+              <m:mo>∇</m:mo>
+              <m:mtext/>
+            </m:mrow>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>⁢</m:mo>
+          <m:mi>V</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1167585168235">a procedurę tę nazwiemy obliczaniem <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="gradient">gradientu</term> potencjału. Zwróć uwagę na niezbędny znak minus we wzorze przed gradientem.</para>
+<para id="fs-id1167584685236">Do matematycznego opisu układów o symetrii cylindrycznej lub sferycznej wygodnie jest używać postaci operatora gradientu w zmiennych cylindrycznych (walcowych)</para>
+<note id="fs-id1167584756954" class="equation-callout">
+  <equation id="fs-id1167584748584">
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:mover>
+            <m:mo>∇</m:mo>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mover>
+                <m:mi>r</m:mi>
+                <m:mo>̂</m:mo>
+              </m:mover>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mo>∂</m:mo>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>r</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>φ</m:mi>
+                  <m:mo>̂</m:mo>
+                </m:mover>
+                <m:mo>⁢</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mi>r</m:mi>
+                </m:mfrac>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mfrac>
+                <m:mo>∂</m:mo>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>φ</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mover>
+                <m:mi>z</m:mi>
+                <m:mo>̂</m:mo>
+              </m:mover>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mo>∂</m:mo>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>z</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \vec{x} = \hat{r}{\dd[\partial]{r}} + \hat{\varphi} \frac1r \cdot {\dd[\partial]{\varphi}} + \hat{z}{\dd[\partial]{z}}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+</note>
+<para id="eip-233">lub sferycznych</para>
+<note id="fs-id1167584742528" class="equation-callout">
+  <equation id="fs-id1167584721578">
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:mover>
+            <m:mo>∇</m:mo>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mover>
+                <m:mi>r</m:mi>
+                <m:mo>̂</m:mo>
+              </m:mover>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mo>∂</m:mo>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>r</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>θ</m:mi>
+                  <m:mo>̂</m:mo>
+                </m:mover>
+                <m:mo>⁢</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mi>r</m:mi>
+                </m:mfrac>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mfrac>
+                <m:mo>∂</m:mo>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>θ</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>φ</m:mi>
+                    <m:mo>̂</m:mo>
+                  </m:mover>
+                  <m:mo>⁢</m:mo>
+                  <m:mfrac>
+                    <m:mn>1</m:mn>
+                    <m:mrow>
+                      <m:mi>r</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mrow>
+                        <m:mo>sin</m:mo>
+                        <m:mi>θ</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mfrac>
+                  <m:mo>∂</m:mo>
+                  <m:mrow>
+                    <m:mo>∂</m:mo>
+                    <m:mi>φ</m:mi>
+                  </m:mrow>
+                </m:mfrac>
+              </m:mrow>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \vec{x} = \hat{r}{\dd[\partial]{r}} + \hat{\theta} \frac1r \cdot {\dd[\partial]{\theta}} + \hat{\varphi} \frac{1}{r\sin \theta} \cdot {\dd[\partial]{\varphi}} \text{.}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+</note>
+<example id="fs-id1167584762942">
+  <para id="fs-id1167584909938">
+    <title>Natężenie pola wokół ładunku punktowego</title>Obliczmy natężenie pola pochodzącego od ładunku punktowego.</para>
+    <para id="fs-id1167584667320">
+      <title>Strategia rozwiązania</title>Wiemy, że potencjał takiego układu dany jest wzorem <m:math display="inline">
+        <m:mi>V</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mi>k</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>q</m:mi>
+          </m:mrow>
+          <m:mo>∕</m:mo>
+          <m:mi>r</m:mi>
+        </m:mrow>
+      </m:math> i ma symetrię sferyczną. Dlatego w równaniu <m:math display="inline">
+      <m:mover>
+        <m:mi>E</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mrow>
+              <m:mo>∇</m:mo>
+              <m:mtext/>
+            </m:mrow>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>⁢</m:mo>
+          <m:mi>V</m:mi>
+        </m:mrow>
+      </m:mrow>
+      </m:math> wygodnie będzie zastosować zmienne sferyczne.</para>
+      <para id="fs-id1167584742162">
+        <title>Rozwiązanie</title>Wykonujemy obliczenia w zmiennych sferycznych</para>
+        <equation id="fs-id1167584770796" class="unnumbered"><m:math display="block">
+            <m:semantics>
+              <m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:mover><m:mi>E</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover><m:mo id="Ub166427c-5f89-4282-a00e-e439dacbb543">=</m:mo>
+                <m:mrow><m:mo>−</m:mo>
+                  <m:mrow><m:mfenced close="]" open="["><m:mrow><m:mrow><m:mover><m:mi>r</m:mi>
+                            <m:mo>̂</m:mo>
+                          </m:mover><m:mo>⁢</m:mo>
+                          <m:mfrac><m:mo>∂</m:mo>
+                            <m:mrow><m:mo>∂</m:mo>
+                              <m:mi>r</m:mi>
+                            </m:mrow></m:mfrac></m:mrow><m:mo>+</m:mo>
+                        <m:mrow><m:mrow><m:mover><m:mi>θ</m:mi>
+                              <m:mo>̂</m:mo>
+                            </m:mover><m:mo>⁢</m:mo>
+                            <m:mfrac><m:mn>1</m:mn>
+                              <m:mi>r</m:mi>
+                            </m:mfrac></m:mrow><m:mo>⋅</m:mo>
+                          <m:mfrac><m:mo>∂</m:mo>
+                            <m:mrow><m:mo>∂</m:mo>
+                              <m:mi>θ</m:mi>
+                            </m:mrow></m:mfrac></m:mrow><m:mo>+</m:mo>
+                        <m:mrow><m:mrow><m:mover><m:mi>φ</m:mi>
+                              <m:mo>̂</m:mo>
+                            </m:mover><m:mo>⁢</m:mo>
+                            <m:mfrac><m:mn>1</m:mn>
+                              <m:mrow><m:mi>r</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mrow><m:mo>sin</m:mo>
+                                  <m:mi>θ</m:mi>
+                                </m:mrow></m:mrow></m:mfrac></m:mrow><m:mo>⋅</m:mo>
+                          <m:mfrac><m:mo>∂</m:mo>
+                            <m:mrow><m:mo>∂</m:mo>
+                              <m:mi>φ</m:mi>
+                            </m:mrow></m:mfrac></m:mrow></m:mrow></m:mfenced><m:mo>⁢</m:mo>
+                    <m:mi>k</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mfrac><m:mi>q</m:mi>
+                      <m:mi>r</m:mi>
+                    </m:mfrac></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mover><m:mi>E</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover></m:mphantom><m:mo id="U39a7b6aa-260a-4652-a0c1-1bf256280d08">=</m:mo>
+                <m:mrow><m:mo>−</m:mo>
+                  <m:mrow><m:mi>k</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>q</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mfenced close="]" open="["><m:mrow><m:mrow><m:mover><m:mi>r</m:mi>
+                            <m:mo>̂</m:mo>
+                          </m:mover><m:mo>⁢</m:mo>
+                          <m:mfrac><m:mo>∂</m:mo>
+                            <m:mrow><m:mo>∂</m:mo>
+                              <m:mi>r</m:mi>
+                            </m:mrow></m:mfrac><m:mo>⁢</m:mo>
+                          <m:mfenced><m:mfrac><m:mn>1</m:mn>
+                              <m:mi>r</m:mi>
+                            </m:mfrac></m:mfenced></m:mrow><m:mo>+</m:mo>
+                        <m:mrow><m:mrow><m:mrow><m:mover><m:mi>θ</m:mi>
+                                <m:mo>̂</m:mo>
+                              </m:mover><m:mo>⁢</m:mo>
+                              <m:mfrac><m:mn>1</m:mn>
+                                <m:mi>r</m:mi>
+                              </m:mfrac></m:mrow><m:mo>⋅</m:mo>
+                            <m:mfrac><m:mo>∂</m:mo>
+                              <m:mrow><m:mo>∂</m:mo>
+                                <m:mi>θ</m:mi>
+                              </m:mrow></m:mfrac></m:mrow><m:mo>⁢</m:mo>
+                          <m:mfenced><m:mfrac><m:mn>1</m:mn>
+                              <m:mi>r</m:mi>
+                            </m:mfrac></m:mfenced></m:mrow><m:mo>+</m:mo>
+                        <m:mrow><m:mrow><m:mrow><m:mover><m:mi>φ</m:mi>
+                                <m:mo>̂</m:mo>
+                              </m:mover><m:mo>⁢</m:mo>
+                              <m:mfrac><m:mn>1</m:mn>
+                                <m:mrow><m:mi>r</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mrow><m:mo>sin</m:mo>
+                                    <m:mi>θ</m:mi>
+                                  </m:mrow></m:mrow></m:mfrac></m:mrow><m:mo>⋅</m:mo>
+                            <m:mfrac><m:mo>∂</m:mo>
+                              <m:mrow><m:mo>∂</m:mo>
+                                <m:mi>φ</m:mi>
+                              </m:mrow></m:mfrac></m:mrow><m:mo>⁢</m:mo>
+                          <m:mfenced><m:mfrac><m:mn>1</m:mn>
+                              <m:mi>r</m:mi>
+                            </m:mfrac></m:mfenced></m:mrow></m:mrow></m:mfenced><m:mo>⁢</m:mo>
+                    <m:mtext>.</m:mtext>
+                  </m:mrow></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex"> \begin{multiline} \vec{E} &amp;= -[\hat{r} {\dd[\partial]{r}} + \hat{\theta} \frac{1}{r} \cdot {\dd[\partial]{\theta}} + \hat{\varphi} \frac{1}{r \sin \theta} \cdot {\dd[\partial]{\varphi}}] k \frac{q}{r} \\ &amp;= -kq [\hat{r} {\dd[\partial]{r}} (\frac{1}{r})+ \hat{\theta} \frac{1}{r} \cdot {\dd[\partial]{\theta}} (\frac{1}{r}) + \hat{\varphi} \frac{1}{r \sin \theta} \cdot {\dd[\partial]{\varphi}} (\frac{1}{r})] \text{.} \end{multiline}</m:annotation>
+            <m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mover>
+                  <m:mi>E</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+                <m:mo id="Ub166427c-5f89-4282-a00e-e439dacbb543-copy">=</m:mo>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mfenced close="]" open="[">
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>r</m:mi>
+                            <m:mo>̂</m:mo>
+                          </m:mover>
+                          <m:mo>⁢</m:mo>
+                          <m:mfrac>
+                            <m:mo>∂</m:mo>
+                            <m:mrow>
+                              <m:mo>∂</m:mo>
+                              <m:mi>r</m:mi>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo>+</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mover>
+                              <m:mi>θ</m:mi>
+                              <m:mo>̂</m:mo>
+                            </m:mover>
+                            <m:mo>⁢</m:mo>
+                            <m:mfrac>
+                              <m:mn>1</m:mn>
+                              <m:mi>r</m:mi>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo>⋅</m:mo>
+                          <m:mfrac>
+                            <m:mo>∂</m:mo>
+                            <m:mrow>
+                              <m:mo>∂</m:mo>
+                              <m:mi>θ</m:mi>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo>+</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mover>
+                              <m:mi>φ</m:mi>
+                              <m:mo>̂</m:mo>
+                            </m:mover>
+                            <m:mo>⁢</m:mo>
+                            <m:mfrac>
+                              <m:mn>1</m:mn>
+                              <m:mrow>
+                                <m:mi>r</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mrow>
+                                  <m:mo>sin</m:mo>
+                                  <m:mi>θ</m:mi>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo>⋅</m:mo>
+                          <m:mfrac>
+                            <m:mo>∂</m:mo>
+                            <m:mrow>
+                              <m:mo>∂</m:mo>
+                              <m:mi>φ</m:mi>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mfenced>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>k</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mfrac>
+                      <m:mi>q</m:mi>
+                      <m:mi>r</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo id="U39a7b6aa-260a-4652-a0c1-1bf256280d08-copy" indenttarget="Ub166427c-5f89-4282-a00e-e439dacbb543" linebreak="newline" indentalign="id">=</m:mo>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mi>k</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>q</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mfenced close="]" open="[">
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>r</m:mi>
+                            <m:mo>̂</m:mo>
+                          </m:mover>
+                          <m:mo>⁢</m:mo>
+                          <m:mfrac>
+                            <m:mo>∂</m:mo>
+                            <m:mrow>
+                              <m:mo>∂</m:mo>
+                              <m:mi>r</m:mi>
+                            </m:mrow>
+                          </m:mfrac>
+                          <m:mo>⁢</m:mo>
+                          <m:mfenced>
+                            <m:mfrac>
+                              <m:mn>1</m:mn>
+                              <m:mi>r</m:mi>
+                            </m:mfrac>
+                          </m:mfenced>
+                        </m:mrow>
+                        <m:mo>+</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mover>
+                                <m:mi>θ</m:mi>
+                                <m:mo>̂</m:mo>
+                              </m:mover>
+                              <m:mo>⁢</m:mo>
+                              <m:mfrac>
+                                <m:mn>1</m:mn>
+                                <m:mi>r</m:mi>
+                              </m:mfrac>
+                            </m:mrow>
+                            <m:mo>⋅</m:mo>
+                            <m:mfrac>
+                              <m:mo>∂</m:mo>
+                              <m:mrow>
+                                <m:mo>∂</m:mo>
+                                <m:mi>θ</m:mi>
+                              </m:mrow>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo>⁢</m:mo>
+                          <m:mfenced>
+                            <m:mfrac>
+                              <m:mn>1</m:mn>
+                              <m:mi>r</m:mi>
+                            </m:mfrac>
+                          </m:mfenced>
+                        </m:mrow>
+                        <m:mo>+</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mover>
+                                <m:mi>φ</m:mi>
+                                <m:mo>̂</m:mo>
+                              </m:mover>
+                              <m:mo>⁢</m:mo>
+                              <m:mfrac>
+                                <m:mn>1</m:mn>
+                                <m:mrow>
+                                  <m:mi>r</m:mi>
+                                  <m:mo>⁢</m:mo>
+                                  <m:mrow>
+                                    <m:mo>sin</m:mo>
+                                    <m:mi>θ</m:mi>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mfrac>
+                            </m:mrow>
+                            <m:mo>⋅</m:mo>
+                            <m:mfrac>
+                              <m:mo>∂</m:mo>
+                              <m:mrow>
+                                <m:mo>∂</m:mo>
+                                <m:mi>φ</m:mi>
+                              </m:mrow>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo>⁢</m:mo>
+                          <m:mfenced>
+                            <m:mfrac>
+                              <m:mn>1</m:mn>
+                              <m:mi>r</m:mi>
+                            </m:mfrac>
+                          </m:mfenced>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mfenced>
+                    <m:mo>⁢</m:mo>
+                    <m:mtext>.</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:annotation-xml></m:semantics>
+          </m:math></equation><para id="fs-id1167584743652">Po obliczeniu pochodnych otrzymujemy wynik</para>
+        <equation id="fs-id1167585036926" class="unnumbered">
+          <m:math display="block">
+            <m:semantics>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>E</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mi>k</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>q</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>r</m:mi>
+                            <m:mo>̂</m:mo>
+                          </m:mover>
+                          <m:mo>⋅</m:mo>
+                          <m:mfrac>
+                            <m:mn>-1</m:mn>
+                            <m:msup>
+                              <m:mi>r</m:mi>
+                              <m:mn>2</m:mn>
+                            </m:msup>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo>+</m:mo>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>θ</m:mi>
+                            <m:mo>̂</m:mo>
+                          </m:mover>
+                          <m:mo>⋅</m:mo>
+                          <m:mn>0</m:mn>
+                        </m:mrow>
+                        <m:mo>+</m:mo>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>φ</m:mi>
+                            <m:mo>̂</m:mo>
+                          </m:mover>
+                          <m:mo>⋅</m:mo>
+                          <m:mn>0</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mfenced>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mfrac>
+                    <m:mi>q</m:mi>
+                    <m:msup>
+                      <m:mi>r</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mfrac>
+                  <m:mo>⁢</m:mo>
+                  <m:mover>
+                    <m:mi>r</m:mi>
+                    <m:mo>̂</m:mo>
+                  </m:mover>
+                  <m:mo>⁢</m:mo>
+                  <m:mtext>,</m:mtext>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \vec{E} = - kq (\hat{r} \cdot \frac{-1}{r^2} + \hat{\theta} \cdot 0 + \hat{\varphi} \cdot 0) = k \frac{q}{r^2} \hat{r} \text{,}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="fs-id1167584942855">którego się spodziewaliśmy.</para>
+        <para id="fs-id1167584980158">
+          <title>Znaczenie</title>Powyższym rachunkiem potwierdziliśmy znany nam z poprzednich rozdziałów wynik. Dodatkowo pokazaliśmy, że wektor <m:math display="inline">
+            <m:mover>
+              <m:mi>E</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:math> jest rzeczywiście skierowany w stronę malejącego potencjału (kierunek zgodny z wektorem wodzącym zaczepionym w środku ładunku źródłowego), co zobrazowano na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_24_04_PtChg" cmlnle:case="locative"/>. Wykorzystaliśmy postać operatora gradientu w zmiennych sferycznych, jednak, jak łatwo zauważyć, tylko różniczkowanie po zmiennej radialnej „przetrwało” różniczkowanie. Potencjał zależy tylko od <m:math display="inline">
+          <m:mi>r</m:mi>
+        </m:math>, dlatego możemy go potraktować jak funkcję jednej zmiennej i natężenie obliczać jako pochodną po <m:math display="inline">
+        <m:mi>r</m:mi>
+        </m:math> (oczywiście ze znakiem minus).</para>
+        <figure id="CNX_UPhysics_24_04_PtChg">
+          <media id="fs-id1167584700180" alt="Rysunek przedstawia ładunek Q i wychodzące radialnie z Q wektory pola elektrycznego. ">
+            <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_24_04_PtChg.jpg"/>
+          </media>
+          <caption>Wektory natężenia pola elektrycznego wytworzonego przez punktowy ładunek dodatni, pokazane dla trzech odległości od ładunku źródłowego.</caption>
+        </figure>
+      </example>
+      <example id="fs-id1167584939454">
+        <para id="fs-id1167585020817">
+          <title>Natężenie pola naładowanego pierścienia</title>Użyjmy wzoru na potencjał znalezionego w <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1167585171844" document="m67174" cmlnle:case="locative"/>, aby obliczyć natężenie pola wytworzonego przez naładowany jednorodnie pierścień w punkcie na osi pierścienia (<link target-id="CNX_UPhysics_24_04_RingChg"/>).</para>
+          <figure id="CNX_UPhysics_24_04_RingChg">
+            <media id="fs-id1167584943704" alt="Rysunek przedstawia naładowany pierścień umieszczony na płaszczyźnie xy z centrum w środku układu. Punkt P jest umieszczony na osi z poza środkiem układu. ">
+              <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_24_04_RingChg.jpg"/>
+            </media>
+            <caption>Obliczamy wektor natężenia pola elektrycznego pierścienia naładowanego jednorodnie.</caption>
+          </figure>
+          <para id="fs-id1167584729490">
+            <title>Strategia rozwiązania</title>Zauważmy, że wektor natężenia pola wytwarzanego przez każdy mały fragment pierścienia będzie miał dwie składowe: wzdłuż osi <m:math display="inline">
+              <m:mi>z</m:mi>
+            </m:math> oraz prostopadle do niej. Dwa punkty po przeciwnych stronach pierścienia dadzą natężenie, którego prostopadłe składowe się znoszą. Nasz problem jest więc jednowymiarowy. Wystarczy zatem użyć równania <m:math display="inline">
+            <m:msub>
+              <m:mi>E</m:mi>
+              <m:mi>z</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>−</m:mo>
+              <m:mrow>
+                <m:mo>∂</m:mo>
+                <m:mrow>
+                  <m:mi>V</m:mi>
+                  <m:mo>∕</m:mo>
+                  <m:mrow>
+                    <m:mo>∂</m:mo>
+                    <m:mi>z</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:math> i wyrażenia na potencjał <m:math display="inline">
+          <m:mi>V</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mi>k</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>q</m:mi>
+                <m:mtext>cał</m:mtext>
+              </m:msub>
+            </m:mrow>
+            <m:mo>∕</m:mo>
+            <m:msqrt>
+              <m:msup>
+                <m:mi>z</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:msup>
+                <m:mi>R</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:msqrt>
+          </m:mrow>
+          </m:math>, przedstawionego w poprzednim podrozdziale.</para>
+          <para id="fs-id1167584774598">
+            <title>Rozwiązanie</title>Obliczając pochodną potencjału po <m:math display="inline">
+              <m:mi>z</m:mi>
+              </m:math>, otrzymujemy</para>
+              <equation id="fs-id1167584910628" class="unnumbered">
+                <m:math display="block">
+                  <m:semantics>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>E</m:mi>
+                        <m:mi>z</m:mi>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mrow>
+                          <m:mfrac>
+                            <m:mo>∂</m:mo>
+                            <m:mrow>
+                              <m:mo>∂</m:mo>
+                              <m:mi>z</m:mi>
+                            </m:mrow>
+                          </m:mfrac>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mi>k</m:mi>
+                              <m:mo>⁢</m:mo>
+                              <m:msub>
+                                <m:mi>q</m:mi>
+                                <m:mtext>cał</m:mtext>
+                              </m:msub>
+                            </m:mrow>
+                            <m:msqrt>
+                              <m:msup>
+                                <m:mi>z</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                              <m:mo>+</m:mo>
+                              <m:msup>
+                                <m:mi>R</m:mi>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                            </m:msqrt>
+                          </m:mfrac>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mi>k</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>q</m:mi>
+                              <m:mtext>cał</m:mtext>
+                            </m:msub>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>z</m:mi>
+                          </m:mrow>
+                          <m:msup>
+                            <m:mfenced>
+                              <m:mrow>
+                                <m:msup>
+                                  <m:mi>z</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                                <m:mo>+</m:mo>
+                                <m:msup>
+                                  <m:mi>R</m:mi>
+                                  <m:mn>2</m:mn>
+                                </m:msup>
+                              </m:mrow>
+                            </m:mfenced>
+                            <m:mrow>
+                              <m:mn>3</m:mn>
+                              <m:mo>∕</m:mo>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:msup>
+                        </m:mfrac>
+                        <m:mo>⁢</m:mo>
+                        <m:mtext>.</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_z = - \dd[\partial]{z}\frac{kq_{\text{cał}}}{\sqrt{z^2+R^2}} = k \frac{q_{\text{cał}} z}{(z^2+R^2)^{3/2}} \text{.}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </equation>
+              <para id="fs-id1167584649147">
+                <title>Znaczenie</title>Tym razem także uzyskaliśmy wynik zgodny z naszymi oczekiwaniami – obliczone tutaj natężenie pola wytworzonego przez jednorodnie naładowany pierścień jest takie samo jak obliczone w poprzednich rozdziałach. Ponadto okazuje się, że symetria niektórych układów ładunku pozwala na uproszczenie pełnego gradientu i obliczenie tylko jednej jego składowej.</para>
+              </example>
+              <note id="fs-id1167584649922" class="check-understanding">
+                <exercise id="fs-id1167584765071">
+                  <problem id="fs-id1167584717199">
+                    <para id="fs-id1167584756055">
+                      <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Jakiego układu współrzędnych użyłbyś do obliczenia natężenia pola wytworzonego przez dipol, używając gradientu potencjału?</para>
+                    </problem>
+                    <solution id="fs-id1167584887801">
+                      <para id="fs-id1167584942608">Dowolnego, chociaż cylindryczny byłby najbliższy symetrii dipola.</para>
+                    </solution>
+                  </exercise>
+                </note>
+                <section id="fs-id1167585017287" class="key-concepts">
+                  <title>Podsumowanie</title>
+                  <list id="fs-id1167584744301" list-type="bulleted" bullet-style="bullet">
+                    <item>Podobnie jak możemy scałkować natężenie pola w celu obliczenia potencjału, tak też, różniczkując potencjał, możemy obliczyć natężenie.</item>
+                    <item>Możemy osobno znaleźć składowe wektora natężenia, różniczkując potencjał po kolejnych zmiennych układu współrzędnych, albo od razu obliczyć cały wektor natężenia za pomocą operatora gradientu. </item>
+                  </list>
+                </section>
+                <section id="fs-id1167585174181" class="review-conceptual-questions">
+                  <title>Pytania </title>
+                  <exercise id="fs-id1167585023255">
+                    <problem id="fs-id1167585039583">
+                      <para id="fs-id1167585159999">Czy jeśli natężenie pola w pewnym obszarze jest zerowe, to potencjał także musi wynosić zero?</para>
+                    </problem>
+                    <solution id="fs-id1167585119005">
+                      <para id="fs-id1167585065642">Nie. Potencjał w tym obszarze może być stały, bo pochodna stałej wynosi zero.</para>
+                    </solution>
+                  </exercise>
+                  <exercise id="fs-id1167584776674">
+                    <problem id="fs-id1167584745677">
+                      <para id="fs-id1167585176349">Wyjaśnij dlaczego znajomość wektora <m:math display="inline">
+                        <m:mover>
+                          <m:mi>E</m:mi>
+                          <m:mo>→</m:mo>
+                        </m:mover>
+                        <m:mo>⁢</m:mo>
+                        <m:mfenced>
+                          <m:mi>x</m:mi>
+                          <m:mi>y</m:mi>
+                          <m:mi>z</m:mi>
+                        </m:mfenced>
+                      </m:math> jest niewystarczająca do uzyskania pełnej informacji o wielkości <m:math display="inline">
+                      <m:mi>V</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mfenced>
+                        <m:mi>x</m:mi>
+                        <m:mi>y</m:mi>
+                        <m:mi>z</m:mi>
+                      </m:mfenced>
+                      </m:math>. Czy w odwrotną stronę jest tak samo?</para>
+                    </problem>
+                  </exercise>
+                </section>
+                <section id="fs-id1167585159961" class="review-problems">
+                  <title>Zadania</title>
+                  <exercise id="fs-id1167584773196">
+                    <problem id="fs-id1167584823710">
+                      <para id="fs-id1167585121315">W pewnym obszarze powierzchnie stałego potencjału (tzw. powierzchnie ekwipotencjalne) są zlokalizowane w punktach o składowej <m:math display="inline">
+                        <m:mi>z</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mtext>const</m:mtext>
+                      </m:math>. Powierzchnie są równoodległe, a wielkości potencjału tych powierzchni wynoszą: <m:math display="inline">
+                      <m:mi>V</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mn>100</m:mn>
+                        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                        <m:mi mathvariant="normal">V</m:mi>
+                      </m:mrow>
+                    </m:math> dla <m:math display="inline">
+                    <m:mi>z</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mn>0</m:mn>
+                      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                  </m:math>, <m:math display="inline">
+                  <m:mi>V</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mn>200</m:mn>
+                    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                    <m:mi mathvariant="normal">V</m:mi>
+                  </m:mrow>
+                </m:math> dla <m:math display="inline">
+                <m:mi>z</m:mi>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mn>0,5</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+              </m:math>, <m:math display="inline">
+              <m:mi>V</m:mi>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mn>300</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">V</m:mi>
+              </m:mrow>
+            </m:math> dla <m:math display="inline">
+            <m:mi>z</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            </m:math>. Jakiego typu pole elektryczne panuje w tym obszarze? Jakie jest natężenie tego pola? </para>
+          </problem>
+          <solution id="fs-id1167585021403">
+            <para id="fs-id1167585079436">W tym obszarze panuje pole jednorodne o natężeniu <m:math display="inline">
+              <m:mi>E</m:mi>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mn>200</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mrow>
+                  <m:mi mathvariant="normal">V</m:mi>
+                  <m:mo>∕</m:mo>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:math> wzdłuż kierunku <m:math display="inline">
+            <m:mi>z</m:mi>
+            </m:math>.</para>
+          </solution>
+        </exercise>
+        <exercise id="fs-id1167585172136">
+          <problem id="fs-id1167585080006">
+            <para id="fs-id1167585176004">Funkcja potencjału w pewnym obszarze ma postać <m:math display="inline">
+              <m:mi>V</m:mi>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:msup>
+                      <m:mi>y</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>z</m:mi>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mrow>
+                  <m:mn>4</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>y</m:mi>
+                </m:mrow>
+              </m:mrow>
+              </m:math>. Jaka jest funkcja natężenia pola w tym obszarze?</para>
+            </problem>
+          </exercise>
+          <exercise id="fs-id1167585091088">
+            <problem id="fs-id1167585096570">
+              <para id="fs-id1167585096573">Oblicz wektor natężenia pola w dowolnym punkcie przestrzeni, wytworzonego przez nieskończony przewód naładowany jednorodnie.</para>
+            </problem>
+            <solution id="fs-id1167585165494">
+              <para id="fs-id1167585165496">Stosujemy wzór <m:math display="inline">
+                <m:mover>
+                  <m:mi>E</m:mi>
+                  <m:mo>→</m:mo>
+                </m:mover>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mrow>
+                        <m:mo>∇</m:mo>
+                        <m:mtext/>
+                      </m:mrow>
+                      <m:mo>→</m:mo>
+                    </m:mover>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>V</m:mi>
+                  </m:mrow>
+                </m:mrow>
+              </m:math> z gradientem w zmiennych cylindrycznych <m:math display="inline">
+              <m:semantics>
+                <m:mrow>
+                  <m:mover>
+                    <m:mo>∇</m:mo>
+                    <m:mo>→</m:mo>
+                  </m:mover>
+                  <m:mo>=</m:mo>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>r</m:mi>
+                        <m:mo>̂</m:mo>
+                      </m:mover>
+                      <m:mo>⁢</m:mo>
+                      <m:mfrac>
+                        <m:mo>∂</m:mo>
+                        <m:mrow>
+                          <m:mo>∂</m:mo>
+                          <m:mi>r</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mover>
+                          <m:mi>φ</m:mi>
+                          <m:mo>̂</m:mo>
+                        </m:mover>
+                        <m:mo>⁢</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mi>r</m:mi>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mo>⋅</m:mo>
+                      <m:mfrac>
+                        <m:mo>∂</m:mo>
+                        <m:mrow>
+                          <m:mo>∂</m:mo>
+                          <m:mi>φ</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mrow>
+                      <m:mover>
+                        <m:mi>z</m:mi>
+                        <m:mo>̂</m:mo>
+                      </m:mover>
+                      <m:mo>⁢</m:mo>
+                      <m:mfrac>
+                        <m:mo>∂</m:mo>
+                        <m:mrow>
+                          <m:mo>∂</m:mo>
+                          <m:mi>z</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+                <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \vec{x} = \hat{r}{\dd[\partial]{r}} + \hat{\varphi}\frac1r \cdot {\dd[\partial]{\varphi}} + \hat{z}{\dd[\partial]{z}}</m:annotation>
+              </m:semantics>
+            </m:math> i potencjałem obliczonym w poprzednim podrozdziale <m:math display="inline">
+            <m:semantics>
+              <m:mrow>
+                <m:mi>V</m:mi>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>k</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>λ</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mrow>
+                      <m:mo>ln</m:mo>
+                      <m:mi>r</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="application/vnd.katalysteducation.mathtex"> V = -2k\lambda \ln r</m:annotation>
+            </m:semantics>
+          </m:math>.Wynik: <m:math display="inline">
+          <m:mover>
+            <m:mi>E</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>k</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>λ</m:mi>
+              </m:mrow>
+              <m:mo>∕</m:mo>
+              <m:mi>r</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mo>̂</m:mo>
+            </m:mover>
+          </m:mrow>
+          </m:math> jest zgodny z oczekiwaniami.</para>
+        </solution>
+      </exercise>
+    </section>
+  </content>
+</document>

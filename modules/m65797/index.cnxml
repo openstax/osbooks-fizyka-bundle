@@ -1,0 +1,603 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Druga zasada dynamiki dla ruchu obrotowego</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65797</md:content-id>
+  <md:title>Druga zasada dynamiki dla ruchu obrotowego</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+ <list>
+      <item>obliczać, w celu wyznaczenia przyspieszenia kątowego, moment siły dla układu ciał obracających się wokół ustalonej osi;
+      </item>
+      <item>wyjaśniać, jak zmiany momentu bezwładności układu wpływają na przyspieszenie kątowe przy stałej wartości momentu siły;</item>
+      <item>analizować dynamikę ruchu obrotowego na podstawie wszystkich informacji omawianych do tej pory.</item>
+    </list></md:abstract>
+  <md:uuid>76e1d254-d82f-4bfb-9928-dc98d4d66c72</md:uuid>
+</metadata>
+
+<content>
+    <para id="ked-1bl31e7pq_f8o">Do tej pory analizowaliśmy energię kinetyczną ruchu postępowego i ruchu obrotowego, ale nie powiązaliśmy ich jeszcze z siłami i momentami sił działających na układ. W tym podrozdziale wprowadzimy równanie analogiczne do drugiej zasady dynamiki Newtona dla ruchu postępowego i zastosujemy je do analizy dynamiki ciał sztywnych obracających się wokół stałej osi. </para>
+    <section id="ked-1bl31fi00_qn">
+      <title>Równanie Newtona dla ruchu obrotowego </title>
+      <para id="ked-1bl31gseb_q1g">Dotychczas wiele z omówionych wielkości używanych do opisu ruchu obrotowego ma swoje odpowiedniki w wielkościach opisujących ruch postępowy. Ostatnią taką wielkością, którą omawialiśmy, był moment siły – obrotowy odpowiednik siły. Powstaje pytanie: czy dla ruchu obrotowego istnieje równanie analogiczne do drugiego prawa Newtona dla ruchu postępowego, <m:math><m:mo>∑</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mover><m:mi>a</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>, które zawiera moment siły? Aby odpowiedzieć na to pytanie, przeanalizujmy na początek ruch cząstki punktowej o masie <m:math><m:mi>m</m:mi></m:math> poruszającej się dookoła pewnej osi, po okręgu o promieniu <m:math><m:mi>r</m:mi></m:math>. Niech na tę cząstkę działa stała co do wartości siła <m:math><m:mi>F</m:mi></m:math> (patrz rysunek).</para>
+      <figure id="CNX_UPhysics_10_07_Table">
+        <media id="ked-1bl31ivui_7r" alt="Rysunek pokazuje stół z idealnie gładkim blatem zapewniającym brak tarcia. Obiekt o masie m utrzymuje się pozbawionym tarcia poziomym stole przymocowany sznurkiem w punkcie obrotu o długości r. Na obiekt działa siła F prostopadle do sznurka r.">
+          <image src="../../media/CNX_UPhysics_10_07_Table.jpg" mime-type="image/jpeg"/>
+        </media>
+        <caption>Leżący na idealnie gładkim stole (brak tarcia) przywiązany do sznurka krążek porusza się po okręgu o promieniu <m:math><m:mi>r</m:mi></m:math>. Siłą dośrodkową jest siła naprężenia sznurka. Na krążek działa prostopadła do promienia siła <m:math><m:mi>F</m:mi></m:math>, nadająca mu stałe przyspieszenie styczne. </caption>
+      </figure>
+      <para id="ked-1bl31mh8i_hr">Zastosujmy drugą zasadę dynamiki dla ruchu postępowego, aby określić przyspieszenie liniowe naszej cząstki. Siła ta powoduje, że cząstka porusza się z przyspieszeniem stycznym o wartości <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>F</m:mi><m:mtext>/</m:mtext><m:mi>m</m:mi></m:mrow></m:math>. Wartość przyspieszenia stycznego jest proporcjonalna do wartości przyspieszenia kątowego, zgodnie z zależnością <m:math><m:mrow><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>ε</m:mi></m:mrow></m:math>. Wstawiając to wyrażenie do równania dla drugiej zasady dynamiki dla ruchu postępowego otrzymujemy:</para>
+      <equation id="ked-1bl31oqqr_s5" class="unnumbered">
+        <m:math>
+          <m:mrow>
+            <m:mi>F</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>m</m:mi>
+            <m:mi>r</m:mi>
+            <m:mi>ε</m:mi>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="ked-1bl31p820_dgo">Mnożąc obie strony przez <m:math><m:mi>r</m:mi></m:math> otrzymujemy:</para>
+      <equation id="ked-1bl31pam9_go" class="unnumbered">
+        <m:math>
+          <m:mrow>
+            <m:mi>r</m:mi>
+            <m:mi>F</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>ε</m:mi>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="ked-1bl31qa8t_fj8">Zauważmy, że lewa strona tego równania jest momentem siły liczonym względem osi obrotu, gdzie <m:math><m:mi>r</m:mi></m:math> jest ramieniem siły, a <m:math><m:mi>F</m:mi></m:math> jest wartością siły. Siła <m:math><m:mi>F</m:mi></m:math> jest prostopadła do promienia <m:math><m:mi>r</m:mi></m:math>. Przypomnijmy, że moment bezwładności cząstki punktowej jest równy <m:math><m:mrow><m:mi>I</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>. Moment siły prostopadłej do promienia okręgu w naszym przypadku (<link target-id="CNX_UPhysics_10_07_Table"/>) można zapisać jako:</para>
+      <equation id="ked-1bl31s335_nr8" class="unnumbered">
+        <m:math>
+          <m:mrow>
+            <m:mi>M</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>I</m:mi>
+            <m:mi>ε</m:mi>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="ked-1bl32nr4h_vng">Moment siły działającej na cząstkę jest równy momentowi bezwładności liczonemu względem osi obrotu pomnożonemu przez przyspieszenie kątowe. Możemy uogólnić to równanie na równanie dla ciała sztywnego obracającego się wokół ustalonej osi.</para>
+      <note id="ked-1bl321vbn_rng">
+        <title>Druga zasada dynamiki Newtona dla ruchu obrotowego</title>
+        <para id="ked-1bl322vnt_tn8">Jeśli więcej niż jeden moment siły działa na ciało sztywne obracające się wokół stałej osi, wówczas suma momentów siły jest równa momentowi bezwładności pomnożonemu przez przyspieszenie kątowe:</para>
+        <equation id="ked-1bl323aq7_2pg">
+          <m:math>
+            <m:mrow>
+              <m:mstyle displaystyle="true">
+                <m:munder>
+                  <m:mo>∑</m:mo>
+                  <m:mi>i</m:mi>
+                </m:munder>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>M</m:mi>
+                    <m:mi>i</m:mi>
+                  </m:msub>
+                </m:mrow>
+              </m:mstyle>
+              <m:mo>=</m:mo>
+              <m:mi>I</m:mi>
+              <m:mi>ε</m:mi>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation></note>
+        <para id="ked-1bl323hlj_th">Iloczyn <m:math><m:mi>I</m:mi><m:mi>ε</m:mi></m:math> jest wielkością skalarną i może być dodatni lub ujemny (przeciwny lub zgodny z ruchem wskazówek zegara), zależnie od znaku wypadkowego momentu siły. Należy pamiętać o konwencji, że przyspieszenie kątowe przeciwne do ruchu wskazówek zegara jest dodatnie. Zatem, jeśli ciało sztywne obraca się zgodnie z ruchem wskazówek zegara pod wpływem dodatniego momentu siły (przeciwnego do ruchu wskazówek zegara), to jego przyspieszenie kątowe jest dodatnie.</para>
+        <para id="ked-1bl325iv3_ac">Powyższe równanie (<link target-id="ked-1bl323aq7_2pg"/>) jest drugim prawem Newtona dla dynamiki ruchu obrotowego i mówi nam, jaki jest związek momentu siły z momentem bezwładności i przyspieszeniem kątowym. Nazywamy je <term cmlnle:reference="druga zasada dynamiki dla ruchu obrotowego" class="no-emphasis">drugą zasadą dynamiki dla ruchu obrotowego</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Newton’s second law for rotation</term></foreign>). Korzystając z tego równania możemy rozwiązać całą grupę zagadnień związanych z siłami i obrotami. Nic dziwnego, że formuła opisująca skutki działania momentu siły na ciało sztywne (a więc obrót) zawiera moment bezwładności, ponieważ jest to wielkość, która określa, jak łatwo lub trudno jest zmienić ruch obrotowy obiektu.</para>
+    </section>
+    <section id="ked-1bl326vbk_gt8">
+      <title>Wyprowadzenie drugiej zasady dynamiki Newtona dla ruchu obrotowego w postaci wektorowej</title>
+      <para id="ked-1bl327398_k">Podobnie jak poprzednio, kiedy wyznaczaliśmy przyspieszenie kątowe, możemy również wyznaczyć wektor momentu siły. Drugie prawo dynamiki <m:math><m:mo>∑</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mi>m</m:mi><m:mrow><m:mover><m:mi>a</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> określa związek między siłą wypadkową a wielkością kinematyczną ruchu postępowego obiektu. Równoważnik tego równania dla ruchu obrotowego można otrzymać stosując zależność pomiędzy przyspieszeniem kątowym, położeniem i wektorem przyspieszenia stycznego:</para>
+      <equation id="ked-1bl32a75g_ofo" class="unnumbered">
+        <m:math>
+          <m:mrow>
+            <m:mover>
+              <m:mi>a</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>ε</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="ked-1bl32dgp6_gco">Policzmy iloczyn wektorowy <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>a</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> wykorzystując własności iloczynu wektorowego (należy pamiętać, że <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mover><m:mi>ε</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:math>):</para>
+      <equation id="ked-1bl32jrmt_nto" class="unnumbered">
+        <m:math>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>a</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>ε</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>×</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>r</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>ε</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>r</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>r</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>r</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>ε</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>ε</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="ked-1bl32k9v9_pl8">Policzmy teraz wypadkowy moment siły:</para>
+      <equation id="ked-1bl32kcir_s6" class="unnumbered">
+        <m:math>
+          <m:mo>∑</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>r</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>×</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>F</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>m</m:mi>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>a</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mi>m</m:mi>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>a</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mi>m</m:mi>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mrow>
+            <m:mover>
+              <m:mi>ε</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="ked-1bl32l4rr_hr8">Ponieważ <m:math><m:mi>m</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:math> jest momentem bezwładności masy punktowej, otrzymujemy:</para>
+      <equation id="ked-1bl32lrj3_un8" class="unnumbered">
+        <m:math>
+          <m:mo>∑</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>M</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mi>I</m:mi>
+          <m:mrow>
+            <m:mover>
+              <m:mi>ε</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="ked-1bl32n3c2_en">Jest to równanie wyrażające drugą zasadę dynamiki dla ruchu obrotowego zapisane w postaci wektorowej. Wektor momentu siły ma ten sam kierunek, co wektor przyspieszenia kątowego.</para>
+    </section>
+    <section id="ked-1bl33qh8s_vt8">
+      <title>Zastosowanie równań dynamiki ruchu obrotowego</title>
+      <para id="ked-1bl33qkvs_r1o">Zanim zastosujemy równanie dynamiki ruchu obrotowego do opisu konkretnych codziennych sytuacji, ustalmy ogólną strategię rozwiązywania zadań w tej kategorii.</para>
+      <note id="ked-1bl33r5t0_0h8">
+        <title>Strategia rozwiązywania zadań: dynamika ruchu obrotowego</title>
+        <list id="ked-1bl33sgc2_abo" list-type="enumerated" number-style="arabic"><item> Przeanalizuj sytuację i ustal, czy mamy do czynienia z działaniem momentów sił i na jakie ciała one działają. Wykonaj starannie szkic sytuacyjny. </item>
+          <item>Określ, jakie wielkości będą analizowane i jakie wartości będą wyznaczane. </item>
+          <item>Narysuj diagram sił, tj. wszystkie zewnętrzne siły działające na rozpatrywany w zadaniu układ.</item>
+          <item>Określ punkt obrotu. Jeśli obiekt jest w stanie równowagi, musi być w równowadze dla wszystkich możliwych punktów obrotu – wybierz ten, który upraszcza obliczenia.</item>
+          <item>Zastosuj równanie <m:math>
+          <m:mo>∑</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>M</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mi>I</m:mi>
+          <m:mrow>
+            <m:mover>
+              <m:mi>ε</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:math>, tj. drugą zasadę dynamiki dla ruchu obrotowego. Należy użyć właściwego wzoru dla momentu bezwładności i wyliczyć momenty wszystkich sił względem wybranego punktu (osi) obrotu. Jak zwykle, sprawdź sensowność rozwiązania.</item>
+        </list></note>
+      <example id="ked-1bl3453lt_jc8">
+        <para id="ked-1bl345r16_b9"><title>Wyznaczenie wpływu rozkładu masy na ruch obrotowy karuzeli</title>Wyobraź sobie ojca kręcącego karuzelą na placu zabaw (<link target-id="CNX_UPhysics_10_07_Merry"/>). Działa on z siłą 250 N na brzeg karuzeli o masie 200,0 kg. Promień karuzeli wynosi 1,50 m. Oblicz przyspieszenie kątowe karuzeli spowodowane przyłożeniem tej siły: <list id="eip-idm649728656" list-type="enumerated" number-style="lower-alpha"><item>gdy nikogo nie ma na karuzeli;</item><item>gdy dziecko o masie 8,0 kg siedzi w odległości 1,25 m od środka; załóż, że karuzela jest jednorodną tarczą, a tarcie można zaniedbać.</item></list></para>
+        <figure id="CNX_UPhysics_10_07_Merry">
+          <media id="ked-1bl346c0t_77g" alt="Rysunek przedstawia mężczyznę popychającego pokrywę karuzeli pod kątem i prostopadle do jej promienia.">
+            <image src="../../media/CNX_UPhysics_10_07_Merry.jpg" mime-type="image/jpeg"/>
+          </media>
+          <caption>Aby uzyskać maksymalny moment siły, mężczyzna popycha karuzelę przykładając siłę do punktów leżących na jej obrzeżu, prostopadle do promienia karuzeli.</caption>
+        </figure>
+        <para id="ked-1bl347nno_2o8"><title>Strategia rozwiązania</title>Wypadkowy moment pędu dany jest wyrażeniem <m:math>
+          <m:mo>∑</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>M</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mi>I</m:mi>
+          <m:mrow>
+            <m:mover>
+              <m:mi>ε</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:math>. Aby wyznaczyć <m:math><m:mi>ε</m:mi></m:math>, musimy najpierw wyliczyć moment siły <m:math><m:mi>M</m:mi></m:math> (który jest taki sam w obu przypadkach) i moment bezwładności <m:math><m:mi>I</m:mi></m:math> (większy w drugim przypadku). </para><para id="ked-1bl349vj9_018"><title>Rozwiązanie</title></para><list id="ked-1bl34a7mr_mm" list-type="enumerated" number-style="lower-alpha">
+          <item>Moment bezwładności jednorodnej tarczy względem jej środka jest równy<equation id="ked-1bl34cood_4s8" class="unnumbered"><m:math><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>m</m:mi><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:math></equation>Dla danych z zadania <m:math><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>50</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow></m:math> i <m:math><m:mi>R</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>50</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math> otrzymujemy: <equation id="ked-1bl34dsg9_qv8" class="unnumbered"><m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>500</m:mn><m:mo>⋅</m:mo><m:mn>50</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>50</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>56</m:mn><m:mn>,</m:mn><m:mn>25</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>.</m:mo></m:math></equation> Wyznaczając wypadkowy moment sił zauważamy, że działająca siła jest prostopadła do promienia, a tarcie jest nieistotnie, zatem:<equation id="ked-1bl34egkr_e4" class="unnumbered"><m:math><m:mi>M</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>F</m:mi><m:mi>sin</m:mi><m:mo>⁡</m:mo><m:mi>θ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>50</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>250</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mo>=</m:mo><m:mn>375</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>.</m:mo></m:math></equation> Wstawiając tę wartość do wzoru na przyspieszenie kątowe otrzymujemy: <equation id="ked-1bl34euk4_h88" class="unnumbered"><m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>M</m:mi><m:mi>I</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>375</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:mrow><m:mn>56</m:mn><m:mn>,</m:mn><m:mn>25</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>6</m:mn><m:mn>,</m:mn><m:mn>67</m:mn><m:mfrac><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:math></equation></item>
+          <item>Spodziewamy się, że w tej sytuacji przyspieszenie kątowe karuzeli będzie mniejsze, ponieważ moment bezwładności jest większy, gdy na karuzeli jest dziecko. Aby wyznaczyć całkowity moment bezwładności <m:math><m:mi>I</m:mi></m:math>, najpierw wyznaczamy moment bezwładności dziecka <m:math><m:msub><m:mi>I</m:mi><m:mtext>d</m:mtext></m:msub></m:math>. Zastąpimy dziecko masą punktową w odległości 1,25 m od osi obrotu. Wówczas:<equation id="ked-1bl34g7dp_68g" class="unnumbered"><m:math><m:msub><m:mi>I</m:mi><m:mtext>d</m:mtext></m:msub><m:mo>=</m:mo><m:mi>m</m:mi><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>18</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>25</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>28</m:mn><m:mn>,</m:mn><m:mn>13</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>.</m:mo></m:math></equation>Całkowity moment bezwładności jest sumą momentów bezwładności karuzeli i dziecka (liczonych względem tej samej osi):<equation id="ked-1bl34h5d3_oi" class="unnumbered"><m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mn>28</m:mn><m:mn>,</m:mn><m:mn>13</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>+</m:mo><m:mn>56</m:mn><m:mn>,</m:mn><m:mn>25</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>=</m:mo><m:mn>84</m:mn><m:mn>,</m:mn><m:mn>38</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>.</m:mo></m:math></equation>Ostatecznie otrzymujemy: <equation id="ked-1bl34i94p_6p" class="unnumbered"><m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>M</m:mi><m:mi>I</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>375</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow></m:mrow><m:mrow><m:mn>84</m:mn><m:mn>,</m:mn><m:mn>38</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>4</m:mn><m:mn>,</m:mn><m:mn>44</m:mn><m:mfrac><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>.</m:mo></m:math></equation></item>
+        </list>
+        <para id="ked-1bl34ipcs_pa8"><title>Znaczenie</title>Zgodnie z oczekiwaniami, przyspieszenie kątowe jest mniejsze, gdy dziecko znajduje się na karuzeli, niż wtedy, gdy karuzela jest pusta. Otrzymane przyspieszenia kątowe są dość duże częściowo z powodu faktu, że tarcie uznano za nieistotne. Gdyby na przykład ojciec naciskał prostopadle przez 2,00 s, nadałby pustej karuzeli prędkość kątową 13,3 rad/s, a tylko 8,89 rad/s, gdyby było na niej dziecko. Jeśli chodzi o liczby obrotów na sekundę, prędkość kątowa wynosi odpowiednio 2,12 obr/s i 1,41 obr/s. </para>
+      </example>
+      <note id="ked-1bl34l526_ssg" class="check-understanding">
+        <exercise id="ked-1bl34m9p2_fs8">
+          <problem id="ked-1bl34m9pm_rs8">
+            <para id="ked-1bl34m9o0_tg8"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Moment bezwładności łopatek wentylatora silnika odrzutowego jest równy <m:math><m:mn>30</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>. W ciągu 10 s od rozpoczęcia ruchu, obracając się w kierunku przeciwnym do ruchu wskazówek zegara, osiągnęły one częstotliwość 20 obr/s. <list id="eip-idm353597392" list-type="enumerated" number-style="lower-alpha"><item>Jaki moment siły należy przyłożyć do łopatek w celu osiągnięcia w tym czasie tego przyspieszenia kątowego?</item><item>Jaki jest wymagany moment siły, aby łopatki osiągnęły częstotliwość 20 obrotów na sekundę w ciągu 20 sekund?</item></list></para>
+          </problem>
+          <solution id="ked-1bl34m9q4_h08">
+            <list id="ked-1bl34m9oh_f5o" list-type="enumerated" number-style="lower-alpha">
+              <item>Przyspieszenie kątowe jest równe <m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>20</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>10</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>12</m:mn><m:mn>,</m:mn><m:mn>56</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, stąd całkowity moment siły <m:math><m:mi>M</m:mi><m:mo>=</m:mo><m:mi>I</m:mi><m:mi>ε</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>⋅</m:mo><m:mn>12</m:mn><m:mn>,</m:mn><m:mn>56</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>=</m:mo><m:mn>376</m:mn><m:mn>,</m:mn><m:mn>8</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>.</item>
+              <item>Przyspieszenie kątowe jest równe: <m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>20</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>20</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>6</m:mn><m:mn>,</m:mn><m:mn>28</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, stąd całkowity moment siły <m:math><m:mi>M</m:mi><m:mo>=</m:mo><m:mi>I</m:mi><m:mi>ε</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>⋅</m:mo><m:mn>6</m:mn><m:mn>,</m:mn><m:mn>28</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>=</m:mo><m:mn>188</m:mn><m:mn>,</m:mn><m:mn>5</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>.</item>
+            </list>
+          </solution>
+        </exercise>
+      </note>
+    </section>
+    <section id="ked-1bl7haaq7_5rg" class="key-concepts">
+      <title>Podsumowanie</title>
+      <list id="ked-1bl7hag1g_4c8">
+        <item> Druga zasada dynamiki dla ruchu obrotowego <m:math><m:munder><m:mo>∑</m:mo><m:mi>i</m:mi></m:munder><m:msub><m:mi>M</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mi>I</m:mi><m:mi>ε</m:mi></m:math> mówi, że suma momentów siły działających na układ obracający się wokół stałej osi jest równa iloczynowi momentu bezwładności i przyspieszenia kątowego. Jest to odpowiednik drugiej zasady dynamiki dla ruchu postępowego. </item>
+        <item>W postaci wektorowej, drugie prawo dynamiki ruchu obrotowego bryły wokół stałej osi stwierdza, że wektor momentu siły <m:math><m:mrow><m:mover><m:mi>M</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> ma ten sam kierunek, co przyspieszenie kątowe <m:math><m:mrow><m:mover><m:mi>ε</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. Jeśli przyspieszenie kątowe obracającej się bryły sztywnej jest dodatnie, to moment siły działającej na bryłę też jest dodatni, a jeśli przyspieszenie kątowe jest ujemne, moment siły jest ujemny. </item>
+      </list>
+    </section>
+    <section id="ked-1bl7hbljm_be8" class="review-conceptual-questions">
+      <title>Pytania </title>
+      <exercise id="ked-1bl7hc0v9_kno">
+        <problem id="ked-1bl7hc0u6_c78">
+          <para id="ked-1bl7hc0u6_7d8">Jeśli mamy zamiar zatrzymać obracający się kołowrotek działając na niego stałą siłą, to gdzie na kole należy przyłożyć siłę, aby uzyskać maksymalne przyspieszenie (opóźnienie)?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl7hjes3_0v">
+        <problem id="ked-1bl7hjeq9_rt8">
+          <para id="ked-1bl7hjesf_7gg">Pręt jest obracany wokół jednego z jego końców. Na pręt działają dwie siły <m:math><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> i <m:math><m:mo>−</m:mo><m:mrow><m:mover><m:mi>F</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. W jakich warunkach pręt nie będzie się obracał? </para>
+        </problem>
+        <solution id="ked-1bl7hjesf_cd8" class="section-exercises">
+          <para id="ked-1bl7hjeq0_69o">Jeśli siły leżą wzdłuż osi obrotu lub jeśli mają takie same ramię siły (są przyłożone w tym samym punkcie pręta).</para>
+        </solution>
+      </exercise>
+    </section>
+    <section id="ked-1bl7hlkla_r5o" class="review-problems">
+      <title>Zadania</title>
+      <exercise id="ked-1bl7hlq90_k78">
+        <problem id="ked-1bl7hlq9v_t7g">
+          <para id="ked-1bl7hlqas_vco">Kamień szlifierski (jednorodna tarcza) o masie 90,0 kg i promieniu 0,340 m obraca się z częstotliwością 90,0 obr/min. Naciskasz na niego stalowym kluczem z siłą 20,0 N skierowaną wzdłuż promienia. (a) Zakładając, że współczynnik tarcia kinetycznego między kluczem i tarczą kamienia wynosi 0,20, oblicz przyspieszenie kątowe kamienia szlifierskiego. (b) Ile obrotów zrobi kamień, zanim się zatrzyma?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl7hmlc8_3ug">
+        <problem id="ked-1bl7hmldc_bpo">
+          <para id="ked-1bl7hmlf6_b9o">Załóżmy, że działasz siłą styczną o wartości 180 N na kamień szlifierski (jednorodna tarcza) o promieniu 0,280 m i masie 75,0 kg.<list id="eip-idm1203396800" list-type="enumerated" number-style="lower-alpha"><item>Jaki moment siły jest wywierany na kamień?</item><item>Jakie jest przyspieszenie kątowe, przyjmując, że siły tarcia są do zaniedbania?</item><item>Jakie jest przyspieszenie kątowe, jeśli siła tarcia wynosi 20,0 N i jest wywierana na kamień w odległości 1,50 cm od osi obrotu?</item></list></para>
+        </problem>
+        <solution id="ked-1bl7hmlds_95o" class="section-exercises">
+          <list id="ked-1bl7hmle6_r6" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mi>M</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>280</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>180</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow><m:mo>=</m:mo><m:mn>50</m:mn><m:mn>,</m:mn><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>; </item>
+            <item><m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mn>17</m:mn><m:mn>,</m:mn><m:mn>14</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>; </item>
+            <item><m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mn>17</m:mn><m:mn>,</m:mn><m:mn>04</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>.</item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl7ho2uh_1">
+        <problem id="ked-1bl7ho2ti_apg">
+          <para id="ked-1bl7ho2vc_ev">Koło zamachowe (<m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mn>50</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>) rozpoczynające ruch uzyskuje w ciągu 5 s prędkość kątową 200,0 rad/s, pod wpływem działania stałego momentu siły pochodzącego od silnika. <list id="eip-idm1679080704" list-type="enumerated" number-style="lower-alpha"><item>Jakie jest przyspieszenie kątowe koła zamachowego?</item><item>Jaka jest wielkość momentu siły?</item></list></para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl7hp891_838">
+        <problem id="ked-1bl7hp87c_mg8">
+          <para id="ked-1bl7hp87h_u7">Do ciała sztywnego o momencie bezwładności <m:math><m:mn>4</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> (liczonym względem osi obrotu) przyłożono określony moment siły. Jeżeli ciało zaczyna ruch od spoczynku i po 10 sekundach uzyskuje prędkość kątową 20 rad/s, to jaka jest wartość zastosowanego momentu siły?</para>
+        </problem>
+        <solution id="ked-1bl7hp863_rpg" class="section-exercises">
+          <para id="ked-1bl7hp87p_13g">
+            <m:math>
+              <m:mi>M</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>8</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl7hq062_60g">
+        <problem id="ked-1bl7hq05d_668">
+          <para id="ked-1bl7hq05i_n18">Moment obrotowy <m:math><m:mn>50</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math> działał na szlifierkę (<m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mn>20</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>) przez 20 s. <list id="eip-idm203287536" list-type="enumerated" number-style="lower-alpha"><item>Jeśli ruch zaczyna się od spoczynku, jaka jest prędkość kątowa szlifierki po zaprzestaniu działania momentu siły?</item><item>O jaki kąt obróciło się koło szlifierki w czasie działania tego momentu siły?</item></list>
+          </para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl7hptgh_9gg">
+        <problem id="ked-1bl7hptgj_p58">
+          <para id="ked-1bl7hpth0_318">Koło zamachowe (<m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mn>100</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>) obracające się z częstotliwością 500,0 obr/min zatrzymuje się po upływie 2,0 min w wyniku działania sił tarcia. Jaka jest wartość momentu siły tarcia działającej na koło zamachowe?</para>
+        </problem>
+        <solution id="ked-1bl7hptgc_4ko" class="section-exercises">
+          <para id="ked-1bl7hpth0_c6">
+            <m:math>
+              <m:mi>M</m:mi>
+              <m:mo>=</m:mo>
+              <m:mo>−</m:mo>
+              <m:mn>43</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>6</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">N</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl7hvfsf_l9o">
+        <problem id="ked-1bl7hvftt_3c8">
+          <para id="ked-1bl7hvft7_p28">Jednorodną tarczę szlifierską o masie 50 kg i średnicy 1 m napędza silnik elektryczny. Tarcie jest zaniedbywalnie małe.<list id="eip-idm1187134784" list-type="enumerated" number-style="lower-alpha"><item>Jaki moment sił należy zastosować, aby nadać jej prędkość 120 obrotów na minutę w ciągu 20 obrotów. Początkowo tarcza nie obracała się.</item><item>Narzędzie, którego współczynnik tarcia kinetycznego o powierzchnię koła wynosi 0,6, jest przyciskane prostopadle do koła z siłą 40 N. Jaki moment siły trzeba zastosować, aby silnik utrzymywał stałą prędkość obrotową tarczy o poprzedniej wartości?</item></list>
+          </para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl7i0gon_l4">
+        <problem id="ked-1bl7i0gph_c6">
+          <para id="ked-1bl7i0gp0_uoo">Załóżmy, że w momencie swojego powstania Ziemia nie obracała się. Potem, w wyniku działania stałego momentu siły, po upływie 6 dni uzyskała prędkość obrotową 1 obr/dobę.<list id="eip-idm638529792" list-type="enumerated" number-style="lower-alpha"><item>Jaka była wartość przyspieszenia kątowego w ciągu tych 6 dni?</item><item>Jaki moment siły działał w tym okresie na Ziemię?</item><item>Jaką wartość musiałaby mieć siła styczna przyłożona do Ziemi na jej równiku, aby wytworzyć ten moment?</item></list>
+        </para>
+        </problem>
+        <solution id="ked-1bl7i0gpa_meg" class="section-exercises">
+          <list id="ked-1bl7i0gqu_25g" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>4</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mo>−</m:mo><m:mn>10</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>; </item>
+            <item><m:math><m:mi>M</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>36</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mn>28</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi><m:mo>⋅</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>; </item>
+            <item><m:math><m:mi>F</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>1</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mn>21</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">N</m:mi></m:mrow></m:math>.</item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl7i0ekc_h18">
+        <problem id="ked-1bl7i0ekh_82o">
+          <para id="ked-1bl7i0eld_ve8">Do ściany przymocowane jest koło pasowe o momencie bezwładności <m:math><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, tak jak to pokazano na poniższym rysunku. Lekkie sznurki, na końcach których zamocowano odważniki, owinięte są wokół dwóch obwodów koła pasowego. Jakie jest (a) przyspieszenie kątowe koła pasowego i (b) liniowe przyspieszenie ciężarków? Załóżmy, że znamy następujące dane: <m:math><m:msub><m:mi>r</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>50</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">c</m:mi><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>20</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">c</m:mi><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow></m:math>.</para>
+          <media id="ked-1bl7i2o3j_3j8" alt="Rysunek pokazuje krążek linowy umocowany na ścianie. Jasne linki są owinięte wokół dwóch obwodów krążka z obciążnikami. Mniejszy m1 jest przymocowany do obwodu zewnętrznego o promieniu r1. Większy o masie M2 jest przymocowany do obwodu wewnętrznego o promieniu r2.">
+            <image src="../../media/CNX_UPhysics_10_07_Prob12_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl7i42fm_8m">
+        <problem id="ked-1bl7i42g3_pvg">
+          <para id="ked-1bl7i42e2_rd">Klocek o masie 3 kg zsuwa się po nachylonej pod kątem <m:math><m:msup><m:mn>45</m:mn><m:mo>∘</m:mo></m:msup></m:math> równi (patrz rysunek). Klocek przymocowany jest za pomocą sznurka o znikomo małej masie do koła pasowego umieszczonego na szczycie równi. Koło ma masę 1 kg i promień 0.5 m. Współczynnik tarcia kinetycznego klocka o równię jest równy 0,4. Wyznacz przyspieszenie klocka.</para>
+          <media id="ked-1bl7i6gd9_ndo" alt="Rysunek przedstawia klocek ześlizgujący się w dół po równi pochyłej o nachyleniu 45 stopni, umocowany do koła pasowego.">
+            <image src="../../media/CNX_UPhysics_10_07_BlocInc_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bl7i42gb_96o" class="section-exercises">
+          <para id="ked-1bl7i42du_of">
+            <m:math>
+              <m:mi>a</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>3</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>6</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:msup>
+                  <m:mi mathvariant="normal">s</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl7i7dl5_eo">
+        <problem id="ked-1bl7i7dmq_bo8">
+          <para id="ked-1bl7i7dng_uco">Pokazany poniżej wózek porusza się po blacie stołu podczas opadania klocka. Jaka jest wartość przyspieszenia klocka? Zaniedbaj tarcie i przyjmij następujące dane: <m:math><m:msub><m:mi>m</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow></m:math>, <m:math><m:msub><m:mi>m</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>4</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow></m:math>, <m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>20</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">c</m:mi><m:mi mathvariant="normal">m</m:mi></m:mrow></m:math>.</para>
+          <media id="ked-1bl7i8j4o_ngg" alt="Rysunek przedstawia wózek przesuwający się po blacie stołu. Po jednej stronie wózek o masie m2 przymocowany jest do krążka. Po drugiej stronie do krążka przymocowany jest ciężar o masie m1 ciągnięty na zewnątrz.">
+            <image src="../../media/CNX_UPhysics_10_07_Cart_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bl7i9hh0_o">
+        <problem id="ked-1bl7i9hhq_0ng">
+          <para id="ked-1bl7i9hgp_bf">Jednorodny pręt o masie <m:math><m:mi>m</m:mi></m:math> i długości <m:math><m:mi>L</m:mi></m:math> zawieszony jest poziomo na dwu sznurkach o nieznacznej masie, tak jak pokazano poniżej.<list id="eip-idm150203200" list-type="enumerated" number-style="lower-alpha"><item>Jakie jest przyspieszenie liniowe wolnego końca pręta natychmiast po przecięciu sznurka?</item><item>Jakie jest przyspieszenie liniowe środkowego punktu pręta natychmiast po przecięciu sznurka?</item></list></para>
+          <media id="ked-1bl7i9vvc_aso" alt="Rysunek pokazuje pręt wiszący na pionowych dwóch sznurkach przymocowanych do jego końców. Jeden ze sznurków jest przecinany nożyczkami.">
+            <image src="../../media/CNX_UPhysics_10_07_RodTwo_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+        <solution id="ked-1bl7i9hhi_45o" class="section-exercises">
+          <list id="ked-1bl7i9hj0_ov" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>ε</m:mi><m:mo>=</m:mo><m:mn>14</m:mn><m:mn>,</m:mn><m:mn>7</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>; </item>
+            <item><m:math><m:mi>a</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>L</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>ε</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>4</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mi>g</m:mi></m:math>.</item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bl7i9e3l_c68">
+        <problem id="ked-1bl7i9e3c_01g">
+          <para id="ked-1bl7i9e4o_so8">Cienki drążek o masie 0,2 kg i długości 0,5 m przymocowany jest do obrzeża metalowego krążka o masie 2 kg i promieniu 0,3 m. Drążek może swobodnie obracać się wokół poziomej osi przechodzącej przez jego drugi koniec (patrz rysunek). <list id="eip-idm347840144" list-type="enumerated" number-style="lower-alpha"><item>Jaka będzie prędkość środka krążka, gdy pręt, uwolniony z pozycji poziomej, osiągnie pozycję pionową?</item><item>Jakie jest przyspieszenie środka krążka w chwili uwolnienia krążka?</item><item>Jakie jest przyspieszenie środka krążka w chwili, gdy drążek przechodzi przez pozycję pionową?</item></list></para>
+          <media id="ked-1bl7ics2q_r" alt="Na rysunku A przedstawiono cienki pręt umocowany do obręczy metalowego dysku. Na rysunku B cienki pręt przymocowany do obręczy metalowego dysku obraca się wokół poziomej osi przechodzące przez drugi z jego końców.">
+            <image src="../../media/CNX_UPhysics_10_07_SticDis_img.jpg" mime-type="image/jpeg"/>
+          </media>
+        </problem>
+      </exercise>
+    </section>
+  </content>
+  <glossary>
+    <definition id="ked-1bl7iv108_1r8">
+      <term cmlnle:reference="druga zasada dynamiki dla ruchu obrotowego" class="no-emphasis">druga zasada dynamiki dla ruchu obrotowego (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">Newton’s second law for rotation</term></foreign>)</term>
+      <meaning id="ked-1bl7iv104_d4o">wypadkowy moment sił jest równy iloczynowi momentu bezwładności i przyspieszenia kątowego</meaning>
+    </definition>
+    <definition id="ked-1bl7j0mbs_bvg">
+      <term cmlnle:reference="dynamika ruchu obrotowego" class="no-emphasis">dynamika ruchu obrotowego (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">kinematics of rotational motion</term></foreign>)</term>
+      <meaning id="ked-1bl7j0mba_bv8">analiza ruchu obrotowego z wykorzystaniem wypadkowego momentu siły i momentu bezwładności, w celu wyznaczenia przyspieszenia kątowego</meaning>
+    </definition>
+  </glossary>
+</document>

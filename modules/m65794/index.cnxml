@@ -1,0 +1,797 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Moment bezwładności i energia kinetyczna w ruchu obrotowym</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65794</md:content-id>
+  <md:title>Moment bezwładności i energia kinetyczna w ruchu obrotowym</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+    <item>wyjaśniać różnicę pomiędzy energią kinetyczną w ruchu obrotowym a energią kinetyczną w ruchu postępowym;</item>
+    <item>przedstawiać pojęcie momentu bezwładności zależnego od rozkładu masy względem osi obrotu;</item>
+    <item>wyjaśniać, jak moment bezwładności ciała sztywnego wpływa na jego energię kinetyczną związaną z ruchem obrotowym;</item>
+    <item>stosować zasadę zachowania energii mechanicznej do analizowania systemów poruszających się zarówno ruchem postępowym jak i obrotowym.;</item>
+    <item>obliczać prędkość kątową obracającego się ciała w przypadku straty energii w wyniku działania sił niezachowawczych.</item>
+  </list></md:abstract>
+  <md:uuid>657e1b08-eb22-40cc-bfcb-bbc33b7ddd38</md:uuid>
+</metadata>
+
+<content>
+    <para id="ked-1bkv0p8kg_ik8">Dotychczas w tym rozdziale omawialiśmy kinematykę ruchu obrotowego: opis ruchu obrotowego ciała sztywnego wokół stałej osi. Teraz zdefiniujemy dwie nowe wielkości bardzo przydatne w analizie właściwości obracających się obiektów: moment bezwładności i energię kinetyczną ruchu obrotowego. Te dwie wielkości dadzą nam ważne narzędzie do analizy dynamiki ruchu obrotowego. </para><section id="ked-1bkv0qg41_67g">
+      <title>Energia kinetyczna ruchu obrotowego </title>
+      <para id="ked-1bkv0qmd3_i18">Dowolne obracające się ciało ma energię kinetyczną. Potrafimy policzyć energię kinetyczną ciała poruszającego się ruchem postępowym, lecz jak policzyć energię kinetyczną obracającego się ciała? Może to wydawać się bardzo skomplikowane, ponieważ w czasie wykonywania obrotu każdy punkt ciała sztywnego ma inną prędkość liniową. Jednakże w celu wyznaczenia <term cmlnle:reference="energia kinetyczna ruchu obrotowego" class="no-emphasis">energii kinetycznej ruchu obrotowego</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">rotational kinetic energy</term></foreign>) możemy posłużyć się prędkością kątową, która ma taką samą wartość dla każdego punktu obracającego się ciała. Na <link target-id="CNX_UPhysics_10_04_Motor" cmlnle:case="locative"/> pokazano przykład pracującej szlifierki, napędzanej silnikiem elektrycznym. Wirująca tarcza szlifierki posiada określoną energię kinetyczną ruchu obrotowego. W momencie styku z obrabianym przedmiotem dochodzi do wystąpienia tarcia. W rezultacie cząstki przedmiotu są odrywane od jego powierzchni i ze względu na dużą energię wyzwalaną w tym procesie dochodzi do ich zapalenia i emisji światła. Dodatkowo, obroty szlifierki wywołują drgania, których częstotliwość zawiera się w paśmie słyszalnym, stąd tego typu pracom towarzyszy hałas.</para><figure id="CNX_UPhysics_10_04_Motor">
+        <media id="ked-1bkv0qspf_2to" alt="Zdjęcie mężczyzny szlifującego kawałek metalu szlifierką rotacyjną. Dobrze widoczne są iskry wylatujące z tarczy szlifierskiej.">
+          <image src="../../media/CNX_UPhysics_10_04_Motor.jpg" mime-type="image/jpeg"/>
+        </media>
+        <caption>Energia kinetyczna ruchu obrotowego szlifierki jest zamieniana na ciepło, energię światła, dźwięku oraz na energię drgań (Źródło: Zachary David Bell, US Navy) </caption>
+      </figure>
+      <para id="ked-1bkv0tbol_3qo">Energia ruchu obrotowego jest sumą energii kinetycznych ruchu obrotowego poszczególnych cząstek ciała, podobnie jak energia kinetyczna ciała w ruchu postępowym. Ponieważ energia kinetyczna ruchu postępowego jest proporcjonalna do kwadratu prędkości <m:math><m:msub><m:mi>E</m:mi><m:mtext>k</m:mtext></m:msub><m:mo>=</m:mo><m:mi>m</m:mi><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>2</m:mn></m:math>, a prędkość każdego punktu obracającego się ciała jest inna, sensownym postępowaniem jest znalezienie sposobu na wyrażenie energii kinetycznej obracającego się ciała poprzez prędkość kątową, która ma taką samą wartość dla każdego punktu obracającego się ciała. Dla pojedynczej cząstki poruszającej się po okręgu wokół stałej osi możemy tego dokonać w prosty sposób. Możemy powiązać prędkość kątową z wartością prędkości liniowej ruchu po okręgu, stosując zależność <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>ω</m:mi><m:mi>r</m:mi></m:mrow></m:math>, gdzie <m:math><m:mi>r</m:mi></m:math> jest odległością cząstki od osi obrotu, a <m:math><m:mi>v</m:mi></m:math> jest wartością prędkości ruchu po okręgu. Wstawiając to do wyrażenia na energię kinetyczną otrzymujemy:</para><equation id="ked-1bkv1126v_7b" class="unnumbered"><m:math>
+          <m:mrow>
+             <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>v</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mrow>
+                <m:mo stretchy="false">(</m:mo>
+                <m:mi>ω</m:mi>
+                <m:mi>r</m:mi>
+                <m:mo stretchy="false">)</m:mo>
+              </m:mrow>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:mfrac>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mi>m</m:mi>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo stretchy="false">)</m:mo>
+            <m:msup>
+              <m:mi>ω</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation><para id="ked-1bkv16alt_3p8">Podzielmy teraz obracające się ciało sztywne na dużą liczbę małych fragmentów, każdy o masie <m:math><m:mrow><m:msub><m:mi>m</m:mi><m:mi>j</m:mi></m:msub></m:mrow></m:math> i odległości <m:math><m:mrow><m:msub><m:mi>r</m:mi><m:mi>j</m:mi></m:msub></m:mrow></m:math> od osi obrotu. Każdy z fragmentów będzie miał prędkość <m:math><m:mrow><m:msub><m:mi>v</m:mi><m:mi>j</m:mi></m:msub></m:mrow></m:math>. Masę całego ciała można teraz zapisać jako <m:math><m:mi>M</m:mi><m:mo>=</m:mo><m:munder><m:mo>∑</m:mo><m:mi>j</m:mi></m:munder><m:msub><m:mi>m</m:mi><m:mi>j</m:mi></m:msub></m:math>. Energię kinetyczną obracającego się ciała można wyrazić jako sumę energii kinetycznych wszystkich jej fragmentów:</para>
+      <equation id="ked-1bkv17pu9_ut" class="unnumbered"><m:math>
+          <m:mrow>
+            <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub>
+            <m:mo>=</m:mo>
+            <m:mstyle displaystyle="true">
+              <m:munder>
+                <m:mo>∑</m:mo>
+                <m:mi>j</m:mi>
+              </m:munder>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mi>j</m:mi>
+                </m:msub>
+                <m:msubsup>
+                  <m:mi>v</m:mi>
+                  <m:mi>j</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msubsup>
+                <m:mo>=</m:mo>
+              </m:mrow>
+            </m:mstyle>
+            <m:mstyle displaystyle="true">
+              <m:munder>
+                <m:mo>∑</m:mo>
+                <m:mi>j</m:mi>
+              </m:munder>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:mn>2</m:mn>
+                </m:mfrac>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mi>j</m:mi>
+                </m:msub>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:msub>
+                      <m:mi>r</m:mi>
+                      <m:mi>j</m:mi>
+                    </m:msub>
+                    <m:msub>
+                      <m:mi>ω</m:mi>
+                      <m:mi>j</m:mi>
+                    </m:msub>
+                    <m:mo stretchy="false">)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mstyle>
+          </m:mrow>
+          <m:mtext>.</m:mtext>
+        </m:math>
+      </equation><para id="ked-1bkv198go_v18">Ponieważ każdy z fragmentów ma taką samą prędkość kątową <m:math><m:mrow><m:msub><m:mi>ω</m:mi><m:mi>j</m:mi></m:msub><m:mo>=</m:mo><m:mi>ω</m:mi></m:mrow></m:math>, to otrzymujemy:</para>
+      <note id="ked-1bkv1abo8_18" class="equation-callout">
+        <equation id="ked-1bkv1ahg9_698"><m:math>
+            <m:mrow>
+              <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mstyle displaystyle="true">
+                    <m:munder>
+                      <m:mo>∑</m:mo>
+                      <m:mi>j</m:mi>
+                    </m:munder>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>m</m:mi>
+                        <m:mi>j</m:mi>
+                      </m:msub>
+                      <m:msubsup>
+                        <m:mi>r</m:mi>
+                        <m:mi>j</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msubsup>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:msup>
+                <m:mi>ω</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation></note>
+      <para id="ked-1bkv1bfsi_32g">W układzie SI jednostką wielkości <m:math><m:msub><m:mi>E</m:mi><m:mtext>k</m:mtext></m:msub></m:math> (energii kinetycznej ruchu obrotowego), określonej powyższym równaniem, jest dżul (J). W przedstawionej formie równanie to wygląda na dość skomplikowane. Postaramy się je nieco uprościć poprzez wprowadzenie nowej wielkości fizycznej – momentu bezwładności.</para></section>
+    <section id="ked-1bkv1d061_0l8">
+      <title>Moment bezwładności</title>
+      <para id="ked-1bkv1d33i_tm8">Porównanie tego wyrażenia do formy zapisu energii kinetycznej w ruchu postępowym w rozdziale <link class="target-chapter" document="m65770">Praca i energia kinetyczna</link>, <m:math><m:mi>m</m:mi><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>2</m:mn></m:math>, sugeruje, że mamy do czynienia z nową wielkością obrotową. Dodajmy ją do naszej listy zmiennych obrotowych i zależności pomiędzy zmiennymi obrotowymi a zmiennymi w ruchu postępowym. Wielkość <m:math><m:munder><m:mo>∑</m:mo><m:mi>j</m:mi></m:munder><m:msub><m:mi>m</m:mi><m:mi>j</m:mi></m:msub><m:msubsup><m:mi>r</m:mi><m:mi>j</m:mi><m:mn>2</m:mn></m:msubsup></m:math> jest odpowiednikiem masy w równaniu na energię kinetyczną ruchu postępowego. Jest to bardzo ważna nowa wielkość fizyczna opisująca ruch obrotowy. Nazywamy ją <term cmlnle:reference="moment bezwładności" class="no-emphasis">momentem bezwładności</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">moment of inertia</term></foreign>) <m:math><m:mi>I</m:mi></m:math>, a jej jednostką jest <m:math><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>:</para><note id="ked-1bkv1iifu_bgg" class="equation-callout">
+        <equation id="ked-1bkv1ikiu_ol">
+          <m:math>
+            <m:mrow>
+              <m:mi>I</m:mi>
+              <m:mo>=</m:mo>
+              <m:mstyle displaystyle="true">
+                <m:munder>
+                  <m:mo>∑</m:mo>
+                  <m:mi>j</m:mi>
+                </m:munder>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mi>j</m:mi>
+                  </m:msub>
+                  <m:msubsup>
+                    <m:mi>r</m:mi>
+                    <m:mi>j</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msubsup>
+                </m:mrow>
+              </m:mstyle>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+      </note>
+      <para id="ked-1bkv1jfpm_ve8">Wyrażenie to definiuje moment bezwładności układu punktów materialnych poruszających się po okręgu wokół stałej osi. Zauważmy, że moment bezwładności pojedynczej cząstki, liczony względem osi obrotu, wyraża się wielkością <m:math><m:mi>m</m:mi><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:math>, gdzie <m:math><m:mi>r</m:mi></m:math> jest odległością cząstki od osi obrotu. W następnym podrozdziale zastosujemy całkową postać tego równania do wyznaczania momentu bezwładności brył sztywnych o regularnych kształtach.</para>
+      <para id="ked-1bkv1klp8_2jg">Moment bezwładności jest ilościową miarą bezwładności obrotowej, podobnie jak w ruchu postępowym masa jest miarą liniowej bezwładności – to znaczy, im bardziej masywny jest obiekt, tym ma większą inercję (bezwładność) i tym bardziej opiera się zmianom prędkości liniowej. Podobnie, im większa wartość momentu bezwładności bryły sztywnej lub układu cząstek, tym bardziej ciało to przeciwstawia się zmianie prędkości kątowej w jego obrocie wokół stałej osi. Interesująca jest analiza zależnośći momentu bezwładności ciała sztywnego oraz układu punktów materialnych zdefiniowanego <link target-id="ked-1bkv1ikiu_ol" cmlnle:case="instrumental"/> od rozkładu mas względem osi obrotu. Ciała sztywne oraz układy punktów materialnych, których masa jest skupiona dalej od osi obrotu, mają większy moment bezwładności niż ciała, których masa jest skupiona bliżej osi obrotu. Dlatego też pierścień o takiej samej masie, długości i promieniu co pełny walec będzie miał większy od niego moment bezwładności, liczony względem osi obrotu będącej ich osią symetrii. Wstawiając równanie na moment bezwładności (<link target-id="ked-1bkv1ikiu_ol"/>) do równania na energię kinetyczną (<link target-id="ked-1bkv1ahg9_698"/>) otrzymujemy wyrażenie na energię kinetyczną obracającego się ciała sztywnego w postaci:</para>
+      <note id="ked-1bkv1pp3g_uag" class="equation-callout">
+        <equation id="ked-1bkv1psvt_9b8"><m:math>
+            <m:mrow>
+              <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mi>I</m:mi>
+              <m:msup>
+                <m:mi>ω</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation></note>
+      <para id="ked-1bkv1q1ko_f1o">Z równania tego wynika, że energia kinetyczna obracającego się ciała sztywnego jest wprost proporcjonalna do momentu bezwładności ciała i kwadratu prędkości kątowej. Jest to wykorzystywane w urządzeniach z <term class="no-emphasis" cmlnle:reference="koło zamachowe">kołami zamachowymi</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">flywheel</term></foreign>), które służą do magazynowania dużych ilości energii w ruchu obrotowym. Obecnie wielu producentów samochodów testuje w swoich samochodach urządzenia do magazynowania energii wykorzystujące koła zamachowe, jak np. urządzenie do odzyskiwania energii kinetycznej pokazane na <link target-id="CNX_UPhysics_10_04_KERS" cmlnle:case="locative"/>.</para>
+      <figure id="CNX_UPhysics_10_04_KERS"><media id="ked-1bkv23b0l_ba" alt="Figura jest fotografią urządzenia do odzyskiwania energii kinetycznej w samochodzie, zainstalowanego obok siedzenia kierowcy.">
+          <image src="../../media/CNX_UPhysics_10_04_KERS.jpg" mime-type="image/jpeg"/>
+        </media>
+        
+      <caption>Na fotelu pasażera umieszczono urządzenie wykorzystujące koło zamachowe do odzyskiwania energii kinetycznej w samochodzie. (Źródło: „cmonville”/Flicker) </caption></figure><para id="ked-1bkv25pnc_dgo">Wielkości opisujące energię kinetyczną ruchu obrotowego i postępowego zostały zebrane w <link target-id="ked-1bkv28vr5_rco" cmlnle:case="locative"/>. Zależności wiążących wielkości przedstawione w obu kolumnach nie zawarto w tabeli, ponieważ takie zależności nie istnieją. Nie istnieje bowiem taka stała, przez którą można by pomnożyć wielkość związaną z ruchem obrotowym, aby otrzymać opowiadającą jej wielkość związaną z ruchem postępowym, tak jak to zostało zrobione dla zmiennych przedstawionych w tabeli w poprzednim podrozdziale (<link document="m65793">Związek między wielkościami w ruchach obrotowym i postępowym</link>). </para><table id="ked-1bkv28vr5_rco" summary="Tabela składa się z dwóch kolumn i trzech rzędów. Rząd pierwszy ma nagłówki : ‘Ruch obrotowy’; ‘Ruch postępowy’. W kolumnie pod Ruchem obrotowym : I jest równe sumie mj i rj kwadrat dla wszystkich j; K jest równe połowie I i omega kwadrat. W kolumnie Ruch postępowy : m; K jest równe połowie m i v kwadrat."><title>Energia i bezwładność w ruchu obrotowym i postępowym</title>
+<tgroup cols="2"><thead>
+            <row>
+              <entry>Ruch obrotowy </entry>
+              <entry>Ruch postępowy</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <m:math>
+                  <m:mi>I</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:munder>
+                    <m:mo>∑</m:mo>
+                    <m:mi>j</m:mi>
+                  </m:munder>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mi>j</m:mi>
+                  </m:msub>
+                  <m:msubsup>
+                    <m:mi>r</m:mi>
+                    <m:mi>j</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msubsup>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:mi>m</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:munder>
+                    <m:mo>∑</m:mo>
+                    <m:mi>j</m:mi>
+                  </m:munder>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mi>j</m:mi>
+                  </m:msub>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <m:math>
+                  <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+                  </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mi>I</m:mi>
+                  <m:msup>
+                    <m:mi>ω</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:math>
+              </entry>
+              <entry>
+                <m:math>
+                  <m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub>
+                  <m:mo>=</m:mo>
+                  <m:mi>m</m:mi>
+                  <m:msup>
+                    <m:mi>v</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:math>
+              </entry>
+            </row>
+          </tbody>
+        
+
+</tgroup>
+</table><example id="ked-1bkv2cbt1_bb">
+        <para id="ked-1bkv2cbsl_63"><title>Moment bezwładności układu cząstek</title>Sześć małych nakrętek umieszczono na pręcie o pomijalnej masie i o długości 0,5 m, tak jak to pokazano na <link cmlnle:case="locative" target-id="CNX_UPhysics_10_04_SysPart"/>. Nakrętki umieszczono w odległości 10 cm od siebie nawzajem, a każda z nakrętek ma masę 20 g. <list id="eip-idm1145982016" list-type="enumerated" number-style="lower-alpha"><item> Jaki jest moment bezwładności układu nakrętek? </item><item> Jeżeli usuniemy dwie nakrętki leżące najbliżej osi obrotu, to jaki będzie moment bezwładności układu pozostałych nakrętek? </item><item> Jeżeli układ sześciu nakrętek obraca się z częstotliwością 5 obr/s, to jaka jest jego energia kinetyczna?</item></list></para><figure id="CNX_UPhysics_10_04_SysPart"><media id="ked-1bkv2dfsh_1vg" alt="Rysunek przedstawia sześć nakrętek umieszczonych co 10 cm od siebie na obracającym się pręcie wokół osi pionowej.">
+            <image src="../../media/CNX_UPhysics_10_04_SysPart.jpg" mime-type="image/jpeg"/>
+          </media>
+
+        <caption>Rysunek przedstawia sześć nakrętek umieszczonych w odległości 10 cm od siebie nawzajem na nieważkim pręcie obracającym się wokół pionowej osi. </caption></figure><para id="ked-1bkv2h0j2_bmg">
+          <title>Strategia rozwiązania </title>
+        </para>
+        <list id="ked-1bkv2j86q_clg" list-type="enumerated" number-style="lower-alpha"><item>Aby wyznaczyć moment bezwładności układu sześciu nakrętek, zastosujemy definicję momentu bezwładności dla układu punktów materialnych. Ponieważ masy nakrętek są jednakowe, możemy masę nakrętki wyciągnąć przed znak sumowania.</item>
+          <item>Analogiczne obliczenia wykonamy dla układu czterech nakrętek.</item>
+          <item>Wstawimy wynik obliczeń z punktu (a) do wyrażenia na energię kinetyczną ruchu obrotowego.</item>
+        </list><para id="ked-1bkv2oeo9_ib">
+          <title>Rozwiązanie</title>
+        </para>
+        <list id="ked-1bkv2pcb1_5c" list-type="enumerated" number-style="lower-alpha"><item>
+            <m:math>
+              <m:mi>I</m:mi>
+              <m:mo>=</m:mo>
+              <m:munder>
+                <m:mo movablelimits="false">∑</m:mo>
+                <m:mrow>
+                  <m:mi>j</m:mi>
+                </m:mrow>
+              </m:munder>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mi>j</m:mi>
+              </m:msub>
+              <m:msubsup>
+                <m:mi>r</m:mi>
+                <m:mi>j</m:mi>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>02</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">k</m:mi>
+                <m:mi mathvariant="normal">g</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+<m:mn>2</m:mn>
+              <m:mrow>
+                <m:mo>[</m:mo>
+                <m:mrow>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                        <m:mn>,</m:mn>
+                        <m:mn>25</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                        <m:mn>,</m:mn>
+                        <m:mn>15</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                        <m:mn>,</m:mn>
+                        <m:mn>05</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>]</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0035</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">k</m:mi>
+                <m:mi mathvariant="normal">g</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item>
+            <m:math>
+              <m:mi>I</m:mi>
+              <m:mo>=</m:mo>
+              <m:munder>
+                <m:mo movablelimits="false">∑</m:mo>
+                <m:mi>j</m:mi>
+              </m:munder>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mi>j</m:mi>
+              </m:msub>
+              <m:msubsup>
+                <m:mi>r</m:mi>
+                <m:mi>j</m:mi>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>02</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">k</m:mi>
+                <m:mi mathvariant="normal">g</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mrow>
+                <m:mo>[</m:mo>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                        <m:mn>,</m:mn>
+                        <m:mn>25</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mo>+</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mrow>
+                      <m:mo>(</m:mo>
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                        <m:mn>,</m:mn>
+                        <m:mn>15</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>)</m:mo>
+                    </m:mrow>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>]</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0034</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">k</m:mi>
+                <m:mi mathvariant="normal">g</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item>
+            <m:math>
+			<m:mrow><m:msub>
+              <m:mi>E</m:mi><m:mtext>k</m:mtext></m:msub></m:mrow>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mi>I</m:mi>
+              <m:msup>
+                <m:mi>ω</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mn>2</m:mn>
+              </m:mfrac>
+              <m:mo>⋅</m:mo>
+              <m:mn>0</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0035</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">k</m:mi>
+                <m:mi mathvariant="normal">g</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>5</m:mn>
+                    <m:mn>,</m:mn>
+                    <m:mn>0</m:mn>
+                    <m:mo>⋅</m:mo>
+                    <m:mn>2</m:mn>
+                    <m:mi>π</m:mi>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">r</m:mi>
+                      <m:mi mathvariant="normal">a</m:mi>
+                      <m:mi mathvariant="normal">d</m:mi>
+                      <m:mrow>
+                        <m:mtext>/</m:mtext>
+                      </m:mrow>
+                      <m:mi mathvariant="normal">s</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>=</m:mo>
+              <m:mn>1</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>73</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">J</m:mi>
+              </m:mrow>
+            </m:math>.
+          </item>
+        </list><para id="ked-1bkv2r5as_4vo"><title>Znaczenie</title>Usunięcie dwóch nakrętek leżących najbliżej osi obrotu miało mały wpływ na wartość momentu bezwładności, który jest proporcjonalny do kwadratu odległości punktu materialnego od osi obrotu.</para></example>
+      <para id="ked-1bkv2sbff_9m8">W następnej części uogólnimy równanie na moment bezwładności dla układu punktów materialnych uzyskując równanie na moment bezwładności ciała sztywnego. Na razie jednak, na <link cmlnle:case="locative" target-id="CNX_UPhysics_10_04_RotInertia"/> przedstawiono wartości momentów bezwładności dla wybranych ciał obracających się wokół zaznaczonej osi.</para>
+      <figure id="CNX_UPhysics_10_04_RotInertia"><media id="ked-1bkv2svi5_s38" alt="Rysunek przedstawia 10 obracających się obiektów. Są na nim obręcz obracająca się wokół osi cylindra, pierścień lub dysk rotujący wokół osi cylindra, cienki pręt obracający się wokół osi przechodzącej przez środek kuli obracającej się wokół średnicy, obręcz obracająca się wokół średnicy, pierścieniowy cylinder obracający się wokół osi cylindra, cylinder lub dysk obracający się wokół środka średnicy, cienki drążek obracający się wokół osi przechodzącej przez jeden z końców prostopadłych do długości, cienka pusta sfera bez żadnej średnicy, płyta o osi prostopadłej przechodzącej przez środek. ">
+          <image src="../../media/CNX_UPhysics_10_04_RotInertia.jpg" mime-type="image/jpeg"/>
+        </media>
+        
+      <caption>Momenty bezwładności wybranych ciał. Oś obrotu względem której obliczono moment bezwładności zaznaczono przerywana linią.</caption></figure></section>
+    <section id="ked-1bkv2ud4i_nj8">
+      <title>Stosowanie energii kinetycznej ruchu obrotowego </title>
+      <para id="ked-1bkv2uqgl_9v8">Zastosujmy teraz pojęcie energii kinetycznej ruchu obrotowego i momentu bezwładności do zaznajomienia się z energią ruchu obrotowego związaną z obrotami wybranych obiektów. Poniższe przykłady ułatwią również korzystanie z tych równań. Najpierw przyjrzyjmy się ogólnej strategii rozwiązywania zadań dotyczących energii ruchu obrotowego.</para>
+      <note id="ked-1bkv2vj6a_ffg">
+        <title>Strategia rozwiązywania zadań: energia kinetyczna ruchu obrotowego</title>
+        <list xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bkv2vpsd_938" list-type="enumerated" number-style="arabic"><item>Ustal, czy w zadaniu mamy do czynienia z energią lub pracą w ruchu obrotowym.</item>
+          <item>Określ, co nas interesuje. Zwykle pomaga szkic rozwiązania.</item>
+          <item>Dokonaj analizy zadania w celu określenia rodzajów pracy i energii.</item>
+          <item>Jeśli nie ma strat energii ze względu na tarcie i inne siły niezachowawcze, energia mechaniczna jest zachowana, tj. <m:math display="inline"><m:semantics><m:mrow><m:mrow><m:msub><m:mi>E</m:mi><m:mtext>k pocz</m:mtext></m:msub><m:mo>+</m:mo><m:msub><m:mi>E</m:mi><m:mtext>p pocz</m:mtext></m:msub></m:mrow><m:mo>=</m:mo><m:mrow><m:msub><m:mi>E</m:mi><m:mtext>k końc</m:mtext></m:msub><m:mo>+</m:mo><m:msub><m:mi>E</m:mi><m:mtext>p końc</m:mtext></m:msub></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            E_{\text{k pocz}} + E_{\text{p pocz}} = E_{\text{k końc}} + E_{\text{p końc}}</m:annotation></m:semantics></m:math>.</item>
+          <item>Jeżeli występują siły niezachowawcze, to energia mechaniczna nie jest zachowana. Oznacza to, że inne formy energii, takie jak energia cieplna lub energia świetlna, mogą być dostarczane lub oddawane przez układ. </item>
+          <item>Dla ułatwienia obliczeń, tam gdzie jest to możliwe, upraszczaj wyrażenia algebraiczne. </item>
+          <item>Oceń rozwiązanie numeryczne, aby sprawdzić, czy ma ono sens w sytuacji fizycznej przedstawionej w treści zadania. </item>
+        </list></note>
+      <example id="ked-1bkv37dld_f7">
+        <para id="ked-1bkv37dn5_3rg"><title>Energia lecącego helikoptera</title>Typowy mały helikopter ratunkowy ma cztery łopaty wirnika: każda ma długość 4,00 m i masę <m:math><m:mi>m</m:mi><m:mo>=</m:mo><m:mn>50</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow></m:math> (<link target-id="CNX_UPhysics_10_04_Heli"/>). Łopaty można rozpatrywać jako cienkie pręty, które obracają się wokół jednego z końców, wokół osi prostopadłej do ich długości. Całkowita masa załadowanego helikoptera wynosi <m:math><m:mi>M</m:mi><m:mo>=</m:mo><m:mn>1000</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow></m:math>. <list id="eip-idm1769265088" list-type="enumerated" number-style="lower-alpha"><item> Oblicz energię kinetyczną ruchu obrotowego łopat wirnika, jeśli ich prędkość obrotowa wynosi 300 obr/min. </item><item> Oblicz energię kinetyczną ruchu postępowego helikoptera, gdy leci on z prędkością <m:math><m:mn>20</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>, i porównaj ją z energią kinetyczną ruchu obrotowego łopat.</item></list></para>
+        <figure id="CNX_UPhysics_10_04_Heli">
+          <media id="ked-1bkv391cf_s18" alt="Rysunek A pokazuje czterołopatkowy helikopter o 4 m łopatkach obracających się przeciwnie do ruchu wskazówek zegara. Ilustracja B jest zdjęciem pokazującym akcję ratownictwa wodnego z użyciem helikoptera.">
+            <image src="../../media/CNX_UPhysics_10_04_Heli.jpg" mime-type="image/jpeg"/>
+          </media>
+          <caption>(a) Szkic helikoptera z czterołopatowym wirnikiem głównym. (b) Akcja ratownictwa wodnego z udziałem helikoptera ze służby ratunkowej Westpac Rescue Helicopter. (Źródło b: "111 Emergency" / Flickr) </caption>
+        </figure>
+        <para id="ked-1bkv3cc80_npo"><title>Strategia rozwiązania</title>Energię kinetyczną ruchu postępowego i obrotowego możemy wyznaczyć z ich definicji. W treści zadania znajdziemy wszystkie wartości wielkości fizycznych, potrzebne do obliczenia energii ruchu postępowego i obrotowego helikoptera. </para>
+        <para id="ked-1bkv3e53e_poo">
+          <title>Rozwiązanie</title>
+        </para>
+        <list id="ked-1bkv3ebcp_cb8" list-type="enumerated" number-style="lower-alpha"><item>Energia kinetyczna ruchu obrotowego dana jest wyrażeniem: <equation id="ked-1bkv3g8ha_vpo" class="unnumbered"><m:math><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>I</m:mi><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:math></equation><para id="ked-5bkv3ebcp_cb8">Prędkość obrotową zamieniamy na prędkość kątową:</para><equation id="ked-1bkv3j6qm_0jo" class="unnumbered"><m:math><m:mi>ω</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>300</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>00</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mi mathvariant="normal">i</m:mi><m:mi mathvariant="normal">n</m:mi></m:mrow></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi></m:mrow></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>00</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mi mathvariant="normal">i</m:mi><m:mi mathvariant="normal">n</m:mi></m:mrow></m:mrow><m:mrow><m:mn>60</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>31</m:mn><m:mn>,</m:mn><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:math></equation> Moment bezwładności jednej łopaty można przybliżyć momentem bezwładności cienkiego pręta obracającego się wokół jednego z jego końców. Wartość tego momentu podana jest na <link target-id="CNX_UPhysics_10_04_RotInertia" cmlnle:case="locative"/>. Ponieważ wirnik helikoptera ma cztery łopaty, całkowity moment bezwładności będzie 4 razy większy. Tak więc: <equation id="ked-1bkv3kc1f_9lg" class="unnumbered"><m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mi>m</m:mi><m:msup><m:mi>l</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mn>50</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mn>,</m:mn><m:mn>00</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>1067</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>.</m:mo></m:math></equation> Wstawiając wartości <m:math><m:mi>ω</m:mi></m:math> oraz <m:math><m:mi>I</m:mi></m:math> do wyrażenia na energię kinetyczną ruchu obrotowego, otrzymamy:<equation id="ked-1bkv3kpgv_4b8" class="unnumbered"><m:math><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>5</m:mn><m:mo>⋅</m:mo><m:mn>1067</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>⋅</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>31</m:mn><m:mn>,</m:mn><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>5</m:mn><m:mn>,</m:mn><m:mn>26</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>5</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow><m:mo>.</m:mo></m:math></equation></item>
+          <item>Wstawiając wartości <m:math><m:mi>M</m:mi></m:math> oraz <m:math><m:mi>v</m:mi></m:math> do wyrażenia na energię kinetyczną ruchu postępowego helikoptera, otrzymujemy:<equation id="ked-1bkv3s925_tr" class="unnumbered"><m:math><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>M</m:mi><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>5</m:mn><m:mo>⋅</m:mo><m:mn>1000</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>20</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>00</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>5</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow><m:mo>.</m:mo></m:math></equation><equation id="ked-1bkv3t1pq_9p" class="unnumbered"><m:math><m:mfrac><m:mrow><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>00</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>5</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow></m:mrow><m:mrow><m:mn>5</m:mn><m:mn>,</m:mn><m:mn>26</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>5</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>380.</m:mn></m:math></equation></item>
+        </list><para id="ked-1bkv3upme_re"><title>Znaczenie</title>Stosunek energii kinetycznej ruchu postępowego do energii kinetycznej ruchu obrotowego wynosi zaledwie 0,380. Wielkość ta świadczy o tym, że większość energii kinetycznej helikoptera jest zawarta w jego wirujących łopatach.</para>
+      </example>
+      <example id="ked-1bkv40nm0_o5o">
+        <para id="ked-1bkv40nll_n5"><title>Energia bumerangu</title>Mężczyzna rzuca w powietrze bumerang z prędkością 30,0 m/s pod kątem <m:math><m:mn>40</m:mn><m:mn>,</m:mn><m:msup><m:mn>0</m:mn><m:mo>∘</m:mo></m:msup></m:math> względem poziomu (<link target-id="CNX_UPhysics_10_04_Boom"/>). Bumerang ma masę 1,0 kg i obraca się z częstotliwością 10,0 obr/s. Moment bezwładności bumerangu można wyliczyć ze wzoru <m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mi>m</m:mi><m:msup><m:mi>L</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>12</m:mn></m:math>, gdzie <m:math><m:mrow><m:mi>L</m:mi><m:mo>=</m:mo><m:mn>0,7</m:mn><m:mspace width="0.2em"/><m:mtext>m</m:mtext></m:mrow></m:math>. <list id="eip-idm943122880" list-type="enumerated" number-style="lower-alpha"><item> Jaka jest całkowita energia bumerangu w momencie, gdy opuszcza on rękę człowieka? </item><item> Jak wysoko uniesie się bumerang, licząc od wysokości wyciągniętej ręki człowieka? Można pominąć opór powietrza.</item></list></para>
+        <figure id="CNX_UPhysics_10_04_Boom">
+          <media id="ked-1bkv41l3p_tu8" alt="Rysunek pokazuje mężczyznę wyrzucającego w powietrze bumerang pod kątem 40 stopni.">
+            <image src="../../media/CNX_UPhysics_10_04_Boom.jpg" mime-type="image/jpeg"/>
+          </media>
+          <caption>Bumerang wyrzucany w powietrze pod kątem <m:math><m:msup><m:mn>40</m:mn><m:mo>∘</m:mo></m:msup></m:math>.</caption>
+        </figure>
+        <para id="ked-1bkv48hgr_fg8"><title>Strategia rozwiązania</title> Energię całkowitą bumerangu wyznaczymy jako sumę energii kinetycznej ruchu obrotowego i energii kinetycznej ruchu postępowego. W zadaniu podano, że można zaniedbać stratę energii związaną z oporem powietrza. W związku z tym w punkcie (b), w celu wyznaczenia maksymalnej wysokości, na jaką wzniósł się bumerang, możemy zastosować zasadę zachowania energii mechanicznej. </para>
+        <para id="ked-1bkv49ovo_e68">
+          <title>Rozwiązanie</title>
+        </para>
+        <list id="ked-1bkv4a513_p4" list-type="enumerated" number-style="lower-alpha"><item><para id="ked-1bkv41nm0_o5o">Moment bezwładności jak dla pręta <link cmlnle:case="locative" target-id="CNX_UPhysics_10_04_RotInertia"/>:</para>
+		<equation id="ked-1bkv4b8cq_eqo" class="unnumbered"><m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>12</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>7</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>041</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>.</m:mo></m:math></equation>
+		<para id="ked-1bkv42nm0_o5o">Prędkość kątowa: </para>
+		<equation id="ked-1bkv4brrg_h7g" class="unnumbered"><m:math><m:mi>ω</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi></m:mrow><m:mo>=</m:mo><m:mn>62</m:mn><m:mn>,</m:mn><m:mn>83</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo>.</m:mo></m:math></equation>
+		<para id="ked-1bkv43nm0_o5o">Energia kinetyczna ruchu obrotowego</para>
+		<equation id="ked-1bkv4c27r_6k8" class="unnumbered"><m:math><m:msub><m:mi>E</m:mi><m:mrow><m:mtext>obr</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>041</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>⋅</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>62</m:mn><m:mn>,</m:mn><m:mn>83</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>80</m:mn><m:mn>,</m:mn><m:mn>93</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow><m:mo>.</m:mo></m:math></equation>
+		<para id="ked-1bkv44nm0_o5o">Energia kinetyczna ruchu postępowego</para>
+		<equation id="ked-1bkv4c627_ib" class="unnumbered"><m:math><m:msub><m:mi>E</m:mi><m:mrow><m:mtext>pos</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>30</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>450</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow><m:mo>.</m:mo></m:math></equation>
+		<para id="ked-1bkv45nm0_o5o">Energia całkowita jest sumą energi kinetycznej ruchu postępowego i ruchu obrotowego </para>
+		<equation id="ked-1bkv4c537_ib" class="unnumbered"><m:math><m:mi>E</m:mi><m:mo>=</m:mo><m:msub><m:mi>E</m:mi><m:mrow><m:mtext>obr</m:mtext></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>E</m:mi><m:mrow><m:mtext>pos</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mn>80</m:mn><m:mn>,</m:mn><m:mn>93</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow><m:mo>+</m:mo><m:mn>450</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow><m:mo>=</m:mo><m:mn>530</m:mn><m:mn>,</m:mn><m:mn>9</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow></m:math></equation></item>
+          <item>Zastosujemy zasadę zachowania energii mechanicznej. Ponieważ bumerang rzucono pod pewnym kątem względem poziomu, jego całkowitą energię kinetyczną ruchu postępowego możemy zapisać jako sumę energii w kierunku poziomym (oś <m:math><m:mi>x</m:mi></m:math>) oraz energii ruchu postępowego w kierunku pionowym (oś <m:math><m:mi>y</m:mi></m:math>). Energia całkowita bumerangu w momencie opuszczania ręki mężczyzny może być zapisana jako: <equation id="ked-1bkv4fdhv_71" class="unnumbered"><m:math><m:msub><m:mi>E</m:mi><m:mrow><m:mtext>pocz</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>m</m:mi><m:msubsup><m:mi>v</m:mi><m:mi>x</m:mi><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>m</m:mi><m:msubsup><m:mi>v</m:mi><m:mi>y</m:mi><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>I</m:mi><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup><m:mo>.</m:mo></m:math></equation> Energia bumerangu w momencie osiągnięcia maksymalnej wysokości jest równa: <equation id="ked-1bkv4fief_0uo" class="unnumbered"><m:math><m:msub><m:mi>E</m:mi><m:mrow><m:mtext>konc</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>m</m:mi><m:msubsup><m:mi>v</m:mi><m:mi>x</m:mi><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>I</m:mi><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:mi>m</m:mi><m:mi>g</m:mi><m:mi>h</m:mi><m:mo>.</m:mo></m:math></equation>Z zasady zachowania energii mechanicznej wynika, że <m:math><m:msub><m:mi>E</m:mi><m:mrow><m:mtext>pocz</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>E</m:mi><m:mrow><m:mtext>konc</m:mtext></m:mrow></m:msub></m:math>. Zatem, z dwóch powyższych równań otrzymujemy: <equation id="ked-1bkv4fnnn_v3" class="unnumbered"><m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>m</m:mi><m:msubsup><m:mi>v</m:mi><m:mi>y</m:mi><m:mn>2</m:mn></m:msubsup><m:mo>=</m:mo><m:mi>m</m:mi><m:mi>g</m:mi><m:mi>h</m:mi><m:mo>.</m:mo></m:mrow></m:math></equation>Ponieważ <m:math><m:msub><m:mi>v</m:mi><m:mi>y</m:mi></m:msub><m:mo>=</m:mo><m:mn>30</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo>⋅</m:mo><m:mi>sin</m:mi><m:mo>⁡</m:mo><m:msup><m:mn>40</m:mn><m:mo>∘</m:mo></m:msup><m:mo>=</m:mo><m:mn>19</m:mn><m:mn>,</m:mn><m:mn>28</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>, otrzymamy: <equation id="ked-1bkv4gbs3_c8o" class="unnumbered"><m:math><m:mi>h</m:mi><m:mo>=</m:mo><m:mfrac><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>19</m:mn><m:mn>,</m:mn><m:mn>28</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⋅</m:mo><m:mn>9</m:mn><m:mn>,</m:mn><m:mn>8</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>18</m:mn><m:mn>,</m:mn><m:mn>97</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>.</m:mo></m:math></equation></item>
+        </list><para id="ked-1bkv543lp_pjo"><title>Znaczenie</title>Część (b) pokazuje, że zastosowanie zasady zachowania energii może dawać alternatywną metodę rozwiązywania zadań, które zwykle są rozwiązywane za pomocą równań kinematyki. W przypadku braku oporu powietrza energia kinetyczna ruchu obrotowego nie wpływa na wartość maksymalnej wysokości, jaką osiągnął bumerang.</para>
+      </example>
+      <note id="ked-1bkvsktq0_aco" class="check-understanding">
+        <exercise id="ked-1bkvslc7e_ql">
+          <problem id="ked-1bkvslc54_4qo">
+            <para id="ked-1bkvslc53_3pg"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Śruba napędowa podwodnego okrętu o napędzie jądrowym ma moment bezwładności wynoszący <m:math><m:mn>800</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>. W chwili, gdy śruba napędowa obracała się z prędkością <m:math><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>, wyłączono silnik, który ją napędza. Jaka będzie wartość prędkości kątowej śruby po 5,0 s od wyłączenia silnika, jeżeli w tym czasie śruba wykonała pracę 50 000 J przeciwko siłom oporu wody? </para>
+          </problem>
+          <solution id="ked-1bkvslc83_o4g">
+            <para id="ked-1bkvslc64_ck8">Początkowa energia kinetyczna ruchu obrotowego śruby była równa: <m:math><m:msub><m:mi>K</m:mi><m:mrow><m:mtext>pocz</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mi>I</m:mi><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mn>800</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>⋅</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>4</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>53</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>5</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow></m:math>.<newline/> W chwili <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math> energia kinetyczna ruchu obrotowego śruby była mniejsza o 50 000 J i wynosiła: <newline/> <m:math><m:msub><m:mi>K</m:mi><m:mrow><m:mtext>końc</m:mtext></m:mrow></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>03</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>5</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow></m:math>, <newline/>a stąd wyliczona prędkość kątowa <newline/> <m:math><m:mi>ω</m:mi><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>03</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>5</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow></m:mrow><m:mrow><m:mn>800</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mfrac></m:msqrt><m:mo>=</m:mo><m:mn>22</m:mn><m:mn>,</m:mn><m:mn>54</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mn>,</m:mn></m:math> <newline/> czyli 3,58 obr/s. </para></solution>
+        </exercise>
+      </note>
+    </section>
+    <section id="ked-1bkvuatkh_l98" class="key-concepts">
+      <title>Podsumowanie</title>
+      <list id="ked-1bkvuc8un_0go"><item>Energia kinetyczna ruchu obrotowego to suma energii kinetycznych cząstek ciała sztywnego lub punktów materialnych, wynikająca z ich ruchu po okręgu wokół wspólnej osi. Można ją wyrazić w postaci <m:math><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mtext>k</m:mtext>
+             </m:msub><m:mo>=</m:mo><m:mi>I</m:mi><m:msup><m:mi>ω</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>2</m:mn></m:math>, gdzie <m:math><m:mi>I</m:mi></m:math> jest momentem bezwładności ciała sztywnego lub układu punktów materialnych.</item>
+        <item>Moment bezwładności punktów materialnych poruszających się wokół stałej osi jest definiowany jako <m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:munder><m:mo>∑</m:mo><m:mi>j</m:mi></m:munder><m:msub><m:mi>m</m:mi><m:mi>j</m:mi></m:msub><m:msubsup><m:mi>r</m:mi><m:mi>j</m:mi><m:mn>2</m:mn></m:msubsup></m:math>, gdzie <m:math><m:msub><m:mi>m</m:mi><m:mi>j</m:mi></m:msub></m:math> jest masą <m:math><m:mi>j</m:mi></m:math>-tego punktu, natomiast <m:math><m:msub><m:mi>r</m:mi><m:mi>j</m:mi></m:msub></m:math> jest jego odległością od osi obrotu. Wartość momentu pędu rośnie z kwadratem odległości punktów od osi obrotu. Moment bezwładności jest odpowiednikiem masy w ruchu postępowym.</item>
+        <item>W układach, które obracają się i przemieszczają, można zastosować zasadę zachowania energii mechanicznej tylko wtedy, gdy na układ działają siły zachowawcze. W tym przypadku całkowita energia mechaniczna jest zachowana i jest sumą energii kinetycznej ruchu obrotowego i ruchu postępowego oraz energii potencjalnej wynikającej z grawitacji. </item>
+      </list></section>
+    <section id="ked-1bkvuk66k_ke" class="review-conceptual-questions">
+      <title>Pytania </title>
+      <exercise id="ked-1bkvukpc0_ceo">
+        <problem id="ked-1bkvukpc4_u08">
+          <para id="ked-1bkvukpbo_p88">Gdyby na orbicie wokół Słońca umieszczono by dodatkowo inną planetę o rozmiarach takich jak Ziemia, to czy moment bezwładności Układu Słonecznego by wzrósł, zmalał czy pozostał bez zmian?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bkvul8mr_a7o">
+        <problem id="ked-1bkvul8m6_qj8">
+          <para id="ked-1bkvul8ot_ls">Jednorodna kula obraca się ze stałą prędkością kątową wokół osi przechodzącej przez jej środek. Sfera o tej samej masie i promieniu obraca się wokół jej osi symetrii przechodzącej przez środek sfery, z taką samą prędkością kątową jak kula. Który obiekt ma większą energię kinetyczną ruchu obrotowego?</para>
+        </problem>
+        <solution id="ked-1bkvul8o2_8vg" class="section-exercises">
+          <para id="ked-1bkvul8n3_bto">Sfera, ponieważ jej masa jest rozłożona dalej od osi obrotu.</para>
+        </solution>
+      </exercise>
+    </section>
+    <section id="ked-1bkvulqaa_09o" class="review-problems">
+      <title>Zadania</title>
+      <exercise id="ked-1bkvum3je_9ho">
+        <problem id="ked-1bkvum3jl_3m">
+          <para id="ked-1bkvum3ju_2m">Na rysunku przedstawiono układ trzech cząstek punktowych leżących w tej samej płaszczyźnie. Masa każdej cząstki wynosi 0,3 kg. <list id="eip-idm346635520" list-type="enumerated" number-style="lower-alpha"><item> Wyznacz moment bezwładności układu względem osi prostopadłej do płaszczyzny rysunku i przechodzącej przez zaznaczony punkt. </item><item> Oblicz wartość energii kinetycznej ruchu obrotowego, jeżeli układ obraca się wokół zaznaczonej osi z częstotliwością 5 obr/s. </item></list><media id="ked-1bkvuo5ek_7n" alt="Rysunek przedstawia układ współrzędnych XYZ. Na osi x została umieszczona cząstka w odległości 20 cm od środka układu, na osi Y cząstka w odległości 60 centymetrów od środka, a na osi Z cząstka w odległości 40 centymetrów od środka."><image src="../../media/CNX_UPhysics_10_04_PoinPar_img.jpg" mime-type="image/jpeg"/></media></para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bkvupuas_nfg">
+        <problem id="ked-1bkvupuc7_l38">
+          <list id="ked-1bkvupudo_078" list-type="enumerated" number-style="lower-alpha">
+            <item> Wyznacz energię kinetyczną ruchu obrotowego Ziemi wokół jej osi obrotu. </item>
+            <item> Jaka jest wartość energii kinetycznej ruchu obrotowego Ziemi związana z jej ruchem wokół Słońca? </item>
+          </list>
+        </problem>
+        <solution id="ked-1bkvupubv_r7g" class="section-exercises">
+          <list id="eip-idm952658032" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mi>k</m:mi>
+             </m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>56</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mn>29</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow></m:math>;</item>
+            <item><m:math><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mi>k</m:mi>
+             </m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>68</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mn>33</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow></m:math>.</item>
+          </list></solution>
+      </exercise>
+      <exercise id="ked-1bkvurf9k_b28">
+        <problem id="ked-1bkvurf7k_s3">
+          <para id="ked-1bkvurf7q_i08">Oblicz energię kinetyczną ruchu obrotowego 12-kilogramowego koła motocykla, jeżeli jego prędkość kątowa wynosi 120 rad/s. Promień wewnętrzny koła ma 0,2080 m, a zewnętrzny 0,330 m.</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bkvv0mta_goo">
+        <problem id="ked-1bkvv0msp_2o8">
+          <para id="ked-1bkvv0mt6_72o">W baseballu, miotacz wyrzuca piłkę wykonując m.in. obrót przedramieniem wokół stawu łokciowego. Jeżeli prędkość liniowa piłki względem stawu łokciowego wynosi 20 m/s, to jaka jest wartość energii kinetycznej ruchu obrotowego przedramienia? Odległość piłki od stawu biodrowego wynosi 0,480 m, a moment bezwładności przedramienia wynosi <m:math><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>500</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>. </para>
+        </problem>
+        <solution id="ked-1bkvv0mtf_238" class="section-exercises">
+          <para id="ked-1bkvv0mst_rg8"><m:math><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mi>k</m:mi>
+             </m:msub><m:mo>=</m:mo><m:mn>434</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow></m:math>.</para></solution>
+      </exercise>
+      <exercise id="ked-1bkvv57ku_c28">
+        <problem id="ked-1bkvv57l0_o">
+          <para id="ked-1bkvv57mj_ak">Samolot lecący poziomo z prędkością 40,0 m/s podchodzi do lądowania. W momencie, gdy znajduje się na wysokości 300 m, urywa się śmigło o masie 200 kg i momencie bezwładności <m:math><m:mn>70</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>. W chwili oderwania się prędkość obrotowa śmigła wynosiła 20 obr/s. Zaniedbując opory powietrza wyznacz: (a) prędkość liniową, z jaką śmigło uderzy o ziemię, (b) prędkość obrotową śmigła w momencie uderzenia o ziemię.</para>
+        </problem>
+        <solution id="ked-1bkvv57l2_5oo" class="section-exercises">
+          <list id="eip-idm1767891328" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mi>v</m:mi><m:mo>=</m:mo><m:mn>86</m:mn><m:mn>,</m:mn><m:mn>5</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>; </item>
+            <item> Prędkość kątowa śmigła jest stała i wynosi 20 obr/s.</item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bkvvd4kn_qsg">
+        <problem id="ked-1bkvvd4hu_fd8">
+          <para id="ked-1bkvvd4k4_t68">Jaka będzie w momencie zderzenia z ziemią prędkość obrotowa śmigła z poprzedniego zadania, jeżeli uwzględnimy, że opory powietrza w ciągu całego ruchu zmniejszyły jego energię kinetyczną ruchu obrotowego o 30%?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bkvvddb1_re">
+        <problem id="ked-1bkvvddbl_td8">
+          <para id="ked-1bkvvddc6_748">Jaka jest energia kinetyczna ruchu obrotowego gwiazdy neutronowej o masie <m:math><m:mn>2</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mn>30</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi></m:mrow></m:math>, promieniu 10 km i okresie obrotu 0,02 s? Gwiazdę neutronową można uważać za jednorodną kulę.</para>
+        </problem>
+        <solution id="ked-1bkvvddcv_np" class="section-exercises">
+          <para id="ked-1bkvvddcr_pi8"><m:math><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mi>k</m:mi>
+             </m:msub><m:mo>=</m:mo><m:mn>3</m:mn><m:mn>,</m:mn><m:mn>95</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mn>42</m:mn></m:mrow></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow></m:math>.</para></solution>
+      </exercise>
+      <exercise xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bkvvei03_o3"><problem id="ked-1bkvvei05_16o">
+          <para id="ked-1bkvvei1j_qmo">Szlifierka elektryczna składająca się z tarczy obrotowej o masie 0,7 kg i promieniu 10 cm obraca się z prędkością 15 obr/min. Przy szlifowaniu surowej ściany drewnianej jej prędkość obrotowa zmniejsza się o 20%. <list id="eip-idm545428816" list-type="enumerated" number-style="lower-alpha"><item> Jaka jest końcowa energia kinetyczna ruchu obrotowego tarczy? </item><item> O ile zmniejszyła się energia kinetyczna jej ruchu obrotowego?</item></list></para>
+        </problem>
+      </exercise><exercise xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1bkvvfam7_l"><problem id="ked-1bkvvfaln_c0g">
+          <para id="ked-1bkvvfalu_fpg">Urządzenie składa się z tarczy o masie 2,0 kg i promieniu 50 cm, na której zamocowany jest pierścień o masie 1,0 kg oraz promieniu wewnętrznym 20 cm i zewnętrznym 30 cm (patrz poniżej). Urządzenie obraca się wokół osi przechodzącej przez środek tarczy i pierścienia, a prędkość kątowa wynosi 10 obr/s. <list id="eip-idm1680978928" list-type="enumerated" number-style="lower-alpha"><item> Jaki jest moment bezwładności urządzenia względem osi obrotu? </item><item> Jaka jest energia kinetyczna jego ruchu obrotowego?</item></list>           <figure id="ked-1bvvvd5c_gig" class="unnumbered"><media id="ked-1bkvvgd5c_gig" alt="">
+            <image src="../../media/CNX_UPhysics_10_04_AnnCyl_img.jpg" mime-type="image/jpeg"/>
+          </media></figure></para>
+        </problem>
+        <solution id="ked-1bkvvfanb_fig" class="section-exercises">
+          <list id="eip-idm769531072" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:mi>I</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>0315</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">g</m:mi><m:mo>⋅</m:mo><m:msup><m:mi mathvariant="normal">m</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>.</item>
+            <item><m:math><m:msub>
+                  <m:mi>E</m:mi>
+                  <m:mi>k</m:mi>
+             </m:msub><m:mo>=</m:mo><m:mn>621</m:mn><m:mn>,</m:mn><m:mn>8</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">J</m:mi></m:mrow></m:math>.</item>
+          </list></solution>
+      </exercise></section>
+  </content>
+  <glossary>
+    <definition id="ked-1bkuqq4j6_vdx">
+      <term cmlnle:reference="moment bezwładności" class="no-emphasis">moment bezwładności (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">moment of inertia</term></foreign>)</term>
+      <meaning id="ked-1bkuqq4j6_vdy">miara bezwładności obrotowej, która charakteryzuje ilościowo stopień łatwości lub trudności wykonywania zmiany wartości prędkości kątowej bryły sztywnej</meaning>
+    </definition>
+    <definition id="ked-1bkuqq4j6_vdq">
+      <term cmlnle:reference="energia kinetyczna ruchu obrotowego" class="no-emphasis">energia kinetyczna ruchu obrotowego (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">rotational kinetic energy</term></foreign>)</term>
+      <meaning id="ked-1bkuqq4j6_vdw">część całkowitej energii kinetycznej ciała</meaning>
+    </definition>
+  </glossary>
+</document>

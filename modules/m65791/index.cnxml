@@ -1,0 +1,1033 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Zmienne opisujące ruch obrotowy</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65791</md:content-id>
+  <md:title>Zmienne opisujące ruch obrotowy</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+ <item>opisywać sens fizyczny zmiennych obrotowych w zastosowaniu do obrotu wokół stałej osi;</item>
+ <item>wyjaśniać, jak prędkość kątowa jest związana z prędkością styczną;</item>
+ <item>obliczać, znając zależność od czasu położenia kątowego, chwilową prędkość kątową w dowolnej chwili;</item>
+ <item>wyznaczać prędkość kątową i przyspieszenie kątowe obracającego się ciała;</item>
+ <item>obliczać średnie przyspieszenie kątowe, gdy prędkość kątowa się zmienia;</item>
+ <item>obliczać chwilowe przyspieszenie kątowe, znając zależność prędkości kątowej od czasu.</item>
+</list></md:abstract>
+  <md:uuid>188c36be-eba5-432d-985a-0a360225fc8d</md:uuid>
+</metadata>
+
+<content>
+    <para id="ked-1bkcfh6jn.118">Do tej pory zajmowaliśmy się głównie analizą ruchu postępowego. Zmienne opisujące ruch postępowy to: przemieszczenie, prędkość i przyspieszenie. Teraz rozszerzymy nasz opis ruchu na ruch obrotowy wokół stałej osi. Zobaczymy, że ruch obrotowy jest opisany przez zestaw powiązanych ze sobą zmiennych, podobnych do tych, które wykorzystaliśmy do opisu ruchu postępowego.</para><section id="ked-1bkcugr40.prg">
+      <title>Prędkość kątowa </title>
+      <para id="ked-1bkcul8hu.0p">Jednostajny ruch po okręgu (omówiony wcześniej w rozdziale <link class="target-chapter" document="m63778">Ruch w dwóch i trzech wymiarach</link>) jest ruchem po okręgu ze stałą wartością prędkości (szybkością). Chociaż jest to najprostszy przypadek ruchu obrotowego, jest on bardzo przydatny w wielu sytuacjach. Użyjemy go, aby wprowadzić zmienne obrotowe.</para>
+      <para id="ked-1bkculuks.emo"><link target-id="CNX_UPhysics_10_01_Circle"/> przedstawia cząstkę poruszającą się po okręgu. Układ współrzędnych jest stały i służy jako punkt odniesienia do określenia położenia cząstki. Wektor położenia cząstki (wektor zaczepiony w początku układu współrzędnych i kończący się w miejscu znajdowania się cząstki) tworzy kąt <m:math><m:mrow><m:mi>θ</m:mi></m:mrow></m:math> z osią <m:math><m:mi>x</m:mi></m:math>, który rośnie w kierunku przeciwnym do ruchu wskazówek zegara, gdy cząstka przesuwa się po okręgu. Kąt <m:math><m:mrow><m:mi>θ</m:mi></m:mrow></m:math> nazywamy <term class="no-emphasis" cmlnle:reference="położenie kątowe">położeniem kątowym</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">angular position</term></foreign>) cząstki. W miarę przesuwania się cząstki po okręgu zakreśla ona łuk o długości <m:math><m:mi>s</m:mi></m:math>.</para><figure id="CNX_UPhysics_10_01_Circle">
+        <media id="ked-1bkd0gb5k.8r" alt="Rysunek przedstawia wykres cząstki poruszającej się w kierunku przeciwnym do ruchu wskazówek zegara. Wektor r od środka układu współrzędnych do punktu s na drodze cząstki tworzy kąt theta z osią X. ">
+          <image src="../../media/CNX_UPhysics_10_01_Circle.jpg" mime-type="image/jpeg"/>
+        </media>
+        <caption>Cząstka porusza się po okręgu w kierunku przeciwnym do kierunku ruchu wskazówek zegara, zakreślając łuk o długości <m:math><m:mi>s</m:mi></m:math>. Jej wektor położenia tworzy dodatni kąt <m:math><m:mrow><m:mi>θ</m:mi></m:mrow></m:math> z osią <m:math><m:mi>x</m:mi></m:math>.</caption>
+      </figure>
+      <para id="ked-1bkdomhbk.p3">Związek pomiędzy wartością kąta <m:math><m:mi>θ</m:mi></m:math> a promieniem okręgu i długością łuku wyraża się wzorem: <equation id="ked-1bkdoq9cl.uog"><m:math><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>s</m:mi><m:mi>r</m:mi></m:mfrac><m:mo>.</m:mo></m:mrow></m:math></equation></para>
+      <para id="ked-1bkdosm34.l18">Kąt <m:math><m:mi>θ</m:mi></m:math>, kątowe położenie cząstki, mierzony jest w radianach (rad). Kąt <m:math><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:math> radianów odpowiada w mierze łukowej kątowi <m:math><m:msup><m:mn>360</m:mn><m:mo>∘</m:mo></m:msup></m:math>. Należy zauważyć, że kąt wyrażony w radianach jest ilorazem dwóch długości, a zatem jest wielkością bezwymiarową. Gdy cząstka porusza się po okręgu, jej położenie kątowe zmienia się, powodując zmianę kąta o wartość <m:math><m:mrow><m:mtext>Δ</m:mtext><m:mi>θ</m:mi><m:mo>.</m:mo></m:mrow></m:math></para>
+      <para id="ked-1bkdp6pov.02o">Kątowi <m:math><m:mi>θ</m:mi></m:math> możemy przypisać wektor <m:math><m:mrow><m:mover><m:mi>θ</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. Wektor <m:math><m:mrow><m:mover><m:mi>θ</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest wektorem prostopadłym do płaszczyzny <m:math><m:mi>x</m:mi><m:mi>y</m:mi></m:math> na <link cmlnle:case="locative" target-id="CNX_UPhysics_10_01_AngVec"/>. Wektory położenia <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> i długości łuku <m:math><m:mrow><m:mover><m:mi>s</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> leżą w płaszczyźnie <m:math><m:mi>x</m:mi><m:mi>y</m:mi></m:math>. Te trzy wektory związane są relacją:</para><equation id="ked-1bkdpf5t9.vkg"><m:math>
+          <m:mrow>
+            <m:mover>
+              <m:mi>s</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>θ</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mtext>.</m:mtext>
+        </m:math>
+      </equation><para id="ked-1bkdph8ei.vio">Oznacza to, że wektor długości łuku jest iloczynem wektorowym wektora kąta i wektora położenia, tak jak to pokazano na <link cmlnle:case="locative" target-id="CNX_UPhysics_10_01_AngVec"/>.</para>
+      <figure id="CNX_UPhysics_10_01_AngVec">
+        <media id="ked-1bkdpjaqr.0ng" alt="Rysunek układu współrzędnych XYZ z trzema wektorami. Wektor Theta skierowany jest ku dodatniej osi Z. Wektor s znajduje się na płaszczyźnie XY. Wektor r jest skierowany od środka układu do początku wektora s.">
+          <image src="../../media/CNX_UPhysics_10_01_AngVec.jpg" mime-type="image/jpeg"/>
+        </media>
+        <caption>Wektor kąta skierowany jest wzdłuż osi <m:math><m:mi>z</m:mi></m:math>, a wektory położenia i długości łuku leżą w płaszczyźnie <m:math><m:mi>x</m:mi><m:mi>y</m:mi></m:math>. Widzimy, że <m:math><m:mrow><m:mover><m:mi>s</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mrow><m:mover><m:mi>θ</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. Wszystkie trzy wektory są wzajemnie do siebie prostopadłe.</caption>
+      </figure>
+      <para id="ked-1bkdptvk4.4og">Wartość wektora <term class="no-emphasis" cmlnle:reference="prędkość kątowa">prędkości kątowej</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">angular velocity</term></foreign>), oznaczona jako <m:math><m:mrow><m:mi>ω</m:mi></m:mrow></m:math>, jest szybkością zmian kąta <m:math><m:mi>θ</m:mi></m:math>, gdy cząstka porusza się po łuku. <term class="no-emphasis" cmlnle:reference="chwilowa prędkość kątowa">Chwilowa wartość prędkości kątowej</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">instantaneous angular velocity</term></foreign>) jest definiowana jako granica, przy <m:math><m:mrow><m:mtext>Δ</m:mtext><m:mi>t</m:mi><m:mtext>→</m:mtext><m:mn>0</m:mn></m:mrow></m:math>, średniej prędkości kątowej <m:math><m:mover><m:mi>ω</m:mi><m:mtext>–</m:mtext></m:mover><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>θ</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>t</m:mi></m:math>:</para>
+      <note id="fs-idm226535264" class="equation-callout">
+        <equation id="ked-1bkdq1sfm.1d">
+          <m:math>
+            <m:mi>ω</m:mi>
+            <m:mo>=</m:mo>
+            <m:munder>
+              <m:mo form="prefix">lim</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">Δ</m:mi>
+                </m:mrow>
+                <m:mi>t</m:mi>
+                <m:mtext>→</m:mtext>
+                <m:mn>0</m:mn>
+              </m:mrow>
+            </m:munder>
+            <m:mfrac>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">Δ</m:mi>
+                </m:mrow>
+                <m:mi>θ</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">Δ</m:mi>
+                </m:mrow>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">d</m:mi>
+                </m:mrow>
+                <m:mi>θ</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">d</m:mi>
+                </m:mrow>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mtext>,</m:mtext>
+          </m:math>
+        </equation>
+      </note>
+      <para id="ked-1bkdsjglb.i8">gdzie <m:math><m:mi>θ</m:mi></m:math> jest kątem obrotu (<link target-id="CNX_UPhysics_10_01_AngVec"/>). Jednostką prędkości kątowej jest radian na sekundę (rad/s). Prędkość kątową możemy w prosty sposób powiązać z częstotliwością <m:math><m:mi>f</m:mi></m:math> (zwaną też prędkością obrotową), wyrażaną w obrotach na sekundę (obr/s). Aby wyznaczyć prędkość kątową, musimy pomnożyć liczbę obrotów na sekundę przez <m:math><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:math>, ponieważ jeden pełny obrót oznacza przemieszczenie kątowe równe <m:math><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:math> radianów:</para>
+	  <equation id="ked-2131215.lr">
+	  <m:math>
+          <m:mrow>
+            <m:mi>ω</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>2</m:mn><m:mi>π</m:mi><m:mi>f</m:mi>
+          </m:mrow>
+          <m:mtext>.</m:mtext>
+        </m:math>
+	  </equation>
+	  <para id="ked-112341ak.cco">Położenie kątowe w kierunku przeciwnym do ruchu wskazówek zegara będziemy uważali za dodatnie, a położenie kątowe w kierunku zgodnym z ruchem wskazówek zegara za ujemne.</para>
+      <para id="ked-1bkdsmoak.cco">Związek pomiędzy prędkością kątową a prędkością liniową w ruchu po okręgu możemy wyznaczyć poprzez zróżniczkowanie po czasie równania na przesunięcie kątowe (<link target-id="ked-1bkdoq9cl.uog"/>). Zapiszmy to równanie w postaci:</para>
+      <equation id="ked-1bkdsskmn.lr" class="unnumbered">
+        <m:math>
+          <m:mrow>
+            <m:mi>s</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>r</m:mi>
+            <m:mi>θ</m:mi>
+          </m:mrow>
+          <m:mtext>.</m:mtext>
+        </m:math>
+      </equation>
+      <para id="ked-1bkdstl2m.79o">Obliczając pochodną po czasie i uwzględniając, że promień okręgu jest wielkością stałą, otrzymujemy:</para>
+      <equation id="ked-1bkdsttlc.c8o" class="unnumbered">
+        <m:math>
+          <m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>s</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>r</m:mi>
+              <m:mi>θ</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mi>θ</m:mi>
+          <m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>r</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>+</m:mo>
+          <m:mi>r</m:mi>
+          <m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>θ</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mi>r</m:mi>
+          <m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>θ</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+        </m:math>
+      </equation>
+      <para id="ked-1bkejdoln.eho">gdzie <m:math><m:mi>θ</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>r</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:math>. W powyższym równaniu <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>s</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>t</m:mi></m:math> jest właśnie prędkością liniową <m:math><m:mi>v</m:mi></m:math> cząstki w ruchu po okręgu, przedstawionej na <link cmlnle:case="locative" target-id="CNX_UPhysics_10_01_AngVec"/> skierowaną zgodnie z kierunkiem wektora <m:math><m:mrow>
+            <m:mover>
+              <m:mi>s</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow></m:math>. W ten sposób, stosując równanie na prędkość kątową (<link target-id="ked-1bkdq1sfm.1d"/>) otrzymujemy:</para><note id="fs-idm200601248" class="equation-callout">
+        <equation id="ked-1bkejmj6e.dfg">
+          <m:math>
+            <m:mrow>
+                <m:mi>v</m:mi>
+              <m:mo>=</m:mo>
+              <m:mi>r</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+      </note>
+      <para id="ked-1bkejntlr.bjg">Zatem prędkość liniowa cząstki w ruchu po okręgu jest iloczynem prędkości kątowej i promienia okręgu. Z równania tego wynika, że przy stałej prędkości kątowej, prędkość liniowa cząstki wzrasta wraz z odległością od osi obrotu. Efekt ten ilustruje <link target-id="CNX_UPhysics_10_01_RotDisk"/>. Na obracającej się ze stałą prędkością kątową tarczy umieszczono, w różnych odległościach od osi obrotu, dwie cząstki. Gdy tarcza się obraca, prędkość cząstek wzrasta liniowo wraz ze wzrostem odległości od osi obrotu. Na podstawie <link cmlnle:case="genitive" target-id="CNX_UPhysics_10_01_RotDisk"/> możemy stwierdzić, że: <m:math><m:mrow><m:msub><m:mi>v</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>r</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>ω</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math> oraz <m:math><m:mrow><m:msub><m:mi>v</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>ω</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math>. Ponieważ prędkości kątowe wszystkich punktów tarczy są jednakowe (<m:math><m:mrow><m:msub><m:mi>ω</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>ω</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:math>), to otrzymamy <m:math><m:msub><m:mi>v</m:mi><m:mn>1</m:mn></m:msub><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msub><m:mi>r</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>v</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub></m:math>, czyli <m:math><m:msub><m:mi>v</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msub><m:mi>r</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">)</m:mo><m:msub><m:mi>v</m:mi><m:mn>1</m:mn></m:msub></m:math>. Ponieważ <m:math><m:mrow><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub><m:mo>&gt;</m:mo><m:msub><m:mi>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math>, to <m:math><m:mrow><m:msub><m:mi>v</m:mi><m:mn>2</m:mn></m:msub><m:mo>&gt;</m:mo><m:msub><m:mi>v</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:math>, innymi słowy prędkość liniowa jest wprost proporcjonalna do promienia.</para><figure id="CNX_UPhysics_10_01_RotDisk">
+        <media id="ked-1bkekvlnh.7o8" alt="Rysunek pokazuje dwie cząstki na obracającej się tarczy. Cząstka 1 znajduje się w odległości r1 od osi obrotu i porusza się z prędkością v1. Cząstka 2 znajduje się w odległości r2 od osi obrotu i porusza się z prędkością v2.">
+          <image src="../../media/CNX_UPhysics_10_01_RotDisk.jpg" mime-type="image/jpeg"/>
+        </media>
+        <caption>Dwie cząstki umieszczone na obracającej się tarczy mają różne prędkości, w zależności od ich odległości od osi obrotu. </caption>
+      </figure>
+      <para id="ked-1bkel2367.qt8">Do tej pory używaliśmy wartości prędkości kątowej <m:math><m:mi>ω</m:mi><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>θ</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>t</m:mi></m:math>, która to wielkość jest wielkością skalarną – jest to zmiana położenia kątowego w zależności od czasu. Wektor <m:math><m:mrow><m:mover><m:mi>ω</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest wektorem związanym z prędkością kątową i jest skierowany wzdłuż osi obrotu. Przydaje się, gdy opisujemy ruch obrotowy ciała sztywnego, bo wówczas chcemy znać zarówno położenie osi obrotu, jak i kierunek, w którym nasze ciało obraca się wokół tej osi – zgodnie ze wskazówkami zegara, czy też przeciwnie do ich ruchu. Prędkość kątowa przedstawiona jako wektor daje nam te informacje. Kierunek wektora prędkości kątowej <m:math><m:mrow><m:mover><m:mi>ω</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest określany przez tak zwaną <term class="no-emphasis" cmlnle:reference="reguła prawej dłoni">regułę prawej dłoni</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">right-hand rule</term></foreign>). Mówi ona, że jeżeli palce prawej dłoni zgięte są w kierunku przeciwnym do ruchu wskazówek zegara od osi <m:math><m:mi>x</m:mi></m:math> do osi <m:math><m:mi>y</m:mi></m:math> (w kierunku, w którym wzrasta <m:math><m:mi>θ</m:mi></m:math>), to odgięty kciuk wskazuje kierunek dodatniej części osi <m:math><m:mi>z</m:mi></m:math> (<link target-id="CNX_UPhysics_10_01_RHR"/>). Wektor prędkości kątowej <m:math><m:mrow><m:mover><m:mi>ω</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> skierowany zgodnie z kierunkiem osi <m:math><m:mi>z</m:mi></m:math> wskazuje na obroty w kierunku przeciwnym do ruchu wskazówek zegara, podczas gdy wektor prędkości kątowej <m:math><m:mrow><m:mover><m:mi>ω</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> skierowany przeciwnie do kierunku osi <m:math><m:mi>z</m:mi></m:math> wskazuje na obroty zgodne z kierunkiem ruchu wskazówek zegara.</para><figure id="CNX_UPhysics_10_01_RHR">
+        <media id="ked-1bkelvs87.6t" alt="Rysunek jest wykresem pokazującym układ współrzędnych XYZ z obrotem przeciwnym do ruchu wskazówek zegara na płaszczyźnie XY. Prędkość kątowa wskazuje w dodatnim kierunku osi Z.">
+          <image src="../../media/CNX_UPhysics_10_01_RHR.jpg" mime-type="image/jpeg"/>
+        </media>
+        <caption>Ilustracja zastosowania reguły prawej dłoni w przypadku obrotów w kierunku przeciwnym do ruchu wskazówek zegara. Zgodnie z regułą prawej dłoni, wektor prędkości kątowej skierowany jest w kierunku zgodnym z kierunkiem osi <m:math><m:mi>z</m:mi></m:math>. </caption>
+      </figure>
+      <para id="ked-1bkem724o.vj">Możemy sprawdzić regułę prawej dłoni stosując wektorowe wyrażenie dla długości łuku <m:math><m:mrow><m:mover><m:mi>s</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mrow><m:mover><m:mi>θ</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. Jeżeli zróżniczkujemy to równanie po czasie, otrzymamy:</para>
+      <equation id="ked-1bkem8d78.0ao" class="unnumbered">
+        <m:math>
+          <m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>s</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mi mathvariant="normal">d</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>θ</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>×</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>r</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>θ</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>×</m:mo>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>r</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>θ</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mo>×</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mover>
+                      <m:mi>r</m:mi>
+                      <m:mtext>→</m:mtext>
+                    </m:mover>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>θ</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>×</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="ked-1bkeopj54.1u">Ponieważ <m:math><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> nie zależy od czasu, to składnik <m:math><m:mrow><m:mover><m:mi>θ</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:math>. Ponieważ <m:math><m:mrow><m:mover><m:mi>v</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mrow><m:mover><m:mi>s</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>t</m:mi></m:math> jest prędkością liniową, zaś <m:math><m:mrow><m:mover><m:mi>ω</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mrow><m:mover><m:mi>θ</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>t</m:mi></m:math> jest prędkością kątową, otrzymujemy: </para>
+      <equation id="ked-1bkeor3sr.l3" class="unnumbered">
+        <m:math>
+          <m:mrow>
+            <m:mover>
+              <m:mi>v</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>ω</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="ked-1bkeouhev.82g">Czyli prędkość styczna jest iloczynem wektorowym prędkości kątowej i wektora położenia, tak jak to pokazano na <link cmlnle:case="locative" target-id="CNX_UPhysics_10_01_AngVelVec"/>. Część (a) rysunku przedstawia sytuację, w której wektor prędkości kątowej skierowany jest zgodnie z kierunkiem osi <m:math><m:mi>z</m:mi></m:math>, co oznacza, że ruch odbywa się w płaszczyźnie <m:math><m:mi>x</m:mi><m:mi>y</m:mi></m:math> przeciwnie do kierunku ruchu wskazówek zegara. W części (b) wektor prędkości kątowej skierowany jest przeciwnie do kierunku osi <m:math><m:mi>z</m:mi></m:math>, co oznacza, że obrót odbywa się w płaszczyźnie <m:math><m:mi>x</m:mi><m:mi>y</m:mi></m:math>, w kierunku zgodnym z ruchem wskazówek zegara.</para>
+      <figure id="CNX_UPhysics_10_01_AngVelVec">
+        <media id="ked-1bkeovos1.buo" alt="Rysunek A w układzie współrzędnych XYZ pokazuje trzy wektory. Wektor Omega wskazuje w kierunku dodatnim osi Z. Wektor v znajduje się w płaszczyźnie. Wektor r jest skierowany od środka układu do początku wektora v. Rysunek B w układzie współrzędnych XYZ pokazuje trzy wektory. Wektor Omega wskazuje ku ujemnej części osi Z. Wektor v znajduje się w płaszczyźnie XY. Wektor r jest skierowany od środka układu do początku wektora v.">
+          <image src="../../media/CNX_UPhysics_10_01_AngVelVec.jpg" mime-type="image/jpeg"/>
+        </media>
+        <caption>Wektory na rysunku przedstawiają prędkość kątową, wektor położenia oraz wektor prędkości liniowej. (a) Wektor prędkości kątowej skierowany jest zgodnie z kierunkiem osi <m:math><m:mi>z</m:mi></m:math>, co oznacza obrót w płaszczyźnie <m:math><m:mi>x</m:mi><m:mi>y</m:mi></m:math> w kierunku przeciwnym do kierunku obrotu wskazówek zegara. (b) Wektor prędkości kątowej skierowany jest w kierunku przeciwnym do kierunku osi <m:math><m:mi>z</m:mi></m:math>, wskazując na obrót w płaszczyźnie <m:math><m:mi>x</m:mi><m:mi>y</m:mi></m:math> w kierunku zgodnym z kierunkiem ruchu wskazówek zegara.</caption>
+      </figure>
+      <example id="fs-idm1339862080">
+        <para id="ked-1bkeplmvn.0k8"><title>Obroty koła zamachowego</title>Koło zamachowe leżące w płaszczyźnie kartki obraca się tak, że położenie kątowe danego punktu koła zmienia się zgodnie z zależnością <m:math><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>45</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo>⋅</m:mo><m:mi>t</m:mi></m:math>. Koło obraca się w kierunku przeciwnym do ruchu wskazówek zegara. Odpowiedz na następujące pytania: <list id="eip-idm470932464" list-type="enumerated" number-style="lower-alpha"><item> Jaka jest prędkość kątowa koła zamachowego? </item><item> Jaki jest kierunek wektora prędkości kątowej? </item><item> O ile radianów obróci się to koło zamachowe w ciągu 30 s? </item><item> Jaka jest prędkość liniowa punktu koła położonego w odległości 10 cm od osi obrotu? </item></list></para><para id="ked-1bkeq2gl5.pno"><title>Strategia rozwiązania</title>Zależność położenia kątowego od czasu opisana jest równaniem <m:math><m:mrow><m:mi>θ</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>ω</m:mi><m:mi>t</m:mi></m:mrow></m:math>. Aby wyznaczyć wartość prędkości kątowej, należy wyliczyć pierwszą pochodną <m:math><m:mi>θ</m:mi></m:math> po czasie. Następnie należy przy pomocy reguły prawej dłoni wyznaczyć kierunek (zwrot) wektora prędkości kątowej. Aby wyznaczyć przemieszczenie kątowe koła zamachowego w czasie 30 s, wystarczy wyznaczyć <m:math><m:mrow><m:mtext>Δ</m:mtext><m:mi>θ</m:mi></m:mrow></m:math> dla zmiany położenia kątowego od chwili początkowej 0 do upływu 30 s. Aby wyznaczyć prędkość styczną dla punktu położonego w pewnej odległości od osi obrotu, mnożymy tę odległość przez prędkość kątową koła zamachowego.</para>
+        <para id="eip-660"><title>Rozwiązanie</title></para><list id="ked-1bkerl4gg.aa8" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:mi>ω</m:mi><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>θ</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>45</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>. Widzimy, że prędkość kątowa jest stała.</item>
+          <item>Stosując regułę prawej dłoni zginamy palce w kierunku obrotu koła, tj. w kierunku przeciwnym do ruchu wskazówek zegara w płaszczyźnie kartki. Wówczas odchylony kciuk wskaże nam kierunek wektora prędkości kątowej. Będzie on prostopadły do płaszczyzny strony i skierowany przed kartkę.</item>
+          <item>
+            <m:math>
+              <m:mrow>
+                <m:mi mathvariant="normal">Δ</m:mi>
+              </m:mrow>
+              <m:mi>θ</m:mi>
+              <m:mo>=</m:mo>
+              <m:mi>θ</m:mi>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mn>30</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mo>−</m:mo>
+              <m:mi>θ</m:mi>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mn>45</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">r</m:mi>
+                <m:mi mathvariant="normal">a</m:mi>
+                <m:mi mathvariant="normal">d</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mn>30</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>45</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">r</m:mi>
+                <m:mi mathvariant="normal">a</m:mi>
+                <m:mi mathvariant="normal">d</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>1350</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">r</m:mi>
+                <m:mi mathvariant="normal">a</m:mi>
+                <m:mi mathvariant="normal">d</m:mi>
+              </m:mrow>
+            </m:math>
+          </item>
+          <item>
+            <m:math>
+              <m:mi>v</m:mi>
+              <m:mo>=</m:mo>
+              <m:mi>r</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>1</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mn>45</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">r</m:mi>
+                <m:mi mathvariant="normal">a</m:mi>
+                <m:mi mathvariant="normal">d</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>4</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>5</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+            </m:math>
+          </item>
+        </list><para id="ked-1bkerpu4o.gn8"><title>Znaczenie</title>Jeżeli podzielimy otrzymane przemieszczenie kątowe przez <m:math><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:math>, to przekonamy się, że w ciągu 30 sekund koło zamachowe wykonało aż 215 obrotów. Masywne koło zamachowe może służyć do magazynowania energii, jeśli zminimalizuje się straty z powodu tarcia. Trwają badania nad zastosowaniem nadprzewodzących łożysk (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">superconducting bearings</term></foreign>), które pozwoliłyby kołu zamachowemu obracać się bez tarcia.</para></example>
+    </section>
+    <section id="ked-1bklgbv7u_alo">
+      <title>Przyspieszenie kątowe</title><para id="ked-1bklgcnio_7ig">Właśnie omówiliśmy prędkość kątową dla ruchu jednostajnego po okręgu, ale nie wszystkie ruchy są jednostajne. Wyobraźmy sobie łyżwiarza wirującego z wyciągniętymi rękami – jeśli przyciągnie ręce do siebie, jego prędkość kątowa wzrośnie – lub wirujący dysk twardy komputera, zwalniający aż do zatrzymania po wyłączeniu. Omówimy tę sytuację w dalszych podrozdziałach, ale widzimy już potrzebę zdefiniowania przyspieszenia kątowego do opisu sytuacji, w których zmienia się <m:math><m:mi>ω</m:mi></m:math>. Im szybciej zmienia się <m:math><m:mrow><m:mi>ω</m:mi></m:mrow></m:math>, tym większe jest przyspieszenie kątowe. Zdefiniujmy <term class="no-emphasis">chwilowe przyspieszenie kątowe</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">instantaneous angular acceleration</term></foreign>) jako pochodną prędkości kątowej po czasie:</para><note id="ked-1bklgf1od_0jg" class="equation-callout">
+        <equation id="ked-1bklgf6t3_3ao">
+          <m:math>
+            <m:mi>ε</m:mi>
+            <m:mo>=</m:mo>
+            <m:munder>
+              <m:mo form="prefix">lim</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">Δ</m:mi>
+                </m:mrow>
+                <m:mi>t</m:mi>
+                <m:mtext>→</m:mtext>
+                <m:mn>0</m:mn>
+              </m:mrow>
+            </m:munder>
+            <m:mfrac>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">Δ</m:mi>
+                </m:mrow>
+                <m:mi>ω</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">Δ</m:mi>
+                </m:mrow>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">d</m:mi>
+                </m:mrow>
+                <m:mi>ω</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">d</m:mi>
+                </m:mrow>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:msup>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mi>θ</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi mathvariant="normal">d</m:mi>
+                </m:mrow>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+            <m:mn>,</m:mn>
+          </m:math>
+        </equation>
+      </note>
+      <para id="ked-1bklghc45_gug">tj. granicę średniego przyspieszenia kątowego przy <m:math><m:mi mathvariant="normal">Δ</m:mi><m:mi>t</m:mi></m:math> dążącym do zera, <m:math><m:mover><m:mi>ε</m:mi><m:mtext>–</m:mtext></m:mover><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>ω</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>t</m:mi></m:math>, gdy <m:math><m:mrow><m:mtext>Δ</m:mtext><m:mi>t</m:mi><m:mtext>→</m:mtext><m:mn>0</m:mn></m:mrow></m:math>.</para><para id="ked-1bklgvdvf_jv8">Jednostką przyspieszenia kątowego jest (rad/s)/s czyli <m:math><m:mrow><m:msup><m:mrow><m:mtext>rad/s</m:mtext></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math>.</para><para id="ked-1bklhd021_sr8">W ten sam sposób, w jaki zdefiniowaliśmy wektor prędkości kątowej <m:math><m:mrow><m:mover><m:mi>ω</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>, możemy teraz zdefiniować wektor przyspieszenia kątowego <m:math><m:mrow><m:mover><m:mi>ε</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> (<link target-id="CNX_UPhysics_10_01_AngAccVec"/>). Jego długością jest wartość przyspieszenia kątowego <m:math><m:mi>ε</m:mi></m:math>, zdefiniowana powyższym równaniem (<link target-id="ked-1bklgf6t3_3ao"/>). Jeżeli wektor prędkości kątowej <m:math><m:mrow><m:mover><m:mi>ω</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest skierowany wzdłuż osi <m:math><m:mrow><m:mo>+</m:mo><m:mi>z</m:mi></m:mrow></m:math>, tak jak to pokazano na <link cmlnle:case="locative" target-id="CNX_UPhysics_10_01_AngAccVec"/>, a <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>ω</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>t</m:mi></m:math> ma wartość dodatnią, wówczas przyspieszenie kątowe <m:math><m:mrow><m:mover><m:mi>ε</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest dodatnie i skierowane zgodnie z kierunkiem osi <m:math><m:mrow><m:mo>+</m:mo><m:mi>z</m:mi></m:mrow></m:math>. Podobnie, jeżeli wektor prędkości kątowej <m:math><m:mrow><m:mover><m:mi>ω</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest skierowany zgodnie z osią <m:math><m:mrow><m:mo>+</m:mo><m:mi>z</m:mi></m:mrow></m:math>, a <m:math><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>ω</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>t</m:mi></m:math> jest ujemne, wówczas przyspieszenie kątowe jest ujemne, a wektor <m:math><m:mrow><m:mover><m:mi>ε</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> skierowany jest w kierunku przeciwnym do osi <m:math><m:mrow><m:mo>+</m:mo><m:mi>z</m:mi></m:mrow></m:math>.</para>
+      <figure id="CNX_UPhysics_10_01_AngAccVec">
+        <media id="ked-1bklhsof0_v0o" alt="Rysunek A przedstawia obroty w kierunku przeciwnym do ruchu wskazówek zegara. przyspieszenie kątowe jest skierowane w tę samą stronę co prędkość kątowa. Napis nad rysunkiem głosi, że prędkość kątowa rośnie. Rysunek B pokazuje obroty w kierunku przeciwnym z kierunkiem ruchu wskazówek zegara. przyspieszenie kątowe jest skierowane ku dodatniemu kierunkowi prędkości kątowej. Napis nad rysunkiem głosi, że prędkość kątowa maleje.">
+          <image src="../../media/CNX_UPhysics_10_01_AngAccVec.jpg" mime-type="image/jpeg"/>
+        </media>
+        <caption>Rysunki (a) oraz (b) przedstawiają obroty w kierunku przeciwnym do ruchu wskazówek zegara. (a) Wektory przyspieszenia kątowego i prędkości kątowej mają ten sam kierunek i zwrot, co oznacza wzrost wartości prędkości kątowej. (b) Wektor przyspieszenia kątowego jest skierowany przeciwnie do wektora prędkości kątowej, więc wartość prędkości kątowej maleje.</caption>
+      </figure>
+      <para id="ked-1bkli7hu7_hl">Wektor przyspieszenia stycznego możemy wyrazić jako iloczyn wektorowy wektora przyspieszenia kątowego i wektora położenia. Wyrażenie to możemy otrzymać poprzez zróżniczkowanie wyrażenia <m:math><m:mrow><m:mover><m:mi>v</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>=</m:mo><m:mrow><m:mover><m:mi>ω</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow><m:mo>×</m:mo><m:mrow><m:mover><m:mi>r</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> (wykonanie tego pozostawiamy czytelnikowi jako ćwiczenie). Otrzymamy wówczas:</para>
+      <equation id="ked-1bkli9ia2_svg">
+        <m:math>
+          <m:mrow>
+            <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>a</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mtext>s</m:mtext>
+    </m:msub>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>ε</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>×</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>r</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="ked-1bklidlpu_9ao">Zależność pomiędzy przyspieszeniem stycznym a kątowym przedstawia <link target-id="CNX_UPhysics_10_01_AngTanVec"/>.</para>
+      <para id="ked-1bklif1u9_pfg">Wyrażenie na przyspieszenie styczne punktu obracającego się ciała można otrzymać podobnie, jak uzyskaliśmy zależność pomiędzy prędkością styczną a prędkością kątową. Jeżeli zróżniczkujemy po czasie <link target-id="ked-1bkli9ia2_svg"/> – pamiętając, że <m:math><m:mi>r</m:mi></m:math> ma stałą wartość – otrzymamy:</para>
+      <note id="ked-1bklj04vp_pro" class="equation-callout">
+        <equation id="ked-1bklj0e0l_ksg">
+          <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>a</m:mi>
+                <m:mtext>s</m:mtext>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mi>r</m:mi>
+              <m:mi>ε</m:mi>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math>
+        </equation>
+      </note>
+      <para id="ked-1bkliht5u_8u8">Tak więc wartość przyspieszenia stycznego <m:math><m:msub><m:mi>a</m:mi><m:mtext>t</m:mtext></m:msub></m:math> jest równa iloczynowi promienia i przyspieszenia kątowego. Równania na prędkość i przyspieszenie styczne są ważne przy opisywaniu ruchu toczących się ciał (patrz podrozdział <link document="m65801">Moment pędu</link>). Zastosujmy te pojęcia do analizy kilku prostych scenariuszy obrotu wokół stałej osi. Zanim to zrobimy, przedstawimy strategię rozwiązywania zadań, która przyda się do opisu kinematyki ruchu obrotowego.</para><figure id="CNX_UPhysics_10_01_AngTanVec"><media id="ked-1bkliniq0_hlg" alt="Rysunek przedstawia układ współrzędnych XYZ z trzema wektorami. Wektor Alfa wskazuje w kierunku dodatniej części osi Z. Wektor a znajduje się w płaszczyźnie XY. Wektor r jest skierowany od środka układu do początku wektora a. Rysunek B jest w układzie współrzędnych XYZ i pokazuje trzy wektory. Wektor Alpha wskazuje w stronę ujemnej części osi Z. Wektor a znajduje się w płaszczyźnie XY. Wektor r skierowany od środka układu ku początkowi wektora a.">
+          <image src="../../media/CNX_UPhysics_10_01_AngTanVec.jpg" mime-type="image/jpeg"/>
+        </media>
+        
+      <caption>(a) Przyspieszenie kątowe skierowane jest w kierunku dodatnim osi <m:math><m:mi>z</m:mi></m:math> dając przyspieszenie styczne w kierunku przeciwnym do ruchu wskazówek zegara. (b) Przyspieszenie kątowe jest skierowane w kierunku ujemnym osi <m:math><m:mi>z</m:mi></m:math> dając przyspieszenie styczne w kierunku zgodnym z ruchem wskazówek zegara.</caption></figure><note id="ked-1bklj8s7d_nc8">
+        <title>Strategia rozwiązywania zadań: kinematyka ruchu obrotowego</title>
+        <list id="ked-1bkljanh4_dkg" list-type="enumerated" number-style="arabic">
+          <item>Sprawdź, czy opisana sytuacja dotyczy ruchu obrotowego.</item>
+          <item>Określ dokładnie, co należy wyznaczyć w zadaniu (zidentyfikuj niewiadome). Warto wykonać szkic sytuacyjny.</item>
+          <item>Wypisz w punktach, co zostało podane w zadaniu lub co można wywnioskować z treści zadania (zidentyfikuj dane).</item>
+          <item>Rozwiąż odpowiednie równanie lub układ równań w celu wyznaczenia niewiadomych. Ponieważ znasz już równania ruchu postępowego, spróbuj myśleć w kategoriach analogicznych do ruchu postępowego.</item>
+          <item>Wstaw do otrzymanych równań dane wraz z ich jednostkami i wylicz wartości niewiadomych. Pamiętaj, aby kąt wyrazić w radianach.</item>
+          <item>Zadaj sobie pytanie, czy uzyskane rozwiązanie jest rozsądne, czy ma sens.</item>
+        </list>
+      </note>
+      <para id="ked-1bkljiriu_4o">Zastosujmy teraz powyższą strategię rozwiązywania zadań do analizy kilku konkretnych przykładów.</para>
+      <example id="ked-1bkt8mrm0_i5o">
+        <para id="ked-1bkt8n7gr_jag"><title>Wirujące koło rowerowe</title>Mechanik rowerowy umieszcza rower w stojaku do naprawy rowerów i zaczyna obracać tylne koło. W czasie 5,00 s od początku ruchu osiąga ono prędkość obrotową (częstotliwość obrotów) wynoszącą 250 obrotów na minutę. <list id="eip-idm1252534256" list-type="enumerated" number-style="lower-alpha"><item> Wyznacz w <m:math><m:mrow><m:msup><m:mrow><m:mtext>rad/s</m:mtext></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:math> średnie przyspieszenie kątowe.</item><item> Po jakim czasie koło się zatrzyma, jeżeli mechanik wciśnie hamulec, wytwarzając przyspieszenie kątowe <m:math><m:mo>−</m:mo><m:mn>87</m:mn><m:mn>,</m:mn><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>?</item></list></para>
+        <para id="ked-1bkt8r3ml_37"><title>Strategia rozwiązania</title>Wartość średnia przyspieszenia kątowego <m:math><m:mover><m:mi>ε</m:mi><m:mtext>–</m:mtext></m:mover><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>ω</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>t</m:mi></m:math> może być wyznaczona bezpośrednio z jej definicji, ponieważ dane są początkowa i końcowa częstotliwość oraz czas ruchu. Widzimy, że <m:math><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mn>,</m:mn><m:mn>00</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>, a <m:math><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>f</m:mi><m:mo>=</m:mo><m:msub><m:mi>f</m:mi><m:mrow><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">n</m:mi><m:mi mathvariant="normal">c</m:mi></m:mrow></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>f</m:mi><m:mrow><m:mrow><m:mi mathvariant="normal">p</m:mi><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">c</m:mi><m:mi mathvariant="normal">z</m:mi></m:mrow></m:mrow></m:msub><m:mo>=</m:mo><m:mn>250</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">m</m:mi><m:mi mathvariant="normal">i</m:mi><m:mi mathvariant="normal">n</m:mi></m:mrow></m:math>, a znamy związek częstotliwości z prędkością kątową <m:math>
+          <m:mrow>
+            <m:mi>ω</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>2</m:mn><m:mi>π</m:mi><m:mi>f</m:mi>
+          </m:mrow>
+        </m:math>. W przypadku (b) znamy przyspieszenie kątowe oraz początkową częstotliwość. Możemy określić czas potrzebny na zatrzymanie koła z definicji przyspieszenia kątowego, wyznaczając z niej <m:math><m:mrow><m:mtext>Δ</m:mtext><m:mi>t</m:mi></m:mrow></m:math>. Otrzymamy:</para>
+        <equation id="ked-1bkt90n7j_t9g" class="unnumbered">
+          <m:math>
+            <m:mrow>
+              <m:mi mathvariant="normal">Δ</m:mi>
+            </m:mrow>
+            <m:mi>t</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mi mathvariant="normal">Δ</m:mi>
+            </m:mrow>
+            <m:mi>ω</m:mi>
+            <m:mrow>
+              <m:mtext>/</m:mtext>
+            </m:mrow>
+            <m:mi>ε</m:mi>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+        <para id="ked-1bkt90ssu_jvo">
+          <title>Rozwiązanie</title>
+        </para>
+        <list id="ked-1bkt920fl_gjg" list-type="enumerated" number-style="lower-alpha">
+          <item>
+            <para id="fs-idm965012816">Aby skorzystać z definicji średniego przyspieszenia kątowego <m:math><m:mover><m:mi>ε</m:mi><m:mtext>–</m:mtext></m:mover><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>ω</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>t</m:mi></m:math> należy wyznaczyć wartość <m:math><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>ω</m:mi></m:math> z <m:math><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>f</m:mi></m:math></para>
+            <equation id="ked-1bkt96era_7h8" class="unnumbered"><m:math><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>ω</m:mi><m:mo>=</m:mo>
+			<m:msub><m:mi>ω</m:mi><m:mrow><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">n</m:mi><m:mi mathvariant="normal">c</m:mi></m:mrow></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>ω</m:mi><m:mrow><m:mrow><m:mi mathvariant="normal">p</m:mi><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">c</m:mi><m:mi mathvariant="normal">z</m:mi></m:mrow></m:mrow></m:msub><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi> <m:mo>(</m:mo><m:msub><m:mi>f</m:mi><m:mrow><m:mrow><m:mi mathvariant="normal">k</m:mi><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">n</m:mi><m:mi mathvariant="normal">c</m:mi></m:mrow></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>f</m:mi><m:mrow><m:mrow><m:mi mathvariant="normal">p</m:mi><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">c</m:mi><m:mi mathvariant="normal">z</m:mi></m:mrow></m:mrow></m:msub><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi></m:mrow></m:mrow><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mn>250</m:mn><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi></m:mrow><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mi mathvariant="normal">i</m:mi><m:mi mathvariant="normal">n</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi><m:mi mathvariant="normal">i</m:mi><m:mi mathvariant="normal">n</m:mi></m:mrow></m:mrow><m:mrow><m:mn>60</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>26</m:mn><m:mn>,</m:mn><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mfrac><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mfrac><m:mo>.</m:mo></m:math></equation>
+            <para id="ked-1bkt97hmj_fko">Wstawiając tę wielkość do równania na <m:math><m:mi>ε</m:mi></m:math> otrzymamy:</para><equation id="ked-1bkt983gv_beg" class="unnumbered"><m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>ω</m:mi></m:mrow><m:mrow><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>26</m:mn><m:mn>,</m:mn><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mrow><m:mn>5</m:mn><m:mn>,</m:mn><m:mn>00</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>5</m:mn><m:mn>,</m:mn><m:mn>24</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>.</m:mo></m:math></equation>
+          </item>
+          <item><para id="fs-idm1734409184">Teraz prędkość kątowa maleje od wartości 26,2 rad/s do zera, czyli <m:math><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>ω</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>26</m:mn><m:mn>,</m:mn><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>, a z danych zadania <m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>87</m:mn><m:mn>,</m:mn><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>. Zatem,</para><equation id="ked-1bkt9ankj_6n" class="unnumbered"><m:math><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>−</m:mo><m:mn>26</m:mn><m:mn>,</m:mn><m:mn>2</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mrow><m:mo>−</m:mo><m:mn>87</m:mn><m:mn>,</m:mn><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>300</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo>.</m:mo></m:math></equation></item>
+        </list>
+        <para id="ked-1bkt9bqjn_eeg"><title>Znaczenie</title>Należy zauważyć, że gdy mechanik obraca koło, przyspieszenie kątowe jest małe i dodatnie; potrzeba 5 sekund do osiągnięcia znacznej prędkości kątowej. Kiedy wciśnie on hamulec, przyspieszenie kątowe jest duże i ujemne. Prędkość kątowa szybko maleje do zera.</para>
+      </example>
+      <note id="ked-1bktlb2hk_7fg" class="check-understanding">
+        <exercise id="ked-1bktlb633_n8g">
+          <problem id="ked-1bktlb63e_lt8">
+            <para id="ked-1bktlb63i_moo"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Łopatki wentylatora w lotniczym silniku turbowentylatorowym (na zdjęciu poniżej) przyspieszane są w ciągu 20 s od spoczynku do prędkości obrotowej 40,0 obr/s. Jej wzrost jest stały w czasie. (Silnik turbowentylatorowy GE90-115B montowany w Boeingu 777, jak pokazano na zdjęciu, jest obecnie największym silnikiem turbowentylatorowym na świecie, o sile ciągu osiągającej 510 kN).<list id="eip-idm1092333280" list-type="enumerated" number-style="lower-alpha"><item>Jaka jest wartość średniego przyspieszenia kątowego?</item><item>Jaka jest wartość chwilowego przyspieszenia kątowego w dowolnej chwili w ciągu pierwszych 20 s?</item></list></para>
+            <figure id="CNX_UPhysics_10_01_TurboFan">
+              <media id="ked-1bktlc2oc_ml8" alt="Zdjęcie turbiny powietrznej pod skrzydłem samolotu.">
+                <image src="../../media/CNX_UPhysics_10_01_TurboFan.jpg" mime-type="image/jpeg"/>
+              </media>
+              <caption>(Źródło: “Bubinator”/ Wikimedia Commons) </caption>
+            </figure>
+          </problem>
+          <solution id="ked-1bktlguc1_9r">
+            <list id="ked-1bktlgud2_ta" list-type="enumerated" number-style="lower-alpha">
+              <item><m:math><m:mn>40,0</m:mn><m:mspace width="0.2em"/><m:mtext>obr/s</m:mtext><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>⋅</m:mo><m:mn>40,0</m:mn><m:mspace width="0.2em"/><m:mtext>rad/s</m:mtext></m:math>, <m:math><m:mover><m:mi>ε</m:mi><m:mtext>–</m:mtext></m:mover><m:mo>=</m:mo><m:mi mathvariant="normal">Δ</m:mi><m:mi>ω</m:mi><m:mtext>/</m:mtext><m:mi mathvariant="normal">Δ</m:mi><m:mi>t</m:mi><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>⋅</m:mo><m:mn>40,0</m:mn><m:mspace width="0.2em"/><m:mtext>rad/s</m:mtext><m:mo>−</m:mo><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mtext>rad/s</m:mtext><m:mo>)</m:mo><m:mtext>/</m:mtext><m:mo>(</m:mo><m:mn>20,0</m:mn><m:mspace width="0.2em"/><m:mtext>s</m:mtext><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>⋅</m:mo><m:mn>2,0</m:mn><m:mspace width="0.2em"/><m:msup><m:mtext>rad/s</m:mtext><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mn>4,0</m:mn><m:mi>π</m:mi><m:mspace width="0.2em"/><m:mtext>rad/</m:mtext><m:msup><m:mtext>s</m:mtext><m:mn>2</m:mn></m:msup></m:math>; </item>
+              <item> Ponieważ w ciągu pierwszych 20 s wzrost prędkości kątowej zależy liniowo od czasu, to chwilowe przyspieszenie kątowe w tym zakresie jest stałe, a jego wartość wynosi <m:math><m:mn>4</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mi>π</m:mi><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>.</item>
+            </list>
+          </solution>
+        </exercise>
+      </note>
+      <example id="ked-1bkt9kg4c_bh">
+        <para id="ked-1bkt9kg49_beg"><title>Turbina wiatrowa</title>Turbina wiatrowa (<link target-id="CNX_UPhysics_10_01_WindTurb"/>) na farmie wiatrowej jest wyłączana w celu wykonania konserwacji. Potrzeba 30 s, aby wirnik turbiny zwolnił od roboczej prędkości kątowej do pełnego zatrzymania. W czasie zatrzymywania jego prędkość kątowa maleje z czasem, zgodnie z zależnością <m:math><m:mi>ω</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mrow><m:mo>[</m:mo><m:mrow><m:msup><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>30</m:mn><m:mn>,</m:mn><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>100</m:mn><m:mn>,</m:mn><m:mn>0</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>. Jeśli turbina obraca się w kierunku przeciwnym do ruchu wskazówek zegara, patrząc w kierunku kartki, to:<list id="eip-idm391119488" list-type="enumerated" number-style="lower-alpha"><item> jaki jest kierunek wektora prędkości kątowej i wektora przyspieszenia? </item><item> Jaka jest wartość średniego przyspieszenia kątowego? </item><item> Jaka jest wartość chwilowego przyspieszenia kątowego dla <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>; <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>; <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>?</item></list></para>
+        <figure id="CNX_UPhysics_10_01_WindTurb"><media id="ked-1bkt9nffs_8so" alt="Rysunek widzianej z przodu turbiny wiatrowej obracającej się w kierunku przeciwnym niż kierunek ruchu wskazówek zegara.">
+            <image src="../../media/CNX_UPhysics_10_01_WindTurb.jpg" mime-type="image/jpeg"/>
+          </media>
+          
+        <caption>Turbina wiatrowa obracająca się w kierunku przeciwnym do ruchu wskazówek zegara, widok z przodu. </caption></figure><para id="ked-1bkt9p8gd_seo">
+          <title>Strategia rozwiązania</title>
+        </para>
+        <list id="ked-1bkt9pj9p_vlo" list-type="enumerated" number-style="lower-alpha">
+          <item>Wiemy, że turbina obraca się w płaszczyźnie rysunku, w kierunku przeciwnym do ruchu wskazówek zegara. Za pomocą reguły prawej dłoni (<link target-id="CNX_UPhysics_10_01_AngVelVec"/>) możemy określić kierunek wektora prędkości kątowej i wektora przyspieszenia kątowego.</item>
+          <item>W celu wyznaczenia średniego przyspieszenia kątowego musimy obliczyć wartości początkową i końcową prędkości kątowej. Znak wartości przyspieszenia kątowego określimy korzystając z rezultatów otrzymanych w punkcie (a). </item>
+          <item>Mamy daną zależność prędkości kątowej od czasu. Korzystając z niej wyznaczymy zależności przyspieszenia kątowego od czasu poprzez wyznaczenie pierwszej pochodnej zależności prędkości od czasu.</item>
+        </list>
+        <para id="ked-1bkt9t0gi_msg">
+          <title>Rozwiązanie</title>
+        </para>
+        <list id="ked-1bkt9t91e_lcg" list-type="enumerated" number-style="lower-alpha"><item><para id="fs-idm1037991648">Ponieważ turbina obraca się w kierunku przeciwnym do ruchu wskazówek zegara, to wektor prędkości kątowej <m:math><m:mrow><m:mover><m:mi>ω</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> jest skierowany przed płaszczyznę kartki. Ponieważ jednak wartość prędkości kątowej maleje, wektor przyspieszenia kątowego <m:math><m:mrow><m:mover><m:mi>ε</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> wskazuje w kierunku przeciwnym do wektora prędkości kątowej.</para></item>
+          <item><para id="fs-idm1713179312">Początkowa wartość prędkości kątowej, w chwili <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math> wynosi <m:math><m:mi>ω</m:mi><m:mo>=</m:mo><m:mn>9</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math> Końcowa wartość prędkości kątowej jest równa zero, więc średnia wartość przyspieszenia kątowego równa się </para><equation id="ked-1bkta7goh_5p" class="unnumbered"><m:math><m:mover><m:mi>ε</m:mi><m:mtext>–</m:mtext></m:mover><m:mo>=</m:mo><m:mfrac><m:mrow><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>ω</m:mi></m:mrow><m:mrow><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>t</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>ω</m:mi><m:mo>−</m:mo><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mi>t</m:mi><m:mo>−</m:mo><m:msub><m:mi>t</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo>−</m:mo><m:mn>9</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mrow><m:mn>30</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo>−</m:mo><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>.</m:mo></m:math></equation></item>
+          <item><para id="fs-idm1062877664">Wyliczając pierwszą pochodną zależności prędkości kątowej od czasu otrzymamy: <m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>ω</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mo>[</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>t</m:mi><m:mo>−</m:mo><m:mn>30</m:mn><m:mn>,</m:mn><m:mn>0</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mn>50</m:mn><m:mn>,</m:mn><m:mn>0</m:mn></m:mrow><m:mo>]</m:mo></m:mrow><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></para>
+          <equation id="ked-1bktaaba5_mt8" class="unnumbered"><m:math><m:mi>ε</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>6</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mn>,</m:mn><m:mspace width="0.6em"/><m:mi>ε</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>3</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mspace width="0.2em"/><m:mrow><m:mi>,</m:mi></m:mrow><m:mspace width="0.6em"/><m:mi>ε</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mo>.</m:mo></m:math></equation></item>
+        </list><para id="ked-1bktaatjq_jj8"><title>Znaczenie</title>Z obliczeń w punktach (a) i (b) wynika, że przyspieszenie kątowe <m:math><m:mi>ε</m:mi></m:math> i średnie przyspieszenie kątowe <m:math><m:mover><m:mi>ε</m:mi><m:mtext>–</m:mtext></m:mover></m:math> mają ujemne wartości. Wektor przyspieszenia kątowego turbiny ma przeciwny zwrot do wektora jej prędkości kątowej. </para>
+      </example>
+      <para id="ked-1bktaidrc_1hg">Znamy już podstawowe słownictwo do opisu kinematyki ruchu obrotowego wokół stałej osi i związków pomiędzy wielkościami obrotowymi. Więcej wielkości i związków pomiędzy nimi omówimy w następnym podrozdziale.</para>
+    </section>
+    <section id="ked-1bktat39s_o7" class="key-concepts">
+      <title>Podsumowanie</title>
+      <list id="ked-1bktau989_62g">
+        <item>Położenie kątowe punktu to kąt między wektorem położenia tego punktu a wybranym kierunkiem, na przykład kierunkiem jednej z osi układu współrzędnych, służącej za układ odniesienia, względem którego ruch jest opisywany.</item>
+        <item>Prędkość kątowa, oznaczana zwykle symbolem <m:math><m:mrow><m:mover><m:mi>ω</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>, jest wyrażana w radianach na sekundę. Wartość chwilowej prędkości kątowej <m:math><m:mi>ω</m:mi><m:mo>=</m:mo><m:munder><m:mo movablelimits="true" form="prefix">lim</m:mo><m:mrow><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>t</m:mi><m:mtext>→</m:mtext><m:mn>0</m:mn></m:mrow></m:munder><m:mrow><m:mo>(</m:mo><m:mrow><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>θ</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>θ</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>t</m:mi></m:math> to granica przy <m:math><m:mrow><m:mtext>Δ</m:mtext><m:mi>t</m:mi><m:mtext>→</m:mtext><m:mn>0</m:mn></m:mrow></m:math> średniej prędkości kątowej, czyli pochodna po czasie położenia kątowego. Związek pomiędzy prędkością liniową <m:math><m:mrow><m:mi>v</m:mi></m:mrow></m:math>, a prędkością kątową jest następujący: <m:math><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>ω</m:mi></m:mrow></m:math>, gdzie <m:math><m:mi>r</m:mi></m:math> jest odległością od osi obrotu. </item>
+        <item>Kierunek wektora prędkości kątowej <m:math><m:mrow><m:mover><m:mi>ω</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> można określić na podstawie reguły prawej dłoni. Jeżeli palce zagniemy w kierunku obrotu ciała wokół stałej osi, to odchylony kciuk wskaże nam kierunek wektora <m:math><m:mrow><m:mover><m:mi>ω</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math> (patrz <link target-id="CNX_UPhysics_10_01_AngVelVec"/>).</item>
+        <item>Jeżeli prędkość kątowa układu nie jest stała, wówczas układ ma określone przyspieszenie kątowe <m:math><m:mrow><m:mover><m:mi>ε</m:mi><m:mtext>→</m:mtext></m:mover></m:mrow></m:math>. Średnie przyspieszenie kątowe w określonym przedziale czasu to zmiana prędkości kątowej podzielona przez czas, w jakim ta zmiana została osiągnięta: <m:math><m:mover><m:mi>ε</m:mi><m:mtext>–</m:mtext></m:mover><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>ω</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>t</m:mi></m:math>. Chwilowe przyspieszenie kątowe to pochodna prędkości kątowej po czasie. Wektory przyspieszenia kątowego i prędkości mają ten sam kierunek. W przypadku, gdy prędkość kątowa maleje, zwrot wektora przyspieszenia kątowego jest przeciwny do zwrotu wektora prędkości, a gdy prędkość kątowa rośnie, oba wektory mają ten sam zwrot.</item>
+        <item>Wartość przyspieszenia stycznego punktu poruszającego się po okręgu o promieniu <m:math><m:mi>r</m:mi></m:math>, jest równa iloczynowi promienia tego okręgu i przyspieszenia kątowego punktu: <m:math><m:msub><m:mi>a</m:mi><m:mtext>s</m:mtext></m:msub><m:mo>=</m:mo><m:mi>r</m:mi><m:mi>ε</m:mi></m:math>.</item>
+      </list>
+    </section>
+    <section id="ked-1bktb6167_ukg" class="review-conceptual-questions">
+      <title>Pytania</title>
+      <exercise id="ked-1bktb6f9s_d5o">
+        <problem id="ked-1bktb6fa8_uq8">
+          <para id="ked-1bktb6f9k_3r8">Zegar wisi na ścianie. Jaki jest kierunek i zwrot wektora prędkości kątowej wskazówki sekundowej? </para>
+        </problem>
+        <solution id="ked-1bktb6f8v_t6" class="section-exercises">
+          <para id="ked-1bktb6fat_5tg">Zgodnie z regułą prawej dłoni, kierunek prędkości kątowej jej ruchu jest prostopadły do ściany i zwrócony w stronę ściany.</para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bktb7tdo_mj">
+        <problem id="ked-1bktb7tf6_qeo">
+          <para id="ked-1bktb7tdf_7oo">Jaka jest wartość przyspieszenia kątowego wskazówki minutowej zegara na ścianie?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bktb8u33_6o8">
+        <problem id="ked-1bktb8u3j_tq">
+          <para id="ked-1bktb8u1s_92">Kij baseballowy jest obracany wokół jednego z jego końców. Czy wszystkie punkty na kiju mają tę samą prędkość kątową oraz taką samą prędkość styczną?</para>
+        </problem>
+        <solution id="ked-1bktb8u2d_v8" class="section-exercises">
+          <para id="ked-1bktb8u47_kqo">Wszystkie punkty na kiju mają taką samą prędkość kątową. Punkty dalej położone mają większą prędkość styczną.</para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bktb9u99_ll">
+        <problem id="ked-1bktb9u8k_c5g">
+          <para id="ked-1bktb9u8k_u3o">Wskazówki licznika obracają się zgodnie z ruchem wskazówek zegara, gdy patrzysz na niego z góry. Jaki będzie kierunek i zwrot wektora przyspieszenia kątowego wskazówek w czasie zwiększania prędkości kątowej wskazówek?</para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="ked-1bktbarkg_v68" class="review-problems">
+      <title>Zadania</title>
+      <exercise id="ked-1bktbb5sd_2uo">
+        <problem id="ked-1bktbb5u6_tng">
+          <para id="ked-1bktbb5tn_1po">Oblicz prędkość kątową Ziemi.</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bktbbtuh_98g">
+        <problem id="ked-1bktbbtut_oh8">
+          <para id="ked-1bktbbu03_he">Samochód wyścigowy przejechał jedno pełne okrążenie (400 m) toru wyścigowego w ciągu 45 sekund. Jaka jest wartość jego prędkości kątowej przy założeniu, że cały czas jechał z tą samą prędkością liniową, a tor ma kształt okręgu?</para>
+        </problem>
+        <solution id="ked-1bktbbtu5_3c" class="section-exercises">
+          <para id="ked-1bktbbtvd_pj">
+            <m:math>
+              <m:mi>ω</m:mi>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mi>π</m:mi>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">r</m:mi>
+                    <m:mi mathvariant="normal">a</m:mi>
+                    <m:mi mathvariant="normal">d</m:mi>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mtext>/</m:mtext>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>45</m:mn>
+                  <m:mn>,</m:mn>
+                  <m:mn>0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">s</m:mi>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>0</m:mn>
+              <m:mn>,</m:mn>
+              <m:mn>14</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">r</m:mi>
+                <m:mi mathvariant="normal">a</m:mi>
+                <m:mi mathvariant="normal">d</m:mi>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mi mathvariant="normal">s</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bktbg0hk_2no">
+        <problem id="ked-1bktbg2vd_1g8">
+          <para id="ked-1bktbg6lm_6v">Koło obraca się ze stałą prędkością obrotową <m:math><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>3</m:mn></m:msup><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">o</m:mi><m:mi mathvariant="normal">b</m:mi><m:mi mathvariant="normal">r</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">m</m:mi><m:mi mathvariant="normal">i</m:mi><m:mi mathvariant="normal">n</m:mi></m:mrow></m:math>. <list id="eip-idm1500313168" list-type="enumerated" number-style="lower-alpha"><item> Jaka jest wartość jego prędkości kątowej? </item><item> Jaki kąt zakreśli dowolny punkt koła w ciągu dziesięciu sekund? Odpowiedź podaj w radianach i stopniach.</item></list></para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bktbhkjd_f2">
+        <problem id="ked-1bktbhkjd_fco">
+          <para id="ked-1bktbhki8_988">Cząstka przebyła drogę 3,0 m po okręgu o promieniu 1,5 metra. <list id="eip-idm1726283632" list-type="enumerated" number-style="lower-alpha"><item> Jaki kąt zakreślił w tym czasie jej wektor położenia? </item><item> Jeżeli cząstka poruszała się ze stałą prędkością i przebyła tę drogę w ciągu 1,0 s, to jaka była jej prędkość kątowa? </item><item> Jaka jest wartość przyspieszenia tej cząstki? </item></list></para>
+        </problem>
+        <solution id="ked-1bktbhkhl_ruo" class="section-exercises">
+          <list id="eip-idm341249856" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mi>θ</m:mi><m:mo>=</m:mo><m:mi>s</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi>r</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>3</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>5</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi></m:mrow></m:math>;</item>
+            <item><m:math><m:mi>ω</m:mi><m:mo>=</m:mo><m:mi>θ</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>;</item>
+            <item>
+              <m:math>
+                <m:mi>ε</m:mi>
+                <m:mo>=</m:mo>
+                <m:msup>
+                  <m:mi>v</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mi>r</m:mi>
+                <m:mo>=</m:mo>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>3</m:mn>
+                      <m:mn>,</m:mn>
+                      <m:mn>0</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                        <m:mrow>
+                          <m:mtext>/</m:mtext>
+                        </m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mrow>
+                  <m:mtext>/</m:mtext>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mn>1</m:mn>
+                    <m:mn>,</m:mn>
+                    <m:mn>5</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">m</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mn>6</m:mn>
+                <m:mn>,</m:mn>
+                <m:mn>0</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mrow>
+                    <m:mtext>/</m:mtext>
+                  </m:mrow>
+                  <m:msup>
+                    <m:mi mathvariant="normal">s</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:math>
+            </item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bktbjubc_h9">
+        <problem id="ked-1bktbjub7_ca8">
+          <para id="ked-1bktbjua0_lj">Płyta kompaktowa o średnicy 120 mm obraca się z częstotliwością 500 obr/min. <list id="eip-idm345763888" list-type="enumerated" number-style="lower-alpha"><item> Jaka jest prędkość styczna punktów leżących na krawędzi płyty? </item><item> Jaka jest prędkość styczna punktów leżących w połowie promienia?</item></list>
+        </para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bktbl9c7_mf8">
+        <problem id="ked-1bktbl9a8_vl8">
+          <para id="ked-1bktbl9bl_oio"><emphasis effect="bold">Nieracjonalne wyniki.</emphasis> Śmigło samolotu wiruje z częstotliwością 10 obr/s, gdy pilot wyłącza silnik. Prędkość kątowa skrzydła maleje ze stałym przyspieszeniem <m:math><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>, aż do zatrzymania. Jaka będzie prędkość kątowa śmigła po 40 s? Czy otrzymany wynik jest rozsądny?</para>
+        </problem>
+        <solution id="ked-1bktbl9cj_m7o" class="section-exercises">
+          <para id="ked-1bktbl9bs_d2o">Czas potrzebny do zatrzymania śmigła wynosi <m:math><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">Δ</m:mi></m:mrow><m:mi>ω</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi>ε</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>π</m:mi><m:mo>⋅</m:mo><m:mn>10</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>31</m:mn><m:mn>,</m:mn><m:mn>4</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>. Tak więc po 40 sekundach prędkość kątowa śmigła będzie wynosiła 0 rad/s.</para>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bktbo6ei_tqo">
+        <problem id="ked-1bktbo6ck_3do">
+          <para id="ked-1bktbo6df_37">Żyroskop zwalniał z przyspieszeniem <m:math><m:mn>0</m:mn><m:mn>,</m:mn><m:mn>700</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> od początkowej prędkości kątowej 32 rad/s do chwili zatrzymania się. Jak długo to trwało?</para>
+        </problem>
+      </exercise>
+      <exercise id="ked-1bktbon9o_da8">
+        <problem id="ked-1bktbon9g_sjo">
+          <para id="ked-1bktbon97_us">W czasie startu samolotu bezzałogowego jego śmigło przez 3 sekundy zwiększało swoją prędkość kątową, zgodnie ze wzorem <m:math><m:mi>ω</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>25</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mi>t</m:mi></m:mrow><m:mo>)</m:mo></m:mrow><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>. <list id="eip-idm1131237024" list-type="enumerated" number-style="lower-alpha"><item> Jaka była chwilowa prędkość śmigła dla <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>? </item><item> Jaka jest wartość jego przyspieszenia kątowego? </item></list></para>
+        </problem>
+        <solution id="ked-1bktbonab_et" class="section-exercises">
+          <list id="eip-idm1726642896" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mi>ω</m:mi><m:mo>=</m:mo><m:mn>25</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow><m:mo>=</m:mo><m:mn>50</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>; </item>
+            <item><m:math><m:mi>ε</m:mi><m:mo>=</m:mo><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>ω</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:mrow><m:mi mathvariant="normal">d</m:mi></m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>25</m:mn><m:mn>,</m:mn><m:mn>0</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">r</m:mi><m:mi mathvariant="normal">a</m:mi><m:mi mathvariant="normal">d</m:mi><m:mrow><m:mtext>/</m:mtext></m:mrow><m:msup><m:mi mathvariant="normal">s</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math>.</item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="ked-1bktdfcv8_bpo">
+        <problem id="ked-1bktdfd1k_l7">
+          <para id="ked-1bktdfd1b_ang">Położenie kątowe pręta zmienia się od chwili <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> zgodnie z wyrażeniem <m:math><m:mrow><m:mn>20,0</m:mn><m:msup><m:mi>t</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math> radianów. Na pręcie umieszczono dwa koraliki, tak jak widać na rysunku. Pierwszy z nich umieszczono w odległości 10 cm od osi obrotu, a drugi w odległości 20 cm. <list id="eip-idm334994864" list-type="enumerated" number-style="lower-alpha"><item> Jaka jest wartość prędkości kątowej pręta w chwili <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>?</item><item> Jaka jest wartość przyspieszenia kątowego pręta? </item><item> Jaka jest wartość prędkości stycznej każdego z koralików w chwili <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>?</item><item> Jaka jest wartość przyspieszenia stycznego każdego z koralików w chwili <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>?</item><item> Jaka jest wartość przyspieszenia dośrodkowego każdego z koralików w chwili <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mspace width="0.2em"/><m:mrow><m:mi mathvariant="normal">s</m:mi></m:mrow></m:math>?</item></list></para>
+          <figure id="CNX_UPhysics_10_01_Prob15_img">
+            <media id="ked-1bktdrs73_kdo" alt="Rysunek pręta obracającego się przeciwnie do kierunku obrotu wskazówek zegara. Pręt ma zaznaczone dwa punkty rotacji, jeden w odległości 10 cm od osi obrotu i drugi w odległości 20 cm od osi obrotu.">
+              <image src="../../media/CNX_UPhysics_10_01_Prob15_img.jpg" mime-type="image/jpeg"/>
+            </media>
+          </figure>
+        </problem>
+      </exercise>
+    </section>
+  </content>
+  <glossary>
+    <definition id="ked-1bktdrs73_kda">
+      <term cmlnle:reference="przyspieszenie kątowe" class="no-emphasis">przyspieszenie kątowe (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">angular acceleration</term></foreign>)</term>
+      <meaning id="ked-1bktdrs73_kdb">szybkość zmian prędkości kątowej</meaning>
+    </definition>
+    <definition id="ked-1bktdrs73_kdc">
+      <term cmlnle:reference="położenie kątowe" class="no-emphasis">położenie kątowe (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">angular position</term></foreign>)</term>
+      <meaning id="ked-1bktdrs73_kdd">kąt pomiędzy wektorem położenia ciała a wybraną osią układu współrzędnych</meaning>
+    </definition>
+    <definition id="ked-1bktdrs73_kde">
+      <term cmlnle:reference="chwilowe przyspieszenie kątowe" class="no-emphasis">chwilowe przyspieszenie kątowe (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">instantaneous angular acceleration</term></foreign>)</term>
+      <meaning id="ked-1bktdrs73_kdf">pochodna prędkości kątowej po czasie</meaning>
+    </definition>
+    <definition id="ked-1bktdrs73_kdg">
+      <term cmlnle:reference="chwilowa prędkość kątowa" class="no-emphasis">chwilowa prędkość kątowa (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">instantaneous angular velocity</term></foreign>)</term>
+      <meaning id="ked-1bktdrs73_kdh">pochodna położenia kątowego po czasie</meaning>
+    </definition>
+  </glossary>
+</document>

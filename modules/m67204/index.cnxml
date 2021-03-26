@@ -1,0 +1,1686 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.8" module-id="new">
+  <title>Wypadkowa sił i moment sił działających na pętlę z prądem</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67204</md:content-id>
+  <md:title>Wypadkowa sił i moment sił działających na pętlę z prądem</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>wyznaczać wypadkową sił działających na pętlę z prądem w zewnętrznym polu magnetycznym;</item>
+<item>wyznaczać moment sił działających na pętlę z prądem w zewnętrznym polu magnetycznym;</item>
+<item>definiować moment magnetyczny pętli z prądem.</item>
+</list></md:abstract>
+  <md:uuid>84667fd2-fb7b-4420-93a4-8e6051e22a47</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360314979">W <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="silnik elektryczny">silnikach elektrycznych</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">electrical motors</term></foreign>) najpowszechniej stosowane są siły magnetyczne działające na przewodniki z przepływającym przez nie prądem. Znajdują się w nich pętle przewodnika w polu magnetycznym. Podczas przepływu prądu przez przewodnik pole magnetyczne wytwarza moment sił działających na przewodnik, co powoduje obrót wału. W procesie tym energia elektryczna ulega przekształceniu w pracę mechaniczną. Gdy powierzchnia obejmowana przez pętlę zostanie obrócona przez pole magnetyczne, kierunek przepływu prądu zmieni się na przeciwny, tak aby zachować stałość momentu sił działających na nią (<link target-id="CNX_UPhysics_28_05_VacuumMot"/>). Zmiana kierunku prądu dokonuje się za pośrednictwem komutatora (przełącznika) i szczotek. <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="komutator">Komutator</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">commutator</term></foreign>) jest ustawiony tak, aby zmieniać kierunek przepływu prądu w określonych chwilach dla zachowania ciągłości pracy (ruchu) silnika. W typowym komutatorze występują trzy obszary braku kontaktu i martwe punkty, w których chwilowy moment sił działających na pętlę wynosi zero. Szczotki, dociskane do komutatora, wytwarzają kontakt elektryczny pomiędzy częściami komutatora podczas jego ruchu obrotowego. </para>
+  <figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_28_05_VacuumMot">
+    <media id="fs-id1171359077687" alt="Schemat silnika prądu stałego składającego się z magnesu z poziomą szczeliną, zasilacza z przewodami połączonymi ze szczotkami, przewodem wygiętym w prostokątną pętlę. Końce przewodu są przyłączone do styków, które łączą się ze szczotkami zasilacza gdy pętla jest w pozycji poziomej. Gdy pętla jest ustawiona pionowo, dostosowują się one do szczeliny między stykami. Północny biegun magnesu jest po lewej, pole południowe po prawej. Rysunek a: Pętla jest ustawiona poziomo i szczotki mają kontakt z pętlą. Prąd (patrząc w dół) płynie przez pętlę zgodnie z kierunkiem wskazówek zegara, tak że prąd z lewej części pętli płynie ku środkowi strony, a prąd w prawej części płynie poza stroną. Siła magnetyczna z lewej części jest skierowana w dół, a w prawej części w górę. Pętla obraca się odwrotnie (patrząc ku środkowi strony) do ruchu wskazówek zegara. Rysunek b; Pętla jest ustawiona pionowo. Szczotki nie mają styczności z pętlą. Nie płynie prąd i nie działają żadne siły.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_28_05_VacuumMot.jpg"/>
+    </media>
+    <caption>Uproszczona wersja silnika elektrycznego prądu stałego. (a) Prostokątna pętla przewodnika umieszczona jest w polu magnetycznym. Siły działające na nią w pobliżu biegunów magnetycznych (N oraz S) są zwrócone przeciwnie, co wynika z reguły prawej dłoni 1. Zatem moment sił działających na pętlę powoduje jej obrót do pozycji widocznej na rysunku (b). (b) Szczotki stykają się teraz z segmentami komutatora w taki sposób, że prąd nie płynie przez pętlę. Moment sił działających na pętlę nie występuje, ale ruch obrotowy pętli jest kontynuowany dzięki początkowej prędkości obrotowej nadanej pętli podczas fazy (a). Do czasu odwrócenia się pętli prąd znowu popłynie przez przewodnik, ale tym razem w przeciwnym kierunku i proces z fazy (a) zostanie powtórzony. Umożliwi to ciągły ruch obrotowy pętli.</caption>
+  </figure>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360342899">W jednorodnym polu magnetycznym pętla przewodnika z prądem, taka jak w silniku, doświadcza działania sił i momentów sił. <link target-id="CNX_UPhysics_28_05_loop"/> pokazuje prostokątną pętlę przewodnika <m:math display="inline">
+    <m:mi>I</m:mi>
+  </m:math>, o bokach długości <m:math display="inline">
+  <m:mi>a</m:mi>
+</m:math> oraz <m:math display="inline">
+<m:mi>b</m:mi>
+</m:math>. Pętla znajduje się w jednorodnym polu magnetycznym o indukcji: <m:math display="inline">
+<m:mover>
+  <m:mi>B</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi>B</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mover>
+    <m:mi>j</m:mi>
+    <m:mo>̂</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>. Siła magnetyczna działająca na prostych odcinkach przewodzącego prąd drutu długości <m:math display="inline">
+<m:mi>l</m:mi>
+</m:math> jest dana przez <m:math display="inline">
+<m:mrow>
+  <m:mi>I</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mover>
+    <m:mi>l</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:mrow>
+<m:mo>×</m:mo>
+<m:mover>
+  <m:mi>B</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math>. Żeby obliczyć wypadkową sił działających na pętlę, należy zastosować to równanie do każdego z czterech jej boków. Siła działająca na bok 1 to</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360215875">
+  <m:math display="block">
+    <m:msub>
+      <m:mover>
+        <m:mi>F</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>I</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>a</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>B</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>sin</m:mo>
+        <m:mrow>
+          <m:mfenced>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>90</m:mn>
+                <m:mo>°</m:mo>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mi>θ</m:mi>
+            </m:mrow>
+          </m:mfenced>
+          <m:mo>⋅</m:mo>
+          <m:mover>
+            <m:mi>i</m:mi>
+            <m:mo>̂</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>I</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>a</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>B</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>cos</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mi>θ</m:mi>
+            <m:mo>⋅</m:mo>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo>̂</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360196113">gdzie kierunek i zwrot wyznaczono za pomocą RHR-1. Prąd wzdłuż boku 3 płynie w przeciwnym kierunku niż wzdłuż boku 1, więc</para>
+<equation id="fs-id1171360293514">
+  <m:math display="block">
+    <m:msub>
+      <m:mover>
+        <m:mi>F</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+      <m:mn>3</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>−</m:mo>
+      <m:mrow>
+        <m:mi>I</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>a</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>B</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>sin</m:mo>
+          <m:mrow>
+            <m:mfenced>
+              <m:mrow>
+                <m:mrow>
+                  <m:mn>90</m:mn>
+                  <m:mo>°</m:mo>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mi>θ</m:mi>
+              </m:mrow>
+            </m:mfenced>
+            <m:mo>⋅</m:mo>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo>̂</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>−</m:mo>
+      <m:mrow>
+        <m:mi>I</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>a</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>B</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>cos</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mi>θ</m:mi>
+              <m:mo>⋅</m:mo>
+              <m:mover>
+                <m:mi>i</m:mi>
+                <m:mo>̂</m:mo>
+              </m:mover>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360096279">Prądy wzdłuż boków 2 i 4 są prostopadłe do <m:math display="inline">
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+  </m:math>, a siły wypadkowe działające na nie są równe</para>
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171359347619">
+    <m:math display="block">
+      <m:msub>
+        <m:mover>
+          <m:mi>F</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>I</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>b</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>B</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mover>
+          <m:mi>k</m:mi>
+          <m:mo>̂</m:mo>
+        </m:mover>
+        <m:mo>⁢</m:mo>
+        <m:mtext>, </m:mtext>
+        <m:mo>⁢</m:mo>
+        <m:msub>
+          <m:mover>
+            <m:mi>F</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mn>4</m:mn>
+        </m:msub>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mi>I</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>b</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>B</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mover>
+            <m:mi>k</m:mi>
+            <m:mo>̂</m:mo>
+          </m:mover>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360403541">Możemy więc wyznaczyć wypadkową sił działających na pętlę</para>
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360202884">
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:msub>
+            <m:mover>
+              <m:mi>F</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mtext>wyp</m:mtext>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:munderover>
+              <m:mo>∑</m:mo>
+              <m:mrow>
+                <m:mi>i</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mn>4</m:mn>
+            </m:munderover>
+            <m:msub>
+              <m:mover>
+                <m:mi>F</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+              <m:mi>i</m:mi>
+            </m:msub>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mover>
+                <m:mi>F</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mover>
+                <m:mi>F</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mover>
+                <m:mi>F</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+              <m:mn>3</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mover>
+                <m:mi>F</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+              <m:mn>4</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>0</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">N</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \vec{F}_{\text{wyp}} = \sum_{i=1}^4 \vec{F}_i = \vec{F}_1 + \vec{F}_2 + \vec{F}_3 + \vec{F}_4 = \SI{0}{\newton} \text{.}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360118702">Mimo że wynik ten (<m:math display="inline">
+    <m:semantics>
+      <m:mrow>
+        <m:msub>
+          <m:mi>F</m:mi>
+          <m:mtext>wyp</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>0</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">N</m:mi>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> F_{\text{wyp}} = \SI{0}{\newton}</m:annotation>
+    </m:semantics>
+    </m:math>) otrzymaliśmy dla pętli prostokątnej, to jest on znacznie bardziej ogólny i pozostaje w mocy dla dowolnego kształtu pętli przewodzących prąd, zatem nie występuje wypadkowa sił działających na pętlę z prądem w jednorodnym polu magnetycznym. </para>
+    <figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_28_05_loop">
+      <media id="fs-id1171360590448" alt="Ilustracja przedstawiająca prostokątną pętlę przewodzącą prąd l. Prąd w pętli jest skierowany odwrotnie do kierunku ruchu wskazówek zegara patrząc od dodatniego kierunku y w kierunku początku układu. Pętla jest w jednorodnym polu magnetycznym, B, które skierowane jest na prawo. Rysunek a przedstawia trójwymiarowy obraz pętli. Boki górny i dolne są równoległe do osi x i mają długość b. Bok górny jest jako y=0 i dodatni z prądem w dodatnim kierunku x. Bok u podstawy ma dodatnie y i z=0, a prąd w ujemnym kierunku x. Pozostałe dwa boki mają długość b. Jeden jest x=0 i ma prąd skierowany w górę, a drugi ma x dodatni i prąd skierowany w górę. Obydwa boki są pochylone tworząc kąt theta u szczytu odpowiednio do osi z. Pokazany jest kierunek wektora jednostkowego n z daszkiem prostopadłego do powierzchni prostokątnej pętli. Pokazane są również siły działające na każdym z boków. F 1 jest siłą na pochylonej stronie przy x=0 wskazującą dodatni kierunek x oraz skierowaną w dodatnim kierunku x. F 2 jest siłą na szczycie strony wskazującą w górę. F 3 jest siłą na pochylonej stronie przy x=0 wskazującą ujemny kierunek x. F4 jest siłą u podstawy wskazującą w dół. Rysunek b przedstawia stronę widoku pętli, tak że oglądamy płaszczyznę y z i widzimy tylko pochyloną stronę, która tworzy kąt theta z linią pionową szczytu. Prąd przypływa do nas ze szczytu pętli i podąża ku środkowi strony u podstawy. Siła F 2 jest u góry szczytu, siła F 4 jest w dole podstawy. Wektor n z daszkiem wskazuje w górę i w prawo, na kąt theta pola B. Pokazany jest punkt przegubowy O, dla którego obliczamy moment obrotowy w odległości x od szczytu pętli i a-x od podstawy.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_28_05_loop.jpg"/>
+      </media>
+      <caption>(a) Prostokątna pętla z prądem w jednorodnym polu magnetycznym znajduje się pod wpływem wypadkowego momentu sił, ale nie wypadkowej sił. (b) Widok z boku.</caption>
+    </figure>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360368111">Żeby wyznaczyć moment sił działających na pętlę z prądem na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_28_05_loop" cmlnle:case="locative"/>, rozważmy najpierw <m:math display="inline">
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:math> i <m:math display="inline">
+    <m:msub>
+      <m:mi>F</m:mi>
+      <m:mn>3</m:mn>
+    </m:msub>
+  </m:math>. Ponieważ mają one ten sam kierunek, równe wartości i przeciwne zwroty, rzuty sumy ich momentów na dowolną oś wynoszą zero (zobacz: <link class="target-chapter" document="m65790">Obrót wokół ustalonej osi</link>). Zatem jeżeli występuje (nieznikający) moment sił działających na pętlę, to musi pochodzić od <m:math display="inline">
+  <m:msub>
+    <m:mi>F</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>F</m:mi>
+  <m:mn>4</m:mn>
+</m:msub>
+</m:math>. Obliczmy rzuty momentów sił na oś przechodzącą przez punkt <m:math display="inline">
+<m:mi>O</m:mi>
+</m:math> na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_28_05_loop" cmlnle:case="locative"/> (b) i na prostopadłą do płaszczyzny rysunku. Punkt <m:math display="inline">
+<m:mi>O</m:mi>
+</m:math> znajduje się w odległości <m:math display="inline">
+<m:mi>x</m:mi>
+</m:math> od boku 2 i w odległości <m:math display="inline">
+<m:mi>a</m:mi>
+<m:mo>−</m:mo>
+<m:mi>x</m:mi>
+</m:math> od boku 4 pętli. Ramiona momentów sił <m:math display="inline">
+<m:msub>
+  <m:mi>F</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>F</m:mi>
+  <m:mn>4</m:mn>
+</m:msub>
+</m:math> są długości odpowiednio <m:math display="inline">
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mrow>
+  <m:mo>sin</m:mo>
+  <m:mi>θ</m:mi>
+</m:mrow>
+</m:math> i <m:math display="inline">
+<m:mfenced>
+  <m:mrow>
+    <m:mi>a</m:mi>
+    <m:mo>−</m:mo>
+    <m:mi>x</m:mi>
+  </m:mrow>
+</m:mfenced>
+<m:mo>⁢</m:mo>
+<m:mrow>
+  <m:mo>sin</m:mo>
+  <m:mi>θ</m:mi>
+</m:mrow>
+</m:math>, wypadkowy moment sił działających na pętlę wynosi</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360490843"><m:math display="block">
+    <m:semantics>
+      <m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:msub><m:mover><m:mi>M</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover><m:mtext>wyp</m:mtext>
+        </m:msub><m:mo id="Ucfa8e5b2-02a1-4635-960e-79d5a43f708c">=</m:mo>
+        <m:mrow><m:munderover><m:mo>∑</m:mo>
+            <m:mrow><m:mi>i</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow><m:mn>4</m:mn>
+          </m:munderover><m:msub><m:mover><m:mi>M</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover><m:mi>i</m:mi>
+          </m:msub></m:mrow><m:mo>=</m:mo>
+        <m:mrow><m:msub><m:mover><m:mi>M</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover><m:mn>1</m:mn>
+          </m:msub><m:mo>+</m:mo>
+          <m:msub><m:mover><m:mi>M</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover><m:mn>2</m:mn>
+          </m:msub><m:mo>+</m:mo>
+          <m:msub><m:mover><m:mi>M</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover><m:mn>3</m:mn>
+          </m:msub><m:mo>+</m:mo>
+          <m:msub><m:mover><m:mi>M</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover><m:mn>4</m:mn>
+          </m:msub></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:msub><m:mover><m:mi>M</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover><m:mtext>wyp</m:mtext>
+        </m:msub></m:mphantom><m:mo>=</m:mo>
+        <m:mrow><m:mrow><m:msub><m:mi>F</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub><m:mo>⁢</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mrow><m:mo>sin</m:mo>
+              <m:mrow><m:mi>θ</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mover><m:mi>i</m:mi>
+                  <m:mo>̂</m:mo>
+                </m:mover></m:mrow></m:mrow></m:mrow><m:mo>−</m:mo>
+          <m:mrow><m:msub><m:mi>F</m:mi>
+              <m:mn>4</m:mn>
+            </m:msub><m:mo>⁢</m:mo>
+            <m:mfenced><m:mrow><m:mi>a</m:mi>
+                <m:mo>−</m:mo>
+                <m:mi>x</m:mi>
+              </m:mrow></m:mfenced><m:mo>⁢</m:mo>
+            <m:mrow><m:mo>sin</m:mo>
+              <m:mrow><m:mi>θ</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mover><m:mi>i</m:mi>
+                  <m:mo>̂</m:mo>
+                </m:mover></m:mrow></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:msub><m:mover><m:mi>M</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover><m:mtext>wyp</m:mtext>
+        </m:msub></m:mphantom><m:mo>=</m:mo>
+        <m:mrow><m:mrow><m:mo>−</m:mo>
+            <m:mrow><m:mi>I</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>b</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>B</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mrow><m:mo>sin</m:mo>
+                <m:mrow><m:mi>θ</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:mover><m:mi>i</m:mi>
+                    <m:mo>̂</m:mo>
+                  </m:mover></m:mrow></m:mrow></m:mrow></m:mrow><m:mo>−</m:mo>
+          <m:mrow><m:mi>I</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>b</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>B</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mfenced><m:mrow><m:mi>a</m:mi>
+                <m:mo>−</m:mo>
+                <m:mi>x</m:mi>
+              </m:mrow></m:mfenced><m:mo>⁢</m:mo>
+            <m:mrow><m:mo>sin</m:mo>
+              <m:mrow><m:mrow><m:mi>θ</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:mover><m:mi>i</m:mi>
+                    <m:mo>̂</m:mo>
+                  </m:mover></m:mrow><m:mo>⁢</m:mo>
+                <m:mtext>.</m:mtext>
+              </m:mrow></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex"> \begin{multiline} \vec{M}_{\text{wyp}} &amp;= \sum_{i=1}^{4} \vec{M}_i = \vec{M}_1 + \vec{M}_2 + \vec{M}_3 + \vec{M}_4 \\ &amp;= F_2 x \sin \theta \cdot \hat{i} - F_4 (a-x) \sin \theta \cdot \hat{i} \\ &amp;= -IbBx \sin \theta \cdot \hat{i} - IbB(a-x) \sin \theta \cdot \hat{i} \text{.} \end{multiline}</m:annotation>
+    <m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:msub>
+          <m:mover>
+            <m:mi>M</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mtext>wyp</m:mtext>
+        </m:msub>
+        <m:mo id="Ucfa8e5b2-02a1-4635-960e-79d5a43f708c-copy">=</m:mo>
+        <m:mrow>
+          <m:munderover>
+            <m:mo>∑</m:mo>
+            <m:mrow>
+              <m:mi>i</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+            <m:mn>4</m:mn>
+          </m:munderover>
+          <m:msub>
+            <m:mover>
+              <m:mi>M</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mi>i</m:mi>
+          </m:msub>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mover>
+              <m:mi>M</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mover>
+              <m:mi>M</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mover>
+              <m:mi>M</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mn>3</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mover>
+              <m:mi>M</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mn>4</m:mn>
+          </m:msub>
+        </m:mrow>
+        <m:mo indenttarget="Ucfa8e5b2-02a1-4635-960e-79d5a43f708c" linebreak="newline" indentalign="id">=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mrow>
+                <m:mi>θ</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo>̂</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>F</m:mi>
+              <m:mn>4</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mfenced>
+              <m:mrow>
+                <m:mi>a</m:mi>
+                <m:mo>−</m:mo>
+                <m:mi>x</m:mi>
+              </m:mrow>
+            </m:mfenced>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mrow>
+                <m:mi>θ</m:mi>
+                <m:mo>⋅</m:mo>
+                <m:mover>
+                  <m:mi>i</m:mi>
+                  <m:mo>̂</m:mo>
+                </m:mover>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo indenttarget="Ucfa8e5b2-02a1-4635-960e-79d5a43f708c" linebreak="newline" indentalign="id">=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mrow>
+              <m:mi>I</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>b</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>B</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo>sin</m:mo>
+                <m:mrow>
+                  <m:mi>θ</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:mover>
+                    <m:mi>i</m:mi>
+                    <m:mo>̂</m:mo>
+                  </m:mover>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mi>I</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>b</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>B</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mfenced>
+              <m:mrow>
+                <m:mi>a</m:mi>
+                <m:mo>−</m:mo>
+                <m:mi>x</m:mi>
+              </m:mrow>
+            </m:mfenced>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>θ</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:mover>
+                    <m:mi>i</m:mi>
+                    <m:mo>̂</m:mo>
+                  </m:mover>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:annotation-xml></m:semantics>
+  </m:math></equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360202255">Wyrażenie upraszczamy do</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360313720">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mover>
+          <m:mi>M</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mi>I</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>S</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>B</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>sin</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>θ</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:mover>
+                    <m:mi>i</m:mi>
+                    <m:mo>̂</m:mo>
+                  </m:mover>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:mtext>,</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \vec{M} = - ISB \sin \theta \cdot \hat{i} \text{,}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171359181957">gdzie <m:math display="inline">
+  <m:mi>S</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>a</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>b</m:mi>
+  </m:mrow>
+  </m:math> oznacza pole powierzchni pętli.</para>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360161140">Zauważmy, że otrzymany moment sił nie zależy od <m:math display="inline">
+    <m:mi>x</m:mi>
+  </m:math>, tym samym nie zależy od położenia punktu <m:math display="inline">
+  <m:mi>O</m:mi>
+</m:math> w płaszczyźnie pętli z prądem. W konsekwencji pętla doznaje działania takich samych momentów sił pochodzących od pola magnetycznego przy obrotach wokół dowolnych osi, leżących w płaszczyźnie pętli i równoległych do osi <m:math display="inline">
+<m:mi>x</m:mi>
+</m:math>.</para>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360351568">Zamkniętą pętlę z prądem często traktuje się jako <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="dipol magnetyczny">dipol magnetyczny</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">magnetic dipole</term></foreign>), a wyrażenie <m:math display="inline">
+<m:mi>I</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>S</m:mi>
+</m:math> określa się jako wartość jego <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="magnetyczny moment dipolowy">magnetycznego momentu dipolowego</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">magnetic dipole moment</term></foreign>) <m:math display="inline">
+<m:mi>μ</m:mi>
+</m:math>. Dokładniej, magnetyczny moment dipolowy jest wektorem zdefiniowanym jako</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360245659">
+  <m:math display="block">
+    <m:mover>
+      <m:mi>μ</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>I</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>S</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mover>
+        <m:mi>n</m:mi>
+        <m:mo>̂</m:mo>
+      </m:mover>
+      <m:mo>⁢</m:mo>
+      <m:mtext>,</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171359037379">gdzie <m:math display="inline">
+  <m:mover>
+    <m:mi>n</m:mi>
+    <m:mo>̂</m:mo>
+  </m:mover>
+</m:math> jest wektorem jednostkowym, prostopadłym do płaszczyzny pętli (<link target-id="CNX_UPhysics_28_05_loop"/>). Kierunek i zwrot <m:math display="inline">
+<m:mover>
+  <m:mi>n</m:mi>
+  <m:mo>̂</m:mo>
+</m:mover>
+</m:math> określa się przy pomocy RHR-2 – jeżeli zgięte palce prawej dłoni wskazują kierunek przepływu prądu przez pętlę, to kciuk pokazuje kierunek i zwrot <m:math display="inline">
+<m:mover>
+  <m:mi>n</m:mi>
+  <m:mo>̂</m:mo>
+</m:mover>
+</m:math>. Jeżeli pętla zawiera <m:math display="inline">
+<m:mi>N</m:mi>
+</m:math> zwojów przewodnika, to magnetyczny moment dipolowy jest równy odpowiedniej wielokrotności</para>
+<note id="fs-id1163713490956" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360183585">
+    <label/>
+    <m:math display="block">
+      <m:mover>
+        <m:mi>μ</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>N</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>I</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>S</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mover>
+          <m:mi>n</m:mi>
+          <m:mo>̂</m:mo>
+        </m:mover>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171358990829">Za pomocą magnetycznego momentu dipolowego moment sił działających na pętlę z prądem w jednorodnym polu magnetycznym może być prosto wyrażony jako iloczyn wektorowy</para>
+<note id="fs-id1163713525416" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360288680">
+    <m:math display="block">
+      <m:mover>
+        <m:mi>M</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mover>
+            <m:mi>μ</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>×</m:mo>
+          <m:mover>
+            <m:mi>B</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+        </m:mrow>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171359119948">Zależność ta jest zachowana dla dowolnego kształtu płaskiej pętli z prądem.</para>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171359186665">Przy użyciu analogicznego rachunku, jak wykonany w <link class="target-chapter" document="m67179">Pojemność elektryczna</link> dla dipola elektrycznego, energię potencjalną dipola magnetycznego wyznaczymy jako</para>
+<note id="fs-id1163713254302" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171358959129">
+    <label/>
+    <m:math display="block">
+      <m:msub>
+        <m:mi>E</m:mi>
+        <m:mtext>p</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mover>
+              <m:mi>μ</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mo>⋅</m:mo>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<example id="fs-id1171360224416">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360316923">
+    <title>Siły i momenty sił działających na pętlę przewodzącą prąd</title>Kołowa pętla o promieniu <m:math display="inline">
+      <m:mn>2</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mi mathvariant="normal">cm</m:mi>
+    </m:math> przewodzi prąd o natężeniu <m:math display="inline">
+    <m:mn>2</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">mA</m:mi>
+  </m:math>.<list id="eip-idm1917306064" list-type="enumerated" number-style="lower-alpha">
+  <item>Ile wynosi wartość jej magnetycznego momentu dipolowego?</item>
+  <item>Jeżeli moment dipolowy jest zorientowany pod kątem <m:math display="inline">
+    <m:mn>30</m:mn>
+    <m:mo>°</m:mo>
+  </m:math> do kierunku wektora indukcji (jednorodnego) pola magnetycznego o wartości <m:math display="inline">
+  <m:mn>0,5</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+  <m:mi mathvariant="normal">T</m:mi>
+  </m:math>, to ile wynosi wartość momentu sił w takim przypadku i jaka jest jego energia potencjalna?</item>
+</list>
+</para>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167582755240">
+  <title>Strategia rozwiązania</title>Moment dipolowy zdefiniowano za pomocą iloczynu natężenia prądu i pola powierzchni pętli. Pole powierzchni pętli może być obliczone jako pole koła. Moment sił działających na pętlę i energię potencjalną można obliczyć po wyznaczeniu momentu magnetycznego, indukcji pola magnetycznego i kąta orientacji momentu względem pola.</para>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167582442941">
+    <title>Rozwiązanie</title>
+  </para>
+  <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360084769" list-type="enumerated" number-style="lower-alpha">
+    <item>Moment magnetyczny <m:math display="inline">
+      <m:mi>μ</m:mi>
+    </m:math> obliczymy, mnożąc natężenie prądu przez pole powierzchni kołowej pętli <m:math display="inline">
+    <m:mi>π</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:msup>
+      <m:mi>r</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+  </m:math>
+  <equation id="fs-id1171360127796" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:mi>μ</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>I</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>S</m:mi>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>3</m:mn>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">A</m:mi>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mi>π</m:mi>
+        <m:mo>⋅</m:mo>
+        <m:msup>
+          <m:mfenced>
+            <m:mrow>
+              <m:mn>0,02</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+          </m:mfenced>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>2,5</m:mn>
+            <m:mo>⋅</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>6</m:mn>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">A</m:mi>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:msup>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</item>
+<item>Moment sił i energię potencjalną wyznaczymy, identyfikując moment magnetyczny, indukcję pola magnetycznego i kąt pomiędzy ich wektorami. Wykonujemy następujące obliczenia<equation id="fs-id1171360246195" class="unnumbered"><m:math display="block">
+    <m:semantics>
+      <m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:mi>M</m:mi>
+        <m:mo id="U6d12724f-9202-4fe4-b024-845953588ef8">=</m:mo>
+        <m:mfenced close="|" open="|"><m:mover><m:mi>M</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover></m:mfenced><m:mo id="U5dbe4e66-330f-4383-8b91-04b78b06e1e3">=</m:mo>
+        <m:mfenced close="|" open="|"><m:mrow><m:mover><m:mi>μ</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover><m:mo>×</m:mo>
+            <m:mover><m:mi>B</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover></m:mrow></m:mfenced><m:mo>=</m:mo>
+        <m:mrow><m:mi>μ</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>B</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mrow><m:mo>sin</m:mo>
+            <m:mi>θ</m:mi>
+          </m:mrow></m:mrow><m:mo>=</m:mo>
+        <m:mrow><m:mrow><m:mrow><m:mn>2,5</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup><m:mn>10</m:mn>
+                <m:mn>-6</m:mn>
+              </m:msup></m:mrow><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+            <m:mrow><m:mi mathvariant="normal">A</m:mi>
+              <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+              <m:msup><m:mi mathvariant="normal">m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup></m:mrow></m:mrow><m:mo>⋅</m:mo>
+          <m:mrow><m:mn>0,5</m:mn>
+            <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+            <m:mi mathvariant="normal">T</m:mi>
+          </m:mrow><m:mo>⋅</m:mo>
+          <m:mrow><m:mo>sin</m:mo>
+            <m:mrow><m:mn>30</m:mn>
+              <m:mo>°</m:mo>
+            </m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mi>M</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfenced close="|" open="|"><m:mover><m:mi>M</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover></m:mfenced></m:mphantom><m:mo id="U2f304514-d6e2-48fb-9e4e-204612a480a9">=</m:mo>
+        <m:mrow><m:mrow><m:mrow><m:mn>6,3</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup><m:mn>10</m:mn>
+                <m:mn>-7</m:mn>
+              </m:msup></m:mrow><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+            <m:mrow><m:mi mathvariant="normal">N</m:mi>
+              <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow></m:mrow><m:mo>⁢</m:mo>
+          <m:mtext>,</m:mtext>
+        </m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex"> \begin{multiline} M &amp;= \abs{\vec{M}} = \abs{\vec{\mu} \times \vec{B}} = \mu B \sin \theta = \SI{2,5e-6}{\ampere\metre\squared} \cdot \SI{0,5}{\tesla} \cdot \sin \ang{30} \\ &amp;= \SI{6,3e-7}{\newton\metre} \text{,} \end{multiline}</m:annotation>
+    <m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mi>M</m:mi>
+        <m:mo id="U6d12724f-9202-4fe4-b024-845953588ef8-copy">=</m:mo>
+        <m:mfenced close="|" open="|">
+          <m:mover>
+            <m:mi>M</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+        </m:mfenced>
+        <m:mo id="U5dbe4e66-330f-4383-8b91-04b78b06e1e3-copy">=</m:mo>
+        <m:mfenced close="|" open="|">
+          <m:mrow>
+            <m:mover>
+              <m:mi>μ</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mo>×</m:mo>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mfenced>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>μ</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>B</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>sin</m:mo>
+            <m:mi>θ</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>2,5</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>-6</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+            <m:mrow>
+              <m:mi mathvariant="normal">A</m:mi>
+              <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+              <m:msup>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mn>0,5</m:mn>
+            <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+            <m:mi mathvariant="normal">T</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mo>sin</m:mo>
+            <m:mrow>
+              <m:mn>30</m:mn>
+              <m:mo>°</m:mo>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo id="U2f304514-d6e2-48fb-9e4e-204612a480a9-copy" indenttarget="U5dbe4e66-330f-4383-8b91-04b78b06e1e3" linebreak="newline" indentalign="id">=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>6,3</m:mn>
+              <m:mo>⋅</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>-7</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+            <m:mrow>
+              <m:mi mathvariant="normal">N</m:mi>
+              <m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:annotation-xml></m:semantics>
+  </m:math></equation><equation id="eip-551" class="unnumbered">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:msub>
+          <m:mi>E</m:mi>
+          <m:mtext>p</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>μ</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mo>⋅</m:mo>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mi>μ</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>B</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo>cos</m:mo>
+              <m:mi>θ</m:mi>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>2,5</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>-6</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mrow>
+                <m:mi mathvariant="normal">A</m:mi>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:msup>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mn>0,5</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">T</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mo>cos</m:mo>
+              <m:mrow>
+                <m:mn>30</m:mn>
+                <m:mo>°</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>1,1</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>-6</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">J</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> E_{\text{p}} = - \vec{\mu} \cdot \vec{B} = - \mu B \cos \theta = -\SI{2,5e-6}{\ampere\metre\squared} \cdot \SI{0,5}{\tesla} \cdot \cos \ang{30} = -\SI{1,1e-6}{\joule} \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+</item>
+</list>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167582470964">
+  <title>Znaczenie</title>Zagadnienie momentu magnetycznego na poziomie atomowym omówimy w następnym rozdziale. Reorientacja momentu magnetycznego za pomocą pola magnetycznego stanowi podstawę działania urządzeń takich jak silniki magnetyczne. W rezultacie przełączanie zewnętrznego pola magnetycznego powoduje stały ruch obrotowy pętli, która dąży do ustawienia się w stosunku do pola tak, aby minimalizować energię potencjalną. </para>
+</example>
+<note id="fs-id1171359174758" class="check-understanding">
+  <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360389457">
+    <problem id="fs-id1171360290390">
+      <para id="fs-id1171360152136">
+        <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Jak powinien być zorientowany względem pola magnetycznego moment dipolowy, aby<list id="eip-idm1313232048" list-type="enumerated" number-style="lower-alpha">
+          <item>wytworzyć maksymalny moment sił w danym polu magnetycznym;</item>
+          <item>nadać dipolowi maksymalną energię?</item>
+        </list>
+      </para>
+    </problem>
+    <solution id="fs-id1171360185610">
+      <para id="fs-id1171360225279">a. Równolegle lub antyrównolegle; b. Prostopadle.</para>
+    </solution>
+  </exercise>
+</note>
+<section id="fs-id1171360225645" class="key-concepts">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Podsumowanie</title>
+  <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360274445" list-type="bulleted" bullet-style="bullet">
+    <item>Wypadkowa sił działających na przewodzącą prąd płaską pętlę dowolnego kształtu w jednorodnym polu magnetycznym wynosi zero.</item>
+    <item>Wypadkowy moment <m:math display="inline">
+      <m:mi>M</m:mi>
+    </m:math> sił działających na przewodzącą prąd pętlę dowolnego kształtu w jednorodnym polu magnetycznym wyraża się wzorem <m:math display="inline">
+    <m:mover>
+      <m:mi>M</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>μ</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+      <m:mo>×</m:mo>
+      <m:mover>
+        <m:mi>B</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+    </m:mrow>
+  </m:math>, gdzie <m:math display="inline">
+  <m:mover>
+    <m:mi>μ</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:math> jest magnetycznym momentem dipolowym, a <m:math display="inline">
+<m:mover>
+  <m:mi>B</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math> indukcją pola magnetycznego.</item>
+<item>Magnetyczny moment dipolowy <m:math display="inline">
+  <m:mi>μ</m:mi>
+</m:math> równa się iloczynowi liczby zwojów drutu <m:math display="inline">
+<m:mi>N</m:mi>
+</m:math>, natężenia przepływającego przez przewodnik prądu <m:math display="inline">
+<m:mi>I</m:mi>
+</m:math> oraz pola powierzchni pojedynczego zwoju <m:math display="inline">
+<m:mi>S</m:mi>
+</m:math>: <m:math display="inline">
+<m:mover>
+  <m:mi>μ</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi>N</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mi>I</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mi>S</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mover>
+    <m:mi>n</m:mi>
+    <m:mo>̂</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>.</item>
+</list>
+</section>
+<section id="fs-id1171360311235" class="review-problems">
+  <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Zadania</title>
+  <exercise id="fs-id1171360257896">
+    <problem id="fs-id1171360237593">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360221595">Odpowiedz na poniższe pytania.<list id="eip-idm680243200" list-type="enumerated" number-style="lower-alpha">
+        <item>O ile procent maleje moment sił działających na silnik, gdy jego magnes trwały traci <m:math display="inline">
+          <m:mn>5</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">%</m:mi>
+          </m:math> swojej siły (namagnesowania)?</item>
+          <item>O ile procent należy zwiększyć natężenie prądu, aby przywrócić pierwotne wartości momentu sił?</item>
+        </list>
+      </para>
+    </problem>
+    <solution id="fs-id1171360327595">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360223340">a. <m:math display="inline">
+        <m:mi>M</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>N</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>I</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>S</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>B</m:mi>
+        </m:mrow>
+      </m:math>, więc <m:math display="inline">
+      <m:mi>M</m:mi>
+    </m:math> maleje o <m:math display="inline">
+    <m:mn>5</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">%</m:mi>
+  </m:math>, gdy <m:math display="inline">
+  <m:mi>B</m:mi>
+</m:math> maleje o <m:math display="inline">
+<m:mn>5</m:mn>
+<m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+<m:mi mathvariant="normal">%</m:mi>
+</m:math>; b. Zwiększyć o <m:math display="inline">
+<m:mn>5,26</m:mn>
+<m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+<m:mi mathvariant="normal">%</m:mi>
+</m:math>.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1171358990680">
+  <problem id="fs-id1171359027379">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171359085880">Odpowiedz na poniższe pytania.<list id="eip-idm1344517824" list-type="enumerated" number-style="lower-alpha">
+      <item>Jaką wartość ma maksymalny moment sił działających na kwadratową pętlę drutu o 150 zwojach i długości boku <m:math display="inline">
+        <m:mn>18</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">cm</m:mi>
+      </m:math>, przez którą płynie prąd o natężeniu <m:math display="inline">
+      <m:mn>50</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+    </m:math>, w polu magnetycznym o indukcji <m:math display="inline">
+    <m:mn>1,6</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">T</m:mi>
+    </m:math>?</item>
+    <item>Jaką wartość ma moment sił, jeżeli <m:math display="inline">
+      <m:mi>θ</m:mi>
+    </m:math> równa się <m:math display="inline">
+    <m:mn>10,9</m:mn>
+    <m:mo>°</m:mo>
+    </m:math>?</item>
+  </list>
+</para>
+</problem>
+</exercise>
+<exercise id="fs-id1171360063535">
+  <problem id="fs-id1171360160950">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171358952083">Wyznacz natężenie prądu, który musi płynąć przez pętlę, aby wytworzyć maksymalny moment sił <m:math display="inline">
+      <m:mn>9</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+    </m:math>. Pętla zawiera 50 kwadratowych zwojów o długości boku <m:math display="inline">
+    <m:mn>15</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">cm</m:mi>
+  </m:math> i znajduje się w jednorodnym polu magnetycznym o indukcji <m:math display="inline">
+  <m:mn>0,8</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+  <m:mi mathvariant="normal">T</m:mi>
+  </m:math>.</para>
+</problem>
+<solution id="fs-id1171359182354">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360384955">
+    <m:math display="inline">
+      <m:mn>10</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+      </m:math>.</para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1171360401685">
+    <problem id="fs-id1171360540135">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360606218">Oblicz indukcję pola magnetycznego, działającego na kwadratową pętlę o 200 zwojach i długości boku <m:math display="inline">
+        <m:mn>20</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">cm</m:mi>
+      </m:math>, koniecznego do wywołania maksymalnego momentu sił <m:math display="inline">
+      <m:mn>300</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+      <m:mrow>
+        <m:mi mathvariant="normal">N</m:mi>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+    </m:math> w czasie, gdy przez pętlę płynie prąd o natężeniu <m:math display="inline">
+    <m:mn>25</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">A</m:mi>
+    </m:math>.</para>
+  </problem>
+</exercise>
+<exercise id="fs-id1171360193975">
+  <problem id="fs-id1171360292524">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360235734">Skoro wyrażenie na moment sił działających na przewodzącą prąd pętlę ma postać <m:math display="inline">
+      <m:mi>M</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>N</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>I</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>S</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>B</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>sin</m:mo>
+          <m:mi>θ</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:math>, to jednostka <m:math display="inline">
+    <m:mi mathvariant="normal">N</m:mi>
+    <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+    <m:mi mathvariant="normal">m</m:mi>
+  </m:math> musi być równa jednostce <m:math display="inline">
+  <m:mi mathvariant="normal">A</m:mi>
+  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+  <m:msup>
+    <m:mi mathvariant="normal">m</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+  <m:mi mathvariant="normal">T</m:mi>
+  </m:math>. Zweryfikuj to.</para>
+</problem>
+<solution id="fs-id1171359180949">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360105394">
+    <m:math display="inline">
+      <m:semantics>
+        <m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">A</m:mi>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:msup>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mi mathvariant="normal">T</m:mi>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mi mathvariant="normal">A</m:mi>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:msup>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mfrac>
+              <m:mi mathvariant="normal">N</m:mi>
+              <m:mrow>
+                <m:mi mathvariant="normal">A</m:mi>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mi mathvariant="normal">N</m:mi>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \si{\ampere\metre\squared} \cdot \si{\tesla} = \si{\ampere\metre\squared} \cdot \frac{\si{\newton}}{\si{\ampere\metre}} = \si{\newton\metre}</m:annotation>
+      </m:semantics>
+      </m:math>.</para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1171359020893">
+    <problem id="fs-id1171360344066">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360150122">Przy jakiej wartości kąta <m:math display="inline">
+        <m:mi>θ</m:mi>
+      </m:math> moment sił działających na pętlę z prądem wyniesie<list id="eip-idm1662487808" list-type="enumerated" number-style="lower-alpha">
+      <item>
+        <m:math display="inline">
+          <m:mn>90</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">%</m:mi>
+          </m:math> wartości maksymalnej;</item>
+          <item>
+            <m:math display="inline">
+              <m:mn>50</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">%</m:mi>
+              </m:math> wartości maksymalnej;</item>
+              <item>
+                <m:math display="inline">
+                  <m:mn>10</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">%</m:mi>
+                  </m:math> wartości maksymalnej?</item>
+                </list>
+              </para>
+            </problem>
+          </exercise>
+          <exercise id="fs-id1171360405248">
+            <problem id="fs-id1171359119359">
+              <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360218824">Proton ma własny moment magnetyczny, związany z jego spinem. Indukcja pola jest podobna do wytworzonej przez kołową pętlę o promieniu <m:math display="inline">
+                <m:mrow>
+                  <m:mn>0,65</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mn>15</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                </m:mrow>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:math> z prądem o natężeniu <m:math display="inline">
+              <m:mrow>
+                <m:mn>1,05</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mn>4</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">A</m:mi>
+            </m:math>. Wyznacz maksymalny moment siły działającej na proton w polu o indukcji <m:math display="inline">
+            <m:mn>2,5</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+            <m:mi mathvariant="normal">T</m:mi>
+            </m:math>. (Dla małej cząstki jest to znaczny moment siły).</para>
+          </problem>
+          <solution id="fs-id1171360439361">
+            <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171359062058">
+              <m:math display="inline">
+                <m:mrow>
+                  <m:mn>3,48</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:msup>
+                    <m:mn>10</m:mn>
+                    <m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mn>26</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                </m:mrow>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mrow>
+                  <m:mi mathvariant="normal">N</m:mi>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+                </m:math>.</para>
+              </solution>
+            </exercise>
+            <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360308048">
+              <problem id="fs-id1171360370318">
+                <para id="fs-id1171360214831">Kołowa pętla o 200 zwojach i promieniu <m:math display="inline">
+                  <m:mn>50</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                  <m:mi mathvariant="normal">cm</m:mi>
+                </m:math> jest ustawiona pionowo, a jej oś symetrii leży na linii wschód–zachód. Prąd <m:math display="inline">
+                <m:mn>100</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                <m:mi mathvariant="normal">A</m:mi>
+              </m:math> krąży w pętli w kierunku zgodnym z kierunkiem ruchu wskazówek zegara – patrząc od wschodu. Ziemskie pole magnetyczne jest w tym miejscu równoległe do podłoża, a jego indukcja ma wartość <m:math display="inline">
+              <m:mrow>
+                <m:mn>3</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mn>10</m:mn>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>5</m:mn>
+                  </m:mrow>
+                </m:msup>
+              </m:mrow>
+              <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+              <m:mi mathvariant="normal">T</m:mi>
+            </m:math>.<list id="eip-idm375223296" list-type="enumerated" number-style="lower-alpha">
+            <item>Jakie są kierunek, zwrot i wartość momentu sił działających na pętlę?</item>
+            <item>Czy można zastosować takie urządzenie w charakterze silnika?</item>
+          </list>
+          <newline/>
+        </para>
+        <media id="fs-id1171360184267" alt="Pokazana jest pionowa pętla wraz z kierunkami kompasu. Osie (prostopadłe do płaszczyzny pętli) znajdują się na linii wschód-zachód. Pole magnetyczne wskazuje północ. Prąd w pętli krąży zgodnie z ruchem wskazówek zegara patrząc od wschodu. Moment obrotowy na pętli jest zgodny z ruchem wskazówek zegara patrząc w dół pętli od góry.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_28_05_extorque.jpg"/>
+        </media>
+      </problem>
+    </exercise>
+    <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1171360229379">
+      <problem id="fs-id1171360149962">
+        <para id="fs-id1171359003812">Powtórz zadanie poprzednie dla przypadku pętli leżącej poziomo na podłożu, z prądem krążącym w kierunku przeciwnym do kierunku ruchu wskazówek zegara, patrząc z góry, w miejscu, gdzie ziemskie pole magnetyczne jest zwrócone na północ, ale pod kątem <m:math display="inline">
+          <m:mn>45</m:mn>
+          <m:mo>°</m:mo>
+        </m:math> w dół do płaszczyzny horyzontu, a jego indukcja ma wartość <m:math display="inline">
+        <m:mrow>
+          <m:mn>6</m:mn>
+          <m:mo>⋅</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>5</m:mn>
+            </m:mrow>
+          </m:msup>
+        </m:mrow>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mi mathvariant="normal">T</m:mi>
+      </m:math>.<newline/>
+    </para>
+    <media id="fs-id1171360168251" alt="Pokazana jest pionowa pętla wraz z kierunkami kompasu. Pole magnetyczne położone jest 45 stopni poniżej horyzontu. Pętla obraca się zgodnie z ruchem wskazówek zegara od strony wschodniej.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_28_05_extorque2.jpg"/>
+    </media>
+  </problem>
+  <solution id="fs-id1171360346981">
+    <para id="fs-id1171360163831">
+      <m:math display="inline">
+        <m:mn>0,666</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+        <m:mrow>
+          <m:mi mathvariant="normal">N</m:mi>
+          <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        </m:math>.</para>
+      </solution>
+    </exercise>
+  </section>
+</content>
+<glossary>
+  <definition id="fs-id1171358975710">
+    <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="dipol magnetyczny">dipol magnetyczny (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">magnetic dipole</term></foreign>)</term>
+      <meaning id="fs-id1171360606030">zamknięta pętla przewodnika z przepływającym prądem lub para biegunów magnetycznych w przypadku gdy rozmiary źródła, pętli lub pary biegunów, są traktowane jako niewielkie (w granicy – znikające) </meaning>
+    </definition>
+    <definition id="fs-id1171360430628">
+      <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="magnetyczny moment dipolowy">magnetyczny moment dipolowy (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">magnetic dipole moment</term></foreign>)</term>
+        <meaning id="fs-id1171360613322">iloczyn natężenia prądu oraz pola powierzchni przewodnika, oznaczane także jako <m:math display="inline">
+          <m:mi>μ</m:mi>
+        </m:math>
+      </meaning>
+    </definition>
+    <definition id="fs-id1171360122201">
+      <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="silnik (prądu stałego)">silnik (prądu stałego) (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">motor (DC)</term></foreign>)</term>
+        <meaning id="fs-id1171360107419">pętla drutu w polu magnetycznym; gdy prąd przepływa przez pętlę, pole magnetyczne wywiera na nią moment sił, co powoduje obrót wału; w procesie tym energia elektryczna ulega przetworzeniu w pracę mechaniczną</meaning>
+      </definition>
+    </glossary>
+  </document>

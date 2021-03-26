@@ -1,0 +1,760 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Cyfry znaczące</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65738</md:content-id>
+  <md:title>Cyfry znaczące</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>prawidłowo określać liczbę cyfr znaczących wyniku obliczeń;</item>
+<item>opisywać zależności między dokładnością, precyzją, niepewnością pomiarową i błędem pomiaru;</item>
+<item>na podstawie wartości oraz jej niepewności pomiarowej obliczać niepewność względną;</item>
+<item>na podstawie niepewności pomiarowych poszczególnych wartości używanych w obliczeniach określać niepewność wyniku.</item>
+</list></md:abstract>
+  <md:uuid>4720fbd5-5895-4d5f-a6f0-175c2f33b37b</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1168325678215">
+    <link target-id="CNX_UPhysics_01_06_Balance"/> przedstawia dwa przedmioty służące do pomiaru masy. W laboratoriach fizycznych waga szalkowa została prawie zupełnie wyparta przez wagę elektroniczną, której wskazania są dokładniejsze i bardziej precyzyjne. Ale co właściwie oznaczają słowa <emphasis effect="italics">dokładne</emphasis> i <emphasis effect="italics">precyzyjne</emphasis>? Czy to nie to samo? W tym podrozdziale zajmiemy się procesem dokonywania oraz zapisywania pomiarów.</para>
+    <figure xmlns:q="http://cnx.rice.edu/qml/1.0" id="CNX_UPhysics_01_06_Balance"><media id="fs-id1168328247494" alt="Zdjęcie a przedstawia starą, zardzewiałą wagę szalkową z odważnikiem na jednej z szalek. Zdjęcie b przedstawia nowoczesną, elektroniczną wagę analityczną.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_01_06_Balance.jpg"/>
+      </media>
+      
+    <caption>(a) Waga szalkowa służy do porównywania mas różnych obiektów. Na jednej szalce kładzie się obiekt o nieznanej masie, a na drugiej obiekt, którego masę znamy. Jeśli wskaźniki obu stron wagi zrównają się w położeniu równowagi, oznacza to, że porównywane masy są równe. Obiektami, których masy znamy, są zazwyczaj odważniki o standardowych masach takich jak 1 g, 10 g i 100 g. (b) Wiele wag mechanicznych, takich jak waga szalkowa, zostało zastąpionych przez wagi elektroniczne, które zazwyczaj są dokładniejsze. Za pomocą wagi mechanicznej można określić masę z dokładnością do jednej dziesiątej grama, podczas gdy wiele wag elektronicznych dokonuje pomiaru z dokładnością do jednej tysięcznej grama. (Źródło (a) Serge Melki; źródło (b) Karel Jakubec)</caption></figure><section id="fs-id1168328303418">
+      <title>Dokładność i precyzja pomiaru</title>
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1168327922756">Nauka opiera się na obserwacji i na przeprowadzonych doświadczeniach – a więc na pomiarach. <term cmlnle:reference="dokładność" class="no-emphasis">Dokładność</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">accuracy</term></foreign>) mówi, jak bardzo pomiar zbliżony jest do zaakceptowanej wartości referencyjnej. Załóżmy, że chcemy zmierzyć wysokość kartki papieru A4. Na opakowaniu napisano, że ma ona 29,7 cm wysokości. Mierzymy wysokość kartki trzykrotnie i otrzymujemy kolejno 29,8 cm, 29,6 cm i 30,0 cm. Te pomiary są dość dokładne, ponieważ są bardzo zbliżone do wartości referencyjnej równej 29,7 cm. Jeżeli natomiast uzyskalibyśmy pomiar równy 32 cm, nie byłby on dokładny i oznaczałby popełnienie tzw. błędu grubego podczas pomiaru. Zauważ, że aby mówić o dokładności, musimy wiedzieć, jaka jest wartość referencyjna.</para><para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1168327967767"><term class="no-emphasis" cmlnle:reference="precyzja">Precyzja</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">precision</term></foreign>) pomiaru określa, jak bardzo różnią się od siebie niezależne pomiary wykonywane w tych samych warunkach. Wróćmy do przykładu z kartką papieru. Jednym ze sposobów określenia precyzji jest obliczenie różnicy między największą a najmniejszą wartością pomiaru. W tym przypadku najmniejszą otrzymaną wartością było 29,6 cm, a największą, poprawną 30,0 cm, więc różnica między nimi równa jest 0,4 cm. Pomiary te są względnie precyzyjne, ponieważ ich wartości nie różnią się od siebie znacznie. Jednak pomiary 26,5 cm, 29,1 cm i 31,3 cm nie byłyby zbyt precyzyjne, ponieważ różnica między nimi jest znaczna. Zauważ, że aby określić precyzję, potrzebne są jedynie wyniki pomiarów, nie musimy wiedzieć, jaka jest wartość referencyjna.</para><para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1168328285619">Pomiary przedstawione w przykładzie z kartką papieru są dokładne oraz precyzyjne, ale zdarza się, że dokładne pomiary nie są precyzyjne lub że precyzyjne pomiary nie są dokładne. Załóżmy, że przy pomocy urządzenia GPS próbujesz znaleźć położenie restauracji. Wyobraź sobie, że restauracja znajduje się na mapie z naniesionym wzorem tarczy strzelniczej (restauracja znajduje się w jej środku), a każda próba zlokalizowania jej przez GPS oznaczana jest czarną kropką. Jak widać, na <link target-id="CNX_UPhysics_01_06_Target" cmlnle:case="locative"/> (a) pomiary GPS są od siebie oddalone, ale wszystkie znajdują się względnie blisko środka tarczy. Jest to równoznaczne z małą precyzją i dużą dokładnością systemu pomiarowego. Na <link target-id="CNX_UPhysics_01_06_Target" cmlnle:case="locative"/> (b) pomiary są położone blisko siebie, ale wszystkie są oddalone od środka tarczy. Świadczy to o dużej precyzji i małej dokładności systemu pomiarowego.</para><figure id="CNX_UPhysics_01_06_Target">
+          <media id="fs-id1168327956371" alt="Dwie tarcze, każda z nich posiada trzy białe, koncentryczne okręgi na czerwonym tle. Na rysunku a, zatytułowanym „Wysoka dokładność, niska precyzja” widać cztery czarne punkty rozmieszczone wokół najmniejszego okręgu. Na rysunku b, zatytułowanym „Niska dokładność, wysoka precyzja” cztery skupione blisko siebie czarne punkty umieszczone są między środkowym a zewnętrznym okręgiem.">
+            <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_01_06_Target.jpg"/>
+          </media>
+          <caption>Przy pomocy urządzenia GPS próbujemy odnaleźć restaurację znajdującą się na samym środku tarczy. Czarne punkty pokazują poszczególne próby zlokalizowania restauracji. a) Punkty znajdują się w sporej odległości od siebie, ale wszystkie dość blisko restauracji, co świadczy o wysokiej dokładności. b) Punkty znajdują się blisko siebie, co świadczy o wysokiej precyzji, ale położone są daleko od restauracji, co z kolei świadczy o niskiej dokładności. (Źródło: Dark Evil)</caption>
+        </figure>
+      </section>
+      <section id="fs-id1168328178931">
+        <title>Dokładność, precyzja, niepewność i błąd pomiaru</title>
+        <para id="fs-id1168327908843">Precyzja pomiarów związana jest z <term class="no-emphasis" cmlnle:reference="niepewność pomiarowa">niepewnością pomiarową</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">uncertainty</term></foreign>), a dokładność z <term class="no-emphasis" cmlnle:reference="błąd pomiaru">błędem pomiaru</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">discrepancy</term></foreign>), czyli rozbieżnością między dobrze znaną wartością referencyjną a obliczoną. Niepewność określa, jak bardzo poszczególne pomiary różnią się między sobą ze względu na statystyczny charakter czynności pomiarowych. Błąd pomiaru to różnica między wartością zmierzoną a wartością oczekiwaną, dzięki znajomości znanego standardu.</para><para id="eip-495">Istnieje wiele różnych metod obliczania niepewności – wybór odpowiedniej z nich zależy od problemu. Czasami należy obliczyć różnicę między największą a najmniejszą zmierzoną wartością, czasem trzeba znać wartość odchylenia standardowego pomiarów. Jeśli pomiary nie są zbyt precyzyjne, niepewność pomiarowa jest wysoka. Jeśli z kolei nie są dokładne, to podczas pomiarów popełniany jest, mniej lub bardziej świadomie, duży błąd pomiarowy.</para><para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1168327854645">Wróćmy raz jeszcze do przykładu z mierzeniem długości kartki papieru: nasze pomiary były równe 29,8 cm, 29,6 cm i 30,0 cm, podczas gdy na opakowaniu podano wartość 29,7 cm. Możemy obliczyć średnią arytmetyczną z uzyskanych pomiarów. W takim przypadku otrzymamy 29,8 cm, a za niepewność pomiaru będzie można przyjąć 29,8 cm - 29,7 cm = 0,1 cm – wartość ta stanowi wymierną reprezentację dokładności. W analizowanym przypadku niepewność pomiaru wyniesie 30,0 cm - 29,6 cm = 0,4 cm. Powiemy wówczas, że długość kartki papieru to 29,8 cm plus minus 0,4 cm. Niepewność pomiaru <m:math>
+        <m:mi>A</m:mi>
+      </m:math> często zapisuje się jako <m:math>
+      <m:mtext>Δ</m:mtext>
+      <m:mi>A</m:mi>
+    </m:math> (czytaj „delta <m:math>
+    <m:mi>A</m:mi>
+  </m:math>”), a więc wynik pomiaru należy zapisać w następujący sposób: <m:math>
+  <m:mi>A</m:mi>
+  <m:mo>±</m:mo>
+  <m:mtext>Δ</m:mtext>
+  <m:mi>A</m:mi>
+</m:math>. Powiemy zatem, że długość kartki papieru jest równa 29,8 cm ± 0,4 cm. Błąd pomiaru wynosi 0,1 cm i jest mniejszy od niepewności pomiaru równej 0,4 cm. W związku z tym możemy powiedzieć, że wartość zmierzona jest zgodna z wartością referencyjną z określoną dokładnością.</para><para id="fs-id1168327948810">Oto niektóre z czynników mogących mieć wpływ na wzrost niepewności pomiarowej:</para>
+<list id="fs-id1168328196584" list-type="bulleted" bullet-style="bullet">
+  <item>ograniczenia urządzeń pomiarowych;</item>
+  <item>umiejętności osoby dokonującej pomiaru;</item>
+  <item>nieregularny kształt mierzonego obiektu;</item>
+  <item>wszystkie inne czynniki mające wpływ na wynik (są one w dużym stopniu zależne od sytuacji).</item>
+</list>
+<para id="fs-id1168327924918">W omawianym przypadku czynniki mogłyby być następujące: podziałka linijki ma dokładność do 1 mm, osoba dokonująca pomiaru ma słaby wzrok, na jednym końcu skala linijki jest wytarta, krawędź kartki jest z jednej strony dłuższa. W każdym przypadku w celu określenia precyzji pomiaru musi zostać obliczona niepewność. Jeśli znamy wartość referencyjną, warto również obliczyć różnicę bezwzględną (lub względną) pomiędzy otrzymaną wartością średnią (zmierzoną) a wartością referencyjną.</para>
+<section id="fs-id1168327944324">
+  <title>Niepewność względna</title>
+  <para id="fs-id1168327991650">Niepewność pomiarową można przedstawić również jako procent zmierzonej wartości. Jeśli pomiar <m:math>
+    <m:mi>A</m:mi>
+  </m:math> obarczony jest niepewnością <m:math>
+  <m:mi mathvariant="normal">Δ</m:mi>
+  <m:mi>A</m:mi>
+  </m:math>, to <term class="no-emphasis" cmlnle:reference="niepewność względna">niepewność względną</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">relative uncertainty</term></foreign>) definiuje się jako</para>
+<note id="fs-id1168327873248" class="equation-callout">
+  <equation id="fs-id1168328214545">
+    <label/>
+    <m:math>
+      <m:mtext>Niepewność względna</m:mtext>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mi mathvariant="normal">Δ</m:mi>
+          <m:mi>A</m:mi>
+        </m:mrow>
+        <m:mi>A</m:mi>
+      </m:mfrac>
+      <m:mo>·</m:mo>
+      <m:mn>100</m:mn>
+      <m:mo>%</m:mo>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+</note>
+  <example xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168328260761"><para id="fs-id1168327986964">
+      <title>Obliczanie niepewności względnej: siatka jabłek</title>W pewnym sklepie spożywczym jabłka pakowane są w siatki po 5 kg. Powiedzmy, że w ciągu miesiąca kupiliśmy cztery siatki jabłek i za każdym razem ważyliśmy je. Wyniki pomiarów były następujące:</para>
+      <list id="fs-id1168328289500" list-type="bulleted" bullet-style="bullet">
+        <item>Tydzień 1.: 4,8 kg</item>
+        <item>Tydzień 2.: 5,3 kg</item>
+        <item>Tydzień 3.: 4,9 kg</item>
+        <item>Tydzień 4.: 5,4 kg</item>
+      </list>
+      <para id="fs-id1168327869229">Możemy stwierdzić, że średnia wartość jest jedna i wynosi <m:math>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>5,1</m:mn>
+            <m:mo>±</m:mo>
+            <m:mn>0,6</m:mn>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">k</m:mi>
+          <m:mi mathvariant="normal">g</m:mi>
+        </m:mrow>
+        </m:math>. Jaka jest niepewność względna wagi siatki jabłek?</para><para id="fs-id1168327942231"><title>Strategia rozwiązania </title>Zauważ, że średnia waga siatki jabłek <m:math>
+            <m:mi>A</m:mi>
+          </m:math> jest równa 5,1 kg. Niepewność pomiarowa <m:math><m:mi mathvariant="normal">Δ</m:mi>
+          <m:mi>A</m:mi>
+          </m:math> jest równa 0,6 kg. W celu wyznaczenia niepewności względnej korzystamy z równania:</para><equation id="fs-id1168327916436" class="unnumbered">
+              <m:math>
+                <m:mtext>Niepewność względna</m:mtext>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mi mathvariant="normal">Δ</m:mi>
+                    <m:mi>A</m:mi>
+                  </m:mrow>
+                  <m:mi>A</m:mi>
+                </m:mfrac>
+                <m:mo>·</m:mo>
+                <m:mn>100%</m:mn>
+                <m:mo>.</m:mo>
+              </m:math>
+            </equation>
+          <para id="fs-id1168328063119">
+            <title>Rozwiązanie</title>Po podstawieniu danych do wzoru otrzymujemy:</para>
+            <equation id="fs-id1168328294056" class="unnumbered"><label/>
+              <m:math>
+                <m:mtext>Niepewność względna</m:mtext>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">Δ</m:mi>
+                    </m:mrow>
+                    <m:mi>A</m:mi>
+                  </m:mrow>
+                  <m:mi>A</m:mi>
+                </m:mfrac>
+                <m:mo>⋅</m:mo>
+                <m:mn>100%</m:mn>
+                <m:mo>=</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>0,6</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">k</m:mi>
+                      <m:mi mathvariant="normal">g</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>5,1</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mrow>
+                      <m:mi mathvariant="normal">k</m:mi>
+                      <m:mi mathvariant="normal">g</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mo>⋅</m:mo>
+                <m:mn>100%</m:mn>
+                <m:mo>≈</m:mo>
+                <m:mn>11,76%</m:mn>
+                <m:mo>≈</m:mo>
+                <m:mn>12%</m:mn>
+<m:mo>.</m:mo>
+              </m:math>
+            </equation><para id="fs-id1168328178160"><title>Znaczenie</title>Możemy wywnioskować, że średnia waga siatki jabłek jest równa 5,1 kg z niepewnością względną wynoszącą 12%. Zauważ, że niepewność względna jest bezwymiarowa – jednostki masy <m:math>
+                <m:mrow>
+                  <m:mi mathvariant="normal">Δ</m:mi>
+                </m:mrow>
+                <m:mi>A</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0,6</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                  <m:mi mathvariant="normal">g</m:mi>
+                </m:mrow>
+              </m:math> oraz <m:math>
+              <m:mi>A</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>5,1</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">k</m:mi>
+                <m:mi mathvariant="normal">g</m:mi>
+              </m:mrow>
+              </m:math> skróciły się.</para></example><note id="fs-id1168328179945" class="check-understanding">
+              <exercise id="fs-id1168328204614">
+                <problem id="fs-id1168327886179">
+                  <para id="fs-id1168328214242">
+                    <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Trener szkolnej sekcji biegów kupił nowy stoper. Według instrukcji niepewność stopera wynosi <m:math>
+                      <m:mo>±</m:mo>
+                      <m:mn>0,05</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">s</m:mi>
+                      </m:mrow>
+                      </m:math>. Biegający w tej sekcji uczniowie na dystansie 100 m uzyskują wyniki od 11,49 s do 15,01 s. Na ostatnich zawodach zwycięzca przebiegł ten dystans w 12,04 s, a zdobywca drugiego miejsca w 12,07 s. Czy nowy stoper przyda się trenerowi? Dlaczego tak lub dlaczego nie?</para>
+                    </problem>
+                    <solution id="fs-id1168328204335">
+                      <para id="fs-id1168328222976">Nie, stoper się nie przyda. Jego niepewność pomiarowa jest zbyt duża, by móc poprawnie zmierzyć czas uzyskiwany przez biegacza na takim dystansie.</para>
+                    </solution>
+                  </exercise>
+                </note>
+              </section>
+              <section id="fs-id1168328203147">
+                <title>Niepewność w obliczeniach</title>
+                <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168327869120">Wszystkie obliczenia oparte na pomiarach różnych wielkości obarczone są jakąś niepewnością. Na przykład pole powierzchni podłogi obliczone na podstawie długości i szerokości ma niepewność, ponieważ mają ją również długość i szerokość. Jak duża jest niepewność wartości obliczanej poprzez mnożenie lub dzielenie? Jeżeli pomiary, z których korzystasz podczas obliczeń, mają małe niepewności (nie większe niż kilka procent), w celu obliczenia niepewności wyniku możesz skorzystać z <term class="no-emphasis" cmlnle:reference="metoda dodawania niepewności procentowych">metody dodawania niepewności procentowych</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">method of adding percents</term></foreign>). Według tej metody <emphasis effect="italics">wyrażona w procentach niepewność wartości, obliczonej na podstawie mnożenia lub dzielenia, jest sumą wyrażonych w procentach niepewności poszczególnych wartości użytych podczas obliczeń</emphasis>. Jeśli na przykład podłoga ma długość równą 4,00 m oraz szerokość równą 3,00 m, a wartości te obarczone są odpowiednio niepewnością 2% i 1%, to pole powierzchni tej podłogi jest równe <m:math>
+                  <m:mn>12,0</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mrow>
+                </m:math>, a niepewność pomiaru wynosi 3%. (Wartość niepewności możemy przedstawić też jako <m:math>
+                <m:mn>0,36</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:math>, ponieważ <m:math>
+              <m:mn>12,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:msup>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mn>0,03</m:mn>
+              <m:mo>=</m:mo>
+              <m:mn>0,36</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:msup>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:math>, co zaokrąglamy do <m:math>
+            <m:mn>0,4</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:msup>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            </m:math>, ponieważ wartość pola powierzchni podłogi podana jest z dokładnością do jednej dziesiątej metra).</para></section>
+        </section>
+        <section id="fs-id1168328203265">
+          <title>Precyzja przyrządów pomiarowych i cyfry znaczące</title>
+          <para id="fs-id1168327960157">Ważnym czynnikiem wpływającym na precyzję pomiaru jest używany przez nas przyrząd. Ogólnie rzecz biorąc, precyzyjny przyrząd powinien umożliwiać dokonywanie pomiarów z dokładnością do bardzo małych wartości. Przy pomocy zwykłej linijki możemy dokonywać pomiarów z dokładnością do 1 mm, podczas gdy pomiary dokonane przy pomocy suwmiarki mogą charakteryzować się dokładnością do 0,02 mm. Suwmiarka jest przyrządem bardziej precyzyjnym, ponieważ umożliwia wykrycie bardzo małych różnic w długości. Im bardziej precyzyjny przyrząd, tym wyższa precyzja pomiaru.</para>
+          <para id="fs-id1168328065844">Wynik pomiaru należy zapisać tak, aby liczba cyfr po przecinku zgadzała się z liczbą cyfr wskazywanych przez przyrząd pomiarowy. Jeżeli mierzymy długość pręta przy pomocy zwykłej linijki, możemy stwierdzić, że ma on długość 36,7 cm. Nie możemy zapisać wartości 36,71 cm, ponieważ nasz przyrząd pomiarowy nie ma wystarczającej precyzji, aby mierzyć obiekty z dokładnością do setnych części centymetra. Należy zauważyć, że ostatnia cyfra musiała w jakiś sposób zostać oszacowana przez osobę dokonującą pomiaru. Jeżeli osoba mierząca wspomniany pręt przy pomocy linijki widzi, że jego długość zawiera się między 36,6 cm a 36,7 cm, musi ona oszacować wartość cyfry po przecinku. Zasada <term class="no-emphasis" cmlnle:reference="cyfry znaczące">cyfr znaczących</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">significant figures</term></foreign>) mówi, że <emphasis effect="italics">ostatnia cyfra pomiaru jest pierwszą cyfrą obarczoną niepewnością pomiarową</emphasis>. Aby określić liczbę cyfr znaczących, należy policzyć kolejne cyfry wartości. Na przykład wartość 36,7 cm składa się z trzech cyfr, co oznacza, że ma trzy cyfry znaczące. Liczba cyfr znaczących jest związana z precyzją przyrządu pomiarowego.</para>
+          <section id="fs-id1168328361496">
+            <title>Zera</title>
+            <para id="fs-id1168325631408">Podczas omawiania zagadnienia cyfr znaczących należy szczególnie skupić się na zerach. Zera w liczbie 0,053 nie są cyframi znaczącymi, ponieważ nie wpływają na wartość, otaczają jedynie przecinek. Liczba 0,053 ma dwie cyfry znaczące. Zera w liczbie 10,053 są cyframi znaczącymi – liczba ta ma pięć cyfr znaczących. Zera w liczbie 1300 mogą, ale nie muszą być cyframi znaczącymi – zależy to od sposobu zapisu. Mogą one oznaczać, że wartość liczby jest znana do ostatniej cyfry, mogą także być cyframi wypełniającymi. 1300 może mieć więc dwie, trzy lub cztery cyfry znaczące. Aby uniknąć niejednoznaczności, powinniśmy skorzystać z notacji wykładniczej. 1300 możemy zapisać jako <m:math>
+              <m:mn>1,3</m:mn>
+              <m:mo>·</m:mo>
+              <m:msup>
+                <m:mn>10</m:mn>
+                <m:mn>3</m:mn>
+              </m:msup>
+            </m:math>, <m:math>
+            <m:mn>1,30</m:mn>
+            <m:mo>·</m:mo>
+            <m:msup>
+              <m:mn>10</m:mn>
+              <m:mn>3</m:mn>
+            </m:msup>
+          </m:math> lub <m:math>
+          <m:mn>1,300</m:mn>
+          <m:mo>·</m:mo>
+          <m:msup>
+            <m:mn>10</m:mn>
+            <m:mn>3</m:mn>
+          </m:msup>
+          </m:math> w zależności od tego, czy ma dwie, trzy czy cztery cyfry znaczące. <emphasis effect="italics">Zera są cyframi znaczącymi, chyba że służą jedynie jako cyfry wypełniające</emphasis>.</para>
+        </section>
+        <section id="fs-id1168328242879">
+          <title>Cyfry znaczące w obliczeniach</title>
+          <para id="fs-id1168327954787">Jeżeli podczas obliczeń operujemy na pomiarach o różnym stopniu precyzji, <emphasis effect="italics">liczba cyfr znaczących wyniku nie może być większa niż liczba cyfr znaczących pomiaru o najmniejszej precyzji</emphasis>. Wyróżniamy dwie zasady: jedną dla mnożenia i dzielenia, a drugą dla dodawania i odejmowania.</para>
+          <list id="fs-id1168327965135" list-type="enumerated" number-style="arabic">
+            <item>
+              <emphasis effect="italics">Jeśli chodzi o mnożenie i dzielenie, wynik powinien mieć taką samą liczbę cyfr znaczących jak wartość pomiaru o najniższym stopniu precyzji</emphasis>. Jeśli znamy promień koła, możemy obliczyć jego pole powierzchni, korzystając ze wzoru <m:math>
+                <m:mi>A</m:mi>
+                <m:mo>=</m:mo>
+                <m:mi>π</m:mi>
+                <m:msup>
+                  <m:mi>r</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:math>. Sprawdźmy, ile cyfr znaczących ma wartość pola koła, którego promień jest równy <m:math>
+              <m:mi>r</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>1,2</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+            </m:math> (ma dwie cyfry znaczące). Używając kalkulatora o ośmiocyfrowym wyświetlaczu, otrzymalibyśmy<newline/>
+            <equation id="fs-id1168327920583" class="unnumbered">
+              <label/>
+              <m:math>
+                <m:mi>A</m:mi>
+                <m:mo>=</m:mo>
+                <m:mi>π</m:mi>
+                <m:msup>
+                  <m:mi>r</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:mn>3,141</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mn>592</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mn>7</m:mn>
+                <m:mo>…</m:mo>
+                <m:mo>⋅</m:mo>
+                <m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>1,2</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mrow>
+                        <m:mi mathvariant="normal">m</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mo>=</m:mo>
+                <m:mn>4,523</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mn>893</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mn>4</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>.</m:mo>
+              </m:math>
+            </equation>
+            <newline/>Jednak wartość promienia podana jest z dokładnością do dwóch cyfr znaczących, co oznacza, że otrzymany wynik należy zaokrąglić:<newline/>
+            <equation id="fs-id1168327874061" class="unnumbered">
+              <label/>
+              <m:math>
+                <m:mi>A</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>4,5</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi mathvariant="normal">m</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mo>,</m:mo>
+              </m:math>
+            </equation>
+            <newline/>mimo tego, że <m:math>
+            <m:mi>π</m:mi>
+            </m:math> podane jest z dokładnością do ośmiu cyfr znaczących.</item>
+            <item>
+              <emphasis effect="italics">W przypadku dodawania lub odejmowania wynik nie może mieć więcej cyfr po przecinku niż najmniej precyzyjny pomiar.</emphasis> Załóżmy, że w sklepie spożywczym kupujemy 7,56 kg ziemniaków – ważymy je przy pomocy wagi o precyzji 0,01 kg. W naszym laboratorium przy pomocy wagi o precyzji 0,001 kg odmierzamy 6,052 kg ziemniaków i zostawiamy je tam. Następnie wracamy do domu, skąd zabieramy 13,7 kg ziemniaków, zważonych przy pomocy wagi łazienkowej o precyzji 0,1 kg. Ile kilogramów ziemniaków mamy i ilu cyfr znaczących powinniśmy użyć przy formułowaniu odpowiedzi? Masę otrzymujemy dzięki prostemu dodawaniu i odejmowaniu:<newline/>
+                <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1168328171097" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mfenced><m:mrow><m:mrow><m:mn>7,56</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow><m:mo>−</m:mo><m:mrow><m:mn>6,052</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow></m:mrow></m:mfenced><m:mo>+</m:mo><m:mrow><m:mn>13,7</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>15,208</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">kg</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            (\SI{7,56}{\kilo\gram} - \SI{6,052}{\kilo\gram}) + \SI{13,7}{\kilo\gram} = \SI{15,208}{\kilo\gram} \text{.}</m:annotation></m:semantics></m:math></equation><newline/>Po dokonaniu obliczeń znajdujemy pomiar o najniższej precyzji: 13,7 kg. Wartość ta podana jest z dokładnością do jednego miejsca po przecinku, a więc wynik końcowy również powinien być podany z taką dokładnością. Zaokrąglamy otrzymany wcześniej wynik do części dziesiętnych i uzyskujemy 15,2 kg.</item>
+              </list>
+            </section>
+            <section id="fs-id1168328059075">
+              <title>Cyfry znaczące w tym podręczniku</title>
+              <para id="fs-id1168328071559">Większość liczb w tej książce podawana jest z dokładnością do trzech cyfr znaczących. Poza tym wszystkie wartości przedstawiane w danym przykładzie mają odpowiednią liczbę cyfr znaczących. Na przykład wynik podawany jest z dokładnością do trzech cyfr znaczących, ponieważ wartość początkowa również miała taką dokładność. Jeśli wartość początkowa ma mniej cyfr znaczących, wynik również będzie miał ich mniej. Liczba cyfr znaczących jest również odpowiednio dobrana do sytuacji. W przypadku niektórych dziedzin, zwłaszcza w optyce, potrzebne są liczby o wysokim stopniu precyzji. Jeżeli podana jest <emphasis effect="italics">dokładna</emphasis> wartość liczby, jak na przykład 2 we wzorze na obwód koła, <m:math>
+                <m:mi>C</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+                <m:mi>r</m:mi>
+              </m:math>, nie ma ona wpływu na liczbę cyfr znaczących wyniku. Przeliczniki, takie jak na przykład <m:math>
+              <m:mn>100</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">c</m:mi>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>1</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              </m:math>, są uznawane za wartości dokładne i również nie mają wpływu na liczbę cyfr znaczących wyniku.</para>
+            </section>
+          </section>
+          <section id="fs-id1168327942183" class="key-concepts">
+            <title>Podsumowanie</title>
+            <list id="fs-id1168328287488" list-type="bulleted" bullet-style="bullet">
+              <item>Dokładność pomiaru pozwala ocenić, w jakim stopniu uzyskana wartość zbliżona jest do wartości referencyjnej. Różnicę między tymi wartościami nazywamy błędem pomiaru.</item>
+              <item>Precyzja pomiaru pozwala ocenić stopień zgodności kolejnych zmierzonych wartości. Precyzja pomiaru jest związana z niepewnością pomiarową.</item>
+              <item>Precyzja przyrządu pomiarowego zależy od tego, jaka jest najmniejsza różnica między pomiarami. Im mniejsza różnica, tym bardziej precyzyjny przyrząd.</item>
+              <item>Cyfry znaczące określają precyzję przyrządu pomiarowego.</item>
+              <item>W przypadku mnożenia lub dzielenia zmierzonych wartości wynik końcowy nie może mieć więcej cyfr znaczących niż wartość o najniższym stopniu precyzji.</item>
+              <item>W przypadku dodawania lub odejmowania zmierzonych wartości liczba cyfr po przecinku wyniku końcowego nie może być większa niż liczba cyfr po przecinku wartości o najniższym stopniu precyzji.</item>
+            </list>
+          </section>
+          <section id="fs-id1168327957009" class="key-equations">
+            <title>Najważniejsze wzory</title>
+            <table id="fs-id1171240074559" class="unnumbered unstyled" summary="Tabela przedstawia wzór na obliczenie niepewności względnej. Niepewność względna jest równa delta A przez A razy 100 procent.">
+              <label/>
+              <tgroup cols="2">
+                <colspec colnum="1" colname="c1"/>
+                <colspec colnum="2" colname="c2"/>
+                <tbody>
+                  <row>
+                    <entry align="left">Niepewność względna</entry>
+                    <entry align="left">
+                      <m:math>
+                        <m:mtext>Niepewność względna</m:mtext>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">Δ</m:mi>
+                            <m:mi>A</m:mi>
+                          </m:mrow>
+                          <m:mi>A</m:mi>
+                        </m:mfrac>
+                        <m:mo>·</m:mo>
+                        <m:mn>100%</m:mn>
+                      </m:math>
+                    </entry>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table>
+          </section>
+          <section id="fs-id1168328294544" class="review-conceptual-questions">
+            <title>Pytania </title>
+            <exercise id="fs-id1168327923331"><problem id="fs-id1168327954045">
+                <para id="eip-idm510332624">Opisz następujące związki.
+<list id="fs-id1168328365189" list-type="enumerated" number-style="lower-alpha">
+                  <item> Opisz związek między precyzją i niepewnością pomiaru. </item>
+                  <item> Opisz związek między dokładnością a błędem pomiaru.</item>
+                </list></para>
+              </problem>
+              <solution id="fs-id1168328247310">
+                <list id="fs-id1168327948438" list-type="enumerated" number-style="lower-alpha">
+                  <item> Niepewność pomiarowa stanowi ilościową reprezentację precyzji. </item>
+                  <item> Błąd pomiaru stanowi ilościową reprezentację dokładności.</item>
+                </list>
+              </solution>
+            </exercise></section>
+          <section id="fs-id1168325631295" class="review-problems">
+            <title>Zadania</title>
+            <exercise id="fs-id1168327949034">
+              <problem id="fs-id1168328229974">
+                <para id="fs-id1168327924163">Rozważmy równanie <m:math>
+                  <m:mn>4000</m:mn>
+                  <m:mtext>/</m:mtext>
+                  <m:mn>400</m:mn>
+                  <m:mo>=</m:mo>
+                  <m:mn>10,0</m:mn>
+                  </m:math>. Co można powiedzieć o liczbie cyfr znaczących dzielnej i dzielnika, jeśli wiadomo, że liczba cyfr znaczących wyniku jest poprawna?</para>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1168328286258">
+                <problem id="fs-id1168328327887">
+                  <para id="fs-id1168327966053">Przypuśćmy, że ważysz się na wadze łazienkowej. Wskazuje ona pomiar 65 kg z niepewnością względną równą 3%. Jaka jest niepewność pomiarowa twojej wagi (w kilogramach)?</para>
+                </problem>
+                <solution id="fs-id1168328204121">
+                  <para id="fs-id1168327909173">2 kg</para>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1168328242872">
+                <problem id="fs-id1168327945421">
+                  <para id="fs-id1168327958874">Miarka dobrej jakości może wskazywać pomiar z niepewnością równą 0,50 cm na każde 20 m. Podaj niepewność względną.</para>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1168328329316">
+                <problem id="fs-id1168325667956">
+                  <para id="fs-id1168328361965">Serce niemowlęcia bije w tempie <m:math>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mn>130</m:mn>
+                        <m:mo>±</m:mo>
+                        <m:mn>5</m:mn>
+                      </m:mrow>
+                    </m:mfenced>
+                    </m:math> uderzeń na minutę. Jaka jest niepewność względna tego pomiaru?</para>
+                  </problem>
+                  <solution id="fs-id1168327876346">
+                    <para id="fs-id1168327878251">4%</para>
+                  </solution>
+                </exercise>
+                <exercise id="fs-id1168328196830">
+                  <problem id="fs-id1168328260685">
+                    <para id="fs-id1168327911517">Przypuśćmy, że serce człowieka bije średnio w tempie 72,0 uderzeń na minutę. Ile uderzeń wykona serce w ciągu: <list id="eip-idm829948368" list-type="enumerated" number-style="lower-alpha">
+                      <item> 2,0 lat; </item>
+                      <item> 2,00 lat; </item>
+                      <item> 2,000 lat. </item>
+                    </list>
+                  </para>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1168328064091">
+                <problem id="fs-id1168328071200">
+                  <para id="fs-id1168328064572">Puszka zawiera 375 ml coli. Ile napoju zostanie po wypiciu 308 ml?</para>
+                </problem>
+                <solution id="fs-id1168328295068">
+                  <para id="fs-id1168328197692">67 ml</para>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1168328167911">
+                <problem id="fs-id1168327928014">
+                  <para id="fs-id1168328260650">Z dokładnością do ilu cyfr znaczących powinny zostać przedstawione wyniki następujących obliczeń? <newline/>
+                    <list id="eip-idm424637120" list-type="enumerated" number-style="lower-alpha">
+                      <item>
+                        <m:math>
+                          <m:mn>106,7</m:mn>
+                          <m:mo>⋅</m:mo>
+                          <m:mn>98,2</m:mn>
+                          <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mrow>
+                              <m:mn>46,210</m:mn>
+                              <m:mo>⋅</m:mo>
+                              <m:mn>1,01</m:mn>
+                            </m:mrow>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                          </m:math>; </item>
+                          <item>
+                            <m:math>
+                              <m:msup>
+                                <m:mrow>
+                                  <m:mo>(</m:mo>
+                                  <m:mn>18,7</m:mn>
+                                  <m:mo>)</m:mo>
+                                </m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:msup>
+                              </m:math>; </item>
+                              <item>
+                                <m:math>
+                                  <m:mn>1,60</m:mn>
+                                  <m:mo>⋅</m:mo>
+                                  <m:msup>
+                                    <m:mn>10</m:mn>
+                                    <m:mrow>
+                                      <m:mo>−</m:mo>
+                                      <m:mn>19</m:mn>
+                                    </m:mrow>
+                                  </m:msup>
+                                  <m:mo>⋅</m:mo>
+                                  <m:mn>3712</m:mn>
+                                  </m:math>. </item>
+                                </list>
+                              </para>
+                            </problem>
+                          </exercise>
+                          <exercise id="fs-id1168327943766">
+                            <problem id="fs-id1168327957081">
+                              <list id="fs-id1168328229273" list-type="enumerated" number-style="lower-alpha">
+                                <item> Ile cyfr znaczących występuje w liczbach 99 i 100? </item>
+                                <item> Jeżeli niepewność pomiarowa każdej z liczb jest równa 1, jakie są ich niepewności względne? </item>
+                                <item> Z której metody określania dokładności lepiej skorzystać w tym przypadku: cyfr znaczących czy niepewności względnej?</item>
+                              </list>
+                            </problem>
+                            <solution id="fs-id1168327948324">
+                              <list id="fs-id1168328214735" list-type="enumerated" number-style="lower-alpha">
+                                <item> Liczba 99 ma 2 cyfry znaczące; 100 ma 3 cyfry znaczące; </item>
+                                <item> 1,00%; </item>
+                                <item> niepewności względnej.</item>
+                              </list>
+                            </solution>
+                          </exercise>
+                          <exercise id="fs-id1168328311438">
+                            <problem id="fs-id1168328311640">
+                              <list id="fs-id1168328329336" list-type="enumerated" number-style="lower-alpha">
+                                <item> Jeśli niepewność pomiarowa Twojego prędkościomierza jest równa 2,0 km/h przy wskazaniu 90 km/h, jaka jest niepewność względna? </item>
+                                <item> Jeśli niepewność względna jest taka sama przy wskazaniu 60 km/h, z jaką największą i najmniejszą prędkością możesz wtedy jechać? </item>
+                              </list>
+                            </problem>
+                          </exercise>
+                          <exercise id="fs-id1168327942624">
+                            <problem id="fs-id1168328226916">
+                              <list id="fs-id1168328205320" list-type="enumerated" number-style="lower-alpha">
+                                <item> Ciśnienie krwi człowieka jest równe <m:math>
+                                  <m:mrow>
+                                    <m:mo>(</m:mo>
+                                    <m:mrow>
+                                      <m:mn>120</m:mn>
+                                      <m:mo>±</m:mo>
+                                      <m:mn>2</m:mn>
+                                    </m:mrow>
+                                    <m:mo>)</m:mo>
+                                  </m:mrow>
+                                  <m:mspace width="0.2em"/>
+                                  <m:mrow>
+                                    <m:mi mathvariant="normal">m</m:mi>
+                                    <m:mi mathvariant="normal">m</m:mi>
+                                  </m:mrow>
+                                  <m:mspace width="0.2em"/>
+                                  <m:mrow>
+                                    <m:mi mathvariant="normal">H</m:mi>
+                                    <m:mi mathvariant="normal">g</m:mi>
+                                  </m:mrow>
+                                  </m:math>. Podaj niepewność względną. </item>
+                                  <item> Jaka jest niepewność pomiaru 80 mm Hg przy takiej samej niepewności względnej?</item>
+                                </list>
+                              </problem>
+                              <solution id="fs-id1168328222883">
+                                <list id="fs-id1168328329673" list-type="enumerated" number-style="lower-alpha">
+                                  <item> 2%; </item>
+                                  <item> 1 mm Hg.</item>
+                                </list>
+                              </solution>
+                            </exercise>
+                            <exercise id="fs-id1168328171083">
+                              <problem id="fs-id1168327869727">
+                                <para id="fs-id1168328295934">Pewna osoba mierzy sobie puls, licząc uderzenia serca przez 30 s. Jeżeli w ciągu <m:math>
+                                  <m:mo stretchy="false">(</m:mo>
+                                  <m:mn>30,0</m:mn>
+                                  <m:mo>±</m:mo>
+                                  <m:mn>0,5</m:mn>
+                                  <m:mo stretchy="false">)</m:mo>
+                                  <m:mspace width="0.2em"/>
+                                  <m:mrow>
+                                    <m:mi mathvariant="normal">s</m:mi>
+                                  </m:mrow>
+                                </m:math> naliczyła <m:math>
+                                <m:mfenced>
+                                  <m:mrow>
+                                    <m:mn>40</m:mn>
+                                    <m:mo>±</m:mo>
+                                    <m:mn>1</m:mn>
+                                  </m:mrow>
+                                </m:mfenced>
+                                </m:math> uderzeń, jaka jest prędkość bicia jej serca oraz niepewność pomiarowa w uderzeniach na minutę?</para>
+                              </problem>
+                            </exercise>
+                            <exercise id="fs-id1168328267903">
+                              <problem id="fs-id1168328187317">
+                                <para id="fs-id1168328245345">Oblicz pole powierzchni koła o średnicy 3,102 cm.</para>
+                              </problem>
+                              <solution id="fs-id1168328249411">
+                                <para id="fs-id1168328189782">
+                                  <m:math>
+                                    <m:mn>7,557</m:mn>
+                                    <m:mspace width="0.2em"/>
+                                    <m:mrow>
+                                      <m:mi mathvariant="normal">c</m:mi>
+                                      <m:msup>
+                                        <m:mi mathvariant="normal">m</m:mi>
+                                        <m:mn>2</m:mn>
+                                      </m:msup>
+                                    </m:mrow>
+                                  </m:math>
+                                </para>
+                              </solution>
+                            </exercise>
+                            <exercise id="fs-id1168328222416">
+                              <problem id="fs-id1168328260134">
+                                <para id="fs-id1168328323688">Określ liczbę cyfr znaczących w następujących wynikach pomiarów: <newline/>
+                                  <list id="eip-idm428923584" list-type="enumerated" number-style="lower-alpha">
+                                    <item> 0,0009; </item>
+                                    <item> 15 450,0; </item>
+                                    <item>
+                                      <m:math>
+                                        <m:mn>6</m:mn>
+                                        <m:mo>·</m:mo>
+                                        <m:msup>
+                                          <m:mn>10</m:mn>
+                                          <m:mn>3</m:mn>
+                                        </m:msup>
+                                        </m:math>; </item>
+                                        <item> 87,990; </item>
+                                        <item> 30,42. </item>
+                                      </list>
+                                    </para>
+                                  </problem>
+                                </exercise>
+                                <exercise id="fs-id1168328229571">
+                                  <problem id="fs-id1168327988158">
+                                    <para id="fs-id1168327958204">Wykonaj obliczenia i przedstaw wynik przy pomocy odpowiedniej liczby cyfr znaczących.<list id="eip-idm398132896" list-type="enumerated" number-style="lower-alpha">
+                                      <item> Pewna kobieta ma dwie torby o wadze 13,5 kg i jedną o wadze 10,2 kg. Jaka jest całkowita waga toreb? </item>
+                                      <item> Siła <m:math>
+                                        <m:mi>F</m:mi>
+                                      </m:math> działająca na ciało jest równa jego masie <m:math>
+                                      <m:mi>m</m:mi>
+                                    </m:math> pomożonej przez jego przyspieszenie <m:math>
+                                    <m:mi>a</m:mi>
+                                  </m:math>. Jeśli przyspieszenie wózka o masie 55 kg jest równe <m:math>
+                                  <m:mn>0,0255</m:mn>
+                                  <m:mspace width="0.2em"/>
+                                  <m:mrow>
+                                    <m:mi mathvariant="normal">m</m:mi>
+                                    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+                                    <m:msup>
+                                      <m:mi mathvariant="normal">s</m:mi>
+                                      <m:mn>2</m:mn>
+                                    </m:msup>
+                                  </m:mrow>
+                                  </m:math>, jaka siła działa na ten wózek? (Jednostką siły jest <emphasis effect="italics">niuton</emphasis> opisywany symbolem N.)</item>
+                                </list>
+                              </para>
+                            </problem>
+                            <solution id="fs-id1168328280169">
+                              <list id="fs-id1168328362071" list-type="enumerated" number-style="lower-alpha">
+                                <item> 37,2 kg; ponieważ liczba toreb jest wartością dokładną, nie ma ona wpływu na cyfry znaczące; </item>
+                                <item> 1,4 N; wartość początkowa 55 kg przedstawiona jest przy pomocy dwóch cyfr znaczących, więc wynik również musi być przedstawiony przy pomocy dwóch cyfr znaczących.</item>
+                              </list>
+                            </solution>
+                          </exercise>
+                        </section>
+                      </content>
+                      <glossary>
+                        <definition id="fs-id1168328355532">
+                          <term cmlnle:reference="dokładność" class="no-emphasis">dokładność (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">accuracy</term></foreign>)</term>
+                          <meaning id="fs-id1168328238378">określa, jak bardzo pomiar zbliżony jest do wartości referencyjnej</meaning>
+                        </definition>
+                        <definition id="fs-id1168328328497">
+                          <term cmlnle:reference="błąd pomiaru" class="no-emphasis">błąd pomiaru (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">discrepancy</term></foreign>)</term>
+                          <meaning id="fs-id1168327873821">różnica między wartością zmierzoną a wartością oczekiwaną lub znanym standardem</meaning>
+                        </definition>
+                        <definition id="fs-id1168328237292">
+                          <term cmlnle:reference="metoda dodawania niepewności procentowych" class="no-emphasis">metoda dodawania niepewności procentowych (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">method of adding percents</term></foreign>)</term>
+                          <meaning id="fs-id1168327931285">niepewność względna wartości obliczonej na podstawie mnożenia lub dzielenia jest sumą niepewności względnych poszczególnych wartości użytych podczas obliczeń</meaning>
+                        </definition>
+                        <definition id="fs-id1168327927708">
+                          <term cmlnle:reference="niepewność względna" class="no-emphasis">niepewność względna (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">relative uncertainty</term></foreign>)</term>
+                          <meaning id="fs-id1168328290905">stosunek niepewności pomiaru do wartości tego pomiaru; przedstawiana jest w procentach</meaning>
+                        </definition>
+                        <definition id="fs-id1168328286055">
+                          <term cmlnle:reference="precyzja " class="no-emphasis">precyzja (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">precision</term></foreign>)</term>
+                          <meaning id="fs-id1168328357317">określa, w jakim stopniu różnią się od siebie kolejne pomiary wykonywane w tych samych warunkach</meaning>
+                        </definition>
+                        <definition id="fs-id1168327925704">
+                          <term cmlnle:reference="cyfry znaczące" class="no-emphasis">cyfry znaczące (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">significant figures</term></foreign>)</term>
+                          <meaning id="fs-id1168328367297">ich liczba świadczy o precyzji pomiaru</meaning>
+                        </definition>
+                        <definition id="fs-id1168328241816">
+                          <term cmlnle:reference="niepewność pomiarowa" class="no-emphasis">niepewność pomiarowa (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">uncertainty</term></foreign>)</term>
+                          <meaning id="fs-id1168328329079">liczba mówiąca o tym, jak bardzo poszczególne pomiary różnią się między sobą</meaning>
+                        </definition>
+                      </glossary>
+                    </document>

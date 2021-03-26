@@ -1,0 +1,4441 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Atom wodoru</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m68285</md:content-id>
+  <md:title>Atom wodoru</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>opisywać atom wodoru, używając funkcji falowej, gęstości prawdopodobieństwa, całkowitej energii i orbitalnego momentu pędu;</item>
+<item>fizycznego znaczenia każdej z liczb kwantowych (<m:math><m:mrow><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>l</m:mi><m:mo>,</m:mo><m:msub><m:mi>m</m:mi><m:mi>l</m:mi></m:msub></m:mrow></m:math>) atomu wodoru;</item>
+<item>rozróżniać opisy Bohra i Schrödingera atomu wodoru;</item>
+<item>stosować liczby kwantowe do otrzymania istotnych informacji dotyczących atomu wodoru.</item>
+</list></md:abstract>
+  <md:uuid>8d9bcd60-3e2e-43de-80ab-147977b3c6ed</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1170901592759">Atom wodoru jest najprostszym atomem w przyrodzie, a więc jest dobrym punktem wyjścia do badania atomów i ich struktury. Atom wodoru składa się z pojedynczego, ujemnie naładowanego elektronu, który krąży wokół dodatnio naładowanego protonu (<link target-id="CNX_UPhysics_41_01_HydAtom"/>). W modelu Bohra elektron porusza się wokół protonu po idealnie kołowej orbicie na skutek działania przyciągającej siły Coulomba. Ponieważ proton ma masę około <m:math display="inline">
+    <m:mn>1800</m:mn>
+    </m:math> razy większą niż elektron, porusza się on znacznie słabiej pod wpływem siły pochodzącej od elektronu (analogicznie do układu Ziemia–Słońce, w którym Słońce porusza się nieznacznie w reakcji na siłę wywieraną na nie przez Ziemię). Wyjaśnienie tego efektu za pomocą prawa Newtona jest podane w rozdziale <link class="target-chapter" document="m65889">Fotony i fale materii</link>.</para>
+    <figure id="CNX_UPhysics_41_01_HydAtom">
+      <media id="fs-id1170901570588" alt="Model Bohra atomu wodoru zakłada, że atom posiada proton o ładunku q = plus e, zlokalizowany w środku i elektron o ładunku q = minus e, umieszczony na orbicie, w której środku leży proton.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_41_01_HydAtom.jpg"/>
+      </media>
+      <caption>Przedstawienie modelu Bohra dla atomu wodoru.</caption>
+    </figure>
+    <para id="fs-id1170901568193">Przy założeniu, że proton jest nieruchomy, skupimy się na ruchu elektronu. W polu elektrycznym protonu funkcja energii potencjalnej elektronu ma postać</para>
+    <equation id="fs-id1170903082088">
+      <m:math display="block">
+        <m:mrow>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mtext>p</m:mtext>
+          </m:msub>
+          <m:mo>⁡</m:mo>
+          <m:mfenced>
+            <m:mi>r</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mi>k</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mfrac>
+              <m:msup>
+                <m:mi>e</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mi>r</m:mi>
+            </m:mfrac>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="fs-id1170902902294">gdzie <m:math display="inline"><m:semantics><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mfenced><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfenced></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            k=1/(4\pi\epsilon_0)</m:annotation></m:semantics></m:math>, a <m:math display="inline">
+    <m:mi>r</m:mi>
+    </m:math> jest odległością pomiędzy elektronem i protonem. Jak stwierdziliśmy wcześniej, siła działająca na ciało w polu potencjalnym jest równa ujemnemu gradientowi energii potencjalnej. W przypadku atomu wodoru siła pomiędzy elektronem a protonem jest przyciągającą siłą Coulomba.</para>
+    <para id="fs-id1170902719456">Należy zauważyć, że energia potencjalna <m:math display="inline">
+      <m:msub>
+        <m:mi>E</m:mi>
+        <m:mtext>p</m:mtext>
+      </m:msub>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>r</m:mi>
+      </m:mfenced>
+    </m:math> nie zmienia się w czasie. W rezultacie równanie Schrödingera atomu wodoru redukuje się do dwóch prostych równań: jedno z nich zależy tylko od zmiennych przestrzennych <m:math display="inline">
+    <m:mfenced>
+      <m:mi>x</m:mi>
+      <m:mi>y</m:mi>
+      <m:mi>z</m:mi>
+    </m:mfenced>
+  </m:math>, a drugie tylko od czasu (<m:math display="inline">
+  <m:mi>t</m:mi>
+  </m:math>). (Rozdzielenie funkcji falowej na część zależną tylko od zmiennych przestrzennych i część zależną od czasu w przypadku niezależnej od czasu energii potencjalnej zostało omówione w rozdziale <link class="target-chapter" document="m67253">Mechanika kwantowa</link>). Będzie nas obecnie interesować równanie Schrödingera zależne wyłącznie od zmiennych przestrzennych</para>
+  <equation id="fs-id1170903052286">
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:msup>
+                    <m:mi>ℏ</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mtext>e</m:mtext>
+                  </m:msub>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mo>∂</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mi>ψ</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo>∂</m:mo>
+                      <m:msup>
+                        <m:mi>x</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>+</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mo>∂</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mi>ψ</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo>∂</m:mo>
+                      <m:msup>
+                        <m:mi>y</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>+</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mo>∂</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mi>ψ</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo>∂</m:mo>
+                      <m:msup>
+                        <m:mi>z</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mfenced>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mrow>
+              <m:mi>k</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:msup>
+                  <m:mi>e</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mi>r</m:mi>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mi>ψ</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mi>E</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>ψ</m:mi>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \frac{-\hbar^2}{2m_{\text{e}}} (\frac{\partial^2\psi}{\partial x^2}+\frac{\partial^2\psi}{\partial y^2}+\frac{\partial^2\psi}{\partial z^2})-k\frac{e^2}{r}\psi=E\psi\text{,}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+  <para id="fs-id1170903065210">gdzie <m:math display="inline">
+    <m:mi>ψ</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>ψ</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>x</m:mi>
+        <m:mi>y</m:mi>
+        <m:mi>z</m:mi>
+      </m:mfenced>
+    </m:mrow>
+  </m:math> jest funkcją falową elektronu w trójwymiarowej przestrzeni, <m:math display="inline">
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mtext>e</m:mtext>
+  </m:msub>
+</m:math> oznacza masę elektronu, a <m:math display="inline">
+<m:mi>E</m:mi>
+</m:math> – jego całkowitą energię. Przypomnijmy jedynie, że całkowita funkcja falowa <m:math display="inline">
+<m:mi mathvariant="normal">Ψ</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi mathvariant="normal">Ψ</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>x</m:mi>
+    <m:mi>y</m:mi>
+    <m:mi>z</m:mi>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+</m:mrow>
+</m:math> jest iloczynem przestrzennej funkcji falowej <m:math display="inline">
+<m:mi>ψ</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi>ψ</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>x</m:mi>
+    <m:mi>y</m:mi>
+    <m:mi>z</m:mi>
+  </m:mfenced>
+</m:mrow>
+</m:math> i funkcji falowej zależnej od czasu <m:math display="inline">
+<m:mi>ϕ</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi>ϕ</m:mi>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>t</m:mi>
+  </m:mfenced>
+</m:mrow>
+</m:math>.</para>
+<para id="fs-id1170902893842">Dodatkowo, niezależna od czasu energia potencjalna <m:math display="inline">
+  <m:msub>
+    <m:mi>E</m:mi>
+    <m:mtext>p</m:mtext>
+  </m:msub>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>r</m:mi>
+  </m:mfenced>
+</m:math> jest funkcją sferycznie symetryczną. To sugeruje, że możemy rozwiązać równanie Schrödingera łatwiej, jeśli wprowadzimy współrzędne sferyczne <m:math display="inline">
+<m:mfenced>
+  <m:mi>r</m:mi>
+  <m:mi>θ</m:mi>
+  <m:mi>ϕ</m:mi>
+</m:mfenced>
+</m:math> zamiast współrzędnych prostokątnych <m:math display="inline">
+<m:mfenced>
+  <m:mi>x</m:mi>
+  <m:mi>y</m:mi>
+  <m:mi>z</m:mi>
+</m:mfenced>
+</m:math>. Układ współrzędnych sferycznych jest przedstawiony na <link target-id="CNX_UPhysics_41_01_SphCoord" cmlnle:case="locative"/>. W układzie tym zmienna <m:math display="inline">
+<m:mi>r</m:mi>
+</m:math> jest współrzędną radialną, równą odległości punktu P od początku układu, współrzędna <m:math display="inline">
+<m:mi>θ</m:mi>
+</m:math> jest kątem polarnym (względem pionowej osi <m:math display="inline">
+<m:mi>z</m:mi>
+</m:math>), a <m:math display="inline">
+<m:mi>ϕ</m:mi>
+</m:math> jest kątem azymutalnym (względem osi <m:math display="inline">
+<m:mi>x</m:mi>
+</m:math>). Zależność pomiędzy współrzędnymi sferycznymi oraz współrzędnymi prostokątnymi ma postać <m:math display="inline">
+<m:mi>x</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi>r</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mrow>
+    <m:mo>sin</m:mo>
+    <m:mrow>
+      <m:mi>θ</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>cos</m:mo>
+        <m:mi>ϕ</m:mi>
+      </m:mrow>
+    </m:mrow>
+  </m:mrow>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:mi>y</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi>r</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mrow>
+    <m:mo>sin</m:mo>
+    <m:mrow>
+      <m:mi>θ</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>sin</m:mo>
+        <m:mi>ϕ</m:mi>
+      </m:mrow>
+    </m:mrow>
+  </m:mrow>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:mi>z</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi>r</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mrow>
+    <m:mo>cos</m:mo>
+    <m:mi>θ</m:mi>
+  </m:mrow>
+</m:mrow>
+</m:math>.</para>
+<figure id="CNX_UPhysics_41_01_SphCoord">
+  <media id="fs-id1170902793872" alt="Układ współrzędnych x y z, wraz z punktem P i wektorem wodzącym r punktu P. Na rysunku współrzędne punktu P są dodatnie. Wektor r jest nachylony pod kątem teta do osi z. Jego rzut na płaszczyznę x y tworzy kąt teta z dodatnią półosią x.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_41_01_SphCoord.jpg"/>
+  </media>
+  <caption>Związek pomiędzy sferycznym układem współrzędnych i prostokątnym układem współrzędnych.</caption>
+</figure>
+<para id="fs-id1170903095566">Współczynnik <m:math display="inline">
+  <m:mi>r</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mrow>
+    <m:mo>sin</m:mo>
+    <m:mi>θ</m:mi>
+  </m:mrow>
+</m:math> jest wartością rzutu wektora na płaszczyznę <m:math display="inline">
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>y</m:mi>
+</m:math>. Współrzędne <m:math display="inline">
+<m:mi>x</m:mi>
+</m:math> i <m:math display="inline">
+<m:mi>y</m:mi>
+</m:math> otrzymuje się, rzutując ten wektor odpowiednio na osie <m:math display="inline">
+<m:mi>x</m:mi>
+</m:math> i <m:math display="inline">
+<m:mi>y</m:mi>
+</m:math>. Odwrotna transformacja daje</para>
+<equation id="fs-id1170903139998" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mi>r</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msqrt>
+        <m:msup>
+          <m:mi>x</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo>
+        <m:msup>
+          <m:mi>y</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo>
+        <m:msup>
+          <m:mi>z</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:msqrt>
+      <m:mo>⁢</m:mo>
+      <m:mtext>, </m:mtext>
+      <m:mo>⁢</m:mo>
+      <m:mi>θ</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>arc cos</m:mo>
+      <m:mrow>
+        <m:mfenced>
+          <m:mfrac>
+            <m:mi>z</m:mi>
+            <m:mi>r</m:mi>
+          </m:mfrac>
+        </m:mfenced>
+        <m:mo>⁢</m:mo>
+        <m:mtext>, </m:mtext>
+        <m:mo>⁢</m:mo>
+        <m:mi>ϕ</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>arc cos</m:mo>
+      <m:mrow>
+        <m:mfenced>
+          <m:mfrac>
+            <m:mi>x</m:mi>
+            <m:msqrt>
+              <m:msup>
+                <m:mi>x</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:msup>
+                <m:mi>y</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:msqrt>
+          </m:mfrac>
+        </m:mfenced>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1170903044398">Równanie falowe Schrödingera dla atomu wodoru we współrzędnych sferycznych można znaleźć w bardziej zaawansowanych podręcznikach fizyki współczesnej i nie będziemy rozpatrywać go tutaj szczegółowo. Jednakże można pokazać, że ze względu na symetrię sferyczną <m:math display="inline">
+  <m:msub>
+    <m:mi>E</m:mi>
+    <m:mtext>p</m:mtext>
+  </m:msub>
+  <m:mo>⁡</m:mo>
+  <m:mfenced>
+    <m:mi>r</m:mi>
+  </m:mfenced>
+</m:math> równanie to sprowadza się do trzech prostych równań – dla każdej z trzech współrzędnych <m:math display="inline">
+<m:mi>r</m:mi>
+</m:math>, <m:math display="inline">
+<m:mi>θ</m:mi>
+</m:math> i <m:math display="inline">
+<m:mi>ϕ</m:mi>
+</m:math>. Rozwiązania dla funkcji falowej niezależnej od czasu zapisywane są jako iloczyn trzech funkcji</para>
+<equation id="fs-id1170902913459" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:mi>ψ</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>r</m:mi>
+        <m:mi>θ</m:mi>
+        <m:mi>ϕ</m:mi>
+      </m:mfenced>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mi>R</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>r</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mi>Θ</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>θ</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mi>Φ</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mfenced>
+          <m:mi>ϕ</m:mi>
+        </m:mfenced>
+      </m:mrow>
+      <m:mtext>,</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1170902898644">gdzie <m:math display="inline">
+  <m:mi>R</m:mi>
+</m:math> to funkcja radialna, zależna jedynie od współrzędnej radialnej <m:math display="inline">
+<m:mi>r</m:mi>
+</m:math>; <m:math display="inline">
+<m:mi>Θ</m:mi>
+</m:math> jest funkcją polarną, zależną jedynie od współrzędnej polarnej <m:math display="inline">
+<m:mi>θ</m:mi>
+</m:math>; a <m:math display="inline">
+<m:mi>Φ</m:mi>
+</m:math> jest funkcją jedynie azymutalnej współrzędnej <m:math display="inline">
+<m:mi>ϕ</m:mi>
+</m:math>. Dopuszczalne rozwiązania równania Schrödingera <m:math display="inline">
+<m:mi>ψ</m:mi>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>r</m:mi>
+  <m:mi>θ</m:mi>
+  <m:mi>ϕ</m:mi>
+</m:mfenced>
+</m:math> numerowane są liczbami kwantowymi <m:math display="inline">
+<m:mi>n</m:mi>
+</m:math>, <m:math display="inline">
+<m:mi>l</m:mi>
+</m:math>, i <m:math display="inline">
+<m:msub>
+  <m:mi>m</m:mi>
+  <m:mi>l</m:mi>
+</m:msub>
+</m:math>
+</para>
+<equation id="fs-id1170901533514" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mtable>
+      <m:mtr>
+        <m:mtd columnalign="left">
+          <m:mrow>
+            <m:mi>n</m:mi>
+            <m:mo>:</m:mo>
+          </m:mrow>
+        </m:mtd>
+        <m:mtd/>
+        <m:mtd columnalign="left">
+          <m:mrow>
+            <m:mtext>główna liczba kwantowa,</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd columnalign="left">
+          <m:mrow>
+            <m:mi>l</m:mi>
+            <m:mo>:</m:mo>
+          </m:mrow>
+        </m:mtd>
+        <m:mtd/>
+        <m:mtd columnalign="left">
+          <m:mrow>
+            <m:mtext>poboczna (orbitalna) liczba kwantowa,</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd columnalign="left">
+          <m:mrow>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mi>l</m:mi>
+            </m:msub>
+            <m:mo>:</m:mo>
+          </m:mrow>
+        </m:mtd>
+        <m:mtd/>
+        <m:mtd columnalign="left">
+          <m:mrow>
+            <m:mtext>magnetyczna liczba kwantowa.</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation>
+<para id="fs-id1170902666863">Uzasadnienia tych nazw zostaną podane w następnym rozdziale. Funkcja radialna <m:math display="inline">
+  <m:mi>R</m:mi>
+</m:math> zależy tylko od <m:math display="inline">
+<m:mi>n</m:mi>
+</m:math> i <m:math display="inline">
+<m:mi>l</m:mi>
+</m:math>, funkcja polarna <m:math display="inline">
+<m:mi>Θ</m:mi>
+</m:math> zależy tylko od <m:math display="inline">
+<m:mi>l</m:mi>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>m</m:mi>
+  <m:mi>l</m:mi>
+</m:msub>
+</m:math>, a funkcja <m:math display="inline">
+<m:mi>Φ</m:mi>
+</m:math> tylko od <m:math display="inline">
+<m:msub>
+  <m:mi>m</m:mi>
+  <m:mi>l</m:mi>
+</m:msub>
+</m:math>. Zależności poszczególnych funkcji od liczb kwantowych są oznaczone indeksami</para>
+<equation id="fs-id1170901741972" class="unnumbered">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:msub>
+            <m:mi>ψ</m:mi>
+            <m:mfenced close="" open="" separators="⁣">
+              <m:mi>n</m:mi>
+              <m:mi>l</m:mi>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mi>l</m:mi>
+              </m:msub>
+            </m:mfenced>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mfenced>
+            <m:mi>r</m:mi>
+            <m:mi>θ</m:mi>
+            <m:mi>ϕ</m:mi>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mfenced close="" open="" separators="⁣">
+              <m:mi>n</m:mi>
+              <m:mi>l</m:mi>
+            </m:mfenced>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mfenced>
+            <m:mi>r</m:mi>
+          </m:mfenced>
+          <m:mo>⁢</m:mo>
+          <m:msub>
+            <m:mi>Θ</m:mi>
+            <m:mfenced close="" open="" separators="⁣">
+              <m:mi>l</m:mi>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mi>l</m:mi>
+              </m:msub>
+            </m:mfenced>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mfenced>
+            <m:mi>θ</m:mi>
+          </m:mfenced>
+          <m:mo>⁢</m:mo>
+          <m:msub>
+            <m:mi>Φ</m:mi>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mi>l</m:mi>
+            </m:msub>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mfenced>
+            <m:mi>ϕ</m:mi>
+          </m:mfenced>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_{n\sep l\sep m_l} (r, \theta, \phi) = R_{n\sep l} (r) \Theta_{l\sep m_l} (\theta) \Phi_{m_l} (\phi) \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170902925786">Nie wszystkie zestawy liczb kwantowych <m:math display="inline">
+  <m:mfenced>
+    <m:mi>n</m:mi>
+    <m:mi>l</m:mi>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mi>l</m:mi>
+    </m:msub>
+  </m:mfenced>
+</m:math> są możliwe. Na przykład orbitalna liczba kwantowa <m:math display="inline">
+<m:mi>l</m:mi>
+</m:math> nie może być większa ani równa głównej liczbie kwantowej <m:math display="inline">
+<m:semantics>
+  <m:mi>n</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n</m:annotation>
+</m:semantics>
+</m:math> (<m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>l</m:mi>
+    <m:mo>&lt;</m:mo>
+    <m:mi>n</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> l&lt;n</m:annotation>
+</m:semantics>
+</m:math>). Możliwe wartości liczb kwantowych wynoszą</para>
+<equation id="fs-id1170902660979" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:semantics>
+      <m:semantics><m:mtable columnalign="right left" columnspacing="0px" displaystyle="true"><m:mtr><m:mtd>
+            <m:mfenced close="" open="">
+              <m:mrow>
+                <m:mi>n</m:mi>
+                </m:mrow></m:mfenced></m:mtd><m:mtd><m:mfenced close="" open=""><m:mrow><m:mo form="infix">=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow><m:mn>2</m:mn>
+              <m:mn>3</m:mn>
+              <m:mi>…</m:mi>
+            </m:mfenced></m:mtd></m:mtr><m:mtr><m:mtd>
+            <m:mfenced close="" open="">
+              <m:mrow>
+                <m:mi>l</m:mi>
+                </m:mrow></m:mfenced></m:mtd><m:mtd><m:mfenced close="" open=""><m:mrow><m:mo form="infix">=</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow><m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+              <m:mi>…</m:mi>
+              <m:mrow><m:mi>n</m:mi>
+                <m:mo>−</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow></m:mfenced></m:mtd></m:mtr><m:mtr><m:mtd>
+            <m:mfenced close="" open="">
+              <m:mrow>
+                <m:msub><m:mi>m</m:mi>
+                  <m:mi>l</m:mi>
+                </m:msub></m:mrow></m:mfenced></m:mtd><m:mtd><m:mfenced close="" open=""><m:mrow><m:mo form="infix">=</m:mo>
+                <m:mrow><m:mo>−</m:mo>
+                  <m:mi>l</m:mi>
+                </m:mrow></m:mrow><m:mrow><m:mrow><m:mo>−</m:mo>
+                  <m:mi>l</m:mi>
+                </m:mrow><m:mo>+</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow><m:mi>…</m:mi>
+              <m:mn>0</m:mn>
+              <m:mi>…</m:mi>
+              <m:mrow><m:mrow><m:mo>+</m:mo>
+                  <m:mi>l</m:mi>
+                </m:mrow><m:mo>−</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow><m:mrow><m:mo>+</m:mo>
+                <m:mrow><m:mi>l</m:mi>
+                  <m:mtext>.</m:mtext>
+                </m:mrow></m:mrow></m:mfenced></m:mtd></m:mtr></m:mtable><m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mtable>
+        <m:mtr>
+          <m:mtd>
+            <m:mfenced close="" open="">
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:maligngroup/>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mn>2</m:mn>
+              <m:mn>3</m:mn>
+              <m:mi>…</m:mi>
+            </m:mfenced>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mfenced close="" open="">
+              <m:mrow>
+                <m:mi>l</m:mi>
+                <m:maligngroup/>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+              <m:mi>…</m:mi>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>−</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:mfenced>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mfenced close="" open="">
+              <m:mrow>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mi>l</m:mi>
+                </m:msub>
+                <m:maligngroup/>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mi>l</m:mi>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mi>l</m:mi>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mi>…</m:mi>
+              <m:mn>0</m:mn>
+              <m:mi>…</m:mi>
+              <m:mrow>
+                <m:mrow>
+                  <m:mo>+</m:mo>
+                  <m:mi>l</m:mi>
+                </m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>+</m:mo>
+                <m:mrow>
+                  <m:mi>l</m:mi>
+                  <m:mtext>.</m:mtext>
+                </m:mrow>
+              </m:mrow>
+            </m:mfenced>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:annotation-xml></m:semantics><m:annotation encoding="application/vnd.katalysteducation.mathtex"> \begin{align} n &amp;= 1, 2, 3, \dots \\ l &amp;= 0, 1, 2, \dots, n-1 \\ m_l &amp;= -l, -l+1, \dots, 0, \dots, +l-1, +l \text{.} \end{align}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170901578315">Dla stanu podstawowego (stanu o najniższej energii) <m:math display="inline">
+  <m:mi>n</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>1</m:mn>
+</m:math>, <m:math display="inline">
+<m:mi>l</m:mi>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>m</m:mi>
+  <m:mi>l</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>. Jest tylko jeden taki stan kwantowy; funkcją falową dla <m:math display="inline">
+<m:mi>n</m:mi>
+<m:mo>=</m:mo>
+<m:mn>1</m:mn>
+</m:math> jest <m:math display="inline">
+<m:msub>
+  <m:mi>ψ</m:mi>
+  <m:mn>100</m:mn>
+</m:msub>
+</m:math>. Natomiast w przypadku <m:math display="inline">
+<m:mi>n</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+</m:math> mamy</para>
+<equation id="fs-id1170902941717" class="unnumbered">
+  <m:math display="block">
+    <m:semantics>
+      <m:semantics><m:mtable columnalign="right left" columnspacing="0px" displaystyle="true"><m:mtr><m:mtd>
+            <m:mi>l</m:mi>
+            </m:mtd><m:mtd><m:mo form="infix">=</m:mo>
+            <m:mrow><m:mn>0</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mtext>, </m:mtext>
+              <m:mo>⁢</m:mo>
+              <m:msub><m:mi>m</m:mi>
+                <m:mi>l</m:mi>
+              </m:msub></m:mrow><m:mo>=</m:mo>
+            <m:mrow><m:mn>0</m:mn>
+              <m:mtext>,</m:mtext>
+            </m:mrow></m:mtd></m:mtr><m:mtr><m:mtd>
+            <m:mfenced close="" open="">
+              <m:mrow>
+                <m:mi>l</m:mi>
+                </m:mrow></m:mfenced></m:mtd><m:mtd><m:mfenced close="" open=""><m:mrow><m:mo form="infix">=</m:mo>
+                <m:mrow><m:mn>1</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mtext>, </m:mtext>
+                  <m:mo>⁢</m:mo>
+                  <m:msub><m:mi>m</m:mi>
+                    <m:mi>l</m:mi>
+                  </m:msub></m:mrow><m:mo>=</m:mo>
+                <m:mn>-1</m:mn>
+              </m:mrow><m:mn>0</m:mn>
+              <m:mrow><m:mn>1</m:mn>
+                <m:mtext>.</m:mtext>
+              </m:mrow></m:mfenced></m:mtd></m:mtr></m:mtable><m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mtable>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>l</m:mi>
+            <m:maligngroup/>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>0</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mtext>, </m:mtext>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mi>l</m:mi>
+              </m:msub>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>0</m:mn>
+              <m:mtext>,</m:mtext>
+            </m:mrow>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mfenced close="" open="">
+              <m:mrow>
+                <m:mi>l</m:mi>
+                <m:maligngroup/>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:mtext>, </m:mtext>
+                  <m:mo>⁢</m:mo>
+                  <m:msub>
+                    <m:mi>m</m:mi>
+                    <m:mi>l</m:mi>
+                  </m:msub>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mn>-1</m:mn>
+              </m:mrow>
+              <m:mn>0</m:mn>
+              <m:mrow>
+                <m:mn>1</m:mn>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mfenced>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      </m:annotation-xml></m:semantics><m:annotation encoding="application/vnd.katalysteducation.mathtex"> \begin{align} l &amp;= 0 \text{, } m_l=0 \text{,} \\ l &amp;= 1 \text{, } m_l=-1, 0, 1 \text{.} \end{align}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170901800555">Dlatego dla stanu <m:math display="inline">
+  <m:mi>n</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>2</m:mn>
+</m:math> dozwolone są stany <m:math display="inline">
+<m:msub>
+  <m:mi>ψ</m:mi>
+  <m:mn>200</m:mn>
+</m:msub>
+</m:math>, <m:math display="inline">
+<m:msub>
+  <m:mi>ψ</m:mi>
+  <m:mrow>
+    <m:mn>21</m:mn>
+    <m:mo>−</m:mo>
+    <m:mn>1</m:mn>
+  </m:mrow>
+</m:msub>
+</m:math>, <m:math display="inline">
+<m:msub>
+  <m:mi>ψ</m:mi>
+  <m:mn>210</m:mn>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>ψ</m:mi>
+  <m:mn>211</m:mn>
+</m:msub>
+</m:math>. Przykładowe funkcje falowe dla atomu wodoru podano w <link target-id="fs-id1170901599432" cmlnle:case="locative"/>. Należy zauważyć, że niektóre z tych wyrażeń zawierają symbol <m:math display="inline">
+<m:mi>i</m:mi>
+</m:math>, który reprezentuje <m:math display="inline">
+<m:msqrt>
+  <m:mn>-1</m:mn>
+</m:msqrt>
+</m:math>, jednakże gdy funkcje falowe zostaną wykorzystane do obliczania odpowiednich prawdopodobieństw, w ostatecznym rozwiązaniu nie pojawią się liczby zespolone.</para>
+<table id="fs-id1170901599432" summary="Tabela posiada 2 kolumn i 5 wierszy. Pierwsza kolumna zawiera kolejno następujące wartości liczb kwantowych n, l, m: wiersz 1, “n=1, l=0, m sub l = 0,” wiersz 2, “n=2, l=0, m sub l = 0,” wiersz 3, “n=2, l=1, m sub l = -1”, wiersz 4, “n=2, l=1, m sub l = 0”, wiersz 5, “n=2, l=1, m sub l = 1”. Druga kolumna podaje odpowiadające im funkcje falowe. Każda funkcja falowa posiada kilka czynników: wielokrotności of jeden przez pierwiastek z pi, jeden przez a sub 0 do potęgi trzy drugie, wielomian od r oraz czynnik wykładniczy e do r przez a sub 0 lub przez 2 a sub 0. Niektóre funkcje falowe zawierają również sin lub cos theta a niektóre posiadają e do plus lub minus i phi. Zawartość kolejnych wierszy kolumny drugiej jest następująca: wiersz 1, psi sub 1 0 0 równa się 1 przez pierwiastek z pi, jeden przez a sub 0 do trzech drugich, e do minus r przez a sub 0. Wiersz 2, psi sub 2 0 0 równa się 1 przez 4 pierwiastek z 2 pi, jeden przez a sub 0 do potęgi trzy drugie, wielomian 2 minus r przez a sub 0, exp e do minus r przez 2 a sub 0. Wiersz 3, psi sub 2 1 -1 równa się 1 przez 8 pierwiastek z pi, jeden przez a sub 0 do trzech drugich, wielomian r przez a sub 0, exp e do minus r przez 2 a sub 0, sin theta, całość razy e do i phi. Wiersz 4, psi sub 2 1 0 równa się 1 przez 4 pierwiastek z 2 pi, jeden przez a sub 0 do trzech drugich, wielomian r przez a sub 0, exp e do minus r przez 2 a sub 0, cos theta. Wiersz 5, psi sub 2 1 1 równa się 1 przez 8 pierwiastek pi, jeden przez a sub 0 do potęgi trzy drugie, wielomian r przez a sub 0, exp e do minus r przez 2 a sub 0, sin theta, całość razy e do i phi.">
+  <title>Funkcje falowe atomu wodoru.</title>
+  <tgroup cols="2">
+    <colspec colnum="1" colname="c1"/>
+    <colspec colnum="2" colname="c2"/>
+    <tbody>
+      <row valign="top">
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mfenced open="" close="">
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>l</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mi>l</m:mi>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+            </m:mfenced>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:msub>
+              <m:mi>ψ</m:mi>
+              <m:mn>100</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msqrt>
+                  <m:mi>π</m:mi>
+                </m:msqrt>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msubsup>
+                  <m:mi>a</m:mi>
+                  <m:mn>0</m:mn>
+                  <m:mrow>
+                    <m:mn>3</m:mn>
+                    <m:mo>∕</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:msubsup>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:msup>
+                <m:mi>e</m:mi>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mi>r</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                </m:mrow>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mfenced open="" close="">
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>2</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>l</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mi>l</m:mi>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+            </m:mfenced>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:msub>
+              <m:mi>ψ</m:mi>
+              <m:mn>200</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:mn>4</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:msqrt>
+                    <m:mn>2</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>π</m:mi>
+                  </m:msqrt>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msubsup>
+                  <m:mi>a</m:mi>
+                  <m:mn>0</m:mn>
+                  <m:mrow>
+                    <m:mn>3</m:mn>
+                    <m:mo>∕</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:msubsup>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo>−</m:mo>
+                  <m:mfrac>
+                    <m:mi>r</m:mi>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mfenced>
+              <m:mo>⁢</m:mo>
+              <m:msup>
+                <m:mi>e</m:mi>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mi>r</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mfenced>
+                  </m:mrow>
+                </m:mrow>
+              </m:msup>
+            </m:mrow>
+          </m:math>
+        </entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mfenced open="" close="">
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>2</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>l</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mi>l</m:mi>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>-1</m:mn>
+              </m:mrow>
+            </m:mfenced>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:msub>
+              <m:mi>ψ</m:mi>
+              <m:mrow>
+                <m:mn>21</m:mn>
+                <m:mo>−</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:mn>8</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:msqrt>
+                    <m:mi>π</m:mi>
+                  </m:msqrt>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msubsup>
+                  <m:mi>a</m:mi>
+                  <m:mn>0</m:mn>
+                  <m:mrow>
+                    <m:mn>3</m:mn>
+                    <m:mo>∕</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:msubsup>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mi>r</m:mi>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:msup>
+                <m:mi>e</m:mi>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mi>r</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mfenced>
+                  </m:mrow>
+                </m:mrow>
+              </m:msup>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo>sin</m:mo>
+                <m:mrow>
+                  <m:mi>θ</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msup>
+                    <m:mi>e</m:mi>
+                    <m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mrow>
+                        <m:mi>i</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>ϕ</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mfenced open="" close="">
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>2</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>l</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mi>l</m:mi>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+            </m:mfenced>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:msub>
+              <m:mi>ψ</m:mi>
+              <m:mn>210</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:mn>4</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:msqrt>
+                    <m:mn>2</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>π</m:mi>
+                  </m:msqrt>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msubsup>
+                  <m:mi>a</m:mi>
+                  <m:mn>0</m:mn>
+                  <m:mrow>
+                    <m:mn>3</m:mn>
+                    <m:mo>∕</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:msubsup>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mi>r</m:mi>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:msup>
+                <m:mi>e</m:mi>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mi>r</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mfenced>
+                  </m:mrow>
+                </m:mrow>
+              </m:msup>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo>cos</m:mo>
+                <m:mi>θ</m:mi>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mfenced open="" close="">
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>2</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mi>l</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>m</m:mi>
+                  <m:mi>l</m:mi>
+                </m:msub>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:mfenced>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:msub>
+              <m:mi>ψ</m:mi>
+              <m:mn>211</m:mn>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:mn>8</m:mn>
+                  <m:mo>⁢</m:mo>
+                  <m:msqrt>
+                    <m:mi>π</m:mi>
+                  </m:msqrt>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msubsup>
+                  <m:mi>a</m:mi>
+                  <m:mn>0</m:mn>
+                  <m:mrow>
+                    <m:mn>3</m:mn>
+                    <m:mo>∕</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                </m:msubsup>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:mfrac>
+                <m:mi>r</m:mi>
+                <m:msub>
+                  <m:mi>a</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:msup>
+                <m:mi>e</m:mi>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mrow>
+                    <m:mi>r</m:mi>
+                    <m:mo>∕</m:mo>
+                    <m:mfenced>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mfenced>
+                  </m:mrow>
+                </m:mrow>
+              </m:msup>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo>sin</m:mo>
+                <m:mrow>
+                  <m:mi>θ</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msup>
+                    <m:mi>e</m:mi>
+                    <m:mrow>
+                      <m:mi>i</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>ϕ</m:mi>
+                    </m:mrow>
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+<section id="fs-id1170902884504">
+  <title>Fizyczne znaczenie liczb kwantowych</title>
+  <para id="fs-id1170902884509">Każda z trzech liczb kwantowych atomu wodoru <m:math display="inline">
+    <m:mfenced>
+      <m:mi>n</m:mi>
+      <m:mi>l</m:mi>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mi>l</m:mi>
+      </m:msub>
+    </m:mfenced>
+  </m:math> związana jest z określoną wielkością fizyczną. <term class="no-emphasis" cmlnle:reference="główna liczba kwantowa">Główna liczba kwantowa</term> (ang. <foreign>
+  <term cxlxt:index="foreign" class="no-emphasis">principal quantum number</term>
+</foreign>) związana jest z całkowitą energią elektronu – <m:math display="inline">
+<m:msub>
+  <m:mi>E</m:mi>
+  <m:mi>n</m:mi>
+</m:msub>
+</m:math>. Zgodnie z równaniem Schrödingera</para>
+<equation id="fs-id1170902869741">
+  <m:math display="block">
+    <m:msub>
+      <m:mi>E</m:mi>
+      <m:mi>n</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>−</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:mrow>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mtext>e</m:mtext>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:msup>
+              <m:mi>k</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⁢</m:mo>
+            <m:msup>
+              <m:mi>e</m:mi>
+              <m:mn>4</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:msup>
+            <m:mn>2</m:mn>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:msup>
+            <m:mi>n</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mfrac>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>−</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:msub>
+            <m:mi>E</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:msup>
+              <m:mi>n</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mfrac>
+        </m:mrow>
+        <m:mtext>,</m:mtext>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1170902691065">gdzie <m:math display="inline">
+  <m:msub>
+    <m:mi>E</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mo>−</m:mo>
+    <m:mrow>
+      <m:mn>13,6</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mi mathvariant="normal">eV</m:mi>
+    </m:mrow>
+  </m:mrow>
+  </m:math>. Zauważmy, że wyrażenie to jest identyczne ze wzorem określającym energię elektronu w modelu Bohra. Zatem, podobnie jak w modelu Bohra, elektron w określonym stanie energii nie wysyła promieniowania.</para>
+  <example id="fs-id1170902858591">
+    <para id="fs-id1170902858593">
+      <title>Ile jest możliwych stanów?</title>Ile jest możliwych stanów kwantowych w atomie wodoru, odpowiadających głównej liczbie kwantowej <m:math display="inline">
+        <m:mi>n</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>3</m:mn>
+        </m:math>? Jakie są energie tych stanów?</para>
+        <para id="fs-id1170902921527">
+          <title>Strategia rozwiązania</title>Dla atomu wodoru o danej energii liczba dozwolonych stanów zależy od orbitalnego momentu pędu. Możemy policzyć te stany dla kolejnych wartości głównej liczby kwantowej <m:math display="inline">
+            <m:mfenced open="" close="">
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mn>2</m:mn>
+              <m:mn>3</m:mn>
+            </m:mfenced>
+            </m:math>. Ponieważ całkowita energia zależy jedynie od głównej liczby kwantowej, możemy wykorzystać <link target-id="fs-id1170902869741" cmlnle:case="nominative"/> i główną liczbę kwantową liczonych stanów.</para>
+            <para id="fs-id1170902891664">
+              <title>Rozwiązanie</title>Jeśli <m:math display="inline">
+                <m:mi>n</m:mi>
+                <m:mo>=</m:mo>
+                <m:mn>3</m:mn>
+              </m:math>, dozwolone wartości <m:math display="inline">
+              <m:mi>l</m:mi>
+            </m:math> wynoszą <m:math display="inline">
+            <m:mn>0</m:mn>
+          </m:math>, <m:math display="inline">
+          <m:mn>1</m:mn>
+        </m:math> i <m:math display="inline">
+        <m:mn>2</m:mn>
+      </m:math>. Jeżeli <m:math display="inline">
+      <m:mi>l</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:math>, to <m:math display="inline">
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mi>l</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>0</m:mn>
+  </m:math> (<m:math display="inline">
+  <m:mn>1</m:mn>
+</m:math> stan). Jeżeli <m:math display="inline">
+<m:mi>l</m:mi>
+<m:mo>=</m:mo>
+<m:mn>1</m:mn>
+</m:math>, to <m:math display="inline">
+<m:mfenced open="" close="">
+  <m:mrow>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mi>l</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>-1</m:mn>
+  </m:mrow>
+  <m:mn>0</m:mn>
+  <m:mrow>
+    <m:mo>+</m:mo>
+    <m:mn>1</m:mn>
+  </m:mrow>
+</m:mfenced>
+</m:math> (<m:math display="inline">
+<m:mn>3</m:mn>
+</m:math> stany), a jeśli <m:math display="inline">
+<m:mi>l</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+</m:math>, to <m:math display="inline">
+<m:mfenced open="" close="">
+  <m:mrow>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mi>l</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>-2</m:mn>
+  </m:mrow>
+  <m:mn>-1</m:mn>
+  <m:mn>0</m:mn>
+  <m:mrow>
+    <m:mo>+</m:mo>
+    <m:mn>1</m:mn>
+  </m:mrow>
+  <m:mrow>
+    <m:mo>+</m:mo>
+    <m:mn>2</m:mn>
+  </m:mrow>
+</m:mfenced>
+</m:math> (<m:math display="inline">
+<m:mn>5</m:mn>
+</m:math> stanów). W sumie mamy <m:math display="inline">
+<m:mrow>
+  <m:mn>1</m:mn>
+  <m:mo>+</m:mo>
+  <m:mn>3</m:mn>
+  <m:mo>+</m:mo>
+  <m:mn>5</m:mn>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>9</m:mn>
+</m:math> dozwolonych stanów. Ponieważ całkowita energia zależy tylko od głównej liczby kwantowej, <m:math display="inline">
+<m:mi>n</m:mi>
+<m:mo>=</m:mo>
+<m:mn>3</m:mn>
+</m:math>, energia każdego z tych stanów jest równa</para>
+<equation id="fs-id1170901632559" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>E</m:mi>
+      <m:mn>3</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>−</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>E</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:msup>
+            <m:mn>3</m:mn>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:mfrac>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mo>−</m:mo>
+        <m:mrow>
+          <m:mn>13,6</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi mathvariant="normal">eV</m:mi>
+        </m:mrow>
+      </m:mrow>
+      <m:mn>9</m:mn>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>−</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mn>1,51</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi mathvariant="normal">eV</m:mi>
+        </m:mrow>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1170901769524">
+  <title>Znaczenie</title>Elektron w atomie wodoru może znajdować się w stanach o różnej wartości orbitalnego momentu pędu, odpowiadających tej samej energii. Wraz ze wzrostem wartości orbitalnego momentu pędu rośnie liczba dozwolonych stanów o takiej samej energii.</para>
+</example>
+<para id="fs-id1170902861506">
+  <term class="no-emphasis" cmlnle:reference="orbitalna (poboczna) liczba kwantowa">Poboczna liczba kwantowa</term> (ang. <foreign>
+    <term cxlxt:index="foreign" class="no-emphasis">angular momentum orbital quantum number</term>
+  </foreign>) <m:math display="inline">
+  <m:mi>l</m:mi>
+</m:math> związana jest z orbitalnym momentem pędu elektronu w atomie wodoru. Teoria kwantowa mówi, że gdy atom wodoru jest w stanie <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi>ψ</m:mi>
+    <m:mfenced close="" open="" separators="⁣">
+      <m:mi>n</m:mi>
+      <m:mi>l</m:mi>
+      <m:msub>
+        <m:mi>m</m:mi>
+        <m:mi>l</m:mi>
+      </m:msub>
+    </m:mfenced>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_{n\sep l \sep m_l}</m:annotation>
+</m:semantics>
+</m:math>, wartość jego orbitalnego momentu pędu wynosi</para>
+<note id="fs-id1170901596395" class="equation-callout">
+  <equation id="fs-id1170901596400">
+    <label/>
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:mi>L</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msqrt>
+              <m:mi>l</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mi>l</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:mfenced>
+            </m:msqrt>
+            <m:mo>⁢</m:mo>
+            <m:mi>ℏ</m:mi>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> L=\sqrt{l(l+1)}\hbar\text{,}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1170902850025">gdzie</para>
+<equation id="fs-id1170901842631" class="unnumbered">
+  <m:math display="block">
+    <m:semantics>
+      <m:mfenced close="" open="">
+        <m:mrow>
+          <m:mi>l</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+        </m:mrow>
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+        <m:mi>…</m:mi>
+        <m:mrow>
+          <m:mi>n</m:mi>
+          <m:mo>−</m:mo>
+          <m:mrow>
+            <m:mn>1</m:mn>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mfenced>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> l=0, 1, 2, \dots, n-1 \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170903077401">Ten wynik odbiega od modelu Bohra, w którym kwantowanie momentu pędu następuje zgodnie z regułą <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:mi>L</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>n</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>ℏ</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> L = n \hbar</m:annotation>
+  </m:semantics>
+</m:math>, gdzie <m:math display="inline">
+<m:semantics>
+  <m:mfenced open="" close="">
+    <m:mrow>
+      <m:mi>n</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>1</m:mn>
+    </m:mrow>
+    <m:mn>2</m:mn>
+    <m:mn>3</m:mn>
+    <m:mi>…</m:mi>
+  </m:mfenced>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> n=1,2,3,\dots</m:annotation>
+</m:semantics>
+</m:math>
+</para>
+<para id="fs-id1170901596724">Stany kwantowe z różnymi wartościami orbitalnego momentu pędu są rozróżniane za pomocą <term class="no-emphasis" cmlnle:reference="notacja spektroskopowa">notacji spektroskopowej</term> (ang. <foreign>
+  <term cxlxt:index="foreign" class="no-emphasis">spectroscopic notation</term>
+</foreign>; <link target-id="fs-id1170902779373"/>). Oznaczenia <m:math display="inline">
+<m:mi>s</m:mi>
+</m:math>, <m:math display="inline">
+<m:mi>p</m:mi>
+</m:math>, <m:math display="inline">
+<m:mi>d</m:mi>
+</m:math>, <m:math display="inline">
+<m:mi>f</m:mi>
+</m:math> wynikają z pierwszych historycznych prób sklasyfikowania atomowych linii widmowych (litery pochodzą odpowiednio od angielskich słów <emphasis effect="bold">sharp</emphasis>, <emphasis effect="bold">principal</emphasis>, <emphasis effect="bold">diffuse</emphasis> i <emphasis effect="bold">fundamental</emphasis>). Po <m:math display="inline">
+<m:mi>f</m:mi>
+</m:math> dalsze litery następują w porządku alfabetycznym.</para>
+<para id="fs-id1170902899390">Stan podstawowy atomu wodoru jest oznaczony jako <m:math display="inline">
+  <m:mn>1</m:mn>
+  <m:mo>⁢</m:mo>
+  <m:mi>s</m:mi>
+</m:math>, gdzie <m:math display="inline">
+<m:mn>1</m:mn>
+</m:math> oznacza poziom energii (<m:math display="inline">
+<m:mi>n</m:mi>
+<m:mo>=</m:mo>
+<m:mn>1</m:mn>
+</m:math>) a <m:math display="inline">
+<m:mi>s</m:mi>
+</m:math> orbitalny moment pędu (<m:math display="inline">
+<m:mi>l</m:mi>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>). Gdy <m:math display="inline">
+<m:mi>n</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+</m:math>, <m:math display="inline">
+<m:mi>l</m:mi>
+</m:math> może być równe <m:math display="inline">
+<m:mn>0</m:mn>
+</m:math> lub <m:math display="inline">
+<m:mn>1</m:mn>
+</m:math>. Stan <m:math display="inline">
+<m:mi>n</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+</m:math>, <m:math display="inline">
+<m:mi>l</m:mi>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math> jest oznaczony jako <m:math display="inline">
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>s</m:mi>
+</m:math>, stan <m:math display="inline">
+<m:mi>n</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+</m:math>, <m:math display="inline">
+<m:mi>l</m:mi>
+<m:mo>=</m:mo>
+<m:mn>1</m:mn>
+</m:math> oznaczamy jako <m:math display="inline">
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>p</m:mi>
+</m:math>. Gdy <m:math display="inline">
+<m:mi>n</m:mi>
+<m:mo>=</m:mo>
+<m:mn>3</m:mn>
+</m:math>, <m:math display="inline">
+<m:mi>l</m:mi>
+</m:math> może wynosić <m:math display="inline">
+<m:mn>0</m:mn>
+</m:math>, <m:math display="inline">
+<m:mn>1</m:mn>
+</m:math> lub <m:math display="inline">
+<m:mn>2</m:mn>
+</m:math>, a możliwymi stanami są odpowiednio <m:math display="inline">
+<m:mn>3</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>s</m:mi>
+</m:math>, <m:math display="inline">
+<m:mn>3</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>p</m:mi>
+</m:math> lub <m:math display="inline">
+<m:mn>3</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:math>. Oznaczenia dla innych stanów kwantowych podano w <link target-id="fs-id1170903078180" cmlnle:case="locative"/>.</para>
+<para id="fs-id1170902891111">
+  <term class="no-emphasis" cmlnle:reference="magnetyczna liczba kwantowa">Magnetyczna liczba kwantowa</term> (ang. <foreign>
+    <term cxlxt:index="foreign" class="no-emphasis">angular momentum projection quantum number</term>
+  </foreign>) <m:math display="inline">
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mi>l</m:mi>
+  </m:msub>
+</m:math> związana jest z kątem azymutalnym <m:math display="inline">
+<m:mi>ϕ</m:mi>
+</m:math> (patrz <link target-id="CNX_UPhysics_41_01_SphCoord"/>) i <m:math display="inline">
+<m:semantics>
+  <m:mi>z</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> z</m:annotation>
+</m:semantics>
+</m:math>-ową składową momentu pędu elektronu, równą rzutowi momentu pędu na oś <m:math display="inline">
+<m:mi>z</m:mi>
+</m:math>. Składowa ta wynosi</para>
+<note id="fs-id1170901537852" class="equation-callout">
+  <equation id="fs-id1170902878710">
+    <label/>
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mi>z</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mi>l</m:mi>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mi>ℏ</m:mi>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> L_z=m_l\hbar\text{,}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1170901867971">gdzie</para>
+<equation id="fs-id1170901621612" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:semantics>
+      <m:mfenced close="" open="">
+        <m:mrow>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mi>l</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mi>l</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mrow>
+          <m:mrow>
+            <m:mo>−</m:mo>
+            <m:mi>l</m:mi>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mn>1</m:mn>
+        </m:mrow>
+        <m:mi>…</m:mi>
+        <m:mn>0</m:mn>
+        <m:mi>…</m:mi>
+        <m:mrow>
+          <m:mrow>
+            <m:mo>+</m:mo>
+            <m:mi>l</m:mi>
+          </m:mrow>
+          <m:mo>−</m:mo>
+          <m:mn>1</m:mn>
+        </m:mrow>
+        <m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mi>l</m:mi>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:mfenced>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> m_l = -l, -l+1, \dots, 0, \dots, +l-1, +l \text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170902849835">Z drugiej strony <m:math display="inline">
+  <m:mi>z</m:mi>
+</m:math>-składowa orbitalnego momentu pędu, równa rzutowi momentu pędu na oś <m:math display="inline">
+<m:mi>z</m:mi>
+</m:math>, jest związana z wielkością orbitalnego momentu pędu zależnością</para>
+<equation id="fs-id1170903125406">
+  <m:math display="block">
+    <m:msub>
+      <m:mi>L</m:mi>
+      <m:mi>z</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>L</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo>cos</m:mo>
+        <m:mrow>
+          <m:mi>θ</m:mi>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1170902860442">gdzie <m:math display="inline">
+  <m:mi>θ</m:mi>
+</m:math> jest kątem pomiędzy wektorem momentu pędu i wektorem osi <m:math display="inline">
+<m:mi>z</m:mi>
+</m:math>. Kierunek osi <m:math display="inline">
+<m:mi>z</m:mi>
+</m:math> określony jest doświadczalnie – to znaczy, że to eksperymentator decyduje o kierunku tej składowej. Na przykład kierunek osi <m:math display="inline">
+<m:mi>z</m:mi>
+</m:math> może być kierunkiem zewnętrznego pola magnetycznego. Zależność pomiędzy <m:math display="inline">
+<m:msub>
+  <m:mi>L</m:mi>
+  <m:mi>z</m:mi>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:mi>L</m:mi>
+</m:math> przedstawiono na <link target-id="CNX_UPhysics_41_01_ZcompAng" cmlnle:case="genitive"/>.</para>
+<figure id="CNX_UPhysics_41_01_ZcompAng">
+  <media id="fs-id1170901752466" alt="Układ współrzędnych x y z. Wektor L jest nachylony pod kątem teta do dodatniej osi z a składowa zetowa wynosi L sub z równa się m razy h kreślone. Składowe x-owa i y-owa mają wartości dodatnie, ale nie są opisane.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_41_01_ZcompAng.jpg"/>
+  </media>
+  <caption>Składowa <m:math display="inline">
+    <m:semantics>
+      <m:mi>z</m:mi>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> z</m:annotation>
+    </m:semantics>
+  </m:math> momentu pędu jest kwantowana własną liczbą kwantową <m:math display="inline">
+  <m:semantics>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mi>l</m:mi>
+    </m:msub>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> m_l</m:annotation>
+  </m:semantics>
+  </m:math>.</caption>
+</figure>
+<table id="fs-id1170902779373" summary="Tabela posiada 4 kolumny i 6 wierszy. Pierwszy wiersz to nagłówek tabeli, który nadaje nazwy kolumnom: “orbitalna liczba kwantowa l,” “moment pędu,” “stan” i “nazwa spektroskopowa” Orbitalne liczby kwantowe w pierwszej kolumnie wynoszą 0, 1, 2, 3, 4 i 5. Kolejne wartości momentu pędu wynoszą 0, h razy pierwiastek z 2, h razy pierwiastek z 6, h razy pierwiastek z 12, h razy pierwiastek z 20, h razy pierwiastek z 30. W kolumnie stan mamy s, p, d, f, g i h. W kolumnie nazw spektroskopowych “Sharp,” “Principal,” “Diffuse,” i “Fundamental.” Ostatnie dwa rzędy w tej kolumnie są puste.">
+  <title>Nazwy spektroskopowe i orbitalny moment pędu.</title>
+  <tgroup cols="4">
+    <colspec colnum="1" colname="c1"/>
+    <colspec colnum="2" colname="c2"/>
+    <colspec colnum="3" colname="c3"/>
+    <colspec colnum="4" colname="c4"/>
+    <thead>
+      <row valign="top">
+        <entry valign="top" align="left">Orbitalna liczba kwantowa <m:math display="inline">
+          <m:mi>l</m:mi>
+        </m:math>
+      </entry>
+      <entry valign="top" align="left">Wartość momentu pędu</entry>
+      <entry valign="top" align="left">Stan</entry>
+      <entry valign="top" align="left">Nazwa spektroskopowa</entry>
+    </row>
+  </thead>
+  <tbody>
+    <row valign="top">
+      <entry valign="top" align="left">
+        <m:math display="inline">
+          <m:mn>0</m:mn>
+        </m:math>
+      </entry>
+      <entry valign="top" align="left">
+        <m:math display="inline">
+          <m:mn>0</m:mn>
+        </m:math>
+      </entry>
+      <entry valign="top" align="left">
+        <emphasis effect="italics">
+          <m:math display="inline">
+            <m:mi>s</m:mi>
+          </m:math>
+        </emphasis>
+      </entry>
+      <entry valign="top" align="left">Sharp (ostra)</entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="left">
+        <m:math display="inline">
+          <m:mn>1</m:mn>
+        </m:math>
+      </entry>
+      <entry valign="top" align="left">
+        <m:math display="inline">
+          <m:msqrt>
+            <m:mn>2</m:mn>
+          </m:msqrt>
+          <m:mo>⁢</m:mo>
+          <m:mi>h</m:mi>
+        </m:math>
+      </entry>
+      <entry valign="top" align="left">
+        <emphasis effect="italics">
+          <m:math display="inline">
+            <m:mi>p</m:mi>
+          </m:math>
+        </emphasis>
+      </entry>
+      <entry valign="top" align="left">Principal (główna)</entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="left">
+        <m:math display="inline">
+          <m:mn>2</m:mn>
+        </m:math>
+      </entry>
+      <entry valign="top" align="left">
+        <m:math display="inline">
+          <m:msqrt>
+            <m:mn>6</m:mn>
+          </m:msqrt>
+          <m:mo>⁢</m:mo>
+          <m:mi>h</m:mi>
+        </m:math>
+      </entry>
+      <entry valign="top" align="left">
+        <emphasis effect="italics">
+          <m:math display="inline">
+            <m:mi>d</m:mi>
+          </m:math>
+        </emphasis>
+      </entry>
+      <entry valign="top" align="left">Diffuse (rozmyta)</entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="left">
+        <m:math display="inline">
+          <m:mn>3</m:mn>
+        </m:math>
+      </entry>
+      <entry valign="top" align="left">
+        <m:math display="inline">
+          <m:msqrt>
+            <m:mn>12</m:mn>
+          </m:msqrt>
+          <m:mo>⁢</m:mo>
+          <m:mi>h</m:mi>
+        </m:math>
+      </entry>
+      <entry valign="top" align="left">
+        <emphasis effect="italics">
+          <m:math display="inline">
+            <m:mi>f</m:mi>
+          </m:math>
+        </emphasis>
+      </entry>
+      <entry valign="top" align="left">Fundamental (podstawowa)</entry>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="left">
+        <m:math display="inline">
+          <m:mn>4</m:mn>
+        </m:math>
+      </entry>
+      <entry valign="top" align="left">
+        <m:math display="inline">
+          <m:msqrt>
+            <m:mn>20</m:mn>
+          </m:msqrt>
+          <m:mo>⁢</m:mo>
+          <m:mi>h</m:mi>
+        </m:math>
+      </entry>
+      <entry valign="top" align="left">
+        <emphasis effect="italics">
+          <m:math display="inline">
+            <m:mi>g</m:mi>
+          </m:math>
+        </emphasis>
+      </entry>
+      <entry valign="top" align="left"/>
+    </row>
+    <row valign="top">
+      <entry valign="top" align="left">
+        <m:math display="inline">
+          <m:mn>5</m:mn>
+        </m:math>
+      </entry>
+      <entry valign="top" align="left">
+        <m:math display="inline">
+          <m:msqrt>
+            <m:mn>30</m:mn>
+          </m:msqrt>
+          <m:mo>⁢</m:mo>
+          <m:mi>h</m:mi>
+        </m:math>
+      </entry>
+      <entry valign="top" align="left">
+        <emphasis effect="italics">
+          <m:math display="inline">
+            <m:mi>h</m:mi>
+          </m:math>
+        </emphasis>
+      </entry>
+      <entry valign="top" align="left"/>
+    </row>
+  </tbody>
+</tgroup>
+</table>
+<table id="fs-id1170903078180" summary="Tabela posiada 7 kolumn i 7 wierszy. Pierwszy wiersz jest nagłówkiem, który nadaje nazwy kolumnom. Nagłówek pierwszej kolumny jest pusty, drugi jest: “l=0”, trzeci jest “l=1”, czwarty jest “l=2”, piąty jest “l=3”, szósty jest “l=4” i siódmy jest “l=5.” Pierwsza kolumna jest kolumną nagłówkową, która nadaje nazwy wierszom. Nagłówek pierwszego wiersza jest pusty, drugi jest “n=1”, trzeci jest “n=2”, czwarty jest “n=3”, piąty jest “n=4”, szósty jest “n=5”, a siódmy jest “n=6.” W kolumnie l=0 znajdują się oznaczenia spektroskopowe 1s, 2 s, 3 s, 4 s, 5 s, 6 s. W kolumnie l=1 wiersz n=1 jest pusty, następnie 2 p, 3 p, 4 p, 5 p, 6 p. W kolumnie l=2 wiersze n=1 i n=2 są puste, następnie 3 d, 4 d, 5 d i 6 d. W kolumnie l=3 wiersze od n=1 do n=3 są puste, następnie 4 f, 5 f i 6 f. W kolumnie l=4 wiersze od n=1 do n=4 są puste, następnie 5 g i 6 g. W kolumnie l=5 wiersze od n=1 do n=5 są puste, a ostatni wiersz to 6 h.">
+  <title>Spektroskopowy opis stanów kwantowych.</title>
+  <tgroup cols="7">
+    <colspec colnum="1" colname="c1"/>
+    <colspec colnum="2" colname="c2"/>
+    <colspec colnum="3" colname="c3"/>
+    <colspec colnum="4" colname="c4"/>
+    <colspec colnum="5" colname="c5"/>
+    <colspec colnum="6" colname="c6"/>
+    <colspec colnum="7" colname="c7"/>
+    <tbody>
+      <row valign="top">
+        <entry valign="top" align="left"/>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mi>l</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mi>l</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mi>l</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>2</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mi>l</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>3</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mi>l</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>4</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mi>l</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>5</m:mn>
+          </m:math>
+        </entry>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mi>n</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>1</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>s</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left"/>
+        <entry valign="top" align="left"/>
+        <entry valign="top" align="left"/>
+        <entry valign="top" align="left"/>
+        <entry valign="top" align="left"/>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mi>n</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>2</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>2</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>s</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>2</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>p</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left"/>
+        <entry valign="top" align="left"/>
+        <entry valign="top" align="left"/>
+        <entry valign="top" align="left"/>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mi>n</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>3</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>3</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>s</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>3</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>p</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>3</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>d</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left"/>
+        <entry valign="top" align="left"/>
+        <entry valign="top" align="left"/>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mi>n</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>4</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>4</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>s</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>4</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>p</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>4</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>d</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>4</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>f</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left"/>
+        <entry valign="top" align="left"/>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mi>n</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>5</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>5</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>s</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>5</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>p</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>5</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>d</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>5</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>f</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>5</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>g</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left"/>
+      </row>
+      <row valign="top">
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mi>n</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>6</m:mn>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>6</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>s</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>6</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>p</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>6</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>d</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>6</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>f</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>6</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>g</m:mi>
+          </m:math>
+        </entry>
+        <entry valign="top" align="left">
+          <m:math display="inline">
+            <m:mn>6</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>h</m:mi>
+          </m:math>
+        </entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+<para id="fs-id1170901531308">Kwantowanie <m:math display="inline">
+  <m:msub>
+    <m:mi>L</m:mi>
+    <m:mi>z</m:mi>
+  </m:msub>
+</m:math> równoważne jest kwantowaniu kąta <m:math display="inline">
+<m:semantics>
+  <m:mi>θ</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \theta</m:annotation>
+</m:semantics>
+</m:math>. Podstawiając <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msqrt>
+      <m:mi>l</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mfenced>
+        <m:mrow>
+          <m:mi>l</m:mi>
+          <m:mo>+</m:mo>
+          <m:mn>1</m:mn>
+        </m:mrow>
+      </m:mfenced>
+    </m:msqrt>
+    <m:mo>⁢</m:mo>
+    <m:mi>ℏ</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \sqrt{l(l+1)}\hbar</m:annotation>
+</m:semantics>
+</m:math> za <m:math display="inline">
+<m:semantics>
+  <m:mi>L</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> L</m:annotation>
+</m:semantics>
+</m:math> i <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mi>l</m:mi>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:mi>ℏ</m:mi>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> m_l \hbar</m:annotation>
+</m:semantics>
+</m:math> za <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi>L</m:mi>
+    <m:mi>z</m:mi>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> L_z</m:annotation>
+</m:semantics>
+</m:math> z <link target-id="fs-id1170903125406" cmlnle:case="genitive"/>, otrzymujemy</para>
+<equation id="fs-id1170902680809">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mi>l</m:mi>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mi>ℏ</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msqrt>
+            <m:mi>l</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mfenced>
+              <m:mrow>
+                <m:mi>l</m:mi>
+                <m:mo>+</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:mfenced>
+          </m:msqrt>
+          <m:mo>⁢</m:mo>
+          <m:mi>ℏ</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>cos</m:mo>
+            <m:mrow>
+              <m:mi>θ</m:mi>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> m_l\hbar=\sqrt{l(l+1)}\hbar\cos\theta\text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170902905558">Zatem kąt <m:math display="inline">
+  <m:mi>θ</m:mi>
+  </m:math> przyjmuje określone (skwantowane) wartości</para>
+  <equation id="fs-id1170901754937">
+    <m:math display="block">
+      <m:mi>θ</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>arc cos</m:mo>
+        <m:mrow>
+          <m:mfenced>
+            <m:mfrac>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mi>l</m:mi>
+              </m:msub>
+              <m:msqrt>
+                <m:mi>l</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mfenced>
+                  <m:mrow>
+                    <m:mi>l</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:mfenced>
+              </m:msqrt>
+            </m:mfrac>
+          </m:mfenced>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1170902601618">Należy zauważyć, że zarówno kąt polarny (<m:math display="inline">
+    <m:mi>θ</m:mi>
+  </m:math>), jak i rzut wektora momentu pędu na oś <m:math display="inline">
+  <m:mi>z</m:mi>
+</m:math> (<m:math display="inline">
+<m:msub>
+  <m:mi>L</m:mi>
+  <m:mi>z</m:mi>
+</m:msub>
+</m:math>), są skwantowane.</para>
+<para id="fs-id1170901648045">Kwantowanie kąta polarnego dla stanu <m:math display="inline">
+  <m:mi>l</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>3</m:mn>
+</m:math> przedstawione jest na <link target-id="CNX_UPhysics_41_01_QuantTheta" cmlnle:case="genitive"/>. Wektor orbitalnego momentu pędu leży na powierzchni stożka o kącie rozwarcia <m:math display="inline">
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>θ</m:mi>
+</m:math>, kąt <m:math display="inline">
+<m:mi>θ</m:mi>
+</m:math> jest kątem między osią stożka (osią <m:math display="inline">
+<m:mi>z</m:mi>
+</m:math>) a tworzącą, czyli jest połową kąta rozwarcia stożka (chyba że <m:math display="inline">
+<m:msub>
+  <m:mi>m</m:mi>
+  <m:mi>l</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>, wtedy kąt <m:math display="inline">
+<m:mi>θ</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>90</m:mn>
+  <m:mo>°</m:mo>
+</m:mrow>
+</m:math>, wektor natomiast jest prostopadły do osi <m:math display="inline">
+<m:mi>z</m:mi>
+</m:math>).</para>
+<figure id="CNX_UPhysics_41_01_QuantTheta">
+  <media id="fs-id1170902682944" alt="Pokazano siedem wektorów, wszystkie o długości L, tworzące 7 różnych kątów z osią z. Składowe z-owe wektorów są pokazane jako linie wychodzące z wierzchołka wektora i ich oznaczenia są na osi z. Dla czterech wektorów kąt pomiędzy osią z i wektorem również został oznaczony. Składowe z-owe mają wartość 3 h kreślone dla kąta teta sub 3, 2 h kreślone dla kąta teta sub 2, h kreślone dla kata teta sub 1, zero dla kąta teta sub zero, minus h kreślone, minus 2 h kreślone i minus 3 h kreślone.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_41_01_QuantTheta.jpg"/>
+  </media>
+  <caption>Kwantowanie orbitalnego momentu pędu. Każdy wektor leży na powierzchni stożka, którego wysokość oznaczono na osi <m:math display="inline">
+    <m:semantics>
+      <m:mi>z</m:mi>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> z</m:annotation>
+    </m:semantics>
+    </m:math>.</caption>
+  </figure>
+  <para id="fs-id1170901577555">Szczegółowa analiza momentu pędu wykazuje, że nie możemy poznać jednocześnie wszystkich trzech jego składowych. Jeśli ustaliliśmy, że rzut momentu pędu na oś <m:math display="inline">
+    <m:mi>z</m:mi>
+  </m:math> (<m:math display="inline">
+  <m:mi>z</m:mi>
+</m:math>-owa składowa orbitalnego momentu pędu) przyjmuje określoną wartość, która zależy od liczby kwantowej <m:math display="inline">
+<m:msub>
+  <m:mi>m</m:mi>
+  <m:mi>l</m:mi>
+</m:msub>
+</m:math>, to nie możemy jednocześnie wyznaczyć rzutów momentu pędu na osie <emphasis effect="italics">
+<m:math display="inline">
+  <m:mi>x</m:mi>
+</m:math>
+</emphasis> i<m:math display="inline">
+<m:mi>y</m:mi>
+</m:math>, czyli jego składowych <m:math display="inline">
+<m:msub>
+  <m:mi>L</m:mi>
+  <m:mi>x</m:mi>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>L</m:mi>
+  <m:mi>y</m:mi>
+</m:msub>
+</m:math>. W rezultacie, dokładny kierunek wektora orbitalnego momentu pędu jest nieznany.</para>
+<example id="fs-id1170902705884">
+  <para id="fs-id1170902705886">
+    <title>Jakie są dozwolone kierunki wektora momentu pędu <m:math display="inline">
+      <m:semantics>
+        <m:mover>
+          <m:mi>L</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \vec{L}</m:annotation>
+      </m:semantics>
+    </m:math>?</title>Obliczmy kąt, jaki tworzy wektor momentu pędu z osią <m:math display="inline">
+    <m:mi>z</m:mi>
+  </m:math> dla <m:math display="inline">
+  <m:mi>l</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>1</m:mn>
+  </m:math>, jak to pokazano na <link target-id="CNX_UPhysics_41_01_AngMoment" cmlnle:case="genitive"/>.</para>
+  <figure id="CNX_UPhysics_41_01_AngMoment">
+    <media id="fs-id1170902930377" alt="Rysunek pokazuje trzy możliwe wartości składowych momentu pędu wzdłuż osi z. Pokazano górną orbitę kołową dla m sub t = 1 przy L sub z. Wektor L tworzy kąt teta 1 z osią z. Promień orbity jest składową L prostopadłego do osi z. Pokazano środkową orbitę kołową dla m sub t = 0. Leży ona w płaszczyźnie x y. Wektor L Tworzy kąt teta 2, tworzący kąt 90 stopni z osią z. Promień orbity wynosi L. Pokazano najniżej leżącą orbitę kołową dla m sub t = -1 dla odległości L sub z. Wektor L tworzy kąt teta 3 z osią z. Promień orbity jest składową L prostopadłą do osi z.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_41_01_AngMoment.jpg"/>
+    </media>
+    <caption>Składowa momentu pędu wzdłuż osi <m:math display="inline">
+      <m:semantics>
+        <m:mi>z</m:mi>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> z</m:annotation>
+      </m:semantics>
+    </m:math> (zdefiniowanej przez kierunek pola magnetycznego) może mieć tylko pewne określone wartości. Są one pokazane dla <m:math>
+    <m:mrow>
+      <m:mi>l</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>1</m:mn>
+    </m:mrow>
+  </m:math>, dla którego <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mi>l</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>−1</m:mn>
+    <m:mo>,</m:mo>
+    <m:mn>0</m:mn>
+    <m:mtext>,</m:mtext>
+    <m:mo>+</m:mo>
+    <m:mn>1</m:mn>
+  </m:mrow>
+</m:math>. Kierunek wektora <m:math display="inline">
+<m:mover>
+  <m:mi>L</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math> jest skwantowany w tym sensie, że dozwolone są tylko niektóre kąty, jakie ten wektor tworzy z osią <m:math display="inline">
+<m:semantics>
+  <m:mi>z</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> z</m:annotation>
+</m:semantics>
+</m:math>.</caption>
+</figure>
+<para id="fs-id1170902877881">
+  <title>Strategia rozwiązania</title>Wektory <m:math display="inline">
+    <m:mover>
+      <m:mi>L</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+  </m:math> i <m:math display="inline">
+  <m:mover>
+    <m:msub>
+      <m:mi>L</m:mi>
+      <m:mi>z</m:mi>
+    </m:msub>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:math> (składowa wektorowa w kierunku <m:math display="inline">
+<m:mi>z</m:mi>
+</m:math>) tworzą trójkąt prostokątny, w którym <m:math display="inline">
+<m:mover>
+  <m:mi>L</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math> jest przeciwprostokątną, a <m:math display="inline">
+<m:mover>
+  <m:msub>
+    <m:mi>L</m:mi>
+    <m:mi>z</m:mi>
+  </m:msub>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math> przyległym bokiem. Stosunek <m:math display="inline">
+<m:msub>
+  <m:mi>L</m:mi>
+  <m:mi>z</m:mi>
+</m:msub>
+</m:math> do <m:math display="inline">
+<m:mi>L</m:mi>
+<m:mo>=</m:mo>
+<m:mfenced open="|" close="|">
+  <m:mover>
+    <m:mi>L</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:mfenced>
+</m:math> jest cosinusem szukanego kąta. Wielkości <m:math display="inline">
+<m:mi>L</m:mi>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>L</m:mi>
+  <m:mi>z</m:mi>
+</m:msub>
+</m:math> są dane przez</para>
+<equation id="fs-id1170902866146" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>L</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msqrt>
+            <m:mi>l</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mfenced>
+              <m:mrow>
+                <m:mi>l</m:mi>
+                <m:mo>+</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:mfenced>
+          </m:msqrt>
+          <m:mo>⁢</m:mo>
+          <m:mi>ℏ</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext> i </m:mtext>
+          <m:mo>⁢</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mi>z</m:mi>
+          </m:msub>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mi>l</m:mi>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mi>ℏ</m:mi>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> L=\sqrt{l(l+1)}\hbar\text{ i }L_z=m_l\hbar\text{.}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170902778967">
+  <title>Rozwiązanie</title>Dla <m:math display="inline">
+    <m:mi>l</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>1</m:mn>
+  </m:math>
+  <m:math display="inline">
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mi>l</m:mi>
+    </m:msub>
+  </m:math> może wynosić <m:math display="inline">
+  <m:mo>+</m:mo>
+  <m:mn>1</m:mn>
+</m:math>, <m:math display="inline">
+<m:mn>0</m:mn>
+</m:math> lub <m:math display="inline">
+<m:mn>-1</m:mn>
+</m:math>. Zatem <m:math display="inline">
+<m:mi>L</m:mi>
+</m:math> ma wartość daną wzorem</para>
+<equation id="fs-id1170902861390" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mi>L</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msqrt>
+            <m:mi>l</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mfenced>
+              <m:mrow>
+                <m:mi>l</m:mi>
+                <m:mo>+</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:mfenced>
+          </m:msqrt>
+          <m:mo>⁢</m:mo>
+          <m:mi>ℏ</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msqrt>
+            <m:mn>2</m:mn>
+          </m:msqrt>
+          <m:mo>⁢</m:mo>
+          <m:mi>ℏ</m:mi>
+          <m:mtext>,</m:mtext>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> L=\sqrt{l(l+1)}\hbar=\sqrt{2}\hbar\text{,}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170901496211">a wielkość <m:math display="inline">
+  <m:msub>
+    <m:mi>L</m:mi>
+    <m:mi>z</m:mi>
+  </m:msub>
+  </m:math> może mieć trzy wartości</para>
+  <equation id="fs-id1170902897710" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mi>z</m:mi>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mi>l</m:mi>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mi>ℏ</m:mi>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mfenced close="" open="{">
+            <m:mtable>
+              <m:mtr>
+                <m:mtd>
+                  <m:mfenced close="" open="">
+                    <m:mi>ℏ</m:mi>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>m</m:mi>
+                        <m:mi>l</m:mi>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mo>+</m:mo>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mtext>,</m:mtext>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd>
+                  <m:mfenced close="" open="">
+                    <m:mn>0</m:mn>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>m</m:mi>
+                        <m:mi>l</m:mi>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                        <m:mtext>,</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mtd>
+              </m:mtr>
+              <m:mtr>
+                <m:mtd>
+                  <m:mfenced close="" open="">
+                    <m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mi>ℏ</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>m</m:mi>
+                        <m:mi>l</m:mi>
+                      </m:msub>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mtext>.</m:mtext>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mtd>
+              </m:mtr>
+            </m:mtable>
+          </m:mfenced>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> L_z = m_l \hbar = \left{\begin{matrix} \hbar, m_l = +1 \text{,} \\ 0, m_l = 0 \text{,} \\ - \hbar, m_l = -1 \text{.} \end{matrix} \right.</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+  <para id="fs-id1170902859411">Jak widać na <link target-id="CNX_UPhysics_41_01_AngMoment" cmlnle:case="genitive"/>, <m:math display="inline">
+    <m:mrow>
+      <m:mo>cos</m:mo>
+      <m:mi>θ</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>L</m:mi>
+        <m:mi>z</m:mi>
+      </m:msub>
+      <m:mo>∕</m:mo>
+      <m:mi>L</m:mi>
+    </m:mrow>
+  </m:math>, więc dla <m:math display="inline">
+  <m:msub>
+    <m:mi>m</m:mi>
+    <m:mi>l</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mo>+</m:mo>
+    <m:mn>1</m:mn>
+  </m:mrow>
+  </m:math> mamy</para>
+  <equation id="fs-id1170902923917" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:mrow>
+            <m:mo>cos</m:mo>
+            <m:msub>
+              <m:mi>θ</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:msub>
+              <m:mi>L</m:mi>
+              <m:mi>z</m:mi>
+            </m:msub>
+            <m:mi>L</m:mi>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mi>ℏ</m:mi>
+            <m:mrow>
+              <m:msqrt>
+                <m:mn>2</m:mn>
+              </m:msqrt>
+              <m:mo>⁢</m:mo>
+              <m:mi>ℏ</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:msqrt>
+              <m:mn>2</m:mn>
+            </m:msqrt>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>0,707</m:mn>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \cos\theta_1=\frac{L_z}{L}=\frac{\hbar}{\sqrt{2}\hbar}=\frac{1}{\sqrt{2}}=\num{0,707}\text{.}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+  <para id="fs-id1170901756368">A zatem</para>
+  <equation id="fs-id1170902652024" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:msub>
+        <m:mi>θ</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>arc cos</m:mo>
+        <m:mfenced>
+          <m:mn>0,707</m:mn>
+        </m:mfenced>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mn>45</m:mn>
+          <m:mo>°</m:mo>
+        </m:mrow>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1170902869545">Podobnie dla <m:math display="inline">
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mi>l</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>0</m:mn>
+  </m:math> znajdziemy <m:math display="inline">
+  <m:mrow>
+    <m:mo>cos</m:mo>
+    <m:msub>
+      <m:mi>θ</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+  </m:math>. To daje</para>
+  <equation id="fs-id1170901489064" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:msub>
+        <m:mi>θ</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>arc cos</m:mo>
+        <m:mn>0</m:mn>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mn>90</m:mn>
+          <m:mo>°</m:mo>
+        </m:mrow>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1170902896996">Wreszcie dla <m:math display="inline">
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mi>l</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>-1</m:mn>
+    </m:math> mamy</para>
+    <equation id="fs-id1170902765413" class="unnumbered">
+      <label/>
+      <m:math display="block">
+        <m:semantics>
+          <m:mrow>
+            <m:mrow>
+              <m:mo>cos</m:mo>
+              <m:msub>
+                <m:mi>θ</m:mi>
+                <m:mn>3</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:msub>
+                <m:mi>L</m:mi>
+                <m:mi>z</m:mi>
+              </m:msub>
+              <m:mi>L</m:mi>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mi>ℏ</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:msqrt>
+                  <m:mn>2</m:mn>
+                </m:msqrt>
+                <m:mo>⁢</m:mo>
+                <m:mi>ℏ</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>−</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msqrt>
+                  <m:mn>2</m:mn>
+                </m:msqrt>
+              </m:mfrac>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mo>−</m:mo>
+              <m:mrow>
+                <m:mn>0,707</m:mn>
+                <m:mtext>,</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \cos\theta_3=\frac{L_z}{L}=\frac{-\hbar}{\sqrt{2}\hbar}=-\frac{1}{\sqrt{2}}=-\num{0,707}\text{,}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </equation>
+    <para id="fs-id1170903131576">więc</para>
+    <equation id="fs-id1170902922844" class="unnumbered">
+      <label/>
+      <m:math display="block">
+        <m:msub>
+          <m:mi>θ</m:mi>
+          <m:mn>3</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mo>arc cos</m:mo>
+          <m:mfenced>
+            <m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>0,707</m:mn>
+            </m:mrow>
+          </m:mfenced>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>135</m:mn>
+            <m:mo>°</m:mo>
+          </m:mrow>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="fs-id1170902858291">
+      <title>Znaczenie</title>Kąty te są zgodne z przedstawionymi na rysunku. Jak widać, tylko kąt względem osi <m:math display="inline">
+        <m:mi>z</m:mi>
+      </m:math> jest skwantowany. Wektor momentu pędu <m:math display="inline">
+      <m:mi>L</m:mi>
+    </m:math>, o ile tworzy odpowiedni kąt z osią <m:math display="inline">
+    <m:mi>z</m:mi>
+  </m:math>, może wskazywać dowolny kierunek. W takim razie wektory orbitalnego momentu pędu leżą na powierzchniach stożków, jak pokazano na rysunku. Omawianym przykładem możemy też zilustrować zasadę odpowiedniości Bohra. Zwróćmy uwagę, że najmniejszy kąt (w naszym przykładzie <m:math display="inline"><m:semantics><m:msub><m:mi>θ</m:mi><m:mn>1</m:mn></m:msub><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \theta_1</m:annotation></m:semantics></m:math>) jest określony przez maksymalną wartość <m:math display="inline">
+<m:msub>
+  <m:mi>m</m:mi>
+  <m:mi>l</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mi>l</m:mi>
+</m:math>. Dla tego kąta</para>
+<equation id="fs-id1170901642419" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:mrow>
+      <m:mo>cos</m:mo>
+      <m:mi>θ</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:msub>
+        <m:mi>L</m:mi>
+        <m:mi>z</m:mi>
+      </m:msub>
+      <m:mi>L</m:mi>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfrac>
+        <m:mi>l</m:mi>
+        <m:msqrt>
+          <m:mi>l</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mfenced>
+            <m:mrow>
+              <m:mi>l</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+          </m:mfenced>
+        </m:msqrt>
+      </m:mfrac>
+      <m:mtext>,</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1170901803721">a dla bardzo dużych <m:math display="inline">
+  <m:mi>l</m:mi>
+</m:math> można go zaokrąglić do <m:math display="inline">
+<m:mn>1</m:mn>
+</m:math>. Jeśli <m:math display="inline">
+<m:mrow>
+  <m:mo>cos</m:mo>
+  <m:mi>θ</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>1</m:mn>
+</m:math>, to <m:math display="inline">
+<m:mi>θ</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>0</m:mn>
+  <m:mo>°</m:mo>
+</m:mrow>
+</m:math>. Ponadto w przypadku dużej wartości <m:math display="inline">
+<m:mi>l</m:mi>
+</m:math> istnieje bardzo dużo wartości <m:math display="inline">
+<m:msub>
+  <m:mi>m</m:mi>
+  <m:mi>l</m:mi>
+</m:msub>
+</m:math>, dzięki czemu praktycznie wszystkie kąty stają się możliwe.</para>
+</example>
+<note id="fs-id1170902908673" class="check-understanding">
+  <exercise id="fs-id1170902879174">
+    <problem id="fs-id1170902879176">
+      <para id="fs-id1170902879178">
+        <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Czy wielkość <m:math display="inline">
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mi>z</m:mi>
+          </m:msub>
+        </m:math> może być równa <m:math display="inline">
+        <m:mi>L</m:mi>
+        </m:math>?</para>
+      </problem>
+      <solution id="fs-id1170901629418">
+        <para id="fs-id1170901629420">Nie. Liczba kwantowa <m:math display="inline">
+          <m:mfenced open="" close="">
+            <m:mrow>
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mi>l</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mi>l</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mi>l</m:mi>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+            <m:mi>…</m:mi>
+            <m:mn>0</m:mn>
+            <m:mi>…</m:mi>
+            <m:mrow>
+              <m:mi>l</m:mi>
+              <m:mo>−</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+            <m:mrow>
+              <m:mi>l</m:mi>
+            </m:mrow>
+          </m:mfenced>
+        </m:math>. Zatem, wartość <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mi>z</m:mi>
+          </m:msub>
+        </m:mrow>
+      </m:math> jest zawsze mniejsza niż <m:math display="inline">
+      <m:mi>L</m:mi>
+    </m:math>, ponieważ <m:math display="inline">
+    <m:mi>l</m:mi>
+    <m:mo>&lt;</m:mo>
+    <m:msqrt>
+      <m:mi>l</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mfenced>
+        <m:mrow>
+          <m:mi>l</m:mi>
+          <m:mo>+</m:mo>
+          <m:mn>1</m:mn>
+        </m:mrow>
+      </m:mfenced>
+    </m:msqrt>
+    </m:math>.</para>
+  </solution>
+</exercise>
+</note>
+</section>
+<section id="fs-id1170901751543">
+  <title>Używanie funkcji falowej do przewidywania</title>
+  <para id="fs-id1170901751548">Jak widzieliśmy wcześniej, mechanikę kwantową możemy zastosować do przewidywania prawdopodobieństwa zdarzeń fizycznych z wykorzystaniem funkcji prawdopodobieństwa. Poprawne jest zatem stwierdzenie „elektron znajduje się w danej objętości w danym czasie z określonym prawdopodobieństwem”, ale nie – „elektron znajduje się w tym czasie w położeniu <m:math display="inline">
+    <m:mfenced>
+      <m:mi>x</m:mi>
+      <m:mi>y</m:mi>
+      <m:mi>z</m:mi>
+    </m:mfenced>
+  </m:math>”. W celu określenia prawdopodobieństwa znalezienia elektronu w atomie wodoru w objętości danego obszaru przestrzeni konieczne jest scałkowanie gęstości prawdopodobieństwa <m:math display="inline">
+  <m:semantics>
+    <m:msup>
+      <m:mfenced close="|" open="|">
+        <m:msub>
+          <m:mi>ψ</m:mi>
+          <m:mfenced close="" open="" separators="⁣">
+            <m:mi>n</m:mi>
+            <m:mi>l</m:mi>
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mi>l</m:mi>
+            </m:msub>
+          </m:mfenced>
+        </m:msub>
+      </m:mfenced>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \abs{\psi_{n\sep l\sep m_l}}^2</m:annotation>
+  </m:semantics>
+  </m:math> po tej objętości</para>
+  <equation id="fs-id1170902682281">
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:mtext>prawdopodobieństwo</m:mtext>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:munder>
+              <m:mo>∭</m:mo>
+              <m:mtext>objętość</m:mtext>
+            </m:munder>
+            <m:mrow>
+              <m:msup>
+                <m:mfenced close="|" open="|">
+                  <m:msub>
+                    <m:mi>ψ</m:mi>
+                    <m:mfenced close="" open="" separators="⁣">
+                      <m:mi>n</m:mi>
+                      <m:mi>l</m:mi>
+                      <m:msub>
+                        <m:mi>m</m:mi>
+                        <m:mi>l</m:mi>
+                      </m:msub>
+                    </m:mfenced>
+                  </m:msub>
+                </m:mfenced>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                <m:mrow>
+                  <m:mi>V</m:mi>
+                  <m:mtext>,</m:mtext>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \text{prawdopodobieństwo} = \iiint_{\text{objętość}}\abs{\psi_{n\sep l\sep m_l}}^2\d V \text{,}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+  <para id="fs-id1170902723990">gdzie <m:math display="inline">
+    <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+    <m:mi>V</m:mi>
+  </m:math> jest nieskończenie małym elementem objętości. Jeśli całka jest obliczana dla całej przestrzeni, wynik wynosi <m:math display="inline">
+  <m:mn>1</m:mn>
+</m:math>, ponieważ prawdopodobieństwo tego, że cząstka jest położona gdziekolwiek, wynosi <m:math display="inline">
+<m:semantics>
+  <m:mn>1</m:mn>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> 1</m:annotation>
+</m:semantics>
+</m:math> (warunek normalizacji). Występująca we wzorze na prawdopodobieństwo wartość bezwzględna eliminuje występowanie <m:math display="inline">
+<m:mi>i</m:mi>
+<m:mo>=</m:mo>
+<m:msqrt>
+  <m:mn>-1</m:mn>
+</m:msqrt>
+</m:math> w wyniku obliczeń.</para>
+<para id="fs-id1170901581153">Rozważmy elektron w stanie z zerowym momentem pędu (<m:math display="inline">
+  <m:mi>l</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+</m:math>). W tym przypadku funkcja falowa elektronu zależy tylko od współrzędnej radialnej <emphasis effect="italics">
+<m:math display="inline">
+  <m:mi>r</m:mi>
+</m:math>
+</emphasis> (<emphasis effect="italics">
+<m:math display="inline">
+  <m:mi>r</m:mi>
+</m:math>
+</emphasis> jest odległością danego punktu od jądra, patrz stany <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi>ψ</m:mi>
+    <m:mfenced close="" open="" separators="⁣">
+      <m:mn>1</m:mn>
+      <m:mn>0</m:mn>
+      <m:mn>0</m:mn>
+    </m:mfenced>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_{1\sep 0\sep 0}</m:annotation>
+</m:semantics>
+</m:math> i <m:math display="inline">
+<m:semantics>
+  <m:msub>
+    <m:mi>ψ</m:mi>
+    <m:mfenced close="" open="" separators="⁣">
+      <m:mn>2</m:mn>
+      <m:mn>0</m:mn>
+      <m:mn>0</m:mn>
+    </m:mfenced>
+  </m:msub>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_{2\sep 0\sep 0}</m:annotation>
+</m:semantics>
+</m:math> w <link target-id="fs-id1170901599432" cmlnle:case="genitive"/>). Niech element <m:math display="inline">
+<m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+<m:mi>V</m:mi>
+</m:math> odpowiada nieskończenie małej objętości sferycznej powłoki o promieniu <m:math display="inline">
+<m:mi>r</m:mi>
+</m:math>, o nieskończenie małej grubości <m:math display="inline">
+<m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+<m:mi>r</m:mi>
+</m:math>, którą można zapisać jako</para>
+<equation id="fs-id1170902923744">
+  <m:math display="block">
+    <m:mrow>
+      <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+      <m:mi>V</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>4</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mi>π</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:msup>
+        <m:mi>r</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+        <m:mrow>
+          <m:mi>r</m:mi>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1170903087760">Prawdopodobieństwo znalezienia elektronu w obszarze od <emphasis effect="italics">
+  <m:math display="inline">
+    <m:mi>r</m:mi>
+  </m:math>
+</emphasis> do <emphasis effect="italics">
+<m:math display="inline">
+  <m:mi>r</m:mi>
+  <m:mo>+</m:mo>
+  <m:mrow>
+    <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+    <m:mi>r</m:mi>
+  </m:mrow>
+</m:math>
+</emphasis> („w przybliżeniu w położeniu <m:math display="inline">
+<m:mi>r</m:mi>
+</m:math>”) jest równe</para>
+<note id="fs-id1170902912761" class="equation-callout">
+  <equation id="fs-id1170901597018">
+    <label/>
+    <m:math display="block">
+      <m:semantics>
+        <m:mrow>
+          <m:mrow>
+            <m:mrow>
+              <m:mi>P</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mfenced>
+                <m:mi>r</m:mi>
+              </m:mfenced>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+              <m:mi>r</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfenced close="|" open="|">
+              <m:msub>
+                <m:mi>ψ</m:mi>
+                <m:mfenced close="" open="" separators="⁣">
+                  <m:mi>n</m:mi>
+                  <m:mn>0</m:mn>
+                  <m:mn>0</m:mn>
+                </m:mfenced>
+              </m:msub>
+            </m:mfenced>
+            <m:mo>⁢</m:mo>
+            <m:mn>4</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>π</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:msup>
+              <m:mi>r</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⁢</m:mo>
+            <m:mrow>
+              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+              <m:mrow>
+                <m:mi>r</m:mi>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:annotation encoding="application/vnd.katalysteducation.mathtex"> P\apply(r)\d r = \abs{\psi_{n\sep 0\sep 0}}4\pi r^2\d r \text{.}</m:annotation>
+      </m:semantics>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1170902863981">
+  <m:math display="inline">
+    <m:mi>P</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mfenced>
+      <m:mi>r</m:mi>
+    </m:mfenced>
+  </m:math> nazywamy radialną funkcją gęstości prawdopodobieństwa (prawdopodobieństwa na jednostkę długości). W stanie podstawowym atomu wodoru prawdopodobieństwo znalezienia elektronu w obszarze od <m:math display="inline">
+  <m:mi>r</m:mi>
+</m:math> do <m:math display="inline">
+<m:mi>r</m:mi>
+<m:mo>+</m:mo>
+<m:mrow>
+  <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+  <m:mi>r</m:mi>
+</m:mrow>
+</m:math> jest więc równe</para>
+<equation id="fs-id1170902719337">
+  <m:math display="block">
+    <m:semantics>
+      <m:mrow>
+        <m:mrow>
+          <m:msup>
+            <m:mfenced close="|" open="|">
+              <m:msub>
+                <m:mi>ψ</m:mi>
+                <m:mfenced close="" open="" separators="⁣">
+                  <m:mn>1</m:mn>
+                  <m:mn>0</m:mn>
+                  <m:mn>0</m:mn>
+                </m:mfenced>
+              </m:msub>
+            </m:mfenced>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>⁢</m:mo>
+          <m:mn>4</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi>π</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mi>r</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mn>4</m:mn>
+            <m:msubsup>
+              <m:mi>a</m:mi>
+              <m:mn>0</m:mn>
+              <m:mn>3</m:mn>
+            </m:msubsup>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:msup>
+            <m:mi>r</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>exp</m:mo>
+            <m:mrow>
+              <m:mfenced>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>r</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:msub>
+                    <m:mi>a</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                </m:mfrac>
+              </m:mfenced>
+              <m:mo>⁢</m:mo>
+              <m:mrow>
+                <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                <m:mrow>
+                  <m:mi>r</m:mi>
+                  <m:mtext>,</m:mtext>
+                </m:mrow>
+              </m:mrow>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \abs{\psi_{1\sep 0\sep 0}}^2 4\pi r^2 \d r = \frac{4}{a_0^3}r^2 \exp(\frac{-2r}{a_0})\d r \text{,}</m:annotation>
+    </m:semantics>
+  </m:math>
+</equation>
+<para id="fs-id1170903021593">gdzie <m:math display="inline">
+  <m:semantics>
+    <m:mrow>
+      <m:msub>
+        <m:mi>a</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>0,5</m:mn>
+        <m:mo lspace="0px" rspace="verythinmathspace">⁢</m:mo>
+        <m:mi mathvariant="normal">Å</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> a_0=\SI{0,5}{\angstrom}</m:annotation>
+  </m:semantics>
+</m:math>. Radialna funkcja gęstości prawdopodobieństwa <m:math display="inline">
+<m:mi>P</m:mi>
+<m:mo>⁡</m:mo>
+<m:mfenced>
+  <m:mi>r</m:mi>
+</m:mfenced>
+</m:math> jest przedstawiona na <link target-id="CNX_UPhysics_41_01_RadProb" cmlnle:case="genitive"/>. Obszar pod krzywą pomiędzy dwiema wartościami promienia, <m:math display="inline">
+<m:msub>
+  <m:mi>r</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>r</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math>, daje prawdopodobieństwo znalezienia elektronu w tym przedziale odległości od jądra. Aby znaleźć najbardziej prawdopodobną wartość <m:math display="inline">
+<m:mi>r</m:mi>
+</m:math>, przyrównujemy pierwszą pochodną tej funkcji do zera (<m:math display="inline">
+<m:mrow>
+  <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+  <m:mrow>
+    <m:mi>P</m:mi>
+    <m:mo>∕</m:mo>
+    <m:mrow>
+      <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+      <m:mi>r</m:mi>
+    </m:mrow>
+  </m:mrow>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>) i obliczamy <m:math display="inline">
+<m:mi>r</m:mi>
+</m:math> spełniające warunek <m:math display="inline">
+<m:mi>r</m:mi>
+<m:mo>=</m:mo>
+<m:msub>
+  <m:mi>a</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+</m:math>. Zauważmy, że najbardziej prawdopodobna odległość elektronu od jądra nie jest równa średniej (lub oczekiwanej) wartości <m:math display="inline">
+<m:mi>r</m:mi>
+</m:math>, ponieważ funkcja <m:math display="inline">
+<m:semantics>
+  <m:msup>
+    <m:mfenced close="|" open="|">
+      <m:msub>
+        <m:mi>ψ</m:mi>
+        <m:mfenced close="" open="" separators="⁣">
+          <m:mn>1</m:mn>
+          <m:mn>0</m:mn>
+          <m:mn>0</m:mn>
+        </m:mfenced>
+      </m:msub>
+    </m:mfenced>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \abs{\psi_{1\sep 0\sep 0}}^2</m:annotation>
+</m:semantics>
+</m:math> nie jest symetryczna względem wartości <m:math display="inline">
+<m:msub>
+  <m:mi>a</m:mi>
+  <m:mn>0</m:mn>
+</m:msub>
+</m:math>, dla której ma ona maksimum.</para>
+<figure id="CNX_UPhysics_41_01_RadProb">
+  <media id="fs-id1170902781676" alt="Wykres funkcji P jako funkcji r. Dla r = 0 funkcja wynosi, osiąga maksymalną wartość dla r = a sub 0, następnie stopniowo maleje i asymptotycznie zbliża się do zera dla dużych r. Maksymalna wartość funkcji jest osiągana dla najbardziej prawdopodobnego r. Zaznaczono powierzchnię pod wykresem od r sub 1 do r sub 2.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_41_01_RadProb.jpg"/>
+  </media>
+  <caption>Radialna funkcja gęstości prawdopodobieństwa dla stanu podstawowego atomu wodoru.</caption>
+</figure>
+<para id="fs-id1170902650156">Jeśli elektron ma orbitalny moment pędu (<m:math display="inline">
+  <m:mi>l</m:mi>
+  <m:mo>≠</m:mo>
+  <m:mn>0</m:mn>
+</m:math>), funkcje falowe reprezentujące elektron zależą od kątów <m:math display="inline">
+<m:mi>θ</m:mi>
+</m:math> i <m:math/>
+<m:math display="inline">
+  <m:mi>ϕ</m:mi>
+</m:math>; czyli <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:msub>
+      <m:mi>ψ</m:mi>
+      <m:mfenced close="" open="" separators="⁣">
+        <m:mi>n</m:mi>
+        <m:mi>l</m:mi>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mi>l</m:mi>
+        </m:msub>
+      </m:mfenced>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>ψ</m:mi>
+        <m:mfenced close="" open="" separators="⁣">
+          <m:mi>n</m:mi>
+          <m:mi>l</m:mi>
+          <m:msub>
+            <m:mi>m</m:mi>
+            <m:mi>l</m:mi>
+          </m:msub>
+        </m:mfenced>
+      </m:msub>
+      <m:mo>⁡</m:mo>
+      <m:mfenced>
+        <m:mi>r</m:mi>
+        <m:mi>θ</m:mi>
+        <m:mi>ϕ</m:mi>
+      </m:mfenced>
+    </m:mrow>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_{n\sep l\sep m_l}=\psi_{n\sep l\sep m_l}\apply(r,\theta,\phi)</m:annotation>
+</m:semantics>
+</m:math>. Orbitale atomowe dla trzech stanów, gdzie <m:math display="inline">
+<m:mi>n</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+</m:math> i <m:math display="inline">
+<m:semantics>
+  <m:mrow>
+    <m:mi>l</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>1</m:mn>
+  </m:mrow>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> l=1</m:annotation>
+</m:semantics>
+</m:math>, pokazane są na <link target-id="CNX_UPhysics_41_01_EOrbitals" cmlnle:case="genitive"/>. Orbital atomowy to obszar przestrzeni, w którym zawiera się pewien procent (zwykle <m:math display="inline">
+<m:mn>90</m:mn>
+<m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+<m:mi mathvariant="normal">%</m:mi>
+</m:math>) prawdopodobieństwa znalezienia się elektronu (orbitale atomowe czasami określa się jako „chmury” gęstości prawdopodobieństwa). Należy zauważyć, że te rozkłady mają wyraźne wyróżnione kierunki. Ta kierunkowość jest ważna dla chemików podczas analizy, w jaki sposób atomy wiążą się ze sobą, tworząc cząsteczki.</para>
+<figure id="CNX_UPhysics_41_01_EOrbitals">
+  <media id="fs-id1170902879204" alt="Diagram pokazuje kształty orbitali p. Orbitale mają postać hantli leżących wzdłuż osi x, y i z.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_41_01_EOrbitals.jpg"/>
+  </media>
+  <caption>Rozkład gęstości prawdopodobieństwa dla trzech stanów przy <m:math>
+    <m:mrow>
+      <m:mi>n</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>2</m:mn>
+    </m:mrow>
+  </m:math> i <m:math>
+  <m:mrow>
+    <m:mi>l</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>1</m:mn>
+  </m:mrow>
+</m:math>. Rozkłady są skierowane wzdłuż (a) osi <m:math display="inline">
+<m:semantics>
+  <m:mi>x</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> x</m:annotation>
+</m:semantics>
+</m:math>, (b) osi <m:math display="inline">
+<m:semantics>
+  <m:mi>y</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> y</m:annotation>
+</m:semantics>
+</m:math> oraz (c) osi <m:math display="inline">
+<m:semantics>
+  <m:mi>z</m:mi>
+  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> z</m:annotation>
+</m:semantics>
+</m:math>.</caption>
+</figure>
+<para id="fs-id1170902890222">Nieco inną reprezentację funkcji falowej przedstawiono na <link target-id="CNX_UPhysics_41_01_PClouds" cmlnle:case="genitive"/>. W tym przypadku jasne i ciemne obszary wskazują miejsca odpowiednio o stosunkowo dużym i małym prawdopodobieństwie znalezienia elektronu. W przeciwieństwie do modelu atomu wodoru Bohra elektron nie porusza się wokół jądra (protonu) po ściśle określonym torze. Zasada nieoznaczoności sprawia, że nie jest możliwe opisanie, jak elektron przedostaje się z jednego miejsca do drugiego.</para>
+<figure id="CNX_UPhysics_41_01_PClouds">
+  <media id="fs-id1170901651135" alt="Figura pokazuje chmurę gęstości prawdopodobieństwa dla elektronów o n równym 1, 2 i 3 i l równym 0, 1 i 2. Dla n=1, l=0 rozkład ma symetrię sferyczną, jaśniejszy w środku i wraz ze wzrostem promienia kolor stopniowo ciemnieje. Dla n=2, l=0 rozkład ma symetrię sferyczną, posiada sferyczny, koncentryczny węzeł. Węzeł widoczny jest jako czarne kółko w środku chmury. Chmura jest jaśniejsza w środku, na zewnątrz węzła kolor jaśnieje (ale nie jest tak jasny jak w środku chmury), następnie ciemnieje wraz ze wzrostem r. Dla n=2, l=1 węzeł ma postać płaszczyzny, leżącej wzdłuż średnicy chmury, mającej postać czarnej linii posiadającej wcięcia przy krawędziach. Chmura jest najjaśniejsza w środku, pod i nad węzłem. Dla n=3, l=0 rozkład ma symetrię sferyczną z dwoma sferycznymi węzłami. Węzeł ma postać czarnego koła wewnątrz chmury. Chmura jest jaśniejsza w środku, węzeł jest carny, kolor jaśnieje na zewnątrz węzła, drugi węzeł jest czarny, na zewnątrz drugiego węzła kolor znowu jaśnieje, a następnie ciemnieje wraz ze wzrostem r. Lokalne maksima (w środku, pomiędzy węzłami, na zewnątrz węzłów) mają coraz mniejsze natężenia. Stan n=3, l=2 posiada dwa koncentryczne węzły i płaski węzeł wzdłuż średnicy. Chmura jest jaśniejsza w środku koncentrycznego węzła. Jasność drugiego maksimum lokalnego ma postać płata powyżej i poniżej węzła. Dla n=3, l=2 mamy dwa węzły w postaci płaszczyzn, które wyglądają jak X naniesiony na chmurę. Ćwiartki chmury są mocno wcięte na krawędziach, tworząc zaokrąglone płaty. Chmura jest najjaśniejsza w środku.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_41_01_PClouds.jpg"/>
+  </media>
+  <caption>Chmura prawdopodobieństwa dla elektronu w stanie podstawowym i w kilku stanach wzbudzonych atomu wodoru. Prawdopodobieństwo znalezienia elektronu oznaczono odcieniem koloru; im kolor jaśniejszy, tym większa szansa znalezienia elektronu.</caption>
+</figure>
+</section>
+<section id="fs-id1170901695797" class="key-concepts">
+  <title>Podsumowanie</title>
+  <list id="fs-id1170902632764" list-type="bulleted" bullet-style="bullet">
+    <item>Elektron w atomie wodoru może być opisany przez jego funkcję falową, gęstość prawdopodobieństwa, całkowitą energię i orbitalny moment pędu.</item>
+    <item>Stan atomu wodoru jest określony przez jego liczby kwantowe <m:math display="inline">
+      <m:mfenced>
+        <m:mi>n</m:mi>
+        <m:mi>l</m:mi>
+        <m:msub>
+          <m:mi>m</m:mi>
+          <m:mi>l</m:mi>
+        </m:msub>
+      </m:mfenced>
+      </m:math> (pomijając spin).</item>
+      <item>W przeciwieństwie do modelu atomu wodoru Bohra model Schrödingera daje przewidywania oparte na stwierdzeniach dotyczących prawdopodobieństwa.</item>
+      <item>Liczby kwantowe atomu wodoru mogą być użyte do obliczania ważnych informacji dotyczących atomów.</item>
+    </list>
+  </section>
+  <section id="fs-id1170902753074" class="review-conceptual-questions">
+    <title>Pytania</title>
+    <exercise id="fs-id1170901692206">
+      <problem id="fs-id1170901692208">
+        <para id="fs-id1170901692210">Określ fizyczne znaczenie każdej z liczb kwantowych atomu wodoru.</para>
+      </problem>
+      <solution id="fs-id1170902956657">
+        <para id="fs-id1170902956659">
+          <m:math display="inline">
+            <m:mi>n</m:mi>
+          </m:math> (główna liczba kwantowa) <m:math>
+          <m:mo stretchy="false">→</m:mo>
+        </m:math> całkowita energia; <m:math display="inline">
+        <m:mi>l</m:mi>
+      </m:math> (orbitalna liczba kwantowa) <m:math>
+      <m:mo stretchy="false">→</m:mo>
+    </m:math> bezwzględna wartość orbitalnego momentu pędu; <m:math display="inline">
+    <m:msub>
+      <m:mi>m</m:mi>
+      <m:mi>l</m:mi>
+    </m:msub>
+  </m:math> (magnetyczna liczba kwantowa) <m:math><m:mo stretchy="false">→</m:mo></m:math> <m:math display="inline">
+  <m:semantics>
+      <m:mi>z</m:mi>
+    <m:annotation encoding="application/vnd.katalysteducation.mathtex"> z</m:annotation>
+  </m:semantics>
+  </m:math>-owa składowa orbitalnego momentu pędu.</para>
+</solution>
+</exercise>
+<exercise id="fs-id1170902923253">
+  <problem id="fs-id1170902923255">
+    <para id="fs-id1170901771343">Opisz stan podstawowy atomu wodoru za pomocą funkcji falowej, funkcji gęstości prawdopodobieństwa i orbitali atomowych.</para>
+  </problem>
+</exercise>
+<exercise id="fs-id1170901556306">
+  <problem id="fs-id1170901556308">
+    <para id="fs-id1170901556311">Porównaj model atomu wodoru Bohra z modelem Schrödingera. W szczególności porównaj wartości energii i orbitalnego momentu pędu dla stanu podstawowego, wynikające z obu modeli.</para>
+  </problem>
+  <solution id="fs-id1170902923704">
+    <para id="fs-id1170902923706">Model Bohra opisuje elektron jako cząstkę poruszającą się wokół protonu po ściśle określonych orbitach. Model Schrödingera opisuje elektron poprzez funkcję falową, która określa prawdopodobieństwo znalezienia się elektronu w określonym miejscu przestrzeni. Całkowita energia elektronu w stanie podstawowym (i wszystkich stanach wzbudzonych) jest taka sama dla obu modeli. Jednakże wartość orbitalnego momentu pędu dla stanu podstawowego jest różna w obydwu modelach. W modelu Bohra moment pędu, opisany wzorem <m:math display="inline">
+      <m:mi>L</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mi>n</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>h</m:mi>
+      </m:mrow>
+    </m:math>, dla stanu podstawowego wynosi <m:math display="inline">
+    <m:mi>L</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>h</m:mi>
+  </m:math>, natomiast w modelu Schrödingera dla stanu podstawowego <m:math display="inline">
+  <m:mi>L</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+  </m:math>.</para>
+</solution>
+</exercise>
+</section>
+<section id="fs-id1170902907785" class="review-problems">
+  <title>Zadania</title>
+  <exercise id="fs-id1170902872611">
+    <problem id="fs-id1170902872613">
+      <para id="fs-id1170902872615">Mamy obliczyć funkcję falową w punkcie <m:math display="inline">
+        <m:mfenced>
+          <m:mi>x</m:mi>
+          <m:mi>y</m:mi>
+          <m:mi>z</m:mi>
+        </m:mfenced>
+        <m:mo>=</m:mo>
+        <m:mfenced>
+          <m:mn>2</m:mn>
+          <m:mn>1</m:mn>
+          <m:mn>1</m:mn>
+        </m:mfenced>
+        </m:math>, w prostokątnym układzie współrzędnych (w umownych jednostkach). Jakie są współrzędne sferyczne tego punktu?</para>
+      </problem>
+      <solution id="fs-id1170902913964">
+        <para id="fs-id1170902683052">
+          <m:math display="inline">
+            <m:mfenced>
+              <m:mi>r</m:mi>
+              <m:mi>θ</m:mi>
+              <m:mi>ϕ</m:mi>
+            </m:mfenced>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfenced>
+                <m:msqrt>
+                  <m:mn>6</m:mn>
+                </m:msqrt>
+                <m:mrow>
+                  <m:mn>66</m:mn>
+                  <m:mo>°</m:mo>
+                </m:mrow>
+                <m:mrow>
+                  <m:mn>27</m:mn>
+                  <m:mo>°</m:mo>
+                </m:mrow>
+              </m:mfenced>
+            </m:mrow>
+            </m:math>. </para>
+          </solution>
+        </exercise>
+        <exercise id="fs-id1170903088728">
+          <problem id="fs-id1170903088730">
+            <para id="fs-id1170902871062">Jeśli atom ma elektron w stanie <m:math display="inline">
+              <m:mi>n</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>5</m:mn>
+            </m:math> z <m:math display="inline">
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mi>l</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>3</m:mn>
+          </m:math>, to jakie są możliwe wartości <m:math display="inline">
+          <m:mi>l</m:mi>
+          </m:math>?</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1170901770906">
+        <problem id="fs-id1170901770908">
+          <para id="fs-id1170901770910">Jakie są możliwe wartości <m:math display="inline">
+            <m:msub>
+              <m:mi>m</m:mi>
+              <m:mi>l</m:mi>
+            </m:msub>
+          </m:math> elektronu w stanie <m:math display="inline">
+          <m:mi>n</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>4</m:mn>
+          </m:math>?</para>
+        </problem>
+        <solution id="fs-id1170901525609">
+          <para id="fs-id1170901525611">Możliwe są wartości: <m:math display="inline">
+            <m:mfenced open="" close="">
+              <m:mrow>
+                <m:mo>±</m:mo>
+                <m:mn>3</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>±</m:mo>
+                <m:mn>2</m:mn>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>±</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+              <m:mn>0</m:mn>
+            </m:mfenced>
+            </m:math>.</para>
+          </solution>
+        </exercise>
+        <exercise id="fs-id1170903099641">
+          <problem id="fs-id1170902792550">
+            <para id="fs-id1170902792552">Jakie są, jeśli w ogóle istnieją, ograniczenia dla innych liczb kwantowych elektronu w atomie, jeśli magnetyczna liczba kwantowa <m:math display="inline">
+              <m:msub>
+                <m:mi>m</m:mi>
+                <m:mi>l</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>1</m:mn>
+              </m:math>?</para>
+            </problem>
+          </exercise>
+          <exercise id="fs-id1170903082786">
+            <problem id="fs-id1170903082788">
+              <list id="eip-idm705357376" list-type="enumerated" number-style="lower-alpha">
+                <item>Ile kątów może tworzyć wektor <m:math display="inline">
+                  <m:mover>
+                    <m:mi>L</m:mi>
+                    <m:mo>→</m:mo>
+                  </m:mover>
+                </m:math> z osią <m:math display="inline">
+                <m:mi>z</m:mi>
+              </m:math> dla elektronów z <m:math display="inline">
+              <m:mi>l</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>2</m:mn>
+              </m:math>?</item>
+              <item>Oblicz wartość najmniejszego kąta.</item>
+            </list>
+          </problem>
+        </exercise>
+        <exercise id="fs-id1170901872988">
+          <problem id="fs-id1170901872990">
+            <para id="fs-id1170901872992">Siła działająca na elektron jest „ujemnym gradientem funkcji energii potencjalnej”. Skorzystaj z tego oraz z <link target-id="fs-id1170903082088" cmlnle:case="genitive"/>, aby pokazać, że siła działająca na elektron w atomie wodoru jest dana przez prawo Coulomba.</para>
+          </problem>
+          <solution id="fs-id1170901761056">
+            <para id="fs-id1170901761058">
+              <m:math display="inline">
+                <m:semantics>
+                  <m:mrow>
+                    <m:mi>F</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mrow>
+                      <m:mo>−</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>k</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:mi>Q</m:mi>
+                          <m:mo>⁢</m:mo>
+                          <m:mi>q</m:mi>
+                        </m:mrow>
+                        <m:mo>∕</m:mo>
+                        <m:msup>
+                          <m:mi>r</m:mi>
+                          <m:mn>2</m:mn>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:annotation encoding="application/vnd.katalysteducation.mathtex"> F = -k Q q/ r^2</m:annotation>
+                </m:semantics>
+                </m:math>.</para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1170902605585">
+              <problem id="fs-id1170902605587">
+                <para id="fs-id1170901751354">Jaka jest łączna liczba stanów z orbitalnym momentem pędu <m:math display="inline">
+                  <m:mi>l</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>0</m:mn>
+                  </m:math> (pomiń spin elektronu)?</para>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1170901631330">
+                <problem id="fs-id1170901631333">
+                  <para id="fs-id1170901631335">Funkcja falowa jest określona w punkcie o współrzędnych sferycznych <m:math display="inline">
+                    <m:mfenced>
+                      <m:mi>r</m:mi>
+                      <m:mi>θ</m:mi>
+                      <m:mi>ϕ</m:mi>
+                    </m:mfenced>
+                    <m:mo>=</m:mo>
+                    <m:mfenced>
+                      <m:msqrt>
+                        <m:mn>3</m:mn>
+                      </m:msqrt>
+                      <m:mrow>
+                        <m:mn>45</m:mn>
+                        <m:mo>°</m:mo>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mn>45</m:mn>
+                        <m:mo>°</m:mo>
+                      </m:mrow>
+                    </m:mfenced>
+                  </m:math>, gdzie <m:math display="inline">
+                  <m:mi>r</m:mi>
+                  </m:math> jest podane w umownych jednostkach. Jakie są współrzędne kartezjańskie tego położenia?</para>
+                </problem>
+                <solution id="fs-id1170901649448">
+                  <para id="fs-id1170901649450">
+                    <m:math display="inline">
+                      <m:mfenced>
+                        <m:mn>1</m:mn>
+                        <m:mn>1</m:mn>
+                        <m:mn>1</m:mn>
+                      </m:mfenced>
+                      </m:math>. </para>
+                    </solution>
+                  </exercise>
+                  <exercise id="fs-id1170902779106">
+                    <problem id="fs-id1170902779108">
+                      <para id="fs-id1170902779110">Prawo Coulomba stwierdza, że siła pomiędzy dwoma naładowanymi cząstkami wynosi: <m:math display="inline">
+                        <m:mi>F</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mi>k</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>Q</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>q</m:mi>
+                          </m:mrow>
+                          <m:mo>∕</m:mo>
+                          <m:msup>
+                            <m:mi>r</m:mi>
+                            <m:mn>2</m:mn>
+                          </m:msup>
+                        </m:mrow>
+                        </m:math>. Za pomocą tego wyrażenia określ funkcję energii potencjalnej.</para>
+                      </problem>
+                    </exercise>
+                    <exercise id="fs-id1170901583052">
+                      <problem id="fs-id1170901583054">
+                        <para id="fs-id1170901583056">Napisz wyrażenie na łączną liczbę stanów z orbitalną liczbą kwantową <m:math display="inline">
+                          <m:mi>l</m:mi>
+                          </m:math>.</para>
+                        </problem>
+                        <solution id="fs-id1170902836519">
+                          <para id="fs-id1170902836521">Dla orbitalnej liczby kwantowej <m:math display="inline">
+                            <m:mi>l</m:mi>
+                          </m:math> dopuszczalne wartości magnetycznej liczby kwantowej to: <m:math display="inline">
+                          <m:mfenced open="" close="">
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>m</m:mi>
+                                <m:mi>l</m:mi>
+                              </m:msub>
+                              <m:mo>=</m:mo>
+                              <m:mrow>
+                                <m:mo>−</m:mo>
+                                <m:mi>l</m:mi>
+                              </m:mrow>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo>−</m:mo>
+                                <m:mi>l</m:mi>
+                              </m:mrow>
+                              <m:mo>+</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                            <m:mi>…</m:mi>
+                            <m:mn>0</m:mn>
+                            <m:mi>…</m:mi>
+                            <m:mrow>
+                              <m:mi>l</m:mi>
+                              <m:mo>−</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                            <m:mi>l</m:mi>
+                          </m:mfenced>
+                        </m:math>. Stąd wynika, że całkowita liczba stanów z orbitalnym momentem pędu, opisanym liczbą kwantową <m:math display="inline">
+                        <m:mi>l</m:mi>
+                      </m:math>, wynosi <m:math display="inline">
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>l</m:mi>
+                      </m:mrow>
+                      <m:mo>+</m:mo>
+                      <m:mn>1</m:mn>
+                    </m:math>. Później, gdy uwzględnimy spin elektronu, całkowita liczba stanów będzie dwukrotnie większa od tej wartości, ponieważ każdemu stanowi z określonym <m:math display="inline">
+                    <m:msub>
+                      <m:mi>m</m:mi>
+                      <m:mi>l</m:mi>
+                    </m:msub>
+                  </m:math> odpowiadają dwa stany związane z dwoma stanami spinu elektronu, opisane liczbami kwantowymi: <m:math display="inline"><m:semantics><m:mfenced close="" open=""><m:mrow><m:msub><m:mi>m</m:mi><m:mi>s</m:mi></m:msub><m:mo>=</m:mo><m:mrow><m:mo>−</m:mo><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:mfenced><m:annotation encoding="application/vnd.katalysteducation.mathtex">            m_s=-1/2, 1/2</m:annotation></m:semantics></m:math>.</para>
+                </solution>
+              </exercise>
+              <exercise id="fs-id1170902878848">
+                <problem id="fs-id1170902878850">
+                  <para id="fs-id1170902878852">Rozpatrz wodór w stanie podstawowym, opisany funkcją falową <m:math display="inline">
+                    <m:semantics>
+                      <m:msub>
+                        <m:mi>ψ</m:mi>
+                        <m:mfenced close="" open="" separators="⁣">
+                          <m:mn>1</m:mn>
+                          <m:mn>0</m:mn>
+                          <m:mn>0</m:mn>
+                        </m:mfenced>
+                      </m:msub>
+                      <m:annotation encoding="application/vnd.katalysteducation.mathtex"> \psi_{1\sep 0\sep 0}</m:annotation>
+                    </m:semantics>
+                  </m:math>. <list id="eip-idm1054181680" list-type="enumerated" number-style="lower-alpha">
+                  <item>Przy pomocy pochodnej określ radialne położenie (odległość od centrum), dla którego gęstość prawdopodobieństwa <m:math display="inline">
+                    <m:mi>P</m:mi>
+                    <m:mo>⁡</m:mo>
+                    <m:mfenced>
+                      <m:mi>r</m:mi>
+                    </m:mfenced>
+                    </m:math> jest maksymalna;</item>
+                    <item>Korzystając z określenia średniej wartości funkcji za pomocą całki, znajdź średnie radialne położenie elektronu. (Jest to tak zwana wartość oczekiwana radialnego położenia elektronu). Przedstaw otrzymane wyniki, używając promienia Bohra, <m:math display="inline">
+                      <m:msub>
+                        <m:mi>a</m:mi>
+                        <m:mn>0</m:mn>
+                      </m:msub>
+                      </m:math>; </item>
+                      <item>Dlaczego te wartości się różnią?</item>
+                    </list>
+                  </para>
+                </problem>
+              </exercise>
+              <exercise id="fs-id1170901749836">
+                <problem id="fs-id1170901749838">
+                  <para id="fs-id1170901749840">Jakie jest prawdopodobieństwo tego, że elektron w stanie <m:math display="inline">
+                    <m:mn>1</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>s</m:mi>
+                    </m:math> atomu wodoru znajduje się w odległości od jądra większej niż promień Bohra?</para>
+                  </problem>
+                  <solution id="fs-id1170902960885">
+                    <para id="fs-id1170902960887"><m:math display="inline">
+                    <m:mrow>
+                      <m:munderover>
+                        <m:mo>∫</m:mo>
+                        <m:msub>
+                          <m:mi>a</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mi>∞</m:mi>
+                      </m:munderover>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>P</m:mi>
+                          <m:mo>⁡</m:mo>
+                          <m:mfenced>
+                            <m:mi>r</m:mi>
+                          </m:mfenced>
+                        </m:mrow>
+                        <m:mo>⁢</m:mo>
+                        <m:mrow>
+                          <m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo>
+                          <m:mi>r</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mo>≈</m:mo>
+                    <m:mn>0,68</m:mn>
+                    </m:math>.</para>
+                  </solution>
+                </exercise>
+                <exercise id="fs-id1170902872041">
+                  <problem id="fs-id1170902872043">
+                    <para id="fs-id1170901529132">Ile jest możliwych polarnych kątów dla elektronu w stanie <m:math display="inline">
+                      <m:mi>l</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>5</m:mn>
+                      </m:math>?</para>
+                    </problem>
+                  </exercise>
+                  <exercise id="fs-id1170901604098">
+                    <problem id="fs-id1170901604100">
+                      <para id="fs-id1170901604103">Jaka jest maksymalna liczba stanów elektronu w atomie wodoru na powłoce <m:math display="inline">
+                        <m:mi>n</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>2</m:mn>
+                        </m:math> (pomiń spin elektronu)?</para>
+                      </problem>
+                      <solution id="fs-id1170902907558">
+                        <para id="fs-id1170903014279">Dla <m:math display="inline">
+                          <m:mi>n</m:mi>
+                          <m:mo>=</m:mo>
+                          <m:mn>2</m:mn>
+                        </m:math> liczba stanów o <m:math display="inline">
+                        <m:mi>l</m:mi>
+                        <m:mo>=</m:mo>
+                        <m:mn>0</m:mn>
+                      </m:math> wynosi <m:math display="inline">
+                      <m:mn>1</m:mn>
+                    </m:math>, a o <m:math display="inline">
+                    <m:mi>l</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:math> jest równa <m:math display="inline">
+                  <m:mn>3</m:mn>
+                </m:math>. Całkowita liczba stanów wynosi więc <m:math display="inline">
+                <m:mn>4</m:mn>
+                </m:math>.</para>
+              </solution>
+            </exercise>
+            <exercise id="fs-id1170902780643">
+              <problem id="fs-id1170902780645">
+                <para id="fs-id1170902780647">Jaka jest maksymalna liczba stanów elektronu w atomie wodoru na powłoce <m:math display="inline">
+                  <m:mi>n</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>3</m:mn>
+                  </m:math> (pomiń spin elektronu)?</para>
+                </problem>
+              </exercise>
+            </section>
+          </content>
+          <glossary>
+            <definition id="fs-id1170902685108">
+              <term class="no-emphasis" cmlnle:reference="orbitalna (poboczna) liczba kwantowa">orbitalna (poboczna) liczba kwantowa (ang. <foreign>
+                <term cxlxt:index="foreign" class="no-emphasis">angular momentum orbital quantum number</term>
+                </foreign>)</term>
+                <meaning id="fs-id1170902883846">liczba kwantowa związana z orbitalnym momentem pędu elektronów w atomie</meaning>
+              </definition>
+              <definition id="fs-id1170902885184">
+                <term class="no-emphasis" cmlnle:reference="magnetyczna liczba kwantowa">magnetyczna liczba kwantowa (ang. <foreign>
+                  <term cxlxt:index="foreign" class="no-emphasis">angular momentum projection quantum number</term>
+                </foreign>, <foreign>
+                <term cxlxt:index="foreign" class="no-emphasis">magnetic orbital quantum number</term>
+                </foreign>)</term>
+                <meaning id="fs-id1170902917540">liczba kwantowa określająca <m:math display="inline">
+                  <m:mi>z</m:mi>
+                  </m:math>-ową składową orbitalnego momentu pędu elektronu w atomie</meaning>
+                </definition>
+                <definition id="fs-id1170902691199">
+                  <term class="no-emphasis" cmlnle:reference="orbital atomowy">orbital atomowy (ang. <foreign>
+                    <term cxlxt:index="foreign" class="no-emphasis">atomic orbital</term>
+                    </foreign>)</term>
+                    <meaning id="fs-id1170902691205">obszar w przestrzeni, który cechuje pewne prawdopodobieństwo (zwykle około <m:math display="inline">
+                      <m:mn>90</m:mn>
+                      <m:mo rspace="verythinmathspace" lspace="0px">⁢</m:mo>
+                      <m:mi mathvariant="normal">%</m:mi>
+                      </m:math>) znalezienia się w nim elektronów</meaning>
+                    </definition>
+                    <definition id="fs-id1170902867693">
+                      <term class="no-emphasis" cmlnle:reference="główna liczba kwantowa">główna liczba kwantowa (ang. <foreign>
+                        <term cxlxt:index="foreign" class="no-emphasis">principal quantum number</term>
+                        </foreign>)</term>
+                        <meaning id="fs-id1170903125937">liczba kwantowa związana z całkowitą energią elektronów w atomie wodoru</meaning>
+                      </definition>
+                      <definition id="fs-id1170903125941">
+                        <term class="no-emphasis" cmlnle:reference="radialna funkcja gęstości prawdopodobieństwa">radialna funkcja gęstości prawdopodobieństwa (ang. <foreign>
+                          <term cxlxt:index="foreign" class="no-emphasis">radial probability density function</term>
+                          </foreign>)</term>
+                          <meaning id="fs-id1170903125946">funkcja używana w celu określania prawdopodobieństwa znalezienia elektronów w przestrzennym przedziale w otoczeniu <m:math display="inline">
+                            <m:mi>r</m:mi>
+                          </m:math>
+                        </meaning>
+                      </definition>
+                    </glossary>
+                  </document>

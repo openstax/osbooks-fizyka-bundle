@@ -1,0 +1,5283 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Matematyczny opis fal</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65835</md:content-id>
+  <md:title>Matematyczny opis fal</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>podawać matematyczną postać fali biegnącej ze stałą prędkością; </item>
+<item>obliczać prędkość i przyspieszenie ośrodka; </item>
+<item>wyjaśniać różnicę między prędkością ośrodka a prędkością rozchodzenia się fali. </item>
+</list></md:abstract>
+  <md:uuid>9e576c19-7b3f-4139-a0e7-0efa7b6017e4</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1165039399258">W poprzednim rozdziale opisywaliśmy fale okresowe, definiując takie wielkości jak: długość, okres, amplituda oraz prędkość fali. Fale jednak możemy też opisać, rozważając ruch cząstek ośrodka, przez który fala przechodzi. Położenie cząstek ośrodka można określić za pomocą tzw. <term cmlnle:reference="funkcja falowa" class="no-emphasis">funkcji falowej</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">wave function</term></foreign>). Pozwala ona określić nie tylko położenie, ale także prędkość i przyspieszenie cząstek ośrodka, przez który biegnie fala w dowolnej chwili.</para><section id="fs-id1165039109589">
+    <title>Impulsy</title>
+    <para id="fs-id1165039290971"><term cmlnle:reference="impuls" class="no-emphasis">Impuls</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">pulse</term></foreign>) oznacza falę wytworzoną przez pojedyncze zaburzenie ośrodka. Impuls ma stałą amplitudę i rozchodzi się ze stałą prędkością. Z uwagi na stałą prędkość droga, którą pokonuje w czasie <m:math>
+        <m:mrow>
+          <m:mtext>Δ</m:mtext>
+          <m:mi>t</m:mi>
+        </m:mrow>
+      </m:math>, wynosi <m:math>
+      <m:mrow>
+        <m:mtext>Δ</m:mtext>
+        <m:mi>x</m:mi>
+        <m:mo>=</m:mo>
+        <m:mi>v</m:mi>
+        <m:mtext>Δ</m:mtext>
+        <m:mi>t</m:mi>
+      </m:mrow>
+      </m:math> (<link target-id="CNX_UPhysics_16_02_Pulse2"/>).</para><figure id="CNX_UPhysics_16_02_Pulse2">
+        <media id="fs-id1165039242508" alt="Rysunek pokazuje impuls, tzn. falę posiadającą jeden grzbiet dla t=0. Odległość pomiędzy punktem początkowym i końcowym fali wynosi lambda. Grzbiet ma y=0. Pionowa odległość grzbietu od położenia równowagi wynosi A. Fala biegnie w prawo z prędkością v. Rysunek b pokazuje tę samą falę w chwili t=t indeks dolny 1. Impuls przemieścił się na prawo. Pozioma odległość grzbietu od osi y jest oznaczona delta x równe v delta t.">
+          <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_16_02_Pulse2.jpg"/>
+        </media>
+        <caption>W chwili <m:math>
+          <m:mrow>
+            <m:mi>t</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>0</m:mn>
+          </m:mrow>
+        </m:math> impuls znajduje się w położeniu <m:math>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+        </m:mrow>
+      </m:math>, a jego amplituda wynosi <m:math>
+        <m:mi>A</m:mi>
+      </m:math>. Podczas ruchu impuls zachowuje stały kształt, przebywając drogę <m:math>
+    <m:mrow>
+      <m:mtext>Δ</m:mtext>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mi>v</m:mi>
+      <m:mtext>Δ</m:mtext>
+      <m:mi>t</m:mi>
+    </m:mrow>
+  </m:math> w czasie <m:math>
+  <m:mrow>
+    <m:mtext>Δ</m:mtext>
+    <m:mi>t</m:mi>
+    <m:mo>.</m:mo>
+  </m:mrow>
+</m:math>
+</caption>
+</figure>
+</section>
+<section id="fs-id1165039504722">
+  <title>Opis sinusoidalnej fali jednowymiarowej za pomocą modelu funkcji falowej</title>
+  <para id="fs-id1165039326260">Rozważmy strunę poddaną stałemu naprężeniu <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>F</m:mi>
+        <m:mi>T</m:mi>
+      </m:msub>
+    </m:mrow>
+  </m:math>, której jeden koniec jest unieruchomiony, a drugi – swobodny – jest wprawiany w drgania w zakresie między <m:math>
+  <m:mrow>
+    <m:mi>y</m:mi>
+    <m:mo>=</m:mo>
+    <m:mtext>+</m:mtext>
+    <m:mi>A</m:mi>
+  </m:mrow>
+</m:math> a <m:math>
+<m:mrow>
+  <m:mi>y</m:mi>
+  <m:mo>=</m:mo>
+  <m:mtext>−</m:mtext>
+  <m:mi>A</m:mi>
+</m:mrow>
+</m:math>. <link target-id="CNX_UPhysics_16_02_string"/> pokazuje obrazy fali w kolejnych chwilach równych wielokrotnościom 1/8 części okresu, przy czym w położeniu wyjściowym zostało już wykonane jedno pełne drganie <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mi>T</m:mi>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+  <m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para><figure id="CNX_UPhysics_16_02_string"><media id="fs-id1165039504736" alt="Rysunek pokazuje różne etapy rozchodzenia się fali poprzecznej, poszczególne zdjęcia odpowiadają chwilom czasu od 1 przez 8 T. Punkty odniesienia leżące na fali zaznaczono przy pomocy kropek. Punkty poruszają się w górę i w dół w zakresie od – A do +A. Kropka, która znajduje się w stanie równowagi w chwili t=T, osiąga punkt +A w czasie t=T plus 2 przez 8 T. Następnie porusza się z powrotem osiągając położenie równowagi w chwili t= T plus 4 przez 8 T. Po tym osiąga –A w czasie t=T plus 6 przez 8 T i z powrotem osiąga położenie równowagi w chwili t=2T. Wszystkie inne punkty również wracają do swych wyjściowych położeń po czasie t=2T.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_16_02_String.jpg"/>
+  </media>
+  
+<caption>Obrazy fali poprzecznej przemieszczającej się wzdłuż struny poddanej stałemu naprężeniu. Fala powstała w chwili <m:math>
+    <m:mrow>
+      <m:mi>t</m:mi>
+      <m:mo>=</m:mo>
+      <m:mi>T</m:mi>
+    </m:mrow>
+  </m:math>, a kolejne obrazy pokazują ją w chwilach co <m:math>
+  <m:mrow>
+    <m:mfrac>
+      <m:mn>1</m:mn>
+      <m:mn>8</m:mn>
+    </m:mfrac>
+    <m:mi>T</m:mi>
+    <m:mo>.</m:mo>
+  </m:mrow>
+  </m:math> Kolorowymi kropkami zaznaczono punkty odniesienia na strunie. Tym samym kolorem zaznaczono punkty, które znajdują się w odległości równej jednej długości fali od siebie. </caption></figure><para id="fs-id1165039335072">Zauważmy, że każdy zaznaczony na kolorowo punkt struny wykonuje proste drgania harmoniczne w górę i w dół w zakresie pomiędzy <m:math>
+  <m:mrow>
+    <m:mi>y</m:mi>
+    <m:mo>=</m:mo>
+    <m:mo>+</m:mo>
+    <m:mi>A</m:mi>
+  </m:mrow>
+</m:math> a <m:math>
+<m:mrow>
+  <m:mi>y</m:mi>
+  <m:mo>=</m:mo>
+  <m:mtext>−</m:mtext>
+  <m:mi>A</m:mi>
+  <m:mo>,</m:mo>
+</m:mrow>
+</m:math> natomiast okres wynosi <m:math>
+  <m:mi>T</m:mi>
+</m:math>. Fala biegnąca wzdłuż struny jest sinusoidalna i przemieszcza się w prawo wraz z upływem czasu. </para><para id="fs-id1165039271502">W tym miejscu przypomnijmy znaną nam z algebry definicję, zgodnie z którą, jeżeli <m:math>
+    <m:mi>f</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>x</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+  </m:math>
+ jest dowolną funkcją, to <m:math>
+<m:mrow>
+  <m:mi>f</m:mi>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>−</m:mo>
+      <m:mi>d</m:mi>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+</m:mrow>
+</m:math> oznacza tę samą funkcję, ale przesuniętą w kierunku zgodnym ze zwrotem osi <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ o odległość <m:math>
+  <m:mi>d</m:mi>
+</m:math>. Funkcja <m:math>
+<m:mrow>
+  <m:mi>f</m:mi>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>+</m:mo>
+      <m:mi>d</m:mi>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+</m:mrow>
+</m:math> oznacza zaś tę samą funkcję przesuniętą w kierunku przeciwnym do zwrotu osi <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ o odległość <m:math>
+  <m:mi>d</m:mi>
+</m:math>. Chcemy zdefiniować funkcję falową, która określi położenie <m:math>
+  <m:mi>y</m:mi>
+</m:math>
+ dla każdego punktu <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ struny w dowolnie wybranej chwili <m:math>
+  <m:mi>t</m:mi>
+</m:math>. </para><para id="fs-id1165039125104">Jeżeli popatrzymy na pierwszy obraz fali na <link target-id="CNX_UPhysics_16_02_string" cmlnle:case="locative"/>, to zauważymy, że współrzędną <m:math>
+    <m:mi>y</m:mi>
+  </m:math>
+ struny dla wartości odciętych z przedziału od <m:math>
+<m:mrow>
+  <m:mi>x</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+</m:mrow>
+</m:math> do <m:math>
+<m:mrow>
+  <m:mi>x</m:mi>
+  <m:mo>=</m:mo>
+  <m:mi>λ</m:mi>
+</m:mrow>
+</m:math> możemy opisać przy użyciu funkcji sinus. Fala przemieszcza się wzdłuż struny o jedną długość fali w czasie równym jednemu okresowi, jak możemy zauważyć na drugim obrazie. Z tego wynika, że fala porusza się ze stałą prędkością, równą <m:math>
+<m:mrow>
+  <m:mi>v</m:mi>
+  <m:mo>=</m:mo>
+  <m:mi>λ</m:mi>
+  <m:mtext>/</m:mtext>
+  <m:mi>T</m:mi>
+  <m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para><para id="fs-id1165039093719">Przypominamy, że funkcja sinus jest funkcją kąta <m:math>
+  <m:mi>θ</m:mi>
+</m:math> i przyjmuje wartości pomiędzy <m:math>
+<m:mrow>
+  <m:mtext>+</m:mtext>
+  <m:mn>1</m:mn>
+</m:mrow>
+</m:math> a <m:math>
+<m:mrow>
+  <m:mn>−1</m:mn>
+</m:mrow>
+</m:math>, a jej okres wynosi <m:math>
+<m:mrow>
+  <m:mn>2</m:mn>
+  <m:mi>π</m:mi>
+</m:mrow>
+</m:math> rad (<link target-id="CNX_UPhysics_16_02_SineWave"/>). Jednakże współrzędne <m:math>
+  <m:mi>y</m:mi>
+</m:math>
+ cząstek ośrodka, a zarazem funkcji falowej, przybierają wartości pomiędzy <m:math>
+<m:mrow>
+  <m:mtext>+</m:mtext>
+  <m:mi>A</m:mi>
+</m:mrow>
+</m:math> a <m:math>
+<m:mrow>
+  <m:mtext>−</m:mtext>
+  <m:mi>A</m:mi>
+</m:mrow>
+</m:math>, a okres takiej funkcji równa się <m:math>
+<m:mi>λ</m:mi>
+</m:math>.</para><figure id="CNX_UPhysics_16_02_SineWave"><media id="fs-id1165039334861" alt="Rysunek pokazuje przebieg funkcji sinus kąta theta. Funkcja przypomina falę poprzeczną, dla której wartości y zmieniają się pomiędzy -1 a +1. Funkcja posiada grzbiety dla theta równych pi dzielone przez 2, 5 itd. Funkcja przecina oś x dla 0, pi, 2 pi, itd">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_16_02_SineWave.jpg"/>
+  </media>
+  
+<caption>Funkcja sinus przyjmuje wartości z przedziału od <m:math>
+    <m:mrow>
+      <m:mtext>+</m:mtext>
+      <m:mn>1</m:mn>
+    </m:mrow>
+  </m:math> do <m:math>
+  <m:mrow>
+    <m:mn>−1</m:mn>
+  </m:mrow>
+</m:math>, a jej okres wynosi <m:math>
+<m:mrow>
+  <m:mn>2</m:mn>
+  <m:mi>π</m:mi>
+</m:mrow>
+</m:math> rad.</caption></figure><para id="fs-id1165039051462">Aby opisać falę przy użyciu funkcji okresowej, rozważmy stosunek kąta do położenia:</para>
+<equation id="fs-id1165039074305" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mtable>
+      <m:mtr>
+        <m:mtd columnalign="right">
+          <m:mfrac>
+            <m:mi>θ</m:mi>
+            <m:mi>x</m:mi>
+          </m:mfrac>
+        </m:mtd>
+        <m:mtd columnalign="left">
+          <m:mo>=</m:mo>
+        </m:mtd>
+        <m:mtd columnalign="left">
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mi>π</m:mi>
+            </m:mrow>
+            <m:mi>λ</m:mi>
+          </m:mfrac>
+          <m:mo>,</m:mo>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd columnalign="right">
+          <m:mi>θ</m:mi>
+        </m:mtd>
+        <m:mtd columnalign="left">
+          <m:mo>=</m:mo>
+        </m:mtd>
+        <m:mtd columnalign="left">
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mi>π</m:mi>
+            </m:mrow>
+            <m:mi>λ</m:mi>
+          </m:mfrac>
+          <m:mi>x</m:mi>
+          <m:mo>.</m:mo>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation>
+<para id="fs-id1165039264233">Po zastosowaniu <m:math>
+  <m:mi>θ</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>2</m:mn>
+  <m:mi>π</m:mi>
+  <m:mi>x</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi>λ</m:mi>
+</m:math> i pomnożeniu funkcji sinus przez amplitudę <m:math>
+  <m:mi>A</m:mi>
+</m:math>
+ możemy obliczyć postać funkcji opisującej położenie <m:math>
+  <m:mi>y</m:mi>
+</m:math>
+ struny w zależności od położenia <m:math>
+  <m:mi>x</m:mi>
+</m:math>:</para><equation id="fs-id1165035685217" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:mi>y</m:mi>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mi>A</m:mi>
+      <m:mspace width="0.2em"/>
+      <m:mtext>sin</m:mtext>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mi>π</m:mi>
+            </m:mrow>
+            <m:mi>λ</m:mi>
+          </m:mfrac>
+          <m:mi>x</m:mi>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1165035670380">Fala przemieszcza się wzdłuż struny w kierunku osi <m:math>
+    <m:mi>x</m:mi>
+  </m:math>
+ ze stałą prędkością <m:math>
+  <m:mi>v</m:mi>
+</m:math>
+ i pokonuje odcinek <m:math>
+  <m:mi>v</m:mi>
+  <m:mi>t</m:mi>
+</m:math>
+ w czasie <m:math>
+  <m:mi>t</m:mi>
+</m:math>. Funkcję falową definiuje się jako:</para><equation id="fs-id1165039049721" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:mi>y</m:mi>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>,</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mi>A</m:mi>
+      <m:mspace width="0.2em"/>
+      <m:mtext>sin</m:mtext>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mi>π</m:mi>
+            </m:mrow>
+            <m:mi>λ</m:mi>
+          </m:mfrac>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>−</m:mo>
+              <m:mi>v</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1165039295290">Wygodnie jest zapisywać funkcję falową w bardziej zwartej postaci. Po pomnożeniu przez <m:math>
+  <m:mrow>
+    <m:mfrac>
+      <m:mrow>
+        <m:mn>2</m:mn>
+        <m:mi>π</m:mi>
+      </m:mrow>
+      <m:mi>λ</m:mi>
+    </m:mfrac>
+  </m:mrow>
+  </m:math> otrzymujemy następujące równanie:</para>
+  <equation id="fs-id1165039044479" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mi>y</m:mi>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>,</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mi>A</m:mi>
+        <m:mspace width="0.2em"/>
+        <m:mtext>sin</m:mtext>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+              </m:mrow>
+              <m:mi>λ</m:mi>
+            </m:mfrac>
+            <m:mi>x</m:mi>
+            <m:mo>−</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+              </m:mrow>
+              <m:mi>λ</m:mi>
+            </m:mfrac>
+            <m:mi>v</m:mi>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1165035697311">Wielkość <m:math>
+    <m:mrow>
+      <m:mfrac>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mi>π</m:mi>
+        </m:mrow>
+        <m:mi>λ</m:mi>
+      </m:mfrac>
+    </m:mrow>
+  </m:math> definiuje się jako <term cmlnle:reference="liczba falowa" class="no-emphasis">liczbę falową</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">wave number</term></foreign>). Symbolem liczby falowej jest <m:math>
+    <m:mi>k</m:mi>
+  </m:math>, a jej jednostką jest <m:math>
+<m:mrow>
+  <m:msup>
+    <m:mtext>m</m:mtext>
+    <m:mrow>
+      <m:mn>−1</m:mn>
+    </m:mrow>
+  </m:msup>
+  <m:mo>:</m:mo>
+</m:mrow>
+</m:math>
+</para><note id="fs-id1165038970062" class="equation-callout">
+  <equation id="fs-id1165039109374">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mi>k</m:mi>
+        <m:mo>≡</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mi>π</m:mi>
+          </m:mrow>
+          <m:mi>λ</m:mi>
+        </m:mfrac>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1165039402592">Jak pamiętamy z rozdziału <link class="target-chapter" document="m65825">Drgania</link>, termin <term class="no-emphasis">częstość kołowa</term> definiuje się jako <m:math>
+  <m:mi>ω</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>2</m:mn>
+  <m:mi>π</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi>T</m:mi>
+  </m:math>. Drugi wyraz w definicji funkcji falowej przyjmie zatem postać: </para><equation id="fs-id1165039072164" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mfrac>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mi>π</m:mi>
+          </m:mrow>
+          <m:mi>λ</m:mi>
+        </m:mfrac>
+        <m:mi>v</m:mi>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mi>π</m:mi>
+          </m:mrow>
+          <m:mi>λ</m:mi>
+        </m:mfrac>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mi>λ</m:mi>
+              <m:mi>T</m:mi>
+            </m:mfrac>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mi>π</m:mi>
+          </m:mrow>
+          <m:mi>T</m:mi>
+        </m:mfrac>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mi>ω</m:mi>
+        <m:mi>t</m:mi>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1165039108577">Funkcja falowa dla prostej fali harmonicznej na strunie uprości się do: </para>
+  <equation id="fs-id1165039270571" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mi>y</m:mi>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>,</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mi>A</m:mi>
+        <m:mspace width="0.2em"/>
+        <m:mtext>sin</m:mtext>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>k</m:mi>
+            <m:mi>x</m:mi>
+            <m:mo>∓</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>,</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1165039485644">gdzie <m:math>
+      <m:mi>A</m:mi>
+    </m:math>
+   oznacza amplitudę, <m:math>
+  <m:mi>k</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>2</m:mn>
+  <m:mi>π</m:mi>
+  <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+  <m:mi>λ</m:mi>
+</m:math> jest liczbą falową, <m:math>
+<m:mi>ω</m:mi>
+<m:mo>=</m:mo>
+<m:mn>2</m:mn>
+<m:mi>π</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mi>T</m:mi>
+</m:math> częstość kołową, znak minus
+<m:math>
+  <m:mo>(</m:mo>
+  <m:mn>–</m:mn>
+  <m:mo>)</m:mo>
+</m:math> oznacza falę biegnącą w kierunku zgodnym ze zwrotem osi <m:math>
+  <m:mi>x</m:mi>
+</m:math>, a znak plus 
+<m:math>
+  <m:mo>(</m:mo>
+  <m:mn>+</m:mn>
+  <m:mo>)</m:mo>
+</m:math> falę biegnącą przeciwnie do zwrotu osi <m:math>
+  <m:mi>x</m:mi>
+</m:math>. Prędkość fali wynosi:</para><note id="fs-id1165039095326" class="equation-callout">
+  <equation id="fs-id1165039339957">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mi>v</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mi>λ</m:mi>
+          <m:mi>T</m:mi>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mi>λ</m:mi>
+          <m:mi>T</m:mi>
+        </m:mfrac>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mi>π</m:mi>
+              </m:mrow>
+            </m:mfrac>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mi>ω</m:mi>
+          <m:mi>k</m:mi>
+        </m:mfrac>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1165039306772">Wróćmy do naszych rozważań na temat masy zawieszonej na sprężynie. Położenie masy było opisywane jako <m:math>
+  <m:mrow>
+    <m:mi>x</m:mi>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mi>A</m:mi>
+    <m:mspace width="0.2em"/>
+    <m:mtext>cos</m:mtext>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>ω</m:mi>
+        <m:mi>t</m:mi>
+        <m:mo>+</m:mo>
+        <m:mi>ϕ</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+  </m:mrow>
+</m:math>. Kąt <m:math>
+<m:mi>ϕ</m:mi>
+</m:math> to przesunięcie fazowe, które uwzględnia sytuację, gdy początkowe położenie masy jest inne niż <m:math>
+<m:mrow>
+  <m:mi>x</m:mi>
+  <m:mo>=</m:mo>
+  <m:mtext>+</m:mtext>
+  <m:mi>A</m:mi>
+</m:mrow>
+</m:math>, a początkowa prędkość jest inna niż <m:math>
+<m:mrow>
+  <m:mi>v</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+  <m:mo>.</m:mo>
+</m:mrow>
+</m:math> Z tych samych powodów funkcja falowa zawiera fazę początkową. Funkcja falowa ma postać:</para><note id="fs-id1165035726222" class="equation-callout">
+  <equation id="fs-id1165039341518">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mi>y</m:mi>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>,</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mi>A</m:mi>
+        <m:mspace width="0.2em"/>
+        <m:mtext>sin</m:mtext>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>k</m:mi>
+            <m:mi>x</m:mi>
+            <m:mo>∓</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>ϕ</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1165039305212">Argument funkcji sinus:</para>
+<note id="fs-id1165035714801" class="equation-callout">
+  <equation id="fs-id1165039046040">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>k</m:mi>
+            <m:mi>x</m:mi>
+            <m:mo>∓</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>ϕ</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1165039025876">nazywa się <term cmlnle:reference="faza" class="no-emphasis">fazą</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">phase</term></foreign>), gdzie <m:math>
+  <m:mi>ϕ</m:mi>
+</m:math> jest fazą początkową (lub przesunięciem fazowym) funkcji falowej. Znak wyrażenia <m:math>
+<m:mrow>
+  <m:mi>ω</m:mi>
+  <m:mi>t</m:mi>
+</m:mrow>
+</m:math> zależy od kierunku rozchodzenia się fali. Niech ujemny znak dla fali z fazą początkową równą 0 <m:math>
+<m:mrow>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mi>ϕ</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0</m:mn>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+  <m:mo>.</m:mo>
+</m:mrow>
+</m:math> Faza fali wynosi <m:math>
+<m:mi>k</m:mi>
+<m:mi>x</m:mi>
+<m:mo>−</m:mo>
+<m:mi>ω</m:mi>
+<m:mi>t</m:mi>
+</m:math>. Rozważmy punkt, odpowiadający grzbietowi fali. Grzbiet pojawi się wtedy, gdy <m:math>
+<m:mrow>
+  <m:mtext>sin</m:mtext>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mi>k</m:mi>
+      <m:mi>x</m:mi>
+      <m:mo>−</m:mo>
+      <m:mi>ω</m:mi>
+      <m:mi>t</m:mi>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mn>1,00</m:mn>
+</m:mrow>
+</m:math>, tj. gdy <m:math>
+<m:mrow>
+  <m:mi>k</m:mi>
+  <m:mi>x</m:mi>
+  <m:mo>−</m:mo>
+  <m:mi>ω</m:mi>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mi>n</m:mi>
+  <m:mi>π</m:mi>
+  <m:mo>+</m:mo>
+  <m:mfrac>
+    <m:mi>π</m:mi>
+    <m:mn>2</m:mn>
+  </m:mfrac>
+</m:mrow>
+</m:math>, dla dowolnej całkowitej wartości <m:math>
+  <m:mi>n</m:mi>
+</m:math>. Przykładowo jeden z grzbietów pojawia się dla <m:math>
+<m:mi>k</m:mi>
+<m:mi>x</m:mi>
+<m:mo>−</m:mo>
+<m:mi>ω</m:mi>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mi>π</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mn>2</m:mn>
+</m:math>. Gdy fala biegnie, rośnie wartość czasu i <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ musi również wzrosnąć, tak aby faza była równa <m:math>
+<m:mi>π</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mn>2</m:mn>
+</m:math>. Z tego wynika, że znak minus oznacza falę biegnącą w kierunku zgodnym ze zwrotem osi <m:math>
+  <m:mi>x</m:mi>
+</m:math>. Przeanalizujmy drugą sytuację, tj. gdy <m:math>
+<m:mi>k</m:mi>
+<m:mi>x</m:mi>
+<m:mo>+</m:mo>
+<m:mi>ω</m:mi>
+<m:mi>t</m:mi>
+<m:mo>=</m:mo>
+<m:mi>π</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mn>2</m:mn>
+</m:math>. Wraz ze wzrostem wartości czasu, <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ musi zmaleć, aby faza była równa <m:math>
+<m:mi>π</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mn>2</m:mn>
+</m:math>. Znaku plus używa się dla fal biegnących przeciwnie do zwrotu osi <m:math>
+  <m:mi>x</m:mi>
+</m:math>. Podsumowując, <m:math>
+<m:mrow>
+  <m:mi>y</m:mi>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>,</m:mo>
+      <m:mi>t</m:mi>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mi>A</m:mi>
+  <m:mspace width="0.2em"/>
+  <m:mtext>sin</m:mtext>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mi>k</m:mi>
+      <m:mi>x</m:mi>
+      <m:mo>−</m:mo>
+      <m:mi>ω</m:mi>
+      <m:mi>t</m:mi>
+      <m:mo>+</m:mo>
+      <m:mi>ϕ</m:mi>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+</m:mrow>
+</m:math> oznacza falę biegnącą w kierunku zgodnym ze zwrotem osi <m:math>
+  <m:mi>x</m:mi>
+</m:math>, a <m:math>
+<m:mrow>
+  <m:mi>y</m:mi>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>,</m:mo>
+      <m:mi>t</m:mi>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mi>A</m:mi>
+  <m:mspace width="0.2em"/>
+  <m:mtext>sin</m:mtext>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mi>k</m:mi>
+      <m:mi>x</m:mi>
+      <m:mo>+</m:mo>
+      <m:mi>ω</m:mi>
+      <m:mi>t</m:mi>
+      <m:mo>+</m:mo>
+      <m:mi>ϕ</m:mi>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+</m:mrow>
+</m:math> falę biegnącą w przeciwną stronę.</para><para id="fs-id1165038998947"><link target-id="fs-id1165039341518"/> opisuje prostą harmoniczną funkcję falową. Funkcja falowa może być zapisana jako <m:math>
+  <m:mrow>
+    <m:mi>f</m:mi>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mo>,</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mi>f</m:mi>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mo>−</m:mo>
+        <m:mi>v</m:mi>
+        <m:mi>t</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>.</m:mo>
+  </m:mrow>
+</m:math> Jeszcze w tym rozdziale dowiemy się, że jest ona rozwiązaniem równania falowego. Zauważmy, że zapis <m:math>
+<m:mrow>
+  <m:mi>y</m:mi>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>,</m:mo>
+      <m:mi>t</m:mi>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mi>A</m:mi>
+  <m:mspace width="0.2em"/>
+  <m:mtext>cos</m:mtext>
+  <m:mrow>
+    <m:mo>(</m:mo>
+    <m:mrow>
+      <m:mi>k</m:mi>
+      <m:mi>x</m:mi>
+      <m:mo>+</m:mo>
+      <m:mi>ω</m:mi>
+      <m:mi>t</m:mi>
+      <m:mo>+</m:mo>
+      <m:mi>ϕ</m:mi>
+      <m:mtext>′</m:mtext>
+    </m:mrow>
+    <m:mo>)</m:mo>
+  </m:mrow>
+</m:mrow>
+</m:math> też jest zasadny, ponieważ odnosi się do przypadku <m:math>
+<m:msup>
+  <m:mi>ϕ</m:mi>
+  <m:mrow>
+    <m:msup>
+      <m:mi/>
+      <m:mo>′</m:mo>
+    </m:msup>
+  </m:mrow>
+</m:msup>
+<m:mo>=</m:mo>
+<m:mi>ϕ</m:mi>
+<m:mo>−</m:mo>
+<m:mi>π</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mn>2</m:mn>
+</m:math>.</para><note id="fs-id1165039027391" class="problem-solving"><title>Strategia rozwiązywania zadań: szukanie charakterystyk funkcji falowych</title><list id="fs-id1165039313850" list-type="enumerated" number-style="arabic">
+    <item>Aby obliczyć amplitudę, długość fali, okres i częstotliwość fali sinusoidalnej, należy zapisać funkcję falową w postaci <m:math>
+      <m:mrow>
+        <m:mi>y</m:mi>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>,</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mi>A</m:mi>
+        <m:mspace width="0.2em"/>
+        <m:mtext>sin</m:mtext>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>k</m:mi>
+            <m:mi>x</m:mi>
+            <m:mo>−</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>ϕ</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </item>
+  <item>Amplitudę można odczytać bezpośrednio z równania i wynosi ona <m:math>
+      <m:mi>A</m:mi>
+    </m:math>. </item>
+    <item>Okres fali można obliczyć z częstości kołowej <m:math>
+      <m:mi>T</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mi>π</m:mi>
+        </m:mrow>
+        <m:mi>ω</m:mi>
+      </m:mfrac>
+      </m:math>.</item>
+      <item>Częstotliwość można obliczyć przy użyciu: <m:math>
+        <m:mi>f</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mi>T</m:mi>
+        </m:mfrac>
+        </m:math>.</item>
+        <item>Długość fali można wyznaczyć, korzystając z liczby falowej <m:math>
+          <m:mi>λ</m:mi>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mi>π</m:mi>
+            </m:mrow>
+            <m:mi>k</m:mi>
+          </m:mfrac>
+          </m:math>.</item>
+        </list>
+      </note><example id="fs-id1165039341056">
+        <para id="fs-id1165039331195">
+          <title>Cechy charakterystyczne fali biegnącej wzdłuż struny</title>Fala poprzeczna biegnąca wzdłuż struny ma postać:</para>
+          <equation id="fs-id1165038999487" class="unnumbered">
+            <label/>
+            <m:math>
+              <m:mi>y</m:mi>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mi>A</m:mi>
+              <m:mi>sin</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mi>k</m:mi>
+              <m:mi>x</m:mi>
+              <m:mo>−</m:mo>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mn>0,2</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mi>sin</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mn>6,28</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:msup>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:msup>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>−</m:mo>
+              <m:mn>1,57</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:msup>
+                  <m:mi mathvariant="normal">s</m:mi>
+                  <m:mrow>
+                    <m:mo>−</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:msup>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo stretchy="false">)</m:mo>
+              </m:math></equation>
+              <para id="fs-id1165039423494">Oblicz amplitudę, długość fali, okres i prędkość fali.</para><para id="fs-id1165039496523"><title>Strategia rozwiązania</title>Wszystkie te wielkości można obliczyć na podstawie stałych zawartych w równaniu lub z relacji łączących te wielkości.</para><para id="fs-id1165039311251">
+                  <title>Rozwiązanie</title>
+                </para>
+                <list id="fs-id1165039243889" list-type="enumerated" number-style="arabic"><item>Amplitudę, liczbę falową i częstość kołową można odczytać bezpośrednio z równania falowego:<newline/>
+                    <equation id="fs-id1165039124064" class="unnumbered">
+                      <label/>
+                      <m:math>
+                        <m:mi>y</m:mi>
+                        <m:mo stretchy="false">(</m:mo>
+                        <m:mi>x</m:mi>
+                        <m:mo>,</m:mo>
+                        <m:mi>t</m:mi>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo>=</m:mo>
+                        <m:mi>A</m:mi>
+                        <m:mi>sin</m:mi>
+                        <m:mo>⁡</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                        <m:mi>k</m:mi>
+                        <m:mi>x</m:mi>
+                        <m:mo>−</m:mo>
+                        <m:mi>ω</m:mi>
+                        <m:mi>t</m:mi>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mo>=</m:mo>
+                        <m:mn>0,2</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:mi mathvariant="normal">m</m:mi>
+                        </m:mrow>
+                        <m:mo>⋅</m:mo>
+                        <m:mi>sin</m:mi>
+                        <m:mo>⁡</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                        <m:mn>6,28</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:msup>
+                            <m:mi mathvariant="normal">m</m:mi>
+                            <m:mrow>
+                              <m:mo>−</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mo>⋅</m:mo>
+                        <m:mi>x</m:mi>
+                        <m:mo>−</m:mo>
+                        <m:mn>1,57</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mrow>
+                          <m:msup>
+                            <m:mi mathvariant="normal">s</m:mi>
+                            <m:mrow>
+                              <m:mo>−</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                          </m:msup>
+                        </m:mrow>
+                        <m:mo>⋅</m:mo>
+                        <m:mi>t</m:mi>
+                        <m:mo stretchy="false">)</m:mo>
+                        </m:math></equation>
+                        <equation id="fs-id1165039084946" class="unnumbered">
+                          <label/>
+                          <m:math>
+                            <m:mrow>
+                              <m:mo stretchy="false">(</m:mo>
+                              <m:mi>A</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mn>0,2</m:mn>
+                              <m:mspace width="0.2em"/>
+                              <m:mtext>m;</m:mtext>
+                              <m:mspace width="0.2em"/>
+                              <m:mi>k</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mn>6,28</m:mn>
+                              <m:mspace width="0.2em"/>
+                              <m:msup>
+                                <m:mtext>m</m:mtext>
+                                <m:mrow>
+                                  <m:mn>−1</m:mn>
+                                </m:mrow>
+                              </m:msup>
+                              <m:mo>;</m:mo>
+                              <m:mspace width="0.2em"/>
+                              <m:mi>ω</m:mi>
+                              <m:mo>=</m:mo>
+                              <m:mn>1,57</m:mn>
+                              <m:mspace width="0.2em"/>
+                              <m:msup>
+                                <m:mtext>s</m:mtext>
+                                <m:mrow>
+                                  <m:mn>−1</m:mn>
+                                </m:mrow>
+                              </m:msup>
+                              <m:mo stretchy="false">)</m:mo>
+                            </m:mrow>
+                          </m:math>
+                        </equation>
+                      </item>
+                      <item>Długość fali obliczamy przy użyciu znanej liczby falowej:<newline/>
+                        <equation id="fs-id1165039454170" class="unnumbered">
+                          <label/>
+                          <m:math>
+                            <m:mtable>
+                              <m:mtr/>
+                              <m:mtr>
+                                <m:mtd columnalign="left">
+                                  <m:mi>k</m:mi>
+                                  <m:mo>=</m:mo>
+                                  <m:mfrac>
+                                    <m:mrow>
+                                      <m:mn>2</m:mn>
+                                      <m:mi>π</m:mi>
+                                    </m:mrow>
+                                    <m:mi>λ</m:mi>
+                                  </m:mfrac>
+                                  <m:mo>.</m:mo>
+                                </m:mtd>
+                              </m:mtr>
+                              <m:mtr>
+                                <m:mtd columnalign="left">
+                                  <m:mi>λ</m:mi>
+                                  <m:mo>=</m:mo>
+                                  <m:mfrac>
+                                    <m:mrow>
+                                      <m:mn>2</m:mn>
+                                      <m:mi>π</m:mi>
+                                    </m:mrow>
+                                    <m:mi>k</m:mi>
+                                  </m:mfrac>
+                                  <m:mo>=</m:mo>
+                                  <m:mfrac>
+                                    <m:mrow>
+                                      <m:mn>2</m:mn>
+                                      <m:mi>π</m:mi>
+                                    </m:mrow>
+                                    <m:mrow>
+                                      <m:mn>6,28</m:mn>
+                                      <m:mspace width="0.2em"/>
+                                      <m:msup>
+                                        <m:mtext>m</m:mtext>
+                                        <m:mrow>
+                                          <m:mn>−1</m:mn>
+                                        </m:mrow>
+                                      </m:msup>
+                                    </m:mrow>
+                                  </m:mfrac>
+                                  <m:mo>=</m:mo>
+                                  <m:mn>1,0</m:mn>
+                                  <m:mspace width="0.2em"/>
+                                  <m:mtext>m</m:mtext>
+                                  <m:mo>.</m:mo>
+                                </m:mtd>
+                              </m:mtr>
+                            </m:mtable>
+                          </m:math>
+                        </equation>
+                      </item>
+                      <item>Okres fali można wyliczyć na podstawie częstości kołowej:<newline/>
+                        <equation id="fs-id1165039005626" class="unnumbered">
+                          <label/>
+                          <m:math>
+                            <m:mtable>
+                              <m:mtr/>
+                              <m:mtr/>
+                              <m:mtr>
+                                <m:mtd columnalign="left">
+                                  <m:mi>ω</m:mi>
+                                  <m:mo>=</m:mo>
+                                  <m:mfrac>
+                                    <m:mrow>
+                                      <m:mn>2</m:mn>
+                                      <m:mi>π</m:mi>
+                                    </m:mrow>
+                                    <m:mi>T</m:mi>
+                                  </m:mfrac>
+                                  <m:mo>.</m:mo>
+                                </m:mtd>
+                              </m:mtr>
+                              <m:mtr>
+                                <m:mtd columnalign="left">
+                                  <m:mi>T</m:mi>
+                                  <m:mo>=</m:mo>
+                                  <m:mfrac>
+                                    <m:mrow>
+                                      <m:mn>2</m:mn>
+                                      <m:mi>π</m:mi>
+                                    </m:mrow>
+                                    <m:mi>ω</m:mi>
+                                  </m:mfrac>
+                                  <m:mo>=</m:mo>
+                                  <m:mfrac>
+                                    <m:mrow>
+                                      <m:mn>2</m:mn>
+                                      <m:mi>π</m:mi>
+                                    </m:mrow>
+                                    <m:mrow>
+                                      <m:mn>1,57</m:mn>
+                                      <m:mspace width="0.2em"/>
+                                      <m:msup>
+                                        <m:mtext>s</m:mtext>
+                                        <m:mrow>
+                                          <m:mn>−1</m:mn>
+                                        </m:mrow>
+                                      </m:msup>
+                                    </m:mrow>
+                                  </m:mfrac>
+                                  <m:mo>=</m:mo>
+                                  <m:mn>4</m:mn>
+                                  <m:mspace width="0.2em"/>
+                                  <m:mtext>s</m:mtext>
+                                  <m:mo>.</m:mo>
+                                </m:mtd>
+                              </m:mtr>
+                            </m:mtable>
+                          </m:math>
+                        </equation>
+                      </item>
+                      <item>Prędkość fali obliczamy przy wykorzystaniu liczby falowej i częstości kołowej. Kierunek rozchodzenia się fali można określić na podstawie znaku wyrażenia <m:math>
+                        <m:mrow>
+                          <m:mi>k</m:mi>
+                          <m:mi>x</m:mi>
+                          <m:mo>∓</m:mo>
+                          <m:mi>ω</m:mi>
+                          <m:mi>t</m:mi>
+                        </m:mrow>
+                      </m:math>. Znak ujemny sugeruje, że fala biegnie w kierunku zgodnym z kierunkiem osi <m:math>
+                        <m:mi>x</m:mi>
+                      </m:math>:<newline/>
+                    <equation id="fs-id1165035718231" class="unnumbered">
+                      <label/>
+                      <m:math>
+                        <m:mrow>
+                          <m:mo stretchy="false">|</m:mo>
+                        </m:mrow>
+                        <m:mi>v</m:mi>
+                        <m:mrow>
+                          <m:mo stretchy="false">|</m:mo>
+                        </m:mrow>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mi>ω</m:mi>
+                          <m:mi>k</m:mi>
+                        </m:mfrac>
+                        <m:mo>=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mn>1,57</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:msup>
+                                <m:mi mathvariant="normal">s</m:mi>
+                                <m:mrow>
+                                  <m:mo>−</m:mo>
+                                  <m:mn>1</m:mn>
+                                </m:mrow>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mn>6,28</m:mn>
+                            <m:mspace width="0.2em"/>
+                            <m:mrow>
+                              <m:msup>
+                                <m:mi mathvariant="normal">m</m:mi>
+                                <m:mrow>
+                                  <m:mo>−</m:mo>
+                                  <m:mn>1</m:mn>
+                                </m:mrow>
+                              </m:msup>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo>=</m:mo>
+                        <m:mn>0,25</m:mn>
+                        <m:mspace width="0.2em"/>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">m</m:mi>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mi mathvariant="normal">s</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                        </m:math></equation>
+                      </item>
+                    </list><para id="fs-id1165039086275"><title>Znaczenie</title>Wszystkie powyższe wielkości są zawarte w równaniu falowym. Zauważmy, że prędkość fali jest jej prędkością w kierunku równoległym do kierunku rozchodzenia się fali. Przedstawienie wychylenia ośrodka <m:math>
+                          <m:mi>y</m:mi>
+                        </m:math>
+                       w funkcji położenia <m:math>
+                        <m:mi>x</m:mi>
+                      </m:math>
+                     dla dwóch różnych chwil czasu: <m:math>
+                    <m:mrow>
+                      <m:mi>t</m:mi>
+                      <m:mo>=</m:mo>
+                      <m:mn>0,00</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mtext>s</m:mtext>
+                    </m:mrow>
+                  </m:math> oraz <m:math>
+                  <m:mrow>
+                    <m:mi>t</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>0,80</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>s</m:mtext>
+                  </m:mrow>
+                  </m:math> pozwala na graficzną wizualizację fali (<link target-id="CNX_UPhysics_16_02_WaveEq"/>).</para><figure id="CNX_UPhysics_16_02_WaveEq"><media id="fs-id1165035741986" alt="Rysunek pokazuje dwie fale poprzeczne, dla których wartości y zmieniają się między -0,2 m a 0,2 m. Jedna fala, oznaczona jako t=0 s jest narysowana linią przerywaną. Posiada grzbiety dla x równego 0,25 m i 1,25 m. Druga fala, oznaczona jako t=0,8 s jest narysowana ciągłą linią. Posiada grzbiety dla x równych 0,45 m i 1.45 m.">
+                      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_16_02_WaveEq.jpg"/>
+                    </media>
+                    
+              <caption>Wykres wychylenia fali <m:math>
+                        <m:mi>y</m:mi>
+                      </m:math>
+                     w funkcji położenia <m:math>
+                      <m:mi>x</m:mi>
+                    </m:math>. Linia przerywana przedstawia falę w chwili <m:math>
+                  <m:mrow>
+                    <m:mi>t</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>0,00</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>s</m:mtext>
+                  </m:mrow>
+                </m:math>, a linia ciągła falę w chwili <m:math>
+                <m:mrow>
+                  <m:mi>t</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>0,80</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>s</m:mtext>
+                  <m:mo>.</m:mo>
+                </m:mrow>
+                </m:math> Ponieważ prędkość fali jest stała, to odległość jaką fala pokonuje równa się iloczynowi prędkości i odcinka czasu. Czarna kropka wskazuje punkt, który będzie pomocny przy obliczeniu przemieszczenia fali. Cząstki ośrodka poruszają się w górę i w dół, podczas gdy fala przemieszcza się w prawo.</caption></figure><para id="fs-id1165039334905">W przykładzie przedstawionym powyżej mamy do czynienia z falą poprzeczną, która porusza się w płaszczyźnie poziomej, podczas gdy cząstki ośrodka drgają w górę i w dół, prostopadle do kierunku ruchu fali. Na <link target-id="CNX_UPhysics_16_02_VertVel" cmlnle:case="locative"/> pokazano ruch cząstki ośrodka, której położenie wynosi <m:math>
+                <m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>0,60</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>m</m:mtext>
+                </m:mrow>
+              </m:math> w funkcji czasu. Zauważmy, że cząstki ośrodka przyjmują położenia <m:math>
+              <m:mrow>
+                <m:mi>y</m:mi>
+                <m:mo>=</m:mo>
+                <m:mo>+</m:mo>
+                <m:mn>0,20</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mtext>m</m:mtext>
+              </m:mrow>
+            </m:math> i <m:math>
+            <m:mrow>
+              <m:mi>y</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>−0,20</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>m</m:mtext>
+            </m:mrow>
+            </m:math> po upływie każdych 4,0 s.</para><figure id="CNX_UPhysics_16_02_VertVel"><media id="fs-id1165039346316" alt="Rysunek pokazuje falę poprzeczną. Jej wartości y zmieniają się między -0,2 m a 0,2 m. Oś x jest osią czasu, wyskalowaną w sekundach. Pionowa odległość między dwoma identycznymi elementami fali jest oznaczona jako T = 4 s.">
+                <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_16_02_VertVel.jpg"/>
+              </media>
+              
+<caption>Wykres wychylenia fali <m:math>
+                  <m:mi>y</m:mi>
+                </m:math>
+               w funkcji czasu <m:math>
+                <m:mi>t</m:mi>
+              </m:math>
+             dla położenia <m:math>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>0,6</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>m</m:mtext>
+              <m:mo>.</m:mo>
+            </m:mrow>
+          </m:math> Ośrodek wykonuje drgania w zakresie wartości od <m:math>
+          <m:mrow>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:mo>+</m:mo>
+            <m:mn>0,20</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>m</m:mtext>
+          </m:mrow>
+        </m:math> do <m:math>
+        <m:mrow>
+          <m:mi>y</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>−0,20</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>m</m:mtext>
+        </m:mrow>
+      </m:math> w ciągu każdego okresu. Okres możemy zmierzyć na podstawie położenia dwóch najbliższych punktów o tych samych amplitudach i identycznych prędkościach <m:math>
+      <m:mrow>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mo>∂</m:mo>
+        <m:mi>y</m:mi>
+        <m:mtext>/</m:mtext>
+        <m:mo>∂</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo stretchy="false">)</m:mo>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math> Prędkość możemy obliczyć na podstawie tangensa kąta nachylenia wykresu <m:math>
+      <m:mi>y</m:mi>
+      <m:mo>=</m:mo>
+      <m:mi>f</m:mi>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo stretchy="false">)</m:mo>
+    </m:math>. Zauważmy, że dla czasów <m:math>
+  <m:mrow>
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>3,00</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mi>s</m:mi>
+  </m:mrow>
+</m:math> i <m:math>
+<m:mrow>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>7,00</m:mn>
+  <m:mi>s</m:mi>
+  <m:mo>,</m:mo>
+</m:mrow>
+</m:math> wychylenia i prędkości są takie same. Okres drgań wynosi 4,00 s.</caption></figure></example>
+<note id="fs-id1165035612906" class="check-understanding">
+  <exercise id="fs-id1165035703170">
+    <problem id="fs-id1165039322978">
+      <para id="fs-id1165039484447"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Powyższa funkcja falowa została obliczona przy zastosowaniu funkcji sinus. Czy można było użyć funkcji cosinus?</para></problem>
+      <solution id="fs-id1165035717403">
+        <para id="fs-id1165039275472">Tak, funkcja cosinus jest równa przesuniętej w fazie funkcji sinus i obie mogą być używane do stworzenia równania falowego. To warunki początkowe decydują o tym, której funkcji użyjemy. Na <link cmlnle:case="locative" target-id="CNX_UPhysics_16_02_WaveEq"/> wychylenie początkowe fali wynosi <m:math>
+          <m:mi>y</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mi>x</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>0,00</m:mn>
+          <m:mo>;</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>0,00</m:mn>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mn>0</m:mn>
+        </m:math>, następnie wychylenie wzrasta i osiąga maksimum odpowiadające grzbietowi fali. Jeśli wychylenie początkowe w chwili początkowej byłoby równe amplitudzie fali <m:math>
+        <m:mi>y</m:mi>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0,00</m:mn>
+        <m:mo>;</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0,00</m:mn>
+        <m:mo stretchy="false">)</m:mo>
+        <m:mo>=</m:mo>
+        <m:mo>+</m:mo>
+        <m:mi>A</m:mi>
+        </m:math>, wówczas wygodniejsze jest użycie funkcji cosinus.</para></solution>
+    </exercise>
+  </note>
+</section>
+<section id="fs-id1165039218514">
+  <title>Prędkość i przyspieszenie ośrodka</title><para id="fs-id1165039385688">Jak widzieliśmy w <link target-id="fs-id1165038986853" cmlnle:case="locative"/> prędkość fali jest stała i oddaje prędkość fali rozchodzącej się w ośrodku, a nie prędkość cząsteczek, które go tworzą. Drobiny wykonują drgania wokół położenia równowagi wtedy, gdy fala rozchodzi się w ośrodku. W przypadku fali poprzecznej, która rozchodzi się w kierunku zgodnym ze zwrotem osi <m:math>
+      <m:mi>x</m:mi>
+    </m:math>, cząstki wykonują drgania w górę i w dół, wzdłuż osi <m:math>
+    <m:mi>y</m:mi>
+  </m:math>, w kierunku prostopadłym do ruchu fali. Prędkość cząsteczek ośrodka nie jest stała, co oznacza występowanie przyspieszenia. Prędkość tę, która jest prostopadła do prędkości fali w przypadku fal poprzecznych, można obliczyć z pochodnej cząstkowej funkcji falowej. Należy wtedy potraktować wszystkie zmienne jako stałe, z wyjątkiem zmiennej, której pochodną obliczamy. Dla pochodnej cząstkowej po czasie <m:math>
+  <m:mi>t</m:mi>
+</m:math>
+ zmienna <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ jest traktowana jako stała. W tym ćwiczeniu szukamy prędkości poprzecznej w danym punkcie, czyli wartość <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ się nie zmienia. Mamy zatem:</para><equation id="fs-id1165039041603" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mtable>
+      <m:mtr>
+        <m:mtd columnalign="right">
+          <m:mi>y</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mi>x</m:mi>
+          <m:mo>,</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo stretchy="false">)</m:mo>
+        </m:mtd>
+        <m:mtd columnalign="left">
+          <m:mo>=</m:mo>
+        </m:mtd>
+        <m:mtd columnalign="left">
+          <m:mi>A</m:mi>
+          <m:mspace width="0.2em"/>
+          <m:mtext>sin</m:mtext>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mi>k</m:mi>
+          <m:mi>x</m:mi>
+          <m:mo>−</m:mo>
+          <m:mi>ω</m:mi>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mi>ϕ</m:mi>
+          <m:mo stretchy="false">)</m:mo>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd columnalign="right">
+          <m:msub>
+            <m:mi>v</m:mi>
+            <m:mi>y</m:mi>
+          </m:msub>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mi>x</m:mi>
+          <m:mo>,</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo stretchy="false">)</m:mo>
+        </m:mtd>
+        <m:mtd columnalign="left">
+          <m:mo>=</m:mo>
+        </m:mtd>
+        <m:mtd columnalign="left">
+          <m:mfrac>
+            <m:mrow>
+              <m:mo>∂</m:mo>
+              <m:mi>y</m:mi>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo stretchy="false">)</m:mo>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>∂</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mo>∂</m:mo>
+            <m:mrow>
+              <m:mo>∂</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>A</m:mi>
+              <m:mspace width="0.2em"/>
+              <m:mtext>sin</m:mtext>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mi>k</m:mi>
+              <m:mi>x</m:mi>
+              <m:mo>−</m:mo>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:mi>ϕ</m:mi>
+              <m:mo stretchy="false">)</m:mo>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd/>
+        <m:mtd columnalign="left">
+          <m:mo>=</m:mo>
+        </m:mtd>
+        <m:mtd columnalign="left">
+          <m:mtext>−</m:mtext>
+          <m:mi>A</m:mi>
+          <m:mi>ω</m:mi>
+          <m:mspace width="0.2em"/>
+          <m:mtext>cos</m:mtext>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mi>k</m:mi>
+          <m:mi>x</m:mi>
+          <m:mo>−</m:mo>
+          <m:mi>ω</m:mi>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mi>ϕ</m:mi>
+          <m:mo stretchy="false">)</m:mo>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd/>
+        <m:mtd columnalign="left">
+          <m:mo>=</m:mo>
+        </m:mtd>
+        <m:mtd columnalign="left">
+          <m:mtext>−</m:mtext>
+          <m:msub>
+            <m:mi>v</m:mi>
+            <m:mrow>
+              <m:mi>y</m:mi>
+              <m:mspace width="0.2em"/>
+              <m:mtext>max</m:mtext>
+            </m:mrow>
+          </m:msub>
+          <m:mspace width="0.2em"/>
+          <m:mtext>cos</m:mtext>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mi>k</m:mi>
+          <m:mi>x</m:mi>
+          <m:mo>−</m:mo>
+          <m:mi>ω</m:mi>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mi>ϕ</m:mi>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mo>.</m:mo>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation>
+<para id="fs-id1165039400478">Maksymalna prędkość ośrodka wynosi <m:math>
+  <m:mrow>
+    <m:mrow>
+      <m:mo>|</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>v</m:mi>
+          <m:mrow>
+            <m:msub>
+              <m:mi>y</m:mi>
+              <m:mrow>
+                <m:mtext>max</m:mtext>
+              </m:mrow>
+            </m:msub>
+          </m:mrow>
+        </m:msub>
+      </m:mrow>
+      <m:mo>|</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mi>A</m:mi>
+    <m:mi>ω</m:mi>
+  </m:mrow>
+  </m:math>. Z tą zależnością spotkaliśmy się już w rozdziale <link class="target-chapter" document="m65825">Drgania</link>.</para><para id="fs-id1165039100754">Przyspieszenie ośrodka obliczymy przy użyciu pochodnej cząstkowej prędkości po czasie:</para><equation id="fs-id1165035756597" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mtable>
+        <m:mtr>
+          <m:mtd columnalign="right">
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mi>y</m:mi>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>x</m:mi>
+                <m:mo>,</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mtd>
+          <m:mtd columnalign="left">
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mrow>
+                <m:mo>∂</m:mo>
+                <m:msub>
+                  <m:mi>v</m:mi>
+                  <m:mi>y</m:mi>
+                </m:msub>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>∂</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mo>∂</m:mo>
+              <m:mrow>
+                <m:mo>∂</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mtext>−</m:mtext>
+                <m:mi>A</m:mi>
+                <m:mi>ω</m:mi>
+                <m:mspace width="0.2em"/>
+                <m:mtext>cos</m:mtext>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mi>k</m:mi>
+                    <m:mi>x</m:mi>
+                    <m:mo>−</m:mo>
+                    <m:mi>ω</m:mi>
+                    <m:mi>t</m:mi>
+                    <m:mo>+</m:mo>
+                    <m:mi>ϕ</m:mi>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd/>
+          <m:mtd columnalign="left">
+            <m:mo>=</m:mo>
+            <m:mtext>−</m:mtext>
+            <m:mi>A</m:mi>
+            <m:msup>
+              <m:mi>ω</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mspace width="0.2em"/>
+            <m:mtext>sin</m:mtext>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>k</m:mi>
+                <m:mi>x</m:mi>
+                <m:mo>−</m:mo>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>ϕ</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd/>
+          <m:mtd columnalign="left">
+            <m:mo>=</m:mo>
+            <m:mtext>−</m:mtext>
+            <m:msub>
+              <m:mi>a</m:mi>
+              <m:mrow>
+                <m:mi>y</m:mi>
+                <m:mspace width="0.2em"/>
+                <m:mtext>max</m:mtext>
+              </m:mrow>
+            </m:msub>
+            <m:mtext>sin</m:mtext>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>k</m:mi>
+                <m:mi>x</m:mi>
+                <m:mo>−</m:mo>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>ϕ</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+    </m:math>
+  </equation>
+  <para id="fs-id1165039068324">Maksymalne przyspieszenie wynosi <m:math>
+    <m:mrow>
+      <m:mrow>
+        <m:mo>|</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>a</m:mi>
+            <m:mrow>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mrow>
+                  <m:mtext>max</m:mtext>
+                </m:mrow>
+              </m:msub>
+            </m:mrow>
+          </m:msub>
+        </m:mrow>
+        <m:mo>|</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mi>A</m:mi>
+      <m:msup>
+        <m:mi>ω</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>.</m:mo>
+    </m:mrow>
+    </m:math> Cząsteczki ośrodka wykonują drgania harmoniczne proste. </para></section>
+  <section id="fs-id1165039257618">
+    <title>Równanie falowe</title>
+    <para id="fs-id1165039285033">Obliczyliśmy już prędkość cząsteczki ośrodka w punkcie <m:math>
+        <m:mi>x</m:mi>
+      </m:math>
+     przy użyciu pochodnej cząstkowej współrzędnej <m:math>
+      <m:mi>y</m:mi>
+    </m:math>
+     po czasie. Dla fali poprzecznej prędkość ta jest prostopadła do kierunku rozchodzenia się fali. Przyspieszenie możemy wyznaczyć, obliczając drugą pochodną położenia po czasie (lub pierwszą pochodną prędkości po czasie): </para><equation id="fs-id1165039079004" class="unnumbered"><label/>
+      <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>a</m:mi>
+            <m:mi>y</m:mi>
+          </m:msub>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:msup>
+                <m:mo>∂</m:mo>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mi>y</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo>,</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>∂</m:mo>
+              <m:msup>
+                <m:mi>t</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:msup>
+                <m:mo>∂</m:mo>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>∂</m:mo>
+              <m:msup>
+                <m:mi>t</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:mfrac>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>A</m:mi>
+              <m:mspace width="0.2em"/>
+              <m:mtext>sin</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mi>x</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mi>ω</m:mi>
+                  <m:mi>t</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mi>ϕ</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mtext>−</m:mtext>
+          <m:mi>A</m:mi>
+          <m:msup>
+            <m:mi>ω</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mspace width="0.2em"/>
+          <m:mtext>sin</m:mtext>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>k</m:mi>
+              <m:mi>x</m:mi>
+              <m:mo>−</m:mo>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+              <m:mo>+</m:mo>
+              <m:mi>ϕ</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation><para id="fs-id1165039433529">Rozważmy teraz pochodną cząstkową po zmiennej <m:math>
+        <m:mi>x</m:mi>
+      </m:math>, gdzie czas jest wielkością stałą. Pierwsza pochodna cząstkowa opisuje nachylenie fali w punkcie <m:math>
+      <m:mi>x</m:mi>
+    </m:math>,
+   w chwili <m:math>
+    <m:mi>t</m:mi>
+  </m:math>:</para><equation id="fs-id1165039113709" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mtext>nachylenie</m:mtext>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mo>∂</m:mo>
+            <m:mi>y</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>x</m:mi>
+                <m:mo>,</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+          <m:mrow>
+            <m:mo>∂</m:mo>
+            <m:mi>x</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mo>∂</m:mo>
+          <m:mrow>
+            <m:mo>∂</m:mo>
+            <m:mi>x</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>A</m:mi>
+            <m:mspace width="0.2em"/>
+            <m:mtext>sin</m:mtext>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>k</m:mi>
+                <m:mi>x</m:mi>
+                <m:mo>−</m:mo>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>ϕ</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mi>A</m:mi>
+        <m:mi>k</m:mi>
+        <m:mspace width="0.2em"/>
+        <m:mtext>cos</m:mtext>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>k</m:mi>
+            <m:mi>x</m:mi>
+            <m:mo>−</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>ϕ</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1165039086834">Druga pochodna cząstkowa informuje nas, jak nachylenie fali zmienia się w zależności od położenia. Innymi słowy opisuje krzywiznę fali, którą rozumiemy jako: </para><equation id="fs-id1165039475880" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mtext>krzywizna</m:mtext>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:msup>
+              <m:mo>∂</m:mo>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>y</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>x</m:mi>
+                <m:mo>,</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+          <m:mrow>
+            <m:mo>∂</m:mo>
+            <m:msup>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:msup>
+              <m:mo>∂</m:mo>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:mrow>
+          <m:mrow>
+            <m:msup>
+              <m:mo>∂</m:mo>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mi>x</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>A</m:mi>
+            <m:mspace width="0.2em"/>
+            <m:mtext>sin</m:mtext>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>k</m:mi>
+                <m:mi>x</m:mi>
+                <m:mo>−</m:mo>
+                <m:mi>ω</m:mi>
+                <m:mi>t</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>ϕ</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mtext>−</m:mtext>
+        <m:mi>A</m:mi>
+        <m:msup>
+          <m:mi>k</m:mi>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mspace width="0.2em"/>
+        <m:mtext>sin</m:mtext>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>k</m:mi>
+            <m:mi>x</m:mi>
+            <m:mo>−</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+            <m:mo>+</m:mo>
+            <m:mi>ϕ</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1165035610351">Stosunek przyspieszenia i krzywizny prowadzi do bardzo ważnej w fizyce zależności, nazywanej 
+<term cmlnle:reference="liniowe równanie falowe" class="no-emphasis">liniowym równaniem falowym</term> (ang.<foreign><term cxlxt:index="foreign" class="no-emphasis">linear wave equation</term></foreign>): <m:math>
+    <m:mrow>
+      <m:mi>v</m:mi>
+      <m:mo>=</m:mo>
+      <m:mi>ω</m:mi>
+      <m:mtext>/</m:mtext>
+      <m:mi>k</m:mi>
+    </m:mrow>
+    </m:math>. Nazywa się ono też równaniem drgającej struny. </para><equation id="fs-id1165039414668" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mtable>
+          <m:mtr>
+            <m:mtd columnalign="right">
+              <m:mfrac>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mo>∂</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mi>y</m:mi>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mi>x</m:mi>
+                          <m:mo>,</m:mo>
+                          <m:mi>t</m:mi>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo>∂</m:mo>
+                      <m:msup>
+                        <m:mi>t</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mrow>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mo>∂</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mi>y</m:mi>
+                      <m:mrow>
+                        <m:mo>(</m:mo>
+                        <m:mrow>
+                          <m:mi>x</m:mi>
+                          <m:mo>,</m:mo>
+                          <m:mi>t</m:mi>
+                        </m:mrow>
+                        <m:mo>)</m:mo>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo>∂</m:mo>
+                      <m:msup>
+                        <m:mi>x</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mfrac>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mtext>−</m:mtext>
+                  <m:mi>A</m:mi>
+                  <m:msup>
+                    <m:mi>ω</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>sin</m:mtext>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>k</m:mi>
+                      <m:mi>x</m:mi>
+                      <m:mo>−</m:mo>
+                      <m:mi>ω</m:mi>
+                      <m:mi>t</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>ϕ</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mtext>−</m:mtext>
+                  <m:mi>A</m:mi>
+                  <m:msup>
+                    <m:mi>k</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>sin</m:mtext>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>k</m:mi>
+                      <m:mi>x</m:mi>
+                      <m:mo>−</m:mo>
+                      <m:mi>ω</m:mi>
+                      <m:mi>t</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>ϕ</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mfrac>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd/>
+            <m:mtd columnalign="left">
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>ω</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>k</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:msup>
+                <m:mi>v</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+      </m:math>
+    </equation>
+    <note id="fs-id1165039433470" class="equation-callout">
+      <equation id="fs-id1165039290900">
+        <label/>
+        <m:math>
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:msup>
+                  <m:mo>∂</m:mo>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mi>y</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>,</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>∂</m:mo>
+                <m:msup>
+                  <m:mi>x</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>=</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:mrow>
+                <m:msup>
+                  <m:mi>v</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+            <m:mspace width="0.2em"/>
+            <m:mfrac>
+              <m:mrow>
+                <m:msup>
+                  <m:mo>∂</m:mo>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:mi>y</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mrow>
+                    <m:mi>x</m:mi>
+                    <m:mo>,</m:mo>
+                    <m:mi>t</m:mi>
+                  </m:mrow>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>∂</m:mo>
+                <m:msup>
+                  <m:mi>t</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+    </note>
+    <para id="fs-id1165035661704"><link target-id="fs-id1165039290900"/> jest liniowym równaniem falowym, jednym z najważniejszych równań w fizyce i inżynierii. Choć tutaj zostało ono użyte dla fali poprzecznej, ma ono również zastosowanie do fal podłużnych. Równanie to odnosi się do fali sinusoidalnej, lecz można go także użyć do obliczenia impulsu i każdej innej fali <m:math>
+      <m:mrow>
+        <m:mi>y</m:mi>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>,</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mi>f</m:mi>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>∓</m:mo>
+            <m:mi>v</m:mi>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>.</m:mo>
+      </m:mrow>
+      </m:math> Określenie „liniowe równanie falowe” związane jest z liniowym charakterem sił sprężystości działających w ośrodku.</para><para id="fs-id1165039345420">Jeśli dwie funkcje falowe są rozwiązaniami liniowego równania falowego, wówczas suma obu tych funkcji jest również rozwiązaniem równania falowego. Weźmy dwie fale poprzeczne, które rozchodzą się w tym samym ośrodku wzdłuż osi <m:math>
+          <m:mi>x</m:mi>
+        </m:math>. Zauważmy, że poszczególne fale mogą być opisane funkcjami falowymi <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>y</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>,</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mi>f</m:mi>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>∓</m:mo>
+            <m:mi>v</m:mi>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+      </m:mrow>
+    </m:math> i <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>y</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>,</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mi>g</m:mi>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>∓</m:mo>
+          <m:mi>v</m:mi>
+          <m:mi>t</m:mi>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+    </m:mrow>
+    </m:math>, które są rozwiązaniami liniowych równań falowych, a zatem są liniowymi funkcjami falowymi. Suma tych funkcji falowych jest również funkcją falową: </para><equation id="fs-id1165039349837" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>y</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>y</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mi>f</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>∓</m:mo>
+              <m:mi>v</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mi>g</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>∓</m:mo>
+              <m:mi>v</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="fs-id1165039015799">Rozważmy liniowe równanie falowe:</para>
+    <equation id="fs-id1165035697009" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mtable>
+          <m:mtr>
+            <m:mtd columnalign="right">
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mo>∂</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>f</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>g</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mo>=</m:mo>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>v</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mspace width="0.2em"/>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mo>∂</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>f</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mi>g</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd columnalign="right">
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mo>∂</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mi>f</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>+</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mo>∂</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mi>g</m:mi>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mo>=</m:mo>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>v</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mrow>
+                <m:mo>[</m:mo>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mo>∂</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mi>f</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo>∂</m:mo>
+                      <m:msup>
+                        <m:mi>t</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mo>+</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mo>∂</m:mo>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                      <m:mi>g</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mo>∂</m:mo>
+                      <m:msup>
+                        <m:mi>t</m:mi>
+                        <m:mn>2</m:mn>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mrow>
+                <m:mo>]</m:mo>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+      </m:math>
+    </equation>
+    <para id="fs-id1165035759261">Ten przykład pokazuje, że jeśli dwie liniowe funkcje falowe dodamy algebraicznie, wtedy wypadkowa funkcja falowa też będzie spełniać liniowe równanie falowe. Określa ona wychylenie ośrodka w każdym punkcie wzdłuż osi <m:math>
+        <m:mi>x</m:mi>
+      </m:math>. Jeśli dwie fale liniowe znajdują się w tym samym ośrodku, to mogą ulegać interferencji. Jeśli obie są opisywane liniowymi funkcjami falowymi, to należy je do siebie dodać, aby znaleźć równanie falowe fali wypadkowej, utworzonej w wyniku interferencji. Wychylenie ośrodka w każdym punkcie jest algebraiczną sumą wychyleń spowodowanych przez każdą falę z osobna.</para><para id="fs-id1165039306562">Idąc o krok dalej, załóżmy że funkcje falowe <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>y</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mi>f</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>∓</m:mo>
+              <m:mi>v</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+      </m:math> i <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>y</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>,</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mi>g</m:mi>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>∓</m:mo>
+            <m:mi>v</m:mi>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+      </m:mrow>
+    </m:math> są rozwiązaniami równań falowych, a <m:math><m:mi>A</m:mi></m:math> i <m:math><m:mi>B</m:mi></m:math> są stałymi. Wtedy suma: <m:math>
+    <m:mrow>
+      <m:mi>A</m:mi>
+      <m:msub>
+        <m:mi>y</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>,</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mi>B</m:mi>
+      <m:msub>
+        <m:mi>y</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>,</m:mo>
+          <m:mi>y</m:mi>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+    </m:mrow>
+  </m:math> jest także rozwiązaniem równania falowego. Ta własność jest znana jako zasada <term cmlnle:reference="superpozycja" class="no-emphasis">superpozycji</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">superposition</term></foreign>). Interferencja i superpozycja są szczegółowo omawiane w podrozdziale <link class="target-chapter" document="m65838">Interferencja fal</link>.</para><example id="fs-id1165038986853">
+  <para id="fs-id1165039271578"><title>Interferencja fal na strunie</title>Wyobraź sobie długą strunę, której każdy koniec trzyma inny student. Student A wprawia koniec struny w drgania, wytwarzając falę opisywaną równaniem: <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>y</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>,</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mi>A</m:mi>
+        <m:mspace width="0.2em"/>
+        <m:mtext>sin</m:mtext>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>k</m:mi>
+            <m:mi>x</m:mi>
+            <m:mo>−</m:mo>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+      </m:mrow>
+    </m:math>. Student B wytwarza falę o dwukrotnie większej częstotliwości. Obie fale poruszają się z takimi samymi prędkościami <m:math>
+    <m:mi>v</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>ω</m:mi>
+    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+    <m:mi>k</m:mi>
+  </m:math> oraz interferują, tworząc falę wypadkową, którą opisuje równanie: <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>y</m:mi>
+      <m:mi>R</m:mi>
+    </m:msub>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mo>,</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>y</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mo>,</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>y</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mo>,</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>.</m:mo>
+  </m:mrow>
+</m:math> Oblicz prędkość fali wypadkowej, posługując się równaniami falowymi: <m:math display="block">
+<m:mrow>
+  <m:mfrac>
+    <m:mrow>
+      <m:msup>
+        <m:mo>∂</m:mo>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>y</m:mi>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>,</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+    </m:mrow>
+    <m:mrow>
+      <m:mo>∂</m:mo>
+      <m:msup>
+        <m:mi>x</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo>
+  <m:mfrac>
+    <m:mn>1</m:mn>
+    <m:mrow>
+      <m:msup>
+        <m:mi>v</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+  </m:mfrac>
+  <m:mspace width="0.2em"/>
+  <m:mfrac>
+    <m:mrow>
+      <m:msup>
+        <m:mo>∂</m:mo>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mi>y</m:mi>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mi>x</m:mi>
+          <m:mo>,</m:mo>
+          <m:mi>t</m:mi>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+    </m:mrow>
+    <m:mrow>
+      <m:mo>∂</m:mo>
+      <m:msup>
+        <m:mi>t</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</para><para id="fs-id1165039296389"><title>Strategia rozwiązania</title>Najpierw napisz równanie falowe dla fali, którą utworzył student B. Zauważ, że częstość kołowa drugiej fali jest dwa razy większa niż częstość pierwszej fali (<m:math>
+    <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mi>ω</m:mi>
+    </m:mrow>
+  </m:math>). Ponieważ prędkości obu fal są takie same, liczba falowa drugiej fali jest dwa razy większa niż pierwszej fali (<m:math>
+  <m:mrow>
+        <m:mn>2</m:mn>
+        <m:mi>k</m:mi>
+  </m:mrow>
+  </m:math>. Napisz równanie falowe dla fali wypadkowej, która jest sumą obu napisanych wcześniej funkcji falowych. Oblicz drugą pochodną cząstkową po położeniu i po czasie. Korzystając z równania falowego, oblicz prędkość fali wypadkowej.</para><para id="fs-id1165039394076">
+    <title>Rozwiązanie</title>
+  </para>
+  <list id="fs-id1165039394080" list-type="enumerated" number-style="arabic"><item>Napisz równanie falowe drugiej fali: <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>y</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>,</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mi>A</m:mi>
+        <m:mspace width="0.2em"/>
+        <m:mtext>sin</m:mtext>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mi>k</m:mi>
+            <m:mi>x</m:mi>
+            <m:mo>+</m:mo>
+            <m:mn>2</m:mn>
+            <m:mi>ω</m:mi>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </item>
+  <item>Napisz równanie fali wypadkowej:<newline/>
+    <equation id="fs-id1165035684988" class="unnumbered">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>y</m:mi>
+            <m:mi>R</m:mi>
+          </m:msub>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>y</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mi>y</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mi>A</m:mi>
+          <m:mspace width="0.2em"/>
+          <m:mtext>sin</m:mtext>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>k</m:mi>
+              <m:mi>x</m:mi>
+              <m:mo>−</m:mo>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mi>A</m:mi>
+          <m:mspace width="0.2em"/>
+          <m:mtext>sin</m:mtext>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mi>k</m:mi>
+              <m:mi>x</m:mi>
+              <m:mo>+</m:mo>
+              <m:mn>2</m:mn>
+              <m:mi>ω</m:mi>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+  </item>
+  <item>Oblicz pochodne cząstkowe:<newline/>
+    <equation id="fs-id1165039235899" class="unnumbered"><label/>
+      <m:math>
+        <m:mtable>
+          <m:mtr>
+            <m:mtd columnalign="right">
+              <m:mfrac>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mi>R</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>x</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mo>=</m:mo>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mtext>−</m:mtext>
+              <m:mi>A</m:mi>
+              <m:mi>k</m:mi>
+              <m:mspace width="0.2em"/>
+              <m:mtext>cos</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mi>x</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mi>ω</m:mi>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>2</m:mn>
+              <m:mi>A</m:mi>
+              <m:mi>k</m:mi>
+              <m:mspace width="0.2em"/>
+              <m:mtext>cos</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mi>k</m:mi>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>ω</m:mi>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd columnalign="right">
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mo>∂</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mi>R</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:msup>
+                    <m:mo>∂</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mi>x</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mo>=</m:mo>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mtext>−</m:mtext>
+              <m:mi>A</m:mi>
+              <m:msup>
+                <m:mi>k</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mspace width="0.2em"/>
+              <m:mtext>sin</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mi>x</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mi>ω</m:mi>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>4</m:mn>
+              <m:mi>A</m:mi>
+              <m:msup>
+                <m:mi>k</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mspace width="0.2em"/>
+              <m:mtext>sin</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mi>k</m:mi>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>ω</m:mi>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd columnalign="right">
+              <m:mfrac>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mi>R</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mo>=</m:mo>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mtext>−</m:mtext>
+              <m:mi>A</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mspace width="0.2em"/>
+              <m:mtext>cos</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mi>x</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mi>ω</m:mi>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mn>2</m:mn>
+              <m:mi>A</m:mi>
+              <m:mi>ω</m:mi>
+              <m:mspace width="0.2em"/>
+              <m:mtext>cos</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mi>k</m:mi>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>ω</m:mi>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd columnalign="right">
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mo>∂</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:msub>
+                    <m:mi>y</m:mi>
+                    <m:mi>R</m:mi>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:msup>
+                    <m:mo>∂</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mo>=</m:mo>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mtext>−</m:mtext>
+              <m:mi>A</m:mi>
+              <m:msup>
+                <m:mi>ω</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mspace width="0.2em"/>
+              <m:mtext>sin</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mi>x</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mi>ω</m:mi>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>4</m:mn>
+              <m:mi>A</m:mi>
+              <m:msup>
+                <m:mi>ω</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mspace width="0.2em"/>
+              <m:mtext>sin</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mi>k</m:mi>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>ω</m:mi>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+      </m:math>
+    </equation></item>
+  <item>Oblicz prędkość fali wypadkowej, korzystając z równania falowego:<newline/>
+    <para id="fs-id1165039106885">
+      <m:math>
+        <m:mtable>
+          <m:mtr>
+            <m:mtd columnalign="right">
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mo>∂</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mi>y</m:mi>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mo>=</m:mo>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>v</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mspace width="0.2em"/>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mo>∂</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mi>y</m:mi>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd columnalign="right">
+              <m:mo>−</m:mo>
+              <m:mi>A</m:mi>
+              <m:msup>
+                <m:mi>k</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mspace width="0.2em"/>
+              <m:mtext>sin</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>k</m:mi>
+                  <m:mi>x</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mi>ω</m:mi>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>4</m:mn>
+              <m:mi>A</m:mi>
+              <m:msup>
+                <m:mi>k</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mspace width="0.2em"/>
+              <m:mtext>sin</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mi>k</m:mi>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mn>2</m:mn>
+                  <m:mi>ω</m:mi>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mo>=</m:mo>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>v</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mtext>−</m:mtext>
+                  <m:mi>A</m:mi>
+                  <m:msup>
+                    <m:mi>ω</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>sin</m:mtext>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>k</m:mi>
+                      <m:mi>x</m:mi>
+                      <m:mo>−</m:mo>
+                      <m:mi>ω</m:mi>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mn>4</m:mn>
+                  <m:mi>A</m:mi>
+                  <m:msup>
+                    <m:mi>ω</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>sin</m:mtext>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mi>k</m:mi>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mi>ω</m:mi>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd columnalign="right">
+              <m:msup>
+                <m:mi>k</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mtext>−</m:mtext>
+                  <m:mi>A</m:mi>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>sin</m:mtext>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>k</m:mi>
+                      <m:mi>x</m:mi>
+                      <m:mo>−</m:mo>
+                      <m:mi>ω</m:mi>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mn>4</m:mn>
+                  <m:mi>A</m:mi>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>sin</m:mtext>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mi>k</m:mi>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mi>ω</m:mi>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mo>=</m:mo>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>ω</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>v</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mtext>−</m:mtext>
+                  <m:mi>A</m:mi>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>sin</m:mtext>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>k</m:mi>
+                      <m:mi>x</m:mi>
+                      <m:mo>−</m:mo>
+                      <m:mi>ω</m:mi>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mn>4</m:mn>
+                  <m:mi>A</m:mi>
+                  <m:mspace width="0.2em"/>
+                  <m:mtext>sin</m:mtext>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mi>k</m:mi>
+                      <m:mi>x</m:mi>
+                      <m:mo>+</m:mo>
+                      <m:mn>2</m:mn>
+                      <m:mi>ω</m:mi>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd columnalign="right">
+              <m:msup>
+                <m:mi>k</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mo>=</m:mo>
+            </m:mtd>
+            <m:mtd columnalign="left">
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>ω</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>v</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>,</m:mo>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mo>|</m:mo>
+                <m:mi>v</m:mi>
+                <m:mo>|</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mi>ω</m:mi>
+                <m:mi>k</m:mi>
+              </m:mfrac>
+              <m:mo>.</m:mo>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+      </m:math>
+    </para>
+  </item>
+</list><para id="fs-id1165035748253"><title>Znaczenie</title>Prędkość wypadkowej fali jest równa prędkości fali pierwotnej <m:math>
+    <m:mi>v</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>ω</m:mi>
+    <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+    <m:mi>k</m:mi>
+    </m:math>. W następnym podrozdziale pokażemy, że prędkość prostej fali harmonicznej na strunie zależy od naprężenia struny i masy przypadającej na jednostkę jej długości. Nie powinno być zatem zaskoczeniem, że prędkości fal składowych i prędkość fali wypadkowej są takie same. </para></example>
+  <note id="fs-id1165039345175" class="check-understanding">
+    <exercise id="fs-id1165039345179"><problem id="fs-id1165039081364">
+        <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165039081366"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> <newline/>Równanie fali <m:math>
+            <m:mrow>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mo>∂</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mi>y</m:mi>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:msup>
+                    <m:mi>x</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:msup>
+                    <m:mi>v</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mspace width="0.2em"/>
+              <m:mfrac>
+                <m:mrow>
+                  <m:msup>
+                    <m:mo>∂</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                  <m:mi>y</m:mi>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mi>x</m:mi>
+                      <m:mo>,</m:mo>
+                      <m:mi>t</m:mi>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                  <m:mo>∂</m:mo>
+                  <m:msup>
+                    <m:mi>t</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+            </m:mrow>
+          </m:math> jest prawdziwe dla każdej fali w postaci <m:math>
+          <m:mrow>
+            <m:mi>y</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>x</m:mi>
+                <m:mo>,</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mi>f</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>x</m:mi>
+                <m:mo>∓</m:mo>
+                <m:mi>v</m:mi>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:mrow>
+          </m:math> W poprzednim rozdziale stwierdziliśmy, że funkcja cosinus może być użyta również do opisu prostej mechanicznej fali harmonicznej. Sprawdź, czy funkcja:
+            <m:math display="block">
+              <m:mi>y</m:mi>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mi>t</m:mi>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mn>0,50</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mi>cos</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>0,20</m:mn>
+                  <m:mi>π</m:mi>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi mathvariant="normal">m</m:mi>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mn>4,00</m:mn>
+                  <m:mi>π</m:mi>
+                  <m:mspace width="0.2em"/>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi mathvariant="normal">s</m:mi>
+                      <m:mrow>
+                        <m:mo>−</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo>⋅</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mfrac>
+                    <m:mi>π</m:mi>
+                    <m:mn>10</m:mn>
+                  </m:mfrac>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:math>
+jest rozwiązaniem równania falowego.!</para></problem>
+        <solution id="fs-id1165039224800">
+          <para id="fs-id1165039224802">Fala o amplitudzie <m:math>
+            <m:mrow>
+              <m:mi>A</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>0,5</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>m</m:mtext>
+              <m:mo>,</m:mo>
+            </m:mrow>
+          </m:math> długości <m:math>
+          <m:mrow>
+            <m:mi>λ</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>10,00</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>m</m:mtext>
+            <m:mo/>
+          </m:mrow>
+        </m:math> i okresie <m:math>
+        <m:mrow>
+          <m:mi>T</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>0,50</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>s</m:mtext>
+        </m:mrow>
+      </m:math> jest rozwiązaniem równania falowego. Prędkość fali <m:math>
+      <m:mrow>
+        <m:mi>v</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>20,00</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>m/s</m:mtext>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math>
+  </para></solution>
+</exercise></note>
+<para id="fs-id1165039090890">Każde zaburzenie, które spełnia równanie falowe, może rozchodzić się jako fala wzdłuż osi <m:math>
+    <m:mi>x</m:mi>
+  </m:math>
+ z prędkością <m:math>
+  <m:mi>v</m:mi>
+</m:math>. Jest to prawdziwe dla fali na strunie, fal dźwiękowych, elektromagnetycznych oraz innego typu fal. </para></section>
+<section id="fs-id1165039256153" class="key-concepts">
+  <title>Podsumowanie</title>
+  <list id="fs-id1165039268436" list-type="bulleted" bullet-style="bullet"><item>Fala jest drganiem (wielkości fizycznej), które rozchodzi się w ośrodku, czemu towarzyszy przenoszenie energii, które odbywa się w kierunku zgodnym z kierunkiem prędkości fali. Cząstki ośrodka mogą drgać w różny sposób, np. w górę i w dół, tam i z powrotem, na boki wokół położenia równowagi.</item>
+    <item>Fala sinusoidalna w chwili <m:math>
+      <m:mrow>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0,00</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>s</m:mtext>
+      </m:mrow>
+    </m:math> może być przedstawiona jako funkcja położenia. Przykładami takich funkcji są: <m:math>
+    <m:mrow>
+      <m:mi>y</m:mi>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mi>A</m:mi>
+      <m:mspace width="0.2em"/>
+      <m:mtext>sin</m:mtext>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mi>k</m:mi>
+          <m:mi>x</m:mi>
+          <m:mo>+</m:mo>
+          <m:mi>ϕ</m:mi>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+    </m:mrow>
+  </m:math> oraz <m:math>
+  <m:mrow>
+    <m:mi>y</m:mi>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mi>x</m:mi>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mi>A</m:mi>
+    <m:mspace width="0.2em"/>
+    <m:mtext>cos</m:mtext>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>k</m:mi>
+        <m:mi>x</m:mi>
+        <m:mo>+</m:mo>
+        <m:mi>ϕ</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>.</m:mo>
+  </m:mrow>
+</m:math>
+</item>
+<item>Przyjmijmy, że znamy funkcję falową zależną jedynie od położenia <m:math>
+  <m:mi>x</m:mi>
+</m:math> opisującą falę w danej chwili. Ruch impulsu lub innej fali rozchodzącej się ze stałą prędkością może być opisany tą samą funkcją, jeśli zastąpimy <m:math>
+  <m:mi>x</m:mi>
+</m:math>
+ wyrażeniem <m:math>
+<m:mrow>
+  <m:mi>x</m:mi>
+  <m:mo>∓</m:mo>
+  <m:mi>v</m:mi>
+  <m:mi>t</m:mi>
+</m:mrow>
+</m:math>. Znak minus oznacza ruch w prawo, a plus - w przeciwnym kierunku.</item>
+<item>Funkcja falowa dana jest równaniem: <m:math>
+  <m:mrow>
+    <m:mi>y</m:mi>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mo>,</m:mo>
+        <m:mi>t</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mi>A</m:mi>
+    <m:mspace width="0.2em"/>
+    <m:mtext>sin</m:mtext>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mi>k</m:mi>
+        <m:mi>x</m:mi>
+        <m:mo>−</m:mo>
+        <m:mi>ω</m:mi>
+        <m:mi>t</m:mi>
+        <m:mo>+</m:mo>
+        <m:mi>ϕ</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+  </m:mrow>
+</m:math>, gdzie <m:math>
+<m:mrow>
+  <m:mi>k</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>2</m:mn>
+  <m:mi>π</m:mi>
+  <m:mtext>/</m:mtext>
+  <m:mi>λ</m:mi>
+</m:mrow>
+</m:math> jest liczbą falową, <m:math>
+<m:mrow>
+  <m:mi>ω</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>2</m:mn>
+  <m:mi>π</m:mi>
+  <m:mtext>/</m:mtext>
+  <m:mi>T</m:mi>
+</m:mrow>
+</m:math> jest częstością kołową, a <m:math>
+<m:mi>ϕ</m:mi>
+</m:math> fazą początkową.</item>
+<item>Fala rozchodzi się ze stałą prędkością <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>v</m:mi>
+      <m:mi>w</m:mi>
+    </m:msub>
+  </m:mrow>
+</m:math>, a cząstki ośrodka drgają wokół położenia równowagi. Stałą prędkość fali możemy wyliczyć z równania <m:math>
+<m:mi>v</m:mi>
+<m:mo>=</m:mo>
+<m:mi>λ</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mi>T</m:mi>
+<m:mo>=</m:mo>
+<m:mi>ω</m:mi>
+<m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+<m:mi>k</m:mi>
+</m:math>.</item>
+</list></section>
+<section id="fs-id1165039466319" class="review-conceptual-questions">
+  <title>Pytania</title>
+  <exercise id="fs-id1165039336729">
+    <problem id="fs-id1165039336731">
+      <para id="fs-id1165039336733">Jeśli poruszałbyś końcem sprężyny w górę i w dół 10 razy na sekundę, to jakie byłyby częstotliwość i okres sinusoidalnej fali utworzonej na sprężynie? </para></problem>
+  </exercise>
+  <exercise id="fs-id1165035735530">
+    <problem id="fs-id1165039477547">
+      <para id="fs-id1165039477549">Gdybyś poruszał końcem naprężonej sprężyny w górę i w dół z częstotliwością <emphasis effect="italics">f</emphasis>, mógłbyś utworzyć sinusoidalną falę poprzeczną wzdłuż sprężyny. Czy liczba falowa zależy od częstotliwości, z jaką potrząsałbyś sprężyną?</para></problem>
+    <solution id="fs-id1165039235816">
+      <para id="fs-id1165039235818">Długość fali jest równa iloczynowi prędkości fali i częstotliwości, a liczba falowa równa się <m:math>
+        <m:mi>k</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>2</m:mn>
+        <m:mi>π</m:mi>
+        <m:mspace width="0.1em"/><m:mtext>/</m:mtext><m:mspace width="0.1em"/>
+        <m:mi>λ</m:mi>
+        </m:math>. Zatem liczba falowa zależy od częstotliwości oraz prędkości rozchodzenia się fali. </para></solution>
+    </exercise>
+    <exercise id="fs-id1165039192038">
+      <problem id="fs-id1165039192040">
+        <para id="fs-id1165039402577">Czy prędkość drgań poprzecznych naprężonej struny, wzdłuż której rozchodzi się sinusoidalna fala poprzeczna, zależy od prędkości rozchodzenia się fali?</para></problem>
+    </exercise>
+    <exercise id="fs-id1165039454134">
+      <problem id="fs-id1165035758452">
+        <para id="fs-id1165035758454">W tym rozdziale rozważaliśmy fale, których prędkość jest stała. Czy dla ośrodka można mówić o przyspieszeniu? </para></problem>
+      <solution id="fs-id1165038973967">
+        <para id="fs-id1165038973969">Gdy fala rozchodzi się w ośrodku, to ośrodek porusza się prostym ruchem harmonicznym, którego prędkość jest inna w każdej chwili, zatem można mówić tu o przyspieszeniu cząstek ośrodka. Przyspieszenie jest tu wynikiem działania sił sprężystości w kierunku przeciwnym do wychylenia. </para></solution>
+    </exercise>
+    <exercise id="fs-id1165038980537">
+      <problem id="fs-id1165038980539">
+        <para id="fs-id1165038980541">Po wrzuceniu kamyka do sadzawki możemy zauważyć powstawanie koncentrycznych fal zamiast pojedynczej fali. Czy potrafisz to wyjaśnić? </para></problem>
+    </exercise>
+  </section>
+  <section id="fs-id1165039110937" class="review-problems">
+    <title>Zadania</title>
+    <exercise id="fs-id1165035616837">
+      <problem id="fs-id1165035616839">
+        <para id="fs-id1165038995379">Impuls może być opisany jako pojedyncze zaburzenie falowe, które przenosi się przez ośrodek. Rozważ impuls, który w chwili <m:math>
+          <m:mrow>
+            <m:mi>t</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>0,00</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>s</m:mtext>
+          </m:mrow>
+        </m:math> jest opisany równaniem <m:math>
+        <m:mrow>
+          <m:mi>y</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>6,00</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:msup>
+                <m:mtext>m</m:mtext>
+                <m:mn>3</m:mn>
+              </m:msup>
+            </m:mrow>
+            <m:mrow>
+              <m:msup>
+                <m:mi>x</m:mi>
+                <m:mn>2</m:mn>
+              </m:msup>
+              <m:mo>+</m:mo>
+              <m:mn>2,00</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:msup>
+                <m:mtext>m</m:mtext>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:mfrac>
+        </m:mrow>
+      </m:math>, a którego położenie wynosi <m:math>
+      <m:mrow>
+        <m:mi>x</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0,00</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>m</m:mtext>
+        <m:mo>.</m:mo>
+      </m:mrow>
+    </m:math> Impuls rozchodzi się z prędkością <m:math>
+    <m:mrow>
+      <m:mi>v</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>3,00</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>m/s</m:mtext>
+    </m:mrow>
+  </m:math> zgodnie ze zwrotem osi <m:math>
+    <m:mi>x</m:mi>
+  </m:math>. (a) Ile wynosi amplituda impulsu? (b) Podaj równanie impulsu jako funkcję położenia i czasu. (c) Jakie jest położenie impulsu w chwili <m:math>
+<m:mrow>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>5,00</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mtext>s</m:mtext>
+</m:mrow>
+</m:math>?</para></problem>
+</exercise>
+<exercise id="fs-id1165039384356">
+  <problem id="fs-id1165039384358">
+    <para id="fs-id1165039384360">Fala poprzeczna na strunie jest opisana funkcją falową <m:math>
+      <m:mi>y</m:mi>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mi>x</m:mi>
+      <m:mo>,</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mo>=</m:mo>
+      <m:mn>0,20</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">c</m:mi>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mi>sin</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mn>2,00</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:msup>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>x</m:mi>
+          <m:mo>−</m:mo>
+          <m:mn>3,00</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:msup>
+              <m:mi mathvariant="normal">s</m:mi>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mfrac>
+            <m:mi>π</m:mi>
+            <m:mn>16</m:mn>
+          </m:mfrac>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+    </m:math>. Jakie jest wychylenie struny względem położenia równowagi dla <m:math>
+    <m:mrow>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>4,00</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>m</m:mtext>
+    </m:mrow>
+  </m:math> w chwili <m:math>
+  <m:mrow>
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>10,00</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>s</m:mtext>
+    <m:mo>?</m:mo>
+  </m:mrow>
+</m:math>
+</para></problem>
+<solution id="fs-id1165039082087">
+  <para id="fs-id1165039082089">
+    <m:math>
+      <m:mrow>
+        <m:mi>y</m:mi>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mi>x</m:mi>
+            <m:mo>,</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mn>−0,037</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>cm</m:mtext>
+      </m:mrow>
+    </m:math>
+  </para>
+</solution>
+</exercise>
+<exercise id="fs-id1165039433348">
+  <problem id="fs-id1165039433350">
+    <para id="fs-id1165039433352">Rozważ funkcję falową<newline/> <m:math>
+      <m:mi>y</m:mi>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mi>x</m:mi>
+      <m:mo>,</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mo>=</m:mo>
+      <m:mn>3,00</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">c</m:mi>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mi>sin</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mn>0,4</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:msup>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>x</m:mi>
+          <m:mo>−</m:mo>
+          <m:mn>2,00</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:msup>
+              <m:mi mathvariant="normal">s</m:mi>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mfrac>
+            <m:mi>π</m:mi>
+            <m:mn>10</m:mn>
+          </m:mfrac>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      </m:math>. Podaj okres, długość, prędkość i fazę początkową tej fali.</para></problem>
+  </exercise>
+  <exercise id="fs-id1165039276643">
+    <problem id="fs-id1165039276645">
+      <para id="fs-id1165039276648">Dane jest równanie impulsu:<newline/> <m:math>
+        <m:mrow>
+          <m:mi>y</m:mi>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>,</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:msup>
+            <m:mi>e</m:mi>
+            <m:mrow>
+              <m:mn>−2,77</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:msup>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mo>(</m:mo>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>2,00</m:mn>
+                          <m:mrow>
+                            <m:mo>(</m:mo>
+                            <m:mrow>
+                              <m:mi>x</m:mi>
+                              <m:mo>−</m:mo>
+                              <m:mn>2,00</m:mn>
+                              <m:mspace width="0.2em"/>
+                              <m:mtext>m/s</m:mtext>
+                              <m:mrow>
+                                <m:mo>(</m:mo>
+                                <m:mi>t</m:mi>
+                                <m:mo>)</m:mo>
+                              </m:mrow>
+                            </m:mrow>
+                            <m:mo>)</m:mo>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>5,00</m:mn>
+                          <m:mspace width="0.2em"/>
+                          <m:mtext>m</m:mtext>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                    <m:mo>)</m:mo>
+                  </m:mrow>
+                </m:mrow>
+                <m:mn>2</m:mn>
+              </m:msup>
+            </m:mrow>
+          </m:msup>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math> Korzystając z arkusza kalkulacyjnego, narysuj wykres wychylenia ośrodka <m:math>
+        <m:mi>y</m:mi>
+      </m:math>
+     w funkcji położenia <m:math>
+      <m:mi>x</m:mi>
+    </m:math>. Przedstaw zależności (na tym samym wykresie) dla chwil czasu <m:math>
+  <m:mrow>
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>0,00</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>s</m:mtext>
+  </m:mrow>
+</m:math> oraz <m:math>
+<m:mrow>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>3,00</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mtext>s</m:mtext>
+</m:mrow>
+</m:math>. Jakie będzie położenie impulsu w chwili <m:math>
+<m:mrow>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>3,00</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mtext>s</m:mtext>
+</m:mrow>
+</m:math>? </para></problem>
+<solution id="fs-id1165039313978">
+  <para id="fs-id1165035747295">
+    <media id="fs-id1165035747296" alt="Rysunek pokazuje dwa impulsy. Dla obu wartości y zmieniają się w zakresie od 0 do 1. Pierwsza fala, narysowana przerywaną linią jest oznaczona jako t=0 s. Grzbiet fali występuje dla x=0. Druga fala narysowana linią ciągłą i oznaczona jako t=3 s. Grzbiet fali występuje dla x=6.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_16_02_Prob9_img.jpg"/>
+    </media>
+    <newline/>Impuls przesunie się o <m:math>
+    <m:mrow>
+      <m:mtext>Δ</m:mtext>
+      <m:mi>x</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>6,00</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mtext>m</m:mtext>
+    </m:mrow>
+    </m:math>.</para>
+  </solution>
+</exercise>
+<exercise id="fs-id1165039000657">
+  <problem id="fs-id1165039000660">
+    <para id="fs-id1165039305828">W chwili <m:math>
+      <m:mrow>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0,00</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>s</m:mtext>
+      </m:mrow>
+    </m:math> fala jest opisana funkcją falową, która zależy od położenia. Równanie ma postać: <m:math>
+    <m:mi>y</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>x</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>=</m:mo>
+    <m:mn>0,30</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mi>sin</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:mrow>
+      <m:mo>(</m:mo>
+      <m:mrow>
+        <m:mn>6,28</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:msup>
+            <m:mi mathvariant="normal">m</m:mi>
+            <m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+          </m:msup>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mi>x</m:mi>
+      </m:mrow>
+      <m:mo>)</m:mo>
+    </m:mrow>
+  </m:math>. Fala pokonuje odcinek 4,00 m w czasie 0,50 s w kierunku zgodnym ze zwrotem osi <m:math>
+    <m:mi>x</m:mi>
+  </m:math>. Napisz równanie falowe jako funkcję położenia i czasu. </para>
+</problem>
+</exercise>
+<exercise id="fs-id1165039421278">
+  <problem id="fs-id1165039421280">
+    <para id="fs-id1165039421282">Fala jest opisana funkcją<newline/> <m:math>
+      <m:mi>y</m:mi>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mi>x</m:mi>
+      <m:mo>,</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mo>=</m:mo>
+      <m:mn>0,25</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mi>sin</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mrow>
+        <m:mo>(</m:mo>
+        <m:mrow>
+          <m:mn>0,30</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:msup>
+              <m:mi mathvariant="normal">m</m:mi>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>x</m:mi>
+          <m:mo>−</m:mo>
+          <m:mn>0,90</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:msup>
+              <m:mi mathvariant="normal">s</m:mi>
+              <m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>1</m:mn>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>t</m:mi>
+          <m:mo>+</m:mo>
+          <m:mfrac>
+            <m:mi>π</m:mi>
+            <m:mn>3</m:mn>
+          </m:mfrac>
+        </m:mrow>
+        <m:mo>)</m:mo>
+      </m:mrow>
+      </m:math>. Oblicz: (a) amplitudę, (b) liczbę falową, (c) częstość kołową, (d) prędkość fali, (e) fazę początkową, (f) długość fali, (g) okres fali.</para></problem>
+    <solution id="fs-id1165039411797">
+      <para id="fs-id1165039411799">a. <m:math>
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>0,25</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>m</m:mtext>
+          <m:mo>;</m:mo>
+        </m:mrow>
+      </m:math> b. <m:math>
+      <m:mrow>
+        <m:mi>k</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0,30</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:msup>
+          <m:mtext>m</m:mtext>
+          <m:mrow>
+            <m:mn>−1</m:mn>
+          </m:mrow>
+        </m:msup>
+        <m:mo>;</m:mo>
+      </m:mrow>
+    </m:math> c. <m:math>
+    <m:mrow>
+      <m:mi>ω</m:mi>
+      <m:mo>=</m:mo>
+      <m:mn>0,90</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:msup>
+        <m:mtext>s</m:mtext>
+        <m:mrow>
+          <m:mn>−1</m:mn>
+        </m:mrow>
+      </m:msup>
+      <m:mo>;</m:mo>
+    </m:mrow>
+  </m:math> d. <m:math>
+  <m:mrow>
+    <m:mi>v</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>3,0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>m/s</m:mtext>
+    <m:mo>;</m:mo>
+  </m:mrow>
+</m:math> e. <m:math>
+<m:mrow>
+  <m:mi>ϕ</m:mi>
+  <m:mo>=</m:mo>
+  <m:mi>π</m:mi>
+  <m:mtext>/</m:mtext>
+  <m:mn>3</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mtext>rad</m:mtext>
+  <m:mo>;</m:mo>
+</m:mrow>
+</m:math> f. <m:math>
+<m:mrow>
+  <m:mi>λ</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>20,93</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mtext>m</m:mtext>
+</m:mrow>
+</m:math>; g. <m:math>
+<m:mrow>
+  <m:mi>T</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>6,98</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mtext>s</m:mtext>
+</m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise>
+<exercise id="fs-id1165039242809">
+  <problem id="fs-id1165039242811">
+    <para id="fs-id1165039242813">Fala na powierzchni wody ma amplitudę 0,6 m, a odległość pomiędzy sąsiednimi dolinami fali wynosi 8,00 m. Fala rozchodzi się z prędkością 1,5 m/s w kierunku zgodnym ze zwrotem osi <m:math>
+      <m:mrow>
+        <m:mi>x</m:mi>
+      </m:mrow>
+    </m:math>. W chwili czasu <m:math>
+      <m:mrow>
+        <m:mi>t</m:mi>
+        <m:mo>=</m:mo>
+        <m:mn>0</m:mn>
+      </m:mrow>
+    </m:math> wychylenie wynosi zero, a <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>v</m:mi>
+        <m:mi>y</m:mi>
+      </m:msub>
+    </m:mrow>
+  </m:math> jest dodatnie. (a) Zakładając, że jest to fala sinusoidalna, podaj postać równania fali. (b) W arkuszu kalkulacyjnym narysuj przebieg fali dla chwil czasu <m:math>
+  <m:mrow>
+    <m:mi>t</m:mi>
+    <m:mo>=</m:mo>
+    <m:mn>0,00</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mtext>s</m:mtext>
+  </m:mrow>
+</m:math> oraz <m:math>
+<m:mrow>
+  <m:mi>t</m:mi>
+  <m:mo>=</m:mo>
+  <m:mn>2,00</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mtext>s</m:mtext>
+</m:mrow>
+</m:math> na tym samym wykresie. Sprawdź, czy fala pokonuje odległość 3,00 m w czasie 2,00 s. </para></problem>
+</exercise>
+<exercise id="fs-id1165035726297">
+  <problem id="fs-id1165035726299">
+    <para id="fs-id1165035726301">Fala jest przedstwiona funkcją falową: <m:math>
+      <m:mi>y</m:mi>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mi>x</m:mi>
+      <m:mo>,</m:mo>
+      <m:mi>t</m:mi>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mo>=</m:mo>
+      <m:mn>0,30</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mi>sin</m:mi>
+      <m:mo>⁡</m:mo>
+      <m:mrow>
+        <m:mo>[</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mi>π</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>4,50</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+            </m:mrow>
+          </m:mfrac>
+          <m:mrow>
+            <m:mo>(</m:mo>
+            <m:mrow>
+              <m:mi>x</m:mi>
+              <m:mo>−</m:mo>
+              <m:mn>18,00</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mi mathvariant="normal">m</m:mi>
+                  <m:mi mathvariant="normal">s</m:mi>
+                </m:mfrac>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mi>t</m:mi>
+            </m:mrow>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>]</m:mo>
+      </m:mrow>
+      </m:math>. Podaj amplitudę, długość, szybkość, okres i częstotliwość tej fali. </para></problem>
+    <solution id="fs-id1165039096133">
+      <para id="fs-id1165039096135">
+        <m:math>
+          <m:mrow>
+            <m:mi>A</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>0,30</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>m</m:mtext>
+            <m:mo>,</m:mo>
+            <m:mspace width="0.2em"/>
+            <m:mi>λ</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>4,50</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>m</m:mtext>
+            <m:mo>,</m:mo>
+            <m:mspace width="0.2em"/>
+            <m:mi>v</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>18,00</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>m/s</m:mtext>
+            <m:mo>,</m:mo>
+            <m:mspace width="0.2em"/>
+            <m:mi>f</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>4,00</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>Hz</m:mtext>
+            <m:mo>,</m:mo>
+            <m:mspace width="0.2em"/>
+            <m:mi>T</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>0,25</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>s</m:mtext>
+          </m:mrow>
+        </m:math>
+      </para>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1165035655419">
+    <problem id="fs-id1165035655421">
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1165039100248">Podłużna fala na strunie jest opisana funkcją falową <m:math>
+        <m:mi>y</m:mi>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mi>x</m:mi>
+        <m:mo>,</m:mo>
+        <m:mi>t</m:mi>
+        <m:mo stretchy="false">)</m:mo>
+        <m:mo>=</m:mo>
+        <m:mn>0,50</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">c</m:mi>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mi>sin</m:mi>
+        <m:mo>⁡</m:mo>
+        <m:mrow>
+          <m:mo>(</m:mo>
+          <m:mrow>
+            <m:mn>1,57</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:msup>
+                <m:mi mathvariant="normal">m</m:mi>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:msup>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>−</m:mo>
+            <m:mn>6,28</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:msup>
+                <m:mi mathvariant="normal">s</m:mi>
+                <m:mrow>
+                  <m:mo>−</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:msup>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mi>t</m:mi>
+          </m:mrow>
+          <m:mo>)</m:mo>
+        </m:mrow>
+        </m:math>. (a) Jaka jest prędkość tej fali? (b) Jaka jest wartość maksymalnej prędkości wychyleń struny w kierunku prostopadłym do kierunku ruchu fali? </para></problem>
+    </exercise>
+    <exercise id="fs-id1165035651437">
+      <problem id="fs-id1165035651439">
+        <para id="fs-id1165035651441">Pływak zauważył, że jednego dnia fale na powierzchni morza były okresowe i przypominały falę sinusoidalną. Oszacował, że pionowa odległość pomiędzy grzbietem a doliną fali wynosi około 0,45 m, a odległość pomiędzy dwoma grzbietami 1,8 m. Naliczył 12 fal w ciągu każdych 2 min. Napisz prostą funkcję falową opisującą tę falę. </para></problem>
+      <solution id="fs-id1165039276791">
+        <para id="fs-id1165039276793">
+          <m:math>
+            <m:mrow>
+              <m:mi>y</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo>,</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>0,23</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>m</m:mtext>
+              <m:mspace width="0.2em"/>
+              <m:mtext>sin</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mn>3,49</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:msup>
+                    <m:mtext>m</m:mtext>
+                    <m:mrow>
+                      <m:mn>−1</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mi>x</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mn>0,63</m:mn>
+                  <m:mspace width="0.2em"/>
+                  <m:msup>
+                    <m:mtext>s</m:mtext>
+                    <m:mrow>
+                      <m:mn>−1</m:mn>
+                    </m:mrow>
+                  </m:msup>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math>
+        </para>
+      </solution>
+    </exercise>
+    <exercise id="fs-id1165039414799">
+      <problem id="fs-id1165039414801">
+        <para id="fs-id1165039414803">Rozważ falę opisaną funkcją falową <m:math>
+          <m:mrow>
+            <m:mi>y</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>x</m:mi>
+                <m:mo>,</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>0,3</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>m</m:mtext>
+            <m:mspace width="0.2em"/>
+            <m:mtext>sin</m:mtext>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mn>2,00</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:msup>
+                  <m:mtext>m</m:mtext>
+                  <m:mrow>
+                    <m:mn>−1</m:mn>
+                  </m:mrow>
+                </m:msup>
+                <m:mi>x</m:mi>
+                <m:mo>−</m:mo>
+                <m:mn>628,00</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:msup>
+                  <m:mtext>s</m:mtext>
+                  <m:mrow>
+                    <m:mn>−1</m:mn>
+                  </m:mrow>
+                </m:msup>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:mrow>
+          </m:math> (a) Ile grzbietów przebiegnie przez punkt, w którym stoi obserwator, w ciągu 2,00 min? (b) Jak daleko przemieści się fala w tym czasie?</para></problem>
+      </exercise>
+      <exercise id="fs-id1165039464692">
+        <problem id="fs-id1165039464694">
+          <para id="fs-id1165039464696">Rozważ dwie fale opisane funkcjami falowymi <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo>,</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>0,50</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>m</m:mtext>
+              <m:mspace width="0.2em"/>
+              <m:mtext>sin</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mi>π</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>3,00</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mtext>m</m:mtext>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mi>x</m:mi>
+                  <m:mo>+</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mi>π</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>4,00</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mtext>s</m:mtext>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math> i <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>y</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>x</m:mi>
+                <m:mo>,</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>0,50</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>m</m:mtext>
+            <m:mspace width="0.2em"/>
+            <m:mtext>sin</m:mtext>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>π</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>6,00</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>m</m:mtext>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mi>x</m:mi>
+                <m:mo>−</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>π</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>4.00</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>s</m:mtext>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:mrow>
+          </m:math> Podaj podobieństwa i różnice między nimi.</para></problem>
+        <solution id="fs-id1165035610267">
+          <para id="fs-id1165035610269">Mają te same częstotliwości i okresy. Poruszają się w przeciwnych kierunkach, a <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo>,</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math> ma dwa razy większą długość niż <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>y</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>x</m:mi>
+                <m:mo>,</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+          </m:mrow>
+          </m:math> i porusza się z prędkością dwa razy mniejszą. </para>
+        </solution>
+      </exercise>
+      <exercise id="fs-id1165039385725">
+        <problem id="fs-id1165039385727">
+          <para id="fs-id1165039385730">Rozważ dwie fale opisane funkcjami falowymi: <m:math>
+            <m:mrow>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo>,</m:mo>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>0,20</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>m</m:mtext>
+              <m:mspace width="0.2em"/>
+              <m:mtext>sin</m:mtext>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mrow>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mi>π</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>6,00</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mtext>m</m:mtext>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mi>x</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mi>π</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>4,00</m:mn>
+                      <m:mspace width="0.2em"/>
+                      <m:mtext>s</m:mtext>
+                    </m:mrow>
+                  </m:mfrac>
+                  <m:mi>t</m:mi>
+                </m:mrow>
+                <m:mo>)</m:mo>
+              </m:mrow>
+            </m:mrow>
+          </m:math> oraz <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>y</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mi>x</m:mi>
+                <m:mo>,</m:mo>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mn>0,20</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>m</m:mtext>
+            <m:mspace width="0.2em"/>
+            <m:mtext>cos</m:mtext>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>π</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>6,00</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>m</m:mtext>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mi>x</m:mi>
+                <m:mo>−</m:mo>
+                <m:mfrac>
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mi>π</m:mi>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mn>4,00</m:mn>
+                    <m:mspace width="0.2em"/>
+                    <m:mtext>s</m:mtext>
+                  </m:mrow>
+                </m:mfrac>
+                <m:mi>t</m:mi>
+              </m:mrow>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:mrow>
+          </m:math> Podaj podobieństwa i różnice między tymi falami.</para>
+        </problem>
+      </exercise>
+      <exercise id="fs-id1165039302243">
+        <problem id="fs-id1165039316844">
+          <para id="fs-id1165039316846">Prędkość fali poprzecznej na strunie wynosi 300,00 m/s, jej długość 0,50 m, a amplituda 20,00 cm. Jaki czas jest potrzebny, aby cząstka na strunie przebyła odległość 5,00 km?</para></problem>
+        <solution id="fs-id1165039316852">
+          <para id="fs-id1165035870403">Każda cząstka ośrodka pokonuje odległość 4<m:math>
+              <m:mi>A</m:mi>
+            </m:math>
+           w czasie jednego okresu. Okres można wyliczyć, dzieląc prędkość przez długość fali: <m:math>
+          <m:mrow>
+            <m:mi>t</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>10,42</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mtext>s</m:mtext>
+          </m:mrow>
+        </m:math>.
+      </para></solution>
+  </exercise>
+</section>
+</content>
+<glossary>
+  <definition id="fs-id1165039053842">
+<term cmlnle:reference="liniowe równanie fali" class="no-emphasis">liniowe równanie fali (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">linear wave equation</term></foreign>)</term>
+    <meaning id="fs-id1165039053848">równanie opisujące falę, która jest wynikiem liniowych sił sprężystości działających w ośrodku; każda funkcja będąca rozwiązaniem równania falowego opisuje falę biegnącą w kierunku zgodnym ze zwrotem osi <m:math>
+        <m:mi>x</m:mi>
+      </m:math>
+     lub w kierunku przeciwnym do zwrotu osi <m:math>
+      <m:mi>x</m:mi>
+    </m:math>
+   ze stałą prędkością <m:math>
+    <m:mi>v</m:mi>
+  </m:math>
+
+</meaning>
+</definition>
+<definition id="fs-id1165039386013">
+<term cmlnle:reference="impuls" class="no-emphasis">impuls (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">pulse</term></foreign>)</term>
+  <meaning id="fs-id1165035648504">pojedyncze zaburzenie, które przemieszcza się przez ośrodek, przenosząc energię, ale nie przenosząc masy</meaning>
+</definition>
+<definition id="fs-id1165035648508">
+<term cmlnle:reference="funkcja falowa" class="no-emphasis">funkcja falowa (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">wave function</term></foreign>)</term>
+  <meaning id="fs-id1165035648513">model matematyczny opisujący położenie cząstki ośrodka </meaning>
+</definition>
+<definition id="fs-id1165035640965">
+<term cmlnle:reference="liczba falowa" class="no-emphasis">liczba falowa (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">wave number</term></foreign>)</term>
+  <meaning id="fs-id1165035640970">
+    <m:math>
+      <m:mrow>
+        <m:mfrac>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mi>π</m:mi>
+          </m:mrow>
+          <m:mi>λ</m:mi>
+        </m:mfrac>
+      </m:mrow>
+    </m:math>
+  </meaning>
+</definition>
+</glossary>
+</document>

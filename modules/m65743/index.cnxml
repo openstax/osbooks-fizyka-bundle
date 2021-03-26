@@ -1,0 +1,4876 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Układy współrzędnych i składowe wektora</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m65743</md:content-id>
+  <md:title>Układy współrzędnych i składowe wektora</md:title>
+  <md:abstract>W tym rozdziale nauczysz się:
+<list>
+<item>opisywać wektory leżące w przestrzeni dwuwymiarowej i trójwymiarowej przy pomocy wersorów osi;</item>
+<item>jakie są różnice między składową wektora a wartością tej składowej;</item>
+<item>obliczać moduł wektora na podstawie jego składowych;</item>
+<item>określać kąt skierowany wektora leżącego na płaszczyźnie;</item>
+<item>jaki jest związek między współrzędnymi biegunowymi i współrzędnymi kartezjańskimi.</item>
+</list></md:abstract>
+  <md:uuid>b07c2385-032c-453b-ac4a-ab2733d239ac</md:uuid>
+</metadata>
+
+<content>
+  <para id="fs-id1167133446629">Wektory zazwyczaj opisuje się, podając ich współrzędne w <term class="no-emphasis" cmlnle:reference="układ współrzędnych">układzie współrzędnych</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">coordinate system</term></foreign>). Nawet w życiu codziennym mamy skłonność do opisu rzeczywistości przy użyciu prostokątnego układu współrzędnych. Jeśli zapytasz kogoś, jak dostać się w pewne miejsce, bardziej prawdopodobne jest to, że usłyszysz, aby jechać 40 km na wschód, a następnie 30 km na północ, a nie 50 km, pod kątem <m:math>
+    <m:msup>
+      <m:mn>37</m:mn>
+      <m:mo>∘</m:mo>
+    </m:msup>
+    </m:math> na północ od kierunku wschodniego.</para>
+    <para id="fs-id1167133855194">W dwuwymiarowym, prostokątnym (kartezjańskim) układzie współrzędnych położenie punktu podaje się poprzez określenie jego dwóch współrzędnych <m:math>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mi>x</m:mi>
+      <m:mo>,</m:mo>
+      <m:mspace width="thinmathspace"/>
+      <m:mi>y</m:mi>
+      <m:mo stretchy="false">)</m:mo>
+    </m:math>. Położenie wektora <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math> opisuje się w podobny sposób. Rolę współrzędnej <m:math>
+  <m:mi>x</m:mi>
+</m:math> wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> pełni <emphasis effect="italics"> składowa pozioma </emphasis>, a rolę współrzędnej <m:math>
+<m:mi>y</m:mi>
+</m:math> wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> pełni <emphasis effect="italics">składowa pionowa</emphasis>. Składowa pozioma to wektor zapisywany <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>x</m:mi>
+</m:msub>
+</m:math>. Składowa pionowa to wektor zapisywany <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>y</m:mi>
+</m:msub>
+</m:math>. W kartezjańskim układzie współrzędnych <term class="no-emphasis" cmlnle:reference="składowe wektora">składowe</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">vector components</term></foreign>) <m:math>
+  <m:mi>x</m:mi>
+</m:math> i <m:math>
+<m:mi>y</m:mi>
+</m:math> wektora są jego rzutami na osie układu współrzędnych: <m:math>
+<m:mi>x</m:mi>
+</m:math> oraz <m:math>
+<m:mi>y</m:mi>
+</m:math>. Dlatego, zgodnie z regułą równoległoboku, każdy wektor leżący na płaszczyźnie kartezjańskiej można przedstawić jako sumę jego składowych:</para><equation id="fs-id1167133635848">
+  <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>A</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>A</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mi>y</m:mi>
+    </m:msub>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1167132574978">Jak widać na <link target-id="CNX_UPhysics_02_02_comp01" cmlnle:case="locative"/>, wektor <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math> jest przekątną prostokąta, w którym składowa <m:math>
+<m:mi>x</m:mi>
+</m:math>
+<m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mi>x</m:mi>
+  </m:msub>
+</m:math> jest bokiem równoległym do osi <m:math>
+<m:mi>x</m:mi>
+</m:math>, a składowa <m:math>
+<m:mi>y</m:mi>
+</m:math>
+<m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mi>y</m:mi>
+  </m:msub>
+</m:math> jest bokiem równoległym do osi <m:math>
+<m:mi>y</m:mi>
+</m:math>. Składowa <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>x</m:mi>
+</m:msub>
+</m:math> jest prostopadła do składowej <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>y</m:mi>
+</m:msub>
+</m:math>.</para>
+<figure id="CNX_UPhysics_02_02_comp01">
+  <media id="fs-id1167132569814" alt="Wektor A położony jest w dwuwymiarowym układzie współrzędnych kartezjańskich. Jego punkt początkowy znajduje się w punkcie b, a jego punkt końcowy w punkcie e. Wektor ten skierowany jest po skosie do góry i w prawo. Wektory jednostkowe i z daszkiem oraz j z daszkiem to małe wektory leżące wzdłuż osi x oraz y. Składowa x wektora A jest wektorem o kierunku poziomym o początku w punkcie b i końcu w punkcie poniżej punktu e. Na osi x leży wektor A z indeksem x o początku w punkcie x z indeksem b i końcu w punkcie x z indeksem e. Wektor ten jest równy modułowi A z indeksem x razy i z daszkiem. Moduł Ax równa się x z indeksem e odjąć x z indeksem b. Składowa y wektora A jest wektorem o kierunku pionowym o początku w punkcie b i końcu w punkcie znajdującym się na lewo od punktu e. Na osi y leży wektor A z indeksem y o początku w punkcie y z indeksem b i końcu w punkcie y z indeksem e. Wektor ten jest równy modułowi z A z indeksem y razy j z daszkiem. Moduł Ay jest równy y z indeksem e odjąć y z indeksem b.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_02_comp01.jpg"/>
+  </media>
+  <caption>Wektor <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math> położony na płaszczyźnie w układzie współrzędnych kartezjańskich jest sumą swojej składowej poziomej i pionowej. Składowa <m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mi>x</m:mi>
+  </m:msub>
+</m:math> jest rzutem wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> na oś <m:math>
+<m:mi>x</m:mi>
+</m:math>. Składowa <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>y</m:mi>
+</m:msub>
+</m:math> jest rzutem wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> na oś <m:math>
+<m:mi>y</m:mi>
+</m:math>. Liczby <m:math>
+<m:msub>
+  <m:mi>A</m:mi>
+  <m:mi>x</m:mi>
+</m:msub>
+</m:math> oraz <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mi>y</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math>, przez które mnożone są wektory jednostkowe, są wartościami składowych wektora.</caption>
+</figure>
+<para id="fs-id1167132422244">Przyjęło się oznaczać dodatni kierunek osi <m:math>
+  <m:mi>x</m:mi>
+</m:math> przy pomocy wektora jednostkowego <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>i</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>, a dodatni kierunek osi <m:math>
+<m:mi>y</m:mi>
+</m:math> przy pomocy wektora jednostkowego <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>j</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>. Wektory jednostkowe osi (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">unit vectors of the axes</term></foreign>), nazywane <term class="no-emphasis" cmlnle:reference="wersory osi">wersorami osi</term>, <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>i</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math> oraz <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>j</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>, określają dwa prostopadłe względem siebie kierunki na płaszczyźnie. Jak widać poniżej (<link target-id="CNX_UPhysics_02_02_comp01"/>), składowe <m:math>
+<m:mi>x</m:mi>
+</m:math> i <m:math>
+<m:mi>y</m:mi>
+</m:math> wektora można zapisać przy pomocy wersorów osi:</para>
+<equation id="fs-id1167132230873">
+  <m:math>
+    <m:mrow>
+      <m:mo>{</m:mo>
+      <m:mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+        <m:mtr>
+          <m:mtd>
+            <m:msub>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>A</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mi>x</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>A</m:mi>
+              <m:mi>x</m:mi>
+            </m:msub>
+            <m:mrow>
+              <m:mover>
+                <m:mi>i</m:mi>
+                <m:mo stretchy="false">^</m:mo>
+              </m:mover>
+            </m:mrow>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:msub>
+              <m:mrow>
+                <m:mover>
+                  <m:mi>A</m:mi>
+                  <m:mtext>→</m:mtext>
+                </m:mover>
+              </m:mrow>
+              <m:mi>y</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>A</m:mi>
+              <m:mi>y</m:mi>
+            </m:msub>
+            <m:mrow>
+              <m:mover>
+                <m:mi>j</m:mi>
+                <m:mo stretchy="false">^</m:mo>
+              </m:mover>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      <m:mo fence="true" stretchy="true" symmetric="true"/>
+    </m:mrow>
+  </m:math>
+</equation>
+<para id="fs-id1167133345023">Wektory <m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mi>x</m:mi>
+  </m:msub>
+</m:math> i <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>y</m:mi>
+</m:msub>
+</m:math> występujące w <link target-id="fs-id1167132230873" cmlnle:case="locative"/> są <emphasis effect="italics">składowymi</emphasis> wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>. Liczby <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mi>x</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> i <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mi>y</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> są <term class="no-emphasis" cmlnle:reference="składowe skalarne">składowymi skalarnymi</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">scalar component</term></foreign>) wektora <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  </m:math>. W wyniku połączenia <link target-id="fs-id1167133635848" cmlnle:case="genitive"/> i <link target-id="fs-id1167132230873" cmlnle:case="genitive"/> otrzymujemy <term class="no-emphasis">rozkład wektora na składowe</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">the component form of a vector</term></foreign>):</para>
+  <note id="fs-id1167132413666" class="equation-callout">
+    <equation id="fs-id1167132256590">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>A</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:msub>
+          <m:mi>A</m:mi>
+          <m:mi>x</m:mi>
+        </m:msub>
+        <m:mrow>
+          <m:mover>
+            <m:mi>i</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>A</m:mi>
+          <m:mi>y</m:mi>
+        </m:msub>
+        <m:mrow>
+          <m:mover>
+            <m:mi>j</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:math>
+    </equation>
+  </note>
+  <para id="fs-id1167132689436">Jeżeli znamy współrzędne <m:math>
+    <m:mi>p</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>x</m:mi>
+        <m:mrow>
+          <m:mi mathvariant="normal">p</m:mi>
+        </m:mrow>
+      </m:msub>
+    </m:mrow>
+    <m:mspace width="thinmathspace"/>
+    <m:msub>
+      <m:mi>y</m:mi>
+      <m:mrow>
+        <m:mi mathvariant="normal">p</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo stretchy="false">)</m:mo>
+  </m:math> punktu początkowego wektora (<m:math>
+  <m:mrow>
+    <m:mi mathvariant="normal">p</m:mi>
+  </m:mrow>
+</m:math> oznacza „początek”) i współrzędne <m:math>
+<m:mi>k</m:mi>
+<m:mo stretchy="false">(</m:mo>
+<m:msub>
+  <m:mi>x</m:mi>
+  <m:mrow>
+    <m:mi mathvariant="normal">k</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>,</m:mo>
+<m:mspace width="thinmathspace"/>
+<m:msub>
+  <m:mi>y</m:mi>
+  <m:mrow>
+    <m:mi mathvariant="normal">k</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+</m:math> punktu końcowego wektora (<m:math>
+<m:mrow>
+  <m:mi mathvariant="normal">k</m:mi>
+</m:mrow>
+</m:math> oznacza „koniec”), możemy poznać składowe skalarne wektora, odejmując współrzędne punktu początkowego od współrzędnych punktu końcowego:</para>
+<note id="fs-id1167132581667" class="equation-callout">
+  <equation id="fs-id1167132197498">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mo>{</m:mo>
+        <m:mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+          <m:mtr>
+            <m:mtd>
+              <m:msub>
+                <m:mi>A</m:mi>
+                <m:mi>x</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>x</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>x</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">p</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:msub>
+                <m:mi>A</m:mi>
+                <m:mi>y</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">p</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>.</m:mo>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+        <m:mo fence="true" stretchy="true" symmetric="true"/>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<example id="fs-id1167132341727">
+  <para id="fs-id1167132481511">
+    <title>Przemieszczenie kursora</title>Przyjmując, że lewy dolny róg monitora jest początkiem układu współrzędnych, to kursor myszy znajduje się w punkcie <m:math>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mn>6,0</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">c</m:mi>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo>;</m:mo>
+      <m:mspace width="thinmathspace"/>
+      <m:mn>1,6</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">c</m:mi>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo stretchy="false">)</m:mo>
+    </m:math>. Jeśli najedziesz kursorem na ikonę znajdującą się w punkcie <m:math>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mn>2,0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">c</m:mi>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo>;</m:mo>
+    <m:mspace width="thinmathspace"/>
+    <m:mn>4,5</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">c</m:mi>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo stretchy="false">)</m:mo>
+    </m:math>, jaki będzie wektor jego przemieszczenia?</para>
+    <para id="fs-id1167132467105">
+      <title>Strategia rozwiązania </title>Początkiem dwuwymiarowego układu współrzędnych jest lewy dolny róg ekranu. Oznacza to, że wersor <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>i</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:math> osi <m:math>
+      <m:mi>x</m:mi>
+    </m:math> skierowany jest w prawo, a wersor <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>j</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+  </m:math> osi <m:math>
+  <m:mi>y</m:mi>
+</m:math> skierowany jest w górę. Punkt początkowy wektora przemieszczenia <m:math>
+<m:mi>p</m:mi>
+</m:math> leży w <m:math>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>6,0</m:mn>
+<m:mo>;</m:mo>
+<m:mspace width="thinmathspace"/>
+<m:mn>1,6</m:mn>
+<m:mo stretchy="false">)</m:mo>
+</m:math>. Punkt końcowy wektora przemieszczenia <m:math>
+<m:mi>k</m:mi>
+</m:math> leży w <m:math>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>2,0</m:mn>
+<m:mo>;</m:mo>
+<m:mspace width="thinmathspace"/>
+<m:mn>4,5</m:mn>
+<m:mo stretchy="false">)</m:mo>
+</m:math>. Podstaw współrzędne tych punktów do <link target-id="fs-id1167132197498" cmlnle:case="genitive"/>, aby otrzymać składowe skalarne <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>D</m:mi>
+    <m:mi>x</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> oraz <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>D</m:mi>
+    <m:mi>y</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> wektora przemieszczenia <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>. Aby uzyskać rozkład wektora na składowe, podstaw obliczone składowe do <link target-id="fs-id1167132256590" cmlnle:case="genitive"/>.</para>
+<para id="fs-id1167132750241">
+  <title>Rozwiązanie</title>Na podstawie treści zadania mamy <m:math>
+    <m:msub>
+      <m:mi>x</m:mi>
+      <m:mrow>
+        <m:mi mathvariant="normal">p</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>6,0</m:mn>
+  </m:math>, <m:math>
+  <m:msub>
+    <m:mi>x</m:mi>
+    <m:mrow>
+      <m:mi mathvariant="normal">k</m:mi>
+    </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mn>2,0</m:mn>
+</m:math>, <m:math>
+<m:msub>
+  <m:mi>y</m:mi>
+  <m:mrow>
+    <m:mi mathvariant="normal">p</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>1,6</m:mn>
+</m:math> i <m:math>
+<m:msub>
+  <m:mi>y</m:mi>
+  <m:mrow>
+    <m:mi mathvariant="normal">k</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>4,5</m:mn>
+</m:math>, gdzie jednostką jest 1 cm. Możemy obliczyć składowe skalarne <m:math>
+<m:mi>x</m:mi>
+</m:math> oraz <m:math>
+<m:mi>y</m:mi>
+</m:math> wektora:</para>
+<equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167132421063" class="unnumbered"><m:math display="block"><m:semantics><m:mtable><m:mtr><m:mtd><m:msub><m:mi>D</m:mi><m:mi>x</m:mi></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:msub><m:mi>x</m:mi><m:mtext>k</m:mtext></m:msub><m:mo>−</m:mo><m:msub><m:mi>x</m:mi><m:mtext>p</m:mtext></m:msub></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>2,0</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">cm</m:mi></m:mrow><m:mo>−</m:mo><m:mrow><m:mn>6,0</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">cm</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:mn>4,0</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">cm</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>D</m:mi><m:mi>y</m:mi></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:msub><m:mi>y</m:mi><m:mtext>k</m:mtext></m:msub><m:mo>−</m:mo><m:msub><m:mi>y</m:mi><m:mtext>p</m:mtext></m:msub></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>4,5</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">cm</m:mi></m:mrow><m:mo>−</m:mo><m:mrow><m:mn>1,6</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">cm</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>+</m:mo><m:mrow><m:mrow><m:mn>2,9</m:mn><m:mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">cm</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{align} D_x &amp;= x_{\text{k}} - x_{\text{p}} = \SI{2,0}{\centi\metre} - \SI{6,0}{\centi\metre} = - \SI{4,0}{\centi\metre} \text{,} \\ D_y &amp;= y_{\text{k}} - y_{\text{p}} = \SI{4,5}{\centi\metre} - \SI{1,6}{\centi\metre} = +\SI{2,9}{\centi\metre} \text{.} \end{align}</m:annotation></m:semantics></m:math></equation><para id="fs-id1167133553723">Rozkład wektora na składowe przedstawia się następująco:</para>
+<equation id="fs-id1167132371006">
+  <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>D</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>D</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>i</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>D</m:mi>
+      <m:mi>y</m:mi>
+    </m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>j</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mo>−</m:mo>
+    <m:mn>4,0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">c</m:mi>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>i</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:mn>2,9</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">c</m:mi>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>j</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1167133550452">Rozwiązanie przedstawiono na <link target-id="CNX_UPhysics_02_02_comp02" cmlnle:case="locative"/>.</para>
+<figure id="CNX_UPhysics_02_02_comp02">
+  <media id="fs-id1167133456186" alt="Wektor D ma punkt początkowy w (6,0; 1,6), a punkt końcowy w (2,0; 4,5). Wektor D równa się wektor D z indeksem z dodać wektor D z indeksem y. Wektor D z indeksem x równa się minus 4,0 i z daszkiem. Wektor ten ma punkt początkowy w x=6,0, a punkt końcowy w x =2,0. Moduł wektora D z indeksem x równa się 2,0-6,0 = -4,0. D z indeksem y równa się plus 2,9 j z daszkiem. Wektor ten ma punkt początkowy w y=1,6, a punkt końcowy w y=4,5. Moduł wektora D z indeksem y równa się 4,5 − 1,6.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_02_comp02.jpg"/>
+  </media>
+  <caption>Wektor przemieszczenia w układzie współrzędnych. Punkt początkowy wektora oznaczony jest przez <m:math>
+    <m:mi>p</m:mi>
+  </m:math>, a punkt końcowy przez <m:math>
+  <m:mi>k</m:mi>
+  </m:math>.</caption>
+</figure>
+<para id="fs-id1167132539226">
+  <title>Znaczenie</title>Zauważ, że jednostkę – w tym przypadku 1 cm – można umieścić albo przy każdej składowej, przed symbolem wersora, albo dla obu składowych jednocześnie, jak w <link target-id="fs-id1167132371006" cmlnle:case="locative"/>. Wygodniej jest korzystać z drugiego sposobu, ponieważ jest on prostszy.</para>
+  <para id="fs-id1167132354421">Moduł wektora <m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mo>−</m:mo>
+    <m:mn>4,0</m:mn>
+    <m:mrow>
+      <m:mover>
+        <m:mi>i</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mn>4,0</m:mn>
+    <m:mo>⋅</m:mo>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mo>−</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>i</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo stretchy="false">)</m:mo>
+  </m:math>, czyli składowej poziomej wektora przemieszczenia, jest równy <m:math>
+  <m:mrow>
+    <m:mo>|</m:mo>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mo>|</m:mo>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mo>|</m:mo>
+    <m:mrow>
+      <m:mo>−</m:mo>
+      <m:mn>4,0</m:mn>
+    </m:mrow>
+    <m:mo>|</m:mo>
+  </m:mrow>
+  <m:mo>⋅</m:mo>
+  <m:mrow>
+    <m:mo>|</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>i</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>|</m:mo>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mn>4,0</m:mn>
+</m:math>, ponieważ moduł wektora jednostkowego jest równy <m:math>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>i</m:mi>
+      <m:mo stretchy="false">^</m:mo>
+    </m:mover>
+  </m:mrow>
+  <m:mo>|</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>1</m:mn>
+</m:math>. Zauważ, że kierunek składowej <m:math>
+<m:mi>x</m:mi>
+</m:math> jest równy <m:math>
+<m:mo>−</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>i</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>, a więc jest on przeciwny do kierunku osi <m:math>
+<m:mi>x</m:mi>
+</m:math>. Oznacza to, że składowa <m:math>
+<m:mi>x</m:mi>
+</m:math> wektora <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>x</m:mi>
+</m:msub>
+</m:math> skierowana jest w lewo, tak jak przedstawia to <link target-id="CNX_UPhysics_02_02_comp02"/>. Składowa skalarna <m:math>
+<m:mi>x</m:mi>
+</m:math> wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> jest równa <m:math>
+<m:msub>
+  <m:mi>D</m:mi>
+  <m:mi>x</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mo>-</m:mo>
+<m:mn>4,0</m:mn>
+</m:math>.</para>
+<para id="fs-id1167132436291">Moduł wektora <m:math>
+  <m:mi>y</m:mi>
+</m:math>
+<m:math>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>D</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mi>y</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mo>+</m:mo>
+  <m:mn>2,9</m:mn>
+  <m:mrow>
+    <m:mover>
+      <m:mi>j</m:mi>
+      <m:mo stretchy="false">^</m:mo>
+    </m:mover>
+  </m:mrow>
+</m:math>, czyli składowej pionowej wektora przemieszczenia, jest równy <m:math>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>D</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+    <m:mi>y</m:mi>
+  </m:msub>
+  <m:mo>|</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:mrow>
+    <m:mn>2,9</m:mn>
+  </m:mrow>
+  <m:mo>|</m:mo>
+</m:mrow>
+<m:mo>⋅</m:mo>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>j</m:mi>
+      <m:mo stretchy="false">^</m:mo>
+    </m:mover>
+  </m:mrow>
+  <m:mo>|</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>2,9</m:mn>
+</m:math>, ponieważ moduł wektora jednostkowego jest równy <m:math>
+<m:mrow>
+  <m:mo>|</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>j</m:mi>
+      <m:mo stretchy="false">^</m:mo>
+    </m:mover>
+  </m:mrow>
+  <m:mo>|</m:mo>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>1</m:mn>
+</m:math>. Kierunek składowej <m:math>
+<m:mi>y</m:mi>
+</m:math> jest równy <m:math>
+<m:mo>+</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>j</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>, a więc jest on zgodny z kierunkiem osi <m:math>
+<m:mi>y</m:mi>
+</m:math>. Oznacza to, że składowa<m:math>
+<m:mi>y</m:mi>
+</m:math> wektora <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>D</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>y</m:mi>
+</m:msub>
+</m:math> skierowana jest w górę, tak jak przedstawiono na <link target-id="CNX_UPhysics_02_02_comp02" cmlnle:case="locative"/>. Składowa skalarna <m:math>
+<m:mi>y</m:mi>
+</m:math> wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> jest równa <m:math>
+<m:msub>
+  <m:mi>D</m:mi>
+  <m:mi>y</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mo>+</m:mo>
+<m:mn>2,9</m:mn>
+</m:math>. Wektor przemieszczenia <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>D</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> jest sumą swoich składowych.</para>
+<para id="fs-id1167132579136">Rozkład wektora na składowe (<link target-id="fs-id1167132371006"/>) mówi nam, że kursor został przesunięty o 4,0 cm w lewo i o 2,9 cm do góry.</para>
+</example>
+<note id="fs-id1167132557954" class="check-understanding">
+  <exercise id="fs-id1167132406917">
+    <problem id="fs-id1167133364766">
+      <para id="fs-id1167133617871">
+        <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Mucha ląduje na arkuszu papieru milimetrowego w punkcie położonym 10,0 cm na prawo od jego lewej krawędzi i 8,0 cm powyżej krawędzi dolnej, po czym przemieszcza się do punktu położonego 5,0 od lewej krawędzi i 5,0 cm od krawędzi dolnej. Przyjmij, że lewy dolny róg arkusza jest początkiem prostokątnego układu współrzędnych i znajdź wektor przemieszczenia muchy. Przedstaw rozwiązanie graficznie.</para>
+      </problem>
+      <solution id="fs-id1167132407980">
+        <para id="fs-id1167132322353">
+          <m:math>
+            <m:mrow>
+              <m:mover>
+                <m:mi>D</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mn>5,0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">c</m:mi>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mover>
+                <m:mi>i</m:mi>
+                <m:mo stretchy="false">^</m:mo>
+              </m:mover>
+            </m:mrow>
+            <m:mo>−</m:mo>
+            <m:mn>3,0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">c</m:mi>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mover>
+                <m:mi>j</m:mi>
+                <m:mo stretchy="false">^</m:mo>
+              </m:mover>
+            </m:mrow>
+            </m:math>;<newline/>mucha przesunęła się 5,0 cm w lewo i 3,0 cm w dół od punktu początkowego.</para>
+          </solution>
+        </exercise>
+      </note>
+      <para id="fs-id1167132480350">Jeśli znamy składowe skalarne <m:math>
+        <m:mrow>
+          <m:msub>
+            <m:mi>A</m:mi>
+            <m:mi>x</m:mi>
+          </m:msub>
+        </m:mrow>
+      </m:math> i <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>A</m:mi>
+          <m:mi>y</m:mi>
+        </m:msub>
+      </m:mrow>
+    </m:math> wektora <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>A</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math>, możemy znaleźć jego moduł <m:math>
+  <m:mi>A</m:mi>
+</m:math> oraz jego kierunek opisywany przez kąt <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>θ</m:mi>
+    <m:mi>A</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math>. <term class="no-emphasis" cmlnle:reference="kierunek">Kierunek</term> wektora określa się względem kąta nachylenia wektora do osi <m:math>
+<m:mi>x</m:mi>
+</m:math>. Kąt <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>θ</m:mi>
+    <m:mi>A</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math>, patrząc od osi <m:math>
+<m:mi>x</m:mi>
+</m:math>, mierzony jest <emphasis effect="italics">przeciwnie</emphasis> do ruchu wskazówek zegara (<link target-id="CNX_UPhysics_02_02_comp03"/>). Ponieważ odcinki o długościach <m:math>
+<m:mi>A</m:mi>
+</m:math>, <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mi>x</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> i <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mi>y</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> tworzą trójkąt prostokątny, zależność między nimi opisuje twierdzenie Pitagorasa:</para>
+<note id="fs-id1167132412442" class="equation-callout">
+  <equation id="fs-id1167132245160">
+    <label/>
+    <m:math>
+      <m:msup>
+        <m:mi>A</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>=</m:mo>
+      <m:msubsup>
+        <m:mi>A</m:mi>
+        <m:mi>x</m:mi>
+        <m:mn>2</m:mn>
+      </m:msubsup>
+      <m:mo>+</m:mo>
+      <m:msubsup>
+        <m:mi>A</m:mi>
+        <m:mi>y</m:mi>
+        <m:mn>2</m:mn>
+      </m:msubsup>
+      <m:mspace width="thickmathspace"/>
+      <m:mo stretchy="false">⟺</m:mo>
+      <m:mspace width="thickmathspace"/>
+      <m:mi>A</m:mi>
+      <m:mo>=</m:mo>
+      <m:msqrt>
+        <m:msubsup>
+          <m:mi>A</m:mi>
+          <m:mi>x</m:mi>
+          <m:mn>2</m:mn>
+        </m:msubsup>
+        <m:mo>+</m:mo>
+        <m:msubsup>
+          <m:mi>A</m:mi>
+          <m:mi>y</m:mi>
+          <m:mn>2</m:mn>
+        </m:msubsup>
+      </m:msqrt>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1167132688313">Zależność ta jest spełniona, nawet jeśli składowe skalarne wektora są liczbami ujemnymi. Kierunek wektora definiuje się obliczając tangens kąta <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>θ</m:mi>
+      <m:mi>A</m:mi>
+    </m:msub>
+  </m:mrow>
+  </m:math> (<link target-id="CNX_UPhysics_02_02_comp03"/>):</para>
+  <note id="fs-id1167133610831" class="equation-callout">
+    <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167133377087"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mrow><m:mo>tg</m:mo><m:mi>θ</m:mi></m:mrow><m:mo>=</m:mo><m:mfrac><m:msub><m:mi>A</m:mi><m:mi>y</m:mi></m:msub><m:msub><m:mi>A</m:mi><m:mi>x</m:mi></m:msub></m:mfrac></m:mrow><m:mo>⇒</m:mo><m:mrow><m:mi>θ</m:mi><m:mo>=</m:mo><m:mrow><m:mo>arc tg</m:mo><m:mrow><m:mfenced><m:mfrac><m:msub><m:mi>A</m:mi><m:mi>y</m:mi></m:msub><m:msub><m:mi>A</m:mi><m:mi>x</m:mi></m:msub></m:mfrac></m:mfenced><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \tg \theta = \frac{A_y}{A_x} \implies \theta = \arctg (\frac{A_y}{A_x}) \text{.}</m:annotation></m:semantics></m:math></equation></note>
+  <figure xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_02_02_comp03"><media id="fs-id1167132456373" alt="Wektor A ma składową x A z indeksem x równą moduł A z indeksem x razy i z daszkiem, oraz składową y A z indeksem y równą modułowi z A z indeksem y razy j z daszkiem. Wektor A oraz jego składowe tworzą trójkąt prostokątny, z przyprostokątnymi o długości moduł z A z indeksem x oraz moduł z A z indeksem y oraz przeciwprostokątną o długości pierwiastek kwadratowy z A z indeksem x do kwadratu dodać A z indeksem y do kwadratu. Kąt między poziomym bokiem A z indeksem x oraz przeciwprostokątną A jest równy theta z indeksem A.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_02_comp03.jpg"/>
+    </media>
+    
+<caption>Moduł <m:math>
+      <m:mi>A</m:mi>
+    </m:math> oraz kąt nachylenia <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>θ</m:mi>
+        <m:mi>A</m:mi>
+      </m:msub>
+    </m:mrow>
+  </m:math> wektora <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math> związane są z długością jego składowych, ponieważ <m:math>
+<m:mi>A</m:mi>
+</m:math>, <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mi>x</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> oraz <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mi>y</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> tworzą trójkąt prostokątny.</caption></figure><para id="fs-id1167132436720">Jeśli wektor leży w pierwszej lub czwartej ćwiartce, gdzie składowa <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>A</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+  </m:mrow>
+</m:math> jest liczbą dodatnią (<link target-id="CNX_UPhysics_02_02_comp04"/>), kąt <m:math>
+<m:mi>θ</m:mi>
+</m:math> (z <link target-id="fs-id1167133377087" cmlnle:case="genitive"/>) jest identyczny z kątem nachylenia <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>θ</m:mi>
+    <m:mi>A</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math>. Jeśli wektor leży w czwartej ćwiartce, kąt <m:math>
+<m:mi>θ</m:mi>
+</m:math> jest ujemny, co oznacza, że kąt nachylenia <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>θ</m:mi>
+    <m:mi>A</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> takiego wektora do osi <m:math>
+<m:mi>x</m:mi>
+</m:math> mierzy się <emphasis effect="italics">zgodnie</emphasis> z ruchem wskazówek zegara, rozpoczynając od osi <m:math>
+<m:mi>x</m:mi>
+</m:math>. Jeśli wektor leży w drugiej ćwiartce, kąt <m:math>
+<m:mi>θ</m:mi>
+</m:math> również jest ujemny. Jeśli wektor leży w drugiej lub trzeciej ćwiartce, gdzie składowa <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mi>x</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> jest liczbą ujemną, kąt nachylenia wektora jest równy <m:math>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mi>A</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mi>θ</m:mi>
+<m:mo>+</m:mo>
+<m:msup>
+  <m:mn>180</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math> (<link target-id="CNX_UPhysics_02_02_comp04"/>).</para>
+<figure id="CNX_UPhysics_02_02_comp04">
+  <media id="fs-id1167133399074" alt="Rysunek I przedstawia wektor A leżący w pierwszej ćwiartce (zwrot do góry i w prawo). Składowe tego wektora to A z indeksem x (kierunek dodatni) oraz A z indeksem y (kierunek dodatni). Kąt theta z indeksem A mierzony przeciwnie do ruchu wskazówek zegara od dodatniego kierunku osi x jest mniejszy niż 90 stopni. Rysunek II przedstawia wektor A w drugiej ćwiartce (zwrot do góry i w lewo). Składowe tego wektora to A z indeksem x (kierunek ujemny) oraz A z indeksem y (kierunek dodatni). Kąt theta z indeksem A mierzony przeciwnie do ruchu wskazówek zegara od dodatniego kierunku osi x jest większy niż 90 stopni, ale mniejszy niż 180 stopni. Kąt theta, mierzony zgodnie z ruchem wskazówek zegara, jest mniejszy niż 90 stopni. Rysunek III przedstawia wektor A leżący w trzeciej ćwiartce (zwrot w dół i w lewo). Składowe tego wektora to A z indeksem x (kierunek ujemny) oraz A z indeksem y (kierunek ujemny). Kąt theta z indeksem A mierzony przeciwnie do ruchu wskazówek zegara od dodatniego kierunku osi x jest większy niż 180 stopni, ale mniejszy niż 270 stopni. Kąt theta, mierzony przeciwnie do ruchu wskazówek od ujemnego kierunku osi x jest mniejszy niż 90 stopni. Rysunek IV przedstawia wektor A leżący w czwartej ćwiartce (zwrot w dół i w prawo). Składowe tego wektora to A z indeksem x (kierunek dodatni) oraz A z indeksem y (kierunek ujemny). Kąt theta z indeksem A mierzony zgodnie z ruchem wskazówek zegara od dodatniego kierunku osi x jest mniejszy niż 90 stopni.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_02_comp04.jpg"/>
+  </media>
+  <caption>Wartości składowych wektora mogą być dodatnie lub ujemne. Dla wektorów leżących w pierwszej ćwiartce (I) wartości obu składowych są dodatnie, a dla wektorów leżących w trzeciej ćwiartce (III) obie te wartości są ujemne. Kąt nachylenia wektora znajdującego się w II lub III ćwiartce do osi <m:math><m:mi>x</m:mi></m:math> jest równy <m:math>
+    <m:msub>
+      <m:mi>θ</m:mi>
+      <m:mi>A</m:mi>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mi>θ</m:mi>
+    <m:mo>+</m:mo>
+    <m:msup>
+      <m:mn>180</m:mn>
+      <m:mo>∘</m:mo>
+    </m:msup>
+    </m:math>.</caption>
+  </figure>
+  <example id="fs-id1167133568370">
+    <para id="fs-id1167132606822">
+      <title>Moduł i kierunek wektora przemieszczenia</title>Przesuwasz kursor z punktu początkowego <m:math>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>6,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">c</m:mi>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>;</m:mo>
+        <m:mtext>
+        </m:mtext>
+        <m:mn>1,6</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">c</m:mi>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo stretchy="false">)</m:mo>
+      </m:math> na ikonę znajdującą się w punkcie <m:math>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mn>2,0</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">c</m:mi>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo>;</m:mo>
+      <m:mtext>
+      </m:mtext>
+      <m:mn>4,5</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">c</m:mi>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo stretchy="false">)</m:mo>
+      </m:math>. Jaki jest moduł i kierunek wektora przemieszczenia kursora?</para>
+      <para id="fs-id1167132501854">
+        <title>Strategia rozwiązania </title>W <link target-id="fs-id1167132341727" cmlnle:case="locative"/> znaleźliśmy wektor przemieszczenia <m:math>
+          <m:mrow>
+            <m:mover>
+              <m:mi>D</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+        </m:math> kursora (zobacz <link target-id="fs-id1167132371006"/>). Na początku musimy określić wartości składowych wektora: <m:math>
+        <m:msub>
+          <m:mi>D</m:mi>
+          <m:mi>x</m:mi>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mo>−</m:mo>
+        <m:mn>4,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">c</m:mi>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+      </m:math> i <m:math>
+      <m:msub>
+        <m:mi>D</m:mi>
+        <m:mi>y</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mo>+</m:mo>
+      <m:mn>2,9</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">c</m:mi>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+    </m:math> i podstawić je do <link target-id="fs-id1167132245160" cmlnle:case="genitive"/> i <link target-id="fs-id1167133377087" cmlnle:case="genitive"/>, aby znaleźć moduł <m:math>
+    <m:mi>D</m:mi>
+  </m:math> wektora oraz jego kąt nachylenia <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>θ</m:mi>
+      <m:mi>D</m:mi>
+    </m:msub>
+  </m:mrow>
+  </m:math>.</para>
+  <para id="fs-id1167132276264">
+    <title>Rozwiązanie</title>Moduł wektora <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      </m:math> jest równy</para>
+      <equation id="fs-id1167133530158" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mi>D</m:mi>
+          <m:mo>=</m:mo>
+          <m:msqrt>
+            <m:msubsup>
+              <m:mi>D</m:mi>
+              <m:mi>x</m:mi>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mo>+</m:mo>
+            <m:msubsup>
+              <m:mi>D</m:mi>
+              <m:mi>y</m:mi>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+          </m:msqrt>
+          <m:mo>=</m:mo>
+          <m:msqrt>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mo>−</m:mo>
+            <m:mn>4,0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">c</m:mi>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:msup>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mn>2,9</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">c</m:mi>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:msup>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:msqrt>
+          <m:mo>=</m:mo>
+          <m:msqrt>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mn>4,0</m:mn>
+            <m:msup>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mn>2,9</m:mn>
+            <m:msup>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mn>2</m:mn>
+            </m:msup>
+          </m:msqrt>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">c</m:mi>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mn>4,9</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">c</m:mi>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="fs-id1167132460158">Kąt nachylenia wektora do osi jest równy</para>
+      <equation id="fs-id1167132460180" class="unnumbered">
+        <label/>
+        <m:math>
+          <m:mi>tg</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mi>θ</m:mi>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:msub>
+              <m:mi>D</m:mi>
+              <m:mi>y</m:mi>
+            </m:msub>
+            <m:msub>
+              <m:mi>D</m:mi>
+              <m:mi>x</m:mi>
+            </m:msub>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>2,9</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">c</m:mi>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>4,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">c</m:mi>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>0,725</m:mn>
+          <m:mspace width="thickmathspace"/>
+          <m:mo stretchy="false">⟹</m:mo>
+          <m:mspace width="thickmathspace"/>
+          <m:mi>θ</m:mi>
+          <m:mo>=</m:mo>
+          <m:mi>arctg</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>0,725</m:mn>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:msup>
+            <m:mn>35,9</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+          <m:mo>.</m:mo>
+        </m:math>
+      </equation>
+      <para id="fs-id1167132476441">Wektor <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>D</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        </m:math> leży w drugiej ćwiartce, więc jego kierunek opisujemy przy pomocy kąta</para>
+        <equation id="fs-id1167132743478" class="unnumbered">
+          <label/>
+          <m:math>
+            <m:msub>
+              <m:mi>θ</m:mi>
+              <m:mi>D</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mi>θ</m:mi>
+            <m:mo>+</m:mo>
+            <m:msup>
+              <m:mn>180</m:mn>
+              <m:mo>∘</m:mo>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:msup>
+              <m:mn>35,9</m:mn>
+              <m:mo>∘</m:mo>
+            </m:msup>
+            <m:mo>+</m:mo>
+            <m:msup>
+              <m:mn>180</m:mn>
+              <m:mo>∘</m:mo>
+            </m:msup>
+            <m:mo>=</m:mo>
+            <m:msup>
+              <m:mn>144,1</m:mn>
+              <m:mo>∘</m:mo>
+            </m:msup>
+            <m:mo>.</m:mo>
+          </m:math>
+        </equation>
+      </example>
+      <note id="fs-id1167132438204" class="check-understanding">
+        <exercise id="fs-id1167132502120">
+          <problem id="fs-id1167132502143">
+            <para id="fs-id1167132502219">
+              <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Jeśli przemieszczenie muchy wędrującej po arkuszu papieru milimetrowego jest równe <m:math>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>D</m:mi>
+                    <m:mtext>→</m:mtext>
+                  </m:mover>
+                </m:mrow>
+                <m:mo>=</m:mo>
+                <m:mo>−</m:mo>
+                <m:mn>5,00</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">c</m:mi>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>i</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+                <m:mo>−</m:mo>
+                <m:mn>3,00</m:mn>
+                <m:mspace width="0.2em"/>
+                <m:mrow>
+                  <m:mi mathvariant="normal">c</m:mi>
+                  <m:mi mathvariant="normal">m</m:mi>
+                </m:mrow>
+                <m:mo>⋅</m:mo>
+                <m:mrow>
+                  <m:mover>
+                    <m:mi>j</m:mi>
+                    <m:mo stretchy="false">^</m:mo>
+                  </m:mover>
+                </m:mrow>
+                </m:math>, znajdź jego moduł i kierunek.</para>
+              </problem>
+              <solution id="fs-id1167132332238">
+                <para id="fs-id1167132335635">5,83 cm; <m:math>
+                  <m:msup>
+                    <m:mn>211</m:mn>
+                    <m:mo>∘</m:mo>
+                  </m:msup>
+                </m:math>
+              </para>
+            </solution>
+          </exercise>
+        </note>
+        <para id="fs-id1167132464780">W praktyce często zdarza się, że trzeba znaleźć sumę wielu wektorów, których moduły i kierunki są znane. Wyobraź sobie na przykład, że podczas silnego wiatru na moście znajduje się jednocześnie 400 samochodów. Każdy z nich oddziałuje na most naciskiem o innym kierunku, a my chcemy dowiedzieć się, jaka jest suma nacisku. Poznałeś już metodę graficzną znajdowania sumy wektorów, więc wiesz, że metoda ta, ze względu na mierzenie długości i kątów, może szybko prowadzić do znaczących błędów. W przypadku metod analitycznych takie zagrożenie nie występuje. Pierwszym krokiem podejścia analitycznego, jeśli moduł i kierunek wektora są dane, jest znalezienie jego składowych.</para>
+        <para id="fs-id1167132464805">Wróćmy do trójkąta prostokątnego z <link target-id="CNX_UPhysics_02_02_comp03" cmlnle:case="locative"/>. Stosunek długości przyprostokątnej <m:math>
+          <m:mrow>
+            <m:msub>
+              <m:mi>A</m:mi>
+              <m:mi>x</m:mi>
+            </m:msub>
+          </m:mrow>
+        </m:math> i przeciwprostokątnej <m:math>
+        <m:mi>A</m:mi>
+      </m:math> jest cosinusem kąta <m:math>
+      <m:mrow>
+        <m:msub>
+          <m:mi>θ</m:mi>
+          <m:mi>A</m:mi>
+        </m:msub>
+      </m:mrow>
+    </m:math>, <m:math>
+    <m:msub>
+      <m:mi>A</m:mi>
+      <m:mi>x</m:mi>
+    </m:msub>
+    <m:mn>/</m:mn>
+    <m:mi>A</m:mi>
+    <m:mo>=</m:mo>
+    <m:mi>cos</m:mi>
+    <m:mo>⁡</m:mo>
+    <m:msub>
+      <m:mi>θ</m:mi>
+      <m:mi>A</m:mi>
+    </m:msub>
+  </m:math>, a stosunek długości przyprostokątnej <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>A</m:mi>
+      <m:mi>y</m:mi>
+    </m:msub>
+  </m:mrow>
+</m:math> i przeciwprostokątnej <m:math>
+<m:mi>A</m:mi>
+</m:math> jest sinusem kąta <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>θ</m:mi>
+    <m:mi>A</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math>, <m:math>
+<m:msub>
+  <m:mi>A</m:mi>
+  <m:mi>y</m:mi>
+</m:msub>
+<m:mn>/</m:mn>
+<m:mi>A</m:mi>
+<m:mo>=</m:mo>
+<m:mi>sin</m:mi>
+<m:mo>⁡</m:mo>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mi>A</m:mi>
+</m:msub>
+</m:math>. Jeśli moduł <m:math>
+<m:mi>A</m:mi>
+</m:math> i kierunek <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>θ</m:mi>
+    <m:mi>A</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> są znane, możemy znaleźć wartości składowych wektora:</para>
+<note id="fs-id1167133740682" class="equation-callout">
+  <equation id="fs-id1167133740741">
+    <label/>
+    <m:math>
+      <m:mo>{</m:mo>
+      <m:mtable>
+        <m:mtr>
+          <m:mtd>
+            <m:msub>
+              <m:mi>A</m:mi>
+              <m:mi>x</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mi>A</m:mi>
+            <m:mspace width="0.2em"/>
+            <m:mtext>cos</m:mtext>
+            <m:mspace width="0.2em"/>
+            <m:msub>
+              <m:mi>θ</m:mi>
+              <m:mi>A</m:mi>
+            </m:msub>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:msub>
+              <m:mi>A</m:mi>
+              <m:mi>y</m:mi>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mi>A</m:mi>
+            <m:mspace width="0.2em"/>
+            <m:mtext>sin</m:mtext>
+            <m:mspace width="0.2em"/>
+            <m:msub>
+              <m:mi>θ</m:mi>
+              <m:mi>A</m:mi>
+            </m:msub>
+            <m:mo>.</m:mo>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1167132266496">Podczas obliczania składowych wektora przy pomocy <link target-id="fs-id1167133740741" cmlnle:case="genitive"/> należy pamiętać o zasadach wyznaczania kąta. Kąt <m:math>
+  <m:mrow>
+    <m:msub>
+      <m:mi>θ</m:mi>
+      <m:mi>A</m:mi>
+    </m:msub>
+  </m:mrow>
+</m:math> jest kątem mierzonym <emphasis effect="italics">przeciwnie</emphasis> do ruchów wskazówek zegara, zaczynając od osi <m:math>
+<m:mi>x</m:mi>
+</m:math>. Kąt mierzony zgodnie z ruchem wskazówek zegara będzie ujemny.</para>
+<example id="fs-id1167132576856">
+  <para id="fs-id1167132576917">
+    <title>Składowe wektorów przemieszczenia</title>Ekipa ratunkowa szukająca zaginionego dziecka podąża za Azorem, psem tropiącym. Azor często gubi trop i często zawraca. W końcu znajduje dziecko i wszystko dobrze się kończy, więc możemy skupić się na wektorach przemieszczenia Azora. Wektory te są bardzo zróżnicowane: najpierw Azor przebiegł 200,0 m na południowy wschód, następnie 300,0 m na północ, później węsząc przeszedł 50,0 m w kierunku <m:math>
+      <m:msup>
+        <m:mn>30</m:mn>
+        <m:mo>∘</m:mo>
+      </m:msup>
+    </m:math> na zachód od kierunku północnego. Po przejściu 80,0 m na południe Azor złapał świeży trop i skręcił w kierunku <m:math>
+    <m:msup>
+      <m:mn>23</m:mn>
+      <m:mo>∘</m:mo>
+    </m:msup>
+    </m:math> na zachód od kierunku południowego, po czym przebiegł 150,0 m. Znajdź wartości składowych wektorów przemieszczenia Azora i wektory przemieszczenia (w postaci rozkładu na składowe) dla każdej z przebytych przez niego ścieżek.</para>
+    <para id="fs-id1167132411878">
+      <title>Strategia rozwiązania </title>W celu rozwiązania tego zadania skorzystamy z prostokątnego układu współrzędnych o osi <m:math>
+        <m:mi>x</m:mi>
+      </m:math> skierowanej na wschód oraz osi <m:math>
+      <m:mi>y</m:mi>
+    </m:math> skierowanej na północ. Oznacza to, że wersor <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>i</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+  </m:math> będzie wskazywał na wschód, a wersor <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>j</m:mi>
+      <m:mo stretchy="false">^</m:mo>
+    </m:mover>
+  </m:mrow>
+  </m:math> na północ. Azor wytyczył pięć ścieżek, co oznacza, że jego przemieszczenie składa się z pięciu wektorów przemieszczenia. Zaczniemy od znalezienia ich modułów i kierunków, następnie użyjmy <link target-id="fs-id1167133740741" cmlnle:case="genitive"/>, aby znaleźć wartości składowych wektorów i zapiszemy wektory w postaci przedstawionej na <link target-id="fs-id1167132256590" cmlnle:case="locative"/>.</para>
+  <para id="fs-id1167132516072">
+    <title>Rozwiązanie</title>Moduł przemieszczenia Azora na pierwszej ścieżce jest równy <m:math>
+      <m:msub>
+        <m:mi>L</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>200,0</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+    </m:math>, a wektor ma kierunek południowo-wschodni. Za kąt nachylenia <m:math>
+    <m:mrow>
+      <m:msub>
+        <m:mi>θ</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:mrow>
+  </m:math> możemy przyjąć albo <m:math>
+  <m:mo>-</m:mo>
+  <m:msup>
+    <m:mn>45</m:mn>
+    <m:mo>∘</m:mo>
+  </m:msup>
+</m:math> mierzone od kierunku południe-północ, jeśli zmierzymy kąt zgodnie z ruchem wskazówek zegara, albo <m:math>
+<m:msup>
+  <m:mn>45</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+<m:mo>+</m:mo>
+<m:msup>
+  <m:mn>270</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math>, jeśli zmierzymy go przeciwnie do ruchu wskazówek zegara. W pierwszym przypadku <m:math>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:msup>
+  <m:mn>45</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math>, a w drugim <m:math>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mo>+</m:mo>
+<m:msup>
+  <m:mn>315</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math>. Możemy użyć którejkolwiek z tych wartości. Składowe są więc równe:</para>
+<equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167132433420" class="unnumbered"><m:math display="block"><m:semantics><m:mtable><m:mtr><m:mtd><m:msub><m:mi>L</m:mi><m:mfenced separators="⁣" close="" open=""><m:mn>1</m:mn><m:mi>x</m:mi></m:mfenced></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:msub><m:mi>L</m:mi><m:mn>1</m:mn></m:msub><m:mo>⁢</m:mo><m:mrow><m:mo>cos</m:mo><m:msub><m:mi>θ</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>200,0</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>cos</m:mo><m:mrow><m:mn>315</m:mn><m:mo>°</m:mo></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>141,4</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>L</m:mi><m:mfenced separators="⁣" close="" open=""><m:mn>1</m:mn><m:mi>y</m:mi></m:mfenced></m:msub><m:maligngroup/><m:mo>=</m:mo><m:mrow><m:msub><m:mi>L</m:mi><m:mn>1</m:mn></m:msub><m:mo>⁢</m:mo><m:mrow><m:mo>sin</m:mo><m:msub><m:mi>θ</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>200,0</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mo>sin</m:mo><m:mrow><m:mn>315</m:mn><m:mo>°</m:mo></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>−</m:mo><m:mrow><m:mrow><m:mn>141,4</m:mn><m:mo rspace="veryverythinmathspace" lspace="veryverythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{align} L_{1\sep x} &amp;= L_1 \cos \theta_1 = \SI{200,0}{\metre} \cdot \cos \ang{315} = \SI{141,4}{\metre} \text{,} \\ L_{1\sep y} &amp;= L_1 \sin \theta_1 = \SI{200,0}{\metre} \cdot \sin \ang{315} = - \SI{141,4}{\metre} \text{.} \end{align}</m:annotation></m:semantics></m:math></equation><para id="fs-id1167133763578">Wektor przemieszczenia na pierwszej ścieżce jest równy:</para>
+<equation id="fs-id1167133763683" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>L</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>L</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mn>1</m:mn>
+        <m:mi>x</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>i</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>L</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mrow>
+        <m:mn>1</m:mn>
+        <m:mi>y</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mrow>
+      <m:mover>
+        <m:mi>j</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mn>141,4</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>i</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>−</m:mo>
+    <m:mn>141,4</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mover>
+        <m:mi>j</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+<para id="fs-id1167133658240">Moduł przemieszczenia Azora na drugiej ścieżce jest równy <m:math>
+  <m:msub>
+    <m:mi>L</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mn>300,0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">m</m:mi>
+  </m:mrow>
+</m:math>, a wektor skierowany jest na północ. Kąt nachylenia <m:math>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mo>+</m:mo>
+<m:msup>
+  <m:mn>90</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math>. Otrzymujemy następujące wyniki:</para>
+<equation id="fs-id1167132541311" class="unnumbered"><m:math>
+    <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mi>x</m:mi>
+            </m:mrow>
+          </m:msub>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mi>cos</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msub>
+            <m:mi>θ</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>300,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>cos</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msup>
+            <m:mn>90</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+          <m:mo>=</m:mo>
+          <m:mn>0,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>,</m:mo>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mi>y</m:mi>
+            </m:mrow>
+          </m:msub>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msub>
+            <m:mi>θ</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>300,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>sin</m:mi>
+          <m:msup>
+            <m:mn>90</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+          <m:mo>=</m:mo>
+          <m:mn>300,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>,</m:mo>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mrow>
+              <m:mover>
+                <m:mi>L</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:msub>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mi>x</m:mi>
+            </m:mrow>
+          </m:msub>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mi>y</m:mi>
+            </m:mrow>
+          </m:msub>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mn>300,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation><para id="fs-id1167132349429">Moduł przemieszczenia Azora na trzeciej ścieżce jest równy <m:math>
+  <m:msub>
+    <m:mi>L</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mn>50,0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">m</m:mi>
+  </m:mrow>
+</m:math>, a wektor skierowany jest <m:math>
+<m:msup>
+  <m:mn>30</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math> na zachód od kierunku północnego. Kąt nachylenia mierzony przeciwnie do ruchu wskazówek zegara od osi x jest równy <m:math>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mn>3</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msup>
+  <m:mn>30</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+<m:mo>+</m:mo>
+<m:msup>
+  <m:mn>90</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+<m:mo>=</m:mo>
+<m:mo>+</m:mo>
+<m:msup>
+  <m:mn>120</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math>. Otrzymujemy następujące wyniki:</para>
+<equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167132595199" class="unnumbered"><m:math>
+    <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>3</m:mn>
+              <m:mi>x</m:mi>
+            </m:mrow>
+          </m:msub>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mn>3</m:mn>
+          </m:msub>
+          <m:mi>cos</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msub>
+            <m:mi>θ</m:mi>
+            <m:mn>3</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>50,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>cos</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msup>
+            <m:mn>120</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>25,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>,</m:mo>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>3</m:mn>
+              <m:mi>y</m:mi>
+            </m:mrow>
+          </m:msub>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mn>3</m:mn>
+          </m:msub>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msub>
+            <m:mi>θ</m:mi>
+            <m:mn>3</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>50,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msup>
+            <m:mn>120</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+          <m:mo>=</m:mo>
+          <m:mo>+</m:mo>
+          <m:mn>43,3</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>,</m:mo>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mrow>
+              <m:mover>
+                <m:mi>L</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mn>3</m:mn>
+          </m:msub>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>3</m:mn>
+              <m:mi>x</m:mi>
+            </m:mrow>
+          </m:msub>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>3</m:mn>
+              <m:mi>y</m:mi>
+            </m:mrow>
+          </m:msub>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>25,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mn>43,3</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation><para id="fs-id1167132295353">Moduł przemieszczenia Azora na czwartej ścieżce jest równy <m:math>
+  <m:msub>
+    <m:mi>L</m:mi>
+    <m:mn>4</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mn>80,0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">m</m:mi>
+  </m:mrow>
+</m:math>, a wektor skierowany jest na południe. Za kąt nachylenia możemy przyjąć <m:math>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mn>4</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:msup>
+  <m:mn>90</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math> albo <m:math>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mn>4</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mo>+</m:mo>
+<m:msup>
+  <m:mn>270</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math>. Otrzymujemy następujące wyniki:</para>
+<equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167132408563" class="unnumbered"><m:math>
+    <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mi>x</m:mi>
+            </m:mrow>
+          </m:msub>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mn>4</m:mn>
+          </m:msub>
+          <m:mi>cos</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msub>
+            <m:mi>θ</m:mi>
+            <m:mn>4</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>80,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>cos</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mo>−</m:mo>
+          <m:msup>
+            <m:mn>90</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mn>0,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>,</m:mo>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mi>y</m:mi>
+            </m:mrow>
+          </m:msub>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mn>4</m:mn>
+          </m:msub>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msub>
+            <m:mi>θ</m:mi>
+            <m:mn>4</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>80,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mo>−</m:mo>
+          <m:msup>
+            <m:mn>90</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>80,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>,</m:mo>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mrow>
+              <m:mover>
+                <m:mi>L</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mn>4</m:mn>
+          </m:msub>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mi>x</m:mi>
+            </m:mrow>
+          </m:msub>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mi>y</m:mi>
+            </m:mrow>
+          </m:msub>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>80,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation><para id="fs-id1167132544336">Moduł przemieszczenia Azora na ostatniej ścieżce to <m:math>
+  <m:msub>
+    <m:mi>L</m:mi>
+    <m:mn>5</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mn>150,0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">m</m:mi>
+  </m:mrow>
+</m:math>, a kąt nachylenia jest równy <m:math>
+<m:msub>
+  <m:mi>θ</m:mi>
+  <m:mn>5</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mo>−</m:mo>
+<m:msup>
+  <m:mn>23</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+<m:mo>+</m:mo>
+<m:msup>
+  <m:mn>270</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+<m:mo>=</m:mo>
+<m:mo>+</m:mo>
+<m:msup>
+  <m:mn>247</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math> (<m:math>
+<m:msup>
+  <m:mn>23</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math> na zachód od kierunku południowego), co daje:</para>
+<equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167132571427" class="unnumbered"><m:math>
+    <m:mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>5</m:mn>
+              <m:mi>x</m:mi>
+            </m:mrow>
+          </m:msub>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mn>5</m:mn>
+          </m:msub>
+          <m:mi>cos</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msub>
+            <m:mi>θ</m:mi>
+            <m:mn>5</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>150,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>cos</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msup>
+            <m:mn>247</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>58,6</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>,</m:mo>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>5</m:mn>
+              <m:mi>y</m:mi>
+            </m:mrow>
+          </m:msub>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mn>5</m:mn>
+          </m:msub>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msub>
+            <m:mi>θ</m:mi>
+            <m:mn>5</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mn>150,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mi>sin</m:mi>
+          <m:mo>⁡</m:mo>
+          <m:msup>
+            <m:mn>247</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>138,1</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>,</m:mo>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mrow>
+              <m:mover>
+                <m:mi>L</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mn>5</m:mn>
+          </m:msub>
+        </m:mtd>
+        <m:mtd>
+          <m:mi/>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>5</m:mn>
+              <m:mi>x</m:mi>
+            </m:mrow>
+          </m:msub>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>L</m:mi>
+            <m:mrow>
+              <m:mn>5</m:mn>
+              <m:mi>y</m:mi>
+            </m:mrow>
+          </m:msub>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mo>−</m:mo>
+          <m:mn>58,6</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>−</m:mo>
+          <m:mn>138,1</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>.</m:mo>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation></example>
+<note id="fs-id1167128918681" class="check-understanding">
+  <exercise id="fs-id1167128918786">
+    <problem id="fs-id1167128918869">
+      <para id="fs-id1167128918893">
+        <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Jeśli Azor przebiegnie 20 m na zachód, jaki będzie wektor jego przemieszczenia?</para>
+      </problem>
+      <solution id="fs-id1167128919108">
+        <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167128919128"><m:math>
+            <m:mrow>
+              <m:mover>
+                <m:mi>D</m:mi>
+                <m:mtext>→</m:mtext>
+              </m:mover>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mo>−</m:mo>
+            <m:mn>20</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mover>
+                <m:mi>i</m:mi>
+                <m:mo stretchy="false">^</m:mo>
+              </m:mover>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:math>
+        </para></solution>
+    </exercise>
+  </note>
+  <section id="fs-id1167128956776">
+    <title>Współrzędne biegunowe</title>
+    <para id="fs-id1167132336599">Aby opisać położenie punktu na płaszczyźnie, potrzebujemy dwóch ortogonalnych kierunków. W kartezjańskim układzie współrzędnych kierunki te są wyznaczone przez wersor <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+    </m:math> osi <m:math>
+    <m:mi>x</m:mi>
+  </m:math> oraz wersor <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>j</m:mi>
+      <m:mo stretchy="false">^</m:mo>
+    </m:mover>
+  </m:mrow>
+</m:math> osi <m:math>
+<m:mi>y</m:mi>
+</m:math>. Korzystanie z kartezjańskiego układu współrzędnych jest wygodne, jeśli chodzi o opis przemieszczeń, prędkości i sił. Jednak w przypadku ruchu obrotowego korzystanie z tego układu okazuje się nieefektywne. Opisu ruchu obrotowego dokonuje się zazwyczaj w <term class="no-emphasis" cmlnle:reference="biegunowy układ współrzędnych">układzie współrzędnych biegunowych</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">polar coordinate system</term></foreign>).</para>
+<para id="fs-id1167132747901">W układzie współrzędnych biegunowych położenie punktu <m:math>
+  <m:mi>P</m:mi>
+  </m:math> określa się za pomocą dwóch <term class="no-emphasis" cmlnle:reference="współrzędne biegunowe">współrzędnych biegunowych</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">polar coordinates</term></foreign>) (<link target-id="CNX_UPhysics_02_02_polar"/>). Pierwsza współrzędna biegunowa to <term class="no-emphasis">promień wodzący</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">radial coordinate</term></foreign> <m:math>
+    <m:mi>r</m:mi>
+  </m:math>, czyli odległość punktu <m:math>
+  <m:mi>P</m:mi>
+</m:math> od bieguna. Drugą współrzędną biegunową jest kąt <m:math>
+<m:mi>φ</m:mi>
+</m:math> zawarty między promieniem wodzącym a pewną prostą (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">direction angle</term></foreign>), zazwyczaj osią <m:math>
+<m:mi>x</m:mi>
+</m:math>. W układzie współrzędnych biegunowych miarę kątów podaje się w radianach. Punktem początkowym promienia wodzącego jest punkt <m:math>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>0</m:mn>
+<m:mo>,</m:mo>
+<m:mtext>
+</m:mtext>
+<m:mn>0</m:mn>
+<m:mo stretchy="false">)</m:mo>
+</m:math>, a punktem końcowym punkt <m:math>
+<m:mi>P</m:mi>
+</m:math>. Kierunek promienia wodzącego opisuje wektor jednostkowy <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>r</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>. Drugi wektor jednostkowy <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>t</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math> jest prostopadły do wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>r</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>. Kierunek dodatni <m:math>
+<m:mo>+</m:mo>
+<m:mrow>
+  <m:mover>
+    <m:mi>t</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math> informuje nas, że kąt <m:math>
+<m:mi>φ</m:mi>
+</m:math> zmienia się w kierunku przeciwnym do ruchu wskazówek zegara. Położenie punktu <m:math>
+<m:mi>P</m:mi>
+</m:math> o współrzędnych <m:math>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>x</m:mi>
+<m:mo>,</m:mo>
+<m:mtext>
+</m:mtext>
+<m:mi>y</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:math> w prostokątnym układzie współrzędnych może być również opisane przez współrzędne biegunowe <m:math>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>r</m:mi>
+<m:mo>,</m:mo>
+<m:mtext>
+</m:mtext>
+<m:mi>φ</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:math>. <link target-id="fs-id1167133740741"/> jest spełnione dla wszystkich wektorów, więc za jego pomocą możemy wyrazić współrzędne <m:math>
+<m:mi>x</m:mi>
+</m:math> oraz <m:math>
+<m:mi>y</m:mi>
+</m:math> wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>r</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>. W ten sposób możemy wyznaczyć zależność między współrzędnymi kartezjańskimi i biegunowymi punktu <m:math>
+<m:mi>P</m:mi>
+</m:math>:</para>
+<note id="fs-id1167132575879" class="equation-callout">
+  <equation id="fs-id1167132575978">
+    <label/>
+    <m:math>
+      <m:mo>{</m:mo>
+      <m:mtable>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>x</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>r</m:mi>
+            <m:mspace width="0.2em"/>
+            <m:mtext>cos</m:mtext>
+            <m:mspace width="0.2em"/>
+            <m:mi>φ</m:mi>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:mi>y</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>r</m:mi>
+            <m:mspace width="0.2em"/>
+            <m:mtext>sin</m:mtext>
+            <m:mspace width="0.2em"/>
+            <m:mi>φ</m:mi>
+            <m:mo>.</m:mo>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+    </m:math>
+  </equation>
+</note>
+<figure id="CNX_UPhysics_02_02_polar">
+  <media id="fs-id1167132506424" alt="Punkt początkowy wektora r znajduje się w początku prostokątnego układu współrzędnych, a jego punkt końcowy z punkcie P. Kąt zawarty między wektorem r oraz dodatnim kierunkiem osi x to kąt fi. X równa się r cosinus fi, a y równa się r sinus fi. Wektor jednostkowy r z daszkiem zaznaczony jest na przedłużeniu wektora r. Wektor jednostkowy t z daszkiem jest prostopadły do wektora r z daszkiem (jest przesunięty o 90 stopni w kierunku przeciwnym do ruchu wskazó→wek zegara).">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_02_polar.jpg"/>
+  </media>
+  <caption>Wektor jednostkowy <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>r</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+  </m:math> definiuje kierunek promienia wodzącego <m:math>
+  <m:mi>r</m:mi>
+</m:math>, a prostopadły do niego wektor jednostkowy <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>t</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math> definiuje kierunek obrotu promienia o kąt <m:math>
+<m:mrow>
+  <m:mi>φ</m:mi>
+</m:mrow>
+</m:math>.</caption>
+</figure>
+<example id="fs-id1167132451446">
+  <para id="fs-id1167128877008">
+    <title>Współrzędne biegunowe</title>Poszukiwacz skarbów znajduje srebrną monetę 20,0 m od wyschniętej studni w kierunku <m:math>
+      <m:msup>
+        <m:mn>20</m:mn>
+        <m:mo>∘</m:mo>
+      </m:msup>
+    </m:math> na północ od kierunku wschodniego i złotą monetę 10,0 m od studni w kierunku <m:math>
+    <m:msup>
+      <m:mn>20</m:mn>
+      <m:mo>∘</m:mo>
+    </m:msup>
+    </m:math> na północ od kierunku zachodniego. Jakie są współrzędne biegunowe i kartezjańskie jego znalezisk względem studni?</para>
+    <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167132401405"><title>Strategia rozwiązania </title>Miejsce położenia studni jest biegunem układu współrzędnych, a wschód to dodatni kierunek osi <m:math>
+        <m:mi>x</m:mi>
+      </m:math>. Promienie wodzące łączące biegun z miejscami poszczególnych znalezisk są równe <m:math>
+      <m:msub>
+        <m:mi>r</m:mi>
+        <m:mrow>
+          <m:mrow>
+            <m:mi mathvariant="normal">S</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mn>20,0</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+    </m:math> (miejsce znalezienia srebrnej monety) i <m:math>
+    <m:msub>
+      <m:mi>r</m:mi>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">Z</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mn>10,0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+  </m:math> (miejsce znalezienia złotej monety). W celu określenia wartości kąta <m:math>
+  <m:mi>φ</m:mi>
+</m:math> przekształcamy <m:math>
+<m:msup>
+  <m:mn>20</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+</m:math> na radiany: <m:math>
+<m:msup>
+  <m:mn>20</m:mn>
+  <m:mo>∘</m:mo>
+</m:msup>
+<m:mo>=</m:mo>
+<m:mi>π</m:mi>
+<m:mo>⋅</m:mo>
+<m:mn>20</m:mn>
+<m:mn>/</m:mn>
+<m:mn>180</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">r</m:mi>
+  <m:mi mathvariant="normal">a</m:mi>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mi>π</m:mi>
+<m:mn>/</m:mn>
+<m:mn>9</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">r</m:mi>
+  <m:mi mathvariant="normal">a</m:mi>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+</m:math>. Aby znaleźć współrzędne <m:math>
+<m:mi>x</m:mi>
+</m:math> i <m:math>
+<m:mi>y</m:mi>
+</m:math> monet, korzystamy z <link target-id="fs-id1167132575978" cmlnle:case="genitive"/>.</para><para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167132491818"><title>Rozwiązanie</title>Kąt położenia srebrnej monety jest równy <m:math>
+    <m:msub>
+      <m:mi>φ</m:mi>
+      <m:mrow>
+        <m:mrow>
+          <m:mi mathvariant="normal">S</m:mi>
+        </m:mrow>
+      </m:mrow>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mi>π</m:mi>
+    <m:mn>/</m:mn>
+    <m:mn>9</m:mn>
+  </m:math>, a kąt położenia złotej monety jest równy <m:math>
+  <m:msub>
+    <m:mi>φ</m:mi>
+    <m:mrow>
+      <m:mrow>
+        <m:mi mathvariant="normal">Z</m:mi>
+      </m:mrow>
+    </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mi>π</m:mi>
+  <m:mo>−</m:mo>
+  <m:mi>π</m:mi>
+  <m:mn>/</m:mn>
+  <m:mn>9</m:mn>
+  <m:mo>=</m:mo>
+  <m:mn>8</m:mn>
+  <m:mi>π</m:mi>
+  <m:mn>/</m:mn>
+  <m:mn>9</m:mn>
+</m:math>. Współrzędne biegunowe srebrnej monety są więc równe <m:math>
+<m:mo stretchy="false">(</m:mo>
+<m:msub>
+  <m:mi>r</m:mi>
+  <m:mrow>
+    <m:mrow>
+      <m:mi mathvariant="normal">S</m:mi>
+    </m:mrow>
+  </m:mrow>
+</m:msub>
+<m:mo>,</m:mo>
+<m:mtext>
+</m:mtext>
+<m:msub>
+  <m:mi>φ</m:mi>
+  <m:mrow>
+    <m:mi mathvariant="normal">S</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+<m:mo>=</m:mo>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>20,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+<m:mo>;</m:mo>
+<m:mtext>
+</m:mtext>
+<m:mi>π</m:mi>
+<m:mn>/</m:mn>
+<m:mn>9</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">r</m:mi>
+  <m:mi mathvariant="normal">a</m:mi>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+</m:math>, natomiast współrzędne monety złotej to <m:math>
+<m:mo stretchy="false">(</m:mo>
+<m:msub>
+  <m:mi>r</m:mi>
+  <m:mrow>
+    <m:mrow>
+      <m:mi mathvariant="normal">Z</m:mi>
+    </m:mrow>
+  </m:mrow>
+</m:msub>
+<m:mo>,</m:mo>
+<m:mtext>
+</m:mtext>
+<m:msub>
+  <m:mi>φ</m:mi>
+  <m:mrow>
+    <m:mi mathvariant="normal">Z</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+<m:mo>=</m:mo>
+<m:mo stretchy="false">(</m:mo>
+<m:mn>10,0</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">m</m:mi>
+</m:mrow>
+<m:mo>;</m:mo>
+<m:mtext>
+</m:mtext>
+<m:mn>8</m:mn>
+<m:mi>π</m:mi>
+<m:mn>/</m:mn>
+<m:mn>9</m:mn>
+<m:mspace width="0.2em"/>
+<m:mrow>
+  <m:mi mathvariant="normal">r</m:mi>
+  <m:mi mathvariant="normal">a</m:mi>
+  <m:mi mathvariant="normal">d</m:mi>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+</m:math>. Aby otrzymać współrzędne kartezjańskie, podstawiamy współrzędne biegunowe do <link target-id="fs-id1167132575978" cmlnle:case="genitive"/>. Współrzędne kartezjańskie miejsca znalezienia złotej monety są równe</para><equation id="fs-id1167132685277" class="unnumbered">
+  <label/>
+    <m:math>
+      <m:mrow>
+        <m:mo>{</m:mo>
+        <m:mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+          <m:mtr>
+            <m:mtd>
+              <m:msub>
+                <m:mi>x</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">Z</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">Z</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mi>cos</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:msub>
+                <m:mi>φ</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">Z</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>10,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mi>cos</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mn>8</m:mn>
+              <m:mi>π</m:mi>
+              <m:mn>/</m:mn>
+              <m:mn>9</m:mn>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mo>−</m:mo>
+              <m:mn>9,4</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">Z</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>r</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">Z</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mi>sin</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:msub>
+                <m:mi>φ</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">Z</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>10,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>⋅</m:mo>
+              <m:mi>sin</m:mi>
+              <m:mo>⁡</m:mo>
+              <m:mo stretchy="false">(</m:mo>
+              <m:mn>8</m:mn>
+              <m:mi>π</m:mi>
+              <m:mn>/</m:mn>
+              <m:mn>9</m:mn>
+              <m:mo stretchy="false">)</m:mo>
+              <m:mo>=</m:mo>
+              <m:mn>3,4</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+        <m:mo fence="true" stretchy="true" symmetric="true"/>
+      </m:mrow>
+      <m:mspace width="thickmathspace"/>
+      <m:mo stretchy="false">⟹</m:mo>
+      <m:mspace width="thickmathspace"/>
+      <m:mo stretchy="false">(</m:mo>
+      <m:msub>
+        <m:mi>x</m:mi>
+        <m:mrow>
+          <m:mi mathvariant="normal">Z</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>,</m:mo>
+      <m:mtext>
+      </m:mtext>
+      <m:msub>
+        <m:mi>y</m:mi>
+        <m:mrow>
+          <m:mi mathvariant="normal">Z</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mo>=</m:mo>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mo>−</m:mo>
+      <m:mn>9,4</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo>;</m:mo>
+      <m:mtext>
+      </m:mtext>
+      <m:mn>3,4</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo stretchy="false">)</m:mo>
+      <m:mo>.</m:mo>
+    </m:math>
+</equation>
+<para id="fs-id1167132684974">Współrzędne miejsca znalezienia srebrnej monety są równe</para>
+<equation id="fs-id1167132432966" class="unnumbered">
+  <label/>
+  <m:math>
+    <m:mrow>
+      <m:mo>{</m:mo>
+      <m:mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+        <m:mtr>
+          <m:mtd>
+            <m:msub>
+              <m:mi>x</m:mi>
+              <m:mrow>
+                <m:mi mathvariant="normal">S</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi mathvariant="normal">S</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mi>cos</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:msub>
+              <m:mi>φ</m:mi>
+              <m:mrow>
+                <m:mi mathvariant="normal">S</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>20,0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mi>cos</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mi>π</m:mi>
+            <m:mn>/</m:mn>
+            <m:mn>9</m:mn>
+            <m:mo stretchy="false">)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mn>18,9</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+          </m:mtd>
+        </m:mtr>
+        <m:mtr>
+          <m:mtd>
+            <m:msub>
+              <m:mi>y</m:mi>
+              <m:mrow>
+                <m:mi mathvariant="normal">S</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:msub>
+              <m:mi>r</m:mi>
+              <m:mrow>
+                <m:mi mathvariant="normal">S</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:msub>
+              <m:mi>φ</m:mi>
+              <m:mrow>
+                <m:mi mathvariant="normal">S</m:mi>
+              </m:mrow>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mn>20,0</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mi>sin</m:mi>
+            <m:mo>⁡</m:mo>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mi>π</m:mi>
+            <m:mn>/</m:mn>
+            <m:mn>9</m:mn>
+            <m:mo stretchy="false">)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mn>6,8</m:mn>
+            <m:mspace width="0.2em"/>
+            <m:mrow>
+              <m:mi mathvariant="normal">m</m:mi>
+            </m:mrow>
+          </m:mtd>
+        </m:mtr>
+      </m:mtable>
+      <m:mo fence="true" stretchy="true" symmetric="true"/>
+    </m:mrow>
+    <m:mspace width="thickmathspace"/>
+    <m:mo stretchy="false">⟹</m:mo>
+    <m:mspace width="thickmathspace"/>
+    <m:mo stretchy="false">(</m:mo>
+    <m:msub>
+      <m:mi>x</m:mi>
+      <m:mrow>
+        <m:mi mathvariant="normal">S</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo>
+    <m:mtext>
+    </m:mtext>
+    <m:msub>
+      <m:mi>y</m:mi>
+      <m:mrow>
+        <m:mi mathvariant="normal">S</m:mi>
+      </m:mrow>
+    </m:msub>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>=</m:mo>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mn>18,9</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo>;</m:mo>
+    <m:mtext>
+    </m:mtext>
+    <m:mn>6,8</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo stretchy="false">)</m:mo>
+    <m:mo>.</m:mo>
+  </m:math>
+</equation>
+</example>
+</section>
+<section id="fs-id1167132342866">
+  <title>Wektory w przestrzeni trójwymiarowej</title>
+  <para id="fs-id1167132741874">Aby określić położenie punktu w przestrzeni, potrzebne są trzy zmienne <m:math>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mi>x</m:mi>
+    <m:mo>,</m:mo>
+    <m:mtext>
+    </m:mtext>
+    <m:mi>y</m:mi>
+    <m:mo>,</m:mo>
+    <m:mtext>
+    </m:mtext>
+    <m:mi>z</m:mi>
+    <m:mo stretchy="false">)</m:mo>
+  </m:math>, gdzie <m:math>
+  <m:mi>x</m:mi>
+</m:math> oraz <m:math>
+<m:mi>y</m:mi>
+</m:math> określają położenie punktu na płaszczyźnie, natomiast współrzędna <m:math>
+<m:mi>z</m:mi>
+</m:math> informuje o odległości od płaszczyzny w pionie. W przestrzeni trójwymiarowej możemy wyróżnić trzy kierunki ortogonalne, a więc do opisu tej przestrzeni potrzebne są <emphasis effect="italics">trzy</emphasis> wektory jednostkowe. W układzie współrzędnych kartezjańskich pierwsze dwa wektory jednostkowe to wersory osi <m:math>
+<m:mi>x</m:mi>
+</m:math>
+<m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>i</m:mi>
+      <m:mo stretchy="false">^</m:mo>
+    </m:mover>
+  </m:mrow>
+</m:math> oraz <m:math>
+<m:mi>y</m:mi>
+</m:math>
+<m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>j</m:mi>
+      <m:mo stretchy="false">^</m:mo>
+    </m:mover>
+  </m:mrow>
+</m:math>. Trzecim wektorem jednostkowym <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>k</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math> jest wektor informujący o kierunku osi <m:math>
+<m:mi>z</m:mi>
+</m:math>, a więc wersor tej osi (<link target-id="CNX_UPhysics_02_02_ijknew"/>). Kolejność podpisywania osi, a tym samym kolejność definiowania wektorów jednostkowych jest istotna, ponieważ od niej zależy orientacja układu współrzędnych. Kolejność <m:math>
+<m:mi>x</m:mi>
+</m:math>–<m:math>
+<m:mi>y</m:mi>
+</m:math>–<m:math>
+<m:mi>z</m:mi>
+</m:math>, równoważna z kolejnością <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>i</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>–<m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>j</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>–<m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>k</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>, oznacza, że mamy do czynienia z układem prawoskrętnym, który definiuje się, używając metody śruby prawoskrętnej.</para>
+<figure id="CNX_UPhysics_02_02_ijknew">
+  <media id="fs-id1167133636506" alt="Trójwymiarowy układ współrzędnych kartezjańskich o wersorach i z daszkiem, j z daszkiem, k z daszkiem osi x, y, z. I z daszkiem ma zwrot na zewnątrz w naszym kierunku, j z daszkiem ma zwrot w prawo, k z daszkiem ma zwrot w górę strony. Wersory osi są bokami sześcianu.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_02_ijknew.jpg"/>
+  </media>
+  <caption>Trzy wektory jednostkowe definiują układ współrzędnych kartezjańskich w przestrzeni trójwymiarowej. Od kolejności podpisywania osi zależy orientacja układu współrzędnych. Układ przedstawiony na rysunku jest układem prawoskrętnym.</caption>
+</figure>
+<para id="fs-id1167132688199">W przestrzeni trójwymiarowej wektor <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math> ma trzy składowe: składową <m:math>
+<m:mi>x</m:mi>
+</m:math>: <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>x</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msub>
+  <m:mi>A</m:mi>
+  <m:mi>x</m:mi>
+</m:msub>
+<m:mrow>
+  <m:mover>
+    <m:mi>i</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>, będącą rzutem wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> na oś <m:math>
+<m:mi>x</m:mi>
+</m:math>, składową <m:math>
+<m:mi>y</m:mi>
+</m:math>: <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>y</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msub>
+  <m:mi>A</m:mi>
+  <m:mi>y</m:mi>
+</m:msub>
+<m:mrow>
+  <m:mover>
+    <m:mi>j</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>, będącą rzutem wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> na oś <m:math>
+<m:mi>y</m:mi>
+</m:math>, oraz składową <m:math>
+<m:mi>z</m:mi>
+</m:math>: <m:math>
+<m:msub>
+  <m:mrow>
+    <m:mover>
+      <m:mi>A</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+  <m:mi>z</m:mi>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msub>
+  <m:mi>A</m:mi>
+  <m:mi>z</m:mi>
+</m:msub>
+<m:mrow>
+  <m:mover>
+    <m:mi>k</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>, będącą rzutem wektora na oś <m:math>
+<m:mi>z</m:mi>
+</m:math>. Wektor w przestrzeni trójwymiarowej jest sumą swoich trzech składowych. (<link target-id="CNX_UPhysics_02_02_vector3D"/>):</para>
+<note id="fs-id1167133745530" class="equation-callout">
+  <equation id="fs-id1167132278018">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>A</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>A</m:mi>
+        <m:mi>x</m:mi>
+      </m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>A</m:mi>
+        <m:mi>y</m:mi>
+      </m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>j</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>A</m:mi>
+        <m:mi>z</m:mi>
+      </m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>k</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+	   <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1167132736522">Jeśli znamy współrzędne punktu początkowego wektora <m:math>
+  <m:mi>p</m:mi>
+  <m:mo stretchy="false">(</m:mo>
+  <m:msub>
+    <m:mi>x</m:mi>
+    <m:mrow>
+      <m:mi mathvariant="normal">p</m:mi>
+    </m:mrow>
+  </m:msub>
+  <m:mo>,</m:mo>
+  <m:mtext>
+  </m:mtext>
+  <m:msub>
+    <m:mi>y</m:mi>
+    <m:mrow>
+      <m:mi mathvariant="normal">p</m:mi>
+    </m:mrow>
+  </m:msub>
+  <m:mo>,</m:mo>
+  <m:mtext>
+  </m:mtext>
+  <m:msub>
+    <m:mi>z</m:mi>
+    <m:mrow>
+      <m:mi mathvariant="normal">p</m:mi>
+    </m:mrow>
+  </m:msub>
+  <m:mo stretchy="false">)</m:mo>
+</m:math> oraz współrzędne jego punktu końcowego <m:math>
+<m:mi>k</m:mi>
+<m:mo stretchy="false">(</m:mo>
+<m:msub>
+  <m:mi>x</m:mi>
+  <m:mrow>
+    <m:mi mathvariant="normal">k</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>,</m:mo>
+<m:mtext>
+</m:mtext>
+<m:msub>
+  <m:mi>y</m:mi>
+  <m:mrow>
+    <m:mi mathvariant="normal">k</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo>,</m:mo>
+<m:mtext>
+</m:mtext>
+<m:msub>
+  <m:mi>z</m:mi>
+  <m:mrow>
+    <m:mi mathvariant="normal">k</m:mi>
+  </m:mrow>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+</m:math>, możemy obliczyć wartości składowych wektora, odejmując od siebie współrzędne punktów – dla <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mi>x</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> i <m:math>
+<m:mrow>
+  <m:msub>
+    <m:mi>A</m:mi>
+    <m:mi>y</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math> zostało to pokazane w <link target-id="fs-id1167132197498" cmlnle:case="locative"/>. Wartość składowej <m:math>
+<m:mi>z</m:mi>
+</m:math> uzyskujemy w następujący sposób:</para>
+<note id="fs-id1167132432269" class="equation-callout">
+  <equation id="fs-id1167133636864">
+    <label/>
+    <m:math>
+      <m:msub>
+        <m:mi>A</m:mi>
+        <m:mi>z</m:mi>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>z</m:mi>
+        <m:mrow>
+          <m:mi mathvariant="normal">k</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>−</m:mo>
+      <m:msub>
+        <m:mi>z</m:mi>
+        <m:mrow>
+          <m:mi mathvariant="normal">p</m:mi>
+        </m:mrow>
+      </m:msub>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+</note>
+<para id="fs-id1167132436510">Moduł <m:math>
+  <m:mi>A</m:mi>
+  </m:math> obliczamy, wykonując <link target-id="fs-id1167132245160"/> dla trzech wymiarów:</para>
+  <note id="fs-id1167132451249" class="equation-callout">
+    <equation id="fs-id1167132468770">
+      <label/>
+      <m:math>
+        <m:mrow>
+          <m:mi>A</m:mi>
+          <m:mo>=</m:mo>
+          <m:msqrt>
+            <m:mrow>
+              <m:msubsup>
+                <m:mi>A</m:mi>
+                <m:mi>x</m:mi>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mo>+</m:mo>
+              <m:msubsup>
+                <m:mi>A</m:mi>
+                <m:mi>y</m:mi>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+              <m:mo>+</m:mo>
+              <m:msubsup>
+                <m:mi>A</m:mi>
+                <m:mi>z</m:mi>
+                <m:mn>2</m:mn>
+              </m:msubsup>
+            </m:mrow>
+          </m:msqrt>
+          <m:mo>.</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation>
+  </note>
+  <para id="fs-id1167132716914">Powyższy wzór wynika z dwukrotnego zastosowania twierdzenia Pitagorasa. Jak widać na <link target-id="CNX_UPhysics_02_02_vector3D" cmlnle:case="locative"/>, przekątna w płaszczyźnie <m:math>
+    <m:mi>x</m:mi>
+	 <m:mi>y</m:mi>
+  </m:math> ma długość <m:math>
+  <m:mrow>
+    <m:msqrt>
+      <m:mrow>
+        <m:msubsup>
+          <m:mi>A</m:mi>
+          <m:mi>x</m:mi>
+          <m:mn>2</m:mn>
+        </m:msubsup>
+        <m:mo>+</m:mo>
+        <m:msubsup>
+          <m:mi>A</m:mi>
+          <m:mi>y</m:mi>
+          <m:mn>2</m:mn>
+        </m:msubsup>
+      </m:mrow>
+    </m:msqrt>
+  </m:mrow>
+</m:math>, a po podniesieniu do kwadratu i dodaniu <m:math>
+<m:mrow>
+  <m:msubsup>
+    <m:mi>A</m:mi>
+    <m:mi>z</m:mi>
+    <m:mn>2</m:mn>
+  </m:msubsup>
+</m:mrow>
+</m:math> daje <m:math>
+<m:mrow>
+  <m:msup>
+    <m:mi>A</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+</m:mrow>
+</m:math>. Zauważ, że kiedy składowa <m:math>
+<m:mi>z</m:mi>
+</m:math> jest równa zero, wektor leży w płaszczyźnie <m:math>
+<m:mi>xy</m:mi>
+</m:math>, w związku z czym jego opis ogranicza się do dwóch wymiarów.</para>
+<figure id="CNX_UPhysics_02_02_vector3D">
+  <media id="fs-id1167132275257" alt="Wektor A znajduje się w trójwymiarowym układzie współrzędnych kartezjańskich. Wektor A jest sumą wektorów A z indeksem x, A z indeksem y, A z indeksem z. Wektor A z indeksem x jest składową x wektora A, a jego długość jest równa A z indeksem x razy i z daszkiem. Wektor A z indeksem y jest składową y wektora A i ma długość A z indeksem y razy j z daszkiem. Wektor A z indeksem z jest składową z wektora A i ma długość A z indeksem z razy k z daszkiem. Składowe wektora A tworzą prostopadłościan o bokach długości A z indeksem x, A z indeksem y, A z indeksem z.">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_02_vector3D.jpg"/>
+  </media>
+  <caption>Wektor w przestrzeni trójwymiarowej jest sumą swoich składowych.</caption>
+</figure>
+<example id="fs-id1167132572875">
+  <para id="fs-id1167133796456">
+    <title>Lot drona</title>Podczas startu dron IAI Heron (<link target-id="CNX_UPhysics_02_02_heron"/>) znajduje się 100 m nad ziemią, 300 m na wschód i 200 m na północ względem wieży kontroli lotów. Minutę później dron znajduje się 250 m nad ziemią, 1200 m na wschód i 2100 m na północ względem wieży. Jaki jest wektor przemieszczenia drona względem wieży? Jaki jest moduł tego wektora?</para>
+    <figure id="CNX_UPhysics_02_02_heron">
+      <media id="fs-id1167132419821" alt="Zdjęcie drona.">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_02_heron.jpg"/>
+      </media>
+      <caption>Dron IAI Heron. (Źródło: SSgt Reynaldo Ramon, USAF)</caption>
+    </figure>
+    <para id="fs-id1167132316146">
+      <title>Strategia rozwiązania </title>Przyjmujemy, że miejsce położenia wieży stanowi początek układu współrzędnych. Dodatni kierunek osi <m:math>
+        <m:mi>x</m:mi>
+      </m:math> określa wektor jednostkowy <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+    </m:math> (jest to kierunek wschodni), dodatni kierunek osi <m:math>
+    <m:mi>y</m:mi>
+  </m:math> określa wektor jednostkowy <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>j</m:mi>
+      <m:mo stretchy="false">^</m:mo>
+    </m:mover>
+  </m:mrow>
+</m:math> (jest to kierunek północny), a dodatni kierunek osi <m:math>
+<m:mi>z</m:mi>
+</m:math> określa wektor jednostkowy <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>k</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math> (skierowany pionowo względem ziemi). Pozycja, z której startuje dron, stanowi punkt początkowy wektora przemieszczenia, a jego pozycja po upływie minuty stanowi jego punkt końcowy.</para>
+<para id="fs-id1167132742913">
+  <title>Rozwiązanie</title>W pierwszej kolejności określamy współrzędne punktów <m:math>
+    <m:mi>p</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mn>300,0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo>;</m:mo>
+    <m:mtext>
+    </m:mtext>
+    <m:mn>200,0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo>;</m:mo>
+    <m:mtext>
+    </m:mtext>
+    <m:mn>100,0</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo stretchy="false">)</m:mo>
+  </m:math> oraz <m:math>
+  <m:mi>k</m:mi>
+  <m:mo stretchy="false">(</m:mo>
+  <m:mn>1200,0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">m</m:mi>
+  </m:mrow>
+  <m:mo>;</m:mo>
+  <m:mtext>
+  </m:mtext>
+  <m:mn>2100,0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">m</m:mi>
+  </m:mrow>
+  <m:mo>;</m:mo>
+  <m:mtext>
+  </m:mtext>
+  <m:mn>250,0</m:mn>
+  <m:mspace width="0.2em"/>
+  <m:mrow>
+    <m:mi mathvariant="normal">m</m:mi>
+  </m:mrow>
+  <m:mo stretchy="false">)</m:mo>
+  </m:math>, a następnie znajdujemy wartości składowych wektora przemieszczenia przy pomocy <link target-id="fs-id1167132197498" cmlnle:case="genitive"/> oraz <link target-id="fs-id1167133636864" cmlnle:case="genitive"/>:</para>
+  <equation id="fs-id1167132412113" class="unnumbered">
+    <m:math>
+      <m:mrow>
+        <m:mo>{</m:mo>
+        <m:mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+          <m:mtr>
+            <m:mtd>
+              <m:msub>
+                <m:mi>D</m:mi>
+                <m:mi>x</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>x</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>x</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">p</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>1200,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>300,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>900,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:msub>
+                <m:mi>D</m:mi>
+                <m:mi>y</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>y</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">p</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>2100,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>200,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>1900,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>,</m:mo>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:msub>
+                <m:mi>D</m:mi>
+                <m:mi>z</m:mi>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:msub>
+                <m:mi>z</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">k</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>−</m:mo>
+              <m:msub>
+                <m:mi>z</m:mi>
+                <m:mrow>
+                  <m:mi mathvariant="normal">p</m:mi>
+                </m:mrow>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mn>250,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>−</m:mo>
+              <m:mn>100,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mn>150,0</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mrow>
+                <m:mi mathvariant="normal">m</m:mi>
+              </m:mrow>
+              <m:mo>.</m:mo>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+        <m:mo fence="true" stretchy="true" symmetric="true"/>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para id="fs-id1167132389342">Aby znaleźć wektor przemieszczenia, podstawiamy powyższe wartości do <link target-id="fs-id1167132278018" cmlnle:case="genitive"/>:</para>
+  <equation id="fs-id1167132237704" class="unnumbered">
+    <label/>
+    <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:msub>
+        <m:mi>D</m:mi>
+        <m:mi>x</m:mi>
+      </m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>D</m:mi>
+        <m:mi>y</m:mi>
+      </m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>j</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>D</m:mi>
+        <m:mi>z</m:mi>
+      </m:msub>
+      <m:mrow>
+        <m:mover>
+          <m:mi>k</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mn>900,0</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mn>1900,0</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>j</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mn>150,0</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>k</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation>
+  <para id="fs-id1167132507210">Aby znaleźć moduł wektora przemieszczenia, podstawiamy moduły poszczególnych składowych do <link target-id="fs-id1167132468770" cmlnle:case="genitive"/>:</para>
+  <equation xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167133544768" class="unnumbered"><label/>
+    <m:math>
+      <m:mi>D</m:mi>
+      <m:mo>=</m:mo>
+      <m:msqrt>
+        <m:msubsup>
+          <m:mi>D</m:mi>
+          <m:mi>x</m:mi>
+          <m:mn>2</m:mn>
+        </m:msubsup>
+        <m:mo>+</m:mo>
+        <m:msubsup>
+          <m:mi>D</m:mi>
+          <m:mi>y</m:mi>
+          <m:mn>2</m:mn>
+        </m:msubsup>
+        <m:mo>+</m:mo>
+        <m:msubsup>
+          <m:mi>D</m:mi>
+          <m:mi>z</m:mi>
+          <m:mn>2</m:mn>
+        </m:msubsup>
+      </m:msqrt>
+      <m:mo>=</m:mo>
+      <m:msqrt>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>0,90</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>km</m:mtext>
+        <m:msup>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>1,90</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>km</m:mtext>
+        <m:msup>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mn>2</m:mn>
+        </m:msup>
+        <m:mo>+</m:mo>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>0,15</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>km</m:mtext>
+        <m:msup>
+          <m:mo stretchy="false">)</m:mo>
+          <m:mn>2</m:mn>
+        </m:msup>
+      </m:msqrt>
+      <m:mo>=</m:mo>
+      <m:mn>2,11</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">k</m:mi>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo>.</m:mo>
+    </m:math>
+  </equation></example>
+<note id="fs-id1167132218339" class="check-understanding">
+  <exercise id="fs-id1167128919148">
+    <problem id="fs-id1167132230025">
+      <para xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1167132230028"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Jeśli wektor średniej prędkości drona z <link target-id="fs-id1167132572875" cmlnle:case="genitive"/> jest równy <m:math>
+          <m:mrow>
+            <m:mover>
+              <m:mi>u</m:mi>
+              <m:mtext>→</m:mtext>
+            </m:mover>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mn>15,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>m/s</m:mtext>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>i</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mn>31,7</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>m/s</m:mtext>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>j</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mn>2,5</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mtext>m/s</m:mtext>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>k</m:mi>
+              <m:mo stretchy="false">^</m:mo>
+            </m:mover>
+          </m:mrow>
+          </m:math>, jaka jest wartość modułu tego wektora?</para></problem>
+        <solution id="fs-id1167132346740">
+          <para id="fs-id1167133751212">
+            <m:math>
+              <m:mn>35,1</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>m/s</m:mtext>
+              <m:mo>=</m:mo>
+              <m:mn>126,4</m:mn>
+              <m:mspace width="0.2em"/>
+              <m:mtext>km/h</m:mtext>
+              <m:mo>.</m:mo>
+            </m:math>
+          </para>
+        </solution>
+      </exercise>
+    </note>
+  </section>
+  <section id="fs-id1167132451656" class="key-concepts">
+    <title>Podsumowanie</title>
+    <list id="fs-id1167132628006">
+      <item>Opisu wektorów dokonuje się przy pomocy ich składowych. W przestrzeni jednowymiarowej wektor ma jedną składową, w dwuwymiarowej (na płaszczyźnie) wektor ma dwie składowe, w trójwymiarowej – trzy.</item>
+      <item>Składowa wektora jest to rzut wektora na daną oś. Wartość składowej wektora jest to długość rzutu wektora na daną oś. Wektor jest sumą swoich składowych.</item>
+      <item>Wartości składowych wektora oblicza się, odejmując współrzędne punktu początkowego wektora od współrzędnych jego punktu końcowego. W prostokątnym układzie współrzędnych moduł wektora jest równy pierwiastkowi sumy kwadratów wartości jego składowych.</item>
+      <item>Kierunek wektora na płaszczyźnie określany jest przez kąt, jaki ten wektor tworzy z dodatnim kierunkiem osi <m:math>
+        <m:mi>x</m:mi>
+      </m:math>. Kąt ten mierzy się w kierunku przeciwnym do kierunku ruchu wskazówek zegara. Wartość składowej <m:math>
+      <m:mi>x</m:mi>
+    </m:math> wektora oblicza się, mnożąc moduł tego wektora przez cosinus kąta określającego kierunek. Wartość składowej <m:math>
+    <m:mi>y</m:mi>
+    </m:math> wektora oblicza się, mnożąc moduł tego wektora przez sinus kąta określającego kierunek.</item>
+    <item>Możemy wyróżnić dwa rodzaje układów współrzędnych w przestrzeni dwuwymiarowej. Układ współrzędnych kartezjańskich (prostokątny układ współrzędnych) charakteryzowany jest przez <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+    </m:math>, czyli wersor osi <m:math>
+    <m:mi>x</m:mi>
+  </m:math>, oraz <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>j</m:mi>
+      <m:mo stretchy="false">^</m:mo>
+    </m:mover>
+  </m:mrow>
+</m:math>, czyli wersor osi <m:math>
+<m:mi>y</m:mi>
+</m:math>. Układ współrzędnych biegunowych charakteryzowany jest przez wektor jednostkowy <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>r</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math> określający kierunek promienia wodzącego oraz wektor jednostkowy <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>t</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>, prostopadły (ortogonalny) do wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>r</m:mi>
+    <m:mo stretchy="false">^</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math>.</item>
+</list>
+</section>
+<section id="fs-id1167132437539" class="review-conceptual-questions">
+  <title>Pytania </title>
+  <exercise id="fs-id1167132241622">
+    <problem id="fs-id1167133668968">
+      <para id="fs-id1167132345316">Podaj przykład niezerowego wektora, którego składowa ma wartość zero.</para>
+    </problem>
+    <solution id="fs-id1167132706218">
+      <para id="fs-id1167132328235">wersor osi <m:math>
+        <m:mi>x</m:mi>
+      </m:math>
+    </para>
+  </solution>
+</exercise>
+<exercise id="fs-id1167132494452">
+  <problem id="fs-id1167132476171">
+    <para id="fs-id1167132476173">Wyjaśnij, dlaczego składowa wektora nie może mieć wartości większej od modułu tego wektora.</para>
+  </problem>
+</exercise>
+<exercise id="fs-id1167132562110">
+  <problem id="fs-id1167132562112">
+    <para id="fs-id1167132504879">Jeżeli dwa wektory są równe, co możesz powiedzieć o ich składowych?</para>
+  </problem>
+  <solution id="fs-id1167133715718">
+    <para id="fs-id1167133715720">Składowe też są równe.</para>
+  </solution>
+</exercise>
+<exercise id="fs-id1167132267416">
+  <problem id="fs-id1167132267418">
+    <para id="fs-id1167132627817">Jeżeli wektory <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>A</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+    </m:math> i <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>B</m:mi>
+        <m:mtext>→</m:mtext>
+      </m:mover>
+    </m:mrow>
+  </m:math> są ortogonalne, jaka jest składowa wektora <m:math>
+  <m:mrow>
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mtext>→</m:mtext>
+    </m:mover>
+  </m:mrow>
+</m:math> w kierunku wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>? Jaka jest składowa wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>A</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math> w kierunku wektora <m:math>
+<m:mrow>
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mtext>→</m:mtext>
+  </m:mover>
+</m:mrow>
+</m:math>?</para>
+</problem>
+</exercise>
+<exercise id="fs-id1167132518791">
+  <problem id="fs-id1167132518793">
+    <para id="fs-id1167133668836">Jeśli wartość jednej ze składowych wektora jest różna od zera, czy wartość drugiej składowej może być równa zero?</para>
+  </problem>
+  <solution id="fs-id1167133568374">
+    <para id="fs-id1167133568377">tak</para>
+  </solution>
+</exercise>
+<exercise id="fs-id1167132535630">
+  <problem id="fs-id1167132535632">
+    <para id="fs-id1167132481141">Jeśli moduły dwóch wektorów są równe, to czy wartości ich składowych muszą być takie same?</para>
+  </problem>
+</exercise>
+</section>
+<section id="fs-id1167132281028" class="review-problems">
+  <title>Zadania</title>
+  <exercise xmlns:q="http://cnx.rice.edu/qml/1.0" id="fs-id1167132612418"><problem id="fs-id1167132612420">
+      <para id="fs-id1167132312139">Zakładając, że oś <m:math><m:mi>x</m:mi></m:math> leży w poziomie i skierowana jest w prawo, dokonaj rozkładu na składowe wektorów podanych na ilustracji.</para><media id="fs-id1167133711602" alt="Oś x ma zwrot w prawo, oś y ma zwrot w górę. Moduł wektora A jest równy 10,0. Wektor ten skierowany jest pod kątem 30 stopni przeciwnie do ruchu wskazówek zegara od dodatniego kierunku osi x. Moduł wektora B jest równy 5,0. Wektor ten skierowany jest pod kątem 53 stopni przeciwnie do ruchu wskazówek zegara od dodatniego kierunku osi x. Moduł wektora C jest równy 12,0. Wektor ten skierowany jest pod kątem 60 stopni zgodnie z ruchem wskazówek zegara od dodatniego kierunku osi x. Moduł wektora D jest równy 20,0. Wektor ten skierowany jest pod kątem 37 stopni zgodnie z ruchem wskazówek zegara od ujemnego kierunku osi x. Moduł wektora F jest równy 20,0. Wektor ten skierowany jest pod kątem 30 stopni przeciwnie do ruchu wskazówek zegara od ujemnego kierunku osi x.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_02_problems_img-695f.jpg"/>
+    </media>
+  
+</problem>
+<solution id="fs-id1167132683339">
+  <para id="fs-id1167128844080">
+    <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>A</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mn>8,66</m:mn>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mn>5,00</m:mn>
+      <m:mrow>
+        <m:mover>
+          <m:mi>j</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+    </m:math>, <newline/>
+    <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>B</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mo>+</m:mo>
+      <m:mn>30,09</m:mn>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mn>39,93</m:mn>
+      <m:mrow>
+        <m:mover>
+          <m:mi>j</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+    </m:math>, <newline/>
+    <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>C</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mo>+</m:mo>
+      <m:mn>6,00</m:mn>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>−</m:mo>
+      <m:mn>10,39</m:mn>
+      <m:mrow>
+        <m:mover>
+          <m:mi>j</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+    </m:math>, <newline/>
+    <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>D</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mo>−</m:mo>
+      <m:mn>15,97</m:mn>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mn>12,04</m:mn>
+      <m:mrow>
+        <m:mover>
+          <m:mi>j</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+    </m:math>, <newline/>
+    <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>F</m:mi>
+          <m:mtext>→</m:mtext>
+        </m:mover>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mo>−</m:mo>
+      <m:mn>17,32</m:mn>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+      <m:mo>−</m:mo>
+      <m:mn>10,00</m:mn>
+      <m:mrow>
+        <m:mover>
+          <m:mi>j</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+      </m:math>.</para>
+    </solution>
+  </exercise><exercise id="fs-id1167132508049">
+    <problem id="fs-id1167132508051">
+      <para id="fs-id1167132445103">Idziesz 18,0 m na zachód, a następnie 25,0 m na północ. Jak daleko jesteś od punktu startowego? Jaki jest wektor twojego przemieszczenia? Jaki jest kierunek twojego przemieszczenia? Przyjmij, że oś <m:math>
+        <m:mi>x</m:mi>
+        </m:math> leży w poziomie i skierowana jest w prawo.</para>
+      </problem>
+    </exercise>
+    <exercise id="fs-id1167132487189">
+      <problem id="fs-id1167132487191">
+        <para xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1167132366338">Jedziesz 7,50 km pod kątem <m:math>
+          <m:msup>
+            <m:mn>15</m:mn>
+            <m:mo>∘</m:mo>
+          </m:msup>
+        </m:math> na wschód od kierunku północnego. <list id="eip-idm518871696" list-type="enumerated" number-style="lower-alpha">
+        <item> Jaką drogę musiałbyś przebyć prosto na wschód, a następnie prosto na północ, aby znaleźć się w tym samym punkcie? </item>
+        <item> Udowodnij, że jeśli przejedziesz odcinki drogi w odwrotnej kolejności (najpierw na północ, a następnie na wschód), znajdziesz się w tym samym miejscu. Przyjmij, że dodatni kierunek osi <m:math>
+          <m:mi>x</m:mi>
+          </m:math> skierowany jest na wschód. </item>
+        </list>
+      </para></problem>
+    <solution id="fs-id1167133521610">
+      <list id="fs-id1167132501142" list-type="enumerated" number-style="lower-alpha">
+        <item> 1,94 km, 7,24 km </item>
+        <item> dowód</item>
+      </list>
+    </solution>
+  </exercise>
+  <exercise id="fs-id1167132501147">
+    <problem id="fs-id1167132248105">
+      <para id="fs-id1167132248107">Dwa konie ciągną sanie po płaskim terenie. Siła wywierana na sanie w prostokątnym układzie współrzędnym jest wektorem <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>F</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mo>−</m:mo>
+        <m:mn>2980,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">N</m:mi>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>i</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mn>8200,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">N</m:mi>
+        </m:mrow>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>j</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:math>, gdzie <m:math>
+      <m:mrow>
+        <m:mover>
+          <m:mi>i</m:mi>
+          <m:mo stretchy="false">^</m:mo>
+        </m:mover>
+      </m:mrow>
+    </m:math> i <m:math>
+    <m:mrow>
+      <m:mover>
+        <m:mi>j</m:mi>
+        <m:mo stretchy="false">^</m:mo>
+      </m:mover>
+    </m:mrow>
+    </m:math> oznaczają odpowiednio kierunek wschodni i północny. Znajdź moduł i kierunek wektora siły.</para>
+  </problem>
+</exercise>
+<exercise id="fs-id1167132536425">
+  <problem id="fs-id1167132335895">
+    <para id="fs-id1167132335897">Turystka idzie ze schroniska nad jezioro. W prostej linii jezioro oddalone jest od schroniska o 5,0 km. Określ składowe wektora w kierunkach wschodnim i północnym. O ile kilometrów dłuższy dystans musiałaby przejść, gdyby szła wzdłuż składowych wektora? Jaki jest wektor jej przemieszczenia?</para>
+    <media id="fs-id1167132294765" alt="Wektor S prowadzi od schroniska do jeziora. Jego moduł jest równy 5,0 km, a jego kierunek to 40 stopni na północ od kierunku wschodniego. Na rysunku znajdują się dwie kręte ścieżki: ścieżka 1 oraz ścieżka 2.">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_02_01_problem3.jpg"/>
+    </media>
+  </problem>
+  <solution id="fs-id1167132487930">
+    <para id="fs-id1167132487932">3,8 km na wschód, 3,2 km na północ; 2,0 km; <newline/>
+      <m:math>
+        <m:mrow>
+          <m:mover>
+            <m:mi>D</m:mi>
+            <m:mtext>→</m:mtext>
+          </m:mover>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mn>3,8</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>km</m:mtext>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>i</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mn>3,2</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mtext>km</m:mtext>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>j</m:mi>
+            <m:mo stretchy="false">^</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:math>
+    </para>
+  </solution>
+</exercise>
+<exercise id="fs-id1167133544873">
+  <problem id="fs-id1167132628948">
+    <para id="fs-id1167132628950">Współrzędne biegunowe punktu są równe <m:math>
+      <m:mrow>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>4</m:mn>
+            <m:mi>π</m:mi>
+          </m:mrow>
+          <m:mtext>/</m:mtext>
+          <m:mn>3</m:mn>
+        </m:mrow>
+      </m:mrow>
+      </m:math> i 5,50 m. Jakie są jego współrzędne kartezjańskie?</para>
+    </problem>
+  </exercise>
+  <exercise id="fs-id1167132303332">
+    <problem id="fs-id1167132303334">
+      <para id="fs-id1167132627652">Współrzędne biegunowe dwóch punktów są równe <m:math>
+        <m:msub>
+          <m:mi>P</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>2,500</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>;</m:mo>
+        <m:mtext>
+        </m:mtext>
+        <m:mi>π</m:mi>
+        <m:mn>/</m:mn>
+        <m:mn>6</m:mn>
+        <m:mo stretchy="false">)</m:mo>
+      </m:math> oraz <m:math>
+      <m:msub>
+        <m:mi>P</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mn>3,800</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo>;</m:mo>
+      <m:mtext>
+      </m:mtext>
+      <m:mn>2</m:mn>
+      <m:mi>π</m:mi>
+      <m:mn>/</m:mn>
+      <m:mn>3</m:mn>
+      <m:mo stretchy="false">)</m:mo>
+      </m:math>. Ustal, jakie są ich współrzędne kartezjańskie oraz określ, z dokładnością do centymetra, jaka odległość dzieli te punkty w prostokątnym układzie współrzędnych.</para>
+    </problem>
+    <solution id="fs-id1167132579170">
+      <para id="fs-id1167132579172">
+        <m:math>
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mn>2,165</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>;</m:mo>
+          <m:mtext>
+          </m:mtext>
+          <m:mn>1,250</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo stretchy="false">)</m:mo>
+        </m:math>, <m:math>
+        <m:msub>
+          <m:mi>P</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mo>−</m:mo>
+        <m:mn>1,900</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>;</m:mo>
+        <m:mtext>
+        </m:mtext>
+        <m:mn>3,290</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo stretchy="false">)</m:mo>
+        </m:math>, 5,27 m</para>
+      </solution>
+    </exercise>
+    <exercise id="fs-id1167133676180">
+      <problem id="fs-id1167132458391">
+        <para id="fs-id1167132458394">Kameleon leży na dachu werandy i czeka, aż w pobliżu pojawi się owad. Przyjmijmy, że lewy dolny róg dachu jest początkiem prostokątnego układu współrzędnych, a oś <m:math>
+          <m:mi>x</m:mi>
+        </m:math> skierowana jest w prawo. Jeżeli kameleon znajduje się w punkcie <m:math>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>2,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>;</m:mo>
+        <m:mtext>
+        </m:mtext>
+        <m:mn>1,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo stretchy="false">)</m:mo>
+      </m:math>,<list id="eip-idm975715760" list-type="enumerated" number-style="lower-alpha">
+      <item> jak daleko znajduje się od narożnika dachu? </item>
+      <item> Jakie są jego współrzędne biegunowe? </item>
+    </list>
+  </para>
+</problem>
+</exercise>
+<exercise id="fs-id1167132319658">
+  <problem id="fs-id1167132319660">
+    <para id="fs-id1167132372735">Współrzędne dwóch punktów znajdujących się w prostokątnym układzie współrzędnych są równe <m:math>
+      <m:mi>A</m:mi>
+      <m:mo stretchy="false">(</m:mo>
+      <m:mn>2,00</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo>;</m:mo>
+      <m:mtext>
+      </m:mtext>
+      <m:mo>−</m:mo>
+      <m:mn>4,00</m:mn>
+      <m:mspace width="0.2em"/>
+      <m:mrow>
+        <m:mi mathvariant="normal">m</m:mi>
+      </m:mrow>
+      <m:mo stretchy="false">)</m:mo>
+    </m:math> oraz <m:math>
+    <m:mi>B</m:mi>
+    <m:mo stretchy="false">(</m:mo>
+    <m:mo>−</m:mo>
+    <m:mn>3,00</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo>;</m:mo>
+    <m:mtext>
+    </m:mtext>
+    <m:mn>3,00</m:mn>
+    <m:mspace width="0.2em"/>
+    <m:mrow>
+      <m:mi mathvariant="normal">m</m:mi>
+    </m:mrow>
+    <m:mo stretchy="false">)</m:mo>
+    </m:math>. Określ odległość między tymi punktami oraz ich współrzędne biegunowe.</para>
+  </problem>
+  <solution id="fs-id1167132372708">
+    <para id="fs-id1167132340314">8,60 m, <newline/>
+      <m:math>
+        <m:mi>A</m:mi>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>2</m:mn>
+        <m:msqrt>
+          <m:mn>5</m:mn>
+        </m:msqrt>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>;</m:mo>
+        <m:mtext>
+        </m:mtext>
+        <m:mn>0,647</m:mn>
+        <m:mi>π</m:mi>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">r</m:mi>
+          <m:mi mathvariant="normal">a</m:mi>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mo stretchy="false">)</m:mo>
+      </m:math>, <newline/>
+      <m:math>
+        <m:mi>B</m:mi>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>3</m:mn>
+        <m:msqrt>
+          <m:mn>2</m:mn>
+        </m:msqrt>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>;</m:mo>
+        <m:mtext>
+        </m:mtext>
+        <m:mn>0,75</m:mn>
+        <m:mi>π</m:mi>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">r</m:mi>
+          <m:mi mathvariant="normal">a</m:mi>
+          <m:mi mathvariant="normal">d</m:mi>
+        </m:mrow>
+        <m:mo stretchy="false">)</m:mo>
+        </m:math>.</para>
+      </solution>
+    </exercise>
+    <exercise id="fs-id1167132441243">
+      <problem id="fs-id1167132441245">
+        <para id="fs-id1167133579494">Mucha wlatuje przez otwarte okno i zaczyna krążyć po pokoju. Osie trójwymiarowego układu współrzędnych kartezjańskich skierowane są wzdłuż trzech krawędzi pokoju. Mucha przemieszcza się z punktu <m:math>
+          <m:mi>p</m:mi>
+          <m:mo stretchy="false">(</m:mo>
+          <m:mn>4,0</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>;</m:mo>
+          <m:mtext>
+          </m:mtext>
+          <m:mn>1,5</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo>;</m:mo>
+          <m:mtext>
+          </m:mtext>
+          <m:mn>2,5</m:mn>
+          <m:mspace width="0.2em"/>
+          <m:mrow>
+            <m:mi mathvariant="normal">m</m:mi>
+          </m:mrow>
+          <m:mo stretchy="false">)</m:mo>
+        </m:math> do punktu <m:math>
+        <m:mi>k</m:mi>
+        <m:mo stretchy="false">(</m:mo>
+        <m:mn>1,0</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>;</m:mo>
+        <m:mtext>
+        </m:mtext>
+        <m:mn>4,5</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo>;</m:mo>
+        <m:mtext>
+        </m:mtext>
+        <m:mn>0,5</m:mn>
+        <m:mspace width="0.2em"/>
+        <m:mrow>
+          <m:mi mathvariant="normal">m</m:mi>
+        </m:mrow>
+        <m:mo stretchy="false">)</m:mo>
+        </m:math>. Znajdź wartości składowych wektora przemieszczenia muchy oraz moduł tego wektora. Przedstaw rozkład wektora na składowe.</para>
+      </problem>
+    </exercise>
+  </section>
+</content>
+<glossary>
+  <definition id="fs-id1167132687581">
+    <term class="no-emphasis" cmlnle:reference="rozkład wektora na składowe">rozkład wektora na składowe (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">component form of a vector</term></foreign>)</term>
+    <meaning id="fs-id1167132612545">zapis wektora w postaci sumy jego składowych, przy pomocy wersorów osi</meaning>
+  </definition>
+  <definition id="fs-id1167132612567">
+    <term class="no-emphasis" cmlnle:reference="kąt skierowany">kąt skierowany (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">direction angle</term></foreign>)</term>
+    <meaning id="fs-id1167132612572">kąt między rosnącym kierunkiem osi <m:math>
+      <m:mi>x</m:mi>
+      </m:math> a wektorem, mierzony od osi do wektora</meaning>
+    </definition>
+    <definition id="fs-id1167132310341">
+      <term class="no-emphasis" cmlnle:reference="układ współrzędnych biegunowych">układ współrzędnych biegunowych (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">polar coordinate system</term></foreign>)</term>
+      <meaning id="fs-id1167132506907">układ współrzędnych, w którym położenie punktu na płaszczyźnie określone jest za pomocą współrzędnych biegunowych</meaning>
+    </definition>
+    <definition id="fs-id1167132506911">
+      <term class="no-emphasis" cmlnle:reference="współrzędne biegunowe">współrzędne biegunowe (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">polar coordinates</term></foreign>)</term>
+      <meaning id="fs-id1167132568470">promień wodzący i kąt skierowany tego promienia</meaning>
+    </definition>
+    <definition id="fs-id1167132199051">
+      <term class="no-emphasis" cmlnle:reference="promień wodzący">promień wodzący (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">radial coordinate</term></foreign>)</term>
+      <meaning id="fs-id1167132541607">odległość punktu od bieguna w układzie współrzędnych biegunowych</meaning>
+    </definition>
+    <definition id="fs-id1167132541611">
+      <term class="no-emphasis" cmlnle:reference="wartość składowej">wartość składowej (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">scalar component</term></foreign>)</term>
+      <meaning id="fs-id1167132584081">liczba, przez którą należy pomnożyć wersor osi, aby otrzymać składową wektora</meaning>
+    </definition>
+    <definition id="fs-id1167132584102">
+      <term class="no-emphasis" cmlnle:reference="wersory osi">wersory osi (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">unit vectors of the axes</term></foreign>)</term>
+      <meaning id="fs-id1167132546147">wektory jednostkowe definiujące kierunki ortogonalne na płaszczyźnie lub w przestrzeni</meaning>
+    </definition>
+    <definition id="fs-id1167132546151">
+      <term class="no-emphasis" cmlnle:reference="składowe wektora">składowe wektora (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">vector components</term></foreign>)</term>
+      <meaning id="fs-id1167132266674">rzuty wektora na poszczególne osie układu współrzędnych; wektor jest sumą swoich składowych</meaning>
+    </definition>
+  </glossary>
+</document>

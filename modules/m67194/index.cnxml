@@ -1,0 +1,4441 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Oporniki połączone szeregowo i równolegle</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67194</md:content-id>
+  <md:title>Oporniki połączone szeregowo i równolegle</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+<item>definiować pojęcie oporu równoważnego;</item>
+<item>obliczać opór równoważny oporników połączonych szeregowo;</item>
+<item>obliczać opór równoważny oporników połączonych równolegle.</item>
+</list></md:abstract>
+  <md:uuid>5fe76607-4e30-47ef-9dc2-0921fe2341dd</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm568784512">W rozdziale <link class="target-chapter" document="m67185">Prąd i rezystancja</link> opisaliśmy pojęcie oporu elektrycznego i wyjaśniliśmy podstawy konstrukcji opornika. Zasadniczo, opornik (rezystor) ogranicza przepływ ładunku w obwodzie i jest urządzeniem podlegającym prawu Ohma <m:math display="inline"><m:semantics><m:mrow><m:mi>U</m:mi><m:mo>=</m:mo><m:mrow><m:mi>R</m:mi><m:mo>⁢</m:mo><m:mi>I</m:mi></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            U = RI</m:annotation></m:semantics></m:math>. Większość układów składa się z więcej niż jednego opornika. Jeżeli kilka połączonych ze sobą oporników zostanie podłączonych do źródła SEM, to natężenie prądu w obwodzie będzie zależało od wartości <term class="no-emphasis" cmlnle:reference="opór równoważny">oporu równoważnego</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">equivalent resistance</term></foreign>) obwodu elektrycznego. </para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm1056011392">Opór równoważny (rezystancja równoważna) układu oporników zależy zarówno od ich poszczególnych oporów, jak i sposobu ich połączenia. Najprostszymi układami połączenia kilku oporników są połączenie szeregowe i połączenie równoległe (<link target-id="figure-1"/>). W <term class="no-emphasis" cmlnle:reference="obwód szeregowy">obwodzie szeregowym</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">series circuit</term></foreign>) prąd elektryczny wypływający z pierwszego opornika wpływa do drugiego. W związku z tym przez każdy opornik przepływa prąd o takim samym natężeniu. W <term class="no-emphasis" cmlnle:reference="obwód równoległy">obwodzie równoległym</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">parallel circuit</term></foreign>) wszystkie wejścia oporników połączone są ze sobą, tak samo jak wszystkie wyjścia (po stronie przeciwnej do wejścia). W przypadku konfiguracji równoległej spadek potencjału na każdym z oporników jest taki sam, więc natężenie prądu płynącego przez każdy z nich może być inne i zależy od jego oporu. Suma natężeń prądów przepływających przez poszczególne oporniki równa się natężeniu prądu, który wpływa do ich równoległego połączenia. </para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="figure-1">
+    <media id="fs-id1172100626377" alt="Część a pokazuje cztery oporniki połączone szeregowo, a część b przedstawia cztery oporniki połączone równolegle. ">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_27_01_SeriesRes.jpg"/>
+    </media>
+    <caption>(a) Gdy oporniki połączone są szeregowo, prąd o takim samym natężeniu płynie przez każdy z nich. (b) Gdy oporniki są połączone równolegle, napięcie na każdym z nich jest takie samo. </caption>
+  </figure>
+  <section id="imp-idm388161424">
+    <title>Oporniki połączone szeregowo</title>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm323669104">Mówimy, że oporniki połączone są szeregowo, gdy prąd przepływa przez nie po kolei. Spójrzmy na <link target-id="figure-2"/> przedstawiający trzy oporniki połączone szeregowo. Między punktami <m:math display="inline">
+      <m:mi>A</m:mi>
+    </m:math> i <m:math display="inline">
+    <m:mi>B</m:mi>
+  </m:math> różnica potencjałów jest równa <m:math display="inline">
+  <m:msub>
+    <m:mi>U</m:mi>
+    <m:mfenced close="" separators="⁣" open="">
+      <m:mi>A</m:mi>
+      <m:mi>B</m:mi>
+    </m:mfenced>
+  </m:msub>
+  </m:math>. Ponieważ ładunki mogą przepływać tylko jedną ścieżką przewodzenia, przez każdy z oporników przepływa prąd o takim samym natężeniu. Opór równoważny zestawu oporników połączonych szeregowo równa się sumie algebraicznej wartości poszczególnych oporów. </para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="figure-2">
+    <media id="fs-id1172100644837" alt="Część a pokazuje oryginalny obwód z trzema opornikami połączonymi szeregowo ze źródłem napięcia i część b pokazującą równoważny obwód z równoważnym opornikiem połączonym ze źródłem napięcia. ">
+      <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_27_01_ThreeSerRs.jpg"/>
+    </media>
+    <caption>(a) Trzy oporniki połączone szeregowo i podłączone do źródła napięcia. (b) Wejściowy obwód został uproszczony do opornika równoważnego i źródła napięcia. </caption>
+  </figure>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm501181920">Na <link target-id="figure-2" cmlnle:case="locative"/> prąd wychodzący ze źródła napięcia przepływa przez każdy z oporników, więc natężenie prądu przepływającego przez każdy z nich jest takie samo. Natężenie prądu płynącego przez układ zależy od napięcia źródła SEM i rezystancji przyłączonych oporników. Dla każdego opornika obserwowany spadek potencjałów między jego końcami jest równy stracie elektrycznej energii potencjalnej w czasie przepływu przez niego prądu. Zgodnie z prawem Ohma spadek potencjału <m:math display="inline">
+    <m:mi>U</m:mi>
+  </m:math> na oporniku, przez który płynie prąd o natężeniu <m:math display="inline">
+  <m:mi>I</m:mi>
+</m:math>, oblicza się, stosując równanie <m:math display="inline">
+<m:mi>U</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi>R</m:mi>
+  <m:mo>⁢</m:mo>
+  <m:mi>I</m:mi>
+</m:mrow>
+</m:math>, gdzie natężenie prądu wyraża się w amperach (<m:math display="inline">
+<m:mi mathvariant="normal">A</m:mi>
+</m:math>), a <m:math display="inline">
+<m:mi>R</m:mi>
+</m:math> to opór wyrażony w omach (<m:math display="inline">
+<m:mi mathvariant="normal">Ω</m:mi>
+</m:math>). Suma napięć źródła (wnoszącego różnicę potencjałów do obwodu) i spadków potencjału na poszczególnych opornikach liczona dla zamkniętego oczka (pętli) obwodu powinna być równa zero </para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm1447996320" class="unnumbered"><m:math display="block">
+    <m:mrow>
+      <m:munderover>
+        <m:mo>∑</m:mo>
+        <m:mrow>
+          <m:mi>i</m:mi>
+          <m:mo>=</m:mo>
+          <m:mn>1</m:mn>
+        </m:mrow>
+        <m:mi>N</m:mi>
+      </m:munderover>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mi>i</m:mi>
+      </m:msub>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>0</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm491029360">Równanie to jest często określane jako drugie prawo Kirchhoffa. Bardziej szczegółowo omówimy je w dalszej części tego rozdziału. Na <link target-id="figure-2" cmlnle:case="locative"/> suma spadków potencjału na każdym z oporników i napięcia źródła powinna być równa zero </para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm572151264" class="unnumbered"><m:math display="block">
+    <m:mtable>
+      <m:mtr>
+        <m:mtd>
+          <m:mrow>
+            <m:mi>U</m:mi>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>−</m:mo>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>3</m:mn>
+            </m:msub>
+            <m:maligngroup/>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>0</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">V</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:mi>U</m:mi>
+          <m:maligngroup/>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:msub>
+                <m:mi>U</m:mi>
+                <m:mn>3</m:mn>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:mtext>,</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:mi>U</m:mi>
+          <m:maligngroup/>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mi>I</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mi>I</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mi>I</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>3</m:mn>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:mtext>,</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:mi>I</m:mi>
+          <m:maligngroup/>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mi>U</m:mi>
+            <m:mrow>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>3</m:mn>
+              </m:msub>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mfrac>
+              <m:mi>U</m:mi>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mtext>rw</m:mtext>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm571307136">Ponieważ natężenie prądu płynącego przez każdy z elementów jest takie samo, równość można uprościć do oporu równoważnego, który jest po prostu sumą oporów poszczególnych oporników. </para>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm491336352">Szeregowo można połączyć dowolną liczbę oporników. Jeżeli połączymy szeregowo <m:math display="inline">
+  <m:mi>N</m:mi>
+  </m:math> oporników, to odpowiadający im równoważny opór wynosi</para><note id="imp-idm334202992" class="equation-callout">
+    <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm390039808">
+      <m:math display="block">
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mtext>rw</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mn>3</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:mi>…</m:mi>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mrow>
+              <m:mi>N</m:mi>
+              <m:mo>−</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mi>N</m:mi>
+          </m:msub>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:munderover>
+            <m:mo>∑</m:mo>
+            <m:mrow>
+              <m:mi>i</m:mi>
+              <m:mo>=</m:mo>
+              <m:mn>1</m:mn>
+            </m:mrow>
+            <m:mi>N</m:mi>
+          </m:munderover>
+          <m:mrow>
+            <m:msub>
+              <m:mi>R</m:mi>
+              <m:mi>i</m:mi>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mrow>
+      </m:math>
+    </equation>
+  </note>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm447243904">Jedną z konsekwencji łączenia elementów w układzie szeregowym jest to, że gdy coś się dzieje z jednym, wpływa to na pozostałe. Na przykład, jeśli połączymy szeregowo kilka żarówek i jedna z nich się przepali, to wszystkie pozostałe również przestaną świecić. </para><example id="imp-idm1395721616">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm1003203648"><title>Opór równoważny, prąd i moc w szeregowych obwodach elektrycznych</title>Bateria o napięciu na biegunach <m:math display="inline">
+        <m:mn>9</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+      </m:math> jest podłączona do obwodu elektrycznego składającego się z szeregowo połączonych czterech oporników o oporze <m:math display="inline">
+      <m:mn>20</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:math> i jednego o oporze (rezystancji) <m:math display="inline">
+    <m:mn>10</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">Ω</m:mi>
+  </m:math> (<link target-id="figure-3"/>). Załóż, że bateria ma znikomy opór wewnętrzny.<list id="eip-idm1144638784" list-type="enumerated" number-style="lower-alpha"><item>Oblicz równoważny opór obwodu.</item>
+  <item>Oblicz natężenie prądu płynącego przez każdy opornik.</item>
+  <item>Oblicz spadek potencjału na każdym oporniku.</item>
+  <item>Wyznacz całkowitą moc rozpraszaną przez oporniki i moc dostarczaną przez baterię.</item>
+</list></para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="figure-3"><media id="fs-id1172098391927" alt="Rysunek przedstawia cztery oporniki 20 Ω i jeden opornik 10 Ω połączone szeregowo z 9 V źródłem napięcia. ">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_27_01_Ex1.jpg"/>
+  </media>
+  
+<caption>Prosty obwód szeregowy z pięcioma opornikami</caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm492350688"><title>Strategia rozwiązania</title>W obwodzie szeregowym opór równoważny jest algebraiczną sumą poszczególnych oporów. Natężenie prądu płynącego przez układ możemy obliczyć z prawa Ohma i jest ono równe stosunkowi napięcia do oporu równoważnego. Spadek potencjału na oporniku możemy wyznaczyć za pomocą prawa Ohma. Moc rozpraszaną przez opornik możemy policzyć z zależności <m:math display="inline">
+    <m:mi>P</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msup>
+        <m:mi>I</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>⁢</m:mo>
+      <m:mi>R</m:mi>
+    </m:mrow>
+  </m:math>; aby wyznaczyć całkowitą moc rozproszoną przez wszystkie oporniki, należy zsumować moce rozproszone przez każdy z nich. Moc, z jaką energia jest dostarczana przez baterię (moc elektryczna baterii), obliczymy z wyrażenia <m:math display="inline">
+  <m:mi>P</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>I</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>ε</m:mi>
+  </m:mrow>
+  </m:math>. </para><para id="imp-idm339210528">
+    <title>Rozwiązanie</title>
+  </para>
+  <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm633251424" list-type="enumerated" number-style="lower-alpha"><item>Opór równoważny jest algebraiczną sumą poszczególnych oporów <equation id="imp-idm390028848" class="unnumbered"><m:math display="block">
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mtext>rw</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mn>3</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mn>4</m:mn>
+          </m:msub>
+          <m:mo>+</m:mo>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mn>5</m:mn>
+          </m:msub>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>20</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mn>20</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mn>20</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mn>20</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+          <m:mo>+</m:mo>
+          <m:mrow>
+            <m:mn>10</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>90</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation></item>
+  <item>Natężenie prądu płynącego przez każdy z oporników połączonych szeregowo jest takie samo i równa się wartości przyłożonego napięcia podzielonej przez równoważny opór <equation id="imp-idm1280337984" class="unnumbered"><m:math display="block">
+      <m:mi>I</m:mi>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mi>U</m:mi>
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mtext>rw</m:mtext>
+        </m:msub>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mn>9</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+          <m:mi mathvariant="normal">V</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mn>90</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+          <m:mi mathvariant="normal">Ω</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mn>0,1</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+          <m:mi mathvariant="normal">A</m:mi>
+        </m:mrow>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation></item>
+<item>Spadek potencjału na każdym oporniku można znaleźć korzystając z prawa Ohma <equation id="imp-idm578286256" class="unnumbered"><m:math display="block">
+    <m:mtable>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>3</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>4</m:mn>
+          </m:msub>
+          <m:maligngroup/>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>0,1</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">A</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mn>20</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>U</m:mi>
+            <m:mn>5</m:mn>
+          </m:msub>
+          <m:maligngroup/>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>0,1</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">A</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mn>10</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">V</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:mrow>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>3</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>4</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>U</m:mi>
+              <m:mn>5</m:mn>
+            </m:msub>
+            <m:maligngroup/>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>9</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">V</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+  </equation> Zauważmy, że suma spadków potencjału na każdym oporniku równa się napięciu na biegunach baterii.</item>
+  <item>Moc rozpraszana na oporniku wynosi <m:math display="inline">
+    <m:mi>P</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msup>
+        <m:mi>I</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo>⁢</m:mo>
+      <m:mi>R</m:mi>
+    </m:mrow>
+  </m:math>, a moc dostarczana przez baterię <m:math display="inline">
+  <m:mi>P</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>I</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>ε</m:mi>
+  </m:mrow>
+</m:math>
+<equation id="imp-idm505074592" class="unnumbered"><m:math display="block">
+    <m:mtable>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mn>3</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mn>4</m:mn>
+          </m:msub>
+          <m:maligngroup/>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msup>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mn>0,1</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+                  <m:mi mathvariant="normal">A</m:mi>
+                </m:mrow>
+              </m:mfenced>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mn>20</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>0,2</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mn>5</m:mn>
+          </m:msub>
+          <m:maligngroup/>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msup>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mn>0,1</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+                  <m:mi mathvariant="normal">A</m:mi>
+                </m:mrow>
+              </m:mfenced>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mn>10</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>0,1</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mtext>rozproszona</m:mtext>
+          </m:msub>
+          <m:maligngroup/>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>0,2</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mn>0,2</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mn>0,2</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mn>0,2</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+              <m:mn>0,1</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>0,9</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mtext>źródła</m:mtext>
+          </m:msub>
+          <m:maligngroup/>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mi>I</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>ε</m:mi>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>0,1</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">A</m:mi>
+            </m:mrow>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mn>9</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">V</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>0,9</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation></item>
+</list><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm546325504"><title>Znaczenie</title>Istnieje kilka powodów, dla których będziemy używać wielu oporników zamiast jednego opornika równoważnego. Może opornik o wymaganej rezystancji nie jest dostępny albo musimy odprowadzić generowane ciepło lub chcemy zminimalizować koszt oporników. Każdy opornik może kosztować od kilku groszy do kilku złotych, ale po pomnożeniu przez tysiące sztuk oszczędności mogą okazać się znaczne. </para></example>
+<note id="imp-idm634107184" class="check-understanding">
+  <exercise id="imp-idm463201856">
+    <problem id="imp-idm471931328">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm589999136"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Niektóre sznury miniaturowych lampek choinkowych zbudowane są w sposób umożliwiający zwarcie, gdy przepali się jedna. Urządzenie, które powoduje zwarcie, nazywa się bocznikiem i pozwala na przepływ prądu w całym obwodzie. Zwarcie jest jak zastąpienie elementu kawałkiem drutu – pozwala na obejście uszkodzenia i dalsze działanie obwodu elektrycznego. Żarówki są zwykle zgrupowane w seriach po dziewięć. Jeśli zbyt wiele żarówek się wypali, bocznikowanie może nie zadziałać – obwód pozostanie otwarty. Co jest tego przyczyną? </para></problem>
+      <solution id="imp-idm478339584">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm438328416">Równoważny opór dziewięciu żarówek połączonych szeregowo równy jest <m:math display="inline">
+          <m:mn>9</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi>R</m:mi>
+        </m:math>. Natężenie płynącego prądu wynosi <m:math display="inline">
+        <m:mi>I</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mi>U</m:mi>
+          <m:mo>∕</m:mo>
+          <m:mfenced>
+            <m:mrow>
+              <m:mn>9</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>R</m:mi>
+            </m:mrow>
+          </m:mfenced>
+        </m:mrow>
+      </m:math>. Jeśli jedna z żarówek się przepali, to opór równoważny zmniejszy się do <m:math display="inline">
+      <m:mn>8</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mi>R</m:mi>
+    </m:math>, ale napięcie się nie zmieni, więc natężenie prądu wzrośnie do <m:math display="inline">
+    <m:mi>I</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>U</m:mi>
+      <m:mo>∕</m:mo>
+      <m:mfenced>
+        <m:mrow>
+          <m:mn>8</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi>R</m:mi>
+        </m:mrow>
+      </m:mfenced>
+    </m:mrow>
+    </m:math>. Im więcej żarówek się przepali, tym natężenie prądu będzie większe. Ostatecznie, gdy natężenie prądu będzie zbyt duże, to przepali się bocznik – żarówki przestaną świecić. </para>
+  </solution>
+</exercise>
+</note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm497452352">Krótko podsumujmy podstawowe właściwości oporników połączonych szeregowo:</para>
+<list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-999" list-type="bulleted" bullet-style="bullet"><item>Szeregowo połączone opory dodają się, dając opór równoważny <equation id="imp-idm1002682896" class="unnumbered">
+    <m:math display="block">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mtext>rw</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mn>3</m:mn>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:mi>…</m:mi>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mrow>
+            <m:mi>N</m:mi>
+            <m:mo>−</m:mo>
+            <m:mn>1</m:mn>
+          </m:mrow>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mi>N</m:mi>
+        </m:msub>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:munderover>
+          <m:mo>∑</m:mo>
+          <m:mrow>
+            <m:mi>i</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+          </m:mrow>
+          <m:mi>N</m:mi>
+        </m:munderover>
+        <m:mrow>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mi>i</m:mi>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+</item>
+<item> Przez każdy opornik przepływa prąd o takim samym natężeniu. </item>
+<item> Na poszczególnych opornikach połączonych szeregowo napięcie nie jest równe napięciu źródła, które rozkłada się na wszystkie oporniki. Całkowity spadek potencjału dla układu połączonych szeregowo oporników równa się sumie spadków potencjału na każdym oporniku z osobna. </item>
+</list></section>
+<section id="imp-idm577943824">
+  <title>Oporniki połączone równolegle</title>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm379848336"><link target-id="figure-4"/> przedstawia oporniki połączone równolegle i podłączone do źródła napięcia. Z połączeniem równoległym mamy do czynienia wtedy, gdy obie strony wszystkich oporników połączone są wspólnym przewodem o nieznacznej rezystancji. Spadek potencjału na każdym z oporników jest jednakowy. Natężenie prądu płynącego przez każdy z oporników można obliczyć z prawa Ohma <m:math display="inline">
+    <m:mi>I</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>U</m:mi>
+      <m:mo>∕</m:mo>
+      <m:mi>R</m:mi>
+    </m:mrow>
+    </m:math>, gdzie napięcie ma taką samą wartość na każdym oporniku. Przykładowo reflektory, radio i inne systemy samochodu są połączone równolegle, tak aby każdy wykorzystywał całe napięcie źródła i mógł działać całkowicie niezależnie. Tak samo jest z domową instalacją elektryczną. </para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="figure-4">
+      <media id="fs-id1172100669337" alt="Część a pokazuje oryginalny obwód z dwoma opornikami połączonymi równolegle ze źródłem napięcia, a część b przedstawia równoważny obwód z równoważnym opornikiem połączonym ze źródłem napięcia. ">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_27_01_ResPara.jpg"/>
+      </media>
+      <caption>(a) Dwa oporniki podłączone równolegle do źródła napięcia. (b) Obwód wejściowy został uproszczony do opornika równoważnego i źródła napięcia. </caption>
+    </figure>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm584074352">Natężenie prądu płynącego ze źródła napięcia z <link target-id="figure-4" cmlnle:case="genitive"/> zależy od napięcia źródła i oporu równoważnego obwodu elektrycznego. W tym przypadku prąd płynie od źródła napięcia i dociera do węzła, gdzie dzieli się, by przepłynąć przez oporniki <m:math display="inline">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:math> i <m:math display="inline">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:math>. Część ładunków wypływających z baterii przepływa przez opornik <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:math>, a pozostałe przez opornik <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math>. Suma natężeń prądów wpływających do węzła musi być równa sumie natężeń prądów z węzła wypływających</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm508558864" class="unnumbered">
+  <m:math display="block">
+    <m:mrow>
+      <m:mo>∑</m:mo>
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mtext>wpływające</m:mtext>
+      </m:msub>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mo>∑</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mtext>wypływające</m:mtext>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm569770560">Równanie to jest znane także jako pierwsze prawo Kirchhoffa i szczegółowo omówimy je w dalszej części rozdziału. Po zastosowaniu tej reguły do <link target-id="figure-4" cmlnle:case="genitive"/> otrzymujemy <m:math display="inline">
+  <m:mi>I</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:mrow>
+</m:math>. W omawianym obwodzie elektrycznym możemy wyodrębnić dwa oczka (dwie pętle), co prowadzi nas do zależności: <m:math display="inline">
+<m:mi>U</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>⁢</m:mo>
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math> oraz <m:math display="inline">
+<m:mrow>
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>⁢</m:mo>
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>⁢</m:mo>
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>. Zauważmy, że spadek potencjału między miejscami połączenia równoległego oporników (węzłami) jest taki sam, a natężenia prądów się sumują</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm412156752" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:mi>I</m:mi><m:mo>=</m:mo><m:mrow><m:msub><m:mi>I</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>I</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mo>=</m:mo><m:mrow><m:mfrac><m:msub><m:mi>U</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>R</m:mi><m:mn>1</m:mn></m:msub></m:mfrac><m:mo>+</m:mo><m:mfrac><m:msub><m:mi>U</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>R</m:mi><m:mn>2</m:mn></m:msub></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mfrac><m:mi>U</m:mi><m:msub><m:mi>R</m:mi><m:mn>1</m:mn></m:msub></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mi>U</m:mi><m:msub><m:mi>R</m:mi><m:mn>2</m:mn></m:msub></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>U</m:mi><m:mo>⁢</m:mo><m:mfenced><m:mrow><m:mfrac><m:mn>1</m:mn><m:msub><m:mi>R</m:mi><m:mn>1</m:mn></m:msub></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:msub><m:mi>R</m:mi><m:mn>2</m:mn></m:msub></m:mfrac></m:mrow></m:mfenced></m:mrow><m:mo>=</m:mo><m:mrow><m:mfrac><m:mi>U</m:mi><m:msub><m:mi>R</m:mi><m:mtext>rw</m:mtext></m:msub></m:mfrac><m:mo>⁢</m:mo><m:mtext>,</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            I = I_1 + I_2 = \frac{U_1}{R_1} + \frac{U_2}{R_2} = \frac{U}{R_1} + \frac{U}{R_2} = U (\frac{1}{R_1} + \frac{1}{R_2}) = \frac{U}{R_{\text{rw}}} \text{,}</m:annotation></m:semantics></m:math></equation><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-953" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:msub><m:mi>R</m:mi><m:mtext>rw</m:mtext></m:msub><m:mo>=</m:mo><m:mrow><m:msup><m:mfenced><m:mrow><m:mfrac><m:mn>1</m:mn><m:msub><m:mi>R</m:mi><m:mn>1</m:mn></m:msub></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:msub><m:mi>R</m:mi><m:mn>2</m:mn></m:msub></m:mfrac></m:mrow></m:mfenced><m:mn>-1</m:mn></m:msup><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            R_{\text{rw}} = (\frac{1}{R_1} + \frac{1}{R_2})^{-1} \text{.}</m:annotation></m:semantics></m:math></equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm368092080">Uogólniając powyższe dla dowolnej liczby <m:math display="inline">
+  <m:mi>N</m:mi>
+</m:math> oporników połączonych równolegle, opór równoważny <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mtext>rw</m:mtext>
+</m:msub>
+</m:math> zależy od poszczególnych oporów w poniższy sposób </para>
+<note id="imp-idm573024352" class="equation-callout">
+  <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="equation-1">
+    <m:math display="block">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mtext>rw</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msup>
+        <m:mfenced>
+          <m:mrow>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>3</m:mn>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>+</m:mo>
+            <m:mi>…</m:mi>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mrow>
+                  <m:mi>N</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mi>N</m:mi>
+              </m:msub>
+            </m:mfrac>
+          </m:mrow>
+        </m:mfenced>
+        <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msup>
+          <m:mfenced>
+            <m:mrow>
+              <m:munderover>
+                <m:mo>∑</m:mo>
+                <m:mrow>
+                  <m:mi>i</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+                <m:mi>N</m:mi>
+              </m:munderover>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mi>i</m:mi>
+                </m:msub>
+              </m:mfrac>
+            </m:mrow>
+          </m:mfenced>
+          <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+        </m:msup>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm591574096">W wyniku równoległego połączenia oporników równoważny opór <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mtext>rw</m:mtext>
+  </m:msub>
+  </m:math> jest mniejszy niż opór (rezystancja) każdego z nich. Gdy oporniki są połączone równolegle, ze źródła wypływa prąd o większym natężeniu, niż gdyby każdy z oporników był podłączony do źródła oddzielnie, więc opór całkowity jest mniejszy. </para><example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm561980400">
+    <para id="imp-idm431907936"><title>Analiza równoległego obwodu elektrycznego</title>Trzy oporniki o oporach <m:math display="inline">
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>1</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+          <m:mi mathvariant="normal">Ω</m:mi>
+        </m:mrow>
+      </m:math>, <m:math display="inline">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>2</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+    </m:math> i <m:math display="inline">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>3</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>2</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+  </m:math> połączono równolegle. Układ podłączono do źródła o napięciu <m:math display="inline"><m:semantics><m:mrow><m:mi>U</m:mi><m:mo>=</m:mo><m:mrow><m:mn>3</m:mn><m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo><m:mi mathvariant="normal">V</m:mi></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            U = 3 \si{\volt}</m:annotation></m:semantics></m:math> na biegunach.<list id="eip-idm289325584" list-type="enumerated" number-style="lower-alpha"><item>Jaki jest opór równoważny?</item>
+  <item>Oblicz natężenie prądu dostarczanego przez źródło do obwodu równoległego.</item>
+  <item>Oblicz natężenia prądów przepływających przez poszczególne oporniki i udowodnij, że ich suma odpowiada natężeniu prądu wypływającego ze źródła.</item>
+  <item>Oblicz moc energii elektrycznej wydzielanej na każdym z oporników.</item>
+  <item>Oblicz moc energii elektrycznej dostarczanej przez źródło układowi i udowodnij, że jest równa sumie mocy energii rozpraszanych przez poszczególne oporniki.</item>
+</list></para><para id="imp-idm658149360">
+  <title>Strategia rozwiązania</title>
+</para>
+<list id="eip-idm1758471552" list-type="enumerated" number-style="lower-alpha">
+  <item>Równoważny opór układu oporników połączonych równolegle obliczamy z zależności<equation id="eip-idm984923152" class="unnumbered">
+    <m:math display="block">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mtext>rw</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msup>
+          <m:mfenced>
+            <m:mrow>
+              <m:munderover>
+                <m:mo>∑</m:mo>
+                <m:mrow>
+                  <m:mi>i</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+                <m:mi>N</m:mi>
+              </m:munderover>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mi>i</m:mi>
+                </m:msub>
+              </m:mfrac>
+            </m:mrow>
+          </m:mfenced>
+          <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+        </m:msup>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</item>
+<item> Natężenie prądu dostarczanego przez źródło napięcia możemy obliczyć z prawa Ohma, podstawiając <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mtext>rw</m:mtext>
+  </m:msub>
+</m:math> w miejsce oporu: <m:math display="inline">
+<m:mi>I</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi>U</m:mi>
+  <m:mo>∕</m:mo>
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mtext>rw</m:mtext>
+  </m:msub>
+</m:mrow>
+</m:math>. </item>
+<item> Natężenia prądów płynących przez poszczególne oporniki łatwo obliczymy z prawa Ohma (<m:math display="inline">
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mi>i</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mi>i</m:mi>
+    </m:msub>
+    <m:mo>∕</m:mo>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mi>i</m:mi>
+    </m:msub>
+  </m:mrow>
+</m:math>), pamiętając, że napięcie na wszystkich opornikach jest takie samo. Całkowite natężenie prądu jest sumą natężeń prądów przepływających przez poszczególne oporniki: <m:math display="inline">
+<m:mi>I</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:munder>
+    <m:mo>∑</m:mo>
+    <m:mi>i</m:mi>
+  </m:munder>
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mi>i</m:mi>
+  </m:msub>
+</m:mrow>
+</m:math>. </item>
+<item> Moc energii rozpraszanej przez każdy z oporników można obliczyć przy użyciu jednego z równań wiążących ją z natężeniem prądu, napięciem i oporem, ponieważ wszystkie te wielkości są dobrze znane. Skorzystajmy z wyrażenia <m:math display="inline">
+  <m:msub>
+    <m:mi>P</m:mi>
+    <m:mi>i</m:mi>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msup>
+      <m:mi>U</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>∕</m:mo>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mi>i</m:mi>
+    </m:msub>
+  </m:mrow>
+  </m:math>, gdyż do każdego opornika przyłączono całe napięcie ze źródła. </item>
+  <item> Moc energii elektrycznej dostarczanej do układu także można obliczyć na kilka sposobów, np. ze wzoru <m:math display="inline">
+    <m:mi>P</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>I</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>U</m:mi>
+    </m:mrow>
+    </m:math>. </item>
+  </list>
+  <para id="imp-idm368046720">
+    <title>Rozwiązanie</title>
+  </para>
+  <list id="imp-idm1325109824" list-type="enumerated" number-style="lower-alpha">
+    <item>Opór równoważny układu oporników połączonych równolegle liczymy z <link target-id="equation-1" cmlnle:case="genitive"/>. Po podstawieniu danych otrzymujemy <equation id="imp-idm576703072" class="unnumbered"><m:math display="block">
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mtext>rw</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:msup>
+          <m:mfenced>
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>+</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>+</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msub>
+              </m:mfrac>
+            </m:mrow>
+          </m:mfenced>
+          <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+        </m:msup>
+        <m:mo>=</m:mo>
+        <m:msup>
+          <m:mfenced>
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+                  <m:mi mathvariant="normal">Ω</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>+</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+                  <m:mi mathvariant="normal">Ω</m:mi>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>+</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+                  <m:mi mathvariant="normal">Ω</m:mi>
+                </m:mrow>
+              </m:mfrac>
+            </m:mrow>
+          </m:mfenced>
+          <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+        </m:msup>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>0,5</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math>
+      </equation> Zgodnie z przewidywaniami otrzymana wartość jest mniejsza od najmniejszego oporu występującego w obwodzie.</item>
+      <item>Natężenie prądu dostarczanego przez źródło możemy obliczyć z prawa Ohma, podstawiwszy obliczony opór równoważny <m:math display="inline">
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mtext>rw</m:mtext>
+        </m:msub>
+      </m:math> w miejsce oporu całkowitego. Otrzymujemy <equation id="imp-idm411457120" class="unnumbered"><m:math display="block">
+        <m:mi>I</m:mi>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mi>U</m:mi>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mtext>rw</m:mtext>
+          </m:msub>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mn>3</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">V</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mn>0,5</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>6</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">A</m:mi>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math>
+      </equation> Natężenie prądu <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><msub><mi>P</mi><mn>5</mn></msub><mo>=</mo><mrow><msup><mfenced><mrow><mn>0,1</mn><mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</mo><mi mathvariant="normal">A</mi></mrow></mfenced><mn>2</mn></msup><mo>⋅</mo><mrow><mn>10</mn><mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</mo><mi mathvariant="normal">Ω</mi></mrow></mrow><mo>=</mo><mrow><mn>0,1</mn><mo lspace="veryverythinmathspace" rspace="veryverythinmathspace">⁢</mo><mi mathvariant="normal">W</mi></mrow></mrow><annotation encoding="application/vnd.katalysteducation.mathtex">            P_5 = (\SI{0,1}{\ampere})^2 \cdot \SI{10}{\ohm} = \SI{0,1}{\watt}</annotation></semantics></math> ⁠dla poszczególnych urządzeń jest znacznie większe niż dla tych samych urządzeń połączonych szeregowo (patrz: poprzedni przykład). Układ elementów połączonych równolegle ma mniejszy opór równoważny niż układ oporników połączonych szeregowo. </item>
+      <item>Natężenia prądów przepływających przez poszczególne oporniki można łatwo obliczyć z prawa Ohma, ponieważ na każdym oporniku odkłada się napięcie ze źródła <equation id="imp-idm385620528" class="unnumbered"><m:math display="block">
+          <m:msub>
+            <m:mi>I</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mi>U</m:mi>
+            <m:msub>
+              <m:mi>R</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mfrac>
+            <m:mrow>
+              <m:mn>3</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">V</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>1</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>3</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">A</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:math>
+      </equation> Podobnie <equation id="imp-idm341770256" class="unnumbered"><m:math display="block">
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mi>U</m:mi>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mfrac>
+          <m:mrow>
+            <m:mn>3</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">V</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>1,5</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+          <m:mi mathvariant="normal">A</m:mi>
+        </m:mrow>
+      </m:math>
+    </equation> oraz <equation id="imp-idm566341376" class="unnumbered"><m:math display="block">
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mn>3</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mi>U</m:mi>
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mn>3</m:mn>
+        </m:msub>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mfrac>
+        <m:mrow>
+          <m:mn>3</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+          <m:mi mathvariant="normal">V</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mn>2</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+          <m:mi mathvariant="normal">Ω</m:mi>
+        </m:mrow>
+      </m:mfrac>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mrow>
+          <m:mn>1,5</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+          <m:mi mathvariant="normal">A</m:mi>
+        </m:mrow>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation> Całkowite natężenie prądu jest sumą natężeń poszczególnych prądów <equation id="imp-idm387493264" class="unnumbered"><m:math display="block">
+    <m:mrow>
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mn>3</m:mn>
+      </m:msub>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>6</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">A</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation></item>
+<item>Do obliczenia mocy energii rozpraszanej na poszczególnych opornikach użyjemy np. równania <m:math display="inline">
+  <m:mi>P</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msup>
+      <m:mi>U</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>∕</m:mo>
+    <m:mi>R</m:mi>
+  </m:mrow>
+</m:math>
+<equation id="imp-idm379170208" class="unnumbered"><m:math display="block">
+    <m:msub>
+      <m:mi>P</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:msup>
+        <m:mi>U</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:msup>
+        <m:mfenced>
+          <m:mrow>
+            <m:mn>3</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">V</m:mi>
+          </m:mrow>
+        </m:mfenced>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mrow>
+        <m:mn>1</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>9</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">W</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation> Podobnie <equation id="imp-idm544296464" class="unnumbered"><m:math display="block">
+  <m:msub>
+    <m:mi>P</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mfrac>
+    <m:msup>
+      <m:mi>U</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:mfrac>
+  <m:mo>=</m:mo>
+  <m:mfrac>
+    <m:msup>
+      <m:mfenced>
+        <m:mrow>
+          <m:mn>3</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+          <m:mi mathvariant="normal">V</m:mi>
+        </m:mrow>
+      </m:mfenced>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mrow>
+      <m:mn>2</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>4,5</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">W</m:mi>
+  </m:mrow>
+</m:math>
+</equation> oraz <equation id="imp-idm551455056" class="unnumbered"><m:math display="block">
+  <m:msub>
+    <m:mi>P</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mfrac>
+    <m:msup>
+      <m:mi>U</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>3</m:mn>
+    </m:msub>
+  </m:mfrac>
+  <m:mo>=</m:mo>
+  <m:mfrac>
+    <m:msup>
+      <m:mfenced>
+        <m:mrow>
+          <m:mn>3</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+          <m:mi mathvariant="normal">V</m:mi>
+        </m:mrow>
+      </m:mfenced>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mrow>
+      <m:mn>2</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>4,5</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">W</m:mi>
+    </m:mrow>
+    <m:mo>⁢</m:mo>
+    <m:mtext>.</m:mtext>
+  </m:mrow>
+</m:math>
+</equation></item>
+<item>Moc źródła także możemy policzyć na kilka sposobów, np. <m:math display="inline">
+  <m:mi>P</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>I</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>U</m:mi>
+  </m:mrow>
+</m:math>. Po podstawieniu prądu całkowitego otrzymujemy <equation id="imp-idm519858304" class="unnumbered"><m:math display="block">
+  <m:mi>P</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>I</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>U</m:mi>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>6</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mn>3</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>18</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">W</m:mi>
+    </m:mrow>
+    <m:mo>⁢</m:mo>
+    <m:mtext>.</m:mtext>
+  </m:mrow>
+</m:math>
+</equation></item>
+</list>
+<para id="imp-idm1221284240"><title>Znaczenie</title>Całkowita moc rozpraszania energii przez oporniki także wynosi <m:math display="inline">
+    <m:mn>18</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">W</m:mi>
+  </m:math>
+</para><equation id="imp-idm340877312" class="unnumbered"><m:math display="block">
+    <m:mrow>
+      <m:msub>
+        <m:mi>P</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>P</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>P</m:mi>
+        <m:mn>3</m:mn>
+      </m:msub>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>9</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">W</m:mi>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mn>4,5</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">W</m:mi>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mn>4,5</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">W</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>18</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">W</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation><para id="imp-idm553186192">Zauważmy, że moc rozpraszania energii (wydzielania energii cieplnej na oporze zewnętrznym) przez oporniki równa się mocy energii dostarczanej do układu przez źródło.</para>
+</example>
+<note id="imp-idm385660992" class="check-understanding">
+  <exercise id="imp-idm460371040">
+    <problem id="imp-idm645320416">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm472355040"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Rozważmy układ trzech oporników połączonych szeregowo i podłączonych do źródła napięcia (<m:math display="inline">
+          <m:mi>U</m:mi>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>3</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">V</m:mi>
+          </m:mrow>
+          </m:math>) – jak w poprzednim przykładzie. Czy opór równoważny układu szeregowego oporników byłby w stosunku do oporu tych trzech oporników w połączeniu równoległym większy, mniejszy czy może mu równy? Czy natężenie prądu płynącego przez obwód szeregowy będzie większe czy mniejsze od natężenia prądu dostarczanego przez identyczne źródło SEM przyłączone do obwodu z połączeniem równoległym, a może będzie mu równe? Jak się mają do siebie: moc rozpraszania energii przez oporniki połączone szeregowo i moc rozpraszania energii przez oporniki połączone równolegle? </para></problem>
+        <solution id="imp-idm339576224">
+          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm641509952">Równoważny opór połączonych szeregowo oporników wynosi: <m:math display="inline">
+            <m:msub>
+              <m:mi>R</m:mi>
+              <m:mtext>rw</m:mtext>
+            </m:msub>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mrow>
+                <m:mn>1</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+                <m:mi mathvariant="normal">Ω</m:mi>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+                <m:mi mathvariant="normal">Ω</m:mi>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+                <m:mi mathvariant="normal">Ω</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>5</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:math>, co jest wartością większą niż w przypadku równoległego połączenia tych oporników, <m:math display="inline">
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mtext>rw</m:mtext>
+          </m:msub>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mn>0,5</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+        </m:math>. Równoważny opór dowolnej liczby oporników połączonych szeregowo jest zawsze większy od oporu równoważnego w przypadku, gdy te same oporniki połączymy równolegle. Natężenie prądu płynącego przez obwód szeregowy wynosi <m:math display="inline">
+        <m:mi>I</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mn>3</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">V</m:mi>
+          </m:mrow>
+          <m:mo>∕</m:mo>
+          <m:mrow>
+            <m:mn>5</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>0,6</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+          <m:mi mathvariant="normal">A</m:mi>
+        </m:mrow>
+      </m:math>, co daje wartość mniejszą od sumy natężeń prądów płynących przez poszczególne oporniki połączone równolegle, <m:math display="inline">
+      <m:mi>I</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>6</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">A</m:mi>
+      </m:mrow>
+    </m:math>. Wynik ten nie powinien zaskakiwać, ponieważ równoważny opór szeregowo połączonych oporników jest większy niż w przypadku ich połączenia równoległego. Natężenie prądu płynącego poprzez szeregowe połączenie dowolnej liczby rezystorów zawsze będzie mniejsze niż natężenie prądu wpływającego do równoległego połączenia tych oporników, co wynika z różnicy wartości równoważnych oporów w poszczególnych przypadkach. Moc rozpraszania energii przez oporniki połączone szeregowo wynosi <m:math display="inline">
+    <m:mi>P</m:mi>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>1,8</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">W</m:mi>
+    </m:mrow>
+  </m:math> i jest mniejsza niż moc rozpraszania energii przez oporniki połączone równolegle: <m:math display="inline">
+  <m:mi>P</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>18</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">W</m:mi>
+  </m:mrow>
+  </m:math>.</para></solution>
+</exercise>
+</note>
+<note xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm333263024" class="check-understanding">
+  <exercise id="imp-idm384258512">
+    <problem id="imp-idm1052414512">
+      <para id="imp-idm628858848"><emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> W jaki sposób, korzystając z rzeki i dwóch wodospadów, można stworzyć model równoległego połączenia dwóch oporników? Kiedy ta analogia się nie sprawdza? </para></problem>
+      <solution id="imp-idm564834992">
+        <para id="imp-idm385224480"> Rzeka płynąc poziomo ze stałą szybkością, dzieli się na dwie części i przepływa przez dwa wodospady. Cząsteczki wody są analogiczne do elektronów w obwodach równoległych. Liczba cząsteczek wody, które przenosi rzeka, musi być równa liczbie cząsteczek przepływających przez każdy z wodospadów, podobnie jak suma natężeń prądów przepływających przez każdy z oporników musi być taka sama jak natężenie prądu przepływającego w obwodzie. Cząsteczki wody w rzece mają energię wynikającą z ich ruchu i wysokości, na której się znajdują. Energia potencjalna cząsteczek wody w rzece jest stała ze względu na stałą wysokość. Jest to analogia do stałego napięcia odkładającego się na obwodzie równoległym. W tym ujęciu napięcie na opornikach jest związane ze zmianą energii potencjalnej wody. Analogia załamuje się, gdy przyjrzymy się energii. W wodospadzie energia potencjalna jest przekształcana w energię kinetyczną cząsteczek wody. W przypadku elektronów przepływających przez opornik spadek potencjału jest przekształcany w ciepło i energię promieniowania termicznego emitowanego przez ogrzany opornik, a nie na energię kinetyczną elektronów. </para>
+      </solution>
+    </exercise>
+  </note>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm387602112">Krótko podsumujmy podstawowe właściwości oporników połączonych równolegle:</para> <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm388323408" list-type="bulleted" bullet-style="bullet"><item>Równoważny opór obliczamy ze wzoru <equation id="imp-idm341856048" class="unnumbered">
+      <label/>
+      <m:math display="block">
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mtext>rw</m:mtext>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:msup>
+          <m:mfenced>
+            <m:mrow>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>+</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>+</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>+</m:mo>
+              <m:mi>…</m:mi>
+              <m:mo>+</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mrow>
+                    <m:mi>N</m:mi>
+                    <m:mo>−</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>+</m:mo>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mi>N</m:mi>
+                </m:msub>
+              </m:mfrac>
+            </m:mrow>
+          </m:mfenced>
+          <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+        </m:msup>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msup>
+            <m:mfenced>
+              <m:mrow>
+                <m:munderover>
+                  <m:mo>∑</m:mo>
+                  <m:mrow>
+                    <m:mi>i</m:mi>
+                    <m:mo>=</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                  <m:mi>N</m:mi>
+                </m:munderover>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:msub>
+                    <m:mi>R</m:mi>
+                    <m:mi>i</m:mi>
+                  </m:msub>
+                </m:mfrac>
+              </m:mrow>
+            </m:mfenced>
+            <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+          </m:msup>
+          <m:mo>⁢</m:mo>
+        </m:mrow>
+      </m:math>
+    </equation> i jest on mniejszy niż każdy pojedynczy opór w układzie.
+  </item>
+  <item>Spadek potencjału na końcach każdego opornika jest taki sam.</item>
+  <item>Natężenie prądu dopływającego do oporników połączonych równolegle dzieli się tak, że przez żaden nie przepływa całkowity prąd. Natężenie prądu dopływającego do oporników połączonych równolegle równa się sumie natężeń przepływającego przez nie prądu.</item>
+</list><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm417434912">W rozdziale tym wprowadziliśmy opór równoważny oporników połączonych szeregowo i oporników połączonych równolegle. Przypomnijmy sobie, że w rozdziale <link class="target-chapter" document="m67179">Pojemność elektryczna</link> wprowadziliśmy równoważną pojemność kondensatorów połączonych szeregowo i równolegle. Obwody często zawierają jednocześnie kondensatory i oporniki. <link target-id="table-1"/> podsumowuje równania stosowane do wyznaczania oporu równoważnego (rezystancji <m:math display="inline">
+  <m:mi>r</m:mi>
+  </m:math> równoważnej) i pojemności równoważnej dla układów szeregowych i równoległych. </para>
+  <table xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="table-1" summary="Tabela posiada dwie kolumny i trzy wiersze. Od lewej do prawej, pierwszy wiersz posiada pustą komórkę, kolejne komórki zawierają wpisy Połączenie szeregowe i Połączenie równoległe. Drugi wiersz zawiera Równoważna pojemność, 1 przez C subscript eq równa się 1 dzielone przez C subscript 1 plus 1 dzielone przez C subscript 2 plus 1 dzielone przez C subscript 3 itd.. i C subscript równa się C subscript 1 plus C subscript 2 plus C subscript 3 itd... Trzeci wiersz zawiera “Równoważny opór”, R subscript równa się R subscript 1 plus R subscript 2 plus R subscript 3 and itd.. równa się suma od i równe 1 do N R subscript i i 1 dzielone przez R subscript eq równa się 1 dzielone przez R subscript 1 plus 1 dzielone przez R subscript 2 plus 1 dzielone przez R subscript 3 itd..."><title>Podsumowanie wyrażeń stosowanych do wyznaczania równoważnego oporu i równoważnej pojemności dla układów szeregowych i równoległych</title>
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+      <colspec colnum="2" colname="c2"/>
+      <colspec colnum="3" colname="c3"/>
+      <thead>
+        <row valign="top">
+          <entry valign="middle" align="left"/>
+          <entry valign="middle" align="left">Połączenie szeregowe</entry>
+          <entry valign="middle" align="left">Połączenie równoległe</entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry valign="middle" align="left">Równoważna pojemność</entry>
+          <entry valign="middle" align="left">
+            <m:math display="block">
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msub>
+                  <m:mi>C</m:mi>
+                  <m:mtext>rw</m:mtext>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:msub>
+                    <m:mi>C</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mfrac>
+                <m:mo>+</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:msub>
+                    <m:mi>C</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                </m:mfrac>
+                <m:mo>+</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:msub>
+                    <m:mi>C</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msub>
+                </m:mfrac>
+                <m:mo>+</m:mo>
+                <m:mi>…</m:mi>
+              </m:mrow>
+            </m:math>
+          </entry>
+          <entry valign="middle" align="left">
+            <m:math display="block">
+              <m:msub>
+                <m:mi>C</m:mi>
+                <m:mtext>rw</m:mtext>
+              </m:msub>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>C</m:mi>
+                  <m:mn>1</m:mn>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>C</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:msub>
+                  <m:mi>C</m:mi>
+                  <m:mn>3</m:mn>
+                </m:msub>
+                <m:mo>+</m:mo>
+                <m:mi>…</m:mi>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+        <row valign="top">
+          <entry valign="middle" align="left">Równoważny opór</entry>
+          <entry valign="middle" align="left">
+            <m:math display="block"><m:semantics><m:mrow><m:msub><m:mi>R</m:mi><m:mtext>rw</m:mtext></m:msub><m:mo>=</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>R</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>R</m:mi><m:mn>3</m:mn></m:msub><m:mo>+</m:mo><m:mi>…</m:mi></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            R_{\text{rw}} = R_1 + R_2 + R_3 + \dots</m:annotation></m:semantics></m:math>
+          </entry>
+          <entry valign="middle" align="left">
+            <m:math display="block">
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mtext>rw</m:mtext>
+                </m:msub>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:msub>
+                    <m:mi>R</m:mi>
+                    <m:mn>1</m:mn>
+                  </m:msub>
+                </m:mfrac>
+                <m:mo>+</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:msub>
+                    <m:mi>R</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msub>
+                </m:mfrac>
+                <m:mo>+</m:mo>
+                <m:mfrac>
+                  <m:mn>1</m:mn>
+                  <m:msub>
+                    <m:mi>R</m:mi>
+                    <m:mn>3</m:mn>
+                  </m:msub>
+                </m:mfrac>
+                <m:mo>+</m:mo>
+                <m:mi>…</m:mi>
+              </m:mrow>
+            </m:math>
+          </entry>
+        </row>
+      </tbody>
+    
+
+
+</tgroup>
+</table></section>
+<section id="imp-idm382099824">
+  <title>Kombinacje połączeń szeregowych i równoległych</title>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm345358464">Bardziej skomplikowane połączenia oporników są często tylko kombinacjami połączeń szeregowych i równoległych. Takie obwody elektryczne nie są rzadkością, zwłaszcza gdy istotną rolę odgrywa także rezystancja przewodów. W takim przypadku rezystancja przewodu traktowana jest jako połączona szeregowo z innymi opornikami połączonymi ze sobą równolegle. </para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm594423136">Stosując metody przedstawione na <link target-id="figure-5" cmlnle:case="locative"/>, możemy uprościć zestawy połączeń szeregowych i równoległych do jednego opornika równoważnego. Poszczególne części obwodu elektrycznego traktujemy jako połączenia szeregowe lub równoległe i redukujemy do odpowiadających im równoważnych oporów aż do momentu, gdy pozostanie pojedynczy opór równoważący wszystkie pozostałe. Przedstawiony sposób jest raczej czasochłonny niż trudny. Opór równoważny, zastępujący wszystkie pozostałe, oznaczamy <m:math display="inline">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mtext>rw</m:mtext>
+    </m:msub>
+    </m:math>. </para>
+    <figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="figure-5"><media id="fs-id1172101003475" alt="Część a przedstawia obwód z czterema opornikami i źródłem napięcia. Terminal dodatni źródła napięcia równy 24 V jest połączony z opornikiem R ze znakiem 1 równym 7 Ω, który jest połączony z dwoma równoległymi odgałęzieniami. Pierwsza gałąź ma opornik R ze znakiem 2 i oporem równym 10 Ω, a druga gałąź ma opornik R ze znakiem 3 równym 6 Ω połączonym szeregowo z opornikiem R ze znakiem 4 równym 4 Ω. Części rysunku od b do e pokazują kroki prowadzące do uproszczenia obwodu do obwodu równoważnego z równoważnym opornikiem i źródłem napięcia. ">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_27_01_FourResist.jpg"/>
+      </media>
+      
+<caption>(a) Wejściowy układ oporników. (b) Krok 1: oporniki <m:math display="inline">
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mn>3</m:mn>
+        </m:msub>
+      </m:math> i <m:math display="inline">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>4</m:mn>
+      </m:msub>
+    </m:math> połączone są szeregowo, a odpowiadający im opornik równoważny <m:math display="inline">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mfenced close="" separators="⁣" open="">
+        <m:mn>3</m:mn>
+        <m:mn>4</m:mn>
+      </m:mfenced>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>10</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+  </m:math>. (c) Krok 2: uproszczony obwód składający się z połączonych równolegle oporników <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mfenced close="" separators="⁣" open="">
+    <m:mn>3</m:mn>
+    <m:mn>4</m:mn>
+  </m:mfenced>
+</m:msub>
+</m:math>, którym odpowiada opornik równoważny <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mfenced close="" separators="⁣" open="">
+    <m:mn>2</m:mn>
+    <m:mn>3</m:mn>
+    <m:mn>4</m:mn>
+  </m:mfenced>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>5</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">Ω</m:mi>
+</m:mrow>
+</m:math>. (d) Krok 3: uproszczony obwód składający się z połączonych szeregowo oporników <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mfenced close="" separators="⁣" open="">
+    <m:mn>2</m:mn>
+    <m:mn>3</m:mn>
+    <m:mn>4</m:mn>
+  </m:mfenced>
+</m:msub>
+</m:math>, dla których opornik równoważny <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mfenced close="" separators="⁣" open="">
+    <m:mn>1</m:mn>
+    <m:mn>2</m:mn>
+    <m:mn>3</m:mn>
+    <m:mn>4</m:mn>
+  </m:mfenced>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>12</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">Ω</m:mi>
+</m:mrow>
+</m:math> jest szukanym oporem <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mtext>rw</m:mtext>
+</m:msub>
+</m:math>. (e) Obwód zredukowany składający się ze źródła napięcia o <m:math display="inline">
+<m:mi>U</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>24</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">V</m:mi>
+</m:mrow>
+</m:math> i opornika równoważnego <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mtext>rw</m:mtext>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>12</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">Ω</m:mi>
+</m:mrow>
+</m:math>. Daje to prąd o natężeniu <m:math display="inline">
+<m:mi>I</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>2</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">A</m:mi>
+</m:mrow>
+</m:math> wypływający ze źródła. </caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm515019840">Zacznijmy od obserwacji, że oporniki (rezystancje) <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>4</m:mn>
+</m:msub>
+</m:math> są połączone szeregowo. Możemy je zastąpić jednym opornikiem o odpowiednim oporze równoważnym. Dla ułatwienia wprowadźmy notację uwzględniającą numery oporników w postaci odpowiednich indeksów. Zgodnie z tą notacją opór równoważny oporników <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>3</m:mn>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>4</m:mn>
+</m:msub>
+</m:math> oznaczymy <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mfenced close="" separators="⁣" open="">
+    <m:mn>3</m:mn>
+    <m:mn>4</m:mn>
+  </m:mfenced>
+</m:msub>
+</m:math>
+</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm579276832" class="unnumbered"><label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mfenced close="" separators="⁣" open="">
+        <m:mn>3</m:mn>
+        <m:mn>4</m:mn>
+      </m:mfenced>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>3</m:mn>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>4</m:mn>
+      </m:msub>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>6</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mn>4</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>10</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm1395059552">Teraz obwód elektryczny upraszczamy do trzech oporników, jak to pokazuje <link target-id="figure-5"/> (c). Na uproszczonym schemacie widzimy, że teraz oporniki <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mfenced close="" separators="⁣" open="">
+    <m:mn>3</m:mn>
+    <m:mn>4</m:mn>
+  </m:mfenced>
+</m:msub>
+</m:math> tworzą układ równoległy. Możemy je zredukować do oporu równoważnego</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm1016805152" class="unnumbered"><label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mfenced close="" separators="⁣" open="">
+        <m:mn>2</m:mn>
+        <m:mn>3</m:mn>
+        <m:mn>4</m:mn>
+      </m:mfenced>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msup>
+      <m:mfenced>
+        <m:mrow>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:msub>
+              <m:mi>R</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+          </m:mfrac>
+          <m:mo>+</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:msub>
+              <m:mi>R</m:mi>
+              <m:mfenced close="" separators="⁣" open="">
+                <m:mn>3</m:mn>
+                <m:mn>4</m:mn>
+              </m:mfenced>
+            </m:msub>
+          </m:mfrac>
+        </m:mrow>
+      </m:mfenced>
+      <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:msup>
+    <m:mo>=</m:mo>
+    <m:msup>
+      <m:mfenced>
+        <m:mrow>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mrow>
+              <m:mn>10</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>+</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mrow>
+              <m:mn>10</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mfrac>
+        </m:mrow>
+      </m:mfenced>
+      <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:msup>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>5</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm371082672">Krok ten, czyli redukcję obwodu elektrycznego do dwóch oporników, przedstawia <link target-id="figure-5"/> (d). Teraz obwód składa się z dwóch oporników połączonych szeregowo. Ich równoważny opór jest jednocześnie oporem równoważnym całego obwodu</para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm1020885552" class="unnumbered"><label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mtext>rw</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mfenced close="" separators="⁣" open="">
+        <m:mn>1</m:mn>
+        <m:mn>2</m:mn>
+        <m:mn>3</m:mn>
+        <m:mn>4</m:mn>
+      </m:mfenced>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>+</m:mo>
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mfenced close="" separators="⁣" open="">
+          <m:mn>2</m:mn>
+          <m:mn>3</m:mn>
+          <m:mn>4</m:mn>
+        </m:mfenced>
+      </m:msub>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>7</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+      <m:mo>+</m:mo>
+      <m:mrow>
+        <m:mn>5</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>12</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm432381664">Osiągnęliśmy główny cel analizy tego układu i obwód został uproszczony do pojedynczego opornika i jednego źródła napięcia.</para>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm629243600">Teraz możemy przeanalizować obwód elektryczny. Natężenie prądu dostarczanego przez źródło SEM wynosi <m:math display="inline">
+  <m:mi>I</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>U</m:mi>
+    <m:mo>∕</m:mo>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mtext>rw</m:mtext>
+    </m:msub>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>24</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:mrow>
+    <m:mo>∕</m:mo>
+    <m:mrow>
+      <m:mn>12</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>2</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">A</m:mi>
+  </m:mrow>
+</m:math>. Prąd o takim natężeniu przepływa przez opornik <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math>, dlatego oznaczmy go jako <m:math display="inline">
+<m:msub>
+  <m:mi>I</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math>. Spadek potencjału na oporniku <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math> obliczamy przy użyciu prawa Ohma </para><equation id="imp-idm379049872" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>2</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mi mathvariant="normal">A</m:mi>
+      </m:mrow>
+      <m:mo>⋅</m:mo>
+      <m:mrow>
+        <m:mn>7</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>14</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm542815920">Spoglądając na <link target-id="figure-5"/> (c), widzimy, że daje to <m:math display="inline">
+  <m:mrow>
+    <m:mrow>
+      <m:mn>24</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:mrow>
+    <m:mo>−</m:mo>
+    <m:mrow>
+      <m:mn>14</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>10</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:mi mathvariant="normal">V</m:mi>
+  </m:mrow>
+</m:math> spadku potencjału na każdym z oporników <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mfenced close="" separators="⁣" open="">
+    <m:mn>3</m:mn>
+    <m:mn>4</m:mn>
+  </m:mfenced>
+</m:msub>
+</m:math> połączonych równolegle. Natężenie prądu płynącego przez opornik <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> wyliczamy z prawa Ohma </para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm519143728" class="unnumbered"><label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mn>10</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+      </m:mrow>
+      <m:mrow>
+        <m:mn>10</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>1</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">A</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm508558480">Oporniki <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>4</m:mn>
+</m:msub>
+</m:math> są połączone szeregowo, więc przepływający przez nie prąd ma takie samo natężenie </para>
+<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm519728272" class="unnumbered"><label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>3</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>4</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>I</m:mi>
+      <m:mo>−</m:mo>
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>2</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">A</m:mi>
+      </m:mrow>
+      <m:mo>−</m:mo>
+      <m:mrow>
+        <m:mn>1</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">A</m:mi>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>1</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">A</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm389928816">Z prawa Ohma możemy obliczyć spadek potencjału na pozostałych dwóch opornikach. Szukane wartości wynoszą: <m:math display="inline">
+  <m:msub>
+    <m:mi>U</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>3</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>3</m:mn>
+    </m:msub>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>6</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">V</m:mi>
+  </m:mrow>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>U</m:mi>
+  <m:mn>4</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mn>4</m:mn>
+  </m:msub>
+  <m:mo>⁢</m:mo>
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>4</m:mn>
+  </m:msub>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>4</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">V</m:mi>
+</m:mrow>
+</m:math>. Pozostało nam obliczyć moc źródła SEM i moc wydzielaną na poszczególnych opornikach. Moc rozpraszania energii przez poszczególne oporniki wynosi </para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm325576784" class="unnumbered"><label/>
+  <m:math display="block">
+    <m:mtable>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+          <m:maligngroup/>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msubsup>
+              <m:mi>I</m:mi>
+              <m:mn>1</m:mn>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>R</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msup>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mn>2</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+                  <m:mi mathvariant="normal">A</m:mi>
+                </m:mrow>
+              </m:mfenced>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mn>7</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>28</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+          <m:maligngroup/>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msubsup>
+              <m:mi>I</m:mi>
+              <m:mn>2</m:mn>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>R</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msup>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+                  <m:mi mathvariant="normal">A</m:mi>
+                </m:mrow>
+              </m:mfenced>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mn>10</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>10</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mn>3</m:mn>
+          </m:msub>
+          <m:maligngroup/>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msubsup>
+              <m:mi>I</m:mi>
+              <m:mn>3</m:mn>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>R</m:mi>
+              <m:mn>3</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msup>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+                  <m:mi mathvariant="normal">A</m:mi>
+                </m:mrow>
+              </m:mfenced>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mn>6</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>6</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mn>4</m:mn>
+          </m:msub>
+          <m:maligngroup/>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msubsup>
+              <m:mi>I</m:mi>
+              <m:mn>4</m:mn>
+              <m:mn>2</m:mn>
+            </m:msubsup>
+            <m:mo>⁢</m:mo>
+            <m:msub>
+              <m:mi>R</m:mi>
+              <m:mn>4</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msup>
+              <m:mfenced>
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+                  <m:mi mathvariant="normal">A</m:mi>
+                </m:mrow>
+              </m:mfenced>
+              <m:mn>2</m:mn>
+            </m:msup>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>4</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>,</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+      <m:mtr>
+        <m:mtd>
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mtext>rozproszona</m:mtext>
+          </m:msub>
+          <m:maligngroup/>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:msub>
+              <m:mi>P</m:mi>
+              <m:mn>1</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>P</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>P</m:mi>
+              <m:mn>3</m:mn>
+            </m:msub>
+            <m:mo>+</m:mo>
+            <m:msub>
+              <m:mi>P</m:mi>
+              <m:mn>4</m:mn>
+            </m:msub>
+          </m:mrow>
+          <m:mo>=</m:mo>
+          <m:mrow>
+            <m:mrow>
+              <m:mn>48</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">W</m:mi>
+            </m:mrow>
+            <m:mo>⁢</m:mo>
+            <m:mtext>.</m:mtext>
+          </m:mrow>
+        </m:mtd>
+      </m:mtr>
+    </m:mtable>
+  </m:math>
+</equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm563645152">Całkowita energia jest stała w każdym procesie. W związku z tym moc dostarczania energii przez źródło SEM (moc elektryczna źródła) równa się <m:math display="inline">
+  <m:msub>
+    <m:mi>P</m:mi>
+    <m:mtext>źródła</m:mtext>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>I</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>U</m:mi>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>2</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mn>24</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>48</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">W</m:mi>
+  </m:mrow>
+  </m:math>. Analiza mocy dostarczania energii do obwodu i mocy utraty energii na opornikach jest dobrym testem przeprowadzonych obliczeń; obie wartości powinny być równe. </para><example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm387254400">
+    <para id="imp-idm407210400">
+      <title>Łączenie ze sobą obwodów szeregowych i równoległych</title>
+      <link target-id="figure-6"/> przedstawia oporniki połączone szeregowo i równolegle. Załóżmy, że opornik <m:math display="inline">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+    </m:math> oznacza rezystancję przewodu prowadzącego od źródła SEM do oporników <m:math display="inline">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:math> i <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+</m:math>. <list id="eip-idm392620592" list-type="enumerated" number-style="lower-alpha"><item>Oblicz równoważny opór obwodu.</item>
+<item>Jaki jest spadek potencjału <m:math display="inline">
+  <m:msub>
+    <m:mi>U</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:math> na oporniku <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math>?</item>
+<item>Wyznacz natężenie prądu <m:math display="inline">
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:math> płynącego przez opornik <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math>. Jaka moc jest rozpraszana przez opornik <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math>?</item>
+</list></para>
+<figure id="figure-6"><media id="fs-id1172098544240" alt="Rysunek przedstawia obwód z trzema opornikami i źródłem napięcia. Terminal dodatni źródła o napięciu 12 V jest połączony z R ze znakiem 1 i oporem 1 Ω z lewym natężeniem l ze znakiem 1 połączonym równolegle z dwoma opornikami R ze znakiem 2 i oporem 6 Ω z dolnym l ze znakiem 2 i opornikiem R ze znakiem 3 wskazującym 13 Ω. ">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_27_01_ResistPar2.jpg"/>
+  </media>
+  
+<caption>Schemat przedstawia trzy oporniki podłączone do źródła SEM i połączone ze sobą w następujący sposób: oporniki <m:math display="inline">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:math> i <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+</m:math> są połączone równolegle ze sobą i szeregowo z opornikiem <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math>. </caption></figure><para id="imp-idm634744272">
+  <title>Strategia rozwiązania</title>
+</para>
+<list id="eip-idm961599072" list-type="enumerated" number-style="lower-alpha">
+  <item>Żeby obliczyć opór równoważny obwodu, najpierw musimy wyliczyć opór równoważny połączonych równolegle oporników <m:math display="inline">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:math> i <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+</m:math>. Otrzymany opór zastępczy potraktujemy jako połączony szeregowo z opornikiem <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math> i obliczymy opór równoważny tego połączenia. </item>
+<item> Natężenie prądu płynącego przez opornik <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:math> liczymy z prawa Ohma. Równe jest ono natężeniu prądu wypływającego ze źródła SEM. Spadek potencjału <m:math display="inline">
+<m:msub>
+  <m:mi>U</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> na oporniku <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> (reprezentującym opór przewodów łączących oporniki i źródło SEM) obliczamy z prawa Ohma. </item>
+<item> Natężenie prądu płynącego przez opornik <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:math> wyznaczamy z prawa Ohma, <m:math display="inline">
+<m:msub>
+  <m:mi>I</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msub>
+    <m:mi>U</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>∕</m:mo>
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>. Napięcie na oporniku <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> obliczamy z zależności <m:math display="inline">
+<m:msub>
+  <m:mi>U</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mi>U</m:mi>
+  <m:mo>−</m:mo>
+  <m:msub>
+    <m:mi>U</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>. </item>
+<item> Wykorzystując prawo Ohma (<m:math display="inline">
+  <m:msub>
+    <m:mi>U</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:mrow>
+</m:math>), moc utraty energii na oporniku wyliczamy z zależności <m:math display="inline">
+<m:msub>
+  <m:mi>P</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msubsup>
+    <m:mi>I</m:mi>
+    <m:mn>2</m:mn>
+    <m:mn>2</m:mn>
+  </m:msubsup>
+  <m:mo>⁢</m:mo>
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:msubsup>
+    <m:mi>U</m:mi>
+    <m:mn>2</m:mn>
+    <m:mn>2</m:mn>
+  </m:msubsup>
+  <m:mo>∕</m:mo>
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:mrow>
+</m:math>. </item>
+</list>
+<para id="imp-idm547279184">
+  <title>Rozwiązanie</title>
+</para>
+<list id="imp-idm388892992" list-type="enumerated" number-style="lower-alpha"><item>W obliczeniu oporu równoważnego obwodu pomoże nam spostrzeżenie, że oporniki <m:math display="inline">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:math> i <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+</m:math> są połączone równolegle ze sobą i szeregowo z opornikiem <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math>. Równoważny opór wynosi więc <equation id="imp-idm334013888" class="unnumbered"><label/>
+<m:math display="block">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mtext>rw</m:mtext>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:msup>
+      <m:mfenced>
+        <m:mrow>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:msub>
+              <m:mi>R</m:mi>
+              <m:mn>2</m:mn>
+            </m:msub>
+          </m:mfrac>
+          <m:mo>+</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:msub>
+              <m:mi>R</m:mi>
+              <m:mn>3</m:mn>
+            </m:msub>
+          </m:mfrac>
+        </m:mrow>
+      </m:mfenced>
+      <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:msup>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>1</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+    <m:mo>+</m:mo>
+    <m:msup>
+      <m:mfenced>
+        <m:mrow>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mrow>
+              <m:mn>6</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>+</m:mo>
+          <m:mfrac>
+            <m:mn>1</m:mn>
+            <m:mrow>
+              <m:mn>13</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+              <m:mi mathvariant="normal">Ω</m:mi>
+            </m:mrow>
+          </m:mfrac>
+        </m:mrow>
+      </m:mfenced>
+      <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+    </m:msup>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>5,1</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+    <m:mo>⁢</m:mo>
+    <m:mtext>.</m:mtext>
+  </m:mrow>
+</m:math>
+</equation>Wyznaczona wartość oporu zastępczego mieści się pomiędzy wartością odpowiadającą szeregowemu połączeniu rozważanych oporników (<m:math display="inline">
+<m:mn>20</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+<m:mi mathvariant="normal">Ω</m:mi>
+</m:math>) a wartością odpowiadającą ich połączeniu równoległemu (<m:math display="inline">
+<m:mn>0,804</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+<m:mi mathvariant="normal">Ω</m:mi>
+</m:math>). </item>
+<item>Natężenie prądu przepływającego przez opornik <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:math> równa się natężeniu prądu dostarczanemu przez źródło SEM <equation id="imp-idm387180032" class="unnumbered">
+<label/>
+<m:math display="block">
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mi>I</m:mi>
+  <m:mo>=</m:mo>
+  <m:mfrac>
+    <m:mi>U</m:mi>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mtext>rw</m:mtext>
+    </m:msub>
+  </m:mfrac>
+  <m:mo>=</m:mo>
+  <m:mfrac>
+    <m:mrow>
+      <m:mn>12</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:mrow>
+    <m:mrow>
+      <m:mn>5,1</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>2,35</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+    </m:mrow>
+    <m:mo>⁢</m:mo>
+    <m:mtext>.</m:mtext>
+  </m:mrow>
+</m:math>
+</equation>
+Spadek potencjału na <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math> wynosi <equation id="imp-idm1013825920" class="unnumbered">
+<label/>
+<m:math display="block">
+  <m:msub>
+    <m:mi>U</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>2,35</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mn>1</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>2,35</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:mrow>
+    <m:mo>⁢</m:mo>
+    <m:mtext>.</m:mtext>
+  </m:mrow>
+</m:math>
+</equation>Spadek potencjału na opornikach <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>3</m:mn>
+</m:msub>
+</m:math> jest mniejszy od napięcia na biegunach źródła o <m:math display="inline">
+<m:msub>
+  <m:mi>U</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math>. Gdy opór przewodów doprowadzających prąd jest zbyt duży, może mieć wpływ na działanie urządzeń reprezentowanych przez oporniki <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>3</m:mn>
+</m:msub>
+</m:math>. </item>
+<item>Aby wyznaczyć natężenie prądu płynącego przez opornik <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:math>, najpierw musimy obliczyć przyłożone do niego napięcie. Napięcie przyłożone do dwóch oporników połączonych równolegle jest identyczne <equation id="imp-idm1401005936" class="unnumbered">
+<label/>
+<m:math display="block">
+  <m:msub>
+    <m:mi>U</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:msub>
+    <m:mi>U</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>U</m:mi>
+    <m:mo>−</m:mo>
+    <m:msub>
+      <m:mi>U</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>12</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:mrow>
+    <m:mo>−</m:mo>
+    <m:mrow>
+      <m:mn>2,35</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>9,65</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:mrow>
+    <m:mo>⁢</m:mo>
+    <m:mtext>.</m:mtext>
+  </m:mrow>
+</m:math>
+</equation>Teraz, korzystając z prawa Ohma, możemy obliczyć natężenie prądu <m:math display="inline">
+<m:msub>
+  <m:mi>I</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math> przepływającego przez opornik <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math>
+<equation id="imp-idm384166544" class="unnumbered">
+  <label/>
+  <m:math display="block">
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:msub>
+        <m:mi>U</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mfrac>
+      <m:mrow>
+        <m:mn>9,65</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+      </m:mrow>
+      <m:mrow>
+        <m:mn>6</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:mrow>
+    </m:mfrac>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mrow>
+        <m:mn>1,61</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">A</m:mi>
+      </m:mrow>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+</item>
+<item>Moc rozpraszana przez opornik <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:math> wynosi <equation id="imp-idm498881504" class="unnumbered">
+<label/>
+<m:math display="block">
+  <m:msub>
+    <m:mi>P</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msubsup>
+      <m:mi>I</m:mi>
+      <m:mn>2</m:mn>
+      <m:mn>2</m:mn>
+    </m:msubsup>
+    <m:mo>⁢</m:mo>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msup>
+      <m:mfenced>
+        <m:mrow>
+          <m:mn>1,61</m:mn>
+          <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+          <m:mi mathvariant="normal">A</m:mi>
+        </m:mrow>
+      </m:mfenced>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mn>6</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>15,5</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">W</m:mi>
+    </m:mrow>
+    <m:mo>⁢</m:mo>
+    <m:mtext>.</m:mtext>
+  </m:mrow>
+</m:math>
+</equation>
+</item>
+</list><para id="imp-idm593250336"><title>Znaczenie</title>Analizę złożonych obwodów elektrycznych często można uprościć, redukując układ do źródła SEM i opornika równoważnego. Jednak nawet wtedy, gdy nie da się w ten sposób uprościć całego układu, zwykle wykonalne jest uproszczenie fragmentów, co znacznie ułatwia analizę całości.</para></example>
+<note id="imp-idm404327680" class="check-understanding">
+  <exercise id="imp-idm389311776">
+    <problem id="imp-idm387212352">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm389322704">
+        <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Przyjrzyj się obwodom elektrycznym w swoim domu. Podaj przynajmniej dwa przykłady obwodów, które w celu zwiększenia skuteczności działania zbudowano z kombinacji połączeń szeregowych i równoległych. </para>
+      </problem>
+      <solution id="imp-idm576455216">
+        <para id="imp-idm419980432"> 1. Cała instalacja świetlna składa się z równoległych obwodów podłączonych do głównej linii zasilającej. Takie połączenie gwarantuje więc, że gdy jedna z żarówek się przepali pozostałe żarówki nie zgasną. Każde źródło światła ma co najmniej jeden przełącznik szeregowo z nim połączony, dzięki czemu poszczególne lampy można włączać i wyłączać. 2. Lodówka posiada kompresor i światło wewnątrz, które się włącza, gdy drzwi się otwierają. Zwykle jest tylko jeden przewód zasilający lodówkę. Obwód zawierający sprężarkę oraz obwód zawierający żarówkę są połączone równolegle, ale przełącznik światła jest z nim połączony szeregowo. Termostat steruje przełącznikiem, który jest połączony szeregowo z kompresorem i służy do regulacji temperatury wewnątrz chłodziarki. </para>
+      </solution>
+    </exercise>
+  </note>
+</section>
+<section id="imp-idm386505824">
+  <title>Praktyczne konsekwencje</title>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm534708112">Jedną z konsekwencji ostatniego przykładu jest to, że rezystancja przewodów zmniejsza natężenie prądu i moc elektryczną, z jaką energia jest dostarczana do opornika. Jeśli rezystancja przewodu jest stosunkowo duża, jak w zużytym (lub bardzo długim) przedłużaczu, to ta strata może być znacząca. Jeżeli prąd o dużym natężeniu przepływa przez przewód, to napięcie, które odkłada się na przewodzie (<m:math display="inline">
+    <m:mi>I</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>R</m:mi>
+    </m:math>), także może być znaczące i stać się zauważalne ze względu na ciepło wytwarzane w przewodzie. </para>
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm452617408">Na przykład, jeśli wyjadając z lodówki, spowodujesz włączenie agregatu, to lampka w lodówce przygaśnie na chwilę. Podobnie możesz zauważyć, że oświetlenie w samochodzie przygasa w trakcie uruchomiania silnika (choć może to być także spowodowane oporem wewnętrznym samego akumulatora). </para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm475449344">Wyjaśnienie powyższych przypadków nagłego wzrostu natężenia prądu przedstawia <link target-id="figure-7"/>. Urządzenie reprezentowane przez opornik <m:math display="inline">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>3</m:mn>
+      </m:msub>
+    </m:math> ma bardzo niską oporność, więc gdy jest włączane, płynie prąd o dużym natężeniu. Zwiększone natężenie prądu powoduje większy spadek potencjału (<m:math display="inline">
+    <m:mi>I</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>R</m:mi>
+  </m:math>) na przewodach reprezentowanych przez <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:math>, co obniża napięcie na żarówce (zaznaczonej jako <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math>), która wyraźnie gaśnie. </para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="figure-7">
+  <media id="fs-id1172098457912" alt="Rysunek przedstawia schemat lodówki. ">
+    <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_27_01_Switch.jpg"/>
+  </media>
+  <caption>Dlaczego światło przygasa, gdy silnik się włącza? Odpowiedź jest taka, że silnik pobiera prąd o dużym natężeniu, co powoduje znaczny spadek potencjału (<m:math display="inline">
+    <m:mi>I</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>R</m:mi>
+    </m:math>) na przewodach, zmniejszając napięcie na żarówce.</caption>
+  </figure>
+  <note xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="note-1" class="problem-solving">
+    <title>Strategia rozwiązywania zadań: oporniki połączone szeregowo i równolegle</title>
+    <list id="imp-idm499345600" list-type="enumerated" number-style="arabic"><item>Narysuj czytelny schemat, opisując wszystkie oporniki i źródła SEM. Etap ten wymaga także wpisania danych do schematu układu.</item>
+      <item>Określ dokładnie, co musisz wyznaczyć w zadaniu (zdefiniuj niewiadome). Przyda się lista pisemna.</item>
+      <item>Ustal, czy oporniki połączone są szeregowo, równolegle, czy też ich połączenie jest kombinacją powyższych połączeń. Przeanalizuj schemat, aby dokonać oceny. Oporniki połączone są szeregowo, jeśli prąd o takim samym natężeniu przepływa przez nie kolejno.</item>
+      <item>Aby obliczyć niewiadome, skorzystaj z właściwości danego rodzaju połączenia. Inne równania dotyczą połączeń szeregowych, a inne równoległych.</item>
+      <item>Sprawdź, czy otrzymane wyniki mają sens.</item>
+    </list></note>
+  <example id="imp-idm421878480">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm636213904"><title>Łączenie obwodów szeregowych i równoległych</title>Dwa połączone szeregowo oporniki (<m:math display="inline">
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+      </m:math> i <m:math display="inline">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+    </m:math>) zestawiono z dwoma równoległymi opornikami (<m:math display="inline">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>3</m:mn>
+    </m:msub>
+  </m:math> i <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>4</m:mn>
+  </m:msub>
+</m:math>). Szeregowo-równoległy układ podłączono do baterii. Każdy z oporników ma opór <m:math display="inline">
+<m:mn>10</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+<m:mi mathvariant="normal">Ω</m:mi>
+</m:math>. Przewód łączący oporniki z baterią ma pomijalną rezystancję. Prąd o natężeniu <m:math display="inline">
+<m:mn>2</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+<m:mi mathvariant="normal">A</m:mi>
+</m:math> płynie przez opornik <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math>. Ile wynosi napięcie na biegunach baterii? </para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm463812736">
+  <title>Strategia rozwiązania</title>Aby znaleźć rozwiązanie, wykorzystaj schemat przedstawiony w opisanej powyżej strategii rozwiązywania problemów. </para>
+  <para id="imp-idm449960160">
+    <title>Rozwiązanie</title>
+  </para>
+  <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm411502048" list-type="enumerated" number-style="arabic">
+    <item>Narysuj czytelny schemat obwodu (<link target-id="figure-8"/>). <figure id="figure-8">
+      <media id="fs-id1172101029607" alt="Rysunek przedstawia obwód z czterema opornikami i źródłem napięcia. Terminal dodatni źródła jest połączony z opornikiem R ze znakiem 1 o wartości 10 Ω i prawym l ze znakiem 1 o wartości 2 A połączonymi szeregowo z opornikiem R ze znakiem 2 o wartości 10 Ω połączonym szeregowo do dwóch równoległych oporników R ze znakiem 3 równym 10 Ω i R ze znakiem 4 równym 10 Ω. ">
+        <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_27_01_Ex4.jpg"/>
+      </media>
+      <caption>Aby wyznaczyć wartość napięcia na biegunach źródła, najpierw musimy obliczyć opór równoważny obwodu. </caption>
+    </figure>
+  </item>
+  <item> Nie znamy napięcia na biegunach baterii. Aby je wyznaczyć, musimy obliczyć opór równoważny obwodu. </item>
+  <item> Z warunków zadania wiemy, że oporniki <m:math display="inline">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+  </m:math> i <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+</m:math> są połączone szeregowo, a oporniki <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>3</m:mn>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>4</m:mn>
+</m:msub>
+</m:math> równolegle. Równoważny opór odpowiadający równoległej konfiguracji oporników <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>3</m:mn>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>4</m:mn>
+</m:msub>
+</m:math> jest połączony szeregowo z opornikami <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+</m:math> i <m:math display="inline">
+<m:msub>
+  <m:mi>R</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+</m:math>. </item>
+<item> Wartość SEM baterii możemy wyznaczyć, mnożąc natężenie prądu wypływającego z baterii przez opór równoważny obwodu. Natężenie prądu wypływającego z baterii jest równe natężeniu prądu przepływającego przez opornik <m:math display="inline">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+</m:math> i ma wartość <m:math display="inline">
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi mathvariant="normal">A</m:mi>
+</m:math>. Redukując obwód, musimy wyliczyć jego opór równoważny. Aby uprościć obwód, najpierw weźmy pod uwagę dwa oporniki połączone równolegle. Równoważny opór wynosi <equation id="eip-idm325236976" class="unnumbered"><m:math display="block">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mfenced close="" separators="⁣" open="">
+      <m:mn>3</m:mn>
+      <m:mn>4</m:mn>
+    </m:mfenced>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:msup>
+    <m:mfenced>
+      <m:mrow>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mrow>
+            <m:mn>10</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>+</m:mo>
+        <m:mfrac>
+          <m:mn>1</m:mn>
+          <m:mrow>
+            <m:mn>10</m:mn>
+            <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+            <m:mi mathvariant="normal">Ω</m:mi>
+          </m:mrow>
+        </m:mfrac>
+      </m:mrow>
+    </m:mfenced>
+    <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+  </m:msup>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>5</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+    <m:mo>⁢</m:mo>
+    <m:mtext>.</m:mtext>
+  </m:mrow>
+</m:math>
+</equation> To połączenie równoległe jest połączone szeregowo z pozostałymi dwoma opornikami, dając opór równoważny obwodu <equation id="eip-idm1195707536" class="unnumbered"><m:math display="block">
+  <m:msub>
+    <m:mi>R</m:mi>
+    <m:mtext>rw</m:mtext>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo>+</m:mo>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mfenced close="" separators="⁣" open="">
+        <m:mn>3</m:mn>
+        <m:mn>4</m:mn>
+      </m:mfenced>
+    </m:msub>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>25</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+    <m:mo>⁢</m:mo>
+    <m:mtext>.</m:mtext>
+  </m:mrow>
+</m:math>
+</equation> Napięcie na biegunach baterii wynosi więc <equation id="eip-idm1135390416" class="unnumbered"><m:math display="block">
+  <m:mi>U</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mi>I</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mtext>rw</m:mtext>
+    </m:msub>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>2</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+    </m:mrow>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mn>25</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mrow>
+      <m:mn>50</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">V</m:mi>
+    </m:mrow>
+    <m:mo>⁢</m:mo>
+    <m:mtext>.</m:mtext>
+  </m:mrow>
+</m:math>
+</equation></item>
+</list>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm558357136"><title>Znaczenie</title>Jeśli analizujemy obwód zawierający połączenia szeregowe i równoległe, jak w powyższym przykładzie, możemy go uprościć przy użyciu schematu opisanego w powyższej strategii rozwiązywania problemów, z uwzględnieniem poszczególnych grup połączeń szeregowych i równoległych. Przy wyznaczaniu wartości <m:math display="inline">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mtext>rw</m:mtext>
+    </m:msub>
+    </m:math> dla połączenia równoległego odwrotności oporów należy obliczać uważnie. Dodatkowo jednostki i wyniki liczbowe muszą być sensowne. Na przykład równoważny opór połączenia szeregowego powinien być większy niż opór połączenia równoległego. Moc rozpraszania energii powinna być większa dla tych samych elementów połączonych równolegle niż dla połączonych szeregowo i tak dalej. </para></example>
+</section>
+<section id="imp-idm341793536" class="key-concepts">
+  <title>Podsumowanie</title>
+  <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm541248176" list-type="bulleted" bullet-style="bullet"><item> Opór równoważny obwodu elektrycznego z opornikami połączonymi szeregowo równy jest sumie poszczególnych oporów 
+<equation id="eip-idm358022704" class="unnumbered">
+<m:math display="block">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mtext>rw</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mn>3</m:mn>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:mi>…</m:mi>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mrow>
+            <m:mi>N</m:mi>
+            <m:mo>−</m:mo>
+            <m:mn>1</m:mn>
+          </m:mrow>
+        </m:msub>
+        <m:mo>+</m:mo>
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mi>N</m:mi>
+        </m:msub>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:munderover>
+          <m:mo>∑</m:mo>
+          <m:mrow>
+            <m:mi>i</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>1</m:mn>
+          </m:mrow>
+          <m:mi>N</m:mi>
+        </m:munderover>
+        <m:mrow>
+          <m:msub>
+            <m:mi>R</m:mi>
+            <m:mi>i</m:mi>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+ </equation>
+  </item>
+  <item>Przez każdy opornik w połączeniu szeregowym przepływa prąd o takim samym natężeniu.</item>
+  <item>Spadek potencjału na poszczególnych opornikach połączonych szeregowo jest inny, a ich sumaryczna wartość odpowiada różnicy potencjałów na biegunach źródła zasilania. Podobnie suma mocy rozpraszanej na opornikach równa jest mocy elektrycznej źródła.</item>
+  <item>Równoważny opór obwodu elektrycznego z opornikami połączonymi równolegle jest mniejszy od oporu każdego z połączonych oporników i wyznacza się go ze wzoru <equation id="imp-idm388107296" class="unnumbered">
+    <label/>
+    <m:math display="block">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mtext>rw</m:mtext>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:msup>
+        <m:mfenced>
+          <m:mrow>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mn>3</m:mn>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>+</m:mo>
+            <m:mi>…</m:mi>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mrow>
+                  <m:mi>N</m:mi>
+                  <m:mo>−</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+              </m:msub>
+            </m:mfrac>
+            <m:mo>+</m:mo>
+            <m:mfrac>
+              <m:mn>1</m:mn>
+              <m:msub>
+                <m:mi>R</m:mi>
+                <m:mi>N</m:mi>
+              </m:msub>
+            </m:mfrac>
+          </m:mrow>
+        </m:mfenced>
+        <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+      </m:msup>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msup>
+          <m:mfenced>
+            <m:mrow>
+              <m:munderover>
+                <m:mo>∑</m:mo>
+                <m:mrow>
+                  <m:mi>i</m:mi>
+                  <m:mo>=</m:mo>
+                  <m:mn>1</m:mn>
+                </m:mrow>
+                <m:mi>N</m:mi>
+              </m:munderover>
+              <m:mfrac>
+                <m:mn>1</m:mn>
+                <m:msub>
+                  <m:mi>R</m:mi>
+                  <m:mi>i</m:mi>
+                </m:msub>
+              </m:mfrac>
+            </m:mrow>
+          </m:mfenced>
+          <m:mrow><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+        </m:msup>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+</item>
+<item>Spadek potencjału na opornikach połączonych równolegle jest taki sam i równa się różnicy potencjałów na biegunach źródła.</item>
+<item>Natężenie prądu przepływającego przez każdy z oporników połączonych równolegle jest inne i zależy od ich oporu.</item>
+<item>Jeśli obwód składa się z oporników połączonych w bardziej skomplikowany sposób, będący kombinacją połączeń szeregowych i równoległych, może zostać uproszczony do obwodu zawierającego jeden opornik równoważny. Można tego dokonać, identyfikując poszczególne jego części jako połączenia szeregowe lub równoległe i upraszczając każdą z nich do równoważnego oporu. Procedurę należy kontynuować, jeśli to możliwe, aż do uzyskania jednego oporu równoważnego.</item>
+</list></section>
+<section id="imp-idm521712736" class="review-conceptual-questions">
+  <title>Pytania</title>
+  <exercise id="imp-idm577082912">
+    <problem id="imp-idm503842224">
+      <para id="imp-idm503841968">Na końcach otwartego przełącznika występuje różnica potencjałów. Jaka moc jest rozpraszana przez otwarty przełącznik?</para>
+    </problem>
+  </exercise>
+  <exercise id="imp-idm488987808">
+    <problem id="imp-idm488987552">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm407649440">Obrażenia zależą od natężenia prądu przepływającego przez organizm. Jeśli porazi cię prąd płynący przez element grzewczy tostera, to lepiej, żebyś był połączony szeregowo czy równolegle z oporem urządzenia? Wyjaśnij.</para>
+    </problem>
+    <solution id="imp-idm407649056">
+      <para id="imp-idm607055936">Prawdopodobnie lepiej być połączonym szeregowo, ponieważ przepływający przez ciało prąd będzie miał mniejsze natężenie niż w przypadku połączenia równoległego.</para>
+    </solution>
+  </exercise>
+  <exercise id="imp-idm495897488">
+    <problem id="imp-idm579467696">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm579467440">Załóżmy, że wykonujesz ćwiczenie laboratoryjne z fizyki wymagające umieszczenia opornika w obwodzie. Jednak wszystkie dostępne oporniki mają opór większy od poszukiwanego. W jaki sposób próbowałbyś połączyć dostępne oporniki, aby uzyskać żądaną wartość?</para>
+    </problem>
+  </exercise>
+  <exercise id="imp-idm456950464">
+    <problem id="imp-idm456950208">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm385299568">Niektóre żarówki mają trzy ustawienia mocy (nie wliczając zera) uzyskane z wielu włókien, które są niezależnie włączane i połączone równolegle. Jaka jest minimalna liczba włókien potrzebnych do uzyskania trzech wymaganych ustawień zasilania?</para></problem>
+    <solution id="imp-idm520190880">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm520190624">Potrzebne są dwa włókna: o małym oporze i o dużym oporze, połączone równolegle.</para>
+    </solution>
+  </exercise>
+</section>
+<section id="imp-idm383451856" class="review-problems">
+  <title>Zadania</title>
+  <exercise id="imp-idm490962176">
+    <problem id="imp-idm490961920">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm490961664">Jaki jest opór równoważny, gdy oporniki o oporach: <m:math display="inline">
+        <m:mn>100</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">Ω</m:mi>
+      </m:math>, <m:math display="inline">
+      <m:mn>2,5</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">kΩ</m:mi>
+    </m:math> i <m:math display="inline">
+    <m:mn>4</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">kΩ</m:mi>
+  </m:math> połączysz<list id="eip-idm391247968" list-type="enumerated" number-style="lower-alpha">
+  <item>szeregowo;</item>
+  <item>równolegle?</item>
+</list>
+</para></problem>
+</exercise>
+<exercise id="imp-idm490816448">
+  <problem id="imp-idm460303328">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm460303072">Jaki największy i najmniejszy opór otrzymasz z połączenia oporników o oporze: <m:math display="inline">
+      <m:mn>36</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:math>, <m:math display="inline">
+    <m:mn>50</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">Ω</m:mi>
+  </m:math> i <m:math display="inline">
+  <m:mn>700</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">Ω</m:mi>
+  </m:math>?</para></problem>
+<solution id="imp-idm575055920">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm484150448">Największy opór ma wartość <m:math display="inline">
+    <m:mn>786</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">Ω</m:mi>
+  </m:math>, a najmniejszy <m:math display="inline">
+  <m:mn>20,32</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">Ω</m:mi>
+  </m:math>.</para></solution>
+</exercise>
+<exercise id="imp-idm435328208">
+  <problem id="imp-idm435327952">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm435327696">Toster o mocy <m:math display="inline">
+      <m:mn>1800</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">W</m:mi>
+    </m:math>, głośnik o mocy <m:math display="inline">
+    <m:mn>1400</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">W</m:mi>
+  </m:math> i lampę <m:math display="inline">
+  <m:mn>75</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">W</m:mi>
+</m:math> podłączono do wspólnego gniazdka będącego w obwodzie o napięciu <m:math display="inline">
+<m:mn>230</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+<m:mi mathvariant="normal">V</m:mi>
+</m:math> i zabezpieczonego bezpiecznikiem <m:math display="inline">
+<m:mn>15</m:mn>
+<m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+<m:mi mathvariant="normal">A</m:mi>
+</m:math>. (Trzy urządzenia są równolegle podłączone do tego samego gniazdka).<list id="eip-idm1562657424" list-type="enumerated" number-style="lower-alpha">
+<item>Prąd o jakim natężeniu płynie przez każde z urządzeń?</item>
+<item>Czy takie podłączenie urządzeń spowoduje wybicie (zadziałanie) bezpiecznika <m:math display="inline">
+  <m:mn>15</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">A</m:mi>
+  </m:math>?</item>
+</list>
+</para></problem>
+</exercise>
+<exercise id="imp-idm371875040">
+  <problem id="imp-idm368883664">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm368883408">Reflektor o mocy <m:math display="inline">
+      <m:mn>30</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">W</m:mi>
+    </m:math> oraz rozrusznik o mocy <m:math display="inline">
+    <m:mn>2,4</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">kW</m:mi>
+  </m:math> w samochodzie są zazwyczaj połączone równolegle w zasilanym akumulatorem <m:math display="inline">
+  <m:mn>12</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">V</m:mi>
+  </m:math> obwodzie. Jaką moc będą pobierać te urządzenia podłączone szeregowo do akumulatora? (Pomiń wszystkie inne rezystancje w obwodzie i wszelkie zmiany oporu w omawianych urządzeniach).</para></problem>
+<solution id="imp-idm380394688">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm380394432"><m:math display="inline">
+      <m:mn>29,6</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">W</m:mi>
+      </m:math>.</para></solution>
+  </exercise>
+  <exercise id="imp-idm390910240">
+    <problem id="imp-idm1425579088">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm1425578832">Mamy baterię o napięciu na biegunach równym <m:math display="inline">
+        <m:mn>48</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+      </m:math> i oporniki <m:math display="inline">
+      <m:mn>24</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:math> i <m:math display="inline">
+    <m:mn>96</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">Ω</m:mi>
+  </m:math>.<list id="eip-idm1590208448" list-type="enumerated" number-style="lower-alpha">
+  <item>Oblicz natężenie prądu płynącego przez każdy opornik i moc rozpraszaną przez każdy z nich, gdy połączone są szeregowo;</item>
+  <item>Powtórz obliczenia dla równoległego połączenia oporników.</item>
+</list>
+</para></problem>
+</exercise>
+<exercise id="imp-idm339191312">
+  <problem id="imp-idm572270608">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm572270352">Nawiązując do <link target-id="figure-6" cmlnle:case="genitive"/>, przedstawiającego kombinacje połączeń szeregowych i równoległych, oblicz <m:math display="inline">
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mn>3</m:mn>
+      </m:msub>
+    </m:math> na dwa sposoby:<list id="eip-idm324293296" list-type="enumerated" number-style="lower-alpha">
+    <item>na podstawie znanych wartości <m:math display="inline">
+      <m:mi>I</m:mi>
+    </m:math> oraz <m:math display="inline">
+    <m:msub>
+      <m:mi>I</m:mi>
+      <m:mn>2</m:mn>
+    </m:msub>
+    </m:math>;</item>
+    <item>za pomocą prawa Ohma dla <m:math display="inline">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>3</m:mn>
+      </m:msub>
+      </m:math>.</item>
+      </list>W obu przypadkach wskaż wyraźnie, w jaki sposób skorzystałeś ze schematu nazwanego strategią rozwiązywania problemów w przypadku szeregowego i równoległego połączenia oporników, opisanego w <link target-id="note-1"/>.</para>
+    </problem>
+    <solution id="imp-idm558861424">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm435742464">a. <m:math display="inline">
+        <m:mn>0,74</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">A</m:mi>
+      </m:math>; b. <m:math display="inline">
+      <m:mn>0,742</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">A</m:mi>
+      </m:math>.</para></solution>
+  </exercise>
+  <exercise id="imp-idm541674368">
+    <problem id="imp-idm541674112">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm340573904">Odnosząc się do <link target-id="figure-6" cmlnle:case="genitive"/>,
+        <list id="eip-idm1202136816" list-type="enumerated" number-style="lower-alpha">
+          <item>oblicz <m:math display="inline">
+            <m:msub>
+              <m:mi>P</m:mi>
+              <m:mn>3</m:mn>
+            </m:msub>
+          </m:math> i otrzymaną wartość porównaj z wartościami <m:math display="inline">
+          <m:msub>
+            <m:mi>P</m:mi>
+            <m:mn>3</m:mn>
+          </m:msub>
+          </m:math> uzyskanymi w pierwszych dwóch przykładowych problemach w tym rozdziale;</item>
+          <item>oblicz moc źródła i porównaj z mocą rozpraszaną przez wszystkie oporniki.</item>
+        </list>
+      </para></problem>
+  </exercise>
+  <exercise id="imp-idm1380682848">
+    <problem id="imp-idm1380682592">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm412842784">Cofnij się do <link target-id="figure-7" cmlnle:case="genitive"/> i dyskusji dotyczącej przygasania świateł, gdy włączy się urządzenie znacznie obciążające obwód. Dane są: źródło o napięciu na biegunach równym <m:math display="inline">
+        <m:mn>120</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+      </m:math>, rezystancja przewodów <m:math display="inline">
+      <m:mn>0,8</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:math> i żarówka o mocy nominalnej <m:math display="inline">
+    <m:mn>75</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">W</m:mi>
+  </m:math>.<list id="eip-idm1194856288" list-type="enumerated" number-style="lower-alpha">
+  <item>Jaka będzie moc rozpraszania energii przez żarówkę, jeśli w momencie włączania silnika przez przewód popłynie prąd <m:math display="inline">
+    <m:mn>15</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">A</m:mi>
+    </m:math>? Załóż, że zmiana oporu żarówki jest nieistotna;</item>
+    <item>Jak szybko silnik zużywa dostarczaną energię?</item>
+  </list>
+</para></problem>
+<solution id="imp-idm334096208">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm574499216">a. <m:math display="inline">
+    <m:mn>60,8</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">W</m:mi>
+  </m:math>; b. <m:math display="inline">
+  <m:mn>3,18</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">kW</m:mi>
+  </m:math>.</para></solution>
+</exercise>
+<exercise id="imp-idm338611888">
+  <problem id="imp-idm338611632">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm338611376">Pokaż, że jeśli połączymy ze sobą dwa oporniki o znacząco różnych oporach, <m:math display="inline">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      <m:mo>≫</m:mo>
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+    </m:math>, to<list id="eip-idm1735259856" list-type="enumerated" number-style="lower-alpha">
+    <item>w połączeniu szeregowym ich równoważny opór jest w przybliżeniu równy większemu oporowi <m:math display="inline">
+      <m:msub>
+        <m:mi>R</m:mi>
+        <m:mn>1</m:mn>
+      </m:msub>
+      </m:math>;</item>
+      <item>w połączeniu równoległym ich równoważny opór jest w przybliżeniu równy mniejszemu oporowi <m:math display="inline">
+        <m:msub>
+          <m:mi>R</m:mi>
+          <m:mn>2</m:mn>
+        </m:msub>
+        </m:math>.</item>
+      </list>
+    </para>
+  </problem>
+</exercise>
+<exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="imp-idm553772768">
+  <problem id="imp-idm644212432">
+    <para id="imp-idm644212176">Rozważ obwód pokazany poniżej. Napięcie na biegunach baterii wynosi <m:math display="inline">
+      <m:mi>U</m:mi>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>18</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+        <m:mi mathvariant="normal">V</m:mi>
+      </m:mrow>
+    </m:math>.<list id="eip-idm979083488" list-type="enumerated" number-style="lower-alpha">
+    <item>Oblicz opór równoważny obwodu;</item>
+    <item>Oblicz natężenie prądu przepływającego przez każdy opornik;</item>
+    <item>Oblicz spadek potencjału na każdym oporniku;</item>
+    <item>Oblicz moc, z jaką rozpraszana jest energia przez każdy opornik;</item>
+    <item>Oblicz moc baterii.</item>
+  </list>
+</para><media id="fs-id1172100840754" alt="Rysunek pokazuje zacisk ujemny źródła napięcia 18 V połączonego szeregowo z trzema opornikami, R ze znakiem 1 dla 4 Ω, R ze znakiem 2 dla 1 Ω i R ze znakiem 3 dla 4 Ω.">
+  <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_27_01_P4_img.jpg"/>
+</media>
+</problem>
+<solution id="imp-idm372968512">
+  <para id="eip-idm778008544">a. <m:math display="inline">
+    <m:msub>
+      <m:mi>R</m:mi>
+      <m:mtext>rw</m:mtext>
+    </m:msub>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>9</m:mn>
+      <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+      <m:mi mathvariant="normal">Ω</m:mi>
+    </m:mrow>
+  </m:math>; b. <m:math display="inline">
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mn>2</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:msub>
+    <m:mi>I</m:mi>
+    <m:mn>3</m:mn>
+  </m:msub>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>2</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+    <m:mi mathvariant="normal">A</m:mi>
+  </m:mrow>
+</m:math>; c. <m:math display="inline">
+<m:msub>
+  <m:mi>U</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>8</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">V</m:mi>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:msub>
+  <m:mi>U</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>2</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">V</m:mi>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:msub>
+  <m:mi>U</m:mi>
+  <m:mn>3</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>8</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">V</m:mi>
+</m:mrow>
+</m:math>; d. <m:math display="inline">
+<m:msub>
+  <m:mi>P</m:mi>
+  <m:mn>1</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>16</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">W</m:mi>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:msub>
+  <m:mi>P</m:mi>
+  <m:mn>2</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>4</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">W</m:mi>
+</m:mrow>
+</m:math>, <m:math display="inline">
+<m:msub>
+  <m:mi>P</m:mi>
+  <m:mn>3</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>16</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">W</m:mi>
+</m:mrow>
+</m:math>; e. <m:math display="inline">
+<m:mi>P</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>36</m:mn>
+  <m:mo rspace="verythinmathspace" lspace="">⁢⁢</m:mo>
+  <m:mi mathvariant="normal">W</m:mi>
+</m:mrow>
+</m:math>.</para></solution>
+</exercise>
+</section>
+</content>
+<glossary>
+  <definition id="imp-idm541622640">
+    <term class="no-emphasis" cmlnle:reference="opór równoważny">opór równoważny (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">equivalent resistance</term></foreign>)</term>
+      <meaning id="imp-idm1212100624">opór układu połączonych ze sobą oporników; może być traktowany jako opór pojedynczego opornika, zastępującego układ oporników połączonych szeregowo i/lub równolegle </meaning>
+    </definition>
+  </glossary>
+</document>

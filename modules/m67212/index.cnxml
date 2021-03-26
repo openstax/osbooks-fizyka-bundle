@@ -1,0 +1,1190 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.7" module-id="new">
+  <title>Prawo Ampère’a</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <md:content-id>m67212</md:content-id>
+  <md:title>Prawo Ampère’a</md:title>
+  <md:abstract>W tym podrozdziale nauczysz się:
+<list>
+    <item>w jaki sposób prawo Ampère’a wiąże indukcję pola magnetycznego wytwarzanego przez prąd elektryczny, z wartością natężenia tego prądu;
+    </item>
+    <item>jak wykorzystać prawo Ampère’a do obliczenia indukcji pola magnetycznego cienkiego bądź grubego, długiego przewodu prostoliniowego.</item>
+  </list></md:abstract>
+  <md:uuid>6162b03f-b38d-469c-9b93-2cb706c40aad</md:uuid>
+</metadata>
+
+<content>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blf6qpqs_s78">Podstawową własnością statycznego pola magnetycznego jest to, że – w przeciwieństwie do pola elektrostatycznego – nie jest ono zachowawcze. Przypomnijmy: w polu zachowawczym praca wykonywana podczas przemieszczania cząstki nie zależy od toru, po którym cząstka się porusza, a jedynie od jej początkowego i końcowego położenia. Pola magnetycznego prawidłowość ta nie dotyczy; istnieje natomiast zależność między indukcją magnetyczną a natężeniem prądu, który to pole wytwarza. Zależność ta, wyrażona za pomocą całki krzywoliniowej wektora indukcji <m:math display="inline">
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+  </m:math>, znana jest jako <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="prawo Ampère’a">prawo Ampère’a</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">Ampère’s law</term></foreign>). Co więcej, z prawa Ampere'a wynika wspomniane wcześniej prawo Biota-Savarta. Na poniższym przykładzie przedstawiamy zależność między nimi.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blf7u1m9_tm"><link target-id="CNX_UPhysics_29_05_AmpereArb"/> przedstawia dowolną płaszczyznę prostopadłą do nieskończonego prostoliniowego przewodu, w którym – w kierunku od tej płaszczyzny – płynie prąd o natężeniu <m:math display="inline">
+    <m:mi>I</m:mi>
+  </m:math>. Linie pola magnetycznego są koncentrycznymi okręgami, w środku których znajduje się przewód, i zwrócone są one w kierunku przeciwnym do ruchu wskazówek zegara. Na wstępie rozpatrzmy całkę <m:math display="inline">
+  <m:mo>∮</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mover>
+        <m:mi>l</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+    </m:mrow>
+  </m:mrow>
+</m:math>, obliczaną wzdłuż zamkniętych konturów <m:math display="inline">
+<m:mi>M</m:mi>
+</m:math> i <m:math display="inline">
+<m:mi>N</m:mi>
+</m:math>. Zauważmy, że kontur <m:math display="inline">
+<m:mi>M</m:mi>
+</m:math> obejmuje przewód z prądem, podczas gdy kontur <m:math display="inline">
+<m:mi>N</m:mi>
+</m:math> tego przewodu nie obejmuje. Ponieważ linie pola magnetycznego są okręgami, iloczyn skalarny <m:math display="inline">
+<m:mover>
+  <m:mi>B</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+<m:mo>⋅</m:mo>
+<m:mrow>
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mover>
+    <m:mi>l</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+</m:mrow>
+</m:math> można zastąpić iloczynem wartości indukcji <m:math display="inline">
+<m:mi>B</m:mi>
+</m:math> i długości rzutu <m:math display="inline">
+<m:mi>I</m:mi>
+</m:math> na okrąg przechodzący przez element <m:math display="inline">
+<m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+<m:mover>
+  <m:mi>l</m:mi>
+  <m:mo>→</m:mo>
+</m:mover>
+</m:math>. Jeżeli promień tego szczególnego okręgu jest równy <m:math display="inline">
+<m:mi>r</m:mi>
+</m:math>, długość rzutu wynosi <m:math display="inline">
+<m:mi>r</m:mi>
+<m:mo>⁢</m:mo>
+<m:mrow>
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mi>θ</m:mi>
+</m:mrow>
+</m:math>. Możemy więc zapisać, że</para><equation id="ked-1blf72ivq_p08" class="unnumbered">
+  <m:math display="block">
+    <m:mrow>
+      <m:mover>
+        <m:mi>B</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+      <m:mo>⋅</m:mo>
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mover>
+          <m:mi>l</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mi>B</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mi>r</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mrow>
+        <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+        <m:mrow>
+          <m:mi>θ</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+  </m:math>
+</equation>
+<figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_29_05_AmpereArb"><media id="ked-1blf71sru_4g" alt="Rysunki A i B przedstawiają dowolnie wybraną płaszczyznę prostopadłą do nieskończoności, prosty przewód w którym prąd l jest skierowany poza płaszczyznę. Linie pola magnetycznego są okręgami skierowanymi przeciwnie do kierunku ruchu wskazówek zegara i skupione na przewodzie. Ścieżka natężenia M przedstawiona na rysunku A otacza przewód. Ścieżka natężenia N pokazana na rysunku B nie otacza przewodu.">
+    <image src="../../media/CNX_UPhysics_29_05_AmpereArb.jpg" mime-type="image/jpeg"/>
+  </media>
+  
+<caption>Prąd o natężeniu <m:math display="inline"><m:mi>I</m:mi></m:math> płynie w długim, prostoliniowym przewodzie, w kierunku od płaszczyzny rysunku. Całka <m:math display="inline">
+    <m:mo>∮</m:mo>
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mi>θ</m:mi>
+    </m:mrow>
+  </m:math> wynosi <m:math display="inline">
+  <m:mn>2</m:mn>
+  <m:mo>⁢</m:mo>
+  <m:mi>π</m:mi>
+  </m:math> w przypadku konturu <m:math display="inline"><m:mi>M</m:mi></m:math>; w przypadku całkowania po konturze <m:math display="inline"><m:mi>N</m:mi></m:math> jej wartość wynosi zero.</caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blf75afo_vso">Podstawiając za <m:math display="inline">
+  <m:mover>
+    <m:mi>B</m:mi>
+    <m:mo>→</m:mo>
+  </m:mover>
+  </m:math> wyrażenie <link document="m67210" target-id="ked-1bld0e123_mi8"/>, otrzymujemy</para>
+  <equation id="ked-1blf781bu_oq8">
+    <m:math display="block">
+      <m:mrow>
+        <m:mo>∮</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>B</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mover>
+              <m:mi>l</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mo>∮</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:mfrac>
+              <m:mrow>
+                <m:msub>
+                  <m:mi>μ</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>⁢</m:mo>
+                <m:mi>I</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>2</m:mn>
+                <m:mo>⁢</m:mo>
+                <m:mi>π</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>r</m:mi>
+              </m:mrow>
+            </m:mfrac>
+            <m:mo>⋅</m:mo>
+            <m:mi>r</m:mi>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mi>θ</m:mi>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mfrac>
+          <m:mrow>
+            <m:msub>
+              <m:mi>μ</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>⁢</m:mo>
+            <m:mi>I</m:mi>
+          </m:mrow>
+          <m:mrow>
+            <m:mn>2</m:mn>
+            <m:mo>⁢</m:mo>
+            <m:mi>π</m:mi>
+          </m:mrow>
+        </m:mfrac>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+          <m:mo>∮</m:mo>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mrow>
+              <m:mi>θ</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blf782n6_3vo">Zauważmy teraz, że całkowanie po konturze <m:math display="inline">
+    <m:mi>M</m:mi>
+  </m:math>, który okrąża przewód z prądem, daje wynik: <m:math display="inline">
+  <m:mrow>
+    <m:munder>
+      <m:mo>∮</m:mo>
+      <m:mi>M</m:mi>
+    </m:munder>
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mi>θ</m:mi>
+    </m:mrow>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>2</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:mi>π</m:mi>
+  </m:mrow>
+  </m:math>. Zatem</para>
+  <equation id="ked-1blf783n3_9fg">
+    <m:math display="block">
+      <m:mrow>
+        <m:munder>
+          <m:mo>∮</m:mo>
+          <m:mi>M</m:mi>
+        </m:munder>
+        <m:mrow>
+          <m:mover>
+            <m:mi>B</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mover>
+              <m:mi>l</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+      </m:mrow>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:msub>
+          <m:mi>μ</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:mi>I</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mtext>.</m:mtext>
+      </m:mrow>
+    </m:math>
+  </equation>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blf784rg_738">Z kolei kontur <m:math display="inline">
+    <m:mi>N</m:mi>
+  </m:math> przebiega zarówno przez dodatnie (zakreślane przeciwnie do ruchu wskazówek zegara), jak i ujemne (zakreślane zgodnie z ruchem wskazówek zegara) elementy <m:math display="inline">
+  <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+  <m:mi>θ</m:mi>
+</m:math> – patrz <link target-id="CNX_UPhysics_29_05_AmpereArb"/>. Ponieważ kontur ten jest zamknięty, <m:math display="inline">
+<m:mrow>
+  <m:munder>
+    <m:mo>∮</m:mo>
+    <m:mi>N</m:mi>
+  </m:munder>
+  <m:mrow>
+    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+    <m:mi>θ</m:mi>
+  </m:mrow>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mn>0</m:mn>
+</m:math>. Oznacza to, że w przypadku konturu <m:math display="inline">
+<m:mi>N</m:mi>
+</m:math>
+</para><equation id="ked-1blf785i6_puo">
+  <m:math display="block">
+    <m:mrow>
+      <m:munder>
+        <m:mo>∮</m:mo>
+        <m:mi>N</m:mi>
+      </m:munder>
+      <m:mrow>
+        <m:mover>
+          <m:mi>B</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mover>
+            <m:mi>l</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mn>0</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blf7867m_mpo">Prawo Ampère’a otrzymujemy, uogólniając powyższe wyniki.</para><note id="ked-1blf7bitb_6dg">
+  <title>Prawo Ampère’a</title>
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blf7c3cv_q4g">W przypadku dowolnego zamkniętego konturu rozpiętego na płaszczyźnie przecinanej przez przewód z prądem o natężeniu <m:math display="inline">
+    <m:mi>I</m:mi>
+  </m:math>
+</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blf7ceh6_6k8">
+  <m:math display="block">
+    <m:mrow>
+      <m:mo>∮</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>B</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mover>
+            <m:mi>l</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:msub>
+        <m:mi>μ</m:mi>
+        <m:mn>0</m:mn>
+      </m:msub>
+      <m:mo>⁢</m:mo>
+      <m:mi>I</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mtext>.</m:mtext>
+    </m:mrow>
+  </m:math>
+</equation>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blf7chlv_3v">W powyższym wzorze <m:math display="inline">
+  <m:mi>I</m:mi>
+</m:math> jest całkowitym natężeniem prądu, przecinającym dowolną otwartą powierzchnię <m:math display="inline">
+<m:mi>S</m:mi>
+</m:math> ograniczoną konturem całkowania. W obliczeniach uwzględniamy zatem jedynie prąd obejmowany przez ten kontur.</para></note>
+<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blf7ghel_vf8">W celu określenia znaku danego prądu <m:math display="inline">
+  <m:mi>I</m:mi>
+</m:math> układamy palce prawej dłoni wzdłuż konturu tak, aby wskazywały one kierunek całkowania (zob. <link target-id="CNX_UPhysics_29_05_AmpereArb"/>). Jeśli prąd przecina powierzchnię <m:math display="inline">
+<m:mi>S</m:mi>
+</m:math> w kierunku wskazanym przez wyciągnięty kciuk, przypisujemy mu znak „plus”. Gdy prąd płynie w kierunku przeciwnym, przypisujemy mu znak „minus”.</para><note id="ked-1blf7iqcn_e38" class="problem-solving">
+  <title>Strategia rozwiązania – stosowanie prawa Ampère’a</title>
+  <para id="ked-1blf7j1si_n8o">Aby obliczyć indukcję pola magnetycznego wytwarzanego przez prąd płynący w przewodzie lub przewodach, wykonaj następujące kroki:</para>
+  <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blf7j4i6_2ig" list-type="enumerated" number-style="arabic"><item> Określ symetrię prądu w przewodzie lub przewodach. W przypadku jej braku zastosuj prawo Biota-Savarta. </item>
+    <item>Na podstawie drugiego wariantu reguły prawej dłoni wyznacz kierunek pola magnetycznego wytwarzanego przez przewód (przewody). </item>
+    <item>Wybierz zamknięty kontur całkowania w taki sposób, aby w każdym jego punkcie wartość indukcji pola magnetycznego była stała bądź równa zero. </item>
+    <item>Wyznacz wypadkowe natężenie prądu <m:math display="inline">
+      <m:msub>
+        <m:mi>I</m:mi>
+        <m:mtext>wyp</m:mtext>
+      </m:msub>
+      </m:math> objętego konturem. </item>
+      <item>Oblicz całkę krzywoliniową <m:math display="inline">
+        <m:mo>∮</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>B</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mover>
+              <m:mi>l</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+        </m:math> wzdłuż zamkniętego konturu. </item>
+        <item>Przyrównaj całkę <m:math display="inline">
+          <m:mo>∮</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+              <m:mover>
+                <m:mi>l</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+        </m:math> do iloczynu <m:math display="inline">
+        <m:msub>
+          <m:mi>μ</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        <m:mo>⁢</m:mo>
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mtext>wyp</m:mtext>
+        </m:msub>
+      </m:math>, a otrzymane równanie rozwiąż względem <m:math display="inline">
+      <m:mover>
+        <m:mi>B</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+      </m:math>. </item>
+    </list></note>
+  <example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfaqj8t_r8o"><para id="ked-1blfaqj8d_4p8"><title>Zastosowanie prawa Ampère’a do obliczenia pola magnetycznego przewodu z prądem</title>Zastosujemy prawo Ampère’a do obliczenia pola magnetycznego wytwarzanego przez nieskończenie długi, cienki i prostoliniowy przewód, w którym płynie prąd o niezmiennym w czasie natężeniu <m:math display="inline">
+      <m:mi>I</m:mi>
+      </m:math> (zob. <link target-id="CNX_UPhysics_29_05_Bskematic"/>). </para><figure id="CNX_UPhysics_29_05_Bskematic"><media id="ked-1blfauj68_u7o" alt="Rysunek przedstawia nieskończenie długi, cienki, prosty przewód z prądem skierowanym na zewnątrz strony. Pokazane są możliwe składniki pola magnetycznego w tej płaszczyźnie, BR i BTheta, w dowolnie wyznaczonych punktach okręgu o promieniu r wychodzącego ze środka przewodu.">
+          <image src="../../media/CNX_UPhysics_29_05_Bskematic.jpg" mime-type="image/jpeg"/>
+        </media>
+        
+        <caption>Składowe, na które można rozłożyć wektor indukcji pola magnetycznego <m:math display="inline">
+          <m:mover>
+            <m:mi>B</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          </m:math> wytwarzanego przez prąd o natężeniu <m:math display="inline"><m:mi>I</m:mi></m:math> – płynący od płaszczyzny rysunku. Składowe radialne są równe zero w każdym punkcie linii pola, ponieważ wektor indukcji pola magnetycznego jest styczny do linii. </caption></figure><para id="ked-1blfaupsn_ang"><title>Strategia rozwiązania</title>Rozpatrzmy dowolną płaszczyznę prostopadłą do przewodu z prądem płynącym od płaszczyzny rysunku. Jak pokazano na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_29_05_Bskematic" cmlnle:case="genitive"/>, na płaszczyźnie, w dowolnym punkcie okręgu o promieniu <m:math display="inline">
+            <m:mi>r</m:mi>
+          </m:math>, w którego środku znajduje się przewód, wektor indukcji pola magnetycznego można rozłożyć na składowe <m:math display="inline"><m:semantics><m:msub><m:mover><m:mi>B</m:mi><m:mo>→</m:mo></m:mover><m:mi>r</m:mi></m:msub><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \vec{B}_r</m:annotation></m:semantics></m:math> i <m:math display="inline"><m:semantics><m:msub><m:mover><m:mi>B</m:mi><m:mo>→</m:mo></m:mover><m:mi>θ</m:mi></m:msub><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \vec{B}_{\theta}</m:annotation></m:semantics></m:math>. Ponieważ pole magnetyczne ma symetrię walcową względem przewodu, wartości <m:math display="inline">
+      <m:msub>
+        <m:mi>B</m:mi>
+        <m:mi>r</m:mi>
+      </m:msub>
+    </m:math> i <m:math display="inline">
+    <m:msub>
+      <m:mi>B</m:mi>
+      <m:mi>θ</m:mi>
+    </m:msub>
+  </m:math> są takie same w każdym punkcie okręgu. Z symetrii tego pola wynika również, że radialne linie pola – jeśli istnieją – muszą być zwrócone do przewodu lub od przewodu. W tym przypadku składowa radialna wektora indukcji jest równa zero, zatem również <m:math display="inline">
+  <m:mrow>
+    <m:msub>
+      <m:mover>
+        <m:mi>B</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+      <m:mi>r</m:mi>
+    </m:msub>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mover>
+        <m:mi>l</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+    </m:mrow>
+  </m:mrow>
+  <m:mo>=</m:mo>
+  <m:mn>0</m:mn>
+  </m:math>. Możemy więc zastosować do obliczeń prawo Ampère’a – obierając kontur całkowania w postaci okręgu, przedstawionego na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_29_05_Bskematic" cmlnle:case="genitive"/>. </para><para id="ked-1blfaurdv_ic">
+    <title>Rozwiązanie</title>Wzdłuż obranego konturu całkowania wektor <m:math display="inline">
+      <m:mover>
+        <m:mi>B</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+    </m:math> jest stały i równoległy do elementu <m:math display="inline">
+    <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+    <m:mover>
+      <m:mi>l</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+    </m:math>. Możemy więc zapisać, że</para>
+    <equation id="ked-1blfav534_7u8" class="unnumbered">
+      <m:math display="block">
+        <m:mrow>
+          <m:mo>∮</m:mo>
+          <m:mrow>
+            <m:mover>
+              <m:mi>B</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+            <m:mo>⋅</m:mo>
+            <m:mrow>
+              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+              <m:mover>
+                <m:mi>l</m:mi>
+                <m:mo>→</m:mo>
+              </m:mover>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>B</m:mi>
+            <m:mi>θ</m:mi>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mrow>
+            <m:mo>∮</m:mo>
+            <m:mrow>
+              <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+              <m:mi>l</m:mi>
+            </m:mrow>
+          </m:mrow>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mrow>
+            <m:msub>
+              <m:mi>B</m:mi>
+              <m:mi>θ</m:mi>
+            </m:msub>
+            <m:mo>⋅</m:mo>
+            <m:mn>2</m:mn>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mi>π</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>r</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="ked-1blfav61f_f9g">Prawo Ampère’a redukuje się zatem do postaci</para>
+    <equation id="ked-1blfav6nq_uko" class="unnumbered">
+      <m:math display="block">
+        <m:mrow>
+          <m:mrow>
+            <m:msub>
+              <m:mi>B</m:mi>
+              <m:mi>θ</m:mi>
+            </m:msub>
+            <m:mo>⋅</m:mo>
+            <m:mn>2</m:mn>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:mi>π</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>r</m:mi>
+        </m:mrow>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:msub>
+            <m:mi>μ</m:mi>
+            <m:mn>0</m:mn>
+          </m:msub>
+          <m:mo>⁢</m:mo>
+          <m:mi>I</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="ked-1blfav7f5_gqg">Ostatecznie – ponieważ <m:math display="inline">
+      <m:msub>
+        <m:mi>B</m:mi>
+        <m:mi>θ</m:mi>
+      </m:msub>
+    </m:math> jest jedyną składową wektora indukcji <m:math display="inline">
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+    </m:math> – możemy w powyższym wyrażeniu pominąć indeks dolny, otrzymując</para><equation id="ked-1blfavhh0_5i" class="unnumbered">
+      <m:math display="block">
+        <m:mi>B</m:mi>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mfrac>
+            <m:mrow>
+              <m:msub>
+                <m:mi>μ</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:mi>I</m:mi>
+            </m:mrow>
+            <m:mrow>
+              <m:mn>2</m:mn>
+              <m:mo>⁢</m:mo>
+              <m:mi>π</m:mi>
+              <m:mo>⁢</m:mo>
+              <m:mi>r</m:mi>
+            </m:mrow>
+          </m:mfrac>
+          <m:mo>⁢</m:mo>
+          <m:mtext>.</m:mtext>
+        </m:mrow>
+      </m:math>
+    </equation>
+    <para id="ked-1blfavinr_ai8">Wynik ten zgadza się z uzyskanym wcześniej na podstawie prawa Biota-Savarta. </para><para id="ked-1blfaviv8_3ng"><title>Znaczenie</title>Prawo Ampère’a sprawdza się, gdy znajdziemy taki kontur całkowania, wzdłuż którego wynik iloczynu skalarnego <m:math display="inline">
+        <m:mover>
+          <m:mi>B</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mover>
+            <m:mi>l</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+        </m:mrow>
+        </m:math> można łatwo uprościć, np. gdy kąt między wektorami jest stały (najlepiej równy 0 lub 90 stopni). Prawo to bez trudności zastosujemy w przypadku nieskończenie długiego przewodu, obierając kontur całkowania w kształcie okręgu obiegającego przewód. Stałą indukcję pola magnetycznego można wówczas wyłączyć przed symbol całki. </para></example><example id="ked-1blfct7ee_ieo">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfct7d9_pbo"><title>Zastosowanie prawa Ampère’a do obliczenia pola magnetycznego przewodu z prądem</title><link target-id="CNX_UPhysics_29_05_Thickwire"/> przedstawia długi, prostoliniowy przewód o promieniu <m:math display="inline">
+          <m:mi>a</m:mi>
+        </m:math>, przez którego przekrój poprzeczny płynie – równomiernie rozłożony – prąd o natężeniu <m:math display="inline">
+        <m:msub>
+          <m:mi>I</m:mi>
+          <m:mn>0</m:mn>
+        </m:msub>
+        </m:math>. Znajdź indukcję pola magnetycznego wewnątrz i na zewnątrz tego przewodu. </para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_29_05_Thickwire"><media id="ked-1blfctvt4_e4o" alt="Rysunek A przedstawia długi prosty przewód o promieniu a z przechodzącym prądem l. Rysunek b pokazuje przekrój tego samego przewodu z pętlą Ampera o promieniu r.">
+            <image src="../../media/CNX_UPhysics_29_05_Thickwire.jpg" mime-type="image/jpeg"/>
+          </media>
+          
+          <caption>(a) Widok przewodu o promieniu <m:math display="inline"><m:mi>a</m:mi></m:math>, w którym płynie prąd o natężeniu <m:math display="inline">
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            </m:math>. (b) Przekrój poprzeczny tego samego przewodu z zaznaczonym promieniem <m:math display="inline"><m:mi>a</m:mi></m:math> oraz konturem Ampère’a o promieniu <m:math display="inline"><m:mi>r</m:mi></m:math>. </caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfcu2ja_f68"><title>Strategia rozwiązania</title><link target-id="CNX_UPhysics_29_05_Thickwire"/> przedstawia geometrię zagadnienia. Zauważmy jednak, że natężenie prądu objętego konturem całkowania zależy od tego, czy kontur ten znajduje się na zewnątrz, czy wewnątrz przewodu. W drugim przypadku kontur całkowania nie obejmuje całego przekroju poprzecznego przewodu, przez który płynie prąd.</para><para id="ked-1blfcu40n_epo">
+              <title>Rozwiązanie</title> W przypadku dowolnego kołowego konturu o promieniu <m:math display="inline">
+                <m:mi>r</m:mi>
+                </m:math>, współśrodkowego z przewodem </para>
+                <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfcucoq_ppo" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mo>∮</m:mo><m:mrow><m:mover><m:mi>B</m:mi><m:mo>→</m:mo></m:mover><m:mo>⋅</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mover><m:mi>l</m:mi><m:mo>→</m:mo></m:mover></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mo>∮</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mi>l</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo>cos</m:mo><m:mrow><m:mn>0</m:mn><m:mo>°</m:mo></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo>∮</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>l</m:mi></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>B</m:mi><m:mo>⋅</m:mo><m:mn>2</m:mn></m:mrow><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>r</m:mi><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \oint \vec{B} \cdot \d \vec{l} = \oint B \d l \cos \ang{0} = B \oint \d l = B \cdot 2\pi r \text{.}</m:annotation></m:semantics></m:math></equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfcudr3_0do">Na podstawie prawa Ampère’a powyższa całka równa jest całkowitemu natężeniu prądu płynącego przez dowolną powierzchnię ograniczoną konturem całkowania.</para><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfcue4a_ch">Rozpatrzmy najpierw kołowy kontur całkowania, położony wewnątrz przewodu (<m:math display="inline">
+                  <m:mi>r</m:mi>
+                  <m:mo>≤</m:mo>
+                  <m:mi>a</m:mi>
+                </m:math>) – jak przedstawia część (a) <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_29_05_Thickwire" cmlnle:case="genitive"/>. Stosując prawo Ampère’a, musimy wyznaczyć natężenie <m:math display="inline">
+                <m:mi>I</m:mi>
+              </m:math> prądu płynącego przez powierzchnię przekroju poprzecznego przewodu ograniczoną konturem całkowania. Natężenie <m:math display="inline">
+              <m:mi>I</m:mi>
+            </m:math> równe jest gęstości prądu <m:math display="inline">
+            <m:mi>J</m:mi>
+          </m:math> pomnożonej przez wartość powierzchni przekroju poprzecznego przewodu wewnątrz konturu. Ponieważ prąd jest równomiernie rozłożony w przewodzie, jego gęstość wewnątrz konturu całkowania równa jest gęstości prądu w całym przekroju przewodu, wynoszącej <m:math display="inline">
+          <m:mrow>
+            <m:msub>
+              <m:mi>I</m:mi>
+              <m:mn>0</m:mn>
+            </m:msub>
+            <m:mo>∕</m:mo>
+            <m:mi>π</m:mi>
+          </m:mrow>
+          <m:mo>⁢</m:mo>
+          <m:msup>
+            <m:mi>a</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+        </m:math>. Tak więc natężenie prądu <m:math display="inline">
+        <m:mi>I</m:mi>
+        </m:math> płynącego przez przekrój ograniczony konturem całkowania dane jest wzorem</para><equation id="ked-1blfcuh01_5bg" class="unnumbered">
+          <m:math display="block">
+            <m:mi>I</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msup>
+                    <m:mi>r</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+                <m:mrow>
+                  <m:mi>π</m:mi>
+                  <m:mo>⁢</m:mo>
+                  <m:msup>
+                    <m:mi>a</m:mi>
+                    <m:mn>2</m:mn>
+                  </m:msup>
+                </m:mrow>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mfrac>
+                <m:msup>
+                  <m:mi>r</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+                <m:msup>
+                  <m:mi>a</m:mi>
+                  <m:mn>2</m:mn>
+                </m:msup>
+              </m:mfrac>
+              <m:mo>⁢</m:mo>
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              <m:mo>⁢</m:mo>
+              <m:mtext>.</m:mtext>
+            </m:mrow>
+          </m:math>
+        </equation>
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfd7hqh_9l8">Możemy wykorzystać powyższy iloraz w dalszych rozważaniach, ponieważ w naszym zadaniu gęstość prądu <m:math display="inline">
+          <m:mi>J</m:mi>
+          </m:math> jest stała na całej powierzchni przekroju poprzecznego przewodu. Zatem gęstość prądu w części przekroju przewodu objętej konturem całkowania jest równa gęstości prądu w jego całkowitym przekroju. Z prawa Ampère’a otrzymujemy</para><equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfd7l83_ho8" class="unnumbered">
+            <m:math display="block">
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>B</m:mi>
+                  <m:mo>⋅</m:mo>
+                  <m:mn>2</m:mn>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:mi>π</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>r</m:mi>
+              </m:mrow>
+              <m:mo>=</m:mo>
+              <m:mrow>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>μ</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>⋅</m:mo>
+                  <m:mfrac>
+                    <m:msup>
+                      <m:mi>r</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                    <m:msup>
+                      <m:mi>a</m:mi>
+                      <m:mn>2</m:mn>
+                    </m:msup>
+                  </m:mfrac>
+                </m:mrow>
+                <m:mo>⁢</m:mo>
+                <m:msub>
+                  <m:mi>I</m:mi>
+                  <m:mn>0</m:mn>
+                </m:msub>
+                <m:mo>⁢</m:mo>
+                <m:mtext>.</m:mtext>
+              </m:mrow>
+            </m:math>
+          </equation>
+          <para id="ked-1blfd7n9t_n8g">Z podanego wzoru wynika, że wewnątrz przewodu wartość indukcji pola magnetycznego wynosi </para>
+          <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfd8vho_lqo" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mi>B</m:mi><m:mo>=</m:mo><m:mrow><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:msub><m:mi>I</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>r</m:mi><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mfrac></m:mrow><m:mo>⁢</m:mo><m:mtext>, dla </m:mtext><m:mo>⁢</m:mo><m:mi>r</m:mi></m:mrow></m:mrow><m:mo>≤</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            B = \frac{\mu_0 I_0}{2\pi} \cdot \frac{r}{a^2} \text{, dla } r \leq a \text{.}</m:annotation></m:semantics></m:math></equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfd90o4_voo">Na zewnątrz przewodu indukcję pola magnetycznego opisuje wyrażenie</para>
+          <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfd91hd_vs8" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mi>B</m:mi><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub><m:mo>⁢</m:mo><m:msub><m:mi>I</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:mi>r</m:mi></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mtext>, dla </m:mtext><m:mo>⁢</m:mo><m:mi>r</m:mi></m:mrow></m:mrow><m:mo>&gt;</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            B = \frac{\mu_0 I_0}{2\pi r} \text{, dla } r &gt; a \text{.}</m:annotation></m:semantics></m:math></equation><para id="ked-1blfdaqch_k8g">Zauważmy, że wyrażenie to jest tożsame z zależnością, którą otrzymaliśmy w poprzednim przykładzie, obliczając pole magnetyczne nieskończonego, cienkiego przewodu.</para>
+          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfdb0s3_1u">Wykres wartości indukcji pola magnetycznego w funkcji odległości od osi przewodu przedstawia <link target-id="CNX_UPhysics_29_05_Graph"/>.</para>
+          <figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_29_05_Graph"><media id="ked-1blfdbar3_m5" alt="Wykres przedstawia zmienność B wraz z r. B rośnie linearnie wraz z r aż do punktu a. Następnie zaczyna opadać proporcjonalnie do odwrotności r.">
+              <image src="../../media/CNX_UPhysics_29_05_Graph.jpg" mime-type="image/jpeg"/>
+            </media>
+            
+            <caption>Zależność od promienia wartości indukcji pola magnetycznego wytwarzanego przez prąd o natężeniu <m:math display="inline">
+              <m:msub>
+                <m:mi>I</m:mi>
+                <m:mn>0</m:mn>
+              </m:msub>
+              </m:math>, płynący w długim, prostoliniowym przewodzie o promieniu <m:math display="inline"><m:mi>a</m:mi></m:math>.</caption></figure><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfdd6dj_22">
+              <title>Znaczenie</title>Otrzymane wyniki wskazują, że wewnątrz grubego przewodu indukcja pola magnetycznego rośnie proporcjonalnie do odległości od środka jego przekroju poprzecznego. Indukcja przyjmuje wartości od zera do wartości <m:math display="inline">
+                <m:mi>B</m:mi>
+                <m:mo>=</m:mo>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>μ</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                    <m:mo>⁢</m:mo>
+                    <m:msub>
+                      <m:mi>I</m:mi>
+                      <m:mn>0</m:mn>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mo>∕</m:mo>
+                  <m:mfenced>
+                    <m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>π</m:mi>
+                      <m:mo>⁢</m:mo>
+                      <m:mi>r</m:mi>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+                </m:math>, znanej z przypadku pola magnetycznego cienkiego przewodu. Na zewnątrz przewodu obserwujemy spadek wartości indukcji – niezależnie od tego, czy przewód jest gruby, czy cienki. </para>
+                <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfdfpcb_oc8">Podobny rezultat otrzymamy, stosując prawo Gaussa do obszaru o jednorodnym rozkładzie ładunku elektrycznego. Zauważmy jednak, że prawo Gaussa dotyczy jednorodnego rozkładu ładunku, a w omawianym przypadku prawo Ampère’a odnosi się do obszaru o jednorodnym rozkładzie gęstości prądu elektrycznego. W konsekwencji spadek wartości indukcji pola magnetycznego na zewnątrz grubego przewodu podobny jest do spadku natężenia pola elektrycznego na zewnątrz liniowo rozłożonego ładunku. Oba przypadki charakteryzują się bowiem tą samą geometrią i są niezależne od rozkładu ładunku lub prądu elektrycznego – o ile odpowiednie ładunki lub prądy znajdują się wewnątrz konturu całkowania.</para></example>
+              <example id="ked-1blfeinvs_26o">
+                <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfeio1b_0oo"><title>Wykorzystanie prawa Ampère’a z dowolnymi konturami całkowania</title>Zastosuj prawo Ampère’a do obliczenia całki w układach prądu i konturów całkowania przedstawionych na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_29_05_Loops" cmlnle:case="genitive"/>.</para><figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_29_05_Loops">
+                    <media id="ked-1blfejne6_bl" alt="Rysunek A przedstawia cztery przewody przewodzące prądy dwóch amperów, pięciu amperów, trzech amperów i czterech amperów. Wszystkie cztery przewody znajdują się wewnątrz pętli. Pierwszy i drugi przewodzą prąd w dół przez pętlę. Trzeci i czwarty przewodzą prąd skierowany do góry przez pętlę. Rysunek B przedstawia trzy przewody przewodzące prąd pięciu amperów, dwóch amperów i trzech amperów. Pierwszy i trzeci są na zewnątrz pętli, drugi jest w jej środku. Pierwszy przewodzi prąd w górę przez pętlę. Drugi i trzeci przewodzą prąd w dół przez pętlę. Rysunek C przedstawia trzy przewody przewodzące prąd siedmiu amperów, pięciu amperów i trzech amperów. Wszystkie trzy przewody znajdują się wewnątrz pętli. Pierwszy i drugi przewodzą prąd w dół przez pętlę. Trzeci przewodzi prąd w górę przez pętlę.">
+                      <image src="../../media/CNX_UPhysics_29_05_Loops.jpg" mime-type="image/jpeg"/>
+                    </media>
+                    <caption>Układy prądu i kontury całkowania do <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="ked-1blfeinvs_26o" cmlnle:case="genitive"/>. </caption>
+                  </figure>
+                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfejvg5_n4"><title>Strategia rozwiązania</title>Prawo Ampère’a stanowi, że <m:math display="inline">
+                      <m:mrow>
+                        <m:mo>∮</m:mo>
+                        <m:mrow>
+                          <m:mover>
+                            <m:mi>B</m:mi>
+                            <m:mo>→</m:mo>
+                          </m:mover>
+                          <m:mo>⋅</m:mo>
+                          <m:mrow>
+                            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+                            <m:mover>
+                              <m:mi>l</m:mi>
+                              <m:mo>→</m:mo>
+                            </m:mover>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo>=</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>μ</m:mi>
+                          <m:mn>0</m:mn>
+                        </m:msub>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>I</m:mi>
+                      </m:mrow>
+                    </m:math>, gdzie <m:math display="inline">
+                    <m:mi>I</m:mi>
+                  </m:math> jest całkowitym natężeniem prądu przepływającego przez zamknięty kontur. Najszybszym sposobem określenia wartości całki jest obliczenie iloczynu <m:math display="inline">
+                  <m:msub>
+                    <m:mi>μ</m:mi>
+                    <m:mn>0</m:mn>
+                  </m:msub>
+                  <m:mo>⁢</m:mo>
+                  <m:mi>I</m:mi>
+                  </m:math> poprzez ustalenie wypadkowego natężenia prądu przepływającego przez kontur całkowania. Znaki każdego prądu określimy, układając prawą dłoń wzdłuż konturu tak, aby palce wskazywały kierunek całkowania. Prąd będziemy uważali za dodatni, jeżeli będzie on przepływał w kierunku wskazanym przez wyciągnięty kciuk. </para><list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="eip-818" list-type="enumerated" number-style="lower-alpha"><item>Suma natężeń prądu przepływającego przez kontur ku dołowi (<m:math display="inline">
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                        <m:mi mathvariant="normal">A</m:mi>
+                      </m:mrow>
+                      <m:mo>+</m:mo>
+                      <m:mrow>
+                        <m:mn>5</m:mn>
+                        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                        <m:mi mathvariant="normal">A</m:mi>
+                      </m:mrow>
+                    </m:math>) równa się sumie natężeń prądu przepływającego przez kontur ku górze (<m:math display="inline">
+                    <m:mrow>
+                      <m:mn>3</m:mn>
+                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                      <m:mi mathvariant="normal">A</m:mi>
+                    </m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mrow>
+                      <m:mn>4</m:mn>
+                      <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                      <m:mi mathvariant="normal">A</m:mi>
+                    </m:mrow>
+                  </m:math>). Wypadkowe natężenie prądu jest zatem równe zero, a więc <equation id="eip-idm1301721936" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mo>∮</m:mo><m:mrow><m:mover><m:mi>B</m:mi><m:mo>→</m:mo></m:mover><m:mo>⋅</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mover><m:mi>l</m:mi><m:mo>→</m:mo></m:mover></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mn>0</m:mn><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">T</m:mi><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \oint \vec{B} \cdot \d \vec{l} = \SI{0}{\tesla\metre} \text{.}</m:annotation></m:semantics></m:math></equation></item>
+              <item>Jedynym prądem, który musimy wziąć pod uwagę, jest ten o natężeniu <m:math display="inline">
+                <m:mn>2</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">A</m:mi>
+              </m:math>, ponieważ jest to jedyny prąd przepływający przez kontur całkowania. Prąd ten przepływa ku dołowi, a więc na podstawie reguły prawej dłoni przypisujemy mu dodatnią wartość (znak plus). Otrzymujemy zatem <equation id="eip-idm1152126320" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mo>∮</m:mo><m:mrow><m:mover><m:mi>B</m:mi><m:mo>→</m:mo></m:mover><m:mo>⋅</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mover><m:mi>l</m:mi><m:mo>→</m:mo></m:mover></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>-7</m:mn></m:msup></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mrow><m:mi mathvariant="normal">T</m:mi><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>∕</m:mo><m:mi mathvariant="normal">A</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mn>2</m:mn><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">A</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>2,51</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>-6</m:mn></m:msup></m:mrow><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">T</m:mi><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \oint \vec{B} \cdot \d \vec{l} = 4\pi \cdot 10^{-7}\si{\tesla\metre\per\ampere} \cdot \SI{2}{\ampere} = \SI{2,51e-6}{\tesla\metre} \text{.}</m:annotation></m:semantics></m:math></equation></item>
+          <item>Na podstawie reguły prawej dłoni stwierdzamy, że kierunki prądu przepływającego przez kontur ku dołowi są dodatnie. Suma natężeń prądu płynącego ku dołowi wynosi <m:math display="inline">
+            <m:mrow>
+              <m:mrow>
+                <m:mn>7</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">A</m:mi>
+              </m:mrow>
+              <m:mo>+</m:mo>
+              <m:mrow>
+                <m:mn>5</m:mn>
+                <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+                <m:mi mathvariant="normal">A</m:mi>
+              </m:mrow>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+              <m:mn>12</m:mn>
+              <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+              <m:mi mathvariant="normal">A</m:mi>
+            </m:mrow>
+          </m:math>, a natężenie prądu płynącego ku górze wynosi <m:math display="inline">
+          <m:mrow><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow>
+          <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+          <m:mi mathvariant="normal">A</m:mi>
+        </m:math>. W rezultacie całkowite natężenie prądu wynosi <m:math display="inline">
+        <m:mn>9</m:mn>
+        <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+        <m:mi mathvariant="normal">A</m:mi>
+      </m:math>, a tym samym <equation id="eip-idm1705577104" class="unnumbered"><m:math display="block"><m:semantics><m:mrow><m:mrow><m:mo>∮</m:mo><m:mrow><m:mover><m:mi>B</m:mi><m:mo>→</m:mo></m:mover><m:mo>⋅</m:mo><m:mrow><m:mo lspace="verythinmathspace" rspace="veryverythinmathspace">d</m:mo><m:mover><m:mi>l</m:mi><m:mo>→</m:mo></m:mover></m:mrow></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi></m:mrow><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>-7</m:mn></m:msup></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mrow><m:mi mathvariant="normal">T</m:mi><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow><m:mo>∕</m:mo><m:mi mathvariant="normal">A</m:mi></m:mrow></m:mrow><m:mo>⋅</m:mo><m:mrow><m:mn>9</m:mn><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">A</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mn>5,65</m:mn><m:mo>⋅</m:mo><m:msup><m:mn>10</m:mn><m:mn>-6</m:mn></m:msup></m:mrow><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mrow><m:mi mathvariant="normal">T</m:mi><m:mo lspace="" rspace="verythinmathspace">⁢</m:mo><m:mi mathvariant="normal">m</m:mi></m:mrow></m:mrow><m:mo>⁢</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \oint \vec{B} \cdot \d \vec{l} = 4\pi \cdot 10^{-7}\si{\tesla\metre\per\ampere} \cdot \SI{9}{\ampere} = \SI{5,65e-6}{\tesla\metre} \text{.}</m:annotation></m:semantics></m:math></equation></item>
+</list><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfek1hq_4a"><title>Znaczenie</title>Jeżeli przewody z prądem skręcimy ze sobą tak, że natężenia prądu płynącego do danego konturu całkowania będą równe natężeniom prądu wypływającego z tego konturu – wypadkowe natężenie tychże prądów będzie zerowe. Wokół przewodów nie powstanie zatem pole magnetyczne. Z tego względu przewody tworzące kabel elektryczny położone są blisko siebie. Wówczas prąd płynący do podłączonego urządzenia i z niego wypływający znoszą się i wypadkowe natężenie wewnątrz konturu Ampère’a rozpiętego wokół tych przewodów jest zerowe. W związku z powyższym przewody z prądem w tymże kablu nie będą wytwarzały rozproszonego (zakłócającego) pola magnetycznego. </para></example>
+<note id="ked-1blffbb2e_fbg" class="check-understanding">
+  <exercise id="ked-1blffbnur_co">
+    <problem id="ked-1blffbnsq_0c8">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blffbnva_8f8">
+        <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Rozważ zastosowanie prawa Ampère’a do obliczenia indukcji pola magnetycznego prostoliniowego przewodu o skończonej długości oraz kołowej pętli z prądem. Dlaczego prawo Ampère’a jest w tych przypadkach bezużyteczne? </para>
+      </problem>
+      <solution id="ked-1blffbnta_gh">
+        <para id="ked-1blffbnui_h08">Prawo Ampère’a jest bezużyteczne, ponieważ w tych przypadkach – ze względu na brak symetrii prądu – całkowanie po konturach Ampère’a byłoby bardzo trudne.</para>
+      </solution>
+    </exercise>
+  </note>
+  <section id="ked-1blffchv9_6h8" class="key-concepts">
+    <title>Podsumowanie </title>
+    <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blffd0it_q2"><item>Pole magnetyczne wytwarzane przez prąd elektryczny płynący wzdłuż dowolnej drogi jest sumą (bądź całką) pól – przyczynków do indukcji pola magnetycznego wytwarzanych przez elementy prądu rozmieszczone wzdłuż tej drogi. Wartość i kierunek wektora indukcji poszczególnych przyczynków pola oblicza się tak, jak w przypadku prostoliniowego przewodu. Przedstawiony sposób myślenia prowadzi do uogólnionego związku pomiędzy natężeniem prądu a indukcją pola magnetycznego – znanego jako prawo Ampère’a. </item>
+      <item>Prawo Ampère’a można wykorzystać do określenia pola magnetycznego cienkiego lub grubego przewodu z prądem, stosując wygodny do obliczeń kontur całkowania. Otrzymane rezultaty obliczeń zgodne są z wynikami uzyskanymi z zastosowaniem prawa Biota-Savarta.</item>
+    </list></section>
+  <section id="ked-1blffduo9_2to" class="review-conceptual-questions">
+    <title>Pytania </title>
+    <exercise id="ked-1blfff6i4_68o">
+      <problem id="ked-1blfff6iq_ij">
+        <para id="ked-1blfff6gs_2k">Czy prawo Ampère’a jest słuszne w przypadku dowolnych zamkniętych konturów całkowania? Dlaczego nie jest ono zwykle użyteczne do obliczeń pola magnetycznego?</para>
+      </problem>
+      <solution id="ked-1blfff6jh_uqg">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfff6je_gog">Prawo Ampère’a jest słuszne w przypadku dowolnych zamkniętych konturów całkowania. Nie jest ono jednak użyteczne przy braku symetrii pola magnetycznego, którą można by wykorzystać do uproszczenia obliczeń, przyjmując odpowiedni kontur całkowania.</para>
+      </solution>
+    </exercise>
+  </section>
+  <section id="ked-1blfffjpu_8p" class="review-problems">
+    <title>Zadania</title>
+    <exercise id="ked-1blfffp7p_8h">
+      <problem id="ked-1blfffp72_c0g">
+        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfffp93_8eg">Prąd o natężeniu <m:math display="inline">
+          <m:mi>I</m:mi>
+        </m:math> płynie wokół prostokątnej ramki przedstawionej na załączonym rysunku. Oblicz wartość całki <m:math display="inline">
+        <m:mo>∮</m:mo>
+        <m:mrow>
+          <m:mover>
+            <m:mi>B</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+          <m:mo>⋅</m:mo>
+          <m:mrow>
+            <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+            <m:mover>
+              <m:mi>l</m:mi>
+              <m:mo>→</m:mo>
+            </m:mover>
+          </m:mrow>
+        </m:mrow>
+      </m:math> wzdłuż konturów <m:math display="inline">
+      <m:mi>A</m:mi>
+    </m:math>, <m:math display="inline">
+    <m:mi>B</m:mi>
+  </m:math>, <m:math display="inline">
+  <m:mi>C</m:mi>
+</m:math> oraz <m:math display="inline">
+<m:mi>D</m:mi>
+</m:math>.<newline/></para><media id="ked-1blffi7g5_fu" alt="Rysunek przedstawia prostokątną pętlę przewodzącą prąd l. Ścieżki A i C przecinają krótsze boki pętli. Ścieżka B przecina dwa długie boki pętli. Ścieżka D przecina obydwa boki pętli, długi i krótki.">
+  <image src="../../media/CNX_UPhysics_29_08_Pr26_img.jpg" mime-type="image/jpeg"/>
+</media>
+</problem>
+<solution id="ked-1blfffp7k_jbo">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blfffp9f_lko">a. <m:math display="inline">
+    <m:msub>
+      <m:mi>μ</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:mi>I</m:mi>
+  </m:math>; b. 0; c. <m:math display="inline">
+  <m:msub>
+    <m:mi>μ</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>⁢</m:mo>
+  <m:mi>I</m:mi>
+  </m:math>; d. 0. </para>
+</solution>
+</exercise>
+<exercise id="ked-1blffgdsu_2go">
+  <problem id="ked-1blffgdrd_jqg">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blffgdr7_d2">Określ wartość całki <m:math display="inline">
+      <m:mo>∮</m:mo>
+      <m:mrow>
+        <m:mover>
+          <m:mi>B</m:mi>
+          <m:mo>→</m:mo>
+        </m:mover>
+        <m:mo>⋅</m:mo>
+        <m:mrow>
+          <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+          <m:mover>
+            <m:mi>l</m:mi>
+            <m:mo>→</m:mo>
+          </m:mover>
+        </m:mrow>
+      </m:mrow>
+      </m:math> w każdym z przypadków przedstawionych na załączonym rysunku.<newline/></para><media id="ked-1blffip41_nno" alt="Rysunek A przedstawia przewód wewnątrz pętli przewodzący prąd dwu amperowy górą przez pętlę. Rysunek B przedstawia trzy przewody wewnątrz pętli przewodzące prąd pięcio, dwu i sześcio amperowy. Przewody pierwszy i trzeci przenoszą prąd górą przez pętlę. Drugi przenosi prąd dołem przez pętlę. Rysunek C przedstawia dwa przewody na zewnątrz pętli, które przenoszą prąd trzy, dwu i cztero amperowy. Pierwszy przewód przenosi prąd górą przez pętlę, drugi i trzeci są wewnątrz pętli. Pierwszy i trzeci przenoszą prąd dołem przez pętlę. Drugi przenosi górą przez pętlę. Rysunek D przedstawia cztery przewody przenoszące prąd cztero, trzy, dwu i dwu amperowy. Przewody pierwszy i czwarty znajdują się poza pętlą. Drugi i trzeci są wewnątrz pętli. Przewody pierwszy, drugi i trzeci przenoszą prąd górą przez pętlę. Przewód czwarty przenosi prąd dołem przez pętlę.">
+        <image src="../../media/CNX_UPhysics_29_08_Pr27_img.jpg" mime-type="image/jpeg"/>
+      </media>
+    </problem>
+  </exercise>
+  <exercise id="ked-1blffgfks_rgg">
+    <problem id="ked-1blffgfks_u1o">
+      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blffgflg_1j8">W cewce, której przekrój podłużny przedstawia załączony rysunek, płynie prąd o natężeniu <m:math display="inline">
+        <m:mi>I</m:mi>
+      </m:math>. Cewka składa się z <m:math display="inline">
+      <m:mi>N</m:mi>
+    </m:math> zwojów rozmieszczonych równomiernie na jej długości <m:math display="inline">
+    <m:mi>l</m:mi>
+  </m:math>. Określ wartość całki <m:math display="inline">
+  <m:mo>∮</m:mo>
+  <m:mrow>
+    <m:mover>
+      <m:mi>B</m:mi>
+      <m:mo>→</m:mo>
+    </m:mover>
+    <m:mo>⋅</m:mo>
+    <m:mrow>
+      <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
+      <m:mover>
+        <m:mi>l</m:mi>
+        <m:mo>→</m:mo>
+      </m:mover>
+    </m:mrow>
+  </m:mrow>
+  </m:math> w przypadkach konturów całkowania widocznych na rysunku.<newline/></para><media id="ked-1blffiseg_f9g" alt="Rysunek przedstawia podłużny przekrój cewki. Ścieżka A wycina trzy cewki przewodzące prąd z płaszczyzny papieru. Ścieżka B wycina cztery cewki z dwóch przewodzących prąd z płaszczyzny papieru i dwóch przewodzących prąd wewnątrz płaszczyzny papieru. Ścieżka C wycina siedem cewek przewodzących prąd ku płaszczyźnie papieru. Ścieżka D wycina cewki przewodzące prąd ku płaszczyźnie papieru.">
+    <image src="../../media/CNX_UPhysics_29_08_Pr28_img.jpg" mime-type="image/jpeg"/>
+  </media>
+</problem>
+<solution id="ked-1blffgfl7_dgg">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blffgfl6_g3">a. <m:math display="inline">
+    <m:mn>3</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:msub>
+      <m:mi>μ</m:mi>
+      <m:mn>0</m:mn>
+    </m:msub>
+    <m:mo>⁢</m:mo>
+    <m:mi>I</m:mi>
+  </m:math>; b. 0; c. <m:math display="inline">
+  <m:mn>7</m:mn>
+  <m:mo>⁢</m:mo>
+  <m:msub>
+    <m:mi>μ</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>⁢</m:mo>
+  <m:mi>I</m:mi>
+</m:math>; d. <m:math display="inline">
+<m:mo>−</m:mo>
+<m:mrow>
+  <m:mn>2</m:mn>
+  <m:mo>⁢</m:mo>
+  <m:msub>
+    <m:mi>μ</m:mi>
+    <m:mn>0</m:mn>
+  </m:msub>
+  <m:mo>⁢</m:mo>
+  <m:mi>I</m:mi>
+</m:mrow>
+</m:math>. </para>
+</solution>
+</exercise>
+<exercise id="ked-1blffgg4t_m9o">
+  <problem id="ked-1blffgg34_lbo">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blffgg3l_6jg">W nadprzewodzącym drucie o średnicy <m:math display="inline">
+      <m:mn>0,25</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mi mathvariant="normal">cm</m:mi>
+    </m:math> płynie prąd o natężeniu <m:math display="inline">
+    <m:mn>1000</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">A</m:mi>
+    </m:math>. Wyznacz indukcję pola magnetycznego w pobliżu tego drutu.</para></problem>
+</exercise>
+<exercise id="ked-1blffgghb_n5g">
+  <problem id="ked-1blffggfm_vbg">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blffgggg_ik">W długim, prostoliniowym przewodzie o promieniu <m:math display="inline">
+      <m:mi>R</m:mi>
+    </m:math> płynie prąd o natężeniu <m:math display="inline">
+    <m:mi>I</m:mi>
+    </m:math>. Prąd jest równomiernie rozłożony w przekroju poprzecznym przewodu. W jakiej odległości od osi przewodu wartość indukcji pola magnetycznego będzie maksymalna?</para></problem>
+  <solution id="ked-1blffggf4_7eo">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blffggfs_hg8">W odległości równej promieniowi <m:math display="inline">
+      <m:mi>R</m:mi>
+      </m:math>. </para>
+    </solution>
+  </exercise>
+  <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blffggrf_gv8">
+    <problem id="ked-1blffggr0_ld">
+      <para id="ked-1blffggs5_7oo">Załączony rysunek przedstawia przekrój poprzeczny długiego, wydrążonego, cylindrycznego przewodnika o promieniu wewnętrznym <m:math display="inline">
+        <m:msub>
+          <m:mi>r</m:mi>
+          <m:mn>1</m:mn>
+        </m:msub>
+        <m:mo>=</m:mo>
+        <m:mrow>
+          <m:mn>3</m:mn>
+          <m:mo>⁢</m:mo>
+          <m:mi mathvariant="normal">cm</m:mi>
+        </m:mrow>
+      </m:math> i promieniu zewnętrznym <m:math display="inline">
+      <m:msub>
+        <m:mi>r</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+      <m:mo>=</m:mo>
+      <m:mrow>
+        <m:mn>5</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mi mathvariant="normal">cm</m:mi>
+      </m:mrow>
+    </m:math>. Prąd o natężeniu <m:math display="inline">
+    <m:mn>50</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">A</m:mi>
+  </m:math>, rozłożony równomiernie w przekroju poprzecznym przewodnika, płynie w stronę płaszczyzny rysunku. Oblicz indukcję pola magnetycznego w odległościach <m:math display="inline">
+  <m:mi>r</m:mi>
+  <m:mo>=</m:mo>
+  <m:mrow>
+    <m:mn>2</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:mi mathvariant="normal">cm</m:mi>
+  </m:mrow>
+</m:math>, <m:math display="inline">
+<m:mi>r</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>4</m:mn>
+  <m:mo>⁢</m:mo>
+  <m:mi mathvariant="normal">cm</m:mi>
+</m:mrow>
+</m:math> oraz <m:math display="inline">
+<m:mi>r</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+  <m:mn>6</m:mn>
+  <m:mo>⁢</m:mo>
+  <m:mi mathvariant="normal">cm</m:mi>
+</m:mrow>
+</m:math> od osi przewodu.<newline/></para><media id="ked-1blffjeb1_n0g" alt="Rysunek przedstawia przekrój długiego, wydrążonego, cylindrycznego przewodnika o promieniu wewnętrznym 3 centymetry i zewnętrznym promieniu 5 centymetrów.">
+  <image src="../../media/CNX_UPhysics_29_08_Pr31_img.jpg" mime-type="image/jpeg"/>
+</media>
+</problem>
+</exercise>
+<exercise id="ked-1blffgh6g_70g">
+  <problem id="ked-1blffgh5e_h1">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blffgh6h_tco">W długim, jednolitym, cylindrycznym przewodniku o promieniu <m:math display="inline">
+      <m:mn>3</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mi mathvariant="normal">cm</m:mi>
+    </m:math> płynie prąd o natężeniu <m:math display="inline">
+    <m:mn>50</m:mn>
+    <m:mo rspace="verythinmathspace" lspace="">⁢</m:mo>
+    <m:mi mathvariant="normal">A</m:mi>
+  </m:math>. Prąd rozłożony jest równomiernie w przekroju poprzecznym przewodnika. Narysuj wykres wartości indukcji pola magnetycznego w funkcji odległości radialnej <m:math display="inline">
+  <m:mi>r</m:mi>
+  </m:math> od środka przewodnika. </para></problem>
+<solution id="ked-1blffgh69_1to">
+  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blffgh4h_kc8"><newline/><media id="ked-1blfik853_a6" alt="Wykres przedstawia zmienność B wraz z r. B rośnie liniowo wraz z r aż do punktu a. Następnie zaczyna spadać proporcjonalnie do odwrotności r.">
+      <image src="../../media/CNX_UPhysics_29_05_Graph_img.jpg" mime-type="image/jpeg"/>
+    </media>
+  </para></solution>
+</exercise>
+<exercise id="ked-1blffghfd_3rg">
+  <problem id="ked-1blffghg1_q0g">
+    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="ked-1blffghg3_oi">Poniższy rysunek przedstawia fragment długiego, cylindrycznego <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="kabel koncentryczny">kabla koncentrycznego</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">coaxial cable</term></foreign>). Prąd o natężeniu <m:math display="inline">
+    <m:mi>I</m:mi>
+  </m:math> wpływa do wewnętrznego przewodu kabla i wypływa jego zewnętrznym przewodem. Wyznacz indukcję pola magnetycznego w obszarach, w których <list id="eip-idm1006352928" list-type="enumerated" number-style="lower-alpha"><item><m:math display="inline"><m:semantics><m:mrow><m:mi>r</m:mi><m:mo>≤</m:mo><m:msub><m:mi>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            r \leq r_1</m:annotation></m:semantics></m:math>;</item>
+<item><m:math display="inline"><m:semantics><m:mrow><m:mrow><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub><m:mo>≥</m:mo><m:mi>r</m:mi></m:mrow><m:mo>&gt;</m:mo><m:msub><m:mi>r</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            r_2 \geq r &gt; r_1</m:annotation></m:semantics></m:math>;</item>
+<item><m:math display="inline"><m:semantics><m:mrow><m:mrow><m:msub><m:mi>r</m:mi><m:mn>3</m:mn></m:msub><m:mo>≥</m:mo><m:mi>r</m:mi></m:mrow><m:mo>&gt;</m:mo><m:msub><m:mi>r</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            r_3 \geq r &gt; r_2</m:annotation></m:semantics></m:math>;</item>
+<item><m:math display="inline"><m:semantics><m:mrow><m:mi>r</m:mi><m:mo>&gt;</m:mo><m:msub><m:mi>r</m:mi><m:mn>3</m:mn></m:msub></m:mrow><m:annotation encoding="application/vnd.katalysteducation.mathtex">            r &gt; r_3</m:annotation></m:semantics></m:math>.</item></list><newline/></para><media id="ked-1blffj9s0_ovo" alt="Rysunek przedstawia długi cylindryczny kabel koncentryczny. Promień ze środka przewodu wewnętrznego wynosi r1. Odległość od środka do płaszczyzny drugiej strony wynosi r2. Odległość ze środka do płaszczyzny strony zewnętrznej wynosi r3.">
+                    <image src="../../media/CNX_UPhysics_29_08_Pr33_img.jpg" mime-type="image/jpeg"/>
+                  </media>
+                </problem>
+              </exercise>
+            </section>
+          </content>
+          <glossary>
+            <definition id="ked-1blfjmbre_hm">
+              <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="prawo Ampère’a">prawo Ampère’a (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">Ampère’s law</term></foreign>)</term>
+                <meaning id="ked-1blfjmbqb_vag">prawo fizyczne stwierdzające, że całka krzywoliniowa indukcji pola magnetycznego wokół prądu elektrycznego jest proporcjonalna do jego natężenia</meaning>
+              </definition>
+            </glossary>
+          </document>
