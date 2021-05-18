@@ -1,6 +1,6 @@
-<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" id="new" cnxml-version="0.8" module-id="new">
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
   <title>Wyznaczanie natężenia pola elektrycznego rozkładu ładunków</title>
-  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m67164</md:content-id>
   <md:title>Wyznaczanie natężenia pola elektrycznego rozkładu ładunków</md:title>
   <md:abstract>W tym podrozdziale nauczysz się:
@@ -13,17 +13,17 @@
 </metadata>
 
 <content>
-  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100528772">Dotychczas mieliśmy do czynienia z dyskretnymi (ziarnistymi) rozkładami ładunku: tworzonymi przez pojedyncze punktowe cząstki. Inaczej jest, gdy mamy do czynienia z <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="ciągły rozkład ładunku">ciągłym rozkładem ładunku</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">continuous charge distribution</term></foreign>), gdzie przynajmniej jeden wymiar jest niezerowy. Jeżeli mamy do czynienia z rozkładem ciągłym ładunku, a nie dyskretnym, możemy uogólnić definicję pola elektrycznego. Po prostu dzielimy ładunek na nieskończenie małe (różniczkowe) elementy i każdy z nich traktujemy jak ładunek punktowy.</para>
-    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100502963">Zauważmy, że ze względu na to, że ładunek jest skwantowany, to naprawdę nie istnieje prawdziwie ciągły rozkład ładunku. Jednak w praktyce, ze względu na to, że całkowity ładunek wytwarzający pole elektryczne składa się z dużej liczby pojedynczych ładunków, możemy skutecznie pominąć ziarnistą naturę ładunku i rozpatrywać rozkład ładunku jako ciągły. To jest takie samo przybliżenie, jakie stosujemy, gdy rozpatrujemy wiadro z wodą, traktując ją jako ciągły płyn, a nie zbiór cząsteczek H<sub>2</sub>O.</para>
-    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100760305">Naszym pierwszym krokiem jest zdefiniowanie gęstości rozkładu ładunku wzdłuż linii na powierzchni lub w objętości, tak jak pokazano na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_22_05_DistImg" cmlnle:case="genitive"/>.</para>
-    <figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_22_05_DistImg">
+  <para id="fs-id1172100528772">Dotychczas mieliśmy do czynienia z dyskretnymi (ziarnistymi) rozkładami ładunku: tworzonymi przez pojedyncze punktowe cząstki. Inaczej jest, gdy mamy do czynienia z <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="ciągły rozkład ładunku">ciągłym rozkładem ładunku</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">continuous charge distribution</term></foreign>), gdzie przynajmniej jeden wymiar jest niezerowy. Jeżeli mamy do czynienia z rozkładem ciągłym ładunku, a nie dyskretnym, możemy uogólnić definicję pola elektrycznego. Po prostu dzielimy ładunek na nieskończenie małe (różniczkowe) elementy i każdy z nich traktujemy jak ładunek punktowy.</para>
+    <para id="fs-id1172100502963">Zauważmy, że ze względu na to, że ładunek jest skwantowany, to naprawdę nie istnieje prawdziwie ciągły rozkład ładunku. Jednak w praktyce, ze względu na to, że całkowity ładunek wytwarzający pole elektryczne składa się z dużej liczby pojedynczych ładunków, możemy skutecznie pominąć ziarnistą naturę ładunku i rozpatrywać rozkład ładunku jako ciągły. To jest takie samo przybliżenie, jakie stosujemy, gdy rozpatrujemy wiadro z wodą, traktując ją jako ciągły płyn, a nie zbiór cząsteczek H<sub>2</sub>O.</para>
+    <para id="fs-id1172100760305">Naszym pierwszym krokiem jest zdefiniowanie gęstości rozkładu ładunku wzdłuż linii na powierzchni lub w objętości, tak jak pokazano na <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="CNX_UPhysics_22_05_DistImg" cmlnle:case="genitive"/>.</para>
+    <figure id="CNX_UPhysics_22_05_DistImg">
       <media id="fs-id1172100647875" alt="Na rysunku a pokazany jest pręt jednorodnie naładowany z liniową gęstością ładunku lambda. Mały fragment pręta jest zaznaczony ciemniejszym kolorem i oznaczony d l. Na rysunku b pokazana jest płaszczyzna naładowana z powierzchniową gęstością ładunku sigma. Mały wycinek powierzchni jest zaznaczony ciemniejszym kolorem i oznaczony d S. Na rysunku c pokazana jest bryła naładowana z objętościową gęstością ładunku rho. Mały element objętości jest zaznaczony ciemniejszym kolorem i oznaczony d V. Na rysunku d pokazana jest płaszczyzna z dwoma wycinkami zaznaczonymi ciemniejszym kolorem i oznaczonymi d S 1 i d S 2. Pokazany jest też punkt P znajdujący się ponad powierzchnią. Cienką linią zaznaczono odległość pomiędzy zaznaczonymi wycinkami a punktem P. W punkcie P narysowane są wektory E 1 i E 2 skierowane w przeciwną stronę od zaznaczonych wycinków. Wypadkowy wektor E jest sumą E 1 i E 2. Jest skierowany w górę od płaszczyzny. ">
         <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_22_05_DistImg.jpg"/>
       </media>
       <caption>Rozkład nieskończenie małych (różniczkowych) elementów ładunku dla (a) rozkładu liniowego ładunku, (b) naładowanej powierzchni oraz (c) ładunku objętościowego. Zauważmy, że (d) niektóre składowe całkowitego natężenia pola elektrycznego znoszą się, a pozostałe dają wypadkowe natężenie pola elektrycznego.</caption>
     </figure>
-    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098255442">Definicje gęstości ładunkowych:</para>
-    <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098647258" list-type="bulleted" bullet-style="bullet">
+    <para id="fs-id1172098255442">Definicje gęstości ładunkowych:</para>
+    <list id="fs-id1172098647258" list-type="bulleted" bullet-style="bullet">
       <item>
         <m:math display="inline">
           <m:mi>λ</m:mi>
@@ -65,7 +65,7 @@
       </m:mrow>
       </m:math>). </item>
     </list>
-    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100762856">Dla liniowego, powierzchniowego i objętościowego rozkładu ładunku sumowanie w <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172099379603" document="m67163" cmlnle:case="dative"/> zastępujemy całką, a ładunek <m:math display="inline">
+    <para id="fs-id1172100762856">Dla liniowego, powierzchniowego i objętościowego rozkładu ładunku sumowanie w <link xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" target-id="fs-id1172099379603" document="m67163" cmlnle:case="dative"/> zastępujemy całką, a ładunek <m:math display="inline">
       <m:msub>
         <m:mi>q</m:mi>
         <m:mi>i</m:mi>
@@ -100,7 +100,7 @@
 </m:mrow>
 </m:math>
 </para>
-<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098511175">
+<equation id="fs-id1172098511175">
   <m:math display="block">
     <m:semantics>
       <m:mrow>
@@ -166,7 +166,7 @@
     </m:semantics>
   </m:math>
 </equation>
-<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100576581">
+<equation id="fs-id1172100576581">
   <m:math display="block">
     <m:semantics>
       <m:mrow>
@@ -235,7 +235,7 @@
     </m:semantics>
   </m:math>
 </equation>
-<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100622507">
+<equation id="fs-id1172100622507">
   <m:math display="block">
     <m:semantics>
       <m:mrow>
@@ -304,7 +304,7 @@
     </m:semantics>
   </m:math>
 </equation>
-<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098527247">
+<equation id="fs-id1172098527247">
   <m:math display="block">
     <m:semantics>
       <m:mrow>
@@ -373,7 +373,7 @@
     </m:semantics>
   </m:math>
 </equation>
-<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172096398139">Wzory całkowe przedstawiają uogólnioną postać wyrażenia na natężenie pola elektrycznego ładunku punktowego. Uwzględniają one i zawierają w sobie zasadę superpozycji. Sztuka korzystania z tych wzorów polega zazwyczaj na uwzględnieniu poprawnych wyrażeń na <m:math display="inline">
+<para id="fs-id1172096398139">Wzory całkowe przedstawiają uogólnioną postać wyrażenia na natężenie pola elektrycznego ładunku punktowego. Uwzględniają one i zawierają w sobie zasadę superpozycji. Sztuka korzystania z tych wzorów polega zazwyczaj na uwzględnieniu poprawnych wyrażeń na <m:math display="inline">
   <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
   <m:mi>l</m:mi>
 </m:math>, <m:math display="inline">
@@ -385,7 +385,7 @@
 </m:math>, w zależności od rozpatrywanego przypadku, wyrażonych poprzez zmienną <m:math display="inline">
 <m:mi>r</m:mi>
 </m:math>, oraz właściwym sformułowaniu funkcji gęstości ładunku. Może być ona stała, może też zależeć od położenia.</para>
-<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098678477">Zapamiętaj dokładnie znaczenie zmiennej <m:math display="inline">
+<para id="fs-id1172098678477">Zapamiętaj dokładnie znaczenie zmiennej <m:math display="inline">
   <m:mi>r</m:mi>
 </m:math> w tych równaniach: wyraża ona odległość pomiędzy nieskończenie małymi (różniczkowymi) elementami ładunku (<m:math display="inline">
 <m:mfenced open="" close="">
@@ -437,7 +437,7 @@
   <m:mo>→</m:mo>
 </m:mover>
 </m:math> do łatwego zapisania trzech całek. To znaczy, że <link target-id="fs-id1172100576581"/> można zapisać teraz w postaci </para>
-<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172096287512" class="unnumbered">
+<equation id="fs-id1172096287512" class="unnumbered">
   <m:math display="block">
     <m:mtable>
       <m:mtr>
@@ -627,7 +627,7 @@
   </m:math>
 </equation>
 <example id="fs-id1172100496723">
-  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100722399">
+  <para id="fs-id1172100722399">
     <title>Pole elektryczne naładowanego pręta</title>Obliczmy natężenie pola elektrycznego w odległości <m:math display="inline">
       <m:mi>z</m:mi>
     </m:math> od środka pręta o długości <m:math display="inline">
@@ -635,7 +635,7 @@
   </m:math>, który jest naładowany jednorodnie ładunkiem o liniowej gęstości <m:math display="inline">
   <m:mi>λ</m:mi>
   </m:math>.</para>
-  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098574793">
+  <para id="fs-id1172098574793">
     <title>Strategia rozwiązania</title>Ponieważ mamy do czynienia z ciągłym rozkładem ładunku, umownie dzielimy pręt na nieskończenie małe, różniczkowe elementy o długości <m:math display="inline">
       <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
       <m:mi>l</m:mi>
@@ -654,7 +654,7 @@
       </m:mrow>
     </m:mrow>
     </m:math>. Następnie obliczamy cząstkowe (różniczkowe) natężenie pola elektrycznego od dwóch symetrycznie rozmieszczonych elementów pręta, korzystając z symetrii układu dla uproszczenia obliczeń (<link target-id="CNX_UPhysics_22_05_EofWire"/>). Wreszcie, całkujemy po długości pręta (naprawdę po połowie długości, jak to wyjaśniamy poniżej) różniczkowe wyrażenie na natężenie pola elektrycznego, aby otrzymać wyrażenie na całkowite natężenie pola elektrycznego.</para>
-    <figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_22_05_EofWire">
+    <figure id="CNX_UPhysics_22_05_EofWire">
       <media id="fs-id1172100535745" alt="Długi, cienki drut jest umieszczony na osi x. Drut ma długość L. Mały, pokolorowany, fragment drutu znajduje się w odległości x na prawo od środka drutu. Taki sam pokolorowany fragment drutu znajduje się na lewo od środka drutu w takiej samej odległości. Punkt P znajduje się w odległości z ponad środkiem drutu na osi z. Punkt P znajduje się w odległości r od każdego z zaznaczonych fragmentów drutu. W punkcie P są narysowane wektory d E 1 i d E 2. Wektor d E 1 jest skierowany na zewnątrz od zaznaczonego po lewej stronie fragmentu drutu, pod kątem theta w stosunku do osi z. Wektor d E 2 jest skierowany na zewnątrz od zaznaczonego po prawej stronie fragmentu drutu i tworzy taki sam kąt theta z osią z. Oba wektory d E mają tę samą długość.">
         <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_22_05_EofWire.jpg"/>
       </media>
@@ -662,10 +662,10 @@
         <m:mi>P</m:mi>
         </m:math> może być wyznaczone według zasady superpozycji zastosowanej dla symetrycznie zlokalizowanych porcji ładunku i w wyniku operacji całkowania.</caption>
       </figure>
-      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172096163613">
+      <para id="fs-id1172096163613">
         <title>Rozwiązanie</title>Zanim przejdziemy do rozwiązania, zastanówmy się, jak wyobrażamy sobie pole elektryczne widziane z daleka? Ponieważ mamy do czynienia z prętem o skończonej długości, to z daleka naładowany pręt powinien być widziany jako ładunek punktowy. Sprawdzimy, czy wyrażenie, które otrzymamy, jest zgodne z naszymi przewidywaniami.</para>
-        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100510739">Natężenie pola elektrycznego dla liniowego rozkładu ładunku jest dane wyrażeniem</para>
-        <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098479839" class="unnumbered">
+        <para id="fs-id1172100510739">Natężenie pola elektrycznego dla liniowego rozkładu ładunku jest dane wyrażeniem</para>
+        <equation id="fs-id1172098479839" class="unnumbered">
           <label/>
           <m:math display="block">
             <m:mrow>
@@ -726,12 +726,12 @@
             </m:mrow>
           </m:math>
         </equation>
-        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100993903">Z symetrii układu (nasz wybór dwóch identycznych różniczkowo małych fragmentów ładunku) wynika, że składowe poziome (<m:math display="inline">
+        <para id="fs-id1172100993903">Z symetrii układu (nasz wybór dwóch identycznych różniczkowo małych fragmentów ładunku) wynika, że składowe poziome (<m:math display="inline">
           <m:mi>x</m:mi>
         </m:math>) natężenia pola elektrycznego znoszą się tak, że wypadkowe natężenie pola elektrycznego jest zwrócone w kierunku <m:math display="inline">
         <m:mi>z</m:mi>
         </m:math>. Sprawdźmy to.</para>
-        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098394305">Całkowite natężenie pola elektrycznego <m:math display="inline">
+        <para id="fs-id1172098394305">Całkowite natężenie pola elektrycznego <m:math display="inline">
           <m:mover>
             <m:mi>E</m:mi>
             <m:mo>→</m:mo>
@@ -757,7 +757,7 @@
         <m:mn>2</m:mn>
       </m:msub>
       </m:math>)</para>
-      <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100774477" class="unnumbered">
+      <equation id="fs-id1172100774477" class="unnumbered">
         <label/>
         <m:math display="block">
           <m:mrow>
@@ -863,7 +863,7 @@
           </m:mrow>
         </m:math>
       </equation>
-      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098616120">Ponieważ oba fragmenty ładunku są identyczne i są równo odległe od punktu <m:math display="inline">
+      <para id="fs-id1172098616120">Ponieważ oba fragmenty ładunku są identyczne i są równo odległe od punktu <m:math display="inline">
         <m:mi>P</m:mi>
       </m:math>, w którym chcemy wyznaczyć natężenie pola elektrycznego, to <m:math display="inline">
       <m:msub>
@@ -887,7 +887,7 @@
         <m:mo>⁢</m:mo>
       </m:mrow>
       </m:math> i te składowe się znoszą. Pozostaje więc</para>
-      <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098573139" class="unnumbered">
+      <equation id="fs-id1172098573139" class="unnumbered">
         <label/>
         <m:math display="block">
           <m:mrow>
@@ -980,8 +980,8 @@
           </m:mrow>
         </m:math>
       </equation>
-      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100731285">Te składowe też są równe, otrzymujemy więc</para>
-      <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098780108" class="unnumbered"><m:math display="block">
+      <para id="fs-id1172100731285">Te składowe też są równe, otrzymujemy więc</para>
+      <equation id="fs-id1172098780108" class="unnumbered"><m:math display="block">
           <m:semantics>
             <m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:mrow><m:mover><m:mi>E</m:mi>
                   <m:mo>→</m:mo>
@@ -1261,7 +1261,7 @@
                 </m:mrow>
               </m:mrow>
             </m:annotation-xml></m:semantics>
-        </m:math></equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172096024855">gdzie nasz różniczkowy, liniowy element <m:math display="inline">
+        </m:math></equation><para id="fs-id1172096024855">gdzie nasz różniczkowy, liniowy element <m:math display="inline">
         <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
         <m:mi>l</m:mi>
       </m:math> jest w tym przykładzie równy <m:math display="inline">
@@ -1293,12 +1293,12 @@
 <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
 <m:mi>q</m:mi>
 </m:math>. Gdybyśmy więc całkowali po całej długości, to otrzymalibyśmy wynik zawyżony dwukrotnie).</para>
-<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101028851">I tak otrzymaliśmy rozwiązanie. Jednak żeby obliczyć całkę, musimy wyeliminować wszystkie wielkości, które nie są dane. W tym przypadku zarówno <m:math display="inline">
+<para id="fs-id1172101028851">I tak otrzymaliśmy rozwiązanie. Jednak żeby obliczyć całkę, musimy wyeliminować wszystkie wielkości, które nie są dane. W tym przypadku zarówno <m:math display="inline">
   <m:mi>r</m:mi>
 </m:math>, jak i <m:math display="inline">
 <m:mi>θ</m:mi>
 </m:math> zmieniają się, gdy całkujemy po rozkładzie ładunku, są to więc zmienne, które musimy wyeliminować. Możemy to zrobić w analogiczny sposób, jak to wykonaliśmy dla układu dwóch ładunków punktowych, zauważając, że</para>
-<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100550749" class="unnumbered">
+<equation id="fs-id1172100550749" class="unnumbered">
   <label/>
   <m:math display="block">
     <m:mi>r</m:mi>
@@ -1325,8 +1325,8 @@
     </m:msup>
   </m:math>
 </equation>
-<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100493255">oraz</para>
-<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098574211" class="unnumbered">
+<para id="fs-id1172100493255">oraz</para>
+<equation id="fs-id1172098574211" class="unnumbered">
   <label/>
   <m:math display="block">
     <m:mrow>
@@ -1368,9 +1368,9 @@
     </m:mrow>
   </m:math>
 </equation>
-<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098444826">Podstawiając, otrzymujemy</para>
-<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098798951" class="unnumbered"><m:math display="block"><m:semantics><m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow><m:mo id="Uc1161f2e-1fd8-460e-8591-81be68b750c4">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mn>0</m:mn><m:mrow><m:mi>L</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:munderover><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>x</m:mi></m:mrow></m:mrow><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>z</m:mi><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac></m:mrow><m:mo>⁢</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow></m:mphantom><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mn>0</m:mn><m:mrow><m:mi>L</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>3</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mi>x</m:mi><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow></m:mphantom><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:msqrt><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:msqrt></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow><m:mtext>,</m:mtext></m:mrow><m:msubsup><m:mo>|</m:mo><m:mn>0</m:mn><m:mrow><m:mi>L</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msubsup></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{multiline} \vec{E} \apply(P) &amp;= \frac{1}{4 \pi \epsilon_0} \int_0^{L/2} \frac{2 \lambda \d x}{z^2+x^2} \cdot \frac{z}{(z^2+x^2)^{1/2}} \hat{k} \\ &amp;= \frac{1}{4 \pi \epsilon_0} \int_0^{L/2} \frac{2 \lambda z}{(z^2+x^2)^{3/2}} \d x \cdot \hat{k} \\ &amp;= \frac{2 \lambda z}{4 \pi \epsilon_0} \cdot \frac{x}{z^2 \sqrt{z^2+x^2}} \cdot \hat{k} \mid_0^{L/2} \text{,} \end{multiline}</m:annotation><m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow><m:mo id="Uc1161f2e-1fd8-460e-8591-81be68b750c4-copy">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mn>0</m:mn><m:mrow><m:mi>L</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:munderover><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>x</m:mi></m:mrow></m:mrow><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>z</m:mi><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac></m:mrow><m:mo>⁢</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow><m:mo indenttarget="Uc1161f2e-1fd8-460e-8591-81be68b750c4" linebreak="newline" indentalign="id">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mn>0</m:mn><m:mrow><m:mi>L</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>3</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mi>x</m:mi><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow><m:mo indenttarget="Uc1161f2e-1fd8-460e-8591-81be68b750c4" linebreak="newline" indentalign="id">=</m:mo><m:mrow><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:msqrt><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:msqrt></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow><m:mtext>,</m:mtext></m:mrow><m:msubsup><m:mo>|</m:mo><m:mn>0</m:mn><m:mrow><m:mi>L</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msubsup></m:mrow></m:annotation-xml></m:semantics></m:math></equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100565684">co upraszcza się do postaci</para>
-<equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098305329">
+<para id="fs-id1172098444826">Podstawiając, otrzymujemy</para>
+<equation id="fs-id1172098798951" class="unnumbered"><m:math display="block"><m:semantics><m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow><m:mo id="Uc1161f2e-1fd8-460e-8591-81be68b750c4">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mn>0</m:mn><m:mrow><m:mi>L</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:munderover><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>x</m:mi></m:mrow></m:mrow><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>z</m:mi><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac></m:mrow><m:mo>⁢</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow></m:mphantom><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mn>0</m:mn><m:mrow><m:mi>L</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>3</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mi>x</m:mi><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow></m:mphantom><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:msqrt><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:msqrt></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow><m:mtext>,</m:mtext></m:mrow><m:msubsup><m:mo>|</m:mo><m:mn>0</m:mn><m:mrow><m:mi>L</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msubsup></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{multiline} \vec{E} \apply(P) &amp;= \frac{1}{4 \pi \epsilon_0} \int_0^{L/2} \frac{2 \lambda \d x}{z^2+x^2} \cdot \frac{z}{(z^2+x^2)^{1/2}} \hat{k} \\ &amp;= \frac{1}{4 \pi \epsilon_0} \int_0^{L/2} \frac{2 \lambda z}{(z^2+x^2)^{3/2}} \d x \cdot \hat{k} \\ &amp;= \frac{2 \lambda z}{4 \pi \epsilon_0} \cdot \frac{x}{z^2 \sqrt{z^2+x^2}} \cdot \hat{k} \mid_0^{L/2} \text{,} \end{multiline}</m:annotation><m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow><m:mo id="Uc1161f2e-1fd8-460e-8591-81be68b750c4-copy">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mn>0</m:mn><m:mrow><m:mi>L</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:munderover><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>x</m:mi></m:mrow></m:mrow><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>z</m:mi><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac></m:mrow><m:mo>⁢</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow><m:mo indenttarget="Uc1161f2e-1fd8-460e-8591-81be68b750c4" linebreak="newline" indentalign="id">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mn>0</m:mn><m:mrow><m:mi>L</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:munderover><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>3</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mi>x</m:mi><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow><m:mo indenttarget="Uc1161f2e-1fd8-460e-8591-81be68b750c4" linebreak="newline" indentalign="id">=</m:mo><m:mrow><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:msqrt><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:msqrt></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow><m:mtext>,</m:mtext></m:mrow><m:msubsup><m:mo>|</m:mo><m:mn>0</m:mn><m:mrow><m:mi>L</m:mi><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msubsup></m:mrow></m:annotation-xml></m:semantics></m:math></equation><para id="fs-id1172100565684">co upraszcza się do postaci</para>
+<equation id="fs-id1172098305329">
   <m:math display="block">
     <m:mrow>
       <m:mover>
@@ -1435,30 +1435,30 @@
     </m:mrow>
   </m:math>
 </equation>
-<para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100774034">
+<para id="fs-id1172100774034">
   <title>Znaczenie</title>Zauważmy jeszcze raz, że wykorzystanie symetrii układu upraszcza zadanie. To bardzo częste podejście przy obliczaniu natężenia pola elektrycznego. Wyznaczenie natężenia pola elektrycznego od niesymetrycznego rozkładu ładunków wymaga obliczenia szeregu całek i może zaistnieć potrzeba przeprowadzenia obliczeń numerycznych za pomocą komputera.</para>
 </example>
 <note id="fs-id1172100631231" class="check-understanding">
   <exercise id="fs-id1172098478638">
     <problem id="fs-id1172100970290">
-      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098748613">
+      <para id="fs-id1172098748613">
         <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Jak zmieniłoby się podejście zaprezentowane powyżej w przypadku obliczania natężenia pola elektrycznego w punkcie znajdującym się w odległości <m:math display="inline">
           <m:mi>z</m:mi>
           </m:math> powyżej jednego z końców pręta?</para>
         </problem>
         <solution id="fs-id1172100657188">
-          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101004422">Nie będziemy teraz mogli skorzystać z zalet, jakie daje symetria układu. Będziemy musieli wyznaczyć osobno każdą z dwóch składowych natężenia pola elektrycznego, obliczając odpowiednie całki.</para>
+          <para id="fs-id1172101004422">Nie będziemy teraz mogli skorzystać z zalet, jakie daje symetria układu. Będziemy musieli wyznaczyć osobno każdą z dwóch składowych natężenia pola elektrycznego, obliczając odpowiednie całki.</para>
         </solution>
       </exercise>
     </note>
     <example id="fs-id1172096304030">
-      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100867460">
+      <para id="fs-id1172100867460">
         <title>Natężenie pola elektrycznego od nieskończenie długiego naładowanego drutu</title>Obliczmy natężenie pola elektrycznego w odległości <m:math display="inline">
           <m:mi>z</m:mi>
         </m:math> powyżej nieskończenie długiego drutu naładowanego jednorodnie z gęstością liniową <m:math display="inline">
         <m:mi>λ</m:mi>
         </m:math>.</para>
-        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098431511">
+        <para id="fs-id1172098431511">
           <title>Strategia rozwiązania</title>To taki sam przypadek jak rozważany uprzednio, z tą różnicą, że granice całkowania wynoszą teraz od <m:math display="inline">
             <m:mo>−</m:mo>
             <m:mi>∞</m:mi>
@@ -1466,9 +1466,9 @@
           <m:mo>+</m:mo>
           <m:mi>∞</m:mi>
           </m:math>.</para>
-          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098273237">
+          <para id="fs-id1172098273237">
             <title>Rozwiązanie</title>Ponownie składowe poziome się znoszą, otrzymujemy więc</para>
-            <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100742871" class="unnumbered">
+            <equation id="fs-id1172100742871" class="unnumbered">
               <label/>
               <m:math display="block">
                 <m:mrow>
@@ -1542,7 +1542,7 @@
                 </m:mrow>
               </m:math>
             </equation>
-            <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172096302577">gdzie liniowy element różniczkowy <m:math display="inline">
+            <para id="fs-id1172096302577">gdzie liniowy element różniczkowy <m:math display="inline">
               <m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo>
               <m:mi>l</m:mi>
             </m:math> jest równy <m:math display="inline">
@@ -1551,7 +1551,7 @@
           </m:math>, gdyż całkujemy po rozkładzie ładunków wzdłuż osi <m:math display="inline">
           <m:mi>x</m:mi>
           </m:math>. Ponownie</para>
-          <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100585690" class="unnumbered">
+          <equation id="fs-id1172100585690" class="unnumbered">
             <label/>
             <m:math display="block">
               <m:mrow>
@@ -1593,9 +1593,9 @@
               </m:mrow>
             </m:math>
           </equation>
-          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098593153">Podstawiając, otrzymujemy</para>
-          <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100925406" class="unnumbered"><m:math display="block"><m:semantics><m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow><m:mo id="U87676a6c-8acf-4597-9d0b-71f51dfe6fef">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>x</m:mi></m:mrow></m:mrow><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>z</m:mi><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac></m:mrow><m:mo>⁢</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow></m:mphantom><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>3</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mi>x</m:mi><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow></m:mphantom><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:msqrt><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:msqrt></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow><m:mtext>,</m:mtext></m:mrow><m:msubsup><m:mo>|</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:msubsup></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{multiline} \vec{E} \apply(P) &amp;= \frac{1}{4 \pi \epsilon_0} \int_{-\infty}^{\infty} \frac{2 \lambda \d x}{z^2+x^2} \cdot \frac{z}{(z^2+x^2)^{1/2}} \hat{k} \\ &amp;= \frac{1}{4 \pi \epsilon_0} \int_{-\infty}^{\infty} \frac{2 \lambda z}{(z^2+x^2)^{3/2}} \d x \cdot \hat{k} \\ &amp;= \frac{2 \lambda z}{4 \pi \epsilon_0} \cdot \frac{x}{z^2 \sqrt{z^2+x^2}} \cdot \hat{k} \mid_{-\infty}^{\infty} \text{,} \end{multiline}</m:annotation><m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow><m:mo id="U87676a6c-8acf-4597-9d0b-71f51dfe6fef-copy">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>x</m:mi></m:mrow></m:mrow><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>z</m:mi><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac></m:mrow><m:mo>⁢</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow><m:mo indenttarget="U87676a6c-8acf-4597-9d0b-71f51dfe6fef" linebreak="newline" indentalign="id">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>3</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mi>x</m:mi><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow><m:mo indenttarget="U87676a6c-8acf-4597-9d0b-71f51dfe6fef" linebreak="newline" indentalign="id">=</m:mo><m:mrow><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:msqrt><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:msqrt></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow><m:mtext>,</m:mtext></m:mrow><m:msubsup><m:mo>|</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:msubsup></m:mrow></m:annotation-xml></m:semantics></m:math></equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100909688">co upraszcza się do postaci</para>
-          <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098516045" class="unnumbered">
+          <para id="fs-id1172098593153">Podstawiając, otrzymujemy</para>
+          <equation id="fs-id1172100925406" class="unnumbered"><m:math display="block"><m:semantics><m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow><m:mo id="U87676a6c-8acf-4597-9d0b-71f51dfe6fef">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>x</m:mi></m:mrow></m:mrow><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>z</m:mi><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac></m:mrow><m:mo>⁢</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow></m:mphantom><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>3</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mi>x</m:mi><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mphantom><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow></m:mphantom><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:msqrt><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:msqrt></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow><m:mtext>,</m:mtext></m:mrow><m:msubsup><m:mo>|</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:msubsup></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="application/vnd.katalysteducation.mathtex">            \begin{multiline} \vec{E} \apply(P) &amp;= \frac{1}{4 \pi \epsilon_0} \int_{-\infty}^{\infty} \frac{2 \lambda \d x}{z^2+x^2} \cdot \frac{z}{(z^2+x^2)^{1/2}} \hat{k} \\ &amp;= \frac{1}{4 \pi \epsilon_0} \int_{-\infty}^{\infty} \frac{2 \lambda z}{(z^2+x^2)^{3/2}} \d x \cdot \hat{k} \\ &amp;= \frac{2 \lambda z}{4 \pi \epsilon_0} \cdot \frac{x}{z^2 \sqrt{z^2+x^2}} \cdot \hat{k} \mid_{-\infty}^{\infty} \text{,} \end{multiline}</m:annotation><m:annotation-xml encoding="application/vnd.katalysteducation.legtool.mathml.original+xml"><m:mrow><m:mover><m:mi>E</m:mi><m:mo>→</m:mo></m:mover><m:mo>⁡</m:mo><m:mfenced><m:mi>P</m:mi></m:mfenced></m:mrow><m:mo id="U87676a6c-8acf-4597-9d0b-71f51dfe6fef-copy">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mi>x</m:mi></m:mrow></m:mrow><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>z</m:mi><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac></m:mrow><m:mo>⁢</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow><m:mo indenttarget="U87676a6c-8acf-4597-9d0b-71f51dfe6fef" linebreak="newline" indentalign="id">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:munderover><m:mo>∫</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:munderover><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:msup><m:mfenced><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfenced><m:mrow><m:mn>3</m:mn><m:mo>∕</m:mo><m:mn>2</m:mn></m:mrow></m:msup></m:mfrac><m:mo>⁢</m:mo><m:mrow><m:mo rspace="veryverythinmathspace" lspace="verythinmathspace">d</m:mo><m:mrow><m:mi>x</m:mi><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow><m:mo indenttarget="U87676a6c-8acf-4597-9d0b-71f51dfe6fef" linebreak="newline" indentalign="id">=</m:mo><m:mrow><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>λ</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:mrow><m:mn>4</m:mn><m:mo>⁢</m:mo><m:mi>π</m:mi><m:mo>⁢</m:mo><m:msub><m:mi>ε</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mi>x</m:mi><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:msqrt><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mo>+</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup></m:msqrt></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:mover><m:mi>k</m:mi><m:mo>̂</m:mo></m:mover></m:mrow><m:mtext>,</m:mtext></m:mrow><m:msubsup><m:mo>|</m:mo><m:mrow><m:mo>−</m:mo><m:mi>∞</m:mi></m:mrow><m:mi>∞</m:mi></m:msubsup></m:mrow></m:annotation-xml></m:semantics></m:math></equation><para id="fs-id1172100909688">co upraszcza się do postaci</para>
+          <equation id="fs-id1172098516045" class="unnumbered">
             <label/>
             <m:math display="block">
               <m:mrow>
@@ -1644,10 +1644,10 @@
               </m:mrow>
             </m:math>
           </equation>
-          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100837000">
+          <para id="fs-id1172100837000">
             <title>Znaczenie</title>Nasze podejście do ciągłych rozkładów ładunków sprawdza się również w przypadku nieskończonych wymiarów tych rozkładów.</para>
           </example>
-          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100965204">Zauważmy, że w przypadku liniowego rozkładu ładunku o skończonej długości, gdy <m:math display="inline">
+          <para id="fs-id1172100965204">Zauważmy, że w przypadku liniowego rozkładu ładunku o skończonej długości, gdy <m:math display="inline">
             <m:mi>z</m:mi>
             <m:mo>≫</m:mo>
             <m:mi>L</m:mi>
@@ -1659,7 +1659,7 @@
         </m:math> w mianowniku jest dużo większy od <m:math display="inline">
         <m:mi>L</m:mi>
         </m:math> i <link target-id="fs-id1172098305329"/> upraszcza się do postaci</para>
-        <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100669778" class="unnumbered">
+        <equation id="fs-id1172100669778" class="unnumbered">
           <label/>
           <m:math display="block">
             <m:mover>
@@ -1705,7 +1705,7 @@
             </m:mrow>
           </m:math>
         </equation>
-        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100617326">Jeżeli uwzględnimy, że <m:math display="inline">
+        <para id="fs-id1172100617326">Jeżeli uwzględnimy, że <m:math display="inline">
           <m:mrow>
             <m:mi>λ</m:mi>
             <m:mo>⁢</m:mo>
@@ -1714,13 +1714,13 @@
           <m:mo>=</m:mo>
           <m:mi>q</m:mi>
           </m:math> jest całkowitym ładunkiem drutu, to otrzymujemy wyrażenie na natężenie pola elektrycznego od ładunku punktowego, czego oczekiwaliśmy.</para>
-          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100856643">Z kolei w granicy <m:math display="inline">
+          <para id="fs-id1172100856643">Z kolei w granicy <m:math display="inline">
             <m:mi>L</m:mi>
             <m:mo>⟶</m:mo>
             <m:mi>∞</m:mi>
           </m:math> otrzymujemy natężenie pola elektrycznego <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="nieskończenie długi, prosty drut">nieskończenie długiego, prostego drutu</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">infinite straight wire</term></foreign>), tj. drutu, którego długość jest znacznie większa od jego pozostałych wymiarów i która jest także znacznie większa od odległości do punktu, w którym chcemy wyznaczyć natężenie pola elektrycznego</para>
           <note id="fs-id1172100785391" class="equation-callout">
-            <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100895644">
+            <equation id="fs-id1172100895644">
               <label/>
               <m:math display="block">
                 <m:mrow>
@@ -1770,28 +1770,28 @@
               </m:math>
             </equation>
           </note>
-          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100616268">Ciekawym następstwem nieskończonego rozmiaru drutu jest to, że nie otrzymujemy typowej zależności <m:math display="inline">
+          <para id="fs-id1172100616268">Ciekawym następstwem nieskończonego rozmiaru drutu jest to, że nie otrzymujemy typowej zależności <m:math display="inline">
             <m:msup>
               <m:mi>r</m:mi>
               <m:mn>-2</m:mn>
             </m:msup>
             </m:math>, do której jesteśmy przyzwyczajeni. Będzie to jeszcze ciekawsze w przypadku naładowanej nieskończonej płaszczyzny.</para>
             <example id="fs-id1172098318605">
-              <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100623309">
+              <para id="fs-id1172100623309">
                 <title>Natężenie pola elektrycznego naładowanego pierścienia</title>Pierścień został jednorodnie naładowany z liniową gęstością ładunku <m:math display="inline">
                   <m:mi>λ</m:mi>
                   </m:math>, wyrażoną w jednostkach kulomb na metr (łuku). Obliczmy natężenie pola elektrycznego w punkcie na osi pierścienia.</para>
-                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100646304">
+                  <para id="fs-id1172100646304">
                     <title>Strategia rozwiązania</title>Posłużymy się tą samą metodą, jak w przypadku naładowanego drutu. Różnica polega na tym, że teraz mamy do czynienia z ładunkiem rozłożonym na pierścieniu. Dzielimy pierścień na nieskończenie małe elementy (fragmenty łuku) i stosujemy współrzędne biegunowe (<link target-id="CNX_UPhysics_22_05_RingChg"/>).</para>
-                    <figure xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="CNX_UPhysics_22_05_RingChg">
+                    <figure id="CNX_UPhysics_22_05_RingChg">
                       <media id="fs-id1172100526874" alt="Na rysunku pokazany jest pierścień o promieniu R znajdujący się na płaszczyźnie x, y w układzie współrzędnych x, y, z. Mały fragment pierścienia jest zaznaczony. Ten fragment znajduje się pod kątem theta od osi x, obejmuje kąt d theta i ma ładunek d q równy iloczynowi lambda i d theta. Punkt P znajduje się na osi z w odległości z od środka pierścienia. Odległość pomiędzy zaznaczonym fragmentem a punktem P jest równa pierwiastkowi kwadratowemu z sumy R do kwadratu i z do kwadratu.">
                         <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_22_05_RingChg.jpg"/>
                       </media>
                       <caption>Układ i zmienne do obliczenia natężenia pola elektrycznego od naładowanego pierścienia.</caption>
                     </figure>
-                    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100978109">
+                    <para id="fs-id1172100978109">
                       <title>Rozwiązanie</title>Natężenie pola elektrycznego naładowanego pierścienia jest dane ogólnym wyrażeniem</para>
-                      <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100666909" class="unnumbered">
+                      <equation id="fs-id1172100666909" class="unnumbered">
                         <label/>
                         <m:math display="block">
                           <m:mrow>
@@ -1852,7 +1852,7 @@
                           </m:mrow>
                         </m:math>
                       </equation>
-                      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098550492">Element łuku zawarty pomiędzy <m:math display="inline">
+                      <para id="fs-id1172098550492">Element łuku zawarty pomiędzy <m:math display="inline">
                         <m:mi>θ</m:mi>
                       </m:math> i <m:math display="inline">
                       <m:mi>θ</m:mi>
@@ -1919,7 +1919,7 @@
               </m:msqrt>
             </m:mrow>
             </m:math>, tak więc natężenie pola elektrycznego jest dane jako</para>
-            <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098546226" class="unnumbered"><m:math display="block">
+            <equation id="fs-id1172098546226" class="unnumbered"><m:math display="block">
                 <m:semantics>
                   <m:mtable columnalign="left" displaystyle="true"><m:mtr><m:mtd><m:mrow><m:mover><m:mi>E</m:mi>
                         <m:mo>→</m:mo>
@@ -2391,13 +2391,13 @@
                       <m:mtext>.</m:mtext>
                     </m:mrow>
                   </m:annotation-xml></m:semantics>
-              </m:math></equation><para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100653423">
+              </m:math></equation><para id="fs-id1172100653423">
               <title>Znaczenie</title>Jak zwykle symetria układu upraszcza rozwiązanie, w tym przypadku dając prostą do obliczenia całkę. Ponadto gdy rozpatrzymy graniczny przypadek dla <m:math display="inline">
                 <m:mi>z</m:mi>
                 <m:mo>≫</m:mo>
                 <m:mi>R</m:mi>
                 </m:math>, to otrzymamy</para>
-                <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100539463" class="unnumbered">
+                <equation id="fs-id1172100539463" class="unnumbered">
                   <label/>
                   <m:math display="block">
                     <m:mover>
@@ -2442,9 +2442,9 @@
                     </m:mrow>
                   </m:math>
                 </equation>
-                <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098272745">tak jak tego oczekiwaliśmy.</para>
+                <para id="fs-id1172098272745">tak jak tego oczekiwaliśmy.</para>
               </example>
-              <example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100957868">
+              <example id="fs-id1172100957868">
                 <para id="fs-id1172098643103">
                   <title>Natężenie pola elektrycznego krążka</title>Obliczmy natężenie pola elektrycznego jednorodnie naładowanej, okrągłej, cienkiej płyty (krążka) o promieniu <m:math display="inline">
                     <m:mi>R</m:mi>
@@ -3134,11 +3134,11 @@
                   <note id="fs-id1172098309083" class="check-understanding">
                     <exercise id="fs-id1172100648024">
                       <problem id="fs-id1172100855360">
-                        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098745054">
+                        <para id="fs-id1172098745054">
                           <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Jak wyglądałby ten graniczny przypadek dla jednorodnie naładowanego prostokąta zamiast krążka?</para>
                         </problem>
                         <solution id="fs-id1172100637942">
-                          <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098419436">Ładunek punktowy byłby wtedy równy <m:math display="inline">
+                          <para id="fs-id1172098419436">Ładunek punktowy byłby wtedy równy <m:math display="inline">
                             <m:mi>Q</m:mi>
                             <m:mo>=</m:mo>
                             <m:mrow>
@@ -3156,13 +3156,13 @@
                       </solution>
                     </exercise>
                   </note>
-                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098261923">Gdy <m:math display="inline">
+                  <para id="fs-id1172098261923">Gdy <m:math display="inline">
                     <m:mi>R</m:mi>
                     <m:mo>⟶</m:mo>
                     <m:mi>∞</m:mi>
                   </m:math>, <link target-id="fs-id1172100526414"/> redukuje się do wyrażenia na natężenie pola elektrycznego <term xmlns:cmlnle="http://katalysteducation.org/cmlnle/1.0" class="no-emphasis" cmlnle:reference="nieskończona, naładowana płaszczyzna">nieskończonej, naładowanej płaszczyzny</term> (ang. <foreign><term xmlns:cxlxt="http://katalysteducation.org/cxlxt/1.0" cxlxt:index="foreign" class="no-emphasis">infinite plane</term></foreign>), tj. płaskiej płyty, której wymiary poprzeczne są dużo większe od jej grubości, a także dużo większe od odległości do miejsca, gdzie obliczamy natężenie pola elektrycznego</para>
                   <note id="fs-id1172098500040" class="equation-callout">
-                    <equation xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172096293753">
+                    <equation id="fs-id1172096293753">
                       <label/>
                       <m:math display="block">
                         <m:mover>
@@ -3193,14 +3193,14 @@
                       </m:math>
                     </equation>
                   </note>
-                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100850725">Zauważmy, że to natężenie pola jest stałe. To jest niespodziewany wynik będący następstwem nieskończonego rozmiaru płaszczyzny, ale tym wynikiem będziemy się jeszcze wielokrotnie posługiwać. Żeby zrozumieć, dlaczego tak się dzieje, wyobraźmy sobie, że znajdujemy się ponad tą nieskończoną płaszczyzną. Czy jej wygląd zmienia się wraz ze zmianą wysokości, z jakiej ją obserwujemy? Nie, ciągle widzimy płaszczyznę ciągnącą się do nieskończoności bez względu na to, jak bardzo jesteśmy od niej oddaleni. Ważne jest, aby pamiętać, że <link target-id="fs-id1172096293753"/> ma taką postać, ponieważ znajdujemy się powyżej płaszczyzny. Gdybyśmy się znajdowali poniżej, to natężenie pola elektrycznego byłoby zwrócone w kierunku <m:math display="inline">
+                  <para id="fs-id1172100850725">Zauważmy, że to natężenie pola jest stałe. To jest niespodziewany wynik będący następstwem nieskończonego rozmiaru płaszczyzny, ale tym wynikiem będziemy się jeszcze wielokrotnie posługiwać. Żeby zrozumieć, dlaczego tak się dzieje, wyobraźmy sobie, że znajdujemy się ponad tą nieskończoną płaszczyzną. Czy jej wygląd zmienia się wraz ze zmianą wysokości, z jakiej ją obserwujemy? Nie, ciągle widzimy płaszczyznę ciągnącą się do nieskończoności bez względu na to, jak bardzo jesteśmy od niej oddaleni. Ważne jest, aby pamiętać, że <link target-id="fs-id1172096293753"/> ma taką postać, ponieważ znajdujemy się powyżej płaszczyzny. Gdybyśmy się znajdowali poniżej, to natężenie pola elektrycznego byłoby zwrócone w kierunku <m:math display="inline">
                     <m:mo>−</m:mo>
                     <m:mover>
                       <m:mi>k</m:mi>
                       <m:mo>̂</m:mo>
                     </m:mover>
                     </m:math>.</para>
-                    <example xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100970621">
+                    <example id="fs-id1172100970621">
                       <para id="fs-id1172100926082">
                         <title>Natężenie pola elektrycznego dwóch nieskończonych płaszczyzn</title>Wyznaczmy natężenie pola elektrycznego wytworzonego przez dwie nieskończone płaszczyzny jednorodnie naładowane ładunkami równymi, ale o przeciwnych znakach (<link target-id="CNX_UPhysics_22_05_TwoPlanes"/>).</para>
                         <figure id="CNX_UPhysics_22_05_TwoPlanes">
@@ -3257,11 +3257,11 @@
                               <note id="fs-id1172100895749" class="check-understanding">
                                 <exercise id="fs-id1172098310602">
                                   <problem id="fs-id1172100493910">
-                                    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100736696">
+                                    <para id="fs-id1172100736696">
                                       <emphasis effect="bold">Sprawdź, czy rozumiesz.</emphasis> Jakie byłoby pole elektryczne wytworzone przez dwie dodatnio naładowane płaszczyzny o jednakowej gęstości powierzchniowej ładunku?</para>
                                     </problem>
                                     <solution id="fs-id1172100771186">
-                                      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100967148">Natężenie pola elektrycznego byłoby równe zero pomiędzy płaszczyznami i równe <m:math display="inline">
+                                      <para id="fs-id1172100967148">Natężenie pola elektrycznego byłoby równe zero pomiędzy płaszczyznami i równe <m:math display="inline">
                                         <m:mi>σ</m:mi>
                                         <m:mo>∕</m:mo>
                                         <m:msub>
@@ -3273,8 +3273,8 @@
                                     </exercise>
                                   </note>
                                   <section id="fs-id1172100910278" class="key-concepts">
-                                    <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Podsumowanie</title>
-                                    <list xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098408032" list-type="bulleted" bullet-style="bullet">
+                                    <title>Podsumowanie</title>
+                                    <list id="fs-id1172098408032" list-type="bulleted" bullet-style="bullet">
                                       <item>Bardzo dużą liczbę ładunków możemy traktować jako ciągły rozkład ładunku, gdy konieczne jest całkowanie do wyliczenia natężenia pola. Typowymi przykładami są:<list id="fs-id1172100867312" list-type="bulleted" bullet-style="bullet">
                                         <item>rozkład jednowymiarowy (taki jak w drucie); posługujemy się liniową gęstością ładunku <m:math display="inline">
                                           <m:mi>λ</m:mi>
@@ -3358,26 +3358,26 @@
                                     </list>
                                   </section>
                                   <section id="fs-id1172100986866" class="review-conceptual-questions">
-                                    <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Pytania</title>
+                                    <title>Pytania</title>
                                     <exercise id="fs-id1172100527208">
                                       <problem id="fs-id1172098373913">
-                                        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100600000">Uzasadnij, dlaczego natężenie pola elektrycznego na zewnątrz nieskończonej naładowanej płaszczyzny jest stałe.</para>
+                                        <para id="fs-id1172100600000">Uzasadnij, dlaczego natężenie pola elektrycznego na zewnątrz nieskończonej naładowanej płaszczyzny jest stałe.</para>
                                       </problem>
                                       <solution id="fs-id1172098686487">
-                                        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098268618">Spodziewalibyśmy się, że w nieskończoności natężenie pola elektrycznego spada do zera, ale tak nie jest ze względu na to, że płaszczyzna ciągnie się do nieskończoności. Bez względu na to, gdzie się znajdujemy, widzimy nieskończoną płaszczyznę rozciągającą się we wszystkich kierunkach.</para>
+                                        <para id="fs-id1172098268618">Spodziewalibyśmy się, że w nieskończoności natężenie pola elektrycznego spada do zera, ale tak nie jest ze względu na to, że płaszczyzna ciągnie się do nieskończoności. Bez względu na to, gdzie się znajdujemy, widzimy nieskończoną płaszczyznę rozciągającą się we wszystkich kierunkach.</para>
                                       </solution>
                                     </exercise>
-                                    <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100854720">
+                                    <exercise id="fs-id1172100854720">
                                       <problem id="fs-id1172100629446">
                                         <para id="fs-id1172100884008">Porównaj pola elektryczne od nieskończonej płaszczyzny ładunku, nieskończonej przewodzącej płyty i nieskończonych, przeciwnie naładowanych równoległych płyt.</para>
                                       </problem>
                                     </exercise>
                                     <exercise id="fs-id1172098695684">
                                       <problem id="fs-id1172100557562">
-                                        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098687156">Wyraź pola elektryczne od nieskończenie naładowanej płyty i dwóch nieskończonych, naładowanych, równoległych płyt za pomocą pola elektrycznego nieskończonej płaszczyzny ładunku.</para>
+                                        <para id="fs-id1172098687156">Wyraź pola elektryczne od nieskończenie naładowanej płyty i dwóch nieskończonych, naładowanych, równoległych płyt za pomocą pola elektrycznego nieskończonej płaszczyzny ładunku.</para>
                                       </problem>
                                       <solution id="fs-id1172100814857">
-                                        <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100803361">Nieskończona naładowana płyta wytwarza wokół siebie pole elektryczne o natężeniu <m:math display="inline">
+                                        <para id="fs-id1172100803361">Nieskończona naładowana płyta wytwarza wokół siebie pole elektryczne o natężeniu <m:math display="inline">
                                           <m:mi>E</m:mi>
                                           <m:mo>=</m:mo>
                                           <m:mrow>
@@ -3421,15 +3421,15 @@
                                     </m:math> pomiędzy nimi.</para>
                                   </solution>
                                 </exercise>
-                                <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098692693">
+                                <exercise id="fs-id1172098692693">
                                   <problem id="fs-id1172100970152">
                                     <para id="fs-id1172101033957">Ujemny ładunek został umieszczony w środku jednorodnie, dodatnio naładowanego pierścienia. Jak porusza się (o ile w ogóle) ten ładunek? Co się zmieni, gdy umieścimy ładunek na osi pierścienia, ale w punkcie innym niż środek pierścienia?</para>
                                   </problem>
                                 </exercise>
                               </section>
                               <section id="fs-id1172100939053" class="review-problems">
-                                <title xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute">Zadania</title>
-                                <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100565330">
+                                <title>Zadania</title>
+                                <exercise id="fs-id1172100565330">
                                   <problem id="fs-id1172098461964">
                                     <para id="fs-id1172100987032">Cienka przewodząca płyta o boku <m:math display="inline">
                                       <m:mn>1</m:mn>
@@ -3458,7 +3458,7 @@
                               </exercise>
                               <exercise id="fs-id1172098370632">
                                 <problem id="fs-id1172098389848">
-                                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100611155">Oblicz wartość i wyznacz kierunek natężenia pola elektrycznego w odległości <m:math display="inline">
+                                  <para id="fs-id1172100611155">Oblicz wartość i wyznacz kierunek natężenia pola elektrycznego w odległości <m:math display="inline">
                                     <m:mn>2</m:mn>
                                     <m:mo rspace="verythinmathspace" lspace="0px">⁢⁢</m:mo>
                                     <m:mi mathvariant="normal">m</m:mi>
@@ -3484,7 +3484,7 @@
                                   </m:math>.</para>
                                 </problem>
                                 <solution id="fs-id1172100637241">
-                                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098746844">
+                                  <para id="fs-id1172098746844">
                                     <m:math display="inline">
                                       <m:mrow>
                                         <m:mover>
@@ -3525,7 +3525,7 @@
                                   </exercise>
                                   <exercise id="fs-id1172100961606">
                                     <problem id="fs-id1172100925618">
-                                      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098395456">Dwie cienkie przewodzące płytki każda o boku <m:math display="inline">
+                                      <para id="fs-id1172098395456">Dwie cienkie przewodzące płytki każda o boku <m:math display="inline">
                                         <m:mn>25</m:mn>
                                         <m:mo rspace="verythinmathspace" lspace="0px">⁢⁢</m:mo>
                                         <m:mi mathvariant="normal">cm</m:mi>
@@ -3541,7 +3541,7 @@
                                     </m:math> elektronów przeniesiemy z jednej płytki na drugą?</para>
                                   </problem>
                                 </exercise>
-                                <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100656777">
+                                <exercise id="fs-id1172100656777">
                                   <problem id="fs-id1172100564827">
                                     <para id="fs-id1172100872303">Ilość ładunku na jednostkę długości pokazanego poniżej pręta jest równa <m:math display="inline">
                                       <m:mi>λ</m:mi>
@@ -3674,7 +3674,7 @@
                         </m:math>.</para>
                       </solution>
                     </exercise>
-                    <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100905314">
+                    <exercise id="fs-id1172100905314">
                       <problem id="fs-id1172100901006">
                         <para id="fs-id1172096034171">Ładunek na jednostkę długości pokazanego poniżej drutu mającego kształt półkola wynosi <m:math display="inline">
                           <m:mi>λ</m:mi>
@@ -3689,7 +3689,7 @@
                 </exercise>
                 <exercise id="fs-id1172096052084">
                   <problem id="fs-id1172100592946">
-                    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100537410">Dwie cienkie naładowane płytki zostały umieszczone w odległości <m:math display="inline">
+                    <para id="fs-id1172100537410">Dwie cienkie naładowane płytki zostały umieszczone w odległości <m:math display="inline">
                       <m:mn>2</m:mn>
                       <m:mo rspace="verythinmathspace" lspace="0px">⁢⁢</m:mo>
                       <m:mi mathvariant="normal">cm</m:mi>
@@ -3711,7 +3711,7 @@
                 </m:math>. Jaka jest powierzchniowa gęstość ładunku na wewnętrznej powierzchni każdej z płytek? Jakie jest natężenie pola elektrycznego pomiędzy płytkami?</para>
               </problem>
               <solution id="fs-id1172100937518">
-                <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098695099">
+                <para id="fs-id1172098695099">
                   <m:math display="inline">
                     <m:mi>σ</m:mi>
                     <m:mo>=</m:mo>
@@ -3751,7 +3751,7 @@
               </exercise>
               <exercise id="fs-id1172098572567">
                 <problem id="fs-id1172100919886">
-                  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172096288258">Cienka przewodząca płyta o boku <m:math display="inline">
+                  <para id="fs-id1172096288258">Cienka przewodząca płyta o boku <m:math display="inline">
                     <m:mn>2</m:mn>
                     <m:mo rspace="verythinmathspace" lspace="0px">⁢⁢</m:mo>
                     <m:mi mathvariant="normal">m</m:mi>
@@ -3784,7 +3784,7 @@
                 </para>
               </problem>
             </exercise>
-            <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098379059">
+            <exercise id="fs-id1172098379059">
               <problem id="fs-id1172098319033">
                 <para id="fs-id1172100909351">Całkowity ładunek <m:math display="inline">
                   <m:mi>q</m:mi>
@@ -4066,7 +4066,7 @@
 </m:math>.</para>
 </solution>
 </exercise>
-<exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098464397">
+<exercise id="fs-id1172098464397">
   <problem id="fs-id1172098314894">
     <para id="fs-id1172098321453">Ładunek jest rozmieszczony wzdłuż osi <m:math display="inline">
       <m:mi>x</m:mi>
@@ -4087,7 +4087,7 @@
 </exercise>
 <exercise id="fs-id1172098410621">
   <problem id="fs-id1172098591864">
-    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172101036127">Ładunek jest rozmieszczony wzdłuż całej osi <m:math display="inline">
+    <para id="fs-id1172101036127">Ładunek jest rozmieszczony wzdłuż całej osi <m:math display="inline">
       <m:mi>x</m:mi>
     </m:math> ze stałą gęstością <m:math display="inline">
     <m:msub>
@@ -4151,7 +4151,7 @@
     </para>
   </problem>
   <solution id="fs-id1172098462126">
-    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098607164">a. <m:math display="inline">
+    <para id="fs-id1172098607164">a. <m:math display="inline">
       <m:semantics>
         <m:mrow>
           <m:mrow>
@@ -4303,7 +4303,7 @@
     </m:math>.</para>
   </solution>
 </exercise>
-<exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100559867">
+<exercise id="fs-id1172100559867">
   <problem id="fs-id1172100804114">
     <para id="fs-id1172100900748">Pręt został uformowany w kształcie łuku koła o kącie środkowym <m:math display="inline">
       <m:mn>2</m:mn>
@@ -4323,7 +4323,7 @@
 </exercise>
 <exercise id="fs-id1172100887442">
   <problem id="fs-id1172098458483">
-    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098778101">Proton przemieszcza się w polu elektrycznym o natężeniu <m:math display="inline">
+    <para id="fs-id1172098778101">Proton przemieszcza się w polu elektrycznym o natężeniu <m:math display="inline">
       <m:mover>
         <m:mi>E</m:mi>
         <m:mo>→</m:mo>
@@ -4352,7 +4352,7 @@
 </para>
 </problem>
 <solution id="fs-id1172098276630">
-  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098453252">a. <m:math display="inline">
+  <para id="fs-id1172098453252">a. <m:math display="inline">
     <m:mover>
       <m:mi>F</m:mi>
       <m:mo>→</m:mo>
@@ -4480,7 +4480,7 @@
 </exercise>
 <exercise id="fs-id1172100751281">
   <problem id="fs-id1172100535115">
-    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100900293">Elektron i proton ruszają z miejsca przyspieszane tym samym jednorodnym polem elektrycznym o natężeniu <m:math display="inline">
+    <para id="fs-id1172100900293">Elektron i proton ruszają z miejsca przyspieszane tym samym jednorodnym polem elektrycznym o natężeniu <m:math display="inline">
       <m:mn>200</m:mn>
       <m:mo rspace="verythinmathspace" lspace="0px">⁢⁢</m:mo>
       <m:mrow>
@@ -4504,14 +4504,14 @@
 </exercise>
 <exercise id="fs-id1172098590845">
   <problem id="fs-id1172098590847">
-    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100896726">Sferyczna kropelka wody o promieniu <m:math display="inline">
+    <para id="fs-id1172100896726">Sferyczna kropelka wody o promieniu <m:math display="inline">
       <m:mn>25</m:mn>
       <m:mo rspace="verythinmathspace" lspace="0px">⁢⁢</m:mo>
       <m:mi mathvariant="normal">µm</m:mi>
       </m:math> posiada nadmiarowy ładunek 250 elektronów. Jakie musi być natężenie pionowo skierowanego pola elektrycznego niezbędne do zrównoważenia siły grawitacji działającej na kropelkę przy powierzchni Ziemi?</para>
     </problem>
     <solution id="fs-id1172100960293">
-      <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100960296">
+      <para id="fs-id1172100960296">
         <m:math display="inline">
           <m:mi>m</m:mi>
           <m:mo>=</m:mo>
@@ -4549,7 +4549,7 @@
         </m:math>.</para>
       </solution>
     </exercise>
-    <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100876597">
+    <exercise id="fs-id1172100876597">
       <problem id="fs-id1172100876599">
         <para id="fs-id1172100885061">Proton wpada w jednorodne pole elektryczne wytworzone przez dwie naładowane płytki pokazane na rysunku poniżej. Natężenie pola elektrycznego jest równe <m:math display="inline">
           <m:mrow>
@@ -4589,7 +4589,7 @@
       </media>
     </problem>
   </exercise>
-  <exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098452999">
+  <exercise id="fs-id1172098452999">
     <problem id="fs-id1172098407866">
       <para id="fs-id1172098407868">Poniżej pokazana jest kulka o masie <m:math display="inline">
         <m:mn>0,25</m:mn>
@@ -4724,7 +4724,7 @@
   </m:math>, wynik nie zależy od długości nitki.</para>
 </solution>
 </exercise>
-<exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098372410">
+<exercise id="fs-id1172098372410">
   <problem id="fs-id1172098447763">
     <para id="fs-id1172098447765">Dwa nieskończenie długie pręty, każdy naładowany jednorodnie z gęstością ładunku <m:math display="inline">
       <m:mi>λ</m:mi>
@@ -4745,7 +4745,7 @@
 </media>
 </problem>
 </exercise>
-<exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098625840">
+<exercise id="fs-id1172098625840">
   <problem id="fs-id1172098625842">
     <para id="fs-id1172098715681">Dodatni ładunek jest rozmieszczony ze stałą liniową gęstością <m:math display="inline">
       <m:mi>λ</m:mi>
@@ -5154,7 +5154,7 @@
 </m:math>.</para>
 </solution>
 </exercise>
-<exercise xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100959623">
+<exercise id="fs-id1172100959623">
   <problem id="fs-id1172100952367">
     <para id="fs-id1172100952369">Z odległości <m:math display="inline">
       <m:mn>10</m:mn>
@@ -5214,7 +5214,7 @@
 </exercise>
 <exercise id="fs-id1172098589234">
   <problem id="fs-id1172098589236">
-    <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172098589238">Cząstka o masie <m:math display="inline">
+    <para id="fs-id1172098589238">Cząstka o masie <m:math display="inline">
       <m:mi>m</m:mi>
     </m:math> i ładunku <m:math display="inline">
     <m:mo>−</m:mo>
@@ -5257,7 +5257,7 @@
 </para>
 </problem>
 <solution id="fs-id1172100584658">
-  <para xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="fs-id1172100584660">a. <m:math display="inline">
+  <para id="fs-id1172100584660">a. <m:math display="inline">
     <m:mi>W</m:mi>
     <m:mo>=</m:mo>
     <m:mrow>
