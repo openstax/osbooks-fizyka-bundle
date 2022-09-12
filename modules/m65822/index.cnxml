@@ -4,7 +4,7 @@
   <md:content-id>m65822</md:content-id>
   <md:title>Dynamika płynów</md:title>
   <md:abstract>W tym podrozdziale nauczysz się:
-<list>
+<list id="list-00001">
 <item>opisywać cechy przepływu;</item>
 <item>obliczać strumień objętościowy;</item>
 <item>opisywać relację pomiędzy strumieniem a prędkością;</item>
@@ -14,20 +14,20 @@
 </metadata>
 
 <content>
-  <para id="fs-id1170959732663">W pierwszej części tego rozdziału zajmowaliśmy się statyką płynów, czyli płynami w spoczynku. Pozostała część rozdziału dotyczy dynamiki płynów, czyli badania ich w ruchu. Nawet najbardziej podstawowy ruch płynu może się okazać bardzo skomplikowany. Z tego powodu w wielu przykładach ograniczymy nasze rozważania do <term cmlnle:reference="płyn idealny" class="no-emphasis">płynów idealnych</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">ideal fluid</term></foreign>). Płyn idealny jest to płyn o pomijalnej <term cmlnle:reference="lepkość" class="no-emphasis">lepkości</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">viscosity</term></foreign>). Lepkość to miara wewnętrznego tarcia w płynie – omówimy ją bardziej szczegółowo w rozdziale <link class="target-chapter" document="m65824">Lepkość i turbulencja</link>. W oparciu o kilka przykładów przeanalizujemy płyn nieściśliwy, to znaczy taki, w którym zmiana objętości wymaga ogromnej siły, czyli jego gęstość w całej objętości pozostaje stała.</para><section id="fs-id1170957418035">
+  <para id="fs-id1170959732663">W pierwszej części tego rozdziału zajmowaliśmy się statyką płynów, czyli płynami w spoczynku. Pozostała część rozdziału dotyczy dynamiki płynów, czyli badania ich w ruchu. Nawet najbardziej podstawowy ruch płynu może się okazać bardzo skomplikowany. Z tego powodu w wielu przykładach ograniczymy nasze rozważania do <term cmlnle:reference="płyn idealny" class="no-emphasis" id="term-00001">płynów idealnych</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis" id="term-00002">ideal fluid</term></foreign>). Płyn idealny jest to płyn o pomijalnej <term cmlnle:reference="lepkość" class="no-emphasis" id="term-00003">lepkości</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis" id="term-00004">viscosity</term></foreign>). Lepkość to miara wewnętrznego tarcia w płynie – omówimy ją bardziej szczegółowo w rozdziale <link class="target-chapter" document="m65824">Lepkość i turbulencja</link>. W oparciu o kilka przykładów przeanalizujemy płyn nieściśliwy, to znaczy taki, w którym zmiana objętości wymaga ogromnej siły, czyli jego gęstość w całej objętości pozostaje stała.</para><section id="fs-id1170957418035">
     <title>Cechy przepływu</title>
     <para id="fs-id1170960194762">W dziedzinach takich jak meteorologia do zilustrowania przepływu płynu często używamy wektorów prędkości. Na przykład ruch powietrza w atmosferze podczas wiatru może być przedstawiony przez wektory wskazujące wartość i kierunek prędkości w dowolnym punkcie na mapie. <link target-id="CNX_UPhysics_Figure_14_05_WindVecAut"/> prezentuje wektory prędkości opisujące wiatry podczas huraganu Artur w 2014 r.</para><figure id="CNX_UPhysics_Figure_14_05_WindVecAut"><media id="fs-id1170959938953" alt="Ilustracja przedstawia mapę ciśnień huraganu Artur przemieszczającego się wzdłuż Wschodniego Wybrzeża. Centrum niskiego ciśnienia oznaczono niebieską kropką. Prędkość wiatru jest najwyższa w pobliżu centrum niskiego ciśnienia, a wiatry poruszają się w kierunku przeciwnym do ruchu wskazówek zegara wokół tego punktu.">
         <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_05_WindVecAut.jpg"/>
       </media>
       
-<caption>Naniesione wektory prędkości ilustrują kierunki i wartości prędkości wiatrów w huraganie Artur. Zwróćmy uwagę na cyrkulację wiatru wokół oka huraganu. Wartości prędkości są największe w jego pobliżu. Kolory przedstawiają względne wirowości, czyli miarę wirowania wiatru.</caption></figure><para id="fs-id1170959787823">Inną metodą przedstawiania przepływu płynu jest linia prądu. Linia prądu oddaje drogę przebytą przez małą objętość płynu podczas przepływu. Prędkość jest zawsze styczna do linii prądu. Diagramy na <link target-id="CNX_UPhysics_Figure_14_05_TurLamFlow" cmlnle:case="locative"/> używają linii prądu do zilustrowania dwóch przykładów płynu poruszającego się w rurze. Pierwszy wykazuje cechy <term cmlnle:reference="przepływ laminarny" class="no-emphasis">przepływu laminarnego</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">laminar flow</term></foreign>), reprezentowanego przez gładkie, równoległe linie prądu. Zwróćmy uwagę, że w przykładzie pokazanym w części (a) prędkość płynu jest największa w centrum i maleje w pobliżu ścian rury z powodu lepkości płynu i tarcia między ścianami a płynem. Jest to szczególny przypadek przepływu laminarnego, gdzie tarcie między płynem a rurą jest wysokie, nazywany przypadkiem warunków brzegowych bez poślizgu. Drugi diagram prezentuje <term cmlnle:reference="przepływ turbulentny" class="no-emphasis">przepływ turbulentny</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">turbulent flow</term></foreign>), w którym linie prądu są nieregularne i zmienne w czasie. W przepływie turbulentnym trajektorie płynu są nieregularne, gdyż różne jego części mieszają się i tworzą małe, kołowe regiony przypominające wiry. Może się tak zdarzyć, gdy prędkość płynu osiągnie pewną prędkość krytyczną.</para><figure id="CNX_UPhysics_Figure_14_05_TurLamFlow"><media id="fs-id1170960044682" alt="Ilustracja (a) prezentuje schemat przepływu laminarnego pokazanego jako warstwy płynu poruszające się w równoległych trajektoriach. Ilustracja (b) jest schematyczną prezentacją przepływu turbulentnego, pokazanego jako warstwy płynu poruszającego się po nieregularnych, przecinających się trajektoriach.">
+<caption>Naniesione wektory prędkości ilustrują kierunki i wartości prędkości wiatrów w huraganie Artur. Zwróćmy uwagę na cyrkulację wiatru wokół oka huraganu. Wartości prędkości są największe w jego pobliżu. Kolory przedstawiają względne wirowości, czyli miarę wirowania wiatru.</caption></figure><para id="fs-id1170959787823">Inną metodą przedstawiania przepływu płynu jest linia prądu. Linia prądu oddaje drogę przebytą przez małą objętość płynu podczas przepływu. Prędkość jest zawsze styczna do linii prądu. Diagramy na <link target-id="CNX_UPhysics_Figure_14_05_TurLamFlow" cmlnle:case="locative"/> używają linii prądu do zilustrowania dwóch przykładów płynu poruszającego się w rurze. Pierwszy wykazuje cechy <term cmlnle:reference="przepływ laminarny" class="no-emphasis" id="term-00005">przepływu laminarnego</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis" id="term-00006">laminar flow</term></foreign>), reprezentowanego przez gładkie, równoległe linie prądu. Zwróćmy uwagę, że w przykładzie pokazanym w części (a) prędkość płynu jest największa w centrum i maleje w pobliżu ścian rury z powodu lepkości płynu i tarcia między ścianami a płynem. Jest to szczególny przypadek przepływu laminarnego, gdzie tarcie między płynem a rurą jest wysokie, nazywany przypadkiem warunków brzegowych bez poślizgu. Drugi diagram prezentuje <term cmlnle:reference="przepływ turbulentny" class="no-emphasis" id="term-00007">przepływ turbulentny</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis" id="term-00008">turbulent flow</term></foreign>), w którym linie prądu są nieregularne i zmienne w czasie. W przepływie turbulentnym trajektorie płynu są nieregularne, gdyż różne jego części mieszają się i tworzą małe, kołowe regiony przypominające wiry. Może się tak zdarzyć, gdy prędkość płynu osiągnie pewną prędkość krytyczną.</para><figure id="CNX_UPhysics_Figure_14_05_TurLamFlow"><media id="fs-id1170960044682" alt="Ilustracja (a) prezentuje schemat przepływu laminarnego pokazanego jako warstwy płynu poruszające się w równoległych trajektoriach. Ilustracja (b) jest schematyczną prezentacją przepływu turbulentnego, pokazanego jako warstwy płynu poruszającego się po nieregularnych, przecinających się trajektoriach.">
         <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_14_05_TurLamFlow.jpg"/>
       </media>
       
     <caption>(a) Przepływ laminarny można przedstawić jako warstwy płynu poruszające się po równoległych, regularnych trajektoriach. (b) W przepływie turbulentnym różne obszary płynu poruszają się wzdłuż nieregularnych, przecinających się trajektorii, co skutkuje występowaniem obszarów mieszania i wirami.</caption></figure></section>
   <section id="fs-id1170957555027">
     <title>Strumień i jego związek z prędkością</title>
-    <para id="fs-id1170959782778">Objętość płynu przepływającego w pewnym miejscu przez powierzchnię w jednostce czasu zwana jest <term cmlnle:reference="strumień objętościowy" class="no-emphasis">strumieniem</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">flow rate</term></foreign>) <m:math>
+    <para id="fs-id1170959782778">Objętość płynu przepływającego w pewnym miejscu przez powierzchnię w jednostce czasu zwana jest <term cmlnle:reference="strumień objętościowy" class="no-emphasis" id="term-00009">strumieniem</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis" id="term-00010">flow rate</term></foreign>) <m:math>
         <m:mi>Q</m:mi>
       </m:math> lub bardziej precyzyjnie, strumieniem objętościowym. Może być on zapisany jako:</para><note id="fs-id1170959667116" class="equation-callout">
         <equation id="fs-id1170959719559">
@@ -334,7 +334,7 @@
       </m:math>
     </equation>
   </note>
-  <para id="fs-id1170959718938">Wynik ten nosi nazwę <term cmlnle:reference="równanie ciągłości" class="no-emphasis">równania ciągłości</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">equation of continuity</term></foreign>) i obowiązuje w każdym nieściśliwym płynie (o stałej gęstości). Konsekwencje tego równania można zaobserwować, gdy woda wypływa z węża przez wąski otwór przy dyszy: za dyszą prędkość wody jest bardzo duża, co tak naprawdę jest powodem, dla którego taka właśnie jest budowa końcówki węża. Z drugiej strony, gdy rzeka wpływa do jednej strony rezerwuaru (np. jeziora), woda znacząco zwalnia. Prędkość ta wzrośnie, gdy woda będzie wypływała po drugiej stronie rezerwuaru. Innymi słowy, prędkość rośnie, gdy pole przekroju maleje, a maleje, gdy pole przekroju rośnie.</para><figure id="CNX_UPhysics_Figure_14_05_TubeNarrow"><media id="fs-id1170959723040" alt="Rysunek przedstawia schemat rury, która zwęża się od pola przekroju A1 do pola przekroju A2. Płyn przepływa przez rurę. Objętość V1 mija punkt 1, zlokalizowany od strony szerokiego pola przekroju w czasie t. Objętość płynu V2 mija punkt 2 zlokalizowany od strony małego pola przekroju w czasie t.">
+  <para id="fs-id1170959718938">Wynik ten nosi nazwę <term cmlnle:reference="równanie ciągłości" class="no-emphasis" id="term-00011">równania ciągłości</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis" id="term-00012">equation of continuity</term></foreign>) i obowiązuje w każdym nieściśliwym płynie (o stałej gęstości). Konsekwencje tego równania można zaobserwować, gdy woda wypływa z węża przez wąski otwór przy dyszy: za dyszą prędkość wody jest bardzo duża, co tak naprawdę jest powodem, dla którego taka właśnie jest budowa końcówki węża. Z drugiej strony, gdy rzeka wpływa do jednej strony rezerwuaru (np. jeziora), woda znacząco zwalnia. Prędkość ta wzrośnie, gdy woda będzie wypływała po drugiej stronie rezerwuaru. Innymi słowy, prędkość rośnie, gdy pole przekroju maleje, a maleje, gdy pole przekroju rośnie.</para><figure id="CNX_UPhysics_Figure_14_05_TubeNarrow"><media id="fs-id1170959723040" alt="Rysunek przedstawia schemat rury, która zwęża się od pola przekroju A1 do pola przekroju A2. Płyn przepływa przez rurę. Objętość V1 mija punkt 1, zlokalizowany od strony szerokiego pola przekroju w czasie t. Objętość płynu V2 mija punkt 2 zlokalizowany od strony małego pola przekroju w czasie t.">
         <image mime-type="image/jpeg" src="../../media/CNX_UPhysics_Figure_14_05_TubeNarrow.jpg"/>
       </media>
       
@@ -641,7 +641,7 @@
 </section>
 <section id="fs-id1170957514468">
   <title>Zachowanie masy</title>
-  <para id="fs-id1170959693693">Szybkość przepływu płynu może być również opisana przez <term class="no-emphasis">strumień masy</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">mass flow rate</term></foreign>) lub inaczej masowe natężenie przepływu. Jest to szybkość, z jaką masa płynu przepływa przez powierzchnię w danym punkcie. Spójrzmy jeszcze raz na <link target-id="CNX_UPhysics_Figure_14_05_FlowRateDi" cmlnle:case="accusative"/>, lecz tym razem przyjrzyjmy się masie zawartej w zacienionej objętości. Masę tę można obliczyć z gęstości i objętości:</para><equation id="fs-id1170959819384" class="unnumbered">
+  <para id="fs-id1170959693693">Szybkość przepływu płynu może być również opisana przez <term class="no-emphasis" id="term-00013">strumień masy</term> (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis" id="term-00014">mass flow rate</term></foreign>) lub inaczej masowe natężenie przepływu. Jest to szybkość, z jaką masa płynu przepływa przez powierzchnię w danym punkcie. Spójrzmy jeszcze raz na <link target-id="CNX_UPhysics_Figure_14_05_FlowRateDi" cmlnle:case="accusative"/>, lecz tym razem przyjrzyjmy się masie zawartej w zacienionej objętości. Masę tę można obliczyć z gęstości i objętości:</para><equation id="fs-id1170959819384" class="unnumbered">
       <label/>
       <m:math>
         <m:mrow>
@@ -1162,7 +1162,7 @@
   </content>
   <glossary>
     <definition id="fs-id1170959957010">
-<term cmlnle:reference="strumień objętościowy" class="no-emphasis">strumień objętościowy (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">flow rate</term></foreign>)</term>
+<term cmlnle:reference="strumień objętościowy" class="no-emphasis">strumień objętościowy (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis" id="term-00015">flow rate</term></foreign>)</term>
       <meaning id="fs-id1170959826329"> o symbolu <m:math>
           <m:mi>Q</m:mi>
         </m:math>, to stosunek objętości <m:math>
@@ -1185,19 +1185,19 @@
 </meaning>
 </definition>
 <definition id="fs-id1170959804757">
-<term cmlnle:reference="płyn idealny" class="no-emphasis">płyn idealny (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">ideal fluid</term></foreign>)</term>
+<term cmlnle:reference="płyn idealny" class="no-emphasis">płyn idealny (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis" id="term-00016">ideal fluid</term></foreign>)</term>
   <meaning id="fs-id1170959828866">płyn o pomijalnej lepkości</meaning>
 </definition>
 <definition id="fs-id1170959641798">
-<term cmlnle:reference="przepływ laminarny" class="no-emphasis">przepływ laminarny (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">laminar flow</term></foreign>)</term>
+<term cmlnle:reference="przepływ laminarny" class="no-emphasis">przepływ laminarny (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis" id="term-00017">laminar flow</term></foreign>)</term>
   <meaning id="fs-id1170959977787">typ przepływu płynu, podczas którego warstwy płynu się nie mieszają</meaning>
 </definition>
 <definition id="fs-id1170957600347">
-<term cmlnle:reference="przepływ turbulentny" class="no-emphasis">przepływ turbulentny (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">turbulent flow</term></foreign>)</term>
+<term cmlnle:reference="przepływ turbulentny" class="no-emphasis">przepływ turbulentny (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis" id="term-00018">turbulent flow</term></foreign>)</term>
   <meaning id="fs-id1170957422020">typ przepływu płynów, podczas którego warstwy płynu mieszają się zawracając i tworząc wiry</meaning>
 </definition>
 <definition id="fs-id1170960187837">
-<term cmlnle:reference="lepkość" class="no-emphasis">lepkość (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis">viscosity</term></foreign>)</term>
+<term cmlnle:reference="lepkość" class="no-emphasis">lepkość (ang. <foreign><term cxlxt:index="foreign" class="no-emphasis" id="term-00019">viscosity</term></foreign>)</term>
   <meaning id="fs-id1170959873521">miara wewnętrznego tarcia w płynie</meaning>
 </definition>
 </glossary>
